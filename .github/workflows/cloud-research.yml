@@ -27,7 +27,7 @@ defaults:
 jobs:
   gate:
     if: github.repository == 'Simonn777/embodied-vision-reliability' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 3
     outputs:
       eligible: ${{ steps.gate.outputs.eligible }}
@@ -53,7 +53,7 @@ jobs:
   research:
     needs: gate
     if: needs.gate.outputs.eligible == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 40
     outputs:
       has_changes: ${{ steps.bundle.outputs.has_changes }}
@@ -116,7 +116,7 @@ jobs:
   validate:
     needs: [gate, research]
     if: needs.research.outputs.has_changes == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       RESEARCH_DATE: ${{ needs.gate.outputs.date }}
@@ -161,7 +161,7 @@ jobs:
 
   publish:
     needs: [gate, research, validate]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:
       contents: write

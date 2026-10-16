@@ -2,7 +2,7 @@
 
 The owner requested a research process that continues when their Mac is shut down.
 The implementation is `.github/workflows/cloud-research.yml`: disposable GitHub
-Linux runners, the official OpenAI Codex Action, isolated validation, and a separate
+Ubuntu 24.04 runners, the official OpenAI Codex Action, isolated validation, and a separate
 publisher. The Mac and desktop application are not runtime dependencies.
 
 ## Activation status
@@ -113,3 +113,15 @@ repository. Never treat an artifact upload as a completed publication.
 - [GitHub schedule semantics](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 - [GitHub token behavior](https://docs.github.com/en/actions/concepts/security/github_token)
 - [GitHub Actions billing](https://docs.github.com/en/actions/concepts/billing-and-usage)
+
+## Initial verification
+
+On October 16, 2026, 83 local tests and workflow lint passed. The ordinary
+[CI run](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38855613524)
+and the four-job
+[hosted preflight](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38855628928)
+passed at `3aa6ac1293226dfbe1f14f746fcbeea2cd040bcc`. The model step and real
+GitHub publication step were explicitly skipped. The publisher rehearsed against
+a temporary local bare repository only. `CLOUD_RESEARCH_ENABLED=false`; no API
+secret is configured. This verifies infrastructure, not autonomous research.
+The workflow now pins Ubuntu 24.04 instead of the moving `ubuntu-latest` alias.
