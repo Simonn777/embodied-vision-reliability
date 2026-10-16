@@ -1,33 +1,34 @@
 # Hosted daily research
 
-The owner requested a research process that continues when their Mac is shut down.
-The implementation is `.github/workflows/cloud-research.yml`: disposable GitHub
-Ubuntu 24.04 runners, the official OpenAI Codex Action, isolated validation, and a separate
-publisher. The Mac and desktop application are not runtime dependencies.
+The owner requested research that continues when their Mac is shut down, with
+**no additional fees**. The current migration candidate is ChatGPT Pro cloud
+Scheduled within the existing subscription. Its ability to run this repository's
+research and publish verified changes is being tested; it is **not yet verified
+or activated**. Do not purchase extra usage credits or use separately billed APIs.
 
-## Activation status
+## Current execution status
 
-**Production is disabled until explicitly activated.** Installing this workflow or
-passing its `preflight` mode does not mean that autonomous AI research has run.
-The initial migration has no configured API secret and has made no paid model call.
-The existing desktop research schedule remains the fallback until a real cloud
-research run has passed validation and publication. Do not run both schedules.
+**The paid Codex API workflow must remain disabled.** Keep
+`CLOUD_RESEARCH_ENABLED=false`; do not configure an API secret or activate a paid
+model run under the current authorization. Its initial preflights were infrastructure
+tests only, with no model call or GitHub publication.
 
-Before activation, configure a dedicated OpenAI Platform project with the owner's
-approved spending limit, its repository secret `OPENAI_API_KEY`, and a supported
-API model in `CLOUD_RESEARCH_MODEL` (default `gpt-6.1-sol`, medium effort). Set
-repository variable `CLOUD_RESEARCH_ENABLED` to `true` only when ready for one
-supervised manual `research` run. Verify that run and the actual published commit,
-then pause the old desktop heartbeat. Never move personal ChatGPT session files
-or credentials into Actions. No secret belongs in Git, a chat, a report, or an artifact.
+The existing local research schedule remains in place until the proposed cloud
+replacement has actually executed the work, passed checks, and published a verified
+commit. Creating a scheduled task or passing an infrastructure test is insufficient.
+Pause the local schedule only after that verification, and avoid concurrent research
+sessions. If the replacement requires an additional charge, stop the migration and
+retain the local schedule. Keep account balances and private billing details out of
+public documentation. Never copy ChatGPT session credentials into Actions.
 
-API calls are separately billed; a ChatGPT subscription does not pay this workflow's
-API bill. Configure an actual project **hard spend limit**, not only a spend alert.
-OpenAI documents that enforcement propagation can permit a small overrun. Job
-timeouts are resource controls, not precise dollar or token caps. Do not retry a
-quota failure using different credentials. Standard hosted runners for public
-repositories are free under GitHub's current rules; larger runners, paid GPUs, and
-additional paid services are not authorized by this design.
+## Retained inactive API infrastructure
+
+`.github/workflows/cloud-research.yml` is retained as an inactive implementation
+reference: disposable GitHub Ubuntu 24.04 runners, the official OpenAI Codex Action,
+isolated validation, and a separate publisher. Its API calls are separately billed;
+the ChatGPT subscription does not cover them. The details below describe this
+disabled workflow, not the proposed subscription-based replacement or an active
+autonomous research service. No activation is authorized by this document.
 
 ## Schedule and persistence
 
@@ -87,17 +88,19 @@ source/protocol revisions, and the original final partition cannot become a tuni
 
 ## Preflight and maintenance
 
-Run **Cloud research → Run workflow → preflight** for an unbilled infrastructure
-test. It makes a labeled fixture, transfers it as an artifact, applies the same
+**Cloud research → Run workflow → preflight** is an infrastructure-only mode with
+no model/API call. It makes a labeled fixture, transfers it as an artifact, applies the same
 patch checks, tests inside the isolated container, and rehearses a commit/push to
 a temporary local bare Git repository. It does not call Codex or publish to GitHub.
 It cannot validate model access, API funding, model tool behavior, branch protection,
-or the actual write token; a real first research run is required for those checks.
+or the actual write token. Those production capabilities remain unverified; do not
+activate a billed research run to test them under the current no-additional-fees constraint.
 
-If production must stop, set `CLOUD_RESEARCH_ENABLED=false` or disable the workflow.
+Keep `CLOUD_RESEARCH_ENABLED=false` or disable the workflow.
 Cancel any already-running job separately: changing a variable does not interrupt
-a model step that has already started. Preserve failure logs and investigate before
-re-enabling. Do not silently fall back to the Mac or charge another service.
+a model step that has already started. Preserve failure logs. The API workflow must
+stay disabled under the current constraint; do not retry with another paid service.
+The existing local schedule is retained explicitly while the replacement is unverified.
 
 A push made by `GITHUB_TOKEN` does not trigger ordinary push CI. This workflow runs
 validation before publication and links that run in the commit. It does not deploy
