@@ -158,3 +158,7 @@ GitHub publication step were explicitly skipped. The publisher rehearsed against
 a temporary local bare repository only. `CLOUD_RESEARCH_ENABLED=false`; no API
 secret is configured. This verifies infrastructure, not autonomous research.
 The workflow now pins Ubuntu 24.04 instead of the moving `ubuntu-latest` alias.
+
+## Interactive Work retry evidence
+
+The interactive Work cloud retry on October 16 successfully cloned and executed tests/smoke, and created capability PR #1 with new passing GitHub-hosted CI. See [the capability receipt](CLOUD_CAPABILITY.md) for exact source, commands, timings, logs, and publication gates. This updates the historical pending status above for interactive execution only. Scheduled tool parity and scheduling migration are not verified; all schedules remain unchanged in this session. The API workflow remains disabled.
