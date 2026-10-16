@@ -132,3 +132,5 @@ introduced. See [v2 protocol](../protocols/0002-exploratory-frozen-v2.md).
 Repair validation: 184 tests passed in 7.08s; existing 1,240-frame toy smoke
 completed in 3.10s. No model or metadata rerun. The v2 software receipt is
 results/0002-preflight/freeze-v2-validation.json; final-head CI is checked separately.
+
+The [independent review](0002-independent-review.md) records raw-artifact recomputation, exact Git bindings, and the v2 gate counterexamples. It adds no model or held-out evaluation run.
