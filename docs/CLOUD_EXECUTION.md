@@ -3,7 +3,8 @@
 The owner requested research that continues when their Mac is shut down, with
 **no additional fees**. The current migration candidate is ChatGPT Pro cloud
 Scheduled within existing account entitlements. Its first trial encountered access
-failures; the recurring task is **paused and not verified for research publication**.
+failures. Repository-scoped connector installation is now verified, but the recurring
+task remains **paused pending a retry; execution and publication are unverified**.
 Do not purchase extra usage credits or use separately billed APIs.
 
 ## Current execution status
@@ -29,9 +30,15 @@ did not install dependencies or run the tests or smoke experiment. Its actual
 GitHub `create_branch` call returned `403: Resource not accessible by integration`;
 a separate connector check reproduced that error. No branch, PR, or cloud-authored
 commit was published. Existing successful CI was inspected, not triggered by the
-trial. The account had authorized the connector's identity access but had not
-installed it for this personal repository. Repository-scoped installation and a
-new actual execution/publication test are still required.
+trial. At the time, the account had authorized the connector's identity access but
+had not installed it for this personal repository.
+
+After that failed trial, the owner explicitly authorized the official ChatGPT Codex
+Connector for **only `Simonn777/embodied-vision-reliability`**. The installation and
+its exactly-one-repository scope are now verified. This fixes the missing-installation
+step; it does not establish that shell networking, test execution, or repository
+publication now works. An actual retry and verification of its outputs are still
+pending. Do not expand connector access to other repositories.
 
 The proposed schedule is daily at 09:00 America/New_York through October 15, 2027.
 It is paused to avoid repeated blocked runs; the original local schedule remains
