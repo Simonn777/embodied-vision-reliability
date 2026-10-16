@@ -16,6 +16,7 @@ For a fixed visual position estimator, does causal temporal consistency identify
 - Eleven primary-paper entries and a pinned data-source/size audit are available. No listed paper's published result has been reproduced.
 - No third-party datasets or pretrained weights have been downloaded for this project.
 - Hardware checked: Apple M5, 24 GiB memory; CPU and MPS available, CUDA unavailable. Initial runs use CPU.
+- A [hosted execution pipeline](docs/CLOUD_EXECUTION.md) is being added so future work can run without the development Mac. Production AI execution remains disabled pending API funding and an end-to-end activation test; an infrastructure preflight is not a research result.
 
 ## Claims boundary
 

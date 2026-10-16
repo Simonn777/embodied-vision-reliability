@@ -14,6 +14,7 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | [Research charter](docs/RESEARCH_CHARTER.md) | What is the question, and what would count as progress? |
 | [Reading list](docs/LITERATURE.md) | Which primary papers inform the design, and how closely have they been read? |
 | [Next actions](NEXT_ACTIONS.md) | What experiment or verification comes next? |
+| [Cloud execution](docs/CLOUD_EXECUTION.md) | How is daily work validated and published, and is the hosted schedule active? |
 
 ## First result · October 16, 2026
 
