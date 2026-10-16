@@ -1,8 +1,8 @@
 # Cloud capability verification
 
-Date: 2026-10-16. Status: **interactive Work execution, final receipt CI, and publication to main verified**. Scheduled execution remains unverified and paused.
+Date: 2026-10-16. This receipt records **interactive Work execution, final receipt CI, and publication to main**. A later non-interactive trial and completed schedule migration are recorded separately in [SCHEDULED_VERIFICATION.md](SCHEDULED_VERIFICATION.md).
 
-This AI-assisted infrastructure check is not a research finding or proof that a scheduled invocation has equivalent tools. The Scheduled task remains paused; the existing local schedule is unchanged.
+This AI-assisted infrastructure check is not a research finding. At the time of this interactive check, Scheduled execution was unverified and paused, and the local schedule was unchanged. The later receipt supersedes that scheduling status without changing these measurements.
 
 ## Scope and actual tools
 
@@ -31,7 +31,7 @@ The publication gate required a second Research checks run on the receipt update
 
 ## Boundaries
 
-No schedules were created, resumed, or changed. No paid service, API key, extra credit, larger runner, GPU, credential transfer, or connector-scope expansion was used. The disabled API workflow and activation variable were not changed. The GitHub CI retains its existing 10-minute timeout and two-thread configuration; this check does not claim a separately enforced CI memory cap. Prior failed trials remain recorded. Success here establishes this interactive Work session's capability only; unattended Scheduled tool availability remains to be validated separately.
+No schedules were created, resumed, or changed. No paid service, API key, extra credit, larger runner, GPU, credential transfer, or connector-scope expansion was used. The disabled API workflow and activation variable were not changed. The GitHub CI retains its existing 10-minute timeout and two-thread configuration; this check does not claim a separately enforced CI memory cap. Prior failed trials remain recorded. Success here establishes this interactive Work session's capability only; unattended Scheduled tool availability was still pending at that stage and was tested later in the separate receipt.
 
 ## Final publication receipt
 
