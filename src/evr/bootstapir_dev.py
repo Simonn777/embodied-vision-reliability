@@ -280,7 +280,7 @@ def stream(model, frames, queries, chunk_size=8, on_frame=None, allow_nonfinite=
             if on_frame is not None:
                 on_frame(t, out[t].copy(), timings[-1])
     expected = np.arange(len(frames))[:, None] >= np.array([q["arrival"] for q in queries])[None, :]
-    if (not allow_nonfinite and not np.array_equal(np.isfinite(out).all(axis=-1), expected)) or (allow_nonfinite and np.isfinite(out[~expected]).any()):
+    if (not allow_nonfinite and not np.array_equal(np.isfinite(out).all(axis=-1), expected)) or (allow_nonfinite and not np.isnan(out[~expected]).all()):
         raise ValueError("Output active mask mismatch")
     return out, timings
 

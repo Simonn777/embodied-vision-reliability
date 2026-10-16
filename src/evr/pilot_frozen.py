@@ -1,6 +1,7 @@
 """Frozen-input gates and exact prediction-grid loading; no network/torch import."""
 import csv
 import json
+import importlib.metadata
 from pathlib import Path
 import subprocess
 import zipfile
@@ -13,6 +14,8 @@ from evr.pilot_metrics import rows_from_arrays
 def verify_freeze(root,receipt_path,require_main=True):
     root=Path(root);receipt=json.loads(Path(receipt_path).read_text())
     if receipt.get('status')!='frozen_exploratory_v1':raise ValueError('not a frozen exploratory receipt')
+    for package,version in receipt.get('dependency_versions',{}).items():
+        if importlib.metadata.version(package)!=version:raise ValueError('frozen dependency version changed: '+package)
     commit=receipt['input_commit']
     subprocess.run(['git','cat-file','-e',commit+'^{commit}'],cwd=root,check=True,capture_output=True)
     if require_main:

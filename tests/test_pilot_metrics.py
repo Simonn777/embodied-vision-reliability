@@ -114,3 +114,12 @@ def test_bootstrap_matches_separate_brute_force_with_repeated_clusters():
     assert actual['intervals']['matched_risk_difference']['ci95']==np.percentile(diff,[2.5,97.5]).tolist()
     assert actual['intervals']['matched_risk_difference']['defined_replicates']==100
     assert thresholds==saved
+
+
+def test_complete_fixture_prediction_to_group_bootstrap_pipeline():
+    import runpy
+    pipeline=runpy.run_path('scripts/pilot_fixture_check.py')['run_fixture']
+    result=pipeline()
+    assert result['all_pipeline_stages_executed']
+    assert result['result']['matched']['native']['reachable']
+    assert result['result']['bootstrap']['allocated_groups']==['eval','empty']

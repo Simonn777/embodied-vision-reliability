@@ -7,6 +7,8 @@ import json
 import os
 from pathlib import Path
 import resource
+import platform
+import shutil
 import subprocess
 import sys
 import time
@@ -39,6 +41,10 @@ def main():
     sources=["scripts/run_pilot_preflight.py","src/evr/bootstapir_dev.py","src/evr/pilot_identity.py",
              "protocols/0002-preflight-64-and-identity.md","configs/0002-preflight.json"]
     receipt={"phase":a.phase,"started_at_utc":utc(),"status":"running",
+      "python_version":platform.python_version(),"platform":platform.platform(),
+      "meminfo_start_kib":{s.split(':')[0]:int(s.split()[1]) for s in open('/proc/meminfo') if s.startswith(('MemTotal:','MemAvailable:'))},
+      "cgroup_cpu_max":Path('/sys/fs/cgroup/cpu.max').read_text().strip(),
+      "disk_start_bytes":dict(zip(('total','used','free'),shutil.disk_usage(a.cache))),
       "source_commit":subprocess.check_output(["git","rev-parse","HEAD"],text=True).strip(),
       "file_sha256":{s:sha256(root/s) for s in sources},"affinity":sorted(os.sched_getaffinity(0)),
       "limit_as_bytes":6*1024**3,"hard_timeout_seconds":900,
@@ -51,6 +57,10 @@ def main():
         (a.output/'receipt.json').write_text(json.dumps(receipt,indent=2)+'\n')
     save()
     try:
+        for source in sources:
+            actual=subprocess.check_output(['git','hash-object',source],text=True).strip()
+            published=subprocess.check_output(['git','rev-parse','HEAD:'+source],text=True).strip()
+            if actual!=published:raise ValueError('runtime source differs from recorded commit: '+source)
         if a.phase=='metadata':
             receipt['archive']=download_object(a.cache,'rgb.zip')
             entries=[];frames_all=[]
