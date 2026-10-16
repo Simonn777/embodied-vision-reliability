@@ -15,11 +15,29 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | [Reading list](docs/LITERATURE.md) | Which primary papers inform the design, and how closely have they been read? |
 | [Next actions](NEXT_ACTIONS.md) | What experiment or verification comes next? |
 
+## Reproduce the first diagnostic
+
+On macOS or Linux with Python 3.9 or later:
+
+```bash
+git clone https://github.com/Simonn777/embodied-vision-reliability.git
+cd embodied-vision-reliability
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[dev]'
+python -m pytest -q
+python scripts/run_experiment.py --output scratch/reproduce-0001 --protocol protocols/0001-synthetic-localization.md
+```
+
+The runner requires a committed, unchanged protocol, writes into a new output directory, and stops after 30 minutes. It records raw predictions, configuration, source hashes, environment, and measurements. Add `--smoke` and choose another output directory for a smaller run using separate sequence IDs. A repeated run checks reproducibility; it is not an independent research finding.
+
+The [frozen protocol](protocols/0001-synthetic-localization.md) specifies the generator, predictor, scores, partitions, and metrics. No model weights or dataset downloads are needed for this diagnostic.
+
 ## Scope
 
 The first experiment is a synthetic 2D localization diagnostic. Its purpose is to validate the evaluation machinery and expose failure cases. It does not measure robot control, prove generalization to real video, or establish a new method. Public-video evaluation and stronger frozen estimators are the next stages.
 
-The initial implementation runs on CPU. Apple MPS is available on the development machine; NVIDIA CUDA has not been tested. No paid compute is configured.
+The initial implementation runs on CPU. Apple MPS is available on the development machine; CUDA is unavailable, and no NVIDIA GPU measurements are reported. No paid compute is configured.
 
 ## Research practice
 

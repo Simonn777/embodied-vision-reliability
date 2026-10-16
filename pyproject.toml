@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embodied-vision-reliability"
+version = "0.1.0"
+description = "A synthetic diagnostic of selective visual localization"
+requires-python = ">=3.9"
+dependencies = ["numpy==2.0.2", "Pillow==11.3.0", "matplotlib==3.9.4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
