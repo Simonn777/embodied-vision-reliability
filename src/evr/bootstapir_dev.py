@@ -238,7 +238,7 @@ def validate_run(frames, queries, chunk_size):
         pixel_query(q["xy"], q["arrival"], 256, 256)
 
 
-def stream(model, frames, queries, chunk_size=8):
+def stream(model, frames, queries, chunk_size=8, on_frame=None):
     """One state per arrival group; no future frame/query descriptors supplied."""
     import torch
     validate_run(frames, queries, chunk_size)
@@ -250,6 +250,8 @@ def stream(model, frames, queries, chunk_size=8):
             arriving = [i for i, q in enumerate(queries) if q["arrival"] == t]
             if not arriving and not groups:
                 timings.append(time.perf_counter() - started)
+                if on_frame is not None:
+                    on_frame(t, out[t].copy(), timings[-1])
                 continue
             tensor = torch.from_numpy(image.copy()).float()[None, None] / 255 * 2 - 1
             grids = model.get_feature_grids(tensor, is_training=False)
@@ -275,6 +277,8 @@ def stream(model, frames, queries, chunk_size=8):
                     raise ValueError("Nonfinite active output")
                 out[t, indices] = values
             timings.append(time.perf_counter() - started)
+            if on_frame is not None:
+                on_frame(t, out[t].copy(), timings[-1])
     expected = np.arange(len(frames))[:, None] >= np.array([q["arrival"] for q in queries])[None, :]
     if not np.array_equal(np.isfinite(out).all(axis=-1), expected):
         raise ValueError("Output active mask mismatch")

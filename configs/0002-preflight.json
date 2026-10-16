@@ -1,0 +1,16 @@
+{
+  "development_archive_index": 0,
+  "prefix_frames": 64,
+  "query_rule": "first two frame-0-visible point indices; arrival=0; no frame-4 screening",
+  "resolution": [256, 256],
+  "upstream_commit": "730cda1c730877cfedbe01bf87fb1cadb78a565d",
+  "torch": "2.10.0+cpu",
+  "seed": 20261016,
+  "allocation_seed": 20261019,
+  "allocation_rule": "connect exact shared frames/full/prefix64; dev group contains 0; sort remaining groups by sha256(0002|seed|group_id), take whole groups until >=10 calibration, then >=20 evaluation, remainder reserve",
+  "atol": 0.0001,
+  "rtol": 0,
+  "timeout_seconds": 900,
+  "threads": 2,
+  "memory_as_bytes": 6442450944
+}
