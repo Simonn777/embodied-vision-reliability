@@ -1,0 +1,21 @@
+{
+  "stage": "development_feasibility_only",
+  "upstream_commit": "730cda1c730877cfedbe01bf87fb1cadb78a565d",
+  "torch": "2.10.0+cpu",
+  "seed": 20261016,
+  "development_video_indices": [0],
+  "other_video_indices": "1..49 unassigned; no inference or visual inspection",
+  "frames": 16,
+  "resolution": [256, 256],
+  "point_selection": "first two indices visible at frames 0 and 4",
+  "initial_frames": 4,
+  "prefix_cutoff": 8,
+  "late_query_arrival": 4,
+  "query_chunk_size": 8,
+  "atol": 0.0001,
+  "rtol": 0,
+  "threads": 2,
+  "address_space_limit_bytes": 6442450944,
+  "hard_timeout_seconds": 900,
+  "download_budget_bytes": 10737418240
+}

@@ -1,0 +1,97 @@
+{
+  "reviewed_at_utc": "2026-10-16T20:04:27.481589+00:00",
+  "reviewed_head": "c2d3d1c5031713ec8ee82590887635df44bee0c9",
+  "inference_source_revision": "d45c1bed4f82dd4237373567df1920a9a9ca7189",
+  "review_environment": {
+    "python": "3.9.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.0.2"
+  },
+  "artifact_manifest_sha256": "8010fb2bdb070c9afb9d07deb9c24e7e14e3322a93e03c70c05c4eb857ebf133",
+  "artifact_hashes_verified": 20,
+  "execution_source_and_config_hashes_verified": true,
+  "acquisition_and_manifest_bindings_verified": true,
+  "validated_raw_rows": 136,
+  "validated_latency_rows": 104,
+  "latency_streams": 8,
+  "raw_grid_unique_complete_and_active_values_finite": true,
+  "latency_first_frame_medians_and_counts_match": true,
+  "csv_recomputation_command": "PYTHONPATH=src OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 python3 scripts/check_bootstapir_measurements.py",
+  "csv_recomputation": {
+    "all_checks_passed": true,
+    "checks": {
+      "future_image_prefix": {
+        "passed": true,
+        "max_abs_diff": 0.0,
+        "atol": 0.0001,
+        "rtol": 0.0,
+        "finite_values": 32
+      },
+      "truncated_prefix": {
+        "passed": true,
+        "max_abs_diff": 0.0,
+        "atol": 0.0001,
+        "rtol": 0.0,
+        "finite_values": 32
+      },
+      "single_vs_batch": {
+        "passed": true,
+        "max_abs_diff": 2.765655517578125e-05,
+        "atol": 0.0001,
+        "rtol": 0.0,
+        "finite_values": 64
+      },
+      "future_query_past": {
+        "passed": true,
+        "max_abs_diff": 0.0,
+        "atol": 0.0001,
+        "rtol": 0.0,
+        "finite_values": 16
+      },
+      "existing_query_after_arrival": {
+        "passed": true,
+        "max_abs_diff": 0.0,
+        "atol": 0.0001,
+        "rtol": 0.0,
+        "finite_values": 64
+      },
+      "late_query_vs_independent_crop": {
+        "passed": true,
+        "max_abs_diff": 0.0,
+        "atol": 0.0001,
+        "rtol": 0.0,
+        "finite_values": 48
+      },
+      "repeat": {
+        "passed": true,
+        "max_abs_diff": 0.0,
+        "atol": 0.0001,
+        "rtol": 0.0,
+        "finite_values": 64
+      },
+      "prequery_mask": {
+        "passed": true
+      },
+      "independent_process": {
+        "passed": true,
+        "max_abs_diff": 0.0,
+        "atol": 0.0001,
+        "rtol": 0.0,
+        "finite_values": 16
+      }
+    }
+  },
+  "separate_candidate_code_independent_recalculation_passed": true,
+  "transfer_ceiling_bytes_independently_recomputed": 1454567918,
+  "reviewed_head_ci": {
+    "run_id": 38959203658,
+    "url": "https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38959203658",
+    "head_sha": "c2d3d1c5031713ec8ee82590887635df44bee0c9",
+    "conclusion": "success",
+    "tests_passed": 129,
+    "test_seconds": 3.19,
+    "toy_smoke_rows": 1240,
+    "toy_smoke_seconds": 3.8
+  },
+  "scope": "Independent AI-assisted review and recomputation of saved cloud measurements. No local model inference, new data, final evaluation or additional fee-based service. Later documentation-only review commit requires its own exact-head CI before merge."
+}
