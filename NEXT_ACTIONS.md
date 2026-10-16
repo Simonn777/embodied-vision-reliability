@@ -20,4 +20,4 @@ If blocked on compute, rights, or tooling, do a useful smaller verification or r
 
 ## Cloud capability handoff (2026-10-16)
 
-Interactive Work cloud execution and initial PR CI are verified in [the capability receipt](docs/CLOUD_CAPABILITY.md). Complete receipt-head CI and exact-head merge before claiming final publication. Scheduling changes are outside this verification session; Scheduled tool parity remains unverified. The next research action remains item 2 above.
+**Completed:** interactive Work execution, final receipt CI, and PR #1 publication to main at `d910736e`; see [the capability receipt](docs/CLOUD_CAPABILITY.md). The remaining migration check is an actual standalone Scheduled invocation with execution, validation, and publication evidence. Scheduled tool parity remains unverified and its schedule remains paused; retain the local schedule until that check succeeds without additional fees. The next research action remains item 2 above.

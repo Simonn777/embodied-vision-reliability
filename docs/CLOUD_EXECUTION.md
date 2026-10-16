@@ -3,8 +3,10 @@
 The owner requested research that continues when their Mac is shut down, with
 **no additional fees**. The current migration candidate is ChatGPT Pro cloud
 Scheduled within existing account entitlements. Its first trial encountered access
-failures. Repository-scoped connector installation is now verified, but the recurring
-task remains **paused pending a retry; execution and publication are unverified**.
+failures. A later interactive Work session verified repository access, execution,
+and publication to main through [PR #1](CLOUD_CAPABILITY.md#final-publication-receipt).
+The recurring Scheduled task remains **paused; unattended execution and publication
+are still unverified**.
 Do not purchase extra usage credits or use separately billed APIs.
 
 ## Current execution status
@@ -14,7 +16,7 @@ Do not purchase extra usage credits or use separately billed APIs.
 model run under the current authorization. Its initial preflights were infrastructure
 tests only, with no model call or GitHub publication.
 
-The existing local research schedule remains in place until the proposed cloud
+The existing local research schedule remains in place until the proposed Scheduled
 replacement has actually executed the work, passed checks, and published a verified
 commit. Creating a scheduled task or passing an infrastructure test is insufficient.
 Pause the local schedule only after that verification, and avoid concurrent research
@@ -35,10 +37,11 @@ had not installed it for this personal repository.
 
 After that failed trial, the owner explicitly authorized the official ChatGPT Codex
 Connector for **only `Simonn777/embodied-vision-reliability`**. The installation and
-its exactly-one-repository scope are now verified. This fixes the missing-installation
-step; it does not establish that shell networking, test execution, or repository
-publication now works. An actual retry and verification of its outputs are still
-pending. Do not expand connector access to other repositories.
+its exactly-one-repository scope are now verified. Completing the missing installation
+alone did not establish shell networking, test execution, or repository
+publication. The later [interactive Work retry](#interactive-work-retry-evidence)
+verified those capabilities; a standalone Scheduled trial is still pending.
+Do not expand connector access to other repositories.
 
 The proposed schedule is daily at 09:00 America/New_York through October 15, 2027.
 It is paused to avoid repeated blocked runs; the original local schedule remains
@@ -161,4 +164,4 @@ The workflow now pins Ubuntu 24.04 instead of the moving `ubuntu-latest` alias.
 
 ## Interactive Work retry evidence
 
-The interactive Work cloud retry on October 16 successfully cloned and executed tests/smoke, and created capability PR #1 with new passing GitHub-hosted CI. See [the capability receipt](CLOUD_CAPABILITY.md) for exact source, commands, timings, logs, and publication gates. This updates the historical pending status above for interactive execution only. Scheduled tool parity and scheduling migration are not verified; all schedules remain unchanged in this session. The API workflow remains disabled.
+The interactive Work cloud retry on October 16 successfully cloned and executed tests/smoke. Capability PR #1 then passed final [CI 38859145851](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38859145851) on head `835cbc9a` and merged into main as `d910736e`. See [the capability receipt](CLOUD_CAPABILITY.md) for source, commands, separate Work/GitHub timings, merge evidence, and the shallow-history provenance clarification. Interactive execution and publication are verified. Scheduled tool parity and scheduling migration remain unverified; the Scheduled task remains paused and the local schedule remains in place. The API workflow remains disabled.

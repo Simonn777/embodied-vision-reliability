@@ -1,8 +1,8 @@
 # Cloud capability verification
 
-Date: 2026-10-16. Status: **execution and PR publication verified; final receipt CI and merge are required by the publication gate**.
+Date: 2026-10-16. Status: **interactive Work execution, final receipt CI, and publication to main verified**. Scheduled execution remains unverified and paused.
 
-This AI-assisted infrastructure check is not a research finding or proof that a scheduled invocation has equivalent tools. Scheduling remains paused and unchanged.
+This AI-assisted infrastructure check is not a research finding or proof that a scheduled invocation has equivalent tools. The Scheduled task remains paused; the existing local schedule is unchanged.
 
 ## Scope and actual tools
 
@@ -27,8 +27,18 @@ Initial PR head: [c1fdc3a9](https://github.com/Simonn777/embodied-vision-reliabi
 
 [Research checks run 38859005472](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38859005472), [job 116836792187](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38859005472/job/116836792187), completed successfully. Its decoded logs were read: Ubuntu 24.04.5 GitHub-hosted runner, Python 3.11.17, all five thread variables 2; **83 passed in 1.67s**, smoke **1,240 rows in 2.88s**. PR CI checked GitHub's merge ref `50a9869d0923bc10973bd729e5af91b843f4e4bd`, combining that head with the stated base.
 
-This receipt update must itself pass a second Research checks run before merging. The PR Checks tab and merge commit provide the final head/run/merge evidence without a self-referential receipt commit. Merge is authorized only with `merge_method="merge"` and `expected_head_sha` equal to the reviewed, passing head. Older run 38858417741 is not counted.
+The publication gate required a second Research checks run on the receipt update, followed by `merge_method="merge"` with `expected_head_sha` equal to the reviewed, passing head. The completed evidence is recorded below. Older run 38858417741 is not counted.
 
 ## Boundaries
 
 No schedules were created, resumed, or changed. No paid service, API key, extra credit, larger runner, GPU, credential transfer, or connector-scope expansion was used. The disabled API workflow and activation variable were not changed. The GitHub CI retains its existing 10-minute timeout and two-thread configuration; this check does not claim a separately enforced CI memory cap. Prior failed trials remain recorded. Success here establishes this interactive Work session's capability only; unattended Scheduled tool availability remains to be validated separately.
+
+## Final publication receipt
+
+[PR #1](https://github.com/Simonn777/embodied-vision-reliability/pull/1) was merged into main as [d910736e](https://github.com/Simonn777/embodied-vision-reliability/commit/d910736ee6e6964ee216a16df264f3e9482697b3), preserving reviewed head [835cbc9a](https://github.com/Simonn777/embodied-vision-reliability/commit/835cbc9ab2a3c936194a6bf0e5b46b4cd06141c9).
+
+The final [Research checks run 38859145851](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38859145851), [job 116837226499](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38859145851/job/116837226499), passed before merge: **83 tests in 1.83s** and **1,240 smoke rows in 4.76s**. Those measurements belong to the GitHub-hosted runner, distinct from the Work shell measurements above. CI checked merge ref `bd0a3a8f6d80a0a0176f4d2ca82d2f56168b7436`, combining head `835cbc9a` with base `e05a5877`. The merged commit was then independently confirmed. No frozen protocol or result file changed.
+
+## Protocol provenance clarification
+
+The raw [shell provenance JSON](cloud-capability/2026-10-16-shell-provenance.json) is preserved unchanged. Its `protocol_commit` field reports `e05a5877`, the shallow checkout's history boundary returned by the recorder's `git log` lookup; this is not the original protocol freeze. Full history identifies [a5ab4e3](https://github.com/Simonn777/embodied-vision-reliability/commit/a5ab4e31699d6e55a81153aedd891c577bcb29d8) as that freeze. An independent comparison verified every recorded source hash against `e05a5877` and the protocol blob SHA-256 `259f93c67321f5dfde7ecfc698751ef17586eaa7cb61eb2f0bfb86d4306ea3e8`. This clarification corrects the interpretation of the history field; it does not rewrite the original run record or imply a new protocol.
