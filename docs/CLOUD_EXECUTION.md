@@ -2,9 +2,9 @@
 
 The owner requested research that continues when their Mac is shut down, with
 **no additional fees**. The current migration candidate is ChatGPT Pro cloud
-Scheduled within the existing subscription. Its ability to run this repository's
-research and publish verified changes is being tested; it is **not yet verified
-or activated**. Do not purchase extra usage credits or use separately billed APIs.
+Scheduled within existing account entitlements. Its first trial encountered access
+failures; the recurring task is **paused and not verified for research publication**.
+Do not purchase extra usage credits or use separately billed APIs.
 
 ## Current execution status
 
@@ -20,6 +20,29 @@ Pause the local schedule only after that verification, and avoid concurrent rese
 sessions. If the replacement requires an additional charge, stop the migration and
 retain the local schedule. Keep account balances and private billing details out of
 public documentation. Never copy ChatGPT session credentials into Actions.
+
+## Subscription-based cloud trial
+
+The October 16 trial reported a Linux/Python 3.13.5 shell with a 4 GiB container
+limit, but `git clone` exited 128 because `github.com` could not be resolved. It
+did not install dependencies or run the tests or smoke experiment. Its actual
+GitHub `create_branch` call returned `403: Resource not accessible by integration`;
+a separate connector check reproduced that error. No branch, PR, or cloud-authored
+commit was published. Existing successful CI was inspected, not triggered by the
+trial. The account had authorized the connector's identity access but had not
+installed it for this personal repository. Repository-scoped installation and a
+new actual execution/publication test are still required.
+
+The proposed schedule is daily at 09:00 America/New_York through October 15, 2027.
+It is paused to avoid repeated blocked runs; the original local schedule remains
+the active fallback. The separately billed API workflow is also disabled at the
+GitHub workflow level, in addition to `CLOUD_RESEARCH_ENABLED=false`.
+
+The trial exposed a separate resource-control issue: the experiment script always
+overrode numerical-library thread settings with four. The runner now respects the
+smallest positive inherited limit, capped at four, and records the effective limit
+in both configuration and provenance. Local verification passed 83 tests and a
+two-thread smoke run of 1,240 rows. That verifies the fix, not cloud publication.
 
 ## Retained inactive API infrastructure
 

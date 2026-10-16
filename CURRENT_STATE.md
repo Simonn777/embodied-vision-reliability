@@ -17,7 +17,7 @@ For a fixed visual position estimator, does causal temporal consistency identify
 - No third-party datasets or pretrained weights have been downloaded for this project.
 - Hardware checked: Apple M5, 24 GiB memory; CPU and MPS available, CUDA unavailable. Initial runs use CPU.
 - The retained [Codex API workflow](docs/CLOUD_EXECUTION.md) remains disabled under the owner's **no-additional-fees** constraint. Its [cloud preflight](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38855628928) passed without a model call or GitHub publication; this was infrastructure verification, not autonomous research.
-- ChatGPT Pro cloud Scheduled is being tested as a replacement within the existing subscription. Cloud research execution and publication are **not yet verified or activated**.
+- A subscription-based cloud Scheduled trial ran on October 16, but could not clone the repository or create a branch through the GitHub integration. Its daily schedule is paused while access is configured. Cloud research execution and publication remain **unverified**; see the [trial record](docs/CLOUD_EXECUTION.md#subscription-based-cloud-trial).
 - The existing local research schedule remains in place until a replacement has actually executed, passed validation, and published verified work. No additional paid service or usage-credit purchase is authorized.
 
 ## Claims boundary

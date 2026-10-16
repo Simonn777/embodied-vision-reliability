@@ -3,9 +3,36 @@
 
 import os
 
+THREAD_VARIABLES = (
+    "OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS",
+    "VECLIB_MAXIMUM_THREADS", "NUMEXPR_NUM_THREADS",
+)
+
+
+def configure_threads(environ):
+    """Respect the strictest inherited limit, with a local default/ceiling of four."""
+    limit = 4
+    for variable in THREAD_VARIABLES:
+        if variable not in environ:
+            continue
+        try:
+            value = int(environ[variable])
+        except ValueError:
+            raise ValueError(f"{variable} must be a positive integer") from None
+        if value < 1:
+            raise ValueError(f"{variable} must be a positive integer")
+        limit = min(limit, value)
+    # Validate every input before changing any environment variable.
+    for variable in THREAD_VARIABLES:
+        environ[variable] = str(limit)
+    return limit
+
+
 # Set before importing numerical libraries. This CPU experiment needs no GPU.
-for variable in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMEXPR_NUM_THREADS"):
-    os.environ[variable] = "4"
+try:
+    THREADS_CAP = configure_threads(os.environ)
+except ValueError as error:
+    raise SystemExit(str(error)) from None
 
 import argparse
 import csv
@@ -162,7 +189,7 @@ def main():
         "static_anisotropy_weight": .25, "temporal_weight": 1., "temporal_cap": 10.,
         "calibration_condition": "clean", "target_calibration_coverage": .8,
         "failure_tolerance_image_diagonal": FAILURE_TOLERANCE,
-        "score_direction": "lower is more reliable", "threads_cap": 4, "device": "CPU",
+        "score_direction": "lower is more reliable", "threads_cap": THREADS_CAP, "device": "CPU",
     }
     destination.mkdir(parents=True)
     write_json(destination / "config.json", config)
@@ -194,6 +221,8 @@ def main():
             "protocol_sha256": config["protocol_sha256"], "config_sha256": sha256(destination / "config.json"),
             "command": f"python scripts/run_experiment.py --output {portable_path(destination)}" + (" --smoke" if args.smoke else "") + f" --protocol {portable_path(protocol)}",
             "python": platform.python_version(), "platform": platform.platform(), "cpu": cpu,
+            "threads_cap": THREADS_CAP,
+            "thread_environment": {variable: os.environ[variable] for variable in THREAD_VARIABLES},
             "package_version": __version__,
             "dependencies": {name: importlib.metadata.version(name) for name in ("numpy", "Pillow", "matplotlib")},
             "artifact_sha256": {name: sha256(destination / name) for name in ("predictions.csv", "sequence_totals.csv", "summary.json", "figure.png", "examples.png")},
