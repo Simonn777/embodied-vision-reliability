@@ -1,0 +1,75 @@
+{
+  "both_source_states_clean": true,
+  "dependency_versions_match": true,
+  "file_checks": {
+    "config.json": {
+      "byte_identical": true,
+      "original_sha256": "e7ad77db00344cd50f7b45b2049342589a2e0e7ebe7d4bb3467e8ff3dcf65c19",
+      "reproduction_sha256": "e7ad77db00344cd50f7b45b2049342589a2e0e7ebe7d4bb3467e8ff3dcf65c19"
+    },
+    "examples.png": {
+      "byte_identical": true,
+      "original_sha256": "ff6814b5674bd69f5d4bf930daec0c256268288c48895862568814711708262b",
+      "reproduction_sha256": "ff6814b5674bd69f5d4bf930daec0c256268288c48895862568814711708262b"
+    },
+    "figure.png": {
+      "byte_identical": true,
+      "original_sha256": "d2a8e145f7a7136b60d4a779e532bcf9b3cc15199e65c0afee2726f1039f5da8",
+      "reproduction_sha256": "d2a8e145f7a7136b60d4a779e532bcf9b3cc15199e65c0afee2726f1039f5da8"
+    },
+    "predictions.csv": {
+      "byte_identical": true,
+      "original_sha256": "a3da863a9df6f2915987e377540b4f55ee2d90d0a3cd4f901dc158a623b44cd5",
+      "reproduction_sha256": "a3da863a9df6f2915987e377540b4f55ee2d90d0a3cd4f901dc158a623b44cd5"
+    },
+    "sequence_totals.csv": {
+      "byte_identical": true,
+      "original_sha256": "0c36b517740a121f20e6cda2b80732dc2cf946a6d58fecd858c06f7bc60f71f5",
+      "reproduction_sha256": "0c36b517740a121f20e6cda2b80732dc2cf946a6d58fecd858c06f7bc60f71f5"
+    },
+    "summary.json": {
+      "byte_identical": true,
+      "original_sha256": "e207421497e895612857b16bfd3cb8b10f0b351561340744a7df644716237d34",
+      "reproduction_sha256": "e207421497e895612857b16bfd3cb8b10f0b351561340744a7df644716237d34"
+    }
+  },
+  "independent_checks": {
+    "base_sequences": 160,
+    "calibration_accepted_per_scored_policy": 496,
+    "clean_calibration_frames": 620,
+    "condition_variants_per_sequence": 4,
+    "exported_sequence_totals_reconstruct_test_metrics": "passed",
+    "figure_visual_inspection": "Both PNGs reviewed: fixed examples show correct labels, occlusion missing markers, and appearance identity switch; risk-coverage panels and legend are readable.",
+    "fixed_threshold_acceptance_on_all_rows": "passed",
+    "grouped_partitions_and_frame_zero_exclusion": "passed",
+    "hash_tie_keys": "passed",
+    "independent_clean_calibration_order_statistic": "passed",
+    "paired_bootstrap_from_exported_sequence_counts": "112 interval endpoints independently recomputed and matched; 1000 shared sequence draws, original frozen thresholds",
+    "raw_pixel_coordinate_error_recalculation": "passed",
+    "scored_frame_rows": 19840,
+    "scored_frames_per_variant": 31,
+    "separate_handcrafted_causality_and_edge_cases": "passed before full run; smoke scene IDs only",
+    "sequence_method_total_rows": 2560,
+    "test_base_sequences": 40,
+    "test_frames_per_condition": 1240,
+    "test_mean_p90_risk_coverage_and_missing_denominators": "passed",
+    "unit_tests_at_source_freeze": "17 passed; reviewer independently executed"
+  },
+  "limitations": [
+    "This is exact rerun verification on the same host, dependencies, source and deterministic data, not independent dataset replication.",
+    "Provenance timestamps, elapsed times and output commands intentionally differ and were not compared byte-for-byte.",
+    "The final test partition is now visible; future score or renderer changes cannot treat it as untouched confirmatory data.",
+    "Risk differences must be interpreted with coverage; bootstrap intervals condition on the fixed calibration sample and synthetic renderer."
+  ],
+  "original_elapsed_seconds": 9.219876583,
+  "original_run": "results/0001-pilot",
+  "protocol_hashes_match": true,
+  "protocol_revision": "a5ab4e31699d6e55a81153aedd891c577bcb29d8",
+  "reproduction_elapsed_seconds": 10.133195833,
+  "reproduction_run": "scratch/independent-reproduction",
+  "reviewer": "Independent Codex subagent; AI-assisted review, not external peer review",
+  "source_hashes_match": true,
+  "source_revision": "bc9921fc14ad2f3df4e7f2f2dd81035c4c91a746",
+  "status": "passed",
+  "verified_at_utc": "2026-10-16T05:10:23.767729+00:00"
+}

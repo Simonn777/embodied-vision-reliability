@@ -15,6 +15,14 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | [Reading list](docs/LITERATURE.md) | Which primary papers inform the design, and how closely have they been read? |
 | [Next actions](NEXT_ACTIONS.md) | What experiment or verification comes next? |
 
+## First result · October 16, 2026
+
+A stable wrong track can still look reliable. In a deliberately constructed appearance-change case, both image-only and temporal scores continued accepting many wrong positions. Adding a motion residual did not resolve the identity switch. Under occlusion, it reduced accepted coverage without reducing the already-zero observed error among accepted predictions.
+
+The diagnostic uses 40 held-out base sequences in four conditions, with a fixed color-based estimator. This is a reproducible failure analysis, not a learned-model or robot benchmark. [Read the result and limitations](notes/2026-10-16.md) · [Raw measurements](results/0001-pilot/summary.json) · [Protocol](protocols/0001-synthetic-localization.md).
+
+![Synthetic diagnostic: risk–coverage curves and frozen operating points](results/0001-pilot/figure.png)
+
 ## Reproduce the first diagnostic
 
 On macOS or Linux with Python 3.9 or later:

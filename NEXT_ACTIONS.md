@@ -2,7 +2,7 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
-1. Finish and independently review experiment 0001. Freeze its protocol before the main run, check the measurement pipeline, execute once, reproduce it, and publish the complete diagnostics, including failures and null differences.
+1. **Completed:** implement, independently review, and execute experiment 0001 under frozen protocol/source, preserving the negative identity-switch result. Read [the day-one note](notes/2026-10-16.md) and the reproduction record before continuing; do not repeat the run merely to generate daily activity.
 2. Inspect the first failure cases and read the most relevant methods/evaluation sections of the closest papers. Distinguish a confidence problem from an estimator or synthetic-generator artifact. Do not optimize scores on experiment 0001's now-visible test trajectories.
 3. Audit one public point-tracking/video dataset and one suitable frozen estimator: source, exact version, image/video and annotation licenses, redistribution conditions, size, CPU/MPS compatibility, and whether annotations support localization error. Candidate selection is a research task, not permission to download an unrestricted corpus. Use a small legally usable subset; keep raw downloads out of Git.
 4. Write protocol 0002 for external-data validation. Lock train/development/calibration/final-test scene identities; use a new untouched evaluation partition and specify the primary endpoint, practical effect threshold, and uncertainty unit before results are inspected.

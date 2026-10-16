@@ -1,0 +1,3 @@
+# Preserve generated CSV bytes so the committed artifact hashes stay valid.
+# Python's csv writer uses CRLF; the carriage return is part of that format.
+results/**/*.csv -text whitespace=cr-at-eol
