@@ -94,6 +94,28 @@ def test_tampered_development_manifest_rejected(tmp_path):
         verify_development(tmp_path / "unused.npz", manifest)
 
 
+def test_data_digest_cannot_be_replaced_by_manifest_claim(tmp_path):
+    import json
+    from evr.bootstapir_dev import verify_development
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(json.dumps({"count": 50, "development_indices": [0],
+                                   "video_sha256": "forged"}))
+    arrays = tmp_path / "arrays.npz"
+    np.savez(arrays, video=np.zeros((2, 256, 256, 3), np.uint8),
+             points=np.zeros((1, 2, 2), np.float32), occluded=np.zeros((1, 2), bool))
+    with pytest.raises(ValueError, match="digest mismatch"):
+        verify_development(arrays, manifest)
+
+
+def test_actual_import_path_gate_rejects_shadow(monkeypatch, tmp_path):
+    from types import SimpleNamespace
+    import evr.bootstapir_dev as dev
+    monkeypatch.setattr(dev, "verify_upstream", lambda source: None)
+    monkeypatch.setattr(dev.importlib.util, "find_spec", lambda name: SimpleNamespace(origin=str(tmp_path / "shadow.py")))
+    with pytest.raises(ValueError, match="Unexpected model module path"):
+        dev.verify_module_paths(tmp_path)
+
+
 def test_stateful_adapter_arrival_and_zero_active(monkeypatch):
     """Exercise adapter state lifecycle without installing torch in normal CI."""
     import contextlib

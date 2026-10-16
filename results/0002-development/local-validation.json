@@ -1,0 +1,22 @@
+{
+  "local_tests": {
+    "passed": 129,
+    "seconds": 3.07,
+    "command": "python -m pytest -q"
+  },
+  "earlier_local_tests": {
+    "passed": 127,
+    "seconds": 3.32
+  },
+  "toy_regression_smoke": {
+    "rows": 1240,
+    "seconds": 2.84,
+    "command": "python scripts/run_experiment.py --smoke --output scratch/0002-regression-smoke --protocol protocols/0001-synthetic-localization.md"
+  },
+  "csv_recomputation": {
+    "all_checks_passed": true,
+    "command": "PYTHONPATH=src python scripts/check_bootstapir_measurements.py"
+  },
+  "inference_source_revision": "d45c1bed4f82dd4237373567df1920a9a9ca7189",
+  "merge_authorized_this_session": false
+}

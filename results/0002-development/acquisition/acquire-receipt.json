@@ -1,0 +1,42 @@
+{
+  "phase": "acquire",
+  "status": "failed",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "affinity": [
+    0,
+    1
+  ],
+  "source_revision": "e9ca032d9fdc48b6b3d0ed9d0ac7c04c314a76ac",
+  "config_sha256": "a7bc5c57c6335fad2f802b7ede32e6db19dee4c261897ff470e75e0ec95796f0",
+  "source_sha256": {
+    "src/evr/bootstapir_dev.py": "2219dd3e0fa500920ff995df0b73d4377b758db7eb57a22e1652bdbed4261caf",
+    "scripts/run_bootstapir_dev.py": "af7393709e892206a96365bb15a8b91529dbb9313fa736e65a34f0196ec583ff",
+    "protocols/0002-development-feasibility.md": "942d20faf8cbde11a1124f46f3c611e4e1fd1ab7d0977521c733d03a0f9656df"
+  },
+  "command": [
+    "python",
+    "scripts/run_bootstapir_dev.py",
+    "acquire",
+    "--cache",
+    "<cache>",
+    "--output",
+    "<output>"
+  ],
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "meminfo_kib": {
+    "MemTotal": 10206508,
+    "MemAvailable": 9479360
+  },
+  "cgroup_memory_max": "8589934592",
+  "address_space_limit_bytes": 6442450944,
+  "disk_free_bytes": 29684985856,
+  "error_type": "URLError",
+  "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+  "traceback": "Traceback (most recent call last):\n  File \"<python-runtime>/lib/python3.12/urllib/request.py\", line 1344, in do_open\n    h.request(req.get_method(), req.selector, req.data, headers,\n  File \"<python-runtime>/lib/python3.12/http/client.py\", line 1386, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n  File \"<python-runtime>/lib/python3.12/http/client.py\", line 1432, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n  File \"<python-runtime>/lib/python3.12/http/client.py\", line 1381, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n  File \"<python-runtime>/lib/python3.12/http/client.py\", line 1141, in _send_output\n    self.send(msg)\n  File \"<python-runtime>/lib/python3.12/http/client.py\", line 1085, in send\n    self.connect()\n  File \"<python-runtime>/lib/python3.12/http/client.py\", line 1520, in connect\n    super().connect()\n  File \"<python-runtime>/lib/python3.12/http/client.py\", line 1051, in connect\n    self.sock = self._create_connection(\n                ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<python-runtime>/lib/python3.12/socket.py\", line 841, in create_connection\n    for res in getaddrinfo(host, port, 0, SOCK_STREAM):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<python-runtime>/lib/python3.12/socket.py\", line 978, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsocket.gaierror: [Errno -3] Temporary failure in name resolution\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<repo>/scripts/run_bootstapir_dev.py\", line 56, in main\n    receipt[\"objects\"] = {n: download_object(args.cache, n) for n in [\"weights.pt\", \"rgb.zip\"]}\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<repo>/src/evr/bootstapir_dev.py\", line 49, in download_object\n    with urllib.request.urlopen(url, timeout=60) as response:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<python-runtime>/lib/python3.12/urllib/request.py\", line 215, in urlopen\n    return opener.open(url, data, timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<python-runtime>/lib/python3.12/urllib/request.py\", line 515, in open\n    response = self._open(req, data)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"<python-runtime>/lib/python3.12/urllib/request.py\", line 532, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<python-runtime>/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"<python-runtime>/lib/python3.12/urllib/request.py\", line 1392, in https_open\n    return self.do_open(http.client.HTTPSConnection, req,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<python-runtime>/lib/python3.12/urllib/request.py\", line 1347, in do_open\n    raise URLError(err)\nurllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>\n",
+  "elapsed_seconds": 0.3278462259986554,
+  "peak_rss_kib": 38016,
+  "cache_bytes_at_end": 1645305978,
+  "original_receipt_sha256": "c0e65a41022fb638c86d30b228991cac29b673fefabf1073b3542f81ecb6a711",
+  "traceback_path_normalization": "Executor paths replaced; original receipt hash retained."
+}

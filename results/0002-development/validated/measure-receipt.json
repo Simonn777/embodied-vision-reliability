@@ -1,0 +1,262 @@
+{
+  "phase": "measure",
+  "status": "completed",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "affinity": [
+    0,
+    1
+  ],
+  "source_revision": "d45c1bed4f82dd4237373567df1920a9a9ca7189",
+  "config_sha256": "a7bc5c57c6335fad2f802b7ede32e6db19dee4c261897ff470e75e0ec95796f0",
+  "source_sha256": {
+    "src/evr/bootstapir_dev.py": "5db0de9b6f13ac232559b38ddf237764c73158b2bc8368ba1cd8a9fef192b117",
+    "scripts/run_bootstapir_dev.py": "4e9c2d15b6a64c6d07e73c817d3b6a11bbf38d3c108e7a2ee8c594a0f4cecdb7",
+    "protocols/0002-development-feasibility.md": "942d20faf8cbde11a1124f46f3c611e4e1fd1ab7d0977521c733d03a0f9656df"
+  },
+  "command": [
+    "python",
+    "scripts/run_bootstapir_dev.py",
+    "measure",
+    "--cache",
+    "<cache>",
+    "--output",
+    "<output>",
+    "--manifest",
+    "<decode-manifest>",
+    "--acquisition",
+    "<acquire-receipt>"
+  ],
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "meminfo_kib": {
+    "MemTotal": 10206508,
+    "MemAvailable": 9505576
+  },
+  "cgroup_memory_max": "8589934592",
+  "address_space_limit_bytes": 6442450944,
+  "disk_free_bytes": 29243101184,
+  "actual_modules": {
+    "tapnet.torch.tapir_model": {
+      "relative_path": "tapnet/torch/tapir_model.py",
+      "sha256": "87c05fb17d48d0f4353a00b67c9d40d3a264e13e43d88e3f7b5829119845e3ba"
+    },
+    "tapnet.torch.nets": {
+      "relative_path": "tapnet/torch/nets.py",
+      "sha256": "4961a8e4882e8c9ac219c4714f6f2c811cc1ab665a439d4d2e79942002a9517c"
+    },
+    "tapnet.torch.utils": {
+      "relative_path": "tapnet/torch/utils.py",
+      "sha256": "a4267b3a6bd8ecf2dfe5effacab9f7a43664dc5d08966c98f6a0cc68f5ccedd3"
+    }
+  },
+  "acquisition_receipt_sha256": "b47a29115ba9654e13f5dab6013bdaeadbab94ad90cb8ee9e7de8151a200df3d",
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.0.2",
+    "dm-tree": "0.1.9",
+    "einshape": "1.0",
+    "absl-py": "2.3.1",
+    "attrs": "25.3.0",
+    "wrapt": "1.17.3"
+  },
+  "torch_threads": [
+    2,
+    2
+  ],
+  "checkpoint": {
+    "url": "https://storage.googleapis.com/dm-tapnet/bootstap/causal_bootstapir_checkpoint.pt",
+    "bytes": 218887028,
+    "generation": "1732921823937966",
+    "official_md5_base64": "1C+KZQL2VuSdEJGxGwEHSA==",
+    "sha256": "87c1e752cf5ce56e3e2f7da460aeb4d40fc826d04ef2939bade86a5c7495377f"
+  },
+  "parameter_count": 54699335,
+  "causal_convolution": true,
+  "development_identity": {
+    "npz_sha256": "162350eb76f8399df95e7ded23eefd82793ea03db05dd2fe5101ef1027dfddf0",
+    "manifest_sha256": "b9a5cf663f44134d9c964fe2bb9e0f0973f6f85e5b53a1c3fc3a0b65235adc9f",
+    "array_sha256": {
+      "video": "0ac2e86352c9d58deb2eb7713fa0757891922c434cd157750ef86343a71effc2",
+      "points": "a7e4b1b69d96857285d54e6460d959eff13e4b9dc34e27f7e41b8b64136871f7",
+      "occluded": "162ebe9043605cdca3caedae67d0ce1562cf795e979cd18cef1eadf2c27a2ec5"
+    },
+    "development_indices": [
+      0
+    ]
+  },
+  "point_indices": [
+    0,
+    1
+  ],
+  "queries": {
+    "first": {
+      "arrival": 0,
+      "xy": [
+        0.3515625794728597,
+        0.045572554071744285
+      ]
+    },
+    "second": {
+      "arrival": 0,
+      "xy": [
+        0.3476564884185791,
+        0.22526015837987265
+      ]
+    },
+    "late_second": {
+      "arrival": 4,
+      "xy": [
+        0.31241530179977417,
+        0.18872708082199097
+      ]
+    }
+  },
+  "runs": {
+    "cold_4": {
+      "shape": [
+        4,
+        1,
+        4
+      ],
+      "wall_seconds": 2.45533192700168,
+      "first_frame_seconds": 0.6364572530001169,
+      "subsequent_frame_median_seconds": 0.6033903540010215,
+      "finite_values": 16
+    },
+    "single_16": {
+      "shape": [
+        16,
+        1,
+        4
+      ],
+      "wall_seconds": 8.275842101000308,
+      "first_frame_seconds": 0.5172798429994145,
+      "subsequent_frame_median_seconds": 0.5182035569996515,
+      "finite_values": 64
+    },
+    "future_images_changed": {
+      "shape": [
+        16,
+        1,
+        4
+      ],
+      "wall_seconds": 8.607068965000508,
+      "first_frame_seconds": 0.5496729539991065,
+      "subsequent_frame_median_seconds": 0.5235449860010704,
+      "finite_values": 64
+    },
+    "prefix_8": {
+      "shape": [
+        8,
+        1,
+        4
+      ],
+      "wall_seconds": 4.156475181998758,
+      "first_frame_seconds": 0.5251208910012792,
+      "subsequent_frame_median_seconds": 0.4986492730004102,
+      "finite_values": 32
+    },
+    "batch_16": {
+      "shape": [
+        16,
+        2,
+        4
+      ],
+      "wall_seconds": 9.189740931000415,
+      "first_frame_seconds": 0.4983170119994611,
+      "subsequent_frame_median_seconds": 0.5776884059996519,
+      "finite_values": 128
+    },
+    "late_query_16": {
+      "shape": [
+        16,
+        2,
+        4
+      ],
+      "wall_seconds": 9.65125751800042,
+      "first_frame_seconds": 0.5940137629986566,
+      "subsequent_frame_median_seconds": 0.6133259660000476,
+      "finite_values": 112
+    },
+    "independent_late_12": {
+      "shape": [
+        12,
+        1,
+        4
+      ],
+      "wall_seconds": 8.164870976999737,
+      "first_frame_seconds": 0.6869672699995135,
+      "subsequent_frame_median_seconds": 0.6421173660000932,
+      "finite_values": 48
+    },
+    "repeat_single_16": {
+      "shape": [
+        16,
+        1,
+        4
+      ],
+      "wall_seconds": 10.409123036999517,
+      "first_frame_seconds": 0.6617578309997043,
+      "subsequent_frame_median_seconds": 0.6212524570000824,
+      "finite_values": 64
+    }
+  },
+  "checks": {
+    "future_image_prefix": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "atol": 0.0001,
+      "rtol": 0.0,
+      "finite_values": 32
+    },
+    "truncated_prefix": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "atol": 0.0001,
+      "rtol": 0.0,
+      "finite_values": 32
+    },
+    "single_vs_batch": {
+      "passed": true,
+      "max_abs_diff": 2.765655517578125e-05,
+      "atol": 0.0001,
+      "rtol": 0.0,
+      "finite_values": 64
+    },
+    "future_query_past": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "atol": 0.0001,
+      "rtol": 0.0,
+      "finite_values": 16
+    },
+    "existing_query_after_arrival": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "atol": 0.0001,
+      "rtol": 0.0,
+      "finite_values": 64
+    },
+    "late_query_vs_independent_crop": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "atol": 0.0001,
+      "rtol": 0.0,
+      "finite_values": 48
+    },
+    "repeat": {
+      "passed": true,
+      "max_abs_diff": 0.0,
+      "atol": 0.0001,
+      "rtol": 0.0,
+      "finite_values": 64
+    },
+    "prequery_mask": {
+      "passed": true
+    }
+  },
+  "all_checks_passed": true,
+  "elapsed_seconds": 63.503931486999136,
+  "peak_rss_kib": 746092,
+  "cache_bytes_at_end": 2100890825
+}
