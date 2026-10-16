@@ -51,6 +51,7 @@ def test_no_clipping_of_finite_outside_coordinates():
 def test_unreachable_calibration_uses_max_observed_and_matched_null():
     rows=fixture();c=calibrate(rows,'native')
     assert c['unreachable'] and c['accepted_calibration']==3
+    assert c['calibration_risk']==pytest.approx(1/3)
     order=sorted((r for r in rows if r['opportunity'] and r['available']),key=lambda r:(r['scores']['native'],r['tie']))
     assert c['threshold']==[order[-1]['scores']['native'],order[-1]['tie']]
     m=matched(rows,'native');assert m['target_accepts']==4 and m['risk'] is None and m['coverage'] is None
@@ -123,3 +124,24 @@ def test_complete_fixture_prediction_to_group_bootstrap_pipeline():
     assert result['all_pipeline_stages_executed']
     assert result['result']['matched']['native']['reachable']
     assert result['result']['bootstrap']['allocated_groups']==['eval','empty']
+
+
+def test_frozen_config_constants_match_executable_scores():
+    import json
+    c=json.loads(open('configs/0002-exploratory-v1.json').read())
+    assert c['failure_threshold_px_strict_gt']==4
+    assert c['matched_coverage_target']==c['calibration_coverage_target']==.8
+    assert c['bootstrap_seed']==20261018 and c['bootstrap_repeats']==2000
+    assert c['native_probability_floor']==1e-8
+    assert c['practical_risk_difference_target']==-.02
+    s=prediction_scores([0,1,2,3],[[0,0],[0,0],[8,0],[1000,0]],[-1]*4,[-1]*4)
+    delta=s['scores']['augmented']-s['scores']['native']
+    assert delta[2]==pytest.approx(8/c['motion_residual_scale_px']*c['motion_weight'])
+    assert delta[3]==pytest.approx(c['motion_residual_cap']*c['motion_weight'])
+
+
+def test_visibility_invalid_is_incorrect_even_when_occluded():
+    rows=fixture();rows[4]['visible']=False;rows[4]['opportunity']=False
+    # No finite occ head at row4; cannot be counted as correctly occluded.
+    result=evaluate(rows,rows,['a'],repeats=2)
+    assert result['visibility_accuracy']==0

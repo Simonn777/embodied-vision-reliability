@@ -93,7 +93,8 @@ def calibrate(rows,method):
     threshold=None if not order else [order[min(m,len(order))-1]['scores'][method],order[min(m,len(order))-1]['tie']]
     return {'method':method,'threshold':threshold,'opportunities':n,'target_accepts':m,
             'unreachable':n==0 or len(order)<m,'accepted_calibration':min(m,len(order)),
-            'calibration_coverage':min(m,len(order))/n if n else None}
+            'calibration_coverage':min(m,len(order))/n if n else None,
+            'calibration_risk':sum(bool(r['failure']) for r in order[:m])/min(m,len(order)) if order and m else None}
 
 
 def operational(rows,method,calibration):

@@ -48,6 +48,8 @@ def main():
             if len(groups)!=1:raise ValueError('group must be allocated calibration/evaluation')
             group=groups[0]
             if len(group['members'])>4:raise ValueError('group exceeds four-video resource gate; do not split it')
+            selected={i:dataset[i] for i in group['members']}
+            del dataset  # Release unrelated video arrays BEFORE importing/loading torch.
             rec['group_id']=group['group_id'];rec['partition']=group['partition'];rec['videos']={}
             import torch
             if torch.__version__!='2.10.0+cpu' or torch.version.cuda is not None:raise ValueError('patched CPU torch gate')
@@ -65,7 +67,7 @@ def main():
             model.load_state_dict(torch.load(a.cache/'weights.pt',map_location='cpu',weights_only=True),strict=True)
             model.eval().requires_grad_(False)
             for i in group['members']:
-                e=dataset[i];verify_video(e,manifest['identities'][i]);ids=query_ids(e)
+                e=selected[i];verify_video(e,manifest['identities'][i]);ids=query_ids(e)
                 frames=e['video'][:64]
                 if frames.shape!=(64,256,256,3):raise ValueError('fixed 64-frame gate')
                 qs=[{'arrival':0,'xy':e['points'][j,0].tolist()} for j in ids]
