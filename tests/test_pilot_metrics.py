@@ -128,7 +128,7 @@ def test_complete_fixture_prediction_to_group_bootstrap_pipeline():
 
 def test_frozen_config_constants_match_executable_scores():
     import json
-    c=json.loads(open('configs/0002-exploratory-v1.json').read())
+    c=json.loads(open('configs/0002-exploratory-v2.json').read())
     assert c['failure_threshold_px_strict_gt']==4
     assert c['matched_coverage_target']==c['calibration_coverage_target']==.8
     assert c['bootstrap_seed']==20261018 and c['bootstrap_repeats']==2000

@@ -48,7 +48,7 @@ The [frozen protocol](protocols/0001-synthetic-localization.md) specifies the ge
 
 ## Scope
 
-Real Online BootsTAPIR weights run on video0's64-frame, two-query development clip in39.337seconds, with a776.1MiB process peak and exact fresh-process replay. All50 video identities and exact-frame/prefix groups were audited: development1/calibration10/evaluation20/reserve19. The [result and reproduction entry](docs/0002-64frame-and-freeze.md) links raw outputs and the complete prospective exploratory protocol. Shared objects/camera, unknown scene dependencies and upstream checkpoint exposure limit claims. No held-out model inference or reliability comparison has run.
+Real Online BootsTAPIR weights run on video0's64-frame, two-query development clip in39.337seconds, with a776.1MiB process peak and exact fresh-process replay. All50 video identities and exact-frame/prefix groups were audited: development1/calibration10/evaluation20/reserve19. The [result and reproduction entry](docs/0002-64frame-and-freeze.md) links raw outputs and the complete prospective exploratory protocol (v2; the pre-merge provenance repair supersedes preserved v1 before evaluation). Shared objects/camera, unknown scene dependencies and upstream checkpoint exposure limit claims. No held-out model inference or reliability comparison has run.
 
 The first experiment is a synthetic 2D localization diagnostic. Its purpose is to validate the evaluation machinery and expose failure cases. It does not measure robot control, prove generalization to real video, or establish a new method. Public-video evaluation and stronger frozen estimators are the next stages.
 

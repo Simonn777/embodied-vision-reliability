@@ -63,8 +63,8 @@ language does not establish global novelty. See [source audit](0002-exposure-and
 
 ## Complete prospective implementation
 
-[Protocol0002-E v1](../protocols/0002-exploratory-frozen-v1.md) and
-[config](../configs/0002-exploratory-v1.json) bind native temporal versus extra
+[Protocol 0002-E v2](../protocols/0002-exploratory-frozen-v2.md) and
+[config](../configs/0002-exploratory-v2.json) bind native temporal versus extra
 causal motion residual on identical coordinates. This is an exploratory
 exact-duplicate-group-disjoint, video-held-out pilot. Strict single-image
 confidence remains unresolved. The native head's6px training target differs from
@@ -80,7 +80,7 @@ The future inference runner releases unrelated arrays before torch loading;
 this memory guard is a prospective implementation change, not a claim of having
 run a held-out group. No new model experiment is needed for pure metric fixes.
 
-The separate [freeze receipt](../protocols/0002-freeze-v1.json) is created only
+The separate [freeze receipt](../protocols/0002-freeze-v2.json) is created only
 after the input commit exists; it binds input commit/file/dependency/upstream/
 weight identities without referring to its own hash. Parent independent review
 and merge must precede any next calibration/evaluation inference. Revisions must
@@ -99,3 +99,36 @@ resource failure and publish real progress; do not drop difficult videos.
 Validation: 148 repository tests passed (3.28s), existing protocol0001 toy smoke
 completed1240scored frames (3.07s). These are software checks, not additional
 held-out research results. Exact-head GitHub Research checks must also pass.
+
+## Pre-merge provenance repair: v1 superseded by v2
+
+Independent review found a P1 in v1: caller-provided maps could omit mandatory
+inputs/dependencies, and current hashes were not checked against input-commit
+blobs. A dirty/untracked receipt could be substituted. V1 spec/config/receipt and
+all original measured artifacts are retained unchanged, but v1 is superseded
+before ANY calibration/evaluation. This is an implementation/provenance repair;
+no new model inference, metadata audit, acquisition or paid resource was used.
+
+V2 requires the exact canonical receipt, tracked and unchanged in index/HEAD,
+identical to origin/main's published regular blob. It checks all 29 mandatory
+input SHA256 values against both specified input-commit blobs and current
+tracked files (also HEAD), all six prerequisite bindings and 16 exact dependency
+versions/provenance. Canonical manifest/config/protocol paths, upstream, archive
+and model identities are bound. There is no publication bypass flag. Empty,
+missing or extra maps; old commit/new hashes; dirty, staged, untracked or locally
+committed-but-unpublished receipts; path substitutions/symlinks; changed package
+versions; duplicate JSON keys and self-containing input trees are rejected.
+Tests use tiny temporary Git repositories and mocked installed-version metadata;
+no torch import, checkpoint, video decode, model or network is needed.
+
+The CLI now defaults only to v2. V2 inputs are published in a first commit; its
+receipt is published separately referencing that input SHA, with no self hash.
+The actual receipt must remain non-executable until independent review/merge and
+an authorized fresh origin/main update. Local Git refs are conventional local
+publication evidence, not cryptographic remote attestation. No held-out data has
+been inferred or inspected for errors, so no outcome-informed method change is
+introduced. See [v2 protocol](../protocols/0002-exploratory-frozen-v2.md).
+
+Repair validation: 184 tests passed in 7.08s; existing 1,240-frame toy smoke
+completed in 3.10s. No model or metadata rerun. The v2 software receipt is
+results/0002-preflight/freeze-v2-validation.json; final-head CI is checked separately.

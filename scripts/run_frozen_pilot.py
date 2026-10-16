@@ -16,14 +16,14 @@ import time
 import traceback
 import numpy as np
 from evr.bootstapir_dev import sha256,download_object,verify_module_paths,stream
-from evr.pilot_frozen import verify_freeze,load_verified_dataset,verify_video,query_ids,prediction_rows
+from evr.pilot_frozen import CANONICAL_RECEIPT,verify_freeze,load_verified_dataset,verify_video,query_ids,prediction_rows
 from evr.pilot_metrics import evaluate
 
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('mode',choices=['infer','evaluate'])
     p.add_argument('--cache',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--freeze',type=Path,default=Path('protocols/0002-freeze-v1.json'))
+    p.add_argument('--freeze',type=Path,default=Path(CANONICAL_RECEIPT))
     p.add_argument('--group-id');p.add_argument('--predictions',type=Path)
     a=p.parse_args();a.output.mkdir(parents=True,exist_ok=False)
     resource.setrlimit(resource.RLIMIT_AS,(6*1024**3,6*1024**3));os.sched_setaffinity(0,sorted(os.sched_getaffinity(0))[:2])
@@ -88,7 +88,7 @@ def main():
             if a.predictions is None:raise ValueError('complete frozen predictions required')
             cal,cgroups=prediction_rows(a.predictions,manifest,'calibration',dataset,frozen['input_commit'])
             ev,egroups=prediction_rows(a.predictions,manifest,'evaluation',dataset,frozen['input_commit'])
-            config=json.loads((root/'configs/0002-exploratory-v1.json').read_text())
+            config=json.loads((root/frozen['config_path']).read_text())
             result=evaluate(cal,ev,egroups,repeats=config['bootstrap_repeats'],seed=config['bootstrap_seed'])
             result['calibration_groups']=cgroups;result['evaluation_groups']=egroups
             (a.output/'evaluation.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
