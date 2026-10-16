@@ -4,6 +4,7 @@ from __future__ import annotations
 import base64
 import hashlib
 import io
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -34,6 +35,46 @@ def verify_upstream(source):
     for path, expected in UPSTREAM_HASHES.items():
         if sha256(Path(source) / path) != expected:
             raise ValueError("Pinned upstream source digest mismatch: " + path)
+
+
+def verify_module_paths(source):
+    """Resolve each actual import target before executing model modules."""
+    source = Path(source).resolve()
+    verify_upstream(source)
+    paths = {}
+    for path in UPSTREAM_HASHES:
+        module = path.removesuffix(".py").replace("/", ".")
+        spec = importlib.util.find_spec(module)
+        actual = Path(spec.origin).resolve() if spec and spec.origin else None
+        if actual != source / path:
+            raise ValueError("Unexpected model module path: " + module)
+        paths[module] = {"relative_path": path, "sha256": sha256(actual)}
+    return paths
+
+
+def verify_development(npz_path, manifest_path):
+    manifest = json.loads(Path(manifest_path).read_text())
+    if manifest.get("count") != 50 or manifest.get("development_indices") != [0]:
+        raise ValueError("Manifest is not audited development index zero")
+    expected = {
+        "video": "0ac2e86352c9d58deb2eb7713fa0757891922c434cd157750ef86343a71effc2",
+        "points": "a7e4b1b69d96857285d54e6460d959eff13e4b9dc34e27f7e41b8b64136871f7",
+        "occluded": "162ebe9043605cdca3caedae67d0ce1562cf795e979cd18cef1eadf2c27a2ec5",
+    }
+    data = np.load(npz_path, allow_pickle=False)
+    arrays = {k: data[k] for k in expected}
+    validate_example(arrays)
+    for key, digest in expected.items():
+        if (manifest.get(key + "_sha256") != digest or
+                hashlib.sha256(arrays[key].tobytes()).hexdigest() != digest):
+            raise ValueError("Development data/manifest digest mismatch: " + key)
+    return arrays, {"npz_sha256": sha256(npz_path),
+                    "manifest_sha256": sha256(manifest_path),
+                    "array_sha256": expected, "development_indices": [0]}
+
+
+def validation_status(checks):
+    return "completed" if checks and all(v["passed"] for v in checks.values()) else "validation_failed"
 
 
 def sha256(path):
@@ -176,7 +217,9 @@ def decode_development(cache, output):
 
 def pixel_query(points_xy, arrival, height, width):
     xy = np.asarray(points_xy, dtype=np.float32)
-    if xy.shape != (2,) or not np.isfinite(xy).all() or arrival < 0:
+    if (xy.shape != (2,) or not np.isfinite(xy).all() or
+            np.any(xy < 0) or np.any(xy > 1) or
+            not isinstance(arrival, (int, np.integer)) or isinstance(arrival, (bool, np.bool_)) or arrival < 0):
         raise ValueError("Invalid query")
     # Local frame index is zero because descriptor extraction sees one frame.
     return np.array([0.0, xy[1] * height, xy[0] * width], np.float32)
@@ -185,9 +228,11 @@ def pixel_query(points_xy, arrival, height, width):
 def validate_run(frames, queries, chunk_size):
     if not isinstance(chunk_size, int) or isinstance(chunk_size, bool) or chunk_size <= 0:
         raise ValueError("query_chunk_size must be a positive integer")
-    if frames.ndim != 4 or frames.shape[1:] != (256, 256, 3):
+    if frames.dtype != np.uint8 or frames.ndim != 4 or frames.shape[1:] != (256, 256, 3):
         raise ValueError("Development frames must be 256px RGB")
     for q in queries:
+        if not isinstance(q["arrival"], (int, np.integer)) or isinstance(q["arrival"], (bool, np.bool_)):
+            raise ValueError("Arrival must be an integer, never bool")
         if not 0 <= q["arrival"] < len(frames):
             raise ValueError("Arrival outside clip")
         pixel_query(q["xy"], q["arrival"], 256, 256)
@@ -230,6 +275,9 @@ def stream(model, frames, queries, chunk_size=8):
                     raise ValueError("Nonfinite active output")
                 out[t, indices] = values
             timings.append(time.perf_counter() - started)
+    expected = np.arange(len(frames))[:, None] >= np.array([q["arrival"] for q in queries])[None, :]
+    if not np.array_equal(np.isfinite(out).all(axis=-1), expected):
+        raise ValueError("Output active mask mismatch")
     return out, timings
 
 

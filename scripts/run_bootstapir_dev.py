@@ -16,7 +16,8 @@ import traceback
 import urllib.request
 
 from evr.bootstapir_dev import (UPSTREAM, compare, decode_development,
-    download_object, sha256, stream, tree_bytes, verify_upstream)
+    download_object, sha256, stream, tree_bytes, verify_module_paths,
+    verify_development, validation_status)
 
 
 def main():
@@ -25,6 +26,8 @@ def main():
     parser.add_argument("--cache", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--minimal", action="store_true", help="Fresh-process four-frame repetition only")
+    parser.add_argument("--manifest", type=Path, help="Required verified decode manifest for measurement")
+    parser.add_argument("--acquisition", type=Path, help="Required acquisition receipt for measurement")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     args.cache.mkdir(parents=True, exist_ok=True)
@@ -73,12 +76,25 @@ def main():
         else:
             import numpy as np
             import torch
-            verify_upstream(args.cache / "source")
+            receipt["actual_modules"] = verify_module_paths(args.cache / "source")
+            if args.manifest is None or args.acquisition is None:
+                raise ValueError("Measurement requires decode and acquisition receipts")
+            acquired = json.loads(args.acquisition.read_text())
+            receipt["acquisition_receipt_sha256"] = sha256(args.acquisition)
+            for module, info in receipt["actual_modules"].items():
+                recorded = next((f for f in acquired.get("upstream_files", [])
+                                 if f["path"] == info["relative_path"]), None)
+                if recorded is None or recorded["sha256"] != info["sha256"]:
+                    raise ValueError("Actual import differs from acquired source")
             if torch.__version__ != "2.10.0+cpu":
                 raise ValueError("Only patched pinned torch 2.10.0+cpu is approved")
             if torch.version.cuda is not None:
                 raise ValueError("CUDA build forbidden")
             from tapnet.torch.tapir_model import TAPIR
+            for module, info in receipt["actual_modules"].items():
+                actual = Path(sys.modules[module].__file__).resolve()
+                if actual != (args.cache / "source" / info["relative_path"]).resolve() or sha256(actual) != info["sha256"]:
+                    raise ValueError("Imported module path/digest changed")
             torch.set_num_threads(2)
             torch.set_num_interop_threads(2)
             torch.manual_seed(20261016)
@@ -97,7 +113,9 @@ def main():
             assert not model.training and not any(p.requires_grad for p in model.parameters())
             receipt["parameter_count"] = sum(p.numel() for p in model.parameters())
             receipt["causal_convolution"] = model.use_casual_conv
-            data = np.load(args.cache / "development-000.npz", allow_pickle=False)
+            data, receipt["development_identity"] = verify_development(
+                args.cache / "development-000.npz", args.manifest)
+            receipt["command"].extend(["--manifest", "<decode-manifest>", "--acquisition", "<acquire-receipt>"])
             frames = data["video"][:16]
             points, occ = data["points"], data["occluded"]
             if frames.shape[1:] != (256, 256, 3) or len(frames) != 16:
@@ -141,19 +159,23 @@ def main():
             prefix = run("prefix_8", frames[:8], [q0])
             batch = run("batch_16", frames, [q0, q1])
             late_out = run("late_query_16", frames, [q0, late])
+            cropped_late = run("independent_late_12", frames[4:], [{"arrival": 0, "xy": late["xy"]}])
             repeated = run("repeat_single_16", frames, [q0])
             receipt["checks"] = {"future_image_prefix": compare(base[:8], future[:8]),
                 "truncated_prefix": compare(base[:8], prefix),
                 "single_vs_batch": compare(base[:, 0], batch[:, 0]),
                 "future_query_past": compare(base[:4, 0], late_out[:4, 0]),
                 "existing_query_after_arrival": compare(base[:, 0], late_out[:, 0]),
+                "late_query_vs_independent_crop": compare(late_out[4:, 1], cropped_late[:, 0]),
                 "repeat": compare(base, repeated),
                 "prequery_mask": {"passed": bool(np.isnan(late_out[:4, 1]).all())}}
             with (args.output / "latencies.csv").open("w") as f:
                 writer = csv.DictWriter(f, fieldnames=["run", "frame", "seconds"])
                 writer.writeheader(); writer.writerows(rows)
             receipt["all_checks_passed"] = all(v["passed"] for v in receipt["checks"].values())
-        receipt["status"] = "completed"
+            receipt["status"] = validation_status(receipt["checks"])
+        if receipt["status"] == "running":
+            receipt["status"] = "completed"
     except Exception as error:
         receipt.update(status="failed", error_type=type(error).__name__, error=str(error), traceback=traceback.format_exc())
         print(traceback.format_exc(), file=sys.stderr)
