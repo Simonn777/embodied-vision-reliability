@@ -238,7 +238,7 @@ def validate_run(frames, queries, chunk_size):
         pixel_query(q["xy"], q["arrival"], 256, 256)
 
 
-def stream(model, frames, queries, chunk_size=8, on_frame=None):
+def stream(model, frames, queries, chunk_size=8, on_frame=None, allow_nonfinite=False):
     """One state per arrival group; no future frame/query descriptors supplied."""
     import torch
     validate_run(frames, queries, chunk_size)
@@ -273,14 +273,14 @@ def stream(model, frames, queries, chunk_size=8, on_frame=None):
                 occ = result["occlusion"][-1][0, :, 0].cpu().numpy()
                 dist = result["expected_dist"][-1][0, :, 0].cpu().numpy()
                 values = np.column_stack((coords, occ, dist))
-                if not np.isfinite(values).all():
+                if not allow_nonfinite and not np.isfinite(values).all():
                     raise ValueError("Nonfinite active output")
                 out[t, indices] = values
             timings.append(time.perf_counter() - started)
             if on_frame is not None:
                 on_frame(t, out[t].copy(), timings[-1])
     expected = np.arange(len(frames))[:, None] >= np.array([q["arrival"] for q in queries])[None, :]
-    if not np.array_equal(np.isfinite(out).all(axis=-1), expected):
+    if (not allow_nonfinite and not np.array_equal(np.isfinite(out).all(axis=-1), expected)) or (allow_nonfinite and np.isfinite(out[~expected]).any()):
         raise ValueError("Output active mask mismatch")
     return out, timings
 
