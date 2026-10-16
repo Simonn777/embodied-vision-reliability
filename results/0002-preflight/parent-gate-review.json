@@ -1,0 +1,553 @@
+{
+  "review_scope": "Independent Git/content freeze-gate checks; no model execution or research outcomes",
+  "reviewed_head": "fbb6dd9208f6ea95e588f410c05c9ac5b58dcb1c",
+  "input_commit": "bbe7428e126a566a62d3c123d7158f120aa66e2b",
+  "gate_source_path": "src/evr/pilot_frozen.py",
+  "gate_source_sha256": "1b7b5d9f6b19d7d169b47df5ffce793e0a507961d68cfac5321bdb7bea84f10f",
+  "method": {
+    "execution": "Python standard library; unchanged gate function bodies extracted via AST; unrelated NumPy/data/model imports excluded",
+    "git_environment": "Isolated temporary Git repositories; actual git commands and file/blob comparisons",
+    "runtime_versions": "importlib.metadata.version was MOCKED to the frozen dependency map, except the explicit wrong-version negative case",
+    "limitation": "This does not verify the actual local CPU runtime or installed dependency versions; it does not exercise inference",
+    "preservation": "Checklist reconstructed from the already-executed harness and its fixed receipt maps, with aggregate stdout and assertions preserved. No tests were rerun to create this file. Per-case exception text was not retained except the original P1 case."
+  },
+  "summary": {
+    "checks": 73,
+    "positive_accepted": 2,
+    "negative_rejected": 71,
+    "assertions_passed": 73,
+    "elapsed_seconds_original_run": 14.735864083
+  },
+  "count_basis": {
+    "positive_chains": 2,
+    "original_P1": 1,
+    "empty_maps": 3,
+    "missing_input_keys": 29,
+    "missing_dependency_keys": 16,
+    "missing_prerequisite_keys": 6,
+    "receipt_tracking_publication_and_argument_cases": 6,
+    "replaced_bound_path_cases": 5,
+    "circular_input_or_dirty_input_or_dependency_mismatch_or_duplicate_key_cases": 5
+  },
+  "actual_receipt_checks": {
+    "mandatory_input_hashes_matching_input_and_receipt_head_blobs": 29,
+    "receipt_commit_changes_only_canonical_v2_receipt": true,
+    "v1_receipt_bytes_unchanged": true,
+    "v2_receipt_absent_from_input_tree": true,
+    "actual_unmerged_branch_at_time_of_check": "rejected; origin/main lacked the required canonical v2 receipt"
+  },
+  "cases": [
+    {
+      "id": 1,
+      "case": "complete published input-to-independent-receipt chain",
+      "kind": "positive",
+      "observed_result": "accepted",
+      "assertion_passed": true
+    },
+    {
+      "id": 2,
+      "case": "published alternative JSON serialization is valid",
+      "kind": "positive",
+      "observed_result": "accepted",
+      "assertion_passed": true
+    },
+    {
+      "id": 3,
+      "case": "original P1 old commit plus changed HEAD/current hash",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true,
+      "observed_reason": "input commit/current frozen hash mismatch: src/evr/pilot_metrics.py"
+    },
+    {
+      "id": 4,
+      "case": "input_sha256 empty",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 5,
+      "case": "input_sha256 missing configs/0002-exploratory-v2.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 6,
+      "case": "input_sha256 missing docs/0002-exposure-and-scope.md",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 7,
+      "case": "input_sha256 missing protocols/0002-exploratory-frozen-v2.md",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 8,
+      "case": "input_sha256 missing pyproject.toml",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 9,
+      "case": "input_sha256 missing requirements/0002-small-runtime.txt",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 10,
+      "case": "input_sha256 missing requirements/0002-torch-cpu.txt",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 11,
+      "case": "input_sha256 missing results/0002-development/transfer-ledger.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 12,
+      "case": "input_sha256 missing results/0002-preflight-recording/dev64/receipt.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 13,
+      "case": "input_sha256 missing results/0002-preflight-recording/independent-verification.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 14,
+      "case": "input_sha256 missing results/0002-preflight-recording/repeat64/receipt.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 15,
+      "case": "input_sha256 missing results/0002-preflight/dependencies.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 16,
+      "case": "input_sha256 missing results/0002-preflight/fixture-frozen-v1.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 17,
+      "case": "input_sha256 missing results/0002-preflight/freeze-v2-validation.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 18,
+      "case": "input_sha256 missing results/0002-preflight/identity/frame-hashes.csv",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 19,
+      "case": "input_sha256 missing results/0002-preflight/identity/manifest.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 20,
+      "case": "input_sha256 missing results/0002-preflight/local-validation.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 21,
+      "case": "input_sha256 missing scripts/pilot_fixture_check.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 22,
+      "case": "input_sha256 missing scripts/run_frozen_pilot.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 23,
+      "case": "input_sha256 missing scripts/run_pilot_preflight.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 24,
+      "case": "input_sha256 missing scripts/verify_pilot_preflight.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 25,
+      "case": "input_sha256 missing src/evr/__init__.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 26,
+      "case": "input_sha256 missing src/evr/bootstapir_dev.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 27,
+      "case": "input_sha256 missing src/evr/pilot_frozen.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 28,
+      "case": "input_sha256 missing src/evr/pilot_identity.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 29,
+      "case": "input_sha256 missing src/evr/pilot_metrics.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 30,
+      "case": "input_sha256 missing tests/test_bootstapir_dev.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 31,
+      "case": "input_sha256 missing tests/test_pilot_frozen.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 32,
+      "case": "input_sha256 missing tests/test_pilot_identity.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 33,
+      "case": "input_sha256 missing tests/test_pilot_metrics.py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 34,
+      "case": "dependency_versions empty",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 35,
+      "case": "dependency_versions missing torch",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 36,
+      "case": "dependency_versions missing numpy",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 37,
+      "case": "dependency_versions missing dm-tree",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 38,
+      "case": "dependency_versions missing einshape",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 39,
+      "case": "dependency_versions missing absl-py",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 40,
+      "case": "dependency_versions missing attrs",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 41,
+      "case": "dependency_versions missing wrapt",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 42,
+      "case": "dependency_versions missing sympy",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 43,
+      "case": "dependency_versions missing filelock",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 44,
+      "case": "dependency_versions missing networkx",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 45,
+      "case": "dependency_versions missing jinja2",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 46,
+      "case": "dependency_versions missing fsspec",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 47,
+      "case": "dependency_versions missing mpmath",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 48,
+      "case": "dependency_versions missing MarkupSafe",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 49,
+      "case": "dependency_versions missing typing-extensions",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 50,
+      "case": "dependency_versions missing setuptools",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 51,
+      "case": "prerequisite_receipt_sha256 empty",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 52,
+      "case": "prerequisite_receipt_sha256 missing results/0002-preflight/freeze-v2-validation.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 53,
+      "case": "prerequisite_receipt_sha256 missing results/0002-preflight-recording/dev64/receipt.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 54,
+      "case": "prerequisite_receipt_sha256 missing results/0002-preflight-recording/repeat64/receipt.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 55,
+      "case": "prerequisite_receipt_sha256 missing results/0002-preflight-recording/independent-verification.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 56,
+      "case": "prerequisite_receipt_sha256 missing results/0002-preflight/fixture-frozen-v1.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 57,
+      "case": "prerequisite_receipt_sha256 missing results/0002-preflight/local-validation.json",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 58,
+      "case": "receipt changed only in working tree",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 59,
+      "case": "receipt staged but uncommitted",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 60,
+      "case": "receipt committed but differs from published bytes",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 61,
+      "case": "receipt untracked in index",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 62,
+      "case": "published main has no receipt",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 63,
+      "case": "noncanonical receipt argument",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 64,
+      "case": "bound path replaced manifest_path",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 65,
+      "case": "bound path replaced config_path",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 66,
+      "case": "bound path replaced protocol_path",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 67,
+      "case": "bound path replaced receipt_path",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 68,
+      "case": "bound path replaced dependency_identity_receipt",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 69,
+      "case": "input tree already contains receipt",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 70,
+      "case": "frozen working file changed",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 71,
+      "case": "frozen input staged change",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 72,
+      "case": "runtime metadata mismatches mandatory map",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    },
+    {
+      "id": 73,
+      "case": "duplicate receipt JSON key",
+      "kind": "negative",
+      "observed_result": "rejected",
+      "assertion_passed": true
+    }
+  ]
+}

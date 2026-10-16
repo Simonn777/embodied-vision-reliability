@@ -1,0 +1,29 @@
+{
+  "tests": {
+    "command": "env OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 MPLBACKEND=Agg timeout 900 python -m pytest -q",
+    "exit_code": 0,
+    "passed": 148,
+    "seconds": 3.28
+  },
+  "toy_smoke": {
+    "command": "env OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 MPLBACKEND=Agg timeout 900 python scripts/run_experiment.py --smoke --output scratch/pilot-freeze-smoke --protocol protocols/0001-synthetic-localization.md",
+    "exit_code": 0,
+    "scored_frames": 1240,
+    "seconds": 3.07
+  },
+  "fixture": {
+    "command": "env OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 PYTHONPATH=src timeout 900 python scripts/pilot_fixture_check.py",
+    "exit_code": 0,
+    "artifact": "results/0002-preflight/fixture-frozen-v1.json"
+  },
+  "source_sha256": {
+    "src/evr/pilot_frozen.py": "4e5493bf8a8ac3e09eabca0ed94c3540ca933e3e6b437090378ada105fe5fa34",
+    "src/evr/pilot_metrics.py": "ae883f14310bfc8f9231880cd9fd2d72a364e61ab269365acbf5126f23ee1742",
+    "src/evr/pilot_identity.py": "7db155dc6252c199b982dee3033556a8eaee337ce0e5f22065c2e9a4832f7f02",
+    "scripts/run_frozen_pilot.py": "22064e9d9fe13147cdbc975a7d9dab0b3117bed8a193ee36f23d69dd64939ec7",
+    "scripts/pilot_fixture_check.py": "a08d5e8431c2d56f9c48bcbc8ce169413bd8ce75a9598060914498196aaaa6b6",
+    "scripts/verify_pilot_preflight.py": "3c95607d8bf1074154b487a45fa821b08668fad9c33270b5e4aa708b7e444786",
+    "scripts/run_pilot_preflight.py": "488214b97e04b843230102a1245055996f7768b51b1524bd04d2b1c9d4924585"
+  },
+  "heldout_inference": false
+}

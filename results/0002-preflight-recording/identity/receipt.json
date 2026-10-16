@@ -1,0 +1,39 @@
+{
+  "phase": "metadata",
+  "started_at_utc": "2026-10-16T20:23:07.766376+00:00",
+  "status": "completed",
+  "source_commit": "db5134341831ffa7a01166a1515193ef384c6ba6",
+  "file_sha256": {
+    "scripts/run_pilot_preflight.py": "bc50fed860687a39e4708814dcdcf3b23c7cb25681a1de5eb9aede3a37a8d31b",
+    "src/evr/bootstapir_dev.py": "8ff31585144192694fb71a84f707713fcefb87a473e90e2e7518e4d9eef061f1",
+    "src/evr/pilot_identity.py": "7db155dc6252c199b982dee3033556a8eaee337ce0e5f22065c2e9a4832f7f02",
+    "protocols/0002-preflight-64-and-identity.md": "d80409c64d7c6c2b95780810d3b8a22a6ca30d88cded136d04928907b7005801",
+    "configs/0002-preflight.json": "49f4579d97fe61200011b9b649e70e9836398e0ced31b630deb94cf67028b23a"
+  },
+  "affinity": [
+    0,
+    1
+  ],
+  "limit_as_bytes": 6442450944,
+  "hard_timeout_seconds": 900,
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "cgroup_memory_max": "8589934592",
+  "command": "env -i PATH=\"$PATH\" PYTHONPATH=scratch/boot-cache/runtime-fixed:scratch/boot-cache/runtime:scratch/boot-cache/source:src OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 timeout 900 python scripts/run_pilot_preflight.py metadata --cache scratch/boot-cache --output results/0002-preflight/identity",
+  "ended_at_utc": "2026-10-16T20:23:24.832753+00:00",
+  "elapsed_seconds": 17.06649825200293,
+  "peak_rss_kib": 2552236,
+  "archive": {
+    "url": "https://storage.googleapis.com/dm-tapnet/tapvid_rgb_stacking.zip",
+    "bytes": 187291581,
+    "generation": "1676313001737086",
+    "official_md5_base64": "RuxWCiOHqBmkhWpKxbLifQ==",
+    "sha256": "ba0cec640deb65ab510bc3920cdaf8b7a2e756fce9fb339199c557ade436b0cc"
+  },
+  "manifest_sha256": "b5415fd3eab77806ec71a974e2d875734f052ed3e44087a6e5b0a6d543cbbba3",
+  "counts": {
+    "development": 1,
+    "calibration": 10,
+    "evaluation": 20,
+    "reserve": 19
+  }
+}

@@ -11,6 +11,7 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | Artifact | What it answers |
 |---|---|
 | [Current state](CURRENT_STATE.md) | What has actually been completed? |
+| [64-frame result and exploratory freeze](docs/0002-64frame-and-freeze.md) | What ran on cloud CPU, how are videos grouped, and what is frozen for later execution? |
 | [Real-model CPU feasibility](docs/0002-cpu-feasibility.md) | Can the frozen Online BootsTAPIR model run within the cloud CPU budget? |
 | [Research charter](docs/RESEARCH_CHARTER.md) | What is the question, and what would count as progress? |
 | [Reading list](docs/LITERATURE.md) | Which primary papers inform the design, and how closely have they been read? |
@@ -47,7 +48,7 @@ The [frozen protocol](protocols/0001-synthetic-localization.md) specifies the ge
 
 ## Scope
 
-Real Online BootsTAPIR weights now run on a bounded cloud CPU development clip: one query over 16 frames took 8.276 seconds, with a 728.6 MiB process peak. Causal-prefix, query-arrival, batch and replay checks passed; raw outputs and failures are preserved in the [measurement report](docs/0002-cpu-feasibility.md). This establishes a small-input execution path. Tracking accuracy and the benefit of an extra motion residual remain untested; the [next experimental design](protocols/0002-exploratory-pilot-draft.md) is a draft awaiting partition and longer-clip checks.
+Real Online BootsTAPIR weights run on video0's64-frame, two-query development clip in39.337seconds, with a776.1MiB process peak and exact fresh-process replay. All50 video identities and exact-frame/prefix groups were audited: development1/calibration10/evaluation20/reserve19. The [result and reproduction entry](docs/0002-64frame-and-freeze.md) links raw outputs and the complete prospective exploratory protocol (v2; the pre-merge provenance repair supersedes preserved v1 before evaluation). Shared objects/camera, unknown scene dependencies and upstream checkpoint exposure limit claims. No held-out model inference or reliability comparison has run.
 
 The first experiment is a synthetic 2D localization diagnostic. Its purpose is to validate the evaluation machinery and expose failure cases. It does not measure robot control, prove generalization to real video, or establish a new method. Public-video evaluation and stronger frozen estimators are the next stages.
 

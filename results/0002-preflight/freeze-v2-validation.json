@@ -1,0 +1,31 @@
+{
+  "scope": "pre-merge software/provenance repair only; no model, dataset decode, acquisition or paid service",
+  "base_head": "53563e2f62cc689ae6f879185403b35bec57af76",
+  "tests": {
+    "command": "env OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 MPLBACKEND=Agg timeout 900 python -m pytest -q",
+    "passed": 184,
+    "seconds": 7.08,
+    "exit_code": 0
+  },
+  "smoke": {
+    "command": "env OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 MPLBACKEND=Agg timeout 900 python scripts/run_experiment.py --smoke --output scratch/freeze-v2-smoke-final --protocol protocols/0001-synthetic-localization.md",
+    "scored_frames": 1240,
+    "seconds": 3.1,
+    "exit_code": 0
+  },
+  "source_sha256": {
+    "src/evr/pilot_frozen.py": "1b7b5d9f6b19d7d169b47df5ffce793e0a507961d68cfac5321bdb7bea84f10f",
+    "scripts/run_frozen_pilot.py": "183df4d00a4a64151445445cec114eaf130232357a0f41f45e9a4e1bf0e3aab3",
+    "tests/test_pilot_frozen.py": "b340c50fde5f60edbac319f3c1dd3acee1ce3d231fe12763186028e19619586c",
+    "tests/test_pilot_metrics.py": "b865b592bbe2498be5aea45fac22031897a81b9ad0beab4e0baaa0565f41d863",
+    "configs/0002-exploratory-v2.json": "70e6edd499262978eb4a83311a1e3184ad604467d47d5369a2d3d7d351e6b319",
+    "protocols/0002-exploratory-frozen-v2.md": "8c966f9006c02f38f30da8354e218e673fc424476ce277c394835e9b1f5c77cb"
+  },
+  "mandatory_input_count": 29,
+  "mandatory_dependency_count": 16,
+  "prerequisite_count": 6,
+  "v1_preserved": true,
+  "v1_superseded_before_any_calibration_evaluation": true,
+  "test_publication_scope": "temporary local Git fixture origin/main refs and mocked package-version metadata; no remote/network access",
+  "actual_v2_run_gate": "receipt must first be committed and merged/published on origin/main; no gate bypass"
+}
