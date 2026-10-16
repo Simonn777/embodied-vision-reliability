@@ -23,6 +23,17 @@ OBJECTS = {
                 "1676313001737086", "RuxWCiOHqBmkhWpKxbLifQ=="),
 }
 MAX_BYTES = 10 * 1024**3
+UPSTREAM_HASHES = {
+    "tapnet/torch/tapir_model.py": "87c05fb17d48d0f4353a00b67c9d40d3a264e13e43d88e3f7b5829119845e3ba",
+    "tapnet/torch/nets.py": "4961a8e4882e8c9ac219c4714f6f2c811cc1ab665a439d4d2e79942002a9517c",
+    "tapnet/torch/utils.py": "a4267b3a6bd8ecf2dfe5effacab9f7a43664dc5d08966c98f6a0cc68f5ccedd3",
+}
+
+
+def verify_upstream(source):
+    for path, expected in UPSTREAM_HASHES.items():
+        if sha256(Path(source) / path) != expected:
+            raise ValueError("Pinned upstream source digest mismatch: " + path)
 
 
 def sha256(path):

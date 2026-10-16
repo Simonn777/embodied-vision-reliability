@@ -16,7 +16,7 @@ import traceback
 import urllib.request
 
 from evr.bootstapir_dev import (UPSTREAM, compare, decode_development,
-    download_object, sha256, stream, tree_bytes)
+    download_object, sha256, stream, tree_bytes, verify_upstream)
 
 
 def main():
@@ -24,6 +24,7 @@ def main():
     parser.add_argument("phase", choices=["acquire", "decode", "measure"])
     parser.add_argument("--cache", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--minimal", action="store_true", help="Fresh-process four-frame repetition only")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     args.cache.mkdir(parents=True, exist_ok=True)
@@ -72,11 +73,12 @@ def main():
         else:
             import numpy as np
             import torch
-            from tapnet.torch.tapir_model import TAPIR
+            verify_upstream(args.cache / "source")
             if torch.__version__ != "2.10.0+cpu":
                 raise ValueError("Only patched pinned torch 2.10.0+cpu is approved")
             if torch.version.cuda is not None:
                 raise ValueError("CUDA build forbidden")
+            from tapnet.torch.tapir_model import TAPIR
             torch.set_num_threads(2)
             torch.set_num_interop_threads(2)
             torch.manual_seed(20261016)
@@ -127,6 +129,11 @@ def main():
                 print(name, round(wall, 3), flush=True)
                 return values
             run("cold_4", frames[:4], [q0])
+            if args.minimal:
+                receipt["minimal_only"] = True
+                receipt["command"].append("--minimal")
+                receipt["status"] = "completed"
+                return 0
             base = run("single_16", frames, [q0])
             changed = frames.copy()
             changed[8:] = 255 - changed[8:]

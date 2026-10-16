@@ -52,3 +52,13 @@ def test_decoder_schema_rejects_wrong_visibility_shape():
         validate_example({"video": np.zeros((4, 256, 256, 3), np.uint8),
                           "points": np.zeros((2, 4, 2), np.float32),
                           "occluded": np.zeros((1, 4), bool)})
+
+
+def test_upstream_digest_gate(tmp_path):
+    from evr.bootstapir_dev import UPSTREAM_HASHES, verify_upstream
+    for path in UPSTREAM_HASHES:
+        p = tmp_path / path
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text("modified")
+    with pytest.raises(ValueError, match="digest mismatch"):
+        verify_upstream(tmp_path)
