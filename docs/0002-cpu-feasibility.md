@@ -134,6 +134,11 @@ The [original development plan](../protocols/0002-development-feasibility.md),
 revision, per-phase receipts, source/config/input hashes, every output scalar and
 latencies are preserved. Binary inputs/weights/upstream code are not in Git.
 
+The [parent-session review](../results/0002-development/parent-review.json)
+independently verifies all 20 artifact digests, source/config bindings, raw row
+completeness, comparison results and latency accounting from published files.
+This review does not add a model run or an independent-data result.
+
 The [future exploratory protocol draft](../protocols/0002-exploratory-pilot-draft.md)
 narrows the comparison to native temporal confidence versus extra motion residual
 on identical coordinates. It defines visible opportunities, missing/zero-accept

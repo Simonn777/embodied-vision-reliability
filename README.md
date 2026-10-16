@@ -11,6 +11,7 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | Artifact | What it answers |
 |---|---|
 | [Current state](CURRENT_STATE.md) | What has actually been completed? |
+| [Real-model CPU feasibility](docs/0002-cpu-feasibility.md) | Can the frozen Online BootsTAPIR model run within the cloud CPU budget? |
 | [Research charter](docs/RESEARCH_CHARTER.md) | What is the question, and what would count as progress? |
 | [Reading list](docs/LITERATURE.md) | Which primary papers inform the design, and how closely have they been read? |
 | [Next actions](NEXT_ACTIONS.md) | What experiment or verification comes next? |
@@ -45,6 +46,8 @@ The runner requires a committed, unchanged protocol, writes into a new output di
 The [frozen protocol](protocols/0001-synthetic-localization.md) specifies the generator, predictor, scores, partitions, and metrics. No model weights or dataset downloads are needed for this diagnostic.
 
 ## Scope
+
+Real Online BootsTAPIR weights now run on a bounded cloud CPU development clip: one query over 16 frames took 8.276 seconds, with a 728.6 MiB process peak. Causal-prefix, query-arrival, batch and replay checks passed; raw outputs and failures are preserved in the [measurement report](docs/0002-cpu-feasibility.md). This establishes a small-input execution path. Tracking accuracy and the benefit of an extra motion residual remain untested; the [next experimental design](protocols/0002-exploratory-pilot-draft.md) is a draft awaiting partition and longer-clip checks.
 
 The first experiment is a synthetic 2D localization diagnostic. Its purpose is to validate the evaluation machinery and expose failure cases. It does not measure robot control, prove generalization to real video, or establish a new method. Public-video evaluation and stronger frozen estimators are the next stages.
 

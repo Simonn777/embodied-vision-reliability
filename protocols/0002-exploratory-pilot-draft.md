@@ -98,7 +98,7 @@ fixed-coverage test ranking is **not a deployable threshold chosen without test
 access**. Report curves too; do not select a favorable coverage afterward.
 
 Operational secondary comparison: choose separate native/augmented thresholds
-targeting 80% clean calibration visible opportunities using a score/hash pair,
+targeting 80% calibration visible opportunities using a score/hash pair,
 then lock them for evaluation. Report realized calibration coverage, evaluation
 coverage AND conditional risk; unequal coverage cannot support a matched-coverage
 superiority claim. Hash ties are fixed by video identity/point/frame and method
