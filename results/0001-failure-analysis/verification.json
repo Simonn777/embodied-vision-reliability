@@ -1,0 +1,43 @@
+{
+  "actual_analysis_command": "../venv/bin/python scripts/analyze_0001_failures.py --output results/0001-failure-analysis",
+  "all_input_and_source_hashes_checked": true,
+  "date": "2026-10-16",
+  "deterministic_artifact_sha256": {
+    "analysis.json": "2e09ed210db493bbcea38746b6af3282a7ce3327accefad0b1a66abfa3e92b66",
+    "per_frame.csv": "69754842f085a7b3edc1f99e01c6493d1ece74e62a12d730f3c97e79d13c60f0",
+    "per_sequence_phase.csv": "a7d83a80ad37966011e6af15707188e9bac7ca927325494d1a5c6a25c91dbcca",
+    "phase_summary.csv": "8448b908848ec6134def2bd8031466a0fa1ee74d32e20d79753712ff8634d8bc",
+    "sequence_120_trace.csv": "4d51270f371bc0216f32d3ad30e1baf0f54553e61448f28a292388450d2a5243",
+    "tables.md": "4bcfee23fb0d34d1e515cbfbf420475aee3364b641616e4c95388039c44a1a68"
+  },
+  "deterministic_files_matched": 6,
+  "independent_review": "Separate AI worker counted saved CSV rows using Python stdlib without importing the estimator; checked appearance transition/stable phases, turn, occlusion recovery, thresholds, and original sequence-bootstrap intervals. Independent unit is the base sequence.",
+  "independent_review_counts": {
+    "bootstrap_interval_endpoints": 320,
+    "draws_digest_matched": true,
+    "per_frame_rows": 496,
+    "per_sequence_phase_rows": 2560,
+    "phase_rows": 64,
+    "sequence_120_rows": 124,
+    "undefined_interval_rules_matched": true
+  },
+  "independent_review_output_matches_public": true,
+  "new_models_or_data": false,
+  "original_experiment_rerun": false,
+  "public_analysis_elapsed_seconds": 0.514411875,
+  "replay_command": "../venv/bin/python scripts/analyze_0001_failures.py --output scratch/0001-failure-analysis-replay",
+  "replay_elapsed_seconds": 0.520047792,
+  "scope": "Post-hoc artifact verification, not independent-data validation or another estimator run.",
+  "status": "passed",
+  "tests": {
+    "command": "env OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 MPLBACKEND=Agg ../venv/bin/python -m pytest -q",
+    "elapsed_seconds": 5.47,
+    "passed": 107
+  },
+  "threshold_refit": false,
+  "volatile_provenance_compared_separately": [
+    "command",
+    "started_at_utc",
+    "elapsed_seconds"
+  ]
+}

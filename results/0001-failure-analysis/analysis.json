@@ -1,0 +1,1977 @@
+{
+  "analysis": "0001-post-hoc-failures",
+  "bootstrap": {
+    "draws_sha256": "f329b2d5bd4d2b441ca22bec148fc65ace947d51a52aba959a10961bd63e1c21",
+    "generator": "random.Random.choice",
+    "interval": "95% percentile, linear interpolation (type 7)",
+    "minimum_defined_fraction": 0.95,
+    "paired_across_methods_conditions_phases": true,
+    "repeats": 1000,
+    "scope": "Conditional on frozen calibration and this renderer; unadjusted descriptive intervals, not simultaneous inference.",
+    "seed": 20261018,
+    "sequence_count": 40,
+    "unit": "base sequence"
+  },
+  "claim": "Descriptive failure analysis of a synthetic diagnostic; no new method or efficacy claim.",
+  "conditions": {
+    "abrupt_motion": {
+      "after": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.82,
+              "low": 0.77,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.925,
+              "low": 0.7899166666666667,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8933333333333333,
+              "low": 0.8132916666666666,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.06004166666666668,
+            "low": -0.06833333333333325,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 600,
+        "equal_static_temporal_valid_count": 3,
+        "frame_first": 17,
+        "frame_last": 31,
+        "frames": 600,
+        "methods": {
+          "accept_all": {
+            "accepted": 600,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 478,
+            "accepted_failure_count": 0,
+            "coverage": 0.7966666666666666,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 517,
+            "accepted_failure_count": 0,
+            "coverage": 0.8616666666666667,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 512,
+            "accepted_failure_count": 0,
+            "coverage": 0.8533333333333334,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": -0.008333333333333304,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 3
+      },
+      "all": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8145161290322581,
+              "low": 0.7701612903225806,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.925,
+              "low": 0.7967540322580645,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8887096774193548,
+              "low": 0.8209677419354838,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.05405241935483873,
+            "low": -0.06131048387096784,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "full condition",
+        "detected": 1240,
+        "equal_static_temporal_valid_count": 50,
+        "frame_first": 1,
+        "frame_last": 31,
+        "frames": 1240,
+        "methods": {
+          "accept_all": {
+            "accepted": 1240,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 984,
+            "accepted_failure_count": 0,
+            "coverage": 0.7935483870967742,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 1074,
+            "accepted_failure_count": 0,
+            "coverage": 0.8661290322580645,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 1060,
+            "accepted_failure_count": 0,
+            "coverage": 0.8548387096774194,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": -0.011290322580645107,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 50
+      },
+      "before": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8233333333333334,
+              "low": 0.7516666666666667,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.93,
+              "low": 0.7966666666666666,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.95,
+              "low": 0.8733333333333333,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.11333333333333329,
+            "low": -0.011666666666666714,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 600,
+        "equal_static_temporal_valid_count": 47,
+        "frame_first": 1,
+        "frame_last": 15,
+        "frames": 600,
+        "methods": {
+          "accept_all": {
+            "accepted": 600,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 474,
+            "accepted_failure_count": 0,
+            "coverage": 0.79,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 522,
+            "accepted_failure_count": 0,
+            "coverage": 0.87,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 548,
+            "accepted_failure_count": 0,
+            "coverage": 0.9133333333333333,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.043333333333333335,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 47
+      },
+      "turn": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.925,
+              "low": 0.675,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.975,
+              "low": 0.75,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": -0.75,
+            "low": -0.975,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 0,
+            "high": null,
+            "low": null,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 1000
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 40,
+        "equal_static_temporal_valid_count": 0,
+        "frame_first": 16,
+        "frame_last": 16,
+        "frames": 40,
+        "methods": {
+          "accept_all": {
+            "accepted": 40,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 32,
+            "accepted_failure_count": 0,
+            "coverage": 0.8,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 35,
+            "accepted_failure_count": 0,
+            "coverage": 0.875,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": -0.875,
+        "temporal_minus_static_selected_failure_rate": null,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 0
+      }
+    },
+    "appearance": {
+      "all": {
+        "all_frame_failure_rate": 0.7741935483870968,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.7741935483870968,
+              "low": 0.7741935483870968,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8145161290322581,
+              "low": 0.7701612903225806,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.7803186647417402,
+              "low": 0.7622938273670123,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8935887096774193,
+              "low": 0.6854233870967742,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.782851817334576,
+              "low": 0.7213814473099155,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9234072580645161,
+              "low": 0.9032258064516129,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.7857142857142857,
+              "low": 0.7685421858448219,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.2282459677419355,
+            "low": 0.02014112903225805,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.057296102105685254,
+            "low": -0.0073295917314192445,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "full condition",
+        "detected": 1240,
+        "equal_static_temporal_valid_count": 923,
+        "frame_first": 1,
+        "frame_last": 31,
+        "frames": 1240,
+        "methods": {
+          "accept_all": {
+            "accepted": 1240,
+            "accepted_failure_count": 960,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.7741935483870968
+          },
+          "random": {
+            "accepted": 984,
+            "accepted_failure_count": 759,
+            "coverage": 0.7935483870967742,
+            "selected_failure_rate": 0.7713414634146342
+          },
+          "static": {
+            "accepted": 985,
+            "accepted_failure_count": 744,
+            "coverage": 0.7943548387096774,
+            "selected_failure_rate": 0.7553299492385787
+          },
+          "temporal": {
+            "accepted": 1134,
+            "accepted_failure_count": 880,
+            "coverage": 0.9145161290322581,
+            "selected_failure_rate": 0.7760141093474426
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.12016129032258072,
+        "temporal_minus_static_selected_failure_rate": 0.02068416010886398,
+        "valid_failure_count": 960,
+        "zero_innovation_valid_count": 923
+      },
+      "before": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8358035714285714,
+              "low": 0.7677678571428572,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9250892857142857,
+              "low": 0.785625,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9465178571428571,
+              "low": 0.8571428571428571,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.11785714285714277,
+            "low": -0.014285714285714346,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 280,
+        "equal_static_temporal_valid_count": 43,
+        "frame_first": 1,
+        "frame_last": 7,
+        "frames": 280,
+        "methods": {
+          "accept_all": {
+            "accepted": 280,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 225,
+            "accepted_failure_count": 0,
+            "coverage": 0.8035714285714286,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 241,
+            "accepted_failure_count": 0,
+            "coverage": 0.8607142857142858,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 254,
+            "accepted_failure_count": 0,
+            "coverage": 0.9071428571428571,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.046428571428571375,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 43
+      },
+      "stable_wrong_identity": {
+        "all_frame_failure_rate": 1.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8193465909090909,
+              "low": 0.7692897727272727,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9,
+              "low": 0.65,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.35,
+            "low": 0.09999999999999998,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "post-hoc memory stage",
+        "detected": 880,
+        "equal_static_temporal_valid_count": 880,
+        "frame_first": 10,
+        "frame_last": 31,
+        "frames": 880,
+        "methods": {
+          "accept_all": {
+            "accepted": 880,
+            "accepted_failure_count": 880,
+            "coverage": 1.0,
+            "selected_failure_rate": 1.0
+          },
+          "random": {
+            "accepted": 699,
+            "accepted_failure_count": 699,
+            "coverage": 0.7943181818181818,
+            "selected_failure_rate": 1.0
+          },
+          "static": {
+            "accepted": 682,
+            "accepted_failure_count": 682,
+            "coverage": 0.775,
+            "selected_failure_rate": 1.0
+          },
+          "temporal": {
+            "accepted": 880,
+            "accepted_failure_count": 880,
+            "coverage": 1.0,
+            "selected_failure_rate": 1.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.22499999999999998,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 880,
+        "zero_innovation_valid_count": 880
+      },
+      "switch_transient": {
+        "all_frame_failure_rate": 1.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.85,
+              "low": 0.6375,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9,
+              "low": 0.65,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": -0.65,
+            "low": -0.9,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 0,
+            "high": null,
+            "low": null,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 1000
+          }
+        },
+        "boundary_origin": "post-hoc memory stage",
+        "detected": 80,
+        "equal_static_temporal_valid_count": 0,
+        "frame_first": 8,
+        "frame_last": 9,
+        "frames": 80,
+        "methods": {
+          "accept_all": {
+            "accepted": 80,
+            "accepted_failure_count": 80,
+            "coverage": 1.0,
+            "selected_failure_rate": 1.0
+          },
+          "random": {
+            "accepted": 60,
+            "accepted_failure_count": 60,
+            "coverage": 0.75,
+            "selected_failure_rate": 1.0
+          },
+          "static": {
+            "accepted": 62,
+            "accepted_failure_count": 62,
+            "coverage": 0.775,
+            "selected_failure_rate": 1.0
+          },
+          "temporal": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": -0.775,
+        "temporal_minus_static_selected_failure_rate": null,
+        "valid_failure_count": 80,
+        "zero_innovation_valid_count": 0
+      }
+    },
+    "clean": {
+      "all": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8145161290322581,
+              "low": 0.7701612903225806,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9298387096774193,
+              "low": 0.7991935483870968,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.928266129032258,
+              "low": 0.841108870967742,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.07340725806451609,
+            "low": -0.031451612903225734,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "full condition",
+        "detected": 1240,
+        "equal_static_temporal_valid_count": 52,
+        "frame_first": 1,
+        "frame_last": 31,
+        "frames": 1240,
+        "methods": {
+          "accept_all": {
+            "accepted": 1240,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 984,
+            "accepted_failure_count": 0,
+            "coverage": 0.7935483870967742,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 1080,
+            "accepted_failure_count": 0,
+            "coverage": 0.8709677419354839,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 1099,
+            "accepted_failure_count": 0,
+            "coverage": 0.8862903225806451,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.015322580645161232,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 52
+      },
+      "nominal": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8145161290322581,
+              "low": 0.7701612903225806,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9298387096774193,
+              "low": 0.7991935483870968,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.928266129032258,
+              "low": 0.841108870967742,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.07340725806451609,
+            "low": -0.031451612903225734,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "protocol condition",
+        "detected": 1240,
+        "equal_static_temporal_valid_count": 52,
+        "frame_first": 1,
+        "frame_last": 31,
+        "frames": 1240,
+        "methods": {
+          "accept_all": {
+            "accepted": 1240,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 984,
+            "accepted_failure_count": 0,
+            "coverage": 0.7935483870967742,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 1080,
+            "accepted_failure_count": 0,
+            "coverage": 0.8709677419354839,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 1099,
+            "accepted_failure_count": 0,
+            "coverage": 0.8862903225806451,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.015322580645161232,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 52
+      }
+    },
+    "occlusion": {
+      "all": {
+        "all_frame_failure_rate": 0.4612903225806452,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8709677419354839,
+              "low": 0.8709677419354839,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.4222222222222222,
+              "low": 0.33240740740740743,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.7112903225806452,
+              "low": 0.6709475806451614,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.40850442171464896,
+              "low": 0.32142545318476634,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.4508064516129032,
+              "low": 0.3870766129032258,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.3887298387096774,
+              "low": 0.3499798387096774,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": -0.02338709677419354,
+            "low": -0.07338709677419353,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "full condition",
+        "detected": 1080,
+        "equal_static_temporal_valid_count": 57,
+        "frame_first": 1,
+        "frame_last": 31,
+        "frames": 1240,
+        "methods": {
+          "accept_all": {
+            "accepted": 1080,
+            "accepted_failure_count": 412,
+            "coverage": 0.8709677419354839,
+            "selected_failure_rate": 0.3814814814814815
+          },
+          "random": {
+            "accepted": 858,
+            "accepted_failure_count": 315,
+            "coverage": 0.6919354838709677,
+            "selected_failure_rate": 0.36713286713286714
+          },
+          "static": {
+            "accepted": 522,
+            "accepted_failure_count": 0,
+            "coverage": 0.42096774193548386,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 459,
+            "accepted_failure_count": 0,
+            "coverage": 0.37016129032258066,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 160,
+        "temporal_minus_static_coverage": -0.0508064516129032,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 412,
+        "zero_innovation_valid_count": 57
+      },
+      "before": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8358035714285714,
+              "low": 0.7677678571428572,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9250892857142857,
+              "low": 0.785625,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.9465178571428571,
+              "low": 0.8571428571428571,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.11785714285714277,
+            "low": -0.014285714285714346,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 280,
+        "equal_static_temporal_valid_count": 43,
+        "frame_first": 1,
+        "frame_last": 7,
+        "frames": 280,
+        "methods": {
+          "accept_all": {
+            "accepted": 280,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 225,
+            "accepted_failure_count": 0,
+            "coverage": 0.8035714285714286,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 241,
+            "accepted_failure_count": 0,
+            "coverage": 0.8607142857142858,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 254,
+            "accepted_failure_count": 0,
+            "coverage": 0.9071428571428571,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.046428571428571375,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 43
+      },
+      "full": {
+        "all_frame_failure_rate": 1.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 0,
+            "high": null,
+            "low": null,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 1000
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 0,
+        "equal_static_temporal_valid_count": 0,
+        "frame_first": 14,
+        "frame_last": 17,
+        "frames": 160,
+        "methods": {
+          "accept_all": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          },
+          "random": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          },
+          "static": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          },
+          "temporal": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          }
+        },
+        "missing": 160,
+        "temporal_minus_static_coverage": 0.0,
+        "temporal_minus_static_selected_failure_rate": null,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 0
+      },
+      "partial_first": {
+        "all_frame_failure_rate": 0.8625,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.9541666666666667,
+              "low": 0.7541666666666667,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8291666666666667,
+              "low": 0.7083333333333334,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.9431898433487417,
+              "low": 0.7142664092664093,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 0,
+            "high": null,
+            "low": null,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 1000
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 240,
+        "equal_static_temporal_valid_count": 5,
+        "frame_first": 8,
+        "frame_last": 13,
+        "frames": 240,
+        "methods": {
+          "accept_all": {
+            "accepted": 240,
+            "accepted_failure_count": 207,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.8625
+          },
+          "random": {
+            "accepted": 185,
+            "accepted_failure_count": 155,
+            "coverage": 0.7708333333333334,
+            "selected_failure_rate": 0.8378378378378378
+          },
+          "static": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          },
+          "temporal": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.0,
+        "temporal_minus_static_selected_failure_rate": null,
+        "valid_failure_count": 207,
+        "zero_innovation_valid_count": 5
+      },
+      "partial_second": {
+        "all_frame_failure_rate": 0.8541666666666666,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.9458333333333333,
+              "low": 0.7458333333333333,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.825,
+              "low": 0.7208333333333333,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.9592153810676812,
+              "low": 0.7487394113424264,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 0,
+              "high": null,
+              "low": null,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 1000
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 0,
+            "high": null,
+            "low": null,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 1000
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 240,
+        "equal_static_temporal_valid_count": 6,
+        "frame_first": 18,
+        "frame_last": 23,
+        "frames": 240,
+        "methods": {
+          "accept_all": {
+            "accepted": 240,
+            "accepted_failure_count": 205,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.8541666666666666
+          },
+          "random": {
+            "accepted": 186,
+            "accepted_failure_count": 160,
+            "coverage": 0.775,
+            "selected_failure_rate": 0.8602150537634409
+          },
+          "static": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          },
+          "temporal": {
+            "accepted": 0,
+            "accepted_failure_count": 0,
+            "coverage": 0.0,
+            "selected_failure_rate": null
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": 0.0,
+        "temporal_minus_static_selected_failure_rate": null,
+        "valid_failure_count": 205,
+        "zero_innovation_valid_count": 6
+      },
+      "recovery": {
+        "all_frame_failure_rate": 0.0,
+        "bootstrap": {
+          "accept_all": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 1.0,
+              "low": 1.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "random": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.8625,
+              "low": 0.775,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "static": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.940625,
+              "low": 0.806171875,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal": {
+            "coverage": {
+              "defined_resamples": 1000,
+              "high": 0.6875781249999999,
+              "low": 0.5875,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            },
+            "selected_failure_rate": {
+              "defined_resamples": 1000,
+              "high": 0.0,
+              "low": 0.0,
+              "required_defined_resamples": 950,
+              "undefined_resamples": 0
+            }
+          },
+          "temporal_minus_static_coverage": {
+            "defined_resamples": 1000,
+            "high": -0.18125000000000002,
+            "low": -0.2875,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          },
+          "temporal_minus_static_selected_failure_rate": {
+            "defined_resamples": 1000,
+            "high": 0.0,
+            "low": 0.0,
+            "required_defined_resamples": 950,
+            "undefined_resamples": 0
+          }
+        },
+        "boundary_origin": "protocol intervention boundary",
+        "detected": 320,
+        "equal_static_temporal_valid_count": 3,
+        "frame_first": 24,
+        "frame_last": 31,
+        "frames": 320,
+        "methods": {
+          "accept_all": {
+            "accepted": 320,
+            "accepted_failure_count": 0,
+            "coverage": 1.0,
+            "selected_failure_rate": 0.0
+          },
+          "random": {
+            "accepted": 262,
+            "accepted_failure_count": 0,
+            "coverage": 0.81875,
+            "selected_failure_rate": 0.0
+          },
+          "static": {
+            "accepted": 281,
+            "accepted_failure_count": 0,
+            "coverage": 0.878125,
+            "selected_failure_rate": 0.0
+          },
+          "temporal": {
+            "accepted": 205,
+            "accepted_failure_count": 0,
+            "coverage": 0.640625,
+            "selected_failure_rate": 0.0
+          }
+        },
+        "missing": 0,
+        "temporal_minus_static_coverage": -0.23750000000000004,
+        "temporal_minus_static_selected_failure_rate": 0.0,
+        "valid_failure_count": 0,
+        "zero_innovation_valid_count": 3
+      }
+    }
+  },
+  "failure_tolerance_image_diagonal": 0.025,
+  "frozen_thresholds": {
+    "random": {
+      "calibration_accepted": 496,
+      "calibration_total": 620,
+      "realized_calibration_coverage": 0.8,
+      "score": 0.0,
+      "target_reachable": true,
+      "tie_key": "cad4f4d11d07fe203156f9a33a756eed5c7a91fdbbe6cabdb4c4eec1a42da074"
+    },
+    "static": {
+      "calibration_accepted": 496,
+      "calibration_total": 620,
+      "realized_calibration_coverage": 0.8,
+      "score": 0.03456659227905431,
+      "target_reachable": true,
+      "tie_key": "957c2c345d10340800d93542189c0a1ee2dfe2269c90eb288ba7309aad2c7b2e"
+    },
+    "temporal": {
+      "calibration_accepted": 496,
+      "calibration_total": 620,
+      "realized_calibration_coverage": 0.8,
+      "score": 0.07305208098769775,
+      "target_reachable": true,
+      "tie_key": "22efd8f6fef2d11acc31d051f23e194a3c34a6de884dc5e29713f0bf7409e72c"
+    }
+  },
+  "mechanism_counts": "Exact numeric equality on valid saved rows; warm-up zeros are included. Missing rows are not zero innovations.",
+  "new_experiment": false,
+  "post_hoc": true,
+  "thresholds_refitted": false
+}
