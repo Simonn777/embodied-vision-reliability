@@ -1,13 +1,16 @@
 # Hosted daily research
 
 The owner requested research that continues when their Mac is shut down, with
-**no additional fees**. The current migration candidate is ChatGPT Pro cloud
-Scheduled within existing account entitlements. Its first trial encountered access
-failures. A later interactive Work session verified repository access, execution,
-and publication to main through [PR #1](CLOUD_CAPABILITY.md#final-publication-receipt).
-The recurring Scheduled task remains **paused; unattended execution and publication
-are still unverified**.
-Do not purchase extra usage credits or use separately billed APIs.
+**no additional fees**. One ChatGPT Work cloud schedule is now enabled within
+existing account entitlements: daily **09:00 America/New_York through October 15,
+2027**. The first regular clock-triggered run is due October 17, 2026.
+
+The saved automation passed a non-interactive **Run now** trial, including cloud
+shell tests, GitHub CI and publication through PR #2. The local heartbeat and both
+superseded cloud candidates are paused. See [the migration receipt](SCHEDULED_VERIFICATION.md)
+for evidence and limits; the successful immediate trial does not guarantee future
+clock-triggered execution, quotas or uninterrupted service. Do not purchase extra
+usage credits or use separately billed APIs.
 
 ## Current execution status
 
@@ -16,12 +19,10 @@ Do not purchase extra usage credits or use separately billed APIs.
 model run under the current authorization. Its initial preflights were infrastructure
 tests only, with no model call or GitHub publication.
 
-The existing local research schedule remains in place until the proposed Scheduled
-replacement has actually executed the work, passed checks, and published a verified
-commit. Creating a scheduled task or passing an infrastructure test is insufficient.
-Pause the local schedule only after that verification, and avoid concurrent research
-sessions. If the replacement requires an additional charge, stop the migration and
-retain the local schedule. Keep account balances and private billing details out of
+The local research schedule was paused only after the replacement executed work,
+passed checks and published a verified commit. Keep one active research schedule
+and avoid concurrent experiments. If existing entitlements are unavailable, record
+the blocker without silently enabling the local fallback or a paid service. Keep account balances and private billing details out of
 public documentation. Never copy ChatGPT session credentials into Actions.
 
 ## Subscription-based cloud trial
@@ -40,12 +41,12 @@ Connector for **only `Simonn777/embodied-vision-reliability`**. The installation
 its exactly-one-repository scope are now verified. Completing the missing installation
 alone did not establish shell networking, test execution, or repository
 publication. The later [interactive Work retry](#interactive-work-retry-evidence)
-verified those capabilities; a standalone Scheduled trial is still pending.
+verified those capabilities; the later [non-interactive Work trial](SCHEDULED_VERIFICATION.md)
+then verified the replacement's execution and publication.
 Do not expand connector access to other repositories.
 
-The proposed schedule is daily at 09:00 America/New_York through October 15, 2027.
-It is paused to avoid repeated blocked runs; the original local schedule remains
-the active fallback. The separately billed API workflow is also disabled at the
+Those failed trial schedules remain paused. The later Work-context schedule
+replaced them after validation, and the original local schedule is now paused. The separately billed API workflow is also disabled at the
 GitHub workflow level, in addition to `CLOUD_RESEARCH_ENABLED=false`.
 
 The trial exposed a separate resource-control issue: the experiment script always
@@ -133,7 +134,7 @@ Keep `CLOUD_RESEARCH_ENABLED=false` or disable the workflow.
 Cancel any already-running job separately: changing a variable does not interrupt
 a model step that has already started. Preserve failure logs. The API workflow must
 stay disabled under the current constraint; do not retry with another paid service.
-The existing local schedule is retained explicitly while the replacement is unverified.
+The local schedule is retained in a paused state after the verified migration.
 
 A push made by `GITHUB_TOKEN` does not trigger ordinary push CI. This workflow runs
 validation before publication and links that run in the commit. It does not deploy
@@ -164,4 +165,4 @@ The workflow now pins Ubuntu 24.04 instead of the moving `ubuntu-latest` alias.
 
 ## Interactive Work retry evidence
 
-The interactive Work cloud retry on October 16 successfully cloned and executed tests/smoke. Capability PR #1 then passed final [CI 38859145851](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38859145851) on head `835cbc9a` and merged into main as `d910736e`. See [the capability receipt](CLOUD_CAPABILITY.md) for source, commands, separate Work/GitHub timings, merge evidence, and the shallow-history provenance clarification. Interactive execution and publication are verified. Scheduled tool parity and scheduling migration remain unverified; the Scheduled task remains paused and the local schedule remains in place. The API workflow remains disabled.
+The interactive Work cloud retry on October 16 successfully cloned and executed tests/smoke. Capability PR #1 then passed final [CI 38859145851](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/38859145851) on head `835cbc9a` and merged into main as `d910736e`. See [the capability receipt](CLOUD_CAPABILITY.md) for source, commands, separate Work/GitHub timings, merge evidence, and the shallow-history provenance clarification. Interactive execution and publication were verified at this stage. The subsequent [scheduled verification](SCHEDULED_VERIFICATION.md) records the non-interactive Run now trial and migration; one Work schedule is now enabled and the local heartbeat is paused. The API workflow remains disabled.
