@@ -1,0 +1,64 @@
+{
+  "pytest_availability": {
+    "command": [
+      "python",
+      "-c",
+      "import importlib.util,json; print(json.dumps({\"pytest_available\": importlib.util.find_spec(\"pytest\") is not None, \"tests_executed\":0}))"
+    ],
+    "environment": {
+      "PYTHONPATH": "scratch/boot-cache/runtime-fixed:scratch/boot-cache/runtime:scratch/boot-cache/source:src",
+      "MPLBACKEND": "Agg",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2",
+      "MKL_NUM_THREADS": "2",
+      "VECLIB_MAXIMUM_THREADS": "2",
+      "NUMEXPR_NUM_THREADS": "2"
+    },
+    "path_policy": "inherited PATH only; no other inherited variables",
+    "started_at_utc": "2026-10-17T18:21:55.120791+00:00",
+    "ended_at_utc": "2026-10-17T18:21:55.145291+00:00",
+    "elapsed_seconds": 0.024508111993782222,
+    "exit_code": 0,
+    "raw_wait_status": 0,
+    "peak_rss_kib": 7936,
+    "log_sha256": {
+      "stdout": "f15c5d838f66b0ed2ece52f24cf7254ae490aa76b5c9b32b813db798188fec39",
+      "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "toy_smoke": {
+    "command": [
+      "timeout",
+      "900",
+      "python",
+      "scripts/run_experiment.py",
+      "--smoke",
+      "--output",
+      "scratch/g039-software-smoke",
+      "--protocol",
+      "protocols/0001-synthetic-localization.md"
+    ],
+    "environment": {
+      "PYTHONPATH": "scratch/boot-cache/runtime-fixed:scratch/boot-cache/runtime:scratch/boot-cache/source:src",
+      "MPLBACKEND": "Agg",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2",
+      "MKL_NUM_THREADS": "2",
+      "VECLIB_MAXIMUM_THREADS": "2",
+      "NUMEXPR_NUM_THREADS": "2"
+    },
+    "path_policy": "inherited PATH only; no other inherited variables",
+    "started_at_utc": "2026-10-17T18:21:55.145472+00:00",
+    "ended_at_utc": "2026-10-17T18:21:58.461949+00:00",
+    "elapsed_seconds": 3.3164953119994607,
+    "exit_code": 0,
+    "raw_wait_status": 0,
+    "peak_rss_kib": 96656,
+    "log_sha256": {
+      "stdout": "0f1ba385af9a228d04f0b18804394c96df0e5a249044780b6d2b3abe48a7bdbb",
+      "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "pytest_scope": "Availability probe only; if unavailable, no Work tests executed/pytest installed. Full tests run in exact-head public Research checks CI.",
+  "no_model_replay": true
+}
