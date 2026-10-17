@@ -55,7 +55,9 @@ Returned-span hashes cover prefix PLUS discarded gaps, not unread tails/full CRC
 plus 589,824 reserved bytes. The NEW run's numeric/header/discard/container bytes and
 reserves share the remaining **66,517,888 bytes** of the unchanged 64 MiB total.
 No reset. Small raw metadata-container bytes/envelope reads are conservatively
-charged too. Zip internal buffering is reserved, not claimed exactly measured.
+charged too. Before each ZipFile construction, additionally reserve the validated
+central-directory byte size plus 22 bytes for its implicit EOCD read; this is a
+conservative metadata reserve, not a claim of measured implicit reads. Zip internal buffering is reserved, not claimed exactly measured.
 Reject header >64 KiB, unsupported NPY versions/dtypes/shape arithmetic, truncation,
 unsafe/duplicate/NUL/path/link/encrypted ZIP members, unsupported compression,
 central directory >64 KiB or >64 members, ZIP64/comments/multiple disks, length
@@ -69,7 +71,9 @@ IDs, attempt frames 0,1,2, at most six checks; selected invalid validity, nonfin
 GT, invalid camera, depth or projection error stops with the failed row retained.
 No fallback points. Visibility at later times is recorded, not used to reselect.
 Record projection consistency separately from valid-visible GT support: support
-requires source validity==1 AND visibility==1 plus finite geometry/valid projection.
+requires source validity==1 AND visibility==1 plus finite geometry/valid projection
+AND error<=0.5 original px. Projection consistency and valid-visible support are
+separate counters; a failed projection tolerance never supplies valid GT support.
 An accurate projection at visibility 0/2 is not visible GT support. Invalid validity
 stops with support=false and projection consistency undefined if not computed.
 Counts refer only to attempted selected checks, not the whole-family support gate.
@@ -97,7 +101,9 @@ failure; the old 1e-8 helper remains historical and is not used as new execution
 authority. A synthetic float32-rounded 45-degree fixture must expose the difference;
 1e-4 scale/shear and reflections must fail. Overflow/nonfinite arithmetic fails.
 The unchanged strict error gate is **<=0.5 original raster pixel**, no resize/255
-scaling; save each error and max/RMS or null when none. Small checks do NOT establish
+scaling; save each error, including failures. In finally summarize ALL attempted
+finite errors (passed or failed) for max/RMS, null when none, and record planned/
+attempted/unattempted counts. Planned is unknown/null before selection, not zero. Small checks do NOT establish
 the whole-dataset 99.9% gate. Units/FPS stay unknown absent explicit pinned evidence;
 no m/s² or independent physical-motion result follows.
 
@@ -131,7 +137,16 @@ and group flock, exclusive persistent marker and brand-new output directory.
 No deletion/retry on failure. Two affinity slots/five numeric variables=2, 6 GiB
 AS, external timeout900 s, one real parent wait recording source/hash/command,
 UTC/wall/CPU/RSS/raw wait/exit/stdout/stderr; parent itself has no extra supervisor.
-Save every stopped/partial audit and exact access ledger. Freeze source/config/
+Save every stopped/partial audit and exact access ledger. Use same-directory
+exclusive temp write + flush/fsync + atomic os.replace, never truncate the unique
+receipt. Persist METADATA_ACCESS_STARTING before metadata, each member start/done,
+and NUMERIC_ACCESS_STARTING before any annotation payload; checkpoint each array
+start/done through the reader callback. While active/interrupted, audit_complete=false
+and counters are LOWER_BOUNDS_OR_UNKNOWN, never proof of zero GT access. On handled
+completion/failure, record exact observed attempted-work counts. Timeout/SIGTERM
+may prevent finally; the last durable incomplete receipt remains truthful. An
+artificial subprocess SIGTERM fixture must leave parseable atomic JSON after
+synthetic payload reads but before completion; no real data is used. Freeze source/config/
 protocol and old input/receipt bindings before reading any numeric data. Publish
 only small original derived records. All previous protected bytes remain untouched.
 

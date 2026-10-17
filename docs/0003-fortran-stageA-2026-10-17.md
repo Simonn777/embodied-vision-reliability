@@ -84,3 +84,24 @@ canonical v2 receipt binding the real input commit and all nine mandatory files,
 verify its published/index/HEAD/worktree/remote bindings, then consider the one
 cached audit. Do not invoke the runner or create a receipt in stage A. The present
 candidate is not a final cohort/pipeline or real-data execution authorization.
+
+## Final pre-freeze review fixes
+
+Projection consistency and valid-visible support now both require the unchanged
+0.5-pixel bound; visibility/validity are separately explicit, and invalid validity
+stops without replacement. A finally summary retains every attempted finite error,
+including the failed value, with max/RMS/null and planned/attempted/unattempted
+counts. The envelope additionally reserves the validated central-directory bytes
+plus 22 implicit EOCD bytes, explicitly a conservative reserve, not measured reads.
+
+Receipts now use same-directory exclusive temp + flush/fsync + atomic replace.
+Metadata/member starts and numeric/array starts and completions are durable. An
+interrupted record is incomplete with lower-bound/unknown counters, never proof of
+zero GT. One added artificial subprocess fixture reads synthetic payload bytes then
+is terminated by SIGTERM; the atomic JSON remains parseable and truthfully pending.
+No real cache is read by that fixture. Latest source-bound parent/log records are
+final-review; all earlier candidates, successful tests and publication checks remain
+historical. The canonical v2 freeze receipt remains absent.
+
+Latest final-review: 76 stdlib tests (20 new) passed, outer wall 0.797853 s,
+peak RSS 31,064 KiB, exit/raw 0/0; synthetic SIGTERM child observed return -15.

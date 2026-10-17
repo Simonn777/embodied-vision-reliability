@@ -146,7 +146,7 @@ def inspect_zip(z, budget):
     return headers, members
 
 
-def load_geometry(z, budget, expected_TN=None, progress=None):
+def load_geometry(z, budget, expected_TN=None, progress=None, checkpoint=None):
     hs, members = inspect_zip(z,budget)
     required = ['trajs_2d','trajs_3d','visibs','valids','intrinsics','extrinsics']
     if set(hs) != set(required):
@@ -165,6 +165,8 @@ def load_geometry(z, budget, expected_TN=None, progress=None):
         raise ValueError('byte flags only')
     out = {}; ledger = progress if progress is not None else {}
     for key in required:
+        ledger[key]={'status':'HEADER_ACCESS_STARTING','counts_complete':False}
+        if checkpoint: checkpoint()
         budget.open_stream()
         with z.open(members[key+'.npy']) as stream:
             current = header(stream,budget)
@@ -172,12 +174,17 @@ def load_geometry(z, budget, expected_TN=None, progress=None):
             n = 3 if key == 'intrinsics' else 4
             constant = key in ['intrinsics','extrinsics'] and current['shape'] in [[n,n],[1,n,n]]
             before = budget.returned_bytes
-            ledger[key] = {'status':'attempting','numeric_bytes_returned':0}
+            ledger[key] = {'status':'NUMERIC_ACCESS_STARTING','numeric_bytes_returned':0,
+                           'counts_complete':False,'interruption_semantics':'lower bound or unknown, never zero-access proof'}
+            if checkpoint: checkpoint()
             try:
                 out[key],detail = read_prefix(stream,current,budget,constant)
                 ledger[key].update(detail,status='completed')
             finally:
                 ledger[key]['numeric_bytes_returned'] = budget.returned_bytes-before
+                ledger[key]['counts_complete']=True
+                if ledger[key]['status']=='NUMERIC_ACCESS_STARTING':ledger[key]['status']='FAILED'
+                if checkpoint:checkpoint()
     return hs,out,ledger
 
 
@@ -231,31 +238,45 @@ def check_geometry(hs, data, result):
     def matrix(key,t,n):
         a = data[key]
         return [[a.at(i,j) if len(a.shape)==2 else a.at(0 if a.shape[0]==1 else t,i,j) for j in range(n)] for i in range(n)]
-    for t in range(3):
-        for p in ids:
-            record = {'frame':t,'point_index':p,'status':'attempted',
-                      'projection_consistent':None,'valid_visible_GT_support':False}; result['point_checks'].append(record)
-            try:
-                flag = data['valids'].at(t,p); visibility = data['visibs'].at(t,p)
-                record.update(validity=flag,visibility=visibility)
-                if flag != 1 or visibility not in (0,1,2): raise ValueError('invalid selected GT/visibility flag')
-                point = [data['trajs_3d'].at(t,p,j) for j in range(3)]
-                truth = [data['trajs_2d'].at(t,p,j) for j in range(2)]; _finite(truth)
-                # Conservatively use the less precise of K and RT storage.
-                dtype = 'f4' if any(hs[k]['dtype'].endswith('f4') for k in ['intrinsics','extrinsics']) else 'f8'
-                pixel,gate = project_v2(point,matrix('intrinsics',t,3),matrix('extrinsics',t,4),dtype)
-                error = math.hypot(*(a-b for a,b in zip(pixel,truth))); _finite([error])
-                record.update(error_original_px=error,rotation=gate,projection_consistent=error<=.5,
-                              valid_visible_GT_support=flag==1 and visibility==1)
-                if error > .5: raise ValueError('fixed 0.5 original-pixel gate')
-                record['status'] = 'passed'
-            except (ValueError,OverflowError) as exc:
-                record.update(status='failed',reason=str(exc)); raise
-    result['status'] = 'completed_small_development_check'
-    errors = [r['error_original_px'] for r in result['point_checks']]
-    result.update(max_error_original_px=max(errors) if errors else None,
+    result['planned_point_checks']=len(ids)*3
+    try:
+        for t in range(3):
+            for p in ids:
+                record = {'frame':t,'point_index':p,'status':'attempted',
+                          'projection_consistent':None,'valid_visible_GT_support':False}; result['point_checks'].append(record)
+                try:
+                    flag = data['valids'].at(t,p); visibility = data['visibs'].at(t,p)
+                    record.update(validity=flag,visibility=visibility)
+                    if flag != 1 or visibility not in (0,1,2): raise ValueError('invalid selected GT/visibility flag')
+                    point = [data['trajs_3d'].at(t,p,j) for j in range(3)]
+                    truth = [data['trajs_2d'].at(t,p,j) for j in range(2)]; _finite(truth)
+                    # Conservatively use the less precise of K and RT storage.
+                    dtype = 'f4' if any(hs[k]['dtype'].endswith('f4') for k in ['intrinsics','extrinsics']) else 'f8'
+                    pixel,gate = project_v2(point,matrix('intrinsics',t,3),matrix('extrinsics',t,4),dtype)
+                    error = math.hypot(*(a-b for a,b in zip(pixel,truth))); _finite([error])
+                    record.update(error_original_px=error,rotation=gate,projection_consistent=error<=.5,
+                                  valid_visible_GT_support=flag==1 and visibility==1 and error<=.5)
+                    if error > .5: raise ValueError('fixed 0.5 original-pixel gate')
+                    record['status'] = 'passed'
+                except (ValueError,OverflowError) as exc:
+                    record.update(status='failed',reason=str(exc)); raise
+        result['status'] = 'completed_small_development_check'
+        return result
+    finally:
+        summarize_checks(result)
+
+
+def summarize_checks(result):
+    checks=result.get('point_checks',[])
+    errors=[r['error_original_px'] for r in checks if type(r.get('error_original_px')) in (int,float) and math.isfinite(r['error_original_px'])]
+    planned=result.get('planned_point_checks')
+    result.update(attempted_point_checks=len(checks),
+                  unattempted_point_checks=planned-len(checks) if planned is not None else None,
+                  projection_consistent_count=sum(r.get('projection_consistent') is True for r in checks),
+                  valid_visible_GT_support_count=sum(r.get('valid_visible_GT_support') is True for r in checks),
+                  finite_error_count=len(errors),
+                  max_error_original_px=max(errors) if errors else None,
                   rms_error_original_px=math.hypot(*errors)/math.sqrt(len(errors)) if errors else None)
-    return result
 
 
 def audit_budget():
@@ -334,7 +355,27 @@ def zip_envelope(path_or_stream, budget, max_members=64):
         sig,disk,cd_disk,n_disk,n,size_cd,off,comment=struct.unpack('<4s4H2IH',raw)
         if sig!=b'PK\x05\x06' or disk or cd_disk or n_disk!=n or not 0<n<=max_members or size_cd>65536 or off+size_cd!=size-22 or comment:
             raise ValueError('bounded non-ZIP64 single-disk uncommented envelope')
-        return {'members':n,'central_directory_bytes':size_cd}
+        reserved=size_cd+22
+        if budget.charged_bytes+reserved>budget.limit: raise ValueError('central-directory reserve cap')
+        budget.stream_reserve_bytes+=reserved
+        budget.central_directory_reserved_bytes=getattr(budget,'central_directory_reserved_bytes',0)+reserved
+        return {'members':n,'central_directory_bytes':size_cd,'implicit_directory_and_EOCD_reserve_bytes':reserved,'accounting':'known metadata bytes reserved, not measured implicit reads'}
     finally:
         if own:f.close()
         else:f.seek(0)
+
+
+def atomic_json(path, data):
+    """One same-directory atomic receipt replacement; never truncate prior JSON."""
+    import json
+    import os
+    from pathlib import Path
+    import tempfile
+    p=Path(path)
+    fd,name=tempfile.mkstemp(prefix='.'+p.name+'-',suffix='.tmp',dir=p.parent)
+    try:
+        with os.fdopen(fd,'w') as f:
+            json.dump(data,f,indent=2,allow_nan=False);f.write('\n');f.flush();os.fsync(f.fileno())
+        os.replace(name,p)
+    finally:
+        if os.path.exists(name):os.unlink(name)

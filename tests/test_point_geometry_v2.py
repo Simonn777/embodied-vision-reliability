@@ -119,6 +119,12 @@ class StreamingTests(unittest.TestCase):
             if '\x00' in name:continue  # ZipFile itself truncates NUL names; direct safe_member tested elsewhere.
             with zipfile.ZipFile(packed({name:npy((4,2,2))})) as z:
                 with self.assertRaises(ValueError):inspect_zip(z,ReadBudget())
+        f=packed({'a.npy':npy((4,2,2))});b=ReadBudget();r=zip_envelope(f,b)
+        self.assertEqual(b.returned_bytes,22)
+        self.assertEqual(b.stream_reserve_bytes,r['central_directory_bytes']+22)
+        self.assertEqual(b.charged_bytes,44+r['central_directory_bytes'])
+        f.seek(0)
+        with self.assertRaises(ValueError):zip_envelope(f,ReadBudget(b.charged_bytes-1))
         f=packed({'a.npy':npy((4,2,2))+b'extra'})
         with zipfile.ZipFile(f)as z:
             with self.assertRaises(ValueError):inspect_zip(z,ReadBudget())
@@ -177,6 +183,21 @@ class GeometryTests(unittest.TestCase):
         with self.assertRaises(ValueError):check_geometry(hs,data,result)
         self.assertEqual(result['selected_original_point_indices'],[0,1]);self.assertEqual(len(result['point_checks']),1)
         self.assertEqual(result['point_checks'][0]['status'],'failed')
+        self.assertFalse(result['point_checks'][0]['valid_visible_GT_support'])
+        self.assertGreater(result['max_error_original_px'],.5)
+        self.assertEqual(result['planned_point_checks'],6)
+        self.assertEqual(result['attempted_point_checks'],1)
+        self.assertEqual(result['unattempted_point_checks'],5)
+        self.assertEqual(result['rms_error_original_px'],result['max_error_original_px'])
+        with zipfile.ZipFile(packed(fixture()))as z:hs,data,_=load_geometry(z,ReadBudget())
+        data['valids'].values[0]=0;result={}
+        with self.assertRaises(ValueError):check_geometry(hs,data,result)
+        self.assertEqual(result['selected_original_point_indices'],[0,1])
+        self.assertEqual(result['attempted_point_checks'],1)
+        self.assertEqual(result['unattempted_point_checks'],5)
+        self.assertIsNone(result['max_error_original_px'])
+        self.assertIsNone(result['point_checks'][0]['projection_consistent'])
+        self.assertFalse(result['point_checks'][0]['valid_visible_GT_support'])
 
 
 class MetadataTests(unittest.TestCase):
@@ -199,6 +220,60 @@ class MetadataTests(unittest.TestCase):
         self.assertEqual(r[0]['header']['object_payload'],'FORBIDDEN_NOT_DECODED')
         self.assertFalse(r[0]['numeric_payload_interpreted'])
         self.assertFalse(r[0]['object_payload_decoded'])
+
+class AtomicCheckpointTests(unittest.TestCase):
+    def test_sigterm_during_synthetic_numeric_read_preserves_intent(self):
+        import json
+        import os
+        from pathlib import Path
+        import select
+        import signal
+        import subprocess
+        import sys
+        import tempfile
+        code = r"""
+import json,signal,sys,zipfile
+from pathlib import Path
+from evr.bounded_point_audit import ReadBudget
+from evr.point_geometry_v2 import load_geometry,atomic_json
+from test_point_geometry_v2 import packed,fixture
+ledger={};state={'audit_complete':False,'numeric_GT_access':'NUMERIC_ACCESS_STARTING','interrupted_counter_semantics':'INCOMPLETE_LOWER_BOUNDS_OR_UNKNOWN','numeric_access':ledger}
+class InterruptedBudget(ReadBudget):
+    block=False
+    def read(self,f,n):
+        value=super().read(f,n)
+        if self.block:
+            print('NUMERIC_READ_RETURNED_IN_MEMORY',flush=True)
+            signal.pause()  # parent kills after real synthetic bytes were returned
+        return value
+b=InterruptedBudget()
+def checkpoint():
+    atomic_json(Path(sys.argv[1]),state)
+    b.block=any(v['status']=='NUMERIC_ACCESS_STARTING' for v in ledger.values())
+atomic_json(Path(sys.argv[1]),state)
+with zipfile.ZipFile(packed(fixture()))as z:load_geometry(z,b,[4,2],ledger,checkpoint)
+"""
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/'audit.json';env={**os.environ,'PYTHONPATH':'src:tests'}
+            p=subprocess.Popen([sys.executable,'-c',code,str(path)],env=env,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+            try:
+                ready,_,_=select.select([p.stdout],[],[],10)
+                self.assertTrue(ready,'synthetic child must reach payload read')
+                self.assertEqual(p.stdout.readline().strip(),'NUMERIC_READ_RETURNED_IN_MEMORY')
+                p.terminate();p.wait(timeout=10)
+                self.assertEqual(p.returncode,-signal.SIGTERM)
+                saved=json.loads(path.read_text())
+                self.assertEqual(saved['numeric_GT_access'],'NUMERIC_ACCESS_STARTING')
+                self.assertFalse(saved['audit_complete'])
+                self.assertEqual(saved['interrupted_counter_semantics'],'INCOMPLETE_LOWER_BOUNDS_OR_UNKNOWN')
+                row=saved['numeric_access']['trajs_2d']
+                self.assertFalse(row['counts_complete'])
+                self.assertEqual(row['status'],'NUMERIC_ACCESS_STARTING')
+                print(json.dumps({'synthetic_termination_fixture':True,'observed_child_returncode':p.returncode,'saved_status':saved['numeric_GT_access'],'audit_complete':saved['audit_complete'],'counter_semantics':saved['interrupted_counter_semantics']},sort_keys=True))
+            finally:
+                if p.poll() is None:p.kill();p.wait(timeout=10)
+                p.stdout.close();p.stderr.close()
+
 
 class ReceiptBoundaryTests(unittest.TestCase):
     def test_missing_receipt_blocks_before_cache(self):

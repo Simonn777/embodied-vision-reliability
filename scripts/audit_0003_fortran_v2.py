@@ -11,7 +11,7 @@ import subprocess
 import tarfile
 import zipfile
 from evr.motion_design import safe_member, unique_json
-from evr.point_geometry_v2 import audit_budget, load_geometry, check_geometry, metadata_json, info_npz_headers, zip_envelope
+from evr.point_geometry_v2 import audit_budget, load_geometry, check_geometry, metadata_json, info_npz_headers, zip_envelope, summarize_checks, atomic_json
 
 RECEIPT = 'protocols/0003-fortran-audit-freeze-v2.json'
 BRANCH = 'refs/remotes/origin/research/0003-fortran-design-20261017'
@@ -73,7 +73,7 @@ def verify_published():
     return r
 
 
-def metadata(cache, config, budget, result):
+def metadata(cache, config, budget, result, checkpoint):
     targets = config['metadata_members']; seen=set(); count=total=0; names=set(); evidence={}
     result['metadata_access']=evidence
     with tarfile.open(cache/'sample-v1.2.tar.gz','r|gz') as tar:
@@ -86,12 +86,15 @@ def metadata(cache, config, budget, result):
             if name not in targets: continue
             if kind!='file' or member.size!=targets[name] or member.size>16384: raise ValueError('fixed metadata member')
             if sum(targets.values())>65536: raise ValueError('metadata total cap')
+            evidence[name]={'status':'METADATA_MEMBER_ACCESS_STARTING','counts_complete':False}
+            checkpoint()
             stream=tar.extractfile(member)
             with stream: raw=budget.read(stream,member.size)
-            entry={'source_member_sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)}
+            entry={'status':'CONTAINER_READ','counts_complete':False,'source_member_sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)}
             evidence[name]=entry;seen.add(name)
             if name.endswith('.json'): entry['summary']=metadata_json(raw)
             else: entry['headers']=info_npz_headers(raw,budget)
+            entry.update(status='completed',counts_complete=True);checkpoint()
     result['metadata_access']=evidence
     if seen != set(targets): raise ValueError('metadata member missing')
     result['family_graph']={
@@ -117,17 +120,18 @@ def main():
     budget=audit_budget()
     result={'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'running',
             'input_commit':r['input_commit'],'execution_commit':git('rev-parse','HEAD').decode().strip(),
-            'receipt_sha256':digest(RECEIPT),'carried_budget_bytes':590976,'point_checks':[],
-            'numeric_GT_access':'not started','RGB':0,'model':0,'new_GET':0,'world_units':'unknown','FPS':'unknown'}
+            'receipt_sha256':digest(RECEIPT),'carried_budget_bytes':590976,'point_checks':[],'planned_point_checks':None,'max_error_original_px':None,'rms_error_original_px':None,
+            'numeric_GT_access':'NOT_STARTED','metadata_access_state':'NOT_STARTED',
+            'audit_complete':False,'interrupted_counter_semantics':'INCOMPLETE_LOWER_BOUNDS_OR_UNKNOWN','RGB':0,'model':0,'new_GET':0,'world_units':'unknown','FPS':'unknown'}
     def save():
-        result['attempted_point_checks']=len(result['point_checks'])
-        result['projection_consistent_count']=sum(x.get('projection_consistent') is True for x in result['point_checks'])
-        result['valid_visible_GT_support_count']=sum(x.get('valid_visible_GT_support') is True for x in result['point_checks'])
+        summarize_checks(result)
         result['support_scope']='attempted selected point/frame checks only; not whole-family GT support or 99.9% gate'
         result.update(charged_bytes=budget.charged_bytes,returned_bytes_including_carried=budget.returned_bytes,
-                      reserves_including_carried=budget.stream_reserve_bytes,
+                      stream_and_directory_reserves_including_carried=budget.stream_reserve_bytes,
+                      implicit_directory_reserved_bytes=getattr(budget,'central_directory_reserved_bytes',0),
                       ended_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
-        (a.output/'audit.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+        atomic_json(a.output/'audit.json',result)
+    save()  # Initial receipt exists even if later hashing/preflight is interrupted.
     try:
         archive=a.cache/'sample-v1.2.tar.gz';npz=a.cache/'resource-audit-v1/selected-annotation.npz'
         for p,n,h in [(archive,config['archive_bytes'],config['archive_sha256']),(npz,config['annotation_bytes'],config['annotation_sha256'])]:
@@ -135,17 +139,24 @@ def main():
         for name,want in [('official-reprojection.body','c226ff24be5037fbce6ed747bf31feb1fea1de17b7a8260317fd84737b5f1c00'),('official-tracking.body','413f680d2dd8b7bf65179bdf305baf94207441dd186c4fbba0d7d9bf66787f2a')]:
             if digest(a.cache/name)!=want: raise ValueError('cached pinned source text mismatch')
         result['cached_pinned_source_hashes_verified']=True
-        metadata(a.cache,config,budget,result);save()
-        result['numeric_GT_access']='attempting all-points first-three-frame prefixes; includes discarded gaps'
+        result['metadata_access_state']='METADATA_ACCESS_STARTING';save()
+        metadata(a.cache,config,budget,result,save)
+        result['metadata_access_state']='COMPLETED';save()
+        result['numeric_GT_access']='NUMERIC_ACCESS_STARTING'
+        result['numeric_access_scope']='all-points first-three-frame prefixes plus discarded physical gaps'
+        save()  # Durable intent BEFORE any annotation numeric payload can be read.
         result['zip_envelope']=zip_envelope(npz,budget)
         ledger={};result['numeric_access']=ledger
-        with zipfile.ZipFile(npz) as z: hs,data,ledger=load_geometry(z,budget,config['expected_T_N'],ledger)
+        with zipfile.ZipFile(npz) as z: hs,data,ledger=load_geometry(z,budget,config['expected_T_N'],ledger,save)
         if hs['trajs_2d']['shape'][:2]!=config['expected_T_N']: raise ValueError('observed schema changed')
         result.update(schema=hs,numeric_access=ledger,numeric_GT_access='all required prefixes read; discarded-gap bytes counted')
         save();check_geometry(hs,data,result)
     except Exception as exc:
         result.update(status='stopped',error_type=type(exc).__name__,reason=str(exc).replace(str(Path.cwd()),'<repo>'))
-    finally: save()
+    finally:
+        result['audit_complete']=result['status'] in ['stopped','completed_small_development_check']
+        result['interrupted_counter_semantics']='COMPLETE_FOR_ATTEMPTED_WORK; not all planned work if stopped' if result['audit_complete'] else 'INCOMPLETE_LOWER_BOUNDS_OR_UNKNOWN'
+        save()
     print(json.dumps(result,indent=2,allow_nan=False))
     raise SystemExit(0 if result['status']=='completed_small_development_check' else 1)
 
