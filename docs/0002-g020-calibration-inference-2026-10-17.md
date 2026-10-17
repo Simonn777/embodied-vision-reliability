@@ -110,5 +110,21 @@ threshold fit occurred. Shared objects/camera, unknown scene dependencies and
 checkpoint exposure remain limitations of the prospective exploratory pilot.
 No efficacy, SOTA, paper-reproduction or real-robot claim. No added paid service,
 API/GPU/credits, account/permission/schedule change or raw-data/weight upload.
-Keep this PR unmerged for independent parent review. Next manifest group
-**g-016** was not run.
+Next manifest group **g-016** was not run.
+
+## Independent publication review
+
+Two separate read-only audits of candidate `df507b71` passed. The
+[parent review receipt](../results/0002-pilot-execution/g-020-parent-review.json)
+records the independently recomputed 64×2 grid, numeric/file hashes,
+timing/resources, 29 frozen inputs and 167 unchanged historical files. All three
+post-run source/log/child-exit bindings matched, with no circular receipt hashes.
+The reviewed launch and supervision code matches g-039 after group/video/source
+substitution. All 35 original g-020 result files remain unchanged.
+
+This review checks saved evidence without model replay, annotation access or a
+local rehash of cloud cache bytes. Candidate
+[CI](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39058870149)
+passed 184 tests in 7.70 seconds and a 1,240-frame synthetic smoke in 3.80
+seconds. Final publication and merged main must pass their own checks. Progress
+remains raw prediction collection, without a reliability or real-robot result.
