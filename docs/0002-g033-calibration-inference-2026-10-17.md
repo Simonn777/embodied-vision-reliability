@@ -12,9 +12,9 @@ published as `c585733510ed144be1305ca36eebc22f613dce62` and remains unchanged.
 Its original stdout/stderr/status/time/source evidence and failed cache marker
 are retained. The first planned prediction directory was never created.
 
-A subsequent explicit user instruction authorized restoration of the exact16
-versions, followed only by g-033 in a new directory if the real gate passed.
-The original cwd was the isolated main05c2d7cb worktree. PYTHONPATH was and remains:
+The same authorized research step continued by restoring the 16 required
+versions, then running only g-033 in a new directory after the real gate passed.
+The original cwd was an isolated worktree at main commit 05c2d7cb. PYTHONPATH was and remains:
 
 ```text
 scratch/boot-cache/runtime-fixed:scratch/boot-cache/runtime:scratch/boot-cache/source:src
@@ -81,6 +81,7 @@ this video; it does not run other videos or compute their errors.
 | Outer inference end UTC | 2026-10-17T06:28:32.337375+00:00 |
 | Outer subprocess exit code | 0 |
 | Outer inference wall seconds | 49.286824886 |
+| Full wrapper wall seconds, including separate preflight | 51.180634659 |
 | Runner wall seconds, including gate/load | 48.658732169 |
 | Sum of recorded per-frame streaming intervals, seconds | 32.783010926 |
 | First-frame interval, seconds | 0.542128687 |
@@ -136,8 +137,9 @@ install ledger; no new data/model downloads. Git/standard-CI traffic is separate
 from this research package/data ledger. No paid API/GPU/runner, purchase,
 connector permission expansion or schedule change occurred.
 
-Keep g-033's completed output and both attempt records. Parent independently
-reviews/merges PR#6. Future authorized collection continues from the frozen
+Keep g-033's completed output and both attempt records. The
+[publication review](0002-g033-publication-review.md) separately checks the saved
+artifacts and explains the exit-code evidence. Future collection follows the frozen
 allocation after g-033 (next calibration group g-013); this session did not run
 it or any other group. No threshold fitting/evaluation until the prescribed
 complete prediction collection and a later authorized evaluation step.
