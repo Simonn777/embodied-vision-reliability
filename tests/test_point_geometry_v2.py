@@ -102,8 +102,11 @@ class StreamingTests(unittest.TestCase):
         b=ReadBudget();f=packed(fixture());zip_envelope(f,b)
         with zipfile.ZipFile(f)as z:hs,data,ledger=load_geometry(z,b,[4,2])
         self.assertEqual(selected_points(data),[0,1]);self.assertEqual(ledger['visibs']['numeric_stream_span_bytes'],7)
+        data['visibs'].values[5]=2  # exact projection, source-occluded: not visible GT support
         result={};check_geometry(hs,data,result)
         self.assertEqual(len(result['point_checks']),6);self.assertEqual(result['max_error_original_px'],0)
+        self.assertEqual(sum(r['projection_consistent'] for r in result['point_checks']),6)
+        self.assertEqual(sum(r['valid_visible_GT_support'] for r in result['point_checks']),5)
 
     def test_schema_fail_before_numeric(self):
         b=ReadBudget();progress={}

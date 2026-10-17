@@ -54,7 +54,7 @@ records bind source snapshots, command, UTC, wall/CPU/RSS, raw exit and logs.
 Parent's own exit has no further supervisor receipt. Runtime PATH values are
 omitted publicly; the first parent receipt records its raw/public distinction.
 
-Final cloud stdlib suite: **75 tests**, including **19 new cases**, all passed
+Initial complete cloud stdlib suite: **75 tests**, including **19 new cases**, all passed
 (0.920585 s outer wall, 31,104 KiB peak RSS, exit/raw 0/0). It also runs unchanged
 35 design, 11 timing and 10 C-only resource fixtures. New cases cover asymmetric
 C/F (4,2,2), both endian orders, exact/short physical budgets, carried reserves,
@@ -62,7 +62,12 @@ truncation/schema/unsafe members, zero/one queries and future visibility invaria
 missing receipt rejection before cache access, object header-only semantics,
 float32-rounded rotation versus old tolerance, scale/shear/reflection/overflow,
 exact homogeneous/depth/focal gates and fixed half-pixel/no-replacement behavior.
-Earlier successful 15/17-case source states are retained, not presented as final.
+Earlier successful 15/17-case source states are retained. The latest semantic-review
+rerun keeps the same 75/19 tests: 0.705281 s outer wall, 31,308 KiB, exit/raw 0/0.
+An existing synthetic round-trip fixture now verifies six accurate projections
+but only five valid-visible support rows after one later visibility flag becomes
+occluded. These are distinct fields/counters; no accurate-but-invisible row is
+counted as visible GT support, and no real-data point is selected or replaced.
 
 Work pytest unavailable: **0 local pytest tests**, no install. Existing toy smoke
 using the already cached runtime completed **1,240 synthetic frames in 3.18 s**

@@ -120,6 +120,10 @@ def main():
             'receipt_sha256':digest(RECEIPT),'carried_budget_bytes':590976,'point_checks':[],
             'numeric_GT_access':'not started','RGB':0,'model':0,'new_GET':0,'world_units':'unknown','FPS':'unknown'}
     def save():
+        result['attempted_point_checks']=len(result['point_checks'])
+        result['projection_consistent_count']=sum(x.get('projection_consistent') is True for x in result['point_checks'])
+        result['valid_visible_GT_support_count']=sum(x.get('valid_visible_GT_support') is True for x in result['point_checks'])
+        result['support_scope']='attempted selected point/frame checks only; not whole-family GT support or 99.9% gate'
         result.update(charged_bytes=budget.charged_bytes,returned_bytes_including_carried=budget.returned_bytes,
                       reserves_including_carried=budget.stream_reserve_bytes,
                       ended_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())

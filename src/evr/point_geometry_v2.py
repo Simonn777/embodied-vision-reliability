@@ -233,7 +233,8 @@ def check_geometry(hs, data, result):
         return [[a.at(i,j) if len(a.shape)==2 else a.at(0 if a.shape[0]==1 else t,i,j) for j in range(n)] for i in range(n)]
     for t in range(3):
         for p in ids:
-            record = {'frame':t,'point_index':p,'status':'attempted'}; result['point_checks'].append(record)
+            record = {'frame':t,'point_index':p,'status':'attempted',
+                      'projection_consistent':None,'valid_visible_GT_support':False}; result['point_checks'].append(record)
             try:
                 flag = data['valids'].at(t,p); visibility = data['visibs'].at(t,p)
                 record.update(validity=flag,visibility=visibility)
@@ -244,7 +245,8 @@ def check_geometry(hs, data, result):
                 dtype = 'f4' if any(hs[k]['dtype'].endswith('f4') for k in ['intrinsics','extrinsics']) else 'f8'
                 pixel,gate = project_v2(point,matrix('intrinsics',t,3),matrix('extrinsics',t,4),dtype)
                 error = math.hypot(*(a-b for a,b in zip(pixel,truth))); _finite([error])
-                record.update(error_original_px=error,rotation=gate)
+                record.update(error_original_px=error,rotation=gate,projection_consistent=error<=.5,
+                              valid_visible_GT_support=flag==1 and visibility==1)
                 if error > .5: raise ValueError('fixed 0.5 original-pixel gate')
                 record['status'] = 'passed'
             except (ValueError,OverflowError) as exc:

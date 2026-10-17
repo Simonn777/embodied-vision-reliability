@@ -68,6 +68,11 @@ replacement or additional scene. Preserve zero/one-query outcomes. For those fix
 IDs, attempt frames 0,1,2, at most six checks; selected invalid validity, nonfinite
 GT, invalid camera, depth or projection error stops with the failed row retained.
 No fallback points. Visibility at later times is recorded, not used to reselect.
+Record projection consistency separately from valid-visible GT support: support
+requires source validity==1 AND visibility==1 plus finite geometry/valid projection.
+An accurate projection at visibility 0/2 is not visible GT support. Invalid validity
+stops with support=false and projection consistency undefined if not computed.
+Counts refer only to attempted selected checks, not the whole-family support gate.
 
 ## One source convention, prospective arithmetic gate
 
