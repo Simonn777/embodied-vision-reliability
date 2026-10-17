@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: 0003 frozen Fortran reader completed; first geometry check stopped at rotation gate.
+Updated: 2026-10-17. Program day 2. Phase: rotation-failure diagnostic Stage A candidate; real camera access pending independent review.
 
 ## Active question
 
@@ -202,3 +202,19 @@ Three separate reviews found no publication blockers. This approves the evidence
 of a failed geometry audit, not geometry itself. The offending matrix/statistics
 were not saved, so the cause remains unresolved. Candidate CI passed 271 tests
 and the 1,240-frame synthetic smoke; final publication/main checks remain required.
+
+## Rotation-failure diagnostic: Stage A only
+
+[Review candidate](docs/0003-rotation-diagnostic-stageA-2026-10-17.md) proposes
+one new frame0-only K9+RT16 diagnostic, preserving all previous gates/failures
+and marker. No real numeric camera read, new receipt or Stage B command. New
+versioned source uses exact Fraction verification, original tau and carried
+22,778,336-byte budget; no projection/repair/convention search. Cached-source
+float16 save path is a possible mechanism only, not actual-scene causal proof.
+The narrow single-final-f32 hypothesis has fixed proved rational exclusion bounds,
+not a replacement gate. Proposed 25-value excerpt retains CC BY-NC-SA 4.0 data
+attribution/license, separate from original MIT software.
+All 93 stdlib tests (17 new) pass and 30 old frozen inputs verify. Baseline 1,468
+protected files/old marker preserved; no download/install/model/old-test tuning
+or extra fees/schedule/permission changes. Candidate must be independently reviewed
+before a separate 12-input receipt and any real camera access.

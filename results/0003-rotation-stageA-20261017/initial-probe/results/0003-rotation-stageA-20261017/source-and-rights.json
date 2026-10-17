@@ -1,0 +1,99 @@
+{
+  "scope": "cached source text only, no execution/network/camera numeric access",
+  "sources": [
+    {
+      "cache_name": "official-tracking.body",
+      "path": "utils/gen_tracking_indoor.py",
+      "revision": "a053342a72fed32af4134b4ca0c44a78a3ac0fdb",
+      "sha256": "413f680d2dd8b7bf65179bdf305baf94207441dd186c4fbba0d7d9bf66787f2a",
+      "read_line_ranges": [
+        [
+          36,
+          44
+        ],
+        [
+          121,
+          141
+        ],
+        [
+          154,
+          157
+        ],
+        [
+          198,
+          220
+        ]
+      ],
+      "original_summary": "load saved text K/RT, multiply export transforms, cast K/RT and tracks to float16 then save annotations.npz; this code path is not proven to generate the pinned v1.2 member",
+      "source_url": "https://github.com/y-zheng18/point_odyssey/blob/a053342a72fed32af4134b4ca0c44a78a3ac0fdb/utils/gen_tracking_indoor.py"
+    },
+    {
+      "cache_name": "official-reprojection.body",
+      "path": "utils/reprojection.py",
+      "revision": "a053342a72fed32af4134b4ca0c44a78a3ac0fdb",
+      "sha256": "c226ff24be5037fbce6ed747bf31feb1fea1de17b7a8260317fd84737b5f1c00",
+      "read_line_ranges": [
+        [
+          26,
+          33
+        ],
+        [
+          66,
+          85
+        ]
+      ],
+      "original_summary": "saved RT applied directly to world homogeneous columns, normalize camera z then K; old v1.0 axis conversion commented",
+      "source_url": "https://github.com/y-zheng18/point_odyssey/blob/a053342a72fed32af4134b4ca0c44a78a3ac0fdb/utils/reprojection.py"
+    },
+    {
+      "cache_name": "official-export.body",
+      "path": "export_annotation.py",
+      "revision": "a053342a72fed32af4134b4ca0c44a78a3ac0fdb",
+      "sha256": "1464c84e8c802bed555aa097900b4fe410aed704e5f2eeca43136b60d79175cc",
+      "read_line_ranges": [
+        [
+          40,
+          67
+        ]
+      ],
+      "original_summary": "orchestrates rendering/EXR/mesh/tracking; renderer camera construction code/actual scene config not cached/verified here",
+      "source_url": "https://github.com/y-zheng18/point_odyssey/blob/a053342a72fed32af4134b4ca0c44a78a3ac0fdb/export_annotation.py"
+    },
+    {
+      "cache_name": "official-readme.body",
+      "path": "README.md",
+      "revision": "a053342a72fed32af4134b4ca0c44a78a3ac0fdb",
+      "sha256": "f8bb2457a46f5121efa880437c0654ea85d8e6f89c03a550db38a95db096cbfd",
+      "read_line_ranges": [
+        [
+          146,
+          147
+        ],
+        [
+          158,
+          166
+        ]
+      ],
+      "original_summary": "dataset CC BY-NC-SA 4.0 and author attribution; conflicts with author HF MIT tag, so use conservative dataset terms",
+      "source_url": "https://github.com/y-zheng18/point_odyssey/blob/a053342a72fed32af4134b4ca0c44a78a3ac0fdb/README.md"
+    }
+  ],
+  "root_cause_boundary": "direct numerical trigger awaits future approved 25-scalar diagnostic; source-supported possible mechanisms are not actual scene generation proof",
+  "terms": {
+    "authors": [
+      "Yang Zheng",
+      "Adam W. Harley",
+      "Bokui Shen",
+      "Gordon Wetzstein",
+      "Leonidas J. Guibas"
+    ],
+    "dataset": "PointOdyssey v1.2",
+    "HF_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+    "source": "https://huggingface.co/datasets/aharley/pointodyssey",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "modifications": "none to numeric values; lossless stored-byte/float.hex/rational representations only",
+    "scope_exception": "new explicit narrow permission for exactly25 development frame0 scalars, not full arrays, trajectories or images; these data/derived numeric output are not repo MIT"
+  },
+  "licensing_boundary": "original code is repository MIT; explicitly authorized future third-party 25-value excerpt and derived numeric diagnostic retain CC BY-NC-SA 4.0; no blanket MIT claim"
+}
