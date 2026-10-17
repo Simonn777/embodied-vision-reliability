@@ -1,0 +1,54 @@
+{
+  "phase": "tests",
+  "status": "completed",
+  "started_at_utc": "2026-10-17T20:31:28.568281+00:00",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_residual_posthoc.py",
+    "-v"
+  ],
+  "environment": {
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "path_policy": "inherited PATH only; no other inherited variables",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "affinity": [
+    0,
+    1
+  ],
+  "address_space_limit_bytes": 6442450944,
+  "timeout_seconds": 900,
+  "execution_main": "83a8971ef0abbbfe1d929f4f77bf3a65c4f5bd6c",
+  "parent_source_sha256": "b58bf76bfa97f2cb210d675709df844bffed804b279f714e081fac048ce67e36",
+  "child_source_sha256": "22a8049f94c88cc1e537de20178795ddce42afed415af695972212dd386cd90b",
+  "plan_sha256": "c56169ddfae3582506f2a1b68ab03977fd79cb640bd498a2a40e601821610572",
+  "config_sha256": "70e6edd499262978eb4a83311a1e3184ad604467d47d5369a2d3d7d351e6b319",
+  "protocol_sha256": "8c966f9006c02f38f30da8354e218e673fc424476ce277c394835e9b1f5c77cb",
+  "observation_scope": "one actual parent wait4; parent own exit has no further supervisor receipt",
+  "child_exit_code_observed_by_parent": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 13952,
+  "cpu_user_seconds": 0.049214999999999995,
+  "cpu_system_seconds": 0.005905,
+  "ended_at_utc": "2026-10-17T20:31:28.628076+00:00",
+  "elapsed_seconds": 0.056030779000138864,
+  "log_sha256": {
+    "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "c5c2b07f66ad6be4aee7a070a56da5ec7117c9f6952efffaaa366076fca70ba3"
+  }
+}

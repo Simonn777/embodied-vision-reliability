@@ -11,6 +11,7 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | Artifact | What it answers |
 |---|---|
 | [Current state](CURRENT_STATE.md) | What has actually been completed? |
+| [Post-hoc motion-residual diagnosis](docs/analysis/0002-motion-residual-posthoc.md) | Which exact decision exchanges explain the negative pilot result? |
 | [Frozen v2 evaluation](docs/0002-frozen-evaluation-v2-2026-10-17.md) | Did the extra motion residual meet the practical benefit criterion? No; all results and independent checks are retained. |
 | [All frozen predictions: 30/30](docs/0002-prediction-collection-complete-2026-10-17.md) | Where are 10 calibration and 20 evaluation raw prediction sets, before scoring? |
 | [Calibration collection: 10/10](docs/0002-calibration-complete-2026-10-17.md) | Where are all ten raw prediction sets, and what remains before evaluation? |
