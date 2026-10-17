@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 6/10 calibration groups inferred.
+Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration predictions complete (10/10); evaluation predictions not started (0/20).
 
 ## Active question
 
@@ -39,6 +39,8 @@ For a fixed visual position estimator, does causal temporal consistency identify
 - [Calibration group g-039 completed and independently reviewed](docs/0002-g039-calibration-inference-2026-10-17.md) once from execution main `1f4d14f8`. Real gates passed all 29 frozen files and 16 exact cached dependency versions; no package/data/weight downloads or frozen changes. Video 39's first 64 frames selected indices [0, 1]: 128 rows and 512 finite scalars. Inference child wall time was 48.157 seconds, peak RSS 2,553,996 KiB; child and parent-observed wrapper exits were 0. Two independent artifact audits passed with 130 prior files byte-preserved; post-run source/log bindings and observed child exits matched without circular hashes. **5/10 calibration inference, 0/20 evaluation**; no GT errors, scores, threshold fitting or replay. Next allocation g-020 was not run.
 
 - [Calibration group g-020 completed and independently reviewed](docs/0002-g020-calibration-inference-2026-10-17.md) once from execution main `69737174`. Real gates passed all 29 frozen files and 16 exact cached dependency versions; no downloads or frozen changes. Video 20's first 64 frames selected indices [0, 1]: 128 rows and 512 finite scalars. Inference child wall time was 54.620 seconds, peak RSS 2,553,192 KiB; child and separately parent-observed wrapper exits were 0. Two independent artifact audits passed with 167 prior files byte-preserved and post-run source/log bindings checked without cycles. Post-run child exits are observed; their parent program has no further supervisor exit receipt. **6/10 calibration inference, 0/20 evaluation**; no real-data errors, scores, threshold fitting or replay. Next allocation g-016 was not run.
+
+- [Calibration collection complete](docs/0002-calibration-complete-2026-10-17.md): g-016, g-032, g-035 and g-026 ran serially once from execution main `d6eb1518`, each after real 29-file/16-version/cache gates and before the next group's launch only after artifact verification. Prior six outputs were reused; all 204 historical files remain unchanged. One shared toy smoke/pytest availability probe served the unchanged software. Raw CSVs, per-group independent checks and child/wrapper/post-run source/log evidence are retained. **10/10 calibration, 0/20 evaluation predictions; only 10/30 prescribed prediction sets exist.** No GT errors, scores, threshold fit, final evaluation or method efficacy claim. Combined publication awaits parent review; next stage remains 20 frozen evaluation-group inference steps, not `evaluate`.
 
 ## Claims boundary
 
