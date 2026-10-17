@@ -1,0 +1,9 @@
+{
+  "status": "failed audit attempt retained; diagnostic not repeated",
+  "reason": "all numeric/byte checks passed, then publication scanner flagged its own earlier literal match patterns in archived verifier source as private path/secret content",
+  "original_stderr_sha256": "5e2f4b1a546256c0ad95e4fa718bf5cecbb7a2661b9701ce9ce4e9e6a9420f7e",
+  "published_stderr_sha256": "d2991a7e0454cf3784a6f4f4c020ad25dacf2e95aa482b1856de20f230807cef",
+  "redaction": "host worktree prefix replaced with <repo>; original stderr bytes retained in scratch and not published",
+  "receipt_scope": "unchanged parent receipt binds original raw stderr, not public redacted copy",
+  "repair": "scan actual host worktree prefix and full private key header instead of their harmless partial Python literals; no science/analysis changes"
+}

@@ -1,0 +1,101 @@
+{
+  "status": "completed",
+  "scope": "post-hoc descriptive diagnosis; observed evaluation labels, no new confirmatory test or method",
+  "source_commit": "83a8971ef0abbbfe1d929f4f77bf3a65c4f5bd6c",
+  "absolute_tolerance": 1e-12,
+  "relative_tolerance": 0,
+  "increment_checks": 3840,
+  "max_increment_absolute_difference": 8.881784197001252e-16,
+  "raw_rows": 3840,
+  "evaluation_opportunities": 2209,
+  "policies": {
+    "matched": {
+      "cells": {
+        "both": {
+          "rows": 1675,
+          "failures": 2,
+          "correct": 1673
+        },
+        "native_only": {
+          "rows": 93,
+          "failures": 2,
+          "correct": 91
+        },
+        "augmented_only": {
+          "rows": 93,
+          "failures": 5,
+          "correct": 88
+        },
+        "neither": {
+          "rows": 348,
+          "failures": 63,
+          "correct": 285
+        }
+      },
+      "native_accepts": 1768,
+      "augmented_accepts": 1768,
+      "accepts_difference": 0,
+      "failure_difference": 3,
+      "original_native_threshold": null,
+      "original_augmented_threshold": null
+    },
+    "operational": {
+      "cells": {
+        "both": {
+          "rows": 1774,
+          "failures": 7,
+          "correct": 1767
+        },
+        "native_only": {
+          "rows": 81,
+          "failures": 1,
+          "correct": 80
+        },
+        "augmented_only": {
+          "rows": 52,
+          "failures": 2,
+          "correct": 50
+        },
+        "neither": {
+          "rows": 302,
+          "failures": 62,
+          "correct": 240
+        }
+      },
+      "native_accepts": 1855,
+      "augmented_accepts": 1826,
+      "accepts_difference": -29,
+      "failure_difference": 1,
+      "original_native_threshold": [
+        0.01816350515609092,
+        "e2875e32d9c8892ab4bddbb16c065968938b6eacc5403135b3a1ee0793c758aa"
+      ],
+      "original_augmented_threshold": [
+        0.07856091778632783,
+        "368237615109efba53a9ef35470b7a8956e99e7ee7cddb6f002e9ce90586b865"
+      ]
+    }
+  },
+  "failure_context_centers": 72,
+  "context_rows": 115,
+  "headroom": {
+    "native_failures": 4,
+    "accepts": 1768,
+    "maximum_risk_reduction_fraction": 0.0022624434389140274,
+    "best_possible_augmented_minus_native": -0.0022624434389140274,
+    "unchanged_practical_target": -0.02,
+    "failures_reduction_required_for_target": 36,
+    "target_point_estimate_impossible_on_observed_sample": true
+  },
+  "original_paired_ci_unchanged": {
+    "defined_replicates": 2000,
+    "ci95": [
+      -0.0015778122683858566,
+      0.007126314896504917
+    ]
+  },
+  "bootstrap_redrawn": false,
+  "thresholds_refit": false,
+  "new_inference_or_archive_decodes": 0,
+  "raw_history_scope": "all earlier finite coordinates, including rejected, invalid-logit or GT-occluded rows; no future coordinates or GT control history"
+}
