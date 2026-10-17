@@ -1,0 +1,188 @@
+{
+  "status": "publication_ready_scoped_failed_geometry_audit",
+  "candidate": "4a7b9605c1006ac4d748c9469a11e3ddf7ea53e1",
+  "candidate_tree": "75297c9ea8664012f1fd0270e20d2273ff4ce5b2",
+  "input_commit": "93be3c95dee7cb5d23a5eae9b110a08cfce2a78d",
+  "receipt_execution_commit": "384489d94199a4d0ef316f85ea75684d60a44899",
+  "receipt_sha256": "ad6250bb93453b0ff8f0e9ef4e25b853cac99eb37f910ea007fa389f285f2da1",
+  "freeze_receipt_only_commit": true,
+  "freeze_commit_time_utc": "2026-10-17T23:13:30+00:00",
+  "exact_nine_approved_input_hashes_match": true,
+  "prior_three_receipts_and_23_inputs_match": true,
+  "preservation": {
+    "original_parent_baseline_paths": 1318,
+    "all_prior_result_files": 1325,
+    "cloud_preexecution_protected_paths": 1438,
+    "all_bytes_match": true,
+    "notes_append_only": true
+  },
+  "process_records": [
+    {
+      "phase": "preflight",
+      "execution_commit": "384489d94199a4d0ef316f85ea75684d60a44899",
+      "input_commit": "93be3c95dee7cb5d23a5eae9b110a08cfce2a78d",
+      "started_utc": "2026-10-17T23:14:09.637300+00:00",
+      "ended_utc": "2026-10-17T23:14:09.818110+00:00",
+      "wall_seconds": 0.1808160599975963,
+      "peak_rss_kib": 14080,
+      "cpu_user_seconds": 0.14164,
+      "cpu_system_seconds": 0.040067,
+      "observed_exit_code": 0,
+      "raw_wait_status": 0
+    },
+    {
+      "phase": "audit",
+      "execution_commit": "384489d94199a4d0ef316f85ea75684d60a44899",
+      "input_commit": "93be3c95dee7cb5d23a5eae9b110a08cfce2a78d",
+      "started_utc": "2026-10-17T23:14:14.644395+00:00",
+      "ended_utc": "2026-10-17T23:14:27.804052+00:00",
+      "wall_seconds": 13.159662957004912,
+      "peak_rss_kib": 36288,
+      "cpu_user_seconds": 10.703756,
+      "cpu_system_seconds": 2.430223,
+      "observed_exit_code": 1,
+      "raw_wait_status": 256
+    },
+    {
+      "phase": "independent-verification",
+      "execution_commit": "384489d94199a4d0ef316f85ea75684d60a44899",
+      "input_commit": "93be3c95dee7cb5d23a5eae9b110a08cfce2a78d",
+      "started_utc": "2026-10-17T23:15:28.740460+00:00",
+      "ended_utc": "2026-10-17T23:15:28.945759+00:00",
+      "wall_seconds": 0.2053060859980178,
+      "peak_rss_kib": 16436,
+      "cpu_user_seconds": 0.15649,
+      "cpu_system_seconds": 0.050033,
+      "observed_exit_code": 0,
+      "raw_wait_status": 0
+    },
+    {
+      "phase": "software",
+      "execution_commit": "384489d94199a4d0ef316f85ea75684d60a44899",
+      "input_commit": "93be3c95dee7cb5d23a5eae9b110a08cfce2a78d",
+      "started_utc": "2026-10-17T23:15:28.978633+00:00",
+      "ended_utc": "2026-10-17T23:15:29.719587+00:00",
+      "wall_seconds": 0.7409614869975485,
+      "peak_rss_kib": 30332,
+      "cpu_user_seconds": 0.574615,
+      "cpu_system_seconds": 0.16508299999999998,
+      "observed_exit_code": 0,
+      "raw_wait_status": 0
+    },
+    {
+      "phase": "publication-verification",
+      "execution_commit": "384489d94199a4d0ef316f85ea75684d60a44899",
+      "input_commit": "93be3c95dee7cb5d23a5eae9b110a08cfce2a78d",
+      "started_utc": "2026-10-17T23:17:14.685938+00:00",
+      "ended_utc": "2026-10-17T23:17:14.888041+00:00",
+      "wall_seconds": 0.20210886200220557,
+      "peak_rss_kib": 16252,
+      "cpu_user_seconds": 0.164909,
+      "cpu_system_seconds": 0.038044,
+      "observed_exit_code": 0,
+      "raw_wait_status": 0
+    }
+  ],
+  "actual_geometry_result": {
+    "audit_invocations_recorded": 1,
+    "child_exit_raw": [
+      1,
+      256
+    ],
+    "wall_seconds": 13.159662957004912,
+    "peak_rss_kib": 36288,
+    "all_six_prefixes_complete": true,
+    "selected_ids_recorded": [
+      0,
+      1
+    ],
+    "planned_attempted_unattempted": [
+      6,
+      1,
+      5
+    ],
+    "reason": "storage-aware proper rotation gate",
+    "first_attempt": [
+      0,
+      0
+    ],
+    "projected_coordinate_or_finite_error_computed": false,
+    "max_RMS": null,
+    "geometry_pass": false
+  },
+  "saved_counter_arithmetic": {
+    "retained_scalars": 246216,
+    "retained_numeric_bytes": 773886,
+    "numeric_spans": 20604126,
+    "discarded_gaps": 19830240,
+    "metadata_raw_containers": 6122,
+    "returned_including_carried": 20614538,
+    "reserves_including_carried": 2163798,
+    "charged_total": 22778336,
+    "remaining": 44330528,
+    "independently_recomputed_from_published_schema": true
+  },
+  "closure": {
+    "result_files": 27,
+    "producer_closed_map": 23,
+    "self_current_exclusions": [
+      "results/0003-fortran-stageB-20261017/evidence/publication-verification-parent.json",
+      "results/0003-fortran-stageB-20261017/evidence/publication-verification.json",
+      "results/0003-fortran-stageB-20261017/evidence/publication-verification.stderr.log",
+      "results/0003-fortran-stageB-20261017/evidence/publication-verification.stdout.log"
+    ],
+    "external_complete_map_sha256": "80f49c6fff2ac3961a629849b2ccf89e883fcc65a38681edbbbb1fd122282c97",
+    "source_logs_map_match": true,
+    "parent_own_exit_independently_supervised": false
+  },
+  "complete_stageB_artifact_sha256": {
+    "results/0003-fortran-stageB-20261017/audit/audit.json": "dd580c6acfa52ebada5ffb11c75591fd601323bd4e4dd94a8db292d91f66c3a2",
+    "results/0003-fortran-stageB-20261017/evidence/audit-command-source-1.py": "0b3d2b56bfe36e0943f570a7b647d8e7a0054ffff4882098285d3d2b22411bb5",
+    "results/0003-fortran-stageB-20261017/evidence/audit-parent.json": "6df12bed6f9c363655c8f2d91e2314f2f8e6701eb0a3dd4a139645fd1936f670",
+    "results/0003-fortran-stageB-20261017/evidence/audit.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0003-fortran-stageB-20261017/evidence/audit.stdout.log": "dd580c6acfa52ebada5ffb11c75591fd601323bd4e4dd94a8db292d91f66c3a2",
+    "results/0003-fortran-stageB-20261017/evidence/independent-verification-command-source-1.py": "3f7f4340c54e4789730ab4f048e2d6ba61d9d4148eae420d6527e7e2efdd8020",
+    "results/0003-fortran-stageB-20261017/evidence/independent-verification-parent.json": "6123c1a5cca7ccc53fa9d1d763521e38155e63695a30782760289644d104f5f7",
+    "results/0003-fortran-stageB-20261017/evidence/independent-verification.json": "656f6d54b4c530f9ce3af5ac682c117c787c0821c308ee9ee4266eba6d9b74af",
+    "results/0003-fortran-stageB-20261017/evidence/independent-verification.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0003-fortran-stageB-20261017/evidence/independent-verification.stdout.log": "656f6d54b4c530f9ce3af5ac682c117c787c0821c308ee9ee4266eba6d9b74af",
+    "results/0003-fortran-stageB-20261017/evidence/one-shot-marker.json": "93bf1a2cd2f5150c71e86dc1573c59e4cb835a9434acf89ee226a87b1d929b33",
+    "results/0003-fortran-stageB-20261017/evidence/parent-source.py": "b46244ba4d099fb9fd2eb7913851cc454729f16463b42fa06f27e982874b42b0",
+    "results/0003-fortran-stageB-20261017/evidence/preflight-command-source-1.py": "1ae669c5295efc9664667535f62db3b700270f5a0998bcde923892e8a7154f91",
+    "results/0003-fortran-stageB-20261017/evidence/preflight-parent.json": "70a33311209d10faeb82b3b428ad071ecf4c2ddf8efc675d70a14b43cf9d82a8",
+    "results/0003-fortran-stageB-20261017/evidence/preflight.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0003-fortran-stageB-20261017/evidence/preflight.stdout.log": "1f438fed5ab3e9ec0e95b30c69c9d13650bb906ed90cb78cf217112271f78083",
+    "results/0003-fortran-stageB-20261017/evidence/preparation-failure.json": "871cf52feb83e2b7156863c699cd073ff16c6d2cdd02e4f76024f5d116a29856",
+    "results/0003-fortran-stageB-20261017/evidence/protected-baseline.json": "7df184e1b98b83c75cd8ca7c65c883c80f3b0d72481d8a2794a47448d70327cf",
+    "results/0003-fortran-stageB-20261017/evidence/publication-verification-command-source-1.py": "9430ebb171ddea0fa800b664cb5f44e2b959c07ad0b3b43a2cdef3972bc60bf1",
+    "results/0003-fortran-stageB-20261017/evidence/publication-verification-parent.json": "a92b8f20060537425d87547e2667959e206af35838d865a64bae7aa9d66f0c6c",
+    "results/0003-fortran-stageB-20261017/evidence/publication-verification.json": "b40da7e4a0ede75de2dfe9b1e7088d84d980286c78a47aa867cdb3c5c12f33f8",
+    "results/0003-fortran-stageB-20261017/evidence/publication-verification.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0003-fortran-stageB-20261017/evidence/publication-verification.stdout.log": "98f1aaaca25f3f6f8dcd32d5a970d245721af64a031e9e887aa53b729c66d3e2",
+    "results/0003-fortran-stageB-20261017/evidence/software-command-source-1.py": "998851a8fe49520db600909adb66d345a66ba84773aaaa6e2dbe0acc64a84618",
+    "results/0003-fortran-stageB-20261017/evidence/software-parent.json": "8b8a52e14f2e6a3e45a6650a71a5d255db360fae5e29b4cc60853bdc3125398e",
+    "results/0003-fortran-stageB-20261017/evidence/software.stderr.log": "9011b8755b7b0d8a160a5d5501891523c4be48426afab74481e8f59e9e0d8d56",
+    "results/0003-fortran-stageB-20261017/evidence/software.stdout.log": "46e00d2a110d355671ac5089d394b89a50cb380af0d33bbea4e2e4fecbc496fc"
+  },
+  "software_record": {
+    "stdlib_tests": 76,
+    "candidate_executed_locally": false,
+    "source_log_parent_bindings_match": true
+  },
+  "limitations": [
+    "This approves publication of a failed audit, not numeric geometry, valid-visible support, family independence or model efficacy.",
+    "Offending matrix and orthogonality/determinant diagnostics were not saved. No independent numerical reconstruction of failure cause/magnitude or reprojection is possible; no new data read was performed.",
+    "Raw cached archive/NPZ and numeric spans were not accessed locally. Their identity/read correctness and selected IDs are supported by frozen source and cloud receipts; span digests cannot be locally rehashed without those raw bytes.",
+    "Preflight records real published-ref verification and receipt hash before audit; Git chronology and source-bound receipts are not a separate server wall-clock attestation.",
+    "Five child waits are real recorded wait4 results; parent processes have no additional supervisor exit receipt.",
+    "Preparation import failure is narrative tool-observed exit1 with no saved wait4/stderr transcript; it is not an extra numeric audit attempt.",
+    "No-new-GET/install/model/fees claims cover recorded task actions/source, not a global account or process-history audit.",
+    "Final exact-head CI and any later publication-only delta are parent-owned and not silently inferred here."
+  ],
+  "read_only_local_scope": {
+    "repo_edits": false,
+    "candidate_import_or_execution": false,
+    "model_or_data_or_GT_access": false
+  },
+  "blockers": []
+}

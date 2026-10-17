@@ -193,3 +193,12 @@ Whole sample remains development, 0 established independent held-out families;
 actual geometry, units/FPS/checkpoint exposure remain unverified. Next: independent
 review of the camera-gate failure and missing quantitative diagnostic evidence,
 not automatic rerun or post-outcome tolerance fitting. Final cohort remains blocked.
+
+
+Independent publication review of the frozen Fortran audit is complete; see the
+[review](docs/0003-fortran-independent-review.md) and
+[parent receipt](results/0003-fortran-publication-review/parent-review.json).
+Three separate reviews found no publication blockers. This approves the evidence
+of a failed geometry audit, not geometry itself. The offending matrix/statistics
+were not saved, so the cause remains unresolved. Candidate CI passed 271 tests
+and the 1,240-frame synthetic smoke; final publication/main checks remain required.
