@@ -1,0 +1,31 @@
+{
+  "status": "failed",
+  "started_at_utc": "2026-10-17T06:19:29.159299+00:00",
+  "group_id": "g-033",
+  "output_path": "results/0002-pilot-predictions/g-033",
+  "wrapper_sha256": "66f26eb8e09997d53657cc3483d238d9b48cf0d07e26751f06fb56eb52caab51",
+  "phases": {
+    "preflight": {
+      "started_at_utc": "2026-10-17T06:19:29.162895+00:00",
+      "command": "env -i PATH=\"$PATH\" PYTHONPATH=scratch/boot-cache/runtime-fixed:scratch/boot-cache/runtime:scratch/boot-cache/source:src OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 timeout 900 python -c <preflight-code.py contents>",
+      "status": "failed",
+      "ended_at_utc": "2026-10-17T06:19:29.527902+00:00",
+      "wall_seconds": 0.36490719900007207,
+      "exit_code": 1,
+      "raw_wait_status": 256,
+      "peak_rss_kib": 31620,
+      "cpu_user_seconds": 0.403217,
+      "cpu_system_seconds": 0.055595,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "4f513cfb65d7c59e2864644b8d476c88312858029e79d141ab31d2901553e694"
+    }
+  },
+  "new_binary_download_bytes": 0,
+  "source_commit": "05c2d7cb4ec1f81b6bf080252deb69bd9a72a319",
+  "origin_main": "05c2d7cb4ec1f81b6bf080252deb69bd9a72a319",
+  "error_type": "RuntimeError",
+  "error": "preflight failed with exit 1; no retry",
+  "traceback": "Traceback (most recent call last):\n  File \"<repo>/scripts/run_g033_once.py\", line 130, in main\n    run_phase('preflight',['-c',PREFLIGHT],display+'-c <preflight-code.py contents>')\n  File \"<repo>/scripts/run_g033_once.py\", line 127, in run_phase\n    raise RuntimeError(name+' failed with exit '+str(child.returncode)+'; no retry')\nRuntimeError: preflight failed with exit 1; no retry\n",
+  "ended_at_utc": "2026-10-17T06:19:29.531154+00:00",
+  "wall_seconds": 0.37168237900004897
+}

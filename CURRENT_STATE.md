@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-16. Program day 1. Phase: development CPU feasibility verified; exploratory external-data protocol frozen.
+Updated: 2026-10-17. Program day 2. Phase: exploratory v2 published; first calibration inference blocked by dependency gate.
 
 ## Active question
 
@@ -26,6 +26,8 @@ For a fixed visual position estimator, does causal temporal consistency identify
 - [Non-interactive Work execution and publication are verified](docs/SCHEDULED_VERIFICATION.md): the saved automation's Run now trial passed 107 shell tests and a 1,240-frame smoke, then merged [PR #2](https://github.com/Simonn777/embodied-vision-reliability/pull/2) as `9d415308` after exact-head CI/log review. The settings session subsequently paused the local heartbeat; one Work cloud schedule remains enabled, daily 09:00 America/New_York through October 15, 2027. Next regular run: October 17, 2026. No additional paid service or usage-credit purchase is authorized; future clock-triggered runs and uninterrupted availability are not yet established.
 
 - [64-frame development and metadata grouping](docs/0002-64frame-and-freeze.md) completed on real weights: two-query64-frame forward39.337s, fresh-process repeat39.450s, maximum replay difference0, peak794764KiB. Only video0 was inferred; all50 identities/prefix/frame hashes yielded50singleton exact-duplicate groups and partitions1/10/20/19. Scene independence and full upstream non-exposure remain unestablished. Complete executable 0002 metrics and future inference use the v2 freeze after the pre-merge provenance repair; v1 is preserved but superseded before any evaluation. V2 enforces canonical published receipts and mandatory commit/current-file hashes and dependencies; [Independent review](docs/0002-independent-review.md) verified the artifacts and v2 repair; merge and main-publication verification remain mandatory before held-out inference. No real-data score comparison has run.
+
+- [First g-033 attempt stopped at the real v2 gate](docs/0002-g033-gate-failure-2026-10-17.md): expected NumPy2.0.2, actual2.3.5. Main05c2d7cb and all29 frozen inputs match;15/16 package versions and existing cache/source digests match. Preflight exit1 is preserved, with no retry or install. No inference subprocess, prediction CSV or GT error/threshold/evaluation was produced. Progress remains **0/10 calibration inference groups,0/20 evaluation groups**. Restore the exact runtime only in a later authorized recovery; preserve the failed marker and original evidence.
 
 ## Claims boundary
 
