@@ -25,22 +25,22 @@ Receipt SHA256:
 Protocol/config/manifest/source hashes are in the
 [preflight](../results/0002-pilot-execution/g-013-20261017/preflight.json).
 
-All16 exact metadata versions and cached module origins passed, including real
-NumPy2.0.2 and torch2.10.0+cpu imports/native paths. Fifteen RECORD digests match
+All 16 exact metadata versions and cached module origins passed, including real
+NumPy 2.0.2 and torch 2.10.0+cpu imports and native paths. Fifteen RECORD digests match
 historical provenance; NumPy's differs as already disclosed by g-033 recovery.
 The same version-matched reconstructed environment was reused, not newly rebuilt
 or claimed byte-identical to historical provenance. No dependency/model/data
 bytes were downloaded in this step. The conservative cumulative acquisition
-ceiling remains **1,482,283,622 bytes <10GiB**, including prior torch dry-run and
+ceiling remains **1,482,283,622 bytes, below 10 GiB**, including prior torch dry-run and
 installation/replacement events and the NumPy recovery. Git/CI traffic is separate.
-Cached checkpoint/archive SHA256 and pinned upstream730cda1c source hashes passed;
+Cached checkpoint/archive SHA256 and pinned upstream `730cda1c` source hashes passed;
 actual imported TAPNet hashes are also in the inference receipt. No frozen file,
 parameter, score implementation or gate was changed or mocked.
 
 ## Single real inference
 
-Only allocated whole group g-013, containing video13, was inferred once: its first
-64 consecutive256x256 frames, arrival0, at most the firsttwo frame0-visible original
+Only allocated whole group g-013, containing video 13, was inferred once: its first
+64 consecutive 256×256 frames, arrival 0, at most the first two frame-0-visible original
 point indices. Query count was determined by the unchanged runner: **2**,
 indices **[0, 1]**. No future-visibility screening/replacement or replay.
 
@@ -55,10 +55,10 @@ commands, stdout/stderr, UTC times, wait statuses and digests are retained in
 [parent observation](../results/0002-pilot-execution/g-013-20261017-supervision/).
 Archived wrapper/supervisor copies document the original `scratch/` entry points;
 their archived locations are not runnable entry points. Frozen runner/adapter
-code enforces seed20261016, strict weights_only state dict, explicit causal flag,
-CPU eval/no gradients/inference_mode. Kept env-i, four-entry PYTHONPATH, all five
-numeric thread variables2, affinity[0,1], torch intra/inter-op[2,2], external
-900-second timeout and6GiB AS cap. The supervisor independently records the
+code enforces seed 20261016, strict `weights_only` state dict, explicit causal flag,
+CPU eval/no gradients/`inference_mode`. Kept `env -i`, four-entry PYTHONPATH, all five
+numeric thread variables set to 2, affinity [0,1], torch intra/inter-op [2,2], external
+900-second timeout and 6 GiB address-space cap. The supervisor independently records the
 wrapper exit; each wrapper phase separately records its own child exit/wait4.
 
 | Actual measurement | Value |
@@ -80,11 +80,11 @@ wrapper exit; each wrapper phase separately records its own child exit/wait4.
 | Coordinate-missing / logit-invalid rows | 0 / 0 |
 
 Frame intervals are streaming measurements, not an independently measured full
-forward wall time. Hardware: AMD EPYC 9V74 80-Core Processor; Python3.12.14.
-At preflight, host MemAvailable=9344732KiB;
-cgroup memory.max=8589934592bytes, current=3270541312bytes;
-disk free=29259108352bytes. The process still had the stricter
-6GiB AS and two-CPU/thread limits. No realtime/all-point guarantee follows.
+forward wall time. Hardware: AMD EPYC 9V74 80-Core Processor; Python 3.12.14.
+At preflight, host MemAvailable was 9,344,732 KiB;
+cgroup memory.max was 8,589,934,592 bytes and memory.current was 3,270,541,312 bytes;
+disk free space was 29,259,108,352 bytes. The process still had the stricter
+6 GiB address-space and two-CPU/thread limits. No real-time or all-point guarantee follows.
 
 Raw [CSV](../results/0002-pilot-predictions/v2-reconstructed/g-013/video-013.csv)
 SHA256: `8707198875187c1b43c06a07970eb5da72fc745f372f43afd87411daf72c6d5c`.
@@ -95,7 +95,7 @@ retains each frame interval, selected indices, model hashes and actual modules.
 
 A separate standard-library-only verifier checked complete frame×query grids,
 point IDs, finite/missing counts, raw hashes, timestamps, once-per-frame latency,
-runner/child/parent exits and resources, all29 frozen files and16 recorded version/
+runner/child/parent exits and resources, all 29 frozen files and 16 recorded version/
 origin bindings. It also checked all **37 existing g-033 result/evidence files**
 byte-for-byte against execution main. See
 [verification](../results/0002-pilot-execution/g-013-20261017/independent-verification.json) and its source. Query selection
@@ -106,8 +106,11 @@ not external independent replication of the model run.
 
 Work pytest is absent: the saved availability probe reports false/zero tests;
 no pytest was installed or Work test pass claimed. The existing synthetic smoke
-completed1,240 frames in2.75s (3.075s child wall). Full tests and smoke must pass in
-**this publication head's** standard public Research checks CI before review.
+completed 1,240 frames in 2.75 seconds (3.075 seconds child wall). GitHub
+[Research checks 39054882750](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39054882750)
+passed for publication candidate `25faf16ff51e4b832280c9494fc3d3eef8c94400`:
+184 tests in 8.45 seconds and the 1,240-frame smoke in 3.67 seconds.
+Final publication checks are attached to PR #7 and its eventual main commit.
 Software smoke is not another learned-model/data run.
 
 No other group, g-033 rerun, evaluation, GT error, confidence score, reliability
@@ -115,5 +118,21 @@ comparison or calibration-threshold fitting occurred. Shared objects/camera,
 unknown scene dependence and unresolved checkpoint exposure still constrain the
 future exploratory pilot. No efficacy, paper reproduction or real-robot claim.
 No paid service/API/GPU/credits, permission expansion, raw-data/weight upload or
-schedule change. Keep this PR unmerged for parent review; next allocated group
-is **g-022**, not run here. Preserve all completed outputs.
+schedule change. The next allocated group is **g-022**, not run here. Preserve
+all completed outputs.
+
+## Publication review
+
+Two separate read-only reviews of candidate
+`25faf16ff51e4b832280c9494fc3d3eef8c94400` found no blocking discrepancy.
+The [parent review receipt](../results/0002-pilot-execution/g-013-parent-review.json)
+records independently recomputed grids, numeric hashes, timing and exit-code
+consistency, 22 artifact digests, 29 unchanged frozen inputs and 37 preserved
+g-033 files. All 16 recorded dependency identities match the existing g-033
+reconstruction. The parent session also checked the actual CI job logs above.
+
+These reviews checked published evidence and source, without independently
+rehashing the cloud installation, decoding annotations or rerunning the model.
+The execution source remains `5561cf5e`; the later publication and review commits
+are not execution-source commits. This review adds documentation and a receipt;
+all original cloud execution files and raw predictions remain unchanged.

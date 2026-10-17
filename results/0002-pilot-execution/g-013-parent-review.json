@@ -1,0 +1,183 @@
+{
+  "status": "passed_with_explicit_evidence_boundaries",
+  "compiled_at_utc": "2026-10-17T17:46:28.345215+00:00",
+  "reviewed_head": "25faf16ff51e4b832280c9494fc3d3eef8c94400",
+  "actual_execution_source_commit": "5561cf5ee91ac01a9c419ca3a1c938fd43d32a4e",
+  "freeze_input_commit": "bbe7428e126a566a62d3c123d7158f120aa66e2b",
+  "review_method": "Two separate AI-assisted, read-only standard-library and Git-blob audits; parent review checked orchestration sources and remote CI job logs. No model, archive/annotation decode, scoring or threshold fitting.",
+  "blocking_findings": [],
+  "group": {
+    "group_id": "g-013",
+    "archive_indices": [
+      13
+    ],
+    "partition": "calibration",
+    "point_indices": [
+      0,
+      1
+    ]
+  },
+  "raw": {
+    "rows": 128,
+    "unique_frame_query_grid": [
+      64,
+      2
+    ],
+    "output_shape": [
+      64,
+      2,
+      4
+    ],
+    "finite_scalars": 512,
+    "nonfinite_scalars": 0,
+    "coordinate_missing_rows": 0,
+    "logit_invalid_rows": 0,
+    "float32_row_order_sha256": "457d481555c0abffeef9fc1de7218db6d8e8cd1680355dbd1e4b746602d63fb9"
+  },
+  "timing": {
+    "first_frame_seconds": 0.506901694003318,
+    "subsequent_frame_median_seconds": 0.5175791960064089,
+    "sum_frame_intervals_once_seconds": 34.517204112999025,
+    "minimum_frame_seconds": 0.4469876340008341,
+    "maximum_frame_seconds": 0.7884806930014747,
+    "runner_elapsed_seconds": 48.772355262997735,
+    "infer_child_elapsed_seconds": 49.41080214200338,
+    "wrapper_elapsed_seconds": 51.362839581001026,
+    "supervisor_elapsed_seconds": 51.40263102499739,
+    "UTC_perf_absolute_deltas_seconds": {
+      "preflight": 0.00010618300104558998,
+      "infer": 0.0003218579966244306,
+      "runner": 1.0262997733434531e-05,
+      "wrapper": 0.0001944189989728784,
+      "supervisor": 0.00042897500261318555
+    },
+    "nested_timestamps_and_latency_accounting_consistent": true
+  },
+  "exit_resource_evidence": {
+    "preflight_child_exit_and_wait": [
+      0,
+      0
+    ],
+    "infer_child_exit_and_wait": [
+      0,
+      0
+    ],
+    "wrapper_exit_and_wait_observed_by_parent": [
+      0,
+      0
+    ],
+    "wrapper_stdout_summary_agrees": true,
+    "runner_child_supervisor_peak_rss_kib": 2553240,
+    "peak_rss_gib": 2.4349594116210938,
+    "affinity": [
+      0,
+      1
+    ],
+    "numeric_thread_variables_at_two": 5,
+    "torch_threads": [
+      2,
+      2
+    ],
+    "address_space_limit_bytes": 6442450944,
+    "each_phase_external_timeout_seconds": 900,
+    "parent_CPU_accounting_includes_child_usage": true
+  },
+  "freeze": {
+    "mandatory_inputs_verified": 29,
+    "compared_trees": [
+      "frozen input commit",
+      "actual execution/base commit",
+      "candidate head"
+    ],
+    "all_sha256_match": true,
+    "canonical_receipt_bytes_unchanged": true,
+    "receipt_sha256": "bd9dc9e90980c78050a6f48043117e7d0f53d004c25d324b4ff25148380df05b",
+    "ancestry_verified": true
+  },
+  "runtime_record_consistency": {
+    "exact_metadata_versions": 16,
+    "module_path_entry_hash_and_installed_RECORD_records_matching_prior_g033_reconstruction": 16,
+    "historical_RECORD_matches": 15,
+    "historical_RECORD_exception": "numpy; same reconstructed NumPy2.0.2 and its disclosed new RECORD, not byte-identical historical environment reproduction",
+    "numpy_actual_version": "2.0.2",
+    "torch_actual_version": "2.10.0+cpu",
+    "torch_cuda": null,
+    "numpy_and_torch_native_module_paths": "both recorded under runtime-fixed; unchanged since g-033",
+    "cache_checkpoint_archive_and_three_upstream_imported_hashes_match_frozen": true,
+    "numeric_thread_variables": 5,
+    "numeric_thread_values": "2",
+    "torch_threads": [
+      2,
+      2
+    ],
+    "affinity": [
+      0,
+      1
+    ],
+    "address_space_limit_bytes": 6442450944,
+    "external_timeout_seconds": 900,
+    "new_download_bytes_recorded": 0
+  },
+  "source_and_preservation": {
+    "mandatory_frozen_inputs_checked_at_input_source_and_publication": 29,
+    "published_artifact_digests_recomputed": 22,
+    "prior_g033_result_and_evidence_files_byte_identical": 37,
+    "frozen_code_config_protocol_requirements_tests_unchanged": true,
+    "launcher_supervisor_and_embedded_preflight_source_bindings_match": true,
+    "command_and_all_child_parent_log_bindings_match": true
+  },
+  "static_launcher_supervisor_review": {
+    "supervisor_direct_wait4_observes_wrapper_not_reused_child_exit": true,
+    "supervisor_limits_inherited_by_wrapper_and_children": true,
+    "wrapper_and_model_children_use_explicit_clean_environment": true,
+    "cache_global_and_group_nonblocking_flock_present": true,
+    "exclusive_persistent_group_marker_and_fresh_output_present": true,
+    "single_g013_infer_path_no_replay_evaluate_or_gate_bypass_found": true,
+    "archived_copies_are_evidence_not_runnable_archive_entrypoints": true
+  },
+  "progress": {
+    "calibration_groups_inferred": 2,
+    "calibration_groups_allocated": 10,
+    "evaluation_groups_inferred": 0,
+    "evaluation_groups_allocated": 20,
+    "allocation_prefix": [
+      "g-033",
+      "g-013",
+      "g-022"
+    ],
+    "next_group": "g-022",
+    "next_group_run_in_this_change": false
+  },
+  "candidate_ci": {
+    "run_url": "https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39054882750",
+    "event": "pull_request",
+    "head_sha": "25faf16ff51e4b832280c9494fc3d3eef8c94400",
+    "conclusion": "success",
+    "tests_passed": 184,
+    "pytest_seconds": 8.45,
+    "synthetic_smoke_frames": 1240,
+    "synthetic_smoke_seconds": 3.67,
+    "scope": "Read actual job logs; final publication head and merged main require their own attached CI runs. Software checks are not learned-model inference."
+  },
+  "artifact_sha256": {
+    "protocols/0002-freeze-v2.json": "bd9dc9e90980c78050a6f48043117e7d0f53d004c25d324b4ff25148380df05b",
+    "results/0002-pilot-execution/g-013-20261017/preflight.json": "475ffe39a026da873b2d6d36f303a8557f6e2ae7b014521a5524abd3d891449d",
+    "results/0002-pilot-execution/g-013-20261017/outer.json": "e644a32b72dc541fd4cffe17471df66332de918383826ae7cabc5b09bbd048c8",
+    "results/0002-pilot-execution/g-013-20261017/launcher-source.py": "ca138ee689dad45c565c4955d449546d4589afb5b72488a8e848ad856e35e7b3",
+    "results/0002-pilot-execution/g-013-20261017-supervision/supervisor.json": "cca67024c2fcc19c283aa00545d43b6ec3c55639bba6effbc3729e7b61d51b83",
+    "results/0002-pilot-execution/g-013-20261017/independent-verification.json": "de09517c8bcc28b950f070b6bb4c1c4d32f752d5816ade84b8fd1743d8dbc039",
+    "results/0002-pilot-predictions/v2-reconstructed/g-013/video-013.csv": "8707198875187c1b43c06a07970eb5da72fc745f372f43afd87411daf72c6d5c",
+    "results/0002-pilot-predictions/v2-reconstructed/g-013/receipt.json": "533a0c1d6e47081052c33070980d0dbe38de7987cd2ddc21546ddf9d5a892609",
+    "results/0002-pilot-execution/g-013-20261017/preflight-code.py": "870a1e4354c562b9b9434beb121d84f331edd01bf12a9b56a14fcd10cba52466",
+    "results/0002-pilot-execution/g-013-20261017-supervision/supervisor-source.py": "d6b7f25ed43bc8722218eea3313c906ca7e7bc843c5a81354fdb87e20012724d",
+    "results/0002-pilot-execution/g-013-20261017-supervision/wrapper.stdout.log": "b6687d958af4d3586834e05757ab19bf17cad6105bddcfc292891624641dd43e"
+  },
+  "evidence_limits": [
+    "Point IDs match the frozen runner receipt; frame-0 visibility/query selection was not independently re-derived from annotations.",
+    "Original archive, weights and installed runtime bytes were not downloaded or rehashed locally.",
+    "The parent wait4 record closes the prior wrapper-exit evidence gap for this run; it is still published same-host execution evidence, not independent model replication.",
+    "No reliability, accuracy, calibration threshold or real-robot conclusion is supported by this prediction-collection audit.",
+    "Live cloud installed package/native module/cache bytes were not accessed by this local reviewer. Runtime observations rely on the published cloud preflight and unchanged runner; their recorded consistency and source gates were reviewed.",
+    "Module entry hashes and matching RECORD files do not constitute independent hashing of every installed package file."
+  ]
+}
