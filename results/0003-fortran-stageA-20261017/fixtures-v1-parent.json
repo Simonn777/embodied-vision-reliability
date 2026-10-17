@@ -1,0 +1,61 @@
+{
+  "phase": "fixtures-v1",
+  "source_commit": "863c7f43ee1ec2567126a79f15c6b48b0dac2d0e",
+  "source_sha256": {
+    "protocols/0003-fortran-audit-v2.md": "d950f5f7681bfcff58c1c86b7e22ea8bcf366563e1ce9aea5097670485658b69",
+    "configs/0003-fortran-audit-v2.json": "9c7a3c34d6cfde851794bb130ee05562de51459150060db7539f33b26b263856",
+    "src/evr/point_geometry_v2.py": "88245d0ac8052d8f02974560c112a61f79d5852e4a37cda28cff9bf3d9b41cfa",
+    "scripts/audit_0003_fortran_v2.py": "57e8d3cf53eaf1a8adb3fedff690bc2d45c00247895aacb50316281df3d8eae9",
+    "tests/test_point_geometry_v2.py": "851012b55399e0b08e250f83f8c9796f25b38cd7e53a9d5f2e3aad278fcdc2b7",
+    "results/0003-fortran-stageA-20261017/source-convention.json": "f340f66117e76e2705b78a8b266c1a47feb2f649824387865225046c5d2a705c",
+    "protocols/0003-design-freeze-v1.json": "adb1b58b2fdab0e63899c67e30706f14b710a113bd6892eecdc08657b7826a7a",
+    "protocols/0003-timing-addendum-freeze-v1.json": "ef05a121bf5ef0f525367ed7bcf3b4a8cd20df66c2be6bb09194fb44a5f6e2ab",
+    "protocols/0003-resource-addendum-freeze-v1.json": "0e1b867fad0a3873ffb8cb6ec64335ce5c2c0dbf3ef779efd8cbe5c553452e04"
+  },
+  "parent_source_sha256": "38aff6dc6ac48dd4d4692d96ba3d62ad1a90032687da5332dbe6152fe5818301",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_point_geometry_v2.py",
+    "-v"
+  ],
+  "env": {
+    "PATH": "inherited runtime PATH; value omitted from public receipt",
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "started_utc": "2026-10-17T22:58:35.804048+00:00",
+  "ended_utc": "2026-10-17T22:58:35.921415+00:00",
+  "wall_seconds": 0.11737446500046644,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 15616,
+  "cpu_user_seconds": 0.062636,
+  "cpu_system_seconds": 0.050037,
+  "limits": {
+    "AS_bytes": 6442450944,
+    "cpu_slots": 2,
+    "timeout": 900
+  },
+  "logs_sha256": {
+    "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "3d9037b551782affc13a41be708079f27bc645e4915145e8fab6a2a028fc3df1"
+  },
+  "boundary": "parent has no further supervisor receipt; synthetic software only",
+  "public_redaction": {
+    "field": "env.PATH",
+    "raw_parent_sha256": "426711b42140d8732c59728a0fe48b4c9fcb23a818072cd2ca4125631d8a2692",
+    "scope": "runtime path value only; commands/source/log/exit/measurement unchanged"
+  }
+}

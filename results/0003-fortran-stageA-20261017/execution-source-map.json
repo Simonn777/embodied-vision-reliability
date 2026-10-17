@@ -1,0 +1,22 @@
+{
+  "preflight": {
+    "command": [
+      "python",
+      "scratch/preflight_fortran.py"
+    ],
+    "PYTHONPATH": "src",
+    "source_sha256": "e084cc79cbe0c257108087d052fc76620dfdbfa6f214b256bd838c0e8bd1e5e7",
+    "scope": "raw-byte identity/source and lock/baseline checks only; no GT numerical access",
+    "parent_wait": "not retained for this initial bounded identity probe"
+  },
+  "synthetic_commands": {
+    "scratch/stageA_software.py": "stageA_software.py",
+    "scratch/stageA_smoke.py": "stageA_smoke.py"
+  },
+  "fixture_history": "15 initial, then 17, then final 19 new cases; all passed; snapshots bind each exact source state. No data audit invoked.",
+  "public_PATH_redaction": "values omitted in final parents; first parent raw preserved locally with raw/public distinction.",
+  "synthetic_source_sha256": {
+    "stageA_software.py": "998851a8fe49520db600909adb66d345a66ba84773aaaa6e2dbe0acc64a84618",
+    "stageA_smoke.py": "67543bb953ccb3c56c859df3bd92a3404f9a699a8f166cbbf5ed92a8b220b6b8"
+  }
+}

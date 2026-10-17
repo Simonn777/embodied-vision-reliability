@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: 0003 complete metadata inventory; numeric audit stopped at frozen Fortran-layout gate.
+Updated: 2026-10-17. Program day 2. Phase: 0003 Fortran development-audit stage A candidate; synthetic checks only, awaiting independent review.
 
 ## Active question
 
@@ -154,3 +154,18 @@ numeric access or resource relaxation this task. A later prospectively frozen
 pipeline/cohort must bind v1+timing+applicable resource decisions; no final cohort
 or inference authority exists. Do not mistake complete filenames for independent
 families or metadata/source-convention checks for numeric GT validation.
+
+## 0003 Fortran stage A candidate (2026-10-17)
+
+[Prospective revision](docs/0003-fortran-stageA-2026-10-17.md) adds versioned C/F
+streaming and storage-aware geometry helpers without editing old frozen inputs.
+Cached archive/one NPZ raw hashes match; no numeric GT, point selection, geometry,
+RGB/model or old-test access. Seventy-five stdlib fixtures (19 new) and the existing
+1,240-frame synthetic smoke pass under two slots / 6 GiB AS / timeout900. Pytest
+unavailable locally (0), no installation/download/fee/schedule/permission change.
+Carry prior 590,976 bytes into the same 64 MiB audit budget. Sole saved-RT then
+camera-z normalization and K convention is checked from pinned cached source.
+Candidate protocol/config/reader/runner/tests and nine mandatory bindings await
+review; NO v2 receipt exists. Do not decode real GT before approval and a separately
+published canonical receipt. Independent cohort, units/FPS and actual geometry
+remain blocked/unknown; whole sample stays development.
