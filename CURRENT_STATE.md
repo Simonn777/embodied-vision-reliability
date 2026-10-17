@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 2/10 calibration groups inferred.
+Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 3/10 calibration groups inferred.
 
 ## Active question
 
@@ -31,6 +31,8 @@ For a fixed visual position estimator, does causal temporal consistency identify
 
 
 - [Calibration group g-013 completed and independently reviewed](docs/0002-g013-calibration-inference-2026-10-17.md) from main `5561cf5e`, reusing the verified cached environment with no downloads. The real gate passed all 29 frozen files and 16 exact dependency versions. Video 13's first 64 frames and original point indices [0,1] yielded 128 rows / 512 finite outputs. The inference subprocess took 49.411 seconds, with peak RSS 2,553,240 KiB; its exit and the separately parent-observed wrapper exit were both 0. Two independent artifact reviews passed, and all 37 g-033 result files remain unchanged. **2/10 calibration inference groups complete, 0/20 evaluation**; no errors, scores, thresholds or replay. The next allocated group, g-022, was not run.
+
+- [Calibration group g-022 completed](docs/0002-g022-calibration-inference-2026-10-17.md) from execution main `767aa160`. The real gate passed all 29 frozen files and 16 exact cached dependency versions, with no downloads or frozen changes. Video 22's first 64 frames selected point indices [0, 1]: 128 rows and 512 finite scalars. Inference child wall time was 57.829 seconds and peak RSS was 2,553,116 KiB; child and parent-observed wrapper exits were both 0. Independent standard-library checks passed, including 65 byte-preserved g-033/g-013 result/review files. A post-run verifier's raw-versus-normalized RECORD mismatch was diagnosed and preserved; matching text semantics passed without changing runtime or restarting inference. **3/10 calibration inference groups complete, 0/20 evaluation**; no GT errors, scores or threshold fitting. Publication awaits parent review. The next allocated group, g-040, was not run.
 
 ## Claims boundary
 

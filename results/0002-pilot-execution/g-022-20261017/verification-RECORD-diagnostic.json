@@ -1,0 +1,139 @@
+{
+  "status": "verification_failed_then_diagnosed",
+  "checked_at_utc": "2026-10-17T17:53:41.821166+00:00",
+  "failed_command": "python scratch/verify_g022.py",
+  "exit_code": 1,
+  "failure": "AssertionError at raw RECORD byte digest versus preflight installed_RECORD_sha256",
+  "failed_verifier_sha256": "7e36292173fab41aaa39d0af8a3bb847b98aaca461de38e24507568a596c3e2d",
+  "scope": "post-inference stdlib verification; no model restart or gate/frozen changes",
+  "differences": [
+    {
+      "package": "torch",
+      "raw_RECORD_sha256": "a1fef797f79ce8171351063cda7a0570536d273bdaf6c6ed08410420e48fd02c",
+      "recorded_text_RECORD_sha256": "e06832d85f5578a69c989a2cc2a5e42718066dff09c5c2a1df0acefe763c6eb7",
+      "normalized_text_RECORD_sha256": "e06832d85f5578a69c989a2cc2a5e42718066dff09c5c2a1df0acefe763c6eb7",
+      "CRLF_count": 14086,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "numpy",
+      "raw_RECORD_sha256": "f3589ac06b74d8be6dbd88da32cef0f3f836bc4d8671b39f648d51a0249e0e9a",
+      "recorded_text_RECORD_sha256": "6d302eecd15ef4c12e6554eda66085772e4ea21390b34533c32a10345aa84f8f",
+      "normalized_text_RECORD_sha256": "6d302eecd15ef4c12e6554eda66085772e4ea21390b34533c32a10345aa84f8f",
+      "CRLF_count": 809,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "dm-tree",
+      "raw_RECORD_sha256": "4e33526a1e07d8f7fc7706597e8261b7520f3f5aaecf47ee1480c8fea220edf3",
+      "recorded_text_RECORD_sha256": "8d6291d2091d665aa2ba9945072ebc4047369bf10f1d3b289c8de2bd2e03c68e",
+      "normalized_text_RECORD_sha256": "8d6291d2091d665aa2ba9945072ebc4047369bf10f1d3b289c8de2bd2e03c68e",
+      "CRLF_count": 16,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "einshape",
+      "raw_RECORD_sha256": "dfd89a4f4d1555230d84cfb5637fed7917ba2eeab78e4e6536042f37eca7ba7e",
+      "recorded_text_RECORD_sha256": "fc3b0939236610839a69cfed574870b7a3905f286aa432ce7b945be7d15cab36",
+      "normalized_text_RECORD_sha256": "fc3b0939236610839a69cfed574870b7a3905f286aa432ce7b945be7d15cab36",
+      "CRLF_count": 33,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "absl-py",
+      "raw_RECORD_sha256": "a291c2e8234b795efd816765f3125d3df3f4b58ac6b85430b6eeef73721d0220",
+      "recorded_text_RECORD_sha256": "14bfe3d46e827440910a0bc12f160d4068e501a78df32954ed5539d81d040718",
+      "normalized_text_RECORD_sha256": "14bfe3d46e827440910a0bc12f160d4068e501a78df32954ed5539d81d040718",
+      "CRLF_count": 54,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "attrs",
+      "raw_RECORD_sha256": "7f1b65fb09190080515307dde00bc0a58e4e4e45f6a279621b3feccef3ac5402",
+      "recorded_text_RECORD_sha256": "e144d0bffd19b7ced2f69e84272708ca4617c89bd43b7771888fadd2b44649ed",
+      "normalized_text_RECORD_sha256": "e144d0bffd19b7ced2f69e84272708ca4617c89bd43b7771888fadd2b44649ed",
+      "CRLF_count": 56,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "wrapt",
+      "raw_RECORD_sha256": "4847d564341fb4793251215d714710ca65966d13cb787de7b851a5ce86379b19",
+      "recorded_text_RECORD_sha256": "62cd8e22f842f99b6f66214cc1172a3d2e2ac92c14edaa76ca28f96954755f9c",
+      "normalized_text_RECORD_sha256": "62cd8e22f842f99b6f66214cc1172a3d2e2ac92c14edaa76ca28f96954755f9c",
+      "CRLF_count": 24,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "sympy",
+      "raw_RECORD_sha256": "0242c32c8821655168c07d0c4fe75d8559fc265d8f6322fa8a4d82408647fa81",
+      "recorded_text_RECORD_sha256": "6c8f4bab586ff9fb3d529a47d6f021f6cc78b226ad9fe39caa8793de0f00b309",
+      "normalized_text_RECORD_sha256": "6c8f4bab586ff9fb3d529a47d6f021f6cc78b226ad9fe39caa8793de0f00b309",
+      "CRLF_count": 3106,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "filelock",
+      "raw_RECORD_sha256": "47cef36cbf7c6923c6ec19801f04cad0f50fe90e9343a5c6f8ad67b93c0657c9",
+      "recorded_text_RECORD_sha256": "38e6551be56eb84d896d9d055109967edfa24146fd69d62bf7cad5b390bbaf76",
+      "normalized_text_RECORD_sha256": "38e6551be56eb84d896d9d055109967edfa24146fd69d62bf7cad5b390bbaf76",
+      "CRLF_count": 49,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "networkx",
+      "raw_RECORD_sha256": "fb9159ff8300a6d92fede24ad43a6d9fd001bc0d0dfe1fee6dd4c94db6214869",
+      "recorded_text_RECORD_sha256": "f98277551f79e9cffce4fdcfdf875dd6f3d8f3e9e1a8146a83b3b803d719a6b2",
+      "normalized_text_RECORD_sha256": "f98277551f79e9cffce4fdcfdf875dd6f3d8f3e9e1a8146a83b3b803d719a6b2",
+      "CRLF_count": 1183,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "jinja2",
+      "raw_RECORD_sha256": "da15deb8d05491bab5298a2eefddb92f0672127b29eb017f771010798716639f",
+      "recorded_text_RECORD_sha256": "1addd73160817f42334fdcf62e6a904e575c70f085a45f1aad07e1acf58db763",
+      "normalized_text_RECORD_sha256": "1addd73160817f42334fdcf62e6a904e575c70f085a45f1aad07e1acf58db763",
+      "CRLF_count": 58,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "fsspec",
+      "raw_RECORD_sha256": "e04b4fd7c3de47ae9ed6860ccb049e990a855219349983404f3ced12e9944e76",
+      "recorded_text_RECORD_sha256": "29853eac9c8e853a5a110ab2fe75b7b8e147e68923b5e1aad2d4ef9a41986b06",
+      "normalized_text_RECORD_sha256": "29853eac9c8e853a5a110ab2fe75b7b8e147e68923b5e1aad2d4ef9a41986b06",
+      "CRLF_count": 120,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "mpmath",
+      "raw_RECORD_sha256": "631ffb63282ac4c1792216f2b0f26f6fd4f3ae58410436a6a7118eeaf62b951a",
+      "recorded_text_RECORD_sha256": "98750bf09ab626059be2cd3aaa538eacb69bcaa508890257cb98157002fb9d7e",
+      "normalized_text_RECORD_sha256": "98750bf09ab626059be2cd3aaa538eacb69bcaa508890257cb98157002fb9d7e",
+      "CRLF_count": 181,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "MarkupSafe",
+      "raw_RECORD_sha256": "a345dee36882ab54ded9377af039549f16d94052609dd051a842297d328e4514",
+      "recorded_text_RECORD_sha256": "ee2e005af22cef3cfa63a34db6b38d9a3a3c118567d0e3eae8c3488fd734afb8",
+      "normalized_text_RECORD_sha256": "ee2e005af22cef3cfa63a34db6b38d9a3a3c118567d0e3eae8c3488fd734afb8",
+      "CRLF_count": 15,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "typing-extensions",
+      "raw_RECORD_sha256": "9861cb1104df8ec0ce0e5de06999ed8540a156766893cf404a41e9adb275afff",
+      "recorded_text_RECORD_sha256": "b2b29b17130655534d101b05b9a37c58b63c51a0d9fa09dfd0a3e3a6881d6a23",
+      "normalized_text_RECORD_sha256": "b2b29b17130655534d101b05b9a37c58b63c51a0d9fa09dfd0a3e3a6881d6a23",
+      "CRLF_count": 8,
+      "normalization_matches_record": true
+    },
+    {
+      "package": "setuptools",
+      "raw_RECORD_sha256": "4fa6c22959ace1347c74977892fff06f498006a6c5461ceb6330d9e8ce13b893",
+      "recorded_text_RECORD_sha256": "adcbf511d670a9befdf3251ff58116a0ff5853d335471c681f995d6adbe0cb68",
+      "normalized_text_RECORD_sha256": "adcbf511d670a9befdf3251ff58116a0ff5853d335471c681f995d6adbe0cb68",
+      "CRLF_count": 873,
+      "normalization_matches_record": true
+    }
+  ]
+}
