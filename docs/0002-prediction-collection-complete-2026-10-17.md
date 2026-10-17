@@ -153,8 +153,12 @@ receipt; this historical boundary remains explicit without replay.
 
 Unchanged software had one shared availability probe/toy smoke under g-031;
 later audits reference it. Work pytest available: false, Work tests executed: 0.
-No installation. Shared toy smoke: 1240 frames in 2.93 seconds;
-exact publication-head public Research checks CI must pass and its logs be read.
+No installation. Shared toy smoke: 1240 frames in 2.93 seconds
+(3.198 seconds for its enclosing child process). The initial publication candidate
+`7bcae0175eac8a06337631ca3b503a01b1de71bc` passed [Research checks](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39063379019):
+184 tests in 7.78 seconds and 1240 synthetic smoke frames in 3.90 seconds.
+The coordinating parent read the actual CI metadata and logs; later review-only
+publication and merged-main heads require their own CI checks.
 
 Next stage, only after independent review/merge and separate authorization, is
 the full frozen evaluator on all validated predictions. This session did not
@@ -164,4 +168,27 @@ training/model-selection exposure constrain this exploratory pilot. No independe
 scene/object/viewpoint generalization, method efficacy, paper reproduction, SOTA
 or real-robot result is claimed. Only small original derived artifacts are published;
 no videos, weights or private data. No added fees, paid API/GPU/credits, account,
-permissions or schedule changes. Keep this combined PR unmerged for parent review.
+permissions or schedule changes.
+
+## Independent publication review
+
+Two separate AI-agent artifact audits and the coordinating parent reviewed
+candidate `7bcae0175eac8a06337631ca3b503a01b1de71bc`, whose Git tree is
+`65adc4e5d69f94844f450f22b519506d860de4a1`. The
+[parent review](../results/0002-evaluation-completion/parent-review.json)
+binds all 564 original batch result files and records the evidence boundaries.
+All 29 frozen inputs and 422 historical files matched; all 100 generated
+orchestration source bindings matched reviewed templates. Forty-two post-run
+child records, serial launch order and source/log/wait bindings passed.
+
+The new 20 groups contain **1280 frames, 2560 rows and 10240 finite scalars**;
+all 30 prediction sets contain **1920 frames, 3840 rows and 15360 finite scalars**.
+No missing-coordinate, invalid-logit or nonfinite output was found. Raw CSV
+and numeric hashes, frame-query grids, index entries and documented timings
+were independently recomputed. Local reviewers read published Git records;
+they did not rehash the live cloud cache, decode annotations or rerun the model.
+
+The pre-model preparation failure is retained as a source-bound record of an
+observed tool exit. It has no separately archived raw stderr or parent wait
+receipt; static review confirms that the preparation source did not launch
+model inference. Successful inference receipts remain unchanged.
