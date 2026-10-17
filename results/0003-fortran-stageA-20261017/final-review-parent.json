@@ -1,0 +1,49 @@
+{
+  "phase": "final-review",
+  "source_commit": "b78f8a4026c7b13ef8b5c0b5375649857ac08f34",
+  "source_sha256": {
+    "protocols/0003-fortran-audit-v2.md": "a75534ffd969c73bb1612bfbe22df8514ec7b322fcda2a1b659a599259f18f6b",
+    "configs/0003-fortran-audit-v2.json": "9c7a3c34d6cfde851794bb130ee05562de51459150060db7539f33b26b263856",
+    "src/evr/point_geometry_v2.py": "58e68ae15f552eb70661ad9483e3ea9f3fae2de00e823fbbfb3957e6769baab2",
+    "scripts/audit_0003_fortran_v2.py": "0b3d2b56bfe36e0943f570a7b647d8e7a0054ffff4882098285d3d2b22411bb5",
+    "tests/test_point_geometry_v2.py": "a6700c8cde65f21e3c66fb8edfcb84ae9ee6088e8258838d6e64ebd036e7d8ce",
+    "results/0003-fortran-stageA-20261017/source-convention.json": "f340f66117e76e2705b78a8b266c1a47feb2f649824387865225046c5d2a705c",
+    "protocols/0003-design-freeze-v1.json": "adb1b58b2fdab0e63899c67e30706f14b710a113bd6892eecdc08657b7826a7a",
+    "protocols/0003-timing-addendum-freeze-v1.json": "ef05a121bf5ef0f525367ed7bcf3b4a8cd20df66c2be6bb09194fb44a5f6e2ab",
+    "protocols/0003-resource-addendum-freeze-v1.json": "0e1b867fad0a3873ffb8cb6ec64335ce5c2c0dbf3ef779efd8cbe5c553452e04"
+  },
+  "parent_source_sha256": "27b540e7265069d34454b0e4731c67bac4ee60ad76a736c9c34ca91ce99c4a9c",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scratch/stageA_software.py"
+  ],
+  "env": {
+    "PATH": "inherited runtime PATH; value omitted from public receipt",
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "started_utc": "2026-10-17T23:07:34.213871+00:00",
+  "ended_utc": "2026-10-17T23:07:35.011720+00:00",
+  "wall_seconds": 0.7978533939967747,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 31064,
+  "cpu_user_seconds": 0.596303,
+  "cpu_system_seconds": 0.19655499999999998,
+  "limits": {
+    "AS_bytes": 6442450944,
+    "cpu_slots": 2,
+    "timeout": 900
+  },
+  "logs_sha256": {
+    "stdout": "46e00d2a110d355671ac5089d394b89a50cb380af0d33bbea4e2e4fecbc496fc",
+    "stderr": "d010db054008a8248cfe7f12a66357e1c166f395082c44355868ce297145a790"
+  },
+  "boundary": "parent has no further supervisor receipt; synthetic software only"
+}

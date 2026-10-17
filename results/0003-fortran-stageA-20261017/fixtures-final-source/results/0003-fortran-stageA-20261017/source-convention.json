@@ -1,0 +1,36 @@
+{
+  "revision": "a053342a72fed32af4134b4ca0c44a78a3ac0fdb",
+  "access": "cached source text only; not executed; no data GT",
+  "sources": [
+    {
+      "path": "utils/reprojection.py",
+      "url": "https://github.com/y-zheng18/point_odyssey/blob/a053342a72fed32af4134b4ca0c44a78a3ac0fdb/utils/reprojection.py#L26-L33",
+      "sha256": "c226ff24be5037fbce6ed747bf31feb1fea1de17b7a8260317fd84737b5f1c00",
+      "lines": [
+        26,
+        33,
+        66,
+        68,
+        81,
+        85
+      ],
+      "evidence": "homogeneous world -> saved RT -> divide by camera z -> K -> xy; saved arrays loaded directly, v1.0 conversion commented"
+    },
+    {
+      "path": "utils/gen_tracking_indoor.py",
+      "url": "https://github.com/y-zheng18/point_odyssey/blob/a053342a72fed32af4134b4ca0c44a78a3ac0fdb/utils/gen_tracking_indoor.py#L156-L220",
+      "sha256": "413f680d2dd8b7bf65179bdf305baf94207441dd186c4fbba0d7d9bf66787f2a",
+      "lines": [
+        156,
+        157,
+        186,
+        220
+      ],
+      "evidence": "coordinate conversion during generation precedes saved transformed RT and world trajectories; do not apply it again"
+    }
+  ],
+  "dataset_convention_validation": "pending after prospective freeze; no transpose/inverse/axis search",
+  "units": "unknown",
+  "FPS": "unknown",
+  "license": "conservative data CC BY-NC-SA 4.0; no raw redistribution"
+}

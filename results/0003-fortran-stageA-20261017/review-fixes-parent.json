@@ -1,0 +1,49 @@
+{
+  "phase": "review-fixes",
+  "source_commit": "b78f8a4026c7b13ef8b5c0b5375649857ac08f34",
+  "source_sha256": {
+    "protocols/0003-fortran-audit-v2.md": "3c9b56f85cfb42fce3717b0d025918e6204acb5f791d28e8800ec8c3cdef92e2",
+    "configs/0003-fortran-audit-v2.json": "9c7a3c34d6cfde851794bb130ee05562de51459150060db7539f33b26b263856",
+    "src/evr/point_geometry_v2.py": "bb18856ece124f6a597f4481664f133324c67527a77a52c00413c6439f56c284",
+    "scripts/audit_0003_fortran_v2.py": "215dc16574a56f4b7b9b2c3f3c8755d688181c1c83d3496005d107733ab07fed",
+    "tests/test_point_geometry_v2.py": "53ae1ccebe55161a293f1183bc9458f6454628c45c3ee22d19c9d162862b47d1",
+    "results/0003-fortran-stageA-20261017/source-convention.json": "f340f66117e76e2705b78a8b266c1a47feb2f649824387865225046c5d2a705c",
+    "protocols/0003-design-freeze-v1.json": "adb1b58b2fdab0e63899c67e30706f14b710a113bd6892eecdc08657b7826a7a",
+    "protocols/0003-timing-addendum-freeze-v1.json": "ef05a121bf5ef0f525367ed7bcf3b4a8cd20df66c2be6bb09194fb44a5f6e2ab",
+    "protocols/0003-resource-addendum-freeze-v1.json": "0e1b867fad0a3873ffb8cb6ec64335ce5c2c0dbf3ef779efd8cbe5c553452e04"
+  },
+  "parent_source_sha256": "27b540e7265069d34454b0e4731c67bac4ee60ad76a736c9c34ca91ce99c4a9c",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scratch/stageA_software.py"
+  ],
+  "env": {
+    "PATH": "inherited runtime PATH; value omitted from public receipt",
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "started_utc": "2026-10-17T23:05:56.572678+00:00",
+  "ended_utc": "2026-10-17T23:05:57.290558+00:00",
+  "wall_seconds": 0.717884915000468,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 31360,
+  "cpu_user_seconds": 0.531399,
+  "cpu_system_seconds": 0.184165,
+  "limits": {
+    "AS_bytes": 6442450944,
+    "cpu_slots": 2,
+    "timeout": 900
+  },
+  "logs_sha256": {
+    "stdout": "76af1ada6abba8fe4a7a22def846a40301636e56215dba168bcf9690bb709c29",
+    "stderr": "20eaac8b832a24b7ef0036205043816c25cc3785f904d43a8965734f1b39ee5c"
+  },
+  "boundary": "parent has no further supervisor receipt; synthetic software only"
+}
