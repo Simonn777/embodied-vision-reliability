@@ -1,0 +1,112 @@
+{
+  "status": "APPROVE_with_explicit_scope",
+  "reviewed_candidate": "bb5fe92fe38835266d660f63b159583151e64695",
+  "input_commit": "8a7591b822e59c52a70dc4643f8e9cfcfa368c97",
+  "execution_commit": "8ffb8bcfbc5c7a9fe87e5a624d3f3dc1e0d97072",
+  "receipt_sha256": "957f830c6a67e6923ed82cba90d1ddf9d74558f03f93763abd82e01aad095820",
+  "source_checker_sha256": "230d214a14fa25fc56961298ff424cd0450b5e4e1364f88da33d56beaa3bb3c3",
+  "comparison_launcher_sha256": "f4b89a183ef50f143ec2d8f8ed0cdac3811a966fc7666b6c899a484efcfea554",
+  "published_blob_sha256": {
+    "results/0003-rotation-stageB-20261017/audit/camera-excerpt.json": "8c6397627a21a2585bc252151697e80ef510f93d7dd695463642e37536c10e81",
+    "results/0003-rotation-stageB-20261017/audit/diagnostic.json": "a1f79a887f3d707fb046e011ee1e31e5f62f17aeeb833d5dfc8566144c8b5681"
+  },
+  "review_input_sha256": "532674b3ab6394ff68efc81b84c0763d93ce9debd32f7fa1ff1c6f10c5a13f29",
+  "review_output_sha256": "4342ce961ee3ae262f405c405231ee9ea292f563a92f7283f62b24030df2836b",
+  "review_execution_receipt_sha256": "d6cd38152897f014597ab9b1148f45f4601f9ebd963ca566e920d19799631246",
+  "saved_scalar_byte_hex_rational_offset_checks": 25,
+  "payload_bytes": 100,
+  "payload_sha256": {
+    "K": "df98acf0ab01d5c21d63ce99b8abc40a031c46a4bde55293bd0d0e576178a01f",
+    "RT": "61635ee703fd6e944a5f98fbe8845abfdb29e09267a6c6dc8d1b13d9cb236a3f"
+  },
+  "exact_gram_entries_checked": 18,
+  "exact_determinant_checked": 1,
+  "exact_determinant": "140738893705201/140737488355328",
+  "max_absolute_published_double_minus_exact": "0",
+  "gate_defects": {
+    "RRt": {
+      "exact_fraction": "6111/16777216",
+      "decimal": 0.0003642439842224121,
+      "defect_over_tau": 381.9375,
+      "passes": false
+    },
+    "RtR": {
+      "exact_fraction": "112189243391/281474976710656",
+      "decimal": 0.0003985762596094844,
+      "defect_over_tau": 417.9374999962747,
+      "passes": false
+    },
+    "determinant": {
+      "exact_fraction": "1405349873/140737488355328",
+      "decimal": 9.985611434615294e-06,
+      "defect_over_tau": 10.470672495663166,
+      "passes": false
+    }
+  },
+  "half_grid_counts": {
+    "K9": {
+      "representable": 9,
+      "total": 9
+    },
+    "R9": {
+      "representable": 9,
+      "total": 9
+    },
+    "RT16": {
+      "representable": 14,
+      "total": 16
+    },
+    "translation3": {
+      "representable": 1,
+      "total": 3
+    },
+    "homogeneous4": {
+      "representable": 4,
+      "total": 4
+    }
+  },
+  "half_grid_unique_flags_checked": 25,
+  "half_grid_nonrepresentable": [
+    [
+      "RT",
+      0,
+      3
+    ],
+    [
+      "RT",
+      2,
+      3
+    ]
+  ],
+  "transpose_invariance_pass": true,
+  "single_final_f32_rounding_excluded": true,
+  "all_three_exceed_single_final_f32_bounds": true,
+  "original_gate_retained_failed": true,
+  "stale_camera_access_state": {
+    "value": "NUMERIC_CAMERA_ACCESS_STARTING",
+    "documented": "Top-level stale starting label; completed overall/member statuses and complete counts are separately present."
+  },
+  "data_terms": {
+    "authors": [
+      "Yang Zheng",
+      "Adam W. Harley",
+      "Bokui Shen",
+      "Gordon Wetzstein",
+      "Leonidas J. Guibas"
+    ],
+    "dataset": "PointOdyssey v1.2",
+    "HF_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+    "source": "https://huggingface.co/datasets/aharley/pointodyssey",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "modifications": "none to numeric values; lossless stored-byte/float.hex/rational representations only",
+    "scope_exception": "new explicit narrow permission for exactly25 development frame0 scalars, not full arrays, trajectories or images; these data/derived numeric output are not repo MIT"
+  },
+  "limits": [
+    "Independent exact math over only the 25 published saved float32 values; no archive/cache/original annotation reread and no model/projection.",
+    "Exact determinant uses pivoted elimination; half flags use rational grid membership, not the cloud half converter.",
+    "Source/output execution receipt observes checker child exit, not a further outer supervisor exit.",
+    "Numerical trigger confirmed. Actual generation pipeline and root cause remain unknown; half-grid membership is compatibility evidence only.",
+    "No geometric validity, valid-visible GT support, cohort independence, or improvement conclusion follows."
+  ]
+}

@@ -1,0 +1,1022 @@
+{
+  "reviewer": "independent stdlib saved-float32 matrix verifier",
+  "arithmetic": "exact Fraction coefficients; determinant via pivoted elimination",
+  "scope": "original predicate definitions under exact arithmetic, not an instruction-level binary64 replay; no projection/depth/GT-support verdict",
+  "input_kind": "original_float32_bytes",
+  "byte_order": "little",
+  "inputs": {
+    "K": {
+      "bytes": 36,
+      "hex": "00001044000000000000f04300000000000010440000874300000000000000000000803f",
+      "sha256": "df98acf0ab01d5c21d63ce99b8abc40a031c46a4bde55293bd0d0e576178a01f",
+      "matrix": [
+        [
+          {
+            "numerator": "576",
+            "denominator": "1",
+            "decimal_display_only": 576.0
+          },
+          {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_display_only": 0.0
+          },
+          {
+            "numerator": "480",
+            "denominator": "1",
+            "decimal_display_only": 480.0
+          }
+        ],
+        [
+          {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_display_only": 0.0
+          },
+          {
+            "numerator": "576",
+            "denominator": "1",
+            "decimal_display_only": 576.0
+          },
+          {
+            "numerator": "270",
+            "denominator": "1",
+            "decimal_display_only": 270.0
+          }
+        ],
+        [
+          {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_display_only": 0.0
+          },
+          {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_display_only": 0.0
+          },
+          {
+            "numerator": "1",
+            "denominator": "1",
+            "decimal_display_only": 1.0
+          }
+        ]
+      ]
+    },
+    "RT": {
+      "bytes": 64,
+      "hex": "00603cbf000080b300602dbf565571350000713e000070bf00e082be0000c83e00a022bf00e0b1be00a0303f569587400000000000000000000000000000803f",
+      "sha256": "61635ee703fd6e944a5f98fbe8845abfdb29e09267a6c6dc8d1b13d9cb236a3f",
+      "matrix": [
+        [
+          {
+            "numerator": "-1507",
+            "denominator": "2048",
+            "decimal_display_only": -0.73583984375
+          },
+          {
+            "numerator": "-1",
+            "denominator": "16777216",
+            "decimal_display_only": -5.960464477539063e-08
+          },
+          {
+            "numerator": "-1387",
+            "denominator": "2048",
+            "decimal_display_only": -0.67724609375
+          },
+          {
+            "numerator": "7908011",
+            "denominator": "8796093022208",
+            "decimal_display_only": 8.990367632577545e-07
+          }
+        ],
+        [
+          {
+            "numerator": "241",
+            "denominator": "1024",
+            "decimal_display_only": 0.2353515625
+          },
+          {
+            "numerator": "-15",
+            "denominator": "16",
+            "decimal_display_only": -0.9375
+          },
+          {
+            "numerator": "-1047",
+            "denominator": "4096",
+            "decimal_display_only": -0.255615234375
+          },
+          {
+            "numerator": "25",
+            "denominator": "64",
+            "decimal_display_only": 0.390625
+          }
+        ],
+        [
+          {
+            "numerator": "-1301",
+            "denominator": "2048",
+            "decimal_display_only": -0.63525390625
+          },
+          {
+            "numerator": "-1423",
+            "denominator": "4096",
+            "decimal_display_only": -0.347412109375
+          },
+          {
+            "numerator": "1413",
+            "denominator": "2048",
+            "decimal_display_only": 0.68994140625
+          },
+          {
+            "numerator": "4442795",
+            "denominator": "1048576",
+            "decimal_display_only": 4.2369794845581055
+          }
+        ],
+        [
+          {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_display_only": 0.0
+          },
+          {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_display_only": 0.0
+          },
+          {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_display_only": 0.0
+          },
+          {
+            "numerator": "1",
+            "denominator": "1",
+            "decimal_display_only": 1.0
+          }
+        ]
+      ]
+    }
+  },
+  "half_grid_fingerprint": {
+    "arithmetic": "Exact rational binary16 grid membership, independent of a binary16 conversion routine.",
+    "rule": "Finite abs<=65504; zero accepted; subnormal x*2^24 integral; normal floorlog2(x)=e and x/2^(e-10) integral.",
+    "summaries": {
+      "K9": {
+        "count": 9,
+        "representable": 9,
+        "not_representable": 0,
+        "all_representable": true,
+        "outside_finite_half_range": 0,
+        "negative_zero": 0
+      },
+      "RT16": {
+        "count": 16,
+        "representable": 14,
+        "not_representable": 2,
+        "all_representable": false,
+        "outside_finite_half_range": 0,
+        "negative_zero": 0
+      },
+      "R9": {
+        "count": 9,
+        "representable": 9,
+        "not_representable": 0,
+        "all_representable": true,
+        "outside_finite_half_range": 0,
+        "negative_zero": 0
+      },
+      "all25": {
+        "count": 25,
+        "representable": 23,
+        "not_representable": 2,
+        "all_representable": false,
+        "outside_finite_half_range": 0,
+        "negative_zero": 0
+      }
+    },
+    "entries": [
+      {
+        "matrix": "K",
+        "row": 0,
+        "column": 0,
+        "input_float32_hex": "00001044",
+        "input_float32_bits": "44100000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "576",
+          "denominator": "1",
+          "decimal_display_only": 576.0
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": 9,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "2",
+          "decimal_display_only": 0.5
+        }
+      },
+      {
+        "matrix": "K",
+        "row": 0,
+        "column": 1,
+        "input_float32_hex": "00000000",
+        "input_float32_bits": "00000000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal_display_only": 0.0
+        },
+        "representable": true,
+        "region": "zero",
+        "exponent": null,
+        "grid_step": null
+      },
+      {
+        "matrix": "K",
+        "row": 0,
+        "column": 2,
+        "input_float32_hex": "0000f043",
+        "input_float32_bits": "43f00000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "480",
+          "denominator": "1",
+          "decimal_display_only": 480.0
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": 8,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "4",
+          "decimal_display_only": 0.25
+        }
+      },
+      {
+        "matrix": "K",
+        "row": 1,
+        "column": 0,
+        "input_float32_hex": "00000000",
+        "input_float32_bits": "00000000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal_display_only": 0.0
+        },
+        "representable": true,
+        "region": "zero",
+        "exponent": null,
+        "grid_step": null
+      },
+      {
+        "matrix": "K",
+        "row": 1,
+        "column": 1,
+        "input_float32_hex": "00001044",
+        "input_float32_bits": "44100000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "576",
+          "denominator": "1",
+          "decimal_display_only": 576.0
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": 9,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "2",
+          "decimal_display_only": 0.5
+        }
+      },
+      {
+        "matrix": "K",
+        "row": 1,
+        "column": 2,
+        "input_float32_hex": "00008743",
+        "input_float32_bits": "43870000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "270",
+          "denominator": "1",
+          "decimal_display_only": 270.0
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": 8,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "4",
+          "decimal_display_only": 0.25
+        }
+      },
+      {
+        "matrix": "K",
+        "row": 2,
+        "column": 0,
+        "input_float32_hex": "00000000",
+        "input_float32_bits": "00000000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal_display_only": 0.0
+        },
+        "representable": true,
+        "region": "zero",
+        "exponent": null,
+        "grid_step": null
+      },
+      {
+        "matrix": "K",
+        "row": 2,
+        "column": 1,
+        "input_float32_hex": "00000000",
+        "input_float32_bits": "00000000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal_display_only": 0.0
+        },
+        "representable": true,
+        "region": "zero",
+        "exponent": null,
+        "grid_step": null
+      },
+      {
+        "matrix": "K",
+        "row": 2,
+        "column": 2,
+        "input_float32_hex": "0000803f",
+        "input_float32_bits": "3f800000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "1",
+          "denominator": "1",
+          "decimal_display_only": 1.0
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": 0,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "1024",
+          "decimal_display_only": 0.0009765625
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 0,
+        "column": 0,
+        "input_float32_hex": "00603cbf",
+        "input_float32_bits": "bf3c6000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "-1507",
+          "denominator": "2048",
+          "decimal_display_only": -0.73583984375
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -1,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "2048",
+          "decimal_display_only": 0.00048828125
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 0,
+        "column": 1,
+        "input_float32_hex": "000080b3",
+        "input_float32_bits": "b3800000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "-1",
+          "denominator": "16777216",
+          "decimal_display_only": -5.960464477539063e-08
+        },
+        "representable": true,
+        "region": "subnormal_range",
+        "exponent": null,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "16777216",
+          "decimal_display_only": 5.960464477539063e-08
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 0,
+        "column": 2,
+        "input_float32_hex": "00602dbf",
+        "input_float32_bits": "bf2d6000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "-1387",
+          "denominator": "2048",
+          "decimal_display_only": -0.67724609375
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -1,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "2048",
+          "decimal_display_only": 0.00048828125
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 0,
+        "column": 3,
+        "input_float32_hex": "56557135",
+        "input_float32_bits": "35715556",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "7908011",
+          "denominator": "8796093022208",
+          "decimal_display_only": 8.990367632577545e-07
+        },
+        "representable": false,
+        "region": "subnormal_range",
+        "exponent": null,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "16777216",
+          "decimal_display_only": 5.960464477539063e-08
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 1,
+        "column": 0,
+        "input_float32_hex": "0000713e",
+        "input_float32_bits": "3e710000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "241",
+          "denominator": "1024",
+          "decimal_display_only": 0.2353515625
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -3,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "8192",
+          "decimal_display_only": 0.0001220703125
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 1,
+        "column": 1,
+        "input_float32_hex": "000070bf",
+        "input_float32_bits": "bf700000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "-15",
+          "denominator": "16",
+          "decimal_display_only": -0.9375
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -1,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "2048",
+          "decimal_display_only": 0.00048828125
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 1,
+        "column": 2,
+        "input_float32_hex": "00e082be",
+        "input_float32_bits": "be82e000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "-1047",
+          "denominator": "4096",
+          "decimal_display_only": -0.255615234375
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -2,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "4096",
+          "decimal_display_only": 0.000244140625
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 1,
+        "column": 3,
+        "input_float32_hex": "0000c83e",
+        "input_float32_bits": "3ec80000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "25",
+          "denominator": "64",
+          "decimal_display_only": 0.390625
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -2,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "4096",
+          "decimal_display_only": 0.000244140625
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 2,
+        "column": 0,
+        "input_float32_hex": "00a022bf",
+        "input_float32_bits": "bf22a000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "-1301",
+          "denominator": "2048",
+          "decimal_display_only": -0.63525390625
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -1,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "2048",
+          "decimal_display_only": 0.00048828125
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 2,
+        "column": 1,
+        "input_float32_hex": "00e0b1be",
+        "input_float32_bits": "beb1e000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "-1423",
+          "denominator": "4096",
+          "decimal_display_only": -0.347412109375
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -2,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "4096",
+          "decimal_display_only": 0.000244140625
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 2,
+        "column": 2,
+        "input_float32_hex": "00a0303f",
+        "input_float32_bits": "3f30a000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "1413",
+          "denominator": "2048",
+          "decimal_display_only": 0.68994140625
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": -1,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "2048",
+          "decimal_display_only": 0.00048828125
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 2,
+        "column": 3,
+        "input_float32_hex": "56958740",
+        "input_float32_bits": "40879556",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "4442795",
+          "denominator": "1048576",
+          "decimal_display_only": 4.2369794845581055
+        },
+        "representable": false,
+        "region": "normal_range",
+        "exponent": 2,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "256",
+          "decimal_display_only": 0.00390625
+        }
+      },
+      {
+        "matrix": "RT",
+        "row": 3,
+        "column": 0,
+        "input_float32_hex": "00000000",
+        "input_float32_bits": "00000000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal_display_only": 0.0
+        },
+        "representable": true,
+        "region": "zero",
+        "exponent": null,
+        "grid_step": null
+      },
+      {
+        "matrix": "RT",
+        "row": 3,
+        "column": 1,
+        "input_float32_hex": "00000000",
+        "input_float32_bits": "00000000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal_display_only": 0.0
+        },
+        "representable": true,
+        "region": "zero",
+        "exponent": null,
+        "grid_step": null
+      },
+      {
+        "matrix": "RT",
+        "row": 3,
+        "column": 2,
+        "input_float32_hex": "00000000",
+        "input_float32_bits": "00000000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal_display_only": 0.0
+        },
+        "representable": true,
+        "region": "zero",
+        "exponent": null,
+        "grid_step": null
+      },
+      {
+        "matrix": "RT",
+        "row": 3,
+        "column": 3,
+        "input_float32_hex": "0000803f",
+        "input_float32_bits": "3f800000",
+        "negative_zero": false,
+        "exact_value": {
+          "numerator": "1",
+          "denominator": "1",
+          "decimal_display_only": 1.0
+        },
+        "representable": true,
+        "region": "normal_range",
+        "exponent": 0,
+        "grid_step": {
+          "numerator": "1",
+          "denominator": "1024",
+          "decimal_display_only": 0.0009765625
+        }
+      }
+    ],
+    "interpretation": "All entries on the half grid are compatible with direct binary16-to-binary32 widening, not proof of that history. A nonrepresentable entry excludes only an all-values direct widening path with no intervening arithmetic. Original input bytes and signed zero are preserved; no replacement matrix or new gate is produced."
+  },
+  "matrix_preconditions": {
+    "all_25_coefficients_finite_float32": true,
+    "K_bottom_row_exact": true,
+    "RT_bottom_row_exact": true,
+    "positive_fx_fy": true
+  },
+  "matrix_preconditions_pass": true,
+  "statistics": {
+    "RRt": [
+      [
+        {
+          "numerator": "281509470666753",
+          "denominator": "281474976710656",
+          "decimal_display_only": 1.0001225471496618
+        },
+        {
+          "numerator": "-17873",
+          "denominator": "268435456",
+          "decimal_display_only": -6.658211350440979e-05
+        },
+        {
+          "numerator": "12715407",
+          "denominator": "68719476736",
+          "decimal_display_only": 0.00018503352475818247
+        }
+      ],
+      [
+        {
+          "numerator": "-17873",
+          "denominator": "268435456",
+          "decimal_display_only": -6.658211350440979e-05
+        },
+        {
+          "numerator": "16771105",
+          "denominator": "16777216",
+          "decimal_display_only": 0.9996357560157776
+        },
+        {
+          "numerator": "-1415",
+          "denominator": "8388608",
+          "decimal_display_only": -0.00016868114471435547
+        }
+      ],
+      [
+        {
+          "numerator": "12715407",
+          "denominator": "68719476736",
+          "decimal_display_only": 0.00018503352475818247
+        },
+        {
+          "numerator": "-1415",
+          "denominator": "8388608",
+          "decimal_display_only": -0.00016868114471435547
+        },
+        {
+          "numerator": "16781609",
+          "denominator": "16777216",
+          "decimal_display_only": 1.0002618432044983
+        }
+      ]
+    ],
+    "RtR": [
+      [
+        {
+          "numerator": "2097987",
+          "denominator": "2097152",
+          "decimal_display_only": 1.0003981590270996
+        },
+        {
+          "numerator": "1816035",
+          "denominator": "34359738368",
+          "decimal_display_only": 5.285357474349439e-05
+        },
+        {
+          "numerator": "-431",
+          "denominator": "4194304",
+          "decimal_display_only": -0.00010275840759277344
+        }
+      ],
+      [
+        {
+          "numerator": "1816035",
+          "denominator": "34359738368",
+          "decimal_display_only": 5.285357474349439e-05
+        },
+        {
+          "numerator": "281362787467265",
+          "denominator": "281474976710656",
+          "decimal_display_only": 0.9996014237403905
+        },
+        {
+          "numerator": "-1878677",
+          "denominator": "34359738368",
+          "decimal_display_only": -5.4676696890965104e-05
+        }
+      ],
+      [
+        {
+          "numerator": "-431",
+          "denominator": "4194304",
+          "decimal_display_only": -0.00010275840759277344
+        },
+        {
+          "numerator": "-1878677",
+          "denominator": "34359738368",
+          "decimal_display_only": -5.4676696890965104e-05
+        },
+        {
+          "numerator": "16777561",
+          "denominator": "16777216",
+          "decimal_display_only": 1.0000205636024475
+        }
+      ]
+    ],
+    "RRt_minus_I": [
+      [
+        {
+          "numerator": "34493956097",
+          "denominator": "281474976710656",
+          "decimal_display_only": 0.00012254714966175584
+        },
+        {
+          "numerator": "-17873",
+          "denominator": "268435456",
+          "decimal_display_only": -6.658211350440979e-05
+        },
+        {
+          "numerator": "12715407",
+          "denominator": "68719476736",
+          "decimal_display_only": 0.00018503352475818247
+        }
+      ],
+      [
+        {
+          "numerator": "-17873",
+          "denominator": "268435456",
+          "decimal_display_only": -6.658211350440979e-05
+        },
+        {
+          "numerator": "-6111",
+          "denominator": "16777216",
+          "decimal_display_only": -0.0003642439842224121
+        },
+        {
+          "numerator": "-1415",
+          "denominator": "8388608",
+          "decimal_display_only": -0.00016868114471435547
+        }
+      ],
+      [
+        {
+          "numerator": "12715407",
+          "denominator": "68719476736",
+          "decimal_display_only": 0.00018503352475818247
+        },
+        {
+          "numerator": "-1415",
+          "denominator": "8388608",
+          "decimal_display_only": -0.00016868114471435547
+        },
+        {
+          "numerator": "4393",
+          "denominator": "16777216",
+          "decimal_display_only": 0.000261843204498291
+        }
+      ]
+    ],
+    "RtR_minus_I": [
+      [
+        {
+          "numerator": "835",
+          "denominator": "2097152",
+          "decimal_display_only": 0.0003981590270996094
+        },
+        {
+          "numerator": "1816035",
+          "denominator": "34359738368",
+          "decimal_display_only": 5.285357474349439e-05
+        },
+        {
+          "numerator": "-431",
+          "denominator": "4194304",
+          "decimal_display_only": -0.00010275840759277344
+        }
+      ],
+      [
+        {
+          "numerator": "1816035",
+          "denominator": "34359738368",
+          "decimal_display_only": 5.285357474349439e-05
+        },
+        {
+          "numerator": "-112189243391",
+          "denominator": "281474976710656",
+          "decimal_display_only": -0.0003985762596094844
+        },
+        {
+          "numerator": "-1878677",
+          "denominator": "34359738368",
+          "decimal_display_only": -5.4676696890965104e-05
+        }
+      ],
+      [
+        {
+          "numerator": "-431",
+          "denominator": "4194304",
+          "decimal_display_only": -0.00010275840759277344
+        },
+        {
+          "numerator": "-1878677",
+          "denominator": "34359738368",
+          "decimal_display_only": -5.4676696890965104e-05
+        },
+        {
+          "numerator": "345",
+          "denominator": "16777216",
+          "decimal_display_only": 2.0563602447509766e-05
+        }
+      ]
+    ],
+    "RRt_max": {
+      "numerator": "6111",
+      "denominator": "16777216",
+      "decimal_display_only": 0.0003642439842224121
+    },
+    "RtR_max": {
+      "numerator": "112189243391",
+      "denominator": "281474976710656",
+      "decimal_display_only": 0.0003985762596094844
+    },
+    "det": {
+      "numerator": "140738893705201",
+      "denominator": "140737488355328",
+      "decimal_display_only": 1.0000099856114346
+    },
+    "det_minus_one_abs": {
+      "numerator": "1405349873",
+      "denominator": "140737488355328",
+      "decimal_display_only": 9.985611434615294e-06
+    }
+  },
+  "original_f32_tolerance": {
+    "numerator": "1",
+    "denominator": "1048576",
+    "decimal_display_only": 9.5367431640625e-07
+  },
+  "strict_greater_than_tolerance": {
+    "RRt_max": true,
+    "RtR_max": true,
+    "det_minus_one_abs": true
+  },
+  "proper_rotation_gate_fails": true,
+  "transpose_invariant": {
+    "RRt_becomes_RtR": true,
+    "RtR_becomes_RRt": true,
+    "determinant_unchanged": true,
+    "overall_gate_unchanged": true
+  },
+  "ratios": {
+    "RRt_max": {
+      "over_original_tolerance": {
+        "numerator": "6111",
+        "denominator": "16",
+        "decimal_display_only": 381.9375
+      },
+      "over_storage_only_bound": {
+        "numerator": "11391729664",
+        "denominator": "11184811",
+        "decimal_display_only": 1018.4999696463356
+      }
+    },
+    "RtR_max": {
+      "over_original_tolerance": {
+        "numerator": "112189243391",
+        "denominator": "268435456",
+        "decimal_display_only": 417.9374999962747
+      },
+      "over_storage_only_bound": {
+        "numerator": "112189243391",
+        "denominator": "100663299",
+        "decimal_display_only": 1114.4999667753787
+      }
+    },
+    "det_minus_one_abs": {
+      "over_original_tolerance": {
+        "numerator": "1405349873",
+        "denominator": "134217728",
+        "decimal_display_only": 10.470672495663166
+      },
+      "over_storage_only_bound": {
+        "numerator": "47155716749787136",
+        "denominator": "2533275243380763",
+        "decimal_display_only": 18.614525552642213
+      }
+    }
+  },
+  "storage_rounding_test": {
+    "unit_roundoff": {
+      "numerator": "1",
+      "denominator": "16777216",
+      "decimal_display_only": 5.960464477539063e-08
+    },
+    "gram_bound": {
+      "numerator": "100663299",
+      "denominator": "281474976710656",
+      "decimal_display_only": 3.576278793104848e-07
+    },
+    "det_bound": {
+      "numerator": "2533275243380763",
+      "denominator": "4722366482869645213696",
+      "decimal_display_only": 5.364418989017907e-07
+    },
+    "assumptions": "An exact proper orthogonal Q is rounded once to float32 round-to-nearest; |Qij|<=1 and each entry error<=u.",
+    "derivation": "Gram uses 6u+3u^2; determinant multilinearity and column perturbation norm<=3u give 9u+27u^2+27u^3.",
+    "strict_exceeds_bound": {
+      "RRt_max": true,
+      "RtR_max": true,
+      "det_minus_one_abs": true
+    },
+    "single_final_storage_rounding_hypothesis_excluded": true,
+    "interpretation": "Exceeding a bound excludes only this narrow single-final-rounding hypothesis. Staying within does not establish rounding as the cause. No upstream-chain, export, reader, scale, shear, or reflection root cause is identified."
+  }
+}

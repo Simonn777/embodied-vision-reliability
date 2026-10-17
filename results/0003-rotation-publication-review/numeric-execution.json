@@ -1,0 +1,49 @@
+{
+  "reviewed_candidate": "bb5fe92fe38835266d660f63b159583151e64695",
+  "input_commit": "8a7591b822e59c52a70dc4643f8e9cfcfa368c97",
+  "execution_commit": "8ffb8bcfbc5c7a9fe87e5a624d3f3dc1e0d97072",
+  "receipt_sha256": "957f830c6a67e6923ed82cba90d1ddf9d74558f03f93763abd82e01aad095820",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-I",
+    "/tmp/0003-rotation-independent-math.py",
+    "--input",
+    "/tmp/0003-rotation-native-input.json"
+  ],
+  "started_utc": "2026-10-17T23:49:53.169011+00:00",
+  "ended_utc": "2026-10-17T23:49:53.250800+00:00",
+  "elapsed_seconds": 0.08164550000000001,
+  "observed_child_returncode": 0,
+  "checker_sha256": "230d214a14fa25fc56961298ff424cd0450b5e4e1364f88da33d56beaa3bb3c3",
+  "launcher_sha256": "f4b89a183ef50f143ec2d8f8ed0cdac3811a966fc7666b6c899a484efcfea554",
+  "input_sha256": "532674b3ab6394ff68efc81b84c0763d93ce9debd32f7fa1ff1c6f10c5a13f29",
+  "stdout_sha256": "4342ce961ee3ae262f405c405231ee9ea292f563a92f7283f62b24030df2836b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "published_inputs": {
+    "excerpt": {
+      "path": "results/0003-rotation-stageB-20261017/audit/camera-excerpt.json",
+      "sha256": "8c6397627a21a2585bc252151697e80ef510f93d7dd695463642e37536c10e81"
+    },
+    "diagnostic": {
+      "path": "results/0003-rotation-stageB-20261017/audit/diagnostic.json",
+      "sha256": "a1f79a887f3d707fb046e011ee1e31e5f62f17aeeb833d5dfc8566144c8b5681"
+    }
+  },
+  "data_terms": {
+    "authors": [
+      "Yang Zheng",
+      "Adam W. Harley",
+      "Bokui Shen",
+      "Gordon Wetzstein",
+      "Leonidas J. Guibas"
+    ],
+    "dataset": "PointOdyssey v1.2",
+    "HF_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+    "source": "https://huggingface.co/datasets/aharley/pointodyssey",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "modifications": "none to numeric values; lossless stored-byte/float.hex/rational representations only",
+    "scope_exception": "new explicit narrow permission for exactly25 development frame0 scalars, not full arrays, trajectories or images; these data/derived numeric output are not repo MIT"
+  },
+  "boundary": "Parent observed subprocess.run returncode and elapsed time for only the prewritten reviewer. This receipt has no separate observation of its own outer process exit. No candidate executable, archive, cache, model, or additional GT data accessed."
+}

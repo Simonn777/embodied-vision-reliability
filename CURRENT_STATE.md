@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: rotation-failure diagnostic Stage A candidate; real camera access pending independent review.
+Updated: 2026-10-17. Program day 2. Phase: frozen rotation diagnostic completed and independently reviewed; original gate failed, generation cause unresolved.
 
 ## Active question
 
@@ -249,3 +249,21 @@ Old files/failures/markers preserved; new marker retained. No model, old-test tu
 threshold change, download/install, new fees or schedule/permission changes.
 Next: independent review of the recorded diagnostic; actual generation chain and
 independent cohort remain unresolved. No automatic matrix repair or audit rerun.
+
+
+## Rotation diagnostic independent publication review completed
+
+[Review](docs/0003-rotation-independent-review.md) approves candidate bb5fe92 for
+publication of the bounded failure diagnostic. Independent exact arithmetic over
+only the published 25 values confirms all 18 Gram entries, determinant, unchanged
+failed gate and half-grid counts; no cache or model was rerun. Parent review
+closes all 19 Stage B artifacts and confirms 1,512 protected execution-baseline
+files unchanged, including 1,390 result files and 37 Stage A artifacts. Candidate
+CI passed 290 tests and the existing 1,240-frame synthetic smoke. The local
+saved-record check (0.081646 s) is distinct from the cloud diagnostic (0.466789 s).
+
+Numerical trigger established; actual generation root cause remains unknown.
+Next is a version-specific provenance review beginning with cached source and
+published records. Any new geometry/data-access proposal requires a prospective
+freeze; original tau, failures and null projection errors stay unchanged. No
+independent cohort, geometry pass, model improvement or additional fee follows.
