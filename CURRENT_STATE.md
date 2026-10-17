@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: 0003 prospective timing clarified; default network works, inventory/cohort still blocked.
+Updated: 2026-10-17. Program day 2. Phase: 0003 complete metadata inventory; numeric audit stopped at frozen Fortran-layout gate.
 
 ## Active question
 
@@ -122,3 +122,29 @@ Parent provenance clarification: earliest 27 fixtures are not fully source-bound
 published input 66e5330. Old records remain historical, not retroactively repaired.
 Next is independent review and explicit resolution of archive-cap/provenance evidence,
 not sample retry, cohort invention, GT decoding or inference under this receipt.
+
+## 0003 final bounded cached-resource audit (2026-10-17)
+
+[Actual resource audit](docs/0003-cached-resource-audit-2026-10-17.md) follows a
+published input 227972d3 and separate resource receipt 8e418de4 BEFORE any numeric
+GT decode. V1/timing science unchanged. Complete safe inventory: 14,415 members,
+3,334,075,426 declared bytes; original ordinal 2,756 annotation is now newly observed
+as sample/scene_d78_0318_3rd/anno.npz, 705,904,917 bytes. Whole sample remains unknown-
+family development, not an independent held-out cohort. No new archive GET.
+
+One fixed first-scene annotation sample/r4_new_f/anno.npz saved exclusively to cache:
+98,527,880 bytes, SHA256 382d1edca0d6d88279ed1a61ee63c9ba27b7c5418f2269f4592c1658fd7d8e77.
+Reader stopped at Fortran-order valids; header-only diagnosis also finds Fortran
+visibs, while track/camera arrays are C order. No layout relaxation, GT numeric
+payload, selected point IDs, RGB or geometry checks. Max/RMS error undefined, not
+zero. Combined metadata/buffering charge 590,976 bytes within 64 MiB. Resource child
+21.082816 s, 29,820 KiB, real exit/raw 1/256, preserved. Ten bounded-reader software
+fixtures passed; a test-builder failure/fix is retained. No model/old-test/score
+work, downloads/install/fee/permission/schedule change. Last resource expansion for
+this task is complete; actual geometry, units/FPS and independence stay unverified.
+
+Next: independent review of explicit unsupported-layout/design decision, no further
+numeric access or resource relaxation this task. A later prospectively frozen
+pipeline/cohort must bind v1+timing+applicable resource decisions; no final cohort
+or inference authority exists. Do not mistake complete filenames for independent
+families or metadata/source-convention checks for numeric GT validation.
