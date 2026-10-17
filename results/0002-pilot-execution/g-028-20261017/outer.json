@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-10-17T19:24:14.643387+00:00",
+  "group_id": "g-028",
+  "output_path": "results/0002-pilot-predictions/v2-reconstructed/g-028",
+  "wrapper_sha256": "b80da242282dad512cc6c0452df1749fa9e31e00606bd26e61f06da2fd07fe79",
+  "phases": {
+    "preflight": {
+      "started_at_utc": "2026-10-17T19:24:14.647500+00:00",
+      "command": "env -i PATH=\"$PATH\" PYTHONPATH=scratch/boot-cache/runtime-fixed:scratch/boot-cache/runtime:scratch/boot-cache/source:src OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 timeout 900 python -c <preflight-code.py contents>",
+      "status": "completed",
+      "ended_at_utc": "2026-10-17T19:24:16.380417+00:00",
+      "wall_seconds": 1.7328099160004058,
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "peak_rss_kib": 223648,
+      "cpu_user_seconds": 1.688746,
+      "cpu_system_seconds": 0.178535,
+      "stdout_sha256": "554f23b64c056e4f4186aa98acffc047a60b3699a49b25ac8dc80cff18678e1b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "infer": {
+      "started_at_utc": "2026-10-17T19:24:16.380843+00:00",
+      "command": "env -i PATH=\"$PATH\" PYTHONPATH=scratch/boot-cache/runtime-fixed:scratch/boot-cache/runtime:scratch/boot-cache/source:src OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 timeout 900 python scripts/run_frozen_pilot.py infer --cache scratch/boot-cache --group-id g-028 --output results/0002-pilot-predictions/v2-reconstructed/g-028",
+      "status": "completed",
+      "ended_at_utc": "2026-10-17T19:25:04.602439+00:00",
+      "wall_seconds": 48.221343069002614,
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "peak_rss_kib": 2553148,
+      "cpu_user_seconds": 76.322682,
+      "cpu_system_seconds": 5.875097,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "environment_reconstruction": "official NumPy2.0.2 version-matched reconstruction; not byte-identical environment reproduction",
+  "source_commit": "6bdce8259d196a832a52ec0ab289066ecdf4907c",
+  "origin_main": "6bdce8259d196a832a52ec0ab289066ecdf4907c",
+  "ended_at_utc": "2026-10-17T19:25:04.602919+00:00",
+  "wall_seconds": 49.95922238699859
+}

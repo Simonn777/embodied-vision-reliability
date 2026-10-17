@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration predictions complete (10/10); evaluation predictions not started (0/20).
+Updated: 2026-10-17. Program day 2. Phase: all frozen-v2 predictions collected (10/10 calibration, 20/20 evaluation); no scoring/evaluation yet.
 
 ## Active question
 
@@ -41,6 +41,8 @@ For a fixed visual position estimator, does causal temporal consistency identify
 - [Calibration group g-020 completed and independently reviewed](docs/0002-g020-calibration-inference-2026-10-17.md) once from execution main `69737174`. Real gates passed all 29 frozen files and 16 exact cached dependency versions; no downloads or frozen changes. Video 20's first 64 frames selected indices [0, 1]: 128 rows and 512 finite scalars. Inference child wall time was 54.620 seconds, peak RSS 2,553,192 KiB; child and separately parent-observed wrapper exits were 0. Two independent artifact audits passed with 167 prior files byte-preserved and post-run source/log bindings checked without cycles. Post-run child exits are observed; their parent program has no further supervisor exit receipt. **6/10 calibration inference, 0/20 evaluation**; no real-data errors, scores, threshold fitting or replay. Next allocation g-016 was not run.
 
 - [Calibration collection complete](docs/0002-calibration-complete-2026-10-17.md): g-016, g-032, g-035 and g-026 ran serially once from execution main `d6eb1518`, each after real 29-file/16-version/cache gates and before the next group's launch only after artifact verification. Prior six outputs were reused; all 204 historical files remain unchanged. One shared toy smoke/pytest availability probe served the unchanged software. Raw CSVs, per-group independent checks and child/wrapper/post-run source/log evidence are retained. **10/10 calibration, 0/20 evaluation predictions; only 10/30 prescribed prediction sets exist.** No GT errors, scores, threshold fit, final evaluation or method efficacy claim. Two independent candidate audits passed: all 1,280 rows / 5,120 finite scalars and 127 original batch result files matched, with no missing/nonfinite outputs. The [parent review](results/0002-calibration-completion/parent-review.json) records evidence and limits; next stage remains 20 frozen evaluation-group inference steps, not `evaluate`.
+
+- [All frozen predictions collected](docs/0002-prediction-collection-complete-2026-10-17.md): all 20 evaluation groups ran serially once from execution main `6bdce825`, after real 29-file/16-version/cache gates, each independently verified before the next launch. All 10 existing calibration outputs were reused; 422 historical result/doc/protocol files remain unchanged. One shared software probe/toy smoke served the batch. **10/10 calibration plus 20/20 evaluation prediction sets, 30/30 total; no GT errors, scores, threshold fit, method comparison or evaluator invocation.** Two independent artifact audits and the coordinating publication review passed, including all 564 original batch result hashes, complete grids and 42 post-run child records; see the [parent review](results/0002-evaluation-completion/parent-review.json). A later separately authorized stage may run the complete frozen evaluator after review/merge; no method efficacy or robot result follows from collection.
 
 ## Claims boundary
 

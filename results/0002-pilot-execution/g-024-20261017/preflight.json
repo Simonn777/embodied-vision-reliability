@@ -1,0 +1,319 @@
+{
+  "status": "passed",
+  "gate": "unchanged real verify_freeze; no mocks or bypass",
+  "head": "6bdce8259d196a832a52ec0ab289066ecdf4907c",
+  "origin_main": "6bdce8259d196a832a52ec0ab289066ecdf4907c",
+  "freeze_input_commit": "bbe7428e126a566a62d3c123d7158f120aa66e2b",
+  "receipt_sha256": "bd9dc9e90980c78050a6f48043117e7d0f53d004c25d324b4ff25148380df05b",
+  "input_sha256": {
+    "configs/0002-exploratory-v2.json": "70e6edd499262978eb4a83311a1e3184ad604467d47d5369a2d3d7d351e6b319",
+    "docs/0002-exposure-and-scope.md": "cfad65ca3d571d81adfe908b47d2e802eb81110f514ab38b3bdeacfcacc569fe",
+    "protocols/0002-exploratory-frozen-v2.md": "8c966f9006c02f38f30da8354e218e673fc424476ce277c394835e9b1f5c77cb",
+    "pyproject.toml": "5b7bf27fea4fed90949b969e854f5c4cb34b2832944647e9c03ca5fb79b544c2",
+    "requirements/0002-small-runtime.txt": "cc8faef24c92ae7e26e7a3e965d7c0ff793207371847bdef944bff22808bc068",
+    "requirements/0002-torch-cpu.txt": "4dbae4559ecccbff0384fcf5da8c9e1698af1830430e1ae77b351314ea10ce8a",
+    "results/0002-development/transfer-ledger.json": "7ca0848233cb99aaf88ff2fda34d88df43b2a8fd3c9080e80830c1cafdc06f58",
+    "results/0002-preflight-recording/dev64/receipt.json": "459767d5ce584dd04dc15a72043aa975c11380a0b431ba9093d2417da07a2131",
+    "results/0002-preflight-recording/independent-verification.json": "dca2c9b47452a82be95e5857bcf418060b0d535ac07f68e277dca287b70b0717",
+    "results/0002-preflight-recording/repeat64/receipt.json": "578505dcd493d891d9d58bf85dc2417f9803a77be86d837b13ab437ad1435768",
+    "results/0002-preflight/dependencies.json": "0a17be17f8131ca660a400d16f40c7854a0e66ae94bc6c791a05a5e793b12dc2",
+    "results/0002-preflight/fixture-frozen-v1.json": "36c483a45a571e3b974228d019b8a1f637c5cc5344fcf127643a25f842f7c02b",
+    "results/0002-preflight/freeze-v2-validation.json": "66eecc631680461653976395f23a5e056c202ba3a0ec7055f88e60c12fe6f1b7",
+    "results/0002-preflight/identity/frame-hashes.csv": "ed409210d6e5f253fdda9d12c24dcdc874cad823c538b4e816dbbd67954df1ac",
+    "results/0002-preflight/identity/manifest.json": "b5415fd3eab77806ec71a974e2d875734f052ed3e44087a6e5b0a6d543cbbba3",
+    "results/0002-preflight/local-validation.json": "6a3e90543b4879fec663dec5faeafec55cd3f693918ded92a53a4077d4600042",
+    "scripts/pilot_fixture_check.py": "a08d5e8431c2d56f9c48bcbc8ce169413bd8ce75a9598060914498196aaaa6b6",
+    "scripts/run_frozen_pilot.py": "183df4d00a4a64151445445cec114eaf130232357a0f41f45e9a4e1bf0e3aab3",
+    "scripts/run_pilot_preflight.py": "488214b97e04b843230102a1245055996f7768b51b1524bd04d2b1c9d4924585",
+    "scripts/verify_pilot_preflight.py": "3c95607d8bf1074154b487a45fa821b08668fad9c33270b5e4aa708b7e444786",
+    "src/evr/__init__.py": "631cc3c910f6e790b2b5661bf7d28e99a612c534e82619c54084d9b64f9c5abe",
+    "src/evr/bootstapir_dev.py": "b134fcfbc489eac33631d3aaf591cd9683d326e38c9a468207bbc94481920bb1",
+    "src/evr/pilot_frozen.py": "1b7b5d9f6b19d7d169b47df5ffce793e0a507961d68cfac5321bdb7bea84f10f",
+    "src/evr/pilot_identity.py": "7db155dc6252c199b982dee3033556a8eaee337ce0e5f22065c2e9a4832f7f02",
+    "src/evr/pilot_metrics.py": "ae883f14310bfc8f9231880cd9fd2d72a364e61ab269365acbf5126f23ee1742",
+    "tests/test_bootstapir_dev.py": "af7e7c7f95ea8b25f69c098d6924d0d9edb1e3c30d04532bfab47262bc15159c",
+    "tests/test_pilot_frozen.py": "b340c50fde5f60edbac319f3c1dd3acee1ce3d231fe12763186028e19619586c",
+    "tests/test_pilot_identity.py": "751c0934d9174c561cb23f3893bf41df50ec211407efa7423d9f32d0d82b04ef",
+    "tests/test_pilot_metrics.py": "b865b592bbe2498be5aea45fac22031897a81b9ad0beab4e0baaa0565f41d863"
+  },
+  "actual_dependency_versions": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.0.2",
+    "dm-tree": "0.1.9",
+    "einshape": "1.0",
+    "absl-py": "2.3.1",
+    "attrs": "25.3.0",
+    "wrapt": "1.17.3",
+    "sympy": "1.14.0",
+    "filelock": "3.32.3",
+    "networkx": "3.6.1",
+    "jinja2": "3.1.6",
+    "fsspec": "2026.7.0",
+    "mpmath": "1.3.0",
+    "MarkupSafe": "3.0.3",
+    "typing-extensions": "4.16.0",
+    "setuptools": "78.1.0"
+  },
+  "actual_module_origins": {
+    "torch": {
+      "module": "torch",
+      "resolved_module_path": "<cache>/runtime-fixed/torch/__init__.py",
+      "module_entry_sha256": "51c90fe34a7cf869517d1bab4cd114498790e169ec668f1a154c35ec64117a5e",
+      "dist_info_path": "<cache>/runtime-fixed/torch-2.10.0+cpu.dist-info",
+      "metadata_version": "2.10.0+cpu",
+      "loaded_module_version": "2.10.0+cpu",
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "e06832d85f5578a69c989a2cc2a5e42718066dff09c5c2a1df0acefe763c6eb7",
+      "historical_RECORD_sha256": "e06832d85f5578a69c989a2cc2a5e42718066dff09c5c2a1df0acefe763c6eb7",
+      "RECORD_matches_historical": true
+    },
+    "numpy": {
+      "module": "numpy",
+      "resolved_module_path": "<cache>/runtime-fixed/numpy/__init__.py",
+      "module_entry_sha256": "c09e25b58f6b2f8e2cb3c158168f902d447f8171e5ea6513c0aca41ecbda7c2b",
+      "dist_info_path": "<cache>/runtime-fixed/numpy-2.0.2.dist-info",
+      "metadata_version": "2.0.2",
+      "loaded_module_version": "2.0.2",
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "6d302eecd15ef4c12e6554eda66085772e4ea21390b34533c32a10345aa84f8f",
+      "historical_RECORD_sha256": "67a695d72a6cf98dce6db472040169a63498fd7ff0e35ab059755f9e1e640e08",
+      "RECORD_matches_historical": false
+    },
+    "dm-tree": {
+      "module": "tree",
+      "resolved_module_path": "<cache>/runtime/tree/__init__.py",
+      "module_entry_sha256": "1382af021f4270c62509e5aa97a6a5c005b69265611e9f9f8ae5960c9be436ce",
+      "dist_info_path": "<cache>/runtime/dm_tree-0.1.9.dist-info",
+      "metadata_version": "0.1.9",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "8d6291d2091d665aa2ba9945072ebc4047369bf10f1d3b289c8de2bd2e03c68e",
+      "historical_RECORD_sha256": "8d6291d2091d665aa2ba9945072ebc4047369bf10f1d3b289c8de2bd2e03c68e",
+      "RECORD_matches_historical": true
+    },
+    "einshape": {
+      "module": "einshape",
+      "resolved_module_path": "<cache>/runtime/einshape/__init__.py",
+      "module_entry_sha256": "3dc9e53a84b83563e79833e4fe265cf0d443dfb511f7d613edf7d9831bd990ef",
+      "dist_info_path": "<cache>/runtime/einshape-1.0.dist-info",
+      "metadata_version": "1.0",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "fc3b0939236610839a69cfed574870b7a3905f286aa432ce7b945be7d15cab36",
+      "historical_RECORD_sha256": "fc3b0939236610839a69cfed574870b7a3905f286aa432ce7b945be7d15cab36",
+      "RECORD_matches_historical": true
+    },
+    "absl-py": {
+      "module": "absl",
+      "resolved_module_path": "<cache>/runtime/absl/__init__.py",
+      "module_entry_sha256": "f622793f09e8621d76ced71e71c8c3d896e74afc7a77625512512eae7f5ca899",
+      "dist_info_path": "<cache>/runtime/absl_py-2.3.1.dist-info",
+      "metadata_version": "2.3.1",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "14bfe3d46e827440910a0bc12f160d4068e501a78df32954ed5539d81d040718",
+      "historical_RECORD_sha256": "14bfe3d46e827440910a0bc12f160d4068e501a78df32954ed5539d81d040718",
+      "RECORD_matches_historical": true
+    },
+    "attrs": {
+      "module": "attrs",
+      "resolved_module_path": "<cache>/runtime/attrs/__init__.py",
+      "module_entry_sha256": "a9e4096783b4f327334a7f38d2ff5b60e699c9113cd56b158be402ad8de4ac25",
+      "dist_info_path": "<cache>/runtime/attrs-25.3.0.dist-info",
+      "metadata_version": "25.3.0",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "e144d0bffd19b7ced2f69e84272708ca4617c89bd43b7771888fadd2b44649ed",
+      "historical_RECORD_sha256": "e144d0bffd19b7ced2f69e84272708ca4617c89bd43b7771888fadd2b44649ed",
+      "RECORD_matches_historical": true
+    },
+    "wrapt": {
+      "module": "wrapt",
+      "resolved_module_path": "<cache>/runtime/wrapt/__init__.py",
+      "module_entry_sha256": "3013f31a72ffe09c7bf75515bcdac8b15a2669de0cff344fdbdd096bcf14b4fc",
+      "dist_info_path": "<cache>/runtime/wrapt-1.17.3.dist-info",
+      "metadata_version": "1.17.3",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "62cd8e22f842f99b6f66214cc1172a3d2e2ac92c14edaa76ca28f96954755f9c",
+      "historical_RECORD_sha256": "62cd8e22f842f99b6f66214cc1172a3d2e2ac92c14edaa76ca28f96954755f9c",
+      "RECORD_matches_historical": true
+    },
+    "sympy": {
+      "module": "sympy",
+      "resolved_module_path": "<cache>/runtime-fixed/sympy/__init__.py",
+      "module_entry_sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0",
+      "dist_info_path": "<cache>/runtime-fixed/sympy-1.14.0.dist-info",
+      "metadata_version": "1.14.0",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "6c8f4bab586ff9fb3d529a47d6f021f6cc78b226ad9fe39caa8793de0f00b309",
+      "historical_RECORD_sha256": "6c8f4bab586ff9fb3d529a47d6f021f6cc78b226ad9fe39caa8793de0f00b309",
+      "RECORD_matches_historical": true
+    },
+    "filelock": {
+      "module": "filelock",
+      "resolved_module_path": "<cache>/runtime-fixed/filelock/__init__.py",
+      "module_entry_sha256": "644857d02a33bd1c45430b26f1861ceae88bbee2187be6a80f6d0009f8f28b38",
+      "dist_info_path": "<cache>/runtime-fixed/filelock-3.32.3.dist-info",
+      "metadata_version": "3.32.3",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "38e6551be56eb84d896d9d055109967edfa24146fd69d62bf7cad5b390bbaf76",
+      "historical_RECORD_sha256": "38e6551be56eb84d896d9d055109967edfa24146fd69d62bf7cad5b390bbaf76",
+      "RECORD_matches_historical": true
+    },
+    "networkx": {
+      "module": "networkx",
+      "resolved_module_path": "<cache>/runtime-fixed/networkx/__init__.py",
+      "module_entry_sha256": "39537c0bec78e0b81e25629c6fbeeff96c1f315ec462a89e69f92841d9409791",
+      "dist_info_path": "<cache>/runtime-fixed/networkx-3.6.1.dist-info",
+      "metadata_version": "3.6.1",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "f98277551f79e9cffce4fdcfdf875dd6f3d8f3e9e1a8146a83b3b803d719a6b2",
+      "historical_RECORD_sha256": "f98277551f79e9cffce4fdcfdf875dd6f3d8f3e9e1a8146a83b3b803d719a6b2",
+      "RECORD_matches_historical": true
+    },
+    "jinja2": {
+      "module": "jinja2",
+      "resolved_module_path": "<cache>/runtime-fixed/jinja2/__init__.py",
+      "module_entry_sha256": "c717a93bd8bb0c7b2a910ae004476e2ed7e8cf6402b93ebf81b2f85d237585b5",
+      "dist_info_path": "<cache>/runtime-fixed/jinja2-3.1.6.dist-info",
+      "metadata_version": "3.1.6",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "1addd73160817f42334fdcf62e6a904e575c70f085a45f1aad07e1acf58db763",
+      "historical_RECORD_sha256": "1addd73160817f42334fdcf62e6a904e575c70f085a45f1aad07e1acf58db763",
+      "RECORD_matches_historical": true
+    },
+    "fsspec": {
+      "module": "fsspec",
+      "resolved_module_path": "<cache>/runtime-fixed/fsspec/__init__.py",
+      "module_entry_sha256": "c457281c10f5edf73929a98a510008034ade3c68cba8837558101df4d028022f",
+      "dist_info_path": "<cache>/runtime-fixed/fsspec-2026.7.0.dist-info",
+      "metadata_version": "2026.7.0",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "29853eac9c8e853a5a110ab2fe75b7b8e147e68923b5e1aad2d4ef9a41986b06",
+      "historical_RECORD_sha256": "29853eac9c8e853a5a110ab2fe75b7b8e147e68923b5e1aad2d4ef9a41986b06",
+      "RECORD_matches_historical": true
+    },
+    "mpmath": {
+      "module": "mpmath",
+      "resolved_module_path": "<cache>/runtime-fixed/mpmath/__init__.py",
+      "module_entry_sha256": "b241584d2c1fc0304b0a1015ea923749d7b0800411dd406dcab7c82bf25d9fe8",
+      "dist_info_path": "<cache>/runtime-fixed/mpmath-1.3.0.dist-info",
+      "metadata_version": "1.3.0",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "98750bf09ab626059be2cd3aaa538eacb69bcaa508890257cb98157002fb9d7e",
+      "historical_RECORD_sha256": "98750bf09ab626059be2cd3aaa538eacb69bcaa508890257cb98157002fb9d7e",
+      "RECORD_matches_historical": true
+    },
+    "MarkupSafe": {
+      "module": "markupsafe",
+      "resolved_module_path": "<cache>/runtime-fixed/markupsafe/__init__.py",
+      "module_entry_sha256": "bb57cb70d0b1d0ff04ecb4facf73977fa8a99d29a09ba69e7e77b9cbe77ba38d",
+      "dist_info_path": "<cache>/runtime-fixed/markupsafe-3.0.3.dist-info",
+      "metadata_version": "3.0.3",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "ee2e005af22cef3cfa63a34db6b38d9a3a3c118567d0e3eae8c3488fd734afb8",
+      "historical_RECORD_sha256": "ee2e005af22cef3cfa63a34db6b38d9a3a3c118567d0e3eae8c3488fd734afb8",
+      "RECORD_matches_historical": true
+    },
+    "typing-extensions": {
+      "module": "typing_extensions",
+      "resolved_module_path": "<cache>/runtime-fixed/typing_extensions.py",
+      "module_entry_sha256": "4040ca1a1ecbee00d1385c12a93084d1c5bd46f0b774f07e5ae7e91c4f55e696",
+      "dist_info_path": "<cache>/runtime-fixed/typing_extensions-4.16.0.dist-info",
+      "metadata_version": "4.16.0",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "b2b29b17130655534d101b05b9a37c58b63c51a0d9fa09dfd0a3e3a6881d6a23",
+      "historical_RECORD_sha256": "b2b29b17130655534d101b05b9a37c58b63c51a0d9fa09dfd0a3e3a6881d6a23",
+      "RECORD_matches_historical": true
+    },
+    "setuptools": {
+      "module": "setuptools",
+      "resolved_module_path": "<cache>/runtime-fixed/setuptools/__init__.py",
+      "module_entry_sha256": "010b0c791156cfd090f5a06d71291b0780e7f2ddb0f3af863eb8a4969a008dec",
+      "dist_info_path": "<cache>/runtime-fixed/setuptools-78.1.0.dist-info",
+      "metadata_version": "78.1.0",
+      "loaded_module_version": null,
+      "module_origin_matches_distribution": true,
+      "installed_RECORD_sha256": "adcbf511d670a9befdf3251ff58116a0ff5853d335471c681f995d6adbe0cb68",
+      "historical_RECORD_sha256": "adcbf511d670a9befdf3251ff58116a0ff5853d335471c681f995d6adbe0cb68",
+      "RECORD_matches_historical": true
+    }
+  },
+  "numpy_actual_version": "2.0.2",
+  "torch_actual_version": "2.10.0+cpu",
+  "torch_cuda": null,
+  "torch_threads": [
+    2,
+    2
+  ],
+  "numpy_native_module": "<cache>/runtime-fixed/numpy/_core/_multiarray_umath.cpython-312-x86_64-linux-gnu.so",
+  "torch_native_module": "<cache>/runtime-fixed/torch/_C.cpython-312-x86_64-linux-gnu.so",
+  "cached_objects": {
+    "weights.pt": {
+      "bytes": 218887028,
+      "sha256": "87c1e752cf5ce56e3e2f7da460aeb4d40fc826d04ef2939bade86a5c7495377f",
+      "cache_hit": true
+    },
+    "rgb.zip": {
+      "bytes": 187291581,
+      "sha256": "ba0cec640deb65ab510bc3920cdaf8b7a2e756fce9fb339199c557ade436b0cc",
+      "cache_hit": true
+    }
+  },
+  "upstream_module_sha256": {
+    "tapnet/torch/tapir_model.py": "87c05fb17d48d0f4353a00b67c9d40d3a264e13e43d88e3f7b5829119845e3ba",
+    "tapnet/torch/nets.py": "4961a8e4882e8c9ac219c4714f6f2c811cc1ab665a439d4d2e79942002a9517c",
+    "tapnet/torch/utils.py": "a4267b3a6bd8ecf2dfe5effacab9f7a43664dc5d08966c98f6a0cc68f5ccedd3"
+  },
+  "group": {
+    "group_id": "g-024",
+    "members": [
+      24
+    ],
+    "allocation_hash": "9f7100f2d4080c3402399c1c35d58b3b1e87e009821e7fe6b761cab9e8f7cf25",
+    "partition": "evaluation"
+  },
+  "inference_scope": "g-024 only; video24 first64 frames, up to first2 frame0-visible points",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "numeric_thread_environment": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "affinity": [
+    0,
+    1
+  ],
+  "address_space_limit_bytes": 6442450944,
+  "meminfo_start_kib": {
+    "MemTotal": 10206484,
+    "MemAvailable": 9312980
+  },
+  "cgroup": {
+    "memory.max": "8589934592",
+    "memory.current": "3388289024",
+    "cpu.max": "800000 100000"
+  },
+  "disk_start_bytes": {
+    "total": 33770192896,
+    "used": 2881748992,
+    "free": 29153681408
+  },
+  "new_download_bytes_this_step": 0,
+  "prior_reconstruction_wheel_bytes": 19236173,
+  "prior_reconstruction_pypi_metadata_bytes": 90923,
+  "environment_identity_scope": "version-matched environment reconstruction; new wheel/RECORD identities are recorded, not retroactively frozen"
+}
