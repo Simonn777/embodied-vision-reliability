@@ -111,4 +111,23 @@ changes to frozen methods or parameters. Shared objects/camera, unknown scene
 dependence and checkpoint exposure still constrain this exploratory pilot.
 No efficacy, SOTA, paper reproduction or real-robot claim; no added paid service,
 API/GPU/credits, account/permission/schedule change, raw-data or weight upload.
-Keep this combined PR unmerged for independent parent review.
+
+
+## Independent publication review
+
+Two separate read-only audits of candidate `520a748e` passed. The
+[parent review receipt](../results/0002-calibration-completion/parent-review.json)
+records the independent recalculation of all ten grids: **640 frames, 1,280 rows,
+5,120 finite scalars**, with zero coordinate-missing, logit-invalid or nonfinite
+outputs. Each new group's timings, resources, CSV/numeric hashes, source/log
+bindings and observed exits matched. All 29 frozen inputs, 204 historical files
+and 127 original batch result files are unchanged. The 0/35/61/87 earlier-batch
+artifact maps confirm preservation between serial launches.
+
+[Candidate CI](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39060393234)
+passed 184 tests in 8.72 seconds and a 1,240-frame synthetic smoke in 3.78 seconds;
+the parent checked the actual job logs and candidate SHA. Final publication and
+merged main must pass their own checks. Local audits read saved Git blobs only,
+without model replay, annotation decoding or rehashing cloud cache bytes. The
+original g-033 wrapper-exit gap and unsupervised post-run parent exits remain
+explicit. These checks establish artifact consistency, not tracking accuracy.
