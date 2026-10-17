@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "phase": "publication_audit",
+  "started_at_utc": "2026-10-17T18:10:40.305594+00:00",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scratch/publication_audit_g040.py"
+  ],
+  "environment_policy": "env containing inherited PATH only; no other inherited variables",
+  "parent_source_sha256": "228ad025bc3deb1dd15ee6c43cfc14a32864a10e8172e0493b849ad9bf1cf95d",
+  "child_source_sha256": "50af880d361dd78bc2c4d48afbe252964484ceadedd4b8ac58f7e50f841e6bde",
+  "observation_scope": "parent wait4 of timeout-wrapped software/stdlib check; no model replay",
+  "timeout_seconds": 900,
+  "address_space_limit_bytes": 6442450944,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "child_exit_code_observed_by_parent": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 11520,
+  "cpu_user_seconds": 0.061777,
+  "cpu_system_seconds": 0.034804,
+  "ended_at_utc": "2026-10-17T18:10:40.402123+00:00",
+  "elapsed_seconds": 0.09630789399670903,
+  "log_sha256": {
+    "stdout": "b3a6356b2b9dac5dde0281bc8cc08952a36469981dea42e4ffd0a5f7b82f51fa",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
