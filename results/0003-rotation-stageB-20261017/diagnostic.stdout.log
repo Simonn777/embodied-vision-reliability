@@ -1,0 +1,997 @@
+{
+  "status": "completed_diagnostic_original_rotation_gate_failed",
+  "input_commit": "8a7591b822e59c52a70dc4643f8e9cfcfa368c97",
+  "execution_commit": "8ffb8bcfbc5c7a9fe87e5a624d3f3dc1e0d97072",
+  "receipt_sha256": "957f830c6a67e6923ed82cba90d1ddf9d74558f03f93763abd82e01aad095820",
+  "camera_access_state": "NUMERIC_CAMERA_ACCESS_STARTING",
+  "counts_complete": true,
+  "interrupted_counter_semantics": "COMPLETE_FOR_ATTEMPTED_WORK",
+  "data_terms": {
+    "authors": [
+      "Yang Zheng",
+      "Adam W. Harley",
+      "Bokui Shen",
+      "Gordon Wetzstein",
+      "Leonidas J. Guibas"
+    ],
+    "dataset": "PointOdyssey v1.2",
+    "HF_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+    "source": "https://huggingface.co/datasets/aharley/pointodyssey",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "modifications": "none to numeric values; lossless stored-byte/float.hex/rational representations only",
+    "scope_exception": "new explicit narrow permission for exactly25 development frame0 scalars, not full arrays, trajectories or images; these data/derived numeric output are not repo MIT"
+  },
+  "source_member": "sample/r4_new_f/anno.npz",
+  "NPZ_sha256": "382d1edca0d6d88279ed1a61ee63c9ba27b7c5418f2269f4592c1658fd7d8e77",
+  "scope": "only frame0 K9+RT16; distinct diagnostic, not rerun of old audit",
+  "old_rotation_gate_pass": false,
+  "returned_bytes_including_carried": 20614916,
+  "reserves_including_carried": 2295240,
+  "directory_reserve_including_carried": 1480,
+  "charged_bytes": 22910156,
+  "new_returned_bytes": 378,
+  "new_reserves": 131442,
+  "zip_envelope": {
+    "members": 6,
+    "central_directory_bytes": 348,
+    "implicit_directory_and_EOCD_reserve_bytes": 370,
+    "accounting": "known metadata bytes reserved, not measured implicit reads"
+  },
+  "camera_access": {
+    "intrinsics": {
+      "status": "completed",
+      "counts_complete": true,
+      "header": {
+        "shape": [
+          849,
+          3,
+          3
+        ],
+        "dtype": "<f4",
+        "order": "C",
+        "format": "<f",
+        "itemsize": 4,
+        "data_bytes": 30564,
+        "header_bytes": 128,
+        "header_sha256": "7fb1059949d30226291e43eba39d233f49c788ed0e048cfa91b700127906e840"
+      },
+      "values": [
+        [
+          {
+            "byte_offset_in_payload": 0,
+            "stored_bytes_hex": "00001044",
+            "float_hex": "0x1.2000000000000p+9",
+            "exact_rational": "576",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 4,
+            "stored_bytes_hex": "00000000",
+            "float_hex": "0x0.0p+0",
+            "exact_rational": "0",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 8,
+            "stored_bytes_hex": "0000f043",
+            "float_hex": "0x1.e000000000000p+8",
+            "exact_rational": "480",
+            "finite": true
+          }
+        ],
+        [
+          {
+            "byte_offset_in_payload": 12,
+            "stored_bytes_hex": "00000000",
+            "float_hex": "0x0.0p+0",
+            "exact_rational": "0",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 16,
+            "stored_bytes_hex": "00001044",
+            "float_hex": "0x1.2000000000000p+9",
+            "exact_rational": "576",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 20,
+            "stored_bytes_hex": "00008743",
+            "float_hex": "0x1.0e00000000000p+8",
+            "exact_rational": "270",
+            "finite": true
+          }
+        ],
+        [
+          {
+            "byte_offset_in_payload": 24,
+            "stored_bytes_hex": "00000000",
+            "float_hex": "0x0.0p+0",
+            "exact_rational": "0",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 28,
+            "stored_bytes_hex": "00000000",
+            "float_hex": "0x0.0p+0",
+            "exact_rational": "0",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 32,
+            "stored_bytes_hex": "0000803f",
+            "float_hex": "0x1.0000000000000p+0",
+            "exact_rational": "1",
+            "finite": true
+          }
+        ]
+      ],
+      "accounting": {
+        "retained_scalars": 9,
+        "retained_bytes": 36,
+        "numeric_span_bytes": 36,
+        "discarded_bytes": 0,
+        "span_sha256": "df98acf0ab01d5c21d63ce99b8abc40a031c46a4bde55293bd0d0e576178a01f",
+        "semantic_access": "frame0 only; discarded gaps and Zip buffering are not decoded; no full CRC/tail claim"
+      },
+      "numeric_bytes_returned": 36
+    },
+    "extrinsics": {
+      "status": "completed",
+      "counts_complete": true,
+      "header": {
+        "shape": [
+          849,
+          4,
+          4
+        ],
+        "dtype": "<f4",
+        "order": "C",
+        "format": "<f",
+        "itemsize": 4,
+        "data_bytes": 54336,
+        "header_bytes": 128,
+        "header_sha256": "bf2149711b50431dd6b05e735262d7adbd6899788dbe15c666c817256261013d"
+      },
+      "values": [
+        [
+          {
+            "byte_offset_in_payload": 0,
+            "stored_bytes_hex": "00603cbf",
+            "float_hex": "-0x1.78c0000000000p-1",
+            "exact_rational": "-1507/2048",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 4,
+            "stored_bytes_hex": "000080b3",
+            "float_hex": "-0x1.0000000000000p-24",
+            "exact_rational": "-1/16777216",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 8,
+            "stored_bytes_hex": "00602dbf",
+            "float_hex": "-0x1.5ac0000000000p-1",
+            "exact_rational": "-1387/2048",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 12,
+            "stored_bytes_hex": "56557135",
+            "float_hex": "0x1.e2aaac0000000p-21",
+            "exact_rational": "7908011/8796093022208",
+            "finite": true
+          }
+        ],
+        [
+          {
+            "byte_offset_in_payload": 16,
+            "stored_bytes_hex": "0000713e",
+            "float_hex": "0x1.e200000000000p-3",
+            "exact_rational": "241/1024",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 20,
+            "stored_bytes_hex": "000070bf",
+            "float_hex": "-0x1.e000000000000p-1",
+            "exact_rational": "-15/16",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 24,
+            "stored_bytes_hex": "00e082be",
+            "float_hex": "-0x1.05c0000000000p-2",
+            "exact_rational": "-1047/4096",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 28,
+            "stored_bytes_hex": "0000c83e",
+            "float_hex": "0x1.9000000000000p-2",
+            "exact_rational": "25/64",
+            "finite": true
+          }
+        ],
+        [
+          {
+            "byte_offset_in_payload": 32,
+            "stored_bytes_hex": "00a022bf",
+            "float_hex": "-0x1.4540000000000p-1",
+            "exact_rational": "-1301/2048",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 36,
+            "stored_bytes_hex": "00e0b1be",
+            "float_hex": "-0x1.63c0000000000p-2",
+            "exact_rational": "-1423/4096",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 40,
+            "stored_bytes_hex": "00a0303f",
+            "float_hex": "0x1.6140000000000p-1",
+            "exact_rational": "1413/2048",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 44,
+            "stored_bytes_hex": "56958740",
+            "float_hex": "0x1.0f2aac0000000p+2",
+            "exact_rational": "4442795/1048576",
+            "finite": true
+          }
+        ],
+        [
+          {
+            "byte_offset_in_payload": 48,
+            "stored_bytes_hex": "00000000",
+            "float_hex": "0x0.0p+0",
+            "exact_rational": "0",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 52,
+            "stored_bytes_hex": "00000000",
+            "float_hex": "0x0.0p+0",
+            "exact_rational": "0",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 56,
+            "stored_bytes_hex": "00000000",
+            "float_hex": "0x0.0p+0",
+            "exact_rational": "0",
+            "finite": true
+          },
+          {
+            "byte_offset_in_payload": 60,
+            "stored_bytes_hex": "0000803f",
+            "float_hex": "0x1.0000000000000p+0",
+            "exact_rational": "1",
+            "finite": true
+          }
+        ]
+      ],
+      "accounting": {
+        "retained_scalars": 16,
+        "retained_bytes": 64,
+        "numeric_span_bytes": 64,
+        "discarded_bytes": 0,
+        "span_sha256": "61635ee703fd6e944a5f98fbe8845abfdb29e09267a6c6dc8d1b13d9cb236a3f",
+        "semantic_access": "frame0 only; discarded gaps and Zip buffering are not decoded; no full CRC/tail claim"
+      },
+      "numeric_bytes_returned": 64
+    }
+  },
+  "statistics": {
+    "binary16_exact_representability": {
+      "method": "struct half roundtrip; exact original f32 bits including signed zero; overflow is not representable; no tolerance",
+      "groups": {
+        "K9": {
+          "total": 9,
+          "exactly_representable_count": 9,
+          "all_exactly_representable": true,
+          "values": [
+            {
+              "index": [
+                0,
+                0
+              ],
+              "original_f32_le_hex": "00001044",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                0,
+                1
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                0,
+                2
+              ],
+              "original_f32_le_hex": "0000f043",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                0
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                1
+              ],
+              "original_f32_le_hex": "00001044",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                2
+              ],
+              "original_f32_le_hex": "00008743",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                0
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                1
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                2
+              ],
+              "original_f32_le_hex": "0000803f",
+              "exactly_binary16": true
+            }
+          ]
+        },
+        "R9": {
+          "total": 9,
+          "exactly_representable_count": 9,
+          "all_exactly_representable": true,
+          "values": [
+            {
+              "index": [
+                0,
+                0
+              ],
+              "original_f32_le_hex": "00603cbf",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                0,
+                1
+              ],
+              "original_f32_le_hex": "000080b3",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                0,
+                2
+              ],
+              "original_f32_le_hex": "00602dbf",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                0
+              ],
+              "original_f32_le_hex": "0000713e",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                1
+              ],
+              "original_f32_le_hex": "000070bf",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                2
+              ],
+              "original_f32_le_hex": "00e082be",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                0
+              ],
+              "original_f32_le_hex": "00a022bf",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                1
+              ],
+              "original_f32_le_hex": "00e0b1be",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                2
+              ],
+              "original_f32_le_hex": "00a0303f",
+              "exactly_binary16": true
+            }
+          ]
+        },
+        "RT16": {
+          "total": 16,
+          "exactly_representable_count": 14,
+          "all_exactly_representable": false,
+          "values": [
+            {
+              "index": [
+                0,
+                0
+              ],
+              "original_f32_le_hex": "00603cbf",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                0,
+                1
+              ],
+              "original_f32_le_hex": "000080b3",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                0,
+                2
+              ],
+              "original_f32_le_hex": "00602dbf",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                0,
+                3
+              ],
+              "original_f32_le_hex": "56557135",
+              "exactly_binary16": false
+            },
+            {
+              "index": [
+                1,
+                0
+              ],
+              "original_f32_le_hex": "0000713e",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                1
+              ],
+              "original_f32_le_hex": "000070bf",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                2
+              ],
+              "original_f32_le_hex": "00e082be",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                1,
+                3
+              ],
+              "original_f32_le_hex": "0000c83e",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                0
+              ],
+              "original_f32_le_hex": "00a022bf",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                1
+              ],
+              "original_f32_le_hex": "00e0b1be",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                2
+              ],
+              "original_f32_le_hex": "00a0303f",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                3
+              ],
+              "original_f32_le_hex": "56958740",
+              "exactly_binary16": false
+            },
+            {
+              "index": [
+                3,
+                0
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                3,
+                1
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                3,
+                2
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                3,
+                3
+              ],
+              "original_f32_le_hex": "0000803f",
+              "exactly_binary16": true
+            }
+          ]
+        },
+        "translation3": {
+          "total": 3,
+          "exactly_representable_count": 1,
+          "all_exactly_representable": false,
+          "values": [
+            {
+              "index": [
+                0,
+                3
+              ],
+              "original_f32_le_hex": "56557135",
+              "exactly_binary16": false
+            },
+            {
+              "index": [
+                1,
+                3
+              ],
+              "original_f32_le_hex": "0000c83e",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                2,
+                3
+              ],
+              "original_f32_le_hex": "56958740",
+              "exactly_binary16": false
+            }
+          ]
+        },
+        "homogeneous4": {
+          "total": 4,
+          "exactly_representable_count": 4,
+          "all_exactly_representable": true,
+          "values": [
+            {
+              "index": [
+                3,
+                0
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                3,
+                1
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                3,
+                2
+              ],
+              "original_f32_le_hex": "00000000",
+              "exactly_binary16": true
+            },
+            {
+              "index": [
+                3,
+                3
+              ],
+              "original_f32_le_hex": "0000803f",
+              "exactly_binary16": true
+            }
+          ]
+        }
+      },
+      "interpretation": "All-on-half-grid is compatible with direct f16 cast then exact widening to f32, not proof (integers and identity also qualify). Any nonrepresentable value excludes only an all-values direct f16-to-f32 path with no intervening arithmetic; earlier half followed by computation remains possible. No causal probability or actual-pipeline identification."
+    },
+    "original_tau": 9.5367431640625e-07,
+    "original_gate_checks": {
+      "finite": true,
+      "K_exact_bottom_row": true,
+      "RT_exact_bottom_row": true,
+      "positive_focal": true,
+      "RRt": false,
+      "RtR": false,
+      "determinant": false
+    },
+    "original_gate_pass": false,
+    "original_rotation_gate_pass": false,
+    "depth_or_projection": "NOT_TESTED: forbidden world/point access",
+    "double": {
+      "RRt_minus_I": [
+        [
+          0.00012254714966175584,
+          -6.658211350440979e-05,
+          0.00018503352475818247
+        ],
+        [
+          -6.658211350440979e-05,
+          -0.0003642439842224121,
+          -0.00016868114471435547
+        ],
+        [
+          0.00018503352475818247,
+          -0.00016868114471435547,
+          0.000261843204498291
+        ]
+      ],
+      "RtR_minus_I": [
+        [
+          0.0003981590270996094,
+          5.285357474349439e-05,
+          -0.00010275840759277344
+        ],
+        [
+          5.285357474349439e-05,
+          -0.0003985762596094844,
+          -5.4676696890965104e-05
+        ],
+        [
+          -0.00010275840759277344,
+          -5.4676696890965104e-05,
+          2.0563602447509766e-05
+        ]
+      ],
+      "maxabs_RRt": 0.0003642439842224121,
+      "argmax_RRt": [
+        1,
+        1
+      ],
+      "maxabs_RtR": 0.0003985762596094844,
+      "argmax_RtR": [
+        1,
+        1
+      ],
+      "det_R": 1.0000099856114346,
+      "abs_det_minus_one": 9.985611434615294e-06,
+      "row_squared_norms": [
+        1.0001225471496618,
+        0.9996357560157776,
+        1.0002618432044983
+      ],
+      "column_squared_norms": [
+        1.0003981590270996,
+        0.9996014237403905,
+        1.0000205636024475
+      ],
+      "row_offdiagonal_dots": [
+        [
+          0,
+          1,
+          -6.658211350440979e-05
+        ],
+        [
+          0,
+          2,
+          0.00018503352475818247
+        ],
+        [
+          1,
+          2,
+          -0.00016868114471435547
+        ]
+      ],
+      "column_offdiagonal_dots": [
+        [
+          0,
+          1,
+          5.285357474349439e-05
+        ],
+        [
+          0,
+          2,
+          -0.00010275840759277344
+        ],
+        [
+          1,
+          2,
+          -5.4676696890965104e-05
+        ]
+      ]
+    },
+    "violations": {
+      "RRt": {
+        "value": 0.0003642439842224121,
+        "threshold": 9.5367431640625e-07,
+        "excess": 0.00036329030990600586,
+        "ratio": 381.9375,
+        "passes": false
+      },
+      "RtR": {
+        "value": 0.0003985762596094844,
+        "threshold": 9.5367431640625e-07,
+        "excess": 0.00039762258529307815,
+        "ratio": 417.9374999962747,
+        "passes": false
+      },
+      "determinant": {
+        "value": 9.985611434615294e-06,
+        "threshold": 9.5367431640625e-07,
+        "excess": 9.031937118209044e-06,
+        "ratio": 10.470672495663166,
+        "passes": false
+      }
+    },
+    "exact_fraction": {
+      "RRt_minus_I": [
+        [
+          {
+            "numerator": "34493956097",
+            "denominator": "281474976710656"
+          },
+          {
+            "numerator": "-17873",
+            "denominator": "268435456"
+          },
+          {
+            "numerator": "12715407",
+            "denominator": "68719476736"
+          }
+        ],
+        [
+          {
+            "numerator": "-17873",
+            "denominator": "268435456"
+          },
+          {
+            "numerator": "-6111",
+            "denominator": "16777216"
+          },
+          {
+            "numerator": "-1415",
+            "denominator": "8388608"
+          }
+        ],
+        [
+          {
+            "numerator": "12715407",
+            "denominator": "68719476736"
+          },
+          {
+            "numerator": "-1415",
+            "denominator": "8388608"
+          },
+          {
+            "numerator": "4393",
+            "denominator": "16777216"
+          }
+        ]
+      ],
+      "RtR_minus_I": [
+        [
+          {
+            "numerator": "835",
+            "denominator": "2097152"
+          },
+          {
+            "numerator": "1816035",
+            "denominator": "34359738368"
+          },
+          {
+            "numerator": "-431",
+            "denominator": "4194304"
+          }
+        ],
+        [
+          {
+            "numerator": "1816035",
+            "denominator": "34359738368"
+          },
+          {
+            "numerator": "-112189243391",
+            "denominator": "281474976710656"
+          },
+          {
+            "numerator": "-1878677",
+            "denominator": "34359738368"
+          }
+        ],
+        [
+          {
+            "numerator": "-431",
+            "denominator": "4194304"
+          },
+          {
+            "numerator": "-1878677",
+            "denominator": "34359738368"
+          },
+          {
+            "numerator": "345",
+            "denominator": "16777216"
+          }
+        ]
+      ],
+      "det_R": {
+        "numerator": "140738893705201",
+        "denominator": "140737488355328"
+      },
+      "rotation_gate_pass": false
+    },
+    "double_minus_exact_fraction": {
+      "RRt": [
+        [
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        ],
+        [
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        ],
+        [
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        ]
+      ],
+      "RtR": [
+        [
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        ],
+        [
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        ],
+        [
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        ]
+      ],
+      "determinant": {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    },
+    "single_final_f32_rounding": {
+      "bounds": {
+        "u": {
+          "numerator": "1",
+          "denominator": "16777216"
+        },
+        "gram": {
+          "numerator": "100663299",
+          "denominator": "281474976710656"
+        },
+        "determinant": {
+          "numerator": "2533275243380763",
+          "denominator": "4722366482869645213696"
+        }
+      },
+      "excluded": true,
+      "interpretation": "only necessary bounds for one nearest-f32 rounding of exact SO(3); inside is not causal proof, outside is not root-cause identification"
+    },
+    "invariance": "transpose swaps Gram products and preserves determinant; handedness-preserving signed permutations preserve exact max-entry qualification. Orientation-reversing changes can flip determinant and are forbidden repair attempts; no transformed real-data candidates calculated."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "17 synthetic unittest cases passed before final bounded suite",
+  "source_sha256": {
+    "protocols/0003-rotation-diagnostic-v1.md": "91886890ea43e8178b1fd72cf3835d5f10b574bca8857f32679bff9d6339eecf",
+    "configs/0003-rotation-diagnostic-v1.json": "b3feb8a512742aea11f5ba52bb9fbdbb8f9a63888af56a72cdfba0d05d21cc36",
+    "src/evr/rotation_diagnostic_v1.py": "b6bf970f827d1af4dbdb48ff34a0b17c544d4070ad0c7dc3f0d4f20e986c8168",
+    "scripts/run_rotation_diagnostic_v1.py": "b840a33a4a9960335392233a34e70fd0e67faa7a536059943bda9bbb64e3cd6f",
+    "tests/test_rotation_diagnostic_v1.py": "0c10eccdcfe004031bf3b95ec0f24399b31210553f8e3a04307d43df3bc60e6d",
+    "results/0003-rotation-stageA-20261017/source-and-rights.json": "cc7483e0ef52df0fc469ad1839d9de20d6782225d7c213143f075ea1c4bfc63e"
+  },
+  "source_binding": "snapshots taken immediately after direct probe, before subsequent source edits",
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_rotation_diagnostic_v1.py",
+    "-v"
+  ],
+  "PYTHONPATH": "src",
+  "boundary": "initial direct probe has no separately retained parent wait4/resource receipt; final bounded phase is the publication validation gate",
+  "camera_access": 0
+}

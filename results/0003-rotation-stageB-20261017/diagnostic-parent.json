@@ -1,0 +1,54 @@
+{
+  "phase": "diagnostic",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scripts/run_rotation_diagnostic_v1.py",
+    "--cache",
+    "../bootstapir-cache/0003-pointodyssey",
+    "--output",
+    "results/0003-rotation-stageB-20261017/audit"
+  ],
+  "execution_commit": "8ffb8bcfbc5c7a9fe87e5a624d3f3dc1e0d97072",
+  "started_utc": "2026-10-17T23:45:14.801012+00:00",
+  "ended_utc": "2026-10-17T23:45:15.267788+00:00",
+  "wall_seconds": 0.4667894560043351,
+  "peak_rss_kib": 16128,
+  "cpu_user_seconds": 0.35953199999999996,
+  "cpu_system_seconds": 0.108289,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "timeout_seconds": 900,
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "source_sha256": {
+    "results/0003-rotation-stageB-20261017/execution_parent.py": "f7242c232682047c09ac7b6a6fdbb8d03f94cae12453ab4779d92e648b921c1b",
+    "scripts/run_rotation_diagnostic_v1.py": "b840a33a4a9960335392233a34e70fd0e67faa7a536059943bda9bbb64e3cd6f",
+    "src/evr/rotation_diagnostic_v1.py": "18fa710fcd64563b17395b571bd06fd72e7bc44a82bb1e8c7c3cb2b83b78132c",
+    "configs/0003-rotation-diagnostic-v1.json": "9b69cdcc59e86059b26e017d6a53fadfc10e6baeb2bf1e843dd08c9e5c9452d5",
+    "protocols/0003-rotation-diagnostic-v1.md": "efb05c1b2967307728a05161dd795cbc933eaf0c8981734c9d8078660375988c",
+    "protocols/0003-rotation-diagnostic-freeze-v1.json": "957f830c6a67e6923ed82cba90d1ddf9d74558f03f93763abd82e01aad095820"
+  },
+  "logs_sha256": {
+    "stdout": "a1f79a887f3d707fb046e011ee1e31e5f62f17aeeb833d5dfc8566144c8b5681",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "boundary": "actual parent wait4 of timeout/child; parent has no further observed supervisor exit receipt",
+  "publication_normalization": {
+    "original_receipt_sha256": "f177bc2e95e1ac3bc3c9264c8eb9a92587ecc209c9faab4fe41b2fd1af8aef4d",
+    "change": "absolute repository source-key prefix replaced with repository-relative path; all measurements, commands, source digests and log bytes unchanged; raw original retained in cloud scratch only"
+  }
+}

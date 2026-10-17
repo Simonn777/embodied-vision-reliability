@@ -1,0 +1,56 @@
+{
+  "phase": "final-fixtures",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scratch/rotation_stageA_suite.py"
+  ],
+  "base_commit": "0b0ddee2e17ca558a03c8b495225463e8c59d7df",
+  "source_sha256": {
+    "configs/0003-rotation-diagnostic-v1.json": "b3feb8a512742aea11f5ba52bb9fbdbb8f9a63888af56a72cdfba0d05d21cc36",
+    "protocols/0003-design-freeze-v1.json": "adb1b58b2fdab0e63899c67e30706f14b710a113bd6892eecdc08657b7826a7a",
+    "protocols/0003-fortran-audit-freeze-v2.json": "ad6250bb93453b0ff8f0e9ef4e25b853cac99eb37f910ea007fa389f285f2da1",
+    "protocols/0003-resource-addendum-freeze-v1.json": "0e1b867fad0a3873ffb8cb6ec64335ce5c2c0dbf3ef779efd8cbe5c553452e04",
+    "protocols/0003-rotation-diagnostic-v1.md": "91886890ea43e8178b1fd72cf3835d5f10b574bca8857f32679bff9d6339eecf",
+    "protocols/0003-timing-addendum-freeze-v1.json": "ef05a121bf5ef0f525367ed7bcf3b4a8cd20df66c2be6bb09194fb44a5f6e2ab",
+    "results/0003-fortran-stageA-20261017/source-convention.json": "f340f66117e76e2705b78a8b266c1a47feb2f649824387865225046c5d2a705c",
+    "results/0003-fortran-stageB-20261017/audit/audit.json": "dd580c6acfa52ebada5ffb11c75591fd601323bd4e4dd94a8db292d91f66c3a2",
+    "results/0003-rotation-stageA-20261017/source-and-rights.json": "cc7483e0ef52df0fc469ad1839d9de20d6782225d7c213143f075ea1c4bfc63e",
+    "scripts/run_rotation_diagnostic_v1.py": "b840a33a4a9960335392233a34e70fd0e67faa7a536059943bda9bbb64e3cd6f",
+    "src/evr/rotation_diagnostic_v1.py": "b6bf970f827d1af4dbdb48ff34a0b17c544d4070ad0c7dc3f0d4f20e986c8168",
+    "tests/test_rotation_diagnostic_v1.py": "f5866e3f5e1b32836434abbdc944fe3283a352f2a8fb34898b4797ccd0fead3d"
+  },
+  "command_source_sha256": {
+    "scratch/rotation_stageA_suite.py": "0500865b22e3bd98e9d5f80e5ab0aedda5f15f0bf428db05691db581047dffef"
+  },
+  "parent_source_sha256": "f6bd6dbf06bb5865e2743ab0a7974ed1ca41ebcd7f46e41673049921505183e6",
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "timeout_seconds": 900,
+  "started_utc": "2026-10-17T23:34:29.173456+00:00",
+  "ended_utc": "2026-10-17T23:34:30.499189+00:00",
+  "wall_seconds": 1.3257414029940264,
+  "peak_rss_kib": 31488,
+  "cpu_user_seconds": 1.033407,
+  "cpu_system_seconds": 0.292954,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "logs_sha256": {
+    "stdout": "8edc1e3dfb3e1c1c9b2033d713023b8dac888f3da87cc556292ec1fbb17c4785",
+    "stderr": "2e54f640baa01b1232542f52ba9395933f1f45adf5f4bd92316d21692d7c1066"
+  },
+  "boundary": "one actual parent wait4; parent itself has no additional supervisor exit receipt; no real camera diagnostic command launched"
+}
