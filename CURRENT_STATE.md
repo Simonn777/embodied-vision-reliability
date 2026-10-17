@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-16. Program day 1. Phase: development CPU feasibility verified; exploratory external-data protocol frozen.
+Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 1/10 calibration groups inferred.
 
 ## Active question
 
@@ -26,6 +26,9 @@ For a fixed visual position estimator, does causal temporal consistency identify
 - [Non-interactive Work execution and publication are verified](docs/SCHEDULED_VERIFICATION.md): the saved automation's Run now trial passed 107 shell tests and a 1,240-frame smoke, then merged [PR #2](https://github.com/Simonn777/embodied-vision-reliability/pull/2) as `9d415308` after exact-head CI/log review. The settings session subsequently paused the local heartbeat; one Work cloud schedule remains enabled, daily 09:00 America/New_York through October 15, 2027. Next regular run: October 17, 2026. No additional paid service or usage-credit purchase is authorized; future clock-triggered runs and uninterrupted availability are not yet established.
 
 - [64-frame development and metadata grouping](docs/0002-64frame-and-freeze.md) completed on real weights: two-query64-frame forward39.337s, fresh-process repeat39.450s, maximum replay difference0, peak794764KiB. Only video0 was inferred; all50 identities/prefix/frame hashes yielded50singleton exact-duplicate groups and partitions1/10/20/19. Scene independence and full upstream non-exposure remain unestablished. Complete executable 0002 metrics and future inference use the v2 freeze after the pre-merge provenance repair; v1 is preserved but superseded before any evaluation. V2 enforces canonical published receipts and mandatory commit/current-file hashes and dependencies; [Independent review](docs/0002-independent-review.md) verified the artifacts and v2 repair; merge and main-publication verification remain mandatory before held-out inference. No real-data score comparison has run.
+
+- [Calibration group g-033 completed after authorized runtime recovery](docs/0002-g033-calibration-inference-2026-10-17.md). The initial NumPy2.3.5 gate failure remains preserved in its own checkpoint. Official NumPy2.0.2 was installed into cache; the newly recorded wheel/RECORD identities establish version-matched reconstruction, not byte-identical reproduction. The real gate passed all29 frozen inputs and16 exact versions/module origins. Video33 first64frames, points[0,1]:128rows/512finite outputs, outer wall49.287s, peak2553156KiB; independent raw/grid/latency/Git/provenance checks passed. **1/10 calibration inference groups complete,0/20 evaluation groups complete.** No GT error, confidence score, threshold fit, other group or evaluation was run. The [independent publication review](docs/0002-g033-publication-review.md) passed. Preserve and use existing g-033 outputs; do not re-infer.
+
 
 ## Claims boundary
 

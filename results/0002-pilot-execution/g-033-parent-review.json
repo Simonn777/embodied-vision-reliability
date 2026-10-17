@@ -1,0 +1,199 @@
+{
+  "status": "passed_with_explicit_evidence_boundaries",
+  "reviewed_at_utc": "2026-10-17T17:28:18.261220+00:00",
+  "reviewed_head": "1c359bc574add90d6f6ee7db7a6ea191e9bf03a3",
+  "scope": "Independent read-only Python standard-library and Git-object audit of published g-033 artifacts. No candidate imports, model execution, archive/weights/wheel downloads, GT coordinates/errors, confidence computation, threshold fitting or evaluation. No repository edits.",
+  "blocking_findings": [],
+  "actual_execution_source_commit": "05c2d7cb4ec1f81b6bf080252deb69bd9a72a319",
+  "frozen_input_commit": "bbe7428e126a566a62d3c123d7158f120aa66e2b",
+  "publication_head_is_not_execution_source": true,
+  "group": {
+    "group_id": "g-033",
+    "partition": "calibration",
+    "archive_indices": [
+      33
+    ],
+    "frames": 64,
+    "point_indices": [
+      0,
+      1
+    ]
+  },
+  "raw_grid": {
+    "expected_columns": [
+      "frame",
+      "query",
+      "point",
+      "x",
+      "y",
+      "occlusion_logit",
+      "expected_dist_logit",
+      "frame_seconds"
+    ],
+    "rows": 128,
+    "unique_frame_query_pairs": 128,
+    "frames_min_max": [
+      0,
+      63
+    ],
+    "query_ids": [
+      0,
+      1
+    ],
+    "complete_cartesian_grid": true,
+    "stored_row_order": "frame then query",
+    "output_shape": [
+      64,
+      2,
+      4
+    ],
+    "finite_output_scalars": 512,
+    "nonfinite_output_scalars": 0,
+    "coordinate_missing_rows": 0,
+    "logit_missing_rows": 0,
+    "float32_numeric_row_order_sha256": "217e5f16c60a66b0cb8351f53bc2cfae6c50cadfe258d87876a39d5cbf961da6"
+  },
+  "timing": {
+    "per_frame_seconds_agree_across_queries": true,
+    "all_64_intervals_equal_runner_receipt": true,
+    "first_frame_seconds": 0.5421286870000586,
+    "subsequent_63_frame_median_seconds": 0.49331080699994345,
+    "sum_recorded_frame_intervals_seconds": 32.78301092600009,
+    "minimum_frame_seconds": 0.4358969080001316,
+    "maximum_frame_seconds": 0.7441184389999762,
+    "runner_elapsed_seconds": 48.658732168999904,
+    "timeout_wrapped_infer_subprocess_wall_seconds": 49.28682488599998,
+    "wrapper_recorded_wall_seconds": 51.180634659000134,
+    "interval_sum_le_runner_le_subprocess_wall": true,
+    "nested_UTC_order_consistent": true,
+    "phase_UTC_vs_perf_difference_below_seconds": 0.001,
+    "peak_rss_kib_runner_and_wait4": 2553156,
+    "peak_rss_gib": 2.4348793029785156,
+    "scope": "One elapsed interval per frame; duplicated query timing fields are not summed twice. Interval sum is not whole-process or independent whole-forward latency."
+  },
+  "exit_evidence": {
+    "preflight_subprocess_exit_code": 0,
+    "preflight_subprocess_raw_wait_status": 0,
+    "infer_subprocess_exit_code": 0,
+    "infer_subprocess_raw_wait_status": 0,
+    "wrapper_recorded_status": "completed",
+    "runner_recorded_status": "completed",
+    "wrapper_exit_observed_by_parent_shell_recorded": false,
+    "interpretation": "outer.json records wait4 results for its timeout-wrapped children. It does not independently store the shell-observed exit of the wrapper itself. The report label Outer subprocess exit code accurately refers to the inference child; completed child exit plus completed runner receipt and full raw grid are sufficient for the stated inference-completion claim. Do not reinterpret them as a parent-shell measurement of wrapper exit. The first-attempt historical field outer_exit_code denotes the failed preflight child and remains unchanged."
+  },
+  "provenance_checks": {
+    "frozen_input_count": 29,
+    "all_input_SHA256_match_specified_input_commit_actual_source_commit_reviewed_head": true,
+    "frozen_input_sha256": {
+      "configs/0002-exploratory-v2.json": "70e6edd499262978eb4a83311a1e3184ad604467d47d5369a2d3d7d351e6b319",
+      "docs/0002-exposure-and-scope.md": "cfad65ca3d571d81adfe908b47d2e802eb81110f514ab38b3bdeacfcacc569fe",
+      "protocols/0002-exploratory-frozen-v2.md": "8c966f9006c02f38f30da8354e218e673fc424476ce277c394835e9b1f5c77cb",
+      "pyproject.toml": "5b7bf27fea4fed90949b969e854f5c4cb34b2832944647e9c03ca5fb79b544c2",
+      "requirements/0002-small-runtime.txt": "cc8faef24c92ae7e26e7a3e965d7c0ff793207371847bdef944bff22808bc068",
+      "requirements/0002-torch-cpu.txt": "4dbae4559ecccbff0384fcf5da8c9e1698af1830430e1ae77b351314ea10ce8a",
+      "results/0002-development/transfer-ledger.json": "7ca0848233cb99aaf88ff2fda34d88df43b2a8fd3c9080e80830c1cafdc06f58",
+      "results/0002-preflight-recording/dev64/receipt.json": "459767d5ce584dd04dc15a72043aa975c11380a0b431ba9093d2417da07a2131",
+      "results/0002-preflight-recording/independent-verification.json": "dca2c9b47452a82be95e5857bcf418060b0d535ac07f68e277dca287b70b0717",
+      "results/0002-preflight-recording/repeat64/receipt.json": "578505dcd493d891d9d58bf85dc2417f9803a77be86d837b13ab437ad1435768",
+      "results/0002-preflight/dependencies.json": "0a17be17f8131ca660a400d16f40c7854a0e66ae94bc6c791a05a5e793b12dc2",
+      "results/0002-preflight/fixture-frozen-v1.json": "36c483a45a571e3b974228d019b8a1f637c5cc5344fcf127643a25f842f7c02b",
+      "results/0002-preflight/freeze-v2-validation.json": "66eecc631680461653976395f23a5e056c202ba3a0ec7055f88e60c12fe6f1b7",
+      "results/0002-preflight/identity/frame-hashes.csv": "ed409210d6e5f253fdda9d12c24dcdc874cad823c538b4e816dbbd67954df1ac",
+      "results/0002-preflight/identity/manifest.json": "b5415fd3eab77806ec71a974e2d875734f052ed3e44087a6e5b0a6d543cbbba3",
+      "results/0002-preflight/local-validation.json": "6a3e90543b4879fec663dec5faeafec55cd3f693918ded92a53a4077d4600042",
+      "scripts/pilot_fixture_check.py": "a08d5e8431c2d56f9c48bcbc8ce169413bd8ce75a9598060914498196aaaa6b6",
+      "scripts/run_frozen_pilot.py": "183df4d00a4a64151445445cec114eaf130232357a0f41f45e9a4e1bf0e3aab3",
+      "scripts/run_pilot_preflight.py": "488214b97e04b843230102a1245055996f7768b51b1524bd04d2b1c9d4924585",
+      "scripts/verify_pilot_preflight.py": "3c95607d8bf1074154b487a45fa821b08668fad9c33270b5e4aa708b7e444786",
+      "src/evr/__init__.py": "631cc3c910f6e790b2b5661bf7d28e99a612c534e82619c54084d9b64f9c5abe",
+      "src/evr/bootstapir_dev.py": "b134fcfbc489eac33631d3aaf591cd9683d326e38c9a468207bbc94481920bb1",
+      "src/evr/pilot_frozen.py": "1b7b5d9f6b19d7d169b47df5ffce793e0a507961d68cfac5321bdb7bea84f10f",
+      "src/evr/pilot_identity.py": "7db155dc6252c199b982dee3033556a8eaee337ce0e5f22065c2e9a4832f7f02",
+      "src/evr/pilot_metrics.py": "ae883f14310bfc8f9231880cd9fd2d72a364e61ab269365acbf5126f23ee1742",
+      "tests/test_bootstapir_dev.py": "af7e7c7f95ea8b25f69c098d6924d0d9edb1e3c30d04532bfab47262bc15159c",
+      "tests/test_pilot_frozen.py": "b340c50fde5f60edbac319f3c1dd3acee1ce3d231fe12763186028e19619586c",
+      "tests/test_pilot_identity.py": "751c0934d9174c561cb23f3893bf41df50ec211407efa7423d9f32d0d82b04ef",
+      "tests/test_pilot_metrics.py": "b865b592bbe2498be5aea45fac22031897a81b9ad0beab4e0baaa0565f41d863"
+    },
+    "freeze_receipt_unchanged_from_actual_source": true,
+    "manifest_group_matches_preflight_and_runner": true,
+    "all_video33_manifest_identity_fields_match_verification_record": true,
+    "recorded_upstream_module_hashes_match_frozen_receipt": true,
+    "recorded_checkpoint_and_archive_hashes_match_frozen_receipt": true,
+    "archived_launcher_digest_matches_outer_and_publication": true,
+    "embedded_preflight_source_matches_archived_preflight_bytes": true,
+    "command_txt_matches_recorded_infer_command": true,
+    "all_recorded_phase_stdout_stderr_digests_match": true,
+    "independent_verification_artifact_digests_recomputed": 20,
+    "frozen_scientific_source_protocol_config_requirements_changed": false
+  },
+  "environment_checks": {
+    "recorded_dependency_versions_match_frozen": 16,
+    "module_origin_records_checked_for_internal_consistency": 16,
+    "numpy_imported_version": "2.0.2",
+    "torch_imported_version": "2.10.0+cpu",
+    "torch_cuda": null,
+    "numeric_thread_variables": 5,
+    "numeric_thread_values": "2",
+    "torch_intra_interop_threads": [
+      2,
+      2
+    ],
+    "affinity": [
+      0,
+      1
+    ],
+    "address_space_limit_bytes": 6442450944,
+    "external_timeout_seconds": 900,
+    "historical_installed_RECORD_matches": 15,
+    "historical_installed_RECORD_mismatch_packages": [
+      "numpy"
+    ],
+    "scope": "Version-matched environment reconstruction is explicitly labeled. Module origins, installed RECORDs and cache identities are consistency checks of published runtime records, not an independent installation or local rehash of those external bytes."
+  },
+  "first_failure_preservation": {
+    "first_failure_commit": "c585733510ed144be1305ca36eebc22f613dce62",
+    "published_evidence_files_compared": 12,
+    "changed_files": [],
+    "file_sha256": {
+      "results/0002-pilot-execution/g-033-20261017/dependency-diagnosis.json": "789c1609ac41b59c52ba4b9df4853ec30b8d6df30f476019c3177a79bf6ffa2f",
+      "results/0002-pilot-execution/g-033-20261017/independent-verification.json": "70125fa3e6a9d9321b699148bb2de9ae1d5d8278e54f3f0241564f0b65bbb8ca",
+      "results/0002-pilot-execution/g-033-20261017/launcher-source.py": "66f26eb8e09997d53657cc3483d238d9b48cf0d07e26751f06fb56eb52caab51",
+      "results/0002-pilot-execution/g-033-20261017/numpy-path-diagnosis.json": "e00f0938f098d789adb0c0869654d513726eccf7a9a2d29fe16625dea53f338b",
+      "results/0002-pilot-execution/g-033-20261017/outer.json": "0c4eb97bf4d34163ed92afdc0fb99d92337b8fe17d4b76a7c9ade6cff8254cc2",
+      "results/0002-pilot-execution/g-033-20261017/preflight-code.py": "45237c63e402a65b4dc9d1ccd257567e85d957acb09ba8906996fe95c21a96ae",
+      "results/0002-pilot-execution/g-033-20261017/preflight.stderr.log": "3467c293d6a9cb13f357573ae119e3310705a09b3889219d812f0062b492345f",
+      "results/0002-pilot-execution/g-033-20261017/preflight.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "results/0002-pilot-execution/g-033-20261017/publication.json": "7f9c50c01d77a231be2dfded24e18ffb30b3ffaf11f74db6c11bcf88ba01e3e7",
+      "results/0002-pilot-execution/g-033-20261017/software-checks-initial.json": "5ce32c14361625bfbd543d1c8355f6c0b10c7d0e28bd823073158eeda4eba629",
+      "results/0002-pilot-execution/g-033-20261017/software-checks-initial.log": "51f5550d86043279227c92b72199d4ee1f66d30623405f70c98442058ffe76c7",
+      "results/0002-pilot-execution/g-033-20261017/verification-source.py": "321a7adfe2eccff476af97517df1930b3ed641c4dbd6976d7266f99849629cb5"
+    },
+    "scope": "All files under the original first-failure evidence directory are byte-identical between the first-failure commit and reviewed head; the completed inference uses a separate output directory."
+  },
+  "artifact_sha256": {
+    "results/0002-pilot-predictions/v2-reconstructed/g-033/video-033.csv": "22bb58db053c0cb011c72cadee1e0d91012301ff6e15bb3264ae23e39cd9819e",
+    "results/0002-pilot-predictions/v2-reconstructed/g-033/receipt.json": "a384e5f8ddef77d1b5c0aea5cd170fe8b50e5fbadef03cae36fdb06605244e6e",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/outer.json": "56cfaf557a799a90f89842e0a92a8818b62241e93369280450f1eb4abadbcdb3",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/preflight.json": "333b346158c52ee7a7039eb963d737837b42edc6c3d72d5a4137fda7cf6a6707",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/launcher-source.py": "273a318cd3cfc792d2dd0a35738b2a643075e1ee04602488a6b6f17deeb28f20",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/preflight-code.py": "fc869df5239d73f4acda0f13a574012b829dec5bdc6c8c0bae336741bb64c0c7",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/independent-verification.json": "81d94f46f3fe293782c2ac3068ef5480a9436410fed150d631ff4a412265ace6",
+    "protocols/0002-freeze-v2.json": "bd9dc9e90980c78050a6f48043117e7d0f53d004c25d324b4ff25148380df05b",
+    "results/0002-pilot-execution/g-033-20261017/outer.json": "0c4eb97bf4d34163ed92afdc0fb99d92337b8fe17d4b76a7c9ade6cff8254cc2"
+  },
+  "evidence_limits": [
+    "Initial point IDs agree with the unchanged frozen runner receipt. First-frame visibility selection was not independently re-derived from annotations.",
+    "Original archive, model weights, reconstructed NumPy wheel and installed package bytes were not downloaded or rehashed in this review.",
+    "No second model run or repeatability result is claimed. No GT errors, scores, calibration thresholds or reliability outcomes were computed.",
+    "Full repository CI is a separate check; this artifact audit did not rerun tests or verify the remote CI service.",
+    "Shared scene/object/camera assets and unknown upstream exposure remain the frozen design limitations."
+  ],
+  "progress_supported": {
+    "calibration_inference_groups_completed": 1,
+    "calibration_inference_groups_allocated": 10,
+    "evaluation_inference_groups_completed": 0,
+    "evaluation_inference_groups_allocated": 20,
+    "threshold_fitting_or_error_evaluation_claimed": false
+  }
+}

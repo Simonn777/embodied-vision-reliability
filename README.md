@@ -11,6 +11,7 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | Artifact | What it answers |
 |---|---|
 | [Current state](CURRENT_STATE.md) | What has actually been completed? |
+| [First calibration group: g-033](docs/0002-g033-calibration-inference-2026-10-17.md) | What did the frozen model produce, and how was a dependency failure preserved and resolved? |
 | [64-frame result and exploratory freeze](docs/0002-64frame-and-freeze.md) | What ran on cloud CPU, how are videos grouped, and what is frozen for later execution? |
 | [Real-model CPU feasibility](docs/0002-cpu-feasibility.md) | Can the frozen Online BootsTAPIR model run within the cloud CPU budget? |
 | [Research charter](docs/RESEARCH_CHARTER.md) | What is the question, and what would count as progress? |
@@ -48,7 +49,9 @@ The [frozen protocol](protocols/0001-synthetic-localization.md) specifies the ge
 
 ## Scope
 
-Real Online BootsTAPIR weights run on video0's64-frame, two-query development clip in39.337seconds, with a776.1MiB process peak and exact fresh-process replay. All50 video identities and exact-frame/prefix groups were audited: development1/calibration10/evaluation20/reserve19. The [result and reproduction entry](docs/0002-64frame-and-freeze.md) links raw outputs and the complete prospective exploratory protocol (v2; the pre-merge provenance repair supersedes preserved v1 before evaluation). Shared objects/camera, unknown scene dependencies and upstream checkpoint exposure limit claims. No held-out model inference or reliability comparison has run.
+Online BootsTAPIR has completed the 64-frame development check and the first frozen calibration group, g-033. The latter produced 128 rows for two points on cloud CPU, with a 49.29-second inference subprocess and a 2.435 GiB peak RSS. A NumPy version mismatch stopped the first attempt before inference; its failure record is preserved alongside the exact-version environment reconstruction and completed run. [Read the measurements and raw outputs](docs/0002-g033-calibration-inference-2026-10-17.md).
+
+The allocation remains 1 development, 10 calibration, 20 evaluation and 19 reserve videos. Calibration prediction collection is **1/10 complete**; evaluation is **0/20**. No real-data error scoring, threshold fitting or reliability comparison has run. The [development report and frozen v2 protocol](docs/0002-64frame-and-freeze.md) describe the experiment and grouping. Shared objects and camera, unknown scene dependencies and unresolved checkpoint exposure limit interpretation.
 
 The first experiment is a synthetic 2D localization diagnostic. Its purpose is to validate the evaluation machinery and expose failure cases. It does not measure robot control, prove generalization to real video, or establish a new method. Public-video evaluation and stronger frozen estimators are the next stages.
 

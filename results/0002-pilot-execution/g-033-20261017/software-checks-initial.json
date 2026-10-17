@@ -1,0 +1,9 @@
+{
+  "scope": "software publication check only, before runtime recovery",
+  "command": "env OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 MPLBACKEND=Agg timeout 900 python -m pytest -q",
+  "exit_code": 1,
+  "tests_executed": 0,
+  "reason": "current base interpreter has no pytest; no package installed for this check",
+  "combined_log_sha256": "51f5550d86043279227c92b72199d4ee1f66d30623405f70c98442058ffe76c7",
+  "continuation": "full repository tests and toy smoke will be checked on the existing standard public Research checks CI"
+}
