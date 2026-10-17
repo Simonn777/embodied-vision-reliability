@@ -142,8 +142,9 @@ These frame counts/quantiles are descriptive; no frame-iid inference is used.
 ## Deterministic correct-but-penalized cases and exhaustive contexts
 
 The plan selects at most three distinct (group,point) trajectories from correct
-matched native-only rows, descending penalty then original tie. It did not select
-cases by a favorable EPE or a new tuning criterion. The complete changed-row CSVs
+matched native-only rows, descending penalty then original tie. Among correct rows, EPE magnitude was not used for ordering or choosing cases.
+Correctness was explicitly part of the post-hoc eligibility filter; labels were
+already known when the plan was written. The complete changed-row CSVs
 remain available.
 
 | Group | Point | Frame | EPE px | d px | Penalty | Native | Augmented |
@@ -207,8 +208,9 @@ receipt and publicly redacted traceback are preserved. The audit parser was fixe
 to retain undefined labels. A second audit passed the numeric checks but its
 publication scanner flagged harmless literal patterns in its archived source;
 that failed receipt is also preserved. The scanner was corrected to identify
-actual host paths/full key headers. No diagnostic or scientific computation was
-repeated or changed; only the independent audit was corrected and rerun. Parent own exit has
+actual host paths/full key headers and made the artifact-map exclusions use full
+paths so that both failed attempts remain included. The original diagnostic CLI and its outputs were not rerun or changed; only the
+independent audit was corrected and rerun. Parent own exit has
 no further supervisor receipt; there is one wait4 layer, not recursive supervision.
 
 All artifacts are under [the diagnostic directory](../../results/0002-residual-posthoc-20261017):
@@ -218,18 +220,62 @@ actual commands/logs/wait receipts and both preserved failed audit attempts;
 `verification-source.py` and `verification.json` expose the independent checker.
 The Work environment had no pytest: zero pytest tests ran locally, while all
 11 standard-library unittest fixtures passed. Public exact-head CI is a separate
-publication gate. An `attach_artifact` capability was not exposed in this session;
-these small public Git artifacts and links are the available attachment route.
+publication gate. The coordinating session attached
+[PR #15](https://github.com/Simonn777/embodied-vision-reliability/pull/15) for review.
+
+## Independent parent review
+
+Two AI-assisted local reviewers checked immutable candidate
+`ac4b221dc2dffe783e4504d6448ace3102e6fde1` against the approved input commit.
+The [parent receipt](../../results/0002-residual-posthoc-20261017/parent-review.json)
+binds all 35 original result artifacts and records the full review scope.
+All 1,066 historical files, 44 existing scientific/control files, 29 frozen
+inputs, 60 prediction files and 77 formal-evaluation evidence files are unchanged.
+All 96 diagnostic input hashes match the approved base and candidate.
+
+An independent reconstruction prepared from the saved inputs matched the cloud
+artifacts: all 186 matched exchanges, 133 operational exchanges, 72 failure rows,
+three selected cases and 115 context rows. The five CSV exports contain 509 rows
+and 15,779 checked fields. All 480 group/point cells, 60 concentration rows and
+366 links from 75 centers to context rows were verified. All 5,400 distribution
+statistics across 135 strata matched exactly; 12,546 numerical comparisons in
+total had zero difference. Reconstructed raw-score arithmetic has at most
+8.88e-16 floating difference, with exact native/augmented ranks. These are distinct
+checks of arithmetic and stored labels, not independent annotation validation.
+
+Five parent-observed process records cover 11 unittest fixtures, the sole analysis
+child, two failed verifier attempts and the successful verifier. All source,
+command, resource and published-log bindings agree. Original failed stderr bytes
+are not public: reviewers verified the recorded raw-digest references and the
+redacted public copies, not the unavailable original text. Plan/source binding
+predates the recorded child timestamps but is not a pre-exposure preregistration.
+The final verifier's 31 closed artifact hashes plus four current-phase exclusions
+cover all 35 original result files; this added receipt does not hash itself.
+
+[Candidate Research checks](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39067668933)
+passed 195 tests in 8.75 seconds and 1,240 synthetic smoke frames in 3.90 seconds.
+Actual head metadata and logs were inspected. Final reviewed-head and merged-main
+CI are recorded on [PR #15](https://github.com/Simonn777/embodied-vision-reliability/pull/15).
+Local parent review did not run the candidate diagnostic, frozen evaluator or model.
+
+## Reusing the saved diagnostic
 
 The CLI refuses reused output directories and binds inputs to execution main.
-For later reproduction, use an input worktree at `83a8971ef0abbbfe1d929f4f77bf3a65c4f5bd6c`,
-then run the published script with `--root /path/to/that/input-worktree --output`
-a new scratch directory. No model/cache/archive dependency is needed. Plan, source,
+For later reproduction from the repository root, choose unused scratch paths:
+
+```sh
+git worktree add --detach scratch/posthoc-inputs 83a8971ef0abbbfe1d929f4f77bf3a65c4f5bd6c
+python scripts/analyze_0002_residuals.py --root scratch/posthoc-inputs --output scratch/posthoc-reproduction
+```
+
+These commands describe a future optional diagnostic reproduction, not an
+additional run performed during this review. No model/cache/archive dependency
+is needed. Plan, source,
 config, protocol, input/file hashes, exact commands, stdout/stderr and resource
 records are retained. Frozen source/config/protocol/thresholds, original 3,840 rows,
-60 prediction files and previous results remain byte-identical. No data/weights
-or private paths are published. No new fees, downloads/installs, paid APIs/GPU/credits,
-account/permissions or schedules were used.
+60 prediction files and previous results remain byte-identical. No raw videos, model weights or private host paths are published. The cloud analysis required no new data/model/package downloads or installations;
+ordinary Git and CI dependency traffic is separate. No paid APIs, GPU services or
+credits, or account/permission/schedule changes were used.
 
 One follow-up study is warranted, not executed: on genuinely new independently
 audited capture groups with GT trajectories and object identity, freeze this same
@@ -243,5 +289,4 @@ a scale search or retuned success claim on these already-inspected videos.
 This remains exploratory, with shared objects/camera, unknown scene dependence
 and upstream checkpoint exposure. Native confidence is itself temporal; the strict
 single-image question remains unresolved. No SOTA, confirmatory, real-robot or
-paper-reproduction claim. All content and verification are AI-assisted. Keep the
-PR unmerged for independent parent review.
+paper-reproduction claim. All content and verification are AI-assisted.
