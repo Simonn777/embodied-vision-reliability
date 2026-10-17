@@ -143,7 +143,13 @@ fixtures passed; a test-builder failure/fix is retained. No model/old-test/score
 work, downloads/install/fee/permission/schedule change. Last resource expansion for
 this task is complete; actual geometry, units/FPS and independence stay unverified.
 
-Next: independent review of explicit unsupported-layout/design decision, no further
+Independent science, source and provenance reviews passed for candidate b605ae13;
+the [readiness guide](docs/0003-review-and-readiness.md) and
+[parent receipt](results/0003-publication-review/parent-review.json) distinguish
+publication readiness from the still-blocked geometry and independent cohort.
+Candidate CI passed 251 tests and the existing 1,240-frame synthetic smoke.
+
+Next: prospectively review support for the observed annotation layout, no further
 numeric access or resource relaxation this task. A later prospectively frozen
 pipeline/cohort must bind v1+timing+applicable resource decisions; no final cohort
 or inference authority exists. Do not mistake complete filenames for independent
