@@ -1,0 +1,218 @@
+{
+  "status": "passed_with_explicit_evidence_boundaries",
+  "reviewed_at_utc": "2026-10-17T18:15:49.951186+00:00",
+  "reviewed_head": "b6ffe257930086db2096b7e117f40da659412c74",
+  "actual_execution_source_commit": "3c6b26ac1997216eb60b8509df9abea71ed093d3",
+  "freeze_input_commit": "bbe7428e126a566a62d3c123d7158f120aa66e2b",
+  "canonical_receipt_sha256": "bd9dc9e90980c78050a6f48043117e7d0f53d004c25d324b4ff25148380df05b",
+  "method": "Two separate AI-assisted read-only standard-library/Git-blob audits; parent separately checked candidate CI job logs and publication diff.",
+  "scope": "Read-only standard-library recalculation from published Git blobs; no candidate/model import, model run, annotation/archive decode, GT errors, scores, thresholds, downloads or repository changes.",
+  "blocking_findings": [],
+  "group": {
+    "group_id": "g-040",
+    "archive_indices": [
+      40
+    ],
+    "partition": "calibration",
+    "point_indices": [
+      0,
+      1
+    ]
+  },
+  "raw": {
+    "rows": 128,
+    "unique_frame_query_grid": [
+      64,
+      2
+    ],
+    "output_shape": [
+      64,
+      2,
+      4
+    ],
+    "finite_scalars": 512,
+    "nonfinite_scalars": 0,
+    "coordinate_missing_rows": 0,
+    "logit_invalid_rows": 0,
+    "float32_row_order_sha256": "9731932ef578f2b43c06cc346d8116a040665eeac8a8679ffcf9827c7663e13e"
+  },
+  "timing": {
+    "first_frame_seconds": 0.533883190000779,
+    "subsequent_frame_median_seconds": 0.507835578006052,
+    "sum_frame_intervals_once_seconds": 33.46841494004184,
+    "minimum_frame_seconds": 0.4433268190041417,
+    "maximum_frame_seconds": 0.7831801180000184,
+    "runner_elapsed_seconds": 47.12206534600409,
+    "infer_child_elapsed_seconds": 47.83360565499606,
+    "wrapper_elapsed_seconds": 49.64668183199683,
+    "supervisor_elapsed_seconds": 49.68647491099546,
+    "UTC_perf_absolute_deltas_seconds": {
+      "preflight": 0.00010548700301682423,
+      "infer": 0.00029934500393835606,
+      "runner": 8.34600409405084e-06,
+      "wrapper": 0.0002321680031727169,
+      "supervisor": 0.00018908900454306377
+    },
+    "nested_timestamps_and_latency_accounting_consistent": true
+  },
+  "exit_resource_evidence": {
+    "preflight_child_exit_and_wait": [
+      0,
+      0
+    ],
+    "infer_child_exit_and_wait": [
+      0,
+      0
+    ],
+    "wrapper_exit_and_wait_observed_by_parent": [
+      0,
+      0
+    ],
+    "wrapper_stdout_summary_agrees": true,
+    "runner_child_supervisor_peak_rss_kib": 2553160,
+    "peak_rss_gib": 2.4348831176757812,
+    "affinity": [
+      0,
+      1
+    ],
+    "numeric_thread_variables_at_two": 5,
+    "torch_threads": [
+      2,
+      2
+    ],
+    "address_space_limit_bytes": 6442450944,
+    "each_phase_external_timeout_seconds": 900,
+    "parent_CPU_accounting_includes_child_usage": true
+  },
+  "postrun_parent_observations": {
+    "software": {
+      "child_exit_code": 0,
+      "raw_wait_status": 0,
+      "receipt_sha256": "4b124732a97326691b8ee3f75b5d181fd2a4aaef004e361c9522686025a1f29b",
+      "child_source_sha256": "7f7b347042a114965aaebd80a15329823e69def87c61882e3b89a786b366a134",
+      "elapsed_seconds": 2.896225559001323
+    },
+    "verify": {
+      "child_exit_code": 0,
+      "raw_wait_status": 0,
+      "receipt_sha256": "bc6a9ebd54628e8e05d824e26d1b933e61e85e2f180aa45d4765b9a8cc5b799c",
+      "child_source_sha256": "17c31fccd5e8c663f48e966e8c6d2cb261a25e167bdd14bc97919a41bbe99714",
+      "elapsed_seconds": 0.6417500530005782
+    },
+    "publication_audit": {
+      "child_exit_code": 0,
+      "raw_wait_status": 0,
+      "receipt_sha256": "c34bd34c248d91a72003b579f6db0e4a7a90f43de518ce6c69b7a81ba267906b",
+      "child_source_sha256": "50af880d361dd78bc2c4d48afbe252964484ceadedd4b8ac58f7e50f841e6bde",
+      "elapsed_seconds": 0.09630789399670903
+    }
+  },
+  "postrun_checks": {
+    "source_log_command_exit_bindings_match": true,
+    "software_stdout_equals_saved_software_receipt": true,
+    "verifier_stdout_equals_saved_report_without_artifact_and_input_identity_maps": true,
+    "publication_audit_stdout_consistent_with_candidate_notes_and_counts": true,
+    "postrun_records_excluded_from_verifier_artifact_map": true,
+    "independent_postrun_parent_wait4_not_reused_self_reported_exit": true,
+    "all_three_postrun_stderr_logs_empty": true,
+    "record_text_digests_match_preflight_for_16_packages": true,
+    "scope": "Postrun commands and published records audited without executing them or rehashing external cache bytes."
+  },
+  "frozen_inputs_verified": 29,
+  "prior_files": {
+    "result_files": 88,
+    "report_files": 5,
+    "total": 93,
+    "unchanged_since_execution_main_and_prelaunch_baseline": true,
+    "path_sha256_map_digest": "2279456fa8ad918c52a468fabe38ea054d728dc9c48c86bb3bc4ee58b5ac8c25",
+    "map_digest_encoding": "SHA256 of UTF8 JSON path-to-SHA256 map with sorted keys and compact separators"
+  },
+  "environment_record_checks": {
+    "exact_metadata_versions": 16,
+    "module_entry_paths_hashes_and_RECORD_same_as_g022": 16,
+    "raw_and_normalized_RECORD_records_same_as_g022": 16,
+    "normalized_RECORD_historical_matches": 15,
+    "numpy_previous_reconstruction_exception_preserved": true,
+    "native_paths_cache_object_records_and_actual_upstream_import_hashes_consistent": true,
+    "actual_numpy": "2.0.2",
+    "actual_torch": "2.10.0+cpu",
+    "two_thread_cpu_and_6GiB_900s_limits_recorded": true,
+    "stdlib_PathDistribution_equivalence_fixtures_passed": 6
+  },
+  "artifact_binding": {
+    "verifier_manifest_entries": 23,
+    "manifest_covers_all_A_S_O_files_except_own_receipt": true,
+    "manifest_excludes_all_postrun_files": true,
+    "new_result_files_total": 35,
+    "all_new_results_map_sha256": "9bbad1de0214a191ae8d641a432d9f372d2453243be7dc23de20c8b4bffda9fe",
+    "postrun_source_and_log_bindings_independently_checked": true,
+    "cycle_safe": "The verifier hashes A/S/O files except its own receipt. Post-run supervisor receipts hash child source and child stdout/stderr, and remain outside that map. verify stdout omits artifact_sha256 and input_identity. Final candidate Git tree binds the completed receipts, including the final publication-audit receipt."
+  },
+  "progress": {
+    "calibration_inferred": 4,
+    "calibration_allocated": 10,
+    "evaluation_inferred": 0,
+    "evaluation_allocated": 20,
+    "next_group_not_run": "g-039",
+    "new_download_bytes_recorded": 0,
+    "acquisition_ceiling_bytes": 1482283622
+  },
+  "candidate_ci": {
+    "run_url": "https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39057030013",
+    "event": "pull_request",
+    "head_sha": "b6ffe257930086db2096b7e117f40da659412c74",
+    "conclusion": "success",
+    "tests_passed": 184,
+    "pytest_seconds": 7.7,
+    "synthetic_smoke_frames": 1240,
+    "synthetic_smoke_seconds": 3.7,
+    "scope": "Read actual job logs. Final publication and merged main require their own CI; these software checks do not run the learned model."
+  },
+  "limitations": [
+    "Point IDs match the frozen runner receipt; frame-0 visibility/query selection was not independently re-derived from annotations.",
+    "Original archive, weights and installed runtime bytes were not downloaded or rehashed locally.",
+    "The parent wait4 record closes the prior wrapper-exit evidence gap for this run; it is still published same-host execution evidence, not independent model replication.",
+    "No reliability, accuracy, calibration threshold or real-robot conclusion is supported by this prediction-collection audit.",
+    "Cloud package, native, dataset and checkpoint bytes are not available to this local reviewer; actual cache rehash claims are checked for source and record consistency, not independently rerun locally.",
+    "Neither cloud verifier nor local reviewer hashes every installed package/native file.",
+    "The reviewed scripts and records establish the scoped one-group execution evidence, not a global attestation of all cloud activity.",
+    "Wrapper wait4 resource usage can include waited descendants; runner peak RSS is separately reported."
+  ],
+  "artifact_sha256": {
+    "results/0002-pilot-execution/g-040-20261017-postrun/postrun-supervisor-source.py": "228ad025bc3deb1dd15ee6c43cfc14a32864a10e8172e0493b849ad9bf1cf95d",
+    "results/0002-pilot-execution/g-040-20261017-postrun/publication-audit-source.py": "50af880d361dd78bc2c4d48afbe252964484ceadedd4b8ac58f7e50f841e6bde",
+    "results/0002-pilot-execution/g-040-20261017-postrun/publication_audit.json": "c34bd34c248d91a72003b579f6db0e4a7a90f43de518ce6c69b7a81ba267906b",
+    "results/0002-pilot-execution/g-040-20261017-postrun/publication_audit.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017-postrun/publication_audit.stdout.log": "b3a6356b2b9dac5dde0281bc8cc08952a36469981dea42e4ffd0a5f7b82f51fa",
+    "results/0002-pilot-execution/g-040-20261017-postrun/software.json": "4b124732a97326691b8ee3f75b5d181fd2a4aaef004e361c9522686025a1f29b",
+    "results/0002-pilot-execution/g-040-20261017-postrun/software.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017-postrun/software.stdout.log": "2f71322b76ab87e2704fad9172de8bb9861cd291dfc518c7430b208d79a527e6",
+    "results/0002-pilot-execution/g-040-20261017-postrun/verify.json": "bc6a9ebd54628e8e05d824e26d1b933e61e85e2f180aa45d4765b9a8cc5b799c",
+    "results/0002-pilot-execution/g-040-20261017-postrun/verify.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017-postrun/verify.stdout.log": "6d3414e6488455d220035187534a93426a264f15ed333cf3b25f81d700c9ba5a",
+    "results/0002-pilot-execution/g-040-20261017-supervision/supervisor-source.py": "21774457371c2d12d7265c4b102a14012af348619c0ed12e303451b1dffa909d",
+    "results/0002-pilot-execution/g-040-20261017-supervision/supervisor.json": "d90fd66b715d6bd8dce85ce9047d2d9888c6749dd4bf12d52dc12519beb5e200",
+    "results/0002-pilot-execution/g-040-20261017-supervision/wrapper.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017-supervision/wrapper.stdout.log": "0ddaab78a8df15d967ccb75bf3a5f2b28fdcd9ff16115488689f04b59b3bde6c",
+    "results/0002-pilot-execution/g-040-20261017/command.txt": "0883ce02e22efb36e7895663963a4a267ab94f112997524186039da659633287",
+    "results/0002-pilot-execution/g-040-20261017/independent-verification.json": "9b8ac2458ec99b221338058bc5c46c75e38ce1fb8aee8e5c19af8a099e2171d9",
+    "results/0002-pilot-execution/g-040-20261017/infer.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017/infer.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017/launcher-source.py": "5a19d88c6b4202141b45aae48e7f3772ca9db0d35d7f6583178a6ce7b5affc0b",
+    "results/0002-pilot-execution/g-040-20261017/outer.json": "c88dffe1195d30ad9eb224a6e9763d4522e35408717fb4a873e304bbe4628ec6",
+    "results/0002-pilot-execution/g-040-20261017/preflight-code.py": "2f0ff1071780be3a6400640610fe1f68e524c10de5ffb4b5fedec87a97b28319",
+    "results/0002-pilot-execution/g-040-20261017/preflight.json": "1c2450a848885faa5dd982b4f88058737cc5e733bdf21936999d05968f19137e",
+    "results/0002-pilot-execution/g-040-20261017/preflight.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017/preflight.stdout.log": "8fe0ff93868981a7ff104e73e946a71e8663a8ddd7485ed629997246aaff5872",
+    "results/0002-pilot-execution/g-040-20261017/prelaunch.json": "f6149fd8e16d1b9285bc86779b94e80ab4b90038ce65fc53f6264cb139022829",
+    "results/0002-pilot-execution/g-040-20261017/pytest_availability.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017/pytest_availability.stdout.log": "f15c5d838f66b0ed2ece52f24cf7254ae490aa76b5c9b32b813db798188fec39",
+    "results/0002-pilot-execution/g-040-20261017/software-checks-source.py": "7f7b347042a114965aaebd80a15329823e69def87c61882e3b89a786b366a134",
+    "results/0002-pilot-execution/g-040-20261017/software-checks.json": "2f71322b76ab87e2704fad9172de8bb9861cd291dfc518c7430b208d79a527e6",
+    "results/0002-pilot-execution/g-040-20261017/toy_smoke.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-040-20261017/toy_smoke.stdout.log": "13e226f7f43ad83e793273129fad0431262075e96065c6f031b2f2618d8e0c57",
+    "results/0002-pilot-execution/g-040-20261017/verification-source.py": "17c31fccd5e8c663f48e966e8c6d2cb261a25e167bdd14bc97919a41bbe99714",
+    "results/0002-pilot-predictions/v2-reconstructed/g-040/receipt.json": "8992f2ebef421a7d417d149f7a7cc0ac9b5b3a6525ace7643f3a7db53ec09449",
+    "results/0002-pilot-predictions/v2-reconstructed/g-040/video-040.csv": "399c64850174219a298641eb277b2f36918e08dac590e1e8e6b25c4da71c3741"
+  }
+}
