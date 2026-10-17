@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: exploratory v2 published; first calibration inference blocked by dependency gate.
+Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 1/10 calibration groups inferred.
 
 ## Active question
 
@@ -27,7 +27,8 @@ For a fixed visual position estimator, does causal temporal consistency identify
 
 - [64-frame development and metadata grouping](docs/0002-64frame-and-freeze.md) completed on real weights: two-query64-frame forward39.337s, fresh-process repeat39.450s, maximum replay difference0, peak794764KiB. Only video0 was inferred; all50 identities/prefix/frame hashes yielded50singleton exact-duplicate groups and partitions1/10/20/19. Scene independence and full upstream non-exposure remain unestablished. Complete executable 0002 metrics and future inference use the v2 freeze after the pre-merge provenance repair; v1 is preserved but superseded before any evaluation. V2 enforces canonical published receipts and mandatory commit/current-file hashes and dependencies; [Independent review](docs/0002-independent-review.md) verified the artifacts and v2 repair; merge and main-publication verification remain mandatory before held-out inference. No real-data score comparison has run.
 
-- [First g-033 attempt stopped at the real v2 gate](docs/0002-g033-gate-failure-2026-10-17.md): expected NumPy2.0.2, actual2.3.5. Main05c2d7cb and all29 frozen inputs match;15/16 package versions and existing cache/source digests match. Preflight exit1 is preserved, with no retry or install. No inference subprocess, prediction CSV or GT error/threshold/evaluation was produced. Progress remains **0/10 calibration inference groups,0/20 evaluation groups**. Restore the exact runtime only in a later authorized recovery; preserve the failed marker and original evidence.
+- [Calibration group g-033 completed after authorized runtime recovery](docs/0002-g033-calibration-inference-2026-10-17.md). The initial NumPy2.3.5 gate failure remains preserved in its own checkpoint. Official NumPy2.0.2 was installed into cache; the newly recorded wheel/RECORD identities establish version-matched reconstruction, not byte-identical reproduction. The real gate passed all29 frozen inputs and16 exact versions/module origins. Video33 first64frames, points[0,1]:128rows/512finite outputs, outer wall49.287s, peak2553156KiB; independent raw/grid/latency/Git/provenance checks passed. **1/10 calibration inference groups complete,0/20 evaluation groups complete.** No GT error, confidence score, threshold fit, other group or evaluation was run. Verify/publish existing g-033 outputs rather than re-infer; PR#6 remains for parent review/merge.
+
 
 ## Claims boundary
 

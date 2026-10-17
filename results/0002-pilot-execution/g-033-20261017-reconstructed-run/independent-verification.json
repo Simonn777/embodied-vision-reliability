@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-17T06:29:52.760565+00:00",
+  "scope": "independent standard-library CSV/latency/Git/provenance verification; no candidate imports, archive decoding, model rerun, GT error, scoring or threshold fitting",
+  "group": "g-033",
+  "archive_index": 33,
+  "rows": 128,
+  "output_shape": [
+    64,
+    2,
+    4
+  ],
+  "finite_values": 512,
+  "raw_csv_sha256": "22bb58db053c0cb011c72cadee1e0d91012301ff6e15bb3264ae23e39cd9819e",
+  "float32_numeric_row_order_sha256": "217e5f16c60a66b0cb8351f53bc2cfae6c50cadfe258d87876a39d5cbf961da6",
+  "first_frame_seconds": 0.5421286870000586,
+  "subsequent_median_seconds": 0.49331080699994345,
+  "sum_recorded_frame_intervals_seconds": 32.78301092600009,
+  "runner_wall_seconds": 48.658732168999904,
+  "outer_infer_wall_seconds": 49.28682488599998,
+  "peak_rss_kib": 2553156,
+  "source_commit": "05c2d7cb4ec1f81b6bf080252deb69bd9a72a319",
+  "freeze_input_commit": "bbe7428e126a566a62d3c123d7158f120aa66e2b",
+  "frozen_input_hashes_verified": 29,
+  "version_and_origin_checks": 16,
+  "raw_model_outputs_not_repeated": true,
+  "calibration_groups_inferred": 1,
+  "calibration_groups_allocated": 10,
+  "evaluation_groups_inferred": 0,
+  "evaluation_groups_allocated": 20,
+  "initial_query_identity_scope": "point indices match the frozen runner receipt; frame0 selection and normalized-query conversion rely on the unchanged frozen runner/adapter, not an independent second annotation decode",
+  "input_identity_from_frozen_manifest": {
+    "archive_index": 33,
+    "schema_keys": [
+      "occluded",
+      "points",
+      "video"
+    ],
+    "arrays": {
+      "points": {
+        "shape": [
+          30,
+          250,
+          2
+        ],
+        "dtype": "float64",
+        "sha256": "52d9e7e34abefacc4343b2a793ddf7b9d423a35af77c203392a8fb529113835e"
+      },
+      "occluded": {
+        "shape": [
+          30,
+          250
+        ],
+        "dtype": "bool",
+        "sha256": "68afe302b3447a8a27b363f239f5b33c97927f7472a1dfbdc90ca213375d333b"
+      },
+      "video": {
+        "shape": [
+          250,
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8",
+        "sha256": "c08d8e63dcc73760d09a17c96f03d4156c707c0b29d8d106b66f5f403e549e45"
+      }
+    },
+    "video_sha256": "c08d8e63dcc73760d09a17c96f03d4156c707c0b29d8d106b66f5f403e549e45",
+    "prefix64_sha256": "68972dac7720b220a8bb8e48205bb52b33b6f5a1256b73d9464a58080c321451",
+    "prefix_length": 64
+  },
+  "environment_identity_scope": "version-matched reconstruction; NumPy wheel/RECORD newly recorded and different from historical installed RECORD; other15 recorded RECORDs match",
+  "research_acquisition_ceiling_bytes": 1482283622,
+  "artifact_sha256": {
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/infer.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/publication.json": "b0c4e49ec5900619e7ebda014711ba9a8c69ad3d273f4764adaf2d9cde2254f9",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/preflight.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/preflight.json": "333b346158c52ee7a7039eb963d737837b42edc6c3d72d5a4137fda7cf6a6707",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/preflight.stdout.log": "d9d7df26a865c5f85d36508881f36c95ecf47d5ff89c13ed18b2aeb35feb81fd",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/command.txt": "c6bba8ef76d599d9521de9fa32619560cc5c0d0f1d7374c0eeee64d323ca4d8f",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/preflight-code.py": "fc869df5239d73f4acda0f13a574012b829dec5bdc6c8c0bae336741bb64c0c7",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/infer.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/outer.json": "56cfaf557a799a90f89842e0a92a8818b62241e93369280450f1eb4abadbcdb3",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/launcher-source.py": "273a318cd3cfc792d2dd0a35738b2a643075e1ee04602488a6b6f17deeb28f20",
+    "results/0002-pilot-predictions/v2-reconstructed/g-033/video-033.csv": "22bb58db053c0cb011c72cadee1e0d91012301ff6e15bb3264ae23e39cd9819e",
+    "results/0002-pilot-predictions/v2-reconstructed/g-033/receipt.json": "a384e5f8ddef77d1b5c0aea5cd170fe8b50e5fbadef03cae36fdb06605244e6e",
+    "results/0002-pilot-execution/g-033-20261017-recovery/download-attempt2.json": "30d0bbdd45d2a0cb8195039f834b3e297fd048f164689c8a30ae40941884db32",
+    "results/0002-pilot-execution/g-033-20261017-recovery/download-attempt1.json": "7075e27915dcee459656b0bd0863288afbb6e2aeb56ee7bce1a1cbd9b4da3fc1",
+    "results/0002-pilot-execution/g-033-20261017-recovery/publication.json": "775bf8b7ab47a4fd397102b43f0bade1edf5c1ae99ee3df2cfcf728d6f162bad",
+    "results/0002-pilot-execution/g-033-20261017-recovery/install.stderr.log": "187874a386797a8ed146e33c746750cb1f7fee39051cf14e4dc759881f7b5b4c",
+    "results/0002-pilot-execution/g-033-20261017-recovery/install.json": "ee6d398649137a2445c41c59f49f45e8eccca954a00f52dd8ad98d80b832fbc3",
+    "results/0002-pilot-execution/g-033-20261017-recovery/install.stdout.log": "790264e9f02e3e8c6a856724bee0ff5c5a1f4fc6b5f4279510fffaa4672a5b14",
+    "results/0002-pilot-execution/g-033-20261017-recovery/official-wheel-selection.json": "3b94b255dfc7e0aafc108d86cb7da20bb4a36d5c113150f0dd0c444188084568",
+    "results/0002-pilot-execution/g-033-20261017-reconstructed-run/verification-source.py": "54fd47e99d6436fd9a69ffa4bf32533ed002b33535975a41a6280f5103dd05cf"
+  }
+}

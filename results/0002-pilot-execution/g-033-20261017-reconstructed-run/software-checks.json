@@ -1,0 +1,16 @@
+{
+  "scope": "software checks, not additional frozen-data inference",
+  "work_pytest": {
+    "exit_code": 1,
+    "tests_executed": 0,
+    "reason": "base interpreter has no pytest; no pytest installed in Work",
+    "evidence": "../g-033-20261017/software-checks-initial.json"
+  },
+  "work_toy_smoke": {
+    "command": "env -i PATH=\"$PATH\" PYTHONPATH=scratch/boot-cache/runtime-fixed:scratch/boot-cache/runtime:scratch/boot-cache/source:src OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 NUMEXPR_NUM_THREADS=2 MPLBACKEND=Agg timeout 900 python scripts/run_experiment.py --smoke --output scratch/g033-completed-smoke --protocol protocols/0001-synthetic-localization.md",
+    "exit_code": 0,
+    "scored_frames": 1240,
+    "seconds": 3.77
+  },
+  "full_tests_and_smoke": "verified separately on exact-head standard public GitHub Research checks CI; no Work pytest result claimed"
+}
