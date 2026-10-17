@@ -226,3 +226,26 @@ compatibility with a direct half-to-f32 path, never proves generation history or
 repairs the matrix. The source-bound 19-case targeted synthetic suite passed;
 previous evidence remains unchanged. Still awaiting independent review; no new
 receipt or additional real camera decode.
+
+
+## Rotation-failure diagnostic: Stage B recorded, original gate failed
+
+[Actual report](docs/0003-rotation-diagnostic-stageB-2026-10-17.md): approved input
+8a7591b, separate receipt/execution 8ffb8bc, complete published-chain preflight then
+one cache-only frame0 K9+RT16 diagnostic. All three unchanged rotation checks fail:
+Gram defects 0.0003642439842224121 / 0.0003985762596094844, determinant defect
+0.000009985611434615294, versus original tau 9.5367431640625e-7. Diagnostic exit0
+means recording complete, not geometry passed. Wall 0.466789 s / RSS 16,128 KiB;
+25 scalars, 100 payload bytes; total carried charge 22,910,156 bytes. No projection.
+
+Single-final-f32 rounding of exact SO(3) is excluded by the predeclared rational
+bounds. R9 and K9 are all exactly binary16-representable; RT14/16, translation1/3,
+homogeneous4/4. This is descriptive compatibility, not proof of generation history;
+two translation values exclude only a direct all-values half-to-f32 path without
+intermediate arithmetic. Cached source's half cast is a possible mechanism only.
+Independent saved-excerpt Gaussian/Fraction and dyadic-lattice checks pass without
+new cache access. Exact 25-value excerpt/derived diagnostics retain CC BY-NC-SA 4.0.
+Old files/failures/markers preserved; new marker retained. No model, old-test tuning,
+threshold change, download/install, new fees or schedule/permission changes.
+Next: independent review of the recorded diagnostic; actual generation chain and
+independent cohort remain unresolved. No automatic matrix repair or audit rerun.

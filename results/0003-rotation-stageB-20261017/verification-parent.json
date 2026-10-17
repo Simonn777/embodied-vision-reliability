@@ -1,0 +1,44 @@
+{
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "results/0003-rotation-stageB-20261017/verify_saved.py"
+  ],
+  "started_utc": "2026-10-17T23:46:05.973923+00:00",
+  "ended_utc": "2026-10-17T23:46:06.006900+00:00",
+  "wall_seconds": 0.033000584997353144,
+  "peak_rss_kib": 11264,
+  "CPU_user_seconds": 0.025197999999999998,
+  "CPU_system_seconds": 0.0073679999999999995,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "source_sha256": {
+    "results/0003-rotation-stageB-20261017/verify_saved.py": "802e58035951d6ba8ad5f24e05efa3158d61c6e7175daa436100ac7b59d669d2",
+    "results/0003-rotation-stageB-20261017/verification_parent.py": "d236e01188b482a668e16110941b76f71e7b403057257f51080e1cf112a6ba91"
+  },
+  "input_sha256": {
+    "results/0003-rotation-stageB-20261017/audit/camera-excerpt.json": "8c6397627a21a2585bc252151697e80ef510f93d7dd695463642e37536c10e81",
+    "results/0003-rotation-stageB-20261017/audit/diagnostic.json": "a1f79a887f3d707fb046e011ee1e31e5f62f17aeeb833d5dfc8566144c8b5681"
+  },
+  "logs_sha256": {
+    "stdout": "9107cae3087c754e7a882b40765916872040af6b7af446b0e294df8ff74a3124",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "AS_bytes": 6442450944,
+  "affinity": [
+    0,
+    1
+  ],
+  "timeout_seconds": 900,
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "boundary": "actual parent wait4 of verification child; parent itself has no further observed exit receipt"
+}

@@ -1,0 +1,50 @@
+{
+  "phase": "preflight",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "results/0003-rotation-stageB-20261017/preflight.py"
+  ],
+  "execution_commit": "8ffb8bcfbc5c7a9fe87e5a624d3f3dc1e0d97072",
+  "started_utc": "2026-10-17T23:45:14.156576+00:00",
+  "ended_utc": "2026-10-17T23:45:14.800450+00:00",
+  "wall_seconds": 0.6438787220031372,
+  "peak_rss_kib": 13952,
+  "cpu_user_seconds": 0.494289,
+  "cpu_system_seconds": 0.167483,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "timeout_seconds": 900,
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "source_sha256": {
+    "results/0003-rotation-stageB-20261017/execution_parent.py": "f7242c232682047c09ac7b6a6fdbb8d03f94cae12453ab4779d92e648b921c1b",
+    "results/0003-rotation-stageB-20261017/preflight.py": "9cd82de12526b9bc980e9ade843d4b2ba75dd2ef7f5cbbd14080c514f11f3320",
+    "src/evr/rotation_diagnostic_v1.py": "18fa710fcd64563b17395b571bd06fd72e7bc44a82bb1e8c7c3cb2b83b78132c",
+    "configs/0003-rotation-diagnostic-v1.json": "9b69cdcc59e86059b26e017d6a53fadfc10e6baeb2bf1e843dd08c9e5c9452d5",
+    "protocols/0003-rotation-diagnostic-v1.md": "efb05c1b2967307728a05161dd795cbc933eaf0c8981734c9d8078660375988c",
+    "protocols/0003-rotation-diagnostic-freeze-v1.json": "957f830c6a67e6923ed82cba90d1ddf9d74558f03f93763abd82e01aad095820"
+  },
+  "logs_sha256": {
+    "stdout": "b4dff0fa9aea2e6f8dbfcf79fa646a290692adc6119a194157d6f0652fbb79c5",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "boundary": "actual parent wait4 of timeout/child; parent has no further observed supervisor exit receipt",
+  "publication_normalization": {
+    "original_receipt_sha256": "d921519010946a5f877ac5dca6dd3bc16408600e487954a8e9ee61aacb60a071",
+    "change": "absolute repository source-key prefix replaced with repository-relative path; all measurements, commands, source digests and log bytes unchanged; raw original retained in cloud scratch only"
+  }
+}
