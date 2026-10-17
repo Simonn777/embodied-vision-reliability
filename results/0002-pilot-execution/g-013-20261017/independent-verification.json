@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-17T17:40:38.302042+00:00",
+  "scope": "stdlib CSV/grid/time/Git/provenance consistency; no candidate imports, annotation/archive decode, model replay, GT errors, score or threshold fitting",
+  "group": "g-013",
+  "archive_index": 13,
+  "point_indices": [
+    0,
+    1
+  ],
+  "rows": 128,
+  "output_shape": [
+    64,
+    2,
+    4
+  ],
+  "finite_values": 512,
+  "nonfinite_values": 0,
+  "coordinate_missing_rows": 0,
+  "logit_invalid_rows": 0,
+  "raw_csv_sha256": "8707198875187c1b43c06a07970eb5da72fc745f372f43afd87411daf72c6d5c",
+  "float32_row_order_numeric_sha256": "457d481555c0abffeef9fc1de7218db6d8e8cd1680355dbd1e4b746602d63fb9",
+  "first_frame_seconds": 0.506901694003318,
+  "subsequent_median_seconds": 0.5175791960064089,
+  "sum_frame_intervals_counted_once_seconds": 34.517204112999025,
+  "runner_wall_seconds": 48.772355262997735,
+  "infer_child_wall_seconds": 49.41080214200338,
+  "wrapper_wall_seconds": 51.362839581001026,
+  "supervisor_elapsed_seconds": 51.40263102499739,
+  "infer_child_exit_code": 0,
+  "parent_observed_wrapper_exit_code": 0,
+  "peak_rss_kib": 2553240,
+  "source_commit": "5561cf5ee91ac01a9c419ca3a1c938fd43d32a4e",
+  "freeze_input_commit": "bbe7428e126a566a62d3c123d7158f120aa66e2b",
+  "frozen_files_verified": 29,
+  "dependency_versions_origins_verified": 16,
+  "preserved_g033_result_files": 37,
+  "query_selection_scope": "indices match unchanged frozen runner receipt; frame0-only selection is established by frozen code and verified input identities, without a second annotation decode",
+  "input_identity": {
+    "archive_index": 13,
+    "schema_keys": [
+      "occluded",
+      "points",
+      "video"
+    ],
+    "arrays": {
+      "points": {
+        "shape": [
+          30,
+          250,
+          2
+        ],
+        "dtype": "float64",
+        "sha256": "2b438cc33031fe5c284535f1d28a0eb41f260a77decf02d2e10da866d1207088"
+      },
+      "occluded": {
+        "shape": [
+          30,
+          250
+        ],
+        "dtype": "bool",
+        "sha256": "95582957dd90d3b1e5e0797e2ed1dafa9c6b933566241df7d41587390cf37078"
+      },
+      "video": {
+        "shape": [
+          250,
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8",
+        "sha256": "54bd52e79e34975b828c9a8aaf36c8d358438df767a61343775e93a4cf479c89"
+      }
+    },
+    "video_sha256": "54bd52e79e34975b828c9a8aaf36c8d358438df767a61343775e93a4cf479c89",
+    "prefix64_sha256": "1f4e090dccaac80678a7fc0d8d8ed7e9ebb6c5b8723556c8d7c5980f3b9f5486",
+    "prefix_length": 64
+  },
+  "new_download_bytes": 0,
+  "acquisition_ceiling_bytes": 1482283622,
+  "calibration_groups_inferred": 2,
+  "calibration_groups_allocated": 10,
+  "evaluation_groups_inferred": 0,
+  "evaluation_groups_allocated": 20,
+  "next_calibration_group": "g-022",
+  "artifact_sha256": {
+    "results/0002-pilot-execution/g-013-20261017/verification-source.py": "1290a2ba1b597abd598ecc04a8d450b7e73503f851d1e245868c9bc8a7f430fd",
+    "results/0002-pilot-execution/g-013-20261017/infer.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-013-20261017/software-checks-source.py": "9d1fd9c8f079c55ab96a5ab7f380ba13e3e3c13358ff3d2fba276b2f865e424d",
+    "results/0002-pilot-execution/g-013-20261017/toy_smoke.stdout.log": "ffbb6f4a95c5aebf1f22b57b5bb7a0c22519b35268dfc8d3719ee6957cb3b9d1",
+    "results/0002-pilot-execution/g-013-20261017/preflight.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-013-20261017/preflight.json": "475ffe39a026da873b2d6d36f303a8557f6e2ae7b014521a5524abd3d891449d",
+    "results/0002-pilot-execution/g-013-20261017/preflight.stdout.log": "18e001ffa57539b03383e91f03a15ff7446fd52286a236e437f6d591bdbf2ea0",
+    "results/0002-pilot-execution/g-013-20261017/command.txt": "c47d2e50ade05344d3eef938ba91c00bf603d79f76a55388c6d7841caace8a38",
+    "results/0002-pilot-execution/g-013-20261017/pytest_availability.stdout.log": "f15c5d838f66b0ed2ece52f24cf7254ae490aa76b5c9b32b813db798188fec39",
+    "results/0002-pilot-execution/g-013-20261017/software-checks.json": "2a2caf2716d0990a98e6487371aec7e7cd084351d343680689e5ce27f5232b34",
+    "results/0002-pilot-execution/g-013-20261017/toy_smoke.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-013-20261017/pytest_availability.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-013-20261017/preflight-code.py": "870a1e4354c562b9b9434beb121d84f331edd01bf12a9b56a14fcd10cba52466",
+    "results/0002-pilot-execution/g-013-20261017/infer.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-013-20261017/outer.json": "e644a32b72dc541fd4cffe17471df66332de918383826ae7cabc5b09bbd048c8",
+    "results/0002-pilot-execution/g-013-20261017/launcher-source.py": "ca138ee689dad45c565c4955d449546d4589afb5b72488a8e848ad856e35e7b3",
+    "results/0002-pilot-execution/g-013-20261017-supervision/supervisor.json": "cca67024c2fcc19c283aa00545d43b6ec3c55639bba6effbc3729e7b61d51b83",
+    "results/0002-pilot-execution/g-013-20261017-supervision/wrapper.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0002-pilot-execution/g-013-20261017-supervision/wrapper.stdout.log": "b6687d958af4d3586834e05757ab19bf17cad6105bddcfc292891624641dd43e",
+    "results/0002-pilot-execution/g-013-20261017-supervision/supervisor-source.py": "d6b7f25ed43bc8722218eea3313c906ca7e7bc843c5a81354fdb87e20012724d",
+    "results/0002-pilot-predictions/v2-reconstructed/g-013/video-013.csv": "8707198875187c1b43c06a07970eb5da72fc745f372f43afd87411daf72c6d5c",
+    "results/0002-pilot-predictions/v2-reconstructed/g-013/receipt.json": "533a0c1d6e47081052c33070980d0dbe38de7987cd2ddc21546ddf9d5a892609"
+  }
+}

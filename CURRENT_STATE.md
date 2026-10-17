@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 1/10 calibration groups inferred.
+Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 2/10 calibration groups inferred.
 
 ## Active question
 
@@ -29,6 +29,8 @@ For a fixed visual position estimator, does causal temporal consistency identify
 
 - [Calibration group g-033 completed after authorized runtime recovery](docs/0002-g033-calibration-inference-2026-10-17.md). The initial NumPy2.3.5 gate failure remains preserved in its own checkpoint. Official NumPy2.0.2 was installed into cache; the newly recorded wheel/RECORD identities establish version-matched reconstruction, not byte-identical reproduction. The real gate passed all29 frozen inputs and16 exact versions/module origins. Video33 first64frames, points[0,1]:128rows/512finite outputs, outer wall49.287s, peak2553156KiB; independent raw/grid/latency/Git/provenance checks passed. **1/10 calibration inference groups complete,0/20 evaluation groups complete.** No GT error, confidence score, threshold fit, other group or evaluation was run. The [independent publication review](docs/0002-g033-publication-review.md) passed. Preserve and use existing g-033 outputs; do not re-infer.
 
+
+- [Calibration group g-013 completed](docs/0002-g013-calibration-inference-2026-10-17.md) from main5561cf5e, reusing the verified cached environment with no downloads. The real29-file/16-version gate passed. Video13 first64frames selected original pointindices[0,1], yielding128 rows/512finite outputs; inference child49.411s, peak2553240KiB. The parent separately observed wrapper exit0, distinct from preflight/inference child exits0. Standard-library grid/hash/time/provenance checks passed and all37 g-033 result files remain unchanged. **2/10 calibration inference groups complete,0/20 evaluation**; no errors/scores/thresholds or replay. Publication awaits independent parent review; next allocated group g-022 was not run.
 
 ## Claims boundary
 
