@@ -11,7 +11,8 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | Artifact | What it answers |
 |---|---|
 | [Current state](CURRENT_STATE.md) | What has actually been completed? |
-| [Latest calibration group: g-040](docs/0002-g040-calibration-inference-2026-10-17.md) | What ran next, with raw predictions and parent-observed inference and verification exits? |
+| [Latest calibration group: g-039](docs/0002-g039-calibration-inference-2026-10-17.md) | What ran next, with complete predictions and supervised, cycle-safe verification records? |
+| [Calibration group: g-040](docs/0002-g040-calibration-inference-2026-10-17.md) | What ran next, with raw predictions and parent-observed inference and verification exits? |
 | [Calibration group: g-022](docs/0002-g022-calibration-inference-2026-10-17.md) | What ran next, with complete raw outputs, separate parent/child exits and independent provenance checks? |
 | [Calibration group: g-013](docs/0002-g013-calibration-inference-2026-10-17.md) | What ran next, with independently observed wrapper exit and complete raw/provenance checks? |
 | [First calibration group: g-033](docs/0002-g033-calibration-inference-2026-10-17.md) | What did the frozen model produce, and how was a dependency failure preserved and resolved? |
@@ -60,7 +61,9 @@ Group g-022 has now completed once: 128 rows, 57.829 seconds for the inference s
 
 Group g-040 completed once: 128 rows, 47.834 seconds for the inference child and 2,553,160 KiB peak RSS. Separate parent records cover wrapper and post-run verification exits. No downloads or frozen changes. [g-040 evidence](docs/0002-g040-calibration-inference-2026-10-17.md).
 
-The allocation remains 1 development, 10 calibration, 20 evaluation and 19 reserve videos. Calibration prediction collection is **4/10 complete**; evaluation is **0/20**. No real-data error scoring, threshold fitting or reliability comparison has run. The [development report and frozen v2 protocol](docs/0002-64frame-and-freeze.md) describe the experiment and grouping. Shared objects and camera, unknown scene dependencies and unresolved checkpoint exposure limit interpretation.
+Group g-039 completed once: 128 rows, 48.157 seconds for the inference child and 2,553,996 KiB peak RSS. Parent records retain inference and post-run exits plus source/log bindings; no downloads or frozen changes. [g-039 evidence](docs/0002-g039-calibration-inference-2026-10-17.md).
+
+The allocation remains 1 development, 10 calibration, 20 evaluation and 19 reserve videos. Calibration prediction collection is **5/10 complete**; evaluation is **0/20**. No real-data error scoring, threshold fitting or reliability comparison has run. The [development report and frozen v2 protocol](docs/0002-64frame-and-freeze.md) describe the experiment and grouping. Shared objects and camera, unknown scene dependencies and unresolved checkpoint exposure limit interpretation.
 
 The first experiment is a synthetic 2D localization diagnostic. Its purpose is to validate the evaluation machinery and expose failure cases. It does not measure robot control, prove generalization to real video, or establish a new method. Public-video evaluation and stronger frozen estimators are the next stages.
 
