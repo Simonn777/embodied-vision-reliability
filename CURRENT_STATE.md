@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: 0003 design frozen; new independent-data cohort blocked, no new model run.
+Updated: 2026-10-17. Program day 2. Phase: 0003 prospective timing clarified; default network works, inventory/cohort still blocked.
 
 ## Active question
 
@@ -86,3 +86,39 @@ units and time validation; complete family/access graph; new-development-only
 precision assessment; then separate final cohort freeze if gates can be met.
 Unknown independence/checkpoint exposure stay unknown. No added fee, install,
 account/schedule/permission change or confirmatory/robot/SOTA claim.
+
+## 0003 default-route and prospective timing follow-up (2026-10-17)
+
+The [follow-up report](docs/0003-network-and-timing-followup-2026-10-17.md) supersedes
+only the current network-readiness interpretation, preserving every v1 byte.
+V1 clean-env DNS failures did not prove default runtime unavailability: existing
+proxy/CA names were present, and one unchanged-default official HF request returned
+HTTP 200 / 2,328 bytes. No values/credentials/private hostnames or security changes.
+Exactly one authorized sample GET downloaded 3,324,284,510 bytes and verified full
+SHA256 against the pinned official LFS identity. Parent wall 82.836491 s, RSS
+18,092 KiB, exit/raw 0/0. Six bounded pinned source files/tree were checked as code
+text only; no remote code executed. Conservative cumulative ceiling 4,823,387,101
+bytes remains below 10 GiB; no fee/installation/dependency/weight acquisition.
+
+Safe tar inventory STOPPED after 2,756 headers when an annotation exceeded unchanged
+512 MiB cap: actual exit/raw 1/256, 2.904198 s, 14,080 KiB. Inventory incomplete;
+no NPZ/GT arrays, frame-0 query fields, RGB or predictions accessed. No relaxed cap,
+retry, re-download, extraction, geometry computation or model. Entire sample stays
+audit/development UNKNOWN family; no independent evaluation cohort established.
+
+The [prospective timing addendum](protocols/0003-timing-addendum-v1.md) input commit
+`d2787e7f4fefaca6fbcc6ffb4a1a2d1686e97647` precedes a separate eight-file receipt
+including the unchanged canonical v1 receipt. It supersedes GT-quality timing only:
+metadata/quarantined development/frame0 query access (truthfully recorded) before
+final allocation/pipeline freeze; all prediction hashes before held-out GT quality
+adjudication. Pre-inference quality remains PENDING_POST_PREDICTION. Required-family
+quality failure/undefined => INCONCLUSIVE, retaining all families/zero-query units
+and original primary definition. V1 readiness() is legacy with no execution authority;
+a future separately frozen pipeline must bind both versions and phases. Eleven new
+typed phase fixtures passed. No old scales/20% goal/samples/results changed.
+
+Parent provenance clarification: earliest 27 fixtures are not fully source-bound;
+29/31 records do not preserve exact old protocol text. Final 35 nine-file hashes match
+published input 66e5330. Old records remain historical, not retroactively repaired.
+Next is independent review and explicit resolution of archive-cap/provenance evidence,
+not sample retry, cohort invention, GT decoding or inference under this receipt.
