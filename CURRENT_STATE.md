@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: post-hoc residual mechanism diagnosed; original negative frozen result unchanged.
+Updated: 2026-10-17. Program day 2. Phase: 0003 design frozen; new independent-data cohort blocked, no new model run.
 
 ## Active question
 
@@ -57,3 +57,32 @@ No accepted paper, new state of the art, real-robot validation, or successful re
 Read [NEXT_ACTIONS.md](NEXT_ACTIONS.md) and the active protocol before running work. Check Git status and GitHub before assuming the local state is current. Do not rerun a final-test comparison to tune a method.
 
 Scheduled research ends on October 15, 2027 (America/New_York), unless the user renews the program.
+
+
+## 0003 design / acquisition readiness (2026-10-17)
+
+AI-assisted [new-data audit](docs/0003-data-audit-2026-10-17.md) and
+[design protocol](protocols/0003-motion-design-v1.md). Input commit
+`66e5330ad7404b4e7678d006e2537e4703f4683d` was published before the separate canonical
+nine-file design receipt. DESIGN_ONLY; BLOCKED_NO_FINAL_COHORT, not a final test
+freeze or inference authorization. All 11 direct source/sample HEAD requests
+failed DNS, 0 bytes; no sample GET, archive inventory, annotation/RGB/GT access,
+model, old-result analysis, threshold fit or formal effects. Official source
+text checked through cloud search; exact archive/source revisions are byte-unverified
+leads. All 1,149 protected old paths remain byte-identical.
+
+Design separates signed 2D GT-image and localization-error curvature. Norms and
+perspective camera/world components do not add; 2D predictions cannot identify
+3D drift. New prospective continuation goal is 20% relative error reduction with
+paired cluster 95% CI upper <0, minimum 20 independent test families, 5 native-error-
+bearing families, 20 native matched errors, valid GT/coverage/bootstrap support.
+These are planning choices, not estimated efficacy. No actual cohort exists.
+Thirty-five helper/freeze/adversarial stdlib fixtures passed, including pre-freeze
+review domain/overflow/path refinements. Earlier software snapshots and evidence
+closure correction remain archived. Old 0002 science/results remain unchanged.
+
+Next: permitted sample/source acquisition; one quarantined family's geometry,
+units and time validation; complete family/access graph; new-development-only
+precision assessment; then separate final cohort freeze if gates can be met.
+Unknown independence/checkpoint exposure stay unknown. No added fee, install,
+account/schedule/permission change or confirmatory/robot/SOTA claim.
