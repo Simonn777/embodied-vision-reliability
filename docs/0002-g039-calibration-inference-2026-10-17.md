@@ -113,5 +113,24 @@ No other group, prior-model replay, evaluation, GT error, confidence score or
 threshold fit occurred. Shared objects/camera, unknown scene dependencies and
 unresolved checkpoint exposure constrain the future exploratory pilot. No efficacy,
 SOTA, paper reproduction or real-robot claim. No paid API/GPU/credits/service,
-account/permission/schedule change or raw-data/weight upload. Keep this PR unmerged
-for independent parent review. Next manifest group **g-020** was not run.
+account/permission/schedule change or raw-data/weight upload. Next manifest group
+**g-020** was not run.
+
+## Independent publication review
+
+Two separate read-only audits of candidate `0af5092b` passed; the
+[parent review receipt](../results/0002-pilot-execution/g-039-parent-review.json)
+consolidates their findings. They recomputed the complete 64×2 grid, numeric/file
+hashes and timing, checked all 29 frozen inputs and 130 unchanged historical
+files, and verified the three post-run checks' source/log/exit bindings. The
+progressive binding records include each current phase without hashing a receipt
+into itself. All 35 original result files remain unchanged. RECORD normalization
+also passed six standard-library text-decoding fixtures.
+
+The review checks published evidence; it does not rerun inference, re-derive
+query selection from annotations or locally rehash cloud cache bytes. Post-run
+child exits are observed by their parent; that parent's own exit has no further
+supervisor record. Candidate [CI](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39057978375)
+passed 184 tests in 11.35 seconds and a 1,240-frame synthetic smoke in 3.13
+seconds. Final publication and merged main must pass their own checks. These
+prediction-collection results establish no reliability or real-robot outcome.
