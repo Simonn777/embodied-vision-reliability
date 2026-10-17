@@ -1,0 +1,32 @@
+test_budget_prechecks_including_discarded_reads (test_bounded_point_audit.BoundedPointAuditTests.test_budget_prechecks_including_discarded_reads) ... ok
+test_f16_and_visibility_uint8 (test_bounded_point_audit.BoundedPointAuditTests.test_f16_and_visibility_uint8) ... ok
+test_frame0_selection_never_uses_future_visibility_or_error (test_bounded_point_audit.BoundedPointAuditTests.test_frame0_selection_never_uses_future_visibility_or_error) ... ok
+test_header_cap_and_truncation (test_bounded_point_audit.BoundedPointAuditTests.test_header_cap_and_truncation) ... ok
+test_nonfinite_first_frame_no_future_replacement (test_bounded_point_audit.BoundedPointAuditTests.test_nonfinite_first_frame_no_future_replacement) ... ok
+test_objects_structured_fortran_and_zero_dimensions_rejected (test_bounded_point_audit.BoundedPointAuditTests.test_objects_structured_fortran_and_zero_dimensions_rejected) ... ERROR
+test_prefix_limit_is_fixed (test_bounded_point_audit.BoundedPointAuditTests.test_prefix_limit_is_fixed) ... ok
+test_stream_internal_buffer_reserve_counted (test_bounded_point_audit.BoundedPointAuditTests.test_stream_internal_buffer_reserve_counted) ... ok
+test_three_frame_prefix_does_not_read_full_array (test_bounded_point_audit.BoundedPointAuditTests.test_three_frame_prefix_does_not_read_full_array) ... ok
+test_unsupported_version_and_bad_dtype (test_bounded_point_audit.BoundedPointAuditTests.test_unsupported_version_and_bad_dtype) ... ok
+
+======================================================================
+ERROR: test_objects_structured_fortran_and_zero_dimensions_rejected (test_bounded_point_audit.BoundedPointAuditTests.test_objects_structured_fortran_and_zero_dimensions_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>/tests/test_bounded_point_audit.py", line 22, in test_objects_structured_fortran_and_zero_dimensions_rejected
+    with self.assertRaises(ValueError):npy_header(io.BytesIO(array(shape,[],descr,fortran)),ReadBudget())
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/tests/test_bounded_point_audit.py", line 8, in array
+    fmt={'<f4':'<f','<f2':'<e','|u1':'<B'}.get(descr,'<f')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+FAILED (errors=1)
+Traceback (most recent call last):
+  File "<repo>/scratch/test_0003_resource.py", line 5, in <module>
+    r=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.discover('tests',pattern='test_bounded_point_audit.py'));assert r.wasSuccessful()
+                                                                                                                                          ^^^^^^^^^^^^^^^^^
+AssertionError
