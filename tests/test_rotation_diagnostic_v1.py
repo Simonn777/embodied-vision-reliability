@@ -15,7 +15,7 @@ import zipfile
 from fractions import Fraction
 from evr.bounded_point_audit import ReadBudget
 from evr.point_geometry_v2 import header,atomic_json
-from evr.rotation_diagnostic_v1 import (frame0,continued_budget,read_cameras,diagnose,double_statistics,exact_statistics,rounding_bounds,TAU)
+from evr.rotation_diagnostic_v1 import (frame0,continued_budget,read_cameras,diagnose,double_statistics,exact_statistics,rounding_bounds,TAU,binary16_exact,binary16_groups)
 
 
 def f32(x):return struct.unpack('<f',struct.pack('<f',x))[0]
@@ -87,6 +87,27 @@ class NumericalTests(unittest.TestCase):
   self.assertFalse(diagnose(identity(3),rt)['original_gate_checks']['RT_exact_bottom_row'])
   k=identity(3);k[0][0]=0.
   self.assertFalse(diagnose(k,identity(4))['original_gate_checks']['positive_focal'])
+
+ def test_binary16_exact_boundaries_and_signed_zero(self):
+  for value in [0.,-0.,1.,2.**-24,65504.]:
+   self.assertTrue(binary16_exact(value),value)
+  for value in [2.**-25,65520.,70000.,f32(math.sqrt(.5))]:
+   self.assertFalse(binary16_exact(value),value)
+  k=identity(3);k[0][1]=-0.
+  rows=binary16_groups(k,identity(4))['groups']['K9']['values']
+  self.assertEqual(rows[1]['original_f32_le_hex'],'00000080')
+  self.assertEqual(rows[2]['original_f32_le_hex'],'00000000')
+  for value in [True,math.nan,math.inf,.1]:
+   with self.assertRaises(ValueError):binary16_exact(value)
+
+ def test_binary16_groups_do_not_change_gate_or_originals(self):
+  k=identity(3);rt=identity(4);c=f32(math.sqrt(.5))
+  rt[:2]=[[c,-c,0.,70000.],[c,c,0.,0.]];before=copy.deepcopy((k,rt))
+  result=diagnose(k,rt);groups=result['binary16_exact_representability']['groups']
+  self.assertEqual({name:(g['total'],g['exactly_representable_count'])for name,g in groups.items()},
+                   {'K9':(9,9),'R9':(9,5),'RT16':(16,11),'translation3':(3,2),'homogeneous4':(4,4)})
+  self.assertEqual((k,rt),before);self.assertTrue(result['original_rotation_gate_pass'])
+  self.assertEqual(result['double']['det_R'],double_statistics([r[:3]for r in rt[:3]])[2])
 
  def test_narrow_rounding_bound_constants(self):
   b=rounding_bounds();u=Fraction(1,2**24)

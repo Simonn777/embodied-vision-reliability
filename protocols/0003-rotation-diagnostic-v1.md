@@ -148,3 +148,22 @@ physical units/FPS, checkpoint exposure or model efficacy. Whole sample remains
 permanently development, future cohort blocked. Stage A ends at a reviewable
 candidate with artificial fixtures and source/log/wait evidence; no new canonical
 receipt or real numeric camera read before independent approval.
+
+## Prospective exact binary16 description (Stage A revision)
+
+Cached pinned tracking source explicitly casts K/RT to float16, while the selected
+sample stores f32 and its actual generation chain is unknown. For the SAME 25
+original values only, use `struct.pack/unpack('e')` and compare the roundtrip's f32
+bits to the original f32 bits. Preserve signed zero; overflow means not exactly
+representable. No error tolerance, alternative matrix, replacement values or gate
+calculation on converted values. Report every original index/bit pattern and exact
+flag, with separate K9, R9, RT16, translation3 and homogeneous4 counts. Group overlap
+is intentional; these are not extra accesses. Synthetic fixtures fix ±0, 1, 2^-24,
+2^-25, 65504, overflow and f32-rounded sqrt(0.5) boundaries before any real access.
+
+All values on the half grid are compatible with direct f16 casting then exact f32
+widening, but cannot establish that history: identity/integer values also qualify.
+Any nonrepresentable value excludes ONLY the all-values direct f16→f32 path with no
+intervening operations. Earlier half storage followed by arithmetic remains possible.
+No causal probabilities or confirmed actual-pipeline claims follow from source plus
+grid membership. Original gate, thresholds, budget, scope and access order stay fixed.

@@ -1,8 +1,7 @@
 # Rotation failure follow-up: Stage A review candidate
 
 October 17, 2026. AI-assisted prospective **diagnostic-access candidate**, triggered
-by the already observed development failure. **No real numeric camera value has
-been read; no new canonical freeze receipt exists; no Stage B command was run.**
+by the already observed development failure. **No additional real camera values were decoded in this Stage A; no new canonical freeze receipt exists; no Stage B command was run.**
 
 Base main `0b0ddee2e17ca558a03c8b495225463e8c59d7df`; isolated branch
 `research/0003-rotation-diagnostic-20261017`. Main was freshly fetched and clean;
@@ -105,3 +104,25 @@ Next: independent review of the candidate, then only after approval publish a
 separate canonical receipt binding all 12 mandatory hashes and the real approved
 input commit, fetch/verify the entire chain and consider the one camera-only run.
 Stage A stops here: no receipt or real numeric-camera access before review.
+
+## Pre-freeze binary16 revision
+
+The source-supported half-precision possibility now has an exact descriptive check
+for the same future 25 values: half roundtrip compared against original f32 bits,
+including signed zero, with overflow marked nonrepresentable. K9/R9/RT16 and
+translation3/homogeneous4 have separate counts and per-index flags. Converted
+values never replace the camera or enter any gate. All-on-half-grid is compatible
+with direct half storage and widening, not proof of history. A nonrepresentable
+value excludes only an all-values direct half-to-f32 path without intervening
+arithmetic; an earlier half step followed by computation remains possible.
+
+A new source-bound targeted run passed **19 synthetic tests** (the original 17
+plus two binary16 tests), including ±0, 1, 2^-24, 2^-25, 65504, overflow and
+f32-rounded sqrt(0.5). Bounded parent wait: **0.602373 s**, peak RSS **19,440 KiB**,
+exit/raw status **0/0**. The fixture also verifies grouped counts, original values
+unchanged and the original double determinant/gate independent of this descriptor.
+See `halfgrid-fixtures-parent.json`, stdout/stderr, source snapshots and
+`halfgrid-publication-check.json` in the evidence directory. Initial/final earlier
+logs remain historical and unchanged; their source hashes are not claimed to cover
+this revision. No unrelated software suite was rerun locally. No additional real
+camera values were decoded in this Stage A, and no new receipt or Stage B exists.

@@ -131,6 +131,36 @@ def _rational(x):
     return {'numerator':str(x.numerator),'denominator':str(x.denominator)}
 
 
+def binary16_exact(value):
+    """Exact signed-bit roundtrip of one original finite f32; never a repair."""
+    if type(value) not in (int,float) or not math.isfinite(value):
+        raise ValueError('finite original f32 required')
+    try:
+        original=struct.pack('<f',value)
+        if struct.unpack('<f',original)[0]!=value:raise ValueError('original f32 required')
+        widened=struct.unpack('<e',struct.pack('<e',value))[0]
+    except (OverflowError,struct.error):
+        return False
+    return original==struct.pack('<f',widened)
+
+
+def binary16_groups(K,RT):
+    """Describe same 25 values only; no converted matrix or gate evaluation."""
+    _matrix(K,3);_matrix(RT,4)
+    def group(matrix,indices):
+        rows=[{'index':[i,j],'original_f32_le_hex':struct.pack('<f',matrix[i][j]).hex(),
+               'exactly_binary16':binary16_exact(matrix[i][j])}for i,j in indices]
+        return {'total':len(rows),'exactly_representable_count':sum(r['exactly_binary16']for r in rows),
+                'all_exactly_representable':all(r['exactly_binary16']for r in rows),'values':rows}
+    return {'method':'struct half roundtrip; exact original f32 bits including signed zero; overflow is not representable; no tolerance',
+      'groups':{'K9':group(K,[(i,j)for i in range(3)for j in range(3)]),
+                'R9':group(RT,[(i,j)for i in range(3)for j in range(3)]),
+                'RT16':group(RT,[(i,j)for i in range(4)for j in range(4)]),
+                'translation3':group(RT,[(i,3)for i in range(3)]),
+                'homogeneous4':group(RT,[(3,j)for j in range(4)])},
+      'interpretation':'All-on-half-grid is compatible with direct f16 cast then exact widening to f32, not proof (integers and identity also qualify). Any nonrepresentable value excludes only an all-values direct f16-to-f32 path with no intervening arithmetic; earlier half followed by computation remains possible. No causal probability or actual-pipeline identification.'}
+
+
 def diagnose(K,RT):
     _matrix(K,3);_matrix(RT,4)
     R=[r[:3]for r in RT[:3]];rr,rt,det=double_statistics(R);err_rr,arg_rr=_max(rr);err_rt,arg_rt=_max(rt)
@@ -146,7 +176,8 @@ def diagnose(K,RT):
     for name,a,b in [('RRt',rr,exact_rr),('RtR',rt,exact_rt)]:
         differences[name]=[[_rational(Fraction.from_float(float(x))-y)for x,y in zip(row,exactrow)]for row,exactrow in zip(a,b)]
     differences['determinant']=_rational(Fraction.from_float(float(det))-exact_det)
-    return {'original_tau':TAU,'original_gate_checks':checks,'original_gate_pass':all(checks.values()),
+    return {'binary16_exact_representability':binary16_groups(K,RT),
+      'original_tau':TAU,'original_gate_checks':checks,'original_gate_pass':all(checks.values()),
       'original_rotation_gate_pass':checks['RRt'] and checks['RtR'] and checks['determinant'],
       'depth_or_projection':'NOT_TESTED: forbidden world/point access',
       'double':{'RRt_minus_I':rr,'RtR_minus_I':rt,'maxabs_RRt':err_rr,'argmax_RRt':arg_rr,'maxabs_RtR':err_rt,'argmax_RtR':arg_rt,

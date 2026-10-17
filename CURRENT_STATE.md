@@ -207,7 +207,8 @@ and the 1,240-frame synthetic smoke; final publication/main checks remain requir
 
 [Review candidate](docs/0003-rotation-diagnostic-stageA-2026-10-17.md) proposes
 one new frame0-only K9+RT16 diagnostic, preserving all previous gates/failures
-and marker. No real numeric camera read, new receipt or Stage B command. New
+and marker. No additional real camera values decoded in this Stage A, new receipt
+or Stage B command. New
 versioned source uses exact Fraction verification, original tau and carried
 22,778,336-byte budget; no projection/repair/convention search. Cached-source
 float16 save path is a possible mechanism only, not actual-scene causal proof.
@@ -218,3 +219,10 @@ All 93 stdlib tests (17 new) pass and 30 old frozen inputs verify. Baseline 1,46
 protected files/old marker preserved; no download/install/model/old-test tuning
 or extra fees/schedule/permission changes. Candidate must be independently reviewed
 before a separate 12-input receipt and any real camera access.
+
+Pre-freeze revision adds exact binary16 representability for those same future
+25 values, separated into K9/R9/RT16/translation3/homogeneous4. This describes
+compatibility with a direct half-to-f32 path, never proves generation history or
+repairs the matrix. The source-bound 19-case targeted synthetic suite passed;
+previous evidence remains unchanged. Still awaiting independent review; no new
+receipt or additional real camera decode.

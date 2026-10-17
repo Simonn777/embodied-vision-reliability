@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "scope": "FAILURE_FOLLOWUP_FRAME0_CAMERA_ONLY",
+  "scene": "sample/r4_new_f",
+  "member": "sample/r4_new_f/anno.npz",
+  "NPZ_bytes": 98527880,
+  "NPZ_sha256": "382d1edca0d6d88279ed1a61ee63c9ba27b7c5418f2269f4592c1658fd7d8e77",
+  "semantic_frame": 0,
+  "scalar_limit": 25,
+  "camera_members": [
+    "intrinsics.npy",
+    "extrinsics.npy"
+  ],
+  "source_schema": "<f4 C [849,3,3] and <f4 C [849,4,4]; generic C/F tested only with synthetic fixtures",
+  "carried_returned_bytes": 20614538,
+  "carried_reserve_bytes": 2163798,
+  "carried_directory_reserve_subset_bytes": 1110,
+  "total_budget_bytes": 67108864,
+  "new_directory_reserve": "validated directory bytes +22 implicit EOCD; explicit extra22 bytes read",
+  "per_member_open_reserve_bytes": 65536,
+  "original_f32_tau": 9.5367431640625e-07,
+  "exact_arithmetic": "Fraction.from_float of same stored f32 dyadics; full Gram and permutation determinant",
+  "rounding_hypothesis": "one nearest binary32 rounding of exact Q in SO(3), no earlier error; u=2^-24",
+  "rational_Gram_bound": "6u+3u^2",
+  "rational_determinant_bound": "9u+27u^2+27u^3",
+  "unexpected_original_rotation_pass": "stop diagnostic as inconsistent with old failure; no resample or repair",
+  "forbidden": [
+    "trajectories",
+    "validity",
+    "visibility",
+    "RGB",
+    "other frames",
+    "metadata JSON/INFO reads",
+    "projection",
+    "GT errors",
+    "new inference",
+    "TAR scan",
+    "downloads",
+    "matrix repair",
+    "threshold change"
+  ],
+  "data_excerpt_terms": {
+    "authors": [
+      "Yang Zheng",
+      "Adam W. Harley",
+      "Bokui Shen",
+      "Gordon Wetzstein",
+      "Leonidas J. Guibas"
+    ],
+    "dataset": "PointOdyssey v1.2",
+    "HF_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+    "source": "https://huggingface.co/datasets/aharley/pointodyssey",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "modifications": "none to numeric values; lossless stored-byte/float.hex/rational representations only",
+    "scope_exception": "new explicit narrow permission for exactly25 development frame0 scalars, not full arrays, trajectories or images; these data/derived numeric output are not repo MIT"
+  },
+  "CPU_slots": 2,
+  "AS_bytes": 6442450944,
+  "timeout_seconds": 900,
+  "old_marker_sha256": "93bf1a2cd2f5150c71e86dc1573c59e4cb835a9434acf89ee226a87b1d929b33",
+  "binary16_description": {
+    "method": "For each original finite f32, struct.pack/unpack e then compare exact original f32 bit pattern, including signed zero; overflow means not representable. No tolerance or matrix replacement.",
+    "groups": [
+      "K9",
+      "R9",
+      "RT16",
+      "translation3",
+      "homogeneous4"
+    ],
+    "interpretation": "All-on-half-grid is compatible with direct f16 cast then exact f32 widening, not proof. Nonrepresentable excludes only all-values direct f16-to-f32 without intervening operations; earlier half plus arithmetic remains possible. No causal probability."
+  }
+}

@@ -58,5 +58,16 @@
   "CPU_slots": 2,
   "AS_bytes": 6442450944,
   "timeout_seconds": 900,
-  "old_marker_sha256": "93bf1a2cd2f5150c71e86dc1573c59e4cb835a9434acf89ee226a87b1d929b33"
+  "old_marker_sha256": "93bf1a2cd2f5150c71e86dc1573c59e4cb835a9434acf89ee226a87b1d929b33",
+  "binary16_description": {
+    "method": "For each original finite f32, struct.pack/unpack e then compare exact original f32 bit pattern, including signed zero; overflow means not representable. No tolerance or matrix replacement.",
+    "groups": [
+      "K9",
+      "R9",
+      "RT16",
+      "translation3",
+      "homogeneous4"
+    ],
+    "interpretation": "All-on-half-grid is compatible with direct f16 cast then exact f32 widening, not proof. Nonrepresentable excludes only all-values direct f16-to-f32 without intervening operations; earlier half plus arithmetic remains possible. No causal probability."
+  }
 }
