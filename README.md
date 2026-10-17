@@ -11,6 +11,7 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | Artifact | What it answers |
 |---|---|
 | [Current state](CURRENT_STATE.md) | What has actually been completed? |
+| [Frozen Fortran audit: reader complete, geometry stopped](docs/0003-fortran-stageB-2026-10-17.md) | What did the one cache-only run access, and why did its first camera check stop? |
 | [Motion versus drift: frozen design and data audit](docs/0003-review-and-readiness.md) | What can the next study distinguish, what is the improvement target, and why is its independent cohort still blocked? |
 | [PointOdyssey cached sample audit](docs/0003-cached-resource-audit-2026-10-17.md) | What did the cloud actually download and inspect, and where did the bounded reader stop? |
 | [Post-hoc motion-residual diagnosis](docs/analysis/0002-motion-residual-posthoc.md) | Which exact decision exchanges explain the negative pilot result? |

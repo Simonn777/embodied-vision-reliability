@@ -1,0 +1,9 @@
+{
+  "stage": "receipt preparation, before any receipt or GT access",
+  "observed_exec_exit": 1,
+  "exception": "ModuleNotFoundError: No module named 'evr'",
+  "cause": "preparation heredoc imported the versioned runner without PYTHONPATH=src",
+  "repair": "set the existing repository source path; no install or frozen file change",
+  "access": "no cache/metadata/GT access; no audit or gate invocation",
+  "provenance_boundary": "exception and exit observed in tool result; no separately retained wait4 receipt for the preparation heredoc"
+}

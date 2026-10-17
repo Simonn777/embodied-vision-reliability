@@ -1,0 +1,538 @@
+{
+  "started_utc": "2026-10-17T23:14:14.805446+00:00",
+  "status": "stopped",
+  "input_commit": "93be3c95dee7cb5d23a5eae9b110a08cfce2a78d",
+  "execution_commit": "384489d94199a4d0ef316f85ea75684d60a44899",
+  "receipt_sha256": "ad6250bb93453b0ff8f0e9ef4e25b853cac99eb37f910ea007fa389f285f2da1",
+  "carried_budget_bytes": 590976,
+  "point_checks": [
+    {
+      "frame": 0,
+      "point_index": 0,
+      "status": "failed",
+      "projection_consistent": null,
+      "valid_visible_GT_support": false,
+      "validity": 1,
+      "visibility": 1,
+      "reason": "storage-aware proper rotation gate"
+    }
+  ],
+  "planned_point_checks": 6,
+  "max_error_original_px": null,
+  "rms_error_original_px": null,
+  "numeric_GT_access": "all required prefixes read; discarded-gap bytes counted",
+  "metadata_access_state": "COMPLETED",
+  "audit_complete": true,
+  "interrupted_counter_semantics": "COMPLETE_FOR_ATTEMPTED_WORK; not all planned work if stopped",
+  "RGB": 0,
+  "model": 0,
+  "new_GET": 0,
+  "world_units": "unknown",
+  "FPS": "unknown",
+  "attempted_point_checks": 1,
+  "unattempted_point_checks": 5,
+  "projection_consistent_count": 0,
+  "valid_visible_GT_support_count": 0,
+  "finite_error_count": 0,
+  "support_scope": "attempted selected point/frame checks only; not whole-family GT support or 99.9% gate",
+  "charged_bytes": 22778336,
+  "returned_bytes_including_carried": 20614538,
+  "stream_and_directory_reserves_including_carried": 2163798,
+  "implicit_directory_reserved_bytes": 1110,
+  "ended_utc": "2026-10-17T23:14:27.791456+00:00",
+  "cached_pinned_source_hashes_verified": true,
+  "metadata_access": {
+    "sample/scene_d78_0318_3rd/scene_info.json": {
+      "status": "completed",
+      "counts_complete": true,
+      "source_member_sha256": "dac0e83585bbcd34e6036576c6733fbfac2bd23f54847f0c67a945ad36d37ce1",
+      "bytes": 3105,
+      "summary": {
+        "sha256": "dac0e83585bbcd34e6036576c6733fbfac2bd23f54847f0c67a945ad36d37ce1",
+        "bytes": 3105,
+        "field_paths_inspected": 5,
+        "coverage": {
+          "asset": {
+            "matching_key_count": 1,
+            "key_path_sha256": [
+              "8bf729ffe074caee622c02928173467e658e19e28233cff8a445819e3cae4d50"
+            ],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "motion": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "session": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "story": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "view": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "camera": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          }
+        }
+      }
+    },
+    "sample/scene_d78_0318_3rd/info.npz": {
+      "status": "completed",
+      "counts_complete": true,
+      "source_member_sha256": "be920d008998f6f34eb12e1c3409858024225789f5c52e602696dfcd234ddf4d",
+      "bytes": 1208,
+      "headers": [
+        {
+          "name": "trajs_2d.npy",
+          "header": {
+            "shape": [
+              3
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 24,
+            "header_bytes": 128,
+            "header_sha256": "27fed8aa0ba51400e21f738ed009fc7737d99aa2144d6f8919e8bbcfeeb92e15"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "trajs_3d.npy",
+          "header": {
+            "shape": [
+              3
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 24,
+            "header_bytes": 128,
+            "header_sha256": "27fed8aa0ba51400e21f738ed009fc7737d99aa2144d6f8919e8bbcfeeb92e15"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "valids.npy",
+          "header": {
+            "shape": [
+              2
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 16,
+            "header_bytes": 128,
+            "header_sha256": "be44c1cd13d302238ad86210aca19a40539d1db0079e58758019b50abb9dda2e"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "visibs.npy",
+          "header": {
+            "shape": [
+              2
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 16,
+            "header_bytes": 128,
+            "header_sha256": "be44c1cd13d302238ad86210aca19a40539d1db0079e58758019b50abb9dda2e"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "intrinsics.npy",
+          "header": {
+            "shape": [
+              3
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 24,
+            "header_bytes": 128,
+            "header_sha256": "27fed8aa0ba51400e21f738ed009fc7737d99aa2144d6f8919e8bbcfeeb92e15"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "extrinsics.npy",
+          "header": {
+            "shape": [
+              3
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 24,
+            "header_bytes": 128,
+            "header_sha256": "27fed8aa0ba51400e21f738ed009fc7737d99aa2144d6f8919e8bbcfeeb92e15"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        }
+      ]
+    },
+    "sample/r4_new_f/scene_info.json": {
+      "status": "completed",
+      "counts_complete": true,
+      "source_member_sha256": "0690ba2ef37f5c989de50c16c1eadb351267d378ef981f6f153e0d0bfdab8ddf",
+      "bytes": 604,
+      "summary": {
+        "sha256": "0690ba2ef37f5c989de50c16c1eadb351267d378ef981f6f153e0d0bfdab8ddf",
+        "bytes": 604,
+        "field_paths_inspected": 5,
+        "coverage": {
+          "asset": {
+            "matching_key_count": 1,
+            "key_path_sha256": [
+              "8bf729ffe074caee622c02928173467e658e19e28233cff8a445819e3cae4d50"
+            ],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "motion": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "session": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "story": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "view": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          },
+          "camera": {
+            "matching_key_count": 0,
+            "key_path_sha256": [],
+            "relationship": "UNKNOWN; key presence alone does not verify identities or cross-scene independence"
+          }
+        }
+      }
+    },
+    "sample/r4_new_f/info.npz": {
+      "status": "completed",
+      "counts_complete": true,
+      "source_member_sha256": "acf899db4bcdbb7801434597b5c96349b619e4447e62871f96f71a9315783a76",
+      "bytes": 1205,
+      "headers": [
+        {
+          "name": "trajs_2d.npy",
+          "header": {
+            "shape": [
+              3
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 24,
+            "header_bytes": 128,
+            "header_sha256": "27fed8aa0ba51400e21f738ed009fc7737d99aa2144d6f8919e8bbcfeeb92e15"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "trajs_3d.npy",
+          "header": {
+            "shape": [
+              3
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 24,
+            "header_bytes": 128,
+            "header_sha256": "27fed8aa0ba51400e21f738ed009fc7737d99aa2144d6f8919e8bbcfeeb92e15"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "valids.npy",
+          "header": {
+            "shape": [
+              2
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 16,
+            "header_bytes": 128,
+            "header_sha256": "be44c1cd13d302238ad86210aca19a40539d1db0079e58758019b50abb9dda2e"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "visibs.npy",
+          "header": {
+            "shape": [
+              2
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 16,
+            "header_bytes": 128,
+            "header_sha256": "be44c1cd13d302238ad86210aca19a40539d1db0079e58758019b50abb9dda2e"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "intrinsics.npy",
+          "header": {
+            "shape": [
+              3
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 24,
+            "header_bytes": 128,
+            "header_sha256": "27fed8aa0ba51400e21f738ed009fc7737d99aa2144d6f8919e8bbcfeeb92e15"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        },
+        {
+          "name": "extrinsics.npy",
+          "header": {
+            "shape": [
+              3
+            ],
+            "dtype": "<i8",
+            "order": "C",
+            "format": "<q",
+            "itemsize": 8,
+            "data_bytes": 24,
+            "header_bytes": 128,
+            "header_sha256": "27fed8aa0ba51400e21f738ed009fc7737d99aa2144d6f8919e8bbcfeeb92e15"
+          },
+          "numeric_payload_interpreted": false,
+          "object_payload_decoded": false
+        }
+      ]
+    }
+  },
+  "family_graph": {
+    "nodes": [
+      "sample/r4_new_f",
+      "sample/scene_d78_0318_3rd"
+    ],
+    "edge": {
+      "type": "UNKNOWN_LINKAGE_CONSERVATIVE_JOIN",
+      "session": "unknown",
+      "story": "unknown",
+      "assets": "unknown",
+      "motion": "unknown",
+      "multiview": "unknown"
+    },
+    "quarantine": "entire sample and unknown linked family DEVELOPMENT",
+    "independent_calibration_or_evaluation_families_established": 0,
+    "interpretation": "different metadata/name/hash cannot establish independence; field presence is not verified linkage"
+  },
+  "numeric_access_scope": "all-points first-three-frame prefixes plus discarded physical gaps",
+  "zip_envelope": {
+    "members": 6,
+    "central_directory_bytes": 348,
+    "implicit_directory_and_EOCD_reserve_bytes": 370,
+    "accounting": "known metadata bytes reserved, not measured implicit reads"
+  },
+  "numeric_access": {
+    "trajs_2d": {
+      "status": "completed",
+      "numeric_bytes_returned": 281304,
+      "counts_complete": true,
+      "interruption_semantics": "lower bound or unknown, never zero-access proof",
+      "retained_scalars": 70326,
+      "numeric_stream_span_bytes": 281304,
+      "discarded_bytes": 0,
+      "returned_span_sha256": "578eb89c30b64bc7433be409f15acd002b88624e7c5d8c7ccf8f4b47a17946fb",
+      "scope": "all points, first three times; discarded physical-gap values not interpreted; no tail/CRC claim"
+    },
+    "trajs_3d": {
+      "status": "completed",
+      "numeric_bytes_returned": 421956,
+      "counts_complete": true,
+      "interruption_semantics": "lower bound or unknown, never zero-access proof",
+      "retained_scalars": 105489,
+      "numeric_stream_span_bytes": 421956,
+      "discarded_bytes": 0,
+      "returned_span_sha256": "920cf4c5e37995af87d367ba53861f5ba86098df2c2070d77120de4f59ce90dd",
+      "scope": "all points, first three times; discarded physical-gap values not interpreted; no tail/CRC claim"
+    },
+    "visibs": {
+      "status": "completed",
+      "numeric_bytes_returned": 9950283,
+      "counts_complete": true,
+      "interruption_semantics": "lower bound or unknown, never zero-access proof",
+      "retained_scalars": 35163,
+      "numeric_stream_span_bytes": 9950283,
+      "discarded_bytes": 9915120,
+      "returned_span_sha256": "0a6b70d242b09b85761a3dee180c58e99e87a7fa50820fd4bf9acd7705185b3e",
+      "scope": "all points, first three times; discarded physical-gap values not interpreted; no tail/CRC claim"
+    },
+    "valids": {
+      "status": "completed",
+      "numeric_bytes_returned": 9950283,
+      "counts_complete": true,
+      "interruption_semantics": "lower bound or unknown, never zero-access proof",
+      "retained_scalars": 35163,
+      "numeric_stream_span_bytes": 9950283,
+      "discarded_bytes": 9915120,
+      "returned_span_sha256": "285be35a9753e9ee382c1c4852f3c3d387973e05534a1161f02883aafc42b4f4",
+      "scope": "all points, first three times; discarded physical-gap values not interpreted; no tail/CRC claim"
+    },
+    "intrinsics": {
+      "status": "completed",
+      "numeric_bytes_returned": 108,
+      "counts_complete": true,
+      "interruption_semantics": "lower bound or unknown, never zero-access proof",
+      "retained_scalars": 27,
+      "numeric_stream_span_bytes": 108,
+      "discarded_bytes": 0,
+      "returned_span_sha256": "f7c77782c46a701ee154f3e5087cbe9584b9f72efd826c6fd508dbc011045af9",
+      "scope": "all points, first three times; discarded physical-gap values not interpreted; no tail/CRC claim"
+    },
+    "extrinsics": {
+      "status": "completed",
+      "numeric_bytes_returned": 192,
+      "counts_complete": true,
+      "interruption_semantics": "lower bound or unknown, never zero-access proof",
+      "retained_scalars": 48,
+      "numeric_stream_span_bytes": 192,
+      "discarded_bytes": 0,
+      "returned_span_sha256": "b9cc1876ca0f3dd2201a6cc01fbf1e62dd2a83f853ea9b995029724cd7c9d6aa",
+      "scope": "all points, first three times; discarded physical-gap values not interpreted; no tail/CRC claim"
+    }
+  },
+  "schema": {
+    "trajs_2d": {
+      "shape": [
+        849,
+        11721,
+        2
+      ],
+      "dtype": "<f4",
+      "order": "C",
+      "format": "<f",
+      "itemsize": 4,
+      "data_bytes": 79609032,
+      "header_bytes": 128,
+      "header_sha256": "f06850b06ad3ebbd065b883874f0eeab3634dd1a0ec3b136074696a978274cc0"
+    },
+    "trajs_3d": {
+      "shape": [
+        849,
+        11721,
+        3
+      ],
+      "dtype": "<f4",
+      "order": "C",
+      "format": "<f",
+      "itemsize": 4,
+      "data_bytes": 119413548,
+      "header_bytes": 128,
+      "header_sha256": "ce4d378aebb9f17f35fb49253e346f7754a4cf2dcd85eac1abc681d9df60ec6c"
+    },
+    "valids": {
+      "shape": [
+        849,
+        11721
+      ],
+      "dtype": "|b1",
+      "order": "F",
+      "format": "<B",
+      "itemsize": 1,
+      "data_bytes": 9951129,
+      "header_bytes": 128,
+      "header_sha256": "4f156561a5419e917f5fbaa693448146359b232288f4dda2dfb7ec6e680f0cf9"
+    },
+    "visibs": {
+      "shape": [
+        849,
+        11721
+      ],
+      "dtype": "|b1",
+      "order": "F",
+      "format": "<B",
+      "itemsize": 1,
+      "data_bytes": 9951129,
+      "header_bytes": 128,
+      "header_sha256": "4f156561a5419e917f5fbaa693448146359b232288f4dda2dfb7ec6e680f0cf9"
+    },
+    "intrinsics": {
+      "shape": [
+        849,
+        3,
+        3
+      ],
+      "dtype": "<f4",
+      "order": "C",
+      "format": "<f",
+      "itemsize": 4,
+      "data_bytes": 30564,
+      "header_bytes": 128,
+      "header_sha256": "7fb1059949d30226291e43eba39d233f49c788ed0e048cfa91b700127906e840"
+    },
+    "extrinsics": {
+      "shape": [
+        849,
+        4,
+        4
+      ],
+      "dtype": "<f4",
+      "order": "C",
+      "format": "<f",
+      "itemsize": 4,
+      "data_bytes": 54336,
+      "header_bytes": 128,
+      "header_sha256": "bf2149711b50431dd6b05e735262d7adbd6899788dbe15c666c817256261013d"
+    }
+  },
+  "selected_original_point_indices": [
+    0,
+    1
+  ],
+  "error_type": "ValueError",
+  "reason": "storage-aware proper rotation gate"
+}

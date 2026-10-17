@@ -1,0 +1,53 @@
+{
+  "phase": "preflight",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scratch/fortran_B_preflight.py"
+  ],
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "execution_commit": "384489d94199a4d0ef316f85ea75684d60a44899",
+  "input_commit": "93be3c95dee7cb5d23a5eae9b110a08cfce2a78d",
+  "source_sha256": {
+    "configs/0003-fortran-audit-v2.json": "9c7a3c34d6cfde851794bb130ee05562de51459150060db7539f33b26b263856",
+    "protocols/0003-design-freeze-v1.json": "adb1b58b2fdab0e63899c67e30706f14b710a113bd6892eecdc08657b7826a7a",
+    "protocols/0003-fortran-audit-v2.md": "a75534ffd969c73bb1612bfbe22df8514ec7b322fcda2a1b659a599259f18f6b",
+    "protocols/0003-resource-addendum-freeze-v1.json": "0e1b867fad0a3873ffb8cb6ec64335ce5c2c0dbf3ef779efd8cbe5c553452e04",
+    "protocols/0003-timing-addendum-freeze-v1.json": "ef05a121bf5ef0f525367ed7bcf3b4a8cd20df66c2be6bb09194fb44a5f6e2ab",
+    "results/0003-fortran-stageA-20261017/source-convention.json": "f340f66117e76e2705b78a8b266c1a47feb2f649824387865225046c5d2a705c",
+    "scripts/audit_0003_fortran_v2.py": "0b3d2b56bfe36e0943f570a7b647d8e7a0054ffff4882098285d3d2b22411bb5",
+    "src/evr/point_geometry_v2.py": "58e68ae15f552eb70661ad9483e3ea9f3fae2de00e823fbbfb3957e6769baab2",
+    "tests/test_point_geometry_v2.py": "a6700c8cde65f21e3c66fb8edfcb84ae9ee6088e8258838d6e64ebd036e7d8ce",
+    "protocols/0003-fortran-audit-freeze-v2.json": "ad6250bb93453b0ff8f0e9ef4e25b853cac99eb37f910ea007fa389f285f2da1",
+    "results/0003-fortran-stageB-20261017/evidence/preflight-command-source-1.py": "1ae669c5295efc9664667535f62db3b700270f5a0998bcde923892e8a7154f91"
+  },
+  "parent_sha256": "b46244ba4d099fb9fd2eb7913851cc454729f16463b42fa06f27e982874b42b0",
+  "started_utc": "2026-10-17T23:14:09.637300+00:00",
+  "ended_utc": "2026-10-17T23:14:09.818110+00:00",
+  "wall_seconds": 0.1808160599975963,
+  "peak_rss_kib": 14080,
+  "cpu_user_seconds": 0.14164,
+  "cpu_system_seconds": 0.040067,
+  "raw_wait_status": 0,
+  "observed_exit_code": 0,
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "timeout_seconds": 900,
+  "logs_sha256": {
+    "stdout": "1f438fed5ab3e9ec0e95b30c69c9d13650bb906ed90cb78cf217112271f78083",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "boundary": "one parent actual wait; parent itself has no additional supervisor exit receipt; source command is archived before launch"
+}

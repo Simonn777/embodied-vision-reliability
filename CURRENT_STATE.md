@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: 0003 Fortran development-audit stage A candidate; synthetic checks only, awaiting independent review.
+Updated: 2026-10-17. Program day 2. Phase: 0003 frozen Fortran reader completed; first geometry check stopped at rotation gate.
 
 ## Active question
 
@@ -169,3 +169,27 @@ Candidate protocol/config/reader/runner/tests and nine mandatory bindings await
 review; NO v2 receipt exists. Do not decode real GT before approval and a separately
 published canonical receipt. Independent cohort, units/FPS and actual geometry
 remain blocked/unknown; whole sample stays development.
+
+## 0003 frozen Fortran stage B: preserved geometry failure
+
+[Actual one-shot audit](docs/0003-fortran-stageB-2026-10-17.md) followed approved
+input 93be3c95 and separately published receipt/execution commit 384489d9, canonical
+receipt SHA256 ad6250bb93453b0ff8f0e9ef4e25b853cac99eb37f910ea007fa389f285f2da1.
+Fresh-fetch real gate passed nine inputs and all three prior maps (23 distinct
+inputs), then the unchanged runner reacquired locks/unique marker. No retries.
+All six C/F numeric prefixes read: 246,216 retained scalars, 20,604,126 numeric
+span bytes including 19,830,240 discarded gap bytes. Cumulative charge 22,778,336
+bytes includes 590,976 carried bytes and all metadata/header/directory reserves.
+Four fixed metadata members completed; cross-container identity stays UNKNOWN.
+Frame 0-visible finite original IDs [0,1] selected; first attempted frame 0 / point 0
+failed the proper-rotation gate before projection. Planned 6 / attempted 1 /
+unattempted 5; validity 1/visibility 1, projection_consistent null, valid-visible
+support false, finite-error count 0, max/RMS null. No tolerance/axis/convention
+change or extra GT read. Child wall 13.159663 s, RSS 36,288 KiB, exit/raw 1/256.
+Independent saved-record byte/budget review passed and 1,438 pre-execution files
+remain unchanged; 76 synthetic stdlib tests pass, local pytest absent / 0. No
+download/install/re-extraction/RGB/model/old-test analysis or additional fees.
+Whole sample remains development, 0 established independent held-out families;
+actual geometry, units/FPS/checkpoint exposure remain unverified. Next: independent
+review of the camera-gate failure and missing quantitative diagnostic evidence,
+not automatic rerun or post-outcome tolerance fitting. Final cohort remains blocked.
