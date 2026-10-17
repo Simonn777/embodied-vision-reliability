@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<repo>/scripts/check_0003_design.py", line 10, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "<repo>/scripts/check_0003_design.py", line 9, in main
+    print(json.dumps(verify_design(a.repo),indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/src/evr/motion_design.py", line 176, in verify_design
+    if not refs:raise ValueError('receipt not published in designated ref')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: receipt not published in designated ref
