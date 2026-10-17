@@ -1,0 +1,35 @@
+{
+  "status": "BLOCKED_NO_FINAL_COHORT",
+  "freeze_scope": "acquisition, eligibility, geometry/decomposition rules, endpoints and planning goals only",
+  "evidence": {
+    "whole_archive_verified": false,
+    "geometry_verified": false,
+    "family_provenance_verified": false,
+    "cohort_frozen": false,
+    "development_precision_plan_passed": false,
+    "independent_evaluation_groups": 0,
+    "calibration_groups": 0,
+    "valid_gt_fraction": null
+  },
+  "inventoried_members": 0,
+  "decoded_annotation_arrays": 0,
+  "inspected_RGB_frames": 0,
+  "inspected_scene_or_family_ids": [],
+  "scene_units_independently_established": 0,
+  "access": {
+    "metadata": "official public source text only; no sample metadata decoded",
+    "RGB": false,
+    "GT": false,
+    "predictions": false
+  },
+  "quarantine": "any later inspected/audited sample scene and all linked multiview/story/asset families permanently audit/development; entire sample ineligible for heldout until family audit proves boundaries",
+  "final_cohort_manifest": null,
+  "checkpoint_training_nonexposure": "unknown",
+  "next_evidence": [
+    "permitted successful whole-object acquisition with exact size/hash and bounded safe inventory",
+    "verified schema, K/extrinsics/2D reprojection and GT units/timestamps",
+    "complete scene/session/story/asset/multiview family links and audit-access ledger",
+    "at least 2 new development +10 calibration +20 independent evaluation families within remaining budget",
+    "new-development-only procedural precision assessment, finalized executable pipeline and separate published final-cohort freeze before inference"
+  ]
+}

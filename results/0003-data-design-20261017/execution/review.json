@@ -1,0 +1,44 @@
+{
+  "phase": "review",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scratch/review_0003_validation.py"
+  ],
+  "environment": {
+    "PYTHONPATH": "src",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "path": "inherited PATH only",
+  "started_utc": "2026-10-17T21:04:32.810130+00:00",
+  "source_commit": "a2d4827c8d83d3745989d57c901dcddf16642e06",
+  "child_source_sha256": "75b4c72babd02a690d1c1923329e86a16af217d597dac1b14b24ed5bc6688a3f",
+  "parent_source_sha256": "5b615f9ce42fd5b17597902fdb21f7587c4ea9436a1f822c62a270333c59eff2",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "timeout_seconds": 900,
+  "boundary": "actual parent wait4 observes child; parent own exit has no further supervisor receipt",
+  "exit_code": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 20708,
+  "cpu_user_seconds": 0.508394,
+  "cpu_system_seconds": 0.31666099999999997,
+  "status": "completed",
+  "ended_utc": "2026-10-17T21:04:33.640049+00:00",
+  "elapsed_seconds": 0.8236653499989188,
+  "log_sha256": {
+    "stdout": "79beb69b66b251ec2cfbe8869785d3e2365e83e97c1234003c37049d4cb3cf2b",
+    "stderr": "fcf48de8caab64dafd3638b3bb0f04ed4e05f28c5fc37d19b3f746ae92012d5f"
+  }
+}

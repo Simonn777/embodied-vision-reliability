@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-17T21:07:50.504656+00:00",
+  "execution_source_commit": "adb3cf20537c108ecc913022ec1bb3b7b2c0f5a4",
+  "published_input_commit": "66e5330ad7404b4e7678d006e2537e4703f4683d",
+  "published_receipt_commit": "adb3cf20537c108ecc913022ec1bb3b7b2c0f5a4",
+  "canonical_receipt_sha256": "adb1b58b2fdab0e63899c67e30706f14b710a113bd6892eecdc08657b7826a7a",
+  "freeze_verification": {
+    "status": "DESIGN_FREEZE_VERIFIED",
+    "readiness": "BLOCKED_NO_FINAL_COHORT",
+    "input_commit": "66e5330ad7404b4e7678d006e2537e4703f4683d",
+    "files": 9,
+    "published_refs": [
+      "origin/research/0003-motion-design-20261017"
+    ],
+    "scope": "design binding only; no final cohort or experiment authorization"
+  },
+  "input_files_verified": 9,
+  "protected_old_paths_verified": 1149,
+  "final_new_unittest_fixtures": 35,
+  "data_readiness": "BLOCKED_NO_FINAL_COHORT",
+  "new_model_inferences": 0,
+  "old_result_reanalyses": 0,
+  "new_data_weights_dependencies_bytes": 0,
+  "phase_observations": {
+    "acquisition": {
+      "exit": 0,
+      "raw_wait": 0,
+      "wall_seconds": 25.10713398399821,
+      "peak_rss_kib": 14848
+    },
+    "fixtures": {
+      "exit": 0,
+      "raw_wait": 0,
+      "wall_seconds": 0.6121036559998174,
+      "peak_rss_kib": 14976
+    },
+    "validation": {
+      "exit": 0,
+      "raw_wait": 0,
+      "wall_seconds": 2.881923733999429,
+      "peak_rss_kib": 21100
+    },
+    "validation-final": {
+      "exit": 0,
+      "raw_wait": 0,
+      "wall_seconds": 2.643232424998132,
+      "peak_rss_kib": 21176
+    },
+    "closure": {
+      "exit": 0,
+      "raw_wait": 0,
+      "wall_seconds": 0.08095440200122539,
+      "peak_rss_kib": 16280
+    },
+    "review": {
+      "exit": 0,
+      "raw_wait": 0,
+      "wall_seconds": 0.8236653499989188,
+      "peak_rss_kib": 20708
+    },
+    "design-gate": {
+      "exit": 1,
+      "raw_wait": 256,
+      "wall_seconds": 0.04496328100503888,
+      "peak_rss_kib": 11264
+    },
+    "design-gate-refreshed": {
+      "exit": 0,
+      "raw_wait": 0,
+      "wall_seconds": 0.12618032399768708,
+      "peak_rss_kib": 11648
+    }
+  },
+  "exclusions": [
+    "results/0003-data-design-20261017/execution/publication-audit.json",
+    "results/0003-data-design-20261017/execution/publication-audit.stderr.log",
+    "results/0003-data-design-20261017/execution/publication-audit.stdout.log",
+    "results/0003-data-design-20261017/publication-check.json"
+  ],
+  "boundary": "current audit parent closes actual child exit/logs afterwards; final Git tree binds self and those files; parent own exit has no further supervisor receipt"
+}

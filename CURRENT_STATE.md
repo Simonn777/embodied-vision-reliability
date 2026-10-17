@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: post-hoc residual mechanism diagnosed; original negative frozen result unchanged.
+Updated: 2026-10-17. Program day 2. Phase: 0003 complete metadata inventory; numeric audit stopped at frozen Fortran-layout gate.
 
 ## Active question
 
@@ -57,3 +57,100 @@ No accepted paper, new state of the art, real-robot validation, or successful re
 Read [NEXT_ACTIONS.md](NEXT_ACTIONS.md) and the active protocol before running work. Check Git status and GitHub before assuming the local state is current. Do not rerun a final-test comparison to tune a method.
 
 Scheduled research ends on October 15, 2027 (America/New_York), unless the user renews the program.
+
+
+## 0003 design / acquisition readiness (2026-10-17)
+
+AI-assisted [new-data audit](docs/0003-data-audit-2026-10-17.md) and
+[design protocol](protocols/0003-motion-design-v1.md). Input commit
+`66e5330ad7404b4e7678d006e2537e4703f4683d` was published before the separate canonical
+nine-file design receipt. DESIGN_ONLY; BLOCKED_NO_FINAL_COHORT, not a final test
+freeze or inference authorization. All 11 direct source/sample HEAD requests
+failed DNS, 0 bytes; no sample GET, archive inventory, annotation/RGB/GT access,
+model, old-result analysis, threshold fit or formal effects. Official source
+text checked through cloud search; exact archive/source revisions are byte-unverified
+leads. All 1,149 protected old paths remain byte-identical.
+
+Design separates signed 2D GT-image and localization-error curvature. Norms and
+perspective camera/world components do not add; 2D predictions cannot identify
+3D drift. New prospective continuation goal is 20% relative error reduction with
+paired cluster 95% CI upper <0, minimum 20 independent test families, 5 native-error-
+bearing families, 20 native matched errors, valid GT/coverage/bootstrap support.
+These are planning choices, not estimated efficacy. No actual cohort exists.
+Thirty-five helper/freeze/adversarial stdlib fixtures passed, including pre-freeze
+review domain/overflow/path refinements. Earlier software snapshots and evidence
+closure correction remain archived. Old 0002 science/results remain unchanged.
+
+Next: permitted sample/source acquisition; one quarantined family's geometry,
+units and time validation; complete family/access graph; new-development-only
+precision assessment; then separate final cohort freeze if gates can be met.
+Unknown independence/checkpoint exposure stay unknown. No added fee, install,
+account/schedule/permission change or confirmatory/robot/SOTA claim.
+
+## 0003 default-route and prospective timing follow-up (2026-10-17)
+
+The [follow-up report](docs/0003-network-and-timing-followup-2026-10-17.md) supersedes
+only the current network-readiness interpretation, preserving every v1 byte.
+V1 clean-env DNS failures did not prove default runtime unavailability: existing
+proxy/CA names were present, and one unchanged-default official HF request returned
+HTTP 200 / 2,328 bytes. No values/credentials/private hostnames or security changes.
+Exactly one authorized sample GET downloaded 3,324,284,510 bytes and verified full
+SHA256 against the pinned official LFS identity. Parent wall 82.836491 s, RSS
+18,092 KiB, exit/raw 0/0. Six bounded pinned source files/tree were checked as code
+text only; no remote code executed. Conservative cumulative ceiling 4,823,387,101
+bytes remains below 10 GiB; no fee/installation/dependency/weight acquisition.
+
+Safe tar inventory STOPPED after 2,756 headers when an annotation exceeded unchanged
+512 MiB cap: actual exit/raw 1/256, 2.904198 s, 14,080 KiB. Inventory incomplete;
+no NPZ/GT arrays, frame-0 query fields, RGB or predictions accessed. No relaxed cap,
+retry, re-download, extraction, geometry computation or model. Entire sample stays
+audit/development UNKNOWN family; no independent evaluation cohort established.
+
+The [prospective timing addendum](protocols/0003-timing-addendum-v1.md) input commit
+`d2787e7f4fefaca6fbcc6ffb4a1a2d1686e97647` precedes a separate eight-file receipt
+including the unchanged canonical v1 receipt. It supersedes GT-quality timing only:
+metadata/quarantined development/frame0 query access (truthfully recorded) before
+final allocation/pipeline freeze; all prediction hashes before held-out GT quality
+adjudication. Pre-inference quality remains PENDING_POST_PREDICTION. Required-family
+quality failure/undefined => INCONCLUSIVE, retaining all families/zero-query units
+and original primary definition. V1 readiness() is legacy with no execution authority;
+a future separately frozen pipeline must bind both versions and phases. Eleven new
+typed phase fixtures passed. No old scales/20% goal/samples/results changed.
+
+Parent provenance clarification: earliest 27 fixtures are not fully source-bound;
+29/31 records do not preserve exact old protocol text. Final 35 nine-file hashes match
+published input 66e5330. Old records remain historical, not retroactively repaired.
+Next is independent review and explicit resolution of archive-cap/provenance evidence,
+not sample retry, cohort invention, GT decoding or inference under this receipt.
+
+## 0003 final bounded cached-resource audit (2026-10-17)
+
+[Actual resource audit](docs/0003-cached-resource-audit-2026-10-17.md) follows a
+published input 227972d3 and separate resource receipt 8e418de4 BEFORE any numeric
+GT decode. V1/timing science unchanged. Complete safe inventory: 14,415 members,
+3,334,075,426 declared bytes; original ordinal 2,756 annotation is now newly observed
+as sample/scene_d78_0318_3rd/anno.npz, 705,904,917 bytes. Whole sample remains unknown-
+family development, not an independent held-out cohort. No new archive GET.
+
+One fixed first-scene annotation sample/r4_new_f/anno.npz saved exclusively to cache:
+98,527,880 bytes, SHA256 382d1edca0d6d88279ed1a61ee63c9ba27b7c5418f2269f4592c1658fd7d8e77.
+Reader stopped at Fortran-order valids; header-only diagnosis also finds Fortran
+visibs, while track/camera arrays are C order. No layout relaxation, GT numeric
+payload, selected point IDs, RGB or geometry checks. Max/RMS error undefined, not
+zero. Combined metadata/buffering charge 590,976 bytes within 64 MiB. Resource child
+21.082816 s, 29,820 KiB, real exit/raw 1/256, preserved. Ten bounded-reader software
+fixtures passed; a test-builder failure/fix is retained. No model/old-test/score
+work, downloads/install/fee/permission/schedule change. Last resource expansion for
+this task is complete; actual geometry, units/FPS and independence stay unverified.
+
+Independent science, source and provenance reviews passed for candidate b605ae13;
+the [readiness guide](docs/0003-review-and-readiness.md) and
+[parent receipt](results/0003-publication-review/parent-review.json) distinguish
+publication readiness from the still-blocked geometry and independent cohort.
+Candidate CI passed 251 tests and the existing 1,240-frame synthetic smoke.
+
+Next: prospectively review support for the observed annotation layout, no further
+numeric access or resource relaxation this task. A later prospectively frozen
+pipeline/cohort must bind v1+timing+applicable resource decisions; no final cohort
+or inference authority exists. Do not mistake complete filenames for independent
+families or metadata/source-convention checks for numeric GT validation.

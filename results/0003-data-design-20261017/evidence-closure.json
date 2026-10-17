@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-17T21:02:54.370650+00:00",
+  "scope": "artifact closure repair only; no tests/model/inference/evaluation/old result parsing repeated",
+  "repairs": [
+    {
+      "map": "results/0003-data-design-20261017/software-validation-v2.json",
+      "path": "results/0003-data-design-20261017/execution/validation-final.json",
+      "recorded_in_progress_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "closed_sha256": "7c976e984c739a722405bde26e949655e339096d3ca940a6085f4b54424efcd0",
+      "reason": "original map accidentally included current parent placeholder receipt/current stdout before child exit; this closure uses stable completed bytes, original map retained"
+    },
+    {
+      "map": "results/0003-data-design-20261017/software-validation-v2.json",
+      "path": "results/0003-data-design-20261017/execution/validation-final.stdout.log",
+      "recorded_in_progress_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "closed_sha256": "76c46c9e6f3307c150452833f7c2a2ba96d9b1d7fa661175925121c7aa21839f",
+      "reason": "original map accidentally included current parent placeholder receipt/current stdout before child exit; this closure uses stable completed bytes, original map retained"
+    }
+  ],
+  "preserved_old_paths": 1149,
+  "final_software_tests": 31,
+  "closed_sha256": {
+    "results/0003-data-design-20261017/acquisition-source.py": "8c8f06a6c00f4ce35e8826f3524734bd214a8703f8bf266c90122b584aac0ebe",
+    "results/0003-data-design-20261017/http-audit.json": "3f61ef941de4aa66d4d729ddb0589495f83d2cb158b7952f8b0e5a9a7c0e5c6c",
+    "results/0003-data-design-20261017/software-validation-v2-source.py": "9b384f7e9bd086db7e44c90da6844fe8bb6515ac683044370b6068078150c60a",
+    "results/0003-data-design-20261017/acquisition-ledger.json": "007662cb61278f62cd8f79608f6b07a77bcec84b3cccc7cb4235e887d694e67d",
+    "results/0003-data-design-20261017/software-validation-source.py": "6d4e3827a338d292400ea133e27549a780ab9ca4e60716bc17ce04b963d8f0dd",
+    "results/0003-data-design-20261017/closure-source.py": "24665ba72f9fd71f1cb5b7786b05376fff916eae6f17a345ff2f941aabb7edd3",
+    "results/0003-data-design-20261017/software-validation.json": "cd72a0445d4657d3e9e561723fcadbf9db926d704d1a923be29aab63031cf309",
+    "results/0003-data-design-20261017/sources.json": "0814bcb017f26d0a76535b98f665bbdc2e9df19a2f02781ad9d12438e9553bf7",
+    "results/0003-data-design-20261017/readiness.json": "9023d1269f75d736e6545102c7c09d4c1834a4a0a189ab3c8afc6242822ab405",
+    "results/0003-data-design-20261017/software-probe.json": "72b992d2c784341b7f6c0c142fcfdeebbefabe65899c44fbeda41551b244ef94",
+    "results/0003-data-design-20261017/inventory.json": "32d1863503c98f4e81c2f0ebd2847e7f29a64459f0e9ba5497b824289ddfab7a",
+    "results/0003-data-design-20261017/software-validation-v2.json": "feadf18f0ec8735687c62d8d05ec373f5307fd89cbb94f1ab7cdb82bd21e1bdc",
+    "results/0003-data-design-20261017/baseline.json": "2edd5eb6b1864c6069adb6edcbe3dc0bdcd5927f82615becd2cca5e9cb417415",
+    "results/0003-data-design-20261017/prepublication-source-v1/test_motion_design.py": "53821962b40962dafbe13940a9e7c138092d642ba3dbfd5d6d1837e7db56f64e",
+    "results/0003-data-design-20261017/prepublication-source-v1/motion_design.py": "88b7986b84b89735fe09f5e2f1fd6faa2140a1cba7153e8219edf3e0ad02b788",
+    "results/0003-data-design-20261017/execution/validation-final.json": "7c976e984c739a722405bde26e949655e339096d3ca940a6085f4b54424efcd0",
+    "results/0003-data-design-20261017/execution/validation-final.stdout.log": "76c46c9e6f3307c150452833f7c2a2ba96d9b1d7fa661175925121c7aa21839f",
+    "results/0003-data-design-20261017/execution/fixtures.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0003-data-design-20261017/execution/acquisition.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0003-data-design-20261017/execution/validation.stderr.log": "9e8cebf772b07ff043b3c574331602149e66557874b7454f129c465fe9b18ef3",
+    "results/0003-data-design-20261017/execution/fixtures.stderr.log": "ad4f52bf60aa65533f053460f38f24431166f4fe9a142535d6c084529084365f",
+    "results/0003-data-design-20261017/execution/validation.json": "f11ebd772ce128053be2c47e5d55490271aa5523065120603bedf18441200464",
+    "results/0003-data-design-20261017/execution/validation-final.stderr.log": "ac98b2de35067c7a738fe63b8f7bfaaea1ab75a4f04c5f3049030a882c8dfaf4",
+    "results/0003-data-design-20261017/execution/acquisition.json": "9216eaaf720c7b86e4569851cb980163389f2c91b593f42c8cf5c91d7cc89869",
+    "results/0003-data-design-20261017/execution/parent-source.py": "5b615f9ce42fd5b17597902fdb21f7587c4ea9436a1f822c62a270333c59eff2",
+    "results/0003-data-design-20261017/execution/fixtures.json": "17fba1c1dd9d97d5267d7c1336a371c069280baaee049356b18896928fb7f0b5",
+    "results/0003-data-design-20261017/execution/acquisition.stdout.log": "0661c6ac71ee7360457909d56f47deeebeb7296cdd02bd8836f08dd2e481fed5",
+    "results/0003-data-design-20261017/execution/validation.stdout.log": "7cfd28e3cf1b0e2672742e8b755292146e0ba90e638ecb9d11805a2f11306790"
+  },
+  "exclusions": [
+    "results/0003-data-design-20261017/evidence-closure.json",
+    "results/0003-data-design-20261017/execution/closure.json",
+    "results/0003-data-design-20261017/execution/closure.stderr.log",
+    "results/0003-data-design-20261017/execution/closure.stdout.log"
+  ],
+  "boundary": "current closure parent wait/log record is closed after this child; final Git tree binds all four excluded files, without self-reference"
+}

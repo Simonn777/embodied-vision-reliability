@@ -1,0 +1,42 @@
+{
+  "phase": "resource-verification",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scratch/verify_0003_resource_final.py"
+  ],
+  "source_commit": "8e418de44e1040ce769781881d649a41d498e275",
+  "source_sha256": "c85d8e7bd3e8a0d65456f3eacb9b54326161a7b0cba71045dde65e95871429b1",
+  "parent_source_sha256": "67a6849de9eb836b39418e40cf4cc1634e7ed1bc81dd0304a575e8985295c6ba",
+  "started_utc": "2026-10-17T22:42:59.350773+00:00",
+  "environment": "default runtime route/CA unchanged, only numeric vars=2/PYTHONPATH=src; no values/credentials logged",
+  "numeric_variable_names": [
+    "OMP_NUM_THREADS",
+    "OPENBLAS_NUM_THREADS",
+    "MKL_NUM_THREADS",
+    "VECLIB_MAXIMUM_THREADS",
+    "NUMEXPR_NUM_THREADS"
+  ],
+  "numeric_variable_value": "2",
+  "AS_bytes": 6442450944,
+  "affinity": [
+    0,
+    1
+  ],
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "timeout_seconds": 900,
+  "boundary": "one parent wait; parent own exit has no further supervisor receipt",
+  "ended_utc": "2026-10-17T22:42:59.894510+00:00",
+  "elapsed_seconds": 0.5422739160057972,
+  "child_exit_code": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 26024,
+  "cpu_user_seconds": 0.424751,
+  "cpu_system_seconds": 0.122194,
+  "log_sha256": {
+    "stdout": "590dbd2dc3892aad342f4c1f7993ce981eb34adfa9e75c19948026cffdfc121c",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

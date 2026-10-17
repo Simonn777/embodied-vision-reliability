@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-17T21:02:54.370650+00:00",
+  "scope": "artifact closure repair only; no tests/model/inference/evaluation/old result parsing repeated",
+  "repairs": [
+    {
+      "map": "results/0003-data-design-20261017/software-validation-v2.json",
+      "path": "results/0003-data-design-20261017/execution/validation-final.json",
+      "recorded_in_progress_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "closed_sha256": "7c976e984c739a722405bde26e949655e339096d3ca940a6085f4b54424efcd0",
+      "reason": "original map accidentally included current parent placeholder receipt/current stdout before child exit; this closure uses stable completed bytes, original map retained"
+    },
+    {
+      "map": "results/0003-data-design-20261017/software-validation-v2.json",
+      "path": "results/0003-data-design-20261017/execution/validation-final.stdout.log",
+      "recorded_in_progress_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "closed_sha256": "76c46c9e6f3307c150452833f7c2a2ba96d9b1d7fa661175925121c7aa21839f",
+      "reason": "original map accidentally included current parent placeholder receipt/current stdout before child exit; this closure uses stable completed bytes, original map retained"
+    }
+  ],
+  "preserved_old_paths": 1149,
+  "final_software_tests": 31,
+  "exclusions": [
+    "results/0003-data-design-20261017/evidence-closure.json",
+    "results/0003-data-design-20261017/execution/closure.json",
+    "results/0003-data-design-20261017/execution/closure.stderr.log",
+    "results/0003-data-design-20261017/execution/closure.stdout.log"
+  ],
+  "boundary": "current closure parent wait/log record is closed after this child; final Git tree binds all four excluded files, without self-reference"
+}

@@ -1,0 +1,83 @@
+{
+  "checked_at_utc": "2026-10-17T20:59:49.230508+00:00",
+  "method": "cloud source search retrieval; direct cloud HTTP requests separately logged with zero bytes; no full source pages republished",
+  "sources": [
+    {
+      "id": "point_project",
+      "url": "https://pointodyssey.com/",
+      "access": "cloud search service official page text checked; direct HTTP DNS failed",
+      "checked_claims": [
+        "ICCV 2023; authors Zheng, Harley, Shen, Wetzstein, Guibas",
+        "v1.2 download links to author HF",
+        "2D/3D tracks, camera parameters, some synchronized multiview scenes"
+      ],
+      "reading": "project metadata and dataset section, not full paper method review"
+    },
+    {
+      "id": "point_code",
+      "url": "https://github.com/y-zheng18/point_odyssey",
+      "pinned_url": "https://github.com/y-zheng18/point_odyssey/tree/a053342a72fed32af4134b4ca0c44a78a3ac0fdb",
+      "revision_status": "parent lead; exact pinned source bytes unavailable in this cloud",
+      "checked_claims": [
+        "official README specifies DATA CC BY-NC-SA 4.0",
+        "v1.2 announcement February 21, 2024; 159 videos",
+        "README refers to utils/reprojection.py; code not retrieved/read here"
+      ]
+    },
+    {
+      "id": "hf_card",
+      "url": "https://huggingface.co/datasets/aharley/pointodyssey/blame/main/README.md",
+      "checked_claims": [
+        "author card lists MIT and v1.2 release link; conflicts with official dataset terms"
+      ],
+      "revision_status": "current indexed page checked; proposed exact revision not retrieved"
+    },
+    {
+      "id": "hf_listing",
+      "url": "https://huggingface.co/datasets/aharley/pointodyssey/tree/main",
+      "checked_claims": [
+        "sample ~3.32 GB; test ~26.5 GB; val ~20.4 GB; train shards ~31-34 GB"
+      ],
+      "exact_candidate_identity": "provided parent metadata lead, not verified by this run",
+      "candidate_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+      "sample_sha256_lead": "436e6a5a01702cebcf8be97254ea583457fd60177e2aba671b90ed578912167f",
+      "sample_bytes_lead": 3324284510
+    },
+    {
+      "id": "robotap",
+      "url": "https://github.com/google-deepmind/tapnet/blob/main/README.md",
+      "checked_claims": [
+        "265 evaluation videos, real manually annotated robotics videos",
+        "RoboTAP videos/annotations CC BY 4.0 under TAPNet non-software terms"
+      ],
+      "lead_not_reverified": [
+        "ZIP bytes 13558087507",
+        "flow-assisted details not independently read in paper here"
+      ],
+      "decision": "source audit only; parent size exceeds entire 10 GiB budget, independently checked larger than remaining; no acceleration oracle claim"
+    },
+    {
+      "id": "tap3d_project",
+      "url": "https://tapvid3d.github.io/",
+      "checked_claims": [
+        "underlying constituent source terms must also be accepted; not blanket Apache data rights"
+      ],
+      "decision": "source audit only; no downloads or gated access attempted"
+    },
+    {
+      "id": "tap3d_paper",
+      "url": "https://papers.nips.cc/paper/2024/file/9566607d423f8c32a2d5ce09a8b62232-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "reading": "PStudio generation passage inspected via primary paper search excerpt, not full paper review",
+      "checked_claims": [
+        "PStudio 3D tracks follow pretrained dynamic 3D Gaussian reconstruction; not independent physical GT"
+      ],
+      "lead_not_reverified": [
+        "six recording labels and ~589 MB RGB",
+        "specific multiview split reuse counts",
+        "ADT two-scene detail"
+      ],
+      "decision": "cannot certify enough independent capture families; no acquisition or use"
+    }
+  ],
+  "no_other_repo_connector_permissions_used": true
+}

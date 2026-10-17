@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-10-17T22:48:48.957433+00:00",
+  "status": "APPROVED_FOR_PUBLICATION_WITH_BLOCKED_GEOMETRY_AND_COHORT",
+  "candidate": "b605ae13a8ff15ccfe6df2930673ce196f4d0ef7",
+  "candidate_tree": "5df02158c50fe90ccaa1d544a6cd7242b6cae2f6",
+  "original_main": "a2d4827c8d83d3745989d57c901dcddf16642e06",
+  "scope": "Independent local static/public-artifact review of cloud execution; no local data download, GT decode, metrics fit or model inference. AI-assisted source, design and provenance review.",
+  "parent_worktree_preservation": {
+    "protected_files": 1140,
+    "map_sha256": "ca33cbbb2e0af00f7edbeb78827f8ffbec016a7a531d00188ad424c6b5c1f88e",
+    "mismatches": []
+  },
+  "freeze_receipts": [
+    {
+      "path": "protocols/0003-design-freeze-v1.json",
+      "sha256": "adb1b58b2fdab0e63899c67e30706f14b710a113bd6892eecdc08657b7826a7a",
+      "input_commit": "66e5330ad7404b4e7678d006e2537e4703f4683d",
+      "input_count": 9
+    },
+    {
+      "path": "protocols/0003-timing-addendum-freeze-v1.json",
+      "sha256": "ef05a121bf5ef0f525367ed7bcf3b4a8cd20df66c2be6bb09194fb44a5f6e2ab",
+      "input_commit": "d2787e7f4fefaca6fbcc6ffb4a1a2d1686e97647",
+      "input_count": 8
+    },
+    {
+      "path": "protocols/0003-resource-addendum-freeze-v1.json",
+      "sha256": "0e1b867fad0a3873ffb8cb6ec64335ce5c2c0dbf3ef779efd8cbe5c553452e04",
+      "input_commit": "227972d345e8a2af6a40805e0ca5804770520e75",
+      "input_count": 10
+    }
+  ],
+  "phase_preservation": {
+    "initial_protected": 1140,
+    "original_result_files": 51,
+    "prior_interim_result_files": 48,
+    "pre_resource_baseline": 1267,
+    "all_previous_0003_result_files": 122,
+    "all_match": true,
+    "design9_timing8_resource10_inputs_and_receipts": true
+  },
+  "inventory": {
+    "members": 14415,
+    "CSV_parts": 8,
+    "declared_bytes": 3334075426,
+    "canonical_rows_digest_recomputed": "cce5c19d475ebc27d45aaac3a5c03786fb905c46419a1266ff8bde098ba1643e",
+    "all_rows_unique_sequential_safe": true,
+    "scene_totals_recomputed": true,
+    "annotation_candidates": [
+      {
+        "path": "sample/scene_d78_0318_3rd/anno.npz",
+        "declared_bytes": 705904917,
+        "scene_parent": "sample/scene_d78_0318_3rd"
+      },
+      {
+        "path": "sample/r4_new_f/anno.npz",
+        "declared_bytes": 98527880,
+        "scene_parent": "sample/r4_new_f"
+      }
+    ],
+    "fixed_selected": {
+      "path": "sample/r4_new_f/anno.npz",
+      "declared_bytes": 98527880,
+      "scene_parent": "sample/r4_new_f"
+    },
+    "old2756_new_observation": {
+      "path": "sample/scene_d78_0318_3rd/anno.npz",
+      "declared_bytes": 705904917,
+      "observation": "new complete-resource-audit metadata, not recovered original log"
+    }
+  },
+  "actual_stop": {
+    "status": "stopped",
+    "reason": "C order only",
+    "first_rejected_header": "valids.npy",
+    "additional_header_diagnosis_Fortran": [
+      "valids.npy",
+      "visibs.npy"
+    ],
+    "numeric_GT_values_interpreted": 0,
+    "numeric_payload_bytes_returned": 0,
+    "header_bytes_returned_total": 1152,
+    "internal_buffer_reserve_total": 589824,
+    "charged_read_total": 590976,
+    "read_limit": 67108864,
+    "point_indices_selected": false,
+    "point_checks": 0,
+    "projection_max_RMS": null,
+    "RGB_frames": 0,
+    "model_inferences": 0,
+    "new_archive_GETs": 0
+  },
+  "actual_process_records": [
+    {
+      "phase": "resource-audit",
+      "source_commit": "8e418de44e1040ce769781881d649a41d498e275",
+      "source_sha256": "72d56711f05bd318e532b0cff8c388d0602183773f8c79363f79602393f57eaf",
+      "parent_source_sha256": "67a6849de9eb836b39418e40cf4cc1634e7ed1bc81dd0304a575e8985295c6ba",
+      "started_utc": "2026-10-17T22:39:26.492708+00:00",
+      "ended_utc": "2026-10-17T22:39:47.577607+00:00",
+      "elapsed_seconds": 21.082816401001764,
+      "child_exit_code": 1,
+      "raw_wait_status": 256,
+      "peak_rss_kib": 29820,
+      "cpu_user_seconds": 18.512721,
+      "cpu_system_seconds": 2.479625
+    },
+    {
+      "phase": "resource-header-diagnosis",
+      "source_commit": "8e418de44e1040ce769781881d649a41d498e275",
+      "source_sha256": "d8895e6cd8e684bc69c9525393eb2421d5e8c90f98b47d5aaebc3e5bcb39e8bd",
+      "parent_source_sha256": "67a6849de9eb836b39418e40cf4cc1634e7ed1bc81dd0304a575e8985295c6ba",
+      "started_utc": "2026-10-17T22:40:31.505626+00:00",
+      "ended_utc": "2026-10-17T22:40:31.546532+00:00",
+      "elapsed_seconds": 0.039508442001533695,
+      "child_exit_code": 0,
+      "raw_wait_status": 0,
+      "peak_rss_kib": 11520,
+      "cpu_user_seconds": 0.034942,
+      "cpu_system_seconds": 0.004071
+    },
+    {
+      "phase": "resource-verification",
+      "source_commit": "8e418de44e1040ce769781881d649a41d498e275",
+      "source_sha256": "c85d8e7bd3e8a0d65456f3eacb9b54326161a7b0cba71045dde65e95871429b1",
+      "parent_source_sha256": "67a6849de9eb836b39418e40cf4cc1634e7ed1bc81dd0304a575e8985295c6ba",
+      "started_utc": "2026-10-17T22:42:59.350773+00:00",
+      "ended_utc": "2026-10-17T22:42:59.894510+00:00",
+      "elapsed_seconds": 0.5422739160057972,
+      "child_exit_code": 0,
+      "raw_wait_status": 0,
+      "peak_rss_kib": 26024,
+      "cpu_user_seconds": 0.424751,
+      "cpu_system_seconds": 0.122194
+    }
+  ],
+  "chronology": "Frozen script verifies current/input/index/HEAD/published-tracking bytes before archive access; actual audit records receipt8e418de and starts after its commit. Local Git/receipts corroborate ordering but are not an independent wall-clock server attestation. No numeric GT access occurred.",
+  "ci": {
+    "run_id": 39076339860,
+    "head_sha": "b605ae13a8ff15ccfe6df2930673ce196f4d0ef7",
+    "url": "https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39076339860",
+    "conclusion": "success",
+    "tests_passed": 251,
+    "test_seconds": 8.66,
+    "existing_synthetic_smoke_frames": 1240,
+    "smoke_seconds": 3.7,
+    "local_downloaded_log_sha256": "fbc93c7aec380d659cda6404f2b89d54af70fc4e49ca6c3af9ec4a5bdaccbf8a",
+    "scope": "GitHub PR synthetic-merge CI; not inference on the new dataset"
+  },
+  "design_review": "Signed image innovation decomposition and negative controls, unchanged reference scores, 20% relative pilot continuation criterion, family bootstrap/support gates and post-prediction GT adjudication reviewed; no scientific publication blocker. Target is not a measured result or power claim.",
+  "claims_boundaries": [
+    "Static source and bound receipts support no new network/package/model operations in the reviewed resource phases; no global account/cost/process-history attestation is possible here.",
+    "The failure is a successful fail-closed guard, not a successful numeric geometry audit.",
+    "ZipExtFile may buffer compressed/decompressed data beyond returned headers; 64KiB per-open reserve is explicitly charged. Zero means numeric payload returned/interpreted, not no raw bytes touched.",
+    "Header diagnosis source is separately recorded after the failure; it parses metadata only, does not replace the frozen numeric reader or change its rejection.",
+    "The original full archive and cached NPZ are unpublished; this review recomputes published CSV/hash closure and validates cloud rehash source/receipts, not raw dataset truth.",
+    "Prior failed fixture raw stderr remains unpublished with its original digest; public redacted bytes separately verified by pre-review.",
+    "Full inventory does not establish scene/family independence, units/FPS, correct numeric geometry, final cohort or model efficacy.",
+    "Later final-publication verification/CI is outside this candidate unless separately reviewed."
+  ],
+  "remaining_readiness": "Unsupported Fortran layout, numeric geometry/units/FPS, verified independent-family graph, new-development precision and separate final cohort/pipeline freeze remain unresolved.",
+  "publication_boundaries": "This receipt reviews the named candidate only; its own parent documentation commit and later merge are established by Git/CI, not a self-referential hash."
+}

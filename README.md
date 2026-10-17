@@ -11,6 +11,8 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | Artifact | What it answers |
 |---|---|
 | [Current state](CURRENT_STATE.md) | What has actually been completed? |
+| [Motion versus drift: frozen design and data audit](docs/0003-review-and-readiness.md) | What can the next study distinguish, what is the improvement target, and why is its independent cohort still blocked? |
+| [PointOdyssey cached sample audit](docs/0003-cached-resource-audit-2026-10-17.md) | What did the cloud actually download and inspect, and where did the bounded reader stop? |
 | [Post-hoc motion-residual diagnosis](docs/analysis/0002-motion-residual-posthoc.md) | Which exact decision exchanges explain the negative pilot result? |
 | [Frozen v2 evaluation](docs/0002-frozen-evaluation-v2-2026-10-17.md) | Did the extra motion residual meet the practical benefit criterion? No; all results and independent checks are retained. |
 | [All frozen predictions: 30/30](docs/0002-prediction-collection-complete-2026-10-17.md) | Where are 10 calibration and 20 evaluation raw prediction sets, before scoring? |
@@ -57,6 +59,10 @@ The runner requires a committed, unchanged protocol, writes into a new output di
 The [frozen protocol](protocols/0001-synthetic-localization.md) specifies the generator, predictor, scores, partitions, and metrics. No model weights or dataset downloads are needed for this diagnostic.
 
 ## Scope
+
+**Current stage:** experiment 0003 has a frozen design and a verified PointOdyssey sample archive. The complete archive inventory contains 14,415 members and two named annotation parents. Their independence is unverified; the sample is reserved for development. The bounded annotation reader stopped on unsupported Fortran-order arrays before interpreting numeric ground truth, so no geometry or model improvement result is claimed. The [review and readiness guide](docs/0003-review-and-readiness.md) connects the protocol, its prospective addenda, actual evidence and remaining gates.
+
+The following paragraphs retain the earlier experiment 0002 milestones; its complete prediction collection and negative frozen evaluation are reported at the end.
 
 Online BootsTAPIR has completed the 64-frame development check and the first frozen calibration group, g-033. The latter produced 128 rows for two points on cloud CPU, with a 49.29-second inference subprocess and a 2.435 GiB peak RSS. A NumPy version mismatch stopped the first attempt before inference; its failure record is preserved alongside the exact-version environment reconstruction and completed run. [Read the measurements and raw outputs](docs/0002-g033-calibration-inference-2026-10-17.md).
 
