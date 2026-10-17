@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 1/10 calibration groups inferred.
+Updated: 2026-10-17. Program day 2. Phase: frozen-v2 calibration prediction collection; 2/10 calibration groups inferred.
 
 ## Active question
 
@@ -29,6 +29,8 @@ For a fixed visual position estimator, does causal temporal consistency identify
 
 - [Calibration group g-033 completed after authorized runtime recovery](docs/0002-g033-calibration-inference-2026-10-17.md). The initial NumPy2.3.5 gate failure remains preserved in its own checkpoint. Official NumPy2.0.2 was installed into cache; the newly recorded wheel/RECORD identities establish version-matched reconstruction, not byte-identical reproduction. The real gate passed all29 frozen inputs and16 exact versions/module origins. Video33 first64frames, points[0,1]:128rows/512finite outputs, outer wall49.287s, peak2553156KiB; independent raw/grid/latency/Git/provenance checks passed. **1/10 calibration inference groups complete,0/20 evaluation groups complete.** No GT error, confidence score, threshold fit, other group or evaluation was run. The [independent publication review](docs/0002-g033-publication-review.md) passed. Preserve and use existing g-033 outputs; do not re-infer.
 
+
+- [Calibration group g-013 completed and independently reviewed](docs/0002-g013-calibration-inference-2026-10-17.md) from main `5561cf5e`, reusing the verified cached environment with no downloads. The real gate passed all 29 frozen files and 16 exact dependency versions. Video 13's first 64 frames and original point indices [0,1] yielded 128 rows / 512 finite outputs. The inference subprocess took 49.411 seconds, with peak RSS 2,553,240 KiB; its exit and the separately parent-observed wrapper exit were both 0. Two independent artifact reviews passed, and all 37 g-033 result files remain unchanged. **2/10 calibration inference groups complete, 0/20 evaluation**; no errors, scores, thresholds or replay. The next allocated group, g-022, was not run.
 
 ## Claims boundary
 
