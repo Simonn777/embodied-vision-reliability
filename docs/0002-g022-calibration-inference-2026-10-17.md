@@ -11,9 +11,10 @@ Fresh main was `767aa1600947d8726903a97bb91405f35a8b9a34`, containing the review
 PR #7 publication. This is the **execution source**, distinct from the later
 publication head. Read AGENTS, state, next actions, charter, frozen v2 and the
 g-013 report/parent review. No active research process, g-022 output/marker or
-open research PR was found. Task lookup exposes last-run metadata, not live run
-status; the earlier run in this conversation had finished without starting a
-model. No schedule was changed. An isolated worktree preserved existing edits;
+open research PR was found. Task lookup exposes historical scheduling metadata,
+not live execution status; process, output and reservation checks preceded this
+launch. Completed g-033 and g-013 outputs were preserved. No schedule was changed.
+An isolated worktree preserved existing edits;
 cache-wide and group locks plus a persistent exclusive marker guarded one launch.
 
 The unchanged real gate passed all **29 frozen inputs** against the frozen input
@@ -104,10 +105,12 @@ receipt, without another annotation decode. All **65 prior g-033/g-013 result,
 report and review files** match execution main byte-for-byte; their hashes are
 listed in [verification](../results/0002-pilot-execution/g-022-20261017/independent-verification.json).
 
-An added post-run RECORD check initially exited 1 because it compared raw CRLF
-file bytes with the preflight/history digest of universal-newline decoded text.
-The [diagnostic](../results/0002-pilot-execution/g-022-20261017/verification-RECORD-diagnostic.json) and failed verifier
-source are preserved. All 16 normalized text digests matched the recorded values.
+The saved [diagnostic](../results/0002-pilot-execution/g-022-20261017/verification-RECORD-diagnostic.json)
+reports exit 1 for an added post-run RECORD check: it compared raw CRLF file
+bytes with the preflight/history digest of universal-newline decoded text.
+The failed verifier source and diagnostic are preserved; a separate raw stderr
+log or parent-observed wait record for that verifier failure was not retained.
+All 16 normalized text digests matched the recorded values.
 The corrected verifier explicitly records **both raw-byte and normalized-text
 digests** and uses the existing text semantics for comparison; it passed.
 No runtime bytes, frozen gates or inputs changed, and the model was not restarted.
@@ -115,13 +118,34 @@ No runtime bytes, frozen gates or inputs changed, and the model was not restarte
 Work pytest remains unavailable: the saved probe reports false and zero tests;
 no pytest was installed or Work test pass claimed. The existing toy smoke passed
 1,240 frames in 3.12 seconds (3.398 seconds child wall).
-Full tests and smoke must also pass for the exact publication head in standard
-public Research checks CI. Software smoke is not learned-model inference.
+GitHub [Research checks 39055906002](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39055906002)
+passed for candidate `b55156cf5a84089596ce81f52c0e0e173bdb5e12`:
+184 tests in 5.04 seconds and the 1,240-frame smoke in 2.02 seconds.
+Final publication and main checks are attached to PR #8 and its merged commit.
+Software smoke is not learned-model inference.
 
 No other group, evaluation, GT error, score, threshold fit or reliability
 comparison was run. Shared objects/camera, unknown scene dependence and unresolved
 checkpoint exposure still limit this exploratory pilot. No efficacy, paper
 reproduction, SOTA or real-robot claim. No added paid API/GPU/credits, raw-data or
-weight upload, account/permission expansion or schedule change. Keep this PR
-unmerged for independent parent review. The next allocated group is **g-040**;
+weight upload, account/permission expansion or schedule change. The next allocated group is **g-040**;
 it was not run. Preserve all completed outputs and historical failure records.
+
+## Publication review
+
+Two separate read-only audits of candidate
+`b55156cf5a84089596ce81f52c0e0e173bdb5e12` found no blocking discrepancy.
+The [parent review receipt](../results/0002-pilot-execution/g-022-parent-review.json)
+records independently recomputed grid/numeric hashes, timing and distinct
+child/wrapper exits, 25 artifact digests, 29 unchanged frozen inputs and 65
+preserved historical files. All 16 dependency records match the g-013 environment.
+Six temporary standard-library cases checked that the corrected RECORD
+normalization agrees with `PathDistribution.read_text`, including mixed newlines
+and UTF-8 text. The diagnostic's raw and normalized digest records are consistent.
+
+This reviews saved cloud evidence and source; it does not independently rehash
+the remote installation or archive, decode annotations or reproduce inference.
+The verifier-failure evidence limitation above remains explicit. Parent review
+changes only documentation and adds its receipt; all original execution artifacts,
+including the failed and corrected verifier sources, remain unchanged.
+The execution source remains `767aa160`, not the later publication commit.

@@ -1,0 +1,190 @@
+{
+  "status": "passed_with_explicit_evidence_boundaries",
+  "reviewed_at_utc": "2026-10-17T17:58:26.654183+00:00",
+  "reviewed_head": "b55156cf5a84089596ce81f52c0e0e173bdb5e12",
+  "actual_execution_source_commit": "767aa1600947d8726903a97bb91405f35a8b9a34",
+  "freeze_input_commit": "bbe7428e126a566a62d3c123d7158f120aa66e2b",
+  "scope": "Read-only standard-library recalculation from published Git blobs; no candidate/model import, model run, annotation/archive decode, GT errors, scores, thresholds, downloads or repository changes.",
+  "blocking_findings": [],
+  "group": {
+    "group_id": "g-022",
+    "archive_indices": [
+      22
+    ],
+    "partition": "calibration",
+    "point_indices": [
+      0,
+      1
+    ]
+  },
+  "raw": {
+    "rows": 128,
+    "unique_frame_query_grid": [
+      64,
+      2
+    ],
+    "output_shape": [
+      64,
+      2,
+      4
+    ],
+    "finite_scalars": 512,
+    "nonfinite_scalars": 0,
+    "coordinate_missing_rows": 0,
+    "logit_invalid_rows": 0,
+    "float32_row_order_sha256": "b39c56b2f30b55229159b08b3e4ede39e7a1cae6f4fa917b7c9da337e6d0753a"
+  },
+  "timing": {
+    "first_frame_seconds": 0.5964208429941209,
+    "subsequent_frame_median_seconds": 0.6790821659960784,
+    "sum_frame_intervals_once_seconds": 42.70203124899854,
+    "minimum_frame_seconds": 0.4466975289979018,
+    "maximum_frame_seconds": 0.8827904419958941,
+    "runner_elapsed_seconds": 56.93227661900164,
+    "infer_child_elapsed_seconds": 57.82906914799969,
+    "wrapper_elapsed_seconds": 59.956238971004495,
+    "supervisor_elapsed_seconds": 60.005698581000615,
+    "UTC_perf_absolute_deltas_seconds": {
+      "preflight": 0.0003337019991365153,
+      "infer": 0.00020985200031020668,
+      "runner": 8.619001640397528e-06,
+      "wrapper": 0.0006980289955080821,
+      "supervisor": 0.00023241899938142296
+    },
+    "nested_timestamps_and_latency_accounting_consistent": true
+  },
+  "exit_resource_evidence": {
+    "preflight_child_exit_and_wait": [
+      0,
+      0
+    ],
+    "infer_child_exit_and_wait": [
+      0,
+      0
+    ],
+    "wrapper_exit_and_wait_observed_by_parent": [
+      0,
+      0
+    ],
+    "wrapper_stdout_summary_agrees": true,
+    "runner_child_supervisor_peak_rss_kib": 2553116,
+    "peak_rss_gib": 2.4348411560058594,
+    "affinity": [
+      0,
+      1
+    ],
+    "numeric_thread_variables_at_two": 5,
+    "torch_threads": [
+      2,
+      2
+    ],
+    "address_space_limit_bytes": 6442450944,
+    "each_phase_external_timeout_seconds": 900,
+    "parent_CPU_accounting_includes_child_usage": true
+  },
+  "source_and_preservation": {
+    "mandatory_frozen_inputs_checked_at_input_source_and_publication": 29,
+    "published_artifact_digests_recomputed": 25,
+    "prior_g033_g013_results_and_docs_byte_identical": 65,
+    "preserved_result_files": 61,
+    "preserved_document_files": 4,
+    "preserved_manifest_matches_cloud_receipt": true,
+    "prelaunch_historical_result_hashes_match": 61,
+    "frozen_code_config_protocol_requirements_tests_unchanged": true,
+    "launcher_supervisor_and_embedded_preflight_source_bindings_match": true,
+    "command_and_all_child_parent_log_bindings_match": true
+  },
+  "environment": {
+    "exact_version_records": 16,
+    "origin_records_identical_to_g033_reconstructed_environment": 16,
+    "historical_RECORD_matches": 15,
+    "historical_RECORD_mismatch_packages": [
+      "numpy"
+    ],
+    "new_download_bytes_recorded_this_step": 0,
+    "scope": "Preflight metadata/origin/hash record consistency only; post-run raw-versus-text RECORD correction is separately reviewed. No local reinstallation or direct rehash of external runtime/cache bytes."
+  },
+  "static_launcher_supervisor_review": {
+    "supervisor_direct_wait4_observes_wrapper_not_reused_child_exit": true,
+    "supervisor_limits_inherited_by_wrapper_and_children": true,
+    "wrapper_and_model_children_use_explicit_clean_environment": true,
+    "cache_global_and_group_nonblocking_flock_present": true,
+    "exclusive_persistent_group_marker_and_fresh_output_present": true,
+    "single_g022_infer_path_no_replay_evaluate_or_gate_bypass_found": true,
+    "archived_copies_are_evidence_not_runnable_archive_entrypoints": true
+  },
+  "limits": [
+    "Point IDs match the frozen runner receipt; frame-0 visibility/query selection was not independently re-derived from annotations.",
+    "Original archive, weights and installed runtime bytes were not downloaded or rehashed locally.",
+    "The parent wait4 record closes the prior wrapper-exit evidence gap for this run; it is still published same-host execution evidence, not independent model replication.",
+    "No reliability, accuracy, calibration threshold or real-robot conclusion is supported by this prediction-collection audit.",
+    "No local model run, model/runtime package import, checkpoint/archive download, annotation decode, GT evaluation or threshold fit.",
+    "No global attestation of all cloud activity; reviewed commands, recorded execution chain, immutable files and published artifacts support the scoped one-group run.",
+    "Native module paths were recorded and checked by cloud verifier; neither that verifier nor this audit hashes every installed package/native file.",
+    "No inference rerun was needed for the RECORD verifier correction. Initial failed-verifier raw process exit is not independently captured."
+  ],
+  "artifact_sha256": {
+    "results/0002-pilot-predictions/v2-reconstructed/g-022/video-022.csv": "18b6b7735367d792e98a6d0780aaf0d7338da7f20afbbc96b95cdc3f4b2db278",
+    "results/0002-pilot-predictions/v2-reconstructed/g-022/receipt.json": "a1946b94d6ca0c914d2431e6fab6f85452858b5d8b1df32fa4ff2ecab87807d6",
+    "results/0002-pilot-execution/g-022-20261017/outer.json": "c178c25a5bbab8a57360340f1023b281ef2990036d91594adaba8654929da81d",
+    "results/0002-pilot-execution/g-022-20261017/preflight.json": "b199db55bd75d2b74a1dee9e56a3361e0f40846aa0fd788948c2cca8dd67f79f",
+    "results/0002-pilot-execution/g-022-20261017/launcher-source.py": "991aa1a112afdbb880d2f1beffa33cd543efd5f4cd79ccfe4466cab68df64d17",
+    "results/0002-pilot-execution/g-022-20261017/preflight-code.py": "1174a47b4fe4145a155722f9a7cdbb009faa7af966b00cde1b4c338ec5516ac0",
+    "results/0002-pilot-execution/g-022-20261017/independent-verification.json": "ae758b23e7f0dbf67e54a0bc9d528bb6a5fce2c981203bd1c2e7d215beaa5b1b",
+    "results/0002-pilot-execution/g-022-20261017-supervision/supervisor.json": "3bcbf3209c8414926c48dec9e7b8b49fe388ee0a95c77912dbdf82e39729a479",
+    "results/0002-pilot-execution/g-022-20261017-supervision/supervisor-source.py": "9ab38159525a441ec65937058f53442a9b4c6b42c9d15bebe16dca14031d6662",
+    "results/0002-pilot-execution/g-022-20261017-supervision/wrapper.stdout.log": "8647ea77a8dc8bf44cb2d47bd3af45a1f3b058f90bc3e1958b6d35ff5054346f",
+    "protocols/0002-freeze-v2.json": "bd9dc9e90980c78050a6f48043117e7d0f53d004c25d324b4ff25148380df05b",
+    "results/0002-pilot-execution/g-022-20261017/prelaunch.json": "5666219b903c77bfcc6bbc1d4076da58ea0997339552c6d839473d2438d2e9cd",
+    "results/0002-pilot-execution/g-022-20261017/verification-RECORD-diagnostic.json": "d268d02f995d2910d756080e916a93e2b3a85a0bcf9e070796b37692a002c90b",
+    "results/0002-pilot-execution/g-022-20261017/verification-source-raw-RECORD-check.py": "7e36292173fab41aaa39d0af8a3bb847b98aaca461de38e24507568a596c3e2d"
+  },
+  "compiled_at_utc": "2026-10-17T18:02:45.330431+00:00",
+  "review_method": "Two separate AI-assisted, read-only standard-library and Git-blob audits; parent checked source changes and remote CI job logs.",
+  "runtime_evidence": {
+    "exact_metadata_versions": 16,
+    "module_origin_entry_hash_and_RECORD_records_identical_to_g013": 16,
+    "historical_normalized_RECORD_matches": 15,
+    "historical_exception": "NumPy reconstruction previously disclosed; unchanged since g-033/g-013",
+    "actual_numpy_torch_version_and_native_paths_consistent": true,
+    "upstream_actual_import_hashes": 3,
+    "cache_checkpoint_archive_records_match_freeze": true,
+    "scope": "Published cloud records and code consistency; local audit does not have cloud cache bytes and does not import model/runtime packages."
+  },
+  "record_correction": {
+    "raw_normalized_preflight_diagnostic_crosschecks": 16,
+    "stdlib_PathDistribution_read_text_equivalence_fixtures_passed": 6,
+    "correction_matches_universal_newline_semantics": true,
+    "initial_failure_source_sha256": "7e36292173fab41aaa39d0af8a3bb847b98aaca461de38e24507568a596c3e2d",
+    "corrected_verifier_source_sha256": "29da49f01eb53c02b3a892afd10c9ef82b3b088aed210f0c8821c9ee6b8fd141",
+    "diagnostic_sha256": "d268d02f995d2910d756080e916a93e2b3a85a0bcf9e070796b37692a002c90b",
+    "initial_failure_exit_code_recorded": 1,
+    "initial_failure_raw_stderr_or_parent_wait4_capture_published": false,
+    "boundary": "Exit 1 for the first verifier is a preserved diagnostic assertion, not a separately published raw parent wait4 observation. Raw RECORD bytes are not published, so raw-to-normalized digest equality is supported by cloud records plus reviewed semantics, not locally rehashed cache files. The corrected verifier changes only auditing semantics and adds raw digests; frozen gate/inference sources are unchanged."
+  },
+  "progress": {
+    "calibration_inferred": 3,
+    "calibration_allocated": 10,
+    "evaluation_inferred": 0,
+    "evaluation_allocated": 20,
+    "next_group": "g-040",
+    "new_download_bytes_recorded": 0,
+    "acquisition_ceiling_bytes": 1482283622,
+    "no_other_group_outputs_or_frozen_changes_in_candidate_diff": true,
+    "no_evaluation_or_threshold_command_in_reviewed_launcher": true,
+    "work_pytest_available": false,
+    "work_pytest_tests_executed": 0
+  },
+  "prior_results_combined_sha256": "e1c6f084fc617080a682f144b931aedf4c82e0ef34eb96cca4a1d2db432e05a3",
+  "candidate_ci": {
+    "run_url": "https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39055906002",
+    "event": "pull_request",
+    "head_sha": "b55156cf5a84089596ce81f52c0e0e173bdb5e12",
+    "conclusion": "success",
+    "tests_passed": 184,
+    "pytest_seconds": 5.04,
+    "synthetic_smoke_frames": 1240,
+    "synthetic_smoke_seconds": 2.02,
+    "scope": "Read actual job logs; final publication and merged main require their own attached CI runs. Software checks do not run the learned model."
+  }
+}

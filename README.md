@@ -55,7 +55,7 @@ Online BootsTAPIR has completed the 64-frame development check and the first fro
 
 The next group, g-013, has also completed once: 128 rows, 49.411 seconds for the inference subprocess, and 2.435 GiB peak RSS. A separate parent process recorded successful completion of the full wrapper. The run reused cached dependencies and data, with no downloads or frozen-input changes. [g-013 evidence](docs/0002-g013-calibration-inference-2026-10-17.md).
 
-Group g-022 has now completed once: 128 rows, a 57.829-second inference child and 2,553,116 KiB peak RSS. Parent and child exits were both 0. No download, model replay or frozen-input change occurred. [g-022 evidence](docs/0002-g022-calibration-inference-2026-10-17.md).
+Group g-022 has now completed once: 128 rows, 57.829 seconds for the inference subprocess, and 2.435 GiB peak RSS. Both the inference child exit and the parent-observed wrapper exit were 0. No download, model replay or frozen-input change occurred. [g-022 evidence](docs/0002-g022-calibration-inference-2026-10-17.md).
 
 The allocation remains 1 development, 10 calibration, 20 evaluation and 19 reserve videos. Calibration prediction collection is **3/10 complete**; evaluation is **0/20**. No real-data error scoring, threshold fitting or reliability comparison has run. The [development report and frozen v2 protocol](docs/0002-64frame-and-freeze.md) describe the experiment and grouping. Shared objects and camera, unknown scene dependencies and unresolved checkpoint exposure limit interpretation.
 
