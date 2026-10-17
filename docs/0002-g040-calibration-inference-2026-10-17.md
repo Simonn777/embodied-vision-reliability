@@ -124,5 +124,22 @@ No other group, g-033/g-013/g-022 replay, evaluation, GT errors, score or thresh
 fit occurred. Shared objects/camera, unknown scene dependencies and unresolved
 checkpoint exposure limit the future exploratory pilot. No efficacy, SOTA,
 paper-reproduction or real-robot claim. No paid API/GPU/credits, raw-data/weight
-upload, account/permission expansion or schedule changes. Keep this PR unmerged
-for independent parent review. Next allocation is **g-039**, not run here.
+upload, account/permission expansion or schedule changes. Next allocation is
+**g-039**, not run here.
+
+## Independent publication review
+
+Two separate read-only audits of candidate `b6ffe257` passed; their findings are
+consolidated in the [parent review receipt](../results/0002-pilot-execution/g-040-parent-review.json).
+They recomputed the complete 64×2 grid, numeric/file hashes and latency
+accounting, checked all 29 frozen inputs and 93 unchanged historical files, and
+verified source/log/exit bindings for all three post-run checks. All 35 new
+result artifacts remain unchanged by this review. The normalized RECORD
+semantics also passed six standard-library text-decoding fixtures.
+
+These are independent checks of published artifacts, not a second model run or
+a local rehash of cloud cache bytes. Query selection was not re-derived from
+annotations. Candidate [CI](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39057030013)
+passed 184 tests in 7.70 seconds and the 1,240-frame synthetic smoke in 3.70
+seconds. Final publication and merged main must pass their own checks. No
+reliability comparison or real-robot result is established by this collection.
