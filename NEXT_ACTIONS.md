@@ -20,13 +20,8 @@ The recurring schedule is unchanged; no additional paid services are authorized.
    Seven-file verify-only passed; dependency preparation exited 1 on an empty
    source `.partial` entry. Installation exited 0; import child was not launched.
    Preserve all assets, partials and markers.
-2. Independently review the failure and acquisition/source-guard interaction.
-   Any fix or further attempt requires a reviewed prospective revision without
-   deleting old evidence or changing the old freeze. Conservative acquisition
-   ceiling: 4,966,784,411 bytes; historical ceiling: 4,823,387,101 bytes.
-3. **Blocked, not attempted:** checkpoint acquisition and native capability.
-   Do not start either from failed preparation or treat installation as a passed
-   import gate. CPU feasibility remains unknown; no automatic retry is authorized.
+2. **Reviewed; execution pending a published recovery freeze:** [separate recovery](protocols/0005-native-recovery.md) preserves the failed cache and seven old inputs, copies only five verified source files to a clean sibling, and reuses the existing overlay. Dual freeze/source checks must run immediately before each stage. Run only one cloud command at a time; stop on any mismatch or failed phase. No source/wheel redownload or reinstall.
+3. Only after the new import check succeeds, perform the first frozen checkpoint acquisition and then the unchanged first native capability operation. Record actual outer exits, raw outputs, costs, failure/partial status and cache preservation. Preserve every new marker; no automatic retry. The full acquisition ceiling remains 7,499,066,782 bytes; CPU feasibility is still unknown.
 4. Determine an independent real-video development/evaluation route before testing
    the [conditional auxiliary-query hypothesis](docs/0005-support-query-candidate.md).
    Generic support points and negative prompts already exist. Require matched
