@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "kind": "AI-assisted metadata-only infrastructure observation; no geometry result",
+  "base_main": "c608f30976e3b4a31263f66738b56c4c2b367760",
+  "observation_source": "Parent read_thread returned the original cloud commandExecution records, including commands, output and tool-level exits; no raw dataset read or execution replay by the parent.",
+  "transcription": "Selected command records only; command/output text is unmodified. User prompts, assistant text, pagination and private conversation IDs are omitted. Published cloud project paths define the authorized search scope.",
+  "runtime_status": "SHELL_OPERATIONAL",
+  "required_cache_status": "NOT_FOUND_WITHIN_BOUNDED_VISIBLE_SCOPE",
+  "cross_workspace_operation_state": "UNKNOWN",
+  "geometry_status": "NOT_EXECUTED_BY_THIS_FOLLOWUP",
+  "new_geometry_checks": 0,
+  "new_semantic_read_charge_bytes": 0,
+  "carried_semantic_read_bytes": 22910156,
+  "new_data_or_weight_downloads": false,
+  "paid_service_activated": false,
+  "scientific_gate_or_runner_invoked": false,
+  "marker_or_lock_written": false,
+  "raw_command_records": [
+    {
+      "id": "exec-527d51c4-7b46-4169-b1ec-6d0704c91fbc",
+      "command": "/bin/bash -lc 'pwd; stat -- /workspace/scratch/a349d03a0e0a/source-history /workspace/scratch/a349d03a0e0a/bootstapir-cache/0003-pointodyssey'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "failed",
+      "exitCode": 1,
+      "durationMs": 0,
+      "output": {
+        "text": "/workspace/scratch/a349d03a0e0a\nstat: cannot statx '/workspace/scratch/a349d03a0e0a/source-history': No such file or directory\nstat: cannot statx '/workspace/scratch/a349d03a0e0a/bootstapir-cache/0003-pointodyssey': No such file or directory\n",
+        "truncated": false
+      },
+      "turn_time_window_utc": {
+        "startedAt": "2026-10-18T16:31:22+00:00",
+        "completedAt": "2026-10-18T16:32:06+00:00"
+      },
+      "command_utf8_sha256": "ce55fb92e6a3ae54fd370cb4dff21ec6e3ccb3e1bbfc09b9c32302b761b28257",
+      "output_utf8_sha256": "a893e4476ace1a95605c8b2313f78c930bfd931187c62dc6531e1dd952a2fe87"
+    },
+    {
+      "id": "exec-3c303f0b-b338-4650-9d81-9608a5979410",
+      "command": "/bin/bash -lc \"stat -c '%F %n' -- /workspace/scratch/a349d03a0e0a /workspace/scratch/a349d03a0e0a/bootstapir-cache /workspace/scratch/a349d03a0e0a/capability-repo; findmnt -T /workspace/scratch/a349d03a0e0a -n -o TARGET,FSTYPE\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 135,
+      "output": {
+        "text": "directory /workspace/scratch/a349d03a0e0a\ndirectory /workspace/scratch/a349d03a0e0a/bootstapir-cache\ndirectory /workspace/scratch/a349d03a0e0a/capability-repo\n/      overlay\n",
+        "truncated": false
+      },
+      "turn_time_window_utc": {
+        "startedAt": "2026-10-18T16:31:22+00:00",
+        "completedAt": "2026-10-18T16:32:06+00:00"
+      },
+      "command_utf8_sha256": "4fdf75099afec7d615dbc561ebc588ebafa40f82bf6fbfc45e23cad29a39d184",
+      "output_utf8_sha256": "4a63a1e0b08eb395dc5c36f7f95546d77c9543b38a0a3511f51551a41e417bc8"
+    },
+    {
+      "id": "exec-f1e230c7-f894-4154-ae85-5329ab8a860b",
+      "command": "/bin/bash -lc \"python - <<'PY'\nimport os,sys,time,json,stat,subprocess\nfrom pathlib import Path\nstart=time.monotonic();roots=[Path('/workspace/scratch/a349d03a0e0a'),Path('/workspace/scratch/2dea7048f878')]\nMAX_ENTRIES=20000;MAX_DEPTH=6;MAX_SECONDS=15\nwanted={'0003-pointodyssey','selected-annotation.npz','sample.tar.gz','fortran-v2-started.json','rotation-diagnostic-v1-started.json','annotation-consistency-v1-started.json','0003-annotation-consistency-v1-execution'}\nrecovery_names={'backup','backups','snapshot','snapshots','.snapshot','.snapshots','versions','.versions','restore','recovery'}\nresult={'scope':'metadata only; exactly two authorized project roots; no symlink traversal','limits':{'entries':MAX_ENTRIES,'depth':MAX_DEPTH,'seconds':MAX_SECONDS},'roots':[],'entries_seen':0,'directories_opened':0,'matches':[],'recovery_candidates':[],'errors':[],'truncated':False,'stop_reason':None}\ndef metadata(p,s):\n return {'path':str(p),'kind':'symlink'if stat.S_ISLNK(s.st_mode)else 'directory'if stat.S_ISDIR(s.st_mode)else 'file'if stat.S_ISREG(s.st_mode)else 'other','size_bytes':s.st_size,'mtime_ns':s.st_mtime_ns}\nfor root in roots:\n try:\n  s=root.lstat()\n except FileNotFoundError:\n  result['roots'].append({'path':str(root),'exists':False});continue\n except OSError as e:\n  result['errors'].append({'path':str(root),'type':type(e).__name__,'errno':e.errno});continue\n item={'path':str(root),'exists':True,'direct_subdirectories':[],'direct_recovery_candidates':[]};result['roots'].append(item)\n if not stat.S_ISDIR(s.st_mode):continue\n stack=[(root,0)]\n while stack:\n  if result['entries_seen']>=MAX_ENTRIES or time.monotonic()-start>=MAX_SECONDS:\n   result['truncated']=True;result['stop_reason']='entry_or_time_limit';break\n  directory,depth=stack.pop()\n  try:\n   with os.scandir(directory)as scan:\n    result['directories_opened']+=1\n    for entry in scan:\n     if result['entries_seen']>=MAX_ENTRIES or time.monotonic()-start>=MAX_SECONDS:\n      result['truncated']=True;result['stop_reason']='entry_or_time_limit';break\n     result['entries_seen']+=1;p=Path(entry.path)\n     try:s=entry.stat(follow_symlinks=False)\n     except OSError as e:result['errors'].append({'path':str(p),'type':type(e).__name__,'errno':e.errno});continue\n     isdir=stat.S_ISDIR(s.st_mode)\n     if depth==0 and isdir:item['direct_subdirectories'].append(entry.name)\n     if entry.name.lower()in recovery_names:\n      m=metadata(p,s);result['recovery_candidates'].append(m)\n      if depth==0:item['direct_recovery_candidates'].append(m)\n     low=entry.name.lower()\n     archive_candidate=('pointodyssey'in low or 'point_odyssey'in low)and low.endswith(('.tar.gz','.tgz','.tar','.zip'))\n     operation_output=isdir and entry.name.startswith('0003-annotation-consistency-v1-execution')\n     if entry.name in wanted or archive_candidate or operation_output:result['matches'].append(metadata(p,s))\n     # Never inspect Git object stores, installed dependencies or unrelated binary caches.\n     if isdir and depth<MAX_DEPTH and entry.name not in {'.git','runtime','runtime-fixed','node_modules','__pycache__','.venv','venv'}:stack.append((p,depth+1))\n   if result['truncated']:break\n  except OSError as e:result['errors'].append({'path':str(directory),'type':type(e).__name__,'errno':e.errno})\n if result['truncated']:break\nfor root in result['roots']:\n if 'direct_subdirectories'in root:root['direct_subdirectories'].sort()\ncache=roots[0]/'bootstapir-cache'\nresult['cache_parent_direct_children']=[]\nif cache.is_dir():\n with os.scandir(cache)as scan:\n  for n,e in enumerate(scan):\n   if n>=200:result['cache_parent_listing_truncated']=True;break\n   try:result['cache_parent_direct_children'].append(metadata(Path(e.path),e.stat(follow_symlinks=False)))\n   except OSError as e:result['errors'].append({'path':'cache direct child','type':type(e).__name__,'errno':e.errno})\nrepo=roots[0]/'capability-repo';result['git_checks']=[]\nfor command in [['git','-C',str(repo),'rev-parse','HEAD'],['git','-C',str(repo),'status','--short']]:\n try:\n  p=subprocess.run(command,capture_output=True,text=True,timeout=5)\n  result['git_checks'].append({'command':command,'exit_code':p.returncode,'stdout':p.stdout,'stderr':p.stderr})\n except subprocess.TimeoutExpired:result['git_checks'].append({'command':command,'status':'TIMEOUT','seconds':5})\nresult['elapsed_seconds']=time.monotonic()-start\nresult['boundary']='No match is only evidence within visible roots/depth/count/time and excluded directories. Global historical-cache deletion and cross-host execution state remain UNKNOWN. Recovery names are metadata candidates, not supported restore APIs.'\nprint(json.dumps(result,indent=2));sys.exit(0 if not result['errors']else 2)\nPY\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 422,
+      "output": {
+        "text": "{\n  \"scope\": \"metadata only; exactly two authorized project roots; no symlink traversal\",\n  \"limits\": {\n    \"entries\": 20000,\n    \"depth\": 6,\n    \"seconds\": 15\n  },\n  \"roots\": [\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a\",\n      \"exists\": true,\n      \"direct_subdirectories\": [\n        \".codex\",\n        \"bootstapir-cache\",\n        \"calibration-g033\",\n        \"capability-repo\",\n        \"cpu-feasibility\",\n        \"cpu-measure\",\n        \"cpu-run\",\n        \"cpu-valid\",\n        \"pilot-final\",\n        \"pilot-freeze\",\n        \"pilot-run\",\n        \"tapnet-audit\"\n      ],\n      \"direct_recovery_candidates\": []\n    },\n    {\n      \"path\": \"/workspace/scratch/2dea7048f878\",\n      \"exists\": true,\n      \"direct_subdirectories\": [\n        \".codex\"\n      ],\n      \"direct_recovery_candidates\": []\n    }\n  ],\n  \"entries_seen\": 1302,\n  \"directories_opened\": 278,\n  \"matches\": [],\n  \"recovery_candidates\": [],\n  \"errors\": [],\n  \"truncated\": false,\n  \"stop_reason\": null,\n  \"cache_parent_direct_children\": [\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/.rgb.zip.xuTCzT\",\n      \"kind\": \"file\",\n      \"size_bytes\": 56098816,\n      \"mtime_ns\": 1792334580495626319\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed\",\n      \"kind\": \"directory\",\n      \"size_bytes\": 4096,\n      \"mtime_ns\": 1792218411468663232\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/development-000.npz\",\n      \"kind\": \"file\",\n      \"size_bytes\": 49280256,\n      \"mtime_ns\": 1792180053794396842\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/.rgb.zip.2zOmbi\",\n      \"kind\": \"file\",\n      \"size_bytes\": 76808192,\n      \"mtime_ns\": 1792217805182231805\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/.weights.pt.EJ5s7Q.kfJ9ba\",\n      \"kind\": \"file\",\n      \"size_bytes\": 35389440,\n      \"mtime_ns\": 1792334574579692460\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/weights.pt\",\n      \"kind\": \"file\",\n      \"size_bytes\": 218887028,\n      \"mtime_ns\": 1792179992728929290\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/.weights.pt.EJ5s7Q\",\n      \"kind\": \"file\",\n      \"size_bytes\": 68157440,\n      \"mtime_ns\": 1792334572494076947\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/small-install.json\",\n      \"kind\": \"file\",\n      \"size_bytes\": 29306,\n      \"mtime_ns\": 1792179758149935768\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/frozen-v2-g033-launch.json\",\n      \"kind\": \"file\",\n      \"size_bytes\": 255,\n      \"mtime_ns\": 1792217969531417252\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/torch-fixed-install.json\",\n      \"kind\": \"file\",\n      \"size_bytes\": 95960,\n      \"mtime_ns\": 1792179937771772949\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/frozen-v2-g033.lock\",\n      \"kind\": \"file\",\n      \"size_bytes\": 0,\n      \"mtime_ns\": 1792217969159469721\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/.weights.pt.nfdgiQ\",\n      \"kind\": \"file\",\n      \"size_bytes\": 141295616,\n      \"mtime_ns\": 1792334585367573355\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/numpy-reconstruction-20261017\",\n      \"kind\": \"directory\",\n      \"size_bytes\": 4096,\n      \"mtime_ns\": 1792218264862996212\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime\",\n      \"kind\": \"directory\",\n      \"size_bytes\": 4096,\n      \"mtime_ns\": 1792217802215115377\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/.weights.pt.nfdgiQ.eDXcM9\",\n      \"kind\": \"file\",\n      \"size_bytes\": 96731136,\n      \"mtime_ns\": 1792334622335212542\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/rgb.zip\",\n      \"kind\": \"file\",\n      \"size_bytes\": 187291581,\n      \"mtime_ns\": 1792179998601066187\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/torch-fixed-resolve.json\",\n      \"kind\": \"file\",\n      \"size_bytes\": 84265,\n      \"mtime_ns\": 1792179843765479038\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/source\",\n      \"kind\": \"directory\",\n      \"size_bytes\": 4096,\n      \"mtime_ns\": 1792180002229150701\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/frozen-v2-g033-reconstructed-launch.json\",\n      \"kind\": \"file\",\n      \"size_bytes\": 293,\n      \"mtime_ns\": 1792218512338203130\n    },\n    {\n      \"path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/torch-install.json\",\n      \"kind\": \"file\",\n      \"size_bytes\": 92952,\n      \"mtime_ns\": 1792179754879427544\n    }\n  ],\n  \"git_checks\": [\n    {\n      \"command\": [\n        \"git\",\n        \"-C\",\n        \"/workspace/scratch/a349d03a0e0a/capability-repo\",\n        \"rev-parse\",\n        \"HEAD\"\n      ],\n      \"exit_code\": 0,\n      \"stdout\": \"14b3e5fd83190a1be9e8941d2fd2770acca485ca\\n\",\n      \"stderr\": \"\"\n    },\n    {\n      \"command\": [\n        \"git\",\n        \"-C\",\n        \"/workspace/scratch/a349d03a0e0a/capability-repo\",\n        \"status\",\n        \"--short\"\n      ],\n      \"exit_code\": 0,\n      \"stdout\": \" M CURRENT_STATE.md\\n M NEXT_ACTIONS.md\\n M notes/2026-10-16.md\\n?? docs/cloud-capability/2026-10-16-research-smoke-provenance.json\\n?? docs/data-model-audit-2026-10-16.json\\n?? docs/data-model-audit-2026-10-16.md\\n\",\n      \"stderr\": \"\"\n    }\n  ],\n  \"elapsed_seconds\": 0.05493815399950108,\n  \"boundary\": \"No match is only evidence within visible roots/depth/count/time and excluded directories. Global historical-cache deletion and cross-host execution state remain UNKNOWN. Recovery names are metadata candidates, not supported restore APIs.\"\n}\n",
+        "truncated": false
+      },
+      "turn_time_window_utc": {
+        "startedAt": "2026-10-18T16:33:27+00:00",
+        "completedAt": "2026-10-18T16:34:33+00:00"
+      },
+      "command_utf8_sha256": "76f4126bd5c3ba31b1e9541707b55fbd4620821eb0b316b8ce977e57856f3e1b",
+      "output_utf8_sha256": "5be5c92ae6805681aa4ee8ee3c491c9b5c8932288ee83529c924dc56508d1595"
+    }
+  ],
+  "measurement_limits": [
+    "durationMs is execution-tool metadata, not independently measured child CPU, RSS or wait4 status. First record reports 0 ms and must not be interpreted as zero wall time.",
+    "Turn timestamps bound an entire conversation turn, not a precise command start/end timestamp.",
+    "elapsed_seconds is measured inside the Python search process, including its metadata listing and two git subprocesses; it is not model latency.",
+    "Depth cap applies to opened directories (root depth 0, opened through depth 6). Entries inside those directories are inspected; deeper directories are not descended.",
+    "truncated=false means count/time traversal guards did not fire; prescribed depth and named-directory exclusions still apply.",
+    "The 15-second guard is for traversal, not a hard timeout on the whole command. Cache-parent listing has its own 200-entry bound; each Git subprocess has a 5-second timeout.",
+    "No match does not prove global cache deletion, absence at excluded locations, or that a one-shot experiment never ran elsewhere.",
+    "No supported restore interface or backup candidate was identified; platform-level recoverability and the cause of the missing files are unresolved."
+  ]
+}
