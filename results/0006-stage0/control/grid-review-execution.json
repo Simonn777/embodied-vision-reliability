@@ -1,0 +1,33 @@
+{
+  "command": [
+    "timeout",
+    "--kill-after=5s",
+    "900",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/a349d03a0e0a/scratch/0006-control/check_saved_0006.py",
+    "grid"
+  ],
+  "source_sha256": "524f08e2266d9a5f598a9a725233c2339d26b14eb2aab719b9208d69cac4b067",
+  "observer_sha256": "90133a9164fe0062a69f997ba517be166742d12b04b285ef0c03cb597980b881",
+  "environment": {
+    "PYTHONPATH": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "started_utc": "2026-10-18T19:25:49.301179+00:00",
+  "boundary": "Parent observes checker once; no further durable observer of the parent itself.",
+  "exit_code": 1,
+  "raw_wait_status": 256,
+  "wall_seconds": 0.16785538399926736,
+  "CPU_user_seconds": 0.447154,
+  "CPU_system_seconds": 0.030872999999999998,
+  "peak_rss_kib": 29324,
+  "ended_utc": "2026-10-18T19:25:49.469054+00:00",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "32d5e0949cbb2514fdc65c987324983452589d66a84f7f2c78f606665b805b13"
+}

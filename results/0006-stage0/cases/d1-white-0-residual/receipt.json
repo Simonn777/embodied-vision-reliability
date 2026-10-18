@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "scope": "development-adapted-pointwise-MLP",
+  "method": "residual",
+  "alpha": null,
+  "seeds": {
+    "init_seed": 620000,
+    "batch_seed": 620001,
+    "augment_seed": 620002,
+    "infer_seed": 620003
+  },
+  "image_shape": [
+    128,
+    128
+  ],
+  "valid_shape": [
+    122,
+    122
+  ],
+  "patch_shape": [
+    7,
+    7
+  ],
+  "center_index": 24,
+  "feature_count": 49,
+  "architecture": [
+    49,
+    64,
+    32,
+    1
+  ],
+  "activation": "ReLU",
+  "device": "cpu",
+  "dtype": "float32",
+  "torch_version": "2.10.0+cpu",
+  "numpy_version": "2.0.2",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "deterministic_algorithms": true,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false
+  },
+  "batch_size": 512,
+  "sampling": "with-replacement-local-CPU-generator",
+  "fit_time_cap_seconds": 90.0,
+  "inference_chunk_size": 1024,
+  "mc_samples": 1,
+  "normalization": "none",
+  "training_clipping": "none",
+  "prediction_clipping": "none",
+  "weight_hash_schema": "evr-mlp-state-v1",
+  "clean_input_accessed": false,
+  "data_shape": [
+    14884,
+    49
+  ],
+  "safe_blindspot_zero_feature_indices": null,
+  "noisy_sha256": "24a71806cef3a0eb514951a83c2802c2e37653290504fb7242711c2c9a62b7a6",
+  "covariance_sha256": "dd34fde26129a8f2fa603bb4b78798feb4eb995a0f17a81d036223f16d1d98ac",
+  "factor_sha256": "82a9c0936a731fb22a2929e67b370eaac3d548b1998365d19cfa93915f360172",
+  "factor_max_absolute_covariance_error": 3.1509568391985265e-10,
+  "preparation_seconds": 0.005505193003045861,
+  "fit": {
+    "requested_steps": 500,
+    "completed_steps": 500,
+    "initial_weight_sha256": "fb97c6be320cdc97388d61420c30c84b7db1ee86c9367f94f69e49343d1f84fc",
+    "loss_every_50": [
+      {
+        "step": 50,
+        "mean_batch_loss": 0.010081380605697632
+      },
+      {
+        "step": 100,
+        "mean_batch_loss": 0.01000465638935566
+      },
+      {
+        "step": 150,
+        "mean_batch_loss": 0.008829780854284763
+      },
+      {
+        "step": 200,
+        "mean_batch_loss": 0.009926184080541134
+      },
+      {
+        "step": 250,
+        "mean_batch_loss": 0.009457608684897423
+      },
+      {
+        "step": 300,
+        "mean_batch_loss": 0.008809363469481468
+      },
+      {
+        "step": 350,
+        "mean_batch_loss": 0.009487132541835308
+      },
+      {
+        "step": 400,
+        "mean_batch_loss": 0.010085574351251125
+      },
+      {
+        "step": 450,
+        "mean_batch_loss": 0.009697522036731243
+      },
+      {
+        "step": 500,
+        "mean_batch_loss": 0.010177035816013813
+      }
+    ],
+    "last_loss": 0.010177035816013813,
+    "failure_reason": null,
+    "augmentation_standard_normal_draws": 0,
+    "parameter_count": 5313,
+    "weight_sha256": "169ac404aa68fe5f20be90f36b368140c9fa966d953a37c79a235f053585abad",
+    "batch_indices_sha256": "76cae99626e9c814d1b874de612d40c8be93273a92409f1e8cf59d99db7c43b5",
+    "augmentation_draws_sha256": null,
+    "fit_seconds": 0.6588065269970684,
+    "status": "completed"
+  },
+  "inference": {
+    "primary_seconds": 0.0056804929990903474,
+    "direct_seconds": 0.0,
+    "primary_forward_calls": 15,
+    "direct_forward_calls": 0,
+    "standard_normal_draws": 0,
+    "mc_accumulation_dtype": null,
+    "total_seconds": 0.005739790001825895
+  },
+  "prediction_sha256": "fbe424deeb8abca1088ffa3b29ffcf7dce17342ffceacbcfd16856ba4e144ecb",
+  "finite_output": true,
+  "postprocess_seconds": 0.00016686700109858066,
+  "weight_export_seconds": 7.37390000722371e-05,
+  "status": "completed",
+  "total_seconds": 0.6703283400020155,
+  "image_id": "d1",
+  "condition": "white",
+  "seed": 0,
+  "input_file_sha256": "18ad8dad548a275cbd82faa07278defc1874f32153a51286a6945e8b52f9f2a7",
+  "files": {
+    "prediction.npy": "3e4b1b61ca1623a2ee068609ed64b5d70fd81697aea6a4d02284b3be83a251ad",
+    "weights.npz": "e225b968e092304ac89f7eaad331a8c16f0c377ca8ea18294370cffa02328f1c"
+  }
+}

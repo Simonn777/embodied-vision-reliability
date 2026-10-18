@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "scope": "development-adapted-pointwise-MLP",
+  "method": "safe_blindspot",
+  "alpha": null,
+  "seeds": {
+    "init_seed": 620311,
+    "batch_seed": 620312,
+    "augment_seed": 620313,
+    "infer_seed": 620314
+  },
+  "image_shape": [
+    128,
+    128
+  ],
+  "valid_shape": [
+    122,
+    122
+  ],
+  "patch_shape": [
+    7,
+    7
+  ],
+  "center_index": 24,
+  "feature_count": 49,
+  "architecture": [
+    49,
+    64,
+    32,
+    1
+  ],
+  "activation": "ReLU",
+  "device": "cpu",
+  "dtype": "float32",
+  "torch_version": "2.10.0+cpu",
+  "numpy_version": "2.0.2",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "deterministic_algorithms": true,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false
+  },
+  "batch_size": 512,
+  "sampling": "with-replacement-local-CPU-generator",
+  "fit_time_cap_seconds": 90.0,
+  "inference_chunk_size": 1024,
+  "mc_samples": 1,
+  "normalization": "none",
+  "training_clipping": "none",
+  "prediction_clipping": "none",
+  "weight_hash_schema": "evr-mlp-state-v1",
+  "clean_input_accessed": false,
+  "data_shape": [
+    14884,
+    49
+  ],
+  "safe_blindspot_zero_feature_indices": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26,
+    29,
+    30,
+    31,
+    32,
+    33,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "noisy_sha256": "b9d612400b06c5e4872717177fac544ff526eaef3d983b76340cac0524b67ef1",
+  "covariance_sha256": "26851548b6506db78e3bb8d337384f5e41ebad78dc6607dac14e9e92b2be3d29",
+  "factor_sha256": "3fe5d6a90273065d5070ebbed970a296fd8cbcfd1bb20651bd3041caf1ddacc4",
+  "factor_max_absolute_covariance_error": 7.288262406784929e-10,
+  "preparation_seconds": 0.004260311998223187,
+  "fit": {
+    "requested_steps": 500,
+    "completed_steps": 500,
+    "initial_weight_sha256": "85f7dc11f7dc726b81e589d9b3d9d81cdd1ff18f7cfd1a7e05a02ed13ed8b2fe",
+    "loss_every_50": [
+      {
+        "step": 50,
+        "mean_batch_loss": 0.01133149303495884
+      },
+      {
+        "step": 100,
+        "mean_batch_loss": 0.011254766955971718
+      },
+      {
+        "step": 150,
+        "mean_batch_loss": 0.011056307703256607
+      },
+      {
+        "step": 200,
+        "mean_batch_loss": 0.010693668387830257
+      },
+      {
+        "step": 250,
+        "mean_batch_loss": 0.010905692353844643
+      },
+      {
+        "step": 300,
+        "mean_batch_loss": 0.010385165922343731
+      },
+      {
+        "step": 350,
+        "mean_batch_loss": 0.009203802794218063
+      },
+      {
+        "step": 400,
+        "mean_batch_loss": 0.01023909728974104
+      },
+      {
+        "step": 450,
+        "mean_batch_loss": 0.009927703067660332
+      },
+      {
+        "step": 500,
+        "mean_batch_loss": 0.010645831003785133
+      }
+    ],
+    "last_loss": 0.010645831003785133,
+    "failure_reason": null,
+    "augmentation_standard_normal_draws": 0,
+    "parameter_count": 5313,
+    "weight_sha256": "e042bd9d08160d1d48069ae4b0a81a5551c8791eff55af62aea091d848c4153e",
+    "batch_indices_sha256": "e6de781611dfb0d9c6abc2a813e7e15c5cf490869133d003587e97b407f629f5",
+    "augmentation_draws_sha256": null,
+    "fit_seconds": 0.81421707300251,
+    "status": "completed"
+  },
+  "inference": {
+    "primary_seconds": 0.003959069999837084,
+    "direct_seconds": 0.0,
+    "primary_forward_calls": 15,
+    "direct_forward_calls": 0,
+    "standard_normal_draws": 0,
+    "mc_accumulation_dtype": null,
+    "total_seconds": 0.004018807001557434
+  },
+  "prediction_sha256": "3aa3a2dc550dd2e51ccc5e6812cabf7334af5223d6bdf0ffa693a5ed4bf0be62",
+  "finite_output": true,
+  "postprocess_seconds": 0.00012578500172821805,
+  "weight_export_seconds": 6.849000055808574e-05,
+  "status": "completed",
+  "total_seconds": 0.8227259009981935,
+  "image_id": "d4",
+  "condition": "colored",
+  "seed": 1,
+  "input_file_sha256": "108e1d14f9d03d597541fdf6866cf1c79f6506ff7f3945be3a77fd58713cc98a",
+  "files": {
+    "prediction.npy": "f6993910e2e7d2a5da075a8e93634122f6edf60b518a0117a8f46a4563506d90",
+    "weights.npz": "b3807be965e4762e2fb34762e67da66570dd7bf964037c5a436593732458725c"
+  }
+}

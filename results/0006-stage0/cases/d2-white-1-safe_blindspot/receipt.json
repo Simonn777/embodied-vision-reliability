@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "scope": "development-adapted-pointwise-MLP",
+  "method": "safe_blindspot",
+  "alpha": null,
+  "seeds": {
+    "init_seed": 620110,
+    "batch_seed": 620111,
+    "augment_seed": 620112,
+    "infer_seed": 620113
+  },
+  "image_shape": [
+    128,
+    128
+  ],
+  "valid_shape": [
+    122,
+    122
+  ],
+  "patch_shape": [
+    7,
+    7
+  ],
+  "center_index": 24,
+  "feature_count": 49,
+  "architecture": [
+    49,
+    64,
+    32,
+    1
+  ],
+  "activation": "ReLU",
+  "device": "cpu",
+  "dtype": "float32",
+  "torch_version": "2.10.0+cpu",
+  "numpy_version": "2.0.2",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "deterministic_algorithms": true,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false
+  },
+  "batch_size": 512,
+  "sampling": "with-replacement-local-CPU-generator",
+  "fit_time_cap_seconds": 90.0,
+  "inference_chunk_size": 1024,
+  "mc_samples": 1,
+  "normalization": "none",
+  "training_clipping": "none",
+  "prediction_clipping": "none",
+  "weight_hash_schema": "evr-mlp-state-v1",
+  "clean_input_accessed": false,
+  "data_shape": [
+    14884,
+    49
+  ],
+  "safe_blindspot_zero_feature_indices": [
+    24
+  ],
+  "noisy_sha256": "368078b727b497f654642f040ab632522cace59ea2ca014b5f40b3c47559da17",
+  "covariance_sha256": "dd34fde26129a8f2fa603bb4b78798feb4eb995a0f17a81d036223f16d1d98ac",
+  "factor_sha256": "82a9c0936a731fb22a2929e67b370eaac3d548b1998365d19cfa93915f360172",
+  "factor_max_absolute_covariance_error": 3.1509568391985265e-10,
+  "preparation_seconds": 0.004342043997894507,
+  "fit": {
+    "requested_steps": 500,
+    "completed_steps": 500,
+    "initial_weight_sha256": "8fbe1145f38452ed9ce0b694db2e0fb20d8d3ad08349b6c8507a1697210e15be",
+    "loss_every_50": [
+      {
+        "step": 50,
+        "mean_batch_loss": 0.009546135552227497
+      },
+      {
+        "step": 100,
+        "mean_batch_loss": 0.010354964062571526
+      },
+      {
+        "step": 150,
+        "mean_batch_loss": 0.010268705897033215
+      },
+      {
+        "step": 200,
+        "mean_batch_loss": 0.009959490969777107
+      },
+      {
+        "step": 250,
+        "mean_batch_loss": 0.009407137520611286
+      },
+      {
+        "step": 300,
+        "mean_batch_loss": 0.009476346895098686
+      },
+      {
+        "step": 350,
+        "mean_batch_loss": 0.010292032733559608
+      },
+      {
+        "step": 400,
+        "mean_batch_loss": 0.009623607620596886
+      },
+      {
+        "step": 450,
+        "mean_batch_loss": 0.00916822999715805
+      },
+      {
+        "step": 500,
+        "mean_batch_loss": 0.009290089830756187
+      }
+    ],
+    "last_loss": 0.009290089830756187,
+    "failure_reason": null,
+    "augmentation_standard_normal_draws": 0,
+    "parameter_count": 5313,
+    "weight_sha256": "a7a74f17e11f0217cd34f6227014beb6707145ac4c8f224ab75e9bbd0f39fc9e",
+    "batch_indices_sha256": "bea274b86b65bbb1524c2c9b4a68db4f65be6d2fac7ddf4d5415b99234c6583a",
+    "augmentation_draws_sha256": null,
+    "fit_seconds": 0.6387961849977728,
+    "status": "completed"
+  },
+  "inference": {
+    "primary_seconds": 0.0041063049975491595,
+    "direct_seconds": 0.0,
+    "primary_forward_calls": 15,
+    "direct_forward_calls": 0,
+    "standard_normal_draws": 0,
+    "mc_accumulation_dtype": null,
+    "total_seconds": 0.004159023999818601
+  },
+  "prediction_sha256": "729c78bd8d28cfb4bc045b63d8e84100057b569683c96f5de98863d2b0ba6cc3",
+  "finite_output": true,
+  "postprocess_seconds": 0.00011588099732762203,
+  "weight_export_seconds": 6.0029000451322645e-05,
+  "status": "completed",
+  "total_seconds": 0.6475028559980274,
+  "image_id": "d2",
+  "condition": "white",
+  "seed": 1,
+  "input_file_sha256": "da9d10577cc7ac8f0100c299f8f6723ccead45b5a8e951bbb23c6c29e5a73002",
+  "files": {
+    "prediction.npy": "402e78af958c1e85f3aff6de913ebe70387b691e733066b4d9dcee0b2bf62248",
+    "weights.npz": "6e76df219d3c5dda1380bb0901d1a594f4be51cd4f7db86501acd13aba50eed0"
+  }
+}

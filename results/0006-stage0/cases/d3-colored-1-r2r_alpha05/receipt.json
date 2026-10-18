@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "scope": "development-adapted-pointwise-MLP",
+  "method": "r2r_alpha05",
+  "alpha": 0.5,
+  "seeds": {
+    "init_seed": 620211,
+    "batch_seed": 620212,
+    "augment_seed": 620213,
+    "infer_seed": 620214
+  },
+  "image_shape": [
+    128,
+    128
+  ],
+  "valid_shape": [
+    122,
+    122
+  ],
+  "patch_shape": [
+    7,
+    7
+  ],
+  "center_index": 24,
+  "feature_count": 49,
+  "architecture": [
+    49,
+    64,
+    32,
+    1
+  ],
+  "activation": "ReLU",
+  "device": "cpu",
+  "dtype": "float32",
+  "torch_version": "2.10.0+cpu",
+  "numpy_version": "2.0.2",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "deterministic_algorithms": true,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false
+  },
+  "batch_size": 512,
+  "sampling": "with-replacement-local-CPU-generator",
+  "fit_time_cap_seconds": 90.0,
+  "inference_chunk_size": 1024,
+  "mc_samples": 50,
+  "normalization": "none",
+  "training_clipping": "none",
+  "prediction_clipping": "none",
+  "weight_hash_schema": "evr-mlp-state-v1",
+  "clean_input_accessed": false,
+  "data_shape": [
+    14884,
+    49
+  ],
+  "safe_blindspot_zero_feature_indices": null,
+  "noisy_sha256": "d2cbaa575207cb41392286650044766e487afe524a28c30793448e69aed667cd",
+  "covariance_sha256": "26851548b6506db78e3bb8d337384f5e41ebad78dc6607dac14e9e92b2be3d29",
+  "factor_sha256": "3fe5d6a90273065d5070ebbed970a296fd8cbcfd1bb20651bd3041caf1ddacc4",
+  "factor_max_absolute_covariance_error": 7.288262406784929e-10,
+  "preparation_seconds": 0.003816069001914002,
+  "fit": {
+    "requested_steps": 500,
+    "completed_steps": 500,
+    "initial_weight_sha256": "c4c5cf2975d7f205ec434e7e728feda299dd60e118006606ce0ee32560ea59c4",
+    "loss_every_50": [
+      {
+        "step": 50,
+        "mean_batch_loss": 0.04890991374850273
+      },
+      {
+        "step": 100,
+        "mean_batch_loss": 0.0463591106235981
+      },
+      {
+        "step": 150,
+        "mean_batch_loss": 0.050402093678712845
+      },
+      {
+        "step": 200,
+        "mean_batch_loss": 0.04982559382915497
+      },
+      {
+        "step": 250,
+        "mean_batch_loss": 0.05144784599542618
+      },
+      {
+        "step": 300,
+        "mean_batch_loss": 0.04737415909767151
+      },
+      {
+        "step": 350,
+        "mean_batch_loss": 0.04816867411136627
+      },
+      {
+        "step": 400,
+        "mean_batch_loss": 0.049351587891578674
+      },
+      {
+        "step": 450,
+        "mean_batch_loss": 0.049272820353507996
+      },
+      {
+        "step": 500,
+        "mean_batch_loss": 0.045227400958538055
+      }
+    ],
+    "last_loss": 0.045227400958538055,
+    "failure_reason": null,
+    "augmentation_standard_normal_draws": 12544000,
+    "parameter_count": 5313,
+    "weight_sha256": "2f1dba20303cc790443c1c76d61e3a391491e8ec151e154d5b304db849259874",
+    "batch_indices_sha256": "f3b1031dd66d5ac046630da97eaf5d209843dfb6f9f29dcb9d32752726dc1a60",
+    "augmentation_draws_sha256": "a9daa0fa29c22c1eb6c4caef125d8a45a888e8e1a443fc02ac8ca411cd1b1d62",
+    "fit_seconds": 0.7576181019976502,
+    "status": "completed"
+  },
+  "inference": {
+    "primary_seconds": 0.35324199800015776,
+    "direct_seconds": 0.002638935999129899,
+    "primary_forward_calls": 750,
+    "direct_forward_calls": 15,
+    "standard_normal_draws": 36465800,
+    "mc_accumulation_dtype": "float64",
+    "total_seconds": 0.35603438199905213
+  },
+  "prediction_sha256": "0c2c55ea394ccd843eaa8c67ce415ab9d49ced1c9d9cd249a8f06aac672eb6fc",
+  "finite_output": true,
+  "direct_prediction_sha256": "eaebd08ae0cf5d20fd9613b7159c63715453111c6c09b4bc38950385fa690053",
+  "finite_direct_output": true,
+  "postprocess_seconds": 0.00021080199803691357,
+  "weight_export_seconds": 0.00020751699776155874,
+  "status": "completed",
+  "total_seconds": 1.1179219340010604,
+  "image_id": "d3",
+  "condition": "colored",
+  "seed": 1,
+  "input_file_sha256": "857999461c6b1c898c745365ce6f6e893c0b771fe7a14c86a86d11b4c9dbb53e",
+  "files": {
+    "prediction.npy": "4e5a82e1a5e809cf10ac4feb662bd962288a09273e9ca5898132f80a9eea870b",
+    "direct_prediction.npy": "8b01c49a45bbfb94202f42066872afe9061e837944db78091dd7f64b75b85046",
+    "weights.npz": "b128a6be0b51672e171a38cefa51b2d40261eb4e4fbbdd4d2ac161408d661e31"
+  }
+}

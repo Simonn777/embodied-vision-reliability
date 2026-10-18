@@ -1,8 +1,8 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0004 Stage 0 completed and independently reviewed; its frozen continuation rule failed. The broader computer-vision improvement objective remains active; the owner explicitly permits a fresh topic independent of previous experiments. No manuscript or demonstrated general improvement.
+Updated: 2026-10-18. Program day 3. Phase: 0006's 64-case development grid trained/scored once; its numerical continuation rule failed. One saved stdout hash discrepancy remains open for independent review. The broader computer-vision improvement objective remains active; no manuscript or demonstrated general improvement.
 
-## Active development candidate: conditional residual denoising (0006)
+## Conditional residual denoising (0006): stop this candidate/configuration
 
 The owner permits a fresh topic. The selected **development candidate**, not a
 claimed contribution, is known-covariance self-supervised image denoising with
@@ -14,11 +14,25 @@ The [Stage 0 protocol](protocols/0006-conditional-residual-stage0.md) fixes four
 metadata-selected PolyU mean-image substrates, synthetic white/correlated noise,
 two seeds and four matched-architecture methods (64 cases). It includes a valid
 covariance-safe blindspot and R2R alpha0.5/MC50, a prospective >=0.3 dB development
-gate, texture/harm checks and hard resource limits. No image has been acquired,
-no 0006 fit has run, and no efficacy result exists at this preparation stage.
-Source review, canonical freeze, published CI, and cloud tensor-interface checks
-must precede acquisition/training. A positive development screen alone cannot
-satisfy the separately declared manuscript requirements.
+gate, texture/harm checks and hard resource limits. The frozen
+[actual screen](results/0006-stage0/README.md) completed all 64 fits at 500 updates
+after 66 cloud tests passed with zero skips. Frozen and independent saved-array
+scoring agree: mean colored gain −0.570956 dB versus oracle-best baseline, four
+negative image means, gradient error ratio 1.800684. White controls are exactly
+equal. The fixed numerical decision is `stop_this_candidate`; do not tune it into
+a pass. All outcomes are synthetic-corruption development evidence only.
+
+One case stdout lacks its completion line and fails its recorded hash; original
+bytes/receipts and strict reviewer exit 1 are preserved. All required input,
+prediction and weight identities/finite checks match, but this is not an
+all-evidence-checks-pass result. [Independent parent review](results/0006-stage0/parent-review/README.md)
+reproduces the public block arithmetic, all seven numerical gates, frozen/copy
+bindings and preservation of 1,741 old result files. Actual cloud tool records
+confirm the strict reviewer exit 1 and the subsequent scoring exits 0. The stdout
+defect remains open; no original bytes were restored and no fit was repeated.
+No fit was repeated, no frozen source changed, and no real-camera/paper claim
+follows. Four GETs totalled 68,858 bytes; cumulative conservative ceiling is
+7,532,690,072 bytes. No package/model download, install or added fee occurred.
 
 ## Historical tracking work and completed capability archive
 
