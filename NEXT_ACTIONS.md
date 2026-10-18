@@ -15,9 +15,10 @@ Work from the first unfinished item. Record each outcome in a dated note before 
    verifies public block arithmetic, all numerical gates, source/copy bindings,
    historical preservation and actual cloud command statuses. The stdout gap for
    d3-colored-0-blindspot remains open. Do not rewrite that log, retrain a case or
-   describe the strict failed review as passed. Publish the reviewed archive
-   through PR and exact-head/main CI; private raw arrays stay in cloud cache.
-5. Under the owner's continuing research authorization, any different hypothesis
+   describe the strict failed review as passed. Publication verified through PR 29 and exact PR/main CI; private raw arrays stay
+   in cloud cache. The main merge is d2779c4.
+5. **Next prospective screen:** review/freeze [0007 mean-paired antithetic gradients](protocols/0007-antithetic-gradient-screen.md), verify main publication, then one cache-only cloud run after software tests. Use all eight fixed checkpoints; no updates, clean references, assets or paid service. Independently check saved gradients. A pass only allows a separately frozen optimization study; failure stops this exact mean-sort rule. Do not begin a manuscript.
+6. Under the owner's continuing research authorization, any different hypothesis
    or study needs an explicit prospective
    design and justified data allocation. Do not weaken the 0006 gate or tune old
    tests. This four-image synthetic-corruption development screen is not real
