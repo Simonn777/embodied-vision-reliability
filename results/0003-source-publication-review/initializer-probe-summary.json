@@ -1,0 +1,33 @@
+{
+  "status": "CONFIRMED_PRE_FIX_FREEZE_GAP_AWAITING_REVISED_INPUT",
+  "reviewed_candidate": "ec26b8fc1a4901d9e249480da6cc9f772885baca",
+  "baseline": "2826fac713fd998e4edf1666017c4944f98002d3",
+  "historical_full_review_sha256": "97c22100a7bafa8a45f660de513805ac55dc9e2b0a1914e66d53bf00a965b93b",
+  "historical_new_result_artifacts": 49,
+  "probe_source_sha256": "00d8967eb41e01955bd2f4bd7074f85d37fed406a24845a29b38628c19c61c81",
+  "method": "Temporary local Git clone with synthetic local receipt and remote-tracking refs; fresh isolated Python process invokes verify_published only. No real execution entry invoked.",
+  "observations": [
+    {
+      "case": "unchanged candidate initializer",
+      "verify_published_passed": true,
+      "initializer_marker_observed": false,
+      "mandatory_inputs": 44
+    },
+    {
+      "case": "only initializer appended synthetic boolean marker",
+      "verify_published_passed": true,
+      "initializer_marker_observed": true,
+      "mandatory_inputs": 44
+    }
+  ],
+  "changed_file": "src/evr/__init__.py",
+  "finding": "Package initializer executes during evr imports but is absent from mandatory/prior input maps and actual package source checks.",
+  "required_revision": "Bind canonical package initializer in mandatory set and actual imported package identity, with drift-negative synthetic tests.",
+  "scope_limits": [
+    "Only temporary synthetic Git state changed; shared repository and historical reports untouched.",
+    "No cache, dataset, model, actual geometry, or saved-R certificate execution.",
+    "This is a bounded gate reproduction, not proof of arbitrary malicious runtime behavior.",
+    "Published summary omits private local paths and clone locations; source hash identifies the privately retained reproduction script.",
+    "No fixed version has been reviewed yet."
+  ]
+}

@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: cached conversion-source audit and one saved-R compatibility analysis complete; complete prospective geometry implementation awaiting review and separate receipt.
+Updated: 2026-10-17. Program day 2. Phase: cached generation evidence reviewed; saved-R result inconclusive; next descriptive geometry operation frozen and unexecuted.
 
 ## Active question
 
@@ -347,3 +347,23 @@ results preserved. Attempt3 passed 17 synthetic tests, 0.394826 s / 16,128 KiB /
 exit/raw 0/0. New v3 review map closes these sources; older maps are historical.
 No geometry receipt/marker/run, dataset access or saved-R rerun. Parent review and
 explicit receipt approval remain required; numerical method/scope unchanged.
+
+## Source history review complete; next descriptive operation frozen
+
+[Final review](docs/0003-source-history-independent-review.md) records the corrected
+camera-key interpretation, missing archive-conversion history and independently
+verified INCONCLUSIVE saved-R result (one proposal, 8/9 cells, no repeat). Actual
+float16 causation remains unestablished. The original tau and failures are intact.
+
+Input 84dd6aa passed independent review after adding the package initializer to
+the 45-file binding. Receipt-only commit 48ff18f froze that exact input. The actual
+publication gate passed 45 inputs and 5 historical chains/38 inputs without any
+cache/data/geometry call. Candidate CI passed 320 tests / 4 subtests and 1,240 synthetic
+frames. All historical results/snapshots remain unchanged, notes append-only.
+
+Next: verify merged main and the canonical annotation-consistency receipt before
+one bounded descriptive operation on fixed frames [0,1,2] / IDs [0,1]. Preserve original
+rigid failure separately from annotation agreement and the unchanged 0.5 px rule.
+This turn does not execute it. No new dataset/source downloads, inference, old-test
+tuning, paid service or schedule/permission change. Actual provenance, units/FPS
+and independent cohort readiness remain unresolved.

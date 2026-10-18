@@ -1,0 +1,43 @@
+{
+  "status": "APPROVE_CANONICAL_FREEZE_DELTA",
+  "input_commit": "84dd6aa71027ab3d5c18e3d3fdef5a59ccdeb035",
+  "receipt_commit": "48ff18ff8e54be8a57bda5741a008b04582e3afc",
+  "receipt_path": "protocols/0003-annotation-consistency-freeze-v1.json",
+  "receipt_sha256": "fe7f949bb227ff0824fdee71cdabd29129ac4ec09fe39d3858466c0bc937ee44",
+  "receipt_commit_parent_is_approved_input": true,
+  "only_commit_change_is_new_canonical_receipt": true,
+  "mandatory_45_hashes_equal_approved_input_and_receipt_commit": true,
+  "published_remote_contains_receipt_commit": true,
+  "input_review": {
+    "document": "0003-annotation-final-python-review.json",
+    "sha256": "f50962f7dcd9a334be166c4f2509199fa42290da0c79473bbff42635a8231f23"
+  },
+  "local_gate_record": {
+    "scope": "Recorded local verify_published only; no real-data runner main",
+    "execution_commit": "48ff18ff8e54be8a57bda5741a008b04582e3afc",
+    "gate": "PASS",
+    "input_count": 45,
+    "prior_receipts": 5,
+    "prior_distinct_inputs": 38,
+    "started_utc": "2026-10-18T02:30:19.407443+00:00",
+    "ended_utc": "2026-10-18T02:30:22.182449+00:00",
+    "elapsed_seconds": 2.774887125,
+    "observed_child_returncode": 0,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "timeout_seconds": 60,
+    "artifact_sha256": {
+      "freeze_gate_check.py": "341b6b4af11e519edd2cc41ad3b0ab1ecab1e6212a099c058453e9f7fb3d2bc4",
+      "freeze_gate_parent.py": "b5841f37b14f1abb76698309accd094bca3f4cbf5f98824573285a05cd808e27",
+      "freeze-gate-execution.json": "80463c2fae9376427e404c5b212071a3957bdf9fc4df235302b8bec01f61a11a",
+      "freeze-gate.stdout.json": "69f97cd3d9c1dfe887acf69c37048c9e38c10502563d0ad62a42792c2f84c416",
+      "freeze-gate.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "blockers": [],
+  "boundaries": [
+    "Read-only Git and saved-source/log record inspection by this reviewer; no additional gate, test, cache, actual-R or geometry execution.",
+    "The local parent used subprocess.run and recorded the child return code. No raw wait4 status, resource-limited scientific run or outer-parent observed exit is inferred.",
+    "The exact local child and parent source hashes are bound to the saved command/log receipt; this is source-publication verification, not evidence of a successful geometry audit.",
+    "Canonical receipt was absent in the input candidate and is now added in its own child commit. The prior input-only review remains immutable."
+  ]
+}
