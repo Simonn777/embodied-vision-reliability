@@ -1,0 +1,11 @@
+# 0006 pre-execution design and software review
+
+This AI-assisted preparation has **no denoising result**. No selected image was downloaded or decoded, and no scientific fit ran. The fixed experiment is in [the protocol](../../protocols/0006-conditional-residual-stage0.md).
+
+Independent design review added a valid covariance-safe blindspot control, replacing the unexecuted alpha1 draft before data access. It clarified the ideal Gaussian domain, float32 rounding, fitted-parameter dependence, common random streams and exact metric aggregation. The final protocol implements these changes. R2R alpha0.5 retains the audited MC50 primary prediction; direct prediction is secondary only.
+
+The mathematical implementation review found the same-center transformation, exact safe mask, full covariance factor, R2R shared noise/negative target and pointwise network consistent with the declared experiment. Local integrated tests ran 66 cases: **60 passed, 6 skipped because Torch is unavailable locally**, unittest time 0.461 s. These are artificial fixtures, not an image-quality experiment. All six tensor fixtures must run successfully, with zero skips, in the already cached cloud CPU environment before image access.
+
+Pre-freeze acquisition tests initially exposed five contract failures: missing pre-GET budget checks, orphan partial handling, incomplete cached-receipt validation, and overlong reads/accounting. The revised helper passed the identical 15 offline tests independently. Both result summaries are retained. No HTTP request occurred in those fixtures. Supervision review separately confirmed canonical committed receipt binding, the exact required source list, per-case start markers before fitting, and explicit hash-bound repository module loading. Normal experiment execution must use the supervised group entry for per-case deadlines; interrupted processes may leave markers without completed receipts.
+
+The original design/review text is retained as a record of what reviewers identified; its pre-fix statements do not override the final protocol or code. [Final integrated receipt](software.json) binds the current executable/test bytes. A separate canonical Git freeze follows this source commit, and exact PR/main CI plus cloud tensor checks remain required before execution.

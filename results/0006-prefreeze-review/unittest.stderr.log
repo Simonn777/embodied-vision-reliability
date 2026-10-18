@@ -1,0 +1,71 @@
+test_asymmetric_kernel_preserves_signed_axis_lags (test_conditional_residual.ConditionalResidualTests) ... ok
+test_bad_covariance_rejected_not_repaired (test_conditional_residual.ConditionalResidualTests) ... ok
+test_bad_images_kernel_sigma_and_dtype_mismatch (test_conditional_residual.ConditionalResidualTests) ... ok
+test_default_autocorrelation_normalization_and_dtype (test_conditional_residual.ConditionalResidualTests) ... ok
+test_every_noncenter_impulse_and_center_subtraction_sign (test_conditional_residual.ConditionalResidualTests) ... ok
+test_independent_noise_reduces_to_literal_blind_spot_patch (test_conditional_residual.ConditionalResidualTests) ... ok
+test_operator_crosscovariance_and_nonindependent_channels (test_conditional_residual.ConditionalResidualTests) ... ok
+test_spatial_mix_of_separately_centered_maps_reintroduces_leak (test_conditional_residual.ConditionalResidualTests) ... ok
+test_valid_border_shape_and_manual_patch_formula (test_conditional_residual.ConditionalResidualTests) ... ok
+test_wrong_center_sign_and_missing_variance_normalization_leak (test_conditional_residual.ConditionalResidualTests) ... ok
+test_cache_without_receipt_rejected (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_completed_cache_hit_never_repeats_get (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_declared_size_above_per_image_cap_stops_before_get (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_impossible_total_budget_stops_before_get (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_orphan_partial_forbids_get (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_orphan_receipt_forbids_get (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_overlong_preserves_failure_and_forbids_retry (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_overlong_response_is_bounded_by_one_byte_sentinel (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_pinned_url_git_blob_size_and_budget (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_receipt_identity_and_bytes_cannot_override_verified_body (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_short_body_preserves_attempt_and_forbids_retry (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_started_marker_forbids_get (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_tampered_cache_body_rejected (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_two_asset_total_budget_and_no_repeat (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_wrong_blob_preserves_attempt_and_forbids_retry (test_conditional_residual_acquisition.AcquisitionTests) ... ok
+test_both_perfect_white_predictions_are_zero_harm (test_conditional_residual_metrics.AggregateTests) ... ok
+test_clean_hash_and_block_tampering_rejected (test_conditional_residual_metrics.AggregateTests) ... ok
+test_complete_grid_pass_keeps_all_cases_and_oracle_choice (test_conditional_residual_metrics.AggregateTests) ... ok
+test_first_difference_guard_uses_same_psnr_comparator (test_conditional_residual_metrics.AggregateTests) ... ok
+test_group_harm_floor_blocks_good_mean (test_conditional_residual_metrics.AggregateTests) ... ok
+test_missing_duplicate_and_unexpected_cases_rejected (test_conditional_residual_metrics.AggregateTests) ... ok
+test_one_sided_zero_error_does_not_emit_infinity_or_claim_pass (test_conditional_residual_metrics.AggregateTests) ... ok
+test_oracle_choice_is_per_pair_with_declared_tie_order (test_conditional_residual_metrics.AggregateTests) ... ok
+test_positive_gains_below_point3_do_not_pass (test_conditional_residual_metrics.AggregateTests) ... ok
+test_prospective_defaults_and_safe_white_diagnostic (test_conditional_residual_metrics.AggregateTests) ... ok
+test_safe_white_same_psnr_different_prediction_fails_gate (test_conditional_residual_metrics.AggregateTests) ... ok
+test_two_positive_groups_do_not_pass_despite_positive_mean (test_conditional_residual_metrics.AggregateTests) ... ok
+test_white_same_psnr_different_predictions_is_failure (test_conditional_residual_metrics.AggregateTests) ... ok
+test_122_rectangular_blocks_cover_once (test_conditional_residual_metrics.PairTests) ... ok
+test_analytic_uniform_bias_no_clipping (test_conditional_residual_metrics.PairTests) ... ok
+test_exact_horizontal_ramp_and_directional_denominators (test_conditional_residual_metrics.PairTests) ... ok
+test_finite_inputs_cannot_produce_json_infinity (test_conditional_residual_metrics.PairTests) ... ok
+test_invalid_shape_dtype_and_nonfinite_rejected (test_conditional_residual_metrics.PairTests) ... ok
+test_zero_error_is_null_psnr_and_json_finite (test_conditional_residual_metrics.PairTests) ... ok
+test_budget_exhaustion_does_not_start_child (test_conditional_residual_supervision.SupervisionTests) ... ok
+test_changed_receipt_and_non_sha_ref_fail (test_conditional_residual_supervision.SupervisionTests) ... ok
+test_complete_commit_bound_freeze_and_data_mutation (test_conditional_residual_supervision.SupervisionTests) ... ok
+test_existing_case_rejected_before_import_or_training (test_conditional_residual_supervision.SupervisionTests) ... ok
+test_explicit_scientific_module_ignores_search_path (test_conditional_residual_supervision.SupervisionTests) ... ok
+test_incomplete_case_marker_prevents_child (test_conditional_residual_supervision.SupervisionTests) ... ok
+test_shrunken_receipt_fails_even_when_committed (test_conditional_residual_supervision.SupervisionTests) ... ok
+test_public_science_settings_cannot_be_shortened (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_reject_bad_inputs_and_no_covariance_repair (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_residual_is_per_target_and_center_zero (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_safe_blindspot_rejects_missing_or_wrong_mask (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_safe_blindspot_uses_supplied_exact_covariance_mask (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_seed_validation (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_state_hash_order_invariance_and_value_binding (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_valid_centers_order (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_white_noise_residual_equals_blindspot (test_conditional_residual_training.NumpyInterfaceTests) ... ok
+test_local_repeatability (test_conditional_residual_training.TinyTorchInterfaceTests) ... skipped 'Torch is not installed; CPU tensor fixture checks skipped'
+test_overbudget_final_step_is_still_failed (test_conditional_residual_training.TinyTorchInterfaceTests) ... skipped 'Torch is not installed; CPU tensor fixture checks skipped'
+test_r2r_mc50_and_direct_count_no_output_correction (test_conditional_residual_training.TinyTorchInterfaceTests) ... skipped 'Torch is not installed; CPU tensor fixture checks skipped'
+test_r2r_pair_uses_same_noise_with_reciprocal_negative_target (test_conditional_residual_training.TinyTorchInterfaceTests) ... skipped 'Torch is not installed; CPU tensor fixture checks skipped'
+test_same_initialization_and_batch_stream (test_conditional_residual_training.TinyTorchInterfaceTests) ... skipped 'Torch is not installed; CPU tensor fixture checks skipped'
+test_timeout_never_completed (test_conditional_residual_training.TinyTorchInterfaceTests) ... skipped 'Torch is not installed; CPU tensor fixture checks skipped'
+
+----------------------------------------------------------------------
+Ran 66 tests in 0.461s
+
+OK (skipped=6)

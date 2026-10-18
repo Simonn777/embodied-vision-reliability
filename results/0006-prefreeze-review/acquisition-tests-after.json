@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-18T19:11:37.508378+00:00",
+  "decision": "APPROVE acquisition fixes within reviewed offline scope",
+  "scope": "Same 15 offline artificial-byte tests; no network, data, model or cloud access; no repository edits",
+  "source_original": "/Users/simonxie/Documents/Codex/2026-10-12/ban/work/embodied-vision-reliability/scripts/run_conditional_residual_stage0.py",
+  "source_snapshot": "/tmp/evr-0006-acquisition-review/source-after.py",
+  "source_sha256": "c0ba64b4f4740d5fa048ecdd81e495893312cbb0474203d15149f55a55433e0a",
+  "acquire_function_sha256": "68a408fc521516dfd2152326b24c422f17b3f9477421bb45d1853f3e48a6cefc",
+  "test_path": "/tmp/evr-0006-acquisition-tests.py",
+  "test_sha256": "c1a0cdc1f943be334a48e3c75ff9fbe09db208df40709b11b1397c80709a0036",
+  "returncode": 0,
+  "tests_run": 15,
+  "tests_passed": 15,
+  "skips": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "4f816fdd182f982f98e00cc9d9f25b7c50fd762957ddf2efc824ff34c548ce76",
+  "reviewed_fixes": [
+    "Known per-image and total cap checked before GET, total reserve includes one possible sentinel per image.",
+    "Orphan partial checked before GET; previous partial bytes preserved.",
+    "Cached receipt fixed identity fields compared to validated content and pinned URL.",
+    "Response read length bounded to remaining expected bytes plus one sentinel.",
+    "Failure receipt records bytes_read and preserved partial SHA256."
+  ],
+  "limitations": [
+    "Fake responses obey standard read(n) bound; no real server behavior tested.",
+    "No image decoding or scientific validity established.",
+    "Review limited to acquisition; other wrapper behavior independently reviewed elsewhere."
+  ],
+  "original_failed_run_preserved": "tests-before.json",
+  "current_source_still_matches_snapshot": true
+}
