@@ -1,6 +1,28 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0009 completed once and failed its frozen continuation gates; stop this exact-tail candidate. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
+Updated: 2026-10-18. Program day 3. Phase: 0010 source/runtime preparation for a bounded real-image capability test; no model or quality result yet. 0009 completed once and failed its frozen continuation gates; stop this exact-tail candidate. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
+
+## 0010: real-data route qualified, capability unmeasured
+
+The prospective question is whether removing a query from transductive StatA
+fitting can reduce wrong self-reinforcement. Known self-exclusion precedents and
+singleton harms prevent claiming novelty or inevitable benefit. The next step
+is a fixed official CLIP ViT-B/32 CPU capability check, followed only if admitted
+by a separately frozen real-data headroom screen.
+
+[Preparation evidence](results/0010-admission/README.md) records source identity,
+three disjoint filename lists, eight fixed capability names, and actual cloud
+imports. Six imports succeeded; four small text-processing dependencies are
+missing and now hash-pinned for prospective installation. No image/weight/wheel
+has been acquired. The bounded cache search is not a global absence claim.
+The reviewed software uses fixed response budgets, source/config hashes,
+fresh output/operation markers and the existing hard-timeout supervisor.
+
+[The capability protocol](protocols/0010-clip-capability.md) permits eight fixed
+training images and ten fixed prompts once, with four CPU threads, 8 GiB and
+300 seconds including model load. Canonical source freeze and CI still precede
+acquisition/execution. This checks feasibility, not accuracy. The eight images
+are excluded from any subsequent quality cohort. No manuscript is warranted.
 
 ## 0009 geometry screen: stop this exact-tail candidate
 
@@ -11,6 +33,10 @@ Tail completed244 cases and failed12 because graph components were unsupported;
 all256 cases remain in the denominator. Paired harm and complete-coverage gates
 also failed. No cap, threshold, seed or score was changed, and no case was retried.
 This is not a real-image, novelty or paper result. The broader goal remains active.
+
+[Publication is verified](docs/0009-results-publication-verification.md) through
+PR 35, merge `6351a8c3`, and exact PR/main CI. Independent parent review passed
+15,780 checks; this verifies the evidence for failure, not scientific improvement.
 
 | Family (64 cases each) | Raw | MSAC | Cell | Excess | Ratio | Exact tail |
 |---|---:|---:|---:|---:|---:|---:|

@@ -2,32 +2,34 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
-## Active research order after 0009
+## Active research order: 0010 real-data admission
 
-1. **0009 completed once: NO_GO.** Preserve all256 cases,12 unsupported-case
-   failures, zero primary gain and paired harms. Publish the complete saved
-   evidence and concise interpretation; verify remote commit and CI. No rerun,
-   larger solver cap or outcome-driven scoring variant is authorized by this result.
-2. Retire this exact-tail candidate. The known exact transformation in every
-   candidate pool and saturated strong controls left no primary headroom. Do not
-   make the artificial task harder retrospectively merely to obtain a positive
-   comparison. No manuscript follows.
-3. Before investing in another substantial implementation, identify a concrete
-   deficiency in a strong published method and a bounded, licensed real-data
-   development route. Separate a mathematical counterexample from an observed
-   task failure; disclose classical ingredients instead of declaring their
-   combination novel. Any development measurements must precede an untouched
-   confirmation partition and its separate freeze. The prior inspected tests
-   remain excluded from tuning. The overall substantive-improvement goal is active.
-4. **Prospective lead only:** [query self-inclusion in transductive adaptation](docs/literature/0010-self-inclusion-candidate.md).
-   Pin the actual strong baseline and verify a usable encoder/data/partition
-   route before any run. Query-specific moment deletion has known conceptual
-   precedents and can harm true singleton classes; require unchanged StatA,
-   stronger anchoring, matched leave-one-other-out, naive deletion and full refit
-   controls. The [baseline/data audit](docs/literature/0010-data-and-baseline-admission.md)
-   rejects ambiguous cached embeddings and identifies a possible official-CLIP
-   CPU route. Filename metadata has been qualified; no image/weight acquisition,
-   real-data experiment, code-performance result or novelty claim is recorded yet.
+1. **0009 complete and stopped:** [results and publication verification](docs/0009-results-publication-verification.md).
+   Preserve all 256 cases, 12 unsupported failures, zero primary gain and paired
+   harms. No rerun, larger cap or outcome-driven scoring rescue. No manuscript.
+2. **0010 preparation completed:** [source, filename and actual cloud preflight evidence](results/0010-admission/README.md).
+   Keep four missing-import failures and the partial PyPI metadata failure.
+   Class-bearing filenames were read, but no pixels/predictions/accuracy. The
+   old unknown HTTP total remains unknown; separate direct preparation caps
+   and the original data/weight budget remain enforced.
+3. Review/freeze the [single capability protocol](protocols/0010-clip-capability.md),
+   exact helpers/config/manifests and reusable source bundle in a canonical
+   published receipt. Verify CI and hashes before execution. Reuse exact named
+   cache files if present; otherwise acquire only admitted assets and four
+   wheels within their fixed caps, then install offline in a fresh overlay.
+4. Once actual installation/import and asset checks pass, run the fixed eight
+   training images / ten prompts once on cloud CPU. Retain every failure and
+   original marker. No automatic retry, alternate model or image replacement.
+   A pass establishes only feasibility; no accuracy is computed at this stage.
+5. If resources permit, separately freeze a real-data **development** headroom
+   screen with 128 new fixed train filenames, two author-scale batches of 64,
+   zero-shot, StatA alpha1/4, full query-out and matched other-out refits. The
+   current draft targets at least eight additional correct predictions over
+   the best fixed control, with both batches improving; this is not yet a
+   frozen experiment or observed result. Preserve graph-readout confounding,
+   scene-independence and pretraining-exposure limitations. Implement cheap
+   approximations only after useful quality headroom is observed. New independent
+   evidence and a distinct contribution remain prerequisites for any manuscript.
 
 ## October 18 owner-authorized research pivot — active order
 
