@@ -2,7 +2,7 @@
 
 Updated: 2026-10-18. Program day 3. Phase: 0007's fixed-checkpoint gradient variance screen passed its local mechanism gates after one complete run and independent saved-gradient replay. This is not denoising quality, faster training or paper evidence. 0006's failed continuation rule and open stdout defect remain unchanged. The broader improvement objective remains active.
 
-## 0007 gradient variance: local screen passed, optimization not started
+## 0007 gradient variance passed; 0008 training design under review
 
 The prospective [mean-paired antithetic screen](protocols/0007-antithetic-gradient-screen.md)
 compares four equal-forward estimators at all eight cached colored R2R checkpoints,
@@ -22,8 +22,16 @@ now verifies the public arithmetic (36,843 checks), original cloud archive
 (31,182 assertions), and preservation of 2,164 prior result/protocol files.
 Raw gradients were replayed in cloud, not fetched locally; later outer tool returns
 could not be retrieved due to a tool size limit, so their exits rely on the archived
-wait4/log chain. Only a separately reviewed/frozen optimization study may follow.
+wait4/log chain. A [prospective training study](protocols/0008-antithetic-training.md) is now implemented
+with artificial fixtures and under final source review; no training has started.
+It requires a separately published canonical freeze and pinned-cloud tests first.
 Generic antithetic matching is prior work; no manuscript is warranted.
+
+0007 results are published through PR31, merge
+`a24f009f0a18230c412f721e57060f848936599a`. Exact PR/main CI passed545 tests,
+11 Torch skips and118 subtests, plus1,240 smoke frames; cloud's separate43 tests
+had zero skips. Parent observability limits remain explicit.
+
 
 0006 publication is verified: PR 29 merged as `d2779c4a2dca4b5eac9a8c2855ada6578b55fbfc`.
 Exact PR CI passed 507 tests / 6 Torch skips / 112 subtests; main CI
