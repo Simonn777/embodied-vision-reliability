@@ -1,14 +1,17 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: descriptive operation remains frozen and unexecuted; required cached data/markers unavailable in the current execution filesystem.
+Updated: 2026-10-18. Program day 3. Phase: cloud runtime offline; fixed geometry operation not executed; original cache and one-shot state unverified.
 
 ## Active question
 
-Current blocker: [October 18 cache-readiness evidence](docs/0003-cache-blocker-2026-10-18.md).
-The real 45-input publication gate passed, but the required cached NPZ and original
-markers are not visible. No scientific operation was attempted or marker recreated.
-Recover existing data/state and verify cross-session execution before continuation;
-do not redownload, relax the freeze or treat missing cache as proof of no prior run.
+Current blocker: [offline recovery report](docs/0003-cache-recovery-2026-10-18.md).
+The cloud follow-up reports that the original-path lookup was rejected before shell
+launch. The earlier cache-visibility failure and 45-input gate PASS are historical;
+current cache, markers and processes remain unknown. No new geometry result exists.
+[Independent publication review](docs/0003-cache-readiness-independent-review.md)
+separates the saved evidence from what the parent could independently verify.
+Restore the original workspace connection and reconcile existing data/markers before
+continuation; preserve the freeze and old failures without redownload or marker reset.
 
 For a fixed visual position estimator, does causal temporal consistency identify large localization errors under held-out occlusion/appearance shifts better than confidence from the current image alone, at comparable accepted-prediction coverage?
 

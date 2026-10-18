@@ -1,0 +1,67 @@
+{
+  "status": "APPROVE_RECOVERY_OBSERVATION_DELTA",
+  "candidate": "c80c1d769c2e6b512c1c0b6c8eba09aaa52a2dae",
+  "parent_pr20_commit": "2a13cc36bedc87dc14a6e64b6de10e503ccdb0ab",
+  "base_main": "eb4769c23f5947e5789dbea82dfb8072ddf23726",
+  "candidate_tree": "0c38b74fcc6319432f3c4c512298bd877417c961",
+  "parent_is_exact_prior_pr20_head": true,
+  "previous_tracked_paths": 1673,
+  "unchanged_except_three_append_only_paths": 1670,
+  "previous_result_paths_unchanged": 1522,
+  "only_modified_existing_paths_append_only": [
+    "CURRENT_STATE.md",
+    "NEXT_ACTIONS.md",
+    "notes/2026-10-18.md"
+  ],
+  "new_paths_sha256": {
+    "docs/0003-cache-recovery-2026-10-18.md": "dd732f7463f147c17fae07f94adb49e1ffe13b027f0284debaa3534c1ea08411",
+    "results/0003-cache-recovery-20261018/observation.json": "8b7184716c9254598a728fc040e5e323e55b7b381c1ad91f904642758c9ea17f"
+  },
+  "append_only_path_sha256": {
+    "CURRENT_STATE.md": {
+      "prior": "fdc4bad103e111387eccb21401dcadc60a49e1334fe47f7f0e0be064a4e3dd35",
+      "current": "c721fd4471ab1ec1e3b5489f485636a168264d5a6594491bde5e9b7d39a61f0a"
+    },
+    "NEXT_ACTIONS.md": {
+      "prior": "a86a2c55db07c837723f38fc9be0f18862c41ed860b1dd202e428d507c34a84c",
+      "current": "fb3711f2d0c0c11155658ab98dc65475484732b6da1b86727aa234062e5e2d7c"
+    },
+    "notes/2026-10-18.md": {
+      "prior": "9eced66ab84e1814296799247ec59a331feae952543bd770e8a450bff1eef7d7",
+      "current": "f72a61b8100caae95c234c232044f3bd2c780525e8160fa7242fa9e1a165c8c9"
+    }
+  },
+  "canonical_receipt_and_45_inputs_unchanged": true,
+  "all_prior_pr20_evidence_unchanged": true,
+  "recorded_observation": {
+    "status": "BLOCKED_ENVIRONMENT_OFFLINE_BEFORE_SHELL_START",
+    "shell_started": false,
+    "unobserved_process_fields_are_null": [
+      "child_pid",
+      "exit_code",
+      "raw_wait_status",
+      "start_utc",
+      "end_utc",
+      "elapsed_seconds",
+      "peak_rss_kib",
+      "cpu_seconds"
+    ],
+    "current_cache_marker_mount_process_state": "UNKNOWN / NOT_CHECKED / NOT_AVAILABLE",
+    "semantic_read_carry_unchanged_bytes": 22910156,
+    "new_scientific_execution_claimed": false
+  },
+  "earlier_review_references": {
+    "pr20_evidence_review_sha256": "d9683b81599c8080043c5b871f003386cfc0e8e4bdb7e1a66355e7197b001bc2",
+    "normalized_path_map_sha256": "413c9277ab51b798aca1213ac2c24cb9320ccf22b028198a53edf53a3faa0b9e"
+  },
+  "original_path_map_issue": "The older absolute-key verification map is preserved. A separately prepared relative-path manifest and disclosure remain the appropriate publication correction; this recovery delta does not rewrite or resolve the original scanner itself.",
+  "blockers": [],
+  "boundaries": [
+    "Read-only candidate/parent Git blobs and SHA checks; no candidate, data, gate, software, model or geometry execution.",
+    "The offline tool-rejection text and supplied runtime advisory are reported in the cloud observation and agent account. This reviewer has no independent raw failed-exec transport record and does not attest a measured launch, elapsed time, process exit or resource usage.",
+    "A clock reading used for evidence compilation is not a launch/failure timestamp. Null process fields accurately preserve this distinction.",
+    "The record establishes no current original-cache identity or cross-session one-shot state. Missing/offline runtime is not permission to reconstruct markers or start a retry.",
+    "No global network or billing audit is claimed; no-fee/no-acquisition statements describe the reported bounded follow-up.",
+    "Exact-head CI and final publication status are handled separately by the parent."
+  ]
+}

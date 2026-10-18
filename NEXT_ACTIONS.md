@@ -2,12 +2,14 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
-**October 18 blocking prerequisite:** the frozen annotation-consistency operation
-was not attempted because the required cache/NPZ and original markers are not
-visible. [Exact observation and recovery requirements](docs/0003-cache-blocker-2026-10-18.md).
-Recover the existing verified cache/markers and reconcile cross-session state
-before item 6 execution. No redownload, new marker, gate relaxation or retry is
-authorized by absence. Keep the frozen source/parameters and old failures intact.
+**October 18 blocking prerequisite:** the latest cloud follow-up could not start a
+shell because its execution environment was offline. [Recovery evidence](docs/0003-cache-recovery-2026-10-18.md)
+and [independent review](docs/0003-cache-readiness-independent-review.md) distinguish
+this from the earlier host's missing-cache observation. First restore a supported
+connection to the original workspace, then verify the existing NPZ, original marker
+hashes, locks and any current-operation marker/output before item 6. Current state
+is unknown. No redownload, marker reconstruction, threshold relaxation or repeated
+scientific attempt is authorized by a missing or disconnected runtime.
 
 1. **Completed:** implement, independently review, and execute experiment 0001 under frozen protocol/source, preserving the negative identity-switch result. Read [the day-one note](notes/2026-10-16.md) and the reproduction record before continuing; do not repeat the run merely to generate daily activity.
 2. **Completed:** [post-hoc failure analysis](docs/analysis/0001-failure-mechanism.md) separates two-frame history adaptation, different calibrated thresholds, color-estimator failure, and synthetic-generator artifacts. [Primary methods reading](docs/literature/2026-10-16-confidence-methods.md) audits confidence/visibility outputs and causal context. Original predictions, scores, thresholds, protocol, and results remain frozen; no score was optimized on the now-visible test trajectories.
