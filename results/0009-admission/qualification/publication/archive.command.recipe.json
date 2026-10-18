@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "timeout",
+    "--kill-after=5s",
+    "120",
+    "<PYTHON_RUNTIME>/bin/python",
+    "<PROJECT>/scratch/0009-qualification-publication/archive.py"
+  ],
+  "cwd": "<PROJECT>/research-0009-qualification-publication",
+  "PYTHONPATH": "<PROJECT>/bootstapir-cache/runtime-fixed",
+  "threads": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "address_space_bytes": 8589934592
+}

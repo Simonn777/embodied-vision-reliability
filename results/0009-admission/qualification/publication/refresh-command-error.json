@@ -1,0 +1,13 @@
+{
+  "scope": "publication-only command-path error; not a qualification rerun",
+  "observed_tool_chunk_id": "aa7632",
+  "observed_whole_shell_exit": 0,
+  "individual_refresh_exit_observed": null,
+  "individual_refresh_diagnostic": "The first Python command could not open the relative scratch/0009-qualification-publication/refresh.py from the repository checkout cwd. Its individual exit was not separately captured. Later shell commands completed, so aggregate shell exit was 0.",
+  "incorrect_command_recipe": "<PYTHON_RUNTIME>/bin/python scratch/0009-qualification-publication/refresh.py",
+  "cwd_recipe": "<PROJECT>/research-0009-qualification-publication",
+  "repair_recipe": "<PYTHON_RUNTIME>/bin/python <PROJECT>/scratch/0009-qualification-publication/refresh.py",
+  "impact": "Five just-completed publication verification outputs were not yet copied into the first local publication commit. They remain intact privately and are appended before any remote commit is published. No original qualification output changed.",
+  "original_qualification_files_modified": false,
+  "new_probe_or_data_request": false
+}
