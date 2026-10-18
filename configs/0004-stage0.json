@@ -1,0 +1,20 @@
+{
+  "experiment": "0004-stage0",
+  "purpose": "development mechanism diagnostic, never a deployed method or held-out result",
+  "seed": 20261018,
+  "frames": 250,
+  "queries": 8,
+  "query_rule": "first eight original indices visible at frame zero",
+  "shadow_starts": [32, 64, 96, 128, 160, 192, 224],
+  "shadow_horizon": 8,
+  "control_frames": [0, 32, 128, 224, 249],
+  "query_chunk_size": 8,
+  "clone_atol": 0.0001,
+  "pixel_thresholds": [1, 2, 4, 8, 16],
+  "threads": 2,
+  "address_space_bytes": 6442450944,
+  "hard_timeout_seconds": 900,
+  "checkpoint_sha256": "87c1e752cf5ce56e3e2f7da460aeb4d40fc826d04ef2939bade86a5c7495377f",
+  "development_npz_sha256": "162350eb76f8399df95e7ded23eefd82793ea03db05dd2fe5101ef1027dfddf0",
+  "packages": {"torch": "2.10.0+cpu", "numpy": "2.0.2", "dm-tree": "0.1.9", "einshape": "1.0"}
+}
