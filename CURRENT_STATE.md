@@ -29,6 +29,12 @@ an empty `.partial` entry before the import child. Assets, partials and marker a
 preserved. Checkpoint acquisition and native inference were not started; CPU
 feasibility remains unknown. New payload was 9,179,574 bytes; the conservative
 cumulative ceiling is 4,966,784,411 bytes. No automatic retry is authorized.
+A [separate recovery procedure](protocols/0005-native-recovery.md) has now passed
+[independent artifact/integration review](results/0005-recovery-review/README.md)
+and 106 local software tests. It preserves the complete failed cache, reuses
+verified sources/overlay, and requires a new published 16-input freeze before
+any cloud recovery, first checkpoint acquisition or first native forward. It has
+not run. Five empty partials are recorded; their persistence cause is unresolved.
 The substantive improvement and
 paper gates in the [direction](docs/0004-research-direction.md) remain unchanged.
 The old 0002 inspected evaluation remains excluded.

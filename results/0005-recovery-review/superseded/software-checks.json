@@ -1,0 +1,34 @@
+{
+  "status": "passed_software_tests_only",
+  "observed_tool_exits": [
+    {
+      "chunk_id": "fbdfbb",
+      "exit_code": 0,
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_tapnext*.py' -v",
+      "test_count": 89,
+      "suite_reported_seconds": 2.842
+    },
+    {
+      "chunk_id": "f91538",
+      "exit_code": 0,
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_native_capability_supervisor.py' -v",
+      "test_count": 15,
+      "suite_reported_seconds": 3.497
+    }
+  ],
+  "source_sha256": {
+    "configs/0005-native-recovery.json": "97bb7e18bddf6c979d97ca825769fb37ab2175aa60608e84c3783f9ab65a257c",
+    "protocols/0005-native-recovery.md": "858559fcf861c8396c06a5d270cfe4dbbef82d307d035e516238c161a8628e74",
+    "scripts/prepare_tapnext_recovery.py": "63d5cccc68f380ceeaaea67c673cf43bffecb0f385d2879c398eaf9fa4f044e6",
+    "scripts/run_tapnext_recovered_capability.py": "37356e4b87140e16d5c6431a10de617cd303963e25b70f3c99398aa0d800d7ec",
+    "tests/test_tapnext_recovery.py": "849b647d624176a3f28269dd145aea0666cdf1bdd7ae3a697d94c78bc26b06e8",
+    "tests/test_tapnext_recovered_supervisor.py": "be7b3e7a5b92e3be5cce708755581294472e2f627753abb39e338b2dab7fa03d"
+  },
+  "logs": {
+    "old-supervisor.stderr.log": "38e68bc1d4d578d8fee68ed75b99f82ead70c0019991f5c2d948cd9df5a8702b",
+    "unittest.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "unittest.stderr.log": "20ae20b0dc69aabaa094e7ebbd47aa55eee8b018b173467afe4c94140eac9451",
+    "old-supervisor.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "boundary": "Local Python 3.9.6 synthetic checks; no native model, network or dataset operation. Timings are unittest reports, not a cloud performance measurement."
+}

@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "real_producer_to_supervisor_with_tiny_assets_and_mocked_import_HTTP",
+      "status": "passed",
+      "dependency_import_stubs": 1,
+      "HTTP_stubs": 1,
+      "failed_cache_unchanged": true
+    },
+    {
+      "case": "changed_actual_checkpoint_rejected",
+      "status": "passed",
+      "error": "Recovered checkpoint bytes differ"
+    },
+    {
+      "case": "failed_cache_mutation_stops_before_new_directory_import_HTTP",
+      "status": "passed"
+    }
+  ],
+  "elapsed_seconds": 0.055701042,
+  "python": "3.9.6",
+  "platform": "Darwin",
+  "reviewed_sha256": {
+    "configs/0005-native-recovery.json": "97bb7e18bddf6c979d97ca825769fb37ab2175aa60608e84c3783f9ab65a257c",
+    "protocols/0005-native-recovery.md": "858559fcf861c8396c06a5d270cfe4dbbef82d307d035e516238c161a8628e74",
+    "scripts/prepare_tapnext_recovery.py": "63d5cccc68f380ceeaaea67c673cf43bffecb0f385d2879c398eaf9fa4f044e6",
+    "scripts/run_tapnext_recovered_capability.py": "309451d5d8fe490cb2975f85936835aeef560a5878651e92d883314d38b84617",
+    "tests/test_tapnext_recovery.py": "849b647d624176a3f28269dd145aea0666cdf1bdd7ae3a697d94c78bc26b06e8",
+    "tests/test_tapnext_recovered_supervisor.py": "27c1ca92678773ff075553abe9401bdf34c52dbb107ecf77f4d33da37f9f018b"
+  },
+  "script_sha256": "3b73edef5a02abb9dd5e7068c3378e7eab603eb187c432cf6d746dbd93eed6e8",
+  "boundary": "Local synthetic files, stub HTTP, stub import child, runtime affinity/platform/limits mocked. Tests real producer plus real verifier; no network, real dependencies, checkpoints, data, model or science."
+}

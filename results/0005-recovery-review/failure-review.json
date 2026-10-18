@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "verdict": "APPROVE_FAILURE_EVIDENCE_ONLY_RECOVERY_REQUIRES_NEW_BOUND_PROCEDURE",
+  "reviewed_head": "dec0546a33c41eabd731da903d95cd2651bf080e",
+  "execution_base": "e168ba830f9f0eff37192ee8745207ff7d3484ef",
+  "scientific_source_commit": "a6cb51ee60bdee2650ce6068cb3a2c0255e84931",
+  "scope": "Read-only Git and saved small receipts; synthetic local link/unlink fixture only. No runtime/model/data/network/preparation execution.",
+  "worktree_status_at_audit": [
+    "?? configs/0005-native-recovery.json",
+    "?? protocols/0005-native-recovery.md",
+    "?? results/0005-native-capability/parent-command-observations.json"
+  ],
+  "checks": {
+    "copy_manifest_entries_verified": 35,
+    "result_files_hashed": 37,
+    "frozen_inputs_current_index_head_base_source_verified": 7,
+    "canonical_receipt_sha256": "3e5aad0b0123affb3991997607c04310bd7d08a38172b8ffbc2c0f29b01f36ef",
+    "baseline_map_entries_verified_against_base_blobs": 1769,
+    "prior_files_byte_preserved_in_head": 1766,
+    "prior_results_byte_preserved": 1595,
+    "permitted_changed_paths": [
+      "CURRENT_STATE.md",
+      "NEXT_ACTIONS.md",
+      "notes/2026-10-18.md"
+    ],
+    "notes_prefix_preserved": true,
+    "overlay_saved_manifest_entries": 378,
+    "asset_records_verified_against_config_and_saved_inventory": 8,
+    "new_download_payload_bytes": 9179574,
+    "conservative_cumulative_ceiling_bytes": 4966784411,
+    "synthetic_software_tests_in_saved_log": 44
+  },
+  "phase_receipts": {
+    "verify": {
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.08783158799997182,
+      "peak_rss_kib": 12892,
+      "source_sha256": "6228d088c44dedd55ae5478fe56de7fd8f56576e225612f5a429805770bcc7dc",
+      "stdout_sha256": "87e6d6157430371324301bcf0c253a57392e3a0461af47f4a558bc08596ac1b4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dependencies": {
+      "exit_code": 1,
+      "raw_wait_status": 256,
+      "wall_seconds": 36.072080034000464,
+      "peak_rss_kib": 43916,
+      "source_sha256": "6228d088c44dedd55ae5478fe56de7fd8f56576e225612f5a429805770bcc7dc",
+      "stdout_sha256": "99f1f800b89d02a16e2616200263c0cd6c524111a3e6f2211af6b943255d7073",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "software": {
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 1.7902271919992927,
+      "peak_rss_kib": 54888,
+      "source_sha256": "6228d088c44dedd55ae5478fe56de7fd8f56576e225612f5a429805770bcc7dc",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "c6f51cf36aed4a1e32e8586ff0e7111e6106072d8208bf1686ff46a6268d62c6"
+    },
+    "review": {
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.2111550330009777,
+      "peak_rss_kib": 12256,
+      "source_sha256": "7e00a6040e8a568bb2052d300ce5b2cffceb41ecf567453399043f5a934d81f7",
+      "stdout_sha256": "a383a505bd6985df6c1bbd05ecc6363cf4ad0b99e0eba91face712f57b1bc770",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "installation_receipt": {
+    "started_utc": "2026-10-18T18:02:06.069581+00:00",
+    "exit_code": 0,
+    "raw_wait_status": 0,
+    "peak_rss_kib": 43916,
+    "elapsed_seconds": 0.5268945830011944,
+    "finished_utc": "2026-10-18T18:02:06.596489+00:00",
+    "stdout_sha256": "b07b0d97a355636b057923128f6215e585743cba9cd94535438ca13ee1c8e47c",
+    "stderr_sha256": "abd6f7249a473f07f501069dde0fe2436ada294e0816606ef6d35309752ff944"
+  },
+  "frozen_input_sha256": {
+    "configs/0005-native-capability.json": "37faa3b23182c5fe2a0854bb377b5ca29bec2bffb0031e00f8fd3b090501fc1c",
+    "protocols/0005-native-capability.md": "88e5bbee4ebb8f41426b8f7a8c29f5163d5b2dfa1f35e820e448938995864ef6",
+    "scripts/tapnext_native_adapter.py": "6b59e6da6be00540f2333dc78eb596a655dd04f7afef5630342a14e1af7a6d2c",
+    "scripts/prepare_tapnext_assets.py": "dce532e88fd4bb7a5cbf76a9bc75000b8e11a67f569452bb54cf7363a78ba6cd",
+    "scripts/run_tapnext_capability.py": "3475e043dd81efc843ba948b0a3c298b01627503681ed6c9a1c6a94d38f2c5a5",
+    "results/0003-network-followup-20261017/acquisition-ledger.json": "2a1af4d52d236455cf1212b590dbb23b97561f7b4cbe309f629f9d4037498442",
+    "results/0002-development/decode/development-manifest.json": "b9a5cf663f44134d9c964fe2bb9e0f0973f6f85e5b53a1c3fc3a0b65235adc9f"
+  },
+  "source_partials_failure": {
+    "type": "PrepFailure",
+    "reason": "Unexpected or changed source entry: tapnet/tapnext/tapnext_lru_modules.py.partial"
+  },
+  "all_saved_empty_partial_entries": {
+    "source/tapnet/tapnext/pscan.py.partial": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source/tapnet/tapnext/tapnext_lru_modules.py.partial": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source/tapnet/tapnextpp/votsp2026/utils.py.partial": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wheels/einops-0.8.2-py3-none-any.whl.partial": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wheels/pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.partial": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "root_cause": {
+    "verified_code_trace": [
+      "scripts/prepare_tapnext_assets.py:169 creates an empty exclusive partial before HTTP",
+      "scripts/prepare_tapnext_assets.py:190-194 verifies flushed partial length and digest",
+      "scripts/prepare_tapnext_assets.py:195-197 links final then unlinks partial before close and success status",
+      "scripts/prepare_tapnext_assets.py:203 conflates absent and zero-byte partial in its counter",
+      "scripts/prepare_tapnext_assets.py:222-223 rejects any unbound source entry before the import child"
+    ],
+    "conclusion": "Empty extras are observed, but their persistence/recreation cause is unresolved. Ordinary local lifecycle does not reproduce it. No deterministic downloader or cloud-filesystem cause claimed.",
+    "local_fixture": {
+      "operation": "open-xb/write/flush/fsync/link/unlink-before-close",
+      "payload_bytes": 16,
+      "created_bytes": 0,
+      "partial_exists_after_unlink_while_open": false,
+      "partial_exists_after_close": false,
+      "final_sha256": "60649f9c3b9580813d6738b20d3f64893f46322bbbd2c8adeb6ce57fcab8efd5",
+      "platform": "Darwin",
+      "python": "3.9.6",
+      "boundary": "Synthetic local filesystem only; does not identify cloud filesystem behavior."
+    }
+  },
+  "limitations": [
+    "Original cloud files were not reread; public copy hashes, inventory consistency and executed audit source were checked. Byte-exact origin claims remain bounded by the preserved cloud copy/audit records.",
+    "Phase wait4 receipts substantiate their immediate children; no further durable wait4 receipt for stage_parent.py or the review parent is published.",
+    "No import-only validation, checkpoint acquisition, model construction, forwards or GT access is evidenced by this attempted path; this is not a global attestation about unrelated processes.",
+    "The postfailure overlay inventory is not a completed or compatible preparation approval.",
+    "Three old cache marker digests match the saved baseline/audit, but actual cloud markers were not independently reread."
+  ],
+  "recovery_recommendation": [
+    "Preserve frozen v1 and the entire failed cache, stage marker, receipt, logs, ledger and inventory; do not delete extras or rewrite failed status.",
+    "Review and freeze a separate offline recovery helper/config/receipt bound to this failure, all eight asset records, saved complete overlay map and v1 seven-file hashes.",
+    "Under an exclusive fresh recovery marker, rehash existing five final source files and three wheels; create a clean separate exact-five-file source tree by byte copy, retaining original partial evidence. Verify no symlinks, unbound initializers or extra entries.",
+    "Reuse existing 378-file installed overlay only after exact path/size/digest equality; perform a separately supervised import-only version/origin check with unchanged package pins and limits, no pip/network/checkpoint/model. Record absence of new transfer and carry the prior cumulative ledger without resetting history.",
+    "Any mismatch fails closed; checkpoint acquisition and native execution remain separate uncompleted stages and are outside this offline-recovery review."
+  ],
+  "artifact_sha256": {
+    "results/0005-native-capability/README.md": {
+      "bytes": 4183,
+      "sha256": "c93b8e8db32f888b36d88f550ad9061193d5cf3ba5b8cc95f71801e9f40e284e"
+    },
+    "results/0005-native-capability/copy-manifest.json": {
+      "bytes": 9645,
+      "sha256": "406fe80474f3caa166079b56328e2f2f828f60d0229a4c78bf4988d882e92eb4"
+    },
+    "results/0005-native-capability/preparation-dependencies/acquisition-ledger-dependencies.json": {
+      "bytes": 582,
+      "sha256": "a92af26edafc6dc356adc1085f174b5b94992c04115969bc34550c16b7f69a05"
+    },
+    "results/0005-native-capability/preparation-dependencies/acquisition-ledger.json": {
+      "bytes": 582,
+      "sha256": "a92af26edafc6dc356adc1085f174b5b94992c04115969bc34550c16b7f69a05"
+    },
+    "results/0005-native-capability/preparation-dependencies/asset-records/einops.json": {
+      "bytes": 1110,
+      "sha256": "a2129ddb2cb61d187a4de9636875ffd43b1fc4e020e90e1cd753823b06c93a8c"
+    },
+    "results/0005-native-capability/preparation-dependencies/asset-records/pillow.json": {
+      "bytes": 1205,
+      "sha256": "3310da45ab173f7b8fac80ade11f383c0f766cea53066efdd5871e2859614863"
+    },
+    "results/0005-native-capability/preparation-dependencies/asset-records/source-0.json": {
+      "bytes": 1111,
+      "sha256": "8208e77bdb48d3ec7ac5ba902be26aabfd3eb4a56df8d96c3cf86372bb028151"
+    },
+    "results/0005-native-capability/preparation-dependencies/asset-records/source-1.json": {
+      "bytes": 1123,
+      "sha256": "039a49df4348ca3b902fb90f026bd278af59b2c28b88b8ca32d3302ed2396d00"
+    },
+    "results/0005-native-capability/preparation-dependencies/asset-records/source-2.json": {
+      "bytes": 1092,
+      "sha256": "e153684be8dc017a448620b35921d252cc07168c0a0eae7a444936a400a30bc8"
+    },
+    "results/0005-native-capability/preparation-dependencies/asset-records/source-3.json": {
+      "bytes": 1116,
+      "sha256": "e63d3bd86e2c62baf40f4d89f32d706aa66df7415a3b2054651c15cf51133fcb"
+    },
+    "results/0005-native-capability/preparation-dependencies/asset-records/source-4.json": {
+      "bytes": 1117,
+      "sha256": "13247f705e5d16ebd5d4df9b9880ed20c2cad7fa2979acd4927090c016c49dbe"
+    },
+    "results/0005-native-capability/preparation-dependencies/asset-records/torchvision.json": {
+      "bytes": 1118,
+      "sha256": "ff07b86ec69383651afc26a284ed06d26445b1f0cefc900f56d10757f644ff8f"
+    },
+    "results/0005-native-capability/preparation-dependencies/dependencies-execution.json": {
+      "bytes": 2922,
+      "sha256": "acb05e8da2afdaaee2af45511816a085ef3be0632a2ea93bcb38629b44da97d1"
+    },
+    "results/0005-native-capability/preparation-dependencies/dependencies.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/0005-native-capability/preparation-dependencies/dependencies.stdout.log": {
+      "bytes": 146,
+      "sha256": "99f1f800b89d02a16e2616200263c0cd6c524111a3e6f2211af6b943255d7073"
+    },
+    "results/0005-native-capability/preparation-dependencies/install.json": {
+      "bytes": 1087,
+      "sha256": "afbf3ea085d5315aec9924cf474084984e4ef572fa61cc0835b6facb7e6d8fbd"
+    },
+    "results/0005-native-capability/preparation-dependencies/install.stderr.log": {
+      "bytes": 364,
+      "sha256": "abd6f7249a473f07f501069dde0fe2436ada294e0816606ef6d35309752ff944"
+    },
+    "results/0005-native-capability/preparation-dependencies/install.stdout.log": {
+      "bytes": 496,
+      "sha256": "b07b0d97a355636b057923128f6215e585743cba9cd94535438ca13ee1c8e47c"
+    },
+    "results/0005-native-capability/preparation-dependencies/markers/dependencies.started.json": {
+      "bytes": 470,
+      "sha256": "922ad0b2cede4d5a18d292d9aa3f1c545e6f24c6611776f31dbc423f0a0fdf02"
+    },
+    "results/0005-native-capability/preparation-dependencies/preparation-dependencies.json": {
+      "bytes": 11926,
+      "sha256": "1841249b8efe67f126557d5fd5da7ce200443452e907f166684710275a1b3445"
+    },
+    "results/0005-native-capability/review/archive_failure.py": {
+      "bytes": 1891,
+      "sha256": "e7d3ec3494d170313b570bf981c0d181570eb503778cd3b956326aeb9ded4b9e"
+    },
+    "results/0005-native-capability/review/failure-review.json": {
+      "bytes": 3215,
+      "sha256": "a383a505bd6985df6c1bbd05ecc6363cf4ad0b99e0eba91face712f57b1bc770"
+    },
+    "results/0005-native-capability/review/old-cache-markers.json": {
+      "bytes": 315,
+      "sha256": "f0fed0f3e2beefb3f72491b647922ee126f9759af7a28f038338c2b0deea8511"
+    },
+    "results/0005-native-capability/review/postfailure-cache-inventory.json": {
+      "bytes": 61567,
+      "sha256": "2627eea7fe1b4ebe1394c495d8e74342d8bd54325f75d799f6f8ce4c9b70a982"
+    },
+    "results/0005-native-capability/review/postfailure-overlay-manifest.json": {
+      "bytes": 57341,
+      "sha256": "b2b85921996aea8ffe7d798718b361f0ed129ca9e9af817024160b09b66eeaaf"
+    },
+    "results/0005-native-capability/review/review-execution.json": {
+      "bytes": 816,
+      "sha256": "95126d4abd21b9ed40521bd6af478151f9d04a75dcb8be5ffb09ca63a1f2d956"
+    },
+    "results/0005-native-capability/review/review.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/0005-native-capability/review/review.stdout.log": {
+      "bytes": 3215,
+      "sha256": "a383a505bd6985df6c1bbd05ecc6363cf4ad0b99e0eba91face712f57b1bc770"
+    },
+    "results/0005-native-capability/review/review_failure.py": {
+      "bytes": 5300,
+      "sha256": "7e00a6040e8a568bb2052d300ce5b2cffceb41ecf567453399043f5a934d81f7"
+    },
+    "results/0005-native-capability/review/stage_parent.py": {
+      "bytes": 5269,
+      "sha256": "6228d088c44dedd55ae5478fe56de7fd8f56576e225612f5a429805770bcc7dc"
+    },
+    "results/0005-native-capability/review/tracked-baseline.json": {
+      "bytes": 244096,
+      "sha256": "cc70e63be22a573cf7f386da4df6d70d0050630825bfa45358faa411b6819cda"
+    },
+    "results/0005-native-capability/software/software-execution.json": {
+      "bytes": 2765,
+      "sha256": "5ebe10af901cf4c3107d0354a8bee6d025089e05e4266c69a7970e281b23c0e2"
+    },
+    "results/0005-native-capability/software/software.stderr.log": {
+      "bytes": 6543,
+      "sha256": "c6f51cf36aed4a1e32e8586ff0e7111e6106072d8208bf1686ff46a6268d62c6"
+    },
+    "results/0005-native-capability/software/software.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/0005-native-capability/verification/verify-execution.json": {
+      "bytes": 2877,
+      "sha256": "028d4e075eb22d69eefb9cdad4e084de17a23b0f70288016b635c6bcacce7aa8"
+    },
+    "results/0005-native-capability/verification/verify.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/0005-native-capability/verification/verify.stdout.log": {
+      "bytes": 103,
+      "sha256": "87e6d6157430371324301bcf0c253a57392e3a0461af47f4a558bc08596ac1b4"
+    }
+  },
+  "reviewer_script_sha256": "eaed066529d3773edfbc166ca1f541c264d40bf6eae222daa7929cc95dcbc7dd",
+  "installation_receipt_artifact": "results/0005-native-capability/preparation-dependencies/install.json",
+  "audit_execution_note": "An initial local audit stopped at a clean-worktree assertion after parallel root work added three untracked publication/recovery files. The completed audit pins dec0546 Git blobs, records those untracked paths, and still verifies the seven frozen files in current worktree/index. New untracked files are outside this review."
+}

@@ -1,0 +1,54 @@
+{
+  "status": "observed_completed_cloud_commands",
+  "retrieved_date": "2026-10-18",
+  "source": "Codex read_thread commandExecution observations",
+  "scope": "outer tool exits observed separately from archived stage_parent.py wait4 receipts; tool durationMs is not the experimental wall time",
+  "source_commit": "dec0546a33c41eabd731da903d95cd2651bf080e",
+  "observations": [
+    {
+      "id": "exec-edd7ba21-1ca2-4a5a-a245-fa192055f675",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 178,
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-native-control/stage_parent.py verify'",
+      "cwd": "/workspace/scratch/a349d03a0e0a"
+    },
+    {
+      "id": "exec-510ea7bb-56c6-42f4-bc16-6058139380e6",
+      "status": "failed",
+      "exit_code": 1,
+      "tool_duration_ms": 41252,
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-native-control/stage_parent.py dependencies'",
+      "cwd": "/workspace/scratch/a349d03a0e0a"
+    },
+    {
+      "id": "exec-fc450260-5a68-4946-b5f9-c10dd8ea48d6",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 1823,
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-native-control/stage_parent.py software'",
+      "cwd": "/workspace/scratch/a349d03a0e0a"
+    },
+    {
+      "id": "exec-018fae54-50a5-4566-b14d-ef85b3766af0",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 250,
+      "command": "/bin/bash -lc \"python - <<'PY'\nfrom pathlib import Path\nimport subprocess,os,time,json,datetime,hashlib\nr=Path('/workspace/scratch/a349d03a0e0a/scratch/0005-native-control');src=r/'review_failure.py'\nt=time.perf_counter();rec={'command':['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python',str(src)],'started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'boundary':'This parent observes review child; no additional outer durable wait receipt.'}\nwith (r/'review.stdout.log').open('xb') as out,(r/'review.stderr.log').open('xb')as err:\n p=subprocess.Popen(rec['command'],stdout=out,stderr=err);_,status,u=os.wait4(p.pid,0);p.returncode=os.waitstatus_to_exitcode(status)\nrec.update(ended_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),exit_code=p.returncode,raw_wait_status=status,wall_seconds=time.perf_counter()-t,peak_rss_kib=u.ru_maxrss,CPU_user_seconds=u.ru_utime,CPU_system_seconds=u.ru_stime,stdout_sha256=hashlib.sha256((r/'review.stdout.log').read_bytes()).hexdigest(),stderr_sha256=hashlib.sha256((r/'review.stderr.log').read_bytes()).hexdigest())\nwith(r/'review-execution.json').open('x')as f:json.dump(rec,f,indent=2)\nprint(json.dumps(rec));print((r/'review.stderr.log').read_text());print((r/'review.stdout.log').read_text()[:2200]);raise SystemExit(p.returncode)\nPY\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a"
+    },
+    {
+      "id": "exec-a372677b-74f3-404d-add3-ebd50ba34ed8",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "command": "/bin/bash -lc \"python - <<'PY'\nfrom pathlib import Path\nimport subprocess,json,hashlib\nr=Path('/workspace/scratch/a349d03a0e0a/research-0005');sha='dec0546a33c41eabd731da903d95cd2651bf080e'\ndef g(*a):return subprocess.check_output(['git',*a],cwd=r,text=True).strip()\nassert g('rev-parse','FETCH_HEAD')==sha\nassert g('rev-parse',sha+'\"'^{tree}'\"')=='5403b41057169000b57e3a3649b0b4a35cb19ecc'==g('write-tree')\nsubprocess.run(['git','merge-base','--is-ancestor','HEAD',sha],cwd=r,check=True)\nsubprocess.run(['git','diff','--cached','--exit-code',sha,'--'],cwd=r,check=True)\nsubprocess.run(['git','diff','--exit-code','--'],cwd=r,check=True)\nbase=g('rev-parse','HEAD');subprocess.run(['git','update-ref','refs/heads/research/0005-native-results',sha,base],cwd=r,check=True)\nassert not g('status','--porcelain')\nmanifest=json.loads((r/'results/0005-native-capability/copy-manifest.json').read_bytes())\nfor x in manifest['files']:assert hashlib.sha256((r/x['copied']).read_bytes()).hexdigest()==x['sha256']\nprint(json.dumps({'remote_commit':sha,'tree':g('rev-parse','HEAD\"'^{tree}'\"'),'local_branch':g('branch','--show-current'),'clean':True,'copied_files_verified':len(manifest['files']),'published_files_changed':len(g('diff','--name-only',base,sha).splitlines()),'no_PR_created':True,'no_merge_performed':True,'checkpoint_and_native':'not_started'}))\nPY\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a"
+    }
+  ],
+  "limitations": [
+    "No model or dependency import child ran in this attempt.",
+    "The empty partial-file creation mechanism is unresolved. Its source-allowlist rejection is observed.",
+    "No cloud command was rerun by this review."
+  ]
+}

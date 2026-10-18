@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "verdict": "APPROVE_PROSPECTIVE_RECOVERY_INPUTS",
+  "reviewed_base": "a95436e31e1f5ba7fa06cbeb20dbf3fa5741d943",
+  "reviewed_sha256": {
+    "configs/0005-native-recovery.json": "97bb7e18bddf6c979d97ca825769fb37ab2175aa60608e84c3783f9ab65a257c",
+    "protocols/0005-native-recovery.md": "858559fcf861c8396c06a5d270cfe4dbbef82d307d035e516238c161a8628e74",
+    "scripts/prepare_tapnext_recovery.py": "63d5cccc68f380ceeaaea67c673cf43bffecb0f385d2879c398eaf9fa4f044e6",
+    "scripts/run_tapnext_recovered_capability.py": "37356e4b87140e16d5c6431a10de617cd303963e25b70f3c99398aa0d800d7ec",
+    "tests/test_tapnext_recovery.py": "849b647d624176a3f28269dd145aea0666cdf1bdd7ae3a697d94c78bc26b06e8",
+    "tests/test_tapnext_recovered_supervisor.py": "be7b3e7a5b92e3be5cce708755581294472e2f627753abb39e338b2dab7fa03d"
+  },
+  "prospective_freeze_inputs_sha256": {
+    "configs/0005-native-capability.json": "37faa3b23182c5fe2a0854bb377b5ca29bec2bffb0031e00f8fd3b090501fc1c",
+    "protocols/0005-native-capability.md": "88e5bbee4ebb8f41426b8f7a8c29f5163d5b2dfa1f35e820e448938995864ef6",
+    "scripts/tapnext_native_adapter.py": "6b59e6da6be00540f2333dc78eb596a655dd04f7afef5630342a14e1af7a6d2c",
+    "scripts/prepare_tapnext_assets.py": "dce532e88fd4bb7a5cbf76a9bc75000b8e11a67f569452bb54cf7363a78ba6cd",
+    "scripts/run_tapnext_capability.py": "3475e043dd81efc843ba948b0a3c298b01627503681ed6c9a1c6a94d38f2c5a5",
+    "results/0003-network-followup-20261017/acquisition-ledger.json": "2a1af4d52d236455cf1212b590dbb23b97561f7b4cbe309f629f9d4037498442",
+    "results/0002-development/decode/development-manifest.json": "b9a5cf663f44134d9c964fe2bb9e0f0973f6f85e5b53a1c3fc3a0b65235adc9f",
+    "protocols/0005-native-capability-freeze.json": "3e5aad0b0123affb3991997607c04310bd7d08a38172b8ffbc2c0f29b01f36ef",
+    "configs/0005-native-recovery.json": "97bb7e18bddf6c979d97ca825769fb37ab2175aa60608e84c3783f9ab65a257c",
+    "protocols/0005-native-recovery.md": "858559fcf861c8396c06a5d270cfe4dbbef82d307d035e516238c161a8628e74",
+    "scripts/prepare_tapnext_recovery.py": "63d5cccc68f380ceeaaea67c673cf43bffecb0f385d2879c398eaf9fa4f044e6",
+    "scripts/run_tapnext_recovered_capability.py": "37356e4b87140e16d5c6431a10de617cd303963e25b70f3c99398aa0d800d7ec",
+    "results/0005-native-capability/preparation-dependencies/preparation-dependencies.json": "1841249b8efe67f126557d5fd5da7ce200443452e907f166684710275a1b3445",
+    "results/0005-native-capability/review/postfailure-cache-inventory.json": "2627eea7fe1b4ebe1394c495d8e74342d8bd54325f75d799f6f8ce4c9b70a982",
+    "results/0005-native-capability/review/postfailure-overlay-manifest.json": "b2b85921996aea8ffe7d798718b361f0ed129ca9e9af817024160b09b66eeaaf",
+    "results/0005-native-capability/review/failure-review.json": "a383a505bd6985df6c1bbd05ecc6363cf4ad0b99e0eba91face712f57b1bc770"
+  },
+  "prospective_freeze_input_count": 16,
+  "original_7_inputs_and_canonical_receipt_unchanged": true,
+  "canonical_recovery_receipt_present_at_review": false,
+  "blocking_findings": [],
+  "static_checks": [
+    "New config binds archived failure/cache/overlay/review evidence and unchanged original config/preparer.",
+    "Full failed-cache inventory and original runtime/marker hashes checked before and after stages. Five exact clean source copies; original partials and overlay preserved.",
+    "Dependency phase has one frozen import-only probe, no pip/network/checkpoint/model. Stage failure cannot unlock checkpoint.",
+    "First checkpoint GET requires completed bound dependency child/log/manifests and ledger; closes stream before publication, detects lingering partial, preserves inherited reservations and payload.",
+    "Supervisor rechecks actual asset/source/overlay bytes, stage receipts/markers, import child/logs, inherited and new ledgers, old runtime/markers.",
+    "Original native adapter/config remains unchanged: video0/query0..7, eight forwards, CPU4/8GiB, 1800s outer/1790s inner, no support/reset/accuracy method.",
+    "Distinct exclusive supervisor/native markers prevent normal repeated launch; protected output paths reject before mkdir.",
+    "Protocol explicitly assigns immediate per-stage dual-freeze/source checks to external caller and permits only one active cloud command. Native supervisor verifies both freezes itself."
+  ],
+  "independent_synthetic_checks": {
+    "status": "passed",
+    "checks": [
+      {
+        "case": "real_producer_to_supervisor_with_tiny_assets_and_mocked_import_HTTP",
+        "status": "passed",
+        "dependency_import_stubs": 1,
+        "HTTP_stubs": 1,
+        "failed_cache_unchanged": true
+      },
+      {
+        "case": "actual_empty_partial_rejected_despite_completed_absent_record",
+        "status": "passed"
+      },
+      {
+        "case": "protected_output_locations_rejected_independent_recovery_output_allowed",
+        "status": "passed",
+        "negative_paths": 4,
+        "positive_paths": 1
+      },
+      {
+        "case": "changed_actual_checkpoint_rejected",
+        "status": "passed",
+        "error": "Recovered checkpoint bytes differ"
+      },
+      {
+        "case": "failed_cache_mutation_stops_before_new_directory_import_HTTP",
+        "status": "passed"
+      }
+    ],
+    "elapsed_seconds": 0.06087370799999999,
+    "python": "3.9.6",
+    "platform": "Darwin",
+    "reviewed_sha256": {
+      "configs/0005-native-recovery.json": "97bb7e18bddf6c979d97ca825769fb37ab2175aa60608e84c3783f9ab65a257c",
+      "protocols/0005-native-recovery.md": "858559fcf861c8396c06a5d270cfe4dbbef82d307d035e516238c161a8628e74",
+      "scripts/prepare_tapnext_recovery.py": "63d5cccc68f380ceeaaea67c673cf43bffecb0f385d2879c398eaf9fa4f044e6",
+      "scripts/run_tapnext_recovered_capability.py": "37356e4b87140e16d5c6431a10de617cd303963e25b70f3c99398aa0d800d7ec",
+      "tests/test_tapnext_recovery.py": "849b647d624176a3f28269dd145aea0666cdf1bdd7ae3a697d94c78bc26b06e8",
+      "tests/test_tapnext_recovered_supervisor.py": "be7b3e7a5b92e3be5cce708755581294472e2f627753abb39e338b2dab7fa03d"
+    },
+    "script_sha256": "e3dc89404a6e43f5de256715f43a5a63ba37e2a219b58817172149cbb07dc4dc",
+    "boundary": "Local synthetic files, stub HTTP, stub import child, runtime affinity/platform/limits mocked. Tests real producer plus real verifier; no network, real dependencies, checkpoints, data, model or science."
+  },
+  "author_test_boundary": {
+    "preparer_tests_reviewed": 24,
+    "supervisor_tests_reviewed": 23,
+    "rerun_by_this_reviewer": false,
+    "note": "Author counts and fixture source inspected; root owns final suite/CI."
+  },
+  "resolved_draft_issue": "Producer/supervisor checkpoint field mismatch corrected before stable integration review. Actual producer-generated toy receipts accepted by actual supervisor.",
+  "execution_conditions": [
+    "Publish reviewed 16-input commit then separate canonical receipt before real operations.",
+    "Immediately before each preparation phase, external caller must verify both freezes/current/index/HEAD/source and preparer hash, then launch only that phase. Poll its same handle until completion.",
+    "Any actual cache mismatch, failed import, incomplete acquisition or failed child stops later phases with originals preserved."
+  ],
+  "boundaries": [
+    "No cloud, real assets, model, dataset, network, pip or scientific call in this review.",
+    "Synthetic fixture mocked runtime identity/limits, HTTP and import child. It proves software receipt interoperability, not real import compatibility or native feasibility.",
+    "Empty-partial cloud root cause remains unresolved; close-before-link and explicit existence checks are prevention/detection rather than proof of original cause.",
+    "Standalone preparer does not attest Git history; the documented external per-phase gate is required.",
+    "No canonical publication or CI success is claimed by this prospective review."
+  ],
+  "local_fixture_note": "An initial added output-path subcheck passed unresolved temporary paths instead of the resolved roots used by production main; it was corrected to match main and all final checks passed. No candidate source change was needed."
+}
