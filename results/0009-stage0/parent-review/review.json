@@ -1,0 +1,274 @@
+{
+  "review_status": "PASS",
+  "scope": "Public byte identities, saved selected translation IDs and outcome reaggregation only; no RNG, DP, geometry rescoring or production evaluator run.",
+  "publication_commit": "c4c89585d4272f081319ae55e9241900611a3c52",
+  "execution_head": "cd144b90d337a172a892b56d87cd794524605753",
+  "checks": 15780,
+  "published_files": 56,
+  "copy_rows": 47,
+  "summary_derivatives": [
+    "control/pre-execution.summary.json"
+  ],
+  "archive_members": 515,
+  "archive_original_bytes": 28906991,
+  "prior_commit_blobs_unchanged": 2892,
+  "old_result_protocol_working_blobs_unchanged": 2672,
+  "frozen_inputs_unchanged": 15,
+  "canonical_freeze_sha256": "2485a844f95c47ee420617d0464be7ce8bf5e747b8539b70f2450df2306d6631",
+  "tool_observations_matched": [
+    "preflight",
+    "frozen-verify",
+    "targeted-tests",
+    "checker-self-test",
+    "scientific-collection",
+    "evaluation",
+    "independent-review",
+    "postcheck"
+  ],
+  "tool_observations_sha256": "4ac96c7e911392dfe20b1d3257855d8d0de1ed8b4185a84f82bf41df21b38dba",
+  "success_counts": {
+    "uniform": {
+      "raw": 64,
+      "msac": 64,
+      "cell": 64,
+      "excess": 64,
+      "ratio": 58,
+      "tail": 64
+    },
+    "clustered_outlier": {
+      "raw": 64,
+      "msac": 64,
+      "cell": 64,
+      "excess": 64,
+      "ratio": 63,
+      "tail": 64
+    },
+    "compact_true": {
+      "raw": 64,
+      "msac": 64,
+      "cell": 64,
+      "excess": 64,
+      "ratio": 51,
+      "tail": 59
+    },
+    "sparse_isolated": {
+      "raw": 63,
+      "msac": 63,
+      "cell": 12,
+      "excess": 63,
+      "ratio": 4,
+      "tail": 56
+    }
+  },
+  "paired": {
+    "uniform": {
+      "raw": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 0,
+        "both_success": 64,
+        "both_failure": 0
+      },
+      "msac": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 0,
+        "both_success": 64,
+        "both_failure": 0
+      },
+      "cell": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 0,
+        "both_success": 64,
+        "both_failure": 0
+      },
+      "excess": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 0,
+        "both_success": 64,
+        "both_failure": 0
+      },
+      "ratio": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 6,
+        "both_success": 58,
+        "both_failure": 0
+      }
+    },
+    "clustered_outlier": {
+      "raw": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 0,
+        "both_success": 64,
+        "both_failure": 0
+      },
+      "msac": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 0,
+        "both_success": 64,
+        "both_failure": 0
+      },
+      "cell": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 0,
+        "both_success": 64,
+        "both_failure": 0
+      },
+      "excess": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 0,
+        "both_success": 64,
+        "both_failure": 0
+      },
+      "ratio": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 1,
+        "both_success": 63,
+        "both_failure": 0
+      }
+    },
+    "compact_true": {
+      "raw": {
+        "baseline_success_tail_failure": 5,
+        "tail_success_baseline_failure": 0,
+        "both_success": 59,
+        "both_failure": 0
+      },
+      "msac": {
+        "baseline_success_tail_failure": 5,
+        "tail_success_baseline_failure": 0,
+        "both_success": 59,
+        "both_failure": 0
+      },
+      "cell": {
+        "baseline_success_tail_failure": 5,
+        "tail_success_baseline_failure": 0,
+        "both_success": 59,
+        "both_failure": 0
+      },
+      "excess": {
+        "baseline_success_tail_failure": 5,
+        "tail_success_baseline_failure": 0,
+        "both_success": 59,
+        "both_failure": 0
+      },
+      "ratio": {
+        "baseline_success_tail_failure": 4,
+        "tail_success_baseline_failure": 12,
+        "both_success": 47,
+        "both_failure": 1
+      }
+    },
+    "sparse_isolated": {
+      "raw": {
+        "baseline_success_tail_failure": 7,
+        "tail_success_baseline_failure": 0,
+        "both_success": 56,
+        "both_failure": 1
+      },
+      "msac": {
+        "baseline_success_tail_failure": 7,
+        "tail_success_baseline_failure": 0,
+        "both_success": 56,
+        "both_failure": 1
+      },
+      "cell": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 44,
+        "both_success": 12,
+        "both_failure": 8
+      },
+      "excess": {
+        "baseline_success_tail_failure": 7,
+        "tail_success_baseline_failure": 0,
+        "both_success": 56,
+        "both_failure": 1
+      },
+      "ratio": {
+        "baseline_success_tail_failure": 0,
+        "tail_success_baseline_failure": 52,
+        "both_success": 4,
+        "both_failure": 8
+      }
+    }
+  },
+  "gates": {
+    "coverage_complete": false,
+    "primary_strongest_control": "raw",
+    "primary_net_gain": 0,
+    "primary_gain_pass": false,
+    "insufficient_primary_headroom": true,
+    "paired_harms_15": {
+      "uniform": {
+        "raw": 0,
+        "msac": 0,
+        "cell": 0,
+        "excess": 0,
+        "ratio": 0
+      },
+      "compact_true": {
+        "raw": 5,
+        "msac": 5,
+        "cell": 5,
+        "excess": 5,
+        "ratio": 4
+      },
+      "sparse_isolated": {
+        "raw": 7,
+        "msac": 7,
+        "cell": 0,
+        "excess": 7,
+        "ratio": 0
+      }
+    },
+    "paired_harm_pass": false,
+    "decision": "NO_GO"
+  },
+  "case_status_counts": {
+    "completed": 244,
+    "tail_failed": 12
+  },
+  "tail_status_counts": {
+    "completed": 7985,
+    "unsupported": 12,
+    "not_attempted": 195
+  },
+  "unsupported_ids": [
+    "compact_true-32",
+    "compact_true-42",
+    "compact_true-48",
+    "compact_true-61",
+    "compact_true-62",
+    "sparse_isolated-38",
+    "sparse_isolated-42",
+    "sparse_isolated-43",
+    "sparse_isolated-44",
+    "sparse_isolated-48",
+    "sparse_isolated-50",
+    "sparse_isolated-60"
+  ],
+  "raw_success_tail_failure_ids": [
+    "compact_true-32",
+    "compact_true-42",
+    "compact_true-48",
+    "compact_true-61",
+    "compact_true-62",
+    "sparse_isolated-38",
+    "sparse_isolated-42",
+    "sparse_isolated-43",
+    "sparse_isolated-44",
+    "sparse_isolated-48",
+    "sparse_isolated-50",
+    "sparse_isolated-60"
+  ],
+  "completed_incorrect_ids": [
+    "sparse_isolated-23"
+  ],
+  "privacy_pattern_findings": [],
+  "limitations": [
+    "Private cloud-cache preservation is supported by the archived cloud postcheck, not independently rehashed locally.",
+    "Copy source digests are archived declarations; unavailable private originals were not reopened.",
+    "The 20KB observation file was supplied from parent tool retrieval; this review matches its eight records and does not claim a new cloud observation.",
+    "Publication commands were not freshly observed: failed shell push exit128 is archived and Connector publication/remote verification is separately reported by parent.",
+    "No exact-tail counting, RNG replay, input-coordinate score reconstruction or new science was performed."
+  ],
+  "reviewer_sha256": "4c25d9a91f4f2f75b74254f6b829ce76df128ed959b6315e5dde42e17411e4c2"
+}

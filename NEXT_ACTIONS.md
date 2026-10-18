@@ -2,23 +2,32 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
-## Active 0009 geometry order
+## Active research order after 0009
 
-1. **Reviewed:** exact-tail software, geometry helpers, executable screen and
-   preserved cloud qualification records. The failed HTTP accounting stays failed.
-   [Implementation admission](docs/0009-execution-admission.md) records actual
-   artificial checks and the Linux preflight still required before science.
-2. Freeze one bounded synthetic translation-ranking protocol and all executable
-   inputs before any performance run. Use a shared deduplicated match set, fixed
-   shuffled hypothesis pool, five cheap controls, unsupported-case penalties and
-   meaningful gain/no-harm/cost gates. This is an oracle-covered toy ranking test.
-3. Execute once on existing cloud CPU after published freeze/CI. Preserve every
-   case, operation refusal, resource failure and raw score; independently replay
-   saved arithmetic. No package or dataset acquisition is needed for this screen.
-4. Only a passing task-quality screen permits a separately frozen real-view
-   development study with corrected acquisition accounting. It does not permit
-   a manuscript. Confirm novelty, stronger complete pipelines and untouched
-   independent scenes before any method or paper claim.
+1. **0009 completed once: NO_GO.** Preserve all256 cases,12 unsupported-case
+   failures, zero primary gain and paired harms. Publish the complete saved
+   evidence and concise interpretation; verify remote commit and CI. No rerun,
+   larger solver cap or outcome-driven scoring variant is authorized by this result.
+2. Retire this exact-tail candidate. The known exact transformation in every
+   candidate pool and saturated strong controls left no primary headroom. Do not
+   make the artificial task harder retrospectively merely to obtain a positive
+   comparison. No manuscript follows.
+3. Before investing in another substantial implementation, identify a concrete
+   deficiency in a strong published method and a bounded, licensed real-data
+   development route. Separate a mathematical counterexample from an observed
+   task failure; disclose classical ingredients instead of declaring their
+   combination novel. Any development measurements must precede an untouched
+   confirmation partition and its separate freeze. The prior inspected tests
+   remain excluded from tuning. The overall substantive-improvement goal is active.
+4. **Prospective lead only:** [query self-inclusion in transductive adaptation](docs/literature/0010-self-inclusion-candidate.md).
+   Pin the actual strong baseline and verify a usable encoder/data/partition
+   route before any run. Query-specific moment deletion has known conceptual
+   precedents and can harm true singleton classes; require unchanged StatA,
+   stronger anchoring, matched leave-one-other-out, naive deletion and full refit
+   controls. The [baseline/data audit](docs/literature/0010-data-and-baseline-admission.md)
+   rejects ambiguous cached embeddings and identifies a possible official-CLIP
+   CPU route. Filename metadata has been qualified; no image/weight acquisition,
+   real-data experiment, code-performance result or novelty claim is recorded yet.
 
 ## October 18 owner-authorized research pivot — active order
 
