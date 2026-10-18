@@ -27,14 +27,20 @@ dependency preparation: actual exit 1 after 36.072 seconds. Five sources and thr
 wheels were verified and installation exited 0, but the source allowlist rejected
 an empty `.partial` entry before the import child. Assets, partials and marker are
 preserved. Checkpoint acquisition and native inference were not started; CPU
-feasibility remains unknown. New payload was 9,179,574 bytes; the conservative
+feasibility was unknown at that point. New payload was 9,179,574 bytes; the conservative
 cumulative ceiling is 4,966,784,411 bytes. No automatic retry is authorized.
-A [separate recovery procedure](protocols/0005-native-recovery.md) has now passed
-[independent artifact/integration review](results/0005-recovery-review/README.md)
-and 106 local software tests. It preserves the complete failed cache, reuses
-verified sources/overlay, and requires a new published 16-input freeze before
-any cloud recovery, first checkpoint acquisition or first native forward. It has
-not run. Five empty partials are recorded; their persistence cause is unresolved.
+A [separately reviewed recovery](results/0005-recovered-capability/README.md)
+completed once after the published 16-input freeze. Cache-only import passed;
+the first checkpoint GET verified 2,532,282,370 bytes. Native float32 CPU tracking
+completed 8 frames × 8 queries, exactly 8 forwards, actual outer/inner exits 0.
+External wall was 55.082 seconds and peak RSS 3,727,996 KiB; first forward 2.670
+seconds, subsequent mean 2.392 seconds. Saved outputs passed grid/finite/hash
+checks. This establishes only short-prefix feasibility, not accuracy, long-clip
+capability or a method improvement. No dependency reinstall/redownload occurred.
+All 407 failed-cache files and 1,651 prior result files remain intact. Two
+read-only checker path errors and their corrections are retained; no scientific
+stage was repeated. Conservative acquisition ceiling is 7,499,066,782 bytes.
+Five old empty partials persist; their cause is unresolved.
 The substantive improvement and
 paper gates in the [direction](docs/0004-research-direction.md) remain unchanged.
 The old 0002 inspected evaluation remains excluded.

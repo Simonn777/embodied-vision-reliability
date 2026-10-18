@@ -20,8 +20,15 @@ The recurring schedule is unchanged; no additional paid services are authorized.
    Seven-file verify-only passed; dependency preparation exited 1 on an empty
    source `.partial` entry. Installation exited 0; import child was not launched.
    Preserve all assets, partials and markers.
-2. **Reviewed; execution pending a published recovery freeze:** [separate recovery](protocols/0005-native-recovery.md) preserves the failed cache and seven old inputs, copies only five verified source files to a clean sibling, and reuses the existing overlay. Dual freeze/source checks must run immediately before each stage. Run only one cloud command at a time; stop on any mismatch or failed phase. No source/wheel redownload or reinstall.
-3. Only after the new import check succeeds, perform the first frozen checkpoint acquisition and then the unchanged first native capability operation. Record actual outer exits, raw outputs, costs, failure/partial status and cache preservation. Preserve every new marker; no automatic retry. The full acquisition ceiling remains 7,499,066,782 bytes; CPU feasibility is still unknown.
+2. **Recovery completed once:** [actual evidence](results/0005-recovered-capability/README.md).
+   Cache-only dependency import and first checkpoint acquisition passed; native
+   CPU completed the fixed 8-frame/8-query operation with 8 forwards. Preserve
+   all markers, outputs and review-only failures/corrections. No repeat,
+   longer-prefix inference, accuracy score or method claim follows.
+3. Independently review the results branch and saved raw outputs/provenance.
+   External native wall 55.082 seconds, peak RSS 3,727,996 KiB; all 64 grid rows
+   finite and complete. Conservative acquisition ceiling: 7,499,066,782 bytes.
+   No additional payload or experiment is authorized by feasibility alone.
 4. Determine an independent real-video development/evaluation route before testing
    the [conditional auxiliary-query hypothesis](docs/0005-support-query-candidate.md).
    Generic support points and negative prompts already exist. Require matched

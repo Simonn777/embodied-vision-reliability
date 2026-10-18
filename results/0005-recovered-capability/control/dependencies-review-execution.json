@@ -1,0 +1,32 @@
+{
+  "command": [
+    "timeout",
+    "--kill-after=5s",
+    "1800",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/a349d03a0e0a/scratch/0005-recovery-control/audit_preparation.py",
+    "dependencies"
+  ],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "source_sha256": "58302fac3a412b8acba6eb271f640f3c9d5319b02dd4d02f57e47bd7c5885b03",
+  "observer_source_sha256": "18c8ef54d00610d9bf0db83cc00f726355d7904bf5a21fbf1709e1d637aa7af5",
+  "started_utc": "2026-10-18T18:28:22.847202+00:00",
+  "boundary": "Parent observes review child once; parent itself has no further durable outer wait receipt.",
+  "exit_code": 0,
+  "raw_wait_status": 0,
+  "wall_seconds": 0.1669538130008732,
+  "ended_utc": "2026-10-18T18:28:23.014178+00:00",
+  "CPU_user_seconds": 0.153863,
+  "CPU_system_seconds": 0.012660999999999999,
+  "peak_rss_kib": 11168,
+  "stdout_sha256": "5776b44701c9f0923f75f1a16feb248cb24fc4f8c3e4031d45b09f2d9e30b67e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

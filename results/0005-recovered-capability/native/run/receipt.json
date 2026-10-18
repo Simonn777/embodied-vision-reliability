@@ -1,0 +1,2697 @@
+{
+  "status": "completed_native_capability",
+  "started_utc": "2026-10-18T18:32:03.575593+00:00",
+  "scope": "native CPU capability only",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "command": [
+    "/workspace/scratch/a349d03a0e0a/research-0005-recovery/scripts/run_tapnext_recovered_capability.py",
+    "--child",
+    "--failed-cache",
+    "/workspace/scratch/a349d03a0e0a/tapnextpp-cache",
+    "--recovery-root",
+    "/workspace/scratch/a349d03a0e0a/tapnextpp-recovery",
+    "--bootstapir-cache",
+    "/workspace/scratch/a349d03a0e0a/bootstapir-cache",
+    "--output",
+    "/workspace/scratch/a349d03a0e0a/scratch/0005-recovered-native-capability",
+    "--freeze-sha256",
+    "916cdabbdc8d5be7dcb0060ca54216457d982a3bdc564c6509c79195e51966ef"
+  ],
+  "source_sha256": {
+    "tapnet.tapnext.tapnext_torch": "48072289b22439267b3a51eb4cde5e2f81f38c840b6c95b659d60032a07c691a",
+    "tapnet.tapnext.tapnext_lru_modules": "2a475419c2f7c67db9acdf412108fb3b025d168f60e9e087fe35d65157adf64f",
+    "tapnet.tapnext.pscan": "7df34bf5e8318e81bb330ded14fc5e675e7485ea39fa9f0d77fa470f85796a2d",
+    "tapnet.tapnextpp.votsp2026.model": "e1219e2341c33e0f9124fe02d09a521ac7c91bc27505fcbebbf05741f825e46b",
+    "tapnet.tapnextpp.votsp2026.utils": "0336c526dc2b91244c3e5b803f84b65c6323ede138340a4107441a6b9c9fdbf8"
+  },
+  "checkpoint_sha256": "cb96a43444ccb4fbdb25d800b88c7ba196179a526e78f01b021a16b1c1eff6da",
+  "development_npz_sha256": "162350eb76f8399df95e7ded23eefd82793ea03db05dd2fe5101ef1027dfddf0",
+  "source_revision": "730cda1c730877cfedbe01bf87fb1cadb78a565d",
+  "checkpoint_revision": "5d3fb48e76c5422841e38501514121e251beabb7",
+  "adapter_sha256": "6b59e6da6be00540f2333dc78eb596a655dd04f7afef5630342a14e1af7a6d2c",
+  "forwards_attempted": 8,
+  "frames_completed": 8,
+  "frames": [
+    {
+      "frame": 0,
+      "track_frame_seconds": 2.67039676999957,
+      "whole_frame_with_validation_save_seconds": 2.7792274719995476,
+      "state": {
+        "step": 1,
+        "query_points": {
+          "shape": [
+            1,
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "device": "cpu",
+          "finite": true,
+          "bytes": 96,
+          "sha256": "6d398a332599d501b31c7df707199845145ae54986a14bfe785a83865d043f00"
+        },
+        "hidden_state": [
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "897554d998d73b35392334ed40c684e1bfb196f53697c9743cd3492efd8773c9"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "90dbf6a2f2c0222fe40754e7563d050ad240dc12567c046153188d859b59cfad"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "c46da87bc1ddff137da740af08fa64e8b0401529800bc579492d07a88c73e4a8"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "de91e36d733f2f45e98460acf11700ba1ba7ad1deb82982fbc8fd199cff4134f"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "7d96fa8a759a52454e0209504e2092dbf08552f368a1a12d676230e7adcea934"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "9dc39781fb0a7adfcaf8d9d5e7de8ec005de08a7d4f3f923270e75ec786ad412"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "dff3e4bd1c2281a3f877539217865087ad62dbdf76311eed5d0368dc0d26ff7d"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "a086b482cf23b055c3725ef50247bef1d885e74dc66cd75f5728e8bc08e787bb"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "a6ed06b451eb1fbe63ea0e5d5ca66e7ada3cfbe12e9156abd46522df0fab3552"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "b98449bc25109beda16c3745d03ce8dcd923cf23a5e2f56ed3beac235580b2a2"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "9b2ca0c663e793a31c93de4f8004dcf360f6f8fdbf355e166bb979c42fd7ad14"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "9f9e8dfe8c94a9c43cc1fc73bfe312d8f05fa1719f2af2afa1bd7dfd780e8c6b"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "a353cca02e932684397b24149982894d998e7453f0baa57c3717244e9a3e1608"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "64cf2d8cbddfb3fb38f63d04d1339c3d5e97cd7bb31edcb6647ca1f004403fcc"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "de6fddd24259a39f9e817fe8d7c90334a41c1936bf45fb70755e02cd48d136c8"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "43466f0a554f2baea0611661195ad3296c0b26b53b0e7bccb2dd1e193157b267"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "dd680a49b3b7dda9a72f4874cb54f06314c8aa688a93d1448a7ae49a7cdfa825"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "6a56a02ce13878ce80f3b8654ae00bdd19371c963ab8c0d54daaa104e84c1914"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "36cdf3a0f8f276e85008a1e10cfc04d69960c2f3adfc74c1967964e080a0fa49"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "2c45da6afa12639676ec1dab267b337ce3a135970497e9c602b31035eb4cc916"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "5a632eabfdd0db94a391025399020210684943f117bcbfe5841be90ec8a13ea5"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "15d5b1685661c84cf0a70185cf98c3c98b85cb1fe81fa4535dada1ca341e6c98"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "a8014db4a3c7beb46821597a6b087b269340550749ff55fd085aa85632959192"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "4525c61bfacee2caa056efd3705aad589bc237f1e1610e7bc1dfbe6ae39531c7"
+            }
+          }
+        ]
+      },
+      "output_file": "frame-000.npz",
+      "output_sha256": "acc1a3d692f79a5db7b309afbcb78e562993fb53b8b98b5d070d27b6da47c7aa"
+    },
+    {
+      "frame": 1,
+      "track_frame_seconds": 1.949227780000001,
+      "whole_frame_with_validation_save_seconds": 2.0636317070002406,
+      "state": {
+        "step": 2,
+        "query_points": {
+          "shape": [
+            1,
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "device": "cpu",
+          "finite": true,
+          "bytes": 96,
+          "sha256": "6d398a332599d501b31c7df707199845145ae54986a14bfe785a83865d043f00"
+        },
+        "hidden_state": [
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "208a3806262718039a88b87f665569fbefd8246144b2220c76e3bd19539c0dde"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "fd7eec683d4e2fe87a76966fd9056816e944ae41f4871f2f20db9241fb230884"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "7667d1dc530908aded5c38efe391fe3830f416cba53dd8d4d57348508ad23969"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "1e58e04b69ca2b853f96a84158ba9a5a33140cbaeb235cdf93dcef9f34ab00a8"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "00196daae55589dbb5eb816206671d12887bc456a556cdf97e3db2837a4109f5"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "c24c4275ceb2500e3aeedbb1c6cdb6a3cb319ad5a2962556b6f16a16194ceb33"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "576d765f1a087e48d551d19a262d9193638bf122e76dd21d8a6f082adf45a667"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "c185313b3b1fa561ae319228226ab304dea907662f4f2eaa06061eb8bcec8e78"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "d44d2ff01467149d40d354b5cc270e67c7bb0efab1fdae6642946b3ba9707d4a"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "ba4e875fede232b19268027eb4b18e13f9bafd9a8a69e26e49142028d4274224"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "e8f63657f93f814d57ba6e9ecb64d117eadc13584ba80aaa1ebdbcc3d5097f21"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "72a63aafb2ae4b684c76e9cd003aafa819cd6801183cbac789324561896e3c28"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "89123d640a82b491d9742c42d4c8c7d857b638bb28af563784ba2dccc0a349b8"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "9ada8b55b9433987c18b58a87574931dbb7a50b083c5f9c1f3117835002b2470"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "a2e8dcdf40551e3537779fc25b6d489a205233d0d03c1b0654f3c4fc0cdd7894"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "a9f02440d9ffe03f35730c0f0695f837b0cb6224d4fbd8c6f67c67a50490e617"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "d1782adacd3c22c4e58ffa4ef608b85f07617b92a099c9fad17d7c166720883e"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "e51254792aec16d6b572e1200e938fd4f0b608986361e66942bc6ea4b80143c3"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "75597ffacac4a671742feaf12829109deb43f64e31c1b4627d2823f547b019e9"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "879345bbef542b56a5501f4ec97e57069fe67d4095a30c0bcb8d7e4a252ff538"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "988d14c7b0c412749c553d92f1035fd6b921c75cea7f81e7ab1fc99c2044b51c"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "035ebd382d265f6d47ae40fea0a48ac93fdad3f278029cdb377305f0e7f38d83"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "32231d94a2486d39386d39133ed6311eb17bcc21547606c39618c349f92ab824"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "476e8ff2b6db6bf17a6dc1d2125215fda361bc51d44d5a6adb245f0e783535d3"
+            }
+          }
+        ]
+      },
+      "output_file": "frame-001.npz",
+      "output_sha256": "9552acb45f04274ac59fb4351c07705d2f7071e1866e705e9e556724ce5bd809"
+    },
+    {
+      "frame": 2,
+      "track_frame_seconds": 2.9652682169999025,
+      "whole_frame_with_validation_save_seconds": 3.091087818000233,
+      "state": {
+        "step": 3,
+        "query_points": {
+          "shape": [
+            1,
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "device": "cpu",
+          "finite": true,
+          "bytes": 96,
+          "sha256": "6d398a332599d501b31c7df707199845145ae54986a14bfe785a83865d043f00"
+        },
+        "hidden_state": [
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "8ba9ac97e9b4e04cad7c6d8c1f9090c78b0c1d43a9a80ddf950a8575cd766bfa"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "fc16d42017063f6117516e0da2b6157304dbd51ffac5f9877103c799234950c4"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "755b90d81386299c4339d3d2537403250c84fd73ff8b0c2e48dd1880025ed9fd"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "f4970d502087e39d35d14782b05378a66b35fd2b8d238cfa2cda87241edc0b9b"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "ed5839ed0ec11d68ca6ce65a6c77ae44515ba62031a553b546aa0826830d4e7a"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "d373f6b8d40df992f2e0c992b200874e066d8dae9c4182b655d7da89da4f84c6"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "de7f49528e503b76d9d25b7e84d64c7809a4fba1ecddf591d998fb9226b01bc8"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "8d3fc2d98b4b63e6f838e69bc8fb9f65095926853a646bc875e3aa3489817468"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "7e33ec224fbeb74c393d7b22b287dd739762145b05a195568f8f513915618da6"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "a6bc6e1c4bd36468ca0b288df91f8ea1250c4deb37a2bf1ff7fbd742719fc573"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "46a7441a30daeddece27e660aa529002130de9aee56df755ab4df0ec80778a58"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "24bb33aa37a3e2a3177d4875a625bcadcd54f76897141fd58b600bc587bc5cfd"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "6103b191db3e9e9ee4ade04049c6d9fabc6fa2dafdfc5cebb03792a5d49f9897"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "9e90e9e499ada18614bd2c11b0642dec4a18037dd0807f4427017a8014741b2b"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "f4c46195ce03dbc2ca5c305a7009b938b77e48cd0ff70541a9b27bb913dce18a"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "0d9a9ab2d81671ba67339582a7a2632175bc172ad916cf6d432d71b620dfa304"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "6737c2f8f09255f347ec6912d1365f12b33d9c4605e412439484cd4ccf725a97"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "393e72fa9e708b7b0ef714f7d256a9304cd28bb35a9c2a683c21585f07d7fb65"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "c7dfe92e3ff0464c5166da5ca58ccc14cc00172a9a3b5a377a692dfd34917180"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "95dbf9601b209e8b8690138e12be8507972c86e771e93240b27fc4987490eaa9"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "37da420d6b556cdbf832b39235272628405a021533ea2aae6a66284ad6c0c2df"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "503213b41abcf4ad1fd74b3640b87d203169d415fc58e29b880a4acaa8655b0d"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "9e3f2685d73279625a536c98b83d76f6c6da594b17d60e56be2e234ed7c87f33"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "418a8fc848cf1a470e209a875a428c65ce16549e172383bfb1260818239d0114"
+            }
+          }
+        ]
+      },
+      "output_file": "frame-002.npz",
+      "output_sha256": "464d329489aa049726acb9fcf7b4f700a0f95c6d4a831fd5292a547592aeff95"
+    },
+    {
+      "frame": 3,
+      "track_frame_seconds": 2.3726257359994634,
+      "whole_frame_with_validation_save_seconds": 2.492886179999914,
+      "state": {
+        "step": 4,
+        "query_points": {
+          "shape": [
+            1,
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "device": "cpu",
+          "finite": true,
+          "bytes": 96,
+          "sha256": "6d398a332599d501b31c7df707199845145ae54986a14bfe785a83865d043f00"
+        },
+        "hidden_state": [
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "b381c07e5cc4bc8b51130b0a1e84a50ba87edd3c33aae3e53cf80174d1c8f18b"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "24a69e7fdedfd61b670632d381d4b23adf363b0805218ec0d6a9bf65d6bb5118"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "ad4fe295a0a7d9f2a464a7b13cb341404bf57f25061d8f3f00fdd1e200721cf8"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "43eb25d68ae4e63c20d8498129eb5478403d111ee137e3128dbc65c6e2312600"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "76c303525f3b357c23e6237cc394b6ffb77d1586565bcd0f51ecaf4fb195379d"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "ef3eea1b84c9c62a6a641fe7c7da8ea98daddb9794d7bc843f883fda8f789a4c"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "c3ac72ba9064692519d883fbca4ba272509593f8b042ca077a8a94dfbc91bb9c"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "b21e68720fc9f07f365726c2fc18b42859394d234ca5594928d9f9f4da752568"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "20f96c2b7a8bd1de61d2ab5b9f09f8924a71b58925d482ff05852f6e2b36bb58"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "79d1352971e07a26f718d306c08020ce52ca61d437e2f2113ac29bbd6604091b"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "511958b8502931b67e54f78188af8cb40428a7ffa359ae85c14a039e043ab6dd"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "a0d618e17de22d0c284e55aba991f1e3558ffaeda2b556210fb188434fc0b663"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "5aca9e9860b21604f8c10b660f8c442367cd407fa77f483a3402da5620d6bde0"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "12c5ae6b13a49a989e855e94c3216078d17ba69ac19f946b4ce02c728bdcb89b"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "e591d129fbfaa334eb812e3c3fcd1e2f73b308ead7c58644f626dc1d4e3c6e88"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "e22bd56755fd12fc121a649e44a1debefd1e2c95cf604fc5c9a7a69315ea5b00"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "a69e926ae2d0503034dafd1d27abe27391bdcfc594891f302af3cd7a93c78119"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "63cb11e3b05dd6eaf46f19b676ab90dcafd1e0042ceca3c814af227fbc1d3c08"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "5b187746923b965587fa0d55712f87e782641f828540bb8497148ddaf3d70d39"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "34d059e83194bb8c46a804f5d9c0da3d886a0c490480bd4b769baea7278a46f6"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "4daf02dde3663b0e41140465a8c773d39d5f98881f070f15347da43d39a1aaf4"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "602392f825ed32c1947046ca949ce693e31a68eb346ec6c2afb99bc6fbb150a3"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "32709fe977b9c11912803792f0da8eabe6583c309069e2cc81ca0fb332ffa4da"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "488b1f306bdba7f5b888fc93ad10bb2f9daf9cc0cd8e7504104f43dd3bde5f66"
+            }
+          }
+        ]
+      },
+      "output_file": "frame-003.npz",
+      "output_sha256": "52e6026d686a1a9b096d2672e204fc3ef98bfcdc73132f02258319ecd2d58fa3"
+    },
+    {
+      "frame": 4,
+      "track_frame_seconds": 2.2853496099996846,
+      "whole_frame_with_validation_save_seconds": 2.411166140000205,
+      "state": {
+        "step": 5,
+        "query_points": {
+          "shape": [
+            1,
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "device": "cpu",
+          "finite": true,
+          "bytes": 96,
+          "sha256": "6d398a332599d501b31c7df707199845145ae54986a14bfe785a83865d043f00"
+        },
+        "hidden_state": [
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "03848b659cf793431f79c75c6ef931e262c6cf9c6cd9c7634a5b04800dbefac1"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "e37b3a32207ee9db99b7bcba24121ac5cdd591c3f7ae3655d16203e33fc8d151"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "67e20799cf6c766e0919358db04ded792d1187766880b0829fd7fec0d749b9ff"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "d10291e6e94948d4b76e44ff6fa6fdf899c2a4f4ef0c6386e7f6866fb39eff72"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "f37de6620fbad3b6b26dd254b1e06130fc238b91ecdcd7e3cf4d64fb633f9ee6"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "03a77c56cdf43f7c98e4a0ac4e60e531be9c0e49c6fe9b2a3a096a14ef261c67"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "5a8a0eccf0d4222deb514eb378a9cafe9648070e35fe169cad16481a27ccbcde"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "7784824a8643dd4ce93ed1b2b2f424313ada1056287ee5cb2e1b37efbfba2cfd"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "10d7d332d0c9711271480255187f237f77131941f4d94946119f1e51a932e9be"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "7385d959156f42f49ddcfe75cd888f82554deab5a36246bb9613368101a5f9d6"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "bd3d416f2d8f2ed84bf50036a6796f872d94e4d207accb6f18d13d153f4bd55e"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "ab9bc5b285c40af424f39756f42a6762037454f836958ba06d3a388295a1c428"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "a581d5628d3aeb871920c594ca0be70cb6a4aa2f4e98c390a0fc118f757abb6f"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "8cfc7cef4726ccd119af65ea75ceca14b41ade64880c8f27cb2e22e840570aa2"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "e3f503180c4c96470a04d8bbc4b2df622bc03363054e611d8a3c8f419fd9d0b4"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "7c6584fe23151a23f421bc715babf96b232f13d726f9df012f71a5e54f6dbaa3"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "2edaeb7f147e63be0c9484d0dee3d0c4588b1b26b458ecf325a0fcf53620506a"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "ef0d0714d674b9e79e84dfa5c8c56adef932b7705e93ef1e6bfb027becc1cf9d"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "395838e8b48dc85b2a4519fb8b4aae39e4dd56aa10107e08ffb7f0857e79a391"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "69b8d4e3d496b9ec3345ab0043a34f253d2763608972725d735be1b6e8055573"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "3a2b878ca0b697a3d957921637a7fe446abb27b3fdaf17ef3072ceb07a2339ad"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "b9d074e5179daf47522b8bdf88c3b8c03c9afc88a22d7abf794b1ee912f16bd6"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "fe09f3571aa90c0189eb9150f096ff6a55ec6f822b979a745f2d36337d680e08"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "94471c3583583d300e280aef91ddf5e3ffb7f2a0cc8431fa49e9e2a646842b17"
+            }
+          }
+        ]
+      },
+      "output_file": "frame-004.npz",
+      "output_sha256": "0bff52f31259ba193cea445c03ce625c68d5eb6d2eb3285e9b0fcf01275c96bc"
+    },
+    {
+      "frame": 5,
+      "track_frame_seconds": 2.5538614050001343,
+      "whole_frame_with_validation_save_seconds": 2.661518074999549,
+      "state": {
+        "step": 6,
+        "query_points": {
+          "shape": [
+            1,
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "device": "cpu",
+          "finite": true,
+          "bytes": 96,
+          "sha256": "6d398a332599d501b31c7df707199845145ae54986a14bfe785a83865d043f00"
+        },
+        "hidden_state": [
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "1d3513123fcc93032bfebe942d2a35d1b54a2f7ce3ccb5bcae415144eb2e5862"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "79e58f21f10f88016bce0903313d9f48927e00f1ed3133fb6b5c557135e56f1c"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "9d911f29519de5f63deff43d8ceac2495a39a176d2ac6bedf62aa9f8b4b7c49f"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "12cb26a1f2e758b2a3ee1eb61ffabe867b855e58c5063c61ecb9a3952df44475"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "41bd12c9e0c3fceb09eaa3de3ae0078e3b34ba043cfd89a8ca1e621551943b0e"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "720368aa14528f19a5789eff398308ed532ac960dda281bdb83ff880de7eb010"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "8d3aaf4869e2b3418c031fc6f443bc8136ed0a7fa7d6eb5b0e3ff9f72ec50825"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "837e84904586365e5f6cadc38c900b829c4857450a81fc79628749a90de64e34"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "c65a83303258d806c03ec3ea6a9c2d5bb5fa406a5155d246296d27106160d82c"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "66f802d5b6fc80addf9cf1ddf3862f6415a435110075f10ab1bab124cbbf4b34"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "b4ef5293154b0db77aa668d99a2a238eea9f85ab780cbd72730a47e0f5b86ace"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "334bb171af1cfe37be831c1f1c476fdea6ed5271540a403d2672d29bcf242d0b"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "062d8af812a53c1f24ee8ebc01ffff752c415aeb4fb3e34ac577bf02d76d9f6f"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "4149f14507b82d69463d3f1a74028e939453e2f56c1d3297dd413eb723415bcd"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "73fd9fa20e13e7fafaa24cb734c32e7f47a882c113d84811f5366828d5ffd4b7"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "f5ab0bbdbc088e5d7e2819a810748d81e3df238a3343f283b778801b5954ebf1"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "e90db7ec9b576ae532f2ee4cd08d5e0d3d7eb2c5cd7ea04d15e958eb033b360e"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "37688883d6968e7df31013d3075360ca17c77d861b358146705379abbcc960ba"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "11156752419c7eb6ea15a33446a983ecb978f460c3cf5705b662d9f7af6b4cef"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "e37a72072f9010c0319442b306046ad792bcff71da4838adcfacb50b7e728ab5"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "fb2551bd2a3bcd87c4bab9e0dc5701ee38084bad8b6b465bb84705dce8a6bc32"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "23acde2df5a8d54b1d50b70b9f27a411c8d36b6d688276f2d4f1980f8972a8b0"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "97cd07e637722047446d0ae7e3d14f030edeeef338fc5460310842fad5f94045"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "d988a55058e94d4dd614efc71ffe2771cba797fcd17da098e68c37670889c34f"
+            }
+          }
+        ]
+      },
+      "output_file": "frame-005.npz",
+      "output_sha256": "34b2a68d25ae00dd3f3a8de9be6214d3ce35263194f1f5e276f341c7a16c5270"
+    },
+    {
+      "frame": 6,
+      "track_frame_seconds": 2.0300658989999647,
+      "whole_frame_with_validation_save_seconds": 2.149667404999491,
+      "state": {
+        "step": 7,
+        "query_points": {
+          "shape": [
+            1,
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "device": "cpu",
+          "finite": true,
+          "bytes": 96,
+          "sha256": "6d398a332599d501b31c7df707199845145ae54986a14bfe785a83865d043f00"
+        },
+        "hidden_state": [
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "8258970dfdcf5e04c647dec3aa3aac91340d14e433dba55d98c14c13be31f7c3"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "eaf0607a75f3746026ba88b1d15a7f667f72a3e15f9e390f2b5d627f2629af8f"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "48f62f7dcf4dc0be6cde5bd09642bd00ae315ce6999292dad3eb4bf1e501eff4"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "049c04f524b757d1177e3007fa855531d2959722e3e9bef9c8722b168a522024"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "1c26da50e0fbe6aea9ac581b55490e39ff8880c943546cb0a60758fa9f4bcd38"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "df7fd8f39bc8cd76274e86fe4f5a758fe18a02e8f58b8f492d7a20d307b00b37"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "d68c0bb2408d50ef069679883b61b729370cb4ce6bced69b3c27ccbc23280363"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "8884d47a771533a42d5e0612890cfe050bfe290616a252f5daa0266e5a80b836"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "9183cda00c033af15500b6637e4a6e946607c5325ed7d069bc888d8c10f76f19"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "f22e4516ba8c9d64dd1e9dda1f3cb2af7a49c7ff9249f710b506f47ffed79b1e"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "1077481d580cac2f3e25b60eaa90340339d56a89fcf40139d5befd7a43f92b52"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "dc39c3ad114b07a12f327b137f5dfc6cf40d1861e50a6d4b0669a17aa352c241"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "b262344f0b1d00d63d8594bbc74a14b718506f5468b5151958c6628db4b00a9d"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "edc6a5827d0d5ab7467ccd1bdbb0d8b26de090d3dfc5a1a20f2a7dfd7f6d5e12"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "5bb2be241a196ad59648411250c1f2015e303a9f1c3662e4d5c38bb8b3730081"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "d91aba4e6c09dc0c5a3510eea9871c7e252bbc3eb0c5ed49a54b676b75f65106"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "8695eb12f99a89fcab7572fb3956c69e72ee4e27bab90d8b3447130b8552c1af"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "02e5344453efdc7be71ff4eed08e64ace3580ddbf9152c2780083697a4e0ff1a"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "1b1d53dd605d8c34e493add8fdf197de6aa12fcefbdc1ddf499b0d608b20e707"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "e40b2ad94f87c3847f29d884465d7e65ac2bd84b9fd50cf539c085b0474cd1e6"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "534711ca1c1200ddbd301e1516afdffaf9fb2563619bce38f98f4194c40cbc67"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "391456ced71a52ce434df725703ecda59f4b4eb7d6a0ba3dbbb0ba1fc7efb66c"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "0beb994fff419ec32c36f647430aeaeeb4b53d228f88489fe99ce892a16c986b"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "b302e2ac1f995f55b8e35c3b63122286e4d67d47d220f7e54c4b90a5b6935a74"
+            }
+          }
+        ]
+      },
+      "output_file": "frame-006.npz",
+      "output_sha256": "2c41bd489f1f6413e88c517c123b89cf511f718dd308f81583fd2f227cca7c9f"
+    },
+    {
+      "frame": 7,
+      "track_frame_seconds": 2.589029032998951,
+      "whole_frame_with_validation_save_seconds": 2.693620623998868,
+      "state": {
+        "step": 8,
+        "query_points": {
+          "shape": [
+            1,
+            8,
+            3
+          ],
+          "dtype": "float32",
+          "device": "cpu",
+          "finite": true,
+          "bytes": 96,
+          "sha256": "6d398a332599d501b31c7df707199845145ae54986a14bfe785a83865d043f00"
+        },
+        "hidden_state": [
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "6f4d36afa3969eaf956bb9cc9dc8fa4d470b9b4e99c56393767d15dd1d6731cc"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "e87f052683e8d0fe94a4524065bae957876f3861de26bfc30d5eb630b267896f"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "fc94f9e7a23744eced19bd987c78e7f0890827c19d3d50239393a9792d2d2435"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "4109609aff00c974bbaa7a761d71ca6e4e973bd23294e43fb1560ecc301d7976"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "13a19fc798256a5dde40b60d663ccc6a0e5076369f73be2b8a2d78697e9fa727"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "8473d8ef7408d19f0569d6d949dd5276b007e5baa4527ffbb231812245c789c0"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "5548aafa0bb386e0a3f97068617614feb0f2c85a89b0c9a53263e7743395f004"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "2b4dbe2daede8ce13c127b5c34fd669e9d3882c2faf98c22da15cdbee44e2eb6"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "75d896246f82a318a3020ea469f62268c4b59da65fc0e375fd98a3de7beced06"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "ade29b7d3b65ae758d185f72544b8b4920211e85748c87376c30f683d67d1d2f"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "d208cbe296c9c37aa9ea5ac4bee54af47eee299abb248ad76b5273996da5eb54"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "de9fa7814c239709d46516a2c0e6431512c0a55e8af9f7799de96531399b7bf1"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "ffe532db7592a4067b1539cd4f9f4ceed8bbca94efbd2e80dbec3ca4b13ac813"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "ec3a56cb4988d258ba5c12ed9d7468169eb10672380d6e8c22299b56dae38161"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "0c41084dad85837a26f96eaca23c83f92c1565c461f3e4ac2c5c6c25810ea078"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "1f4e53a3a1a30c8be1ed9a7ef7de4c40c1456541c93b5621f438a37f46837e5a"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "dbe6d1602a5b8c14fc1d900b0d03e15aef6d4db29d8b13c0f00eaa741b36821b"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "645e67aaa934d62864f33dbc0d20219ccce9583f8a100e6678534089aefe180d"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "0cf771dfb3fa3663b4728ba842214b19718d4af432be92812aaeea77622801d7"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "8ae9c64194d33738430d77e94cb686781873b03966c5273396cbd09c6930200e"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "4b711cc17a2bcc207b1276e64749ccffdbc21b3e45fbd13018bedad794f1eebd"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "a1ca32725ed9b9d66f0112e5dd707252a4879bddfd78674b21499f16803b56bc"
+            }
+          },
+          {
+            "rg_lru_state": {
+              "shape": [
+                1032,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 3170304,
+              "sha256": "efa78c03c9bd726aac173e2501320876d919179d46bdde140a5658d397317aa0"
+            },
+            "conv1d_state": {
+              "shape": [
+                1032,
+                3,
+                768
+              ],
+              "dtype": "float32",
+              "device": "cpu",
+              "finite": true,
+              "bytes": 9510912,
+              "sha256": "b3f7a67f28e9c0af8d6851ac7d9b82ac3146d0c59f59f40180e8a05dd41aa782"
+            }
+          }
+        ]
+      },
+      "output_file": "frame-007.npz",
+      "output_sha256": "829b479e64e949162986391bb0504057a11e0ca86f04bf2f4afb21aef07232a7"
+    }
+  ],
+  "phases_seconds": {
+    "input_verification_and_imports": 6.204599059999964,
+    "model_construct_and_checkpoint_load": 23.85571508099929,
+    "inference_loop_with_validation_and_artifacts": 20.356498508001096
+  },
+  "acquisition": "none; existing hash-verified local assets only",
+  "provenance": {
+    "freeze_sha256": "916cdabbdc8d5be7dcb0060ca54216457d982a3bdc564c6509c79195e51966ef",
+    "original_freeze_sha256": "3e5aad0b0123affb3991997607c04310bd7d08a38172b8ffbc2c0f29b01f36ef",
+    "source_commit": "a501017ea7e5fe01652f650ae212526a38a9fdf9",
+    "preparation_receipt_sha256": {
+      "dependencies": "22ebde71b6d3f68b8a57c2d0358dd0d6822ebe63073b07bff3807258a6ab7b09",
+      "checkpoint": "5414ec64b8b5f72633286b9195e7ebf4efc578d4caa66c889471714615ab6787"
+    }
+  },
+  "limits": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "AS_bytes": 8589934592,
+    "outer_timeout_required_seconds": 1800,
+    "outer_kill_after_required_seconds": 5
+  },
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "cgroup_memory_max": "8589934592",
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.0.2",
+    "torchvision": "0.25.0+cpu",
+    "einops": "0.8.2",
+    "Pillow": "13.0.0"
+  },
+  "imports": {
+    "numpy": {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/numpy/__init__.py",
+      "sha256": "c09e25b58f6b2f8e2cb3c158168f902d447f8171e5ea6513c0aca41ecbda7c2b"
+    },
+    "torch": {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/torch/__init__.py",
+      "sha256": "51c90fe34a7cf869517d1bab4cd114498790e169ec668f1a154c35ec64117a5e"
+    },
+    "torchvision": {
+      "path": "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay/torchvision/__init__.py",
+      "sha256": "ee2c9f4110cf1203db48c42601607329ac1f19709fa91c152f8d95eb53437a73"
+    },
+    "einops": {
+      "path": "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay/einops/__init__.py",
+      "sha256": "3303dc6161872ac244d14c6585fed832ffd27fabeef56f58f7c872d6644ceb39"
+    },
+    "PIL": {
+      "path": "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay/PIL/__init__.py",
+      "sha256": "7361b6ad3878589affe5956e4a4da24d71398b0891fd3a8c15e9362217b4ca01"
+    }
+  },
+  "thread_counts": [
+    4,
+    4
+  ],
+  "marker_sha256": "8ae0f985afb3271c1a594274ff0dbfc53a03fad1d2706055954c73d94d994d64",
+  "active_phase": "inference",
+  "elapsed_seconds": 50.42019096900003,
+  "peak_rss_kib": 3727996,
+  "parameter_count": 194202881,
+  "scientific_boundary": "No tracking accuracy, intervention benefit, or 250-frame feasibility measured",
+  "finished_utc": "2026-10-18T18:32:53.995755+00:00"
+}

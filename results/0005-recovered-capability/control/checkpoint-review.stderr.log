@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a349d03a0e0a/scratch/0005-recovery-control/audit_preparation.py", line 71, in <module>
+    if __name__=='__main__':audit(sys.argv[1])
+                            ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a349d03a0e0a/scratch/0005-recovery-control/audit_preparation.py", line 53, in audit
+    a=ck['checkpoint_asset'];assert a==load(N/'asset-records'/('checkpoint.json'))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a349d03a0e0a/scratch/0005-recovery-control/audit_preparation.py", line 7, in load
+    def load(p):return json.loads(Path(p).read_bytes())
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/a349d03a0e0a/tapnextpp-recovery/asset-records/checkpoint.json'

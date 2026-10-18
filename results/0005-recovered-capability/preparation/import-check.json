@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "\nimport hashlib,importlib,importlib.metadata,importlib.util,json,pathlib,sys\nold,overlay,source=map(pathlib.Path,sys.argv[1:4]);pins=json.loads(sys.argv[4]);files=json.loads(sys.argv[5]);result={}\nhelper_path=pathlib.Path(sys.argv[6])\nif hashlib.sha256(helper_path.read_bytes()).hexdigest()!=sys.argv[7]:raise RuntimeError('Preparation source changed before probe')\nspec=importlib.util.spec_from_file_location('_evr_preparation_guard',helper_path);helper=importlib.util.module_from_spec(spec);spec.loader.exec_module(helper)\nhelper.verify_source_tree(source,files)\nimport torch,numpy,torchvision,einops,PIL\nfor name,module in [('torch',torch),('numpy',numpy),('torchvision',torchvision),('einops',einops),('Pillow',PIL)]:\n version=importlib.metadata.version(name); path=pathlib.Path(module.__file__).resolve()\n expected=old/'runtime-fixed' if name in ('torch','numpy') else overlay\n if version!=pins[name] or str(module.__version__)!=pins[name] or not path.is_relative_to(expected):raise RuntimeError('Import version/path mismatch: '+name)\n result[name]={'version':version,'module_version':str(module.__version__),'path':str(path)}\nif torch.version.cuda is not None:raise RuntimeError('Expected CPU-only Torch')\nhelper.verify_source_tree(source,files)\nfor name in ['tapnet.tapnext.tapnext_torch','tapnet.tapnext.tapnext_lru_modules','tapnet.tapnext.pscan','tapnet.tapnextpp.votsp2026.model','tapnet.tapnextpp.votsp2026.utils']:\n module=importlib.import_module(name);path=pathlib.Path(module.__file__).resolve()\n if path!=source/(name.replace('.','/')+'.py'):raise RuntimeError('Source import mismatch')\n result[name]={'path':str(path)}\nprint(json.dumps({'status':'passed','no_model_constructed_or_forward_called':True,'imports':result},indent=2))\n",
+    "/workspace/scratch/a349d03a0e0a/bootstapir-cache",
+    "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay",
+    "/workspace/scratch/a349d03a0e0a/tapnextpp-recovery/source",
+    "{\"torch\": \"2.10.0+cpu\", \"numpy\": \"2.0.2\", \"torchvision\": \"0.25.0+cpu\", \"einops\": \"0.8.2\", \"Pillow\": \"13.0.0\"}",
+    "{\"tapnet/tapnext/tapnext_torch.py\": \"48072289b22439267b3a51eb4cde5e2f81f38c840b6c95b659d60032a07c691a\", \"tapnet/tapnext/tapnext_lru_modules.py\": \"2a475419c2f7c67db9acdf412108fb3b025d168f60e9e087fe35d65157adf64f\", \"tapnet/tapnext/pscan.py\": \"7df34bf5e8318e81bb330ded14fc5e675e7485ea39fa9f0d77fa470f85796a2d\", \"tapnet/tapnextpp/votsp2026/model.py\": \"e1219e2341c33e0f9124fe02d09a521ac7c91bc27505fcbebbf05741f825e46b\", \"tapnet/tapnextpp/votsp2026/utils.py\": \"0336c526dc2b91244c3e5b803f84b65c6323ede138340a4107441a6b9c9fdbf8\"}",
+    "/workspace/scratch/a349d03a0e0a/research-0005-recovery/scripts/prepare_tapnext_assets.py",
+    "dce532e88fd4bb7a5cbf76a9bc75000b8e11a67f569452bb54cf7363a78ba6cd"
+  ],
+  "started_utc": "2026-10-18T18:27:31.885720+00:00",
+  "exit_code": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 290944,
+  "elapsed_seconds": 2.7018833069996617,
+  "finished_utc": "2026-10-18T18:27:34.587625+00:00",
+  "stdout_sha256": "0cfd409e73e2749039bdd5392b0e0b81db2e99a5dd94cdd8a74d3d3c1afa918b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
