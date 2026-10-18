@@ -1,16 +1,24 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0006's 64-case development grid trained/scored once; its numerical continuation rule failed. One saved stdout hash discrepancy remains open after independent review. The broader computer-vision improvement objective remains active; no manuscript or demonstrated general improvement.
+Updated: 2026-10-18. Program day 3. Phase: 0007's fixed-checkpoint gradient variance screen passed its local mechanism gates after one complete run and independent saved-gradient replay. This is not denoising quality, faster training or paper evidence. 0006's failed continuation rule and open stdout defect remain unchanged. The broader improvement objective remains active.
 
-## Next bounded hypothesis: 0007 gradient variance
+## 0007 gradient variance: local screen passed, optimization not started
 
 The prospective [mean-paired antithetic screen](protocols/0007-antithetic-gradient-screen.md)
 compares four equal-forward estimators at all eight cached colored R2R checkpoints,
 without updates, clean references or new assets. It measures conditional gradient
-variance and cost; it cannot establish denoising improvement or novelty. Source
-review, tests and canonical freeze must precede cloud execution. The additional
-A mechanism gate and B variance/cost gates are prospective. Generic antithetic
-matching is prior work; no manuscript is warranted.
+variance and cost; it cannot establish denoising improvement or novelty. The
+[actual screen](results/0007-gradient-screen/README.md) completed all eight cases,
+4,096 batch gradient measurements and zero optimizer steps after the published
+freeze and 43 cloud tests with zero skips. All saved-evidence bindings passed
+before the single score call. Independent arithmetic replay passed 5,351 checks.
+All frozen gates passed: A mean/random variance ratio 0.428330; B mean variance
+ratios 0.227245 / 0.737618 / 0.570518 against independent / random / same-patch,
+seven best-control wins and total B step-time ratio 1.088192. Outer scientific
+wall was 24.228883 seconds, peak RSS 331,152 KiB. All previous results, failed
+caches and markers were preserved; no assets or packages were acquired.
+Only a separately reviewed/frozen optimization study may follow parent review.
+Generic antithetic matching is prior work; no manuscript is warranted.
 
 0006 publication is verified: PR 29 merged as `d2779c4a2dca4b5eac9a8c2855ada6578b55fbfc`.
 Exact PR CI passed 507 tests / 6 Torch skips / 112 subtests; main CI
