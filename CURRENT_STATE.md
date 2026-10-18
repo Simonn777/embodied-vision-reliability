@@ -373,3 +373,15 @@ rigid failure separately from annotation agreement and the unchanged 0.5 px rule
 This turn does not execute it. No new dataset/source downloads, inference, old-test
 tuning, paid service or schedule/permission change. Actual provenance, units/FPS
 and independent cohort readiness remain unresolved.
+
+
+## Limited cache recovery follow-up: runtime offline (October 18)
+
+[Recovery observation](docs/0003-cache-recovery-2026-10-18.md): the exact original
+workspace/cache path check was rejected before shell launch because no execution
+environment is connected. Current mounts, processes, marker/output state and cache
+identity are unknown, not proof that historical data was deleted. No new gate,
+synthetic/smoke run, data access, geometry, download or marker write occurred.
+Earlier PR20 measurements remain historical and unchanged. Restore a supported
+connection to the original workspace and reconcile its existing cache/markers
+before any one-shot execution; no exposed recovery interface was available here.

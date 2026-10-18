@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "status": "BLOCKED_ENVIRONMENT_OFFLINE_BEFORE_SHELL_START",
+  "evidence_compiled_at_utc": "2026-10-18T16:09:31Z",
+  "timestamp_semantics": "clock reading after rejection; not an observed command-start or failure timestamp",
+  "base_main": "eb4769c23f5947e5789dbea82dfb8072ddf23726",
+  "parent_pr20_commit": "2a13cc36bedc87dc14a6e64b6de10e503ccdb0ab",
+  "observation_source": "direct exec_command rejection plus separately labelled runtime advisory",
+  "attempted_scope": [
+    "exact previous project source-history directory",
+    "its sibling bootstapir-cache/0003-pointodyssey",
+    "current PR20 worktree directory"
+  ],
+  "requested_command_public_template": "pwd; ls -ld <previous-project-root>/source-history <previous-project-root>/bootstapir-cache/0003-pointodyssey <current-project-worktree>",
+  "command_redaction": "Runtime-local opaque root identifiers omitted; only these three exact task-related paths were requested. Command never ran.",
+  "actual_exec_tool_error": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+  "supplied_runtime_advisory": {
+    "status": "failed",
+    "error_code": "409 Conflict, environment_offline",
+    "message": "Environment is not connected.",
+    "scope": "selected environment only; not a statement about all historical workspaces"
+  },
+  "shell_started": false,
+  "child_pid": null,
+  "exit_code": null,
+  "raw_wait_status": null,
+  "start_utc": null,
+  "end_utc": null,
+  "elapsed_seconds": null,
+  "peak_rss_kib": null,
+  "cpu_seconds": null,
+  "current_observations": {
+    "original_workspace": "UNKNOWN_UNREACHABLE_RUNTIME",
+    "original_cache": "UNKNOWN_UNREACHABLE_RUNTIME",
+    "original_marker_hashes": "NOT_CHECKED",
+    "new_marker_or_output": "NOT_CHECKED",
+    "mount_inventory": "NOT_AVAILABLE",
+    "visible_processes": "NOT_CHECKED",
+    "scientific_gate": "NOT_REPEATED",
+    "supported_workspace_restore_tool": "NONE_EXPOSED_IN_THIS_TASK_TOOLSET",
+    "mcp_resource_template_count": 0
+  },
+  "remote_observations": {
+    "pr": 20,
+    "state": "open",
+    "merged": false,
+    "head": "2a13cc36bedc87dc14a6e64b6de10e503ccdb0ab",
+    "base": "eb4769c23f5947e5789dbea82dfb8072ddf23726"
+  },
+  "actions_not_taken": [
+    "scientific runner main",
+    "real geometry",
+    "dataset or source download",
+    "NPZ or archive read",
+    "model inference",
+    "re-extraction",
+    "marker or lock creation/deletion",
+    "synthetic or smoke replay",
+    "scientific gate replay",
+    "threshold fitting",
+    "schedule change",
+    "permission change"
+  ],
+  "new_numeric_or_metadata_bytes_read": 0,
+  "new_data_or_source_acquisition_bytes": 0,
+  "semantic_read_carry_unchanged_bytes": 22910156,
+  "canonical_freeze": {
+    "input_commit": "84dd6aa71027ab3d5c18e3d3fdef5a59ccdeb035",
+    "receipt_commit": "48ff18ff8e54be8a57bda5741a008b04582e3afc",
+    "receipt_sha256": "fe7f949bb227ff0824fdee71cdabd29129ac4ec09fe39d3858466c0bc937ee44",
+    "mandatory_inputs": 45
+  },
+  "interpretation": "A missing or disconnected current runtime does not prove deletion of historical caches, idleness of other sessions or permission to recreate a one-shot marker.",
+  "authority_boundary": "Recover only through a supported original-workspace connection; stop otherwise. No alternative paid execution or data reconstruction authorized.",
+  "ai_assisted": true
+}

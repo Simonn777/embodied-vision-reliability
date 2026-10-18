@@ -29,3 +29,14 @@ If blocked on compute, rights, or tooling, do a useful smaller verification or r
 ## Cloud capability handoff (2026-10-16)
 
 **Completed:** interactive Work execution, final receipt CI, and PR #1 publication to main at `d910736e`; see [the capability receipt](docs/CLOUD_CAPABILITY.md). The saved automation's non-interactive Run now trial also completed the data/model audit and merged PR #2 at `9d415308` after shell tests and exact-head CI. The settings session independently verified that publication, paused the local heartbeat and retained one enabled Work cloud schedule. See [the migration receipt](docs/SCHEDULED_VERIFICATION.md). The first regular clock-triggered run is due October 17; do not confuse that future event with the completed immediate trial. The next research action is item 5 above, after verifying the main-published freeze.
+
+
+### October 18 limited original-workspace recovery follow-up
+
+The exact prior source-history/sibling cache lookup could not start: the execution
+environment is offline. [Evidence and distinctions](docs/0003-cache-recovery-2026-10-18.md).
+Current cache/mount/process/one-shot state is UNKNOWN, not confirmed deletion.
+First restore a supported connection to the original project workspace; then
+verify existing cache and original marker hashes, locks and any new output before
+running the unmodified published gate and at most one frozen operation. Do not
+redownload, recreate markers, repeat capability tests or change the paused plan.
