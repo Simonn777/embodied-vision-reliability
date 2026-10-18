@@ -1,0 +1,39 @@
+{
+  "command": [
+    "timeout",
+    "--kill-after=5s",
+    "30",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/a349d03a0e0a/scratch/0005-baseline-preflight/import_probe.py"
+  ],
+  "cwd": "/workspace/scratch/a349d03a0e0a/research-0004",
+  "environment": {
+    "PATH": "existing runtime PATH value omitted",
+    "PYTHONPATH": "../bootstapir-cache/runtime-fixed:../bootstapir-cache/runtime:../bootstapir-cache/source:src",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "timeout_seconds": 30,
+  "source_sha256": "ae7d233942995383eb7740b5c50eff16f1a5379270c5e901b2a0c245558952fa",
+  "import_source_sha256": "7ce91446a418df56486ce476e777804ae88131e52bc6b5473d1d9b9c0cfc3349",
+  "started_utc": "2026-10-18T17:29:42.530056+00:00",
+  "exit_code": 0,
+  "raw_wait_status": 0,
+  "boundary": "one real parent wait4 for import child; parent has no further durable exit receipt",
+  "ended_utc": "2026-10-18T17:29:44.219073+00:00",
+  "wall_seconds": 1.6889551249987562,
+  "peak_rss_kib": 216644,
+  "CPU_user_seconds": 1.544608,
+  "CPU_system_seconds": 0.277423,
+  "stdout_sha256": "a32c1ef8757490dcbc7dfede43aace5116d00f20657565fc60a73402757d10ea",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

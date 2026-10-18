@@ -1,0 +1,527 @@
+{
+  "started_utc": "2026-10-18T17:29:42.526738+00:00",
+  "scope": "0005 import/resource metadata only",
+  "model_constructed": false,
+  "forward_calls": 0,
+  "data_or_GT_decoded": false,
+  "new_download_bytes": 0,
+  "new_installs": 0,
+  "python": {
+    "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "version": "3.12.14"
+  },
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "visible_scientific_processes": [],
+  "source_files": [
+    {
+      "relative_source_path": "tapnet/tapnext/tapnext_torch.py",
+      "exists": false
+    },
+    {
+      "relative_source_path": "tapnet/tapnext/tapnext_lru_modules.py",
+      "exists": false
+    },
+    {
+      "relative_source_path": "tapnet/tapnext/pscan.py",
+      "exists": false
+    },
+    {
+      "relative_source_path": "tapnextpp/votsp2026/model.py",
+      "exists": false
+    },
+    {
+      "relative_source_path": "tapnet/tapnextpp/votsp2026/model.py",
+      "exists": false
+    }
+  ],
+  "cached_objects": [
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/.rgb.zip.xuTCzT",
+      "bytes": 56098816,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/development-000.npz",
+      "bytes": 49280256,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/.rgb.zip.2zOmbi",
+      "bytes": 76808192,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/.weights.pt.EJ5s7Q.kfJ9ba",
+      "bytes": 35389440,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/weights.pt",
+      "bytes": 218887028,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/.weights.pt.EJ5s7Q",
+      "bytes": 68157440,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/.weights.pt.nfdgiQ",
+      "bytes": 141295616,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/.weights.pt.nfdgiQ.eDXcM9",
+      "bytes": 96731136,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/rgb.zip",
+      "bytes": 187291581,
+      "kind": "existing complete or partial cache object; byte length is not cumulative acquisition"
+    }
+  ],
+  "tapnextpp_checkpoint_exists": false,
+  "download_ledgers": [
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/transfer-ledger.json",
+      "exists": false
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/acquisition-ledger.json",
+      "exists": false
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/research-0004/results/0002-development/transfer-ledger.json",
+      "exists": true,
+      "bytes": 14370,
+      "sha256": "7ca0848233cb99aaf88ff2fda34d88df43b2a8fd3c9080e80830c1cafdc06f58",
+      "record": {
+        "method": "Conservative transfer ceiling: count every resolved full wheel for all five setup events, even metadata-only dry runs or cache hits; plus pre-existing pip cache and 64 MiB metadata/source allowance. No cache size is substituted for wheel transfers.",
+        "events": [
+          {
+            "event": "old_dry_run",
+            "name": "torch",
+            "version": "2.5.1+cpu",
+            "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.5.1%2Bcpu-cp312-cp312-linux_x86_64.whl",
+            "sha256": "4856f9d6925121d13c2df07aa7580b767f449dfe71ae5acde9c27535d5da4840",
+            "wheel_bytes": 174642530
+          },
+          {
+            "event": "old_dry_run",
+            "name": "sympy",
+            "version": "1.13.1",
+            "url": "https://files.pythonhosted.org/packages/b2/fe/81695a1aa331a842b582453b605175f419fe8540355886031328089d840a/sympy-1.13.1-py3-none-any.whl",
+            "sha256": "db36cdc64bf61b9b24578b6f7bab1ecdd2452cf008f34faa33776680c26d66f8",
+            "wheel_bytes": 6189177
+          },
+          {
+            "event": "old_dry_run",
+            "name": "mpmath",
+            "version": "1.3.0",
+            "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+            "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+            "wheel_bytes": 536198
+          },
+          {
+            "event": "old_dry_run",
+            "name": "filelock",
+            "version": "3.32.3",
+            "url": "https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl",
+            "sha256": "7f0ca4bcc0e181c60dbbd8aa9ab5b120ebb99e4e064e83636340056f833a1f09",
+            "wheel_bytes": 98901
+          },
+          {
+            "event": "old_dry_run",
+            "name": "fsspec",
+            "version": "2026.7.0",
+            "url": "https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl",
+            "sha256": "b57ddbafedfaef7018c1ecab32aa200a9d7ca26b77965f64e48b70061249d279",
+            "wheel_bytes": 206583
+          },
+          {
+            "event": "old_dry_run",
+            "name": "Jinja2",
+            "version": "3.1.6",
+            "url": "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl",
+            "sha256": null,
+            "wheel_bytes": 134899
+          },
+          {
+            "event": "old_dry_run",
+            "name": "MarkupSafe",
+            "version": "3.0.3",
+            "url": "https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "sha256": null,
+            "wheel_bytes": 22947
+          },
+          {
+            "event": "old_dry_run",
+            "name": "networkx",
+            "version": "3.6.1",
+            "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+            "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+            "wheel_bytes": 2068504
+          },
+          {
+            "event": "old_install",
+            "name": "torch",
+            "version": "2.5.1+cpu",
+            "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.5.1%2Bcpu-cp312-cp312-linux_x86_64.whl",
+            "sha256": "4856f9d6925121d13c2df07aa7580b767f449dfe71ae5acde9c27535d5da4840",
+            "wheel_bytes": 174642530
+          },
+          {
+            "event": "old_install",
+            "name": "sympy",
+            "version": "1.13.1",
+            "url": "https://files.pythonhosted.org/packages/b2/fe/81695a1aa331a842b582453b605175f419fe8540355886031328089d840a/sympy-1.13.1-py3-none-any.whl",
+            "sha256": "db36cdc64bf61b9b24578b6f7bab1ecdd2452cf008f34faa33776680c26d66f8",
+            "wheel_bytes": 6189177
+          },
+          {
+            "event": "old_install",
+            "name": "mpmath",
+            "version": "1.3.0",
+            "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+            "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+            "wheel_bytes": 536198
+          },
+          {
+            "event": "old_install",
+            "name": "typing_extensions",
+            "version": "4.16.0",
+            "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+            "wheel_bytes": 45571
+          },
+          {
+            "event": "old_install",
+            "name": "filelock",
+            "version": "3.32.3",
+            "url": "https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl",
+            "sha256": "7f0ca4bcc0e181c60dbbd8aa9ab5b120ebb99e4e064e83636340056f833a1f09",
+            "wheel_bytes": 98901
+          },
+          {
+            "event": "old_install",
+            "name": "fsspec",
+            "version": "2026.7.0",
+            "url": "https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl",
+            "sha256": "b57ddbafedfaef7018c1ecab32aa200a9d7ca26b77965f64e48b70061249d279",
+            "wheel_bytes": 206583
+          },
+          {
+            "event": "old_install",
+            "name": "Jinja2",
+            "version": "3.1.6",
+            "url": "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl",
+            "sha256": null,
+            "wheel_bytes": 134899
+          },
+          {
+            "event": "old_install",
+            "name": "MarkupSafe",
+            "version": "3.0.3",
+            "url": "https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "sha256": null,
+            "wheel_bytes": 22947
+          },
+          {
+            "event": "old_install",
+            "name": "networkx",
+            "version": "3.6.1",
+            "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+            "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+            "wheel_bytes": 2068504
+          },
+          {
+            "event": "old_install",
+            "name": "setuptools",
+            "version": "78.1.0",
+            "url": "https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl",
+            "sha256": null,
+            "wheel_bytes": 1256108
+          },
+          {
+            "event": "small_install",
+            "name": "dm-tree",
+            "version": "0.1.9",
+            "url": "https://files.pythonhosted.org/packages/86/52/27607a275c12858b979b8e943d2bd3bd0f9028503bb7079d5830a8b3cac0/dm_tree-0.1.9-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+            "sha256": "2334cfe9d2ed4293f9f1c7aefba0657deaab9ea74b5fadd966f6d01d9b6b42d9",
+            "wheel_bytes": 153013
+          },
+          {
+            "event": "small_install",
+            "name": "einshape",
+            "version": "1.0",
+            "url": "https://files.pythonhosted.org/packages/71/bb/34cc02f13b438d550e4709216ee1df9da8e55e15b0cc87a2cb5dee19a729/einshape-1.0-py3-none-any.whl",
+            "sha256": "42da4c2dea3a27f87ee45a7cee5072a636b97cb184bb07bf5d6412ba0ff7b965",
+            "wheel_bytes": 21392
+          },
+          {
+            "event": "small_install",
+            "name": "absl-py",
+            "version": "2.3.1",
+            "url": "https://files.pythonhosted.org/packages/8f/aa/ba0014cc4659328dc818a28827be78e6d97312ab0cb98105a770924dc11e/absl_py-2.3.1-py3-none-any.whl",
+            "sha256": "eeecf07f0c2a93ace0772c92e596ace6d3d3996c042b2128459aaae2a76de11d",
+            "wheel_bytes": 135811
+          },
+          {
+            "event": "small_install",
+            "name": "attrs",
+            "version": "25.3.0",
+            "url": "https://files.pythonhosted.org/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e407941a/attrs-25.3.0-py3-none-any.whl",
+            "sha256": "427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3",
+            "wheel_bytes": 63815
+          },
+          {
+            "event": "small_install",
+            "name": "wrapt",
+            "version": "1.17.3",
+            "url": "https://files.pythonhosted.org/packages/9f/81/5d931d78d0eb732b95dc3ddaeeb71c8bb572fb01356e9133916cd729ecdd/wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+            "sha256": "042ec3bb8f319c147b1301f2393bc19dba6e176b7da446853406d041c36c7828",
+            "wheel_bytes": 88036
+          },
+          {
+            "event": "fixed_dry_run",
+            "name": "torch",
+            "version": "2.10.0+cpu",
+            "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.10.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+            "sha256": "ee40b8a4b4b2cf0670c6fd4f35a7ef23871af956fecb238fbf5da15a72650b1d",
+            "wheel_bytes": 188943803
+          },
+          {
+            "event": "fixed_dry_run",
+            "name": "fsspec",
+            "version": "2026.7.0",
+            "url": "https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl",
+            "sha256": "b57ddbafedfaef7018c1ecab32aa200a9d7ca26b77965f64e48b70061249d279",
+            "wheel_bytes": 206583
+          },
+          {
+            "event": "fixed_dry_run",
+            "name": "networkx",
+            "version": "3.6.1",
+            "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+            "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+            "wheel_bytes": 2068504
+          },
+          {
+            "event": "fixed_dry_run",
+            "name": "sympy",
+            "version": "1.14.0",
+            "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+            "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+            "wheel_bytes": 6299353
+          },
+          {
+            "event": "fixed_dry_run",
+            "name": "mpmath",
+            "version": "1.3.0",
+            "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+            "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+            "wheel_bytes": 536198
+          },
+          {
+            "event": "fixed_dry_run",
+            "name": "filelock",
+            "version": "3.32.3",
+            "url": "https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl",
+            "sha256": "7f0ca4bcc0e181c60dbbd8aa9ab5b120ebb99e4e064e83636340056f833a1f09",
+            "wheel_bytes": 98901
+          },
+          {
+            "event": "fixed_dry_run",
+            "name": "Jinja2",
+            "version": "3.1.6",
+            "url": "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl",
+            "sha256": null,
+            "wheel_bytes": 134899
+          },
+          {
+            "event": "fixed_dry_run",
+            "name": "MarkupSafe",
+            "version": "3.0.3",
+            "url": "https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "sha256": null,
+            "wheel_bytes": 22947
+          },
+          {
+            "event": "fixed_install",
+            "name": "torch",
+            "version": "2.10.0+cpu",
+            "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.10.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+            "sha256": "ee40b8a4b4b2cf0670c6fd4f35a7ef23871af956fecb238fbf5da15a72650b1d",
+            "wheel_bytes": 188943803
+          },
+          {
+            "event": "fixed_install",
+            "name": "sympy",
+            "version": "1.14.0",
+            "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+            "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+            "wheel_bytes": 6299353
+          },
+          {
+            "event": "fixed_install",
+            "name": "mpmath",
+            "version": "1.3.0",
+            "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+            "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+            "wheel_bytes": 536198
+          },
+          {
+            "event": "fixed_install",
+            "name": "filelock",
+            "version": "3.32.3",
+            "url": "https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl",
+            "sha256": "7f0ca4bcc0e181c60dbbd8aa9ab5b120ebb99e4e064e83636340056f833a1f09",
+            "wheel_bytes": 98901
+          },
+          {
+            "event": "fixed_install",
+            "name": "networkx",
+            "version": "3.6.1",
+            "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+            "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+            "wheel_bytes": 2068504
+          },
+          {
+            "event": "fixed_install",
+            "name": "Jinja2",
+            "version": "3.1.6",
+            "url": "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl",
+            "sha256": null,
+            "wheel_bytes": 134899
+          },
+          {
+            "event": "fixed_install",
+            "name": "fsspec",
+            "version": "2026.7.0",
+            "url": "https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl",
+            "sha256": "b57ddbafedfaef7018c1ecab32aa200a9d7ca26b77965f64e48b70061249d279",
+            "wheel_bytes": 206583
+          },
+          {
+            "event": "fixed_install",
+            "name": "MarkupSafe",
+            "version": "3.0.3",
+            "url": "https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "sha256": null,
+            "wheel_bytes": 22947
+          },
+          {
+            "event": "fixed_install",
+            "name": "typing_extensions",
+            "version": "4.16.0",
+            "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+            "wheel_bytes": 45571
+          },
+          {
+            "event": "fixed_install",
+            "name": "setuptools",
+            "version": "78.1.0",
+            "url": "https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl",
+            "sha256": null,
+            "wheel_bytes": 1256108
+          }
+        ],
+        "resolved_wheel_bytes_upper_bound": 767487279,
+        "unresolved": [],
+        "preexisting_pip_cache_bytes_conservatively_counted": 213793166,
+        "official_model_and_archive_bytes": 406178609,
+        "metadata_and_source_allowance_bytes": 67108864,
+        "budget_bytes": 10737418240,
+        "old_torch_checkpoint_loads": 0,
+        "total_transfer_upper_bound_bytes": 1454567918
+      }
+    },
+    {
+      "path": "/workspace/scratch/a349d03a0e0a/research-0004/results/0002-pilot-execution/g-033-20261017-recovery/acquisition-summary.json",
+      "exists": true,
+      "bytes": 893,
+      "sha256": "80a9db35b12c1defa9334ffa080bf3261e8600035e33a825b441f97eb276ad5c",
+      "record": {
+        "scope": "version-matched environment reconstruction, not byte-identical environment reproduction",
+        "official_numpy_version": "2.0.2",
+        "wheel_identity_previously_frozen": false,
+        "new_wheel_download_bytes": 19236173,
+        "new_official_metadata_bytes": 90923,
+        "first_download_attempt": "HTTP502, zero wheel bytes, preserved in download-attempt1.json",
+        "second_download_attempt": "same official URL, full size and new official SHA256 verified",
+        "inherited_research_acquisition_ceiling_bytes": 1462956526,
+        "updated_research_acquisition_ceiling_bytes": 1482283622,
+        "budget_bytes": 10737418240,
+        "other_dependency_download_bytes": 0,
+        "new_data_or_model_download_bytes": 0,
+        "numpy_RECORD_scope": "new installed RECORD differs from historical dependencies.json; the original JSON is unchanged",
+        "other15_historical_RECORD_digests": "match",
+        "base_runtime_unchanged": true
+      }
+    }
+  ],
+  "resources": {
+    "available_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "memory": {
+      "MemTotal": "10206484 kB",
+      "MemAvailable": "9512720 kB"
+    },
+    "disk": {
+      "total_bytes": 33770192896,
+      "used_bytes": 3491237888,
+      "free_bytes": 28544192512
+    },
+    "memory.max": "8589934592",
+    "memory.current": "3838468096",
+    "cpu.max": "800000 100000"
+  },
+  "import_report": {
+    "python_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "python_version": "3.12.14",
+    "packages": {
+      "torch": {
+        "metadata_version": "2.10.0+cpu",
+        "dist_info": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/torch-2.10.0+cpu.dist-info",
+        "metadata_sha256": "d6031f9f56089c835e78a75875c1be87a34bcfdf5a79ef9f069084ed9244a5d4",
+        "threads": 2,
+        "interop_threads": 2,
+        "build_cuda": null,
+        "import_status": "OK",
+        "module_version": "2.10.0+cpu",
+        "module_path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/torch/__init__.py",
+        "module_sha256": "51c90fe34a7cf869517d1bab4cd114498790e169ec668f1a154c35ec64117a5e"
+      },
+      "torchvision": {
+        "metadata_status": "MISSING"
+      },
+      "einops": {
+        "metadata_status": "MISSING"
+      },
+      "numpy": {
+        "metadata_version": "2.0.2",
+        "dist_info": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/numpy-2.0.2.dist-info",
+        "metadata_sha256": "9f2501da452b612890357b918fd56a8036e6f60d04bba92de71b3e9632bd3923",
+        "import_status": "OK",
+        "module_version": "2.0.2",
+        "module_path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/numpy/__init__.py",
+        "module_sha256": "c09e25b58f6b2f8e2cb3c158168f902d447f8171e5ea6513c0aca41ecbda7c2b"
+      }
+    }
+  },
+  "ended_utc": "2026-10-18T17:29:44.219359+00:00",
+  "elapsed_seconds": 1.6926323829993635,
+  "import_exit_code": 0,
+  "interpretation": "Environment preparation only; future TAPNext++ model/forward feasibility remains untested"
+}
