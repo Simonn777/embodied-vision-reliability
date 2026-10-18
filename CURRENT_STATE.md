@@ -1,10 +1,10 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0004 Stage 0 completed and independently reviewed; its frozen continuation rule failed. The broader tracking-improvement objective remains active; no manuscript or demonstrated general improvement.
+Updated: 2026-10-18. Program day 3. Phase: 0004 Stage 0 completed and independently reviewed; its frozen continuation rule failed. The broader computer-vision improvement objective remains active; the owner explicitly permits a fresh topic independent of previous experiments. No manuscript or demonstrated general improvement.
 
-## Active direction: improve tracking, with evidence before a paper
+## Active direction: select a defensible improvement mechanism before a paper
 
-The owner requested meaningful tracking improvement before any paper. The first
+The owner requested meaningful computer-vision improvement before any paper and explicitly allows a fresh topic. Previous tracking work is retained as evidence, not a constraint on topic selection. The first
 candidate's [frozen 250-frame/eight-query test](protocols/0004-state-intervention-stage0.md)
 has completed on cached synthetic development video 0. Zeroing short-term TAPIR
 context repaired 46 visible errors but created 120; reset-once shadow return was
@@ -18,25 +18,28 @@ The original proposal is retained as a failed development hypothesis, not a
 positive method result. No selector is being trained to rescue these selected
 episodes. Visibility-only gains must not be called coordinate recovery.
 
-Next, establish a stronger native causal baseline's CPU feasibility and a usable
-independent real-video development/evaluation path before freezing a different
-mechanism. The read-only TAPNext++ environment preflight completed: existing torch2.10.0+cpu
+Native causal-baseline CPU feasibility is now established for the fixed short prefix below. Topic selection is reopened: a new topic needs its own primary-paper novelty audit, usable independent data, strong baselines and a frozen practical-improvement gate before outcomes. Existing tracking-specific gates still apply to any tracking claim. The read-only TAPNext++ environment preflight completed: existing torch2.10.0+cpu
 and NumPy2.0.2 imported, torchvision/einops and the new weights were absent. The
 [frozen capability attempt](results/0005-native-capability/README.md) stopped in
 dependency preparation: actual exit 1 after 36.072 seconds. Five sources and three
 wheels were verified and installation exited 0, but the source allowlist rejected
 an empty `.partial` entry before the import child. Assets, partials and marker are
 preserved. Checkpoint acquisition and native inference were not started; CPU
-feasibility remains unknown. New payload was 9,179,574 bytes; the conservative
+feasibility was unknown at that point. New payload was 9,179,574 bytes; the conservative
 cumulative ceiling is 4,966,784,411 bytes. No automatic retry is authorized.
-A [separate recovery procedure](protocols/0005-native-recovery.md) has now passed
-[independent artifact/integration review](results/0005-recovery-review/README.md)
-and 106 local software tests. It preserves the complete failed cache, reuses
-verified sources/overlay, and requires a new published 16-input freeze before
-any cloud recovery, first checkpoint acquisition or first native forward. It has
-not run. Five empty partials are recorded; their persistence cause is unresolved.
-The substantive improvement and
-paper gates in the [direction](docs/0004-research-direction.md) remain unchanged.
+A [separately reviewed recovery](results/0005-recovered-capability/README.md)
+completed once after the published 16-input freeze. Cache-only import passed;
+the first checkpoint GET verified 2,532,282,370 bytes. Native float32 CPU tracking
+completed 8 frames × 8 queries, exactly 8 forwards, actual outer/inner exits 0.
+External wall was 55.082 seconds and peak RSS 3,727,996 KiB; first forward 2.670
+seconds, subsequent mean 2.392 seconds. Saved outputs passed grid/finite/hash
+checks. This establishes only short-prefix feasibility, not accuracy, long-clip
+capability or a method improvement. No dependency reinstall/redownload occurred.
+All 407 failed-cache files and 1,651 prior result files remain intact. Two
+read-only checker path errors and their corrections are retained; no scientific
+stage was repeated. Conservative acquisition ceiling is 7,499,066,782 bytes.
+Five old empty partials persist; their cause is unresolved.
+The [independent parent audit](results/0005-recovered-parent-review/README.md) verifies all 64 saved rows, 74 archived copies and preserved historical results. The substantive tracking-improvement and paper gates in the [direction](docs/0004-research-direction.md) remain unchanged for tracking claims. No fresh topic has yet demonstrated novelty or an improvement.
 The old 0002 inspected evaluation remains excluded.
 0003 is deferred with the missing-cache/one-shot limitations below preserved; this
 new direction does not authorize retries or threshold changes to that operation.

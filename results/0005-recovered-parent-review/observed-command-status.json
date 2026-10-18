@@ -1,0 +1,89 @@
+{
+  "scope": "Parent directly read completed durable thread command observations; these are tool-status observations, not a new wait4 measurement or signed attestation.",
+  "observed_at_utc": "2026-10-18 18:44:04 UTC",
+  "published_commit": "0436cb438666db9bd0645f131632fc2fafcdf025",
+  "commands": [
+    {
+      "id": "exec-bbc31cb7-7a72-4b01-9a91-eeb4d74cb472",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_recovery.py dependencies'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 3202,
+      "displayed_output_truncated": true
+    },
+    {
+      "id": "exec-a1103f72-e467-444c-8d45-c7732ac94d64",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_audit.py dependencies'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 196,
+      "displayed_output_truncated": false
+    },
+    {
+      "id": "exec-3af87a6e-7485-4e76-a4d7-871b373ceedb",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_recovery.py checkpoint'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 146927,
+      "displayed_output_truncated": true
+    },
+    {
+      "id": "exec-8803036b-1d62-4d9f-be78-4451dbe0c8e8",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_audit.py checkpoint'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "failed",
+      "exit_code": 1,
+      "tool_duration_ms": 237,
+      "displayed_output_truncated": true
+    },
+    {
+      "id": "exec-1e710eab-5a4b-45ab-b670-c5cc5dd7189e",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_audit_v2.py checkpoint'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 2062,
+      "displayed_output_truncated": true
+    },
+    {
+      "id": "exec-8dc91cac-8a14-478b-8771-22a2c1e4706b",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_recovery.py native'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 55119,
+      "displayed_output_truncated": true
+    },
+    {
+      "id": "exec-6c5c9a89-5c54-46d8-a58e-02e28e8238b0",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_recovery.py software'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 630,
+      "displayed_output_truncated": true
+    },
+    {
+      "id": "exec-a0f73aa4-7f34-4eaf-b637-92b3847a30c2",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_audit.py native'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "failed",
+      "exit_code": 1,
+      "tool_duration_ms": 273,
+      "displayed_output_truncated": true
+    },
+    {
+      "id": "exec-4d48fbe2-6556-4fb4-a9e6-834efe7e1df5",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-recovery-control/observe_native_review_v2.py native'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 689,
+      "displayed_output_truncated": true
+    }
+  ],
+  "publication_note": "Internal conversation/turn identifiers omitted; command identifiers, statuses, times and command text retained."
+}

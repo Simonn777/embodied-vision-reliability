@@ -1,0 +1,74 @@
+{
+  "stage": "native",
+  "state": "FINISHED",
+  "execution_main": "f0787ab50f5dfc31f8b8a58bdcb165a12d2d83a6",
+  "command": [
+    "timeout",
+    "--kill-after=5s",
+    "1800",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "scripts/run_tapnext_recovered_capability.py",
+    "--failed-cache",
+    "../tapnextpp-cache",
+    "--recovery-root",
+    "../tapnextpp-recovery",
+    "--bootstapir-cache",
+    "../bootstapir-cache",
+    "--output",
+    "/workspace/scratch/a349d03a0e0a/scratch/0005-recovered-native-capability",
+    "--freeze-sha256",
+    "916cdabbdc8d5be7dcb0060ca54216457d982a3bdc564c6509c79195e51966ef"
+  ],
+  "cwd": "/workspace/scratch/a349d03a0e0a/research-0005-recovery",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "GIT_NO_LAZY_FETCH": "1",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "inherited_network_setting_names": [
+    "HTTP_PROXY",
+    "HTTPS_PROXY",
+    "ALL_PROXY",
+    "NO_PROXY",
+    "http_proxy",
+    "https_proxy",
+    "all_proxy",
+    "no_proxy",
+    "SSL_CERT_FILE",
+    "REQUESTS_CA_BUNDLE"
+  ],
+  "network_setting_values": "not recorded",
+  "PATH": "existing runtime PATH omitted",
+  "observer_source_sha256": "0c5ed3f9abf5f68edd962351eac0fe93fd2980c61647cc81f8e9697a8ad41240",
+  "freeze_sha256": "916cdabbdc8d5be7dcb0060ca54216457d982a3bdc564c6509c79195e51966ef",
+  "source_sha256": {
+    "supervisor": "37356e4b87140e16d5c6431a10de617cd303963e25b70f3c99398aa0d800d7ec",
+    "preparer": "63d5cccc68f380ceeaaea67c673cf43bffecb0f385d2879c398eaf9fa4f044e6",
+    "config": "97bb7e18bddf6c979d97ca825769fb37ab2175aa60608e84c3783f9ab65a257c"
+  },
+  "started_utc": "2026-10-18T18:31:59.587292+00:00",
+  "exit_code": 0,
+  "raw_wait_status": 0,
+  "limits": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "AS_bytes": 8589934592
+  },
+  "boundary": "This parent wait4 observes the external timeout command once. The parent itself has no additional durable outer wait4 receipt.",
+  "ended_utc": "2026-10-18T18:32:54.669583+00:00",
+  "wall_seconds": 55.082073132000005,
+  "CPU_user_seconds": 82.359483,
+  "CPU_system_seconds": 34.138307,
+  "peak_rss_kib": 3727996,
+  "stdout_sha256": "9b8e5cb0f5d7936c803a347ab77f8cd433092f01af5862e47b5468a021c1f7f3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
