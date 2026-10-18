@@ -17,7 +17,7 @@ Work from the first unfinished item. Record each outcome in a dated note before 
    d3-colored-0-blindspot remains open. Do not rewrite that log, retrain a case or
    describe the strict failed review as passed. Publication verified through PR 29 and exact PR/main CI; private raw arrays stay
    in cloud cache. The main merge is d2779c4.
-5. **Next prospective screen:** review/freeze [0007 mean-paired antithetic gradients](protocols/0007-antithetic-gradient-screen.md), verify main publication, then one cache-only cloud run after software tests. Use all eight fixed checkpoints; no updates, clean references, assets or paid service. Independently check saved gradients. A pass only allows a separately frozen optimization study; failure stops this exact mean-sort rule. Do not begin a manuscript.
+5. **0007 local screen completed once:** [all eight cases and independent replay](results/0007-gradient-screen/README.md). All frozen A/B gates passed after 4,096 batch gradient measurements and zero updates. Preserve one-shot output, closed logs and raw gradients; do not repeat the run or score. Independent parent arithmetic and provenance review is complete, with cloud-tool observability limits disclosed. Next design and freeze one matched-resource optimization study with fresh initializations and fixed update/wall endpoints before training. No training, task-quality improvement or novelty follows from this pass. Any next study needs a prospective practical task-quality gate; do not begin a manuscript or retune old tests.
 6. Under the owner's continuing research authorization, any different hypothesis
    or study needs an explicit prospective
    design and justified data allocation. Do not weaken the 0006 gate or tune old
