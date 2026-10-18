@@ -25,7 +25,11 @@ a pass. All outcomes are synthetic-corruption development evidence only.
 One case stdout lacks its completion line and fails its recorded hash; original
 bytes/receipts and strict reviewer exit 1 are preserved. All required input,
 prediction and weight identities/finite checks match, but this is not an
-all-evidence-checks-pass result. Parent review of that provenance gap is pending.
+all-evidence-checks-pass result. [Independent parent review](results/0006-stage0/parent-review/README.md)
+reproduces the public block arithmetic, all seven numerical gates, frozen/copy
+bindings and preservation of 1,741 old result files. Actual cloud tool records
+confirm the strict reviewer exit 1 and the subsequent scoring exits 0. The stdout
+defect remains open; no original bytes were restored and no fit was repeated.
 No fit was repeated, no frozen source changed, and no real-camera/paper claim
 follows. Four GETs totalled 68,858 bytes; cumulative conservative ceiling is
 7,532,690,072 bytes. No package/model download, install or added fee occurred.

@@ -11,16 +11,20 @@ Work from the first unfinished item. Record each outcome in a dated note before 
    Independent arithmetic agrees with the frozen scorer: mean gain −0.570956 dB,
    gradient ratio 1.800684 and all four image means negative. White controls match.
    Stop this exact candidate/configuration; preserve its protocol and outcomes.
-4. Independently review the results branch and the retained stdout-hash gap for
-   d3-colored-0-blindspot. Its required input/prediction/weight hashes match, but
-   one completion line is absent from the current log. Do not rewrite that log,
-   retrain a case or describe the strict failed review as passed. All 64 raw
-   predictions/weights remain in cloud cache; only small aggregates are published.
-5. After review, any different hypothesis or study needs an explicit prospective
+4. **Independent review completed:** [parent audit](results/0006-stage0/parent-review/README.md)
+   verifies public block arithmetic, all numerical gates, source/copy bindings,
+   historical preservation and actual cloud command statuses. The stdout gap for
+   d3-colored-0-blindspot remains open. Do not rewrite that log, retrain a case or
+   describe the strict failed review as passed. Publish the reviewed archive
+   through PR and exact-head/main CI; private raw arrays stay in cloud cache.
+5. Under the owner's continuing research authorization, any different hypothesis
+   or study needs an explicit prospective
    design and justified data allocation. Do not weaken the 0006 gate or tune old
    tests. This four-image synthetic-corruption development screen is not real
    camera-noise efficacy, a novelty proof or paper evidence. The overall goal
-   remains active; no additional experiment or manuscript is run this turn.
+   remains active. A new candidate must distinguish its mechanism from the closest
+   published methods and survive a bounded falsification test before expansion.
+   No manuscript is warranted by the present results.
 
 The old 0003 task below is **deferred**, not a prerequisite for this newly authorized
 independent study. Its published constraints and one-shot state remain untouched.

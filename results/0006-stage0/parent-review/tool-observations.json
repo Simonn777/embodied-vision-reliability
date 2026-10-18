@@ -1,0 +1,72 @@
+{
+  "scope": "Parent read of actual cloud command-execution records; tool envelope durations are not summed with nested experiment timers. No model or scorer was executed by this parent read.",
+  "observations": [
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_stage.py tests'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 3507
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_stage.py acquire'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 22298
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_stage.py prepare'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 2669
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_stage.py group-d1'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 52543
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_stage.py group-d2'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 49893
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_stage.py group-d3'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 51120
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_stage.py group-d4'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 51474
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_review.py grid'",
+      "status": "failed",
+      "actual_exit_code": 1,
+      "tool_duration_ms": 213
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_postfailure.py postfailure'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 240
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_stage.py score'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 512
+    },
+    {
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0006-control/observe_scores.py metrics'",
+      "status": "completed",
+      "actual_exit_code": 0,
+      "tool_duration_ms": 777
+    }
+  ],
+  "limits": "This records returned process status, not a fresh remote filesystem audit. It does not close the retained stdout hash discrepancy."
+}

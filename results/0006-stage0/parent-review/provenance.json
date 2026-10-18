@@ -1,0 +1,75 @@
+{
+  "reviewed_head": "dabd5b98bb1bc0b8207a7bc491504dbfdc8c378c",
+  "scope": "Read-only published file data; no cache payload arrays, cloud or scientific execution",
+  "checks": {
+    "frozen_inputs": 13,
+    "freeze_receipts": 12,
+    "prior_results_bytes_preserved": 1741,
+    "prior_other_changes": [
+      "CURRENT_STATE.md",
+      "NEXT_ACTIONS.md",
+      "notes/2026-10-18.md"
+    ],
+    "note_append_only": true,
+    "copy_manifest_entries": 380,
+    "archived_files": 382,
+    "no_image_array_weight_payload_files": true,
+    "case_grid": 64,
+    "record_and_inventory_bindings": 64,
+    "matched_initial_minibatch_sets": 16,
+    "white_prediction_file_and_array_hash_sets_equal": 8,
+    "case_stream_hashes_matching": 127,
+    "hypothetical_suffix_144B_matches_recorded_hash_not_recovery": true,
+    "stage_control_stream_hashes_matching": 22,
+    "strict_review_failure_preserved": {
+      "exit_code": 1,
+      "raw_wait_status": 256
+    },
+    "case_intervals_serial_and_inside_group": true,
+    "acquisition_record_bytes": 68858,
+    "independent_checker_imports": [
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "statistics",
+      "sys",
+      "pathlib",
+      "numpy"
+    ]
+  },
+  "unreviewed_concurrent_additions": [
+    "results/0006-stage0/parent-review/audit_provenance.py",
+    "results/0006-stage0/parent-review/provenance.json",
+    "results/0006-stage0/parent-review/audit_public_metrics.py",
+    "results/0006-stage0/parent-review/provenance-review.md",
+    "results/0006-stage0/parent-review/README.md",
+    "results/0006-stage0/parent-review/tool-observations.json",
+    "results/0006-stage0/parent-review/arithmetic.json"
+  ],
+  "open_provenance_defects": [
+    {
+      "case": "d3-colored-0-blindspot",
+      "stream": "stdout",
+      "actual_bytes": 862,
+      "actual_sha256": "fb7e5a0f333fd38415fcd7700547e442b49484aeaff3784e1e47a772c09d1274",
+      "recorded_sha256": "ed5f5d837911965bb1039495a5245e5b17654e4ddd8af32a4b6d643183df7956"
+    }
+  ],
+  "times": {
+    "fit_seconds_sum": 43.987797081008466,
+    "case_wall_seconds_sum": 195.15992804400594,
+    "group_wall_seconds_sum": 204.53765402499994,
+    "peak_case_rss_kib": 300428
+  },
+  "numerical_claim": {
+    "decision": "stop_this_candidate",
+    "mean_colored_gain_db": -0.570955864327757,
+    "gradient_error_ratio": 1.8006837076130082,
+    "colored_four_gates_fail": true,
+    "paper_success": false,
+    "limitation": "This provenance audit checks saved aggregate/receipt consistency. Parent separately recalculates block arithmetic. Full cache predictions and weights were not read or independently rehashed here."
+  },
+  "blocking_findings_for_negative_archive": [],
+  "overall": "Archive binding checks passed with exactly one disclosed unresolved case stdout mismatch. Not an all-evidence integrity pass; no positive scientific claim follows."
+}

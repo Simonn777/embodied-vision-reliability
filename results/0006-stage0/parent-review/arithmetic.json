@@ -1,0 +1,90 @@
+{
+  "artifact_sha256": "11a6ca551dc0ee72301774e36e78328c164971d4dab1b8cb870a2a929c9f6b0b",
+  "audit_script_sha256": "acb715c819c53967d38776c2c1a1058a77a029e1d93ed76e61e1e820d084bc32",
+  "independent_block_arithmetic_matches": true,
+  "case_count": 64,
+  "mean_gain_db": -0.5709558643277579,
+  "group_mean_gains_db": {
+    "d1": -0.5484817311903658,
+    "d2": -1.030440983940892,
+    "d3": -0.0953419118437715,
+    "d4": -0.6095588303360024
+  },
+  "gates": {
+    "colored_pair_mean_ge_0_3_db": false,
+    "colored_at_least3_group_means_gt0": false,
+    "colored_each_group_mean_ge_minus0_2_db": false,
+    "colored_first_difference_le_1_05": false,
+    "white_predictions_bitwise_equal": true,
+    "white_safe_predictions_bitwise_equal": true,
+    "white_psnr_harm_zero": true
+  },
+  "decision": "stop_this_candidate",
+  "colored_pairs": [
+    {
+      "group": "d1",
+      "seed": 0,
+      "best_baseline": "r2r_alpha05",
+      "gain_db": -1.1772256885254215,
+      "candidate_gradient_mse": 0.00030091509521045396,
+      "baseline_gradient_mse": 0.00014395459100431874
+    },
+    {
+      "group": "d1",
+      "seed": 1,
+      "best_baseline": "r2r_alpha05",
+      "gain_db": 0.08026222614468992,
+      "candidate_gradient_mse": 0.0002291656519891988,
+      "baseline_gradient_mse": 0.0001067760038359847
+    },
+    {
+      "group": "d2",
+      "seed": 0,
+      "best_baseline": "r2r_alpha05",
+      "gain_db": -1.4281760729644617,
+      "candidate_gradient_mse": 0.0005165382531545294,
+      "baseline_gradient_mse": 0.0001734449049752483
+    },
+    {
+      "group": "d2",
+      "seed": 1,
+      "best_baseline": "safe_blindspot",
+      "gain_db": -0.6327058949173221,
+      "candidate_gradient_mse": 0.00039605378534769914,
+      "baseline_gradient_mse": 0.00023648723560196382
+    },
+    {
+      "group": "d3",
+      "seed": 0,
+      "best_baseline": "r2r_alpha05",
+      "gain_db": -0.2989120995840544,
+      "candidate_gradient_mse": 0.0003209409333811594,
+      "baseline_gradient_mse": 0.0001634743513199906
+    },
+    {
+      "group": "d3",
+      "seed": 1,
+      "best_baseline": "safe_blindspot",
+      "gain_db": 0.1082282758965114,
+      "candidate_gradient_mse": 0.0002842649679084208,
+      "baseline_gradient_mse": 0.000289434751760102
+    },
+    {
+      "group": "d4",
+      "seed": 0,
+      "best_baseline": "safe_blindspot",
+      "gain_db": -0.4098006871275075,
+      "candidate_gradient_mse": 8.170734669703886e-05,
+      "baseline_gradient_mse": 5.000866902315133e-05
+    },
+    {
+      "group": "d4",
+      "seed": 1,
+      "best_baseline": "safe_blindspot",
+      "gain_db": -0.8093169735444974,
+      "candidate_gradient_mse": 0.00018194692990944315,
+      "baseline_gradient_mse": 0.00012011687577045636
+    }
+  ],
+  "limits": "Recomputes public scalar/block arithmetic only; does not reconstruct predictions, re-infer, or establish untouched data efficacy."
+}
