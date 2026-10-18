@@ -1,0 +1,180 @@
+{
+  "status": "PASS_PUBLIC_ARTIFACT_AUDIT_WITH_OBSERVABILITY_LIMITS",
+  "checks": 31182,
+  "snapshot": "5dc6839d272f48bb57ce4a2f02ccf7aa8233478c",
+  "prior_public_files_preserved": 2164,
+  "prior_results_preserved": 2130,
+  "prior_protocol_files_preserved": 34,
+  "archive_files": 108,
+  "copy_modes": {
+    "byte_exact_copy": 79,
+    "path_redaction_not_original_bytes": 21
+  },
+  "constructed_artifacts": [
+    "results/0007-gradient-screen/README.md",
+    "results/0007-gradient-screen/archive-tool-error.json",
+    "results/0007-gradient-screen/artifact-hashes.json",
+    "results/0007-gradient-screen/case-index.json",
+    "results/0007-gradient-screen/copy-manifest.json",
+    "results/0007-gradient-screen/freeze-bindings.json",
+    "results/0007-gradient-screen/host-metadata.json",
+    "results/0007-gradient-screen/pre-execution-summary.json"
+  ],
+  "frozen_files": 8,
+  "cached_identity_links": 24,
+  "measurements": 4096,
+  "cases": [
+    {
+      "case": "d1-colored-0",
+      "records": 512,
+      "case_wall_seconds": 3.1693958369978645,
+      "core_seconds": 1.465199895999831,
+      "estimator_seconds": 0.5697013370408968,
+      "peak_rss_kib": 330380
+    },
+    {
+      "case": "d1-colored-1",
+      "records": 512,
+      "case_wall_seconds": 3.1802603979995183,
+      "core_seconds": 1.3829245879969676,
+      "estimator_seconds": 0.6406248799503373,
+      "peak_rss_kib": 331152
+    },
+    {
+      "case": "d2-colored-0",
+      "records": 512,
+      "case_wall_seconds": 3.1207501149983727,
+      "core_seconds": 1.3817700129984587,
+      "estimator_seconds": 0.6248187539931678,
+      "peak_rss_kib": 330784
+    },
+    {
+      "case": "d2-colored-1",
+      "records": 512,
+      "case_wall_seconds": 3.1155766709998716,
+      "core_seconds": 1.4031396280006447,
+      "estimator_seconds": 0.6332100339241151,
+      "peak_rss_kib": 330892
+    },
+    {
+      "case": "d3-colored-0",
+      "records": 512,
+      "case_wall_seconds": 2.87002000999928,
+      "core_seconds": 1.235674805000599,
+      "estimator_seconds": 0.5810914839967154,
+      "peak_rss_kib": 330672
+    },
+    {
+      "case": "d3-colored-1",
+      "records": 512,
+      "case_wall_seconds": 2.863912934997643,
+      "core_seconds": 1.2924348529995768,
+      "estimator_seconds": 0.5692981809770572,
+      "peak_rss_kib": 331152
+    },
+    {
+      "case": "d4-colored-0",
+      "records": 512,
+      "case_wall_seconds": 2.8670649500018044,
+      "core_seconds": 1.2411041099985596,
+      "estimator_seconds": 0.5477855060707952,
+      "peak_rss_kib": 330788
+    },
+    {
+      "case": "d4-colored-1",
+      "records": 512,
+      "case_wall_seconds": 2.966659198002162,
+      "core_seconds": 1.2937461609981256,
+      "estimator_seconds": 0.6277993779767712,
+      "peak_rss_kib": 330896
+    }
+  ],
+  "outer_receipt_records": [
+    {
+      "label": "frozen-score",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 3.185496335998323
+    },
+    {
+      "label": "frozen-verify",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 0.07502738499897532
+    },
+    {
+      "label": "independent-replay",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 2.2342647069999657
+    },
+    {
+      "label": "independent-self-test",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 0.14279680099934922
+    },
+    {
+      "label": "preflight-corrected-command",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 0.8328380999992078
+    },
+    {
+      "label": "preflight",
+      "exit": 2,
+      "raw_wait": 512,
+      "wall": 0.017069481997168623
+    },
+    {
+      "label": "publication-review",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 0.27499950200217427
+    },
+    {
+      "label": "runtime-tests",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 4.850973852000607
+    },
+    {
+      "label": "saved-integrity",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 0.4289793579991965
+    },
+    {
+      "label": "scientific-run",
+      "exit": 0,
+      "raw_wait": 0,
+      "wall": 24.22888316299941
+    }
+  ],
+  "archive_file_bytes": 4657904,
+  "subsequent_working_tree_archive_changes": [
+    "results/0007-gradient-screen/README.md"
+  ],
+  "total_estimator_seconds": 4.794329553929856,
+  "total_case_wall_seconds": 24.153640113996516,
+  "study_wall_seconds": 24.170182058001956,
+  "source_hashes": {
+    "configs/0007-gradient-screen.json": "3b6d6ef6043fdb01bc7fbe5eb28e78da8982d3d1e1041658317647d07535ff87",
+    "protocols/0007-antithetic-gradient-screen.md": "880c770f4511b9835ab1016dca884e771fea60d807c47139ae01b2a8b99850c9",
+    "scripts/antithetic_gradient_core.py": "5e15f96f2a9e2abb18a778dd66b3e522d6ae8ef23e5ea1584260d9198e753d21",
+    "scripts/antithetic_gradient_metrics.py": "e99191d6fb44a7a35060f4c61cb1ece7100bd6492b1d1ff103c6694c6fda42c8",
+    "scripts/run_antithetic_gradient_screen.py": "b306ea26231ffeb9eb9f09ba8893ed012d08a37f8093d2db089dfee05451b6db",
+    "tests/test_antithetic_gradient_core.py": "6da84979d4143085c383a03e474a6f345153042b393662cb51f073d309491822",
+    "tests/test_antithetic_gradient_metrics.py": "56d6a4193b27866c362a14e8d32427f3fec7635daeb399715d8e193019a474a9",
+    "tests/test_antithetic_gradient_supervision.py": "f07e9b9231d45e9681c80d812a47a2059a3ba7d8a629e2e5bbba2287a05692d2"
+  },
+  "independent_raw_gradient_replay_performed_locally": false,
+  "independent_cloud_tool_statuses_observed_here": false,
+  "limitations": [
+    "Private source paths/command bytes and raw gradients unavailable locally; source digests are cross-bound declarations.",
+    "Cloud wait4 receipts/logs are artifact evidence. Parent reports only first four preflight/source tool calls directly observed; subsequent tool records could not be retrieved due oversized turn.",
+    "Private failed-cache and marker preservation is a cloud artifact assertion, not a local rehash.",
+    "0006 stdout gap remains OPEN. No PSNR/training/novelty result follows from 0007."
+  ],
+  "elapsed_seconds": 1.152380833
+}

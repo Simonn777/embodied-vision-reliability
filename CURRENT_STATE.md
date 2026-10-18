@@ -17,7 +17,12 @@ ratios 0.227245 / 0.737618 / 0.570518 against independent / random / same-patch,
 seven best-control wins and total B step-time ratio 1.088192. Outer scientific
 wall was 24.228883 seconds, peak RSS 331,152 KiB. All previous results, failed
 caches and markers were preserved; no assets or packages were acquired.
-Only a separately reviewed/frozen optimization study may follow parent review.
+[Independent parent review](results/0007-gradient-screen/parent-review/README.md)
+now verifies the public arithmetic (36,843 checks), original cloud archive
+(31,182 assertions), and preservation of 2,164 prior result/protocol files.
+Raw gradients were replayed in cloud, not fetched locally; later outer tool returns
+could not be retrieved due to a tool size limit, so their exits rely on the archived
+wait4/log chain. Only a separately reviewed/frozen optimization study may follow.
 Generic antithetic matching is prior work; no manuscript is warranted.
 
 0006 publication is verified: PR 29 merged as `d2779c4a2dca4b5eac9a8c2855ada6578b55fbfc`.

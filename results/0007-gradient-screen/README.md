@@ -21,7 +21,7 @@ from the execution main; it does not identify the code used retrospectively.
   No asset acquisition, installation or paid service. The historical conservative
   asset ceiling remains **7,532,690,072 bytes**, with **0 new asset bytes** here.
 - Frozen runtime tests: **43 passed, zero skips**, unittest time 3.928 seconds;
-  actual outer exit 0, wall 4.851 seconds. Independent checker's exact user-pinned
+  actual outer exit 0, wall 4.851 seconds. Independent checker's pre-dispatched pinned
   SHA is `2e6ab7912ee1e56836da9cd61b059598d09125eb87d9693c1be8a79bd17fde6e`;
   its separate 11-group self-test passed before the measurement.
 - Scientific outer wait4: **exit 0 / raw status 0**, wall **24.228883 seconds**,
@@ -50,6 +50,12 @@ from the execution main; it does not identify the code used retrospectively.
   at rtol 1e-10 / atol 1e-12. It agrees with the decision and all gates.
 
 ## Frozen results
+
+![All eight B variance comparisons](gradient-variance.png)
+
+The figure is generated from the frozen public score summaries; all eight cases
+appear, including the case that loses to random pairing. It introduces no new
+measurement or decision rule.
 
 Ratios below are geometric means over the eight fixed checkpoints. The bootstrap
 upper uses the prespecified one-sided quantile 0.9833333333333333, conditional on
@@ -102,11 +108,19 @@ literal credential-detection string; the completed text copies and manifest were
 preserved and independently inspected, without rerunning science or score.
 These are orchestration failures, not model failures. Outer parent receipts
 observe their timeout child via wait4; the parent itself has no additional outer
-exit observer. Original tool records supply that limited additional context.
+exit observer. The parent directly inspected the first four source/preflight tool
+calls. Retrieval of the later command-tool records failed because the single
+cloud turn exceeds the read tool's size limit, even with outputs disabled.
+Scientific, score and replay exits are therefore supported here by the archived
+wait4/log chain, not independent observation of every outer tool return.
+Private gradients, failed-cache files and markers were not retrieved or rehashed
+locally; their replay/preservation is documented by the bound cloud artifacts.
 
 The old 0006 stdout defect remains **OPEN**, its failed candidate remains stopped,
 and 0003 remains deferred. This new local pass does not repair either history.
 The four substrates are development data forever, generic antithetic coupling
 is established prior work, and no effectiveness or novelty claim follows.
-Next: independent parent review, then a separate prospective optimization design
-with matched resources and a meaningful task-quality gate **before** training.
+[Independent parent review](parent-review/README.md) now verifies public arithmetic,
+all original archive bindings and preservation of 2,164 older result/protocol files.
+Next: a separate prospective optimization design with matched resources and a
+meaningful task-quality gate **before** training.
