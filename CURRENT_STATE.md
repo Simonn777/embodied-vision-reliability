@@ -1,8 +1,25 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: cloud shell restored; required PointOdyssey cache not found within bounded visible scope; fixed geometry operation not executed; cross-workspace one-shot state unknown.
+Updated: 2026-10-18. Program day 3. Phase: owner-authorized pivot to a falsifiable tracking-improvement hypothesis; Stage 0 implementation/pre-execution review in progress. No new efficacy result.
 
-## Active question
+## Active direction: improve tracking, with evidence before a paper
+
+The owner requested an explicit results-oriented change on October 18. The
+[0004 direction](docs/0004-research-direction.md) tests whether learning the benefit
+of an identity-preserving short-term-state intervention can improve tracking beyond
+risk prediction at matched cost. Novelty and performance are unestablished; closest
+memory-control and verifier work are explicitly acknowledged. No manuscript is
+being written. The [Stage 0 protocol](protocols/0004-state-intervention-stage0.md)
+uses only cached synthetic development video 0, 250 frames/eight fixed queries, to
+measure both beneficial and harmful resets. It is not a held-out efficacy test.
+
+Cloud preflight independently observed existing verified CPU dependencies, original
+checkpoint and development NPZ with matching digests; no new inference/download was
+performed in that preflight. The old 0002 inspected evaluation remains excluded.
+0003 is deferred with the missing-cache/one-shot limitations below preserved; this
+new direction does not authorize retries or threshold changes to that operation.
+
+## Historical 0003 blocker and original question
 
 Current blocker: [restored-shell cache inventory](docs/0003-restored-shell-cache-inventory-2026-10-18.md).
 The original Work entry now runs shell commands, independently inspected by the

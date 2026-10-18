@@ -2,6 +2,19 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
+## October 18 owner-authorized research pivot — active order
+
+1. Complete independent code/protocol review and freeze [0004 Stage 0](protocols/0004-state-intervention-stage0.md) before real inference. The goal is actual tracking improvement, not another confidence-only diagnostic or a process paper.
+2. Run the one bounded cache-only cloud CPU mechanism probe, preserve complete/partial raw outputs, and independently recompute summaries. Use the fixed continuation/undersensitivity rules; no old evaluation tuning.
+3. If warranted, audit representative independent development data and a modern causal baseline; freeze their access/splits and matched-budget comparisons before use. Train only a small benefit policy if real paired headroom exists. A single synthetic video is never the efficacy claim.
+4. Before writing any paper, satisfy the substantive gain, baseline, transfer, uncertainty and compute requirements in [0004 direction](docs/0004-research-direction.md). Reject/pivot a mechanism that fails; retain its evidence. Do not guarantee acceptance or manufacture positive results.
+
+The old 0003 task below is **deferred**, not a prerequisite for this newly authorized
+independent study. Its published constraints and one-shot state remain untouched.
+The recurring schedule is unchanged; no additional paid services are authorized.
+
+## Preserved earlier research order and blocker
+
 **October 18 blocking prerequisite:** the original Work entry now executes shell
 commands, but the required PointOdyssey cache/markers were not found in a bounded
 search of the two authorized visible project roots. [Actual commands and limits](docs/0003-restored-shell-cache-inventory-2026-10-18.md).
