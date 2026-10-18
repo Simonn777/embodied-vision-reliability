@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "decision": "APPROVE_INFRASTRUCTURE_PUBLICATION",
+  "reviewer_scope": "Two AI-assisted independent agents reviewed saved evidence/claims and preservation; the coordinating agent checked both reviews and candidate hashes. No human external review or independent cloud replay is claimed.",
+  "base_commit": "c608f30976e3b4a31263f66738b56c4c2b367760",
+  "preservation": {
+    "tracked_baseline_paths": 1679,
+    "protected_paths_unchanged": 1675,
+    "prior_result_files_unchanged": 1526,
+    "scientific_paths_unchanged": 89,
+    "mandatory_frozen_inputs_unchanged": 45,
+    "historical_frozen_inputs_unchanged": 38,
+    "canonical_receipt_unchanged": true,
+    "current_and_next_changes_limited_to_top_sections": true,
+    "note_base_prefix_byte_identical": true,
+    "old_notes_and_results_unchanged": true,
+    "new_expected_geometry_output_absent": true
+  },
+  "transcription": {
+    "command_records": 3,
+    "command_output_exit_duration_time_window_exact": true,
+    "all_command_output_digests_match": true
+  },
+  "reviewed_file_sha256": {
+    "CURRENT_STATE.md": "c499f8e18e12c5c70127b824860dda06b97d907e09b9008476d5cd70b70081a3",
+    "NEXT_ACTIONS.md": "d2165c56ef2200c9f7be7d92fddf3c5f9c53f665cfa83d9c63457d092eabe804",
+    "notes/2026-10-18.md": "810f6b0626527c9b5c9ec8badc422d7503eaf608a13d097fd741f0c824b623da",
+    "docs/0003-restored-shell-cache-inventory-2026-10-18.md": "41f4df201e1c19f3c32bd42f1fd929388c7143b1b76405a32ecb4ac96df126e7",
+    "results/0003-restored-shell-inventory-20261018/observation.json": "5e38cbf72c60ca8e443cd052b04cd9125f404f840f75944721ae8fbfd5e13005"
+  },
+  "content_checks": [
+    "All three published command/output records and their digests exactly match original commandExecution items; user prompts, assistant messages and conversation IDs excluded.",
+    "Search reports 1302 entries, 278 opened directories, zero matches/recovery candidates/errors, exit0 and no entry/time stop; first stat exit1 and second metadata command exit0 are correctly distinguished.",
+    "Shell availability is distinguished from required cache visibility, one-shot reconciliation and a scientific execution.",
+    "Candidate explicitly limits negative search to named roots/depth/exclusions and preserves UNKNOWN cross-workspace state; no deletion, rollback or cache-recovery claim.",
+    "Search process elapsed and tool duration are distinguished; no independent wait4/CPU/RSS or precise command timestamp is claimed.",
+    "Source history, INCONCLUSIVE half-cell result, thresholds, 45-input freeze and 22910156-byte semantic carry are not claimed rerun or improved.",
+    "Published data comprises task-specific filesystem metadata and command records, not credentials, conversation IDs or dataset payloads; no sensitive personal content identified in reviewed text.",
+    "Recovery requires original cached NPZ/markers and state verification; missing paths do not authorize marker recreation, downloads or a repeated scientific run."
+  ],
+  "limits": [
+    "MAX_DEPTH=6 controls directory descent; entries of a depth6 directory can be inspected at relative depth7. Depth-pruned and excluded directories are not tallied as truncated.",
+    "15-second traversal guard is cooperative, not a whole-command hard timeout; separate cache-child listing cap200 and two subprocess timeout5s apply.",
+    "1302/278 are main traversal counters; later cache-child metadata reinspection and Git checks are outside those counters.",
+    "findmnt reports only the selected path filesystem / overlay, not a full mount inventory.",
+    "No-match applies only to configured basename/archive/output patterns; no conclusion about other names, excluded paths, other hosts or platform-level backups.",
+    "No supported restore interface identified is a bounded task observation, not proof of platform-level impossibility.",
+    "The review verifies saved command records and publication consistency, not global network/billing behavior or exact remote filesystem state at later times.",
+    "Baseline file preservation is being reviewed separately; this content review does not claim an independent full-repository baseline comparison.",
+    "Final GitHub commit, merge and CI state are checked separately after this file review."
+  ],
+  "blocking_findings": []
+}

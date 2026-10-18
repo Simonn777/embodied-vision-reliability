@@ -1,17 +1,19 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: cloud runtime offline; fixed geometry operation not executed; original cache and one-shot state unverified.
+Updated: 2026-10-18. Program day 3. Phase: cloud shell restored; required PointOdyssey cache not found within bounded visible scope; fixed geometry operation not executed; cross-workspace one-shot state unknown.
 
 ## Active question
 
-Current blocker: [offline recovery report](docs/0003-cache-recovery-2026-10-18.md).
-The cloud follow-up reports that the original-path lookup was rejected before shell
-launch. The earlier cache-visibility failure and 45-input gate PASS are historical;
-current cache, markers and processes remain unknown. No new geometry result exists.
-[Independent publication review](docs/0003-cache-readiness-independent-review.md)
-separates the saved evidence from what the parent could independently verify.
-Restore the original workspace connection and reconcile existing data/markers before
-continuation; preserve the freeze and old failures without redownload or marker reset.
+Current blocker: [restored-shell cache inventory](docs/0003-restored-shell-cache-inventory-2026-10-18.md).
+The original Work entry now runs shell commands, independently inspected by the
+parent. The exact PointOdyssey cache directory is missing from that visible view;
+a bounded metadata search of two authorized project roots found no required NPZ,
+original markers or recovery candidate (1,302 entries / 278 directories).
+This does not prove global deletion or reconcile cross-workspace one-shot state.
+No geometry was attempted in this follow-up. Recover the existing cache and
+markers from a supported view/backup before continuation; preserve the freeze and
+old failures without redownload or marker reset. The earlier offline report and
+publication review remain historical evidence, unchanged.
 
 For a fixed visual position estimator, does causal temporal consistency identify large localization errors under held-out occlusion/appearance shifts better than confidence from the current image alone, at comparable accepted-prediction coverage?
 
