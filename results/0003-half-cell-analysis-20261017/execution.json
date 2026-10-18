@@ -1,0 +1,49 @@
+{
+  "command": [
+    "timeout",
+    "60",
+    "python",
+    "scripts/half_cell_certificate_v1.py",
+    "--input",
+    "results/0003-half-cell-analysis-20261017/input.json"
+  ],
+  "prepublished_method_commit": "c1bcc597db980cd3aa14c0747af0183da266e6af",
+  "execution_commit": "565c1aa4d07f548c9201eebf18204e79b3f72473",
+  "started_utc": "2026-10-18T02:04:36.445373+00:00",
+  "ended_utc": "2026-10-18T02:04:36.480256+00:00",
+  "wall_seconds": 0.0348954820074141,
+  "peak_rss_kib": 11392,
+  "CPU_user_seconds": 0.025955,
+  "CPU_system_seconds": 0.008357999999999999,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "source_sha256": {
+    "protocols/0003-half-cell-analysis-v1.md": "0c31d3869ac28bd728b7068783d07a3b8cff64c6521c9ba1232fb12477a86d03",
+    "configs/0003-half-cell-analysis-v1.json": "94a75616297607ed15adc19de7264dbe3d25dffbf040ed2a6274dc0fa4fb0e74",
+    "scripts/half_cell_certificate_v1.py": "c1a8f2915043af2fda54b6629aadca9b46eb6a25532e38fa1660f4b227f69c6a",
+    "tests/test_half_cell_certificate_v1.py": "4474934f0b29c66a06c8d03e6e619fa0225c5cc7a181c889a8e08eb42af6d887",
+    "results/0003-source-history-stageA-20261017/half_cell_parent.py": "6ee07ab6fa8b5fbaa0c1d5930df58e9cf035ddac8a785ce2e22ac34c1e5aa9d5"
+  },
+  "input_sha256": "4bba1bc8c3e8583149ff89548b5744ac0150a0557b65a03e67f7e66be43c3944",
+  "original_R36_bytes_sha256": "30ad76bb6e0229388141a520a1abbbedd120ae8799623c7a79d5258be740b266",
+  "stdout_sha256": "356f8dc9fe105edde71ea327e2a5ff4185157999756babdbde5adc2af3a2e5ac",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "pre_execution_receipt_sha256": "02eaa5c5ab46ec470acd109051eb6b962c34e95e13749bb5aeee0686de8a3244",
+  "AS_bytes": 6442450944,
+  "affinity": [
+    0,
+    1
+  ],
+  "timeout_seconds": 60,
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "GIT_NO_LAZY_FETCH": "1",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "boundary": "actual parent wait4 of timeout/checker; parent itself has no additional observed supervisor exit receipt"
+}

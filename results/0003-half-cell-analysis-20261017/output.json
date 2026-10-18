@@ -1,0 +1,474 @@
+{
+  "status": "INCONCLUSIVE",
+  "method": "one deterministic largest trace/diagonal branch; w,x,y,z tie order; rational homogeneous quaternion; no sqrt, fitting, or search",
+  "proposals_attempted": 1,
+  "input": {
+    "R_hex": "00603cbf000080b300602dbf0000713e000070bf00e082be00a022bf00e0b1be00a0303f",
+    "byte_order": "little",
+    "sha256": "30ad76bb6e0229388141a520a1abbbedd120ae8799623c7a79d5258be740b266"
+  },
+  "proposal": {
+    "branch": "z",
+    "branch_quantities": [
+      {
+        "numerator": "17",
+        "denominator": "1024"
+      },
+      {
+        "numerator": "131",
+        "denominator": "256"
+      },
+      {
+        "numerator": "111",
+        "denominator": "1024"
+      },
+      {
+        "numerator": "861",
+        "denominator": "256"
+      }
+    ],
+    "homogeneous_quaternion": [
+      {
+        "numerator": "3948545",
+        "denominator": "16777216"
+      },
+      {
+        "numerator": "-21",
+        "denominator": "16"
+      },
+      {
+        "numerator": "-1235",
+        "denominator": "2048"
+      },
+      {
+        "numerator": "861",
+        "denominator": "256"
+      }
+    ],
+    "quaternion_squared_norm": {
+      "numerator": "3786781203398657",
+      "denominator": "281474976710656"
+    },
+    "hypothetical_rotation": [
+      [
+        {
+          "numerator": "-2785829932466175",
+          "denominator": "3786781203398657"
+        },
+        {
+          "numerator": "-45210009600",
+          "denominator": "3786781203398657"
+        },
+        {
+          "numerator": "-2564929524908032",
+          "denominator": "3786781203398657"
+        }
+      ],
+      [
+        {
+          "numerator": "891165024583680",
+          "denominator": "3786781203398657"
+        },
+        {
+          "numerator": "-3550886953975807",
+          "denominator": "3786781203398657"
+        },
+        {
+          "numerator": "-967852582502400",
+          "denominator": "3786781203398657"
+        }
+      ],
+      [
+        {
+          "numerator": "-2405137910546432",
+          "denominator": "3786781203398657"
+        },
+        {
+          "numerator": "-1315641942343680",
+          "denominator": "3786781203398657"
+        },
+        {
+          "numerator": "2612299713511425",
+          "denominator": "3786781203398657"
+        }
+      ]
+    ]
+  },
+  "exact_SO3": {
+    "RRt": [
+      [
+        {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      ],
+      [
+        {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      ],
+      [
+        {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "numerator": "1",
+          "denominator": "1"
+        }
+      ]
+    ],
+    "RtR": [
+      [
+        {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      ],
+      [
+        {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      ],
+      [
+        {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        {
+          "numerator": "1",
+          "denominator": "1"
+        }
+      ]
+    ],
+    "determinant": {
+      "numerator": "1",
+      "denominator": "1"
+    },
+    "verified": true
+  },
+  "cells": [
+    {
+      "index": [
+        0,
+        0
+      ],
+      "original_f32_hex": "00603cbf",
+      "stored_value": {
+        "numerator": "-1507",
+        "denominator": "2048"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "-3015",
+          "denominator": "4096"
+        },
+        "upper": {
+          "numerator": "-3013",
+          "denominator": "4096"
+        },
+        "lower_closed": false,
+        "upper_closed": false,
+        "half_bits": "b9e3"
+      },
+      "hypothetical_entry": {
+        "numerator": "-2785829932466175",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": true
+    },
+    {
+      "index": [
+        0,
+        1
+      ],
+      "original_f32_hex": "000080b3",
+      "stored_value": {
+        "numerator": "-1",
+        "denominator": "16777216"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "-3",
+          "denominator": "33554432"
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "33554432"
+        },
+        "lower_closed": false,
+        "upper_closed": false,
+        "half_bits": "8001"
+      },
+      "hypothetical_entry": {
+        "numerator": "-45210009600",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": false
+    },
+    {
+      "index": [
+        0,
+        2
+      ],
+      "original_f32_hex": "00602dbf",
+      "stored_value": {
+        "numerator": "-1387",
+        "denominator": "2048"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "-2775",
+          "denominator": "4096"
+        },
+        "upper": {
+          "numerator": "-2773",
+          "denominator": "4096"
+        },
+        "lower_closed": false,
+        "upper_closed": false,
+        "half_bits": "b96b"
+      },
+      "hypothetical_entry": {
+        "numerator": "-2564929524908032",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": true
+    },
+    {
+      "index": [
+        1,
+        0
+      ],
+      "original_f32_hex": "0000713e",
+      "stored_value": {
+        "numerator": "241",
+        "denominator": "1024"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "3855",
+          "denominator": "16384"
+        },
+        "upper": {
+          "numerator": "3857",
+          "denominator": "16384"
+        },
+        "lower_closed": true,
+        "upper_closed": true,
+        "half_bits": "3388"
+      },
+      "hypothetical_entry": {
+        "numerator": "891165024583680",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": true
+    },
+    {
+      "index": [
+        1,
+        1
+      ],
+      "original_f32_hex": "000070bf",
+      "stored_value": {
+        "numerator": "-15",
+        "denominator": "16"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "-3841",
+          "denominator": "4096"
+        },
+        "upper": {
+          "numerator": "-3839",
+          "denominator": "4096"
+        },
+        "lower_closed": true,
+        "upper_closed": true,
+        "half_bits": "bb80"
+      },
+      "hypothetical_entry": {
+        "numerator": "-3550886953975807",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": true
+    },
+    {
+      "index": [
+        1,
+        2
+      ],
+      "original_f32_hex": "00e082be",
+      "stored_value": {
+        "numerator": "-1047",
+        "denominator": "4096"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "-2095",
+          "denominator": "8192"
+        },
+        "upper": {
+          "numerator": "-2093",
+          "denominator": "8192"
+        },
+        "lower_closed": false,
+        "upper_closed": false,
+        "half_bits": "b417"
+      },
+      "hypothetical_entry": {
+        "numerator": "-967852582502400",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": true
+    },
+    {
+      "index": [
+        2,
+        0
+      ],
+      "original_f32_hex": "00a022bf",
+      "stored_value": {
+        "numerator": "-1301",
+        "denominator": "2048"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "-2603",
+          "denominator": "4096"
+        },
+        "upper": {
+          "numerator": "-2601",
+          "denominator": "4096"
+        },
+        "lower_closed": false,
+        "upper_closed": false,
+        "half_bits": "b915"
+      },
+      "hypothetical_entry": {
+        "numerator": "-2405137910546432",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": true
+    },
+    {
+      "index": [
+        2,
+        1
+      ],
+      "original_f32_hex": "00e0b1be",
+      "stored_value": {
+        "numerator": "-1423",
+        "denominator": "4096"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "-2847",
+          "denominator": "8192"
+        },
+        "upper": {
+          "numerator": "-2845",
+          "denominator": "8192"
+        },
+        "lower_closed": false,
+        "upper_closed": false,
+        "half_bits": "b58f"
+      },
+      "hypothetical_entry": {
+        "numerator": "-1315641942343680",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": true
+    },
+    {
+      "index": [
+        2,
+        2
+      ],
+      "original_f32_hex": "00a0303f",
+      "stored_value": {
+        "numerator": "1413",
+        "denominator": "2048"
+      },
+      "negative_zero": false,
+      "rounding_cell": {
+        "lower": {
+          "numerator": "2825",
+          "denominator": "4096"
+        },
+        "upper": {
+          "numerator": "2827",
+          "denominator": "4096"
+        },
+        "lower_closed": false,
+        "upper_closed": false,
+        "half_bits": "3985"
+      },
+      "hypothetical_entry": {
+        "numerator": "2612299713511425",
+        "denominator": "3786781203398657"
+      },
+      "cell_membership": true
+    }
+  ],
+  "cells_satisfied": 8,
+  "zero_convention": "Exact rational zero rounds to +0; a -0 target requires a negative witness entry. No assertion about upstream signed-zero arithmetic.",
+  "interpretation": "This single fixed proposal did not certify compatibility. The hypothesis is unresolved; no infeasibility or causal conclusion follows.",
+  "forbidden_uses": [
+    "camera replacement",
+    "projection",
+    "data qualification",
+    "threshold alteration",
+    "pre-quantization provenance claim"
+  ]
+}
