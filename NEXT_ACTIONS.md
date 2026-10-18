@@ -16,16 +16,17 @@ The recurring schedule is unchanged; no additional paid services are authorized.
 
 ## Immediate 0005 execution order
 
-1. Finish independent review of the native CPU adapter, exact overlay acquisition,
-   and frozen-source supervisor; freeze source/config/protocol in separate commits
-   and verify publication before runtime changes.
-2. On the existing cloud CPU, verify no active run/0005 marker; prepare only the
-   fixed source and three-wheel overlay. Inspect the actual import receipt before
-   the separately bounded new checkpoint acquisition. Keep the historical
-   4,823,387,101-byte acquisition ceiling and old caches unchanged.
-3. Only if those gates pass, execute the single fixed 8-frame/8-query native
-   capability operation. Preserve any failure without retry. Publish measured
-   outputs, costs and provenance, without an accuracy/improvement claim.
+1. **Frozen and attempted once:** [0005 preparation evidence](results/0005-native-capability/README.md).
+   Seven-file verify-only passed; dependency preparation exited 1 on an empty
+   source `.partial` entry. Installation exited 0; import child was not launched.
+   Preserve all assets, partials and markers.
+2. Independently review the failure and acquisition/source-guard interaction.
+   Any fix or further attempt requires a reviewed prospective revision without
+   deleting old evidence or changing the old freeze. Conservative acquisition
+   ceiling: 4,966,784,411 bytes; historical ceiling: 4,823,387,101 bytes.
+3. **Blocked, not attempted:** checkpoint acquisition and native capability.
+   Do not start either from failed preparation or treat installation as a passed
+   import gate. CPU feasibility remains unknown; no automatic retry is authorized.
 4. Determine an independent real-video development/evaluation route before testing
    the [conditional auxiliary-query hypothesis](docs/0005-support-query-candidate.md).
    Generic support points and negative prompts already exist. Require matched
