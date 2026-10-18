@@ -1,0 +1,59 @@
+{
+  "reviewed_candidate": "ec26b8fc1a4901d9e249480da6cc9f772885baca",
+  "original_result_publication": "398446b158435abfa96603d22aea0f9ad68b8d28",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-I",
+    "/tmp/0003-half-certificate-output-verifier.py",
+    "--original-input",
+    "/tmp/0003-half-output-native-input.json",
+    "--claimed-output",
+    "/tmp/0003-half-output-native-claimed-output.json"
+  ],
+  "started_utc": "2026-10-18T02:20:09.023115+00:00",
+  "ended_utc": "2026-10-18T02:20:09.098288+00:00",
+  "elapsed_seconds": 0.07505145899999999,
+  "observed_child_returncode": 0,
+  "verifier_source_sha256": "f49dbb6a0382aecd02b76dda62ba44fc37aeba2aef128384774ca7c90ec11a0b",
+  "launcher_source_sha256": "c67975a18bf0105f9a17dcb87ecd3ed8558c876ad6aa60962ab8f44c3ac9bfda",
+  "published_inputs": {
+    "input": {
+      "path": "results/0003-half-cell-analysis-20261017/input.json",
+      "sha256": "4bba1bc8c3e8583149ff89548b5744ac0150a0557b65a03e67f7e66be43c3944"
+    },
+    "claimed-output": {
+      "path": "results/0003-half-cell-analysis-20261017/output.json",
+      "sha256": "356f8dc9fe105edde71ea327e2a5ff4185157999756babdbde5adc2af3a2e5ac"
+    },
+    "data-terms": {
+      "path": "results/0003-half-cell-analysis-20261017/data-terms.json",
+      "sha256": "631e27f6dfb743be74494cccee4acbdc060a0184865ad9c018527af662607caf"
+    }
+  },
+  "source_camera_excerpt": {
+    "path": "results/0003-rotation-stageB-20261017/audit/camera-excerpt.json",
+    "sha256": "8c6397627a21a2585bc252151697e80ef510f93d7dd695463642e37536c10e81",
+    "R9_stored_bytes_equal_input": true
+  },
+  "published_input_output_terms_unchanged_from_original_result_commit": true,
+  "stdout_sha256": "dd910c4cf50b282e8747721c4ed571c20763121e98db520d6435bb1dffc5ebce",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data_terms": {
+    "authors": [
+      "Yang Zheng",
+      "Adam W. Harley",
+      "Bokui Shen",
+      "Gordon Wetzstein",
+      "Leonidas J. Guibas"
+    ],
+    "dataset": "PointOdyssey v1.2",
+    "HF_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+    "source": "https://huggingface.co/datasets/aharley/pointodyssey",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "modifications": "none to numeric values; lossless stored-byte/float.hex/rational representations only",
+    "scope_exception": "new explicit narrow permission for exactly25 development frame0 scalars, not full arrays, trajectories or images; these data/derived numeric output are not repo MIT",
+    "analysis_output": "hypothetical exact proper-rotation witness and cell statistics are derived data, never a replacement camera or proof of generation; original R bytes unchanged"
+  },
+  "boundary": "Only prewritten independent output verifier executed on published JSON. No proposal generation, candidate code import, dataset/cache/archive/model/projection access. Receipt observes verifier child exit, not an additional outer supervisor exit."
+}

@@ -1,0 +1,87 @@
+{
+  "status": "SCOPED_APPROVE_SOURCE_STAGE_A_NO_BLOCKERS",
+  "candidate": "565c1aa4d07f548c9201eebf18204e79b3f72473",
+  "source_audit_commit": "a3f28d7f8d4611d0b379f6acefa65514ac55df71",
+  "base": "2826fac713fd998e4edf1666017c4944f98002d3",
+  "candidate_tree": "da6cf646883729690b501728fd30c78aac3b935b",
+  "protected_paths_preserved": 1544,
+  "prior_results_preserved": 1420,
+  "five_receipts_38_inputs_preserved": true,
+  "notes_append_only": true,
+  "prior_method_commit": "c1bcc597db980cd3aa14c0747af0183da266e6af",
+  "four_method_files_byte_identical": true,
+  "new_canonical_receipt_absent": true,
+  "new_source_stageA_artifact_count": 12,
+  "complete_source_stageA_artifact_sha256": {
+    "results/0003-source-history-stageA-20261017/audit/audit.json": "672e12b46f72255b6b32b2533e129f844ff8cdacb60e5695e832874fbc94f350",
+    "results/0003-source-history-stageA-20261017/baseline.json": "4afdd87caddea8fa4fe438c60fdcbbc227738d1098b9bd907c34fc236f8162aa",
+    "results/0003-source-history-stageA-20261017/capture_parent.py": "538be83630df2e270bda72d4e73f3063b7de7c37aa7f44e1c9361418fbdb446e",
+    "results/0003-source-history-stageA-20261017/composition-history.json": "11b8e9eeb5e3cae842aba95934a8c72464ae5a465067c4b25563462622c81718",
+    "results/0003-source-history-stageA-20261017/fixtures-parent.json": "0227ce8a8d4df0924bad1045043b80efb41a1601438f396abec78592e9a274c6",
+    "results/0003-source-history-stageA-20261017/fixtures.stderr.log": "969a330eaba2d6120dc07ceb4fa0b84b252b243b56e4211b248372271a0dbc1d",
+    "results/0003-source-history-stageA-20261017/fixtures.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0003-source-history-stageA-20261017/publication-check.json": "fada3d602587d55f9fc3874af1ea1591ab0ea46076a6864f7ea5483bb989b3e5",
+    "results/0003-source-history-stageA-20261017/publication_check.py": "53fb1d4e3602e08e926217b818708fd318ddded260e3408740aaa4df631fd7ee",
+    "results/0003-source-history-stageA-20261017/source-audit-parent.json": "655ca6618f6e9a61bb1fb31d7cb733fb701016244b2ce3cf9b2bed7d7e1cc046",
+    "results/0003-source-history-stageA-20261017/source-audit.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/0003-source-history-stageA-20261017/source-audit.stdout.log": "45cb1f75e3d7307b345b98b3f491f01c373a4992833170baa9f06119c5a6b76e"
+  },
+  "complete_source_stageA_map_sha256": "203f69a0bd54d3ff2b2b7c7b5c136ca79f03853966c28adae3475ebe5921027b",
+  "publication_map_17_entries_cover_all_added_files_except_self": 17,
+  "source_log_hashes_match": true,
+  "actual_cloud_phases": {
+    "source-audit": {
+      "started_utc": "2026-10-18T01:58:59.858977+00:00",
+      "ended_utc": "2026-10-18T01:59:00.306599+00:00",
+      "wall_seconds": 0.44762442000501323,
+      "peak_rss_kib": 12416,
+      "observed_exit_code": 0,
+      "raw_wait_status": 0
+    },
+    "fixtures": {
+      "started_utc": "2026-10-18T01:59:24.579479+00:00",
+      "ended_utc": "2026-10-18T01:59:24.630352+00:00",
+      "wall_seconds": 0.050878979003755376,
+      "peak_rss_kib": 13184,
+      "observed_exit_code": 0,
+      "raw_wait_status": 0
+    }
+  },
+  "cached_source_metadata": {
+    "body_count": 5,
+    "body_bytes": 29614,
+    "tree_bytes": 9811,
+    "total_bytes": 39425,
+    "tree_entries": 41,
+    "blob_count": 38,
+    "unread_bodies": 33,
+    "upstream_objects_unavailable_locally": 39,
+    "all_body_and_tree_hashes_match_preexisting_acquisition_evidence": true
+  },
+  "saved_fact_bindings_match": true,
+  "current_charge": 22910156,
+  "future_plan_only": {
+    "fixed_frames": [
+      0,
+      1,
+      2
+    ],
+    "fixed_points": [
+      0,
+      1
+    ],
+    "prospective_charged_total": 23775416,
+    "executable_reader_not_present_yet": true,
+    "new_geometry_not_executed": true
+  },
+  "scope_boundaries": [
+    "Read-only Git/blob/stdlibrary review; no candidate execution, cache access, source body reread, numerical analysis, model or data decoding locally.",
+    "runtime.execution_source records base Git HEAD2826fac; the new audit files did not exist in that commit. Exact executed code is bound separately by the before-child source SHA map and matching later publication, not by claiming the base commit contains new code.",
+    "Cached source-body/tree hashing and blob membership are supported by reviewed cloud code/records and prior acquisition identities; raw cached bodies were not independently rehashed here.",
+    "Missing local upstream objects and 33 unread bodies cannot prove upstream lacks a converter. Report confines static observations to the five inspected bodies.",
+    "Source-audit and fixture wait4 receipts observe children only; publication checker has no outer wait. Composition failure is explicitly narrative-only.",
+    "This candidate contains no saved-R compatibility output or implemented/frozen next geometry. Reported future/in-progress results are not audited here.",
+    "No global network/cost attestation; source limits are established by bounded inspected code and recorded scope."
+  ],
+  "blockers": []
+}

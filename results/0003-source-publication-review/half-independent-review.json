@@ -1,0 +1,141 @@
+{
+  "review_status": "APPROVE_accurate_inconclusive_publication",
+  "reviewed_candidate": "ec26b8fc1a4901d9e249480da6cc9f772885baca",
+  "original_result_publication": "398446b158435abfa96603d22aea0f9ad68b8d28",
+  "verified_result": {
+    "verification": "passed",
+    "independently_expected_status": "INCONCLUSIVE",
+    "cells_satisfied": 8,
+    "proposals_attempted": 1,
+    "original_f32_values": 9,
+    "exact_SO3": true,
+    "gram_entries_checked": 18,
+    "determinant": "1",
+    "cell_checks": [
+      {
+        "index": [
+          0,
+          0
+        ],
+        "target_half_bits": "b9e3",
+        "exact_rounded_witness_half_bits": "b9e3",
+        "membership": true
+      },
+      {
+        "index": [
+          0,
+          1
+        ],
+        "target_half_bits": "8001",
+        "exact_rounded_witness_half_bits": "80c8",
+        "membership": false
+      },
+      {
+        "index": [
+          0,
+          2
+        ],
+        "target_half_bits": "b96b",
+        "exact_rounded_witness_half_bits": "b96b",
+        "membership": true
+      },
+      {
+        "index": [
+          1,
+          0
+        ],
+        "target_half_bits": "3388",
+        "exact_rounded_witness_half_bits": "3388",
+        "membership": true
+      },
+      {
+        "index": [
+          1,
+          1
+        ],
+        "target_half_bits": "bb80",
+        "exact_rounded_witness_half_bits": "bb80",
+        "membership": true
+      },
+      {
+        "index": [
+          1,
+          2
+        ],
+        "target_half_bits": "b417",
+        "exact_rounded_witness_half_bits": "b417",
+        "membership": true
+      },
+      {
+        "index": [
+          2,
+          0
+        ],
+        "target_half_bits": "b915",
+        "exact_rounded_witness_half_bits": "b915",
+        "membership": true
+      },
+      {
+        "index": [
+          2,
+          1
+        ],
+        "target_half_bits": "b58f",
+        "exact_rounded_witness_half_bits": "b58f",
+        "membership": true
+      },
+      {
+        "index": [
+          2,
+          2
+        ],
+        "target_half_bits": "3985",
+        "exact_rounded_witness_half_bits": "3985",
+        "membership": true
+      }
+    ],
+    "arithmetic": "Fraction exact nearest-neighbor/even half-code rounding; determinant via pivoted Gaussian elimination",
+    "boundary": "Checks the supplied exact witness and saved-byte binding. Does not regenerate quaternion proposal, prove execution provenance, or evaluate geometry. Positive certificate proves compatibility only; failed proposal is inconclusive.",
+    "original_input_sha256": "4bba1bc8c3e8583149ff89548b5744ac0150a0557b65a03e67f7e66be43c3944",
+    "claimed_output_sha256": "356f8dc9fe105edde71ea327e2a5ff4185157999756babdbde5adc2af3a2e5ac",
+    "verifier_source_sha256": "f49dbb6a0382aecd02b76dda62ba44fc37aeba2aef128384774ca7c90ec11a0b"
+  },
+  "verifier_source_sha256": "f49dbb6a0382aecd02b76dda62ba44fc37aeba2aef128384774ca7c90ec11a0b",
+  "launcher_source_sha256": "c67975a18bf0105f9a17dcb87ecd3ed8558c876ad6aa60962ab8f44c3ac9bfda",
+  "input_sha256": "4bba1bc8c3e8583149ff89548b5744ac0150a0557b65a03e67f7e66be43c3944",
+  "claimed_output_sha256": "356f8dc9fe105edde71ea327e2a5ff4185157999756babdbde5adc2af3a2e5ac",
+  "independent_output_sha256": "dd910c4cf50b282e8747721c4ed571c20763121e98db520d6435bb1dffc5ebce",
+  "execution_receipt_sha256": "07405dfdb42b8fe5eafbafe4483b375915f83c437bdf62e979068ccd5cfdde2e",
+  "data_terms_sha256": "631e27f6dfb743be74494cccee4acbdc060a0184865ad9c018527af662607caf",
+  "source_camera_excerpt_sha256": "8c6397627a21a2585bc252151697e80ef510f93d7dd695463642e37536c10e81",
+  "original_R9_binding_verified": true,
+  "failed_cell_indices": [
+    [
+      0,
+      1
+    ]
+  ],
+  "limits": [
+    "The fixed witness is exact SO(3), but one half-cell failure prevents a compatibility certificate.",
+    "An inconclusive single proposal does not exclude every possible SO(3) witness and does not establish actual generation provenance.",
+    "Original strict rotation gate and results remain unchanged; no hypothetical matrix may enter geometry/data qualification.",
+    "Independent checker does not regenerate the quaternion formula or rerun the proposal; source/execution binding is reviewed separately."
+  ],
+  "data_terms": {
+    "authors": [
+      "Yang Zheng",
+      "Adam W. Harley",
+      "Bokui Shen",
+      "Gordon Wetzstein",
+      "Leonidas J. Guibas"
+    ],
+    "dataset": "PointOdyssey v1.2",
+    "HF_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+    "source": "https://huggingface.co/datasets/aharley/pointodyssey",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "modifications": "none to numeric values; lossless stored-byte/float.hex/rational representations only",
+    "scope_exception": "new explicit narrow permission for exactly25 development frame0 scalars, not full arrays, trajectories or images; these data/derived numeric output are not repo MIT",
+    "analysis_output": "hypothetical exact proper-rotation witness and cell statistics are derived data, never a replacement camera or proof of generation; original R bytes unchanged"
+  }
+}

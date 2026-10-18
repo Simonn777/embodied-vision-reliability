@@ -11,6 +11,8 @@ The program runs from October 2026 to October 2027. The first twelve weeks focus
 | Artifact | What it answers |
 |---|---|
 | [Current state](CURRENT_STATE.md) | What has actually been completed? |
+| [Conversion evidence and executable geometry input](docs/0003-source-history-and-geometry-plan-2026-10-17.md) | What does the one saved-R compatibility result establish, and what complete prospective input awaits review? |
+| [Cached conversion history and next candidate](docs/0003-source-history-stageA-2026-10-17.md) | How strong is the float16 explanation, what source links are missing, and what descriptive check is proposed? |
 | [Frame 0 rotation failure: recorded diagnostic](docs/0003-rotation-diagnostic-stageB-2026-10-17.md) | Which exact stored camera defects trigger the unchanged gate, and what can precision evidence establish? |
 | [Frozen Fortran audit: reader complete, geometry stopped](docs/0003-fortran-stageB-2026-10-17.md) | What did the one cache-only run access, and why did its first camera check stop? |
 | [Motion versus drift: frozen design and data audit](docs/0003-review-and-readiness.md) | What can the next study distinguish, what is the improvement target, and why is its independent cohort still blocked? |

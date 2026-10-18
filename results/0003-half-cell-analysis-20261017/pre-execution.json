@@ -1,0 +1,27 @@
+{
+  "status": "ANALYSIS_STARTING_NO_RETRY",
+  "verified_before_invocation_utc": "2026-10-18T02:04:36.444139+00:00",
+  "prepublished_method_commit": "c1bcc597db980cd3aa14c0747af0183da266e6af",
+  "actual_execution_commit": "565c1aa4d07f548c9201eebf18204e79b3f72473",
+  "method_source_sha256": {
+    "protocols/0003-half-cell-analysis-v1.md": "0c31d3869ac28bd728b7068783d07a3b8cff64c6521c9ba1232fb12477a86d03",
+    "configs/0003-half-cell-analysis-v1.json": "94a75616297607ed15adc19de7264dbe3d25dffbf040ed2a6274dc0fa4fb0e74",
+    "scripts/half_cell_certificate_v1.py": "c1a8f2915043af2fda54b6629aadca9b46eb6a25532e38fa1660f4b227f69c6a",
+    "tests/test_half_cell_certificate_v1.py": "4474934f0b29c66a06c8d03e6e619fa0225c5cc7a181c889a8e08eb42af6d887"
+  },
+  "parent_source_sha256": "6ee07ab6fa8b5fbaa0c1d5930df58e9cf035ddac8a785ce2e22ac34c1e5aa9d5",
+  "input_json_sha256": "4bba1bc8c3e8583149ff89548b5744ac0150a0557b65a03e67f7e66be43c3944",
+  "original_R36_bytes_sha256": "30ad76bb6e0229388141a520a1abbbedd120ae8799623c7a79d5258be740b266",
+  "saved_excerpt_sha256": "8c6397627a21a2585bc252151697e80ef510f93d7dd695463642e37536c10e81",
+  "old_diagnostic_sha256": "a1f79a887f3d707fb046e011ee1e31e5f62f17aeeb833d5dfc8566144c8b5681",
+  "command": [
+    "timeout",
+    "60",
+    "python",
+    "scripts/half_cell_certificate_v1.py",
+    "--input",
+    "results/0003-half-cell-analysis-20261017/input.json"
+  ],
+  "scope": "saved original upper-left R bytes only; zero archive/cache access, no geometry",
+  "counts_if_interrupted": "incomplete/unknown; retain output and do not retry"
+}

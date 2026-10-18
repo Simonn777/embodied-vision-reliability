@@ -1,0 +1,57 @@
+{
+  "phase": "attempt3",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_annotation_consistency_v1.py",
+    "-v"
+  ],
+  "execution_base": "ec26b8fc1a4901d9e249480da6cc9f772885baca",
+  "started_utc": "2026-10-18T02:22:18.734343+00:00",
+  "ended_utc": "2026-10-18T02:22:19.129160+00:00",
+  "wall_seconds": 0.3948258719901787,
+  "peak_rss_kib": 16128,
+  "CPU_user_seconds": 0.318675,
+  "CPU_system_seconds": 0.07173299999999999,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "source_sha256": {
+    "src/evr/__init__.py": "631cc3c910f6e790b2b5661bf7d28e99a612c534e82619c54084d9b64f9c5abe",
+    "src/evr/annotation_consistency_v1.py": "55ed1e5514f02be3c57f0af9cf01a4f71269e0b4944e48f4a6009999b91abf72",
+    "scripts/audit_0003_annotation_consistency_v1.py": "27fc5570e914ede73cc30ee87cf8197f6c79c4700f8f91458a41fee9a74d98f0",
+    "scripts/run_0003_annotation_consistency_bounded_v1.py": "9615a578e0e0addada12de424ff33bca19599420bd3a5b1f4acc9c8f574603a5",
+    "tests/test_annotation_consistency_v1.py": "06ddad680950ecd19a155a1bbe7ebfb89b1870417b193d243fe58e456be921b3",
+    "protocols/0003-annotation-consistency-v1.md": "91e8291cb8b786db88fb3ddd23e5d2e6027503641115570976c5cefe641119e8",
+    "configs/0003-annotation-consistency-v1.json": "791a85e46934068e8cb8ade0d9c32883348c6991f07366ad28df532a38cd1829",
+    "results/0003-annotation-consistency-stageA-20261017/fixture_parent_v2.py": "703fce1ece8aae9076aa39946fd78ba3d4924af8357c589b63c005ee837cb0bc"
+  },
+  "logs_sha256": {
+    "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "8dd773ce01a1732d83d0f0e42971063fdfab617c7e342d20b582876700a60b75"
+  },
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "GIT_NO_LAZY_FETCH": "1",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "AS_bytes": 6442450944,
+  "affinity": [
+    0,
+    1
+  ],
+  "timeout_seconds": 900,
+  "scope": "synthetic-only; zero data archive/NPZ/GT/model/projection on real data",
+  "boundary": "actual parent wait4 of synthetic suite; parent has no further observed exit receipt"
+}

@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: frozen rotation diagnostic completed and independently reviewed; original gate failed, generation cause unresolved.
+Updated: 2026-10-17. Program day 2. Phase: cached generation evidence reviewed; saved-R result inconclusive; next descriptive geometry operation frozen and unexecuted.
 
 ## Active question
 
@@ -267,3 +267,103 @@ Next is a version-specific provenance review beginning with cached source and
 published records. Any new geometry/data-access proposal requires a prospective
 freeze; original tau, failures and null projection errors stay unchanged. No
 independent cohort, geometry pass, model improvement or additional fee follows.
+
+
+## Cached conversion history: Stage A complete, next candidate unfrozen
+
+[Source audit and candidate](docs/0003-source-history-stageA-2026-10-17.md) used only
+five cached bodies plus source-tree text (39,425 bytes) and published JSON. Five
+old freeze chains / 38 inputs verify. Source audit 0.447624 s, RSS 12,416 KiB,
+exit/raw 0/0; three synthetic audit fixtures pass. No archive/NPZ/metadata/RGB,
+new numeric camera/GT read, projection, model, old-test analysis or downloads.
+
+Tracking already writes intrinsics/extrinsics keys with f16 cameras to
+annotations.npz. Reprojection's annot.npz reader widens in memory but does not
+save a f32 archive. Selected sample anno.npz/six keys/f32 dtype lack a verified
+rename/repack/precision conversion run. Only 5/38 listed bodies are cached and
+0/39 upstream Git objects available: no upstream version-history audit possible.
+R half-grid membership plus this code is compatibility, not confirmed causation.
+
+Unfrozen candidate reuses frames [0,1,2], allocated IDs [0,1], at most six
+annotation self-consistency checks. It explicitly preserves original rigidity
+failure/tau and distinguishes algebraic agreement from valid rigid geometry.
+Numeric ledger stays 22,910,156 bytes; whole sample remains development/cohort
+blocked. Independent candidate review and complete versioned executable freeze
+are required before any new data/geometry. No receipt or Stage B; old bytes and
+markers preserved. Parent's planned compatibility certificate was not executed.
+
+
+### Prepublished saved-R analysis: inconclusive; candidate revised, still unfrozen
+
+Parent method c1bcc597 (four byte-identical files) was verified and included before
+execution at 565c1aa4. Exactly one fixed z-branch quaternion proposal passed exact
+SO(3), but 8/9 half cells passed: [0,1] failed. Outcome INCONCLUSIVE, not proof of
+infeasibility or a historical source mechanism. No second proposal/search/repair.
+Real saved-R-only child: 0.034895 s, RSS 11,392 KiB, exit/raw 0/0; separate exact
+saved-output Gaussian/cell audit passed. No archive/cache/GT/projection/model read.
+The previous paragraph's pending-analysis status is historical and superseded.
+
+The new report explicitly corrects earlier camera-key shorthand without changing
+old bytes: source already writes intrinsics/extrinsics; actual filename, other
+fields, disk dtype and generation/version linkage remain unresolved. Candidate
+geometry output scope is narrowed to derived errors/status/hash/count, no new
+camera or original point values; prior 25-value exception is not expanded. Same
+fixed six potential checks, original tau/failure and budget remain unchanged.
+Wait for independent candidate review; no new geometry receipt or execution.
+
+
+### Complete prospective geometry implementation: synthetic validation passed
+
+[Updated full report](docs/0003-source-history-and-geometry-plan-2026-10-17.md)
+retains the original source report/candidate files as immutable history and records
+the key-name correction plus one INCONCLUSIVE saved-R proposal. New formal
+annotation-consistency-v1 protocol/config/helper/gated runner/bounded parent/tests
+are implemented. Fourteen concentrated synthetic tests pass: actual 0.312825 s,
+16,752 KiB, exit/raw 0/0, with six tested-source snapshots. Fixed six potential
+checks retain original rigid failure and distinguish annotation support from rigid
+qualification. Full sparse spans 470,884 bytes, retained 432 bytes / 117 scalars;
+carry remains 22,910,156. Only derived errors/status/rigidstats/counts/hashes may be
+published, no new camera/point originals, projected uv or depth. Complete exact
+mandatory receipt gate includes source/analysis evidence and all prior38 inputs.
+No geometry receipt or real data execution. Parent review is next, then a separate
+canonical receipt only on approval. Original source/thresholds/results/markers
+preserved; no costs, downloads, installs or permission/schedule changes.
+
+
+Final synthetic revision: 15 tests now pass at attempt2 (0.311270 s, 16,128 KiB,
+exit/raw 0/0). A last-resort uncaught-stop label now reports access unknown and
+INCOMPLETE rather than implying pre-access status; a subprocess fixture covers it.
+Attempt1's 14 passing source/log snapshots remain historical. No real dataset or
+saved-R calculation repeated. Review the latest v2 closure/map for final sources.
+
+
+### Pre-freeze initializer binding correction
+
+[Review correction](docs/0003-initializer-binding-review-fix-2026-10-17.md): formal
+new runner now explicitly imports/binds evr.__init__ source path and digest. The
+initializer itself is unchanged; mandatory map grows 44 to 45, old chain stays 38.
+Only the unfrozen new runner/tests changed; previous code/attempts and actual half
+results preserved. Attempt3 passed 17 synthetic tests, 0.394826 s / 16,128 KiB /
+exit/raw 0/0. New v3 review map closes these sources; older maps are historical.
+No geometry receipt/marker/run, dataset access or saved-R rerun. Parent review and
+explicit receipt approval remain required; numerical method/scope unchanged.
+
+## Source history review complete; next descriptive operation frozen
+
+[Final review](docs/0003-source-history-independent-review.md) records the corrected
+camera-key interpretation, missing archive-conversion history and independently
+verified INCONCLUSIVE saved-R result (one proposal, 8/9 cells, no repeat). Actual
+float16 causation remains unestablished. The original tau and failures are intact.
+
+Input 84dd6aa passed independent review after adding the package initializer to
+the 45-file binding. Receipt-only commit 48ff18f froze that exact input. The actual
+publication gate passed 45 inputs and 5 historical chains/38 inputs without any
+cache/data/geometry call. Candidate CI passed 320 tests / 4 subtests and 1,240 synthetic
+frames. All historical results/snapshots remain unchanged, notes append-only.
+
+Next: verify merged main and the canonical annotation-consistency receipt before
+one bounded descriptive operation on fixed frames [0,1,2] / IDs [0,1]. Preserve original
+rigid failure separately from annotation agreement and the unchanged 0.5 px rule.
+This turn does not execute it. No new dataset/source downloads, inference, old-test
+tuning, paid service or schedule/permission change. Actual provenance, units/FPS
+and independent cohort readiness remain unresolved.

@@ -1,0 +1,98 @@
+{
+  "verification": "passed",
+  "independently_expected_status": "INCONCLUSIVE",
+  "cells_satisfied": 8,
+  "proposals_attempted": 1,
+  "original_f32_values": 9,
+  "exact_SO3": true,
+  "gram_entries_checked": 18,
+  "determinant": "1",
+  "cell_checks": [
+    {
+      "index": [
+        0,
+        0
+      ],
+      "target_half_bits": "b9e3",
+      "exact_rounded_witness_half_bits": "b9e3",
+      "membership": true
+    },
+    {
+      "index": [
+        0,
+        1
+      ],
+      "target_half_bits": "8001",
+      "exact_rounded_witness_half_bits": "80c8",
+      "membership": false
+    },
+    {
+      "index": [
+        0,
+        2
+      ],
+      "target_half_bits": "b96b",
+      "exact_rounded_witness_half_bits": "b96b",
+      "membership": true
+    },
+    {
+      "index": [
+        1,
+        0
+      ],
+      "target_half_bits": "3388",
+      "exact_rounded_witness_half_bits": "3388",
+      "membership": true
+    },
+    {
+      "index": [
+        1,
+        1
+      ],
+      "target_half_bits": "bb80",
+      "exact_rounded_witness_half_bits": "bb80",
+      "membership": true
+    },
+    {
+      "index": [
+        1,
+        2
+      ],
+      "target_half_bits": "b417",
+      "exact_rounded_witness_half_bits": "b417",
+      "membership": true
+    },
+    {
+      "index": [
+        2,
+        0
+      ],
+      "target_half_bits": "b915",
+      "exact_rounded_witness_half_bits": "b915",
+      "membership": true
+    },
+    {
+      "index": [
+        2,
+        1
+      ],
+      "target_half_bits": "b58f",
+      "exact_rounded_witness_half_bits": "b58f",
+      "membership": true
+    },
+    {
+      "index": [
+        2,
+        2
+      ],
+      "target_half_bits": "3985",
+      "exact_rounded_witness_half_bits": "3985",
+      "membership": true
+    }
+  ],
+  "arithmetic": "Fraction exact nearest-neighbor/even half-code rounding; determinant via pivoted Gaussian elimination",
+  "boundary": "Checks the supplied exact witness and saved-byte binding. Does not regenerate quaternion proposal, prove execution provenance, or evaluate geometry. Positive certificate proves compatibility only; failed proposal is inconclusive.",
+  "original_input_sha256": "4bba1bc8c3e8583149ff89548b5744ac0150a0557b65a03e67f7e66be43c3944",
+  "claimed_output_sha256": "356f8dc9fe105edde71ea327e2a5ff4185157999756babdbde5adc2af3a2e5ac",
+  "verifier_source_sha256": "f49dbb6a0382aecd02b76dda62ba44fc37aeba2aef128384774ca7c90ec11a0b"
+}

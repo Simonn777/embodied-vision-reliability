@@ -1,0 +1,52 @@
+{
+  "phase": "source-audit",
+  "execution_base": "2826fac713fd998e4edf1666017c4944f98002d3",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scripts/audit_0003_source_history_v1.py",
+    "--cache",
+    "../bootstapir-cache/0003-pointodyssey",
+    "--output",
+    "results/0003-source-history-stageA-20261017/audit"
+  ],
+  "started_utc": "2026-10-18T01:58:59.858977+00:00",
+  "ended_utc": "2026-10-18T01:59:00.306599+00:00",
+  "wall_seconds": 0.44762442000501323,
+  "peak_rss_kib": 12416,
+  "CPU_user_seconds": 0.334474,
+  "CPU_system_seconds": 0.116797,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "source_sha256": {
+    "src/evr/point_source_history_v1.py": "201a0124c025cee908a3e952ff2cb15fdca068c481436cec1d1b8ee4f872b4fd",
+    "scripts/audit_0003_source_history_v1.py": "b6a81b9f6dbb5b0b9404daaef0f74f912e8b4f5dfeff22a83a148cda879bc090",
+    "tests/test_point_source_history_v1.py": "ec711463fca9b815b5856307354ae37e854a2b02b7efc5ca8b8ea428cc37b4a5",
+    "protocols/0003-annotation-consistency-candidate-v1.md": "41d90731da227711c774fb3ccd5956de5d396ac4ff081206458ddb4b798c46b9",
+    "configs/0003-annotation-consistency-candidate-v1.json": "b8553a3580c1185285cb31249ea3f6125e9fabcbdf66eade0df4fd5f9e04217c",
+    "results/0003-source-history-stageA-20261017/capture_parent.py": "538be83630df2e270bda72d4e73f3063b7de7c37aa7f44e1c9361418fbdb446e"
+  },
+  "logs_sha256": {
+    "stdout": "45cb1f75e3d7307b345b98b3f491f01c373a4992833170baa9f06119c5a6b76e",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "GIT_NO_LAZY_FETCH": "1",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "timeout_seconds": 900,
+  "scope": "source text/published JSON or synthetic fixtures only; no numeric archive reads or projection",
+  "boundary": "actual parent wait4; parent itself has no further observed exit receipt"
+}
