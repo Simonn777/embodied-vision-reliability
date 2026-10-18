@@ -1,0 +1,69 @@
+{
+  "mode": "scientific",
+  "state": "FINISHED",
+  "command": [
+    "timeout",
+    "--kill-after=5s",
+    "900",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "scripts/run_state_intervention.py",
+    "--cache",
+    "../bootstapir-cache",
+    "--output",
+    "results/0004-stage0/run",
+    "--freeze-sha256",
+    "e14bb4f3f4b4dd91c96fe63b1d28bc9a95636d560854de190a701c25dc34667d"
+  ],
+  "environment": {
+    "PATH": "inherited runtime PATH; value omitted",
+    "PYTHONPATH": "../bootstapir-cache/runtime-fixed:../bootstapir-cache/runtime:../bootstapir-cache/source:src",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "GIT_NO_LAZY_FETCH": "1",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "execution_commit": "ddadc5e17a6ceff3c358d3e3f440d80bf3fd0306",
+  "source_commit": "e9f5fe18643167f955ead42212be6cd8d6a63d5e",
+  "freeze_sha256": "e14bb4f3f4b4dd91c96fe63b1d28bc9a95636d560854de190a701c25dc34667d",
+  "frozen_inputs_sha256": {
+    "configs/0004-stage0.json": "fc5b670b71aefd66ae2cb0f6c4cbaf5ae848fb03b70595411854e29f2fb0f1c3",
+    "protocols/0004-state-intervention-stage0.md": "c9cd3a89f8adb5887ea45fa9367e471305f3cf31c7f3d93396961a58c49822ac",
+    "scripts/run_state_intervention.py": "1b3f372b6057e63a2506c78ac143f0a28487defb67e4dd3e11698a9e7d88a68a",
+    "src/evr/state_intervention.py": "c9a1ad43a4b548f7634e1aea1d4d64b2b3702c085e311c83db4a47b4445103f2",
+    "src/evr/state_intervention_metrics.py": "c880fdab6b877ac7965ee40fb183c48f39df6640c081871552d9d9c9b35667ec",
+    "src/evr/bootstapir_dev.py": "b134fcfbc489eac33631d3aaf591cd9683d326e38c9a468207bbc94481920bb1",
+    "src/evr/__init__.py": "631cc3c910f6e790b2b5661bf7d28e99a612c534e82619c54084d9b64f9c5abe",
+    "results/0002-development/decode/development-manifest.json": "b9a5cf663f44134d9c964fe2bb9e0f0973f6f85e5b53a1c3fc3a0b65235adc9f"
+  },
+  "outer_source_sha256": {
+    "results/0004-stage0/launch_wrapper.py": "e3049e2dfbd8b5f7eecaade60670da7b4c27632873bd937e437ee838ec1a3103",
+    "results/0004-stage0/launch_supervisor.py": "e8810481a6960bcbe16516936e92c462c0793fd7d96c7ad833b8542f22eb2d8b"
+  },
+  "limits": {
+    "affinity": [
+      0,
+      1
+    ],
+    "AS_bytes": 6442450944,
+    "timeout_seconds": 900,
+    "kill_after_seconds": 5
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "started_utc": "2026-10-18T17:07:59.841752+00:00",
+  "exit_code": 0,
+  "raw_wait_status": 0,
+  "ended_utc": "2026-10-18T17:11:47.540898+00:00",
+  "wall_seconds": 227.69891567800005,
+  "peak_rss_kib": 756272,
+  "CPU_user_seconds": 430.7784,
+  "CPU_system_seconds": 16.203074,
+  "logs_sha256": {
+    "stdout": "cbbfd4222c972324ba368776fe3f085b2e4cb5339a701ebf924cef36a00ba1f1",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "persistent_marker_sha256": "e6b594874f6eb4df6b5d5d58bd893f663de35dc54e0b505127a53fc5274995bf"
+}

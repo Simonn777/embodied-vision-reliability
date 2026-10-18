@@ -1,21 +1,29 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: owner-authorized pivot to a falsifiable tracking-improvement hypothesis; Stage 0 implementation/pre-execution review in progress. No new efficacy result.
+Updated: 2026-10-18. Program day 3. Phase: 0004 Stage 0 completed and independently reviewed; its frozen continuation rule failed. The broader tracking-improvement objective remains active; no manuscript or demonstrated general improvement.
 
 ## Active direction: improve tracking, with evidence before a paper
 
-The owner requested an explicit results-oriented change on October 18. The
-[0004 direction](docs/0004-research-direction.md) tests whether learning the benefit
-of an identity-preserving short-term-state intervention can improve tracking beyond
-risk prediction at matched cost. Novelty and performance are unestablished; closest
-memory-control and verifier work are explicitly acknowledged. No manuscript is
-being written. The [Stage 0 protocol](protocols/0004-state-intervention-stage0.md)
-uses only cached synthetic development video 0, 250 frames/eight fixed queries, to
-measure both beneficial and harmful resets. It is not a held-out efficacy test.
+The owner requested meaningful tracking improvement before any paper. The first
+candidate's [frozen 250-frame/eight-query test](protocols/0004-state-intervention-stage0.md)
+has completed on cached synthetic development video 0. Zeroing short-term TAPIR
+context repaired 46 visible errors but created 120; reset-once shadow return was
+negative (−26/448), so the fixed decision is **`stop_this_candidate`**. All 4,488
+prediction rows and 13 equality controls are complete. The CPU child took
+227.699 s, peak RSS 756,272 KiB, exit 0. [Full result](results/0004-stage0/README.md).
 
-Cloud preflight independently observed existing verified CPU dependencies, original
-checkpoint and development NPZ with matching digests; no new inference/download was
-performed in that preflight. The old 0002 inspected evaluation remains excluded.
+[Independent parent review](results/0004-stage0/parent-review/README.md) verifies
+the saved arithmetic and provenance, with explicit limits on what was rechecked.
+The original proposal is retained as a failed development hypothesis, not a
+positive method result. No selector is being trained to rescue these selected
+episodes. Visibility-only gains must not be called coordinate recovery.
+
+Next, establish a stronger native causal baseline's CPU feasibility and a usable
+independent real-video development/evaluation path before freezing a different
+mechanism. A read-only TAPNext++ environment preflight is pending; no new model
+weights or real-video shard have been acquired. The substantive improvement and
+paper gates in the [direction](docs/0004-research-direction.md) remain unchanged.
+The old 0002 inspected evaluation remains excluded.
 0003 is deferred with the missing-cache/one-shot limitations below preserved; this
 new direction does not authorize retries or threshold changes to that operation.
 

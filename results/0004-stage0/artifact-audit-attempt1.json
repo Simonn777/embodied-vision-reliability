@@ -1,0 +1,9 @@
+{
+  "status": "PUBLICATION_SCANNER_ASSERTION",
+  "observed_trace": "AssertionError in audit_artifacts.py line 45 during the generic private-key-header regex scan",
+  "scope": "saved-file publication audit only; no model or GT decode",
+  "cause": "The broad header regex also matches its own regex source text. Replace only this scanner expression with a complete-header pattern; preserve the first source snapshot.",
+  "exit_boundary": "The compound tool command then ran git diff --check and returned 0. No separately parent-observed exit code for the failed audit was retained; no such value is claimed.",
+  "scientific_run_and_frozen_inputs_changed": false,
+  "model_retries": 0
+}

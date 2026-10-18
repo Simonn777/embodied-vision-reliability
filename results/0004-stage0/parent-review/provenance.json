@@ -1,0 +1,43 @@
+{
+  "status": "PASS_WITH_STATED_OBSERVATION_BOUNDARIES",
+  "reviewed_commit": "ca68cfd56984dedf1cf875d9b4a6c68440565ee1",
+  "base_commit": "ddadc5e17a6ceff3c358d3e3f440d80bf3fd0306",
+  "frozen_files_verified": 8,
+  "historical_files_byte_identical": 1691,
+  "historical_results_byte_identical": 1528,
+  "new_files_only_under_results_0004": 33,
+  "indexed_hashes_verified": 32,
+  "rows": 4488,
+  "row_branch_counts": {
+    "keep": 2000,
+    "zero": 2000,
+    "clone_control": 40,
+    "shadow": 448
+  },
+  "encoder_calls": 250,
+  "refiner_calls": 561,
+  "controls_independently_equal_numeric": 13,
+  "maximum_control_numeric_difference": 0.0,
+  "checker_imports": [
+    "csv",
+    "hashlib",
+    "json",
+    "math",
+    "statistics",
+    "collections",
+    "pathlib",
+    "numpy"
+  ],
+  "scientific_outer_wall_seconds": 228.00644997200106,
+  "scientific_peak_RSS_KiB": 756272,
+  "read_only_audit": true,
+  "no_GT_NPZ_read": true,
+  "no_model_inference": true,
+  "no_cloud_contact": true,
+  "boundaries": [
+    "Actual cloud cache and marker not accessible to this local audit; recorded digests plus hashed executed sources inspected.",
+    "Raw next-context tensors are not saved; exact context equality is a runtime assertion, not independently reconstructible from CSV.",
+    "Parent-observed exit for outermost supervisor not retained; existing README discloses this.",
+    "Frozen no-download scientific runner and isolated environment examined; this is not an audit of all cloud account activity."
+  ]
+}

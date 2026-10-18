@@ -1,0 +1,40 @@
+{
+  "state": "FINISHED",
+  "command": [
+    "timeout",
+    "--kill-after=5s",
+    "900",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "results/0004-stage0/check_saved.py"
+  ],
+  "environment": {
+    "PATH": "inherited runtime PATH omitted",
+    "PYTHONPATH": "../bootstapir-cache/runtime-fixed:../bootstapir-cache/runtime:../bootstapir-cache/source:src",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "checker_sha256": "c0ab4f443d7158e053823c1a660aed30129c2e943c53cd58c283e841c614bdb4",
+  "parent_sha256": "03a60030d8b1be63479b53596c933068bf78c1e5573328649423454c6006b67b",
+  "started_utc": "2026-10-18T17:12:14.167548+00:00",
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "boundary": "parent observes checker child once; no additional parent exit receipt",
+  "ended_utc": "2026-10-18T17:12:14.378428+00:00",
+  "wall_seconds": 0.2107192280000163,
+  "peak_rss_kib": 34000,
+  "CPU_user_seconds": 0.283897,
+  "CPU_system_seconds": 0.029813,
+  "logs_sha256": {
+    "stdout": "af1751e98a6ba38d8c7afdde2eb837cb2f3cebd82c4ed2eea2f315457a5bfe17",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
