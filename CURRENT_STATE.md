@@ -1,38 +1,50 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0009 executable geometry screen reviewed, awaiting published canonical freeze/CI; no geometry-quality experiment has run. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
+Updated: 2026-10-18. Program day 3. Phase: 0009 completed once and failed its frozen continuation gates; stop this exact-tail candidate. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
 
-## 0009 geometry candidate: arithmetic verified, practical benefit unknown
+## 0009 geometry screen: stop this exact-tail candidate
 
-The [candidate direction](docs/0009-research-direction.md) asks whether exact
-fixed-endpoint assignment tails help rank image transformations under clustered
-accidental matches. The [moment-only score was rejected](docs/0009-rejected-standardized-score.md)
-before performance tests. The exact-tail counting identities are classical;
-[prior-art review](docs/literature/0009-conditional-assignment-prior.md) has not
-established a novel vision contribution. Descriptor-selected matches are not
-known to obey the stipulated uniform-permutation null.
+The frozen256-case synthetic translation-ranking screen completed once on the
+existing cloud CPU. The primary clustered-outlier family was64/64 for both tail
+and raw/MSAC/cell/excess controls: **net gain0**, below the required8.
+Tail completed244 cases and failed12 because graph components were unsupported;
+all256 cases remain in the denominator. Paired harm and complete-coverage gates
+also failed. No cap, threshold, seed or score was changed, and no case was retried.
+This is not a real-image, novelty or paper result. The broader goal remains active.
 
-[Independent software review](docs/0009-tail-independent-review.md) verified
-artificial rook/permutation counts, including explicit unsupported graphs and
-budget refusals. A separate geometry-helper suite passed 19 artificial tests.
-These checks measure implementation correctness only. The
-[executable screen has been reviewed](docs/0009-execution-admission.md): 673 local
-repository tests passed, with seven Linux-only checks explicitly skipped. The
-[prospective protocol](protocols/0009-geometric-stage0.md) must outperform
-raw count, MSAC and simple density controls after shared deduplication. No real
-geometry, feature extraction or hypothesis ranking has run yet.
+| Family (64 cases each) | Raw | MSAC | Cell | Excess | Ratio | Exact tail |
+|---|---:|---:|---:|---:|---:|---:|
+| Uniform |64|64|64|64|58|64|
+| Clustered outlier |64|64|64|64|63|64|
+| Compact true |64|64|64|64|51|59|
+| Sparse isolated |63|63|12|63|4|56|
 
-[Cloud qualification records](results/0009-admission/qualification/README.md)
-show existing NumPy/SciPy, absent OpenCV and 116 HPatches sequence containers in
-archive directory metadata. The directory operation failed strict HTTP accounting:
-three physical GETs exceeded its two-request cap, and a 302 body was unmetered.
-The 163,286 measured 206-body bytes plus the previous asset ceiling are not a
-verified new total-response ceiling. Original failure records remain unchanged;
-no image or H payload, model, package or paid service was acquired. An
-[independent parent review](results/0009-admission/qualification-parent-review/README.md)
-passed 915 archive/observation checks; that validates publication of the failure,
-not data admission or the missing response-body total. Real-data
-admission requires a separately reviewed, correctly metered transfer design.
+The published [freeze and CI verification](docs/0009-freeze-publication-verification.md)
+preceded execution. Cloud tests passed73 with zero skips, including all7 Linux
+process tests, plus3 checker self-test groups. The scientific supervisor observed
+exit0,19.19801878s wall,34,656KiB peak RSS, no timeout. Across8,192 hypotheses,
+7,985 tail calls completed,12 were unsupported and195 were not attempted after
+the first refusal in their case. The independent saved-result reviewer passed
+1,549,368 checks /227,998 numeric comparisons (maximum difference2.8422e-14)
+and confirmed **NO_GO**. A passing arithmetic review does not make the method
+effective. Raw/exact-tail counting has not been rerun for publication.
+
+Cloud postchecks preserve2,892 tracked files,2,672 prior result/protocol files,
+and40,664 historical/cache files. The parent directly retrieved actual tool
+results for the execution/evaluation/review stages. The [complete saved archive](results/0009-stage0/README.md)
+is available:515 original synthetic files,28,906,991 uncompressed bytes, in a
+4,048,489-byte deterministic archive. Saved-ID analysis confirms all12 raw-success
+paired harms are the12 unsupported cases. The completed but incorrect case
+`sparse_isolated-23` was also incorrect for all five controls. The earlier
+[qualification failure](results/0009-admission/qualification/README.md)
+and unknown total-response accounting remain unchanged. No additional assets,
+installations or paid services were used in this screen.
+
+The next [self-inclusion hypothesis](docs/literature/0010-self-inclusion-candidate.md)
+has known conceptual precedents and is not an improvement claim. Source/data
+[qualification](docs/literature/0010-data-and-baseline-admission.md) pins StatA
+and rejects ambiguous cached embeddings; a small official-CLIP CPU probe is
+prospective only. No new image/weight has been acquired or inferred.
 
 ## 0008 training: stop this candidate
 

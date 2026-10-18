@@ -1,34 +1,40 @@
 # Embodied Vision Reliability
 
-**0008 result: mean-based antithetic pairing failed the frozen denoising-quality screen.**
+**0009 result: exact-tail geometry ranking did not improve on strong simple controls.**
 
-The exact mean-sort candidate is stopped. Its gradient-variance screen passed,
-but the subsequent 32-trajectory training study did not meet either quality gate:
-mean gain was −0.000956 dB at 500 updates and −0.330065 dB at approximately
-five seconds versus per-case best controls. Texture and allocated-cost gates
-passed; they do not rescue failed quality. The broader research objective remains
-active, with no manuscript warranted and no tuning rescue on these old images.
+The single frozen256-case synthetic screen returned **NO_GO**. In the primary
+clustered-outlier family, raw support, MSAC, two density controls and exact-tail
+ranking all selected the correct translation in64/64 cases: net improvement0.
+Twelve exact-tail cases failed because their graphs were unsupported, and the
+paired-harm limits also failed. This candidate is stopped. The broader research
+objective remains active; no manuscript or real-image improvement is claimed.
 
 This AI-assisted research program runs October2026–October2027. The owner opened
 topic selection after the initial tracking hypotheses failed. Protocols, source
 freezes, measurements and unfavorable outcomes remain together. No conference
 readiness or methodological novelty is claimed. [Contributions and evidence](docs/CONTRIBUTIONS.md).
 
-## Current candidate · October18,2026
+## What the latest screen establishes
 
-[0009 investigates geometric verification](docs/0009-research-direction.md): can
-exact assignment-tail counts distinguish true image transformations from dense
-accidental matches better than simple residual/density controls? Arithmetic checks
-pass, but practical benefit and novelty are unproven. The [small synthetic ranking protocol](protocols/0009-geometric-stage0.md) and
-executable code have been reviewed; canonical publication/CI precedes execution.
-No geometry-quality experiment has run. The earlier
-standardized-score idea was rejected analytically. [Qualification records](results/0009-admission/qualification/README.md)
-retain a failed HTTP accounting check; no real image data has been admitted.
+The [predeclared protocol](protocols/0009-geometric-stage0.md) tested a specific
+question: whether exact conditional assignment counts help beyond common location
+deduplication and five cheap controls. The true translation was included in every
+candidate pool. Strong controls saturated the primary family; no useful advantage
+was demonstrated. All failures are retained rather than increasing solver limits
+or making the same generator harder after seeing its outcomes.
+
+[Current state](CURRENT_STATE.md) records all six methods and four family counts.
+The [source freeze and exact CI](docs/0009-freeze-publication-verification.md)
+preceded one cloud CPU run. [Complete saved results](results/0009-stage0/README.md)
+include all256 cases, the original synthetic inputs and the twelve failure records.
+[Qualification records](results/0009-admission/qualification/README.md) retain the
+earlier HTTP-accounting failure; no real image data was admitted for this screen.
 
 ## Latest evidence · October18,2026
 
 | Study | Evidence and decision |
 |---|---|
+| [0009 exact-tail geometry screen](results/0009-stage0/README.md) | 256 cases retained; primary gain0,12 unsupported cases, failed gain/coverage/harm gates: **stop this candidate**. |
 | [0008 actual training screen](results/0008-antithetic-training/README.md) | 32 trajectories / 64 predictions completed once; both ≥0.5 dB quality gates failed. Independent saved-array replay agrees: **stop this candidate**. |
 | [0007 gradient screen](results/0007-gradient-screen/README.md) | 4,096 gradient measurements, zero updates. Total variance ratios0.227/0.738/0.571 against independent/random/same-patch; 7/8 best-control wins. Local mechanism gates passed; no PSNR result. |
 | [0006 residual-denoising screen](results/0006-stage0/README.md) | Mean gain−0.571dB; stop this candidate. A missing stdout line remains an open provenance defect. |

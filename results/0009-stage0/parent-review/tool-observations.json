@@ -1,0 +1,104 @@
+{
+  "source": "Codex read_thread actual tool records retrieved by parent",
+  "thread_id": "01a1434c-d43f-776d-888e-82ed314590ed",
+  "turn_id": "01a15105-73cb-73af-b944-4dfb85785f37",
+  "scope": "Eight actual completed command results; no scientific rerun. DurationMs is the command tool measurement, distinct from nested wait4 wall_seconds. Execution cloud paths are retained; no environment values or credentials are included.",
+  "stages": [
+    {
+      "id": "exec-c62b9d8c-fa7e-4cff-8f1b-9719cbe1b856",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/capture.py preflight 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/preflight.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 24419,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"address_space_bytes\": 8589934592, \"capture_source_sha256\": \"762e66f6a1326f8f27c994c44d7e6658e2f188565ec1eed300c4515504e66e81\", \"command_sha256\": \"7d5dd709bc2d16ba2fb72c8d8378f96abea4864aa201964c40d60323e69aa932\", \"cpu_affinity\": [0, 1, 2, 3], \"label\": \"preflight\", \"numeric_threads\": 4, \"parent_scope\": \"Observed wait4 of the wrapper/CLI child. Parent itself has no additional recursive exit observer; frozen science supervisor retains its own child evidence.\", \"peak_rss_kib\": 40580, \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\", \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"raw_wait_status\": 0, \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"6e68118d18dd83549926ebd434622d6b237cbde02845dc04080134c5aae2d395\", \"system_cpu_seconds\": 8.003457, \"user_cpu_seconds\": 9.010383, \"utc_completed\": \"2026-10-18T22:01:08.228065+00:00\", \"utc_started\": \"2026-10-18T22:00:43.994990+00:00\", \"wall_seconds\": 24.23307675700198}\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-6595f975-3500-48c2-adad-c64c81b3972a",
+      "command": "/bin/bash -lc 'cat /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/preflight.stdout.log\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/capture.py frozen-verify 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/run_geometric_stage0.py verify-only --freeze-commit 17f417efcccf85047e0935569f87f94b27705e82'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 234,
+      "output": {
+        "text": "{\"status\": \"PASS\", \"main\": \"cd144b90d337a172a892b56d87cd794524605753\", \"frozen_inputs\": 15, \"numpy_version\": \"2.0.2\", \"numpy_path\": \"/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/numpy/__init__.py\", \"cgroup_memory_max\": \"8589934592\", \"tracked_files\": 2892, \"prior_result_protocol_files\": 2672, \"cache_counts\": {\"bootstapir-cache\": 39271, \"tapnextpp-cache\": 407, \"tapnextpp-recovery\": 31, \"conditional-residual-0006\": 500, \"antithetic-gradient-0007\": 84, \"antithetic-training-0008\": 324, \"scratch/0009-runtime-qualification\": 32, \"scratch/0009-hpatches-directory\": 15}, \"baseline_sha256\": \"533a09a3cc095d1d1f3d731db8a7854bd84c709c62945aa59b6ffc7fada8639f\", \"scientific_markers_created\": false}\n{\"actual_exit\": 0, \"address_space_bytes\": 8589934592, \"capture_source_sha256\": \"762e66f6a1326f8f27c994c44d7e6658e2f188565ec1eed300c4515504e66e81\", \"command_sha256\": \"c72b0f049be4d9157fd1d1265269df62be810a8100704f4d757dde7fac813e20\", \"cpu_affinity\": [0, 1, 2, 3], \"label\": \"frozen-verify\", \"numeric_threads\": 4, \"parent_scope\": \"Observed wait4 of the wrapper/CLI child. Parent itself has no additional recursive exit observer; frozen science supervisor retains its own child evidence.\", \"peak_rss_kib\": 12288, \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\", \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"raw_wait_status\": 0, \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"9ccb541b216d326e7d43ebc7efba949ba3b746b664dd5094034a95e21a16c32b\", \"system_cpu_seconds\": 0.041192, \"user_cpu_seconds\": 0.100385, \"utc_completed\": \"2026-10-18T22:01:22.445245+00:00\", \"utc_started\": \"2026-10-18T22:01:22.303497+00:00\", \"wall_seconds\": 0.14175958100167918}\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-8b354856-9535-4c99-ae58-4e4013df0d4b",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/capture.py targeted-tests 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -W error /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/run_tests.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 1866,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"address_space_bytes\": 8589934592, \"capture_source_sha256\": \"762e66f6a1326f8f27c994c44d7e6658e2f188565ec1eed300c4515504e66e81\", \"command_sha256\": \"d5aa1fb1274ca30c88b8bdce9b69bafc84f013eb9209a1b9f70a327161edbe7e\", \"cpu_affinity\": [0, 1, 2, 3], \"label\": \"targeted-tests\", \"numeric_threads\": 4, \"parent_scope\": \"Observed wait4 of the wrapper/CLI child. Parent itself has no additional recursive exit observer; frozen science supervisor retains its own child evidence.\", \"peak_rss_kib\": 34680, \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\", \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"raw_wait_status\": 0, \"stderr_sha256\": \"8dc668a8d74c8c98cc7da21366667549b575f64a0583ec7e75046a4517cf7fe3\", \"stdout_sha256\": \"b2511f2311bcf6f1263e187e5a91fe65f6849cd433458fce1fb65e3ff2d09f8b\", \"system_cpu_seconds\": 0.30958199999999997, \"user_cpu_seconds\": 1.263643, \"utc_completed\": \"2026-10-18T22:01:28.835922+00:00\", \"utc_started\": \"2026-10-18T22:01:27.016229+00:00\", \"wall_seconds\": 1.819699297000625}\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-9a170a17-3f66-4c6e-8674-11833d912ca5",
+      "command": "/bin/bash -lc 'cat /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/tests.json\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/capture.py checker-self-test 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -W error scripts/check_geometric_stage0.py --self-test'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 234,
+      "output": {
+        "text": "{\n  \"passed\": true,\n  \"tests_run\": 73,\n  \"skips\": 0,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"linux_process_resource_termination_test_ids\": [\n    \"test_0009_supervisor.LinuxSupervisorIntegration.test_actual_missing_executable_preserves_launch_failure\",\n    \"test_0009_supervisor.LinuxSupervisorIntegration.test_actual_sigterm_reaps_child_and_returns_143\",\n    \"test_0009_supervisor.LinuxSupervisorIntegration.test_existing_output_is_never_overwritten\",\n    \"test_0009_supervisor.LinuxSupervisorIntegration.test_exit_seven_is_not_success\",\n    \"test_0009_supervisor.LinuxSupervisorIntegration.test_exit_zero_and_stream_hashes\",\n    \"test_0009_supervisor.LinuxSupervisorIntegration.test_hard_timeout_kills_sleeping_process_group\",\n    \"test_0009_supervisor.LinuxSupervisorIntegration.test_resource_and_affinity_are_actual_child_limits\"\n  ],\n  \"linux_test_count\": 7,\n  \"source_sha256\": \"b92d83dbd645b30e6fea54321ec094a711fa22235b8bd1bc35dfc07ede104b6f\",\n  \"scope\": \"Artificial test fixtures only; not a scientific collection or warmup.\"\n}\n{\"actual_exit\": 0, \"address_space_bytes\": 8589934592, \"capture_source_sha256\": \"762e66f6a1326f8f27c994c44d7e6658e2f188565ec1eed300c4515504e66e81\", \"command_sha256\": \"9d6869857027495fae66def398247818795de6a2e56071692874bbe2f9ec9d20\", \"cpu_affinity\": [0, 1, 2, 3], \"label\": \"checker-self-test\", \"numeric_threads\": 4, \"parent_scope\": \"Observed wait4 of the wrapper/CLI child. Parent itself has no additional recursive exit observer; frozen science supervisor retains its own child evidence.\", \"peak_rss_kib\": 30532, \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\", \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"raw_wait_status\": 0, \"stderr_sha256\": \"1af509a30d407662bba52fb49de228c731d386ecf1ae484345af046252196120\", \"stdout_sha256\": \"cc5d2319451680e8c1beb6990134ba9ab327927fa11cefe0a4a1c2018e5368c5\", \"system_cpu_seconds\": 0.030206, \"user_cpu_seconds\": 0.319137, \"utc_completed\": \"2026-10-18T22:01:34.300973+00:00\", \"utc_started\": \"2026-10-18T22:01:34.161875+00:00\", \"wall_seconds\": 0.13910500299971318}\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-b8b01ffc-aa92-4a1f-8d7a-8fc22fc86a11",
+      "command": "/bin/bash -lc \"set -e\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python - <<'PY'\nfrom pathlib import Path\nimport json,hashlib\nc=Path('/workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control')\nfor label in ('preflight','frozen-verify','targeted-tests','checker-self-test'):\n e=json.loads((c/(label+'.execution.json')).read_text());assert e['actual_exit']==e['raw_wait_status']==0\n for suffix,key in (('.stdout.log','stdout_sha256'),('.stderr.log','stderr_sha256'),('.command.private.json','command_sha256')):assert hashlib.sha256((c/(label+suffix)).read_bytes()).hexdigest()==e[key]\nt=json.loads((c/'tests.json').read_text());assert t['passed'] and t['tests_run']==73 and t['skips']==0 and t['linux_test_count']==7\ns=json.loads((c/'checker-self-test.stdout.log').read_text());assert s['passed'] and s['self_test_groups']==3\nfor name in ('collection','supervision','evaluation','review.json'):assert not (c/name).exists()\nf=json.loads((c/'frozen-verify.stdout.log').read_text());assert f['source_commit']=='4b11f1de4d6fcc9bef45c8eee824ff8e7241abc0' and f['freeze_commit']=='17f417efcccf85047e0935569f87f94b27705e82' and len(f['files'])==15\nprint(json.dumps({'preconditions':'PASS','tests':73,'skips':0,'Linux_process_tests':7,'checker_self_test_groups':3,'fresh_collection_and_external_directory':True}))\nPY\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/capture.py scientific-collection frozen900 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/supervise_0009.py --python /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python --freeze-commit 17f417efcccf85047e0935569f87f94b27705e82 --output /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/collection --supervision-output /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/supervision\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 19409,
+      "output": {
+        "text": "{\"preconditions\": \"PASS\", \"tests\": 73, \"skips\": 0, \"Linux_process_tests\": 7, \"checker_self_test_groups\": 3, \"fresh_collection_and_external_directory\": true}\n{\"actual_exit\": 0, \"address_space_bytes\": 8589934592, \"capture_source_sha256\": \"762e66f6a1326f8f27c994c44d7e6658e2f188565ec1eed300c4515504e66e81\", \"command_sha256\": \"f677c267137cd89a33771c3abc1bfd0e82a3f5d93ac30591e98e575dcd8fcec4\", \"cpu_affinity\": [0, 1, 2, 3], \"label\": \"scientific-collection\", \"numeric_threads\": 4, \"parent_scope\": \"Observed wait4 of the wrapper/CLI child. Parent itself has no additional recursive exit observer; frozen science supervisor retains its own child evidence.\", \"peak_rss_kib\": 34656, \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\", \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"raw_wait_status\": 0, \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"85348bc4b11e604fae279727a4bad4732845c72aef9d11c2c19cc0e8f826137e\", \"system_cpu_seconds\": 0.169423, \"user_cpu_seconds\": 19.413259, \"utc_completed\": \"2026-10-18T22:02:08.721192+00:00\", \"utc_started\": \"2026-10-18T22:01:49.486239+00:00\", \"wall_seconds\": 19.234951837002882}\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-b534268c-18b4-4bc1-aec1-807ceda63848",
+      "command": "/bin/bash -lc \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python - <<'PY'\nfrom pathlib import Path\nimport json,hashlib\nc=Path('/workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control');e=json.loads((c/'scientific-collection.execution.json').read_text());s=json.loads((c/'supervision/execution.json').read_text());b=json.loads((c/'supervision/collection-binding.json').read_text())\nassert e['actual_exit']==e['raw_wait_status']==0\nassert hashlib.sha256((c/'supervision/execution.json').read_bytes()).hexdigest()==b['execution_sha256']\nlock=c/'collection/selection-lock.json';assert lock.is_file() and b['selection_lock']['sha256']==hashlib.sha256(lock.read_bytes()).hexdigest()\ncollection=json.loads((c/'collection/collection.json').read_text());print(json.dumps({'frozen_supervisor':{k:s[k] for k in ('child_exit_code','supervisor_exit_code','raw_wait_status','timed_out','wall_seconds','user_cpu_seconds','system_cpu_seconds','max_rss_kib')},'collection_lock_status':b['lock_status'],'effective_exit_code':b['effective_exit_code'],'selection_complete':collection['selection_complete'],'inventory_count':len(collection['inventory']),'evaluator_output_absent':not(c/'evaluation').exists()}))\nassert not (c/'evaluation').exists()\nPY\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/capture.py evaluation 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/run_geometric_stage0.py evaluate --freeze-commit 17f417efcccf85047e0935569f87f94b27705e82 --input /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/collection --output /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/evaluation\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 1070,
+      "output": {
+        "text": "{\"frozen_supervisor\": {\"child_exit_code\": 0, \"supervisor_exit_code\": 0, \"raw_wait_status\": 0, \"timed_out\": false, \"wall_seconds\": 19.198018779999984, \"user_cpu_seconds\": 19.347988, \"system_cpu_seconds\": 0.143313, \"max_rss_kib\": 34656}, \"collection_lock_status\": \"present\", \"effective_exit_code\": 0, \"selection_complete\": false, \"inventory_count\": 256, \"evaluator_output_absent\": true}\n{\"actual_exit\": 0, \"address_space_bytes\": 8589934592, \"capture_source_sha256\": \"762e66f6a1326f8f27c994c44d7e6658e2f188565ec1eed300c4515504e66e81\", \"command_sha256\": \"29e35a5401679730f3395a373f0e57c2f0cafa3a7404fa6ce1337da6a4b7efdd\", \"cpu_affinity\": [0, 1, 2, 3], \"label\": \"evaluation\", \"numeric_threads\": 4, \"parent_scope\": \"Observed wait4 of the wrapper/CLI child. Parent itself has no additional recursive exit observer; frozen science supervisor retains its own child evidence.\", \"peak_rss_kib\": 94304, \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\", \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"raw_wait_status\": 0, \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"system_cpu_seconds\": 0.173807, \"user_cpu_seconds\": 1.024885, \"utc_completed\": \"2026-10-18T22:02:21.614848+00:00\", \"utc_started\": \"2026-10-18T22:02:20.727468+00:00\", \"wall_seconds\": 0.8873839939988102}\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-e0ff0b63-0b3e-4712-a739-73fd392ed616",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/capture.py independent-review 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/check_geometric_stage0.py --repo /workspace/scratch/a349d03a0e0a/research-0009-stage0 --input /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/collection --evaluation /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/evaluation --supervision /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/supervision --report /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/review.json'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 9835,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"address_space_bytes\": 8589934592, \"capture_source_sha256\": \"762e66f6a1326f8f27c994c44d7e6658e2f188565ec1eed300c4515504e66e81\", \"command_sha256\": \"f92fcd22798db9d850c90fce1d560703a26fda1c5053355114c1bb05f241f5e5\", \"cpu_affinity\": [0, 1, 2, 3], \"label\": \"independent-review\", \"numeric_threads\": 4, \"parent_scope\": \"Observed wait4 of the wrapper/CLI child. Parent itself has no additional recursive exit observer; frozen science supervisor retains its own child evidence.\", \"peak_rss_kib\": 94424, \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\", \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"raw_wait_status\": 0, \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"7bfc0cc682825bd1deb50ae6d412d4047b5d666418f84c77a4a9a5b47850da83\", \"system_cpu_seconds\": 0.095735, \"user_cpu_seconds\": 9.859087, \"utc_completed\": \"2026-10-18T22:02:37.172477+00:00\", \"utc_started\": \"2026-10-18T22:02:27.527422+00:00\", \"wall_seconds\": 9.645058818001417}\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-5104a0c7-4df6-47ab-878f-f40e8cc81f66",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/capture.py postcheck 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0009-stage0-control/postcheck.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 12318,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"address_space_bytes\": 8589934592, \"capture_source_sha256\": \"762e66f6a1326f8f27c994c44d7e6658e2f188565ec1eed300c4515504e66e81\", \"command_sha256\": \"a1f64139e9aa56a7aeb5a035eaae0e7c739d0ba5085fac72909d06b6e4036416\", \"cpu_affinity\": [0, 1, 2, 3], \"label\": \"postcheck\", \"numeric_threads\": 4, \"parent_scope\": \"Observed wait4 of the wrapper/CLI child. Parent itself has no additional recursive exit observer; frozen science supervisor retains its own child evidence.\", \"peak_rss_kib\": 36536, \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\", \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"raw_wait_status\": 0, \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"671ecbc689399a2def4ad007e7994f34e9f25859c99a6870838c98dab22d099e\", \"system_cpu_seconds\": 1.909603, \"user_cpu_seconds\": 8.121924, \"utc_completed\": \"2026-10-18T22:05:52.342821+00:00\", \"utc_started\": \"2026-10-18T22:05:40.235530+00:00\", \"wall_seconds\": 12.107300706000387}\n",
+        "truncated": false
+      }
+    }
+  ]
+}
