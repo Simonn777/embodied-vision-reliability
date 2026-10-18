@@ -2,7 +2,25 @@
 
 Updated: 2026-10-18. Program day 3. Phase: 0004 Stage 0 completed and independently reviewed; its frozen continuation rule failed. The broader computer-vision improvement objective remains active; the owner explicitly permits a fresh topic independent of previous experiments. No manuscript or demonstrated general improvement.
 
-## Active direction: select a defensible improvement mechanism before a paper
+## Active development candidate: conditional residual denoising (0006)
+
+The owner permits a fresh topic. The selected **development candidate**, not a
+claimed contribution, is known-covariance self-supervised image denoising with
+per-target conditional-residual neighbor inputs. The [mechanism audit](docs/0006-mechanism-audit.md)
+and [limited prior-art check](docs/literature/0006-conditional-residual-prior-art.md)
+retain overlap, information-loss and Gaussian/fitted-model limitations.
+
+The [Stage 0 protocol](protocols/0006-conditional-residual-stage0.md) fixes four
+metadata-selected PolyU mean-image substrates, synthetic white/correlated noise,
+two seeds and four matched-architecture methods (64 cases). It includes a valid
+covariance-safe blindspot and R2R alpha0.5/MC50, a prospective >=0.3 dB development
+gate, texture/harm checks and hard resource limits. No image has been acquired,
+no 0006 fit has run, and no efficacy result exists at this preparation stage.
+Source review, canonical freeze, published CI, and cloud tensor-interface checks
+must precede acquisition/training. A positive development screen alone cannot
+satisfy the separately declared manuscript requirements.
+
+## Historical tracking work and completed capability archive
 
 The owner requested meaningful computer-vision improvement before any paper and explicitly allows a fresh topic. Previous tracking work is retained as evidence, not a constraint on topic selection. The first
 candidate's [frozen 250-frame/eight-query test](protocols/0004-state-intervention-stage0.md)
@@ -39,7 +57,7 @@ All 407 failed-cache files and 1,651 prior result files remain intact. Two
 read-only checker path errors and their corrections are retained; no scientific
 stage was repeated. Conservative acquisition ceiling is 7,499,066,782 bytes.
 Five old empty partials persist; their cause is unresolved.
-The [independent parent audit](results/0005-recovered-parent-review/README.md) verifies all 64 saved rows, 74 archived copies and preserved historical results. The substantive tracking-improvement and paper gates in the [direction](docs/0004-research-direction.md) remain unchanged for tracking claims. No fresh topic has yet demonstrated novelty or an improvement.
+The [independent parent audit](results/0005-recovered-parent-review/README.md) verifies all 64 saved rows, 74 archived copies and preserved historical results. The substantive tracking-improvement and paper gates in the [direction](docs/0004-research-direction.md) remain unchanged for tracking claims. The 0006 development candidate above has not demonstrated novelty or an improvement. The capability archive was merged through PR 27 as `83f1c640486d4f593efe817c9f26c1d32daedf7b`; PR/main CI each passed 447 tests and 92 subtests, with the 1,240-frame smoke passing.
 The old 0002 inspected evaluation remains excluded.
 0003 is deferred with the missing-cache/one-shot limitations below preserved; this
 new direction does not authorize retries or threshold changes to that operation.

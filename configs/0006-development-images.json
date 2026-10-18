@@ -1,0 +1,558 @@
+{
+  "schema": "0006-development-v1",
+  "source_repository": "https://github.com/csjunxu/PolyU-Real-World-Noisy-Images-Dataset",
+  "source_commit": "3af0f2646b267a00446fe4b7113a15e67bc80b4e",
+  "metadata_source_sha256": "2a2bc2f03494393ff338861fe3dcbce36090f46ae296a84abd1e9f2603aa0883",
+  "selection": "Order exact capture prefixes by SHA256(0006-stage0-v1|prefix); skip already-selected final scene tokens after rstrip(_); first four. Within each prefix take first mean JPG by SHA256(0006-stage0-v1|path). No image bytes or result used.",
+  "images": [
+    {
+      "group": "Canon5D2_5_200_3200_toy",
+      "scene_token": "toy",
+      "id": "d1",
+      "path": "CroppedImages/Canon5D2_5_200_3200_toy_2_mean.JPG",
+      "git_blob_sha1": "aef43e9a4c709a8be3b3a5c0bc04ceed1104fe8a",
+      "bytes": 19387
+    },
+    {
+      "group": "NikonD800_6-3_125_5000_plant",
+      "scene_token": "plant",
+      "id": "d2",
+      "path": "CroppedImages/NikonD800_6-3_125_5000_plant_10_mean.JPG",
+      "git_blob_sha1": "68580c287254932d8a00b92b68f4e2603718b7d4",
+      "bytes": 18614
+    },
+    {
+      "group": "NikonD800_11_160_3200_classroom",
+      "scene_token": "classroom",
+      "id": "d3",
+      "path": "CroppedImages/NikonD800_11_160_3200_classroom_15_mean.JPG",
+      "git_blob_sha1": "98101f1dca4bf0a1d22b96134dd22e68feeb20d8",
+      "bytes": 11066
+    },
+    {
+      "group": "NikonD800_5-6_160_6400_wall",
+      "scene_token": "wall",
+      "id": "d4",
+      "path": "CroppedImages/NikonD800_5-6_160_6400_wall_2_mean.JPG",
+      "git_blob_sha1": "87e9921526dfae66c03b4ef1fdd31a612f91333a",
+      "bytes": 19791
+    }
+  ],
+  "excluded_from_future_confirmation_capture_prefixes": [
+    "Canon5D2_5_200_3200_toy",
+    "Canon600D_4-5_125_1600_toy",
+    "NikonD800_11_160_3200_classroom",
+    "NikonD800_4-5_160_1800_classroom",
+    "NikonD800_5-6_160_6400_wall",
+    "NikonD800_6-3_125_5000_plant",
+    "NikonD800_6-3_125_5000_plant_",
+    "Sony_3-5_200_1600_classroom",
+    "Sony_4-5_125_1600_toy",
+    "Sony_4-5_125_3200_plant"
+  ],
+  "exclusion_limit": "Scene tokens are conservative metadata exclusions, not proof of physical independence; all selected captures and any identified same physical scene are development forever. No other image is allocated final test.",
+  "data_payload_bytes": 68858,
+  "all_mean_metadata": [
+    {
+      "path": "CroppedImages/Canon5D2_5_160_3200_chair_11_mean.JPG",
+      "git_blob_sha1": "a7ca88870e9963a70e4662bf68e9ab96d8000ff6",
+      "bytes": 10180
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_3200_chair_14_mean.JPG",
+      "git_blob_sha1": "19c5c453edfa06442819f6e8a43ea8cd0ff5a66e",
+      "bytes": 16764
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_3200_chair_5_mean.JPG",
+      "git_blob_sha1": "4ccb6265ec9491ef617a58e9cc555de2fedbca2b",
+      "bytes": 13091
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_3200_plug_11_mean.JPG",
+      "git_blob_sha1": "44d2e7acee00a51155bbc54b1626b6c93c8cd365",
+      "bytes": 17149
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_3200_plug_12_mean.JPG",
+      "git_blob_sha1": "991aded2ea7b8ae0488b1687db221a5a57d1b1c6",
+      "bytes": 18908
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_bicycle_10_mean.JPG",
+      "git_blob_sha1": "51a64422076a55bf6b9cb1eb1d02eed3a9afb349",
+      "bytes": 21056
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_bicycle_6_mean.JPG",
+      "git_blob_sha1": "fd566c8122f8e9e837dfac6b44ab7db55c2a9789",
+      "bytes": 21661
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_bicycle_8_mean.JPG",
+      "git_blob_sha1": "9f175e38c0985808fcaaf47c1c950101e9051d28",
+      "bytes": 19451
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_circuit_11_mean.JPG",
+      "git_blob_sha1": "132289d45537370a339060361c376c0177a71b2f",
+      "bytes": 31423
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_circuit_3_mean.JPG",
+      "git_blob_sha1": "3880c3cff71a33768dd25e9a017ca53e659bafcc",
+      "bytes": 24643
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_circuit_8_mean.JPG",
+      "git_blob_sha1": "2896c94c9e1e263f7fea54edeeeda721d7ae1e77",
+      "bytes": 22728
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_desk_10_mean.JPG",
+      "git_blob_sha1": "da036f79435c62000f33311fb13430b9c27d6b1e",
+      "bytes": 14893
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_desk_4_mean.JPG",
+      "git_blob_sha1": "8d9a306d0bec483ceb7c7e3624eddb808ba5cddd",
+      "bytes": 18066
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_desk_5_mean.JPG",
+      "git_blob_sha1": "2ab183360f1c96b9a85ddf8a01e5386ad30a5ee3",
+      "bytes": 11934
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_desk_7_mean.JPG",
+      "git_blob_sha1": "9a8f51d186e771707d605f03b76260823703732b",
+      "bytes": 16120
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_reciever_13_mean.JPG",
+      "git_blob_sha1": "5aaccc461e115fae8cc68ae71e67c85fafbe6b32",
+      "bytes": 22589
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_reciever_1_mean.JPG",
+      "git_blob_sha1": "a4e2bb5d8599ec15427a536a4d4395f35381f3fd",
+      "bytes": 22374
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_reciever_2_mean.JPG",
+      "git_blob_sha1": "ad25d1a4eed9b4fe605e800d529d05b3a8c67a1a",
+      "bytes": 14832
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_reciever_4_mean.JPG",
+      "git_blob_sha1": "7f0a556d66e22a1bcca2deaa303d76b4207b7e68",
+      "bytes": 17205
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_reciever_6_mean.JPG",
+      "git_blob_sha1": "ae810a1d997e9f94790f287f267ade474f0491f4",
+      "bytes": 18935
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_160_6400_reciever_8_mean.JPG",
+      "git_blob_sha1": "3503e9aa03268496fc3bb6b16783800ce40abcd8",
+      "bytes": 17757
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_200_3200_fruit_11_mean.JPG",
+      "git_blob_sha1": "3ca4b9a67a7e86eeeab035842c8eec70fecff7db",
+      "bytes": 22448
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_200_3200_fruit_12_mean.JPG",
+      "git_blob_sha1": "5841d69c2c0754c4b9a5d1406b980d3c20c1209f",
+      "bytes": 11596
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_200_3200_fruit_14_mean.JPG",
+      "git_blob_sha1": "5a6aa0ccf2203d57c09f5b556257c00a81d7094c",
+      "bytes": 11361
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_200_3200_toy_12_mean.JPG",
+      "git_blob_sha1": "771ebe0fda4daf0850d76c03b0447962b86771cf",
+      "bytes": 34607
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_200_3200_toy_1_mean.JPG",
+      "git_blob_sha1": "f64f1a7390659531b48e16d35a64b9375940b505",
+      "bytes": 25890
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_200_3200_toy_2_mean.JPG",
+      "git_blob_sha1": "aef43e9a4c709a8be3b3a5c0bc04ceed1104fe8a",
+      "bytes": 19387
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_200_3200_toy_3_mean.JPG",
+      "git_blob_sha1": "12c632a227c4d61898a9bcfe1e8546a043d272c6",
+      "bytes": 25262
+    },
+    {
+      "path": "CroppedImages/Canon5D2_5_200_3200_toy_6_mean.JPG",
+      "git_blob_sha1": "2d2d82d4985841e57aa6a95f42fda6a04952b6be",
+      "bytes": 22752
+    },
+    {
+      "path": "CroppedImages/Canon600D_3-5_125_1600_waterhouse_10_mean.JPG",
+      "git_blob_sha1": "ce671c87f65e6d317f84daff633d3f19bd6daf5d",
+      "bytes": 15790
+    },
+    {
+      "path": "CroppedImages/Canon600D_3-5_125_1600_waterhouse_11_mean.JPG",
+      "git_blob_sha1": "b51ad756e3aa581728861aa0f1338ebdebbbcd0b",
+      "bytes": 13022
+    },
+    {
+      "path": "CroppedImages/Canon600D_3-5_125_1600_waterhouse_12_mean.JPG",
+      "git_blob_sha1": "fc004f56c9edf4ec2d0318b3c60a99f00b536dac",
+      "bytes": 17012
+    },
+    {
+      "path": "CroppedImages/Canon600D_4-5_125_1600_book_11_mean.JPG",
+      "git_blob_sha1": "1e9916e7f37b5ad7d0379fc895e8281adfb45a86",
+      "bytes": 16109
+    },
+    {
+      "path": "CroppedImages/Canon600D_4-5_125_1600_book_13_mean.JPG",
+      "git_blob_sha1": "13faa37165632eb330ef28f5cadc1311a699eeab",
+      "bytes": 11970
+    },
+    {
+      "path": "CroppedImages/Canon600D_4-5_125_1600_toy_11_mean.JPG",
+      "git_blob_sha1": "402c8a37520c6b3eab6675f9247d4efb44976955",
+      "bytes": 16903
+    },
+    {
+      "path": "CroppedImages/Canon600D_4-5_125_1600_toy_13_mean.JPG",
+      "git_blob_sha1": "312b992361250db1593f3c1de6df7564bbc94ca2",
+      "bytes": 10463
+    },
+    {
+      "path": "CroppedImages/Canon600D_4-5_125_1600_toy_16_mean.JPG",
+      "git_blob_sha1": "15d4962b32d413b6fa242a33825288481b3e2410",
+      "bytes": 21299
+    },
+    {
+      "path": "CroppedImages/Canon600D_4-5_125_1600_toy_1_mean.JPG",
+      "git_blob_sha1": "38a7bfe7cb49dfc634dc2de53af7671a9b6dec22",
+      "bytes": 18124
+    },
+    {
+      "path": "CroppedImages/Canon600D_4-5_125_1600_toy_2_mean.JPG",
+      "git_blob_sha1": "7f86f0bf07e06ceb80664c69820c284cbb9c03c1",
+      "bytes": 10184
+    },
+    {
+      "path": "CroppedImages/Canon600D_4-5_125_1600_toy_3_mean.JPG",
+      "git_blob_sha1": "9336c6a139689ef6bfd115e1a892b5315f3c97b5",
+      "bytes": 16130
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_12800_printer_11_mean.JPG",
+      "git_blob_sha1": "c869c4ba5fd635c9a55352dbe5947ba8a9bca152",
+      "bytes": 10244
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_12800_printer_14_mean.JPG",
+      "git_blob_sha1": "bc4e0958db7ef9e5a95d833babce05467add5249",
+      "bytes": 7478
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_12800_printer_15_mean.JPG",
+      "git_blob_sha1": "2062b36151fc2607503481e1f4e5c34d8e704350",
+      "bytes": 12437
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_12800_printer_16_mean.JPG",
+      "git_blob_sha1": "04624ad1b15379d2d1cb4355180188ea5d7aaf86",
+      "bytes": 11024
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_3200_ball_16_mean.JPG",
+      "git_blob_sha1": "3a982f4fbbe2e6ca906051bc409bf8f0afa4c4c4",
+      "bytes": 23003
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_3200_ball_1_mean.JPG",
+      "git_blob_sha1": "a8d4188b00dd9bf4626a32316b17e5ccbd72bdfc",
+      "bytes": 36424
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_3200_ball_2_mean.JPG",
+      "git_blob_sha1": "0a27c503e570b1a5251fb92fd2217030a2810e72",
+      "bytes": 20953
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_3200_ball_6_mean.JPG",
+      "git_blob_sha1": "2e1cea062fab2945ddea07fc4e62e99b9cd0d56c",
+      "bytes": 30227
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_3200_ball_7_mean.JPG",
+      "git_blob_sha1": "2a12f30b0e78b5c43028ff83801a00cda9c5f58e",
+      "bytes": 34582
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_6400_comproom_11_mean.JPG",
+      "git_blob_sha1": "8d9874cd2e0743b8fc4d93782fdf7a95c2e377e9",
+      "bytes": 14751
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_6400_comproom_12_mean.JPG",
+      "git_blob_sha1": "75a1132f3f6760f81e5bc8936fa321fa4917f071",
+      "bytes": 13732
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_6400_comproom_13_mean.JPG",
+      "git_blob_sha1": "bdfc75040605a0c96be1a35eaa611055d4375f83",
+      "bytes": 15302
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_6400_comproom_14_mean.JPG",
+      "git_blob_sha1": "cc7e59ff066e9664f65c130fa4b4576a89d4d879",
+      "bytes": 12810
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_6400_comproom_16_mean.JPG",
+      "git_blob_sha1": "40de9e6e26e6ebf2aa240cf22bd86287e4b4c9ea",
+      "bytes": 18401
+    },
+    {
+      "path": "CroppedImages/Canon80D_8_8_800_GO_11_mean.JPG",
+      "git_blob_sha1": "7c7f7805069edd9446eb69e1cb66abc80207eaf3",
+      "bytes": 32948
+    },
+    {
+      "path": "CroppedImages/NikonD800_10_100_6400_planandsofa_2_mean.JPG",
+      "git_blob_sha1": "362a6a59ca4a7caf5c7196247d393c2fd390ec55",
+      "bytes": 25303
+    },
+    {
+      "path": "CroppedImages/NikonD800_10_100_6400_planandsofa_7_mean.JPG",
+      "git_blob_sha1": "592f2d48bef412288582401001cbddfaec85c5e8",
+      "bytes": 12939
+    },
+    {
+      "path": "CroppedImages/NikonD800_11_160_3200_classroom_15_mean.JPG",
+      "git_blob_sha1": "98101f1dca4bf0a1d22b96134dd22e68feeb20d8",
+      "bytes": 11066
+    },
+    {
+      "path": "CroppedImages/NikonD800_11_160_3200_classroom_4_mean.JPG",
+      "git_blob_sha1": "bc27107fe9a6e164937647519a40b70c92e1eb16",
+      "bytes": 11942
+    },
+    {
+      "path": "CroppedImages/NikonD800_11_160_3200_classroom_6_mean.JPG",
+      "git_blob_sha1": "5294749c954b5311c53eba4d94c6b20b248a1b1e",
+      "bytes": 9261
+    },
+    {
+      "path": "CroppedImages/NikonD800_4-5_160_1800_classroom_15_mean.JPG",
+      "git_blob_sha1": "8028ac3cd128bdb581f63fbb29443c86dea1ccd3",
+      "bytes": 15877
+    },
+    {
+      "path": "CroppedImages/NikonD800_4-5_160_1800_classroom_5_mean.JPG",
+      "git_blob_sha1": "b34083f1c73b53b379415859ae7cc6f02b8c7491",
+      "bytes": 20139
+    },
+    {
+      "path": "CroppedImages/NikonD800_4-5_160_1800_classroom_9_mean.JPG",
+      "git_blob_sha1": "2192fbb2fb8556ef48d4cc446bd62d80f6f9cd08",
+      "bytes": 27643
+    },
+    {
+      "path": "CroppedImages/NikonD800_5-6_160_6400_wall_15_mean.JPG",
+      "git_blob_sha1": "d9c8c6559dbfba8ce83dcba762cef8c8d0e394e5",
+      "bytes": 27724
+    },
+    {
+      "path": "CroppedImages/NikonD800_5-6_160_6400_wall_2_mean.JPG",
+      "git_blob_sha1": "87e9921526dfae66c03b4ef1fdd31a612f91333a",
+      "bytes": 19791
+    },
+    {
+      "path": "CroppedImages/NikonD800_5-6_160_6400_wall_6_mean.JPG",
+      "git_blob_sha1": "6b7fd63c0343d5017624acd5fab53810bd4b009f",
+      "bytes": 42579
+    },
+    {
+      "path": "CroppedImages/NikonD800_5-6_160_6400_wall_9_mean.JPG",
+      "git_blob_sha1": "33f71ffbfe5b3ec0cba0cdbad718485ab48e47ca",
+      "bytes": 10246
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_100_4000_flower_12_mean.JPG",
+      "git_blob_sha1": "cc0db73bc95ffd97bf37701e252d36d6de439590",
+      "bytes": 14333
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_100_4000_flower_13_mean.JPG",
+      "git_blob_sha1": "e96e10593767fa081f953551ee7fa5f29a3d1f0f",
+      "bytes": 26817
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_100_4000_flower_14_mean.JPG",
+      "git_blob_sha1": "73f8932aa51dac3034b2e25c04244b3b95e645bc",
+      "bytes": 23651
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_100_4000_flower_15_mean.JPG",
+      "git_blob_sha1": "1b65db0d808c4a7756f4febc1fdbdba3e5b714f2",
+      "bytes": 25564
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_100_4000_flower_1_mean.JPG",
+      "git_blob_sha1": "0c6399aea36743a03e1277f1480a00546b76f643",
+      "bytes": 26997
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_100_4000_flower_2_mean.JPG",
+      "git_blob_sha1": "e32d73d5bd3d6e3f714490ad6a50743e2b1b7398",
+      "bytes": 25945
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_125_6400_stair_10_mean.JPG",
+      "git_blob_sha1": "4fbcec0d12ef3b5a1a7358f9b1a46e72bc8fd6a5",
+      "bytes": 19430
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_125_6400_stair_1_mean.JPG",
+      "git_blob_sha1": "9996cc05308dc02330ca3e8dc3c2a5ebfafbd1df",
+      "bytes": 20439
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_125_6400_stair_3_mean.JPG",
+      "git_blob_sha1": "2c8b568281027bc2eb03f8b5ced1dea8655957b7",
+      "bytes": 19037
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_125_6400_stair_6_mean.JPG",
+      "git_blob_sha1": "614d267a79bdd72bfef6518a7f972aa102933e5d",
+      "bytes": 21596
+    },
+    {
+      "path": "CroppedImages/NikonD800_5_125_6400_stair_7_mean.JPG",
+      "git_blob_sha1": "7023db6fd42702f429894c8a90d384463d1c316d",
+      "bytes": 18540
+    },
+    {
+      "path": "CroppedImages/NikonD800_6-3_125_5000_plant_10_mean.JPG",
+      "git_blob_sha1": "68580c287254932d8a00b92b68f4e2603718b7d4",
+      "bytes": 18614
+    },
+    {
+      "path": "CroppedImages/NikonD800_6-3_125_5000_plant_1_mean.JPG",
+      "git_blob_sha1": "882033a6ccee4dd5c9a15bf114552590cce777f8",
+      "bytes": 18462
+    },
+    {
+      "path": "CroppedImages/NikonD800_6-3_125_5000_plant_3_mean.JPG",
+      "git_blob_sha1": "91ba6dc0a80db668e1e97490630ec409156c0aa3",
+      "bytes": 11921
+    },
+    {
+      "path": "CroppedImages/NikonD800_6-3_125_5000_plant_6_mean.JPG",
+      "git_blob_sha1": "fc4441375ce7edf196ec22b908a3a2f24de8eabc",
+      "bytes": 17532
+    },
+    {
+      "path": "CroppedImages/NikonD800_6-3_125_5000_plant__4_mean.JPG",
+      "git_blob_sha1": "1f0ed73f4a15b8574240699a3804caa98eb3eef5",
+      "bytes": 10452
+    },
+    {
+      "path": "CroppedImages/NikonD800_8_100_6400_bulletin_3_mean.JPG",
+      "git_blob_sha1": "3c0387ce6560e75f9560d67967bd79096cd9c3ca",
+      "bytes": 24177
+    },
+    {
+      "path": "CroppedImages/NikonD800_8_100_6400_bulletin_5_mean.JPG",
+      "git_blob_sha1": "9fd3044e17bc314f818bce4016710a79e8083d3b",
+      "bytes": 30949
+    },
+    {
+      "path": "CroppedImages/NikonD800_8_100_6400_bulletin_7_mean.JPG",
+      "git_blob_sha1": "ce1b9254a5ea1fe4ccf7f1f5c47452b5b9eb3415",
+      "bytes": 19064
+    },
+    {
+      "path": "CroppedImages/NikonD800_8_100_6400_bulletin_8_mean.JPG",
+      "git_blob_sha1": "88a27d609757175a89808d708043b509d0e92a55",
+      "bytes": 15619
+    },
+    {
+      "path": "CroppedImages/NikonD800_8_125_6400_photo_19_mean.JPG",
+      "git_blob_sha1": "dcbd6aaad02de13511bef480a34da89ee9ccaa78",
+      "bytes": 14759
+    },
+    {
+      "path": "CroppedImages/Sony_3-5_200_1600_classroom_10_mean.JPG",
+      "git_blob_sha1": "4015df2ee8269f9e0aba1c82c7d83eb17cfa7f58",
+      "bytes": 18106
+    },
+    {
+      "path": "CroppedImages/Sony_3-5_200_1600_classroom_13_mean.JPG",
+      "git_blob_sha1": "b2dd70916bc92353a1d2c6b7dbd618568add0a00",
+      "bytes": 14167
+    },
+    {
+      "path": "CroppedImages/Sony_3-5_200_1600_classroom_14_mean.JPG",
+      "git_blob_sha1": "60d5408c066a0fc41fff18ba0ac59c94709ea00d",
+      "bytes": 18222
+    },
+    {
+      "path": "CroppedImages/Sony_4-5_125_1600_toy_10_mean.JPG",
+      "git_blob_sha1": "8f8e680a9c120438aafcbd3bcb1093253461e8de",
+      "bytes": 13861
+    },
+    {
+      "path": "CroppedImages/Sony_4-5_125_1600_toy_11_mean.JPG",
+      "git_blob_sha1": "6bcc828ce2565adf688fd63c020ed99e4350b5e9",
+      "bytes": 11960
+    },
+    {
+      "path": "CroppedImages/Sony_4-5_125_3200_plant_10_mean.JPG",
+      "git_blob_sha1": "3dfd5143aa68c4b15494beee77ecdfec35d66a50",
+      "bytes": 40999
+    },
+    {
+      "path": "CroppedImages/Sony_4-5_125_3200_plant_11_mean.JPG",
+      "git_blob_sha1": "f0de07cf076dc77f33f581bf4758d4d78e0048e0",
+      "bytes": 27163
+    },
+    {
+      "path": "CroppedImages/Sony_4-5_125_3200_plant_13_mean.JPG",
+      "git_blob_sha1": "de1c27526cb495c017ed4b84e08df672fa803a90",
+      "bytes": 37750
+    },
+    {
+      "path": "CroppedImages/Sony_4-5_125_3200_plant_14_mean.JPG",
+      "git_blob_sha1": "52d4f4fe266147b236fdd11db602dad711ab2b53",
+      "bytes": 19502
+    },
+    {
+      "path": "CroppedImages/Sony_4-5_125_6400_waterhouse_10_mean.JPG",
+      "git_blob_sha1": "fc72e1acce65c6330c4a9222c28f63eb819d47a6",
+      "bytes": 14444
+    },
+    {
+      "path": "CroppedImages/Sony_4_200_3200_door_10_mean.JPG",
+      "git_blob_sha1": "d506e711d73216b26de69e724b50e75b18471a51",
+      "bytes": 23283
+    },
+    {
+      "path": "CroppedImages/Sony_4_200_3200_door_11_mean.JPG",
+      "git_blob_sha1": "6b21e37137904ee61e24bea2ea55215dec6459c1",
+      "bytes": 9772
+    }
+  ],
+  "license": "Noncommercial research/use only, attribution and notices retained; no image redistribution in this repository."
+}

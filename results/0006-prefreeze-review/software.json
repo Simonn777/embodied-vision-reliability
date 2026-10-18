@@ -1,0 +1,23 @@
+{
+  "scope": "Artificial software checks only; no image acquisition, data decoding or scientific training occurred.",
+  "command": "OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 VECLIB_MAXIMUM_THREADS=4 NUMEXPR_NUM_THREADS=4 python3 -W error -m unittest discover -s tests -p test_conditional_residual*.py -v",
+  "tests_total": 66,
+  "passed": 60,
+  "skipped": 6,
+  "skipped_reason": "Local Torch unavailable; six tiny tensor fixtures must all pass in the cached cloud runtime before acquisition.",
+  "unittest_reported_seconds": 0.461,
+  "external_wall_measurement_retained": false,
+  "source_and_test_sha256": {
+    "scripts/conditional_residual.py": "9b0e914272ee13f35bdd0e875f1bb74112438d8623f4f98e2cf0da3e0c0bdc13",
+    "scripts/conditional_residual_metrics.py": "728977c61a8eef7b66d07d23b24509e22ca33159bd9a265b835e9107540c6b5a",
+    "scripts/conditional_residual_training.py": "93f68b4efe2f655590e5b8fc3ac7ff61006c8d031f9dd822c9d1f7f5d6ac5c41",
+    "scripts/run_conditional_residual_stage0.py": "c0ba64b4f4740d5fa048ecdd81e495893312cbb0474203d15149f55a55433e0a",
+    "scripts/score_conditional_residual_stage0.py": "61d4553a0594301a4fed63f36cd31811af374064e678d4ae5429fb46d7040a62",
+    "tests/test_conditional_residual.py": "7cbcac2465e755b0469a3207bdbb17d53423ea0039cef4318a416f023e349e11",
+    "tests/test_conditional_residual_acquisition.py": "12d2f4fbad61fe667f94625395cdcaa395978f9227becf5f1d64f6d3fac26f0f",
+    "tests/test_conditional_residual_metrics.py": "7248531348a4ee2365eb25a2f8259077ec964911e8a9e14386191daa9ff0efd5",
+    "tests/test_conditional_residual_supervision.py": "57d7bc73a969a5e230f020455a1609a37a7e0185b82d761d3ef8ff371f3a269c",
+    "tests/test_conditional_residual_training.py": "155229c09d6fc396492df14a42c8d0f62cd01e6aaa6c91c667c27ac1380c190e"
+  },
+  "stderr_sha256": "efc7ffc55893c61c060b9c53b0cbe586ab6656169bbe84336838fda9a8fab21d"
+}

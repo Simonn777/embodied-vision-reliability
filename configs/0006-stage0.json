@@ -1,0 +1,71 @@
+{
+  "schema": "0006-stage0-v1",
+  "stage": "development mechanism screen; not real-camera-noise efficacy or paper evidence",
+  "image_ids": [
+    "d1",
+    "d2",
+    "d3",
+    "d4"
+  ],
+  "image_size_expected": [
+    512,
+    512
+  ],
+  "center_crop_size": 128,
+  "grayscale_weights": [
+    0.299,
+    0.587,
+    0.114
+  ],
+  "conditions": [
+    "white",
+    "colored"
+  ],
+  "sigma": 0.09803921568627451,
+  "seeds": [
+    0,
+    1
+  ],
+  "methods": [
+    "blindspot",
+    "safe_blindspot",
+    "residual",
+    "r2r_alpha05"
+  ],
+  "patch_size": 7,
+  "architecture": [
+    49,
+    64,
+    32,
+    1
+  ],
+  "steps": 500,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "optimizer": "Adam default betas=(.9,.999),eps=1e-8,weight_decay=0",
+  "fit_timeout_seconds": 90,
+  "case_timeout_seconds": 120,
+  "group_timeout_seconds": 1800,
+  "threads": 4,
+  "address_space_bytes": 8589934592,
+  "r2r_mc_samples": 50,
+  "inference_chunk_size": 1024,
+  "noisy_seed_formula": "610000 + 100*image_index_zero_based + seed; condition fields use common random streams with their respective halo shapes, not independent conditions",
+  "init_seed_formula": "620000 + 100*image_index_zero_based + 10*seed + condition_index_zero_based",
+  "batch_seed_offset": 1,
+  "augment_seed_offset": 2,
+  "infer_seed_offset": 3,
+  "acquisition_old_ceiling_bytes": 7499066782,
+  "new_metadata_allowance_bytes": 33554432,
+  "image_total_expected_bytes": 68858,
+  "download_cap_per_image_bytes": 131072,
+  "no_retries": true,
+  "continuation_gate": {
+    "colored_mean_pairwise_gain_db": 0.3,
+    "minimum_positive_group_means": 3,
+    "worst_group_gain_db": -0.2,
+    "colored_mean_gradient_error_ratio_max": 1.05,
+    "white_residual_blindspot_exact": true
+  },
+  "paper_gate": "Not established by this screen. Requires separately frozen independent-data evaluation, strong contemporary baselines, substantial improvements, ablations, cluster uncertainty and independently reproduced inference."
+}
