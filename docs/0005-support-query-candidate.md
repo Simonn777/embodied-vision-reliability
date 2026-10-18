@@ -1,0 +1,30 @@
+# 0005: confusable auxiliary queries — conditional mechanism candidate
+
+2026-10-18. Primary papers and official source only; no inference, weights/data download, cloud access or experiments in this literature audit. The parent subsequently archived this memo; it is not an experimental result. **Reject “extra queries enforce negative identity constraints” as currently stated.** Retain one narrower, unproven selection experiment; this is not a chosen innovation or paper claim.
+
+## Closest evidence and novelty risks
+
+| Primary source; inspected depth | What already exists / consequential difference |
+|---|---|
+| Zholus et al., **TAPNext: Tracking Any Point (TAP) as Next Token Prediction**, ICCV 2025; [arXiv v2, Appendix B–D](https://arxiv.org/html/2504.05579v2#A3). | Joint tracking, local/global supports and emergent motion-group attention already exist. Appendix C evaluates one benchmark query plus support grids; Appendix D decodes each point’s coordinates independently. Generic support-based recovery is not new. |
+| Jung et al., **TAPNext++: What's Next for Tracking Any Point (TAP)?**, CVPR 2026 Findings; [official VOT README and runner](https://github.com/google-deepmind/tapnet/blob/730cda1c730877cfedbe01bf87fb1cadb78a565d/tapnet/tapnextpp/votsp2026/tracker.py#L109), selected source read. | Already adds **64 local supports per real query**, jointly tracks them and discards their outputs. Query-time groups start separate rollouts; new points cannot be appended to existing state in this wrapper. |
+| Karaev et al., **CoTracker: It is Better to Track Together**, ECCV 2024; [v3 §3.4, §4.2, Appendix A](https://arxiv.org/html/2307.07635v3#A1). | Support selection is already studied: global/local grids **and SIFT-selected points**. Local grids outperform SIFT in that comparison. “Image-adaptive supports” alone is weak differentiation. |
+| Truong et al., **GOCor: Bringing Globally Optimized Correspondence Volumes into Your Neural Network**, NeurIPS 2020; [§1–3](https://papers.nips.cc/paper/2020/file/a4a8a31750a23de2da88ef6a491dfd5c-Paper.pdf). Cho et al., **Local All-Pair Correspondence for Point Tracking**, ECCV 2024; [v1 §3](https://arxiv.org/html/2407.15420v1#S3). | GOCor explicitly uses similar reference regions, uniqueness and matching constraints; LocoTrack uses local bidirectional 4D matching to disambiguate. Neither supports claiming distractor-aware matching as a new principle. LocoTrack’s full temporal refinement uses both directions. |
+| Šerých, Neoral, Matas, **MFTIQ**, WACV 2025; [paper §3](https://openaccess.thecvf.com/content/WACV2025/papers/Serych_MFTIQ_Multi-Flow_Tracker_with_Independent_Matching_Quality_Estimation_WACV_2025_paper.pdf). Zhang et al., **ProTracker**, [2025 arXiv v2 §3](https://arxiv.org/html/2501.03220v2#S3). | MFTIQ scores alternate flow chains with independent matching quality, causally. ProTracker filters semantic/object confusions and integrates long-term correspondences, but its backward pass and video-specific fitting are not a strict causal comparator. They do not establish this particular fixed-query selection mechanism. |
+| Rajič et al., **Segment Anything Meets Point Tracking**, WACV 2025; [§3.2](https://arxiv.org/html/2307.01197#S3.SS2). | **Explicit negative points already are tracked** to reject background/neighbor objects. Their negative meaning is consumed by SAM’s mask decoder, not by the point tracker as a signed query. This directly defeats a broad “negative-query tracking” novelty claim. |
+
+Read depth above means selected full-text sections/source, not complete-paper review. Search coverage is bounded; missing a matching paper proves nothing.
+
+## Expressibility and causal boundary
+
+[Pinned TAPNext code](https://github.com/google-deepmind/tapnet/blob/730cda1c730877cfedbe01bf87fb1cadb78a565d/tapnet/tapnext/tapnext_torch.py#L286) concatenates image/point tokens and applies joint spatial attention. Inputs encode time/position; there is **no negative-role input or injective assignment head**. Thus ordinary auxiliaries can influence predictions, but cannot be called explicit exclusion constraints. Hard spatial repulsion is also physically questionable during projected overlap/occlusion.
+
+For a clean deployment test, initialize **one original benchmark query plus all K auxiliaries in the same batch at its query frame**; keep their identities/count/order fixed thereafter. Use only that frame for selection and past/current frames for tracking. No future-conditioned reselection, backward smoothing, benchmark-mask input or other ground-truth queries in the batch. Native state reuse then remains causal.
+
+## Narrow falsifiable candidate
+
+Select spatially separated, high-similarity **reference-frame confusables** using frozen native image-patch descriptors, excluding the original point’s neighborhood. Test whether this fixed allocation reduces post-occlusion wrong reacquisition versus equal-K local/global grids, SIFT/texture supports and spatially matched random supports. These points are not verified different objects; initially call them auxiliaries, not negatives. Keep the native readout unchanged. A separately run auxiliary batch cannot test joint-attention benefit.
+
+Use descriptor-permutation/low-similarity controls to distinguish confusion-specific benefit from extra context. Abandon if native predictions are unaffected, matched supports do equally well, or benefits require unavailable identity labels. Confirm target AJ and AJ_RD with sequence-level uncertainty, not merely lower confidence/coverage. Freeze selection rules on authorized new development material; **never select queries on old tests**.
+
+At 256×256 with 8×8 patches, 1,024 image tokens make modest K plausible; attention scales approximately with `(1024+1+K)^2`, not for free. The 512px VOT setting has 4,096 image tokens. Measure complete selector/encoding/recurrent-state/readout latency and memory; any extra initialization pass counts. No demonstrated cost or accuracy improvement exists yet. Novelty remains conditional and substantially weaker than the broad proposal suggests.

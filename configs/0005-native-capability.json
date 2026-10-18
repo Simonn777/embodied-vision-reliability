@@ -1,0 +1,150 @@
+{
+  "preparation": {
+    "schema_version": 1,
+    "budget": {
+      "historical_ceiling_bytes": 4823387101,
+      "metadata_allowance_bytes": 134217728,
+      "limit_bytes": 10737418240,
+      "historical_ledger_path": "results/0003-network-followup-20261017/acquisition-ledger.json",
+      "historical_ledger_sha256": "2a1af4d52d236455cf1212b590dbb23b97561f7b4cbe309f629f9d4037498442"
+    },
+    "runtime": {
+      "python": "3.12.14",
+      "old_packages": {
+        "torch": "2.10.0+cpu",
+        "numpy": "2.0.2"
+      },
+      "overlay_packages": {
+        "torchvision": "0.25.0+cpu",
+        "einops": "0.8.2",
+        "Pillow": "13.0.0"
+      },
+      "old_init_sha256": {
+        "runtime-fixed/torch/__init__.py": "51c90fe34a7cf869517d1bab4cd114498790e169ec668f1a154c35ec64117a5e",
+        "runtime-fixed/numpy/__init__.py": "c09e25b58f6b2f8e2cb3c158168f902d447f8171e5ea6513c0aca41ecbda7c2b"
+      }
+    },
+    "transfer": {
+      "read_timeout_seconds": 60,
+      "per_asset_timeout_seconds": 840,
+      "chunk_bytes": 1048576
+    },
+    "install_timeout_seconds": 180,
+    "import_timeout_seconds": 120,
+    "assets": [
+      {
+        "id": "source-0",
+        "kind": "source",
+        "relative_path": "source/tapnet/tapnext/tapnext_torch.py",
+        "url": "https://raw.githubusercontent.com/google-deepmind/tapnet/730cda1c730877cfedbe01bf87fb1cadb78a565d/tapnet/tapnext/tapnext_torch.py",
+        "bytes": 11773,
+        "sha256": "48072289b22439267b3a51eb4cde5e2f81f38c840b6c95b659d60032a07c691a"
+      },
+      {
+        "id": "source-1",
+        "kind": "source",
+        "relative_path": "source/tapnet/tapnext/tapnext_lru_modules.py",
+        "url": "https://raw.githubusercontent.com/google-deepmind/tapnet/730cda1c730877cfedbe01bf87fb1cadb78a565d/tapnet/tapnext/tapnext_lru_modules.py",
+        "bytes": 15889,
+        "sha256": "2a475419c2f7c67db9acdf412108fb3b025d168f60e9e087fe35d65157adf64f"
+      },
+      {
+        "id": "source-2",
+        "kind": "source",
+        "relative_path": "source/tapnet/tapnext/pscan.py",
+        "url": "https://raw.githubusercontent.com/google-deepmind/tapnet/730cda1c730877cfedbe01bf87fb1cadb78a565d/tapnet/tapnext/pscan.py",
+        "bytes": 3253,
+        "sha256": "7df34bf5e8318e81bb330ded14fc5e675e7485ea39fa9f0d77fa470f85796a2d"
+      },
+      {
+        "id": "source-3",
+        "kind": "source",
+        "relative_path": "source/tapnet/tapnextpp/votsp2026/model.py",
+        "url": "https://raw.githubusercontent.com/google-deepmind/tapnet/730cda1c730877cfedbe01bf87fb1cadb78a565d/tapnet/tapnextpp/votsp2026/model.py",
+        "bytes": 6524,
+        "sha256": "e1219e2341c33e0f9124fe02d09a521ac7c91bc27505fcbebbf05741f825e46b"
+      },
+      {
+        "id": "source-4",
+        "kind": "source",
+        "relative_path": "source/tapnet/tapnextpp/votsp2026/utils.py",
+        "url": "https://raw.githubusercontent.com/google-deepmind/tapnet/730cda1c730877cfedbe01bf87fb1cadb78a565d/tapnet/tapnextpp/votsp2026/utils.py",
+        "bytes": 3883,
+        "sha256": "0336c526dc2b91244c3e5b803f84b65c6323ede138340a4107441a6b9c9fdbf8"
+      },
+      {
+        "id": "torchvision",
+        "kind": "wheel",
+        "relative_path": "wheels/torchvision-0.25.0+cpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+        "url": "https://download-r2.pytorch.org/whl/cpu/torchvision-0.25.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+        "bytes": 1928072,
+        "sha256": "c1be164e93c68b2dbf460fd58975377c892dbcf3358fb72941709c3857351bba"
+      },
+      {
+        "id": "einops",
+        "kind": "wheel",
+        "relative_path": "wheels/einops-0.8.2-py3-none-any.whl",
+        "url": "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl",
+        "bytes": 65638,
+        "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193"
+      },
+      {
+        "id": "pillow",
+        "kind": "wheel",
+        "relative_path": "wheels/pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/e6/99/fdf65cc539e266ab93546c261bdf98411fe165c6e4e13f9dbf597097192b/pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "bytes": 7144542,
+        "sha256": "42d63be3af4f9b951b199b0a9d23365d37ab14687e6d77b74940432c8515c4ca"
+      },
+      {
+        "id": "checkpoint-256",
+        "kind": "checkpoint",
+        "relative_path": "weights/tapnextpp_ckpt.pt",
+        "url": "https://huggingface.co/google/tapnet/resolve/5d3fb48e76c5422841e38501514121e251beabb7/tapnextpp_ckpt.pt",
+        "bytes": 2532282370,
+        "sha256": "cb96a43444ccb4fbdb25d800b88c7ba196179a526e78f01b021a16b1c1eff6da"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "scope": "Native CPU capability only; not accuracy or method benefit",
+  "expected_packages": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.0.2",
+    "torchvision": "0.25.0+cpu",
+    "einops": "0.8.2",
+    "Pillow": "13.0.0"
+  },
+  "seed": 20261018,
+  "frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "query_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "threads": 4,
+  "address_space_bytes": 8589934592,
+  "outer_timeout_seconds": 1800,
+  "inner_timeout_seconds": 1790,
+  "kill_after_seconds": 5
+}
