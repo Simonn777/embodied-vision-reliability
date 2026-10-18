@@ -1,0 +1,133 @@
+{
+  "status": "passed_archived_artifact_audit",
+  "head": "0436cb438666db9bd0645f131632fc2fafcdf025",
+  "base": "f0787ab50f5dfc31f8b8a58bdcb165a12d2d83a6",
+  "script_sha256": "af7054cd8971a9016fad4ae4654705fd2e16d1df01b716258dad0348687510a8",
+  "freeze_inputs": 16,
+  "original_freeze_inputs": 7,
+  "copy_manifest_files": 74,
+  "historical_base_blobs_checked": 1832,
+  "prior_result_bytes_preserved": 1651,
+  "intentional_state_updates": [
+    "CURRENT_STATE.md",
+    "NEXT_ACTIONS.md",
+    "notes/2026-10-18.md"
+  ],
+  "frames": 8,
+  "CSV_rows_exactly_equal": 64,
+  "finite_float_scalars": 33088,
+  "boolean_outputs": 64,
+  "wrapper_array_equal": true,
+  "query_state_hashes": 1,
+  "stored_state_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "stored_layers_per_step": 12,
+  "distinct_rg_lru_hashes": 96,
+  "independent_float64_saved_head_max_abs_difference_px": 1.544924731433639e-05,
+  "saved_head_note": "Numerical diagnostic only; no scientific threshold changed; saved logits only.",
+  "sum_forward_seconds": 19.41582444999767,
+  "first_forward_seconds": 2.67039676999957,
+  "later_mean_forward_seconds": 2.392203954285443,
+  "sum_frame_artifact_seconds": 20.342805420998047,
+  "phase_sum_seconds": 50.41681264900035,
+  "adapter_seconds": 50.42019096900003,
+  "adapter_unattributed_seconds": 0.003378319999683299,
+  "operations": {
+    "verify-before-dependencies": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.18104470099933678,
+      "peak_rss_kib": 14080
+    },
+    "dependencies": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 2.988573290000204,
+      "peak_rss_kib": 290944
+    },
+    "verify-before-checkpoint": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.18037211500086414,
+      "peak_rss_kib": 14080
+    },
+    "checkpoint": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 146.70792746699954,
+      "peak_rss_kib": 22396
+    },
+    "native": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 55.082073132000005,
+      "peak_rss_kib": 3727996
+    },
+    "software": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.5795265219985595,
+      "peak_rss_kib": 23096
+    },
+    "native-child": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 53.080107885998586,
+      "peak_rss_kib": 3727996
+    },
+    "import": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 2.7018833069996617,
+      "peak_rss_kib": 290944
+    },
+    "dependencies-review": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.1669538130008732,
+      "peak_rss_kib": 11168
+    },
+    "checkpoint-review": {
+      "exit": 1,
+      "raw_wait_status": 256,
+      "wall_seconds": 0.19115682000119705,
+      "peak_rss_kib": 11292
+    },
+    "checkpoint-review-v2": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 1.9960479679994023,
+      "peak_rss_kib": 11172
+    },
+    "native-review": {
+      "exit": 1,
+      "raw_wait_status": 256,
+      "wall_seconds": 0.24405595799908042,
+      "peak_rss_kib": 26288
+    },
+    "native-review-v2": {
+      "exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.6365610579996428,
+      "peak_rss_kib": 28936
+    }
+  },
+  "checkpoint_first_GET_recorded_bytes": 2532282370,
+  "conservative_ceiling_bytes": 7499066782,
+  "limitations": [
+    "No cloud filesystem or downloaded checkpoint rechecked in this parent audit; those claims are cross-bound saved runtime evidence.",
+    "State tensors absent: recomputed schema/hash consistency only, not their numeric values or actual SHA preimages.",
+    "Observer parents have no additional durable outer wait receipt.",
+    "Eight-frame capability is not efficacy, novelty, real-video transfer or long-clip validation."
+  ],
+  "model_imported": false,
+  "network_or_model_execution": false
+}

@@ -1,8 +1,12 @@
 # Research charter
 
 **Program:** October 16, 2026–October 15, 2027.  
-**Focus:** reliability of visual position estimates under partial observation.  
+**Initial focus:** reliability of visual position estimates under partial observation.
 **Owner:** Wumou (Simon) Xie. Research planning, implementation, literature screening, and execution are assisted by Codex; see [contributions](CONTRIBUTIONS.md).
+
+## October 18 owner-directed revision
+
+The owner explicitly authorized a completely new computer-vision topic, independent of old GitHub experiments, and requires substantial validated improvement before a manuscript. The initial localization question and milestones below remain the historical plan. They do not require continuing a rejected mechanism. A replacement topic must record its closest prior work, falsifiable mechanism, independent data and task-specific improvement gate before outcome inspection. Existing frozen results, test-set exclusions, resource limits and AI-contribution disclosures remain binding.
 
 ## Question for the first twelve weeks
 

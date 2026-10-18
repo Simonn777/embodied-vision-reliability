@@ -5,10 +5,10 @@ Work from the first unfinished item. Record each outcome in a dated note before 
 ## October 18 owner-authorized research pivot — active order
 
 1. **Completed:** freeze, execute once and independently review [0004 Stage 0](results/0004-stage0/README.md). It failed the unchanged continuation rule: 46 coordinate repairs / 120 harms and negative shadow return. Preserve the result and cache marker; do not repeat the run, reinterpret it as undersensitive, or fit a selector to selected positive episodes.
-2. **Read-only preflight completed:** native TAPNext++ 256px still needs its fixed extra dependencies and weights. Complete the reviewed 0005 preparation/freeze and single capability operation below. Native baseline feasibility is infrastructure, not a method improvement.
-3. Resolve the real-video access and independent-group prerequisites. RoboTAP's official archive is 12.627 GiB, over budget; only its 827-byte ZIP directory has been inspected. A single compressed shard is about 1.713 GiB but expands to 5.778 GiB. The restricted streaming reader is still tested only on artificial fixtures. Do not acquire/decode real members without a reviewed bounded plan; preserve benchmark evaluation-only use and do not infer scene independence from filenames.
-4. Select a genuinely different, falsifiable coordinate-improvement mechanism after checking closest primary work. Freeze development access, intervention and matched-cost controls before its experiment. The failed hard-zero operator is not advanced by renaming it. A small synthetic result is never the efficacy claim.
-5. Before writing any paper, satisfy the substantive gain, strong baseline, transfer, uncertainty and compute requirements in [0004 direction](docs/0004-research-direction.md). The overall research goal remains active. Reject/pivot mechanisms that fail; retain evidence. Do not guarantee acceptance or manufacture positive results.
+2. **Completed and independently reviewed:** the [recovered native CPU operation](results/0005-recovered-parent-review/README.md) produced 64 finite outputs in 55.082 seconds, peak RSS 3,727,996 KiB. Preserve the archive and all markers; do not repeat it merely for publication. Capability is not method improvement.
+3. **Topic selection reopened by the owner:** a new computer-vision topic may be independent of old tracking data and experiments. Compare concrete mechanisms against closest original papers; reject covered ideas instead of combining names. Audit legal, affordable development and independent evaluation data before acquisition. Do not continue auxiliary support sampling simply because a tracker is cached.
+4. Freeze one narrow, falsifiable development experiment with executable baselines, failure conditions, resource limits and an untouched evaluation allocation. No candidate or new data access is admitted by the capability result alone. Preserve all previous results and exclusions.
+5. Before writing any paper, require real substantial improvement over strong matched-resource baselines, independent-data transfer, meaningful uncertainty and ablations. Tracking claims retain the [0004 gate](docs/0004-research-direction.md); a genuinely different task needs task-specific metrics and thresholds declared before seeing outcomes. The overall goal remains active; no manuscript or acceptance claim.
 
 The old 0003 task below is **deferred**, not a prerequisite for this newly authorized
 independent study. Its published constraints and one-shot state remain untouched.
@@ -25,14 +25,8 @@ The recurring schedule is unchanged; no additional paid services are authorized.
    CPU completed the fixed 8-frame/8-query operation with 8 forwards. Preserve
    all markers, outputs and review-only failures/corrections. No repeat,
    longer-prefix inference, accuracy score or method claim follows.
-3. Independently review the results branch and saved raw outputs/provenance.
-   External native wall 55.082 seconds, peak RSS 3,727,996 KiB; all 64 grid rows
-   finite and complete. Conservative acquisition ceiling: 7,499,066,782 bytes.
-   No additional payload or experiment is authorized by feasibility alone.
-4. Determine an independent real-video development/evaluation route before testing
-   the [conditional auxiliary-query hypothesis](docs/0005-support-query-candidate.md).
-   Generic support points and negative prompts already exist. Require matched
-   supports, strong causal baselines and the original paper gate; no manuscript yet.
+3. **Saved-output review completed:** [independent audit](results/0005-recovered-parent-review/README.md) reproduced output arithmetic and freeze/provenance checks. Parent tool observations also confirm the command exits. Conservative acquisition ceiling remains 7,499,066,782 bytes; 3,238,351,458 bytes remain under 10 GiB. No inference repeated.
+4. Finish publication/CI verification, then follow the reopened topic-selection order above. The [conditional support-query hypothesis](docs/0005-support-query-candidate.md) is historical planning, not an admitted experiment or a novelty claim.
 
 ## Preserved earlier research order and blocker
 
