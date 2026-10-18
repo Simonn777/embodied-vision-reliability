@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "scope": "Software-only archive and parameterized independent replay; no scientific execution",
+  "original_byte_exact_copies": [
+    {
+      "input_label": "author-prototype/README.md",
+      "published_path": "results/0009-admission/software/author/README.md",
+      "sha256": "376086574316849c90ce17e5bf586fd8feb8f04f25468adcce80f47332982941",
+      "byte_exact": true
+    },
+    {
+      "input_label": "author-prototype/audit.json",
+      "published_path": "results/0009-admission/software/author/audit.json",
+      "sha256": "5f9b774452c52ccca8c31fc0d813a39347b2b5d85a01ef8553db6675151ae769",
+      "byte_exact": true
+    },
+    {
+      "input_label": "author-prototype/exact_tail.py",
+      "published_path": "results/0009-admission/software/author/exact_tail.py",
+      "sha256": "cfef2d31b6aaf6a0e700c847eea62a23e3fe29d4c959febb7a367877ab1356e0",
+      "byte_exact": true
+    },
+    {
+      "input_label": "author-prototype/execution.json",
+      "published_path": "results/0009-admission/software/author/execution.json",
+      "sha256": "a18a7be45975b269f0afd4425d9729c8a2c28fb31b34d8dd9e62d5cb6f7b87e2",
+      "byte_exact": true
+    },
+    {
+      "input_label": "author-prototype/stderr.log",
+      "published_path": "results/0009-admission/software/author/stderr.log",
+      "sha256": "a02872595d461f32d51bb29839989b1632340da0bf6d86613ae40987c73f863c",
+      "byte_exact": true
+    },
+    {
+      "input_label": "author-prototype/stdout.log",
+      "published_path": "results/0009-admission/software/author/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_exact": true
+    },
+    {
+      "input_label": "author-prototype/test_exact_tail.py",
+      "published_path": "results/0009-admission/software/author/test_exact_tail.py",
+      "sha256": "c670f3425634ce180c5630e29406a7128a67ab3c45aeb1fa2ad7b5333e1d1c02",
+      "byte_exact": true
+    },
+    {
+      "input_label": "independent-review.md",
+      "published_path": "results/0009-admission/software/independent/original-review.md",
+      "sha256": "d646837c7c348d00caa61bf903391ab4b4519e351c285a8b532f72f16f0df26f",
+      "byte_exact": true
+    },
+    {
+      "input_label": "independent-check.py",
+      "published_path": "results/0009-admission/software/independent/original-check.py",
+      "sha256": "4b41c0391ca9dd0654e9b1673f5d1db14389ba91ef605429f39929f8bb1d3f7e",
+      "byte_exact": true
+    },
+    {
+      "input_label": "independent-check.json",
+      "published_path": "results/0009-admission/software/independent/original-check.json",
+      "sha256": "ee5c51aaa8328a0992874070953052725cccb2b8375676e3e79d5dfe2f466bab",
+      "byte_exact": true
+    },
+    {
+      "input_label": "independent-author-tests.json",
+      "published_path": "results/0009-admission/software/independent/original-author-tests.json",
+      "sha256": "86a84a79ed9df79971d56123e40112fa142373f6c003a1faf6bdf2fcb62db411",
+      "byte_exact": true
+    },
+    {
+      "input_label": "independent-author-tests.stdout.log",
+      "published_path": "results/0009-admission/software/independent/original-author-tests.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_exact": true
+    },
+    {
+      "input_label": "independent-author-tests.stderr.log",
+      "published_path": "results/0009-admission/software/independent/original-author-tests.stderr.log",
+      "sha256": "c6c816d76da48205000c7830f7884982069109a2c9d97eab6c64b963055a5bfa",
+      "byte_exact": true
+    }
+  ],
+  "integrated_source": {
+    "path": "src/evr/exact_assignment_tail.py",
+    "sha256": "cfef2d31b6aaf6a0e700c847eea62a23e3fe29d4c959febb7a367877ab1356e0",
+    "byte_exact_to": "author/exact_tail.py"
+  },
+  "integrated_test": {
+    "path": "tests/test_exact_assignment_tail.py",
+    "sha256": "83ff574abcfe53f2b6bfdd911caa987411b1eecb3bf9ca395711362ebdcbe4cf",
+    "original_sha256": "c670f3425634ce180c5630e29406a7128a67ab3c45aeb1fa2ad7b5333e1d1c02",
+    "verified_difference_only": "from exact_tail import -> from evr.exact_assignment_tail import"
+  },
+  "checker_wrapper_revision": {
+    "original_path": "independent/original-check.py",
+    "original_sha256": "4b41c0391ca9dd0654e9b1673f5d1db14389ba91ef605429f39929f8bb1d3f7e",
+    "public_path": "replay/check_exact_tail.py",
+    "public_sha256": "df7bb3931e666453041e2b0e5ce81d939ef6216a1c2e73e8cc175f71cc4421a7",
+    "changes": [
+      "CLI --source and --output replace historical fixed /tmp paths",
+      "reject output path already existing; exclusive report creation",
+      "require exact reviewed source hash before import"
+    ],
+    "mathematical_checks_and_seeds_unchanged": true,
+    "actual_execution_receipt": "replay/execution.json",
+    "report_matches_original_except_measured_wall_seconds": true
+  },
+  "publication_limits": [
+    "Artificial arithmetic only; counts are not research samples",
+    "Operation budget counts defined work units, not wall time or memory",
+    "Original historical receipts retain generic temporary paths",
+    "No qualification directory, algorithm source, repository tests or frozen inputs edited",
+    "No commit, staging, push or publication/CI success claimed"
+  ]
+}

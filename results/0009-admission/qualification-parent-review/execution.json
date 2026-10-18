@@ -1,0 +1,24 @@
+{
+  "command_recipe": [
+    "python3",
+    "-W",
+    "error",
+    "<REPOSITORY_ROOT>/results/0009-admission/qualification-parent-review/check_qualification.py",
+    "--repo",
+    "<REPOSITORY_ROOT>",
+    "--private-runtime",
+    "/tmp/evr-0009-runtime-observation.private.json",
+    "--private-directory",
+    "/tmp/evr-0009-directory-observation.private.json",
+    "--output",
+    "<REPOSITORY_ROOT>/results/0009-admission/qualification-parent-review/check.json"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.05433195799999999,
+  "scope": "Read-only local archive/parent-observation verification; no probe, request, model or geometry execution",
+  "source_sha256": "8390339f833fd579ce0cdf7387ed24d0e9eb020af7f5752ce8d8ca88fcd61c53",
+  "stdout_sha256": "a3f419de761216364091a0f2282db53241cdb77959413d87d66887e444dfa3ee",
+  "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "public_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_redaction": "Local repository prefix only, if present; empty on success"
+}
