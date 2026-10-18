@@ -1,0 +1,53 @@
+{
+  "status": "PASS_WITH_LIMITATIONS_PUBLICATION_EVIDENCE_ONLY",
+  "data_admission_passed": false,
+  "checks": 915,
+  "archive_files": 69,
+  "archive_bytes": 895428,
+  "copy_modes": {
+    "redacted_copy": 36,
+    "byte_exact_copy": 29,
+    "derived_summary": 2
+  },
+  "redacted_files_reverse_hash_verified": 36,
+  "reverse_strategies": {
+    "global": 32,
+    "selective-literal-aware": 4
+  },
+  "byte_exact_bindings_verified": 29,
+  "derived_summaries": 2,
+  "original_text_files_represented": 45,
+  "excluded_private_range_binaries": 2,
+  "private_range_bodies_read_locally": false,
+  "runtime_actual_parent_commands_verified": 4,
+  "directory_actual_parent_commands_verified": 6,
+  "publication_actual_parent_tool_chain_replayed": false,
+  "publication_verifier_historical_file_count": 63,
+  "physical_GETs_recorded": 3,
+  "unknown_redirect_body_bytes": null,
+  "whole_body_limit_verified": false,
+  "data_or_models_acquired": false,
+  "probes_or_scientific_calls_reexecuted": false,
+  "archive_unchanged": true,
+  "URL_occurrences_without_queries": 3,
+  "repo_head_at_check": "7e38cb50019e22f2bed7cd431b82d5f46f9cd122",
+  "source_sha256": "8390339f833fd579ce0cdf7387ed24d0e9eb020af7f5752ce8d8ca88fcd61c53",
+  "input_artifact_inventory_sha256": "39aaf40e5d31897f3f38b96a42388bb61fcc806e58497f8f5170377907cc931a",
+  "parent_observation_sha256": {
+    "runtime": "461e9aef4e29821aed1a43c6e30c1cfa85915148962bd89783395ae0378983aa",
+    "directory": "50b0e49b193d37832b898f227ac4a08c03c0df47fb60a169eac462e4e28d6ad3"
+  },
+  "private_retrieval_sha256": {
+    "runtime": "458aa338b14a1f83e5a4da4d54bc3e25231b1c7be87138c3b98eb4375693f7fe",
+    "directory": "78fc86882328892b97a78d9e5def98c5b29ec5a2383f29a8c385f00b24ac7212"
+  },
+  "wall_seconds": 0.027232666,
+  "limits": [
+    "47 private originals staying unchanged is an archived cloud claim; local reverse hashes check published-byte consistency, not current private filesystem",
+    "Raw two ZIP range bodies and complete archive are not available/read locally; range-body hashes are manifest/observed claims",
+    "No complete network syscall trace; exact 302 body and total response bytes remain unknown",
+    "Publication execution repair reviewed from archived source/log/receipt only; no independent actual publication tool-chain replay",
+    "Historical v2 verifier covered 63 files; this parent audit covers all final 69",
+    "Availability imports do not establish geometry capability or dependency-closure integrity"
+  ]
+}

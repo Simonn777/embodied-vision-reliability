@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scope": "CLI-packaging replay of independent artificial arithmetic checks only; no geometry performance or data/model access",
+  "command": [
+    "python3",
+    "-W",
+    "error",
+    "results/0009-admission/software/replay/check_exact_tail.py",
+    "--source",
+    "src/evr/exact_assignment_tail.py",
+    "--output",
+    "results/0009-admission/software/replay/check.json"
+  ],
+  "cwd": "<REPOSITORY_ROOT>",
+  "environment_delta": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "python": "3.9.6",
+  "exit_code": 0,
+  "wall_seconds": 0.18253999999999998,
+  "checker_sha256": "df7bb3931e666453041e2b0e5ce81d939ef6216a1c2e73e8cc175f71cc4421a7",
+  "candidate_source_sha256": "cfef2d31b6aaf6a0e700c847eea62a23e3fe29d4c959febb7a367877ab1356e0",
+  "stdout_sha256": "d51e93aececa56fa37deebb6c64769d183bdbace12e474658dffcb09e1235428",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "report_sha256": "d51e93aececa56fa37deebb6c64769d183bdbace12e474658dffcb09e1235428"
+}

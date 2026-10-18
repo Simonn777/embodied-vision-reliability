@@ -2,6 +2,24 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
+## Active 0009 geometry order
+
+1. **Reviewed:** exact-tail software, geometry helpers, executable screen and
+   preserved cloud qualification records. The failed HTTP accounting stays failed.
+   [Implementation admission](docs/0009-execution-admission.md) records actual
+   artificial checks and the Linux preflight still required before science.
+2. Freeze one bounded synthetic translation-ranking protocol and all executable
+   inputs before any performance run. Use a shared deduplicated match set, fixed
+   shuffled hypothesis pool, five cheap controls, unsupported-case penalties and
+   meaningful gain/no-harm/cost gates. This is an oracle-covered toy ranking test.
+3. Execute once on existing cloud CPU after published freeze/CI. Preserve every
+   case, operation refusal, resource failure and raw score; independently replay
+   saved arithmetic. No package or dataset acquisition is needed for this screen.
+4. Only a passing task-quality screen permits a separately frozen real-view
+   development study with corrected acquisition accounting. It does not permit
+   a manuscript. Confirm novelty, stronger complete pipelines and untouched
+   independent scenes before any method or paper claim.
+
 ## October 18 owner-authorized research pivot — active order
 
 1. **Completed:** freeze, execute once and independently review [0004 Stage 0](results/0004-stage0/README.md). It failed the unchanged continuation rule: 46 coordinate repairs / 120 harms and negative shadow return. Preserve the result and cache marker; do not repeat the run, reinterpret it as undersensitive, or fit a selector to selected positive episodes.
@@ -17,7 +35,7 @@ Work from the first unfinished item. Record each outcome in a dated note before 
    d3-colored-0-blindspot remains open. Do not rewrite that log, retrain a case or
    describe the strict failed review as passed. Publication verified through PR 29 and exact PR/main CI; private raw arrays stay
    in cloud cache. The main merge is d2779c4.
-5. **0007 and 0008 completed once; parent reviews complete:** preserve the [local gradient screen](results/0007-gradient-screen/README.md) and [failed training-quality screen](results/0008-antithetic-training/README.md). The variance pass did not translate into either frozen ≥0.5 dB quality gain. 0008's 32 trajectories / 64 predictions, one formal score and independent replay agree on `stop_this_candidate`; do not repeat them. The [parent review](results/0008-antithetic-training/parent-review/README.md) independently checks public arithmetic, provenance and old-file preservation. **Next publication action:** inspect the explicit changed-file list, then verify the PR, merge and CI at their exact commits; these steps are still pending. Keep the exact mean-sort proposal stopped. No manuscript or method-improvement claim follows.
+5. **0007 and 0008 completed once; parent reviews complete:** preserve the [local gradient screen](results/0007-gradient-screen/README.md) and [failed training-quality screen](results/0008-antithetic-training/README.md). The variance pass did not translate into either frozen ≥0.5 dB quality gain. 0008's 32 trajectories / 64 predictions, one formal score and independent replay agree on `stop_this_candidate`; do not repeat them. The [parent review](results/0008-antithetic-training/parent-review/README.md) independently checks public arithmetic, provenance and old-file preservation. [Publication is verified](docs/0008-publication-verification.md) through PR 33, merge a915553f and exact PR/main CI. Keep the exact mean-sort proposal stopped. No manuscript or method-improvement claim follows.
 6. Under the owner's continuing research authorization, any different hypothesis
    or study needs an explicit prospective
    design and justified data allocation. Do not weaken the 0006 gate or tune old

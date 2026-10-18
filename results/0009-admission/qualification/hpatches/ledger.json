@@ -1,0 +1,64 @@
+{
+  "schema": "0009-range-metadata-ledger-v1",
+  "starting_asset_ceiling_bytes": 7532690072,
+  "body_hard_cap_bytes": 1048576,
+  "maximum_range_get_operations": 2,
+  "range_get_operations": [
+    {
+      "operation": 1,
+      "label": "tail",
+      "range_start": 1279480015,
+      "range_end": 1279545571,
+      "expected_body_bytes": 65557,
+      "utc_started": "2026-10-18T21:19:47.687328+00:00",
+      "https_redirect_statuses": [
+        302
+      ],
+      "actual_body_bytes_read": 65557,
+      "status": "COMPLETED",
+      "final_host": "us.aws.cdn.hf.co",
+      "http_status": 206,
+      "headers": {
+        "Content-Range": "bytes 1279480015-1279545571/1279545572",
+        "Content-Length": "65557",
+        "Accept-Ranges": "bytes",
+        "Content-Type": "application/zip",
+        "Content-Encoding": null,
+        "ETag": "\"9df11ca526095d0577e2b6ea0aabd16a981b831880766935812204cc8fe5e051\""
+      },
+      "body_sha256": "f2d2a4ecec7e8d0bd38e95742a17439ffd296ba4fc1d25d3ea285fa4ec9c4447",
+      "utc_completed": "2026-10-18T21:19:55.645060+00:00"
+    },
+    {
+      "operation": 2,
+      "label": "central-prefix",
+      "range_start": 1279382286,
+      "range_end": 1279480014,
+      "expected_body_bytes": 97729,
+      "utc_started": "2026-10-18T21:19:55.651127+00:00",
+      "https_redirect_statuses": [],
+      "actual_body_bytes_read": 97729,
+      "status": "COMPLETED",
+      "final_host": "us.aws.cdn.hf.co",
+      "http_status": 206,
+      "headers": {
+        "Content-Range": "bytes 1279382286-1279480014/1279545572",
+        "Content-Length": "97729",
+        "Accept-Ranges": "bytes",
+        "Content-Type": "application/zip",
+        "Content-Encoding": null,
+        "ETag": "\"9df11ca526095d0577e2b6ea0aabd16a981b831880766935812204cc8fe5e051\""
+      },
+      "body_sha256": "433bdc510b78ae31e130c0d4de73740970309a5731b47509e0ec82fff935b759",
+      "utc_completed": "2026-10-18T21:19:59.167279+00:00"
+    }
+  ],
+  "actual_response_body_bytes_read": 163286,
+  "whole_archive_downloaded": false,
+  "whole_archive_sha256_verified": false,
+  "declared_whole_archive_bytes": 1279545572,
+  "declared_whole_archive_sha256": "99cf7e1ca167896eb4ca2fe3d903beff6566243a3c0c8e07a13a2596648ad670",
+  "redirect_accounting": "HTTPS redirect hops are recorded separately within each range GET operation; they are not retries. A second range operation reuses the first final URL privately.",
+  "updated_utc": "2026-10-18T21:19:59.191608+00:00",
+  "ending_asset_ceiling_bytes": 7532853358
+}

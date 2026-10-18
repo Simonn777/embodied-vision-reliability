@@ -1,0 +1,36 @@
+{
+  "status": "INCOMPLETE_STRICT_REQUEST_AND_BODY_ACCOUNTING",
+  "operation_exit": 0,
+  "verified_range_response_body_bytes": 163286,
+  "range_get_operations": 2,
+  "https_302_redirects": 1,
+  "physical_http_get_requests": 3,
+  "unmetered_redirect_body_bytes": null,
+  "all_response_body_total_bytes": null,
+  "one_MiB_total_body_limit_verified": false,
+  "reason": "The pinned operation uses urllib HTTPRedirectHandler. Its standard redirect implementation calls fp.read() before the follow-up request. The 302 body and headers were not independently captured by the range-read ledger. No exact redirect body size or whole-response-body upper bound is inferred.",
+  "stdlib_module_file": "<PYTHON_RUNTIME>/lib/python3.12/urllib/request.py",
+  "stdlib_module_sha256": "6ffc7d993de64319a40fad631966bd1fd643d355a5c154c1a8b1821f49e5c470",
+  "redirect_method_source_sha256": "2a8691454b001cd6a9af613cf7e4332347529232497456c18afde05c466f21c0",
+  "relevant_stdlib_statements": [
+    "fp.read()",
+    "fp.close()",
+    "return self.parent.open(new, timeout=req.timeout)"
+  ],
+  "original_files_modified": false,
+  "additional_network_requests": 0,
+  "known_asset_ceiling_lower_bound_bytes": 7532853358,
+  "exact_new_asset_bytes": null,
+  "exact_updated_asset_ceiling_bytes": null,
+  "correction_to_original_ledger": "Its actual_response_body_bytes_read=163286 measures only the two explicitly read 206 bodies, not every redirect-response body. Its ending ceiling is a known-byte lower bound, not a fully verified new conservative ceiling. Original ledger/result and all metadata are preserved unchanged.",
+  "directory_metadata_still_observed": {
+    "entries": 1463,
+    "sequences": 116,
+    "image_names": 696,
+    "H_names": 580,
+    "unexpected_files": 70,
+    "missing_expected_image_or_H_names": 0
+  },
+  "directory_sha256": "fcc34ad30d333e4b985c90cec3a528c6e4adbe4b88212d238aaacbe715108170",
+  "next_action": "Stop. Parent can review directory evidence and the accounting exception; no retries, extra GETs, extraction, images/H reads or scientific use authorized here."
+}

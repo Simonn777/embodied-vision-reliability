@@ -14,6 +14,17 @@ topic selection after the initial tracking hypotheses failed. Protocols, source
 freezes, measurements and unfavorable outcomes remain together. No conference
 readiness or methodological novelty is claimed. [Contributions and evidence](docs/CONTRIBUTIONS.md).
 
+## Current candidate · October18,2026
+
+[0009 investigates geometric verification](docs/0009-research-direction.md): can
+exact assignment-tail counts distinguish true image transformations from dense
+accidental matches better than simple residual/density controls? Arithmetic checks
+pass, but practical benefit and novelty are unproven. The [small synthetic ranking protocol](protocols/0009-geometric-stage0.md) and
+executable code have been reviewed; canonical publication/CI precedes execution.
+No geometry-quality experiment has run. The earlier
+standardized-score idea was rejected analytically. [Qualification records](results/0009-admission/qualification/README.md)
+retain a failed HTTP accounting check; no real image data has been admitted.
+
 ## Latest evidence · October18,2026
 
 | Study | Evidence and decision |
@@ -26,7 +37,7 @@ readiness or methodological novelty is claimed. [Contributions and evidence](doc
 ![All eight paired denoising-quality comparisons at both endpoints](results/0008-antithetic-training/parent-review/training-quality.png)
 
 [Independent parent review](results/0008-antithetic-training/parent-review/README.md)
-checks the public arithmetic and publication provenance separately: 89,135 numerical
+checks the public arithmetic and publication provenance separately: 89,135 public-summary
 review checks and 9,885 provenance checks. Both agree with the failed result; no
 training or inference was repeated. All unfavorable cases remain visible above.
 

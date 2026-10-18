@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "source_sha256": "cfef2d31b6aaf6a0e700c847eea62a23e3fe29d4c959febb7a367877ab1356e0",
+  "python": "3.9.6",
+  "scope": "Artificial arithmetic n<=6 exhaustive checks, plus explicit 13x13 resource refusal only; no data, geometry performance, models, or network.",
+  "matrix_cases": 579,
+  "tail_comparisons": 3547,
+  "independent_rook_vectors": 579,
+  "budget_refusals": 263,
+  "exact_budget_successes": 5,
+  "zero_work_minimum_legal_budget_successes": 1,
+  "unsupported_checks": [
+    {
+      "threshold": -1,
+      "reason": "non-complete component has smaller side > 12: 13 x 13",
+      "operations": 286
+    },
+    {
+      "threshold": 0,
+      "reason": "non-complete component has smaller side > 12: 13 x 13",
+      "operations": 286
+    },
+    {
+      "threshold": 1,
+      "reason": "non-complete component has smaller side > 12: 13 x 13",
+      "operations": 286
+    },
+    {
+      "threshold": 13,
+      "reason": "non-complete component has smaller side > 12: 13 x 13",
+      "operations": 286
+    },
+    {
+      "threshold": 14,
+      "reason": "non-complete component has smaller side > 12: 13 x 13",
+      "operations": 286
+    }
+  ],
+  "wall_seconds": 0.140848083
+}
