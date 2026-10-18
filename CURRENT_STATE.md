@@ -1,6 +1,23 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0006's 64-case development grid trained/scored once; its numerical continuation rule failed. One saved stdout hash discrepancy remains open for independent review. The broader computer-vision improvement objective remains active; no manuscript or demonstrated general improvement.
+Updated: 2026-10-18. Program day 3. Phase: 0006's 64-case development grid trained/scored once; its numerical continuation rule failed. One saved stdout hash discrepancy remains open after independent review. The broader computer-vision improvement objective remains active; no manuscript or demonstrated general improvement.
+
+## Next bounded hypothesis: 0007 gradient variance
+
+The prospective [mean-paired antithetic screen](protocols/0007-antithetic-gradient-screen.md)
+compares four equal-forward estimators at all eight cached colored R2R checkpoints,
+without updates, clean references or new assets. It measures conditional gradient
+variance and cost; it cannot establish denoising improvement or novelty. Source
+review, tests and canonical freeze must precede cloud execution. The additional
+A mechanism gate and B variance/cost gates are prospective. Generic antithetic
+matching is prior work; no manuscript is warranted.
+
+0006 publication is verified: PR 29 merged as `d2779c4a2dca4b5eac9a8c2855ada6578b55fbfc`.
+Exact PR CI passed 507 tests / 6 Torch skips / 112 subtests; main CI
+[39160209862](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39160209862)
+passed the same counts in 13.79 seconds, plus 1,240 smoke frames in 3.03 seconds.
+Cloud's separate 66-test run had zero skips; the CI skips are not silently counted
+as Torch execution. The failed result and open log gap remain unchanged.
 
 ## Conditional residual denoising (0006): stop this candidate/configuration
 
