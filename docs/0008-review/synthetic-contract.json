@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic file contract only; production metrics generate targets; no scientific arrays, Torch imports or model calls.",
+  "checker_sha256": "37b40d62dbfc849a1eb579af007d081a1d83de79b01309190c8064b1a9f2c91a",
+  "test_source_sha256": "fe40bbc0ffd48f62257a8867bdbcc86bb56bf33ce472780331da385ece56e9dd",
+  "production_wrapper_sha256": "c62e258f201e2c7b058a3c3f1233e90bf1351ede7ed9fb25ebd67d5abf7f20c1",
+  "production_metrics_sha256": "3d048d947bef11faa16689227ac523335635a02a9d900c34f4ee65acb8e72444",
+  "tests": [
+    {
+      "test": "complete64",
+      "actual_exit": 0,
+      "status": "PASS",
+      "checks": 45354,
+      "numeric_checks": 5159,
+      "max_absolute_difference": 1.4210854715202004e-14,
+      "failure": null
+    },
+    {
+      "test": "block-tamper",
+      "actual_exit": 1,
+      "status": "FAIL",
+      "checks": null,
+      "numeric_checks": null,
+      "max_absolute_difference": null,
+      "failure": "numeric mismatch: recomputed endpoint.score.blocks.0.sse"
+    },
+    {
+      "test": "gate-tamper",
+      "actual_exit": 1,
+      "status": "FAIL",
+      "checks": null,
+      "numeric_checks": null,
+      "max_absolute_difference": null,
+      "failure": "identity mismatch: aggregate.gates.all_passed"
+    },
+    {
+      "test": "outer-cost-tamper",
+      "actual_exit": 1,
+      "status": "FAIL",
+      "checks": null,
+      "numeric_checks": null,
+      "max_absolute_difference": null,
+      "failure": "numeric mismatch: recomputed endpoint.pipeline_seconds"
+    },
+    {
+      "test": "rebound-inference-call-tamper",
+      "actual_exit": 1,
+      "status": "FAIL",
+      "checks": null,
+      "numeric_checks": null,
+      "max_absolute_difference": null,
+      "failure": "identity mismatch: inference receipt.forward_calls"
+    }
+  ],
+  "elapsed_seconds": 1.597900292,
+  "python_version": "3.9.6",
+  "numpy_version": "2.0.2"
+}

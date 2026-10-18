@@ -1,12 +1,34 @@
 # Embodied Vision Reliability
 
-**When should a vision system stop trusting its own position estimate?**
+**Can data-dependent antithetic pairing improve self-supervised image denoising at matched computation?**
 
-An ongoing research workspace on visual localization under occlusion and appearance changes. The first question is whether causal temporal consistency can help identify large errors that single-image confidence misses. We keep the position estimator fixed so that the comparison is about recognizing failures.
+The current candidate pairs noisy patches before opposite-sign R2R augmentation.
+A frozen eight-checkpoint screen reduced total gradient variance against three
+controls; actual image-quality improvement has not yet been established. The next
+study tests fresh training at both fixed updates and approximately fixed time.
 
-The program runs from October 2026 to October 2027. The first twelve weeks focus on selective prediction; later work depends on what these experiments show. This is AI-assisted research in progress, with code, protocols, raw measurements, and negative results kept together. [Contribution and evidence notes](docs/CONTRIBUTIONS.md).
+This AI-assisted research program runs October2026–October2027. The owner opened
+topic selection after the initial tracking hypotheses failed. Protocols, source
+freezes, measurements and unfavorable outcomes remain together. No conference
+readiness or methodological novelty is claimed. [Contributions and evidence](docs/CONTRIBUTIONS.md).
 
-## Start here
+## Latest evidence · October18,2026
+
+| Study | Evidence and decision |
+|---|---|
+| [0007 gradient screen](results/0007-gradient-screen/README.md) | 4,096 gradient measurements, zero updates. Total variance ratios0.227/0.738/0.571 against independent/random/same-patch; 7/8 best-control wins. Local mechanism gates passed; no PSNR result. |
+| [0008 prospective training protocol](protocols/0008-antithetic-training.md) | 32 fresh trajectories, two locked endpoints; requires≥0.5dB at both and matched-cost/texture checks. Not executed. |
+| [0006 residual-denoising screen](results/0006-stage0/README.md) | Mean gain−0.571dB; stop this candidate. A missing stdout line remains an open provenance defect. |
+| [0004 tracking intervention](results/0004-stage0/README.md) | 46 repairs and120 harms; stop this candidate. |
+
+![All eight total-gradient-variance comparisons](results/0007-gradient-screen/gradient-variance.png)
+
+The gradient result is conditional on four reused development substrates and
+known synthetic noise covariance. Generic antithetic sampling is established
+prior work. A separate training test and much stronger independent-data/baseline
+validation are needed before any manuscript.
+
+## Research state and historical localization archive
 
 | Artifact | What it answers |
 |---|---|
@@ -64,7 +86,7 @@ The [frozen protocol](protocols/0001-synthetic-localization.md) specifies the ge
 
 ## Scope
 
-**Current stage:** experiment 0003 has a frozen design and a verified PointOdyssey sample archive. The complete archive inventory contains 14,415 members and two named annotation parents. Their independence is unverified; the sample is reserved for development. The bounded annotation reader stopped on unsupported Fortran-order arrays before interpreting numeric ground truth, so no geometry or model improvement result is claimed. The [review and readiness guide](docs/0003-review-and-readiness.md) connects the protocol, its prospective addenda, actual evidence and remaining gates.
+**Historical 0003 milestone (now deferred because the original cache/markers are missing):** experiment 0003 had a frozen design and a verified PointOdyssey sample archive. The complete archive inventory contains 14,415 members and two named annotation parents. Their independence is unverified; the sample is reserved for development. The bounded annotation reader stopped on unsupported Fortran-order arrays before interpreting numeric ground truth, so no geometry or model improvement result is claimed. The [review and readiness guide](docs/0003-review-and-readiness.md) connects the protocol, its prospective addenda, actual evidence and remaining gates.
 
 The following paragraphs retain the earlier experiment 0002 milestones; its complete prediction collection and negative frozen evaluation are reported at the end.
 
@@ -84,13 +106,13 @@ The final four calibration groups completed serially without replaying the previ
 
 The allocation remains 1 development, 10 calibration, 20 evaluation and 19 reserve videos. Calibration prediction collection is **10/10 complete**; evaluation prediction collection is **20/20 complete**. The frozen comparison has now run once: augmented minus native matched risk is +0.169683 pp (95% CI -0.157781 to +0.712631 pp); practical signal false. See the [full result](docs/0002-frozen-evaluation-v2-2026-10-17.md). The [development report and frozen v2 protocol](docs/0002-64frame-and-freeze.md) describe the experiment and grouping. Shared objects and camera, unknown scene dependencies and unresolved checkpoint exposure limit interpretation.
 
-The first experiment is a synthetic 2D localization diagnostic. Its purpose is to validate the evaluation machinery and expose failure cases. It does not measure robot control, prove generalization to real video, or establish a new method. Public-video evaluation and stronger frozen estimators are the next stages.
+The first experiment is a synthetic 2D localization diagnostic. Its purpose is to validate the evaluation machinery and expose failure cases. It does not measure robot control, prove generalization to real video, or establish a new method. Its later public-video evaluation and rejected tracking intervention are retained above; the active denoising question has a separate prospective protocol.
 
 The initial implementation runs on CPU. Apple MPS is available on the development machine; CUDA is unavailable, and no NVIDIA GPU measurements are reported. No paid compute is configured.
 
 ## Research practice
 
-Latest execution check: [October 18 cache blocker](docs/0003-cache-blocker-2026-10-18.md).
+Historical geometry execution check: [October 18 cache blocker](docs/0003-cache-blocker-2026-10-18.md).
 The 45-input frozen-source gate passes, but required data and historical markers
 are unavailable in the current filesystem. The descriptive operation was not run;
 no new geometry or model result is claimed.
