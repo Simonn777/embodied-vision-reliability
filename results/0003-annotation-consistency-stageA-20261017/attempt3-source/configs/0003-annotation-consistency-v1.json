@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "status": "PROSPECTIVE_EXECUTABLE_INPUTS_REQUIRE_SEPARATE_PUBLISHED_RECEIPT",
+  "scope": "DEVELOPMENT_DESCRIPTIVE_ANNOTATION_SELF_CONSISTENCY_ONLY",
+  "scene_member": "sample/r4_new_f/anno.npz",
+  "NPZ_bytes": 98527880,
+  "NPZ_sha256": "382d1edca0d6d88279ed1a61ee63c9ba27b7c5418f2269f4592c1658fd7d8e77",
+  "frames": [
+    0,
+    1,
+    2
+  ],
+  "fixed_original_point_ids": [
+    0,
+    1
+  ],
+  "allocation_source": "results/0003-fortran-stageB-20261017/audit/audit.json",
+  "allocation_source_sha256": "dd580c6acfa52ebada5ffb11c75591fd601323bd4e4dd94a8db292d91f66c3a2",
+  "selection": "reuse existing allocation, never rescan all points or replace failures",
+  "max_descriptive_checks": 6,
+  "row_order": "frame ascending then original point ID ascending",
+  "transform": "original stored RT times world homogeneous column, divide camera z, original K; no matrix repair/inverse/axis search",
+  "proper_rotation_tau_f32": 9.5367431640625e-07,
+  "frame0_proper_rotation_fail": "preserve and verify against saved diagnostic; not an annotation-consistency acceptance gate",
+  "original_pixel_tolerance": 0.5,
+  "acceptance_operator": "finite Euclidean pixel discrepancy <= 0.5",
+  "independent_endpoints": [
+    "original_rigid_qualification",
+    "descriptive_stored_annotation_consistency",
+    "valid_visible_annotation_support",
+    "rigid_qualified_support"
+  ],
+  "failure_policy": "stop on invalid required input/depth/arithmetic/unsupported schema or discrepancy > 0.5; retain attempted and unattempted rows, no replacement or retry",
+  "carried_returned_bytes": 20614916,
+  "carried_reserved_bytes": 2295240,
+  "carried_directory_reserve_subset_bytes": 1480,
+  "carried_charge_bytes": 22910156,
+  "total_read_budget_bytes": 67108864,
+  "source_text_bytes_are_separate_from_numeric_data_budget": true,
+  "prospective_sparse_spans_bytes": {
+    "trajs_2d": 187552,
+    "trajs_3d": 281328,
+    "visibs": 852,
+    "valids": 852,
+    "intrinsics": 108,
+    "extrinsics": 192
+  },
+  "prospective_new_returned_bytes": 471674,
+  "prospective_new_reserves_bytes": 393586,
+  "prospective_total_charged_bytes": 23775416,
+  "future_runtime_limits": {
+    "CPU_slots": 2,
+    "numeric_threads": 2,
+    "AS_bytes": 6442450944,
+    "timeout_seconds": 900
+  },
+  "future_locking": "shared design/sample locks plus new exclusive operation lock and persistent one-shot marker, new output only",
+  "future_execution_blocker": "independent complete-input review then separate published canonical receipt and unmodified real gate",
+  "data_terms": {
+    "authors": [
+      "Yang Zheng",
+      "Adam W. Harley",
+      "Bokui Shen",
+      "Gordon Wetzstein",
+      "Leonidas J. Guibas"
+    ],
+    "dataset": "PointOdyssey v1.2",
+    "HF_revision": "4a2ec9492ca732dc3611adbb2a94248cc2bbe3eb",
+    "source": "https://huggingface.co/datasets/aharley/pointodyssey",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "modifications": "only derived discrepancy/gate/status/count/hash summaries; no new source coordinates, camera coefficients or depth are redistributed",
+    "scope_exception": "old frame0 25-scalar exception remains historical and is not extended by this protocol"
+  },
+  "forbidden": [
+    "real geometry this Stage A",
+    "new NPZ/archive/metadata/RGB opening this Stage A",
+    "model inference",
+    "old-test analysis",
+    "float16 conversion experiments",
+    "quaternion compatibility calculation without parent code review",
+    "SVD or orthogonalization",
+    "threshold fitting",
+    "new downloads/installations/fees",
+    "cohort readiness claim"
+  ],
+  "public_output_scope": "derived errors, statuses, hashes and counts only; no new K/RT coefficients, 2D/3D original coordinates, raw flags or other raw data; previous frame0 25-value exception is not expanded",
+  "public_numeric_fields": [
+    "signed_pixel_discrepancy_dx_dy",
+    "finite_Euclidean_pixel_error",
+    "derived_original_gate_defects"
+  ],
+  "prior_marker_sha256": {
+    "fortran-v2-started.json": "93bf1a2cd2f5150c71e86dc1573c59e4cb835a9434acf89ee226a87b1d929b33",
+    "rotation-diagnostic-v1-started.json": "3ce0020b44a25b7ce01d59ebbf81c3a3a34cdc0b865911183ec41a0c99abbce3"
+  }
+}

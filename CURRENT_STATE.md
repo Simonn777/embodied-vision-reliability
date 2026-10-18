@@ -335,3 +335,15 @@ exit/raw 0/0). A last-resort uncaught-stop label now reports access unknown and
 INCOMPLETE rather than implying pre-access status; a subprocess fixture covers it.
 Attempt1's 14 passing source/log snapshots remain historical. No real dataset or
 saved-R calculation repeated. Review the latest v2 closure/map for final sources.
+
+
+### Pre-freeze initializer binding correction
+
+[Review correction](docs/0003-initializer-binding-review-fix-2026-10-17.md): formal
+new runner now explicitly imports/binds evr.__init__ source path and digest. The
+initializer itself is unchanged; mandatory map grows 44 to 45, old chain stays 38.
+Only the unfrozen new runner/tests changed; previous code/attempts and actual half
+results preserved. Attempt3 passed 17 synthetic tests, 0.394826 s / 16,128 KiB /
+exit/raw 0/0. New v3 review map closes these sources; older maps are historical.
+No geometry receipt/marker/run, dataset access or saved-R rerun. Parent review and
+explicit receipt approval remain required; numerical method/scope unchanged.

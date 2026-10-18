@@ -130,6 +130,27 @@ class BindingTests(unittest.TestCase):
  def commit(self,msg):self.g('-c','user.name=Fixture','-c','user.email=fixture@example.invalid','commit','-qm',msg)
  def write(self,r):(self.root/'receipt.json').write_text(json.dumps(r))
  def verify(self):return self.m.verify_receipt(self.root,'receipt.json',{'input.txt'},self.remote)
+ def test_initializer_current_index_and_input_commit_mismatch(self):
+  name='src/evr/__init__.py';p=self.root/name;p.parent.mkdir(parents=True);p.write_text('SYNTHETIC_INITIALIZER=1\n')
+  self.g('add',name);self.commit('synthetic initializer input');commit=self.g('rev-parse','HEAD').decode().strip();original=p.read_bytes()
+  receipt='initializer-receipt.json';r={'schema':1,'scope':self.r['scope'],'input_commit':commit,'inputs_sha256':{name:hashlib.sha256(original).hexdigest()}}
+  target=self.root/receipt;target.write_text(json.dumps(r));self.g('add',receipt);self.commit('initializer receipt');self.g('update-ref',self.remote,self.g('rev-parse','HEAD').decode().strip())
+  verify=lambda:self.m.verify_receipt(self.root,receipt,{name},self.remote)
+  self.assertEqual(verify()['input_commit'],commit)
+  p.write_text('SYNTHETIC_INITIALIZER=2\n')
+  with self.assertRaisesRegex(ValueError,'current input digest'):verify()
+  self.g('add',name);p.write_bytes(original)
+  with self.assertRaisesRegex(ValueError,'input blob/index'):verify()
+  self.g('add',name)
+  p.write_text('SYNTHETIC_INITIALIZER=3\n');r['inputs_sha256'][name]=hashlib.sha256(p.read_bytes()).hexdigest();target.write_text(json.dumps(r));self.g('add',name,receipt);self.commit('new initializer incorrectly bound to old commit');self.g('update-ref',self.remote,self.g('rev-parse','HEAD').decode().strip())
+  with self.assertRaisesRegex(ValueError,'input blob/index'):verify()
+ def test_actual_initializer_origin_and_hash(self):
+  from types import SimpleNamespace
+  repo=Path(__file__).resolve().parents[1];name='src/evr/__init__.py';digest=hashlib.sha256((repo/name).read_bytes()).hexdigest()
+  self.assertIn(name,self.m.MANDATORY);self.m.verify_module(repo,self.m.evr,name,digest)
+  other=self.root/'alternative.py';other.write_text('not the package initializer')
+  with self.assertRaisesRegex(ValueError,'actual imported'):self.m.verify_module(repo,SimpleNamespace(__file__=str(other)),name,digest)
+  with self.assertRaisesRegex(ValueError,'actual imported'):self.m.verify_module(repo,self.m.evr,name,'0'*64)
  def test_complete_actual_git_binding(self):self.assertEqual(self.verify()['input_commit'],self.input)
  def test_empty_missing_extra_scope_and_changed_receipt(self):
   for mapping in [{},{'extra':'0'*64},{'input.txt':'0'*64}]:

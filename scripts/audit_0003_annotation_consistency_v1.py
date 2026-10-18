@@ -1,6 +1,7 @@
 """Frozen prospective runner. This Stage A must not call main on real data."""
 import argparse,fcntl,hashlib,json,re,subprocess
 from pathlib import Path
+import evr
 import evr.annotation_consistency_v1 as science
 import evr.point_geometry_v2 as geometry
 import evr.bounded_point_audit as bounded
@@ -20,6 +21,7 @@ OLD='results/0003-fortran-stageB-20261017/audit/audit.json'
 EXCERPT='results/0003-rotation-stageB-20261017/audit/camera-excerpt.json'
 DIAG='results/0003-rotation-stageB-20261017/audit/diagnostic.json'
 MANDATORY=frozenset([
+ 'src/evr/__init__.py',
  'protocols/0003-annotation-consistency-v1.md','configs/0003-annotation-consistency-v1.json',
  'src/evr/annotation_consistency_v1.py','scripts/audit_0003_annotation_consistency_v1.py','scripts/run_0003_annotation_consistency_bounded_v1.py','tests/test_annotation_consistency_v1.py',
  'src/evr/bounded_point_audit.py','src/evr/point_geometry_v2.py','src/evr/rotation_diagnostic_v1.py','src/evr/motion_design.py',
@@ -75,6 +77,10 @@ def verify_receipt(root,path,mandatory,remote):
  return r
 
 
+def verify_module(root,module,path,digest):
+ if Path(module.__file__).resolve()!=(root/path).resolve()or sha(module.__file__)!=digest:raise ValueError('actual imported source identity')
+
+
 def verify_published():
  root=Path.cwd();r=verify_receipt(root,RECEIPT,MANDATORY,REMOTE);prior={}
  for name,d in PRIOR.items():
@@ -91,8 +97,8 @@ def verify_published():
    if p in prior and prior[p]!=want:raise ValueError('prior conflict')
    prior[p]=want
  if len(prior)!=38:raise ValueError('complete 38-input prior chain')
- for module,path in [(science,'src/evr/annotation_consistency_v1.py'),(geometry,'src/evr/point_geometry_v2.py'),(bounded,'src/evr/bounded_point_audit.py'),(rotation,'src/evr/rotation_diagnostic_v1.py'),(design,'src/evr/motion_design.py')]:
-  if Path(module.__file__).resolve()!=(root/path).resolve()or sha(module.__file__)!=r['inputs_sha256'][path]:raise ValueError('actual imported source identity')
+ for module,path in [(evr,'src/evr/__init__.py'),(science,'src/evr/annotation_consistency_v1.py'),(geometry,'src/evr/point_geometry_v2.py'),(bounded,'src/evr/bounded_point_audit.py'),(rotation,'src/evr/rotation_diagnostic_v1.py'),(design,'src/evr/motion_design.py')]:
+  verify_module(root,module,path,r['inputs_sha256'][path])
  old=design.unique_json(Path(OLD).read_bytes());diag=design.unique_json(Path(DIAG).read_bytes())
  if old['selected_original_point_indices']!=[0,1]or diag['old_rotation_gate_pass']is not False or (diag['returned_bytes_including_carried'],diag['reserves_including_carried'],diag['directory_reserve_including_carried'],diag['charged_bytes'])!=(20614916,2295240,1480,22910156):raise ValueError('allocation/failure/carry')
  return r
