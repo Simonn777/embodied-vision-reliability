@@ -22,10 +22,14 @@ Next, establish a stronger native causal baseline's CPU feasibility and a usable
 independent real-video development/evaluation path before freezing a different
 mechanism. The read-only TAPNext++ environment preflight completed: existing torch2.10.0+cpu
 and NumPy2.0.2 imported, torchvision/einops and the new weights were absent. The
-[fixed eight-frame capability protocol](protocols/0005-native-capability.md) and
-separate preparation/import gates are being reviewed before execution. No native
-TAPNext++ model call, weight/wheel acquisition, or real-video shard acquisition has
-run. Small upstream source/metadata reads are recorded, separately from payloads. The substantive improvement and
+[frozen capability attempt](results/0005-native-capability/README.md) stopped in
+dependency preparation: actual exit 1 after 36.072 seconds. Five sources and three
+wheels were verified and installation exited 0, but the source allowlist rejected
+an empty `.partial` entry before the import child. Assets, partials and marker are
+preserved. Checkpoint acquisition and native inference were not started; CPU
+feasibility remains unknown. New payload was 9,179,574 bytes; the conservative
+cumulative ceiling is 4,966,784,411 bytes. No automatic retry is authorized.
+The substantive improvement and
 paper gates in the [direction](docs/0004-research-direction.md) remain unchanged.
 The old 0002 inspected evaluation remains excluded.
 0003 is deferred with the missing-cache/one-shot limitations below preserved; this
