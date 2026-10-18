@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: frozen rotation diagnostic completed and independently reviewed; original gate failed, generation cause unresolved.
+Updated: 2026-10-17. Program day 2. Phase: cached conversion-source audit completed; next descriptive geometry candidate awaits independent review, unfrozen.
 
 ## Active question
 
@@ -267,3 +267,27 @@ Next is a version-specific provenance review beginning with cached source and
 published records. Any new geometry/data-access proposal requires a prospective
 freeze; original tau, failures and null projection errors stay unchanged. No
 independent cohort, geometry pass, model improvement or additional fee follows.
+
+
+## Cached conversion history: Stage A complete, next candidate unfrozen
+
+[Source audit and candidate](docs/0003-source-history-stageA-2026-10-17.md) used only
+five cached bodies plus source-tree text (39,425 bytes) and published JSON. Five
+old freeze chains / 38 inputs verify. Source audit 0.447624 s, RSS 12,416 KiB,
+exit/raw 0/0; three synthetic audit fixtures pass. No archive/NPZ/metadata/RGB,
+new numeric camera/GT read, projection, model, old-test analysis or downloads.
+
+Tracking already writes intrinsics/extrinsics keys with f16 cameras to
+annotations.npz. Reprojection's annot.npz reader widens in memory but does not
+save a f32 archive. Selected sample anno.npz/six keys/f32 dtype lack a verified
+rename/repack/precision conversion run. Only 5/38 listed bodies are cached and
+0/39 upstream Git objects available: no upstream version-history audit possible.
+R half-grid membership plus this code is compatibility, not confirmed causation.
+
+Unfrozen candidate reuses frames [0,1,2], allocated IDs [0,1], at most six
+annotation self-consistency checks. It explicitly preserves original rigidity
+failure/tau and distinguishes algebraic agreement from valid rigid geometry.
+Numeric ledger stays 22,910,156 bytes; whole sample remains development/cohort
+blocked. Independent candidate review and complete versioned executable freeze
+are required before any new data/geometry. No receipt or Stage B; old bytes and
+markers preserved. Parent's planned compatibility certificate was not executed.
