@@ -5,7 +5,7 @@ Work from the first unfinished item. Record each outcome in a dated note before 
 ## October 18 owner-authorized research pivot — active order
 
 1. **Completed:** freeze, execute once and independently review [0004 Stage 0](results/0004-stage0/README.md). It failed the unchanged continuation rule: 46 coordinate repairs / 120 harms and negative shadow return. Preserve the result and cache marker; do not repeat the run, reinterpret it as undersensitive, or fit a selector to selected positive episodes.
-2. Complete the pending read-only cloud environment preflight for native TAPNext++ 256px. Review current dependency compatibility, source hashes, existing assets and the cumulative data/weight budget. Freeze a separate bounded loading/CPU capability test before any new acquisition or forward call. Native baseline feasibility is infrastructure, not a method improvement.
+2. **Read-only preflight completed:** native TAPNext++ 256px still needs its fixed extra dependencies and weights. Complete the reviewed 0005 preparation/freeze and single capability operation below. Native baseline feasibility is infrastructure, not a method improvement.
 3. Resolve the real-video access and independent-group prerequisites. RoboTAP's official archive is 12.627 GiB, over budget; only its 827-byte ZIP directory has been inspected. A single compressed shard is about 1.713 GiB but expands to 5.778 GiB. The restricted streaming reader is still tested only on artificial fixtures. Do not acquire/decode real members without a reviewed bounded plan; preserve benchmark evaluation-only use and do not infer scene independence from filenames.
 4. Select a genuinely different, falsifiable coordinate-improvement mechanism after checking closest primary work. Freeze development access, intervention and matched-cost controls before its experiment. The failed hard-zero operator is not advanced by renaming it. A small synthetic result is never the efficacy claim.
 5. Before writing any paper, satisfy the substantive gain, strong baseline, transfer, uncertainty and compute requirements in [0004 direction](docs/0004-research-direction.md). The overall research goal remains active. Reject/pivot mechanisms that fail; retain evidence. Do not guarantee acceptance or manufacture positive results.
@@ -13,6 +13,23 @@ Work from the first unfinished item. Record each outcome in a dated note before 
 The old 0003 task below is **deferred**, not a prerequisite for this newly authorized
 independent study. Its published constraints and one-shot state remain untouched.
 The recurring schedule is unchanged; no additional paid services are authorized.
+
+## Immediate 0005 execution order
+
+1. Finish independent review of the native CPU adapter, exact overlay acquisition,
+   and frozen-source supervisor; freeze source/config/protocol in separate commits
+   and verify publication before runtime changes.
+2. On the existing cloud CPU, verify no active run/0005 marker; prepare only the
+   fixed source and three-wheel overlay. Inspect the actual import receipt before
+   the separately bounded new checkpoint acquisition. Keep the historical
+   4,823,387,101-byte acquisition ceiling and old caches unchanged.
+3. Only if those gates pass, execute the single fixed 8-frame/8-query native
+   capability operation. Preserve any failure without retry. Publish measured
+   outputs, costs and provenance, without an accuracy/improvement claim.
+4. Determine an independent real-video development/evaluation route before testing
+   the [conditional auxiliary-query hypothesis](docs/0005-support-query-candidate.md).
+   Generic support points and negative prompts already exist. Require matched
+   supports, strong causal baselines and the original paper gate; no manuscript yet.
 
 ## Preserved earlier research order and blocker
 

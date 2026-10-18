@@ -20,8 +20,12 @@ episodes. Visibility-only gains must not be called coordinate recovery.
 
 Next, establish a stronger native causal baseline's CPU feasibility and a usable
 independent real-video development/evaluation path before freezing a different
-mechanism. A read-only TAPNext++ environment preflight is pending; no new model
-weights or real-video shard have been acquired. The substantive improvement and
+mechanism. The read-only TAPNext++ environment preflight completed: existing torch2.10.0+cpu
+and NumPy2.0.2 imported, torchvision/einops and the new weights were absent. The
+[fixed eight-frame capability protocol](protocols/0005-native-capability.md) and
+separate preparation/import gates are being reviewed before execution. No native
+TAPNext++ model call, weight/wheel acquisition, or real-video shard acquisition has
+run. Small upstream source/metadata reads are recorded, separately from payloads. The substantive improvement and
 paper gates in the [direction](docs/0004-research-direction.md) remain unchanged.
 The old 0002 inspected evaluation remains excluded.
 0003 is deferred with the missing-cache/one-shot limitations below preserved; this

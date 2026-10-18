@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "cloudThreadId": "01a1434c-d43f-776d-888e-82ed314590ed",
+  "host": "durable",
+  "observedCommands": [
+    {
+      "id": "exec-0cbe2cf1-4534-4837-945c-e74072a05247",
+      "command": "/bin/bash -lc \"python - <<'PY'\nfrom pathlib import Path\nimport json,os\nmatches=[]\nfor d in Path('/proc').iterdir():\n if not d.name.isdigit()or int(d.name)==os.getpid():continue\n try:\n  names=[Path(x.decode(errors='replace')).name for x in(d/'cmdline').read_bytes().split(b'\\\\0')if x]\n  scripts=[n for n in names if n.endswith('.py')and(n.startswith(('run_','audit_','measure_','infer_','experiment'))or'state_intervention'in n)]\n  if scripts:matches.append({'pid':int(d.name),'script_basenames':scripts})\n except OSError:pass\nprint(json.dumps({'visible_scientific_processes':matches},indent=2))\nPY\nls -ld scratch/0005-baseline-preflight 2>/dev/null; rg --files bootstapir-cache/source/tapnet | rg 'tapnext(_torch|_lru_modules)?\\\\.py\"'$|pscan'\"\\\\.py\"'$|tapnextpp|votsp2026'\"'; stat -c '%s %n' bootstapir-cache/rgb.zip bootstapir-cache/weights.pt bootstapir-cache/development-000.npz; ls -l bootstapir-cache/*ledger* bootstapir-cache/tapnextpp_ckpt.pt 2>/dev/null\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "failed",
+      "exitCode": 2,
+      "toolReportedDurationMs": 0,
+      "outputTruncated": false
+    },
+    {
+      "id": "exec-88b3896d-c054-4f8c-8575-51547484bd86",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-baseline-preflight/preflight.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "toolReportedDurationMs": 1865,
+      "outputTruncated": true
+    },
+    {
+      "id": "exec-e5d5292c-2c2d-4f70-93e8-ff8224c3e505",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0005-baseline-preflight/summarize_metadata.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "toolReportedDurationMs": 0,
+      "outputTruncated": false
+    }
+  ],
+  "scope": "Read-only import/resource preflight; no model forward. Published full record copied byte-identically; full raw stdout from the preflight command was truncated by thread reader.",
+  "parentArtifactVerification": "Nine copied-file digests, source and import stdout hashes, actual recorded exit, compact resources and historical acquisition ledger binding checked locally; no probe rerun.",
+  "initialCommandBoundary": "Initial combined availability command returned 2 for absent paths; later isolated preflight command and metadata summarizer returned 0."
+}

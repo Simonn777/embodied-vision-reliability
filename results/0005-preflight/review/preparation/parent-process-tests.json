@@ -1,0 +1,14 @@
+{
+  "scope": "Own tiny inputs/stub HTTP plus tiny isolated Python processes; no real asset/model/network/install",
+  "command": "python3 tests/test_tapnext_preparation.py",
+  "tool_chunk_id": "882de3",
+  "observed_exit_code": 0,
+  "tool_wall_time_seconds": 0.11801,
+  "reported_unittest_seconds": 0.182,
+  "test_count": 24,
+  "source_sha256": "dce532e88fd4bb7a5cbf76a9bc75000b8e11a67f569452bb54cf7363a78ba6cd",
+  "test_sha256": "2c73cd1b3c17d32d63bebc986b64d30199442884fddc6d8d01eaf195a6274e25",
+  "stderr_summary": "Ran 24 tests in 0.182s; OK",
+  "additional_changes_reviewed": "actual imported versions, external SIGTERM cleanup, docstring; source author reviewed root diff separately",
+  "external_term_test": "sent SIGTERM to test parent; actual spawned sleep child killed via killpg and reaped, receipt exit -SIGKILL"
+}

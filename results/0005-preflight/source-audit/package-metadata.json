@@ -1,0 +1,117 @@
+{
+  "torchvision": {
+    "version": "0.25.0+cpu",
+    "url": "https://download-r2.pytorch.org/whl/cpu/torchvision-0.25.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+    "sha256": "c1be164e93c68b2dbf460fd58975377c892dbcf3358fb72941709c3857351bba",
+    "bytes": 1928072,
+    "requires_dist": [
+      "numpy",
+      "torch (==2.10.0)",
+      "pillow (!=8.3.*,>=5.3.0)",
+      "gdown (>=4.7.3) ; extra == 'gdown'",
+      "scipy ; extra == 'scipy'"
+    ]
+  },
+  "einops": {
+    "version": "0.8.2",
+    "url": "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl",
+    "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193",
+    "bytes": 65638,
+    "requires_python": ">=3.9",
+    "requires_dist": null,
+    "upload_time": "2026-01-26T04:13:18.546466Z",
+    "yanked": false
+  },
+  "requests": [
+    {
+      "url": "https://raw.githubusercontent.com/pytorch/vision/v0.25.0/README.md",
+      "bytes": 4844,
+      "sha256": "1957ded1ad27eb0d373b6421a431112dfeba1e85b486807181fccf5d0133e034",
+      "kind": "metadata-only"
+    },
+    {
+      "url": "https://download.pytorch.org/whl/cpu/torchvision/index.html",
+      "bytes": 365581,
+      "sha256": "e508bc4018d36c17734f145e2a918b9c95eb25c3476e215b9077fca88cb86984",
+      "kind": "metadata-only"
+    },
+    {
+      "url": "https://download-r2.pytorch.org/whl/cpu/torchvision-0.25.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata",
+      "bytes": 5405,
+      "sha256": "a89da8e7d2c99e7557b648d0d23cf96d38aa8f37e97ca40e249f5fc28304064b",
+      "kind": "metadata-only"
+    },
+    {
+      "url": "https://pypi.org/pypi/einops/json",
+      "bytes": 43976,
+      "sha256": "dbb12ee781c0bdbd46e31a84274d12594a603a5b1355b9b79a9056e133617ba6",
+      "kind": "metadata-only"
+    },
+    {
+      "url": "https://pypi.org/pypi/Pillow/json",
+      "bytes": 1000001,
+      "status": "bounded_metadata_read_aborted",
+      "error": "Project-wide JSON exceeded 1000000-byte bound; no wheel payload read; body not retained."
+    },
+    {
+      "url": "https://pypi.org/pypi/Pillow/13.0.0/json",
+      "bytes": 80892,
+      "sha256": "183d4151cbc909acf39d4d5d48469d6bc66d5516e7f506854241839d0611b69e",
+      "kind": "metadata-only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pytorch/vision/v0.25.0/torchvision/__init__.py",
+      "bytes": 3534,
+      "sha256": "ee2c9f4110cf1203db48c42601607329ac1f19709fa91c152f8d95eb53437a73",
+      "kind": "official source text only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pytorch/vision/v0.25.0/torchvision/transforms/functional.py",
+      "bytes": 67861,
+      "sha256": "0b2fdf8e6764f4be0113acd95b58d3b14158c13fa2374ed93fbbe1f4b8730ded",
+      "kind": "official source text only"
+    }
+  ],
+  "metadata_response_bytes": 1572094,
+  "wheel_bodies_downloaded": false,
+  "compatibility_table_lines": [],
+  "pillow_if_missing": {
+    "version": "13.0.0",
+    "url": "https://files.pythonhosted.org/packages/e6/99/fdf65cc539e266ab93546c261bdf98411fe165c6e4e13f9dbf597097192b/pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "filename": "pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "42d63be3af4f9b951b199b0a9d23365d37ab14687e6d77b74940432c8515c4ca",
+    "bytes": 7144542,
+    "requires_python": ">=3.11",
+    "requires_dist": [
+      "furo; extra == \"docs\"",
+      "olefile; extra == \"docs\"",
+      "sphinx>=8.2; extra == \"docs\"",
+      "sphinx-autobuild; extra == \"docs\"",
+      "sphinx-copybutton; extra == \"docs\"",
+      "sphinx-inline-tabs; extra == \"docs\"",
+      "sphinxext-opengraph; extra == \"docs\"",
+      "olefile; extra == \"fpx\"",
+      "olefile; extra == \"mic\"",
+      "arro3-compute; extra == \"test-arrow\"",
+      "arro3-core; extra == \"test-arrow\"",
+      "nanoarrow; extra == \"test-arrow\"",
+      "pyarrow; extra == \"test-arrow\"",
+      "coverage>=7.4.2; extra == \"tests\"",
+      "defusedxml; extra == \"tests\"",
+      "markdown2; extra == \"tests\"",
+      "olefile; extra == \"tests\"",
+      "packaging; extra == \"tests\"",
+      "psutil; (sys_platform == \"linux\" or sys_platform == \"darwin\") and extra == \"tests\"",
+      "pytest; extra == \"tests\"",
+      "pytest-cov; extra == \"tests\"",
+      "pytest-timeout; extra == \"tests\"",
+      "pytest-xdist; extra == \"tests\"",
+      "setuptools; extra == \"tests\"",
+      "trove-classifiers>=2024.10.12; extra == \"tests\"",
+      "defusedxml; extra == \"xmp\""
+    ],
+    "upload_time": "2026-10-16T22:15:50.093577Z",
+    "yanked": false,
+    "conditional": "Only if existing PIL/Pillow import absent or incompatible; metadata-compatible with Python3.12 and torchvision requirements, not import-tested. Freeze before separate overlay, no implicit deps."
+  }
+}
