@@ -1,0 +1,42 @@
+{
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "scripts/run_experiment.py",
+    "--smoke",
+    "--output",
+    "scratch/cache-readiness-smoke",
+    "--protocol",
+    "protocols/0001-synthetic-localization.md"
+  ],
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted",
+    "PYTHONPATH": "src",
+    "MPLBACKEND": "Agg",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "started_utc": "2026-10-18T13:07:05.695152+00:00",
+  "ended_utc": "2026-10-18T13:07:24.951639+00:00",
+  "wall_seconds": 19.25654092400009,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 88880,
+  "CPU_user_seconds": 16.433733,
+  "CPU_system_seconds": 2.746539,
+  "parent_sha256": "95ee64e03d44a71fb6813c3fa47cdf34e786431b9bb350675c66ebcf17f18a5d",
+  "logs_sha256": {
+    "stdout": "c55b97b2a565b30f7c260fc50b87401b0cd47bce1db9b052e77e28bce0c6d812",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "boundary": "parent observes child once; no further supervisor exit receipt"
+}

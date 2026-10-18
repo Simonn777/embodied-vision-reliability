@@ -90,6 +90,11 @@ The initial implementation runs on CPU. Apple MPS is available on the developmen
 
 ## Research practice
 
+Latest execution check: [October 18 cache blocker](docs/0003-cache-blocker-2026-10-18.md).
+The 45-input frozen-source gate passes, but required data and historical markers
+are unavailable in the current filesystem. The descriptive operation was not run;
+no new geometry or model result is claimed.
+
 - Keep full sequences in separate development, calibration, and evaluation partitions.
 - Fix the protocol before inspecting the final comparison and preserve all conditions.
 - Report error together with the fraction of predictions accepted; estimate uncertainty across sequences.

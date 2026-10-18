@@ -1,8 +1,14 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: cached generation evidence reviewed; saved-R result inconclusive; next descriptive geometry operation frozen and unexecuted.
+Updated: 2026-10-18. Program day 3. Phase: descriptive operation remains frozen and unexecuted; required cached data/markers unavailable in the current execution filesystem.
 
 ## Active question
+
+Current blocker: [October 18 cache-readiness evidence](docs/0003-cache-blocker-2026-10-18.md).
+The real 45-input publication gate passed, but the required cached NPZ and original
+markers are not visible. No scientific operation was attempted or marker recreated.
+Recover existing data/state and verify cross-session execution before continuation;
+do not redownload, relax the freeze or treat missing cache as proof of no prior run.
 
 For a fixed visual position estimator, does causal temporal consistency identify large localization errors under held-out occlusion/appearance shifts better than confidence from the current image alone, at comparable accepted-prediction coverage?
 
