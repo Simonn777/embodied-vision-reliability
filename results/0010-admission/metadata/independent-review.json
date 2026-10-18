@@ -1,0 +1,84 @@
+{
+  "status": "PASS_RETAINED_METADATA_WITH_PUBLICATION_CORRECTIONS",
+  "checks": 156,
+  "scope": "Read-only existing files; no imports of acquired source, network, images, models, science or repository edits.",
+  "spatial": {
+    "commit": "f9fa29ffb3980d9959c3d177dd2bc7c71ffeddcc",
+    "identity": {
+      "train": {
+        "bytes": 316710,
+        "sha256": "2db7d455afb8dcbca898ea19a00f1f90c091734efdbba89e22aaf24056da243f",
+        "git_blob_sha1": "4c08f4eeac54040a0fcd3788296f6e0dae782641",
+        "count": 16200
+      },
+      "val": {
+        "bytes": 99786,
+        "sha256": "6c758477604b7057a0fd990d7f6327b63b99a6725aac11a6a9d0174a7fdd8f0b",
+        "git_blob_sha1": "c3179b28d8fc0e2b5fea3fc7191f7eefb367f6ca",
+        "count": 5400
+      },
+      "test": {
+        "bytes": 105934,
+        "sha256": "de22dec83d350cac3b3e4ca8e285cb6733c81ab94bf5bcf9213a567993402452",
+        "git_blob_sha1": "6fc8dfdf0c8ee837993d8b395c5cbc9896ac1ed7",
+        "count": 5400
+      }
+    },
+    "unique_union": 27000,
+    "pairwise_overlap": 0,
+    "selection_names": [
+      "River_362.jpg",
+      "AnnualCrop_1607.jpg",
+      "Pasture_919.jpg",
+      "Residential_1561.jpg",
+      "Industrial_1563.jpg",
+      "AnnualCrop_1012.jpg",
+      "Highway_1291.jpg",
+      "River_2042.jpg"
+    ],
+    "selection_sha256": "75e31cc9742f6def800019dfd66009abb5294a9eafa7b8ef2d5130501617375c",
+    "recorded_GETs": 6,
+    "payload_body_bytes": 522430,
+    "redirect_body_bytes": 933,
+    "all_recorded_body_bytes": 523363,
+    "body_cap_bytes": 1048576,
+    "manifest_semantic_sha256": "abcb9602858f841888577f706e30fa7a7ae1eadf6a0bb3f148716d6fbe13523d",
+    "utility_preserved_source_sha256": "412c6cddba8fcd32241026611edb627c76690bf8dcc93195d6360a4ef24b2d75",
+    "execution_receipt_exit": 0,
+    "execution_receipt_timed_out": false
+  },
+  "clip_source": {
+    "commit": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+    "tree": "8ff3473dab6037c117401572413d3eb9b30ca23d",
+    "verified_body_paths": [
+      "clip/__init__.py",
+      "clip/clip.py",
+      "clip/model.py",
+      "clip/simple_tokenizer.py",
+      "LICENSE"
+    ],
+    "new_recorded_GETs": 4,
+    "new_recorded_body_bytes": 28255,
+    "bpe_body_verified": false,
+    "weights_or_model_executed": false
+  },
+  "publication_findings": [
+    {
+      "field": "command.json[0]",
+      "issue": "Private home-directory path. Publish an explicitly redacted derivative and a mapping with original and public byte lengths/SHA256; preserve private original.",
+      "original_bytes": 457,
+      "original_sha256": "bc2f400f8c9bf0c910ed42d54a83e06320aa62527505b9e70c3b83167b39d263"
+    },
+    {
+      "field": "plan-before-access.json.scope",
+      "issue": "The no-labels phrase is imprecise: class names are present in all filename metadata. Append a clarification; do not silently rewrite the prior plan."
+    }
+  ],
+  "limits": [
+    "This audit verifies retained receipts and hashes; it did not directly observe the original process exit or network transfers.",
+    "The preserved acquisition utility matches the pre-access plan SHA. The command and execution receipt do not themselves attest the SHA of the source loaded at run time.",
+    "Redirect bodies were counted but not retained: their content cannot be rehashed.",
+    "Filename disjointness is not geographic or physical-scene independence. ZIP membership, pixels, quality, encoder feasibility and performance are untested.",
+    "Historical cumulative HTTP transfer remains unknown; neither scope restores or estimates it."
+  ]
+}

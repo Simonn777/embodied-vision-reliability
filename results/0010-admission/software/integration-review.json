@@ -1,0 +1,118 @@
+{
+  "scope": "Final filename/CDN admission metadata delta only; artificial tests, no acquisition/install/model execution",
+  "changes": [
+    "Rename config/dependencies/downloads/budget .pending.json to .json with CLI/test references and JSON_PINS",
+    "ZIP HTTPS hosts exactly huggingface.co and us.aws.cdn.hf.co from a prior observed single HEAD",
+    "Document source freeze may precede install; actual probe requires successful offline install/import evidence"
+  ],
+  "tests": {
+    "count": 54,
+    "unittest_seconds": 0.084,
+    "observed_exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -W error -m unittest discover -s /tmp/evr-0010-integration/experiments/0010 -p test_*.py -v",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "222146cfcda300d2e3b7a80d457c561c8dcc625bd6e163df6fa4029f76661726"
+  },
+  "prior_receipt_sha256": "d20cd99437db6cc46bb883a29190f4a98bf0e2963a0adfe07bb98c4f33b6e99f",
+  "head_evidence_sha256": "1a7bf9411a35cec151180fa2c9c485cfa7d923a462bc38777636e08bb07b5325",
+  "files": {
+    "experiments/0010/README.md": {
+      "bytes": 8635,
+      "sha256": "1d287f6ec2ec38017459a620e94454cf504521e50ab968cc925ebc7c26c3d734"
+    },
+    "experiments/0010/acquire.py": {
+      "bytes": 12327,
+      "sha256": "412c6cddba8fcd32241026611edb627c76690bf8dcc93195d6360a4ef24b2d75"
+    },
+    "experiments/0010/budget.json": {
+      "bytes": 1071,
+      "sha256": "7ad38f52a1cb103b2266a8a206836f009831b2661ebb3b591f7a6924b5c6c60a"
+    },
+    "experiments/0010/bundle/metadata/eurosat-spatial-test.txt": {
+      "bytes": 105934,
+      "sha256": "de22dec83d350cac3b3e4ca8e285cb6733c81ab94bf5bcf9213a567993402452"
+    },
+    "experiments/0010/bundle/metadata/eurosat-spatial-train.txt": {
+      "bytes": 316710,
+      "sha256": "2db7d455afb8dcbca898ea19a00f1f90c091734efdbba89e22aaf24056da243f"
+    },
+    "experiments/0010/bundle/metadata/eurosat-spatial-val.txt": {
+      "bytes": 99786,
+      "sha256": "6c758477604b7057a0fd990d7f6327b63b99a6725aac11a6a9d0174a7fdd8f0b"
+    },
+    "experiments/0010/bundle/source/LICENSE": {
+      "bytes": 1064,
+      "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db"
+    },
+    "experiments/0010/bundle/source/clip/__init__.py": {
+      "bytes": 20,
+      "sha256": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8"
+    },
+    "experiments/0010/bundle/source/clip/clip.py": {
+      "bytes": 9644,
+      "sha256": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6"
+    },
+    "experiments/0010/bundle/source/clip/model.py": {
+      "bytes": 17374,
+      "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c"
+    },
+    "experiments/0010/bundle/source/clip/simple_tokenizer.py": {
+      "bytes": 4632,
+      "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad"
+    },
+    "experiments/0010/bundle-manifest.json": {
+      "bytes": 2544,
+      "sha256": "0eb88d5bbb443c2aa3080c3debd9866637a15214b16a3268eb39e2a4bcd5575a"
+    },
+    "experiments/0010/cli.py": {
+      "bytes": 6693,
+      "sha256": "08f8f918a045dd22855c69049ba1695c98f8df06725ae87fc30d542439c7143e"
+    },
+    "experiments/0010/config.json": {
+      "bytes": 3324,
+      "sha256": "f4fa4d2645dfbbff5306f2550136f448a4bbc967e0c772b1d99abfef3bfdb8d6"
+    },
+    "experiments/0010/dependencies.json": {
+      "bytes": 1822,
+      "sha256": "5557cef2a9b663c7249589031eff410750329270de75b9403cfa3a7a0b1ad578"
+    },
+    "experiments/0010/downloads.json": {
+      "bytes": 1695,
+      "sha256": "8977bcb4af7ae30fd4ef61585395d067ad1e0dc42ac44710ff10f0096b1f3bc6"
+    },
+    "experiments/0010/layout.json": {
+      "bytes": 1177,
+      "sha256": "c0510b9634817858fed2ec3a4e7d83c1ce690b58e6d41aaa39c57a2ca9d9b79e"
+    },
+    "experiments/0010/run_capability.py": {
+      "bytes": 17665,
+      "sha256": "532ef917a87e976dfd1bc0fd1858c16ea8a4b5bebaa9569add017e394f6a7ba6"
+    },
+    "experiments/0010/selection.json": {
+      "bytes": 219,
+      "sha256": "75e31cc9742f6def800019dfd66009abb5294a9eafa7b8ef2d5130501617375c"
+    },
+    "experiments/0010/test_acquire.py": {
+      "bytes": 12961,
+      "sha256": "16e109122e8e213fb3c6664a4876a2758041d29fd25813e902250abf4b809515"
+    },
+    "experiments/0010/test_capability.py": {
+      "bytes": 10893,
+      "sha256": "74842a494f9f582a849e98a14cacd004a5231a31beb6c8d1c216ab5a520e30f3"
+    },
+    "experiments/0010/test_cli.py": {
+      "bytes": 6877,
+      "sha256": "c903a367a4429188f03e09f03bd662aaf7e29c18cd67bb4b9998f741c6f34fc5"
+    },
+    "scripts/supervise_0009.py": {
+      "bytes": 9761,
+      "sha256": "2d306a8813d36c207eb276a187a298864965bffbe79c1dd463d9482f3bf7d77f"
+    }
+  },
+  "remaining_execution_prerequisites": [
+    "Published source/config/protocol freeze and parent authorization",
+    "Exact cache reuse/acquisition with measured body accounting",
+    "Offline fresh overlay installation and all runtime imports under fixed versions",
+    "One separately supervised capability operation"
+  ]
+}

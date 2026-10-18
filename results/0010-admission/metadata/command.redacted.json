@@ -1,0 +1,6 @@
+[
+  "<LOCAL_RESEARCH_PYTHON>",
+  "-B",
+  "-c",
+  "import sys,json; from pathlib import Path; sys.path.insert(0,'/tmp/evr-0010-acquire-prototype'); from acquire import acquire_all; p=Path('/tmp/evr-0010-spatial-metadata'); r=acquire_all(json.loads((p/'manifest.json').read_text()),p/'acquired'); print(json.dumps({'status':r['status'],'requests':len(r['requests']),'actual_body_bytes':r['actual_body_bytes']}))"
+]

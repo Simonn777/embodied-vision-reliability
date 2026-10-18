@@ -1,0 +1,314 @@
+{
+  "scope": "READ_ONLY_IMPORT_AND_CACHE_QUALIFICATION; no model/tensor/data decode/science/network/install",
+  "status": "completed",
+  "existing_preflight_before_claim": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "address_space_limit": [
+    8589934592,
+    8589934592
+  ],
+  "cgroup_memory_max": "8589934592",
+  "cgroup_memory_current": "8363954176",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "disk_free_bytes": 21880418304,
+  "PYTHONPATH": "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay:/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed:/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime:/workspace/scratch/a349d03a0e0a/tapnextpp-recovery/source",
+  "path_order_evidence": {
+    "path": "research-0005-recovery/scripts/prepare_tapnext_recovery.py",
+    "line": 298,
+    "sha256": "63d5cccc68f380ceeaaea67c673cf43bffecb0f385d2879c398eaf9fa4f044e6",
+    "interpretation": "Existing approved overlay, old runtime-fixed, old runtime, recovery source in that order."
+  },
+  "imports": {
+    "torch": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "torch"
+      ],
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 1.5694036679997225,
+      "peak_rss_kib": 217404,
+      "user_cpu_seconds": 1.478593,
+      "system_cpu_seconds": 0.24234899999999998,
+      "utc_started": "2026-10-18T23:11:02.059667+00:00",
+      "stdout_sha256": "e7d1336ed0242627e992f84c4cd94cef5cd64b0a62893442a3e31b9c0045d2c2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "import": {
+        "package": "torch",
+        "status": "available",
+        "distribution_version": "2.10.0+cpu",
+        "module_version": "2.10.0+cpu",
+        "module_path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/torch/__init__.py",
+        "module_entry_sha256": "51c90fe34a7cf869517d1bab4cd114498790e169ec668f1a154c35ec64117a5e",
+        "cpu_only": true,
+        "numeric_threads": 4,
+        "interop_threads": 9
+      }
+    },
+    "numpy": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "numpy"
+      ],
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.1169171789988468,
+      "peak_rss_kib": 28840,
+      "user_cpu_seconds": 0.244335,
+      "system_cpu_seconds": 0.017855,
+      "utc_started": "2026-10-18T23:11:03.629451+00:00",
+      "stdout_sha256": "74369109156c4b1c089ddb276320e1d881080d042fefd2ca7b99b0571af884ce",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "import": {
+        "package": "numpy",
+        "status": "available",
+        "distribution_version": "2.0.2",
+        "module_version": "2.0.2",
+        "module_path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/numpy/__init__.py",
+        "module_entry_sha256": "c09e25b58f6b2f8e2cb3c158168f902d447f8171e5ea6513c0aca41ecbda7c2b"
+      }
+    },
+    "torchvision": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "torchvision"
+      ],
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 2.5704371969986823,
+      "peak_rss_kib": 291812,
+      "user_cpu_seconds": 2.579132,
+      "system_cpu_seconds": 0.18842199999999998,
+      "utc_started": "2026-10-18T23:11:03.746652+00:00",
+      "stdout_sha256": "0dcbb676b09eeaa65561049a7f3c7354d514b067fb8339221d99ae7b9383cab0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "import": {
+        "package": "torchvision",
+        "status": "available",
+        "distribution_version": "0.25.0+cpu",
+        "module_version": "0.25.0+cpu",
+        "module_path": "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay/torchvision/__init__.py",
+        "module_entry_sha256": "ee2c9f4110cf1203db48c42601607329ac1f19709fa91c152f8d95eb53437a73"
+      }
+    },
+    "PIL": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "PIL"
+      ],
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.05493661299988162,
+      "peak_rss_kib": 14976,
+      "user_cpu_seconds": 0.044225,
+      "system_cpu_seconds": 0.009167999999999999,
+      "utc_started": "2026-10-18T23:11:06.317329+00:00",
+      "stdout_sha256": "30c5d792d30f646365f10b36159298d69b8b4d0f8329b9caac0a501fdec754be",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "import": {
+        "package": "PIL",
+        "status": "available",
+        "distribution_version": "13.0.0",
+        "module_version": "13.0.0",
+        "module_path": "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay/PIL/__init__.py",
+        "module_entry_sha256": "7361b6ad3878589affe5956e4a4da24d71398b0891fd3a8c15e9362217b4ca01"
+      }
+    },
+    "ftfy": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "ftfy"
+      ],
+      "actual_exit": 1,
+      "raw_wait_status": 256,
+      "wall_seconds": 0.05268048799916869,
+      "peak_rss_kib": 14592,
+      "user_cpu_seconds": 0.039411,
+      "system_cpu_seconds": 0.011588,
+      "utc_started": "2026-10-18T23:11:06.372478+00:00",
+      "stdout_sha256": "b31ab891247c7b55d8c368978371ee0326d3ab4a8c4da56d527f11024ec97bfa",
+      "stderr_sha256": "38d0a5725a008e5941ce4f19485146f2678a874d2c2d66127b6a41dd86520c64",
+      "import": {
+        "package": "ftfy",
+        "status": "import_failed",
+        "error_type": "ModuleNotFoundError",
+        "error": "No module named 'ftfy'"
+      }
+    },
+    "regex": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "regex"
+      ],
+      "actual_exit": 1,
+      "raw_wait_status": 256,
+      "wall_seconds": 0.052414614998269826,
+      "peak_rss_kib": 14592,
+      "user_cpu_seconds": 0.050886,
+      "system_cpu_seconds": 0.0,
+      "utc_started": "2026-10-18T23:11:06.425366+00:00",
+      "stdout_sha256": "3893224bf436f951df2a46ff1a96d61865ee992a3d48145ba812d1d0cd36fade",
+      "stderr_sha256": "7a2cbfe7688e2443c3ed183abed5d652b8f232fe2bda067e1e2e71eb610b6c61",
+      "import": {
+        "package": "regex",
+        "status": "import_failed",
+        "error_type": "ModuleNotFoundError",
+        "error": "No module named 'regex'"
+      }
+    },
+    "packaging": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "packaging"
+      ],
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.054406639999797335,
+      "peak_rss_kib": 14848,
+      "user_cpu_seconds": 0.049117,
+      "system_cpu_seconds": 0.0039689999999999994,
+      "utc_started": "2026-10-18T23:11:06.478033+00:00",
+      "stdout_sha256": "1f9e096682693b99c92e0dcc043b04a433c0ca0c6491ffcc63290edc7eef720f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "import": {
+        "package": "packaging",
+        "status": "available",
+        "distribution_version": "26.3",
+        "module_version": "26.3",
+        "module_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/packaging/__init__.py",
+        "module_entry_sha256": "6e758cdd0028b2cad74c739b9adc9c9f06f054932306280b878bfe59d39219b5"
+      }
+    },
+    "tqdm": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "tqdm"
+      ],
+      "actual_exit": 1,
+      "raw_wait_status": 256,
+      "wall_seconds": 0.05341202899944619,
+      "peak_rss_kib": 14592,
+      "user_cpu_seconds": 0.051733999999999995,
+      "system_cpu_seconds": 0.0,
+      "utc_started": "2026-10-18T23:11:06.532645+00:00",
+      "stdout_sha256": "108d2e356620d8f28ee9149b71a75a4044d70dcdc1238824d9d5ec4a5922df9d",
+      "stderr_sha256": "256c5d32fe9431846ee7aab1815769c9a5b1b592313fbad51c70aebd15b5a9de",
+      "import": {
+        "package": "tqdm",
+        "status": "import_failed",
+        "error_type": "ModuleNotFoundError",
+        "error": "No module named 'tqdm'"
+      }
+    },
+    "wcwidth": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "wcwidth"
+      ],
+      "actual_exit": 1,
+      "raw_wait_status": 256,
+      "wall_seconds": 0.05542042800152558,
+      "peak_rss_kib": 14592,
+      "user_cpu_seconds": 0.045468999999999996,
+      "system_cpu_seconds": 0.007859999999999999,
+      "utc_started": "2026-10-18T23:11:06.586340+00:00",
+      "stdout_sha256": "05ac9977d16515cd6001eef5c016ef8743bf660afab5e41fb9bccf97e89e924f",
+      "stderr_sha256": "fe944e8c4945045f467f2700b1163548d7e77076316222b87281f0e66cab88ba",
+      "import": {
+        "package": "wcwidth",
+        "status": "import_failed",
+        "error_type": "ModuleNotFoundError",
+        "error": "No module named 'wcwidth'"
+      }
+    },
+    "scipy": {
+      "command": [
+        "timeout",
+        "--kill-after=1s",
+        "12",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a349d03a0e0a/scratch/0010-preflight/import_probe.py",
+        "scipy"
+      ],
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.10449277700172388,
+      "peak_rss_kib": 30568,
+      "user_cpu_seconds": 0.24175,
+      "system_cpu_seconds": 0.0117,
+      "utc_started": "2026-10-18T23:11:06.642275+00:00",
+      "stdout_sha256": "6ba2cb6934b5f42b1ae82611eb20c377da3682b8baeb4fb1c981912eb2236e3b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "import": {
+        "package": "scipy",
+        "status": "available",
+        "distribution_version": "1.17.0",
+        "module_version": "1.17.0",
+        "module_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/__init__.py",
+        "module_entry_sha256": "335bc6e0a9909dc7534f9569a3685a92dc8001cb8c63a6da4c239849ff02d4d0"
+      }
+    }
+  },
+  "cache_search_sha256": "35b69498e66bcc268428fa06ad5794c3292f4700ecc1b352a89e8d55d655420d",
+  "environment_status_tool": "unavailable in active tool inventory",
+  "network_setting_presence_only": {
+    "HTTP_PROXY": false,
+    "HTTPS_PROXY": false,
+    "ALL_PROXY": false,
+    "NO_PROXY": false,
+    "http_proxy": false,
+    "https_proxy": false,
+    "all_proxy": false,
+    "no_proxy": false,
+    "SSL_CERT_FILE": false,
+    "REQUESTS_CA_BUNDLE": false
+  },
+  "network_policy": "No network request attempted. Current context lists allowed hosts; connectivity not probed. No credential/environment values read or printed.",
+  "new_asset_bytes": 0,
+  "script_sha256": "7602394e8e0a489ab182310a9d98d62f6258121da7981e5b0bc8e1cd1088dd07",
+  "import_probe_sha256": "bbb38a9cd4dafccb14d3757c256a2f2ef30f469883b9aecc0b6bd167898a18db"
+}
