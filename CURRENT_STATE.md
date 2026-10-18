@@ -1,8 +1,27 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0007's fixed-checkpoint gradient variance screen passed its local mechanism gates after one complete run and independent saved-gradient replay. This is not denoising quality, faster training or paper evidence. 0006's failed continuation rule and open stdout defect remain unchanged. The broader improvement objective remains active.
+Updated: 2026-10-18. Program day 3. Phase: 0008 completed once and failed both frozen training-quality gates. Stop this exact mean-sort candidate. 0007's local variance pass did not establish quality, faster training or novelty. The broader research objective remains active; no manuscript is warranted. 0006's failed continuation rule and OPEN stdout defect remain unchanged; 0003 remains deferred.
 
-## 0007 gradient variance passed; 0008 training design under review
+## 0008 training: stop this candidate
+
+The [actual frozen screen](results/0008-antithetic-training/README.md) completed
+32 fresh trajectories and 64 endpoint predictions after 51 cloud tests with zero
+skips and 16 independent artificial self-test groups. Frozen audit passed before
+references were opened. One formal score and independent saved-array replay
+agree on `stop_this_candidate`: mean gain −0.000955546 dB at 500 updates and
+−0.330065288 dB at five seconds versus per-case PSNR-best controls. Both mean
+quality, positive-image and image-harm gates failed; texture and allocated outer
+cost passed (cost ratio 0.995749479). No threshold was changed or case repeated.
+
+The scientific outer run exited 0 in 260.186158 seconds, peak RSS 304,904 KiB,
+with 98,994 actual updates and 48,000 MC forwards across shared trajectories.
+Independent replay passed 45,770 checks, maximum difference 7.1054e-15.
+All original outputs/logs/markers and frozen inputs remain intact. Publication
+archives saved text evidence only; it does not rerun training, inference or score.
+Any distinct future hypothesis needs prospective justification and untouched
+validation. Do not rescue this rule by tuning these development images or old tests.
+
+## 0007 gradient variance: retained local mechanism result
 
 The prospective [mean-paired antithetic screen](protocols/0007-antithetic-gradient-screen.md)
 compares four equal-forward estimators at all eight cached colored R2R checkpoints,
@@ -22,9 +41,8 @@ now verifies the public arithmetic (36,843 checks), original cloud archive
 (31,182 assertions), and preservation of 2,164 prior result/protocol files.
 Raw gradients were replayed in cloud, not fetched locally; later outer tool returns
 could not be retrieved due to a tool size limit, so their exits rely on the archived
-wait4/log chain. A [prospective training study](protocols/0008-antithetic-training.md) is now implemented
-with artificial fixtures and under final source review; no training has started.
-It requires a separately published canonical freeze and pinned-cloud tests first.
+wait4/log chain. The [frozen follow-up training study](protocols/0008-antithetic-training.md)
+has now completed as reported above and failed the required quality gates.
 Generic antithetic matching is prior work; no manuscript is warranted.
 
 0007 results are published through PR31, merge

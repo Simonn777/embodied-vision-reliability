@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<PROJECT_ROOT>/scratch/0008-publication/verify.py", line 70, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "<PROJECT_ROOT>/scratch/0008-publication/verify.py", line 58, in main
+    local=unquote(target.split('#')[0]);assert (p.parent/local).resolve().exists(),(p.name,target)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('2026-10-18.md', '../../results/0007-gradient-screen/README.md')

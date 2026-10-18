@@ -1,0 +1,34 @@
+{
+  "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+  "scientific_source_commit": "829688df750964d796417da569f0710453f62ca7",
+  "canonical_freeze_commit": "5680e6dae68ed102147ca89eeb115010cfe13687",
+  "canonical_freeze_relative": "protocols/0008-training-freeze.json",
+  "canonical_sha256": "f513c01f78e238ca0daef2427bb8ab756efafc7bd0965337ac073c8848dc83f5",
+  "required_inputs": {
+    "configs/0008-training.json": "b61e7e0c41603518a2170599f6a40ccb49b3e46db0cc18fa4dfc04978fbc375a",
+    "protocols/0008-antithetic-training.md": "91e4f9d1b0a9289eebceb1a5b931911e18f0b6f99a3099c36d9cf8f21a01a9b8",
+    "scripts/antithetic_training_core.py": "79bbd008f6b2222ef8d4aafc05bedd5e492b769ff736f5bb64b358a157b84916",
+    "scripts/antithetic_training_inference.py": "1f850a4f2f598836d48562a4662609c88d377b308561f2e007d3601a78fb2c04",
+    "scripts/antithetic_training_metrics.py": "3d048d947bef11faa16689227ac523335635a02a9d900c34f4ee65acb8e72444",
+    "scripts/run_antithetic_training.py": "c62e258f201e2c7b058a3c3f1233e90bf1351ede7ed9fb25ebd67d5abf7f20c1",
+    "scripts/check_antithetic_training.py": "37b40d62dbfc849a1eb579af007d081a1d83de79b01309190c8064b1a9f2c91a",
+    "scripts/run_antithetic_gradient_screen.py": "b306ea26231ffeb9eb9f09ba8893ed012d08a37f8093d2db089dfee05451b6db",
+    "scripts/conditional_residual_metrics.py": "728977c61a8eef7b66d07d23b24509e22ca33159bd9a265b835e9107540c6b5a",
+    "tests/test_antithetic_training_core.py": "d0df56addde270be75ca3f41e61c4fe78c0b825f3b099c37b1f38c0b48ed6686",
+    "tests/test_antithetic_training_inference.py": "675ae7dd13a0000da3540636e97475cc8d7cbe964299ba5fbd232ce2ff1d7c44",
+    "tests/test_antithetic_training_metrics.py": "d60e19e98fbb5373298a29550c700a838bf39594ef4adf7de5333c853c2f1591",
+    "tests/test_antithetic_training_supervision.py": "f5faecfb30b038d4cde72d70bfbcc3d7559aa7f9b020bc8d25fb95dff8ad0160"
+  },
+  "original_control_source_hashes": {
+    "outer.py": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+    "preflight.py": "854f6f9ae0addb6e97b2ecb66a39ff2d1c68a997a7bc98b8dc97d4677de42c43",
+    "postcheck.py": "797945b8e9cb3b08045f8983ad8352a3bead4372aefbc71c35ee4c1fca6f2c8f"
+  },
+  "postcheck_sha256": "34c911ea286e765ed579d7078dd59dd0a3b2c33c2e58c7f08b120c797db0009c",
+  "scores_sha256": "810cfd9384c475dc0df3d048bcd98a5bd33f96993e70e15d6ef69d68e40943e7",
+  "independent_report_sha256": "75247b4e4d723ab8f7bc4a68d0a3ec3ba7f3641a6aa5733eb97e53128b24d716",
+  "new_asset_bytes": 0,
+  "historical_asset_ceiling_bytes": 7532690072,
+  "publication_branch": "research/0008-training-results",
+  "actual_tool_observation": "Parent retrieved execution-turn tool records and independently confirmed all execution phases exit 0; archived wait4/log evidence retains its own scope."
+}
