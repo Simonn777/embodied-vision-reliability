@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "timeout",
+    "--kill-after=5s",
+    "60",
+    "<PYTHON_RUNTIME>/bin/python",
+    "<PROJECT>/scratch/0009-runtime-qualification/qualify.py"
+  ],
+  "cwd": "<PROJECT>/scratch/0009-runtime-qualification",
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "address_space_bytes": 8589934592,
+  "numeric_threads": 4,
+  "hard_timeout_seconds": 60
+}

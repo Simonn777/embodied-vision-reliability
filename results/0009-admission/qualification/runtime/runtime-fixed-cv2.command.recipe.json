@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "timeout",
+    "--kill-after=1s",
+    "8",
+    "<PYTHON_RUNTIME>/bin/python",
+    "<PROJECT>/scratch/0009-runtime-qualification/probe.py",
+    "cv2"
+  ],
+  "cwd": "<PROJECT>/scratch/0009-runtime-qualification",
+  "PYTHONPATH": "<PROJECT>/bootstapir-cache/runtime-fixed",
+  "PYTHONNOUSERSITE": "1",
+  "thread_variables": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  }
+}
