@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_SCANNER_SELF_MATCH_NO_SCIENTIFIC_EFFECT",
+  "observation": "The first verifier raised AssertionError while scanning its own literal /workspace/ deny-string. The compound shell command subsequently printed git diff and returned 0; a separately parent-observed verifier exit was not retained, so no standalone exit-code claim is made.",
+  "repair": "Match a full runtime workspace prefix rather than the generic deny-string appearing in source. The first source snapshot is preserved; no data read, source gate or scientific operation was rerun.",
+  "snapshot": "verification-attempt1-source.py"
+}

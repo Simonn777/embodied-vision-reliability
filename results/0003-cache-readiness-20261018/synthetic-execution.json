@@ -1,0 +1,44 @@
+{
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_annotation_consistency_v1.py",
+    "-v"
+  ],
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted",
+    "PYTHONPATH": "src",
+    "MPLBACKEND": "Agg",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "affinity": [
+    0,
+    1
+  ],
+  "AS_bytes": 6442450944,
+  "started_utc": "2026-10-18T13:07:01.453608+00:00",
+  "ended_utc": "2026-10-18T13:07:05.691346+00:00",
+  "wall_seconds": 4.237793406999799,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "peak_rss_kib": 15488,
+  "CPU_user_seconds": 1.879136,
+  "CPU_system_seconds": 2.248409,
+  "parent_sha256": "95ee64e03d44a71fb6813c3fa47cdf34e786431b9bb350675c66ebcf17f18a5d",
+  "logs_sha256": {
+    "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "0ac5cbeb42b32353e094735c7acc809bc1b14ecfba3092a738ebfd926dd52aba"
+  },
+  "boundary": "parent observes child once; no further supervisor exit receipt"
+}

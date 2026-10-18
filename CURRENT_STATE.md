@@ -1,8 +1,17 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: cached generation evidence reviewed; saved-R result inconclusive; next descriptive geometry operation frozen and unexecuted.
+Updated: 2026-10-18. Program day 3. Phase: cloud runtime offline; fixed geometry operation not executed; original cache and one-shot state unverified.
 
 ## Active question
+
+Current blocker: [offline recovery report](docs/0003-cache-recovery-2026-10-18.md).
+The cloud follow-up reports that the original-path lookup was rejected before shell
+launch. The earlier cache-visibility failure and 45-input gate PASS are historical;
+current cache, markers and processes remain unknown. No new geometry result exists.
+[Independent publication review](docs/0003-cache-readiness-independent-review.md)
+separates the saved evidence from what the parent could independently verify.
+Restore the original workspace connection and reconcile existing data/markers before
+continuation; preserve the freeze and old failures without redownload or marker reset.
 
 For a fixed visual position estimator, does causal temporal consistency identify large localization errors under held-out occlusion/appearance shifts better than confidence from the current image alone, at comparable accepted-prediction coverage?
 
@@ -367,3 +376,15 @@ rigid failure separately from annotation agreement and the unchanged 0.5 px rule
 This turn does not execute it. No new dataset/source downloads, inference, old-test
 tuning, paid service or schedule/permission change. Actual provenance, units/FPS
 and independent cohort readiness remain unresolved.
+
+
+## Limited cache recovery follow-up: runtime offline (October 18)
+
+[Recovery observation](docs/0003-cache-recovery-2026-10-18.md): the exact original
+workspace/cache path check was rejected before shell launch because no execution
+environment is connected. Current mounts, processes, marker/output state and cache
+identity are unknown, not proof that historical data was deleted. No new gate,
+synthetic/smoke run, data access, geometry, download or marker write occurred.
+Earlier PR20 measurements remain historical and unchanged. Restore a supported
+connection to the original workspace and reconcile its existing cache/markers
+before any one-shot execution; no exposed recovery interface was available here.

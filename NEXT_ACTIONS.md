@@ -2,6 +2,15 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
+**October 18 blocking prerequisite:** the latest cloud follow-up could not start a
+shell because its execution environment was offline. [Recovery evidence](docs/0003-cache-recovery-2026-10-18.md)
+and [independent review](docs/0003-cache-readiness-independent-review.md) distinguish
+this from the earlier host's missing-cache observation. First restore a supported
+connection to the original workspace, then verify the existing NPZ, original marker
+hashes, locks and any current-operation marker/output before item 6. Current state
+is unknown. No redownload, marker reconstruction, threshold relaxation or repeated
+scientific attempt is authorized by a missing or disconnected runtime.
+
 1. **Completed:** implement, independently review, and execute experiment 0001 under frozen protocol/source, preserving the negative identity-switch result. Read [the day-one note](notes/2026-10-16.md) and the reproduction record before continuing; do not repeat the run merely to generate daily activity.
 2. **Completed:** [post-hoc failure analysis](docs/analysis/0001-failure-mechanism.md) separates two-frame history adaptation, different calibrated thresholds, color-estimator failure, and synthetic-generator artifacts. [Primary methods reading](docs/literature/2026-10-16-confidence-methods.md) audits confidence/visibility outputs and causal context. Original predictions, scores, thresholds, protocol, and results remain frozen; no score was optimized on the now-visible test trajectories.
 3. **Development feasibility measured and artifacts independently verified:** [real-weight CPU report](docs/0002-cpu-feasibility.md) preserves pinned official source/checkpoint/data hashes, restricted loading, 16-frame development latency/RSS, prefix/query/batch/repetition checks, and failures/serial repairs. The parent session separately recomputed the published checks and verified artifact/source hashes and latency accounting; see [verification receipt](results/0002-development/parent-review.json). Whole video index 0 is development forever. No other video was inferred.
@@ -22,3 +31,14 @@ If blocked on compute, rights, or tooling, do a useful smaller verification or r
 ## Cloud capability handoff (2026-10-16)
 
 **Completed:** interactive Work execution, final receipt CI, and PR #1 publication to main at `d910736e`; see [the capability receipt](docs/CLOUD_CAPABILITY.md). The saved automation's non-interactive Run now trial also completed the data/model audit and merged PR #2 at `9d415308` after shell tests and exact-head CI. The settings session independently verified that publication, paused the local heartbeat and retained one enabled Work cloud schedule. See [the migration receipt](docs/SCHEDULED_VERIFICATION.md). The first regular clock-triggered run is due October 17; do not confuse that future event with the completed immediate trial. The next research action is item 5 above, after verifying the main-published freeze.
+
+
+### October 18 limited original-workspace recovery follow-up
+
+The exact prior source-history/sibling cache lookup could not start: the execution
+environment is offline. [Evidence and distinctions](docs/0003-cache-recovery-2026-10-18.md).
+Current cache/mount/process/one-shot state is UNKNOWN, not confirmed deletion.
+First restore a supported connection to the original project workspace; then
+verify existing cache and original marker hashes, locks and any new output before
+running the unmodified published gate and at most one frozen operation. Do not
+redownload, recreate markers, repeat capability tests or change the paused plan.
