@@ -1,11 +1,13 @@
 # Embodied Vision Reliability
 
-**Can data-dependent antithetic pairing improve self-supervised image denoising at matched computation?**
+**0008 result: mean-based antithetic pairing failed the frozen denoising-quality screen.**
 
-The current candidate pairs noisy patches before opposite-sign R2R augmentation.
-A frozen eight-checkpoint screen reduced total gradient variance against three
-controls; actual image-quality improvement has not yet been established. The next
-study tests fresh training at both fixed updates and approximately fixed time.
+The exact mean-sort candidate is stopped. Its gradient-variance screen passed,
+but the subsequent 32-trajectory training study did not meet either quality gate:
+mean gain was −0.000956 dB at 500 updates and −0.330065 dB at approximately
+five seconds versus per-case best controls. Texture and allocated-cost gates
+passed; they do not rescue failed quality. The broader research objective remains
+active, with no manuscript warranted and no tuning rescue on these old images.
 
 This AI-assisted research program runs October2026–October2027. The owner opened
 topic selection after the initial tracking hypotheses failed. Protocols, source
@@ -16,17 +18,23 @@ readiness or methodological novelty is claimed. [Contributions and evidence](doc
 
 | Study | Evidence and decision |
 |---|---|
+| [0008 actual training screen](results/0008-antithetic-training/README.md) | 32 trajectories / 64 predictions completed once; both ≥0.5 dB quality gates failed. Independent saved-array replay agrees: **stop this candidate**. |
 | [0007 gradient screen](results/0007-gradient-screen/README.md) | 4,096 gradient measurements, zero updates. Total variance ratios0.227/0.738/0.571 against independent/random/same-patch; 7/8 best-control wins. Local mechanism gates passed; no PSNR result. |
-| [0008 prospective training protocol](protocols/0008-antithetic-training.md) | 32 fresh trajectories, two locked endpoints; requires≥0.5dB at both and matched-cost/texture checks. Not executed. |
 | [0006 residual-denoising screen](results/0006-stage0/README.md) | Mean gain−0.571dB; stop this candidate. A missing stdout line remains an open provenance defect. |
 | [0004 tracking intervention](results/0004-stage0/README.md) | 46 repairs and120 harms; stop this candidate. |
 
-![All eight total-gradient-variance comparisons](results/0007-gradient-screen/gradient-variance.png)
+![All eight paired denoising-quality comparisons at both endpoints](results/0008-antithetic-training/parent-review/training-quality.png)
+
+[Independent parent review](results/0008-antithetic-training/parent-review/README.md)
+checks the public arithmetic and publication provenance separately: 89,135 numerical
+review checks and 9,885 provenance checks. Both agree with the failed result; no
+training or inference was repeated. All unfavorable cases remain visible above.
 
 The gradient result is conditional on four reused development substrates and
-known synthetic noise covariance. Generic antithetic sampling is established
-prior work. A separate training test and much stronger independent-data/baseline
-validation are needed before any manuscript.
+known synthetic noise covariance; it did not translate into the required
+training-quality improvement. Generic antithetic sampling is established prior
+work. A distinct future hypothesis needs a prospective rationale and untouched
+validation, not hyperparameter, pairing-feature or budget rescue of this rule.
 
 ## Research state and historical localization archive
 

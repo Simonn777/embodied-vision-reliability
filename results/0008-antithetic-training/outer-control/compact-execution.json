@@ -1,0 +1,129 @@
+{
+  "scientific_status": "completed_once",
+  "decision": "stop_this_candidate",
+  "exceptions": [],
+  "runtime_tests": {
+    "passed": 51,
+    "skipped": 0
+  },
+  "independent_self_test_groups": 16,
+  "trajectories": 32,
+  "locked_predictions": 64,
+  "endpoints": {
+    "updates500": {
+      "mean_gain_db": -0.0009555460164949459,
+      "positive_image_means": 1,
+      "minimum_image_mean_gain_db": -0.41961374926243167,
+      "first_difference_mse_ratio": 1.0259278616882406,
+      "gates": {
+        "finite_paired_db_gains": true,
+        "mean_gain_ge_0_5_db": false,
+        "at_least3_group_means_gt0": false,
+        "each_group_mean_ge_minus0_2_db": false,
+        "mean_pooled_first_difference_le_1_05": true
+      }
+    },
+    "wall5s": {
+      "mean_gain_db": -0.3300652878587962,
+      "positive_image_means": 0,
+      "minimum_image_mean_gain_db": -1.089281746219985,
+      "first_difference_mse_ratio": 1.047862584408576,
+      "gates": {
+        "finite_paired_db_gains": true,
+        "mean_gain_ge_0_5_db": false,
+        "at_least3_group_means_gt0": false,
+        "each_group_mean_ge_minus0_2_db": false,
+        "mean_pooled_first_difference_le_1_05": true
+      }
+    }
+  },
+  "wall5s_allocated_outer_cost_ratio": 0.9957494786484813,
+  "outer_executions": {
+    "frozen-audit": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.1861852780020854,
+      "peak_rss_kib": 29984
+    },
+    "frozen-score": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.324616319998313,
+      "peak_rss_kib": 34080
+    },
+    "frozen-verify": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.07771191600113525,
+      "peak_rss_kib": 14336
+    },
+    "independent-replay": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.5052338850000524,
+      "peak_rss_kib": 32444
+    },
+    "independent-self-test": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.12052125099944533,
+      "peak_rss_kib": 28784
+    },
+    "postcheck": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.40111029200124904,
+      "peak_rss_kib": 14284
+    },
+    "preflight": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.8713592740023159,
+      "peak_rss_kib": 14588
+    },
+    "runtime-tests": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 7.754978245997336,
+      "peak_rss_kib": 299040
+    },
+    "scientific-run": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 260.1861582160018,
+      "peak_rss_kib": 304904
+    }
+  },
+  "scores_sha256": "810cfd9384c475dc0df3d048bcd98a5bd33f96993e70e15d6ef69d68e40943e7",
+  "independent_report_sha256": "75247b4e4d723ab8f7bc4a68d0a3ec3ba7f3641a6aa5733eb97e53128b24d716",
+  "independent_replay_status": "PASS",
+  "independent_checks": 45770,
+  "independent_max_absolute_difference": 7.105427357601002e-15,
+  "preservation_status": "PASS",
+  "prior_public_result_files_preserved": 2249,
+  "historical_tree_counts_preserved": {
+    "conditional-residual-0006": 496,
+    "antithetic-gradient-0007": 84,
+    "tapnextpp-cache": 407
+  },
+  "old_markers_preserved": 22,
+  "wall_endpoint_capture_min_seconds": 5.000254870999925,
+  "wall_endpoint_capture_max_seconds": 5.0034228559998155,
+  "trajectory_update_range": [
+    2836,
+    3470
+  ],
+  "total_actual_optimizer_updates": 98994,
+  "actual_mc_forward_calls": 48000,
+  "actual_mc_scalar_draws": 2333811200,
+  "study_completed_sha256": "92ec0607553bbd10ac27cd088ea2def80a8f742b039b57e92444497b65dbdc4f",
+  "control_outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+  "postcheck_sha256": "34c911ea286e765ed579d7078dd59dd0a3b2c33c2e58c7f08b120c797db0009c",
+  "output_root": "<PROJECT_ROOT>/antithetic-training-0008",
+  "control_root": "<PROJECT_ROOT>/scratch/0008-control",
+  "new_asset_bytes": 0,
+  "asset_ceiling_bytes": 7532690072,
+  "publication_performed": false,
+  "source_files_modified": false,
+  "manuscript_claim": false
+}

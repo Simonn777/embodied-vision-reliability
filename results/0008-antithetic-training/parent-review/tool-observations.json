@@ -1,0 +1,455 @@
+{
+  "schema": "parent-observed-tool-status-v1",
+  "scope": "Directly retrieved commandExecution status and untruncated child-record output from completed cloud execution turn. This is separate from reading saved receipts; no original reasoning or personal prompt exported. Scientific source read outputs were truncated; scientific phase child record outputs were complete.",
+  "private_retrieval_sha256": "6f8a55c69b64d7a435f26494d0bc774c7e72ea8bec7283175617177746378b34",
+  "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+  "cloud_turn_started_epoch": 1792356130,
+  "cloud_turn_completed_epoch": 1792356616,
+  "cloud_turn_duration_ms": 485556,
+  "command_count": 18,
+  "observed_stages": [
+    "preflight",
+    "frozen-verify",
+    "runtime-tests",
+    "independent-self-test",
+    "scientific-run",
+    "frozen-audit",
+    "frozen-score",
+    "independent-replay",
+    "postcheck"
+  ],
+  "commands": [
+    {
+      "tool_item_id": "exec-07185470-3c8f-4bd8-8fc5-de89a6c2fae7",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "original_command_text_sha256": "a4989f02e06a70a8a5c3b52a5d96e2d7fd86d276375f6b9b5b608477d7fb0126",
+      "command_recipe_redacted": "/bin/bash -lc \"<PYTHON> - <<'PY'\nfrom pathlib import Path\nimport json,subprocess\nroot=Path('<PROJECT>')\npaths=['research-0008-training','antithetic-training-0008','scratch/0008-control']\nprint(json.dumps({'paths':{n:{'exists':(root/n).exists(),'symlink':(root/n).is_symlink()} for n in paths}}))\nhits=[]\nfor p in Path('/proc').iterdir():\n if not p.name.isdecimal():continue\n try:a=(p/'cmdline').read_bytes().split(b'\\\\0')\n except OSError:continue\n names={Path(v.decode(errors='replace')).name for v in a if v}\n matched=names & {'run_antithetic_training.py','antithetic_training_core.py','run_antithetic_gradient_screen.py','run_conditional_residual_stage0.py'}\n if matched:hits.append({'pid':int(p.name),'scripts':sorted(matched)})\nprint(json.dumps({'related_active_processes':hits}))\nassert not hits and not any((root/n).exists() for n in paths),'existing attempt/path requires read-only review'\nprint(subprocess.check_output(['git','status','--short'],cwd=root/'research-0007-gradient',text=True))\nPY\"",
+      "output_truncated": false,
+      "observed_child_records": []
+    },
+    {
+      "tool_item_id": "exec-143ec30e-79f8-4c95-bd9c-54e612e000c9",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 9689,
+      "original_command_text_sha256": "dfffd174f097277d9d32af6b58a9a040e90e5c9f36e3961fd0b61b3eb5d1c53b",
+      "command_recipe_redacted": "/bin/bash -lc 'git fetch origin main'",
+      "output_truncated": false,
+      "observed_child_records": []
+    },
+    {
+      "tool_item_id": "exec-f12003b1-06c4-494b-a695-12b7510053b6",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 304,
+      "original_command_text_sha256": "ecb0fa361f97a8a83eb9934fbfee1d93f2c1c15df769afad8788797b257ddeb2",
+      "command_recipe_redacted": "/bin/bash -lc 'git worktree add --detach <PROJECT>/research-0008-training 74f9330014aa8a13a8c55785992e115f045f2fa9'",
+      "output_truncated": false,
+      "observed_child_records": []
+    },
+    {
+      "tool_item_id": "exec-007cf030-d9f1-4fd8-8639-4394caf07072",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 497,
+      "original_command_text_sha256": "7017dbd5083bbc9c71f4256197f28425e502fae87a241e80d5c0255da98fd228",
+      "command_recipe_redacted": "/bin/bash -lc \"cat AGENTS.md\nsed -n '1,90p' CURRENT_STATE.md\nsed -n '1,65p' NEXT_ACTIONS.md\ncat protocols/0008-antithetic-training.md docs/0008-implementation-review.md protocols/0008-training-freeze.json\"",
+      "output_truncated": true,
+      "observed_child_records": []
+    },
+    {
+      "tool_item_id": "exec-602263e7-bbf9-4584-aebb-59db9b886ffe",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 148,
+      "original_command_text_sha256": "cf0203e6e9b877f8e1a275b9faffc26e0d7dd087785e034f158c3bead8382492",
+      "command_recipe_redacted": "/bin/bash -lc \"cat scripts/run_antithetic_training.py configs/0008-training.json\nsed -n '1,130p' scripts/check_antithetic_training.py\nsed -n '1,70p' docs/RESEARCH_CHARTER.md\"",
+      "output_truncated": true,
+      "observed_child_records": []
+    },
+    {
+      "tool_item_id": "exec-85125f27-c271-4caf-a90c-0d6fc67d5665",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "original_command_text_sha256": "843fc23845e7c48baf32b8ef39b87b95d8cc0368b6d714eac43207d1c3878d35",
+      "command_recipe_redacted": "/bin/bash -lc \"sed -n '265,420p' scripts/run_antithetic_training.py\nsed -n '1,20p' configs/0008-training.json\nsed -n '180,290p' scripts/check_antithetic_training.py\"",
+      "output_truncated": true,
+      "observed_child_records": []
+    },
+    {
+      "tool_item_id": "exec-7fc381a3-fcb8-4e7a-9a71-85269eea3530",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "original_command_text_sha256": "256b79ef7220db65237387bf79418f1140efca6b8b3c5f6635791683c203074d",
+      "command_recipe_redacted": "/bin/bash -lc \"mkdir <PROJECT>/scratch/0008-control\n<PYTHON> - <<'PY'\nfrom pathlib import Path\np=Path('scratch/0007-control/outer.py');t=p.read_text();assert \\\"research-0007-gradient\\\" in t\nout=Path('scratch/0008-control/outer.py')\nwith out.open('x') as f:f.write(t.replace('research-0007-gradient','research-0008-training'))\nPY\"",
+      "output_truncated": false,
+      "observed_child_records": []
+    },
+    {
+      "tool_item_id": "exec-626b84c1-dc2a-49ef-8f20-15b313c71aa5",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 946,
+      "original_command_text_sha256": "e6f39bbdb348b6d8f546292da2159c6c114641879312549812b83737422fa3c4",
+      "command_recipe_redacted": "/bin/bash -lc '<PYTHON> scratch/0008-control/outer.py preflight 120 <PYTHON> <PROJECT>/scratch/0008-control/preflight.py'",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "5f4e29dbfc3d2949b8c3508f517a5323616b1a333e3ebca8a934955688a0d713",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 120,
+          "label": "preflight",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 14588,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "01edd8b29915eeec4c4e94a46f767651625ece1f99e99c5ae1fd7512eba461a6",
+          "system_cpu_seconds": 0.24684799999999998,
+          "user_cpu_seconds": 0.564582,
+          "utc_completed": "2026-10-18T20:43:28.577589+00:00",
+          "utc_started": "2026-10-18T20:43:27.706238+00:00",
+          "wall_seconds": 0.8713592740023159
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-7e656199-0244-4382-82ff-d5e22ea4747e",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 143,
+      "original_command_text_sha256": "146a5757596527955f3fe580a5a0068919f91820f1efb08b1adda2b5c5df932d",
+      "command_recipe_redacted": "/bin/bash -lc 'cat scratch/0008-control/preflight.stdout.log\n<PYTHON> scratch/0008-control/outer.py frozen-verify 120 <PYTHON> scripts/run_antithetic_training.py verify --cache <PROJECT>/conditional-residual-0006 --output <PROJECT>/antithetic-training-0008 --runtime-root <PROJECT>/bootstapir-cache/runtime-fixed --freeze-commit 5680e6dae68ed102147ca89eeb115010cfe13687'",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "401d17dba81aa47510966fae9e71f7b1df8f4f445132b33129b92d5469969e7b",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 120,
+          "label": "frozen-verify",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 14336,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "3db7856ab43eaa6b3f1122f8f43d8300f831761677dee23841a5a13b70eb9c86",
+          "system_cpu_seconds": 0.015717,
+          "user_cpu_seconds": 0.061126,
+          "utc_completed": "2026-10-18T20:43:33.626960+00:00",
+          "utc_started": "2026-10-18T20:43:33.549253+00:00",
+          "wall_seconds": 0.07771191600113525
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-64fec441-1124-48a6-9ce0-18ff0bb3fa34",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 7829,
+      "original_command_text_sha256": "7661b7a77ac1e8c7ac73a6d9d4c0b8d2bd93a2f40dceec804f997e5ce2bdeda4",
+      "command_recipe_redacted": "/bin/bash -lc \"<PYTHON> scratch/0008-control/outer.py runtime-tests 120 <PYTHON> -W error -m unittest discover -s tests -p 'test_antithetic_training*.py'\"",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "99eb6d2b8d41afbca33d304c8f33819a33b1ba5812163e7d222c551fcdc07354",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 120,
+          "label": "runtime-tests",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 299040,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "4d312a890904a342549ce53b016968a4aca31f4240926c769582318329026110",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "system_cpu_seconds": 0.948328,
+          "user_cpu_seconds": 8.123033,
+          "utc_completed": "2026-10-18T20:43:46.205252+00:00",
+          "utc_started": "2026-10-18T20:43:38.450285+00:00",
+          "wall_seconds": 7.754978245997336
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-217b0bfa-a7c0-400e-9ffd-a0713e85d57f",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 193,
+      "original_command_text_sha256": "71afe3316c57ffaf3dddfddc203c352970c900c25b575d422a0ad87646eee802",
+      "command_recipe_redacted": "/bin/bash -lc 'cat scratch/0008-control/runtime-tests.stderr.log\n<PYTHON> scratch/0008-control/outer.py independent-self-test 120 <PYTHON> -W error scripts/check_antithetic_training.py --self-test'",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "26188133bf1d9d4cf6850dfff149577d24aa4eedeb4bdb3d192198f218494d91",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 120,
+          "label": "independent-self-test",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 28784,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "55eb775553e6f9a4640aa623ad278ab36d56be1c1bf2716ac2040c7427776a5c",
+          "system_cpu_seconds": 0.015586,
+          "user_cpu_seconds": 0.33765,
+          "utc_completed": "2026-10-18T20:43:51.850613+00:00",
+          "utc_started": "2026-10-18T20:43:51.730099+00:00",
+          "wall_seconds": 0.12052125099944533
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-2cdb15b6-3c5a-49f9-9a7c-3abed2c27503",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 260270,
+      "original_command_text_sha256": "94057aaff22c7de23f935b31fe8abd1e0d9388687b973b59b140b4849d27e3c4",
+      "command_recipe_redacted": "/bin/bash -lc \"<PYTHON> - <<'PY'\nimport json,hashlib\nfrom pathlib import Path\nc=Path('scratch/0008-control')\nfor label in ('preflight','frozen-verify','runtime-tests','independent-self-test'):\n e=json.loads((c/(label+'.execution.json')).read_text());assert e['actual_exit']==e['raw_wait_status']==0\n for suffix,key in (('.stdout.log','stdout_sha256'),('.stderr.log','stderr_sha256'),('.command.private.json','command_file_sha256')):assert hashlib.sha256((c/(label+suffix)).read_bytes()).hexdigest()==e[key]\ns=json.loads((c/'independent-self-test.stdout.log').read_text());assert s['status']=='PASS' and s['self_test_groups']==16\nassert s['checker_sha256']=='37b40d62dbfc849a1eb579af007d081a1d83de79b01309190c8064b1a9f2c91a'\nt=(c/'runtime-tests.stderr.log').read_text();assert 'Ran 51 tests' in t and '\\\\nOK\\\\n' in t and 'skip' not in t.lower()\nassert not Path('antithetic-training-0008').exists()\nprint(json.dumps({'preconditions':'PASS','runtime_tests':51,'skips':0,'independent_self_test_groups':16,'output_absent':True}))\nPY\n<PYTHON> scratch/0008-control/outer.py scientific-run 900 <PYTHON> scripts/run_antithetic_training.py run --cache <PROJECT>/conditional-residual-0006 --output <PROJECT>/antithetic-training-0008 --runtime-root <PROJECT>/bootstapir-cache/runtime-fixed --freeze-commit 5680e6dae68ed102147ca89eeb115010cfe13687\"",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "e3c872d72196c914016700f4d09d33cc7825723f9ea0281a180c7c13e4cd9636",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 900,
+          "label": "scientific-run",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 304904,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "0131f8d2bed5a31e7f9c38f94196839bc7972ba52c910862d7f7eeaf054e2630",
+          "system_cpu_seconds": 7.249466,
+          "user_cpu_seconds": 836.796622,
+          "utc_completed": "2026-10-18T20:48:23.409393+00:00",
+          "utc_started": "2026-10-18T20:44:03.223237+00:00",
+          "wall_seconds": 260.1861582160018
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-50a9a6c3-e47f-4c98-8bce-b82e634d4cf6",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 279,
+      "original_command_text_sha256": "75106c8ad93b666e25cae0d529b927a25c50363b99d46c58fc6ded17884c5d80",
+      "command_recipe_redacted": "/bin/bash -lc \"<PYTHON> - <<'PY'\nfrom pathlib import Path\nimport json,hashlib\nc=Path('scratch/0008-control');r=Path('antithetic-training-0008');e=json.loads((c/'scientific-run.execution.json').read_text())\nassert e['actual_exit']==e['raw_wait_status']==0\nfor suffix,key in (('.stdout.log','stdout_sha256'),('.stderr.log','stderr_sha256'),('.command.private.json','command_file_sha256')):assert hashlib.sha256((c/('scientific-run'+suffix)).read_bytes()).hexdigest()==e[key]\ns=json.loads((r/'study.completed.json').read_text());assert len(s['cases'])==32 and not (r/'study.failed.json').exists()\nreceipts=list(r.glob('cases/*/receipt.json'));pred=list(r.glob('cases/*/*-prediction.npy'));assert len(receipts)==32 and len(pred)==64\nassert all(json.loads(p.read_text())['status']=='completed' for p in receipts)\nprint(json.dumps({'scientific_outer_exit':e['actual_exit'],'trajectories':len(receipts),'saved_predictions':len(pred),'references_opened_by_this_check':False}))\nPY\n<PYTHON> scratch/0008-control/outer.py frozen-audit 120 <PYTHON> scripts/run_antithetic_training.py audit --cache <PROJECT>/conditional-residual-0006 --output <PROJECT>/antithetic-training-0008 --runtime-root <PROJECT>/bootstapir-cache/runtime-fixed --freeze-commit 5680e6dae68ed102147ca89eeb115010cfe13687\"",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "5e480257797c762a04c994d85c384ee5dfd1db9786a48581c745ef59b3f78e07",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 120,
+          "label": "frozen-audit",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 29984,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "44e842fac34867563357664497617b23e7eec647da001ac8c981e67d045f2ed5",
+          "system_cpu_seconds": 0.023866,
+          "user_cpu_seconds": 0.47176799999999997,
+          "utc_completed": "2026-10-18T20:48:32.748995+00:00",
+          "utc_started": "2026-10-18T20:48:32.562816+00:00",
+          "wall_seconds": 0.1861852780020854
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-b9cb7437-e791-4ce6-98c3-83df34f90321",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 402,
+      "original_command_text_sha256": "9effbb77e27e27452c5769cf91b79533c98ed4af2852284786b08c27989417af",
+      "command_recipe_redacted": "/bin/bash -lc \"<PYTHON> - <<'PY'\nfrom pathlib import Path\nimport json\np=Path('scratch/0008-control/frozen-audit.stdout.log');a=json.loads(p.read_text());assert a=={'status':'PASS','trajectories':32,'endpoints':64,'references_opened':False};print(json.dumps(a))\nPY\n<PYTHON> scratch/0008-control/outer.py frozen-score 120 <PYTHON> scripts/run_antithetic_training.py score --cache <PROJECT>/conditional-residual-0006 --output <PROJECT>/antithetic-training-0008 --runtime-root <PROJECT>/bootstapir-cache/runtime-fixed --freeze-commit 5680e6dae68ed102147ca89eeb115010cfe13687\"",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "6799a9f50a1b26ef65d976ca0e36b69651da420c1969d3f1f3cdfd7ba84c42c8",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 120,
+          "label": "frozen-score",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 34080,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "44b35d2be689b4bacfdb164a5088ca8f6511d8966041946ae9370d0c878f29ee",
+          "system_cpu_seconds": 0.025294,
+          "user_cpu_seconds": 0.605663,
+          "utc_completed": "2026-10-18T20:48:39.479628+00:00",
+          "utc_started": "2026-10-18T20:48:39.155022+00:00",
+          "wall_seconds": 0.324616319998313
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-4b2d11e8-b4c8-45c3-95c0-c12ebabff354",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 566,
+      "original_command_text_sha256": "9401c4ecb14aaee35b81565b47a73d515bc69101b8c79f1944cdd74e5dd2eadb",
+      "command_recipe_redacted": "/bin/bash -lc '<PYTHON> scratch/0008-control/outer.py independent-replay 120 <PYTHON> scripts/check_antithetic_training.py --repo <PROJECT>/research-0008-training --cache <PROJECT>/conditional-residual-0006 --output-root <PROJECT>/antithetic-training-0008 --report <PROJECT>/scratch/0008-control/independent-replay.json'",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "1e01b32d3067108821859c6872d00b8279641e8930045b72457ccd5018b0fa08",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 120,
+          "label": "independent-replay",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 32444,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "150e4371afa84cde060d477856f96fd55d2851b7ac8d6a7ad798813f2b9ae923",
+          "system_cpu_seconds": 0.028005,
+          "user_cpu_seconds": 0.7855409999999999,
+          "utc_completed": "2026-10-18T20:48:47.568743+00:00",
+          "utc_started": "2026-10-18T20:48:47.063518+00:00",
+          "wall_seconds": 0.5052338850000524
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-ad88f375-394f-47e4-ae67-7a12b544a339",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "original_command_text_sha256": "8beecba17304ca394986a192a425e7d980abb612a93e412c3eddeb8af6f86d8d",
+      "command_recipe_redacted": "/bin/bash -lc \"<PYTHON> - <<'PY'\nimport json,hashlib\nfrom pathlib import Path\nr=Path('antithetic-training-0008');s=json.loads((r/'scores.json').read_text());i=json.loads(Path('scratch/0008-control/independent-replay.json').read_text())\nprint(json.dumps({'score_status':s['status'],'gates':s['gates'],'endpoints':{k:{n:v[n] for n in ('mean_gain_db','group_mean_gain_db','mean_candidate_first_difference_mse','mean_corresponding_control_first_difference_mse','gates','pipeline_seconds_by_method')} for k,v in s['endpoints'].items()},'wall5s_cost_ratio':s['wall5s_candidate_vs_independent_pipeline_ratio'],'scores_sha256':hashlib.sha256((r/'scores.json').read_bytes()).hexdigest(),'independent':{k:v for k,v in i.items() if k not in ('trajectory_receipts','reference_files')},'independent_report_sha256':hashlib.sha256(Path('scratch/0008-control/independent-replay.json').read_bytes()).hexdigest()},indent=2))\nPY\"",
+      "output_truncated": false,
+      "observed_child_records": []
+    },
+    {
+      "tool_item_id": "exec-32140546-97a7-4015-8eec-bb17dcbadad5",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 467,
+      "original_command_text_sha256": "afd63604ee6c90ff12a28ba4cf89fce6e4f7162921a286f3e4c6850eadce75ee",
+      "command_recipe_redacted": "/bin/bash -lc '<PYTHON> scratch/0008-control/outer.py postcheck 120 <PYTHON> <PROJECT>/scratch/0008-control/postcheck.py'",
+      "output_truncated": false,
+      "observed_child_records": [
+        {
+          "actual_exit": 0,
+          "address_space_bytes": 8589934592,
+          "command_file_sha256": "16816fc8f80319d9e01fafeec184afbec4d1636c434a590532decb520da64685",
+          "cpu_affinity": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "execution_main": "74f9330014aa8a13a8c55785992e115f045f2fa9",
+          "hard_timeout_seconds": 120,
+          "label": "postcheck",
+          "outer_parent_exit_observation": "No additional supervisor observes this parent; record is actual wait4 of the timeout child.",
+          "outer_source_sha256": "9c28abd98b6ce26d57f091b0430077ba7f9b17be19728384a64291107fbe7379",
+          "peak_rss_kib": 14284,
+          "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "raw_wait_status": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "d883dda6c43df62d75199df5fdfe0aa50641d93f5ac3d0d4aa27d7b9b6595afe",
+          "system_cpu_seconds": 0.121999,
+          "user_cpu_seconds": 0.27937,
+          "utc_completed": "2026-10-18T20:49:31.008679+00:00",
+          "utc_started": "2026-10-18T20:49:30.607578+00:00",
+          "wall_seconds": 0.40111029200124904
+        }
+      ]
+    },
+    {
+      "tool_item_id": "exec-52420823-5c4c-4947-a686-2d988ffdf1b7",
+      "status": "completed",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "original_command_text_sha256": "6c96ac136e661fb78e59985b2b5100a8e39f77a21afbb8fd4fe087f30d7fecf0",
+      "command_recipe_redacted": "/bin/bash -lc \"<PYTHON> - <<'PY'\nimport json,hashlib\nfrom pathlib import Path\nroot=Path('<PROJECT>');c=root/'scratch/0008-control';o=root/'antithetic-training-0008'\ndef sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()\ns=json.loads((o/'scores.json').read_text());p=json.loads((c/'postcheck.json').read_text());i=json.loads((c/'independent-replay.json').read_text());ex={}\nfor f in sorted(c.glob('*.execution.json')):\n e=json.loads(f.read_text());assert e['actual_exit']==e['raw_wait_status']==0\n label=e['label']\n for suffix,key in (('.stdout.log','stdout_sha256'),('.stderr.log','stderr_sha256'),('.command.private.json','command_file_sha256')):assert sha(c/(label+suffix))==e[key]\n ex[label]={k:e[k] for k in ('actual_exit','raw_wait_status','wall_seconds','peak_rss_kib')}\nsummary={'scientific_status':'completed_once','decision':s['status'],'exceptions':[],'runtime_tests':{'passed':51,'skipped':0},'independent_self_test_groups':16,'trajectories':32,'locked_predictions':64,'endpoints':{k:{'mean_gain_db':v['mean_gain_db'],'positive_image_means':sum(x>0 for x in v['group_mean_gain_db'].values()),'minimum_image_mean_gain_db':min(v['group_mean_gain_db'].values()),'first_difference_mse_ratio':v['mean_candidate_first_difference_mse']/v['mean_corresponding_control_first_difference_mse'],'gates':v['gates']} for k,v in s['endpoints'].items()},'wall5s_allocated_outer_cost_ratio':s['wall5s_candidate_vs_independent_pipeline_ratio'],'outer_executions':ex,'scores_sha256':sha(o/'scores.json'),'independent_report_sha256':sha(c/'independent-replay.json'),'independent_replay_status':i['status'],'independent_checks':i['checks'],'independent_max_absolute_difference':i['max_absolute_difference'],'preservation_status':p['status'],'prior_public_result_files_preserved':p['prior_public_result_files_preserved'],'historical_tree_counts_preserved':p['historical_tree_counts_preserved'],'old_markers_preserved':p['old_markers_preserved'],'wall_endpoint_capture_min_seconds':p['wall_endpoint_capture_min_seconds'],'wall_endpoint_capture_max_seconds':p['wall_endpoint_capture_max_seconds'],'trajectory_update_range':p['trajectory_update_range'],'total_actual_optimizer_updates':sum(json.loads(f.read_text())['fit']['optimizer_steps_executed'] for f in o.glob('cases/*/receipt.json')),'actual_mc_forward_calls':sum(r['inference']['forward_calls'] for f in o.glob('cases/*/receipt.json') for r in json.loads(f.read_text())['endpoints'].values()),'actual_mc_scalar_draws':sum(r['inference']['standard_normal_draws'] for f in o.glob('cases/*/receipt.json') for r in json.loads(f.read_text())['endpoints'].values()),'study_completed_sha256':sha(o/'study.completed.json'),'control_outer_source_sha256':sha(c/'outer.py'),'postcheck_sha256':sha(c/'postcheck.json'),'output_root':str(o),'control_root':str(c),'new_asset_bytes':0,'asset_ceiling_bytes':7532690072,'publication_performed':False,'source_files_modified':False,'manuscript_claim':False}\nwith (c/'compact-execution.json').open('x') as f:json.dump(summary,f,indent=2,allow_nan=False);f.write('\\\\n')\nprint(json.dumps({k:v for k,v in summary.items() if k not in ('outer_executions','endpoints')},sort_keys=True))\nPY\"",
+      "output_truncated": false,
+      "observed_child_records": []
+    }
+  ]
+}

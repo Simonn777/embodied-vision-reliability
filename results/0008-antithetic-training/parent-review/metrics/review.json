@@ -1,0 +1,354 @@
+{
+  "status": "PASS",
+  "scientific_decision": "stop_this_candidate",
+  "publication_commit": "70bc57fd83634a8df66aecf072ea9b526e3af043",
+  "source_commit": "829688df750964d796417da569f0710453f62ca7",
+  "freeze_commit": "5680e6dae68ed102147ca89eeb115010cfe13687",
+  "freeze_sha256": "f513c01f78e238ca0daef2427bb8ab756efafc7bd0965337ac073c8848dc83f5",
+  "frozen_inputs_verified": 13,
+  "checks": 89135,
+  "numeric_checks": 1609,
+  "max_absolute_difference": 1.0658141036401503e-14,
+  "rtol": 1e-10,
+  "atol": 1e-12,
+  "endpoints": {
+    "updates500": {
+      "pairs": [
+        {
+          "group": "d1",
+          "seed": 0,
+          "oracle_best_control": "random_antithetic",
+          "candidate_psnr_db": 32.528643512455616,
+          "control_psnr_db": 32.73570688505194,
+          "gain_db": -0.20706337259632335,
+          "candidate_first_difference_mse": 0.00014931766623411933,
+          "control_first_difference_mse": 0.00013531709420526867
+        },
+        {
+          "group": "d1",
+          "seed": 1,
+          "oracle_best_control": "same_patch",
+          "candidate_psnr_db": 31.8603050798227,
+          "control_psnr_db": 32.49246920575125,
+          "gain_db": -0.6321641259285471,
+          "candidate_first_difference_mse": 0.00013283681574290308,
+          "control_first_difference_mse": 0.00010890090757257878
+        },
+        {
+          "group": "d2",
+          "seed": 0,
+          "oracle_best_control": "random_antithetic",
+          "candidate_psnr_db": 30.778461877189265,
+          "control_psnr_db": 30.937307735171082,
+          "gain_db": -0.1588458579818166,
+          "candidate_first_difference_mse": 0.00020584391864278043,
+          "control_first_difference_mse": 0.00019719243008138474
+        },
+        {
+          "group": "d2",
+          "seed": 1,
+          "oracle_best_control": "independent",
+          "candidate_psnr_db": 30.81522424489153,
+          "control_psnr_db": 30.929965474842263,
+          "gain_db": -0.11474122995073088,
+          "candidate_first_difference_mse": 0.00014898735228672998,
+          "control_first_difference_mse": 0.0001470524444426963
+        },
+        {
+          "group": "d3",
+          "seed": 0,
+          "oracle_best_control": "random_antithetic",
+          "candidate_psnr_db": 29.84760269572661,
+          "control_psnr_db": 30.08182408601086,
+          "gain_db": -0.23422139028425093,
+          "candidate_first_difference_mse": 0.00018736376276593666,
+          "control_first_difference_mse": 0.00019049264625335037
+        },
+        {
+          "group": "d3",
+          "seed": 1,
+          "oracle_best_control": "independent",
+          "candidate_psnr_db": 30.438517954886066,
+          "control_psnr_db": 30.619898261480316,
+          "gain_db": -0.18138030659424942,
+          "candidate_first_difference_mse": 0.0001885272633306725,
+          "control_first_difference_mse": 0.00017168944319303703
+        },
+        {
+          "group": "d4",
+          "seed": 0,
+          "oracle_best_control": "random_antithetic",
+          "candidate_psnr_db": 36.43052002477485,
+          "control_psnr_db": 35.05992117193989,
+          "gain_db": 1.3705988528349593,
+          "candidate_first_difference_mse": 7.067626751639897e-05,
+          "control_first_difference_mse": 0.00010741931236907273
+        },
+        {
+          "group": "d4",
+          "seed": 1,
+          "oracle_best_control": "random_antithetic",
+          "candidate_psnr_db": 35.94122246666379,
+          "control_psnr_db": 35.79104940429481,
+          "gain_db": 0.1501730623689781,
+          "candidate_first_difference_mse": 0.00011389266425236143,
+          "control_first_difference_mse": 0.00010911886943980546
+        }
+      ],
+      "mean_gain_db": -0.0009555460164976104,
+      "group_mean_gain_db": {
+        "d1": -0.4196137492624352,
+        "d2": -0.13679354396627375,
+        "d3": -0.20780084843925017,
+        "d4": 0.7603859576019687
+      },
+      "mean_candidate_first_difference_mse": 0.0001496807138464878,
+      "mean_corresponding_control_first_difference_mse": 0.00014589789344464927,
+      "gates": {
+        "finite_paired_db_gains": true,
+        "mean_gain_ge_0_5_db": false,
+        "at_least3_group_means_gt0": false,
+        "each_group_mean_ge_minus0_2_db": false,
+        "mean_pooled_first_difference_le_1_05": true
+      },
+      "pipeline_seconds_by_method": {
+        "independent": 27.496621859994775,
+        "random_antithetic": 27.68403942000441,
+        "mean_antithetic": 28.14130796099562,
+        "same_patch": 27.43505934699715
+      }
+    },
+    "wall5s": {
+      "pairs": [
+        {
+          "group": "d1",
+          "seed": 0,
+          "oracle_best_control": "same_patch",
+          "candidate_psnr_db": 32.33325837341223,
+          "control_psnr_db": 32.425492796588806,
+          "gain_db": -0.0922344231765777,
+          "candidate_first_difference_mse": 0.00029772287037088023,
+          "control_first_difference_mse": 0.00033172879043163404
+        },
+        {
+          "group": "d1",
+          "seed": 1,
+          "oracle_best_control": "independent",
+          "candidate_psnr_db": 32.48528034038117,
+          "control_psnr_db": 32.688801459567514,
+          "gain_db": -0.20352111918634108,
+          "candidate_first_difference_mse": 0.00023122130199081084,
+          "control_first_difference_mse": 0.0002074979567743007
+        },
+        {
+          "group": "d2",
+          "seed": 0,
+          "oracle_best_control": "independent",
+          "candidate_psnr_db": 29.7853280650843,
+          "control_psnr_db": 29.951018412930846,
+          "gain_db": -0.1656903478465459,
+          "candidate_first_difference_mse": 0.0003992047312637383,
+          "control_first_difference_mse": 0.0003588590068948609
+        },
+        {
+          "group": "d2",
+          "seed": 1,
+          "oracle_best_control": "random_antithetic",
+          "candidate_psnr_db": 30.12114064115886,
+          "control_psnr_db": 30.08907064861763,
+          "gain_db": 0.03206999254123133,
+          "candidate_first_difference_mse": 0.0002973252237082166,
+          "control_first_difference_mse": 0.00033392329279972795
+        },
+        {
+          "group": "d3",
+          "seed": 0,
+          "oracle_best_control": "random_antithetic",
+          "candidate_psnr_db": 30.159243175466067,
+          "control_psnr_db": 30.040058889267968,
+          "gain_db": 0.11918428619809873,
+          "candidate_first_difference_mse": 0.0002983467391931645,
+          "control_first_difference_mse": 0.00032333277277249325
+        },
+        {
+          "group": "d3",
+          "seed": 1,
+          "oracle_best_control": "same_patch",
+          "candidate_psnr_db": 30.72285427769299,
+          "control_psnr_db": 30.874621476653257,
+          "gain_db": -0.15176719896026825,
+          "candidate_first_difference_mse": 0.0002823566271756985,
+          "control_first_difference_mse": 0.000227279619628755
+        },
+        {
+          "group": "d4",
+          "seed": 0,
+          "oracle_best_control": "independent",
+          "candidate_psnr_db": 36.607164790218526,
+          "control_psnr_db": 37.222096830010486,
+          "gain_db": -0.6149320397919595,
+          "candidate_first_difference_mse": 6.335636161078001e-05,
+          "control_first_difference_mse": 3.96157290562125e-05
+        },
+        {
+          "group": "d4",
+          "seed": 1,
+          "oracle_best_control": "independent",
+          "candidate_psnr_db": 36.27262852076395,
+          "control_psnr_db": 37.83625997341195,
+          "gain_db": -1.5636314526479964,
+          "candidate_first_difference_mse": 8.254231743263532e-05,
+          "control_first_difference_mse": 4.0675203732956754e-05
+        }
+      ],
+      "mean_gain_db": -0.33006528785879485,
+      "group_mean_gain_db": {
+        "d1": -0.1478777711814594,
+        "d2": -0.06681017765265729,
+        "d3": -0.016291456381084757,
+        "d4": -1.089281746219978
+      },
+      "mean_candidate_first_difference_mse": 0.00024400952159324055,
+      "mean_corresponding_control_first_difference_mse": 0.00023286404651136765,
+      "gates": {
+        "finite_paired_db_gains": true,
+        "mean_gain_ge_0_5_db": false,
+        "at_least3_group_means_gt0": false,
+        "each_group_mean_ge_minus0_2_db": false,
+        "mean_pooled_first_difference_le_1_05": true
+      },
+      "pipeline_seconds_by_method": {
+        "independent": 61.16598659198644,
+        "random_antithetic": 60.94499280000309,
+        "mean_antithetic": 60.905999259990494,
+        "same_patch": 61.08794259098795
+      }
+    }
+  },
+  "wall5s_cost_ratio": 0.9957494786484813,
+  "counts": {
+    "trajectories": 32,
+    "endpoints": 64,
+    "blocks": 4096,
+    "actual_optimizer_updates": 98994,
+    "inference_forward_calls": 48000,
+    "inference_normal_scalars": 2333811200
+  },
+  "timing": {
+    "actual_case_outer_wall_sum_seconds": 260.0609781540006,
+    "actual_study_outer_wall_seconds": 260.1861582160018,
+    "study_inner_wall_seconds": 260.10785466699963,
+    "wall_capture_range_seconds": [
+      5.000254870999925,
+      5.0034228559998155
+    ],
+    "wall_endpoint_update_ranges": {
+      "independent": [
+        2871,
+        3470
+      ],
+      "random_antithetic": [
+        2885,
+        3289
+      ],
+      "mean_antithetic": [
+        2836,
+        3197
+      ],
+      "same_patch": [
+        2985,
+        3333
+      ]
+    },
+    "cost_interpretation": "Two correlated allocations per shared trajectory; neither standalone reruns nor additive consumed compute."
+  },
+  "cloud_raw_array_replay_report": {
+    "checks": 45770,
+    "numeric_checks": 5287,
+    "max_absolute_difference": 7.105427357601002e-15,
+    "scope": "Archived cloud report only; not a locally repeated raw-array replay."
+  },
+  "scope": "Independent public block/SSE/count algebra and saved receipt links only. No pixel arrays, model calls, production imports, cloud commands or external tool-status observations.",
+  "raw_array_reads": 0,
+  "model_calls": 0,
+  "production_imports": false,
+  "file_sha256": {
+    "protocols/0008-training-freeze.json": "f513c01f78e238ca0daef2427bb8ab756efafc7bd0965337ac073c8848dc83f5",
+    "results/0008-antithetic-training/source-bindings.json": "c494ad85fc777998a7e4c8a0b561275021bdf38ed9c167e5a4419e93e6818731",
+    "configs/0008-training.json": "b61e7e0c41603518a2170599f6a40ccb49b3e46db0cc18fa4dfc04978fbc375a",
+    "results/0008-antithetic-training/study/scores.json": "810cfd9384c475dc0df3d048bcd98a5bd33f96993e70e15d6ef69d68e40943e7",
+    "results/0008-antithetic-training/study/study.started.json": "dabfaef27e786da959795a5af9f79de6632aaba485adea12f78cdc4e3366d8b9",
+    "results/0008-antithetic-training/study/study.completed.json": "92ec0607553bbd10ac27cd088ea2def80a8f742b039b57e92444497b65dbdc4f",
+    "results/0008-antithetic-training/trajectory-costs.json": "fde7fe01581cb5f6e2c9a428ac85a3b9619bd862b27dfe9ce9fba23554e24006",
+    "results/0008-antithetic-training/outer-control/postcheck.json": "34c911ea286e765ed579d7078dd59dd0a3b2c33c2e58c7f08b120c797db0009c",
+    "results/0008-antithetic-training/trajectories/d1-colored-0-independent/receipt.json": "33c3065388e3b3a59bcb669d6875bd78645fa4e1f0c74215dbbe1f08dd0f619f",
+    "results/0008-antithetic-training/trajectory-control/d1-colored-0-independent.execution.json": "b69226d646783ebeee4a6c14a2dbea6ded3e213625e5cb06096d43e5669365d3",
+    "results/0008-antithetic-training/trajectories/d1-colored-0-random_antithetic/receipt.json": "eb7c39a985807a55d36131dd7c3a45eb48b17f0fa49f045c4607ea459010ce67",
+    "results/0008-antithetic-training/trajectory-control/d1-colored-0-random_antithetic.execution.json": "c9da16c5568132b80d9c7980c2a0abe4e281b9b92befe0788c5556cd469f28e7",
+    "results/0008-antithetic-training/trajectories/d1-colored-0-mean_antithetic/receipt.json": "dfaca04eeb64d4bbc5f0e1a45e189d9c5104e91951f4e2e23b3f474fd70884da",
+    "results/0008-antithetic-training/trajectory-control/d1-colored-0-mean_antithetic.execution.json": "70248763eeeeeaed0f1cc918f54406be7628b7af63523be774ab724db07f4bcb",
+    "results/0008-antithetic-training/trajectories/d1-colored-0-same_patch/receipt.json": "980e6669e8f71a3ea094de6e957b704a4a150e31bade9fbbf6dbf7629b429623",
+    "results/0008-antithetic-training/trajectory-control/d1-colored-0-same_patch.execution.json": "df8cd4a233890b7a0bc3fe3fd5d728f6e9704af88868d33f6147dc09d4de89d2",
+    "results/0008-antithetic-training/trajectories/d1-colored-1-independent/receipt.json": "2c85f2259a65ce58af2e96b7f1d59e0b2c9f5746367be0683aca92bf06f32584",
+    "results/0008-antithetic-training/trajectory-control/d1-colored-1-independent.execution.json": "87ab578fa7461e815297193f61b8dddde734d0a51a2e8e9f6126f3fa6d33381e",
+    "results/0008-antithetic-training/trajectories/d1-colored-1-random_antithetic/receipt.json": "bf58338d8394f519b569a8d282bff2061f1f70cddf32cc753ab5d6e3d07642ef",
+    "results/0008-antithetic-training/trajectory-control/d1-colored-1-random_antithetic.execution.json": "723eb77017b27073fa37d9aad0c39e786e2725916a930456b8edeee2c7cb133d",
+    "results/0008-antithetic-training/trajectories/d1-colored-1-mean_antithetic/receipt.json": "1fd07240520a144907b86c24a962b2cdf9d22da535487afff87cd9be9d095509",
+    "results/0008-antithetic-training/trajectory-control/d1-colored-1-mean_antithetic.execution.json": "b5ca46360a9428addd7c1f6a29a2c1dae02bbe3183b41c8cc0fb216e48866c56",
+    "results/0008-antithetic-training/trajectories/d1-colored-1-same_patch/receipt.json": "9eecfb08bd3adc2f76926ee35a20294e2c45a6d2009fcd371a747e08f9a3b268",
+    "results/0008-antithetic-training/trajectory-control/d1-colored-1-same_patch.execution.json": "2011fcd51cc1d5253211f88ea72fbd0f888773c46ad15381eb91f993f7ccddd1",
+    "results/0008-antithetic-training/trajectories/d2-colored-0-independent/receipt.json": "9ca1e6dd40b7cf1cc591d7de0f2f3b0f7c9255877819bd08262e289b20bd82a3",
+    "results/0008-antithetic-training/trajectory-control/d2-colored-0-independent.execution.json": "215fa3fb6c58b88cae153fb8af97e2cfdce81621f0de0ff559996953d048c915",
+    "results/0008-antithetic-training/trajectories/d2-colored-0-random_antithetic/receipt.json": "9f164a3ae64189d7e6b17f04d1928d97f56d8b40fe21b85c57ff7911d6da4d46",
+    "results/0008-antithetic-training/trajectory-control/d2-colored-0-random_antithetic.execution.json": "b88f742950459d2808eec965e9e3f5fd887e4ba6465e4affc6b6b8d20cc0e26a",
+    "results/0008-antithetic-training/trajectories/d2-colored-0-mean_antithetic/receipt.json": "8a7e5ffae3526d5cf25357b7e0a56e3e73413981f107719d0fd7d7b07b42f33c",
+    "results/0008-antithetic-training/trajectory-control/d2-colored-0-mean_antithetic.execution.json": "c859655b63cf88749e61f74e38facd124a53d70f867b40556d21ab37ff6400c6",
+    "results/0008-antithetic-training/trajectories/d2-colored-0-same_patch/receipt.json": "1a2f09f5ae066cb832523ac0b3d42c199e2ef5999e299cb6472022bfce1bd8db",
+    "results/0008-antithetic-training/trajectory-control/d2-colored-0-same_patch.execution.json": "8d9718472fe4c6e614d9df3a7a2d694b9183248cb756e40eebf10e032b41d25c",
+    "results/0008-antithetic-training/trajectories/d2-colored-1-independent/receipt.json": "52886126dd219ac04eeaa77245fa7ed48da13f815ae187f5ab96a29792e317d0",
+    "results/0008-antithetic-training/trajectory-control/d2-colored-1-independent.execution.json": "2eb750465b70524ce9b4805955fb4d9520b9515dd89f37bb5b31dec30a677bb3",
+    "results/0008-antithetic-training/trajectories/d2-colored-1-random_antithetic/receipt.json": "35ed08cc26bc97a3fa5597f43b3385077f9f606204220c4ba11f13029aeb0162",
+    "results/0008-antithetic-training/trajectory-control/d2-colored-1-random_antithetic.execution.json": "db52cfe03d81a067350d4c32ebd29813f65424361142a11c2aaa05b8894873df",
+    "results/0008-antithetic-training/trajectories/d2-colored-1-mean_antithetic/receipt.json": "ce34c074479f74f16e8442db12dc722d6c4cbc2c425cbb52a14b73965dbf9bbf",
+    "results/0008-antithetic-training/trajectory-control/d2-colored-1-mean_antithetic.execution.json": "045a6acfb55121072e968742d4c3eed277fb7bd05adc993f3ee256baaf10f313",
+    "results/0008-antithetic-training/trajectories/d2-colored-1-same_patch/receipt.json": "0ac38c97aa05e82ebd8cc4e117382c598f43fe6c111eb15898dbc812ae7ddd83",
+    "results/0008-antithetic-training/trajectory-control/d2-colored-1-same_patch.execution.json": "90b3f59a0f13266235ab7e84b26e1f4f2d8e01eb728165af8dd99f65cd963a0b",
+    "results/0008-antithetic-training/trajectories/d3-colored-0-independent/receipt.json": "73e8699ffd4e241e685e648ca0840ff41920b544ce7534d9550f096d0f1cbc1c",
+    "results/0008-antithetic-training/trajectory-control/d3-colored-0-independent.execution.json": "2db02a92472d5b82caa92c850693461988636513d5d9f6b69e769a0ae8759d9c",
+    "results/0008-antithetic-training/trajectories/d3-colored-0-random_antithetic/receipt.json": "eaa1f5e14446647c12ec998101e85712051b172ae574f6a81713b78779739c4c",
+    "results/0008-antithetic-training/trajectory-control/d3-colored-0-random_antithetic.execution.json": "ddb55f41281af1e4b02e325522bd87de2c4813f2d577384f23ccba8909870205",
+    "results/0008-antithetic-training/trajectories/d3-colored-0-mean_antithetic/receipt.json": "d5648649cda4a2c7a7c9b38e1b5cc767ff34eaf5f72009f4305e647e6d36d8bb",
+    "results/0008-antithetic-training/trajectory-control/d3-colored-0-mean_antithetic.execution.json": "1f0afae0ddf7ee17a79585bfbd0a0ec080b2ab5942117101df90c0c04bddf5b4",
+    "results/0008-antithetic-training/trajectories/d3-colored-0-same_patch/receipt.json": "8dcab91ec6e090230a86ed203ff63a628d39e9be9a55635fa71f70c1c7817a2a",
+    "results/0008-antithetic-training/trajectory-control/d3-colored-0-same_patch.execution.json": "566dae222b181ffa41013971fe259486131a82a019d3548c22c758b341aede1d",
+    "results/0008-antithetic-training/trajectories/d3-colored-1-independent/receipt.json": "92268c5b16f7c93d6eb1bef43952d0eed02e37388893394ae623e78ac2650f87",
+    "results/0008-antithetic-training/trajectory-control/d3-colored-1-independent.execution.json": "a878cbffcdfa9dc496eccac2048c05ae58ae2f77d56fe96cce0e7241e081c84b",
+    "results/0008-antithetic-training/trajectories/d3-colored-1-random_antithetic/receipt.json": "0e5701eca20654b3ac516b661ca1eeb03c9bb73d63eddc1f6cdf2d80a09cb878",
+    "results/0008-antithetic-training/trajectory-control/d3-colored-1-random_antithetic.execution.json": "5ee85d91c35062679403d9d7773a4a2e423fe2f1970b0da18954b5771c7c4f14",
+    "results/0008-antithetic-training/trajectories/d3-colored-1-mean_antithetic/receipt.json": "b8074583bb203f1135bcace74e2a981c7bf3fc7f78b6c8c08ba86f25b8df19b6",
+    "results/0008-antithetic-training/trajectory-control/d3-colored-1-mean_antithetic.execution.json": "3f4266ac8898124d4b2ff577254c260e72bbc764be7a220b5dfbb007ba7588b2",
+    "results/0008-antithetic-training/trajectories/d3-colored-1-same_patch/receipt.json": "90520ad23d8fdfa7a69389ee245ac5f2cf0301831e479e1e0b4876302b43ffb9",
+    "results/0008-antithetic-training/trajectory-control/d3-colored-1-same_patch.execution.json": "2ed59e8ca11f71e97790b508988b5b287a4d9673c70527da24637029d4802fdb",
+    "results/0008-antithetic-training/trajectories/d4-colored-0-independent/receipt.json": "8531738d62c2b9efe911a26ac6c84f13d230e43fafa5edac763e4ca7600df0da",
+    "results/0008-antithetic-training/trajectory-control/d4-colored-0-independent.execution.json": "fa14d8b1fafb01add1c7c149a12f2b8d2122aaed6693d9db6e5f7d1fbddfcc86",
+    "results/0008-antithetic-training/trajectories/d4-colored-0-random_antithetic/receipt.json": "ed97e17cd1fdfdd78390f7500d58de51dd6b8797ff210c75f5011dae267b015b",
+    "results/0008-antithetic-training/trajectory-control/d4-colored-0-random_antithetic.execution.json": "cd64745cb5c4b71c814f66c889bca607f250737c0a6692cff8e2236fa7e0e53b",
+    "results/0008-antithetic-training/trajectories/d4-colored-0-mean_antithetic/receipt.json": "d1e0c2198901f6a39c0f6efb3489d56a11ca17ceefa7338a19bab18d662c6f69",
+    "results/0008-antithetic-training/trajectory-control/d4-colored-0-mean_antithetic.execution.json": "9fd2ee33a54867fcda136ed4190b15f365682ab14bf1fa6e1b13202107dc37c4",
+    "results/0008-antithetic-training/trajectories/d4-colored-0-same_patch/receipt.json": "764467ef7c8a134ca982f13f3bed29f37547b0b1db06a6ac243d1ea154b8962e",
+    "results/0008-antithetic-training/trajectory-control/d4-colored-0-same_patch.execution.json": "b6d946a8d5a6b9a1a9509dfee99c291b81cb9413bb77c91d6de12a91c61867d9",
+    "results/0008-antithetic-training/trajectories/d4-colored-1-independent/receipt.json": "4d1b9a3ad2f1d555b5121d614edf0d515c663b72506f9f28ab5dd75c301bc284",
+    "results/0008-antithetic-training/trajectory-control/d4-colored-1-independent.execution.json": "ee08890f2f5cdc61bc83b38477dfb98de3a02d2b31f28e375c0c562c92fa3e48",
+    "results/0008-antithetic-training/trajectories/d4-colored-1-random_antithetic/receipt.json": "d345525607b6d553f04540edf19082b1a2c20965a9125160d972ead17ad76a0c",
+    "results/0008-antithetic-training/trajectory-control/d4-colored-1-random_antithetic.execution.json": "32a7f393121d44f6cd827e2dfcf69ea71f78a61f9a9759bbfbeb74af13ab7cb5",
+    "results/0008-antithetic-training/trajectories/d4-colored-1-mean_antithetic/receipt.json": "0be81d59d56eab892361f6909d9b1f33f9a4ad330c7cb54c0ffeed4d453c4d14",
+    "results/0008-antithetic-training/trajectory-control/d4-colored-1-mean_antithetic.execution.json": "cf7c9d5fc007b2b56df559c105ee95b1b14389be1ec56e4ba9611891099866a1",
+    "results/0008-antithetic-training/trajectories/d4-colored-1-same_patch/receipt.json": "6df114806cb5e06cd0df1089a7b1504a6fdb9360671354295d9f37be9dfcebcc",
+    "results/0008-antithetic-training/trajectory-control/d4-colored-1-same_patch.execution.json": "b2616aa9247e26fa19224a8cfc574dae6522dc8cb0e3e078e19de7c62b3a5b93",
+    "results/0008-antithetic-training/outer-control/scientific-run.execution.json": "40cb47532ce77a83dfc8235843e39b5d2bc47261f5cd55ac1a0a3bfb80d39276",
+    "results/0008-antithetic-training/outer-control/independent-replay.json": "75247b4e4d723ab8f7bc4a68d0a3ec3ba7f3641a6aa5733eb97e53128b24d716"
+  },
+  "reviewer_sha256": "79af931beff64be3f08f741535eb52e72b2c1dc44b9c4c823843f94b07a36181",
+  "python_version": "3.9.6",
+  "elapsed_seconds": 1.6234967089999999
+}

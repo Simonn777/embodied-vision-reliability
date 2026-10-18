@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "timeout",
+    "--kill-after=5s",
+    "120",
+    "<PYTHON>",
+    "<PROJECT_ROOT>/scratch/0008-control/preflight.py"
+  ],
+  "cwd": "<PROJECT_ROOT>/research-0008-training",
+  "PYTHONPATH": "<PROJECT_ROOT>/bootstapir-cache/runtime-fixed",
+  "threads": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "address_space_bytes": 8589934592
+}

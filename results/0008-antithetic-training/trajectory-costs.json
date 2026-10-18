@@ -1,0 +1,1833 @@
+{
+  "source_relative": "antithetic-training-0008/study.completed.json",
+  "source_sha256": "92ec0607553bbd10ac27cd088ea2def80a8f742b039b57e92444497b65dbdc4f",
+  "kind": "saved_JSON_cost_summary_not_new_measurement",
+  "actual_case_outer_wall_sum_seconds": 260.0609781540006,
+  "study_outer_wall_seconds": 260.1861582160018,
+  "trajectories": [
+    {
+      "trajectory": "d1-colored-0-independent",
+      "actual_outer_wall_seconds": 8.238254564003,
+      "peak_rss_kib": 303628,
+      "actual_exit": 0,
+      "input_seconds": 0.0011658630028250627,
+      "shared_setup_seconds": 0.6231119539988867,
+      "training_wall_seconds": 5.0002734109984885,
+      "completed_updates": 2871,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.7188485310034594,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.9712539659994945,
+            "update_completion_elapsed_seconds": 0.9712539659994945,
+            "state_dict_sha256": "58863e2ea9f1517f35753cd99c25e92b0496448911534ce67060c0bd63e9a30b",
+            "stream_sha256": {
+              "base_indices": "587c6accf98fbc9e02c70fac39dd90b0ac3ac866d0315c783f69dd398a31b830",
+              "used_indices": "587c6accf98fbc9e02c70fac39dd90b0ac3ac866d0315c783f69dd398a31b830",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "4e1c00f4b26d8ee360289b9098495e77d7c2d839787ba13e20696eff792589bb",
+              "step_seed_tuple": "162d91a14e7c34743e25650afd79e2c7acabcc1e3e071fd803331a0e1c0e12f9"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.9715530379980919,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0007107700002961792,
+          "restore_infer_save_seconds": 0.48319853100110777,
+          "algorithm_pipeline_seconds": 2.0797401560012077
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.754338072001701,
+          "training": {
+            "step": 2871,
+            "boundary_elapsed_seconds": 5.000041688999772,
+            "update_completion_elapsed_seconds": 5.000041688999772,
+            "state_dict_sha256": "5b51e94bbaefadfe35101e6a5e10f54d17a4fbcff40b43750be28ae48a942123",
+            "stream_sha256": {
+              "base_indices": "80ac758a3ce627873ef5d33f3ea14b54dfbbe7aeb3d5305c89b9649ba9162074",
+              "used_indices": "80ac758a3ce627873ef5d33f3ea14b54dfbbe7aeb3d5305c89b9649ba9162074",
+              "pair_order": "42364a7a8d280f0e32e21d7a72b999c17a4a9844dbfc28d7c9cecd8062bd83be",
+              "gaussian_prefix": "96a2315ad11538cc6cd705635fa692732a30b3e33a699daa795150da17c2b577",
+              "step_seed_tuple": "91efe9b1f1c0951c59905f4e8bdf1ffd87c8f1f3986ec0981dc2e1dab4796c2b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000266219998593,
+            "overrun_seconds": 0.00026621999859344214,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00043127699973410927,
+          "restore_infer_save_seconds": 0.49025438299941015,
+          "algorithm_pipeline_seconds": 6.1152296969994495
+        }
+      }
+    },
+    {
+      "trajectory": "d1-colored-0-random_antithetic",
+      "actual_outer_wall_seconds": 8.39187159300127,
+      "peak_rss_kib": 304072,
+      "actual_exit": 0,
+      "input_seconds": 0.0010309040007996373,
+      "shared_setup_seconds": 0.5956285969987221,
+      "training_wall_seconds": 5.003433361998759,
+      "completed_updates": 2919,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.771152453002287,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.9004751640022732,
+            "update_completion_elapsed_seconds": 0.9004751640022732,
+            "state_dict_sha256": "1a62ec002b7162af9380773822eb903e1d52b7f106c81e1d2ada9fcace5c091d",
+            "stream_sha256": {
+              "base_indices": "587c6accf98fbc9e02c70fac39dd90b0ac3ac866d0315c783f69dd398a31b830",
+              "used_indices": "6dedd8e858c4206ff3cb769a8feda5fecd674ab810df2638dd5c88697e877529",
+              "pair_order": "1e0bd0f2bbacfb39d5ce15d80893d91e858e437209ccc221137760d520880d94",
+              "gaussian_prefix": "4e1c00f4b26d8ee360289b9098495e77d7c2d839787ba13e20696eff792589bb",
+              "step_seed_tuple": "162d91a14e7c34743e25650afd79e2c7acabcc1e3e071fd803331a0e1c0e12f9"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.9007105919990863,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006692789975204505,
+          "restore_infer_save_seconds": 0.6170557740006188,
+          "algorithm_pipeline_seconds": 2.1150951459967473
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.7741360340041865,
+          "training": {
+            "step": 2919,
+            "boundary_elapsed_seconds": 5.003156954000588,
+            "update_completion_elapsed_seconds": 5.003156954000588,
+            "state_dict_sha256": "d21bd032bf154106babbb9096261b4108f2fecaf78d9fe285e07ced701ab8620",
+            "stream_sha256": {
+              "base_indices": "d0479b6798fcf191848a30752a0437eb883074005b1f6f893412266c3ec1e13d",
+              "used_indices": "cab3581cf0ec47651edc3783a0e5575153ee8ece3e0b0c8cb4d0a3851496ba9a",
+              "pair_order": "91b8a6394019d97d4505def843fa102f7c667348ff64e788b30bc666b6488123",
+              "gaussian_prefix": "9c53cfe065bd0b9e03135e0c7de28a3d700c842b944b43f8d829af1d5b73bc91",
+              "step_seed_tuple": "b0e1f11884f6cf27fe80c1ebdd6b2470586700f54e9afa5af274ed3d5ce81045"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.0034228559998155,
+            "overrun_seconds": 0.0034228559998155106,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0003585400008887518,
+          "restore_infer_save_seconds": 0.5176378299984208,
+          "algorithm_pipeline_seconds": 6.118078726998647
+        }
+      }
+    },
+    {
+      "trajectory": "d1-colored-0-mean_antithetic",
+      "actual_outer_wall_seconds": 8.391275500998745,
+      "peak_rss_kib": 304540,
+      "actual_exit": 0,
+      "input_seconds": 0.0013798590007354505,
+      "shared_setup_seconds": 0.6549920750003366,
+      "training_wall_seconds": 5.000789862999227,
+      "completed_updates": 2836,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.937737816999288,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.9496745840006042,
+            "update_completion_elapsed_seconds": 0.9496745840006042,
+            "state_dict_sha256": "9905192e014cedd7218897bf2d402221a6706885f692f140ab77bbec0f9058ca",
+            "stream_sha256": {
+              "base_indices": "587c6accf98fbc9e02c70fac39dd90b0ac3ac866d0315c783f69dd398a31b830",
+              "used_indices": "96ded52ece28f64f455cf986a8edd8ff5a97a6c57bca7090a669fa36b3c45304",
+              "pair_order": "84a4f20f9ec83eec814d211465ede4882c22ecf9674b00290a712c705ce2917e",
+              "gaussian_prefix": "4e1c00f4b26d8ee360289b9098495e77d7c2d839787ba13e20696eff792589bb",
+              "step_seed_tuple": "162d91a14e7c34743e25650afd79e2c7acabcc1e3e071fd803331a0e1c0e12f9"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.9498701929987874,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0007108700010576285,
+          "restore_infer_save_seconds": 0.594025332997262,
+          "algorithm_pipeline_seconds": 2.200978329998179
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.796529614002793,
+          "training": {
+            "step": 2836,
+            "boundary_elapsed_seconds": 5.00054742499924,
+            "update_completion_elapsed_seconds": 5.00054742499924,
+            "state_dict_sha256": "58781a770253357e6971f5882b462223ff7048a14ebd5051dacf984881811fb4",
+            "stream_sha256": {
+              "base_indices": "b2e9b695f9a53088161afb82cf11cca19da961877da329250ce971255721e94b",
+              "used_indices": "10aa9fac4b421872ccb7f66f579cd8b8110c4a20df5512f06217994444177738",
+              "pair_order": "d1cf98755bf6f6c91f2569c32eea12b640de1c5e9d9823df2dfc084d5f8c5ed9",
+              "gaussian_prefix": "7c0fd9740ab40391dc1c636c767321e76b2fb3e1538ab1c8ab4b0fae028ddd3b",
+              "step_seed_tuple": "8e204b4b60dc6aab8a71b0954cef89dedade1f9decb99a871973d42ac41c520a"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000780179001595,
+            "overrun_seconds": 0.0007801790015946608,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0003528809975250624,
+          "restore_infer_save_seconds": 0.40226513300149236,
+          "algorithm_pipeline_seconds": 6.059770127001684
+        }
+      }
+    },
+    {
+      "trajectory": "d1-colored-0-same_patch",
+      "actual_outer_wall_seconds": 8.237644118002208,
+      "peak_rss_kib": 304344,
+      "actual_exit": 0,
+      "input_seconds": 0.0011085889964306261,
+      "shared_setup_seconds": 0.5481869659997756,
+      "training_wall_seconds": 5.000509721998242,
+      "completed_updates": 3117,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.5588605940065463,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8608260309993057,
+            "update_completion_elapsed_seconds": 0.8608260309993057,
+            "state_dict_sha256": "3f6fa8e1b3fc777c6e29aa5edee439a1a6cf0d5230b2eb5b4f0752217a4ed23a",
+            "stream_sha256": {
+              "base_indices": "587c6accf98fbc9e02c70fac39dd90b0ac3ac866d0315c783f69dd398a31b830",
+              "used_indices": "7d1a276309ec1d5c2777e25d580d86615f08b5d0e12ecad61ff877ba891493ee",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "4e1c00f4b26d8ee360289b9098495e77d7c2d839787ba13e20696eff792589bb",
+              "step_seed_tuple": "162d91a14e7c34743e25650afd79e2c7acabcc1e3e071fd803331a0e1c0e12f9"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8610867459974543,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0009507149989076424,
+          "restore_infer_save_seconds": 0.6014250350017392,
+          "algorithm_pipeline_seconds": 2.0127580509943073
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.6352585130007355,
+          "training": {
+            "step": 3117,
+            "boundary_elapsed_seconds": 5.0002218059998995,
+            "update_completion_elapsed_seconds": 5.0002218059998995,
+            "state_dict_sha256": "26105635a7e9bb054213e50bc292b04fb793d716838f21475319b47d0c493845",
+            "stream_sha256": {
+              "base_indices": "ecd005ab43c810d8c295ec2b7d35b11d2f9555c76bd708718192a7c25757439f",
+              "used_indices": "7392baac5f573204bfa368dc633c0ca2e0336612cb87b04a37d1bb8319c064b4",
+              "pair_order": "118d0dbbed0ca4b85174b10a913718bba0d1de84cb4b566d3b6eefd9aa524410",
+              "gaussian_prefix": "4f6671b8e1003f87a156da7bb36a137af1c33f0dc1af3f9b031e4ea3936e0c32",
+              "step_seed_tuple": "1ad904082ac278b8facbcd063addedfd59801f7b5776619ca7a3c9119256a93b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000499866997416,
+            "overrun_seconds": 0.0004998669974156655,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00030563199834432453,
+          "restore_infer_save_seconds": 0.5390549159965303,
+          "algorithm_pipeline_seconds": 6.0891559699884965
+        }
+      }
+    },
+    {
+      "trajectory": "d1-colored-1-random_antithetic",
+      "actual_outer_wall_seconds": 8.088820564000343,
+      "peak_rss_kib": 303888,
+      "actual_exit": 0,
+      "input_seconds": 0.0010274710002704524,
+      "shared_setup_seconds": 0.5372439200000372,
+      "training_wall_seconds": 5.0012424050000845,
+      "completed_updates": 3289,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.313859298999887,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7223599619974266,
+            "update_completion_elapsed_seconds": 0.7223599619974266,
+            "state_dict_sha256": "145d1fecba44dc2f54a1e2c85dab7ab9935678ecba6de4e69076e7c3832530c0",
+            "stream_sha256": {
+              "base_indices": "d74be6a0d908efd35c8d02653367a4c4fd40841e01250397eb9069445f45b9ea",
+              "used_indices": "9738a25b5109a70e4de01ce3f42f6bb7c78c7baeada16a20124512bdc2b3c647",
+              "pair_order": "51f8748732a9da37349e4bdb09c32a1b48f35cd7efc8c862a989b452c8481df5",
+              "gaussian_prefix": "81c1a106242bae91a66146c9efb1e9d7057f46eda9471a8c0c577ec9e9b51b9e",
+              "step_seed_tuple": "fb485d2a0490786cbd440567ff42cd1d018335c8c24278ea4575cfe5aaea4635"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7225851849980245,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006305120004981291,
+          "restore_infer_save_seconds": 0.5606985790000181,
+          "algorithm_pipeline_seconds": 1.8221856669988483
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.527482959998451,
+          "training": {
+            "step": 3289,
+            "boundary_elapsed_seconds": 5.001012063999951,
+            "update_completion_elapsed_seconds": 5.001012063999951,
+            "state_dict_sha256": "d4daf40db069e0a3a70e07f3d8309434e72662819d98136eb1babaec9d49cca2",
+            "stream_sha256": {
+              "base_indices": "b4f580e113c94a30bfab64e40bcfea6a11b0778593221393b6f757136bfb5096",
+              "used_indices": "57957c0408ab06f506f3bff8c76d985d3afc1f7dd923de78dcc0b13b99fb58c5",
+              "pair_order": "a0314e9a305b51b37e347c381798809361661be31969bd745deb56460f789db6",
+              "gaussian_prefix": "411d207e1a1fae302b0de64876879597e79b795e25a1b514afdfd9f87ecd85f5",
+              "step_seed_tuple": "fbd4db1f824c7523bc7116d7c7539eb186de80b1462d69e58219350f539d0d5e"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001233891998709,
+            "overrun_seconds": 0.0012338919987087138,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0002984610000567045,
+          "restore_infer_save_seconds": 0.4960055839983397,
+          "algorithm_pipeline_seconds": 6.035809327997413
+        }
+      }
+    },
+    {
+      "trajectory": "d1-colored-1-mean_antithetic",
+      "actual_outer_wall_seconds": 7.881944618002308,
+      "peak_rss_kib": 304904,
+      "actual_exit": 0,
+      "input_seconds": 0.0011262269981671125,
+      "shared_setup_seconds": 0.5641538119998586,
+      "training_wall_seconds": 5.001521735997812,
+      "completed_updates": 3197,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.330562073002511,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8460463839983277,
+            "update_completion_elapsed_seconds": 0.8460463839983277,
+            "state_dict_sha256": "8ca547b6468338b432c49f8e3662d1a1c3f21499aaedd31f3f6363ace5442762",
+            "stream_sha256": {
+              "base_indices": "d74be6a0d908efd35c8d02653367a4c4fd40841e01250397eb9069445f45b9ea",
+              "used_indices": "628f76d20f34d93dc54525bad535ce1a8b5bbc54f7a89eaf17f0b34ddd82339f",
+              "pair_order": "1201859c274c02db7bfcafe3751dafbed8807d5ed86adbd05cf266573603810d",
+              "gaussian_prefix": "81c1a106242bae91a66146c9efb1e9d7057f46eda9471a8c0c577ec9e9b51b9e",
+              "step_seed_tuple": "fb485d2a0490786cbd440567ff42cd1d018335c8c24278ea4575cfe5aaea4635"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8462346619999153,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0007151670033636037,
+          "restore_infer_save_seconds": 0.3907338890021492,
+          "algorithm_pipeline_seconds": 1.8029637570034538
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.49048732999654,
+          "training": {
+            "step": 3197,
+            "boundary_elapsed_seconds": 5.0012845960009145,
+            "update_completion_elapsed_seconds": 5.0012845960009145,
+            "state_dict_sha256": "0e8dd3368bd2799aa971fa2c2b677e865f58add330d4748d460c952795f624c0",
+            "stream_sha256": {
+              "base_indices": "1fc801905e733a3d2e20f4a257277a5c462aa3b71e5095af2b76828973c0b89f",
+              "used_indices": "8e48e4be369f076191924020b2b5fedb17231925146e567677dcb67254df0005",
+              "pair_order": "c74813fb0007291a7f46fe555a3ffb53949fc6699e8cdcf3c08571923d2e79cc",
+              "gaussian_prefix": "820b0bed2e35d14db5b55e7619e58f6d01c00148e07e1f6a53b5c883a436a51f",
+              "step_seed_tuple": "3b69abb4e6a8e66daf89e8dcc649a6ea4d1e3a522a871b9739d2c7412a87296d"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001513503997558,
+            "overrun_seconds": 0.0015135039975575637,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0003933320003852714,
+          "restore_infer_save_seconds": 0.3957021390015143,
+          "algorithm_pipeline_seconds": 5.962889013997483
+        }
+      }
+    },
+    {
+      "trajectory": "d1-colored-1-same_patch",
+      "actual_outer_wall_seconds": 7.803260053999111,
+      "peak_rss_kib": 304400,
+      "actual_exit": 0,
+      "input_seconds": 0.001030383999022888,
+      "shared_setup_seconds": 0.5360780990013154,
+      "training_wall_seconds": 5.001348596000753,
+      "completed_updates": 3207,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.094551844002126,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7044326270006422,
+            "update_completion_elapsed_seconds": 0.7044326270006422,
+            "state_dict_sha256": "8b2b8ec29dadf3c70e644bdac8bcc9c1949e22dc62dcc38b5982ad0d157c680a",
+            "stream_sha256": {
+              "base_indices": "d74be6a0d908efd35c8d02653367a4c4fd40841e01250397eb9069445f45b9ea",
+              "used_indices": "384bc706b5044f62a89cec32f2ec6e25963b5e51d6323f604faf4f5d7b8bb953",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "81c1a106242bae91a66146c9efb1e9d7057f46eda9471a8c0c577ec9e9b51b9e",
+              "step_seed_tuple": "fb485d2a0490786cbd440567ff42cd1d018335c8c24278ea4575cfe5aaea4635"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7046524819998012,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006286400021053851,
+          "restore_infer_save_seconds": 0.3905521070009854,
+          "algorithm_pipeline_seconds": 1.6329417120032304
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.41207073399346,
+          "training": {
+            "step": 3207,
+            "boundary_elapsed_seconds": 5.001079697998648,
+            "update_completion_elapsed_seconds": 5.001079697998648,
+            "state_dict_sha256": "21154584f15f3fbd4d391ebfe42f88c6240edd04b4d8a4ef99c14be7e6b29408",
+            "stream_sha256": {
+              "base_indices": "7c67ccb66b0553cc33f9c8f1892a6f1788c5a5487497f01d200162d7735acc08",
+              "used_indices": "d15e773d3da21cfa89bfe1b6b6092d021b7b2da5a9a3ae0e9edaab90d3b3e516",
+              "pair_order": "8c9a21387d20389f718da1716d0776a45cdc301f912029332a3a0854ee18fffa",
+              "gaussian_prefix": "7a7c13104c2de4c9dbab9ba58c3232901806c45c9fa87ab1fa59146435bcf6a7",
+              "step_seed_tuple": "44d670a454bb9c2754ad8305116011401df95ea9fee1a52f99392b7b8b09dad8"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001340022998193,
+            "overrun_seconds": 0.0013400229981925804,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0005228929985605646,
+          "restore_infer_save_seconds": 0.4114892029974726,
+          "algorithm_pipeline_seconds": 5.950460601994564
+        }
+      }
+    },
+    {
+      "trajectory": "d1-colored-1-independent",
+      "actual_outer_wall_seconds": 8.085968285999115,
+      "peak_rss_kib": 304448,
+      "actual_exit": 0,
+      "input_seconds": 0.0010464970000612084,
+      "shared_setup_seconds": 0.5402955940007814,
+      "training_wall_seconds": 5.000657420001517,
+      "completed_updates": 3210,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.3888967279963254,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8187499390005541,
+            "update_completion_elapsed_seconds": 0.8187499390005541,
+            "state_dict_sha256": "66ae669801ab33c1ceed72b8cf25a8be4d15f95aa458996be1c0ea6e24f6db75",
+            "stream_sha256": {
+              "base_indices": "d74be6a0d908efd35c8d02653367a4c4fd40841e01250397eb9069445f45b9ea",
+              "used_indices": "d74be6a0d908efd35c8d02653367a4c4fd40841e01250397eb9069445f45b9ea",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "81c1a106242bae91a66146c9efb1e9d7057f46eda9471a8c0c577ec9e9b51b9e",
+              "step_seed_tuple": "fb485d2a0490786cbd440567ff42cd1d018335c8c24278ea4575cfe5aaea4635"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8190029030010919,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006732750007358845,
+          "restore_infer_save_seconds": 0.5119970579980873,
+          "algorithm_pipeline_seconds": 1.8730153270007577
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.573289960997499,
+          "training": {
+            "step": 3210,
+            "boundary_elapsed_seconds": 5.000411054999859,
+            "update_completion_elapsed_seconds": 5.000411054999859,
+            "state_dict_sha256": "11a89b80b7323ff3d23cbd44b7d4425c04aee1fddb5fc92275cb11cbf13d2030",
+            "stream_sha256": {
+              "base_indices": "8fbd7604490fbc6087cb1bcd8d103606c1e8581b4490a4c0d57a52d7a80762ba",
+              "used_indices": "8fbd7604490fbc6087cb1bcd8d103606c1e8581b4490a4c0d57a52d7a80762ba",
+              "pair_order": "bb1fc3c4e1fe78fc19eb1c2c11e09fc19b1d027268034510a78de4315c03425c",
+              "gaussian_prefix": "89f7ca16dca2668d8b8354e1ad0abd3f883fc6a622a2550e25b0703527faf986",
+              "step_seed_tuple": "74360bffd03e9948b3a3bdeb39fafaef047569b0c1415af0d46d2dd67902b0a6"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000649427998724,
+            "overrun_seconds": 0.0006494279987236951,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00041177900129696354,
+          "restore_infer_save_seconds": 0.5150052620010683,
+          "algorithm_pipeline_seconds": 6.057408560001932
+        }
+      }
+    },
+    {
+      "trajectory": "d2-colored-0-mean_antithetic",
+      "actual_outer_wall_seconds": 8.288365380998584,
+      "peak_rss_kib": 304356,
+      "actual_exit": 0,
+      "input_seconds": 0.001271598997846013,
+      "shared_setup_seconds": 0.5803330300004745,
+      "training_wall_seconds": 5.000426074999268,
+      "completed_updates": 2922,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.4649544380008592,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8076605509995716,
+            "update_completion_elapsed_seconds": 0.8076605509995716,
+            "state_dict_sha256": "31ce2595c8a56a5e2cba4fc909ca19e772d17c8d67401a54fb778bcfa1bc3480",
+            "stream_sha256": {
+              "base_indices": "ae3c7cf0bb35b809f3e9e61d07d1b6d65c7e62f34fbc7ba74060faf736d69aa2",
+              "used_indices": "a4a154170cbe05dbafbcc8143adb80de23dd6e338fd1bca1d42b6478f2bf111b",
+              "pair_order": "1b492eebe283bc60f1b263144caef76bff06d205bf6dcdfefd0036afea7bfafe",
+              "gaussian_prefix": "4938a101d1f4e6b64ddd45bd4f0e6814992a88db7853717a2d0b0c3055ed451a",
+              "step_seed_tuple": "baba4d9ee2269a23e5fdfbaf4b62eec19765b2970ef18e94bb197b560fb562f1"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8078461559998686,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006235719993128441,
+          "restore_infer_save_seconds": 0.5313283409996075,
+          "algorithm_pipeline_seconds": 1.9214026979971095
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.756406328000594,
+          "training": {
+            "step": 2922,
+            "boundary_elapsed_seconds": 5.000200491998839,
+            "update_completion_elapsed_seconds": 5.000200491998839,
+            "state_dict_sha256": "14a964b3e035f161aa1ec9d06603f01e8675f5d6a6d945b5171d6281cc5352af",
+            "stream_sha256": {
+              "base_indices": "7b259298c73fa9d814878ffa01fa9bff77469f6b9baf6068f498cba5ee9d10f0",
+              "used_indices": "c239ca35fc5eee2c252e250861b5cd6381b835443e393db92264e5fa152c8eb0",
+              "pair_order": "b92fb6de75f99bde490de814d91279c2f712339872369c261db7151f873892f8",
+              "gaussian_prefix": "956e0843f25f97c2b3a90cb72ecc424ad55578cd68927a09fa430299fe407dee",
+              "step_seed_tuple": "6204ab235a40e5971a8ccfb102e8bef8f6f5efcc05bebec94de49cdbe2b42b83"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000418935000198,
+            "overrun_seconds": 0.0004189350001979619,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00026959800015902147,
+          "restore_infer_save_seconds": 0.6305614259981667,
+          "algorithm_pipeline_seconds": 6.212854587996844
+        }
+      }
+    },
+    {
+      "trajectory": "d2-colored-0-same_patch",
+      "actual_outer_wall_seconds": 8.047625981002057,
+      "peak_rss_kib": 304480,
+      "actual_exit": 0,
+      "input_seconds": 0.001018255999952089,
+      "shared_setup_seconds": 0.5523623839981155,
+      "training_wall_seconds": 5.001354383999569,
+      "completed_updates": 3162,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.3584529789986846,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.784341686998232,
+            "update_completion_elapsed_seconds": 0.784341686998232,
+            "state_dict_sha256": "d0db59a3ac706dfa3dae0f56b3f31bd24bd98c416aa0cce31ef862496b020472",
+            "stream_sha256": {
+              "base_indices": "ae3c7cf0bb35b809f3e9e61d07d1b6d65c7e62f34fbc7ba74060faf736d69aa2",
+              "used_indices": "5aabf365ee5eee50573797744bf1d7fcabcc4c98500392e657a3570259663282",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "4938a101d1f4e6b64ddd45bd4f0e6814992a88db7853717a2d0b0c3055ed451a",
+              "step_seed_tuple": "baba4d9ee2269a23e5fdfbaf4b62eec19765b2970ef18e94bb197b560fb562f1"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7845689429996128,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006966800028749276,
+          "restore_infer_save_seconds": 0.46434207700076513,
+          "algorithm_pipeline_seconds": 1.8029883400013205
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.582576868997421,
+          "training": {
+            "step": 3162,
+            "boundary_elapsed_seconds": 5.001026919999276,
+            "update_completion_elapsed_seconds": 5.001026919999276,
+            "state_dict_sha256": "bd7505813e6d9d82383dd07ba4107199b44ad6c11477b3c5dabcd2ac6d3b2c87",
+            "stream_sha256": {
+              "base_indices": "ddc255f973fa8e205a1e2d8ecf4a1c346e15382b2c79254da75b80437e7bc68d",
+              "used_indices": "f72ad52f7118180ddf25d269575839ea17d1d9236012d3d5822934e2a1b88a04",
+              "pair_order": "29b08c35cf7300c90b107df4498bfd76c2c4525173a249721d506decc533a9b2",
+              "gaussian_prefix": "661d4f0f29db701230221926dacc83464e8ce3183379b6c026119322602da876",
+              "step_seed_tuple": "6c40e6df67cf95b3a19b4d7325e9ab0f1262760e53f3819f10e5417819847d4b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001344028998574,
+            "overrun_seconds": 0.0013440289985737763,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0003940920032619033,
+          "restore_infer_save_seconds": 0.4719934690001537,
+          "algorithm_pipeline_seconds": 6.027112230000057
+        }
+      }
+    },
+    {
+      "trajectory": "d2-colored-0-independent",
+      "actual_outer_wall_seconds": 7.944205698000587,
+      "peak_rss_kib": 303864,
+      "actual_exit": 0,
+      "input_seconds": 0.0011408169993956108,
+      "shared_setup_seconds": 0.564051149001898,
+      "training_wall_seconds": 5.001126502997067,
+      "completed_updates": 3165,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.3614745190025133,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7903308579989243,
+            "update_completion_elapsed_seconds": 0.7903308579989243,
+            "state_dict_sha256": "4c9bbb394557ff55a6376a2f98613a527d5e3d00a02f1e4286b1ac23c6a716f6",
+            "stream_sha256": {
+              "base_indices": "ae3c7cf0bb35b809f3e9e61d07d1b6d65c7e62f34fbc7ba74060faf736d69aa2",
+              "used_indices": "ae3c7cf0bb35b809f3e9e61d07d1b6d65c7e62f34fbc7ba74060faf736d69aa2",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "4938a101d1f4e6b64ddd45bd4f0e6814992a88db7853717a2d0b0c3055ed451a",
+              "step_seed_tuple": "baba4d9ee2269a23e5fdfbaf4b62eec19765b2970ef18e94bb197b560fb562f1"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7905693599968799,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0007921710021037143,
+          "restore_infer_save_seconds": 0.3952414810009941,
+          "algorithm_pipeline_seconds": 1.7517949780012714
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.5481628219968115,
+          "training": {
+            "step": 3165,
+            "boundary_elapsed_seconds": 5.000693772999512,
+            "update_completion_elapsed_seconds": 5.000693772999512,
+            "state_dict_sha256": "186e246a3c780b170a73afd4923127238bc37a567455aed11f453011351a5dad",
+            "stream_sha256": {
+              "base_indices": "29939fdeb2db86cfd10c614b51bc9e27f4413101a280820e939d3a7f9911420b",
+              "used_indices": "29939fdeb2db86cfd10c614b51bc9e27f4413101a280820e939d3a7f9911420b",
+              "pair_order": "68a03c46a86f4af556e1f7a14c1d06298eea326b8ffb4972a395649f5dc05db8",
+              "gaussian_prefix": "7d1cd719d6f41dc312dd9c66c6ffc503e2b4b6bea2f7159a721a9f425e0c1b45",
+              "step_seed_tuple": "c7c2e62c3fdf6a03b7bff0d4a68f63196286272996328395e4ddb1043ff5ccfd"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001117278996389,
+            "overrun_seconds": 0.0011172789963893592,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00028616299823625013,
+          "restore_infer_save_seconds": 0.3718878729996504,
+          "algorithm_pipeline_seconds": 5.93848328099557
+        }
+      }
+    },
+    {
+      "trajectory": "d2-colored-0-random_antithetic",
+      "actual_outer_wall_seconds": 7.83870894699794,
+      "peak_rss_kib": 304516,
+      "actual_exit": 0,
+      "input_seconds": 0.0010492519977560733,
+      "shared_setup_seconds": 0.5309392239978479,
+      "training_wall_seconds": 5.000709105002898,
+      "completed_updates": 3069,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.247054188996117,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7673093420016812,
+            "update_completion_elapsed_seconds": 0.7673093420016812,
+            "state_dict_sha256": "80193b443f96abc732a7bcb47309abd5e14cd46465b5b3d771fd6985563e1fb0",
+            "stream_sha256": {
+              "base_indices": "ae3c7cf0bb35b809f3e9e61d07d1b6d65c7e62f34fbc7ba74060faf736d69aa2",
+              "used_indices": "6f135d2fa1b5228b9d644c7b2229879fda7053c33e2c3185f241b7467503656a",
+              "pair_order": "60c18a886e242b6a58acacb77849906f0e5ba94db30680f42eb50565c0b255c5",
+              "gaussian_prefix": "4938a101d1f4e6b64ddd45bd4f0e6814992a88db7853717a2d0b0c3055ed451a",
+              "step_seed_tuple": "baba4d9ee2269a23e5fdfbaf4b62eec19765b2970ef18e94bb197b560fb562f1"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7675711700030661,
+            "valid": true
+          },
+          "weights_write_seconds": 0.000617362999037141,
+          "restore_infer_save_seconds": 0.3659805190000043,
+          "algorithm_pipeline_seconds": 1.6661575279977114
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.472103052998136,
+          "training": {
+            "step": 3069,
+            "boundary_elapsed_seconds": 5.0004749890031235,
+            "update_completion_elapsed_seconds": 5.0004749890031235,
+            "state_dict_sha256": "a9ced8c327d7e658aac549c23dfdf6514580bfa0de2abfebf180656c91dc06b5",
+            "stream_sha256": {
+              "base_indices": "5d47bfd3516e3f527604a00852376520d9c47de162ecd3b9469100a04cd9a958",
+              "used_indices": "f4fb37f49618c052ea1706dc552b4869bf82eb5dcb57b47aae0882677c7992b0",
+              "pair_order": "3c8f1650cac1d164eeecad460e6a93b8de577346f55a3340b25aa6af225b5e2c",
+              "gaussian_prefix": "7313ce6179e465edb64f8a9f433af5ea9d60409b654ef47b725b3e1829e65fa8",
+              "step_seed_tuple": "a9a2a7f39f6ecf72745099da9902eeaa54496389f250e9cd48d69250cd6bf773"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000701093002135,
+            "overrun_seconds": 0.0007010930021351669,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00027558700094232336,
+          "restore_infer_save_seconds": 0.3582412360010494,
+          "algorithm_pipeline_seconds": 5.891206391999731
+        }
+      }
+    },
+    {
+      "trajectory": "d2-colored-1-same_patch",
+      "actual_outer_wall_seconds": 8.716470433999348,
+      "peak_rss_kib": 304624,
+      "actual_exit": 0,
+      "input_seconds": 0.0011166209988004994,
+      "shared_setup_seconds": 0.6539189119976072,
+      "training_wall_seconds": 5.000405722999858,
+      "completed_updates": 2985,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.946017441994627,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8414626000012504,
+            "update_completion_elapsed_seconds": 0.8414626000012504,
+            "state_dict_sha256": "007bb777754e4c37115b84104392342cf16fcb08358a717aff426bc5c556c0b8",
+            "stream_sha256": {
+              "base_indices": "500b51e0f1082aff567a6cc673ccc577a78ff31a0005cc657f8d42577f8cbb32",
+              "used_indices": "8cae07784a9588ca650485bce79e1a3470601e995f702f1832121b7f4408f652",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "acddac7cb444d3af5368e89265728d9722a3feb3aafaa4c34b621cc962e2fa2b",
+              "step_seed_tuple": "7cf7c237ca967b83d610403da2778b62c59df000647ac17ec02e5e40ded98c8a"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.841685289000452,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006213689994183369,
+          "restore_infer_save_seconds": 0.5481558179999411,
+          "algorithm_pipeline_seconds": 2.045498008996219
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 8.16768542600039,
+          "training": {
+            "step": 2985,
+            "boundary_elapsed_seconds": 5.000173088999873,
+            "update_completion_elapsed_seconds": 5.000173088999873,
+            "state_dict_sha256": "38c1a525be85608cbb11cb6be0847744471b38db8dce72d5b381787eaa94cb9d",
+            "stream_sha256": {
+              "base_indices": "444199496e83cb664489904fc102c2b43f6498be4a73454fd37706ae858f252e",
+              "used_indices": "9cacfd415142dbeb74b6a8f8abb2a0e7a435379921aad45e21f82d7890354187",
+              "pair_order": "3331ea8973ba3112b2ad9a3b8fa83aab22eecfafa312ab53488471beb8289187",
+              "gaussian_prefix": "c0370c52be33391c87868b692e36083d4ceac7a8ba55d9a27bafb5a8b11efee8",
+              "step_seed_tuple": "697c18dc7b7df131101a7e3774d69a0a641f36d687482e9053609c858b86942d"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000397902000259,
+            "overrun_seconds": 0.00039790200025890954,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00027290400248602964,
+          "restore_infer_save_seconds": 0.6114596540028288,
+          "algorithm_pipeline_seconds": 6.267165993001981
+        }
+      }
+    },
+    {
+      "trajectory": "d2-colored-1-independent",
+      "actual_outer_wall_seconds": 8.085532853001496,
+      "peak_rss_kib": 303576,
+      "actual_exit": 0,
+      "input_seconds": 0.0010994860022037756,
+      "shared_setup_seconds": 0.6237388059998921,
+      "training_wall_seconds": 5.000603262000368,
+      "completed_updates": 3470,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.472760761000245,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.803949034998368,
+            "update_completion_elapsed_seconds": 0.803949034998368,
+            "state_dict_sha256": "1202bc5a781bd3db643b43132745f0959ea5c0dd81d66491d330982faacec9cb",
+            "stream_sha256": {
+              "base_indices": "500b51e0f1082aff567a6cc673ccc577a78ff31a0005cc657f8d42577f8cbb32",
+              "used_indices": "500b51e0f1082aff567a6cc673ccc577a78ff31a0005cc657f8d42577f8cbb32",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "acddac7cb444d3af5368e89265728d9722a3feb3aafaa4c34b621cc962e2fa2b",
+              "step_seed_tuple": "7cf7c237ca967b83d610403da2778b62c59df000647ac17ec02e5e40ded98c8a"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8042256539993105,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006532670013257302,
+          "restore_infer_save_seconds": 0.45910422900124104,
+          "algorithm_pipeline_seconds": 1.888821442003973
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.6257666849996895,
+          "training": {
+            "step": 3470,
+            "boundary_elapsed_seconds": 5.0003620159986895,
+            "update_completion_elapsed_seconds": 5.0003620159986895,
+            "state_dict_sha256": "f0f1bb88748e2652af3744918ec3fb967783da18c98e26436db742b19db9ea53",
+            "stream_sha256": {
+              "base_indices": "db61c2f6560832ba04e216b44593d1ddd86348961b23e4ccc79e3aef3279570a",
+              "used_indices": "db61c2f6560832ba04e216b44593d1ddd86348961b23e4ccc79e3aef3279570a",
+              "pair_order": "b73e47189839487d76db47f83a6c0213d9148b177b09ff6b5ea97a45cedb6296",
+              "gaussian_prefix": "45364b30aea647f91b92d41f224fe86706093d187309e1cc4be36d603508f323",
+              "step_seed_tuple": "b07a8a60f847a667f954434721dfa967aa613c81623e33ee3c67cf58cb576ef3"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000594590001128,
+            "overrun_seconds": 0.0005945900011283811,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00028192700119689107,
+          "restore_infer_save_seconds": 0.4161125569989963,
+          "algorithm_pipeline_seconds": 6.041827366003417
+        }
+      }
+    },
+    {
+      "trajectory": "d2-colored-1-random_antithetic",
+      "actual_outer_wall_seconds": 8.085183499999403,
+      "peak_rss_kib": 304328,
+      "actual_exit": 0,
+      "input_seconds": 0.00110591500197188,
+      "shared_setup_seconds": 0.5650308129988844,
+      "training_wall_seconds": 5.001234753002791,
+      "completed_updates": 2970,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.5147681439993903,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.862480495001364,
+            "update_completion_elapsed_seconds": 0.862480495001364,
+            "state_dict_sha256": "25810b171f4e09ef2afb9fe76a00854e16ed3cec401098f54145069e8613c4e5",
+            "stream_sha256": {
+              "base_indices": "500b51e0f1082aff567a6cc673ccc577a78ff31a0005cc657f8d42577f8cbb32",
+              "used_indices": "714dc8fbac3fb0e99a7f7e6d60e7087cb9a5290cb754f7a372418c5bc942345e",
+              "pair_order": "4f38c3c1f8c9ca5a6c85acb678b8228fd65db26697b2b9c35a07930b796a03a3",
+              "gaussian_prefix": "acddac7cb444d3af5368e89265728d9722a3feb3aafaa4c34b621cc962e2fa2b",
+              "step_seed_tuple": "7cf7c237ca967b83d610403da2778b62c59df000647ac17ec02e5e40ded98c8a"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8627087730019412,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006170220003696159,
+          "restore_infer_save_seconds": 0.5470827610006381,
+          "algorithm_pipeline_seconds": 1.9765452840038051
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.5374763359977806,
+          "training": {
+            "step": 2970,
+            "boundary_elapsed_seconds": 5.000990382002783,
+            "update_completion_elapsed_seconds": 5.000990382002783,
+            "state_dict_sha256": "6abb6a66fd4766600369558f79033437310ae7a45619a36c3f6ed89a72611442",
+            "stream_sha256": {
+              "base_indices": "854d694b46eba1d33754c42400729fde7d883e78cc24a794fd455009d650c205",
+              "used_indices": "d05821b95066a131ad65bffc1a30f0069771edd06c6f8611c3066332501fceaa",
+              "pair_order": "58f3051693080374c47b182607405ec10d2ef260bdbc6704daf31e0695783449",
+              "gaussian_prefix": "4a4419165ce9e590e5fe49706b578c16bdfbfd906813d0a8c9ca9eebad0aa874",
+              "step_seed_tuple": "2733922467500c247863abeef378ac8605a3df61bb5fd1d95bc96347daf82a67"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001227372002177,
+            "overrun_seconds": 0.0012273720021767076,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00033639699904597364,
+          "restore_infer_save_seconds": 0.43155297900011647,
+          "algorithm_pipeline_seconds": 5.999253476002195
+        }
+      }
+    },
+    {
+      "trajectory": "d2-colored-1-mean_antithetic",
+      "actual_outer_wall_seconds": 8.240083210999728,
+      "peak_rss_kib": 304496,
+      "actual_exit": 0,
+      "input_seconds": 0.0010524669996812008,
+      "shared_setup_seconds": 0.5444371689991385,
+      "training_wall_seconds": 5.00128208499882,
+      "completed_updates": 2962,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.516871705000085,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8341247939970344,
+            "update_completion_elapsed_seconds": 0.8341247939970344,
+            "state_dict_sha256": "6f753a40ba9240028d6c8b253629a48298392721a211b960406f40017be165de",
+            "stream_sha256": {
+              "base_indices": "500b51e0f1082aff567a6cc673ccc577a78ff31a0005cc657f8d42577f8cbb32",
+              "used_indices": "59d29338ce44a7738eda4276388d61a52a26e4ed8a65fe73fc00d0a5dc38e86c",
+              "pair_order": "22002e5f193fb6b0d6e37c7ec3dcfe105daf1f65c839fbacd90456d4ba7f453f",
+              "gaussian_prefix": "acddac7cb444d3af5368e89265728d9722a3feb3aafaa4c34b621cc962e2fa2b",
+              "step_seed_tuple": "7cf7c237ca967b83d610403da2778b62c59df000647ac17ec02e5e40ded98c8a"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8343334119999781,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0008405230000789743,
+          "restore_infer_save_seconds": 0.5729924039987964,
+          "algorithm_pipeline_seconds": 1.9536559749976732
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.666242011000577,
+          "training": {
+            "step": 2962,
+            "boundary_elapsed_seconds": 5.001061618997483,
+            "update_completion_elapsed_seconds": 5.001061618997483,
+            "state_dict_sha256": "90ad6fca3e0608326a6187e6437c4001bf01c7908d6923bc036e5a5db0990686",
+            "stream_sha256": {
+              "base_indices": "95ff1a1fb25f82ea4ff9c89adea43d8944c536a8b63764c9ea5752297e6db04d",
+              "used_indices": "d3421bc9491deebe41fdc6ef51a5e066784fca7180ed6322c8f95e0c34af9ce2",
+              "pair_order": "821ec6b482aac50a7d3df621c01c053640a4b96205658e7931edaf6e1aba5984",
+              "gaussian_prefix": "b4dd68766193d7e55d11289ca1505a500b9f86e4e7529d28f4d94904a555e7ac",
+              "step_seed_tuple": "e4c1673e6c1ecce105223ff30a7d2b5e3fd31c9b9cff5f2d8bcb39225e64f00a"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001273811998544,
+            "overrun_seconds": 0.0012738119985442609,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00031311299972003326,
+          "restore_infer_save_seconds": 0.555949720001081,
+          "algorithm_pipeline_seconds": 6.103026280998165
+        }
+      }
+    },
+    {
+      "trajectory": "d3-colored-0-independent",
+      "actual_outer_wall_seconds": 8.284985083999345,
+      "peak_rss_kib": 303488,
+      "actual_exit": 0,
+      "input_seconds": 0.0010675789999368135,
+      "shared_setup_seconds": 0.6097461880017363,
+      "training_wall_seconds": 5.001261419998627,
+      "completed_updates": 3096,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.556547617998149,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8336487719971046,
+            "update_completion_elapsed_seconds": 0.8336487719971046,
+            "state_dict_sha256": "9e82e8e611cf49065d50f52757507e9066ca162a4e9d97df0c5a9ff98fbccfd3",
+            "stream_sha256": {
+              "base_indices": "b7d8e84205436efc748668f48bc881324965131c6c586ada668eed57036830ed",
+              "used_indices": "b7d8e84205436efc748668f48bc881324965131c6c586ada668eed57036830ed",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "9fb333de8902a2520d538ed662e658e4bb27fbb125a7497b1bc6c90248203d6d",
+              "step_seed_tuple": "48fc266bd0b29118d8497ecf95e37d92af5d13130edaf601890622696d6ef3a3"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8338936239997565,
+            "valid": true
+          },
+          "weights_write_seconds": 0.000679816999763716,
+          "restore_infer_save_seconds": 0.5568102430006547,
+          "algorithm_pipeline_seconds": 2.002197451001848
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.727487452997593,
+          "training": {
+            "step": 3096,
+            "boundary_elapsed_seconds": 5.001031188996421,
+            "update_completion_elapsed_seconds": 5.001031188996421,
+            "state_dict_sha256": "a4162dd5da3951e6d815e48e081308d3adb4ab7817472e49d620057aaa8ff6bc",
+            "stream_sha256": {
+              "base_indices": "245d8e5aa9579e3fd0e308325947c53c88a0150d7172d8286e6c540cdd345dd6",
+              "used_indices": "245d8e5aa9579e3fd0e308325947c53c88a0150d7172d8286e6c540cdd345dd6",
+              "pair_order": "1a3cd32306b4a803e867c281308acf828c7a591a0a3bd10aa0017300e4798235",
+              "gaussian_prefix": "50335e0e4ae6d4bcf4aabe98660bf440a3862821770a0bcc6eedc201886fee96",
+              "step_seed_tuple": "e0d63dff3d7648f181b8b1457b273bae93b98e731864eb444ef7fa04d859e51e"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001253848997294,
+            "overrun_seconds": 0.0012538489972939715,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0003892660024575889,
+          "restore_infer_save_seconds": 0.5606804039998678,
+          "algorithm_pipeline_seconds": 6.1731372860012925
+        }
+      }
+    },
+    {
+      "trajectory": "d3-colored-0-random_antithetic",
+      "actual_outer_wall_seconds": 8.090323315002024,
+      "peak_rss_kib": 304508,
+      "actual_exit": 0,
+      "input_seconds": 0.0010364749978180043,
+      "shared_setup_seconds": 0.5609122669993667,
+      "training_wall_seconds": 5.001091772999644,
+      "completed_updates": 3073,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.3649870780027413,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7250994899986836,
+            "update_completion_elapsed_seconds": 0.7250994899986836,
+            "state_dict_sha256": "e17775a3b9e4e943ac4d1fc62462cc61a223e83f347a4a69a34c2fc6605677c6",
+            "stream_sha256": {
+              "base_indices": "b7d8e84205436efc748668f48bc881324965131c6c586ada668eed57036830ed",
+              "used_indices": "0a8f2a2e69772226a6328a4ee80bcd2e3275cf164a98ecb842180b8167fff56b",
+              "pair_order": "b0c3b394459006b42dff1d9776a17366288df045ef8fa04ec9a1bc9101be1cf1",
+              "gaussian_prefix": "9fb333de8902a2520d538ed662e658e4bb27fbb125a7497b1bc6c90248203d6d",
+              "step_seed_tuple": "48fc266bd0b29118d8497ecf95e37d92af5d13130edaf601890622696d6ef3a3"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7253505209991999,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006668970017926767,
+          "restore_infer_save_seconds": 0.5437633949986775,
+          "algorithm_pipeline_seconds": 1.8317295549968549
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.545884781000495,
+          "training": {
+            "step": 3073,
+            "boundary_elapsed_seconds": 5.000859028001287,
+            "update_completion_elapsed_seconds": 5.000859028001287,
+            "state_dict_sha256": "4bdc3fa2f575a8eccfd2f51ca4cf93ab7ab061f72398b62d369fde2b1177cd05",
+            "stream_sha256": {
+              "base_indices": "80708e906349ebf1005a7ebbb871dc6e377d4a64e80c2f35eb71a2c272d105a2",
+              "used_indices": "4cb781909a7ea85d6789f3ce27cb9c7a5c57a437f5f4020949a416aff91edead",
+              "pair_order": "adf944f135820255cefc538a6ba7c311449fc4f4961e5bbce9e3e375ccabf6e4",
+              "gaussian_prefix": "a68c960a4d4f299dc4f6042d6b2ffe188a1e744f0098d97f41e7ec797fb3ac0e",
+              "step_seed_tuple": "2d37568e00795f91f9a1a7d7b1776619c2679278892c8421b18fa1ea9034a12b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001083530998585,
+            "overrun_seconds": 0.0010835309985850472,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00030310799775179476,
+          "restore_infer_save_seconds": 0.4492918770010874,
+          "algorithm_pipeline_seconds": 6.012627257994609
+        }
+      }
+    },
+    {
+      "trajectory": "d3-colored-0-mean_antithetic",
+      "actual_outer_wall_seconds": 7.785344119998626,
+      "peak_rss_kib": 304648,
+      "actual_exit": 0,
+      "input_seconds": 0.00110374400173896,
+      "shared_setup_seconds": 0.5426509570024791,
+      "training_wall_seconds": 5.000850109001476,
+      "completed_updates": 3018,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.293642335993354,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8489399019999837,
+            "update_completion_elapsed_seconds": 0.8489399019999837,
+            "state_dict_sha256": "66516daaa2f13f70f01e78ef82b098e53a0cf1a047f463e4326b6ccd2b2165bc",
+            "stream_sha256": {
+              "base_indices": "b7d8e84205436efc748668f48bc881324965131c6c586ada668eed57036830ed",
+              "used_indices": "f2aaa6356803c6c81f43f51cd786a03de5334462412ed4c9727513a219df2c5d",
+              "pair_order": "0a385e6157372616a64bc0d0f0fb7d83bcbb6b4ac20311da9a6f030abd20ff8c",
+              "gaussian_prefix": "9fb333de8902a2520d538ed662e658e4bb27fbb125a7497b1bc6c90248203d6d",
+              "step_seed_tuple": "48fc266bd0b29118d8497ecf95e37d92af5d13130edaf601890622696d6ef3a3"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8491246449993923,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006745479986420833,
+          "restore_infer_save_seconds": 0.3752239300010842,
+          "algorithm_pipeline_seconds": 1.7687778240033367
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.40943777999928,
+          "training": {
+            "step": 3018,
+            "boundary_elapsed_seconds": 5.000648671000818,
+            "update_completion_elapsed_seconds": 5.000648671000818,
+            "state_dict_sha256": "725814189a30e4fd1dc578964e3ef2d8d0624ddc075e4cfd6a4670d76d569c48",
+            "stream_sha256": {
+              "base_indices": "ea2c6d0088c0f8b6aa1f0ba847e73f5c7855f82c93c5711373982e9fa9ad33fa",
+              "used_indices": "4d7241e8ed488d0b55a43c14370be8a95758007f4917795f89ea6adb4b78eb84",
+              "pair_order": "bf3e0bb686b523d823b613438d6aa144edd16eb92c0aa2b34fb62d579b5d2d5c",
+              "gaussian_prefix": "d2ee0538603b04653431b9edf5413e88d37e7cba79d539ae9bbce7b562df87b7",
+              "step_seed_tuple": "dc3c57a93467a74b48169c47443737067c462bd8432a2e1859fa5fb6ca7efcb8"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000842247001856,
+            "overrun_seconds": 0.000842247001855867,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00030911700014257804,
+          "restore_infer_save_seconds": 0.33966720300304587,
+          "algorithm_pipeline_seconds": 5.884573268009262
+        }
+      }
+    },
+    {
+      "trajectory": "d3-colored-0-same_patch",
+      "actual_outer_wall_seconds": 7.934702832000767,
+      "peak_rss_kib": 304308,
+      "actual_exit": 0,
+      "input_seconds": 0.0010887700009334367,
+      "shared_setup_seconds": 0.6164354040010949,
+      "training_wall_seconds": 5.0007338960022025,
+      "completed_updates": 3185,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.3591303229986806,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7902320380017045,
+            "update_completion_elapsed_seconds": 0.7902320380017045,
+            "state_dict_sha256": "a37eb73bf23b268604d3d77b1ff04bacf07701781673aece4e50d53730d33318",
+            "stream_sha256": {
+              "base_indices": "b7d8e84205436efc748668f48bc881324965131c6c586ada668eed57036830ed",
+              "used_indices": "3b8559ccf91069be83d0b148747a39da07ef2ed07ed7bd695e45351239f8258b",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "9fb333de8902a2520d538ed662e658e4bb27fbb125a7497b1bc6c90248203d6d",
+              "step_seed_tuple": "48fc266bd0b29118d8497ecf95e37d92af5d13130edaf601890622696d6ef3a3"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7904530250016251,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0005875189999642316,
+          "restore_infer_save_seconds": 0.4196441029998823,
+          "algorithm_pipeline_seconds": 1.8282088210035
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.514463318999333,
+          "training": {
+            "step": 3185,
+            "boundary_elapsed_seconds": 5.0004996600000595,
+            "update_completion_elapsed_seconds": 5.0004996600000595,
+            "state_dict_sha256": "3ec2abe00559cf7bb93cd16fdd4ddb31976a5abcc7e7f3fee208e99e8e1e9429",
+            "stream_sha256": {
+              "base_indices": "964d7306d4358502c0346c0b9f3f9f504e1c2ee230d81002a3722c503193cea0",
+              "used_indices": "50191d750cf910e43c84945d49bfafb46402768ce8c5a9dc7cc670bd40648266",
+              "pair_order": "b6cad8c9d6046d7bc6580fd48b16b71906d33da6fb013408af941dc7b1532c2d",
+              "gaussian_prefix": "a013e4641d2980b160301c4fc120be2a8680c6ea02b471a624ca4aa0d73e708d",
+              "step_seed_tuple": "978b57c1f01a238a30fc32c072f85b9c5b4d80fa2e59f7e589ee203f0f76d158"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000726005000615,
+            "overrun_seconds": 0.0007260050006152596,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00030523100213031285,
+          "restore_infer_save_seconds": 0.36498640699937823,
+          "algorithm_pipeline_seconds": 5.983541817004152
+        }
+      }
+    },
+    {
+      "trajectory": "d3-colored-1-random_antithetic",
+      "actual_outer_wall_seconds": 8.139681303000543,
+      "peak_rss_kib": 304508,
+      "actual_exit": 0,
+      "input_seconds": 0.0010318870008632075,
+      "shared_setup_seconds": 0.5317836920003174,
+      "training_wall_seconds": 5.000830872999359,
+      "completed_updates": 3212,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.2726313380007923,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7280068450018007,
+            "update_completion_elapsed_seconds": 0.7280068450018007,
+            "state_dict_sha256": "4ea2a8698426ca591cf1a678b5f3336faaf709d3a67f32107c07c4881814a559",
+            "stream_sha256": {
+              "base_indices": "4d27450216b9cb5cc839a9ddbdba0f309e6dad80697b9c1259943c67d50afd36",
+              "used_indices": "348d1550931ece997d1d29bb34a40f12a979c959489bf1d98305f45b53393cdc",
+              "pair_order": "05d2dc6fb41a8dc2b8a523f35147a707f6eaeab2781d42c80a0ce357557e6770",
+              "gaussian_prefix": "252993135ed96e386cbf11a276ecce5aaa88f0eb7384a1edf25fd736fbae42a4",
+              "step_seed_tuple": "a89f76b8026793356ebc121cfee86a00add9bd4e13d500b94b328714a8c4ff85"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.728247551000095,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006165319973661099,
+          "restore_infer_save_seconds": 0.5392105930004618,
+          "algorithm_pipeline_seconds": 1.8008902549991035
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.599846216002334,
+          "training": {
+            "step": 3212,
+            "boundary_elapsed_seconds": 5.0005909179999435,
+            "update_completion_elapsed_seconds": 5.0005909179999435,
+            "state_dict_sha256": "cb15f33a02bbc0654bc5bee0ebb14a0f46f72c31c617a3837d69b3d03b74d991",
+            "stream_sha256": {
+              "base_indices": "8c4925bc51d285c986e20c4eaec4f12fb2c9df625a844d09bbcde9a67c322ebd",
+              "used_indices": "6bfd3ca7200e0838cfe128d1407c8f42b742aa0ebbdd294abe8e5134e9dc41a7",
+              "pair_order": "5c45e1dce48a97aa599bfe0fbc9d96490bfd6f0b91228e049d4b11c35a09f73a",
+              "gaussian_prefix": "81172844cd713e64cbdb4cc9d665e8ae31e1a9f81958a79cddcc8e3d9e5cbc68",
+              "step_seed_tuple": "07735c1543327b003d4019e18880d701860ef79d226a0bcbbc8b91d62530080a"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000822910998977,
+            "overrun_seconds": 0.0008229109989770222,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0002688980021048337,
+          "restore_infer_save_seconds": 0.5941977449983824,
+          "algorithm_pipeline_seconds": 6.128105133000645
+        }
+      }
+    },
+    {
+      "trajectory": "d3-colored-1-mean_antithetic",
+      "actual_outer_wall_seconds": 7.834246337999502,
+      "peak_rss_kib": 304696,
+      "actual_exit": 0,
+      "input_seconds": 0.001042321997374529,
+      "shared_setup_seconds": 0.5598807550013589,
+      "training_wall_seconds": 5.001890422998258,
+      "completed_updates": 2896,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.357882549003989,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.9172013179995702,
+            "update_completion_elapsed_seconds": 0.9172013179995702,
+            "state_dict_sha256": "6c3f11b6b9a28285ce6302a6a47d6b1f77af5223f1c688b499fc79343c642a87",
+            "stream_sha256": {
+              "base_indices": "4d27450216b9cb5cc839a9ddbdba0f309e6dad80697b9c1259943c67d50afd36",
+              "used_indices": "72950bde16149ac2156536cb8ea194d9f513b419892ef4f40779445f870e8869",
+              "pair_order": "87e4c02c52f915851a0d2180517435757ad31d997f83c67e341831acec476300",
+              "gaussian_prefix": "252993135ed96e386cbf11a276ecce5aaa88f0eb7384a1edf25fd736fbae42a4",
+              "step_seed_tuple": "a89f76b8026793356ebc121cfee86a00add9bd4e13d500b94b328714a8c4ff85"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.9173892159997195,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006072989999665879,
+          "restore_infer_save_seconds": 0.36123890899762046,
+          "algorithm_pipeline_seconds": 1.84015850099604
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.472392669002147,
+          "training": {
+            "step": 2896,
+            "boundary_elapsed_seconds": 5.001683465998212,
+            "update_completion_elapsed_seconds": 5.001683465998212,
+            "state_dict_sha256": "09b5a699e867efbbd8e9c877a793808a597f0f0119adb8f020568a300eae266a",
+            "stream_sha256": {
+              "base_indices": "2c0adbb8c772fbeaa89edbbf729334cbea7274c36ec22b9ebaa19ef6d5df84d0",
+              "used_indices": "6ed253e3a2a5e94d0240fb5006b740c0704861c0514360bb1cd82a1833121d20",
+              "pair_order": "7ce218e3d41875b81de348ccf9ee459942f20584843f0ae457160194d3052094",
+              "gaussian_prefix": "3524381d73dd90a04a76a876b3462da6d23b9d0951212eb155362019ce44fd41",
+              "step_seed_tuple": "23f3dbddfd9bb2f2de6e4c2234c4e90459220c6884b9d8515cb1148e1decd87c"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.00188296199849,
+            "overrun_seconds": 0.0018829619984899182,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00041948099897126667,
+          "restore_infer_save_seconds": 0.3914431009980035,
+          "algorithm_pipeline_seconds": 5.954668620994198
+        }
+      }
+    },
+    {
+      "trajectory": "d3-colored-1-same_patch",
+      "actual_outer_wall_seconds": 8.14687558699734,
+      "peak_rss_kib": 304512,
+      "actual_exit": 0,
+      "input_seconds": 0.0012978509985259734,
+      "shared_setup_seconds": 0.5380707129988878,
+      "training_wall_seconds": 5.0006087539986765,
+      "completed_updates": 3128,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.4634607779953512,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8179699269967386,
+            "update_completion_elapsed_seconds": 0.8179699269967386,
+            "state_dict_sha256": "54b4b5fbf2cf1e38d2feb7da7b369aae4ffc224d67b35d5a57062825f155c666",
+            "stream_sha256": {
+              "base_indices": "4d27450216b9cb5cc839a9ddbdba0f309e6dad80697b9c1259943c67d50afd36",
+              "used_indices": "2859a086b925afa34c6b880fbdee8e485b2dad32d46c2c7f5013edeb7d393975",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "252993135ed96e386cbf11a276ecce5aaa88f0eb7384a1edf25fd736fbae42a4",
+              "step_seed_tuple": "a89f76b8026793356ebc121cfee86a00add9bd4e13d500b94b328714a8c4ff85"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8181931969993457,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006817589965066873,
+          "restore_infer_save_seconds": 0.5858493539999472,
+          "algorithm_pipeline_seconds": 1.9440928739932133
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.5603367229996365,
+          "training": {
+            "step": 3128,
+            "boundary_elapsed_seconds": 5.000378222997824,
+            "update_completion_elapsed_seconds": 5.000378222997824,
+            "state_dict_sha256": "d8b7783b833f531f711a90f6399b82cf8e31fa2d02b03e44bc1f6ce0001d8a14",
+            "stream_sha256": {
+              "base_indices": "48966fe21ff117dc5aa18b54128c265d3c187d00386668be914ba045ace8b298",
+              "used_indices": "3f6960ed833d7e51495570b492153d17edf76853d921ba9258d685a0fd804244",
+              "pair_order": "f08ac81300ed7fae5ef8962316a6c00de3307ca2c7f5d862bffb00c364fe5705",
+              "gaussian_prefix": "05ba6d2240151e930f621fb24719f4cc539633ddab1fd3c9e4f70933f5714435",
+              "step_seed_tuple": "924133e18ab5afa6ad302ca93878573808cfd457086fe52ef16905643fb3d766"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000601002997428,
+            "overrun_seconds": 0.0006010029974277131,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0003935130007448606,
+          "restore_infer_save_seconds": 0.5006057390019123,
+          "algorithm_pipeline_seconds": 6.040968818997499
+        }
+      }
+    },
+    {
+      "trajectory": "d3-colored-1-independent",
+      "actual_outer_wall_seconds": 8.089437116999761,
+      "peak_rss_kib": 303808,
+      "actual_exit": 0,
+      "input_seconds": 0.0011293919997115154,
+      "shared_setup_seconds": 0.5608311569994839,
+      "training_wall_seconds": 5.001406333001796,
+      "completed_updates": 3343,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.239312196998071,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.6972583989991108,
+            "update_completion_elapsed_seconds": 0.6972583989991108,
+            "state_dict_sha256": "0ef1d367bc64404cbbdb57e1007a278a37e611393dd9fab1698a737ba34af864",
+            "stream_sha256": {
+              "base_indices": "4d27450216b9cb5cc839a9ddbdba0f309e6dad80697b9c1259943c67d50afd36",
+              "used_indices": "4d27450216b9cb5cc839a9ddbdba0f309e6dad80697b9c1259943c67d50afd36",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "252993135ed96e386cbf11a276ecce5aaa88f0eb7384a1edf25fd736fbae42a4",
+              "step_seed_tuple": "a89f76b8026793356ebc121cfee86a00add9bd4e13d500b94b328714a8c4ff85"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.6974909730015497,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006787240017729346,
+          "restore_infer_save_seconds": 0.39508831900093355,
+          "algorithm_pipeline_seconds": 1.6552185650034517
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.693661590994452,
+          "training": {
+            "step": 3343,
+            "boundary_elapsed_seconds": 5.001165727000625,
+            "update_completion_elapsed_seconds": 5.001165727000625,
+            "state_dict_sha256": "67497da64f1c59f5d9d5b907612e34a177ffb688f92bb2c4dbab0ec84796fdd9",
+            "stream_sha256": {
+              "base_indices": "51d81cd88bb603afef9d291ea60af71e4d614b093167dc69a0bc060093938968",
+              "used_indices": "51d81cd88bb603afef9d291ea60af71e4d614b093167dc69a0bc060093938968",
+              "pair_order": "ef56d069846ca26bb27a690ce21a263f257f668ed4683d322d6c9d5f0fb9e85d",
+              "gaussian_prefix": "90962c4b095577f6047e9cebc8553d7ce97ab53062fbba5bb338e205fd392285",
+              "step_seed_tuple": "c48581a6042f73cb62968b7dc54b0943d91ad6d031e5db7d33454caff88fc1b3"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001397849999194,
+            "overrun_seconds": 0.0013978499991935678,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0003001650002261158,
+          "restore_infer_save_seconds": 0.5459093950012175,
+          "algorithm_pipeline_seconds": 6.109567958999833
+        }
+      }
+    },
+    {
+      "trajectory": "d4-colored-0-mean_antithetic",
+      "actual_outer_wall_seconds": 8.08484985999894,
+      "peak_rss_kib": 304572,
+      "actual_exit": 0,
+      "input_seconds": 0.0010517360024095979,
+      "shared_setup_seconds": 0.5553415130016219,
+      "training_wall_seconds": 5.000917647997994,
+      "completed_updates": 2881,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.454768792998948,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8857337609988463,
+            "update_completion_elapsed_seconds": 0.8857337609988463,
+            "state_dict_sha256": "e0586f536706a6a784c3c1ebefc88da1db23b287d3a4493facd4eab0a77079fb",
+            "stream_sha256": {
+              "base_indices": "d62bac897593fbc3e429d2be3f2e2a08aa7ce4a0c7ca1a4ec22af3e4c499d0b4",
+              "used_indices": "91c280ceaa1e32852588594ba535ae573f6d1dbb72cfee2c713c6960910daea8",
+              "pair_order": "df91f2f6f293f5c60bfcfe7e731d48710f9784c5e18ea1fadcbc91ac676b9722",
+              "gaussian_prefix": "ff82dcf8070bbf9fa72b9e952f10cd8044fc1b94fa3b7cd1935e8acf5a7659df",
+              "step_seed_tuple": "e06227110f24da1b263c8c17d1da86b538f47663bd2c6e61334eb86336d0027c"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8859205879998626,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0005677700028172694,
+          "restore_infer_save_seconds": 0.5240564910018293,
+          "algorithm_pipeline_seconds": 1.9669380980085407
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.560218187994906,
+          "training": {
+            "step": 2881,
+            "boundary_elapsed_seconds": 5.0007200359978015,
+            "update_completion_elapsed_seconds": 5.0007200359978015,
+            "state_dict_sha256": "956070750f0979460216aa8015d8dfb38c4b03f4f0f7fc960ddc1e382160631a",
+            "stream_sha256": {
+              "base_indices": "62b1b2898a85eac6e47784be99edde4914f4fd1bac11f716efc164f358fffce6",
+              "used_indices": "934796c2263355fd3075633a52d5c5b65ad8d07f0567e90d07ee6c979dc75bf1",
+              "pair_order": "a78d9b4c878975f70cfeaef3ff79c58a42109270aa8be7f1ab7ccf7f6f8b4463",
+              "gaussian_prefix": "5eb416e24fce2ed2693f6e2540e988bb7c83c96c7f5f88d3e68ac2aadc8d415a",
+              "step_seed_tuple": "37882141fce1b0f2c1d0fed0accb51a758ed2ecf3f75ad49657821d4e17e0a42"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000910236998607,
+            "overrun_seconds": 0.000910236998606706,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0002694590002647601,
+          "restore_infer_save_seconds": 0.5148145480015955,
+          "algorithm_pipeline_seconds": 6.0723874930044985
+        }
+      }
+    },
+    {
+      "trajectory": "d4-colored-0-same_patch",
+      "actual_outer_wall_seconds": 8.035384873001021,
+      "peak_rss_kib": 304368,
+      "actual_exit": 0,
+      "input_seconds": 0.0010703939988161437,
+      "shared_setup_seconds": 0.539235522999661,
+      "training_wall_seconds": 5.000542071000382,
+      "completed_updates": 3333,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.319809417000215,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7204128299999866,
+            "update_completion_elapsed_seconds": 0.7204128299999866,
+            "state_dict_sha256": "da3e5cd67a7de084d3bdd931026e9f0a08a569ef5e579747d902000c2c4a87df",
+            "stream_sha256": {
+              "base_indices": "d62bac897593fbc3e429d2be3f2e2a08aa7ce4a0c7ca1a4ec22af3e4c499d0b4",
+              "used_indices": "9abf4ec384133f36bdbf40543dccb02f7a6b945d8322bfe4255fca819446d58a",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "ff82dcf8070bbf9fa72b9e952f10cd8044fc1b94fa3b7cd1935e8acf5a7659df",
+              "step_seed_tuple": "e06227110f24da1b263c8c17d1da86b538f47663bd2c6e61334eb86336d0027c"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7206312630005414,
+            "valid": true
+          },
+          "weights_write_seconds": 0.000579036000999622,
+          "restore_infer_save_seconds": 0.39578742400044575,
+          "algorithm_pipeline_seconds": 1.657303640000464
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.639010380997206,
+          "training": {
+            "step": 3333,
+            "boundary_elapsed_seconds": 5.000305130000925,
+            "update_completion_elapsed_seconds": 5.000305130000925,
+            "state_dict_sha256": "590a88ebab2ea05ce758fea66054ce8faeaca19f4aa67a997583e57ac453e859",
+            "stream_sha256": {
+              "base_indices": "9e8d574931eda36a560a91cfbb2ca78048e672d4a68da79d3b3f794a99e208f4",
+              "used_indices": "0af11265b777e29fa30bbcad1ab54eb4586244e34adf4e859f22940a2e5fe474",
+              "pair_order": "c21c3ed45b85bf8799588a1a4f740c97813b319632488e698d905b280bec4b36",
+              "gaussian_prefix": "b8e33bd737e0a783f00ec6eb258fad1496ee6fd1b5a5a355f14eafc11fffc557",
+              "step_seed_tuple": "e30c545d44f9a770a216e4b85a0afef015218e58a80fe22afd5cca72da318e9e"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000534038998012,
+            "overrun_seconds": 0.0005340389980119653,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0003332820015202742,
+          "restore_infer_save_seconds": 0.43533136599944555,
+          "algorithm_pipeline_seconds": 5.976504603997455
+        }
+      }
+    },
+    {
+      "trajectory": "d4-colored-0-independent",
+      "actual_outer_wall_seconds": 8.234074812997278,
+      "peak_rss_kib": 303624,
+      "actual_exit": 0,
+      "input_seconds": 0.0010399790007795673,
+      "shared_setup_seconds": 0.5761538600017957,
+      "training_wall_seconds": 5.00077729899931,
+      "completed_updates": 3321,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.410774504995061,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7140626129985321,
+            "update_completion_elapsed_seconds": 0.7140626129985321,
+            "state_dict_sha256": "51c4b58e3496402a32aed0856ec506d5985aacb4457144893c11599be396a372",
+            "stream_sha256": {
+              "base_indices": "d62bac897593fbc3e429d2be3f2e2a08aa7ce4a0c7ca1a4ec22af3e4c499d0b4",
+              "used_indices": "d62bac897593fbc3e429d2be3f2e2a08aa7ce4a0c7ca1a4ec22af3e4c499d0b4",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "ff82dcf8070bbf9fa72b9e952f10cd8044fc1b94fa3b7cd1935e8acf5a7659df",
+              "step_seed_tuple": "e06227110f24da1b263c8c17d1da86b538f47663bd2c6e61334eb86336d0027c"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7143104989991116,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006143690006865654,
+          "restore_infer_save_seconds": 0.5404278360001626,
+          "algorithm_pipeline_seconds": 1.832546543002536
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.693024585994863,
+          "training": {
+            "step": 3321,
+            "boundary_elapsed_seconds": 5.000510063000547,
+            "update_completion_elapsed_seconds": 5.000510063000547,
+            "state_dict_sha256": "812ff0853b4a113acbf8dc6e80a6a1929b7b14b25c8b312c002c0af23632d48e",
+            "stream_sha256": {
+              "base_indices": "0b8fd6505d1ecbad97640fd2adbc5abb660ce20166ec409e2172fc1282bd9096",
+              "used_indices": "0b8fd6505d1ecbad97640fd2adbc5abb660ce20166ec409e2172fc1282bd9096",
+              "pair_order": "71212acd14c0788c23ad9b013e5d8d3ff80626a73c7a1b4deb470828410d7d0c",
+              "gaussian_prefix": "c5f20e6b68b92d7ec5ccdced42d345e1db504b8673cc8417d2db2bb8205a6d2b",
+              "step_seed_tuple": "3df2c16bffab5bae229a9ca5c4663b30d2751809cd33915365e0b30d201359e5"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000769276997744,
+            "overrun_seconds": 0.0007692769977438729,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0002829790028044954,
+          "restore_infer_save_seconds": 0.5365505289992143,
+          "algorithm_pipeline_seconds": 6.114796624002338
+        }
+      }
+    },
+    {
+      "trajectory": "d4-colored-0-random_antithetic",
+      "actual_outer_wall_seconds": 8.338779940000677,
+      "peak_rss_kib": 304264,
+      "actual_exit": 0,
+      "input_seconds": 0.0011576830002013594,
+      "shared_setup_seconds": 0.5578519240007154,
+      "training_wall_seconds": 5.0008091290001175,
+      "completed_updates": 2885,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.6891424050008936,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.8738133309998375,
+            "update_completion_elapsed_seconds": 0.8738133309998375,
+            "state_dict_sha256": "9f8a6db74b88c163eeb9461569f1bb51b4de5fd7b774bf4f1ff611cd644e7594",
+            "stream_sha256": {
+              "base_indices": "d62bac897593fbc3e429d2be3f2e2a08aa7ce4a0c7ca1a4ec22af3e4c499d0b4",
+              "used_indices": "bd1d41280a37fad60bba1cfa31aad3a4d61665405098fbfd2788dac5c372da9b",
+              "pair_order": "dc4435914da8b6acbd2cec3a13ae000de5968031a4eab3c68fa6deb4543dfa34",
+              "gaussian_prefix": "ff82dcf8070bbf9fa72b9e952f10cd8044fc1b94fa3b7cd1935e8acf5a7659df",
+              "step_seed_tuple": "e06227110f24da1b263c8c17d1da86b538f47663bd2c6e61334eb86336d0027c"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.8740400460010278,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0007723820017417893,
+          "restore_infer_save_seconds": 0.606747270001506,
+          "algorithm_pipeline_seconds": 2.0405693050051923
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.731251945999247,
+          "training": {
+            "step": 2885,
+            "boundary_elapsed_seconds": 5.000573691002501,
+            "update_completion_elapsed_seconds": 5.000573691002501,
+            "state_dict_sha256": "15a1e9335dbd9b8d1dffd0d8bd987d5c53d4645aa95f883aa04819641c0fe972",
+            "stream_sha256": {
+              "base_indices": "68c9f94b0b2fe2ec63ddb96d89168f6e287ce4c4a9d618cff143178c88f0d2e2",
+              "used_indices": "cf3f0ec7bf7c50594317bede8973119b6d98f4faa977e1cf4d23174073cf0a69",
+              "pair_order": "5141998d9ded99d7ec2875eebbebe2cf1243f67892c0b2c49d22b3b0398b51a4",
+              "gaussian_prefix": "2b83ea8e0a36894925d342de088f0a9ca54cd5d2a04653411979b326d2684040",
+              "step_seed_tuple": "3f53623976bc89d577b13e29fd32ed304bac229e1eb78d257f2d61c5b91696b8"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.0008007870019355,
+            "overrun_seconds": 0.0008007870019355323,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00033473599978606217,
+          "restore_infer_save_seconds": 0.5225337160009076,
+          "algorithm_pipeline_seconds": 6.082678846003546
+        }
+      }
+    },
+    {
+      "trajectory": "d4-colored-1-same_patch",
+      "actual_outer_wall_seconds": 8.037119554999663,
+      "peak_rss_kib": 304288,
+      "actual_exit": 0,
+      "input_seconds": 0.0010416810000606347,
+      "shared_setup_seconds": 0.5839493469975423,
+      "training_wall_seconds": 5.001244456998393,
+      "completed_updates": 3015,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.334775970000919,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.727424914999574,
+            "update_completion_elapsed_seconds": 0.727424914999574,
+            "state_dict_sha256": "2537e80cad09eeb04193ec47a96d31d27a4815946a635956614bc239be50ace9",
+            "stream_sha256": {
+              "base_indices": "29cb36f679bd75ea9777ec96008a0a9569f71cd01b74ed9e11476853b079364e",
+              "used_indices": "6b397123403040d2db452774cbdeab4f15667e0f5f311066bb50589a78bf938d",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "8eadc9926a7a5052caf22c28d40cefb41739d75ab456dcb1b113c7ef0c159f60",
+              "step_seed_tuple": "ccf97dc72a229f28e5035c0d6b0ce9e13d28496012f974d709f69c2cdfb8a04b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7276600029981637,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0008241390023613349,
+          "restore_infer_save_seconds": 0.4597466679988429,
+          "algorithm_pipeline_seconds": 1.7732218379969709
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.576540625999769,
+          "training": {
+            "step": 3015,
+            "boundary_elapsed_seconds": 5.001016350001009,
+            "update_completion_elapsed_seconds": 5.001016350001009,
+            "state_dict_sha256": "b2ec93458313f5bdab9aeb5dd889aa67c9de570a9ed309192a8750a6d7d9f53f",
+            "stream_sha256": {
+              "base_indices": "924d4edbe0396f0fafd8bd03027db6bf047f3352e6e366818e0f145f6e19927a",
+              "used_indices": "a11ba4d036bb9ad682681be97547bbaaf8828925f49fbec8c8b1ed5e2eb7590e",
+              "pair_order": "dff3d00c9d534419b892757f9a7dcc2661aeaf66e6ce904af71dc5007fa3edbe",
+              "gaussian_prefix": "dfcb9f497dd6d353b83a564af15bdd683497c444d5270f50a63b7c18ede09670",
+              "step_seed_tuple": "b252c2ae95dd6fa7d669225cf28471f85d0ce89ac8f47199d9e884827a212d0b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001236334999703,
+            "overrun_seconds": 0.0012363349997031037,
+            "valid": true
+          },
+          "weights_write_seconds": 0.000362425998901017,
+          "restore_infer_save_seconds": 0.4283967049996136,
+          "algorithm_pipeline_seconds": 6.014986493995821
+        }
+      }
+    },
+    {
+      "trajectory": "d4-colored-1-independent",
+      "actual_outer_wall_seconds": 7.98417735700059,
+      "peak_rss_kib": 303528,
+      "actual_exit": 0,
+      "input_seconds": 0.0010298739980498794,
+      "shared_setup_seconds": 0.5780198329994164,
+      "training_wall_seconds": 5.000646818996756,
+      "completed_updates": 3237,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.3480070010009513,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.79540158799864,
+            "update_completion_elapsed_seconds": 0.79540158799864,
+            "state_dict_sha256": "45196f316b63d479067d839e2115c14d6d522c52ca5082799b65fc4a4dfd6a4d",
+            "stream_sha256": {
+              "base_indices": "29cb36f679bd75ea9777ec96008a0a9569f71cd01b74ed9e11476853b079364e",
+              "used_indices": "29cb36f679bd75ea9777ec96008a0a9569f71cd01b74ed9e11476853b079364e",
+              "pair_order": "e5843185b1a37904e5183f29620aab8beffa6986030ee5187a42f29f008b9c96",
+              "gaussian_prefix": "8eadc9926a7a5052caf22c28d40cefb41739d75ab456dcb1b113c7ef0c159f60",
+              "step_seed_tuple": "ccf97dc72a229f28e5035c0d6b0ce9e13d28496012f974d709f69c2cdfb8a04b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7956383379969338,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0005838549986947328,
+          "restore_infer_save_seconds": 0.43333020800127997,
+          "algorithm_pipeline_seconds": 1.8086021079943748
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.550255422003829,
+          "training": {
+            "step": 3237,
+            "boundary_elapsed_seconds": 5.0004101380000066,
+            "update_completion_elapsed_seconds": 5.0004101380000066,
+            "state_dict_sha256": "e95355e9bdb2b253faf1a6430b26fe99a306be571bb34e724481e542f2c2d01f",
+            "stream_sha256": {
+              "base_indices": "35e6a5aeccdd14e4192ceb18a6223f1de579a34c0fdf01f4cc406c2b6d4bcfe2",
+              "used_indices": "35e6a5aeccdd14e4192ceb18a6223f1de579a34c0fdf01f4cc406c2b6d4bcfe2",
+              "pair_order": "b7f24d9f239918f966d7ef8f0c7650dd3ad6de58b9e9fcaf7bf714546ac8be64",
+              "gaussian_prefix": "d42233938f8c05759bde88b6a81e055d7c878067f2874d094538542ec76936bb",
+              "step_seed_tuple": "d5c9b97666fa241402573f8407f99d0f9981e8f29bee2af6a686d5f8779e16f6"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.00063894699997,
+            "overrun_seconds": 0.0006389469999703579,
+            "valid": true
+          },
+          "weights_write_seconds": 0.00030426100056502037,
+          "restore_infer_save_seconds": 0.43085761399925104,
+          "algorithm_pipeline_seconds": 6.010850528997253
+        }
+      }
+    },
+    {
+      "trajectory": "d4-colored-1-random_antithetic",
+      "actual_outer_wall_seconds": 8.339597688001959,
+      "peak_rss_kib": 304396,
+      "actual_exit": 0,
+      "input_seconds": 0.0010945810026896652,
+      "shared_setup_seconds": 0.6290511279985367,
+      "training_wall_seconds": 5.0012329400015005,
+      "completed_updates": 3051,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.5104445140023017,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.7351824170000327,
+            "update_completion_elapsed_seconds": 0.7351824170000327,
+            "state_dict_sha256": "5f1a74804e7299a452e9d4a6fed5156b409c60317b8fee180dbf859ae01ffec8",
+            "stream_sha256": {
+              "base_indices": "29cb36f679bd75ea9777ec96008a0a9569f71cd01b74ed9e11476853b079364e",
+              "used_indices": "2089c6bf4fabdfffe0c78b8c002059898cf5eae52dd31423b767f8a9136edcab",
+              "pair_order": "f9032adf12fdb5feb2269ca93ddf4078718d22a449b1bbb231a22023e1687d8b",
+              "gaussian_prefix": "8eadc9926a7a5052caf22c28d40cefb41739d75ab456dcb1b113c7ef0c159f60",
+              "step_seed_tuple": "ccf97dc72a229f28e5035c0d6b0ce9e13d28496012f974d709f69c2cdfb8a04b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.7354090029984945,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0008804159988358151,
+          "restore_infer_save_seconds": 0.5818952720001107,
+          "algorithm_pipeline_seconds": 1.9483303999986674
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.756811474002461,
+          "training": {
+            "step": 3051,
+            "boundary_elapsed_seconds": 5.000957401000051,
+            "update_completion_elapsed_seconds": 5.000957401000051,
+            "state_dict_sha256": "183bcbb83a5ad3a7a92f2014c31d0de370b88ebbf8c6b364d4935d8b68bfe3fe",
+            "stream_sha256": {
+              "base_indices": "429b8e0380f0c258351db8a561005e47cf4f070f0f6cbbddc19ce6769a21773f",
+              "used_indices": "d47279ac2ad9a1bb231d0b47a55b50fd3b2b113b261ffebfc85d91dd43b631b7",
+              "pair_order": "1787a3808ab14dd8c3290a213306b90e0e8baef6d67b25e61ad8a28a91216019",
+              "gaussian_prefix": "ec2801d1da8d7c8f1577f0925ef1e874650a61ce9b3388922df6700ed9c50fc2",
+              "step_seed_tuple": "e31edd445a5403db8963f31b2cb97a529a9d231afcdccd71a1c4003e5dc01256"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.001222414000949,
+            "overrun_seconds": 0.0012224140009493567,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0004475739988265559,
+          "restore_infer_save_seconds": 0.5628816629978246,
+          "algorithm_pipeline_seconds": 6.194697359998827
+        }
+      }
+    },
+    {
+      "trajectory": "d4-colored-1-mean_antithetic",
+      "actual_outer_wall_seconds": 8.336183068997343,
+      "peak_rss_kib": 304252,
+      "actual_exit": 0,
+      "input_seconds": 0.001055431999702705,
+      "shared_setup_seconds": 0.5805741969998053,
+      "training_wall_seconds": 5.000263003003056,
+      "completed_updates": 2969,
+      "endpoints": {
+        "updates500": {
+          "allocated_outer_pipeline_seconds": 3.784888249996584,
+          "training": {
+            "step": 500,
+            "boundary_elapsed_seconds": 0.9348230310024519,
+            "update_completion_elapsed_seconds": 0.9348230310024519,
+            "state_dict_sha256": "01771c04b93c7953fc3373107cb3b0f61eccf14d2116a0bb11ce4a9680cebb6a",
+            "stream_sha256": {
+              "base_indices": "29cb36f679bd75ea9777ec96008a0a9569f71cd01b74ed9e11476853b079364e",
+              "used_indices": "a3794ec354fa898d17c556fb25962d811c755626f3a817b32d343359ff7d3ab4",
+              "pair_order": "41e66f4d69f555c7e9e7c2331dcd39d453ccc16f18423680a303627eac6f028f",
+              "gaussian_prefix": "8eadc9926a7a5052caf22c28d40cefb41739d75ab456dcb1b113c7ef0c159f60",
+              "step_seed_tuple": "ccf97dc72a229f28e5035c0d6b0ce9e13d28496012f974d709f69c2cdfb8a04b"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 0.9350179990033212,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0006303039990598336,
+          "restore_infer_save_seconds": 0.5812592930014944,
+          "algorithm_pipeline_seconds": 2.0985372250033834
+        },
+        "wall5s": {
+          "allocated_outer_pipeline_seconds": 7.7542853399936575,
+          "training": {
+            "step": 2969,
+            "boundary_elapsed_seconds": 5.000018341001123,
+            "update_completion_elapsed_seconds": 5.000018341001123,
+            "state_dict_sha256": "5669abe8d9b2964d064cfad7007e288e3857388186483d92235e1f5c27809423",
+            "stream_sha256": {
+              "base_indices": "e20d52649317bd625279f75063eee58ff6ce179fe3aac037d182137fac6a1320",
+              "used_indices": "18859c5fe8604fb6dcc82a5e65e46e9702e3550d7e28ea702e69165dcfa642dd",
+              "pair_order": "3da50f69b4774cde49555d216156bdb3bb58f747c5c9aa8d1c1bb25b8471df0b",
+              "gaussian_prefix": "b46335c0bbce53816bf5cee25e464ef30a4cf8e284f0731eb050afe634b044d0",
+              "step_seed_tuple": "59cbf94d176797eead0d71e62d9ff7f24512e36e02668f12c154173c4559fe4a"
+            },
+            "shared_snapshot": false,
+            "training_elapsed_seconds": 5.000254870999925,
+            "overrun_seconds": 0.0002548709999246057,
+            "valid": true
+          },
+          "weights_write_seconds": 0.0002747470025497023,
+          "restore_infer_save_seconds": 0.4857750679984747,
+          "algorithm_pipeline_seconds": 6.067934315000457
+        }
+      }
+    }
+  ]
+}
