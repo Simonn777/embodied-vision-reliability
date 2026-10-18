@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-17. Program day 2. Phase: cached conversion-source audit completed; next descriptive geometry candidate awaits independent review, unfrozen.
+Updated: 2026-10-17. Program day 2. Phase: cached conversion-source audit and one saved-R compatibility analysis complete; complete prospective geometry implementation awaiting review and separate receipt.
 
 ## Active question
 
@@ -291,3 +291,47 @@ Numeric ledger stays 22,910,156 bytes; whole sample remains development/cohort
 blocked. Independent candidate review and complete versioned executable freeze
 are required before any new data/geometry. No receipt or Stage B; old bytes and
 markers preserved. Parent's planned compatibility certificate was not executed.
+
+
+### Prepublished saved-R analysis: inconclusive; candidate revised, still unfrozen
+
+Parent method c1bcc597 (four byte-identical files) was verified and included before
+execution at 565c1aa4. Exactly one fixed z-branch quaternion proposal passed exact
+SO(3), but 8/9 half cells passed: [0,1] failed. Outcome INCONCLUSIVE, not proof of
+infeasibility or a historical source mechanism. No second proposal/search/repair.
+Real saved-R-only child: 0.034895 s, RSS 11,392 KiB, exit/raw 0/0; separate exact
+saved-output Gaussian/cell audit passed. No archive/cache/GT/projection/model read.
+The previous paragraph's pending-analysis status is historical and superseded.
+
+The new report explicitly corrects earlier camera-key shorthand without changing
+old bytes: source already writes intrinsics/extrinsics; actual filename, other
+fields, disk dtype and generation/version linkage remain unresolved. Candidate
+geometry output scope is narrowed to derived errors/status/hash/count, no new
+camera or original point values; prior 25-value exception is not expanded. Same
+fixed six potential checks, original tau/failure and budget remain unchanged.
+Wait for independent candidate review; no new geometry receipt or execution.
+
+
+### Complete prospective geometry implementation: synthetic validation passed
+
+[Updated full report](docs/0003-source-history-and-geometry-plan-2026-10-17.md)
+retains the original source report/candidate files as immutable history and records
+the key-name correction plus one INCONCLUSIVE saved-R proposal. New formal
+annotation-consistency-v1 protocol/config/helper/gated runner/bounded parent/tests
+are implemented. Fourteen concentrated synthetic tests pass: actual 0.312825 s,
+16,752 KiB, exit/raw 0/0, with six tested-source snapshots. Fixed six potential
+checks retain original rigid failure and distinguish annotation support from rigid
+qualification. Full sparse spans 470,884 bytes, retained 432 bytes / 117 scalars;
+carry remains 22,910,156. Only derived errors/status/rigidstats/counts/hashes may be
+published, no new camera/point originals, projected uv or depth. Complete exact
+mandatory receipt gate includes source/analysis evidence and all prior38 inputs.
+No geometry receipt or real data execution. Parent review is next, then a separate
+canonical receipt only on approval. Original source/thresholds/results/markers
+preserved; no costs, downloads, installs or permission/schedule changes.
+
+
+Final synthetic revision: 15 tests now pass at attempt2 (0.311270 s, 16,128 KiB,
+exit/raw 0/0). A last-resort uncaught-stop label now reports access unknown and
+INCOMPLETE rather than implying pre-access status; a subprocess fixture covers it.
+Attempt1's 14 passing source/log snapshots remain historical. No real dataset or
+saved-R calculation repeated. Review the latest v2 closure/map for final sources.

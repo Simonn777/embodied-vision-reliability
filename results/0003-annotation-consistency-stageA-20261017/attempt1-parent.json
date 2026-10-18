@@ -1,0 +1,56 @@
+{
+  "phase": "attempt1",
+  "command": [
+    "timeout",
+    "900",
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_annotation_consistency_v1.py",
+    "-v"
+  ],
+  "execution_base": "565c1aa4d07f548c9201eebf18204e79b3f72473",
+  "started_utc": "2026-10-18T02:12:33.225769+00:00",
+  "ended_utc": "2026-10-18T02:12:33.538590+00:00",
+  "wall_seconds": 0.31282462799572386,
+  "peak_rss_kib": 16752,
+  "CPU_user_seconds": 0.25457199999999996,
+  "CPU_system_seconds": 0.053075,
+  "observed_exit_code": 0,
+  "raw_wait_status": 0,
+  "source_sha256": {
+    "src/evr/annotation_consistency_v1.py": "55ed1e5514f02be3c57f0af9cf01a4f71269e0b4944e48f4a6009999b91abf72",
+    "scripts/audit_0003_annotation_consistency_v1.py": "7b4264df5637779069cd4c8d256d4f08a80a4ce8f0d95d706698c9fab293dd92",
+    "scripts/run_0003_annotation_consistency_bounded_v1.py": "9615a578e0e0addada12de424ff33bca19599420bd3a5b1f4acc9c8f574603a5",
+    "tests/test_annotation_consistency_v1.py": "3e1a94c175d394c649d4f89cf07bacbc66c63636a443d831f2f488f53f5a8350",
+    "protocols/0003-annotation-consistency-v1.md": "91e8291cb8b786db88fb3ddd23e5d2e6027503641115570976c5cefe641119e8",
+    "configs/0003-annotation-consistency-v1.json": "791a85e46934068e8cb8ade0d9c32883348c6991f07366ad28df532a38cd1829",
+    "results/0003-annotation-consistency-stageA-20261017/fixture_parent.py": "f91f22a6e160dcf1571ce989313f3cb6ee44e7a5363eb37d9df2552dd7b94471"
+  },
+  "logs_sha256": {
+    "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "3a9a6bd4c8c456f85cc9dbe61adbeb7e30152039eb0a4b43c7b8f2304f809c25"
+  },
+  "environment": {
+    "PATH": "inherited runtime PATH value omitted publicly",
+    "PYTHONPATH": "src",
+    "GIT_NO_LAZY_FETCH": "1",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "AS_bytes": 6442450944,
+  "affinity": [
+    0,
+    1
+  ],
+  "timeout_seconds": 900,
+  "scope": "synthetic-only; zero data archive/NPZ/GT/model/projection on real data",
+  "boundary": "actual parent wait4 of synthetic suite; parent has no further observed exit receipt"
+}
