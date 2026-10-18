@@ -23,7 +23,12 @@ readiness or methodological novelty is claimed. [Contributions and evidence](doc
 | [0006 residual-denoising screen](results/0006-stage0/README.md) | Mean gain−0.571dB; stop this candidate. A missing stdout line remains an open provenance defect. |
 | [0004 tracking intervention](results/0004-stage0/README.md) | 46 repairs and120 harms; stop this candidate. |
 
-![All eight total-gradient-variance comparisons](results/0007-gradient-screen/gradient-variance.png)
+![All eight paired denoising-quality comparisons at both endpoints](results/0008-antithetic-training/parent-review/training-quality.png)
+
+[Independent parent review](results/0008-antithetic-training/parent-review/README.md)
+checks the public arithmetic and publication provenance separately: 89,135 numerical
+review checks and 9,885 provenance checks. Both agree with the failed result; no
+training or inference was repeated. All unfavorable cases remain visible above.
 
 The gradient result is conditional on four reused development substrates and
 known synthetic noise covariance; it did not translate into the required

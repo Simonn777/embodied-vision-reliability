@@ -21,6 +21,17 @@ archives saved text evidence only; it does not rerun training, inference or scor
 Any distinct future hypothesis needs prospective justification and untouched
 validation. Do not rescue this rule by tuning these development images or old tests.
 
+[Independent parent review](results/0008-antithetic-training/parent-review/README.md)
+is complete: public-summary arithmetic passed 89,135 checks / 1,609 numeric
+comparisons (maximum difference 1.0658e-14), and provenance passed 9,885 checks.
+All 265 original cloud files, 2,285 prior result/protocol Git blobs, 13 frozen
+inputs and the canonical receipt remain unchanged. Nine archived stage records
+match the parent-retrieved original tool outputs. Private cache preservation is
+supported by the cloud postcheck, not a new local byte check. A separate review
+layer and complete quality figure have been added without changing the cloud
+archive. Working-tree integration is ready for explicit-file review; PR, merge
+and exact-commit CI verification are pending. No scientific run was repeated.
+
 ## 0007 gradient variance: retained local mechanism result
 
 The prospective [mean-paired antithetic screen](protocols/0007-antithetic-gradient-screen.md)

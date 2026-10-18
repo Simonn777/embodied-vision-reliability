@@ -1,0 +1,74 @@
+{
+  "schema": "0008-independent-parent-provenance-v1",
+  "status": "PASS",
+  "head": "70bc57fd83634a8df66aecf072ea9b526e3af043",
+  "scope": "Local public-file and Git preservation, saved receipt consistency, and independent comparison with original parent-retrieved execution tool records. No scientific recomputation or cloud access.",
+  "auditor_source_sha256": "7ba74b8aebc9ca862363f47e57cd52274b202c31dc0e79201ea32a3cf3a9c214",
+  "input_evidence_sha256": {
+    "parent_tool_observations": "ab15363d33b1216c805629aca5757a2b827102be8b63b539a7fea6a734f57fb1",
+    "prior_public_inventory": "6459e8c288fa0a8f25ff848fcdead17a96efc354827bbf24a8fbd34de108105b",
+    "private_execution_retrieval": "6f8a55c69b64d7a435f26494d0bc774c7e72ea8bec7283175617177746378b34",
+    "public_copy_manifest": "5a2bd417d9bfdf1d89e07b29d6783d2f38cec5ab9418b10e8089cdc7d21ec980",
+    "artifact_hashes": "ad452618d77fbefab54fd8d42afd109c474011c5d36d9e471ed253ec0f8f8f5e"
+  },
+  "checks_by_group": {
+    "checkout": 4,
+    "tool_records": 84,
+    "redaction": 19,
+    "archive": 268,
+    "manifest": 813,
+    "prior_blobs": 4571,
+    "history": 2477,
+    "freeze": 29,
+    "outer_stages": 80,
+    "trajectories": 515,
+    "recipes": 224,
+    "format": 3,
+    "publication": 3,
+    "privacy": 795
+  },
+  "total_checks": 9885,
+  "failures": [],
+  "counts": {
+    "archive_files": 265,
+    "artifact_hash_entries": 264,
+    "manifest_entries": 263,
+    "manifest_modes": {
+      "byte_exact_copy": 206,
+      "redacted_copy": 52,
+      "derived_summary": 5
+    },
+    "redacted_copies_inverse_hash_verified": 52,
+    "selective_source_assignment_inversions": 4,
+    "redacted_copies_not_unambiguously_inverted": 0,
+    "public_json_validated": 168,
+    "prior_result_protocol_Git_blobs": 2285,
+    "old_tracked_worktree_files_checked_excluding_four_mutable": 2473,
+    "frozen_inputs": 13,
+    "canonical_freeze_receipt": 1,
+    "original_command_tool_records": 18,
+    "complete_observed_stages": 9,
+    "trajectories": 32,
+    "closed_trajectory_logs": 64,
+    "private_output_file_hash_references": 128
+  },
+  "redaction_inverse_limit_files": [],
+  "original_9_stage_records_equal_to_archived": true,
+  "historical_private_cache_counts_claimed_by_cloud_postcheck": {
+    "conditional-residual-0006": 496,
+    "antithetic-gradient-0007": 84,
+    "tapnextpp-cache": 407
+  },
+  "historical_private_marker_count_claimed_by_cloud_postcheck": 22,
+  "limitations": [
+    "No private cache/data/weight/prediction bytes were accessed or rehashed locally. Their preservation is the scope of the observed cloud postcheck and its saved inventory, not fresh parent verification.",
+    "Output hashes establish identity links but do not expose private preimages. No score, gradient, PSNR, bootstrap, model inference or training was rerun.",
+    "Original command tool records independently support nine stage outcomes. They do not instrument every library syscall or prove absence of arbitrary hidden activity.",
+    "All 52 redacted copies were restored in memory to their declared original hash and length. Four publication scripts required restoring only their PYTHON assignment while retaining original literal placeholder destinations. No restored private bytes were written or exported.",
+    "The published verification-v2 summary describes its then-259-file snapshot. The final archive has 265 files and was independently checked here; the older snapshot is not silently rewritten.",
+    "Historical note link remains unresolved by design. The original publication-only failure is retained; it is not a scientific failure or repeated experiment."
+  ],
+  "network_requests": 0,
+  "scientific_calls": 0,
+  "repository_writes": 0
+}
