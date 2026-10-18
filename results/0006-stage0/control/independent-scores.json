@@ -1,0 +1,108 @@
+{
+  "status": "passed_independent_recomputation",
+  "scientific_status": "stop_this_candidate",
+  "primary_cases": 64,
+  "secondary_direct_cases": 16,
+  "arithmetic": "Python float64 subtraction and math.fsum squares, no frozen metrics/trainer imported",
+  "tolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-12
+  },
+  "numeric_comparisons": 5615,
+  "max_absolute_numeric_difference": 2.842170943040401e-14,
+  "mean_colored_gain_db": -0.5709558643277575,
+  "group_mean_colored_gain_db": {
+    "d1": -0.5484817311903658,
+    "d2": -1.0304409839408901,
+    "d3": -0.0953419118437715,
+    "d4": -0.6095588303360024
+  },
+  "gradient_ratio": 1.8006837076130084,
+  "gates": {
+    "colored_pair_mean_ge_0_3_db": false,
+    "colored_at_least3_group_means_gt0": false,
+    "colored_each_group_mean_ge_minus0_2_db": false,
+    "colored_first_difference_le_1_05": false,
+    "white_predictions_bitwise_equal": true,
+    "white_safe_predictions_bitwise_equal": true,
+    "white_psnr_harm_zero": true
+  },
+  "colored_pairs": [
+    {
+      "group": "d1",
+      "seed": 0,
+      "oracle_best_baseline": "r2r_alpha05",
+      "gain_db": -1.1772256885254215,
+      "candidate_gradient_mse": 0.00030091509521045396,
+      "baseline_gradient_mse": 0.00014395459100431874
+    },
+    {
+      "group": "d1",
+      "seed": 1,
+      "oracle_best_baseline": "r2r_alpha05",
+      "gain_db": 0.08026222614468992,
+      "candidate_gradient_mse": 0.00022916565198919886,
+      "baseline_gradient_mse": 0.00010677600383598468
+    },
+    {
+      "group": "d2",
+      "seed": 0,
+      "oracle_best_baseline": "r2r_alpha05",
+      "gain_db": -1.4281760729644617,
+      "candidate_gradient_mse": 0.0005165382531545294,
+      "baseline_gradient_mse": 0.00017344490497524833
+    },
+    {
+      "group": "d2",
+      "seed": 1,
+      "oracle_best_baseline": "safe_blindspot",
+      "gain_db": -0.6327058949173185,
+      "candidate_gradient_mse": 0.0003960537853476992,
+      "baseline_gradient_mse": 0.0002364872356019638
+    },
+    {
+      "group": "d3",
+      "seed": 0,
+      "oracle_best_baseline": "r2r_alpha05",
+      "gain_db": -0.2989120995840544,
+      "candidate_gradient_mse": 0.00032094093338115945,
+      "baseline_gradient_mse": 0.0001634743513199906
+    },
+    {
+      "group": "d3",
+      "seed": 1,
+      "oracle_best_baseline": "safe_blindspot",
+      "gain_db": 0.1082282758965114,
+      "candidate_gradient_mse": 0.0002842649679084208,
+      "baseline_gradient_mse": 0.000289434751760102
+    },
+    {
+      "group": "d4",
+      "seed": 0,
+      "oracle_best_baseline": "safe_blindspot",
+      "gain_db": -0.4098006871275075,
+      "candidate_gradient_mse": 8.170734669703886e-05,
+      "baseline_gradient_mse": 5.000866902315133e-05
+    },
+    {
+      "group": "d4",
+      "seed": 1,
+      "oracle_best_baseline": "safe_blindspot",
+      "gain_db": -0.8093169735444974,
+      "candidate_gradient_mse": 0.00018194692990944315,
+      "baseline_gradient_mse": 0.00012011687577045636
+    }
+  ],
+  "scores_file_sha256": "b75afbc519e67b9ea4ff81997db9b5013acc7516fb744a95862b8d683a773108",
+  "provenance_status": "BLOCKED_LOG_PROVENANCE",
+  "open_log_mismatches": [
+    {
+      "case": "d3-colored-0-blindspot",
+      "stream": "stdout",
+      "recorded_sha256": "ed5f5d837911965bb1039495a5245e5b17654e4ddd8af32a4b6d643183df7956",
+      "observed_sha256": "fb7e5a0f333fd38415fcd7700547e442b49484aeaff3784e1e47a772c09d1274",
+      "observed_bytes": 862
+    }
+  ],
+  "no_torch_or_trainer_import": true
+}

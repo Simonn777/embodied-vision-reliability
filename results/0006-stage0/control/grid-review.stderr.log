@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a349d03a0e0a/scratch/0006-control/check_saved_0006.py", line 105, in <module>
+    mode=sys.argv[1];assert mode in ['grid','metrics'];globals()[mode]()
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a349d03a0e0a/scratch/0006-control/check_saved_0006.py", line 29, in grid
+    for st in ['stdout','stderr']:assert sha(N/'cases'/(name+'.'+st+'.log'))==ex[st+'_sha256']
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

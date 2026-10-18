@@ -6,9 +6,21 @@ Work from the first unfinished item. Record each outcome in a dated note before 
 
 1. **Completed:** freeze, execute once and independently review [0004 Stage 0](results/0004-stage0/README.md). It failed the unchanged continuation rule: 46 coordinate repairs / 120 harms and negative shadow return. Preserve the result and cache marker; do not repeat the run, reinterpret it as undersensitive, or fit a selector to selected positive episodes.
 2. **Completed and independently reviewed:** the [recovered native CPU operation](results/0005-recovered-parent-review/README.md) produced 64 finite outputs in 55.082 seconds, peak RSS 3,727,996 KiB. Preserve the archive and all markers; do not repeat it merely for publication. Capability is not method improvement.
-3. **New candidate selected for a development screen, not a contribution claim:** [0006 protocol](protocols/0006-conditional-residual-stage0.md). Per-target conditional residuals must improve over ordinary blindspot, covariance-safe blindspot and R2R alpha0.5/MC50 under the fixed known-Gaussian model. Preserve the [prior-art/limitations audit](docs/0006-mechanism-audit.md).
-4. Finish source and protocol review, relevant artificial tests, canonical freeze and exact-head/main CI. In the original free cloud CPU runtime, first run all tensor-interface tests with zero skips; only then acquire the four pinned images and prepare the fixed inputs. Run each of the 64 frozen cases at most once, preserving failures and completed markers. Independently score saved arrays; do not weaken the fixed gate or treat incomplete fits as results.
-5. If the 0006 gate fails, stop that exact candidate/configuration and retain the evidence. If it passes, design the stronger independent-data/modern-baseline/ablation/uncertainty study before any manuscript. Its four-image synthetic-corruption screen is not native-camera-noise efficacy or CVPR-level evidence. Tracking claims retain the old [0004 gate](docs/0004-research-direction.md); the new task's prospective targets are in the 0006 protocol. The overall goal remains active.
+3. **0006 numerical gate failed:** [64-case saved results](results/0006-stage0/README.md).
+   All fits completed 500 updates once; 66 cloud software tests passed, zero skips.
+   Independent arithmetic agrees with the frozen scorer: mean gain −0.570956 dB,
+   gradient ratio 1.800684 and all four image means negative. White controls match.
+   Stop this exact candidate/configuration; preserve its protocol and outcomes.
+4. Independently review the results branch and the retained stdout-hash gap for
+   d3-colored-0-blindspot. Its required input/prediction/weight hashes match, but
+   one completion line is absent from the current log. Do not rewrite that log,
+   retrain a case or describe the strict failed review as passed. All 64 raw
+   predictions/weights remain in cloud cache; only small aggregates are published.
+5. After review, any different hypothesis or study needs an explicit prospective
+   design and justified data allocation. Do not weaken the 0006 gate or tune old
+   tests. This four-image synthetic-corruption development screen is not real
+   camera-noise efficacy, a novelty proof or paper evidence. The overall goal
+   remains active; no additional experiment or manuscript is run this turn.
 
 The old 0003 task below is **deferred**, not a prerequisite for this newly authorized
 independent study. Its published constraints and one-shot state remain untouched.

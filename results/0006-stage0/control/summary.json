@@ -1,0 +1,306 @@
+{
+  "scope": "prospective synthetic-corruption DEVELOPMENT screen; not real-camera denoising or a paper result",
+  "AI_assisted": true,
+  "execution_main": "1edf58df657a3694a027f4b08b0cce76a9bfabfb",
+  "source_commit": "ad3731de4f82f686da1a454bebeebcbfa4626dbb",
+  "freeze_commit": "7763fee2351bd4d58b30d1b5594c80b03ac7a0b5",
+  "freeze_sha256": "1c71bbb85cbce43b054ace50502d949df2a599c2917e28053351e8896c3d9c96",
+  "fits_completed": 64,
+  "updates_per_fit": 500,
+  "numerical_gate_status": "stop_this_candidate",
+  "mean_colored_gain_db": -0.570955864327757,
+  "group_mean_colored_gain_db": {
+    "d1": -0.5484817311903658,
+    "d2": -1.0304409839408883,
+    "d3": -0.0953419118437715,
+    "d4": -0.6095588303360024
+  },
+  "gradient_error_ratio": 1.8006837076130082,
+  "gates": {
+    "colored_pair_mean_ge_0_3_db": false,
+    "colored_at_least3_group_means_gt0": false,
+    "colored_each_group_mean_ge_minus0_2_db": false,
+    "colored_first_difference_le_1_05": false,
+    "white_predictions_bitwise_equal": true,
+    "white_safe_predictions_bitwise_equal": true,
+    "white_psnr_harm_zero": true
+  },
+  "mean_method_metrics": [
+    {
+      "condition": "white",
+      "method": "blindspot",
+      "pairs": 8,
+      "mean_psnr_db": 35.47832074619781,
+      "mean_first_difference_mse": 0.00017837688094930328
+    },
+    {
+      "condition": "white",
+      "method": "safe_blindspot",
+      "pairs": 8,
+      "mean_psnr_db": 35.47832074619781,
+      "mean_first_difference_mse": 0.00017837688094930328
+    },
+    {
+      "condition": "white",
+      "method": "residual",
+      "pairs": 8,
+      "mean_psnr_db": 35.47832074619781,
+      "mean_first_difference_mse": 0.00017837688094930328
+    },
+    {
+      "condition": "white",
+      "method": "r2r_alpha05",
+      "pairs": 8,
+      "mean_psnr_db": 35.0617448622568,
+      "mean_first_difference_mse": 0.00013360712721427942
+    },
+    {
+      "condition": "colored",
+      "method": "blindspot",
+      "pairs": 8,
+      "mean_psnr_db": 20.321029401210595,
+      "mean_first_difference_mse": 0.005847725545570407
+    },
+    {
+      "condition": "colored",
+      "method": "safe_blindspot",
+      "pairs": 8,
+      "mean_psnr_db": 32.03314912252015,
+      "mean_first_difference_mse": 0.00023486406144673243
+    },
+    {
+      "condition": "colored",
+      "method": "residual",
+      "pairs": 8,
+      "mean_psnr_db": 31.715140380633642,
+      "mean_first_difference_mse": 0.00028894162044974293
+    },
+    {
+      "condition": "colored",
+      "method": "r2r_alpha05",
+      "pairs": 8,
+      "mean_psnr_db": 31.746446326195407,
+      "mean_first_difference_mse": 0.00013928684532386117
+    }
+  ],
+  "colored_pairs": [
+    {
+      "group": "d1",
+      "seed": 0,
+      "oracle_best_baseline": "r2r_alpha05",
+      "candidate_psnr_db": 30.87383938715286,
+      "baseline_psnr_db": 32.05106507567828,
+      "gain_db": -1.1772256885254215,
+      "candidate_first_difference_mse": 0.00030091509521045396,
+      "baseline_first_difference_mse": 0.00014395459100431874
+    },
+    {
+      "group": "d1",
+      "seed": 1,
+      "oracle_best_baseline": "r2r_alpha05",
+      "candidate_psnr_db": 32.08205312651007,
+      "baseline_psnr_db": 32.00179090036538,
+      "gain_db": 0.08026222614468992,
+      "candidate_first_difference_mse": 0.0002291656519891988,
+      "baseline_first_difference_mse": 0.0001067760038359847
+    },
+    {
+      "group": "d2",
+      "seed": 0,
+      "oracle_best_baseline": "r2r_alpha05",
+      "candidate_psnr_db": 29.25282788944878,
+      "baseline_psnr_db": 30.681003962413236,
+      "gain_db": -1.4281760729644546,
+      "candidate_first_difference_mse": 0.0005165382531545294,
+      "baseline_first_difference_mse": 0.0001734449049752483
+    },
+    {
+      "group": "d2",
+      "seed": 1,
+      "oracle_best_baseline": "safe_blindspot",
+      "candidate_psnr_db": 29.902473814790692,
+      "baseline_psnr_db": 30.535179709708014,
+      "gain_db": -0.6327058949173221,
+      "candidate_first_difference_mse": 0.00039605378534769914,
+      "baseline_first_difference_mse": 0.00023648723560196382
+    },
+    {
+      "group": "d3",
+      "seed": 0,
+      "oracle_best_baseline": "r2r_alpha05",
+      "candidate_psnr_db": 29.93373690243146,
+      "baseline_psnr_db": 30.232649002015513,
+      "gain_db": -0.2989120995840544,
+      "candidate_first_difference_mse": 0.0003209409333811594,
+      "baseline_first_difference_mse": 0.0001634743513199906
+    },
+    {
+      "group": "d3",
+      "seed": 1,
+      "oracle_best_baseline": "safe_blindspot",
+      "candidate_psnr_db": 30.539437799055925,
+      "baseline_psnr_db": 30.431209523159414,
+      "gain_db": 0.1082282758965114,
+      "candidate_first_difference_mse": 0.0002842649679084208,
+      "baseline_first_difference_mse": 0.000289434751760102
+    },
+    {
+      "group": "d4",
+      "seed": 0,
+      "oracle_best_baseline": "safe_blindspot",
+      "candidate_psnr_db": 36.97192023624594,
+      "baseline_psnr_db": 37.38172092337345,
+      "gain_db": -0.4098006871275075,
+      "candidate_first_difference_mse": 8.170734669703886e-05,
+      "baseline_first_difference_mse": 5.000866902315133e-05
+    },
+    {
+      "group": "d4",
+      "seed": 1,
+      "oracle_best_baseline": "safe_blindspot",
+      "candidate_psnr_db": 34.164833889433396,
+      "baseline_psnr_db": 34.97415086297789,
+      "gain_db": -0.8093169735444974,
+      "candidate_first_difference_mse": 0.00018194692990944315,
+      "baseline_first_difference_mse": 0.00012011687577045636
+    }
+  ],
+  "provenance_status": "OPEN_STDOUT_HASH_DISCREPANCY",
+  "log_gap": {
+    "case": "d3-colored-0-blindspot",
+    "current_stdout_bytes": 862,
+    "current_stdout_sha256": "fb7e5a0f333fd38415fcd7700547e442b49484aeaff3784e1e47a772c09d1274",
+    "recorded_stdout_sha256": "ed5f5d837911965bb1039495a5245e5b17654e4ddd8af32a4b6d643183df7956",
+    "hypothetical_prefix_plus_frozen_completion_sha256": "ed5f5d837911965bb1039495a5245e5b17654e4ddd8af32a4b6d643183df7956",
+    "hypothetical_suffix_bytes": 144,
+    "matches_recorded_hash": true,
+    "actual_case_exit": 0,
+    "receipt_hash_matches": true,
+    "interpretation": "Current stdout lacks the completion line. Appending the derived frozen completion recipe in memory matches the recorded hash if matches_recorded_hash is true. This is not recovery of original log bytes or proof of a filesystem cause. No log or execution receipt was edited. The provenance discrepancy remains open.",
+    "no_original_log_modified": true
+  },
+  "strict_grid_review_exit": 1,
+  "independent_numeric_comparisons": 5615,
+  "independent_max_absolute_difference": 2.842170943040401e-14,
+  "stages": [
+    {
+      "stage": "tests",
+      "started_utc": "2026-10-18T19:19:17.856035+00:00",
+      "ended_utc": "2026-10-18T19:19:21.245426+00:00",
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 3.3891590439998254,
+      "peak_rss_kib": 295724,
+      "CPU_user_seconds": 3.500569,
+      "CPU_system_seconds": 0.414284
+    },
+    {
+      "stage": "acquire",
+      "started_utc": "2026-10-18T19:19:29.148328+00:00",
+      "ended_utc": "2026-10-18T19:19:46.169639+00:00",
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 17.02107063099902,
+      "peak_rss_kib": 278592,
+      "CPU_user_seconds": 2.33724,
+      "CPU_system_seconds": 0.201449
+    },
+    {
+      "stage": "prepare",
+      "started_utc": "2026-10-18T19:20:05.669916+00:00",
+      "ended_utc": "2026-10-18T19:20:08.209132+00:00",
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 2.5389862599986373,
+      "peak_rss_kib": 306564,
+      "CPU_user_seconds": 2.706168,
+      "CPU_system_seconds": 0.228292
+    },
+    {
+      "stage": "group-d1",
+      "started_utc": "2026-10-18T19:20:13.017714+00:00",
+      "ended_utc": "2026-10-18T19:21:05.417686+00:00",
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 52.399632654000015,
+      "peak_rss_kib": 300160,
+      "CPU_user_seconds": 92.282211,
+      "CPU_system_seconds": 4.520385
+    },
+    {
+      "stage": "group-d2",
+      "started_utc": "2026-10-18T19:21:25.616419+00:00",
+      "ended_utc": "2026-10-18T19:22:15.391499+00:00",
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 49.774837479999405,
+      "peak_rss_kib": 300384,
+      "CPU_user_seconds": 90.336123,
+      "CPU_system_seconds": 3.311927
+    },
+    {
+      "stage": "group-d3",
+      "started_utc": "2026-10-18T19:22:26.466566+00:00",
+      "ended_utc": "2026-10-18T19:23:17.473261+00:00",
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 51.00641728900155,
+      "peak_rss_kib": 300428,
+      "CPU_user_seconds": 91.8562,
+      "CPU_system_seconds": 3.4529959999999997
+    },
+    {
+      "stage": "group-d4",
+      "started_utc": "2026-10-18T19:23:35.159000+00:00",
+      "ended_utc": "2026-10-18T19:24:26.515945+00:00",
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 51.35676660199897,
+      "peak_rss_kib": 300280,
+      "CPU_user_seconds": 93.056504,
+      "CPU_system_seconds": 3.472865
+    },
+    {
+      "stage": "score",
+      "started_utc": "2026-10-18T19:28:14.604911+00:00",
+      "ended_utc": "2026-10-18T19:28:14.980043+00:00",
+      "exit_code": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.3749041920018499,
+      "peak_rss_kib": 30304,
+      "CPU_user_seconds": 0.640782,
+      "CPU_system_seconds": 0.022798
+    }
+  ],
+  "sum_group_wall_seconds": 204.53765402499994,
+  "fit_seconds_sum": 43.987797081008466,
+  "cpu_model_observed_after_run": "AMD EPYC 9V74 80-Core Processor",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "numeric_threads": 4,
+    "torch_intra_threads": 4,
+    "torch_interop_threads": 1,
+    "AS_bytes": 8589934592
+  },
+  "new_data_payload_bytes": 68858,
+  "conservative_acquisition_ceiling_bytes": 7532690072,
+  "prior_tracked_files_preserved": 1941,
+  "prior_results_preserved": 1741,
+  "old_failed_cache_files_preserved": 407,
+  "old_markers_preserved": 8,
+  "old_baseline_reference": {
+    "path": "results/0005-native-capability/review/tracked-baseline.json",
+    "sha256": "cc70e63be22a573cf7f386da4df6d70d0050630825bfa45358faa411b6819cda",
+    "count": 1769
+  },
+  "no_retraining": true,
+  "scorer_invocations": 1,
+  "next": "Stop this exact candidate/configuration. Independently review the open log discrepancy and published measurements. No test tuning, repeat fit, manuscript or new experiment is authorized by these results."
+}

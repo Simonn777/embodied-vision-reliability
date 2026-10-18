@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "scope": "development-adapted-pointwise-MLP",
+  "method": "r2r_alpha05",
+  "alpha": 0.5,
+  "seeds": {
+    "init_seed": 620111,
+    "batch_seed": 620112,
+    "augment_seed": 620113,
+    "infer_seed": 620114
+  },
+  "image_shape": [
+    128,
+    128
+  ],
+  "valid_shape": [
+    122,
+    122
+  ],
+  "patch_shape": [
+    7,
+    7
+  ],
+  "center_index": 24,
+  "feature_count": 49,
+  "architecture": [
+    49,
+    64,
+    32,
+    1
+  ],
+  "activation": "ReLU",
+  "device": "cpu",
+  "dtype": "float32",
+  "torch_version": "2.10.0+cpu",
+  "numpy_version": "2.0.2",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "deterministic_algorithms": true,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false
+  },
+  "batch_size": 512,
+  "sampling": "with-replacement-local-CPU-generator",
+  "fit_time_cap_seconds": 90.0,
+  "inference_chunk_size": 1024,
+  "mc_samples": 50,
+  "normalization": "none",
+  "training_clipping": "none",
+  "prediction_clipping": "none",
+  "weight_hash_schema": "evr-mlp-state-v1",
+  "clean_input_accessed": false,
+  "data_shape": [
+    14884,
+    49
+  ],
+  "safe_blindspot_zero_feature_indices": null,
+  "noisy_sha256": "25026ccb2cee1dc02818a32d18f0267bab32e2d669f564086f4893b1f47be5d2",
+  "covariance_sha256": "26851548b6506db78e3bb8d337384f5e41ebad78dc6607dac14e9e92b2be3d29",
+  "factor_sha256": "3fe5d6a90273065d5070ebbed970a296fd8cbcfd1bb20651bd3041caf1ddacc4",
+  "factor_max_absolute_covariance_error": 7.288262406784929e-10,
+  "preparation_seconds": 0.003773285003262572,
+  "fit": {
+    "requested_steps": 500,
+    "completed_steps": 500,
+    "initial_weight_sha256": "10575a01d7dbc48c059cb951cc990ccc49effafbd8ec1de467269e0bded17404",
+    "loss_every_50": [
+      {
+        "step": 50,
+        "mean_batch_loss": 0.048149462789297104
+      },
+      {
+        "step": 100,
+        "mean_batch_loss": 0.04282372072339058
+      },
+      {
+        "step": 150,
+        "mean_batch_loss": 0.05154770612716675
+      },
+      {
+        "step": 200,
+        "mean_batch_loss": 0.0507163442671299
+      },
+      {
+        "step": 250,
+        "mean_batch_loss": 0.04590567946434021
+      },
+      {
+        "step": 300,
+        "mean_batch_loss": 0.048169005662202835
+      },
+      {
+        "step": 350,
+        "mean_batch_loss": 0.05382763221859932
+      },
+      {
+        "step": 400,
+        "mean_batch_loss": 0.04968760162591934
+      },
+      {
+        "step": 450,
+        "mean_batch_loss": 0.04640483111143112
+      },
+      {
+        "step": 500,
+        "mean_batch_loss": 0.04946238547563553
+      }
+    ],
+    "last_loss": 0.04946238547563553,
+    "failure_reason": null,
+    "augmentation_standard_normal_draws": 12544000,
+    "parameter_count": 5313,
+    "weight_sha256": "4b2a30912ad7a575332736e04c49c0e0c055a1114df3e03c9d18f4cedcc6cb41",
+    "batch_indices_sha256": "784a3a245c6a6b596bb13f60c28e248b5e64c92842d66376d869c399692f3cd2",
+    "augmentation_draws_sha256": "5ac1a06d912402fd859174e30039fa4c0bef211bd5664140a39441040bc8be0e",
+    "fit_seconds": 0.8401736409978184,
+    "status": "completed"
+  },
+  "inference": {
+    "primary_seconds": 0.5257224980014144,
+    "direct_seconds": 0.0036084410021430813,
+    "primary_forward_calls": 750,
+    "direct_forward_calls": 15,
+    "standard_normal_draws": 36465800,
+    "mc_accumulation_dtype": "float64",
+    "total_seconds": 0.5293908580024436
+  },
+  "prediction_sha256": "c696010867e7d809ac7c14ee1ced01b60a842a2649eb64f742eea68f48df06fc",
+  "finite_output": true,
+  "direct_prediction_sha256": "ddffaa1a94fbec8543462cd6fb9aee47a28b45b0190377137388db74ef2fe9c6",
+  "finite_direct_output": true,
+  "postprocess_seconds": 0.00023147199681261554,
+  "weight_export_seconds": 0.00012688799688476138,
+  "status": "completed",
+  "total_seconds": 1.373728562000906,
+  "image_id": "d2",
+  "condition": "colored",
+  "seed": 1,
+  "input_file_sha256": "7e9722bc1d261c50c7bf1dc21f4565ff7fada704cc6cfd2cd2be47973374c649",
+  "files": {
+    "prediction.npy": "81ae6cd8ffd63f31ade2565cd68fdd5cbf78570a0f91fb11dad79917446ada2d",
+    "direct_prediction.npy": "5253ab21a7d9f0abe45fdedacfa82512f91ae15d4ec039d1af21b373ae7b499a",
+    "weights.npz": "3e95fd2b2f2fb7fc09e39a524612f246efbe5dbcc9fa2e7dd74a2158772e1a7f"
+  }
+}
