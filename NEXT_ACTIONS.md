@@ -1,5 +1,22 @@
 # Next actions
 
+## Active continuation: 0022 asset-only freeze, 2026-10-19
+
+The [asset protocol](protocols/0022-traceable-frontend-assets.md) fixes a small,
+traceable MoGe2-S plus SuperPoint/LightGlue frontend and an isolated CPU runtime.
+The manifests pin 105 source/model files (194,142,010 bytes) and 14 wheels
+(76,809,693 bytes); 38 acquisition tests pass with fake responses. This freeze
+admits asset acquisition after exact CI. No benchmark payload or new scientific
+allocation is admitted. Complete manufactured-inference source must receive a
+separate freeze and review before model execution. No new method gain exists.
+
+The old cache still fails the shared-depth provenance requirement. 0021's
+manufactured rank witness and planar counterexample remain qualification only.
+Same-observation multiview and same-field joint-BA controls are mandatory for a
+future transfer method. Do not label a reparameterization of existing inference
+as innovation. The broader held-out, matched-cost, harm and replication gate is
+unchanged, and a manuscript remains inadmissible. Earlier entries are historical.
+
 ## Active continuation: 0021 qualification complete, 2026-10-19
 
 The [metadata screen](results/0021-metadata-screen/README.md) cannot establish
