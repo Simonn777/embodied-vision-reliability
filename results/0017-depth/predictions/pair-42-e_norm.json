@@ -1,0 +1,220 @@
+{
+  "arm": "e_norm",
+  "calibration": {
+    "K1": [
+      [
+        1053.531005859375,
+        0.0,
+        390.0
+      ],
+      [
+        0.0,
+        1053.531005859375,
+        528.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        1503.670654296875,
+        0.0,
+        511.5
+      ],
+      [
+        0.0,
+        1503.670654296875,
+        340.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 1056,
+      "model": "PINHOLE",
+      "params": [
+        1053.531005859375,
+        1053.531005859375,
+        390.0,
+        528.5
+      ],
+      "width": 780
+    },
+    "camera2": {
+      "height": 680,
+      "model": "PINHOLE",
+      "params": [
+        1503.670654296875,
+        1503.670654296875,
+        511.5,
+        340.0
+      ],
+      "width": 1022
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10486136,
+  "dataset_sha256_declared": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+  "dataset_sha256_verified": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+  "depth_diagnostics": null,
+  "estimate": {
+    "R": [
+      [
+        0.9904355641643909,
+        0.040238557240833014,
+        0.1319782245279157
+      ],
+      [
+        -0.00514055820469253,
+        0.966627247715097,
+        -0.2561353912212847
+      ],
+      [
+        -0.13788026653480506,
+        0.2530071589617824,
+        0.9575888520729439
+      ]
+    ],
+    "t": [
+      -0.5918705881616876,
+      0.10531475306160121,
+      0.8014551734444854
+    ]
+  },
+  "filename": "london_bridge_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2020,
+    "count": 2020,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 1998,
+    "pixel_msac": 94.49715198232363,
+    "pixel_threshold": 2.0
+  },
+  "geometry": null,
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "18d519c9fea746ddd5c784e0b9ea19bd21a5093abdcd1fff23fe4f12d4b87269",
+      "shape": [
+        2020
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "a1daf2da0a6d5ce9131582ec796df860dcc5ec57a19eb72ce0fe68a0460c0c9b",
+      "shape": [
+        2020
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "7ed48e18987cba85d663db0584c901add8a61508a14f484f9e8c2e953edaa04b",
+      "shape": [
+        2020,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "acd710894240605c9479c508b88b8319cdc5ab70c42abcac7e131eaa2be3e9fc",
+      "shape": [
+        2020,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2020,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 1999,
+  "key": "41036763_6827756012_o_70106401_3725909945_o",
+  "library": {
+    "binary_bytes": 2607368,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "3228d488ca11f966378b6b7657ee6ebc5716da474c7ae88fccff7ab433a6981d",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2020,
+  "mask_sha256": "2a239ec7caa9596372900ca1da684cc346efa595ec825145e55b7f279042e0c0",
+  "native_inliers_packbits_big_hex": "fffffffcfffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffdfffffffffffffffffffffffffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7ffffffffffffffdffffffbffffffbffffffffffffffffffffffbffffffffdfbffffffffffffffffffffffdffffffffffffffffffffffffffffffffffffffffdfffffffffffffbffffffffffffffffffffffffffffffffffffffffffffffffdfff7efffff7ffffffffbfffbfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0",
+  "options": {
+    "bundle": {},
+    "max_error": 2.0,
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "real_focal_check": false,
+    "tangent_sampson": false
+  },
+  "pair_index": 42,
+  "phase": "complete",
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-42-e_norm.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-42-e_norm.worker.json",
+    "raw_worker_sha256": "42b5e579fc383821ee2e758be82dc4835e05cfe21bcb9c14413f4b95621a607d",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 1184,
+    "termination": null,
+    "wall_seconds": 0.21667795800000178,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.9896039603960396,
+    "iterations": 101,
+    "model_score": 0.00023163862258969474,
+    "num_inliers": 1999,
+    "refinements": 11
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "london_bridge",
+  "schema": "evr0017.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125"
+  },
+  "status": "completed",
+  "timings": {
+    "call_seconds": 0.011235874999999992,
+    "charged_total_seconds": 0.21667795800000178,
+    "input_seconds": 0.026284250000000002,
+    "score_seconds": 0.0005430839999999992,
+    "worker_total_seconds": 0.051848625
+  }
+}

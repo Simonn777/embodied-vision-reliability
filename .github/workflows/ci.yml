@@ -41,7 +41,7 @@ jobs:
       - name: Check search diagnostic bindings and scores on artificial data only
         run: python -m pytest -q experiments/0016-search-headroom experiments/0016-review
       - name: Check depth diagnostic on artificial arrays and fake native workers
-        run: python -m pytest -q experiments/0017-depth-information
+        run: python -m pytest -q experiments/0017-depth-information experiments/0017-review
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'

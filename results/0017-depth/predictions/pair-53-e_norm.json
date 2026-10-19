@@ -1,0 +1,220 @@
+{
+  "arm": "e_norm",
+  "calibration": {
+    "K1": [
+      [
+        1174.04638671875,
+        0.0,
+        530.0
+      ],
+      [
+        0.0,
+        1174.04638671875,
+        390.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        1778.8553466796875,
+        0.0,
+        505.5
+      ],
+      [
+        0.0,
+        1778.8553466796875,
+        336.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 780,
+      "model": "PINHOLE",
+      "params": [
+        1174.04638671875,
+        1174.04638671875,
+        530.0,
+        390.5
+      ],
+      "width": 1060
+    },
+    "camera2": {
+      "height": 672,
+      "model": "PINHOLE",
+      "params": [
+        1778.8553466796875,
+        1778.8553466796875,
+        505.5,
+        336.5
+      ],
+      "width": 1010
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10636784,
+  "dataset_sha256_declared": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+  "dataset_sha256_verified": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+  "depth_diagnostics": null,
+  "estimate": {
+    "R": [
+      [
+        0.9969037680692082,
+        -0.06331290757851513,
+        0.04662995757416781
+      ],
+      [
+        0.06698460988065252,
+        0.9943856086862212,
+        -0.08191656289707333
+      ],
+      [
+        -0.04118178296954951,
+        0.08478641973622772,
+        0.9955477506276438
+      ]
+    ],
+    "t": [
+      0.057046279350549366,
+      0.1708103176064542,
+      0.9836665417144178
+    ]
+  },
+  "filename": "milan_cathedral_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2037,
+    "count": 2037,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 1848,
+    "pixel_msac": 338.33395064164097,
+    "pixel_threshold": 2.0
+  },
+  "geometry": null,
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "c5399043f50ed2c8111c48f38fcc0328b838ce305032eb4e60a0d7af0fd6c319",
+      "shape": [
+        2037
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "8661f24e5f5de171b7de55cb32cf14c128cc97ba32d745ef37f6fa322ec244d5",
+      "shape": [
+        2037
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "9e76607551a17a1b67ad4ef35b9437ad6ed64b172dea500f8f3c1d2f9a39abac",
+      "shape": [
+        2037,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "660691d6fac3bf71ffa552114ee81804d921ab7235fd7b895fdee98608512b86",
+      "shape": [
+        2037,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2037,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 1880,
+  "key": "10273610_2867561643_o_95778567_8067087428_o",
+  "library": {
+    "binary_bytes": 2607368,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "3228d488ca11f966378b6b7657ee6ebc5716da474c7ae88fccff7ab433a6981d",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2037,
+  "mask_sha256": "79b3771e04c6130c95a05d1be430052c720e592fd71166e11a9bd5e98ba697e9",
+  "native_inliers_packbits_big_hex": "fefffffebffffff7bf7ff7dffffefffffb7dbf7ffffffffffffffbaffffefbffcfffffffffdffffffffeffe7ffffff6f7fffffff5efffff5ffffcfbfff7ef7fdf9ffffffffffffffffb7fef3f73fffffff7ffff76ffffb7ff7ffdffffffeffffb7fffffb7bfffdffffffdfffbefbefbb7fff7fdfffeeffdffffddffffff3fff7fffdfffbfeffffff9fbdfbefefffffeffffffffefff7feecfefeffffffffffffffffffddffffffeffffeff7ffffe7ffffcffbffffdfffffbfddf5fdff7ffffff7eeffdefbfffffffffffbffff9fff5ffffffffbffffff9ebbbfdfb7fbfffffffffffdeffffffeffff7fffffafbffbfffefffffffffff7ffdffffffff9faff8",
+  "options": {
+    "bundle": {},
+    "max_error": 2.0,
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "real_focal_check": false,
+    "tangent_sampson": false
+  },
+  "pair_index": 53,
+  "phase": "complete",
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-53-e_norm.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-53-e_norm.worker.json",
+    "raw_worker_sha256": "8d149acb4bf5c49deeac912c67d54945cc21965b9673eb5a208685517f911ecd",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 1152,
+    "termination": null,
+    "wall_seconds": 0.2169298330000018,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.9229258713794797,
+    "iterations": 101,
+    "model_score": 0.0006138591807817263,
+    "num_inliers": 1880,
+    "refinements": 6
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "milan_cathedral",
+  "schema": "evr0017.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125"
+  },
+  "status": "completed",
+  "timings": {
+    "call_seconds": 0.008771874999999998,
+    "charged_total_seconds": 0.2169298330000018,
+    "input_seconds": 0.026708333,
+    "score_seconds": 0.0005239999999999967,
+    "worker_total_seconds": 0.050194041
+  }
+}

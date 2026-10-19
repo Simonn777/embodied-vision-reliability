@@ -1,0 +1,24 @@
+"""Capture actual child exit and outer wall for the frozen bounded0017 commands."""
+import json, os, platform, subprocess, sys, time, hashlib
+from pathlib import Path
+repo=Path(__file__).resolve().parents[1]/'embodied-vision-reliability'
+mode=sys.argv[1]
+assert mode in ('prediction','evaluation')
+base=repo/'results/0017-depth'
+base.mkdir(exist_ok=True)
+if mode=='prediction':
+    args=['experiments/0017-depth-information/run_diagnostic.py','--data-dir','../0017-preparation/inputs','--manifest','configs/0017-development-manifest.json','--output-dir','results/0017-depth/predictions','--current-runtime','../0016-preparation/runtime','--dependency-runtime','../runtime']
+else:
+    args=['experiments/0017-depth-information/evaluate_saved.py','--data-dir','../0017-preparation/inputs','--manifest','configs/0017-development-manifest.json','--seal','results/0017-depth/predictions/seal.json','--output','results/0017-depth/evaluation.json']
+record={'schema':'evr0017.outer-operation.v1','mode':mode,'status':'started','command':['$PYTHON',*args],'python_version':platform.python_version(),'cwd':'repository root','helper_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=repo,text=True).strip()}
+with (base/(mode+'-process.json')).open('x+') as receipt:
+    def save():
+        receipt.seek(0);json.dump(record,receipt,indent=2);receipt.write('\n');receipt.truncate();receipt.flush();os.fsync(receipt.fileno())
+    save()
+    started=time.perf_counter()
+    with (base/(mode+'.log')).open('xb') as log:
+        p=subprocess.run([sys.executable,*args],cwd=repo,stdout=log,stderr=subprocess.STDOUT,env=os.environ.copy())
+    record.update(status='completed' if p.returncode==0 else 'failed',exit_code=p.returncode,wall_seconds=time.perf_counter()-started,log_sha256=hashlib.sha256((base/(mode+'.log')).read_bytes()).hexdigest())
+    save()
+print(json.dumps({k:record[k] for k in ('mode','status','exit_code','wall_seconds')}),flush=True)
+sys.exit(record['exit_code'])

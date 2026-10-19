@@ -1,6 +1,37 @@
 # Next actions
 
-## Active continuation: 0017 scientific freeze, 2026-10-19
+## Active continuation: 0017 complete, 2026-10-19
+
+[0017](results/0017-depth/README.md) completed80pairs and320known-method calls
+once, with alloutputs sealed before one score. Independent saved-only audit
+passes. E-normalized AUC5=71.488081%, scale-depth=62.383584%,
+affine-depth=68.972945%; ordinary external MSAC selection=71.520213%.
+There is still **no substantial deployable new-method improvement**.
+
+The all-output oracle=80.843254% exceeds the geometric oracle=71.640730% by
+9.202524pp. This passes the predeclared opportunity gate, not an efficacy gate.
+The scale-depth omission/harm condition meets the>=2scene trigger (Lincoln and
+London); affine depth meets onlyone. Finalcounts do not prove optimizationcaused
+harm. Source inspection now also shows native cost is a residual-count mean,
+not a simple sum; the next trace must observe numerator,count and accepted-state
+lineage without changing the estimator.
+
+1. Publish the complete0017evidence and verify exact PR/main CI.
+2. Freeze a separate minimal0018native LO trace across ALL80pairs and BOTHdepth
+   arms. Require final-output parity against0017before any causal interpretation;
+   distinguish proposed, refined, accepted and discarded models. No trace or
+   modified scientific native execution has run yet.
+3. Use any mechanism finding to judge a distinct method against strong controls.
+   MADPose alreadyimplements fixed-support/positivity constraints. Newmethod
+   claims still require independent held-out sources, matched totalcompute,
+   >=2ppAUC5, scene-levelconfidence, harmchecks, ablations andreplication.
+
+Allfive0017scenes remain development. The [resource screen](docs/literature/0017-heldout-resource-screen.md)
+found no fullyqualified small independent depthcache; ETH3Dauthorlink remains a
+conditional lead. Keep earliernegativegates, privatecaches and originalcheckout
+unchanged. Research goal active; no manuscript.
+
+## Historical checkpoint: 0017 scientific freeze, 2026-10-19
 
 [0017 preparation](results/0017-preparation/README.md) completed five downloads
 and names/shapes-only allocation:80pairs across five permanently development
@@ -20,7 +51,7 @@ information or a software repair is not a novel CVPR result.
 0016 remains NO_GO. Original research checkout, all earlier results and
 held-out0022numerical arrays remain untouched. The broader research goal is active.
 
-## Active continuation: 0017 asset preparation, 2026-10-19
+## Historical checkpoint: 0017 asset preparation, 2026-10-19
 
 [0016 publication](docs/0016-publication-verification.md) is verified through
 PR45/main748215ca and successful exact CI. The0.02945pp oracle headroom result
@@ -38,7 +69,7 @@ The objective remains a distinct method with substantial replicated gains on
 independent held-out sources. Known-method reproduction, oracle bounds and
 software repairs do not satisfy it. All earlier results remain unchanged.
 
-## Active continuation: 0016 complete, 2026-10-19
+## Historical checkpoint: 0016 complete, 2026-10-19
 
 No substantial new-method improvement is established. The [0016 diagnostic](results/0016-search/README.md)
 completed64pairs,192workers and768official native calls once after published

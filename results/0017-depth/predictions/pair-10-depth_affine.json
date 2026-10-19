@@ -1,0 +1,351 @@
+{
+  "arm": "depth_affine",
+  "calibration": {
+    "K1": [
+      [
+        1485.9381103515625,
+        0.0,
+        509.5
+      ],
+      [
+        0.0,
+        1485.9381103515625,
+        382.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        2271.81201171875,
+        0.0,
+        507.5
+      ],
+      [
+        0.0,
+        2271.81201171875,
+        338.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 764,
+      "model": "PINHOLE",
+      "params": [
+        1485.9381103515625,
+        1485.9381103515625,
+        509.5,
+        382.0
+      ],
+      "width": 1018
+    },
+    "camera2": {
+      "height": 676,
+      "model": "PINHOLE",
+      "params": [
+        2271.81201171875,
+        2271.81201171875,
+        507.5,
+        338.5
+      ],
+      "width": 1014
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10675000,
+  "dataset_sha256_declared": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+  "dataset_sha256_verified": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+  "depth_diagnostics": {
+    "all": {
+      "denominator": 2048,
+      "direction_denominator": 4096,
+      "fixed_reprojection_cost": 0.9109563127509213,
+      "forward": {
+        "cost_sum": 1969.0262827221127,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2048,
+        "valid_projection_count": 2048
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4096,
+      "native_branch_positive_finite_z_count": 4096,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.9109563127509213,
+      "reverse": {
+        "cost_sum": 1762.2507743056608,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2048,
+        "valid_projection_count": 2048
+      },
+      "status": "available"
+    },
+    "pixel_threshold": 16.0,
+    "raw_translation_norm": 2.4031674873983553,
+    "raw_translation_norm_overflow": false,
+    "returned_mask": {
+      "denominator": 621,
+      "direction_denominator": 1242,
+      "fixed_reprojection_cost": 0.7374630354841779,
+      "forward": {
+        "cost_sum": 548.9392877565683,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 621,
+        "valid_projection_count": 621
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 1242,
+      "native_branch_positive_finite_z_count": 1242,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.7374630354841779,
+      "reverse": {
+        "cost_sum": 366.9898023147806,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 621,
+        "valid_projection_count": 621
+      },
+      "status": "available"
+    },
+    "returned_mask_semantics": "Pre-final-refinement epipolar support; not final depth-active support",
+    "scale": 0.06665408050745246,
+    "shift1": -0.051906479014712174,
+    "shift2": 24.40152527603326
+  },
+  "estimate": {
+    "R": [
+      [
+        0.963652056677512,
+        0.26253222051540476,
+        0.049513097786868646
+      ],
+      [
+        0.11118283054969991,
+        -0.22557132318889694,
+        -0.9678615377964785
+      ],
+      [
+        -0.24292610368619888,
+        0.9381867678378641,
+        -0.2465613449058488
+      ]
+    ],
+    "t": [
+      0.43892537930395503,
+      1.430530090180735,
+      1.880463279348709
+    ]
+  },
+  "filename": "florence_cathedral_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2048,
+    "count": 2048,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 649,
+    "pixel_msac": 1540.0373049929158,
+    "pixel_threshold": 2.0
+  },
+  "geometry": {
+    "R": [
+      [
+        0.963652056677512,
+        0.26253222051540476,
+        0.049513097786868646
+      ],
+      [
+        0.11118283054969991,
+        -0.22557132318889694,
+        -0.9678615377964785
+      ],
+      [
+        -0.24292610368619888,
+        0.9381867678378641,
+        -0.2465613449058488
+      ]
+    ],
+    "scale": 0.06665408050745246,
+    "shift1": -0.051906479014712174,
+    "shift2": 24.40152527603326,
+    "t": [
+      0.43892537930395503,
+      1.430530090180735,
+      1.880463279348709
+    ]
+  },
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "67f80701277dacb56b2da50f0d1c2236cb205bc277eb6a046ddbe19c47616c5a",
+      "shape": [
+        2048
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "3b06b88cb96e1ddf1c565c7dcebe86c919a1a8bacbcd1abedcd490973d9ff541",
+      "shape": [
+        2048
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "ba4f5a84ef879fa37691c94f9fdb447ca51b904c4cfa71703f8cda1b1a61ae26",
+      "shape": [
+        2048,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "92e7aabc4a406553c0daa7dfc5314fe9e3af3f8720bea7f53488019f9c020f76",
+      "shape": [
+        2048,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2048,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 621,
+  "key": "19623962_9009504241_o_33907107_2443351726_o",
+  "library": {
+    "binary_bytes": 2607368,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "3228d488ca11f966378b6b7657ee6ebc5716da474c7ae88fccff7ab433a6981d",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2048,
+  "mask_sha256": "27a6b5466b67c165c3c7ff294056bdb840b8f82b25a7c986ffc99d8ccf108fc6",
+  "native_inliers_packbits_big_hex": "838888008180610c8480c400002b00c530441320081080594fc898c400c8a302105502814183c1110f40c8074103240c440c1c34d529c031b5252494362484070800816b7cd6011008220cb02b0280802408d83014a650c09480336cae49000486108504342846100808742180240fb04689211520042e2272a6070ab011824c0700b64444048101621504081c58b31040202ac900882403306860404d36c2d002012354801d540120d0b6e08226634a24088804a4014545c10029ee0549ce00090010e00b840504f3204221018202b02161f48045846b114459091a14557d803d50c221420c425ee2d08811b38244e2b4225259d4ac0065a071440819001604",
+  "options": {
+    "bundle": {},
+    "estimate_shift": true,
+    "max_errors": [
+      16.0,
+      2.0
+    ],
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "weight_sampson": 1.0
+  },
+  "pair_index": 10,
+  "phase": "complete",
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-10-depth_affine.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-10-depth_affine.worker.json",
+    "raw_worker_sha256": "c489f50d4202edef6970a9dff7ba7b93c54489a705383077712a5f96307e6da7",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 42128,
+    "termination": null,
+    "wall_seconds": 0.21481404200000043,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.30322265625,
+    "iterations": 982,
+    "model_score": 0.0019475627400162157,
+    "num_inliers": 621,
+    "refinements": 7
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "florence_cathedral",
+  "schema": "evr0017.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125"
+  },
+  "status": "completed",
+  "timings": {
+    "call_seconds": 0.03028716599999999,
+    "charged_total_seconds": 0.21481404200000043,
+    "input_seconds": 0.029748458000000005,
+    "score_seconds": 0.0011902079999999982,
+    "worker_total_seconds": 0.079430125
+  }
+}

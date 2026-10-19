@@ -1,0 +1,24 @@
+{
+  "schema": "evr0017.outer-operation.v1",
+  "mode": "evaluation",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "experiments/0017-depth-information/evaluate_saved.py",
+    "--data-dir",
+    "../0017-preparation/inputs",
+    "--manifest",
+    "configs/0017-development-manifest.json",
+    "--seal",
+    "results/0017-depth/predictions/seal.json",
+    "--output",
+    "results/0017-depth/evaluation.json"
+  ],
+  "python_version": "3.9.6",
+  "cwd": "repository root",
+  "helper_sha256": "54fac532a55f9ad5c659a1aab5a9573de7402e868fd71236de054e3d6d785391",
+  "source_commit": "5f267a3b657b38a7efe8381b9bb11f194e894355",
+  "exit_code": 0,
+  "wall_seconds": 0.5380835,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
