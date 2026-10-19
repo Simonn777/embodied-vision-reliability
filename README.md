@@ -1,61 +1,51 @@
 # Embodied Vision Reliability
 
-**Latest result: query-deleted adaptation did not improve classification.**
+**Goal: a reproducible improvement in visual camera-motion estimation before a
+CVPR-targeted manuscript. No method currently meets that goal.**
 
-On 128 fixed EuroSAT development images, exact leave-one-out StatA classified
-61 correctly, compared with 65 for zero-shot CLIP, 62 for native StatA α=1,
-52 for α=4 and 63 for matched OTHER-out. The candidate lost four correct
-predictions against the strongest control and failed the frozen continuation
-rule in both batches. It is stopped; this is not a method-improvement claim.
+The current question is whether image-derived local alignment can reduce the
+translation error left by dense matching, and whether shared image information
+can be used efficiently without counting repeated evidence as independent.
+This matters to the visual geometry used by embodied systems and driving;
+no closed-loop robot or driving result is claimed.
 
-[Complete results and paired harms](results/0010-headroom/README.md) ·
-[Predeclared protocol](protocols/0010-real-data-headroom.md) ·
-[Current state](CURRENT_STATE.md)
+The next experiment must test a concrete accuracy mechanism against strong
+controls. The current target is at least **+2 absolute AUC@5 percentage points**
+at matched complete-pipeline time on two independent held-out sources, positive
+paired scene-level uncertainty bounds, and no more than0.5point AUC@20 loss.
+Novelty, ablations and independent reproduction are also required before a
+paper. A successful software check or reduction in operation count does not
+meet this standard. [Full prospective gate](protocols/0012-score-bounds-development.md).
 
-This AI-assisted research program runs October 2026–October 2027. The owner
-opened topic selection after the initial tracking hypotheses failed. The goal
-is substantial, reproducible task improvement before a manuscript. Source
-freezes, raw measurements and unfavorable outcomes remain public together;
-no conference readiness or methodological novelty is currently claimed.
-[Contributions and evidence](docs/CONTRIBUTIONS.md).
+## Latest evidence · October19,2026
 
-## What the latest screen establishes
+| Study | Verified result | Decision |
+|---|---|---|
+| [0015 sparse image correction](results/0015-photometric/README.md) | Full AUC@5 +0.009558333pp; same-index subset −3.091052179pp;9/16 full errors improve. | Expansion gate fails. Stop this sparse configuration. |
+| [0014 known pixel-noise control](results/0014-pixel-noise-arithmetic-repair/README.md) | AUC@5 81.169622%→81.176133%, only+0.006510542pp;9 pair improvements/7 harms; strict diagnostic gate15/16. | No material gain. Stop noise-only correction. |
+| [0013 official pose baseline](results/0013-baseline-calibration-compatibility/README.md) |16/16 selected development pairs; AUC@5/10/20=81.17/90.58/95.29%; translation dominates15/16. | Baseline measurement, not a new method. |
+| [0012d compiled lazy scoring](results/0012d-lazy-grid/development/README.md) |17.142ms versus13.065ms ordinary partial scoring; exact winners but31.21% slower. | Stop this scorer family. |
+| [0011 oblique coordinate coupling](results/0011-oblique/README.md) |62.96% versus64.19% quality; worse endpoint error. | Stop this candidate. |
+| [0010 query-deleted adaptation](results/0010-headroom/README.md) |61/128 versus65/128 correct. | Stop this candidate. |
 
-The real-image CPU comparison completed once: 32 image-encoder calls, zero text
-calls, 132 fitted states and 640 valid predictions. Exact query deletion did not
-satisfy the prospective requirement of at least eight additional correct images
-against the strongest fixed control. There were seven corrections and eleven
-harms against zero-shot. A gain against the weaker α=4 control cannot substitute
-for the fixed comparison. No subset, prompt or parameter was selected afterward.
+0013/0014 are published on main with independent saved-output reviews and exact
+PR/main CI checks: [publication verification](docs/0013-0014-publication-verification.md).
+These16 pairs share images and come from one reused development scene; they are
+not independent held-out evidence. Initial execution failures and separately
+frozen technical repairs remain public. No favorable sample selection, weaker
+comparison or post-hoc gate change is used to turn these results into success.
 
-The single supervised operation took 28.044 seconds on four existing cloud CPU
-cores. This capability is not scientific improvement. The failed candidate will
-not be expanded or written into a success paper. A different hypothesis needs a
-specific information source, comparison with prior work and untouched validation.
+The23 paired images are acquired and the fixed photometric diagnostic is complete.
+Lower patch loss did not produce meaningful pose improvement. A distinct follow-up
+needs evidence of recoverable information; generic joint refinement or correction
+propagation is already established prior work.
+[Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md) ·
+[Shared-pixel identifiability](docs/literature/0015-shared-pixel-identifiability.md).
 
-## Latest evidence · October18,2026
-
-| Study | Evidence and decision |
-|---|---|
-| [0010 real-image headroom](results/0010-headroom/README.md) | 128 images, five fixed arms; LOO61 versus best65 correct, net−4: **stop this candidate**. |
-| [0009 exact-tail geometry screen](results/0009-stage0/README.md) | 256 cases retained; primary gain0,12 unsupported cases, failed gain/coverage/harm gates: **stop this candidate**. |
-| [0008 actual training screen](results/0008-antithetic-training/README.md) | 32 trajectories / 64 predictions completed once; both ≥0.5 dB quality gates failed. Independent saved-array replay agrees: **stop this candidate**. |
-| [0007 gradient screen](results/0007-gradient-screen/README.md) | 4,096 gradient measurements, zero updates. Total variance ratios0.227/0.738/0.571 against independent/random/same-patch; 7/8 best-control wins. Local mechanism gates passed; no PSNR result. |
-| [0006 residual-denoising screen](results/0006-stage0/README.md) | Mean gain−0.571dB; stop this candidate. A missing stdout line remains an open provenance defect. |
-| [0004 tracking intervention](results/0004-stage0/README.md) | 46 repairs and120 harms; stop this candidate. |
-
-![All eight paired denoising-quality comparisons at both endpoints](results/0008-antithetic-training/parent-review/training-quality.png)
-
-[Independent parent review](results/0008-antithetic-training/parent-review/README.md)
-checks the public arithmetic and publication provenance separately: 89,135 public-summary
-review checks and 9,885 provenance checks. Both agree with the failed result; no
-training or inference was repeated. All unfavorable cases remain visible above.
-
-The gradient result is conditional on four reused development substrates and
-known synthetic noise covariance; it did not translate into the required
-training-quality improvement. Generic antithetic sampling is established prior
-work. A distinct future hypothesis needs a prospective rationale and untouched
-validation, not hyperparameter, pairing-feature or budget rescue of this rule.
+This AI-assisted research program runs October2026–October2027. Published math
+and methods are attributed; generic covariance weighting, affine refinement and
+standard GLS identities are not claimed as new. The owner requires a substantive
+method and measured improvement before writing. [Contributions](docs/CONTRIBUTIONS.md).
 
 ## Research state and historical localization archive
 

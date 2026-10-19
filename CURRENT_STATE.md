@@ -2,7 +2,35 @@
 
 ## Active continuation: 2026-10-19
 
-The owner reaffirmed substantial validated task improvement before any manuscript. The [0012d lazy-grid real diagnostic](results/0012d-lazy-grid/development/README.md) now **fails its speed gate**:17.142249ms versus13.064877ms ordinary partial scoring, or31.21% slower. All240 calls choose the exact winner and69376cell/2048aggregate lower checks show zero violations. The favorable artificial cost test passed only after a disclosed serialization repair; it did not predict real-data superiority. Earlier0012/0012b/0012c results are preserved. This closes the present moment-bound scorer as a route to pose integration: do not tune its grid/order/thresholds further on these pairs or write a paper from work-count savings. The broader [research objective](docs/0012-research-reset.md) remains active. Source review now examines genuinely different quality mechanisms and a prospective baseline-only calibrated-pose headroom diagnostic, not integration of this failed scorer. [0013 baseline measurement](results/0013-baseline-calibration-compatibility/README.md) completed after a disclosed input-compatibility repair:16/16 official PoseLib estimates, AUC@5/10/20 of81.169622/90.584811/95.292406 percent. Every error is below5degrees; translation dominates15/16. The first zero-camera-dimension validation failure is preserved, and the successful retry sealed predictions before the first selected R/t evaluation. Independent saved-only review agrees. This is no method improvement. [0014 known-noise controls](results/0014-pixel-noise-arithmetic-repair/README.md) completed after a separately frozen arithmetic repair: pixel Sampson changes AUC@5 only+0.006510542 percentage points, with9 improved/7 worsened pairs. The strict interpretation gate remains15/16 because one unchanged N output differs in objective by one ULP; no gate is relaxed. This closes noise-only correction as a useful route on this development evidence. Next, review a distinct image-information mechanism for correlated dense-match error; generic covariance or affine weighting is not yet a contribution. Held-out numeric arrays remain unread and no manuscript exists.
+The owner requires substantial independent improvement before a manuscript. None
+is yet established. [0015](results/0015-photometric/README.md) completed its32
+scientific workers after published freeze057a5ea and fails its fixed expansion
+gate: full AUC@5 +0.009558333pp (required≥0.25), same-index subset −3.091052179pp
+(required≥+2),9/16 full errors improve (required≥10). All16 remain in each metric;
+4 subsets are unavailable and penalized equally. There were191 admitted changes
+from1355 selected queries,0.119375% of the full160000 observations, and40 completed
+native calls. The first evaluator's baseline-time metadata error is preserved;
+a separately frozen saved-only repair produced the complete score without
+repeating any prediction. Independent saved-output review confirms the bindings,
+counts, metrics and failure. Strong patch-loss reduction is not task improvement.
+
+Stop this sparse photometric configuration, with no iteration/gate/pair rescue or
+immediate propagation. Saved-only post-hoc epipolar compatibility also worsens on
+average; it is not ground-truth correspondence error. The [prior-work screen](docs/literature/0015-photometric-followup-prior.md)
+identifies JET, PixSfM, EpicFlow, ArgMatch and a2026 descriptor-JET preprint as
+close controls. A distinct next diagnostic must demonstrate recoverable image
+information or another explicit mechanism before a more complex method is run.
+A bounded nonquadratic-likelihood profile is only a possible falsification study,
+not an admitted experiment or novel contribution. No manuscript is started.
+
+The [0013 official baseline](results/0013-baseline-calibration-compatibility/README.md)
+is AUC@5=81.169622478%. The [0014 noise control](results/0014-pixel-noise-arithmetic-repair/README.md)
+gains only0.006510542pp; that route remains closed. The [0012 scorer family](results/0012d-lazy-grid/development/README.md)
+is31.21% slower than ordinary partial scoring and remains closed. Preserve all
+prior failures, original sources, technical repairs and untouched held-out data.
+The final target remains≥2 absolute AUC@5 points at matched total time on two
+independent held-out sources, positive scene-level uncertainty bounds, strong
+baselines, novelty and ablations. The broader research goal remains active.
 
 Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0011
 oblique coordinate-coupling negative result and saved-output review.

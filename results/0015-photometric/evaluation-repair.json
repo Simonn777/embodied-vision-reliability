@@ -1,0 +1,948 @@
+{
+  "auc": {
+    "full_original": {
+      "auc_fraction": {
+        "10": 0.9058481123891754,
+        "20": 0.9529240561945878,
+        "5": 0.811696224778351
+      },
+      "auc_percent": {
+        "10": 90.58481123891754,
+        "20": 95.29240561945878,
+        "5": 81.1696224778351
+      },
+      "count": 16,
+      "count_strictly_below_threshold": {
+        "10": 16,
+        "20": 16,
+        "5": 16
+      }
+    },
+    "full_refined": {
+      "auc_fraction": {
+        "10": 0.9058959040532869,
+        "20": 0.9529479520266435,
+        "5": 0.8117918081065738
+      },
+      "auc_percent": {
+        "10": 90.58959040532869,
+        "20": 95.29479520266435,
+        "5": 81.17918081065739
+      },
+      "count": 16,
+      "count_strictly_below_threshold": {
+        "10": 16,
+        "20": 16,
+        "5": 16
+      }
+    },
+    "subset_original": {
+      "auc_fraction": {
+        "10": 0.5554436638523768,
+        "20": 0.6493766472310918,
+        "5": 0.439678914630983
+      },
+      "auc_percent": {
+        "10": 55.54436638523767,
+        "20": 64.93766472310918,
+        "5": 43.967891463098304
+      },
+      "count": 16,
+      "count_strictly_below_threshold": {
+        "10": 11,
+        "20": 12,
+        "5": 10
+      }
+    },
+    "subset_refined": {
+      "auc_fraction": {
+        "10": 0.5771961146512461,
+        "20": 0.663598057325623,
+        "5": 0.4087683928402731
+      },
+      "auc_percent": {
+        "10": 57.71961146512461,
+        "20": 66.35980573256231,
+        "5": 40.87683928402731
+      },
+      "count": 16,
+      "count_strictly_below_threshold": {
+        "10": 12,
+        "20": 12,
+        "5": 10
+      }
+    }
+  },
+  "baseline_evaluation_sha256": "f8fe46392810b78d485a8dd90ae1849eae6491eaba620d2c9454b6c0f15cb5a4",
+  "coverage": {
+    "completed_full": 16,
+    "selected": 16,
+    "subset_unavailable_pairs": 4
+  },
+  "evaluation_source_sha256": "d4f9ed15ede9382890aba29d82ac072e920f27fcab663c6c911fd7104f922cf3",
+  "expansion_gate": {
+    "criteria": {
+      "at_least_10_full_pair_improvements": false,
+      "at_least_12_usable_subsets": true,
+      "complete_full_cohort": true,
+      "full_AUC20_loss_at_most_0_5_pp": true,
+      "full_AUC5_gain_at_least_0_25_pp": false,
+      "subset_AUC5_gain_at_least_2_pp": false
+    },
+    "full_AUC20_gain_pp": 0.002389583205570034,
+    "full_AUC5_gain_pp": 0.009558332822280136,
+    "full_pair_improvements": 9,
+    "passed": false,
+    "scope": "Sparse configuration expansion only; no novelty/manuscript/held-out admission",
+    "subset_AUC5_gain_pp": -3.091052179070992,
+    "usable_subset_pairs": 12
+  },
+  "geometric_seal_sha256": "8f92c1a73e402c1299183c2cfcaf2e8a236d5c2b41dcaae4b1ea09c6fce0ea9d",
+  "metric_convention": "Same0013 signed translation, projected rotation, max angle, trapezoid AUC",
+  "operation_wall_seconds_at_final_seal": 20.832633834,
+  "photometric_loss_is_not_pose_accuracy": true,
+  "photometric_seal_sha256": "fbab3146703c6dba2222a0dac11a234ec96d131030fea1cdad63595854842c48",
+  "repair": "Read baseline timing_seconds.estimator_call; original scorer failed on absent top-level call_seconds. No prediction/metric/gate change.",
+  "rows": [
+    {
+      "admitted_count": 22,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.6835729397522166,
+          "rotation_degrees": 0.39102312498676123,
+          "translation_degrees": 1.6835729397522166,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 1.6837999525122895,
+          "rotation_degrees": 0.39109564518472173,
+          "translation_degrees": 1.6837999525122895,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 8.982023816173736,
+          "rotation_degrees": 2.0172102814454327,
+          "translation_degrees": 8.982023816173736,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 7.0985895624729825,
+          "rotation_degrees": 1.6041336404966062,
+          "translation_degrees": 7.0985895624729825,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.24387599999999998,
+      "initialized_count": 89,
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-205993994_6969ba4619_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.246678,
+        "subset_original": 0.003737457999999999,
+        "subset_refined": 0.0034357080000000095
+      },
+      "pair_index": 0,
+      "photo_timing_seconds": {
+        "coordinates": 0.006875541999999998,
+        "images": 0.039468167,
+        "photometric_batch_000": 0.27152766700000003,
+        "photometric_batch_001": 0.07339662500000005,
+        "selection": 0.016552082999999995,
+        "total": 0.529347875
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.42248141699999997
+      },
+      "selected_count": 89,
+      "target_coordinate_changed_count": 22
+    },
+    {
+      "admitted_count": 14,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.8584872130861211,
+          "rotation_degrees": 0.3194329164811384,
+          "translation_degrees": 0.8584872130861211,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.8579450138710893,
+          "rotation_degrees": 0.3192038605681643,
+          "translation_degrees": 0.8579450138710893,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 0.41948208592272845,
+          "rotation_degrees": 0.22549424172405133,
+          "translation_degrees": 0.41948208592272845,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 2.1145303730839666,
+          "rotation_degrees": 0.9544615524299846,
+          "translation_degrees": 2.1145303730839666,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.245669625,
+      "initialized_count": 76,
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-2073853679_f35bb29c49_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.249384166,
+        "subset_original": 0.003245082999999982,
+        "subset_refined": 0.003067582999999985
+      },
+      "pair_index": 1,
+      "photo_timing_seconds": {
+        "coordinates": 0.0008362500000000106,
+        "images": 0.031825915999999996,
+        "photometric_batch_000": 0.305778875,
+        "photometric_batch_001": 0.049470915999999976,
+        "selection": 0.015290374999999995,
+        "total": 0.519619792
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.419719958
+      },
+      "selected_count": 76,
+      "target_coordinate_changed_count": 14
+    },
+    {
+      "admitted_count": 12,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.6572542362471172,
+          "rotation_degrees": 0.4481584790833408,
+          "translation_degrees": 1.6572542362471172,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 1.6568558017511235,
+          "rotation_degrees": 0.4479894460432066,
+          "translation_degrees": 1.6568558017511235,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 3.624630092023017,
+          "rotation_degrees": 0.774544188412325,
+          "translation_degrees": 3.624630092023017,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 2.5454259843624096,
+          "rotation_degrees": 0.5668031663626529,
+          "translation_degrees": 2.5454259843624096,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.2088585,
+      "initialized_count": 85,
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-3158214253_16b5194f70_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.21285795799999999,
+        "subset_original": 0.0030417919999999876,
+        "subset_refined": 0.0031609580000000193
+      },
+      "pair_index": 2,
+      "photo_timing_seconds": {
+        "coordinates": 0.0008549999999999947,
+        "images": 0.03232612500000001,
+        "photometric_batch_000": 0.311177417,
+        "photometric_batch_001": 0.09435954200000002,
+        "selection": 0.01658833400000001,
+        "total": 0.573426125
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.392034542
+      },
+      "selected_count": 86,
+      "target_coordinate_changed_count": 12
+    },
+    {
+      "admitted_count": 3,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.5811492280592907,
+          "rotation_degrees": 0.3669236086579748,
+          "translation_degrees": 0.5811492280592907,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.5810237272294178,
+          "rotation_degrees": 0.3668391284580359,
+          "translation_degrees": 0.5810237272294178,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 180.0,
+          "reason": "fewer_than_eight_successful_queries",
+          "rotation_degrees": null,
+          "translation_degrees": null,
+          "unavailable": true
+        },
+        "subset_refined": {
+          "max_degrees": 180.0,
+          "reason": "fewer_than_eight_successful_queries",
+          "rotation_degrees": null,
+          "translation_degrees": null,
+          "unavailable": true
+        }
+      },
+      "full_original_native_call_seconds": 0.223166292,
+      "initialized_count": 46,
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-389637286_3f18f449c8_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.22773066600000003,
+        "subset_original": 0.0,
+        "subset_refined": 0.0
+      },
+      "pair_index": 3,
+      "photo_timing_seconds": {
+        "coordinates": 0.0008590420000000043,
+        "images": 0.03266695800000001,
+        "photometric_batch_000": 0.20758237499999999,
+        "selection": 0.009943249999999987,
+        "total": 0.35015304199999997
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.360673708
+      },
+      "selected_count": 46,
+      "target_coordinate_changed_count": 3
+    },
+    {
+      "admitted_count": 23,
+      "errors": {
+        "full_original": {
+          "max_degrees": 2.2623476614184783,
+          "rotation_degrees": 0.23305397174867146,
+          "translation_degrees": 2.2623476614184783,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 2.2614658697918766,
+          "rotation_degrees": 0.23300337551335173,
+          "translation_degrees": 2.2614658697918766,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 3.4614319905581246,
+          "rotation_degrees": 0.31318875567274207,
+          "translation_degrees": 3.4614319905581246,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 3.4119887797746906,
+          "rotation_degrees": 0.2994108969069036,
+          "translation_degrees": 3.4119887797746906,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.21009729200000002,
+      "initialized_count": 130,
+      "key": "0015-1091880705_b783893319_o.jpg_0015-325576817_bd8d9843c0_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.214414375,
+        "subset_original": 0.0037676670000000023,
+        "subset_refined": 0.003645124999999999
+      },
+      "pair_index": 4,
+      "photo_timing_seconds": {
+        "coordinates": 0.0010370000000000101,
+        "images": 0.031836209000000004,
+        "photometric_batch_000": 0.295191875,
+        "photometric_batch_001": 0.20518662499999996,
+        "photometric_batch_002": 0.0020453340000000653,
+        "selection": 0.024519000000000013,
+        "total": 0.700427166
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.415560083
+      },
+      "selected_count": 130,
+      "target_coordinate_changed_count": 23
+    },
+    {
+      "admitted_count": 12,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.5822624361828397,
+          "rotation_degrees": 0.38254001693884887,
+          "translation_degrees": 0.5822624361828397,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.5800158437844164,
+          "rotation_degrees": 0.38101343472470933,
+          "translation_degrees": 0.5800158437844164,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 1.1728362450164627,
+          "rotation_degrees": 0.9129618341465463,
+          "translation_degrees": 1.1728362450164627,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 1.3179742723038403,
+          "rotation_degrees": 0.6752791043324665,
+          "translation_degrees": 1.3179742723038403,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.086756125,
+      "initialized_count": 91,
+      "key": "0015-1105376832_6f92693a76_o.jpg_0015-2795419285_b4bbfa1862_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.08822824999999998,
+        "subset_original": 0.003131167000000018,
+        "subset_refined": 0.0030760830000000072
+      },
+      "pair_index": 5,
+      "photo_timing_seconds": {
+        "coordinates": 0.0009025829999999985,
+        "images": 0.026439957999999986,
+        "photometric_batch_000": 0.285772417,
+        "photometric_batch_001": 0.112328125,
+        "selection": 0.013656124999999991,
+        "total": 0.5580307090000001
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.272115875
+      },
+      "selected_count": 92,
+      "target_coordinate_changed_count": 12
+    },
+    {
+      "admitted_count": 15,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.2564661152281563,
+          "rotation_degrees": 0.03608395123078443,
+          "translation_degrees": 0.2564661152281563,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.2568571202176767,
+          "rotation_degrees": 0.03605700694357981,
+          "translation_degrees": 0.2568571202176767,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 0.4479941529145744,
+          "rotation_degrees": 0.04970944888174488,
+          "translation_degrees": 0.4479941529145744,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 1.1937190449508257,
+          "rotation_degrees": 0.038148448444231334,
+          "translation_degrees": 1.1937190449508257,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.184098417,
+      "initialized_count": 134,
+      "key": "0015-1162164006_4b2185f4e7_o.jpg_0015-2419051977_2fb8a8981c_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.188129708,
+        "subset_original": 0.0031267919999999894,
+        "subset_refined": 0.0031335000000000113
+      },
+      "pair_index": 6,
+      "photo_timing_seconds": {
+        "coordinates": 0.0008693750000000056,
+        "images": 0.03086812500000001,
+        "photometric_batch_000": 0.306260542,
+        "photometric_batch_001": 0.27540112499999997,
+        "photometric_batch_002": 0.005318500000000004,
+        "selection": 0.02480220900000002,
+        "total": 0.7946300420000001
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.408957541
+      },
+      "selected_count": 138,
+      "target_coordinate_changed_count": 15
+    },
+    {
+      "admitted_count": 9,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.3705486894040033,
+          "rotation_degrees": 0.21969027369861868,
+          "translation_degrees": 0.3705486894040033,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.3706988351155809,
+          "rotation_degrees": 0.21977285539551256,
+          "translation_degrees": 0.3706988351155809,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 2.977231949506224,
+          "rotation_degrees": 1.8318582591440367,
+          "translation_degrees": 2.977231949506224,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 1.9978108739402074,
+          "rotation_degrees": 1.2379394446458498,
+          "translation_degrees": 1.9978108739402074,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.251794333,
+      "initialized_count": 94,
+      "key": "0015-1283321355_191a081149_o.jpg_0015-2431823248_3776ed43ec_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.21240429200000002,
+        "subset_original": 0.002796999999999994,
+        "subset_refined": 0.002720666999999982
+      },
+      "pair_index": 7,
+      "photo_timing_seconds": {
+        "coordinates": 0.0009001250000000016,
+        "images": 0.027794250000000006,
+        "photometric_batch_000": 0.33759625,
+        "photometric_batch_001": 0.14209262500000008,
+        "selection": 0.017688459000000017,
+        "total": 0.6439116669999999
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.39642075
+      },
+      "selected_count": 95,
+      "target_coordinate_changed_count": 9
+    },
+    {
+      "admitted_count": 20,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.1268497790665974,
+          "rotation_degrees": 0.07373352456984936,
+          "translation_degrees": 0.1268497790665974,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.12735274853421347,
+          "rotation_degrees": 0.07389561328965347,
+          "translation_degrees": 0.12735274853421347,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 0.9029686192194866,
+          "rotation_degrees": 0.6835450355520902,
+          "translation_degrees": 0.9029686192194866,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 0.7040182131520881,
+          "rotation_degrees": 0.6202390523326919,
+          "translation_degrees": 0.7040182131520881,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.239531,
+      "initialized_count": 104,
+      "key": "0015-1283321355_191a081149_o.jpg_0015-3475832871_843d6b914c_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.23538258299999998,
+        "subset_original": 0.0036376250000000054,
+        "subset_refined": 0.003463875000000005
+      },
+      "pair_index": 8,
+      "photo_timing_seconds": {
+        "coordinates": 0.0009161669999999955,
+        "images": 0.027420625000000004,
+        "photometric_batch_000": 0.31013641699999994,
+        "photometric_batch_001": 0.19524887499999993,
+        "selection": 0.01960716700000001,
+        "total": 0.674198583
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.434132875
+      },
+      "selected_count": 106,
+      "target_coordinate_changed_count": 20
+    },
+    {
+      "admitted_count": 10,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.2439438923203208,
+          "rotation_degrees": 0.5364995609035225,
+          "translation_degrees": 1.2439438923203208,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 1.243872339508935,
+          "rotation_degrees": 0.5363994717909841,
+          "translation_degrees": 1.243872339508935,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 1.4018728804172524,
+          "rotation_degrees": 0.62323791358274,
+          "translation_degrees": 1.4018728804172524,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 5.094803911898631,
+          "rotation_degrees": 2.2758949914698343,
+          "translation_degrees": 5.094803911898631,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.158982291,
+      "initialized_count": 79,
+      "key": "0015-1283321355_191a081149_o.jpg_0015-3519412089_18daa2c071_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.13979599999999998,
+        "subset_original": 0.002845125000000004,
+        "subset_refined": 0.0028420409999999896
+      },
+      "pair_index": 9,
+      "photo_timing_seconds": {
+        "coordinates": 0.0009004579999999929,
+        "images": 0.02715762499999999,
+        "photometric_batch_000": 0.31173766699999994,
+        "photometric_batch_001": 0.06677404200000003,
+        "selection": 0.011523459000000014,
+        "total": 0.536583167
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.31656449999999997
+      },
+      "selected_count": 81,
+      "target_coordinate_changed_count": 10
+    },
+    {
+      "admitted_count": 2,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.4373714219638162,
+          "rotation_degrees": 0.4373714219638162,
+          "translation_degrees": 0.3031546047074141,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.43744932030774103,
+          "rotation_degrees": 0.43744932030774103,
+          "translation_degrees": 0.3030719726653035,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 180.0,
+          "reason": "fewer_than_eight_successful_queries",
+          "rotation_degrees": null,
+          "translation_degrees": null,
+          "unavailable": true
+        },
+        "subset_refined": {
+          "max_degrees": 180.0,
+          "reason": "fewer_than_eight_successful_queries",
+          "rotation_degrees": null,
+          "translation_degrees": null,
+          "unavailable": true
+        }
+      },
+      "full_original_native_call_seconds": 0.181791709,
+      "initialized_count": 29,
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-2297788512_6d09de6efa_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.18274300000000002,
+        "subset_original": 0.0,
+        "subset_refined": 0.0
+      },
+      "pair_index": 10,
+      "photo_timing_seconds": {
+        "coordinates": 0.0008739999999999998,
+        "images": 0.030347749999999993,
+        "photometric_batch_000": 0.125737917,
+        "selection": 0.006841666999999996,
+        "total": 0.263560958
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.29980416600000004
+      },
+      "selected_count": 31,
+      "target_coordinate_changed_count": 2
+    },
+    {
+      "admitted_count": 3,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.0906509379961749,
+          "rotation_degrees": 0.4866771132797538,
+          "translation_degrees": 1.0906509379961749,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 1.085703312954872,
+          "rotation_degrees": 0.4834653142840846,
+          "translation_degrees": 1.085703312954872,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 180.0,
+          "reason": "fewer_than_eight_successful_queries",
+          "rotation_degrees": null,
+          "translation_degrees": null,
+          "unavailable": true
+        },
+        "subset_refined": {
+          "max_degrees": 180.0,
+          "reason": "fewer_than_eight_successful_queries",
+          "rotation_degrees": null,
+          "translation_degrees": null,
+          "unavailable": true
+        }
+      },
+      "full_original_native_call_seconds": 0.179514833,
+      "initialized_count": 63,
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-2947740433_8316ecf292_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.17994929199999998,
+        "subset_original": 0.0,
+        "subset_refined": 0.0
+      },
+      "pair_index": 11,
+      "photo_timing_seconds": {
+        "coordinates": 0.0009039160000000046,
+        "images": 0.031591499999999995,
+        "photometric_batch_000": 0.28911987499999997,
+        "selection": 0.012447166999999981,
+        "total": 0.43725562500000004
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.325628958
+      },
+      "selected_count": 63,
+      "target_coordinate_changed_count": 3
+    },
+    {
+      "admitted_count": 13,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.6148855907691134,
+          "rotation_degrees": 0.4209446527034021,
+          "translation_degrees": 0.6148855907691134,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.6149931569534045,
+          "rotation_degrees": 0.42092631894393223,
+          "translation_degrees": 0.6149931569534045,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 0.6869551103004647,
+          "rotation_degrees": 0.35601038831387044,
+          "translation_degrees": 0.6869551103004647,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 1.78292195197074,
+          "rotation_degrees": 0.3280088765352711,
+          "translation_degrees": 1.78292195197074,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.144549792,
+      "initialized_count": 96,
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-841149791_2ae77144de_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.146037792,
+        "subset_original": 0.003162999999999999,
+        "subset_refined": 0.0030837079999999906
+      },
+      "pair_index": 12,
+      "photo_timing_seconds": {
+        "coordinates": 0.0008924170000000065,
+        "images": 0.03323145799999999,
+        "photometric_batch_000": 0.289625792,
+        "photometric_batch_001": 0.15016095799999996,
+        "selection": 0.019746457999999995,
+        "total": 0.614981042
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.33410975000000004
+      },
+      "selected_count": 102,
+      "target_coordinate_changed_count": 13
+    },
+    {
+      "admitted_count": 1,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.710654063033348,
+          "rotation_degrees": 0.6015689448597042,
+          "translation_degrees": 0.710654063033348,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 0.7106077300812621,
+          "rotation_degrees": 0.6014895513134587,
+          "translation_degrees": 0.7106077300812621,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 180.0,
+          "reason": "fewer_than_eight_successful_queries",
+          "rotation_degrees": null,
+          "translation_degrees": null,
+          "unavailable": true
+        },
+        "subset_refined": {
+          "max_degrees": 180.0,
+          "reason": "fewer_than_eight_successful_queries",
+          "rotation_degrees": null,
+          "translation_degrees": null,
+          "unavailable": true
+        }
+      },
+      "full_original_native_call_seconds": 0.125811291,
+      "initialized_count": 88,
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-878855662_a241416cff_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.126817584,
+        "subset_original": 0.0,
+        "subset_refined": 0.0
+      },
+      "pair_index": 13,
+      "photo_timing_seconds": {
+        "coordinates": 0.0009987919999999983,
+        "images": 0.03397125000000001,
+        "photometric_batch_000": 0.280106958,
+        "photometric_batch_001": 0.08782979099999999,
+        "selection": 0.017578334,
+        "total": 0.5387254579999999
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.28384066700000005
+      },
+      "selected_count": 93,
+      "target_coordinate_changed_count": 1
+    },
+    {
+      "admitted_count": 20,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.4086990861924658,
+          "rotation_degrees": 0.4193048347017286,
+          "translation_degrees": 1.4086990861924658,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 1.4089173630711282,
+          "rotation_degrees": 0.4193339358640556,
+          "translation_degrees": 1.4089173630711282,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 1.5425987496545353,
+          "rotation_degrees": 0.4623784347615443,
+          "translation_degrees": 1.5425987496545353,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 1.4265599093089416,
+          "rotation_degrees": 0.4148749568219097,
+          "translation_degrees": 1.4265599093089416,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.160176333,
+      "initialized_count": 79,
+      "key": "0015-1349576135_91cfa7d80a_o.jpg_0015-3480265591_02fd1d7f7e_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.163982708,
+        "subset_original": 0.0032919580000000115,
+        "subset_refined": 0.003220417000000003
+      },
+      "pair_index": 14,
+      "photo_timing_seconds": {
+        "coordinates": 0.0008228750000000007,
+        "images": 0.03138508300000001,
+        "photometric_batch_000": 0.28513091599999996,
+        "photometric_batch_001": 0.07021866700000007,
+        "selection": 0.01493212499999999,
+        "total": 0.521563125
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.33694466700000003
+      },
+      "selected_count": 79,
+      "target_coordinate_changed_count": 20
+    },
+    {
+      "admitted_count": 12,
+      "errors": {
+        "full_original": {
+          "max_degrees": 2.358317454023721,
+          "rotation_degrees": 1.0147963915481593,
+          "translation_degrees": 2.358317454023721,
+          "unavailable": false
+        },
+        "full_refined": {
+          "max_degrees": 2.358194431578125,
+          "rotation_degrees": 1.0147354215683044,
+          "translation_degrees": 2.358194431578125,
+          "unavailable": false
+        },
+        "subset_original": {
+          "max_degrees": 13.15889438868813,
+          "rotation_degrees": 5.755954425166546,
+          "translation_degrees": 13.15889438868813,
+          "unavailable": false
+        },
+        "subset_refined": {
+          "max_degrees": 2.5095735598177917,
+          "rotation_degrees": 1.0776714152672147,
+          "translation_degrees": 2.5095735598177917,
+          "unavailable": false
+        }
+      },
+      "full_original_native_call_seconds": 0.253721125,
+      "initialized_count": 48,
+      "key": "0015-1349576135_91cfa7d80a_o.jpg_0015-4001663691_8460da38bb_o.jpg",
+      "native_call_seconds": {
+        "full_refined": 0.255963166,
+        "subset_original": 0.0034340830000000044,
+        "subset_refined": 0.0032816250000000102
+      },
+      "pair_index": 15,
+      "photo_timing_seconds": {
+        "coordinates": 0.0008547079999999957,
+        "images": 0.02886024999999999,
+        "photometric_batch_000": 0.18847520899999998,
+        "selection": 0.009582458000000016,
+        "total": 0.328400209
+      },
+      "pose_timing_seconds": {
+        "worker_elapsed": 0.39736841599999995
+      },
+      "selected_count": 48,
+      "target_coordinate_changed_count": 12
+    }
+  ],
+  "schema": "evr0015.evaluation.v1",
+  "scope": "Classical image-information control; reused16 dependent scene0015 pairs; no population inference",
+  "source_sha256": {
+    "configs/0015/posebench-images-archive.json": "a5bd7b9723d4c657d21d549684cf1cc56a5c8da69215c1283da8d6cef379f4d7",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0013-pose-headroom/predict_pair.py": "57aabb0bcacab56f495fbf3a882184f1291bd128b97fd29b230c74f9a324d3c8",
+    "experiments/0013-pose-headroom/run_baseline.py": "f5cd10992dde929f06465ef77f87a7490c8e518d83fca9ccc341ce08a77e0baf",
+    "experiments/0015-photometric/acquire_images.py": "cc87bb53b490b4a589c9a488808d2dd04ee61ddf9e6dbf86659f57793b2715d2",
+    "experiments/0015-photometric/estimate_pair.py": "aac0e5bb7872c045d207376f1c5829c8f450b371638248c2d5a51729ff37c4c8",
+    "experiments/0015-photometric/evaluate_diagnostic.py": "47a014b84d7caeefe8445e64b6e1e33e375bf163c96658b809c5ebe4dc49d8ab",
+    "experiments/0015-photometric/predict_pair.py": "b6342ccf3ea6168f5680bbad4ce499356b5d75e7fced9606ec3be5122ca61e3f",
+    "experiments/0015-photometric/refine_patch.py": "90e86ff731b0d0f28d603a125ba4aa14c3aba785319102b9d8f29153b3e55dbf",
+    "experiments/0015-photometric/run_diagnostic.py": "773a4a27f52523d9cc003417e9cacc99bac705624cfaa98f1ff65b16f2b8dbb5",
+    "experiments/0015-photometric/select_queries.py": "fb20a7187007aa5dc19151ba6abcade9ad80f29d60ff399b3f745acd2544b749",
+    "protocols/0015-photometric-information-development.md": "7400860777e78eea761cd4f3e9c94dda92939e51b7bc8315e320accc7e34ae99",
+    "results/0015-admission/acquisition.json": "d7b2d8a36f5089815fd42b92c32e59b802bc50445bafd5cde60ee69f16d32ec1"
+  },
+  "unavailable_subset_penalty_degrees": 180.0
+}

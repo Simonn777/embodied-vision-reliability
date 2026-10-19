@@ -36,6 +36,8 @@ jobs:
           python -m pip install h5py==3.14.0 poselib==2.0.5
           python -m pytest -q experiments/0013-pose-headroom
           python -m pytest -q experiments/0014-pixel-noise
+      - name: Check image-information pipeline on artificial data only
+        run: python -m pytest -q experiments/0015-photometric
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'
