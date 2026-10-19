@@ -1,6 +1,18 @@
 # Next actions
 
-## Active continuation: 0023 exact-cache verification repair, 2026-10-19
+## Latest result: 0023 failed and closed, 2026-10-19
+
+[Complete development results](results/0023-development/completed-study/README.md):
+All 24 queries evaluated after sealed predictions. Directional AUC@5 = 56.497091%,
+strongest geometry control = 61.984444% (−5.487353 pp); 0/3 positive scene margins,
+AUC@20 loss 1.371838 pp. All four prespecified efficacy checks fail. The +4.374211 pp
+versus native E is insufficient and must not be reported as novel progress.
+No tuning on these same 24 labels, manuscript, held-out claim or goal completion.
+The next research mechanism must be meaningfully distinct and pass a new
+prospective prior-work/information/resource review before experimentation.
+
+
+## Historical continuation: 0023 exact-cache verification repair, 2026-10-19
 
 The frozen acquisition and full real-image frontend completed:51 images,120
 match caches, no technical frontend failure. Prediction01 stopped before any
@@ -14,7 +26,7 @@ review, artificial checks and new exact CI precede fresh prediction02.
 No accuracy result, method gain or manuscript is established.
 
 
-## Active continuation: 0023 prospective directional-instability study, 2026-10-19
+## Historical continuation: 0023 prospective directional-instability study, 2026-10-19
 
 The [protocol](protocols/0023-mapfree-directional-instability.md) fixes a small
 three-place development test before scientific payload access. It compares
@@ -35,7 +47,7 @@ multiview development diagnostic, not the official Map-free task. No manuscript
 or new-method gain is established; the two-independent-source held-out/matched-
 cost/replication gate remains unchanged.
 
-## Active continuation: 0022 frontend qualification passed, 2026-10-19
+## Historical continuation: 0022 frontend qualification passed, 2026-10-19
 
 [Attempt05](results/0022-preparation/runtime-attempt-05/README.md) completed
 both full MoGe predictions, both SuperPoint extractions and one LightGlue pair
@@ -49,7 +61,7 @@ scientific allocation exists. Next: freeze/review the three-place0023 diagnostic
 its strong controls and failure-inclusive gate before reading benchmark payloads.
 No manuscript until the unchanged two-source held-out/matched-cost gate passes.
 
-## Active continuation: 0022 annotation compatibility, 2026-10-19
+## Historical continuation: 0022 annotation compatibility, 2026-10-19
 
 [Attempt04](results/0022-preparation/runtime-attempt-04/README.md) entered
 MoGe inference after all weights/thread settings passed, then failed in original
@@ -59,7 +71,7 @@ byte-bound annotation prebinding is prepared for attempt05 after review/exact CI
 No model calculation, fixture or eligibility threshold changes; all failures stay
 recorded. No benchmark data, scientific gain or manuscript yet.
 
-## Active continuation: 0022 OpenCV reporting compatibility, 2026-10-19
+## Historical continuation: 0022 OpenCV reporting compatibility, 2026-10-19
 
 [Attempt03](results/0022-preparation/runtime-attempt-03/README.md) passed all
 active model weight checks, then failed before inference on OpenCV's GCD thread
@@ -70,7 +82,7 @@ corrects the earlier execution interpretation, and preserves all failed attempts
 Exact source review and CI precede installation04/qualification04. No benchmark
 payload, inference qualification pass, novel gain or manuscript is established.
 
-## Active continuation: 0022 legacy checkpoint compatibility, 2026-10-19
+## Historical continuation: 0022 legacy checkpoint compatibility, 2026-10-19
 
 [Attempt02](results/0022-preparation/runtime-attempt-02/README.md) passed imports
 and complete MoGe/SuperPoint weight checks, but failed before inference on nine
@@ -80,7 +92,7 @@ and hashes before strict active-weight loading. Original attempts01/02 remain
 retained. Exact source review and CI precede attempt03 with unchanged inputs.
 No scientific images or poses have been read, and no novel gain is established.
 
-## Active continuation: 0022 import repair, 2026-10-19
+## Historical continuation: 0022 import repair, 2026-10-19
 
 [Runtime attempt 01](results/0022-preparation/runtime-attempt-01/README.md)
 installed successfully (1.949 s, 88,688 KiB sampled peak), then qualification
@@ -94,7 +106,7 @@ settings, with independent review and exact CI before a fresh installation and
 qualification. It creates no subprocess and does not admit benchmark data.
 Scientific improvement and novelty remain unestablished; no manuscript.
 
-## Active continuation: 0022 installation/qualification freeze, 2026-10-19
+## Historical continuation: 0022 installation/qualification freeze, 2026-10-19
 
 [Asset acquisition](results/0022-preparation/acquisition/README.md) completed
 all 119 files once after exact source CI: 270,952,703 response-body bytes,
@@ -117,7 +129,7 @@ reference prediction error must beat in-sample/Hessian/scalar controls and stron
 same-observation joint optimization. No universal calibration guarantee is
 claimed; coherent reference bias is a known counterexample. No manuscript.
 
-## Active continuation: 0022 asset-only freeze, 2026-10-19
+## Historical continuation: 0022 asset-only freeze, 2026-10-19
 
 The [asset protocol](protocols/0022-traceable-frontend-assets.md) fixes a small,
 traceable MoGe2-S plus SuperPoint/LightGlue frontend and an isolated CPU runtime.
@@ -134,7 +146,7 @@ future transfer method. Do not label a reparameterization of existing inference
 as innovation. The broader held-out, matched-cost, harm and replication gate is
 unchanged, and a manuscript remains inadmissible. Earlier entries are historical.
 
-## Active continuation: 0021 qualification complete, 2026-10-19
+## Historical continuation: 0021 qualification complete, 2026-10-19
 
 The [metadata screen](results/0021-metadata-screen/README.md) cannot establish
 that repeated image tokens share one depth prediction. The old cache therefore
@@ -160,7 +172,7 @@ positive change, 0019, is an existing-method robust-loss improvement. The goal
 remains active; the unchanged held-out, cost, novelty and replication gates must
 be met before a manuscript. Earlier sections preserve the historical record.
 
-## Active continuation: 0020 fixed selector closed, 2026-10-19
+## Historical continuation: 0020 fixed selector closed, 2026-10-19
 
 [0020 results](results/0020-spatial-depth-transfer/README.md) fail the frozen
 accuracy gate. All80pairs completed and were sealed before one evaluation.
@@ -182,7 +194,7 @@ over strong baselines at matched complete-pipeline cost is still required before
 writing a results-backed manuscript. Earlier sections below are chronological.
 
 
-## Active continuation: 0020 spatial-transfer freeze preparation, 2026-10-19
+## Historical continuation: 0020 spatial-transfer freeze preparation, 2026-10-19
 
 [0020 preparation](results/0020-preparation/README.md) has 33 passing artificial
 checks. The fixed four-pose selector tests regional transfer of affine depth
@@ -200,7 +212,7 @@ The held-out, strong-control, matched-cost and replication requirements remain.
 The older sections below preserve the chronological record.
 
 
-## Active continuation: 0019 stronger baseline measured, 2026-10-19
+## Historical continuation: 0019 stronger baseline measured, 2026-10-19
 
 [0019](results/0019-author-loss/README.md) completed 160 calls and one saved-label
 evaluation after exact freeze CI. Zero failures; all pre-final parity checks pass.
@@ -220,7 +232,7 @@ PR47/main1919f713 and exact CI. That mechanism diagnostic stays INELIGIBLE.
 The broader research goal remains active with its original held-out, cost,
 strong-control, confidence, harm and replication requirements.
 
-## Active continuation: 0019 official-loss freeze preparation, 2026-10-19
+## Historical continuation: 0019 official-loss freeze preparation, 2026-10-19
 
 [0019 preparation](results/0019-preparation/README.md) has 14 passing artificial
 checks and independent source review. No scientific 0019 calls have run. Publish
@@ -257,7 +269,7 @@ The research goal remains active. No substantial deployable new-method gain or
 manuscript exists. Preserve all earlier results, immutable source/data, untouched
 held-out allocation and unchanged independent-source efficacy gates.
 
-## Active continuation: 0018 scientific freeze preparation, 2026-10-19
+## Historical continuation: 0018 scientific freeze preparation, 2026-10-19
 
 [0017 publication](docs/0017-publication-verification.md) is verified through
 PR46/main275db67d and exact CI. Additional oracle headroom remains9.202524pp;

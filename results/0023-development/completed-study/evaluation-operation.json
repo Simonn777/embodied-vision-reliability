@@ -1,0 +1,72 @@
+{
+  "development_gate_passed": false,
+  "eligible": true,
+  "evaluation_sha256": "092aea6e4612d8b1d9d76e891a56db042fe9a5c9179f3e01107dc43a818919b0",
+  "expected_commit": "cb520839515381db125f64ea3bcceb434444a85b",
+  "gt_access_started": true,
+  "gt_acquisition_sha256": "24a521191143b1fa45f64e830555811c5b4025bb9fd00c5876fb1e4567c6668b",
+  "plan_sha256": "cc9b02cac8946107f1c945643b316695e5ebbf6339b34baf737541f8cec886d5",
+  "prediction_bindings": {
+    "frontend_receipt_sha256": "4bc0e5b7b47a5c1e0266e645115f3b71f92c099042ec83106ccd7b12148f8259",
+    "input_freeze": "acf502b831ad9e3485ab56549217c8a603d56bf7",
+    "plan_sha256": "cc9b02cac8946107f1c945643b316695e5ebbf6339b34baf737541f8cec886d5",
+    "prediction_outputs": {
+      "scene-s00475.json": {
+        "bytes": 22615580,
+        "sha256": "0339c3fc59545708b6ad277b25df9ea757fd40e6ac43a31b962e5e5c478dd988"
+      },
+      "scene-s00478.json": {
+        "bytes": 22793862,
+        "sha256": "42dc4302c700c476fe183239eded5418d88b5f3068af7131900ffb470aee1257"
+      },
+      "scene-s00513.json": {
+        "bytes": 12570354,
+        "sha256": "21ac4c1a1ab21e37e40482c286f66cc0a432684199cd291c693465365de7c62a"
+      },
+      "selection.json": {
+        "bytes": 261980,
+        "sha256": "54a10d05eaae85df3d6d95ea11a8c05c4689d5c98b2513a3ccc96fe61ccddceb"
+      }
+    },
+    "prediction_receipt_sha256": "bad670f9bf183f1e964995066ff6c6490e7af3ac321bb5e7975e03572ca09903",
+    "prediction_seal_sha256": "e6b70e8f9818819929a5b21d7f6bac10b8c134a2aa810877dc89fec384d618ad",
+    "prediction_supervision_log_sha256": {
+      "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "0c2c128b3d8e786ca277bb88badda145c82d3ab74ed8439af03a883e674c906d"
+    },
+    "prediction_supervision_sha256": "4dcc1f178cc4f8981ee438cfb6f09ed400342911284fb661eeaef79255fb052f"
+  },
+  "query_count": 24,
+  "schema": "evr0023.evaluation-operation.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "configs/0022-source-model-assets.json": "30d4474b3372c8cea8aed86f67620425146303c0fae52b652b37062936691944",
+    "configs/0022-wheel-assets.json": "fc8bea8344e061857dbf025f80915f8d757a18a2f960a92d490349cbb12d0f14",
+    "docs/0023-cache-verification-repair.md": "e1574960fd63e3b991e1417b75a0188832b9b69cf0446f27b8ba278c6fe91f45",
+    "docs/literature/0022-runtime-source-contract.md": "e330987c37e4e87d187432ed6bf37c9e3c9c7bc6ba3758dcff655135e44fca57",
+    "experiments/0022-frontend/acquire.py": "5b09d48b3b81fcf1d62b90871475813e26544934711244dcff2d429d4ad7fa11",
+    "experiments/0022-frontend/acquire_operation.py": "28aed9e86d764ca3f336d7eab3b0ae001b261b21cbfb551350af2a6c0a1e0540",
+    "experiments/0022-frontend/install_runtime.py": "ae94b94817081ed31d41b7191c8c98dd835f5f363837318e195a7267a05e4ca4",
+    "experiments/0022-frontend/qualify.py": "174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e",
+    "experiments/0022-frontend/supervise.py": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5",
+    "experiments/0023-mapfree/acquire_operation.py": "fab653e3ed1c0e32cb0a97eac40ef0dbc7ff3df3894da57bf9d4dfac2ba38281",
+    "experiments/0023-mapfree/cache_inputs.py": "30aa78c4fb08579874f22e6f3006ba4a991736ede80697854839b772170f25c2",
+    "experiments/0023-mapfree/conditional.py": "6e6ef6fff7e3b8ae5b4249c273bb9d3e420c050b064ad70f6e9b67070887b924",
+    "experiments/0023-mapfree/covariance.py": "8c1469af4fc53835f0d2d2ccf744ef27e23023370123123774ee6d3d98e88662",
+    "experiments/0023-mapfree/evaluate.py": "d4cb126e88d6beae16997926b7feb413ce2f4722c54daa92fcc5931ed425b9c6",
+    "experiments/0023-mapfree/field_ba.py": "9e366feb3f2fe3756ac251cf38737e89e25554cb5bb155418dcd2de2a9f6127e",
+    "experiments/0023-mapfree/frontend.py": "5076452d2e69645745eb68675a40bb47473ec4a4a28db87cf6f9652229614bf7",
+    "experiments/0023-mapfree/geometry_ba.py": "e8b6fa7bc789819aac769ccf521af944202a345600606a78077aa2ee5179a013",
+    "experiments/0023-mapfree/predict.py": "1a279732dabea998f494ffb0172cc9fb2bc2ff5780b5f6e2f1ff188e0be02a28",
+    "experiments/0023-mapfree/propose_plan.py": "3e36ce21fe8e91f2135a99ba1d4fe9e1401888ae07f98972420f2ee9c84c4bcf",
+    "experiments/0023-mapfree/range_inputs.py": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50",
+    "experiments/0023-mapfree/study.py": "fbbe24e40d17cf1e655e51dc1a22ca726a806eb18c2e0702ee5fff83e9ba2c34",
+    "experiments/0023-mapfree/supervise.py": "98a83c732a88e2cfd46842c14353b3c0e73744d55969bbc7d8eacc866b4dec30",
+    "protocols/0022-traceable-frontend-assets.md": "e8d3139da5167fbc703efc9fd66433ba1daccd948d5503eb91de45b892b9625c",
+    "protocols/0023-mapfree-directional-instability.md": "c4f5c0cf02e31b990f7aa54bb740cde4dfbaa43c46bca1f260ffbc6bc320673e",
+    "results/0022-preparation/dependency-wheels.json": "e7a0f21d36e5e10131ef3afbb721c7e50bed6320b658cd0748f249edbdc73a40"
+  },
+  "stage": "completed",
+  "status": "completed",
+  "wall_seconds": 6.934959958
+}

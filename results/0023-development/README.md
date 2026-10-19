@@ -1,5 +1,17 @@
 # 0023 prospective development study
 
+## Latest result: 0023 failed and closed, 2026-10-19
+
+[Complete development results](completed-study/README.md):
+all24 queries evaluated after sealed predictions. Directional AUC@5=56.497091%,
+strongest geometry control=61.984444% (−5.487353pp);0/3 positive scene margins,
+AUC@20 loss1.371838pp. All four prespecified efficacy checks fail. The+4.374211pp
+versus native E is insufficient and must not be reported as novel progress.
+No same24-label tuning, manuscript, held-out claim or goal completion.
+The next research mechanism must be meaningfully distinct and pass a new
+prospective prior-work/information/resource review before experimentation.
+
+
 ## Active continuation: 0023 exact-cache verification repair, 2026-10-19
 
 The frozen acquisition and full real-image frontend completed:51 images,120
