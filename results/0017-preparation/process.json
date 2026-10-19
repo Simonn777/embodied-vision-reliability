@@ -1,0 +1,22 @@
+{
+  "schema": "evr0017.preparation-process.v1",
+  "asset_freeze": "ba53cf78ea8df8f550e1e44304c4b0f62251ada5",
+  "asset_exact_ci": {
+    "run_id": 39315998400,
+    "conclusion": "success"
+  },
+  "acquisition_actual_tool_exit_code": 0,
+  "acquisition_wall_seconds": 9.919926208,
+  "acquisition_receipt_sha256": "5b3f7e22c720c9750801a6f2ae707ad51eec432bc07288a600e1076c901505a0",
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "qualification_actual_tool_exit_code": 0,
+  "qualification_receipt_sha256": "68fb7ad62627a537933d6eec3909af9c5dd73a699cdbbbe37e36ae7e33344a19",
+  "qualification_log_sha256": "885413630a5b8defe3a1d1873b5c002b48c6a2acf7474f23c3418d324ac74e8f",
+  "qualification_calls": 8,
+  "dataset_values_read_in_preparation": 0,
+  "commands": {
+    "acquisition": "PYTHONPATH=$DEPENDENCY_RUNTIME $PYTHON experiments/0017-depth-information/acquire_and_allocate.py --cache-dir $PRIVATE_CACHE --receipt results/0017-preparation/acquisition.json --manifest configs/0017-development-manifest.json",
+    "qualification": "PYTHONPATH=$CURRENT_RUNTIME:$DEPENDENCY_RUNTIME $PYTHON experiments/0017-depth-information/qualify_native.py --output results/0017-preparation/native-qualification.json"
+  },
+  "command_note": "Environment paths are abstracted for public provenance; actual tool invocation used the existing local Python3.9.6 and isolated runtimes."
+}

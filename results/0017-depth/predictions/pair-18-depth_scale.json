@@ -1,0 +1,351 @@
+{
+  "arm": "depth_scale",
+  "calibration": {
+    "K1": [
+      [
+        1228.9080810546875,
+        0.0,
+        524.0
+      ],
+      [
+        0.0,
+        1228.9080810546875,
+        388.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        3678.562255859375,
+        0.0,
+        498.0
+      ],
+      [
+        0.0,
+        3678.562255859375,
+        373.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 776,
+      "model": "PINHOLE",
+      "params": [
+        1228.9080810546875,
+        1228.9080810546875,
+        524.0,
+        388.5
+      ],
+      "width": 1048
+    },
+    "camera2": {
+      "height": 746,
+      "model": "PINHOLE",
+      "params": [
+        3678.562255859375,
+        3678.562255859375,
+        498.0,
+        373.5
+      ],
+      "width": 996
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10678136,
+  "dataset_sha256_declared": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+  "dataset_sha256_verified": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+  "depth_diagnostics": {
+    "all": {
+      "denominator": 2048,
+      "direction_denominator": 4096,
+      "fixed_reprojection_cost": 0.5040992355318871,
+      "forward": {
+        "cost_sum": 1372.2856898647237,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2048,
+        "valid_projection_count": 2048
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4096,
+      "native_branch_positive_finite_z_count": 4096,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.5040992355318871,
+      "reverse": {
+        "cost_sum": 692.5047788738857,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2048,
+        "valid_projection_count": 2048
+      },
+      "status": "available"
+    },
+    "pixel_threshold": 16.0,
+    "raw_translation_norm": 2.83454746269392,
+    "raw_translation_norm_overflow": false,
+    "returned_mask": {
+      "denominator": 1931,
+      "direction_denominator": 3862,
+      "fixed_reprojection_cost": 0.48181811143021114,
+      "forward": {
+        "cost_sum": 1259.4901780938626,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 1931,
+        "valid_projection_count": 1931
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 3862,
+      "native_branch_positive_finite_z_count": 3862,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.48181811143021114,
+      "reverse": {
+        "cost_sum": 601.2913682496128,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 1931,
+        "valid_projection_count": 1931
+      },
+      "status": "available"
+    },
+    "returned_mask_semantics": "Pre-final-refinement epipolar support; not final depth-active support",
+    "scale": 1.5094941842593415,
+    "shift1": 0.0,
+    "shift2": 0.0
+  },
+  "estimate": {
+    "R": [
+      [
+        0.9946425676162958,
+        -0.03447735747468497,
+        -0.09745498708237255
+      ],
+      [
+        0.007604223403027858,
+        0.9645910745474927,
+        -0.26364035102720956
+      ],
+      [
+        0.10309383333691427,
+        0.26148684617945167,
+        0.9596855166162634
+      ]
+    ],
+    "t": [
+      0.2854072086564581,
+      0.7535995995102821,
+      2.717588947418173
+    ]
+  },
+  "filename": "lincoln_memorial_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2048,
+    "count": 2048,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 1774,
+    "pixel_msac": 516.6613115179377,
+    "pixel_threshold": 2.0
+  },
+  "geometry": {
+    "R": [
+      [
+        0.9946425676162958,
+        -0.03447735747468497,
+        -0.09745498708237255
+      ],
+      [
+        0.007604223403027858,
+        0.9645910745474927,
+        -0.26364035102720956
+      ],
+      [
+        0.10309383333691427,
+        0.26148684617945167,
+        0.9596855166162634
+      ]
+    ],
+    "scale": 1.5094941842593415,
+    "shift1": 0.0,
+    "shift2": 0.0,
+    "t": [
+      0.2854072086564581,
+      0.7535995995102821,
+      2.717588947418173
+    ]
+  },
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "c027de89b1fce22b5a4833afc946f03c446544f0d9af6d67a45ffd67837349e3",
+      "shape": [
+        2048
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "b505a53885c75b51fca0b43c7288ec0c3a706beb8bac02de7875c8a4913bf2db",
+      "shape": [
+        2048
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "1f1bcc12af4200ba7078dd4844ea34316b0b068dc56738fd3779cfcfd6814803",
+      "shape": [
+        2048,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "5e39a77ef473d85d9bdcfaa750d6011b617edb5c6c975b87c163f4176a8053cb",
+      "shape": [
+        2048,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2048,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 1931,
+  "key": "00924277_2300346048_o_87495742_6081377753_o",
+  "library": {
+    "binary_bytes": 2607368,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "3228d488ca11f966378b6b7657ee6ebc5716da474c7ae88fccff7ab433a6981d",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2048,
+  "mask_sha256": "5dde533e07b1a7cbf3f2db6674bbd77f09faed192002adfe3253322aa612a8e9",
+  "native_inliers_packbits_big_hex": "fdfffffbffffffff7fffff7ffcbfbffbfffbfffebfffffe7fffe3fffdfffbfefff7bffff3f7b75ffffff7fffffffffffeeffff7feffffffdfffffb7effb6feffffbff7fffffffffff6ffffbf7fffffffffffffffffbffeffffff5fd7fffffffffffefffffffffffffffffdfeff7ffeff7f7ffbbffffffffffffffffdfff7ff7fffffffffdfffffffffbffffffffffffffffffdffffeefffff7fff7feffbffbffffffffffffffff7fdbfffffdfdfffffffff7fff7dfffffdfffdfffffffffffffff7fdffffdfbfffffffffeffbdefffffffffffffffedffff7dfeaffffeffbfffff3fbdfffffbfffffffcfffbfff7ffbfffffffffffffffdffffffbf7fffffffd",
+  "options": {
+    "bundle": {},
+    "estimate_shift": false,
+    "max_errors": [
+      16.0,
+      2.0
+    ],
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "weight_sampson": 1.0
+  },
+  "pair_index": 18,
+  "phase": "complete",
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-18-depth_scale.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-18-depth_scale.worker.json",
+    "raw_worker_sha256": "df778afb36d79c693521eeac1e2a5df2514d39e0b7b903be67ca8fef4199e254",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 42208,
+    "termination": null,
+    "wall_seconds": 0.21471620900000055,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.94287109375,
+    "iterations": 101,
+    "model_score": 0.00025634112682222616,
+    "num_inliers": 1931,
+    "refinements": 5
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "lincoln_memorial",
+  "schema": "evr0017.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125"
+  },
+  "status": "completed",
+  "timings": {
+    "call_seconds": 0.036989999999999995,
+    "charged_total_seconds": 0.21471620900000055,
+    "input_seconds": 0.028507250000000005,
+    "score_seconds": 0.0011546669999999981,
+    "worker_total_seconds": 0.08245658399999999
+  }
+}

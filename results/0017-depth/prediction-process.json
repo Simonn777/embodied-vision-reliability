@@ -1,0 +1,26 @@
+{
+  "schema": "evr0017.outer-operation.v1",
+  "mode": "prediction",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "experiments/0017-depth-information/run_diagnostic.py",
+    "--data-dir",
+    "../0017-preparation/inputs",
+    "--manifest",
+    "configs/0017-development-manifest.json",
+    "--output-dir",
+    "results/0017-depth/predictions",
+    "--current-runtime",
+    "../0016-preparation/runtime",
+    "--dependency-runtime",
+    "../runtime"
+  ],
+  "python_version": "3.9.6",
+  "cwd": "repository root",
+  "helper_sha256": "54fac532a55f9ad5c659a1aab5a9573de7402e868fd71236de054e3d6d785391",
+  "source_commit": "5f267a3b657b38a7efe8381b9bb11f194e894355",
+  "exit_code": 0,
+  "wall_seconds": 58.957799875,
+  "log_sha256": "59ddaa7ae1ad45ebd1801413b661c6f1a1328e5a1f357021cbc8b87bce470d2a"
+}
