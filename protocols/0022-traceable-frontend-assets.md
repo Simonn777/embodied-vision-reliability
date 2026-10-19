@@ -138,3 +138,18 @@ value; record canonical tensor hashes, remove only those entries, then strictly
 load and verify every active state value. All other unexpected/missing active
 keys remain fatal. This is an explicit compatibility conversion, not weight
 relaxation or a changed model. Keep both earlier attempts unchanged.
+
+
+## Technical attempt04: explicit OpenCV serial reporting
+
+Attempt03 at472deb8 passed all active model weight checks, then failed before
+inference because GCD OpenCV getNumThreads reports CPU count after setNumThreads(1).
+The official4.11.0 modules/core/src/parallel.cpp establishes that both0 and1
+bypass parallel_for parallel execution; this is a reporting compatibility issue,
+not evidence of ten executing workers. Preserve the failed attempt and API-only
+probes, and correct the earlier interpretation explicitly.
+
+After review/exact CI, one fresh installation04 and identical qualification04
+may use setNumThreads(0), explicitly disabling OpenCV parallelism with reported1.
+Torch remains intra4/inter1; actual settings are recorded even on failure. No
+fixture, model, threshold, CPU/memory/wall cap or scientific admission changes.

@@ -1,5 +1,16 @@
 # Current state
 
+## Active continuation: 0022 OpenCV reporting compatibility, 2026-10-19
+
+[Attempt03](results/0022-preparation/runtime-attempt-03/README.md) passed all
+active model weight checks, then failed before inference on OpenCV's GCD thread
+report. Official source confirms set1 already serializes parallel_for, despite
+reporting CPU count. The narrow next repair explicitly disables parallelism
+with0, reporting1; Torch4/1 and all numerical settings remain fixed. This
+corrects the earlier execution interpretation, and preserves all failed attempts.
+Exact source review and CI precede installation04/qualification04. No benchmark
+payload, inference qualification pass, novel gain or manuscript is established.
+
 ## Active continuation: 0022 legacy checkpoint compatibility, 2026-10-19
 
 [Attempt02](results/0022-preparation/runtime-attempt-02/README.md) passed imports

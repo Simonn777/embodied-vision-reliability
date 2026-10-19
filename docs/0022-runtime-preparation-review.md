@@ -145,3 +145,43 @@ Receipt04 binds the 13 passing artificial tests (exit0,0.273327417s). The review
 checked the source/receipt/log bindings without an unnecessary duplicate rerun.
 No source-level blocker remains to fresh installation03/qualification03 after
 the next exact freeze passes CI. Earlier failed attempts remain unchanged.
+
+
+## Attempt04 macOS thread-report compatibility review
+
+The independent saved-file audit verified attempt03's source hashes against
+`472deb8a39bd9e4de754241aaa760044e4891787`, installation binding, supervisor logs,
+and all public/raw publication hashes. The qualifier failed with
+`execution_thread_configuration` after all three strict model loads, before
+creating the fixture or running inference. Its output directory contains only
+the receipt. The outer operation exited 1 in 20.239189334 seconds, with sampled
+peak group RSS 652,288 KiB; it recorded one suppressed optional NumPy probe and
+no ordinary offline-guard violation. Original attempt03 settings were not retained
+in its error details, so the later API probes are separate diagnostic evidence.
+
+The saved API-only probes report Torch intra/inter-op 4/1, OpenCV GCD reporting
+10 after requests 1 or 4, and reporting 1 after request 0. The reviewer separately
+checked [OpenCV 4.11.0's implementation](https://github.com/opencv/opencv/blob/4.11.0/modules/core/src/parallel.cpp):
+`parallel_for_impl` bypasses parallel dispatch for both 0 and 1; the GCD getter
+otherwise returns the CPU count. Thus the observed 10 is a reporting mismatch,
+not evidence that ten OpenCV workers executed. These probes did not load models
+or run an inference workload, and do not establish overall runtime scalability.
+
+The reviewed change requests OpenCV 0, explicitly records parallelism disabled,
+retains Torch 4/1 and OpenCV reported 1, and preserves actual settings in any
+future configuration exception. Model weights, architecture, manufactured
+fixture, inference options, thresholds and resource caps are unchanged. The
+reviewed qualifier SHA256 is
+`3f4fb5f38641c137b27a273fdffb284b65b0d024d94ce29986310b6091e07716`;
+test SHA256 is
+`a8164dd8bf0e66e5daa8366554d1863711aba1714774028d568dd6766f7c954c`.
+[Receipt05](../results/0022-preparation/qualification-artificial-tests-05.json)
+and its [log](../results/0022-preparation/qualification-artificial-tests-05.log)
+match these source hashes and record 13 fake-interface tests passing, exit 0,
+wall 0.483554208 seconds. This reviewer checked the source/receipt/log bindings
+without repeating model loads, API probes or the test suite.
+
+No source-level blocker remains to one fresh installation04 and the identical
+qualification04 after exact freeze and successful CI. All earlier failures stay
+unchanged; this is compatibility admission only, with no scientific payload,
+accuracy result or manuscript admission.

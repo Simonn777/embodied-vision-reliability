@@ -383,13 +383,16 @@ def fixture(np):
 def configure_execution(moge, torch, cv2):
     """Apply the declared authored attention path after strict weight loading."""
     moge.enable_pytorch_native_sdpa()
-    cv2.setNumThreads(1)
+    # On the pinned macOS GCD build, positive values report system CPUs.
+    # Zero disables OpenCV parallel regions and getNumThreads reports one.
+    cv2.setNumThreads(0)
     settings = {"moge_native_sdpa_enabled": True,
                 "torch_intraop_threads": torch.get_num_threads(),
                 "torch_interop_threads": torch.get_num_interop_threads(),
-                "opencv_threads": cv2.getNumThreads()}
-    require(settings["torch_intraop_threads"] == 4 and settings["torch_interop_threads"] == 1
-            and settings["opencv_threads"] == 1, "execution_thread_configuration")
+                "opencv_threads": cv2.getNumThreads(), "opencv_parallelism_disabled": True}
+    if not (settings["torch_intraop_threads"] == 4 and settings["torch_interop_threads"] == 1
+            and settings["opencv_threads"] == 1):
+        raise QualificationError("execution_thread_configuration", settings)
     return settings
 
 

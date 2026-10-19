@@ -212,12 +212,14 @@ class QualificationTests(unittest.TestCase):
         cv_threads = types.SimpleNamespace(setNumThreads=mock.Mock(), getNumThreads=lambda: 1)
         settings = q.configure_execution(model, torch_threads, cv_threads)
         model.enable_pytorch_native_sdpa.assert_called_once_with()
-        cv_threads.setNumThreads.assert_called_once_with(1)
+        cv_threads.setNumThreads.assert_called_once_with(0)
         self.assertEqual(settings, {"moge_native_sdpa_enabled": True, "torch_intraop_threads": 4,
-                                    "torch_interop_threads": 1, "opencv_threads": 1})
+                                    "torch_interop_threads": 1, "opencv_threads": 1,
+                                    "opencv_parallelism_disabled": True})
         cv_threads.getNumThreads = lambda: 8
-        with self.assertRaisesRegex(q.QualificationError, "execution_thread_configuration"):
+        with self.assertRaisesRegex(q.QualificationError, "execution_thread_configuration") as error:
             q.configure_execution(model, torch_threads, cv_threads)
+        self.assertEqual(error.exception.details["opencv_threads"], 8)
         original = mock.Mock(side_effect=AssertionError("network helper must not run"))
         loader = mock.Mock(return_value={"fake": "state"})
         backend = types.SimpleNamespace(hub=types.SimpleNamespace(load_state_dict_from_url=original), load=loader)
