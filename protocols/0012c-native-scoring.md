@@ -30,6 +30,10 @@ It is further exploratory use of the same development scene, not confirmation.
   quadratic/denominator calculations between original and added bounds. These
   implementation changes reduce repeated work but do not change the formulas.
   Floating-point guard compatibility requires synthetic independent review.
+- Store45 unique symmetric moment entries; reuse already evaluated coarse cell
+  intervals during refinement and build the refinement heap only when needed.
+  Native node counters therefore differ from the unoptimized Python path;
+  every actual new bound evaluation and repeated direct residual is charged.
 - No oracle score or winner enters selection. Stored references enter validation
   only. Baselines do not construct unused candidate trees.
 
