@@ -137,7 +137,11 @@ def _evaluate(x, y, R, t, weights, need_jacobian=True):
     with np.errstate(over="raise", divide="raise", invalid="raise"):
         try:
             E = skew(t) @ R
-            g1, g2 = y @ E, x @ E.T
+            # NumPy 2.0.2/Apple Accelerate can set false floating-point flags
+            # on large matmul even for bounded inputs. Unoptimized einsum
+            # avoids BLAS; strict errstate and finite/denominator guards stay.
+            g1 = np.einsum("ij,jk->ik", y, E, optimize=False)
+            g2 = np.einsum("ij,jk->ik", x, E.T, optimize=False)
             e = np.sum(y * g2, axis=1)
             v = (np.sum(g1[:, :2] ** 2 * weights[0], axis=1)
                  + np.sum(g2[:, :2] ** 2 * weights[1], axis=1))
@@ -154,7 +158,8 @@ def _evaluate(x, y, R, t, weights, need_jacobian=True):
             derivatives += [skew(B[:, j]) @ R for j in range(2)]
             J = np.empty((len(x), 5), dtype=np.float64)
             for j, dE in enumerate(derivatives):
-                dg1, dg2 = y @ dE, x @ dE.T
+                dg1 = np.einsum("ij,jk->ik", y, dE, optimize=False)
+                dg2 = np.einsum("ij,jk->ik", x, dE.T, optimize=False)
                 de = np.sum(y * dg2, axis=1)
                 dv = 2.0 * (np.sum(g1[:, :2] * dg1[:, :2] * weights[0], axis=1)
                             + np.sum(g2[:, :2] * dg2[:, :2] * weights[1], axis=1))
@@ -241,8 +246,8 @@ def refine_pose(x1_pixels, x2_pixels, K1, K2, R_initial, t_initial, mode="N"):
         with np.errstate(over="raise", divide="raise", invalid="raise"):
             try:
                 robust_weights = 1.0 / (0.25 + r * r)
-                H = J.T @ (robust_weights[:, None] * J)
-                gradient = J.T @ (robust_weights * r)
+                H = np.einsum("ni,nj->ij", J, robust_weights[:, None] * J, optimize=False)
+                gradient = np.einsum("ni,n->i", J, robust_weights * r, optimize=False)
             except FloatingPointError as exc:
                 raise ValueError("nonfinite normal equations") from exc
         if not np.all(np.isfinite(H)) or not np.all(np.isfinite(gradient)):
@@ -303,7 +308,7 @@ def refine_pose(x1_pixels, x2_pixels, K1, K2, R_initial, t_initial, mode="N"):
         history.append(entry)
     with np.errstate(over="raise", divide="raise", invalid="raise"):
         try:
-            final_gradient = 2.0 * (J.T @ (r / (0.25 + r * r)))
+            final_gradient = 2.0 * np.einsum("ni,n->i", J, r / (0.25 + r * r), optimize=False)
         except FloatingPointError as exc:
             raise ValueError("nonfinite final objective gradient") from exc
     if not np.all(np.isfinite(final_gradient)):

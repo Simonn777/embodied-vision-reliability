@@ -13,13 +13,14 @@ refine = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(refine)
 
 
-def artificial(seed=701, noise=0.2, focals=(620.0, 850.0, 1100.0, 730.0)):
+def artificial(seed=701, noise=0.2, focals=(620.0, 850.0, 1100.0, 730.0), n=120):
     rng = np.random.default_rng(seed)
-    X = rng.uniform([-2.0, -1.5, 4.0], [2.0, 1.5, 9.0], (120, 3))
+    X = rng.uniform([-2.0, -1.5, 4.0], [2.0, 1.5, 9.0], (n, 3))
     R = refine.so3_exp(np.array([0.025, -0.06, 0.015]))
     t = np.array([0.7, -0.1, 0.2])
     t /= np.linalg.norm(t)
-    Y = X @ R.T + t
+    # Keep large artificial-fixture formation out of the affected BLAS path.
+    Y = np.einsum("ij,jk->ik", X, R.T, optimize=False) + t
     K1 = np.array([[focals[0], 0.0, 320.0], [0.0, focals[1], 240.0], [0.0, 0.0, 1.0]])
     K2 = np.array([[focals[2], 0.0, 400.0], [0.0, focals[3], 300.0], [0.0, 0.0, 1.0]])
     x = X[:, :2] / X[:, 2:]
@@ -152,3 +153,51 @@ def test_invalid_pose_intrinsics_and_collapsed_denominator_rejected():
     x[0, 0] = np.nan
     with pytest.raises(ValueError, match="finite"):
         refine.residuals_and_jacobian(x, x, np.eye(3), [1., 0., 0.], [500., 500.], [500., 500.])
+
+
+@pytest.mark.parametrize("mode", ["N", "P"])
+def test_large_bounded_kernel_and_optimization_without_blas_false_flags(mode):
+    """Exercise all N-dependent contractions at the actual 10k input size.
+
+    The independent reference uses exactly three explicit component products
+    and sums. It neither suppresses floating-point checks nor calls matmul.
+    """
+    case = artificial(seed=20261020, n=10000)
+    x, y, R, t, f1, f2 = normalized(case)
+    assert np.max(np.abs(x)) <= 1.0 and np.max(np.abs(y)) <= 1.0
+    with np.errstate(over="raise", divide="raise", invalid="raise"):
+        E = refine.skew(t) @ R
+        g1 = sum(y[:, j, None] * E[None, j, :] for j in range(3))
+        g2 = sum(x[:, j, None] * E.T[None, j, :] for j in range(3))
+        e = np.sum(y * g2, axis=1)
+        if mode == "N":
+            a = 0.5 / np.mean(f1) + 0.5 / np.mean(f2)
+            v = a * a * np.sum(g1[:, :2]**2 + g2[:, :2]**2, axis=1)
+        else:
+            v = np.sum(g1[:, :2]**2 / f1**2 + g2[:, :2]**2 / f2**2, axis=1)
+        expected = e / np.sqrt(v)
+        residual, jacobian = refine.residuals_and_jacobian(x, y, R, t, f1, f2, mode)
+        np.testing.assert_allclose(residual, expected, rtol=2e-13, atol=3e-12)
+        assert np.isfinite(jacobian).all() and np.isfinite(refine.cauchy_cost(residual))
+        result = refine.refine_pose(*case, mode=mode)
+    assert result["number_of_correspondences"] == 10000
+    assert 0 < result["iteration_count"] <= 100 and result["accepted_steps"] > 0
+    assert result["final_cost"] < result["initial_cost"]
+    assert np.isfinite(result["final_gradient_infinity"])
+    for row in result["iterations"]:
+        if row["accepted"]:
+            assert row["cost_after"] < row["cost_before"]
+        else:
+            assert row["cost_after"] == row["cost_before"]
+    json.dumps(result, allow_nan=False)
+
+
+@pytest.mark.parametrize("mode", ["N", "P"])
+def test_non_blas_kernel_still_refuses_true_overflow(mode):
+    # The inputs are finite, but their quadratic residual arithmetic is not.
+    # Avoiding false BLAS flags must not suppress these actual invalid states.
+    x = np.tile([1e200, -1e200, 1.0], (1000, 1))
+    y = np.tile([-1e200, 1e200, 1.0], (1000, 1))
+    with pytest.raises(ValueError, match="nonfinite|collapsed"):
+        refine.residuals_and_jacobian(x, y, np.eye(3), [1., 2., 3.],
+                                      [500., 700.], [800., 600.], mode)

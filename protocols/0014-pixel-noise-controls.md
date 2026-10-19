@@ -119,3 +119,35 @@ or null result is preserved. No new correlated-bias method is admitted here:
 estimating non-diagonal correspondence covariance from residuals could confuse
 pose error with matching bias, and needs independent information or a specific
 identifiable model before a later experiment. No manuscript follows0014.
+
+## Disclosed arithmetic-only repair before any N/P outcome
+
+The first frozen32f3e40 operation stopped at pair0's initial N evaluation with
+`nonfinite or collapsed residual arithmetic`. Its native continuation had
+completed, but neither N nor P returned a pose and no0014 scoring ran. Preserve
+`results/0014-pixel-noise/` and its ineligible seal without rewriting anything.
+
+Separate bounded artificial diagnostics reproduced false floating-point flags
+in the current NumPy2.0.2/Accelerate backend for large Nx3 and normal-equation
+matrix products. An independent ones(10000,3) times identity(3) also returns
+exact ones while flagging divide-by-zero, overflow and invalid values. This
+matches the class of [upstream reported issue](https://github.com/numpy/numpy/issues/28687),
+but artificial validity does not establish that the original real pair's full
+arithmetic was valid. Its abbreviated original exception is preserved.
+
+Replace only observation-count-dependent matrix products with mathematically
+equivalent `einsum(..., optimize=False)` contractions in the N/P kernel and
+common cost/gradient/GN diagnostics. Preserve strict exception scopes, explicit
+finite and denominator checks, precision, original poses/masks, both objectives,
+optimizer parameters/stops, interpretation gates and native library. No guard
+is suppressed, no output clipped, and no dependency upgraded. Summation order
+and runtime may change; make no bitwise or performance-equivalence claim.
+Large artificial N/P optimizations and contraction equivalence tests must pass
+before separately freezing one technical retry in
+`results/0014-pixel-noise-arithmetic-repair/predictions`.
+
+The new cohort executes all three continuations once per pair; explicitly count
+the extra native pair0 call from the first attempt (17 native calls across both
+attempts). Do not conceal its cost or mix its partial record into the new seal.
+The retry is a technical repair decided without any N/P pose outcome, not a
+choice among quality results. Any further failure remains visible.

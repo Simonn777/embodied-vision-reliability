@@ -1,0 +1,57 @@
+{
+  "N": 10000,
+  "checks": [
+    {
+      "operation": "Nx3_matmul",
+      "conservative_result_bound": 3.0,
+      "strict_status": "divide by zero encountered in matmul",
+      "warnings": [
+        "divide by zero encountered in matmul",
+        "overflow encountered in matmul",
+        "invalid value encountered in matmul"
+      ],
+      "finite": true,
+      "max_abs_difference_from_explicit_reduction": 4.440892098500626e-16
+    },
+    {
+      "operation": "Nx3_einsum",
+      "conservative_result_bound": 3.0,
+      "strict_status": "success",
+      "finite": true,
+      "max_abs_difference_from_explicit_reduction": 4.440892098500626e-16
+    },
+    {
+      "operation": "H_matmul",
+      "conservative_result_bound": 160000.0,
+      "strict_status": "divide by zero encountered in matmul",
+      "warnings": [
+        "divide by zero encountered in matmul",
+        "overflow encountered in matmul",
+        "invalid value encountered in matmul"
+      ],
+      "finite": true,
+      "max_abs_difference_from_explicit_reduction": 5.093170329928398e-11
+    },
+    {
+      "operation": "H_einsum",
+      "conservative_result_bound": 160000.0,
+      "strict_status": "success",
+      "finite": true,
+      "max_abs_difference_from_explicit_reduction": 5.093170329928398e-11
+    },
+    {
+      "operation": "g_matmul",
+      "conservative_result_bound": 80000.0,
+      "strict_status": "success",
+      "finite": true,
+      "max_abs_difference_from_explicit_reduction": 2.7711166694643907e-13
+    },
+    {
+      "operation": "g_einsum",
+      "conservative_result_bound": 80000.0,
+      "strict_status": "success",
+      "finite": true,
+      "max_abs_difference_from_explicit_reduction": 3.836930773104541e-13
+    }
+  ]
+}

@@ -266,6 +266,15 @@ class WorkerTests(unittest.TestCase):
             self.assertIsNone(invalid["relative_predicted_decrease"])
             self.assertTrue(invalid["reason"])
 
+    def test_large_artificial_stationarity_matches_explicit_diagonal_formula(self):
+        residual = np.full(10000, 0.1)
+        J = np.tile(np.eye(5), (2000, 1))
+        cost = real_kernel.cauchy_cost(residual)
+        result = worker.local_gn_stationarity(np, residual, J, cost)
+        self.assertTrue(result["valid"])
+        self.assertAlmostEqual(result["relative_predicted_decrease"],
+                               10000 * .01 / .26 / max(1., cost), places=11)
+
     def test_real_native_and_kernel_on_artificial_noncoplanar_points(self):
         import poselib
         rng = np.random.default_rng(20261019)

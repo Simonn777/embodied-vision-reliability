@@ -116,8 +116,8 @@ def local_gn_stationarity(np, residual, J, cost):
             raise ValueError("nonfinite cost, residual or Jacobian")
         with np.errstate(over="raise", invalid="raise", divide="raise"):
             weight = 1.0 / (0.25 + residual * residual)
-            g = 2.0 * J.T @ (weight * residual)
-            H = 2.0 * J.T @ (weight[:, None] * J)
+            g = 2.0 * np.einsum("ni,n->i", J, weight * residual, optimize=False)
+            H = 2.0 * np.einsum("ni,nj->ij", J, weight[:, None] * J, optimize=False)
             if not np.isfinite(H).all() or not np.isfinite(g).all():
                 raise ValueError("nonfinite local gradient or curvature")
             L = np.linalg.cholesky(H)
@@ -144,7 +144,8 @@ def common_objectives(base, kernel, x1, x2, calibration, estimates):
             residual, J = kernel.residuals_and_jacobian(x, y, R, t,
                 np.diag(K1)[:2], np.diag(K2)[:2], mode=mode)
             cost = kernel.cauchy_cost(residual)
-            gradient = 2.0 * J.T @ (residual / (0.25 + residual * residual))
+            gradient = 2.0 * np.einsum("ni,n->i", J,
+                residual / (0.25 + residual * residual), optimize=False)
             costs[name][mode], canonical[name][mode] = cost, 0.25 * cost
             gradients[name][mode] = float(np.max(np.abs(gradient)))
             stationarity[name][mode] = local_gn_stationarity(np, residual, J, cost)
