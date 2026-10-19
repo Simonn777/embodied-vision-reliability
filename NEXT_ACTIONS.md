@@ -2,33 +2,31 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
-## Active research order: 0010 real-data admission
+## Active research order: close0010 and select a defensible new hypothesis
 
-1. **0009 complete and stopped:** [results and publication verification](docs/0009-results-publication-verification.md).
-   Preserve all 256 cases, 12 unsupported failures, zero primary gain and paired
-   harms. No rerun, larger cap or outcome-driven scoring rescue. No manuscript.
-2. **0010 preparation completed:** [source, filename and actual cloud preflight evidence](results/0010-admission/README.md).
-   Keep four missing-import failures and the partial PyPI metadata failure.
-   Class-bearing filenames were read, but no pixels/predictions/accuracy. The
-   old unknown HTTP total remains unknown; separate direct preparation caps
-   and the original data/weight budget remain enforced.
-3. **Cached first probe and artificial solver admission completed:**
-   [actual results](results/0010-capability/README.md) and
-   [source/CI publication](docs/0010-cached-admission-publication-verification.md).
-   Preserve8 image/1 text outputs,20 functional tests and3 timing fits. Do not
-   repeat them. Both fixed resource projections pass. All old failures, residual
-   files, one-shot markers and accounting limits remain. No accuracy result yet.
-4. Independent saved-output review passed769 checks. Publish/verify the separate
-   [fixed128-image protocol](protocols/0010-real-data-headroom.md), filled plan
-   and source freeze before one launch. Reuse saved text features; extract128
-   new fixed training images once in32 batches of4. Run the five fixed arms,
-   all132 fitted states/264 authored executions, seal all predictions before
-   one complete-cohort score. Any boundary stops; no subset score or rerun.
-5. Continue only under the unchanged quality gate: at least8 additional correct
-   versus the strongest fixed control, improvement in both64-image batches and
-   complete valid coverage. A pass permits a new common-peer diagnostic and
-   independent-data replication, not a novelty claim/manuscript. A failure stops
-   this cohort/direction without prompt/alpha/selection tuning or enlarged rescue.
+1. **0010 completed once: NO_GO.** [Full results](results/0010-headroom/README.md)
+   preserve all128 cases/640predictions. ExactLOO61 correct versus zero-shot65;
+   paired7 corrections/11harms, batch nets−1/−3. Both frozen quality gates failed.
+   No partial-cohort, α4-only or singleton-safety success claim. No repeat,
+   prompt/alpha tuning, rehashing, enlargement or old-test rescue.
+2. Independent saved-output parent review is complete. Publish the complete
+   failed result and verify exact remote/main CI. Keep all original files,
+   private cloud feature caches and once-only markers. No inference is needed
+   for review or publication. The prospective common-peer diagnostic and
+   spatial-validation follow-up are not activated by this failed gate.
+3. The broader owner-authorized goal remains active. The [full-covariance
+   extension was rejected during primary-source review](docs/literature/0011-covariance-prior-review.md):
+   StatA AppendixC.2 already supplies its matrix update. No0011 experiment is
+   admitted. Before a new experiment,
+   evaluate one distinct mechanism with an explicit usable information source,
+   strong closest-method comparisons and an explanation of why it could improve
+   actual task quality. Reuse verified assets where scientifically appropriate,
+   reserve unused validation/test data and freeze any new evaluation. A renamed
+   deletion variant, selected positive subgroup or parameter sweep is not a new
+   contribution. Do not write a manuscript from the present failures.
+4. All0009/0008/0006/0004 stop decisions and their original evidence remain in
+   force. Capability checks and variance reduction are not task improvement.
+   No new downloads or paid services are authorized by this closure.
 
 ## October 18 owner-authorized research pivot — active order
 

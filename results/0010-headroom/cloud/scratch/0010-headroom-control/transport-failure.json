@@ -1,0 +1,9 @@
+{
+  "original_script": "package_saved.py",
+  "actual_tool_exit": 1,
+  "tool_chunk": "5c3acc",
+  "failure_type": "AssertionError",
+  "cause": "Privacy regex matched its own X-Amz-Signature audit source literal, not a discovered signed URL. No package was exported.",
+  "correction": "package_saved-v2.py checks actual HTTPS URLs carrying signed/token query keys; original script unchanged.",
+  "no_science_rerun": true
+}

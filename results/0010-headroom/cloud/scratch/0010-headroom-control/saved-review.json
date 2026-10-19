@@ -1,0 +1,305 @@
+{
+  "status": "PASS_INDEPENDENT_SAVED_ARITHMETIC_AND_PRESERVATION",
+  "checks": 11441,
+  "recomputed": {
+    "n": 128,
+    "correct": {
+      "zero_shot": 65,
+      "native_alpha1": 62,
+      "native_alpha4": 52,
+      "loo_alpha1": 61,
+      "other_out_alpha1": 63
+    },
+    "accuracy": {
+      "zero_shot": 0.5078125,
+      "native_alpha1": 0.484375,
+      "native_alpha4": 0.40625,
+      "loo_alpha1": 0.4765625,
+      "other_out_alpha1": 0.4921875
+    },
+    "strongest_fixed_controls": [
+      "zero_shot"
+    ],
+    "paired": {
+      "zero_shot": {
+        "n": 128,
+        "corrections": 7,
+        "harms": 11,
+        "net": -4,
+        "disagreements": 37
+      },
+      "native_alpha1": {
+        "n": 128,
+        "corrections": 2,
+        "harms": 3,
+        "net": -1,
+        "disagreements": 6
+      },
+      "native_alpha4": {
+        "n": 128,
+        "corrections": 10,
+        "harms": 1,
+        "net": 9,
+        "disagreements": 11
+      },
+      "other_out_alpha1": {
+        "n": 128,
+        "corrections": 1,
+        "harms": 3,
+        "net": -2,
+        "disagreements": 11
+      }
+    },
+    "batches": [
+      {
+        "zero_shot": {
+          "n": 64,
+          "corrections": 4,
+          "harms": 5,
+          "net": -1,
+          "disagreements": 15
+        },
+        "native_alpha1": {
+          "n": 64,
+          "corrections": 2,
+          "harms": 3,
+          "net": -1,
+          "disagreements": 6
+        },
+        "native_alpha4": {
+          "n": 64,
+          "corrections": 10,
+          "harms": 0,
+          "net": 10,
+          "disagreements": 10
+        },
+        "other_out_alpha1": {
+          "n": 64,
+          "corrections": 1,
+          "harms": 3,
+          "net": -2,
+          "disagreements": 5
+        }
+      },
+      {
+        "zero_shot": {
+          "n": 64,
+          "corrections": 3,
+          "harms": 6,
+          "net": -3,
+          "disagreements": 22
+        },
+        "native_alpha1": {
+          "n": 64,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        },
+        "native_alpha4": {
+          "n": 64,
+          "corrections": 0,
+          "harms": 1,
+          "net": -1,
+          "disagreements": 1
+        },
+        "other_out_alpha1": {
+          "n": 64,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 6
+        }
+      }
+    ],
+    "occupancy_strata": {
+      "one": {
+        "zero_shot": {
+          "n": 0,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        },
+        "native_alpha1": {
+          "n": 0,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        },
+        "native_alpha4": {
+          "n": 0,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        },
+        "other_out_alpha1": {
+          "n": 0,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        }
+      },
+      "two": {
+        "zero_shot": {
+          "n": 0,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        },
+        "native_alpha1": {
+          "n": 0,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        },
+        "native_alpha4": {
+          "n": 0,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        },
+        "other_out_alpha1": {
+          "n": 0,
+          "corrections": 0,
+          "harms": 0,
+          "net": 0,
+          "disagreements": 0
+        }
+      },
+      "three_plus": {
+        "zero_shot": {
+          "n": 128,
+          "corrections": 7,
+          "harms": 11,
+          "net": -4,
+          "disagreements": 37
+        },
+        "native_alpha1": {
+          "n": 128,
+          "corrections": 2,
+          "harms": 3,
+          "net": -1,
+          "disagreements": 6
+        },
+        "native_alpha4": {
+          "n": 128,
+          "corrections": 10,
+          "harms": 1,
+          "net": 9,
+          "disagreements": 11
+        },
+        "other_out_alpha1": {
+          "n": 128,
+          "corrections": 1,
+          "harms": 3,
+          "net": -2,
+          "disagreements": 11
+        }
+      }
+    },
+    "singleton_assessed": false,
+    "gates": {
+      "net_eight_over_best": false,
+      "both_batches_positive": false,
+      "no_singleton_net_harm": true
+    },
+    "decision": "NO_GO"
+  },
+  "fit_states": 132,
+  "authored_executions": 264,
+  "features": {
+    "image_raw": {
+      "shape": [
+        128,
+        512
+      ],
+      "dtype": "float32",
+      "array_sha256": "b481301fbf26f5b6ceb65ae2651d82fe418d6162b166b4477f015c24c63e94fc"
+    },
+    "image_normalized": {
+      "shape": [
+        128,
+        512
+      ],
+      "dtype": "float32",
+      "array_sha256": "c696bff93b2411e68b07e2ad1db68c7836d715d9f7bedd7ab00505d9a54974fd"
+    },
+    "text_normalized": {
+      "shape": [
+        10,
+        512
+      ],
+      "dtype": "float32",
+      "array_sha256": "6355c6815702d03d85bc35caec1f3550b8f45c24a5e00d0fe707e918af97846c"
+    }
+  },
+  "max_image_unit_norm_error": 1.1920928955078125e-07,
+  "private_npz_not_exported": {
+    "features.npz": {
+      "bytes": 545566,
+      "sha256": "a460b6a01d46bf21f84d2b94be2895e380b4cdebe47e74a6169c7a1de1e87ff5"
+    },
+    "partial-features.npz": {
+      "bytes": 262416,
+      "sha256": "4c10efa86084df4019d4e723474a844ae18eb29d085bb38e4becdd605074e48c"
+    }
+  },
+  "preserved_count": 9818,
+  "new_markers": {
+    "0010-headroom-launch.started.json": {
+      "bytes": 241,
+      "sha256": "dc8ba1d985933e7fee42da2a34334fde5e07d7db021e77ecc4400a2a1fc31b9c"
+    },
+    "0010-headroom-started.json": {
+      "bytes": 116,
+      "sha256": "c0a1edfa983a3dbd69136e67f9df30d5a33968c72d102f662c2e6a05e83e6422"
+    }
+  },
+  "source": "d14134c34e7fa097de5556aca162af962d920880",
+  "main": "49c0c0b22f89e5d395130dec63bafad9377ba5c5",
+  "new_asset_bytes": 0,
+  "direct_body_unchanged": 456087034,
+  "historical_all_HTTP": "UNKNOWN",
+  "limits": "Two computation batches are not independent scenes or a population CI; LOO/OTHER peer-set confound remains. No new inference/refit/scorer invocation.",
+  "output_files": {
+    "score-started.json": {
+      "bytes": 297,
+      "sha256": "191490e6f7a4b1adb502e2e56c19cb8c3825e5abb15f1984ec798a3d9163e056"
+    },
+    "selection-lock.json": {
+      "bytes": 42387,
+      "sha256": "21ce44568839d2e73af20c1fb0117099f3b83b3036087cfa5ef14470ff6544de"
+    },
+    "features.npz": {
+      "bytes": 545566,
+      "sha256": "a460b6a01d46bf21f84d2b94be2895e380b4cdebe47e74a6169c7a1de1e87ff5"
+    },
+    "receipt.json": {
+      "bytes": 28197,
+      "sha256": "f37e1580ea34426941fed4f3b9bb91712ebbcc91f997cb2e906064faf63d15b8"
+    },
+    "scores.json": {
+      "bytes": 4372,
+      "sha256": "d62cf5d3b6b74ac3d955c4328e82386495153055392798c73bef35ed658774ff"
+    },
+    "prediction-seal.json": {
+      "bytes": 297,
+      "sha256": "191490e6f7a4b1adb502e2e56c19cb8c3825e5abb15f1984ec798a3d9163e056"
+    },
+    "partial-features.npz": {
+      "bytes": 262416,
+      "sha256": "4c10efa86084df4019d4e723474a844ae18eb29d085bb38e4becdd605074e48c"
+    },
+    "predictions.json": {
+      "bytes": 231860,
+      "sha256": "9f6507576686f076abd3325546f5de2e9d19ebc026be1ec23dad16f8bb0a983b"
+    }
+  }
+}

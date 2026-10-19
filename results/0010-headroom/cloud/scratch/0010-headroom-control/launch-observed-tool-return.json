@@ -1,0 +1,48 @@
+{
+  "record_type": "Assistant transcription of actual tool return, not an invented outer wait4 receipt",
+  "launch_tool_chunk": "1828fa",
+  "session_id": 64576,
+  "final_tool_chunk": "aa1f79",
+  "actual_tool_exit": 0,
+  "actual_tool_stdout": "launch_actual_exit=0\n",
+  "initial_tool_wait_seconds": 1.001191611,
+  "final_poll_wait_seconds": 0.846085639,
+  "tool_wait_boundary": "Tool wait chunks are not the full invocation wall time. Real complete child wall/CPU/wait4/RSS is in frozen supervision/execution.json; no extra observer was added.",
+  "cwd": "/workspace/scratch/a349d03a0e0a/research-0010-headroom",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "experiments/0010-headroom/run.py",
+    "launch",
+    "--plan",
+    "experiments/0010-headroom/plan.json",
+    "--plan-sha256",
+    "d8b1891dd99ea6b7e1680b830da478f81b9e37cedf11933f8c878511cfca21ce",
+    "--assetdir",
+    "/workspace/scratch/a349d03a0e0a/clip-0010-assets",
+    "--output",
+    "/workspace/scratch/a349d03a0e0a/scratch/0010-headroom-output",
+    "--supervision",
+    "/workspace/scratch/a349d03a0e0a/scratch/0010-headroom-supervision",
+    "--python",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python"
+  ],
+  "PYTHONPATH": "/workspace/scratch/a349d03a0e0a/clip-0010-overlay:/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay:/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed:/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime:/workspace/scratch/a349d03a0e0a/tapnextpp-recovery/source",
+  "numeric_threads": 4,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "PYTHONNOUSERSITE": "1",
+  "source_main": "49c0c0b22f89e5d395130dec63bafad9377ba5c5",
+  "source_commit": "d14134c34e7fa097de5556aca162af962d920880",
+  "source_run_sha256": "c1064386ff6bc1eae8664387e4c3d7158a6d8d1eecacb5808d227148466c4141",
+  "supervision": {
+    "bytes": 1524,
+    "sha256": "7302ef24b7f8377810fe79ed778e1e1f5860132d05541e101610846916c8db2c"
+  },
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
