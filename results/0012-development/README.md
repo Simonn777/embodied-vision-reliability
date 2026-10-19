@@ -29,11 +29,20 @@ quality. All16 pairs belong to one development scene and are dependent; no
 generalization confidence interval is appropriate. Ground-truth poses and the
 other scene's coordinates were not read. Official calibrated DMS additionally
 uses cheirality checks and five-point hypotheses, which this diagnostic does not.
+Its main CCA pipeline also uses center scoring rather than our approximate-score
+surrogate; [official integration details](../../docs/0012-official-integration.md)
+document this distinction and the needed complete-pipeline comparators.
 
 The entire run exited0 in63.18seconds with57,573,376 bytes peak child RSS on
 macOS. [Raw measurements](diagnostic.jsonl), [all-pair table](all-pairs.csv),
 [machine-readable summary](summary.json), [execution receipt](execution.json)
 and [run log](run.log) are retained. Recompute the summary without accessing data:
+
+The log contains three NumPy matrix-multiplication warnings (divide by zero,
+overflow, invalid); the reference's explicit finite-output checks did not fail.
+Their cause has not been established, so the warnings remain visible. Local
+absolute workspace prefixes were normalized to `<workspace>` in the public log;
+an unchanged original is retained locally. No measurement or warning was removed.
 
 ```sh
 python experiments/0012-score-bounds/summarize_development.py
