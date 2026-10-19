@@ -1,5 +1,25 @@
 # Current state
 
+## Active continuation: 0019 stronger baseline measured, 2026-10-19
+
+[0019](results/0019-author-loss/README.md) completed 160 calls and one saved-label
+evaluation after exact freeze CI. Zero failures; all pre-final parity checks pass.
+Author-recommended affine TRUNCATED_CAUCHY reaches 74.071712% AUC5, versus
+68.972945% default affine and 71.488081% E-normalized. Scale reaches 72.293796%,
+versus 62.383584% default scale. These are existing-method development gains,
+not a novel contribution or held-out/matched-time evidence. No manuscript.
+
+Independent saved-output review passes all 160 records and all six-arm metrics.
+Next publish the evidence, then separately freeze the spatial calibration-transfer test. Its fixed four-pose bank and rules
+remain unchanged; both new official arms are mandatory benchmark comparators.
+The candidate must exceed the strongest of ten fixed comparators by at least
+2 AUC5 points before further expansion. No scientific 0020 scoring has run.
+
+[0018 publication](docs/0018-publication-verification.md) is verified through
+PR47/main1919f713 and exact CI. That mechanism diagnostic stays INELIGIBLE.
+The broader research goal remains active with its original held-out, cost,
+strong-control, confidence, harm and replication requirements.
+
 ## Active continuation: 0019 official-loss freeze preparation, 2026-10-19
 
 [0019 preparation](results/0019-preparation/README.md) has 14 passing artificial
