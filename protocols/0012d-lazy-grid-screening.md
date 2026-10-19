@@ -100,3 +100,28 @@ roughly8GiB limit and30-minute hard timeout per process. Build products remain
 outside Git. Publish code, exact source/build hashes, complete small results,
 failures and limitations. The main held-out two-source pose-quality and novelty
 gates remain unchanged. Passing this diagnostic cannot itself authorize a paper.
+
+## Pre-development serialization repair
+
+The first artificial invocation at c2c48ed completed its loop but failed while
+writing a NumPy boolean in JSON. Its output is truncated within the first timed
+record; later timings cannot be recovered from disk. The early header's
+`admission_passed: true` is not a valid gate result and cannot authorize replay.
+Keep the incomplete output and error record unchanged, apart from disclosed
+public workspace-path normalization in the traceback log. No real data was read.
+
+One technical retry is admitted after a separate repair freeze and regression
+test: convert agreement flags to built-in bool before serialization. Keep the
+native binary, fixture, controls, repetitions, order, gates and all algorithmic
+parameters unchanged. Save the retry under `synthetic-serialization-retry`;
+never overwrite the first attempt. This is a disclosed repeated artificial
+timing invocation caused by lost evidence, not the originally intended single
+invocation. Only its complete, independently checked record may admit the real
+development replay. No choice between the first and retry timings is possible
+or permitted, and no further same-configuration timing retry is admitted here.
+The unchanged original native library SHA256 is
+`198c3a8c8841570c99c467323ea40f9abdddb24564d30922e29940138764e388`;
+the retry requires this value as an explicit original-library hash input.
+The real replay recomputes the artificial gate from all45 scheduled timing
+entries and requires completed status, both128-check counts, zero violations,
+all agreements, the original/retry/current binary link and source/protocol hashes.

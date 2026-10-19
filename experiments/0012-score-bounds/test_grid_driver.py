@@ -1,5 +1,6 @@
 """Replay accounting tests on artificial arrays only."""
 import os
+import copy
 import unittest
 import numpy as np
 from grid_backend import GridScorer
@@ -7,6 +8,26 @@ import run_grid as replay
 
 
 class GridDriverTests(unittest.TestCase):
+    def test_artificial_admission_requires_complete_recomputed_evidence(self):
+        report = {"schema": "evr0012d.synthetic.v1", "status": "completed", "admission_passed": True,
+            "library_sha256": "same", "original_library_sha256": "same",
+            "validation": {"violations": 0, "cell_checks": 128, "aggregate_checks": 128},
+            "warmups": [{} for _ in range(5)], "timed_calls": [],
+            "medians": {str(i): 0.5 if i == 4 else 1.0 for i in range(5)},
+            "candidate_ratios": {str(i): 0.5 for i in range(4)}}
+        for repetition in range(9):
+            for position in range(5):
+                mode = (repetition + position) % 5
+                report["timed_calls"].append({"repetition": repetition, "position": position, "mode": mode,
+                    "winner_agrees": True, "score_agrees": True, "primary_total_seconds": 0.5 if mode == 4 else 1.0})
+        replay.validate_artificial_admission(report, "same")
+        for field, value in (("timed_calls", report["timed_calls"][:-1]), ("status", "error"),
+                             ("library_sha256", "different"), ("medians", {})):
+            damaged = copy.deepcopy(report)
+            damaged[field] = value
+            with self.assertRaises(ValueError):
+                replay.validate_artificial_admission(damaged, "same")
+
     def test_empty_eligible_partition_and_all_mode_accounting(self):
         backend = GridScorer(os.environ["GRID_LIBRARY"])
         x = np.column_stack((np.arange(40) * 300.0, np.ones(40)))

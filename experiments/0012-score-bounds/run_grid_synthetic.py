@@ -19,6 +19,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--build-receipt", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--original-library-sha256", required=True)
     args = parser.parse_args()
     source = Path(__file__).resolve()
     receipt = json.loads(args.build_receipt.read_text())
@@ -29,13 +30,16 @@ def main():
             raise ValueError("included source differs from receipt: " + name)
     if sha256(receipt["library"]) != receipt["library_sha256"]:
         raise ValueError("library differs from receipt")
+    if receipt["library_sha256"] != args.original_library_sha256:
+        raise ValueError("retry binary differs from original attempted binary")
     report = {"schema": "evr0012d.synthetic.v1", "admission_passed": False,
         "utc": datetime.now(timezone.utc).isoformat(), "fixture": "10000 correlated points,64 models; fixed favorable protocol fixture",
         "source_sha256": {name: sha256(source.with_name(name)) for name in
-            (source.name, "test_grid_backend.py", "grid_backend.py", "native_backend.py", "native_grid.cpp", "native_score.cpp", "run_grid.py")},
+            (source.name, "test_grid_backend.py", "test_grid_serialization.py", "grid_backend.py", "native_backend.py", "native_grid.cpp", "native_score.cpp", "run_grid.py")},
         "protocol_sha256": sha256(source.parents[2] / "protocols/0012d-lazy-grid-screening.md"),
         "build_receipt_sha256": sha256(args.build_receipt),
         "library_sha256": receipt["library_sha256"], "compiler": receipt["compiler"],
+        "original_library_sha256": args.original_library_sha256,
         "flags": receipt["command"][1:-3],
         "git_head": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=source.parents[2], text=True).strip(),
         "python": sys.version, "numpy": np.__version__, "platform": platform.platform(),
@@ -71,7 +75,7 @@ def main():
                     entry = {"mode": mode, "repetition": repetition, "position": position,
                         **result, "call_seconds": call_seconds, "charged_shuffle_seconds": charged,
                         "primary_total_seconds": call_seconds + charged,
-                        "winner_agrees": result["winner"] == 0, "score_agrees": result["score"] == scores[0]}
+                        "winner_agrees": bool(result["winner"] == 0), "score_agrees": bool(result["score"] == scores[0])}
                     report["timed_calls"].append(entry)
                     if not entry["winner_agrees"] or not entry["score_agrees"]:
                         raise RuntimeError("timed selection mismatch")

@@ -40,6 +40,7 @@ jobs:
           receipt = json.loads(build_grid().read_text())
           os.environ['GRID_LIBRARY'] = receipt['library']
           suite = unittest.defaultTestLoader.discover('experiments/0012-score-bounds', pattern='test_grid_backend.py')
+          suite.addTests(unittest.defaultTestLoader.discover('experiments/0012-score-bounds', pattern='test_grid_serialization.py'))
           result = unittest.TextTestRunner(verbosity=2).run(suite)
           sys.exit(0 if result.wasSuccessful() else 1)
           PY

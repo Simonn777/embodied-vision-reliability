@@ -28,6 +28,31 @@ def score_matches(value, reference):
     return bool(abs(value - reference) <= 1e-8 + 1e-12 * abs(reference))
 
 
+def validate_artificial_admission(admission, library_hash):
+    if admission.get("schema") != "evr0012d.synthetic.v1" or admission.get("status") != "completed" or admission.get("admission_passed") is not True:
+        raise ValueError("complete favorable artificial admission required")
+    if admission.get("library_sha256") != library_hash or admission.get("original_library_sha256") != library_hash:
+        raise ValueError("native binary differs from original/retry artificial admission")
+    checks = admission.get("validation", {})
+    if checks.get("violations") != 0 or checks.get("cell_checks") != 128 or checks.get("aggregate_checks") != 128:
+        raise ValueError("artificial containment qualification incomplete")
+    entries = admission.get("timed_calls", [])
+    if len(entries) != 45 or len(admission.get("warmups", [])) != 5:
+        raise ValueError("artificial timing record incomplete")
+    for index, entry in enumerate(entries):
+        repetition, position = divmod(index, 5)
+        if (entry.get("repetition"), entry.get("position"), entry.get("mode")) != (repetition, position, (repetition + position) % 5):
+            raise ValueError("artificial timing schedule changed")
+        if entry.get("winner_agrees") is not True or entry.get("score_agrees") is not True:
+            raise ValueError("artificial selection agreement failed")
+        if not np.isfinite(entry["primary_total_seconds"]) or entry["primary_total_seconds"] <= 0:
+            raise ValueError("invalid artificial duration")
+    medians = {str(mode): statistics.median(e["primary_total_seconds"] for e in entries if e["mode"] == mode) for mode in range(5)}
+    ratios = {str(mode): medians["4"] / medians[str(mode)] for mode in range(4)}
+    if medians != admission.get("medians") or ratios != admission.get("candidate_ratios") or not all(r <= 2 / 3 for r in ratios.values()):
+        raise ValueError("artificial gate does not recompute")
+
+
 def mode_order(pair_index, repetition):
     return [(pair_index + repetition + offset) % 5 for offset in range(5)]
 
@@ -152,10 +177,7 @@ def main():
         if sha256(source.with_name(name)) != checksum:
             raise ValueError("included native source differs from receipt: " + name)
     admission = json.loads(args.synthetic_admission.read_text())
-    if admission.get("schema") != "evr0012d.synthetic.v1" or admission.get("admission_passed") is not True:
-        raise ValueError("favorable artificial cost admission has not passed")
-    if receipt["library_sha256"] != admission.get("library_sha256"):
-        raise ValueError("native binary differs from artificial admission")
+    validate_artificial_admission(admission, receipt["library_sha256"])
     for name, checksum in admission["source_sha256"].items():
         if sha256(source.with_name(name)) != checksum:
             raise ValueError("source differs from artificial admission: " + name)

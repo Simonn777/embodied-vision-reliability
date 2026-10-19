@@ -33,7 +33,9 @@ Use the current Python environment with NumPy; no new package is needed for
 these artificial tests. Use one native/BLAS thread for the timing diagnostic.
 
 After the independently reviewed source/protocol freeze, run
-`run_grid_synthetic.py --build-receipt ... --output ...` once. It retains45
+`run_grid_synthetic.py --build-receipt ... --output ... --original-library-sha256 ...`.
+The first attempt lost its record during JSON serialization; the protocol
+documents exactly one technical retry with the original native binary. It retains45
 timed calls,5 untimed loading calls, exact scores, containment checks, hashes
 and the admission decision. Each call starts with fresh needed setup. The
 fixture deliberately benefits signed moments; success only establishes cost
