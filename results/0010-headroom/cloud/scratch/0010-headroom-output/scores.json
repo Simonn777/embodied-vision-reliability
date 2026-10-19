@@ -1,0 +1,218 @@
+{
+  "scope": "development headroom only; no independent-scene confidence claim",
+  "decision": "NO_GO",
+  "n": 128,
+  "correct": {
+    "zero_shot": 65,
+    "native_alpha1": 62,
+    "native_alpha4": 52,
+    "loo_alpha1": 61,
+    "other_out_alpha1": 63
+  },
+  "accuracy": {
+    "zero_shot": 0.5078125,
+    "native_alpha1": 0.484375,
+    "native_alpha4": 0.40625,
+    "loo_alpha1": 0.4765625,
+    "other_out_alpha1": 0.4921875
+  },
+  "strongest_fixed_controls": [
+    "zero_shot"
+  ],
+  "paired": {
+    "zero_shot": {
+      "n": 128,
+      "corrections": 7,
+      "harms": 11,
+      "net": -4,
+      "disagreements": 37
+    },
+    "native_alpha1": {
+      "n": 128,
+      "corrections": 2,
+      "harms": 3,
+      "net": -1,
+      "disagreements": 6
+    },
+    "native_alpha4": {
+      "n": 128,
+      "corrections": 10,
+      "harms": 1,
+      "net": 9,
+      "disagreements": 11
+    },
+    "other_out_alpha1": {
+      "n": 128,
+      "corrections": 1,
+      "harms": 3,
+      "net": -2,
+      "disagreements": 11
+    }
+  },
+  "batches": [
+    {
+      "zero_shot": {
+        "n": 64,
+        "corrections": 4,
+        "harms": 5,
+        "net": -1,
+        "disagreements": 15
+      },
+      "native_alpha1": {
+        "n": 64,
+        "corrections": 2,
+        "harms": 3,
+        "net": -1,
+        "disagreements": 6
+      },
+      "native_alpha4": {
+        "n": 64,
+        "corrections": 10,
+        "harms": 0,
+        "net": 10,
+        "disagreements": 10
+      },
+      "other_out_alpha1": {
+        "n": 64,
+        "corrections": 1,
+        "harms": 3,
+        "net": -2,
+        "disagreements": 5
+      }
+    },
+    {
+      "zero_shot": {
+        "n": 64,
+        "corrections": 3,
+        "harms": 6,
+        "net": -3,
+        "disagreements": 22
+      },
+      "native_alpha1": {
+        "n": 64,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      },
+      "native_alpha4": {
+        "n": 64,
+        "corrections": 0,
+        "harms": 1,
+        "net": -1,
+        "disagreements": 1
+      },
+      "other_out_alpha1": {
+        "n": 64,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 6
+      }
+    }
+  ],
+  "occupancy_strata": {
+    "one": {
+      "zero_shot": {
+        "n": 0,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      },
+      "native_alpha1": {
+        "n": 0,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      },
+      "native_alpha4": {
+        "n": 0,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      },
+      "other_out_alpha1": {
+        "n": 0,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      }
+    },
+    "two": {
+      "zero_shot": {
+        "n": 0,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      },
+      "native_alpha1": {
+        "n": 0,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      },
+      "native_alpha4": {
+        "n": 0,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      },
+      "other_out_alpha1": {
+        "n": 0,
+        "corrections": 0,
+        "harms": 0,
+        "net": 0,
+        "disagreements": 0
+      }
+    },
+    "three_plus": {
+      "zero_shot": {
+        "n": 128,
+        "corrections": 7,
+        "harms": 11,
+        "net": -4,
+        "disagreements": 37
+      },
+      "native_alpha1": {
+        "n": 128,
+        "corrections": 2,
+        "harms": 3,
+        "net": -1,
+        "disagreements": 6
+      },
+      "native_alpha4": {
+        "n": 128,
+        "corrections": 10,
+        "harms": 1,
+        "net": 9,
+        "disagreements": 11
+      },
+      "other_out_alpha1": {
+        "n": 128,
+        "corrections": 1,
+        "harms": 3,
+        "net": -2,
+        "disagreements": 11
+      }
+    }
+  },
+  "singleton_assessed": false,
+  "gates": {
+    "net_eight_over_best": false,
+    "both_batches_positive": false,
+    "no_singleton_net_harm": true
+  },
+  "costs_seconds": {
+    "zero_shot": 0.004688360000727698,
+    "fits_with_parity": 12.244390009997005,
+    "one_way_readouts": 0.6465895310393535,
+    "predictor_wall_before_final_save": 14.745900359004736
+  }
+}

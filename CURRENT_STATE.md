@@ -1,31 +1,47 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0010 capability and artificial resource admission completed; real-data quality screen not yet executed. 0009 completed once and failed its frozen continuation gates; stop this exact-tail candidate. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
+Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0010
+real-image headroom screen completed once and failed the fixed quality gates.
+The broader research objective remains active; no manuscript is warranted.
+Historical failed candidates, 0006's OPEN stdout defect and 0003's deferred
+cache state remain unchanged.
 
-## 0010: CPU capability and artificial resource checks completed
+## 0010: exact query deletion failed the real-image quality gate
 
-The [original capability and solver admissions](results/0010-capability/README.md)
-completed once on existing cloud CPU:8 image/1 text calls,20 artificial tests
-without skips, and3 measured fitted states/6 authored parity executions. Saved
-float32 features passed the hash/normalization check without repeat inference.
-Encoder projection25.022366 s and solver projection23.220176 s pass the declared
-450/360 s allowances. These are resource results, not classification improvement.
+[Complete saved results](results/0010-headroom/README.md) show **NO_GO**:
+zero-shot65, nativeα1=62, nativeα4=52, exactLOO61, OTHER-out63 correct out of128.
+LOO made7 corrections and11 harms against the strongest control, zero-shot:
+net−4 (−3.125pp), with batch nets−1 and−3. Both quality gates failed; singleton
+safety was unassessed because the stratum was empty. Complete coverage passed.
+The predeclared low-headroom exception does not apply (63 baseline errors,
+37 disagreements). No prompt/alpha/selection change, omitted case or enlarged
+same-cohort rescue is allowed. Conditional mechanism/replication work is not
+activated. Preserve the128 used images and all one-shot markers.
 
-[PR37 publication](docs/0010-cached-admission-publication-verification.md) and
-exact CI preceded execution. The original preparation guard's exit1, residual
-partial/temporary copies and UNKNOWN origin are retained. A pre-scientific alias
-mapping failure also remains explicit; the correction changed only inventory
-paths. The new guard accounts for the visible disappearing-FD race. No new
-scientific download, installation or paid service occurred.
+The [published freeze and exact CI](docs/0010-headroom-freeze-publication-verification.md)
+preceded the only run:128 images,32 image calls,0 text calls,132 fitted states,
+264 authored parity executions,640 valid predictions sealed before one score.
+Scientific supervision observed exit0,28.043947s and1,321,436KiB peakRSS.
+Cloud saved-output arithmetic/preservation review passed11,441 checks;
+parent retrieval verifies37 text files and actual scientific/auxiliary exits.
+[Independent parent review](results/0010-headroom/independent-review/REVIEW.md)
+reconstructs all640 predictions, complete paired tables and NO_GO from saved
+probabilities; source/seal and actual-tool closure pass without any model call.
+The initial inventory exit2, preflight path error exit1 and export-checker
+self-match exit1 remain explicit; none caused a scientific retry.
 
-The prospective question is whether deleting a query from transductive StatA
-fitting reduces wrong self-reinforcement. Generic self-exclusion has prior art;
-LOO versus OTHER-out has a readout peer-pool confound. No novelty or benefit is
-claimed. The next fixed128-image train-only screen needs its own published
-source/plan receipt and exact CI; its gate remains at least8 additional correct
-versus the best fixed control, both batches improving and complete coverage.
-No selected image has been decoded or scored for that screen. A positive screen
-would require new-data replication and mechanism controls before a manuscript.
+All capability/solver admissions remain [historical resource evidence](results/0010-capability/README.md),
+not accuracy improvement. Private arrays stay in the original cloud. No new
+asset downloads, installs or paid services were used. The cloud preservation
+check covers9,818 older files; its full private inventory was not re-exported.
+No independent-scene, population-confidence, novelty or pure self-influence
+claim follows. The next step is a substantive hypothesis review, not more
+variants of the failed deletion rule or a process-only manuscript.
+
+A distinct full-covariance proposal was [rejected as a new-method core](docs/literature/0011-covariance-prior-review.md)
+before experiments: StatA AppendixC.2 Eq49–51 already gives its construction,
+and other CLIP Gaussian-adaptation work already uses full covariance/shrinkage.
+No new method is admitted solely by replacing diagonal covariance.
 
 ## 0009 geometry screen: stop this exact-tail candidate
 
@@ -73,7 +89,8 @@ The next [self-inclusion hypothesis](docs/literature/0010-self-inclusion-candida
 has known conceptual precedents and is not an improvement claim. Source/data
 [qualification](docs/literature/0010-data-and-baseline-admission.md) pins StatA
 and rejects ambiguous cached embeddings. The subsequently acquired official
-assets are reported above; no 0010 inference or quality evaluation has occurred.
+assets and completed negative0010 evaluation are reported above. This was a
+prospective hypothesis at the time of0009 publication.
 
 ## 0008 training: stop this candidate
 
