@@ -1,0 +1,832 @@
+{
+  "admitted_displacement_pixels": {
+    "max": 3.1769240169352173,
+    "median": 0.4074073597046774,
+    "min": 0.02716252610660294
+  },
+  "admitted_fraction_of_selected_percent": 14.095940959409594,
+  "auc_percent": {
+    "full_original": {
+      "10": 90.58481123891764,
+      "20": 95.29240561945883,
+      "5": 81.16962247783528
+    },
+    "full_refined": {
+      "10": 90.58959040532949,
+      "20": 95.29479520266474,
+      "5": 81.17918081065899
+    },
+    "subset_original": {
+      "10": 55.544366385237524,
+      "20": 64.93766472310911,
+      "5": 43.96789146309803
+    },
+    "subset_refined": {
+      "10": 57.71961146512431,
+      "20": 66.35980573256215,
+      "5": 40.8768392840267
+    }
+  },
+  "changed_fraction_of_all_160000_observations_percent": 0.119375,
+  "counts": {
+    "admitted": 191,
+    "admitted_target_unchanged": 0,
+    "changed": 191,
+    "fit_failed": 1140,
+    "initialization_failed": 24,
+    "initialized": 1331,
+    "native_calls": 40,
+    "selected": 1355,
+    "unavailable_arm_outputs": 8,
+    "usable_subset_pairs": 12,
+    "zero_update_admitted": 0
+  },
+  "evaluation_repair_freeze": "6d1f377bc5744a934bee8197914118b7c4241ca9",
+  "evaluation_repair_source_sha256": "d4f9ed15ede9382890aba29d82ac072e920f27fcab663c6c911fd7104f922cf3",
+  "evaluation_repair_wall_seconds": 3.062927208,
+  "expansion_gate": {
+    "criteria": {
+      "at_least_10_full_pair_improvements": false,
+      "at_least_12_usable_subsets": true,
+      "complete_full_cohort": true,
+      "full_AUC20_loss_at_most_0_5_pp": true,
+      "full_AUC5_gain_at_least_0_25_pp": false,
+      "subset_AUC5_gain_at_least_2_pp": false
+    },
+    "full_AUC20_gain_pp": 0.0023895832059110944,
+    "full_AUC5_gain_pp": 0.009558332823715432,
+    "full_pair_improvements": 9,
+    "passed": false,
+    "subset_AUC5_gain_pp": -3.091052179071326
+  },
+  "failure_reasons_nonexclusive": {
+    "affine_initialization_degenerate_or_reflected": 19,
+    "fewer_than_eight_local_inlier_neighbors": 5,
+    "iteration_exhaustion": 1031,
+    "relative_gn_decrease": 1003,
+    "target_patch_bounds": 93
+  },
+  "frozen_source_files_verified": 13,
+  "full_pair_ties": 0,
+  "full_pair_worsenings": 7,
+  "input_sha256": {
+    "configs/0012-development-manifest.json": "94008d2da4a28ca482b394453c60bbcee40335b687989b222d554a9f7427f74c",
+    "results/0013-baseline-calibration-compatibility/evaluation.json": "f8fe46392810b78d485a8dd90ae1849eae6491eaba620d2c9454b6c0f15cb5a4",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-00.json": "bbc3db043e8d1b4c32e21b6e305d43506c2b166d035e50ce84f65d78d310ade9",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-01.json": "5786e2956c01ec27f29b976dc0a3011b5305e3d60b31a095884f299988d15381",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-02.json": "c60ffffd1dbef7894638937acd78abfa62fd5fb58009ec1f95b15ee536557a55",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-03.json": "48493b654942f32c5495a7349e33cd8fd98293d919f9ed7cb93ce3e94573ab6f",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-04.json": "e2f9017d50703e07123a98943c869a6ca987fc6c1c095ccba1cd4d1df6b9f1ca",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-05.json": "69ae586e92fccbedb3bdd2b88886622c2bc619087f593bb9ca3911baab1feb75",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-06.json": "d017d53223763f2991e6824f89ebf482577f9aa0503fc4eaee89eacea7753e78",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-07.json": "7ab8007bca747a89916157162def755ab356a21a7cb45213c4032e0cf069adbd",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-08.json": "16c382078aa71d1a433357122d3572fe98b82a80458d7d8a6b122b17098f2192",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-09.json": "ecc35bc6682ef779cf31ea05ebe89a8182cbd3558fd602cd22fef6cdc360641f",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-10.json": "ca12e89b8d2a9e7af84f72866a59d5d6f085b3f4a094c3a065da4303bb28c6a9",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-11.json": "9b633653d65ff5e32dccaee3c298baad655cefe4ec7c29a47f672440c076b3e9",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-12.json": "e6e954b4587431e6a40e3ef2a6339f6ef7b4148a2ff7c138dbe8d6fa05329cd6",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-13.json": "280cccd534b5c56fa529f6db96b110a45785691060b4ab681d9d6b0de9512b25",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-14.json": "cce251ee8b9f6ebec7c99539f2cff30db51a8636ed4f855eb57da226883e6e2c",
+    "results/0013-baseline-calibration-compatibility/predictions/pair-15.json": "c9626397d4d8cd468dbcb6424aeec4d61e54659e4be66051daef4ca4c23c2802",
+    "results/0013-baseline-calibration-compatibility/predictions/seal.json": "a6ce0b6a98385294baa62c04f24e0bbb39700d2f233c4821ad771915ea47270a",
+    "results/0015-admission/acquisition.json": "d7b2d8a36f5089815fd42b92c32e59b802bc50445bafd5cde60ee69f16d32ec1",
+    "results/0015-photometric/epipolar-review/analysis.json": "f38533c62b04b9051e356e910f125c8f4d224909284b12e2cf379f92df558866",
+    "results/0015-photometric/epipolar-review/analyze_saved.py": "5e6596d52b99ae4dc5ee037eb3d3590f1fe5534dc96a47ad8559c8cf09bb76e7",
+    "results/0015-photometric/evaluation-repair.json": "9badd27ccca63f3c83347cff9731590d3d3f6820cedd4515bf010cf1e3a38cea",
+    "results/0015-photometric/evaluation-repair.process.json": "e1cecbabbd01c0d91133de4333566c13c6f7f3335858f443a50ec0ca8eea7af0",
+    "results/0015-photometric/evaluation.process.json": "22429a6fac4ac61933d2df2da53f9345e3d360cb5ae8266deeca55fa92627c8d",
+    "results/0015-photometric/geometric/pair-00.json": "a422cf4bd64a1d898185d25a55f39254239a82b3db08ed93611ee3ed01b56b5d",
+    "results/0015-photometric/geometric/pair-00.process.json": "b73ac34827919b82ab19c1d2fa408e003633e44f41d8f0471f08452f8a542f04",
+    "results/0015-photometric/geometric/pair-01.json": "08b2d71c2bf8a98e4164aff02ce603e70a59bceb1b60bf59e9421af2dd1c400a",
+    "results/0015-photometric/geometric/pair-01.process.json": "8efa9d389c8f0f456713fb2e2ba69f7ea4385bc6a32c9b6107bc409628588497",
+    "results/0015-photometric/geometric/pair-02.json": "dc328d198c43999b95ef26aa0b618d2ef185fa70a7d1e40ab010f91bbd671936",
+    "results/0015-photometric/geometric/pair-02.process.json": "37894d61903fc49b1db8e681a34239ffa848dc11b79e55b40c28866d665537de",
+    "results/0015-photometric/geometric/pair-03.json": "ee97c7c269f0b03430dbe8e328fb92b7ae7a48f237bddac8b3a52862886b8f47",
+    "results/0015-photometric/geometric/pair-03.process.json": "2f1880bb0722e83a5badd4af9681bb1b82ce94c8baca6ab3224b8c93f2da71fc",
+    "results/0015-photometric/geometric/pair-04.json": "af8cd1edbc16039b3ca9d00486c32afad4b0a577473a1c75db6a7ffa1c0b36af",
+    "results/0015-photometric/geometric/pair-04.process.json": "549d90a57a285d44a0275cd3730a19a4d10761af1bb6a73db826f2cd9bef6a0c",
+    "results/0015-photometric/geometric/pair-05.json": "4870143f238d9a3852bbccc7422d10c4d36be38d532696879ccad605d4b964c9",
+    "results/0015-photometric/geometric/pair-05.process.json": "8ce672fc48bf3888f60bc12df7a91162d3168b150b79357d53e05f237d2ee958",
+    "results/0015-photometric/geometric/pair-06.json": "1680ca726b33e21aba93fecf398c6b0835c69f1adae4557179ad00c76cb55590",
+    "results/0015-photometric/geometric/pair-06.process.json": "c635b204d18fcad56c16ff261e1d8346388c8c7732eab3c27ba24a3216795818",
+    "results/0015-photometric/geometric/pair-07.json": "1697ecaf1c32253ccff23fbaae8f294ee941b56c5d3df9d47a54475275aeeb12",
+    "results/0015-photometric/geometric/pair-07.process.json": "051a806df4e373c4e51d74800422b1ee2b1ab03ef8c8af53618e19d8efc5aa04",
+    "results/0015-photometric/geometric/pair-08.json": "33bf89d91c4127f197e5db89c389f7922eabd301b812a85cf273753b022e5cb6",
+    "results/0015-photometric/geometric/pair-08.process.json": "ec644f577f5b45f536534e461893cde7ccda51ca9f5fd28d1b5cfb373ea51c99",
+    "results/0015-photometric/geometric/pair-09.json": "6cea4e43a3a5289f927a2ffddeb590b15509041cb68e42621a63cf713a6602c8",
+    "results/0015-photometric/geometric/pair-09.process.json": "3c9354f30f9b21d96e6c37a5ce926ffc2aa38e665af412a11407ae3a5a77e743",
+    "results/0015-photometric/geometric/pair-10.json": "50c3650357bf5f22fba5761a85e11a2ae2d3edcc90857698f894f874b2ff4173",
+    "results/0015-photometric/geometric/pair-10.process.json": "ccdda85ed45a21c8e199f67e0365cef9f6012aa04ac5eb63ab7dfdc183d04564",
+    "results/0015-photometric/geometric/pair-11.json": "de1c01b9dfac384134053ba479d62b9f9b917b93631ebad93d310b25233b244b",
+    "results/0015-photometric/geometric/pair-11.process.json": "1a4ba611151a911ee14c84ba7197ae1d06302c28a69e2abc09b2e3303a9ad9f0",
+    "results/0015-photometric/geometric/pair-12.json": "e2e9160740996f474c5156fc7e901cabaa12a178ec05766ddb992b30defbe0ae",
+    "results/0015-photometric/geometric/pair-12.process.json": "f4afa87930e328d887c643eab50114262c0620ad5ccb4f096d75d191f9633255",
+    "results/0015-photometric/geometric/pair-13.json": "7168883129802fc6e87b7aa7d598262535728ad07fb70ac1d2632524ae6dad43",
+    "results/0015-photometric/geometric/pair-13.process.json": "3b14c33ce1ca0881c32dcc5d44defbc9d2e9e178ba23e94a2924c9101b13ef1c",
+    "results/0015-photometric/geometric/pair-14.json": "076b71b2ed09f7c8a6862dcb10f0eac8185d25d46c168f4a1469627eae7f1994",
+    "results/0015-photometric/geometric/pair-14.process.json": "adef29d1ba30920c39b56cee94e1f0996f7472a28d5d1c3ea233d6c54eb23491",
+    "results/0015-photometric/geometric/pair-15.json": "d4623f75448ab767a00de5255fb8d7da29f3b4eab9d799ba499f23be8335089a",
+    "results/0015-photometric/geometric/pair-15.process.json": "438b5f835eeeabdb7c64986534bed338690c4ef2bd329eac23027962df24060d",
+    "results/0015-photometric/geometric/seal.json": "8f92c1a73e402c1299183c2cfcaf2e8a236d5c2b41dcaae4b1ea09c6fce0ea9d",
+    "results/0015-photometric/integrity.json": "69d2c77d2a8f077028e86f7f6cee243e605a9ff7edbccb58ffe9c7e4b91ea4d6",
+    "results/0015-photometric/operation.json": "69a7f5173df69c1b9ac765820726114f3fd7c984e19aafbd4fbf6b664de268cb",
+    "results/0015-photometric/photometric/pair-00.json": "65ac10fe423ecb7662983cdaacbd19ff38f637ae0375741809847c53d13cff01",
+    "results/0015-photometric/photometric/pair-00.process.json": "f5a20379c84e9e9c9945581a42f49d2cb962860f3faedb0b7a8ae248bc741827",
+    "results/0015-photometric/photometric/pair-01.json": "37b452d36f3d044f2146b03f8694657ad862159c281337889d26d7e7808898a7",
+    "results/0015-photometric/photometric/pair-01.process.json": "8877cbf13579923e27c58dbd1ba7427dd5aaf65e8d5e273340793423938d6172",
+    "results/0015-photometric/photometric/pair-02.json": "eed66302507e410754484b953d7ef5e13fabefb7afb1ce6e37c22fbda164f8d8",
+    "results/0015-photometric/photometric/pair-02.process.json": "e12b3eda75bceecb8fc8349ac56702b44655e54af755ed87ee50e596a199492d",
+    "results/0015-photometric/photometric/pair-03.json": "225b362bd3c8d46f332f8ffff0d9a2c761286cfbf99158f8c0e4ea60c51e2025",
+    "results/0015-photometric/photometric/pair-03.process.json": "d26cc021da68e5b3c860b7723226ad2ff13260753c37b43b0f23fa9aba031ae1",
+    "results/0015-photometric/photometric/pair-04.json": "6f691882d52ef0c77d07def532b19c35e77385bc7f036dce6d842ed6bb2df68d",
+    "results/0015-photometric/photometric/pair-04.process.json": "137215529f02a51e32d79f2992a9daecceb1460190c766ee2dd8515713152091",
+    "results/0015-photometric/photometric/pair-05.json": "49667282bc3980367d93f86279dc9b4b558546b98e6f947efd8d9f577ece3d52",
+    "results/0015-photometric/photometric/pair-05.process.json": "ca3b2760dd01abf4fdbece5f28d3d10966ae065fef3e87431b0a97907fc2cbe8",
+    "results/0015-photometric/photometric/pair-06.json": "110a75d4ad985fbe1d38f9e1cbaea905eb42e20498ac946b9390d0fc70d43c0c",
+    "results/0015-photometric/photometric/pair-06.process.json": "c60ee5ea96effa423e8a90db9c147459cd21a1576493f3d35baff3057cb1a9e4",
+    "results/0015-photometric/photometric/pair-07.json": "88bbfa994d1bafed44207c71e6db22ba3d51dd4fbafb74474e16eb1d64ecc67d",
+    "results/0015-photometric/photometric/pair-07.process.json": "76a763f1ac66c6eef0b0c83b0c9e6ab529cd4aa2ce74f1417dc075ec172cef2f",
+    "results/0015-photometric/photometric/pair-08.json": "8fd71a4504573060cbf76a412f08f4edede94e6ed631661569f8e9998493278c",
+    "results/0015-photometric/photometric/pair-08.process.json": "2e5f045fcdb897b84537b0ce49e10160ac1143373096d2b0a9729e182e0c73f3",
+    "results/0015-photometric/photometric/pair-09.json": "45437ededde897f3d7078b4b45384ec27400fce3e09299f4752de1660a87a574",
+    "results/0015-photometric/photometric/pair-09.process.json": "d9e25ef721a72eeffffbd1c5ceb4fccfda0d555014183b1b2ef474d5bdaf2f67",
+    "results/0015-photometric/photometric/pair-10.json": "e7e10fc5cfb22f211c8f0637dec46c5c829a4d7dd8dfd5e068464319459b2b94",
+    "results/0015-photometric/photometric/pair-10.process.json": "e4d92230c2edafb2d16eda867b81a247c8943a68e9510152ec127423d1812cb5",
+    "results/0015-photometric/photometric/pair-11.json": "9096ebbcc67ed4fa1e0fab8371f3c6e51078c4d8717c425cb5ea1e73aaf41982",
+    "results/0015-photometric/photometric/pair-11.process.json": "99280473d9b762ab39bf33b4fdd73f09891621e83dcd8e13e4682ca1c84bbca1",
+    "results/0015-photometric/photometric/pair-12.json": "99fa24b711aebec7cf84ee4e3ae909276fd6cc8f5126910f8362f3f8ea69a9ce",
+    "results/0015-photometric/photometric/pair-12.process.json": "cb39790bf79dcd74f4f3db7b6edcb0827c935f3f87378769e38c8c0e80ed5e8c",
+    "results/0015-photometric/photometric/pair-13.json": "9ba63bf76b3d9a06315524c0f66fcd0863de55b1b3cad5ec4bd347b595cb6b21",
+    "results/0015-photometric/photometric/pair-13.process.json": "2f18aba9ae691eefb974f00ddc7dc62ddac9229d08fa0815c70e9466f1df225d",
+    "results/0015-photometric/photometric/pair-14.json": "c92979d464ce0a2b6b9f82a618f1f6000ce2472225143ad0aa6782fc201764e6",
+    "results/0015-photometric/photometric/pair-14.process.json": "3f77f785a3d0bae46f53fa136b378d9e4b9cc1eda169ef202a301c125d4cfd90",
+    "results/0015-photometric/photometric/pair-15.json": "fcb30753434e669f409fa5fdfc8b0012ab1474a5d14263737858ace5ca2a9b87",
+    "results/0015-photometric/photometric/pair-15.process.json": "db36726b6f8d19d7d679b5495966edae94761a53fc37f13bdc493e008f9f6e0a",
+    "results/0015-photometric/photometric/seal.json": "fbab3146703c6dba2222a0dac11a234ec96d131030fea1cdad63595854842c48",
+    "results/0015-photometric/started.json": "e1a735a2b19b53bfa09ed0cf1898724e3cae239672c62eb7a2f4ed05b944fd61",
+    "results/0015-photometric/supervisor.process.json": "0c7eec63f214e37483e7279b975d4373b95fd78357be8c5249fd0ca52219f282"
+  },
+  "max_auc_discrepancy_pp": 1.6058265828178264e-12,
+  "max_error_discrepancy_degrees": 3.3179847758191272e-12,
+  "maximum_sampled_rss_kib": 114144,
+  "original_evaluator_failure": {
+    "exit_code": 1,
+    "reason": "KeyError call_seconds in reporting-only baseline time lookup; original log/source retained"
+  },
+  "posthoc_epipolar_compatibility_review": {
+    "analysis_sha256": "f38533c62b04b9051e356e910f125c8f4d224909284b12e2cf379f92df558866",
+    "count": 191,
+    "formula": "n = t cross (R [(p_x-cx1)/fx1,(p_y-cy1)/fy1,1]); distance = abs(n dot [(q_x-cx2)/fx2,(q_y-cy2)/fy2,1])/hypot(n_x/fx2,n_y/fy2). Equivalent to pixel line Fp with F=K2^(-T)[t]_x R K1^(-1).",
+    "improved_points": 89,
+    "macro_pair_mean_after_px": 0.6074514594894836,
+    "macro_pair_mean_before_px": 0.5466503953964585,
+    "max_independent_distance_difference_px": 1.609823385706477e-12,
+    "mean_after_px": 0.596308881624658,
+    "mean_before_px": 0.5362468299434232,
+    "not_correspondence_truth": true,
+    "pairs_with_lower_mean": 4,
+    "posthoc": true,
+    "script_sha256": "5e6596d52b99ae4dc5ee037eb3d3590f1fe5534dc96a47ad8559c8cf09bb76e7",
+    "status": "verified",
+    "worsened_points": 102
+  },
+  "prediction_bindings_verified": true,
+  "prediction_nonempty_logs": [
+    {
+      "path": "results/0015-photometric/photometric/pair-09.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 9, \"selected\": 81, \"admitted\": 10}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-08.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 8, \"selected\": 106, \"admitted\": 20}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-06.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 6, \"selected\": 138, \"admitted\": 15}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-12.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 12, \"selected\": 102, \"admitted\": 13}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-13.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 13, \"selected\": 93, \"admitted\": 1}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-07.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 7, \"selected\": 95, \"admitted\": 9}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-11.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 11, \"selected\": 63, \"admitted\": 3}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-05.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 5, \"selected\": 92, \"admitted\": 12}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-04.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 4, \"selected\": 130, \"admitted\": 23}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-10.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 10, \"selected\": 31, \"admitted\": 2}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-14.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 14, \"selected\": 79, \"admitted\": 20}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-00.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 0, \"selected\": 89, \"admitted\": 22}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-01.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 1, \"selected\": 76, \"admitted\": 14}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-15.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 15, \"selected\": 48, \"admitted\": 12}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-03.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 3, \"selected\": 46, \"admitted\": 3}\n"
+    },
+    {
+      "path": "results/0015-photometric/photometric/pair-02.log",
+      "text": "{\"schema\": \"evr0015.photometric.v1\", \"status\": \"completed\", \"pair_index\": 2, \"selected\": 86, \"admitted\": 12}\n"
+    }
+  ],
+  "prediction_source_freeze": "057a5ea1527d3e205987a2780a512d01ed490a87",
+  "prediction_warning_or_traceback_logs": [],
+  "repaired_evaluation_sha256": "9badd27ccca63f3c83347cff9731590d3d3f6820cedd4515bf010cf1e3a38cea",
+  "repaired_evaluator_log_empty": true,
+  "rows": [
+    {
+      "admitted": 22,
+      "admitted_target_unchanged": 0,
+      "changed": 22,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.6835729397522166,
+          "rotation_degrees": 0.39102312498676123,
+          "translation_degrees": 1.6835729397522166
+        },
+        "full_refined": {
+          "max_degrees": 1.683799952512073,
+          "rotation_degrees": 0.39109564518285783,
+          "translation_degrees": 1.683799952512073
+        },
+        "subset_original": {
+          "max_degrees": 8.982023816173736,
+          "rotation_degrees": 2.0172102814454327,
+          "translation_degrees": 8.982023816173736
+        },
+        "subset_refined": {
+          "max_degrees": 7.0985895624729825,
+          "rotation_degrees": 1.6041336404966062,
+          "translation_degrees": 7.0985895624729825
+        }
+      },
+      "full_error_improvement_degrees": -0.00022701275985648195,
+      "initialized": 89,
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-205993994_6969ba4619_o.jpg",
+      "native_calls": 3,
+      "pair_index": 0,
+      "selected": 89,
+      "subset_error_improvement_degrees": 1.883434253700754
+    },
+    {
+      "admitted": 14,
+      "admitted_target_unchanged": 0,
+      "changed": 14,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.8584872130861211,
+          "rotation_degrees": 0.31943291647885647,
+          "translation_degrees": 0.8584872130861211
+        },
+        "full_refined": {
+          "max_degrees": 0.8579450138710893,
+          "rotation_degrees": 0.3192038605681643,
+          "translation_degrees": 0.8579450138710893
+        },
+        "subset_original": {
+          "max_degrees": 0.41948208592272845,
+          "rotation_degrees": 0.22549424172405133,
+          "translation_degrees": 0.41948208592272845
+        },
+        "subset_refined": {
+          "max_degrees": 2.1145303730839666,
+          "rotation_degrees": 0.9544615524299846,
+          "translation_degrees": 2.1145303730839666
+        }
+      },
+      "full_error_improvement_degrees": 0.0005421992150317356,
+      "initialized": 76,
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-2073853679_f35bb29c49_o.jpg",
+      "native_calls": 3,
+      "pair_index": 1,
+      "selected": 76,
+      "subset_error_improvement_degrees": -1.6950482871612382
+    },
+    {
+      "admitted": 12,
+      "admitted_target_unchanged": 0,
+      "changed": 12,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.6572542362473373,
+          "rotation_degrees": 0.4481584790833408,
+          "translation_degrees": 1.6572542362473373
+        },
+        "full_refined": {
+          "max_degrees": 1.6568558017511235,
+          "rotation_degrees": 0.4479894460432066,
+          "translation_degrees": 1.6568558017511235
+        },
+        "subset_original": {
+          "max_degrees": 3.624630092023017,
+          "rotation_degrees": 0.7745441884113838,
+          "translation_degrees": 3.624630092023017
+        },
+        "subset_refined": {
+          "max_degrees": 2.5454259843624096,
+          "rotation_degrees": 0.5668031663626529,
+          "translation_degrees": 2.5454259843624096
+        }
+      },
+      "full_error_improvement_degrees": 0.00039843449621379534,
+      "initialized": 85,
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-3158214253_16b5194f70_o.jpg",
+      "native_calls": 3,
+      "pair_index": 2,
+      "selected": 86,
+      "subset_error_improvement_degrees": 1.0792041076606074
+    },
+    {
+      "admitted": 3,
+      "admitted_target_unchanged": 0,
+      "changed": 3,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.5811492280592907,
+          "rotation_degrees": 0.36692360865996143,
+          "translation_degrees": 0.5811492280592907
+        },
+        "full_refined": {
+          "max_degrees": 0.5810237272294178,
+          "rotation_degrees": 0.3668391284580359,
+          "translation_degrees": 0.5810237272294178
+        },
+        "subset_original": {
+          "max_degrees": 180.0,
+          "rotation_degrees": null,
+          "translation_degrees": null
+        },
+        "subset_refined": {
+          "max_degrees": 180.0,
+          "rotation_degrees": null,
+          "translation_degrees": null
+        }
+      },
+      "full_error_improvement_degrees": 0.00012550082987294875,
+      "initialized": 46,
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-389637286_3f18f449c8_o.jpg",
+      "native_calls": 1,
+      "pair_index": 3,
+      "selected": 46,
+      "subset_error_improvement_degrees": 0.0
+    },
+    {
+      "admitted": 23,
+      "admitted_target_unchanged": 0,
+      "changed": 23,
+      "errors": {
+        "full_original": {
+          "max_degrees": 2.2623476614184783,
+          "rotation_degrees": 0.2330539717517992,
+          "translation_degrees": 2.2623476614184783
+        },
+        "full_refined": {
+          "max_degrees": 2.261465869791715,
+          "rotation_degrees": 0.23300337551335173,
+          "translation_degrees": 2.261465869791715
+        },
+        "subset_original": {
+          "max_degrees": 3.4614319905581246,
+          "rotation_degrees": 0.31318875567506954,
+          "translation_degrees": 3.4614319905581246
+        },
+        "subset_refined": {
+          "max_degrees": 3.4119887797746906,
+          "rotation_degrees": 0.2994108969069036,
+          "translation_degrees": 3.4119887797746906
+        }
+      },
+      "full_error_improvement_degrees": 0.0008817916267633841,
+      "initialized": 130,
+      "key": "0015-1091880705_b783893319_o.jpg_0015-325576817_bd8d9843c0_o.jpg",
+      "native_calls": 3,
+      "pair_index": 4,
+      "selected": 130,
+      "subset_error_improvement_degrees": 0.049443210783433944
+    },
+    {
+      "admitted": 12,
+      "admitted_target_unchanged": 0,
+      "changed": 12,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.5822624361822136,
+          "rotation_degrees": 0.38254001693884887,
+          "translation_degrees": 0.5822624361822136
+        },
+        "full_refined": {
+          "max_degrees": 0.5800158437850448,
+          "rotation_degrees": 0.38101343472470933,
+          "translation_degrees": 0.5800158437850448
+        },
+        "subset_original": {
+          "max_degrees": 1.1728362450161518,
+          "rotation_degrees": 0.9129618341465463,
+          "translation_degrees": 1.1728362450161518
+        },
+        "subset_refined": {
+          "max_degrees": 1.317974272304117,
+          "rotation_degrees": 0.6752791043324665,
+          "translation_degrees": 1.317974272304117
+        }
+      },
+      "full_error_improvement_degrees": 0.002246592397168845,
+      "initialized": 91,
+      "key": "0015-1105376832_6f92693a76_o.jpg_0015-2795419285_b4bbfa1862_o.jpg",
+      "native_calls": 3,
+      "pair_index": 5,
+      "selected": 92,
+      "subset_error_improvement_degrees": -0.1451380272879652
+    },
+    {
+      "admitted": 15,
+      "admitted_target_unchanged": 0,
+      "changed": 15,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.2564661152281563,
+          "rotation_degrees": 0.03608395123078443,
+          "translation_degrees": 0.2564661152281563
+        },
+        "full_refined": {
+          "max_degrees": 0.2568571202190957,
+          "rotation_degrees": 0.03605700694357981,
+          "translation_degrees": 0.2568571202190957
+        },
+        "subset_original": {
+          "max_degrees": 0.4479941529145744,
+          "rotation_degrees": 0.04970944888174488,
+          "translation_degrees": 0.4479941529145744
+        },
+        "subset_refined": {
+          "max_degrees": 1.1937190449508257,
+          "rotation_degrees": 0.038148448444231334,
+          "translation_degrees": 1.1937190449508257
+        }
+      },
+      "full_error_improvement_degrees": -0.0003910049909393587,
+      "initialized": 134,
+      "key": "0015-1162164006_4b2185f4e7_o.jpg_0015-2419051977_2fb8a8981c_o.jpg",
+      "native_calls": 3,
+      "pair_index": 6,
+      "selected": 138,
+      "subset_error_improvement_degrees": -0.7457248920362514
+    },
+    {
+      "admitted": 9,
+      "admitted_target_unchanged": 0,
+      "changed": 9,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.3705486894040033,
+          "rotation_degrees": 0.2196902736953007,
+          "translation_degrees": 0.3705486894040033
+        },
+        "full_refined": {
+          "max_degrees": 0.3706988351155809,
+          "rotation_degrees": 0.21977285539551256,
+          "translation_degrees": 0.3706988351155809
+        },
+        "subset_original": {
+          "max_degrees": 2.977231949506224,
+          "rotation_degrees": 1.8318582591440367,
+          "translation_degrees": 2.977231949506224
+        },
+        "subset_refined": {
+          "max_degrees": 1.9978108739402074,
+          "rotation_degrees": 1.2379394446458498,
+          "translation_degrees": 1.9978108739402074
+        }
+      },
+      "full_error_improvement_degrees": -0.00015014571157756507,
+      "initialized": 94,
+      "key": "0015-1283321355_191a081149_o.jpg_0015-2431823248_3776ed43ec_o.jpg",
+      "native_calls": 3,
+      "pair_index": 7,
+      "selected": 95,
+      "subset_error_improvement_degrees": 0.9794210755660167
+    },
+    {
+      "admitted": 20,
+      "admitted_target_unchanged": 0,
+      "changed": 20,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.1268497790665974,
+          "rotation_degrees": 0.07373352456984936,
+          "translation_degrees": 0.1268497790665974
+        },
+        "full_refined": {
+          "max_degrees": 0.12735274853135162,
+          "rotation_degrees": 0.07389561328965347,
+          "translation_degrees": 0.12735274853135162
+        },
+        "subset_original": {
+          "max_degrees": 0.9029686192194866,
+          "rotation_degrees": 0.6835450355520902,
+          "translation_degrees": 0.9029686192194866
+        },
+        "subset_refined": {
+          "max_degrees": 0.7040182131520881,
+          "rotation_degrees": 0.6202390523326919,
+          "translation_degrees": 0.7040182131520881
+        }
+      },
+      "full_error_improvement_degrees": -0.0005029694647542271,
+      "initialized": 104,
+      "key": "0015-1283321355_191a081149_o.jpg_0015-3475832871_843d6b914c_o.jpg",
+      "native_calls": 3,
+      "pair_index": 8,
+      "selected": 106,
+      "subset_error_improvement_degrees": 0.19895040606739844
+    },
+    {
+      "admitted": 10,
+      "admitted_target_unchanged": 0,
+      "changed": 10,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.2439438923203208,
+          "rotation_degrees": 0.5364995609035225,
+          "translation_degrees": 1.2439438923203208
+        },
+        "full_refined": {
+          "max_degrees": 1.243872339508935,
+          "rotation_degrees": 0.536399471792343,
+          "translation_degrees": 1.243872339508935
+        },
+        "subset_original": {
+          "max_degrees": 1.4018728804172524,
+          "rotation_degrees": 0.62323791358274,
+          "translation_degrees": 1.4018728804172524
+        },
+        "subset_refined": {
+          "max_degrees": 5.094803911898631,
+          "rotation_degrees": 2.2758949914698343,
+          "translation_degrees": 5.094803911898631
+        }
+      },
+      "full_error_improvement_degrees": 7.155281138571112e-05,
+      "initialized": 79,
+      "key": "0015-1283321355_191a081149_o.jpg_0015-3519412089_18daa2c071_o.jpg",
+      "native_calls": 3,
+      "pair_index": 9,
+      "selected": 81,
+      "subset_error_improvement_degrees": -3.6929310314813786
+    },
+    {
+      "admitted": 2,
+      "admitted_target_unchanged": 0,
+      "changed": 2,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.4373714219638162,
+          "rotation_degrees": 0.4373714219638162,
+          "translation_degrees": 0.30315460470621186
+        },
+        "full_refined": {
+          "max_degrees": 0.43744932030774103,
+          "rotation_degrees": 0.43744932030774103,
+          "translation_degrees": 0.3030719726653035
+        },
+        "subset_original": {
+          "max_degrees": 180.0,
+          "rotation_degrees": null,
+          "translation_degrees": null
+        },
+        "subset_refined": {
+          "max_degrees": 180.0,
+          "rotation_degrees": null,
+          "translation_degrees": null
+        }
+      },
+      "full_error_improvement_degrees": -7.789834392485373e-05,
+      "initialized": 29,
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-2297788512_6d09de6efa_o.jpg",
+      "native_calls": 1,
+      "pair_index": 10,
+      "selected": 31,
+      "subset_error_improvement_degrees": 0.0
+    },
+    {
+      "admitted": 3,
+      "admitted_target_unchanged": 0,
+      "changed": 3,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.0906509379961749,
+          "rotation_degrees": 0.4866771132797538,
+          "translation_degrees": 1.0906509379961749
+        },
+        "full_refined": {
+          "max_degrees": 1.085703312954872,
+          "rotation_degrees": 0.4834653142855924,
+          "translation_degrees": 1.085703312954872
+        },
+        "subset_original": {
+          "max_degrees": 180.0,
+          "rotation_degrees": null,
+          "translation_degrees": null
+        },
+        "subset_refined": {
+          "max_degrees": 180.0,
+          "rotation_degrees": null,
+          "translation_degrees": null
+        }
+      },
+      "full_error_improvement_degrees": 0.00494762504130275,
+      "initialized": 63,
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-2947740433_8316ecf292_o.jpg",
+      "native_calls": 1,
+      "pair_index": 11,
+      "selected": 63,
+      "subset_error_improvement_degrees": 0.0
+    },
+    {
+      "admitted": 13,
+      "admitted_target_unchanged": 0,
+      "changed": 13,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.6148855907691134,
+          "rotation_degrees": 0.4209446527034021,
+          "translation_degrees": 0.6148855907691134
+        },
+        "full_refined": {
+          "max_degrees": 0.6149931569528119,
+          "rotation_degrees": 0.42092631894393223,
+          "translation_degrees": 0.6149931569528119
+        },
+        "subset_original": {
+          "max_degrees": 0.6869551103009953,
+          "rotation_degrees": 0.35601038831591797,
+          "translation_degrees": 0.6869551103009953
+        },
+        "subset_refined": {
+          "max_degrees": 1.7829219519709443,
+          "rotation_degrees": 0.3280088765352711,
+          "translation_degrees": 1.7829219519709443
+        }
+      },
+      "full_error_improvement_degrees": -0.00010756618369844873,
+      "initialized": 96,
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-841149791_2ae77144de_o.jpg",
+      "native_calls": 3,
+      "pair_index": 12,
+      "selected": 102,
+      "subset_error_improvement_degrees": -1.095966841669949
+    },
+    {
+      "admitted": 1,
+      "admitted_target_unchanged": 0,
+      "changed": 1,
+      "errors": {
+        "full_original": {
+          "max_degrees": 0.710654063033348,
+          "rotation_degrees": 0.6015689448597042,
+          "translation_degrees": 0.710654063033348
+        },
+        "full_refined": {
+          "max_degrees": 0.710607730081775,
+          "rotation_degrees": 0.6014895513134587,
+          "translation_degrees": 0.710607730081775
+        },
+        "subset_original": {
+          "max_degrees": 180.0,
+          "rotation_degrees": null,
+          "translation_degrees": null
+        },
+        "subset_refined": {
+          "max_degrees": 180.0,
+          "rotation_degrees": null,
+          "translation_degrees": null
+        }
+      },
+      "full_error_improvement_degrees": 4.633295157296935e-05,
+      "initialized": 88,
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-878855662_a241416cff_o.jpg",
+      "native_calls": 1,
+      "pair_index": 13,
+      "selected": 93,
+      "subset_error_improvement_degrees": 0.0
+    },
+    {
+      "admitted": 20,
+      "admitted_target_unchanged": 0,
+      "changed": 20,
+      "errors": {
+        "full_original": {
+          "max_degrees": 1.4086990861927242,
+          "rotation_degrees": 0.4193048347017286,
+          "translation_degrees": 1.4086990861927242
+        },
+        "full_refined": {
+          "max_degrees": 1.4089173630711282,
+          "rotation_degrees": 0.4193339358640556,
+          "translation_degrees": 1.4089173630711282
+        },
+        "subset_original": {
+          "max_degrees": 1.5425987496545353,
+          "rotation_degrees": 0.4623784347615443,
+          "translation_degrees": 1.5425987496545353
+        },
+        "subset_refined": {
+          "max_degrees": 1.4265599093089416,
+          "rotation_degrees": 0.4148749568219097,
+          "translation_degrees": 1.4265599093089416
+        }
+      },
+      "full_error_improvement_degrees": -0.00021827687840403343,
+      "initialized": 79,
+      "key": "0015-1349576135_91cfa7d80a_o.jpg_0015-3480265591_02fd1d7f7e_o.jpg",
+      "native_calls": 3,
+      "pair_index": 14,
+      "selected": 79,
+      "subset_error_improvement_degrees": 0.11603884034559364
+    },
+    {
+      "admitted": 12,
+      "admitted_target_unchanged": 0,
+      "changed": 12,
+      "errors": {
+        "full_original": {
+          "max_degrees": 2.358317454023721,
+          "rotation_degrees": 1.0147963915481593,
+          "translation_degrees": 2.358317454023721
+        },
+        "full_refined": {
+          "max_degrees": 2.358194431578125,
+          "rotation_degrees": 1.0147354215683044,
+          "translation_degrees": 2.358194431578125
+        },
+        "subset_original": {
+          "max_degrees": 13.15889438868813,
+          "rotation_degrees": 5.755954425166546,
+          "translation_degrees": 13.15889438868813
+        },
+        "subset_refined": {
+          "max_degrees": 2.5095735598177917,
+          "rotation_degrees": 1.0776714152672147,
+          "translation_degrees": 2.5095735598177917
+        }
+      },
+      "full_error_improvement_degrees": 0.00012302244559592168,
+      "initialized": 48,
+      "key": "0015-1349576135_91cfa7d80a_o.jpg_0015-4001663691_8460da38bb_o.jpg",
+      "native_calls": 3,
+      "pair_index": 15,
+      "selected": 48,
+      "subset_error_improvement_degrees": 10.649320828870339
+    }
+  ],
+  "schema": "evr0015.independent-audit.v1",
+  "scope": "Saved JSON/source/log review only; no scientific module imported, no images/HDF5/native calls.",
+  "summed_worker_process_wall_seconds": {
+    "geometric": 7.474630833000006,
+    "photometric": 10.102863167999995
+  },
+  "supervisor_operation_wall_seconds": 22.567046333999997,
+  "supervisor_outer_wall_seconds": 22.686076665999998,
+  "supplementary_evaluation_rows_and_nested_source_bindings_verified": true,
+  "timing_seconds": {
+    "native_full_refined": 3.0704995399999993,
+    "native_subset_original": 0.03921875,
+    "native_subset_refined": 0.03813129000000001,
+    "original_native": 3.098394957999999,
+    "photo_coordinates": 0.020298250000000018,
+    "photo_fitting": 5.930789918999999,
+    "photo_images": 0.49719124900000006,
+    "photo_selection": 0.25129867000000006,
+    "photo_total": 8.584814585,
+    "pose_worker": 5.816357872999999
+  },
+  "worker_processes_verified": 32
+}

@@ -1,8 +1,36 @@
 # Next actions
 
-## Active priority: 2026-10-19
+## Active continuation: 2026-10-19
 
-The [0012d real diagnostic](results/0012d-lazy-grid/development/README.md) failed its unchanged1.5x speed gate despite passing the artificial fixture. Preserve all0012 sources/results and the incomplete original serialization record. Stop this scorer family; no pose integration, grid tuning, selected-pair rescue or manuscript. [0013 baseline diagnosis](results/0013-baseline-calibration-compatibility/README.md) is completed and independently reviewed, with16/16 errors below5degrees and AUC@5=81.169622%. Preserve both the first input failure and separately frozen successful retry. [0014 is complete](results/0014-pixel-noise-arithmetic-repair/README.md):+0.006510542 AUC@5 percentage points is negligible, and the strict all-pair gate remains15/16. Preserve its original arithmetic failure and frozen repair; stop noise-only correction, with no scale/iteration/pair tuning. Next, establish whether image-derived shared-pixel error information is identifiable and distinct from existing affine/covariance methods before admitting a new experiment. Do not mistake better implementation of a known objective for a paper contribution. Strong official DMS DDD/CCC/CCA and PoseLib comparisons remain necessary for any future method. The bounded acquisition of23 existing development images is complete and byte-verified. All32 workers of [0015 photometric development](protocols/0015-photometric-information-development.md) completed after freeze057a5ea; both all16 barriers passed. Preserve the first scorer metadata failure. Publish the separately reviewed [saved-only reporting repair](protocols/0015-evaluation-metadata-repair.md), execute it once without estimation, then independently audit all saved metrics. Stop sparse-config expansion unless every prospective full/subset/coverage criterion passes; lower patch loss alone does not count. Held-out data remains untouched.
+The owner requires substantial independent improvement before a manuscript. None
+is yet established. [0015](results/0015-photometric/README.md) completed its32
+scientific workers after published freeze057a5ea and fails its fixed expansion
+gate: full AUC@5 +0.009558333pp (required≥0.25), same-index subset −3.091052179pp
+(required≥+2),9/16 full errors improve (required≥10). All16 remain in each metric;
+4 subsets are unavailable and penalized equally. There were191 admitted changes
+from1355 selected queries,0.119375% of the full160000 observations, and40 completed
+native calls. The first evaluator's baseline-time metadata error is preserved;
+a separately frozen saved-only repair produced the complete score without
+repeating any prediction. Independent saved-output review confirms the bindings,
+counts, metrics and failure. Strong patch-loss reduction is not task improvement.
+
+Stop this sparse photometric configuration, with no iteration/gate/pair rescue or
+immediate propagation. Saved-only post-hoc epipolar compatibility also worsens on
+average; it is not ground-truth correspondence error. The [prior-work screen](docs/literature/0015-photometric-followup-prior.md)
+identifies JET, PixSfM, EpicFlow, ArgMatch and a2026 descriptor-JET preprint as
+close controls. A distinct next diagnostic must demonstrate recoverable image
+information or another explicit mechanism before a more complex method is run.
+A bounded nonquadratic-likelihood profile is only a possible falsification study,
+not an admitted experiment or novel contribution. No manuscript is started.
+
+The [0013 official baseline](results/0013-baseline-calibration-compatibility/README.md)
+is AUC@5=81.169622478%. The [0014 noise control](results/0014-pixel-noise-arithmetic-repair/README.md)
+gains only0.006510542pp; that route remains closed. The [0012 scorer family](results/0012d-lazy-grid/development/README.md)
+is31.21% slower than ordinary partial scoring and remains closed. Preserve all
+prior failures, original sources, technical repairs and untouched held-out data.
+The final target remains≥2 absolute AUC@5 points at matched total time on two
+independent held-out sources, positive scene-level uncertainty bounds, strong
+baselines, novelty and ablations. The broader research goal remains active.
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 

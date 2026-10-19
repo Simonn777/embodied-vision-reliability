@@ -21,6 +21,7 @@ meet this standard. [Full prospective gate](protocols/0012-score-bounds-developm
 
 | Study | Verified result | Decision |
 |---|---|---|
+| [0015 sparse image correction](results/0015-photometric/README.md) | Full AUC@5 +0.009558333pp; same-index subset −3.091052179pp;9/16 full errors improve. | Expansion gate fails. Stop this sparse configuration. |
 | [0014 known pixel-noise control](results/0014-pixel-noise-arithmetic-repair/README.md) | AUC@5 81.169622%→81.176133%, only+0.006510542pp;9 pair improvements/7 harms; strict diagnostic gate15/16. | No material gain. Stop noise-only correction. |
 | [0013 official pose baseline](results/0013-baseline-calibration-compatibility/README.md) |16/16 selected development pairs; AUC@5/10/20=81.17/90.58/95.29%; translation dominates15/16. | Baseline measurement, not a new method. |
 | [0012d compiled lazy scoring](results/0012d-lazy-grid/development/README.md) |17.142ms versus13.065ms ordinary partial scoring; exact winners but31.21% slower. | Stop this scorer family. |
@@ -34,8 +35,10 @@ not independent held-out evidence. Initial execution failures and separately
 frozen technical repairs remain public. No favorable sample selection, weaker
 comparison or post-hoc gate change is used to turn these results into success.
 
-The next preparation retrieves only the23 images already named by those pairs.
-No new model, held-out image or scientific result is implied by asset acquisition.
+The23 paired images are acquired and the fixed photometric diagnostic is complete.
+Lower patch loss did not produce meaningful pose improvement. A distinct follow-up
+needs evidence of recoverable information; generic joint refinement or correction
+propagation is already established prior work.
 [Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md) ·
 [Shared-pixel identifiability](docs/literature/0015-shared-pixel-identifiability.md).
 
