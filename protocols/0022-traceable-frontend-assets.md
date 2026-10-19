@@ -153,3 +153,22 @@ After review/exact CI, one fresh installation04 and identical qualification04
 may use setNumThreads(0), explicitly disabling OpenCV parallelism with reported1.
 Torch remains intra4/inter1; actual settings are recorded even on failure. No
 fixture, model, threshold, CPU/memory/wall cap or scientific admission changes.
+
+
+## Technical attempt05: original utils3d annotation compatibility
+
+Attempt04 atfa4a335 passed strict weights and Torch4/1/OpenCVserial settings.
+It executed the first artificial MoGe forward and focal/shift recovery, then
+failed before complete output because original utils3d.torch.helpers uses
+ParamSpec from typing.*, unavailable in Python3.9. Inputs and failed logs remain.
+No complete depth/features/matches or scientific gain was produced.
+
+After review/exact CI, permit one fresh installation05/qualification05 using the
+identical assets/settings/fixtures. For Python3.9 only, preload this exact helper
+(source SHA d5a34ced1e5b4841f15ec956a4044ab82076bb75a7b9998ecdc812eb8252d80b)
+with its single ParamSpec annotation global supplied by existing pinned
+typing_extensions4.16.0 (file SHA4040ca1a1ecbee00d1385c12a93084d1c5bd46f0b774f07e5ae7e91c4f55e696).
+Execute original unchanged bytes; do not modify global typing or source files.
+Reject a changed provider/helper, unexpected origin or already-loaded helper;
+remove partial module registration on failure. This changes annotation import
+compatibility only. Earlier attempts and inference/resource checks stay fixed.

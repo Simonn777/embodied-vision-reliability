@@ -1,5 +1,15 @@
 # Current state
 
+## Active continuation: 0022 annotation compatibility, 2026-10-19
+
+[Attempt04](results/0022-preparation/runtime-attempt-04/README.md) entered
+MoGe inference after all weights/thread settings passed, then failed in original
+utils3d postprocessing on Python3.9's absent ParamSpec. It retained fixed inputs
+but no complete depth output (19.423s,2,053,168KiB sampled peak). A narrow,
+byte-bound annotation prebinding is prepared for attempt05 after review/exact CI.
+No model calculation, fixture or eligibility threshold changes; all failures stay
+recorded. No benchmark data, scientific gain or manuscript yet.
+
 ## Active continuation: 0022 OpenCV reporting compatibility, 2026-10-19
 
 [Attempt03](results/0022-preparation/runtime-attempt-03/README.md) passed all

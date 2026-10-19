@@ -131,6 +131,37 @@ class QualificationTests(unittest.TestCase):
     def tearDown(self):
         self.patch_version.stop(); self.patch_file.stop(); self.patch_root.stop(); self.temp.cleanup()
 
+    def test_paramspec_is_scoped_to_verified_source_and_rolls_back_failure(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); helper = root/"sources/utils3d/utils3d/torch/helpers.py"
+            helper.parent.mkdir(parents=True)
+            source = b"P = ParamSpec('P')\ndef identity(value): return value\n"
+            helper.write_bytes(source)
+            provider_file = root/"backport.py"; provider_file.write_bytes(b"fake annotation provider")
+            provider = types.ModuleType("typing_extensions"); provider.__file__ = str(provider_file)
+            provider.ParamSpec = lambda name: ("annotation", name)
+            parent = types.ModuleType("utils3d.torch"); parent.__file__ = str(helper.parent/"__init__.py")
+            name = "utils3d.torch.helpers"
+            with mock.patch.object(q.sys, "version_info", (3, 9, 6)), mock.patch.dict(sys.modules, {"typing_extensions": provider}), \
+                 mock.patch.object(q.importlib.metadata, "version", return_value="4.16.0"), \
+                 mock.patch.object(q.importlib, "import_module", return_value=parent), \
+                 mock.patch.object(q, "UTILS3D_TORCH_HELPERS_SHA", digest(source)), \
+                 mock.patch.object(q, "TYPING_EXTENSIONS_SHA", digest(provider_file.read_bytes())):
+                try:
+                    result = q.prepare_utils3d_typing(root)
+                    self.assertEqual(sys.modules[name].P, ("annotation", "P"))
+                    self.assertEqual(sys.modules[name].identity(7), 7)
+                    self.assertFalse(result["source_bytes_modified"])
+                    self.assertEqual(helper.read_bytes(), source)
+                    sys.modules.pop(name); delattr(parent, "helpers")
+                    helper.write_bytes(source+b"raise RuntimeError('fixture failure')\n")
+                    with self.assertRaises(q.QualificationError): q.prepare_utils3d_typing(root)
+                    with mock.patch.object(q, "UTILS3D_TORCH_HELPERS_SHA", digest(helper.read_bytes())):
+                        with self.assertRaisesRegex(RuntimeError, "fixture failure"): q.prepare_utils3d_typing(root)
+                    self.assertNotIn(name, sys.modules); self.assertNotIn("helpers", vars(parent))
+                finally:
+                    sys.modules.pop(name, None)
+
     def test_fake_artifact_chain_and_same_size_checkpoint_tamper(self):
         files, _, _, bindings = q.verify_files(self.box.args, self.box.frozen)
         self.assertEqual(len(files), 6)

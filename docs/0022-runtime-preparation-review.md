@@ -185,3 +185,39 @@ No source-level blocker remains to one fresh installation04 and the identical
 qualification04 after exact freeze and successful CI. All earlier failures stay
 unchanged; this is compatibility admission only, with no scientific payload,
 accuracy result or manuscript admission.
+
+
+## Attempt05 module-local annotation compatibility review
+
+The saved attempt04 audit verified all 11 publication entries against their
+private byte hashes, ten frozen source bindings against
+`fa4a335b9eb1da7056ee20a07c50d181a35c7b74`, installation bindings and supervisor
+log hashes. Strict model loading and Torch4/inter1/OpenCVserial checks passed.
+The first manufactured MoGe forward reached postprocessing but failed at
+`utils3d.torch.helpers` line16: Python3.9 did not supply `ParamSpec` through
+`from typing import *`. No complete depth, feature or match output was produced.
+The outer operation exited1 in19.422827125 seconds, sampled peak group RSS
+2,053,168 KiB. Its CPU-autocast warning, optional NumPy-probe record and original
+failure remain preserved; this attempt was not a completed qualification.
+
+The repair preloads only the exact original helper module with one annotation
+global supplied by the pinned existing typing_extensions4.16.0. Independent
+source/hash checks confirm the helper and provider match the declared digests.
+Source files and the global typing namespace are not patched by the repair.
+Unexpected helper/provider bytes, origin, version or prior module registration
+remain fatal; failed execution removes its partial module registration. A small
+Python3.9 annotation-only check confirmed the backport works inside the helper's
+nested `typing.Callable` type expressions, without importing Torch, utils3d,
+model code or checkpoints.
+
+Reviewed qualifier SHA256:
+`174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e`;
+test SHA256:
+`a23d18986b26458d8c2623d6155c404cbdcdea8ea2833920f64d87482ec854cb`.
+[Receipt06](../results/0022-preparation/qualification-artificial-tests-06.json)
+and its log match these sources and retain 14 fake-interface tests passing,
+exit0, wall0.269343583 seconds. The reviewer did not repeat the model run or the
+full test suite. No source-level blocker remains to the declared fresh
+installation05/qualification05 after exact freeze and CI, with unchanged
+manufactured inputs, weights, inference settings, thresholds and resource caps.
+This compatibility review provides no scientific accuracy or novelty evidence.

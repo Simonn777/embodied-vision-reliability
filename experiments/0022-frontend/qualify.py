@@ -60,6 +60,45 @@ def read_json(path):
         return json.load(f, parse_constant=lambda _: (_ for _ in ()).throw(QualificationError("nonfinite_json")))
 
 
+UTILS3D_TORCH_HELPERS_SHA = "d5a34ced1e5b4841f15ec956a4044ab82076bb75a7b9998ecdc812eb8252d80b"
+TYPING_EXTENSIONS_SHA = "4040ca1a1ecbee00d1385c12a93084d1c5bd46f0b774f07e5ae7e91c4f55e696"
+
+
+def prepare_utils3d_typing(installation):
+    """Prebind one annotation global in byte-verified source on Python3.9.
+
+    Neither the global typing module nor an upstream file is modified. The
+    original helper executes with ParamSpec from the pinned existing backport.
+    """
+    if sys.version_info >= (3, 10):
+        return dict(applied=False, reason="native typing.ParamSpec available")
+    require(sys.version_info[:2] == (3, 9), "unsupported_typing_compatibility_runtime")
+    import typing_extensions
+    require(importlib.metadata.version("typing-extensions") == "4.16.0"
+            and sha(typing_extensions.__file__) == TYPING_EXTENSIONS_SHA, "typing_backport_binding")
+    path = Path(installation)/"sources/utils3d/utils3d/torch/helpers.py"
+    require(sha(path) == UTILS3D_TORCH_HELPERS_SHA, "typing_helper_source_binding")
+    parent = importlib.import_module("utils3d.torch")
+    require(Path(parent.__file__).resolve().parent == path.resolve().parent, "typing_parent_origin")
+    name = "utils3d.torch.helpers"
+    require(name not in sys.modules and "helpers" not in vars(parent), "typing_helper_already_loaded")
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    module.ParamSpec = typing_extensions.ParamSpec
+    sys.modules[name] = module
+    try:
+        spec.loader.exec_module(module)
+        require(module.ParamSpec is typing_extensions.ParamSpec, "typing_backport_overwritten")
+        setattr(parent, "helpers", module)
+    except BaseException:
+        sys.modules.pop(name, None)
+        raise
+    return dict(applied=True, module=name, source_sha256=UTILS3D_TORCH_HELPERS_SHA,
+                supplied_global="ParamSpec", provider="typing_extensions", provider_version="4.16.0",
+                provider_sha256=TYPING_EXTENSIONS_SHA, source_bytes_modified=False,
+                global_typing_module_modified=False)
+
+
 def frozen_bindings(args):
     helper = Path(__file__).with_name("supervise.py")
     spec = importlib.util.spec_from_file_location("_evr0022_qualification_supervisor", helper)
@@ -443,6 +482,7 @@ def qualify(args):
         import kornia
         from kornia.config import InstallationMode, kornia_config
         kornia_config.lazyloader.installation_mode = InstallationMode.RAISE
+        record["typing_compatibility"] = prepare_utils3d_typing(args.installation)
         from moge.model.v2 import MoGeModel
         from moge.model.modules import DINOv2Encoder, ConvStack, MLP
         from lightglue import SuperPoint, LightGlue
