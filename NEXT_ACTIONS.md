@@ -1,5 +1,25 @@
 # Next actions
 
+## Active continuation: 0017 scientific freeze, 2026-10-19
+
+[0017 preparation](results/0017-preparation/README.md) completed five downloads
+and names/shapes-only allocation:80pairs across five permanently development
+scenes. No scientific coordinate/depth/GT values have been read at this freeze.
+All62 artificial tests passed locally, including320-record seal integration and
+GT-access refusal on tampering. Eight manufactured native calls confirmed all
+four APIs and exact2/4iteration settings. Independent source review found no
+remaining implementation blocker after correcting outer-wall timing accounting.
+
+Next execute the [frozen80pair/four-known-method diagnostic](protocols/0017-depth-information.md)
+once after published-source CI. Seal all320outcomes before scoring. Both oracle
+headroom and the specific cross-scene residual-omission trigger are fixed; no
+modified estimator or manuscript is admitted. [Closest prior work](docs/literature/0017-depth-visibility-prior.md)
+already covers ordinary fixed-support and positivity fixes. Useful baseline
+information or a software repair is not a novel CVPR result.
+
+0016 remains NO_GO. Original research checkout, all earlier results and
+held-out0022numerical arrays remain untouched. The broader research goal is active.
+
 ## Active continuation: 0017 asset preparation, 2026-10-19
 
 [0016 publication](docs/0016-publication-verification.md) is verified through
