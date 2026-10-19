@@ -93,3 +93,32 @@ model load or inference had occurred at this review. Native import compatibility
 valid outputs, runtime/memory and warning behavior remain qualification outcomes,
 not facts established by the artificial tests. No thresholds or fixture changes
 are admitted after those outcomes.
+
+
+## Attempt-02 compatibility repair review
+
+Attempt01 is retained as an import failure, not promoted to a successful
+qualification. Independent saved-file review verified both operation source/log
+hashes against b1d3376, the successful installation's 14 distributions and 2,667
+inventoried files, and the failed qualifier's installation binding. Its only
+output is a receipt; no fixture, checkpoint loads or inference outputs exist.
+All four public JSON copies are byte-identical; public path-redacted logs have
+separate, verified hashes and the private raw logs are unchanged.
+
+The revised guard permits no subprocess. Only on macOS, with exact lscpu
+executable/argv/cwd/env, exact subprocess.run keyword state, and the immediate
+NumPy check_support_sve module/frame/path contract, it raises FileNotFoundError.
+NumPy's own optional-probe fallback catches that OSError and returns false.
+The suppressed probe is recorded separately; all other process and network
+violations retain their original rejection. Shared NumPy and model settings are
+unchanged. The reviewer independently ran all 12 artificial tests, exit0.
+Author test receipt03 separately records exit0 at 0.381808291 seconds.
+
+Reviewed qualifier SHA256:
+`fca5c42e420948769ebed16d4287da8adbaebdbb2453d9f2cee61977edce60f3`.
+Reviewed tests SHA256:
+`fed2cc3cac4cd9a8e7d2b19f75ccdf35ebe238b4b3eeb491064c5540c08567f7`.
+No remaining source-level blocker to one fresh installation02 from the same
+assets and one qualification02 after the third exact freeze passes CI. The
+same-commit installation chain remains enforced. This authorizes no scientific
+payload, model-quality claim, changed fixture or acceptance threshold.

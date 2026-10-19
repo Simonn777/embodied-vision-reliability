@@ -303,6 +303,37 @@ print(json.dumps(attempts))
         self.assertFalse((self.root / "escaped").exists())
         self.assertEqual(len(json.loads(outcome.stdout)), 4)
 
+    def test_only_exact_optional_numpy_probe_is_absence_compatible(self):
+        code = r'''
+import importlib.util, json, subprocess, sys, types
+spec=importlib.util.spec_from_file_location('q',sys.argv[1]);q=importlib.util.module_from_spec(spec);spec.loader.exec_module(q)
+module=types.ModuleType('numpy.testing._private.utils');module.__file__='/artificial/numpy/testing/_private/utils.py'
+module.__dict__['subprocess']=subprocess;sys.modules[module.__name__]=module
+source="def check_support_sve():\n    try:\n        output=subprocess.run('lscpu',capture_output=True,text=True)\n        return 'sve' in output.stdout\n    except OSError:\n        return False\n"
+exec(compile(source,module.__file__,'exec'),module.__dict__)
+q.sys.platform='darwin';attempts=[];probes=[];q.install_guard(attempts,probes)
+assert module.check_support_sve() is False
+assert attempts==[] and len(probes)==1 and probes[0]['outcome']=='suppressed_optional_probe'
+def denied(fn):
+    try: fn()
+    except q.QualificationError: return
+    raise AssertionError('unexpected exception downgrade or subprocess execution')
+denied(lambda:subprocess.run('lscpu',capture_output=True,text=True))
+for altered in [source.replace("'lscpu'","['lscpu','--help']"), source.replace('text=True','text=True,check=True'),source.replace('text=True','text=True,env={}'),source.replace('check_support_sve','other_function')]:
+    exec(compile(altered,module.__file__,'exec'),module.__dict__)
+    denied(module.other_function if 'other_function' in altered else module.check_support_sve)
+exec(compile(source,module.__file__,'exec'),module.__dict__);q.sys.platform='linux'
+denied(module.check_support_sve)
+assert len(attempts)==6 and len(probes)==1
+assert all(row['event']=='subprocess.Popen' for row in attempts)
+assert 'torch' not in sys.modules and 'numpy' not in sys.modules
+print(json.dumps({'denied':len(attempts),'compatibility':probes}))
+'''
+        outcome = subprocess.run([sys.executable, "-c", code, str(HERE / "qualify.py")],
+                                 capture_output=True, text=True, timeout=30)
+        self.assertEqual(outcome.returncode, 0, outcome.stderr)
+        self.assertEqual(json.loads(outcome.stdout)["denied"], 6)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

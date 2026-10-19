@@ -1,5 +1,19 @@
 # Next actions
 
+## Active continuation: 0022 import repair, 2026-10-19
+
+[Runtime attempt 01](results/0022-preparation/runtime-attempt-01/README.md)
+installed successfully (1.949 s, 88,688 KiB sampled peak), then qualification
+failed during imports (10.201 s, 250,256 KiB) when the process guard intercepted
+NumPy's optional missing `lscpu` capability probe. No checkpoint was loaded and
+no model inference ran. All original receipts and raw private logs are retained;
+public logs explicitly redact local path prefixes.
+
+A narrow compatibility repair must preserve the exact manufactured inputs and
+settings, with independent review and exact CI before a fresh installation and
+qualification. It creates no subprocess and does not admit benchmark data.
+Scientific improvement and novelty remain unestablished; no manuscript.
+
 ## Active continuation: 0022 installation/qualification freeze, 2026-10-19
 
 [Asset acquisition](results/0022-preparation/acquisition/README.md) completed

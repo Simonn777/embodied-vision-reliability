@@ -1,0 +1,46 @@
+{
+  "schema": "evr0022.supervision.v1",
+  "status": "failed",
+  "operation": "qualification",
+  "expected_commit": "b1d337622e4d7bfc1adbc736fe8355196af759d0",
+  "source_sha256": {
+    "experiments/0022-frontend/supervise.py": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5",
+    "experiments/0022-frontend/qualify.py": "cde436f3cb5131b5c10e5b01d1c3c80e3d4beecb6ac0fe609ec7bf5b9f584d99"
+  },
+  "command": [
+    "$PYTHON",
+    "$REPOSITORY/experiments/0022-frontend/qualify.py",
+    "--expected-commit",
+    "b1d337622e4d7bfc1adbc736fe8355196af759d0",
+    "--installation",
+    "$PRIVATE/0022-frontend-preparation/installation-01",
+    "--installation-supervision",
+    "$PRIVATE/0022-frontend-preparation/installation-supervision-01/receipt.json",
+    "--acquisition-receipt",
+    "$PRIVATE/0022-frontend-preparation/acquisition-01/source-model-assets/ledger.json",
+    "--assets-dir",
+    "$PRIVATE/0022-frontend-preparation/acquisition-01/source-model-assets",
+    "--output-dir",
+    "$PRIVATE/0022-frontend-preparation/qualification-01"
+  ],
+  "cwd": "$REPOSITORY",
+  "python_version": "3.9.6",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "hard_timeout_seconds": 1800.0,
+  "group_rss_limit_kib": 8388608,
+  "rss_sampling": "All observed descendants and retained process groups, approximately every 0.1s; transient peaks may be missed",
+  "exit_code": 1,
+  "termination": null,
+  "wall_seconds": 10.201063042,
+  "peak_group_rss_kib": 250256,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "cb4a6ab38813ca98604c282f2ab09429d01132a0baadf7bbcd6a84a8846f741f"
+}

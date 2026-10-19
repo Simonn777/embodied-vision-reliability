@@ -5,6 +5,7 @@ This file does not install dependencies, acquire assets, or execute on import.
 """
 import argparse
 import contextlib
+import errno
 import hashlib
 import importlib.metadata
 import importlib.util
@@ -198,13 +199,48 @@ def verify_files(args, frozen):
         checkpoint_sha256={x: sha(files[x]) for x in model_names})
 
 
-def install_guard(attempts):
+def optional_numpy_sve_probe(event, arguments):
+    """Recognize only NumPy's optional, absent-on-macOS lscpu import probe."""
+    if (sys.platform != "darwin" or event != "subprocess.Popen" or len(arguments) != 4
+            or arguments[0] != "lscpu" or arguments[1] != ["lscpu"]
+            or arguments[2] is not None or arguments[3] is not None):
+        return False
+    frame = sys._getframe(1)
+    try:
+        while frame is not None:
+            if frame.f_code.co_name == "run" and frame.f_globals.get("__name__") == "subprocess":
+                local = frame.f_locals
+                caller = frame.f_back
+                module = sys.modules.get("numpy.testing._private.utils")
+                return (local.get("popenargs") == ("lscpu",)
+                        and local.get("capture_output") is True
+                        and local.get("input") is None and local.get("timeout") is None
+                        and local.get("check") is False
+                        and local.get("kwargs") == {"text": True, "stdout": -1, "stderr": -1}
+                        and caller is not None and caller.f_code.co_name == "check_support_sve"
+                        and caller.f_globals.get("__name__") == "numpy.testing._private.utils"
+                        and caller.f_code.co_filename.endswith("/numpy/testing/_private/utils.py")
+                        and module is not None and module.__dict__ is caller.f_globals
+                        and getattr(module, "__file__", None) == caller.f_code.co_filename)
+            frame = frame.f_back
+        return False
+    finally:
+        del frame
+
+
+def install_guard(attempts, compatibility_probes=None):
     """Python audit hook persists for this dedicated process; no external child/network."""
     forbidden = {"socket.connect", "socket.connect_ex", "socket.getaddrinfo", "socket.gethostbyname",
                  "socket.gethostbyaddr", "socket.sendto", "subprocess.Popen", "os.system",
                  "os.exec", "os.posix_spawn", "os.fork", "os.forkpty", "builtins.input"}
-    def audit(event, unused):
+    def audit(event, arguments):
         if event in forbidden:
+            if compatibility_probes is not None and optional_numpy_sve_probe(event, arguments):
+                compatibility_probes.append({"event": event, "command": ["lscpu"],
+                    "caller": "numpy.testing._private.utils.check_support_sve",
+                    "outcome": "suppressed_optional_probe", "exception": "FileNotFoundError",
+                    "reason": "macOS optional SVE probe treated as unavailable; no process executed"})
+                raise FileNotFoundError(errno.ENOENT, "Optional NumPy SVE probe unavailable on macOS", "lscpu")
             attempts.append({"event": event})
             raise QualificationError("offline_guard_" + event)
     sys.addaudithook(audit)
@@ -345,7 +381,8 @@ def qualify(args):
               "stage": "verification", "source_sha256": sha(__file__), "settings": {
                   "moge": MOGE_OPTIONS, "superpoint": SP_OPTIONS, "extract_resize": None,
                   "lightglue": LG_OPTIONS, "device": "cpu", "dtype": "float32", "threads": 4},
-              "timings": {}, "warnings": [], "offline_attempts": [], "local_hub_calls": []}
+              "timings": {}, "warnings": [], "offline_attempts": [], "compatibility_probes": [],
+              "local_hub_calls": []}
     def save():
         tmp = args.output_dir / "receipt.pending"
         tmp.write_text(json.dumps(record, indent=2, sort_keys=True, allow_nan=False) + "\n")
@@ -365,7 +402,7 @@ def qualify(args):
         for key in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMEXPR_NUM_THREADS"):
             os.environ[key] = "4"
         sys.path[:0] = [str(args.installation / "runtime")] + [str(args.installation / "sources" / k) for k in PINS]
-        install_guard(record["offline_attempts"])
+        install_guard(record["offline_attempts"], record["compatibility_probes"])
         record["offline_guard_scope"] = "Python audit events for socket/DNS/process/input; not an OS sandbox for arbitrary native syscalls"
         stage("imports"); t0 = time.perf_counter()
         import numpy as np

@@ -1,0 +1,77 @@
+{
+  "bindings": {
+    "checkpoint_sha256": {
+      "moge2-small-model.pt": "79a16621928c2bf0ed04659218c55c01075e950507f40bb3332fb4c873d3e1dc",
+      "superpoint_lightglue.pth": "6ff7040d0a497fc6639337946d7538dae07428c18f77a067a0b5a960e7cc551a",
+      "superpoint_v1.pth": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+    },
+    "dependency_metadata_sha256": "e7a0f21d36e5e10131ef3afbb721c7e50bed6320b658cd0748f249edbdc73a40",
+    "install_receipt_sha256": "45b9e9d184d7ce8eaa7b0879b2dacdebf7da0f2639d9b83735e399b49ed4f1bb",
+    "installation_supervision_log_sha256": {
+      "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "installation_supervision_sha256": "61abbec13c06153acd47dc9fa9155833e63a8fe0980c78e9354b6177fcde7b95",
+    "protocol_sha256": "1d92a3067bf2fff459e9af4cd6d2971f799d16a6b1304ff6ab962b121f1a0ea4",
+    "source_acquisition_ledger_sha256": "31ae5f1a27a2ed3b03705f922c2ed6cfff60b680eceb25950d27a36ea8dc2023",
+    "source_manifest_canonical_sha256": "247074c2725ff43f1205585ecb0e40848f733f20ba3db9ee0ca2cf72d35b153c",
+    "source_manifest_sha256": "30d4474b3372c8cea8aed86f67620425146303c0fae52b652b37062936691944",
+    "source_sha256": "cde436f3cb5131b5c10e5b01d1c3c80e3d4beecb6ac0fe609ec7bf5b9f584d99",
+    "wheel_manifest_canonical_sha256": "2793d1ae31b41dfc8392d801122b8c4f654df610cd1e4256e70c70e5c6b60f29",
+    "wheel_manifest_sha256": "fc8bea8344e061857dbf025f80915f8d757a18a2f960a92d490349cbb12d0f14"
+  },
+  "eligible": false,
+  "error": "offline_guard_subprocess.Popen",
+  "expected_commit": "b1d337622e4d7bfc1adbc736fe8355196af759d0",
+  "failed_stage": "imports",
+  "frozen_files": {
+    "configs/0022-source-model-assets.json": "30d4474b3372c8cea8aed86f67620425146303c0fae52b652b37062936691944",
+    "configs/0022-wheel-assets.json": "fc8bea8344e061857dbf025f80915f8d757a18a2f960a92d490349cbb12d0f14",
+    "docs/literature/0022-runtime-source-contract.md": "e330987c37e4e87d187432ed6bf37c9e3c9c7bc6ba3758dcff655135e44fca57",
+    "experiments/0022-frontend/acquire.py": "5b09d48b3b81fcf1d62b90871475813e26544934711244dcff2d429d4ad7fa11",
+    "experiments/0022-frontend/acquire_operation.py": "28aed9e86d764ca3f336d7eab3b0ae001b261b21cbfb551350af2a6c0a1e0540",
+    "experiments/0022-frontend/install_runtime.py": "ae94b94817081ed31d41b7191c8c98dd835f5f363837318e195a7267a05e4ca4",
+    "experiments/0022-frontend/qualify.py": "cde436f3cb5131b5c10e5b01d1c3c80e3d4beecb6ac0fe609ec7bf5b9f584d99",
+    "experiments/0022-frontend/supervise.py": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5",
+    "protocols/0022-traceable-frontend-assets.md": "1d92a3067bf2fff459e9af4cd6d2971f799d16a6b1304ff6ab962b121f1a0ea4",
+    "results/0022-preparation/dependency-wheels.json": "e7a0f21d36e5e10131ef3afbb721c7e50bed6320b658cd0748f249edbdc73a40"
+  },
+  "local_hub_calls": [],
+  "offline_attempts": [
+    {
+      "event": "subprocess.Popen"
+    }
+  ],
+  "offline_guard_scope": "Python audit events for socket/DNS/process/input; not an OS sandbox for arbitrary native syscalls",
+  "schema": "evr0022.qualification.v1",
+  "settings": {
+    "device": "cpu",
+    "dtype": "float32",
+    "extract_resize": null,
+    "lightglue": {
+      "depth_confidence": -1,
+      "features": "superpoint",
+      "flash": false,
+      "mp": false,
+      "width_confidence": -1
+    },
+    "moge": {
+      "apply_mask": false,
+      "force_projection": true,
+      "num_tokens": 1200,
+      "use_fp16": false
+    },
+    "superpoint": {
+      "max_num_keypoints": 2048
+    },
+    "threads": 4
+  },
+  "source_sha256": "cde436f3cb5131b5c10e5b01d1c3c80e3d4beecb6ac0fe609ec7bf5b9f584d99",
+  "stage": "imports",
+  "status": "failed",
+  "timings": {
+    "verification_seconds": 1.0836245
+  },
+  "wall_seconds": 9.845469167000001,
+  "warnings": []
+}

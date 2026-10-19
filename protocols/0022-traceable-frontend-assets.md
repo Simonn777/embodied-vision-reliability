@@ -105,3 +105,19 @@ realization per image for all incident edges. Keep GT poses outside prediction
 inputs until complete predictions are sealed. Reference edges must be charged
 and supplied equally to geometry/multiview and same-field joint-BA controls.
 No manuscript or efficacy claim follows from this qualification.
+
+## Technical attempt 02: optional CPU-probe compatibility
+
+Attempt 01 at `b1d337622e4d7bfc1adbc736fe8355196af759d0` installed successfully
+but failed during imports before any model construction or inference. The exact
+NumPy 2.0.2 `check_support_sve()` optional `lscpu` probe received our general
+`QualificationError` instead of its caught missing-command `OSError`. The first
+receipts and full private logs are retained in the attempt-01 record.
+
+The next source freeze permits one fresh installation and one qualification with
+the same assets, artificial images, numerical settings and acceptance checks.
+The only runtime compatibility exception raises `FileNotFoundError` for the
+verified NumPy optional probe on macOS without launching a subprocess, recording
+it separately as a compatibility probe. All other process/network events remain
+denied and recorded as violations. This does not authorize arbitrary subprocess
+execution or any scientific payload. Keep the shared NumPy package unchanged.
