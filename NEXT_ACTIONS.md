@@ -12,15 +12,18 @@ Work from the first unfinished item. Record each outcome in a dated note before 
    Class-bearing filenames were read, but no pixels/predictions/accuracy. The
    old unknown HTTP total remains unknown; separate direct preparation caps
    and the original data/weight budget remain enforced.
-3. Review/freeze the [single capability protocol](protocols/0010-clip-capability.md),
-   exact helpers/config/manifests and reusable source bundle in a canonical
-   published receipt. Verify CI and hashes before execution. Reuse exact named
-   cache files if present; otherwise acquire only admitted assets and four
-   wheels within their fixed caps, then install offline in a fresh overlay.
-4. Once actual installation/import and asset checks pass, run the fixed eight
-   training images / ten prompts once on cloud CPU. Retain every failure and
-   original marker. No automatic retry, alternate model or image replacement.
-   A pass establishes only feasibility; no accuracy is computed at this stage.
+3. **Original freeze and preparation completed; auxiliary guard failed:**
+   [publication](docs/0010-capability-freeze-publication-verification.md) and
+   [actual preparation/diagnosis](results/0010-preparation/README.md).
+   Preserve completed downloads/install/imports, 456,087,034 direct body bytes
+   charged, residual temporary files and the before-probe exit 1.
+4. Publish/verify the separate [cached-probe correction and solver admission](protocols/0010-cached-probe-and-solver-admission.md).
+   Recheck the defined cache/marker/process conditions with complete failure
+   accounting, then run only the still-unattempted original eight-image /
+   ten-prompt probe once. No redownload, reinstall, changed runner or replacement.
+   If successful, check saved outputs and run the fixed artificial functional and
+   three-fit timing phases once. These establish resource/numerical admission,
+   not classification quality. Preserve every failure and original marker.
 5. If resources permit, separately freeze a real-data **development** headroom
    screen with 128 new fixed train filenames, two author-scale batches of 64,
    zero-shot, StatA alpha1/4, full query-out and matched other-out refits. The

@@ -1,0 +1,269 @@
+{
+  "status": "PRESERVATION_PASS_OPERATION_BLOCKED_BEFORE_PROBE",
+  "reason": "Non-frozen before_probe.py line24 asserts no residual .partial. It failed after completed acquisition and exact asset checks. Frozen scientific CLI probe was never invoked. Do not classify this as model success or model failure.",
+  "exception_sha256": "f9886e0613eeda6abf8d77ae3e8d6c2eaa26e7df4dfa146f51786817ce4acb29",
+  "originals_preserved": {
+    "tracked_files": 3046,
+    "frozen_inputs": 25,
+    "original_marker_and_preflight_files": 45
+  },
+  "phases": {
+    "preflight": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.3805424449965358,
+      "peak_rss_kib": 14108,
+      "user_cpu_seconds": 0.269532,
+      "system_cpu_seconds": 0.11076799999999999
+    },
+    "software-tests": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.2057171720007318,
+      "peak_rss_kib": 23740,
+      "user_cpu_seconds": 0.160515,
+      "system_cpu_seconds": 0.039084
+    },
+    "wheels": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 2.0863350340005127,
+      "peak_rss_kib": 20224,
+      "user_cpu_seconds": 0.137183,
+      "system_cpu_seconds": 0.067517
+    },
+    "offline-install": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.3361872659952496,
+      "peak_rss_kib": 42064,
+      "user_cpu_seconds": 0.27982199999999996,
+      "system_cpu_seconds": 0.047507
+    },
+    "imports": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 2.7231012409974937,
+      "peak_rss_kib": 307284,
+      "user_cpu_seconds": 2.7723430000000002,
+      "system_cpu_seconds": 0.257436
+    },
+    "assets": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 37.30467061599484,
+      "peak_rss_kib": 22648,
+      "user_cpu_seconds": 2.905754,
+      "system_cpu_seconds": 1.03438
+    },
+    "before-probe": {
+      "actual_exit": 1,
+      "raw_wait_status": 256,
+      "wall_seconds": 0.7156721559949801,
+      "peak_rss_kib": 13348,
+      "user_cpu_seconds": 0.646026,
+      "system_cpu_seconds": 0.06978899999999999
+    }
+  },
+  "probe": {
+    "invoked": false,
+    "image_forward_attempts": 0,
+    "text_forward_attempts": 0,
+    "output_exists": false,
+    "marker_exists": false
+  },
+  "partial_inspection_sha256": "d3da8a2a3f4417e51e49957e27b60f168b4a449ece782d90ce46ea6321f34db2",
+  "assets_layout_sha256": "66eff7c2f4195e1b3e2d4395ad7ea6e050a7a7f8c53188487965a37a7033d688",
+  "imports_sha256": "f6ed21a2ff4b603cc8e115aacb51ad7a2a884e60d1d32edff4ab1f5b8fa6040b",
+  "inventory": {
+    "clip-0010-wheels": [
+      {
+        "path": "events.jsonl",
+        "bytes": 4202,
+        "symlink": false
+      },
+      {
+        "path": "ftfy-6.3.1-py3-none-any.whl",
+        "bytes": 44821,
+        "symlink": false
+      },
+      {
+        "path": "ledger.json",
+        "bytes": 2842,
+        "symlink": false
+      },
+      {
+        "path": "operation.started.json",
+        "bytes": 122,
+        "symlink": false
+      },
+      {
+        "path": "regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "bytes": 807783,
+        "symlink": false
+      },
+      {
+        "path": "tqdm-4.70.1-py3-none-any.whl",
+        "bytes": 80199,
+        "symlink": false
+      },
+      {
+        "path": "wcwidth-0.9.2-py3-none-any.whl",
+        "bytes": 301667,
+        "symlink": false
+      }
+    ],
+    "clip-0010-downloads": [
+      {
+        "path": ".EuroSAT.zip.91Kpzc",
+        "bytes": 24117248,
+        "symlink": false
+      },
+      {
+        "path": ".ViT-B-32.pt.partial.hvJJcZ",
+        "bytes": 197132288,
+        "symlink": false
+      },
+      {
+        "path": ".ViT-B-32.pt.partial.hvJJcZ.dBQxjR",
+        "bytes": 185073664,
+        "symlink": false
+      },
+      {
+        "path": "EuroSAT.zip",
+        "bytes": 94280567,
+        "symlink": false
+      },
+      {
+        "path": "ViT-B-32.pt",
+        "bytes": 353976522,
+        "symlink": false
+      },
+      {
+        "path": "ViT-B-32.pt.partial",
+        "bytes": 343605248,
+        "symlink": false
+      },
+      {
+        "path": "bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "symlink": false
+      },
+      {
+        "path": "events.jsonl",
+        "bytes": 632811,
+        "symlink": false
+      },
+      {
+        "path": "ledger.json",
+        "bytes": 3261,
+        "symlink": false
+      },
+      {
+        "path": "operation.started.json",
+        "bytes": 122,
+        "symlink": false
+      },
+      {
+        "path": "stata-eurosat.py",
+        "bytes": 1686,
+        "symlink": false
+      }
+    ],
+    "clip-0010-assets": [
+      {
+        "path": "0010-layout-started.json",
+        "bytes": 41,
+        "symlink": false
+      },
+      {
+        "path": "data/EuroSAT.zip",
+        "bytes": 94280567,
+        "symlink": false
+      },
+      {
+        "path": "layout-receipt.json",
+        "bytes": 3911,
+        "symlink": false
+      },
+      {
+        "path": "metadata/eurosat-spatial-test.txt",
+        "bytes": 105934,
+        "symlink": false
+      },
+      {
+        "path": "metadata/eurosat-spatial-train.txt",
+        "bytes": 316710,
+        "symlink": false
+      },
+      {
+        "path": "metadata/eurosat-spatial-val.txt",
+        "bytes": 99786,
+        "symlink": false
+      },
+      {
+        "path": "metadata/stata-eurosat.py",
+        "bytes": 1686,
+        "symlink": false
+      },
+      {
+        "path": "source/LICENSE",
+        "bytes": 1064,
+        "symlink": false
+      },
+      {
+        "path": "source/clip/__init__.py",
+        "bytes": 20,
+        "symlink": false
+      },
+      {
+        "path": "source/clip/bpe_simple_vocab_16e6.txt.gz",
+        "bytes": 1356917,
+        "symlink": false
+      },
+      {
+        "path": "source/clip/clip.py",
+        "bytes": 9644,
+        "symlink": false
+      },
+      {
+        "path": "source/clip/model.py",
+        "bytes": 17374,
+        "symlink": false
+      },
+      {
+        "path": "source/clip/simple_tokenizer.py",
+        "bytes": 4632,
+        "symlink": false
+      },
+      {
+        "path": "weights/ViT-B-32.pt",
+        "bytes": 353976522,
+        "symlink": false
+      }
+    ]
+  },
+  "budget": {
+    "new_wheel_response_body_bytes": 1234470,
+    "new_asset_response_body_bytes": 449616806,
+    "new_total_response_body_bytes": 450851276,
+    "prior_direct_charges": 5235758,
+    "total_direct_charges": 456087034,
+    "direct_cap": 536870912,
+    "wheel_cap": 4194304,
+    "asset_cap": 527440850,
+    "new_checkpoint_and_dataset_payload_bytes": 448257089,
+    "old_scientific_asset_ceiling": 7532690072,
+    "old_known_directory_increment": 163286,
+    "historical_all_HTTP_total": "UNKNOWN; browser/old redirect gap not repaired."
+  },
+  "memory_after_failure": {
+    "memory.max": "8589934592\n",
+    "memory.current": "8247603200\n",
+    "memory.stat": "anon 91471872\nfile 7912529920\nkernel 242425856\nkernel_stack 688128\npagetables 3334144\nsec_pagetables 0\npercpu 2640\nsock 0\nvmalloc 0\nshmem 0\nfile_mapped 176128\nfile_dirty 47050752\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 4963958784\nshmem_thp 0\ninactive_anon 91254784\nactive_anon 73728\ninactive_file 1118797824\nactive_file 6793715712\nunevictable 0\nslab_reclaimable 237360040\nslab_unreclaimable 995080\nslab 238355120\nworkingset_refault_anon 0\nworkingset_refault_file 9153996\nworkingset_activate_anon 0\nworkingset_activate_file 8359189\nworkingset_restore_anon 0\nworkingset_restore_file 7337079\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 10042651\npgsteal 10027392\npswpin 0\npswpout 0\npgscan_kswapd 1624\npgscan_direct 10041027\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 1624\npgsteal_direct 10025768\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 47785117\npgmajfault 1455\npgrefill 9116824\npgactivate 2432175\npgdeactivate 9113760\npglazyfree 25\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nthp_fault_alloc 714\nthp_collapse_alloc 4\nthp_swpout 0\nthp_swpout_fallback 0\n",
+    "memory.events": "low 0\nhigh 0\nmax 63068\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "no_retries_no_deletions_no_model_calls": true,
+  "published": false,
+  "source_sha256": "0f4c19401080127afdb1581aaa427d6a6fdfc46fd3895d7c16b4f88b16881886"
+}

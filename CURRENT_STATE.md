@@ -1,6 +1,6 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0010 source/runtime preparation for a bounded real-image capability test; no model or quality result yet. 0009 completed once and failed its frozen continuation gates; stop this exact-tail candidate. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
+Updated: 2026-10-18. Program day 3. Phase: 0010 cached first-probe admission after a failed auxiliary preparation guard; no model or quality result yet. 0009 completed once and failed its frozen continuation gates; stop this exact-tail candidate. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
 
 ## 0010: real-data route qualified, capability unmeasured
 
@@ -10,19 +10,30 @@ singleton harms prevent claiming novelty or inevitable benefit. The next step
 is a fixed official CLIP ViT-B/32 CPU capability check, followed only if admitted
 by a separately frozen real-data headroom screen.
 
-[Preparation evidence](results/0010-admission/README.md) records source identity,
-three disjoint filename lists, eight fixed capability names, and actual cloud
-imports. Six imports succeeded; four small text-processing dependencies are
-missing and now hash-pinned for prospective installation. No image/weight/wheel
-has been acquired. The bounded cache search is not a global absence claim.
-The reviewed software uses fixed response budgets, source/config hashes,
-fresh output/operation markers and the existing hard-timeout supervisor.
+[Original admission evidence](results/0010-admission/README.md) records source
+identity, disjoint filename lists, fixed capability names and initial missing
+imports. [Actual preparation](results/0010-preparation/README.md) completed
+four-wheel acquisition, offline installation, nine import/version checks and
+fixed assets on cloud CPU. A non-frozen auxiliary pre-probe check then failed
+on a residual checkpoint partial. No model or forward was attempted. All
+original failures and temporary files remain unchanged.
 
-[The capability protocol](protocols/0010-clip-capability.md) permits eight fixed
-training images and ten fixed prompts once, with four CPU threads, 8 GiB and
-300 seconds including model load. Canonical source freeze and CI still precede
-acquisition/execution. This checks feasibility, not accuracy. The eight images
-are excluded from any subsequent quality cohort. No manuscript is warranted.
+Read-only diagnosis found that partial equals the complete checkpoint prefix
+in a distinct stable inode; complete download/layout assets match their fixed
+hashes. Cause remains UNKNOWN. The original fd inspection silently ignored
+fd-stat exceptions; its apparent zero-error count does not prove a complete
+writer check. The [prospective correction and artificial solver admission](protocols/0010-cached-probe-and-solver-admission.md)
+requires a new explicit cached-file/marker/process check and separate published
+freeze before the still-unattempted original probe. No acquisition, installation
+or scientific retry is allowed. Three additional temporary copies are also
+retained; none is a model input.
+
+[Original freeze and CI publication](docs/0010-capability-freeze-publication-verification.md)
+preceded acquisition. The unchanged original protocol still allows only eight
+fixed images and ten prompts, once, under 300 seconds/four CPUs/8 GiB. It checks
+capability, not quality. A later fixed artificial solver admission will measure
+resources only. The 128-image quality study remains an unfrozen draft and no
+manuscript is warranted.
 
 ## 0009 geometry screen: stop this exact-tail candidate
 
@@ -69,8 +80,8 @@ installations or paid services were used in this screen.
 The next [self-inclusion hypothesis](docs/literature/0010-self-inclusion-candidate.md)
 has known conceptual precedents and is not an improvement claim. Source/data
 [qualification](docs/literature/0010-data-and-baseline-admission.md) pins StatA
-and rejects ambiguous cached embeddings; a small official-CLIP CPU probe is
-prospective only. No new image/weight has been acquired or inferred.
+and rejects ambiguous cached embeddings. The subsequently acquired official
+assets are reported above; no 0010 inference or quality evaluation has occurred.
 
 ## 0008 training: stop this candidate
 

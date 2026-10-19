@@ -1,0 +1,123 @@
+{
+  "scope": "Parent retrieved actual completed cloud command results; tool duration and captured wait4 wall are distinct measurements. No probe call occurred.",
+  "turn": "01a1516a-6d1d-72e6-8355-4d94dd5bdc1e",
+  "items": [
+    {
+      "type": "commandExecution",
+      "id": "exec-6ba9e9b4-a70f-4782-85b9-bed93670f310",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/capture.py preflight 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/preflight.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 312,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"capture_source_sha256\": \"c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6\", \"command_sha256\": \"963f531961b263397d1f95870a4219103be61bf44e6c175d2b2c9c2af52be36a\", \"label\": \"preflight\", \"parent_boundary\": \"Actual wait4 of CLI/timeout child; outer parent itself has no recursive observer.\", \"peak_rss_kib\": 14108, \"raw_wait_status\": 0, \"source_main\": \"e9e7c7609e53e1bc1b3228096f9b36008cb78d6b\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"c903c18d811e64a8580ccabb98323dec7df47090b4e7ecdc3ea2303b1f89f9ea\", \"system_cpu_seconds\": 0.11076799999999999, \"user_cpu_seconds\": 0.269532, \"utc_completed\": \"2026-10-18T23:50:01.245464+00:00\", \"utc_started\": \"2026-10-18T23:50:00.864925+00:00\", \"wall_seconds\": 0.3805424449965358}\n",
+        "truncated": false
+      }
+    },
+    {
+      "type": "commandExecution",
+      "id": "exec-5e2ffae7-5e7f-4f17-aead-9726263b6fcc",
+      "command": "/bin/bash -lc \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/capture.py software-tests 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -W error -m unittest discover -s experiments/0010 -p 'test_*.py' -v\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 144,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"capture_source_sha256\": \"c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6\", \"command_sha256\": \"b1ace5de3534200135d2b7160efda6bddbeee2510cf9b5838cd98c2bb435b2fb\", \"label\": \"software-tests\", \"parent_boundary\": \"Actual wait4 of CLI/timeout child; outer parent itself has no recursive observer.\", \"peak_rss_kib\": 23740, \"raw_wait_status\": 0, \"source_main\": \"e9e7c7609e53e1bc1b3228096f9b36008cb78d6b\", \"stderr_sha256\": \"dde6ba8b5b02901be6ef69534ff6e44c76da097967e1f3b34cd7c52ec0e0c229\", \"stdout_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"system_cpu_seconds\": 0.039084, \"user_cpu_seconds\": 0.160515, \"utc_completed\": \"2026-10-18T23:50:05.216013+00:00\", \"utc_started\": \"2026-10-18T23:50:05.010303+00:00\", \"wall_seconds\": 0.2057171720007318}\n",
+        "truncated": false
+      }
+    },
+    {
+      "type": "commandExecution",
+      "id": "exec-024ccdda-fda5-4419-9360-7db83b3a335d",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/capture.py wheels frozen /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python experiments/0010/cli.py wheels --config experiments/0010/config.json --config-sha256 f4fa4d2645dfbbff5306f2550136f448a4bbc967e0c772b1d99abfef3bfdb8d6 --cache /workspace/scratch/a349d03a0e0a/clip-0010-wheels --supervision /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/wheels --python /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 2058,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"capture_source_sha256\": \"c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6\", \"command_sha256\": \"560d1dc4d31c979c153c29acf651e71ed7ab3bc9252a606e38963a5bcaa4e0ee\", \"label\": \"wheels\", \"parent_boundary\": \"Actual wait4 of CLI/timeout child; outer parent itself has no recursive observer.\", \"peak_rss_kib\": 20224, \"raw_wait_status\": 0, \"source_main\": \"e9e7c7609e53e1bc1b3228096f9b36008cb78d6b\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"system_cpu_seconds\": 0.067517, \"user_cpu_seconds\": 0.137183, \"utc_completed\": \"2026-10-18T23:50:16.603566+00:00\", \"utc_started\": \"2026-10-18T23:50:14.517238+00:00\", \"wall_seconds\": 2.0863350340005127}\n",
+        "truncated": false
+      }
+    },
+    {
+      "type": "commandExecution",
+      "id": "exec-255a9baf-3c41-4e63-b03f-843800ab4d21",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/capture.py offline-install 300 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m pip --isolated install --no-deps --no-index --no-compile --no-cache-dir --disable-pip-version-check --target /workspace/scratch/a349d03a0e0a/clip-0010-overlay /workspace/scratch/a349d03a0e0a/clip-0010-wheels/ftfy-6.3.1-py3-none-any.whl /workspace/scratch/a349d03a0e0a/clip-0010-wheels/regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl /workspace/scratch/a349d03a0e0a/clip-0010-wheels/tqdm-4.70.1-py3-none-any.whl /workspace/scratch/a349d03a0e0a/clip-0010-wheels/wcwidth-0.9.2-py3-none-any.whl'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 264,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"capture_source_sha256\": \"c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6\", \"command_sha256\": \"a96d4372709a283ef8bf2b6b5c7cbd743ee58a1ef5e009d903fcdbb1a829a465\", \"label\": \"offline-install\", \"parent_boundary\": \"Actual wait4 of CLI/timeout child; outer parent itself has no recursive observer.\", \"peak_rss_kib\": 42064, \"raw_wait_status\": 0, \"source_main\": \"e9e7c7609e53e1bc1b3228096f9b36008cb78d6b\", \"stderr_sha256\": \"abd6f7249a473f07f501069dde0fe2436ada294e0816606ef6d35309752ff944\", \"stdout_sha256\": \"0a0d35d5fd397802023ea5e28e1be306dd70f8477b5937ffe0872f6a39d687d4\", \"system_cpu_seconds\": 0.047507, \"user_cpu_seconds\": 0.27982199999999996, \"utc_completed\": \"2026-10-18T23:50:33.552872+00:00\", \"utc_started\": \"2026-10-18T23:50:33.216694+00:00\", \"wall_seconds\": 0.3361872659952496}\n",
+        "truncated": false
+      }
+    },
+    {
+      "type": "commandExecution",
+      "id": "exec-871b5adb-f1c6-4810-9047-f9f33b79211d",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/capture.py imports 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/import_check.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 2640,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"capture_source_sha256\": \"c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6\", \"command_sha256\": \"d1c3353cf9d49e4494e4fc4c7896c7fabeef58267dd2aa02e5e768d453550519\", \"label\": \"imports\", \"parent_boundary\": \"Actual wait4 of CLI/timeout child; outer parent itself has no recursive observer.\", \"peak_rss_kib\": 307284, \"raw_wait_status\": 0, \"source_main\": \"e9e7c7609e53e1bc1b3228096f9b36008cb78d6b\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"d25d167177409f8be6df550a17b132d38f8b0fe2a98023e3485a2eda645c9d5e\", \"system_cpu_seconds\": 0.257436, \"user_cpu_seconds\": 2.7723430000000002, \"utc_completed\": \"2026-10-18T23:50:50.785567+00:00\", \"utc_started\": \"2026-10-18T23:50:48.062475+00:00\", \"wall_seconds\": 2.7231012409974937}\n",
+        "truncated": false
+      }
+    },
+    {
+      "type": "commandExecution",
+      "id": "exec-3cb55c57-9b2d-4e32-ad16-2101b30f4fa1",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/capture.py assets frozen /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python experiments/0010/cli.py assets --config experiments/0010/config.json --config-sha256 f4fa4d2645dfbbff5306f2550136f448a4bbc967e0c772b1d99abfef3bfdb8d6 --cache /workspace/scratch/a349d03a0e0a/clip-0010-downloads --assetdir /workspace/scratch/a349d03a0e0a/clip-0010-assets --supervision /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/assets --python /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 37184,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"capture_source_sha256\": \"c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6\", \"command_sha256\": \"45d3af148718e12e543fe31b4cfdb437673f84cad7bce0196f694f232253ba3d\", \"label\": \"assets\", \"parent_boundary\": \"Actual wait4 of CLI/timeout child; outer parent itself has no recursive observer.\", \"peak_rss_kib\": 22648, \"raw_wait_status\": 0, \"source_main\": \"e9e7c7609e53e1bc1b3228096f9b36008cb78d6b\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"system_cpu_seconds\": 1.03438, \"user_cpu_seconds\": 2.905754, \"utc_completed\": \"2026-10-18T23:51:37.710357+00:00\", \"utc_started\": \"2026-10-18T23:51:00.405698+00:00\", \"wall_seconds\": 37.30467061599484}\n",
+        "truncated": false
+      }
+    },
+    {
+      "type": "commandExecution",
+      "id": "exec-30339c36-235d-47b3-b5b0-c3319f23d491",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/capture.py before-probe 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/before_probe.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "failed",
+      "exitCode": 1,
+      "durationMs": 683,
+      "output": {
+        "text": "{\"actual_exit\": 1, \"capture_source_sha256\": \"c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6\", \"command_sha256\": \"3c27c66079041a2d0353685658c2731c89ecad99ac080e7f150b76f55a350ba4\", \"label\": \"before-probe\", \"parent_boundary\": \"Actual wait4 of CLI/timeout child; outer parent itself has no recursive observer.\", \"peak_rss_kib\": 13348, \"raw_wait_status\": 256, \"source_main\": \"e9e7c7609e53e1bc1b3228096f9b36008cb78d6b\", \"stderr_sha256\": \"f9886e0613eeda6abf8d77ae3e8d6c2eaa26e7df4dfa146f51786817ce4acb29\", \"stdout_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"system_cpu_seconds\": 0.06978899999999999, \"user_cpu_seconds\": 0.646026, \"utc_completed\": \"2026-10-18T23:51:57.675158+00:00\", \"utc_started\": \"2026-10-18T23:51:56.959492+00:00\", \"wall_seconds\": 0.7156721559949801}\n",
+        "truncated": false
+      }
+    },
+    {
+      "type": "commandExecution",
+      "id": "exec-a5cb5197-b342-4a88-958b-5acf2c14800e",
+      "command": "/bin/bash -lc \"python - <<'PY'\nimport hashlib,json\nfrom pathlib import Path\nr=Path('/workspace/scratch/a349d03a0e0a');c=r/'scratch/0010-capability-control';d=r/'clip-0010-downloads'\npartials=[]\nfor p in sorted(d.glob('*.partial')):\n partials.append({'filename':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'mtime_ns':p.stat().st_mtime_ns,'ctime_ns':p.stat().st_ctime_ns,'inode':p.stat().st_ino})\nledger=json.loads((d/'ledger.json').read_text());events=[json.loads(x) for x in (d/'events.jsonl').read_text().splitlines()]\nresult={'scope':'Read-only inspection after before-probe failed; no retry, deletion or model run.','partials':partials,'ledger_status':ledger['status'],'actual_body_bytes':ledger['actual_body_bytes'],'assets':ledger['assets'],'request_count':len(ledger['requests']),'event_kind_counts':{k:sum(e['kind']==k for e in events) for k in sorted({e['kind'] for e in events})},'probe_output_exists':(r/'scratch/0010-capability-output').exists(),'probe_marker_exists':(r/'clip-0010-assets/0010-probe-started.json').exists(),'cause':'UNKNOWN; completed ledger and residual partial files are both retained.'}\nwith (c/'partial-inspection.json').open('x') as f:json.dump(result,f,indent=2);f.write('\\\\n')\nprint(json.dumps({'partials':partials,'ledger_status':ledger['status'],'asset_body_bytes':ledger['actual_body_bytes'],'request_count':len(ledger['requests']),'probe_output_exists':result['probe_output_exists'],'probe_marker_exists':result['probe_marker_exists'],'inspection_sha256':hashlib.sha256((c/'partial-inspection.json').read_bytes()).hexdigest()},sort_keys=True))\nPY\"",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 386,
+      "output": {
+        "text": "{\"asset_body_bytes\": 449616806, \"inspection_sha256\": \"d3da8a2a3f4417e51e49957e27b60f168b4a449ece782d90ce46ea6321f34db2\", \"ledger_status\": \"completed\", \"partials\": [{\"bytes\": 343605248, \"ctime_ns\": 1792367512667122912, \"filename\": \"ViT-B-32.pt.partial\", \"inode\": 1070339, \"mtime_ns\": 1792367495081251388, \"sha256\": \"97127aac2ade9ec552c1828df711e2c40aeb5e50ddc08a44959734cb0d238e01\"}], \"probe_marker_exists\": false, \"probe_output_exists\": false, \"request_count\": 5}\n",
+        "truncated": false
+      }
+    },
+    {
+      "type": "commandExecution",
+      "id": "exec-ccb8e918-374a-4d44-a43f-9d077b452636",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/capture.py postcheck 120 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/postcheck.py'",
+      "cwd": "/workspace/scratch/a349d03a0e0a",
+      "status": "completed",
+      "exitCode": 0,
+      "durationMs": 283,
+      "output": {
+        "text": "{\"actual_exit\": 0, \"capture_source_sha256\": \"c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6\", \"command_sha256\": \"65816768fe2a2d8ad05a6a7c1c439f30c8054e36e0993b47e7b01451c4334e55\", \"label\": \"postcheck\", \"parent_boundary\": \"Actual wait4 of CLI/timeout child; outer parent itself has no recursive observer.\", \"peak_rss_kib\": 13936, \"raw_wait_status\": 0, \"source_main\": \"e9e7c7609e53e1bc1b3228096f9b36008cb78d6b\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout_sha256\": \"a13fbcced903e3ddda119be25f18748db06f639fcf5488878e91458816c6da19\", \"system_cpu_seconds\": 0.10462099999999999, \"user_cpu_seconds\": 0.208029, \"utc_completed\": \"2026-10-18T23:52:53.676214+00:00\", \"utc_started\": \"2026-10-18T23:52:53.365551+00:00\", \"wall_seconds\": 0.31067043999792077}\n",
+        "truncated": false
+      }
+    }
+  ]
+}

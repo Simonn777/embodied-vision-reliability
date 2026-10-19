@@ -1,0 +1,35 @@
+test_each_failure_retains_attempt_and_stops (__main__.Tests) ... ok
+test_exact_three_calls_order_alpha_and_deleted_query (__main__.Tests) ... ok
+test_load_transform_single_and_auditable_without_torch (__main__.Tests) ... FAIL
+test_no_torch_or_stata_runtime_loaded (__main__.Tests) ... ok
+test_parity_failure_cannot_pass (__main__.Tests) ... ok
+test_projection_is_not_measured_quality (__main__.Tests) ... ok
+test_projection_limit_failure_no_rerun (__main__.Tests) ... ok
+test_source_manifest_missing_or_changed_file_rejected (__main__.Tests) ... ERROR
+test_test_thread_transform_only_once (__main__.Tests) ... ok
+test_tiny_array_generator_reproducible_order_and_norm (__main__.Tests) ... ok
+
+======================================================================
+ERROR: test_source_manifest_missing_or_changed_file_rejected (__main__.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/evr-0010-solver-admission/test_admission_fake.py", line 92, in test_source_manifest_missing_or_changed_file_rejected
+    digest=a.sha(m.read_bytes()); a.verify_bundle(digest)
+  File "/private/tmp/evr-0010-solver-admission/run_admission.py", line 33, in verify_bundle
+    if p.is_symlink() or not p.is_file() or p.resolve().relative_to(ROOT).as_posix() != name or sha(p.read_bytes()) != digest:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 929, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: '/private/var/folders/b0/7vlxcpks0fgd081yyhvf6r600000gn/T/tmpy1pwdx6z/source.py' is not in the subpath of '/var/folders/b0/7vlxcpks0fgd081yyhvf6r600000gn/T/tmpy1pwdx6z' OR one path is relative and the other is absolute.
+
+======================================================================
+FAIL: test_load_transform_single_and_auditable_without_torch (__main__.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/evr-0010-solver-admission/test_admission_fake.py", line 77, in test_load_transform_single_and_auditable_without_torch
+    self.assertEqual(m.UPSTREAM_PATH,Path(t)/'upstream/StatA.py')
+AssertionError: PosixPath('/private/var/folders/b0/7vlxcpks0fgd081yyh[41 chars].py') != PosixPath('/var/folders/b0/7vlxcpks0fgd081yyhvf6r6000[33 chars].py')
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.079s
+
+FAILED (failures=1, errors=1)
