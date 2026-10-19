@@ -2,7 +2,7 @@
 
 ## Active priority: 2026-10-19
 
-The [0012b follow-up](results/0012b-mean-variance/README.md) passes its aggregate residual-work gate but has no runtime improvement. Preserve both initial and follow-up results. Implement, independently review and freeze the [native scoring diagnostic](protocols/0012c-native-scoring.md); require actual setup-inclusive speed before calibrated pose integration. Official pose comparisons must retain DDD/CCC/CCA, five-point hypotheses and cheirality semantics. No held-out data access or manuscript before the appropriate evidence gates.
+The [0012c native diagnostic](results/0012c-native/README.md) failed its unchanged1.5x speed gate. Preserve all0012/0012b/0012c sources and results. Do not integrate this implementation into pose estimation. First assess a distinct computational design removing recursive preparation and eager per-model screening, with an explicit cost model and appropriate inexpensive controls. Any admitted follow-up requires a separate prospective protocol, independent synthetic review and freeze before replay. Official pose comparisons must retain DDD/CCC/CCA, five-point hypotheses and cheirality semantics. No held-out data access or manuscript before the appropriate evidence gates.
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
