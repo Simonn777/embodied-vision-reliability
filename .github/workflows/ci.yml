@@ -33,5 +33,11 @@ jobs:
       - run: python -m pytest -q
       - name: Check the bounded CLIP preparation helpers without model or network
         run: PYTHONDONTWRITEBYTECODE=1 python -W error -m unittest discover -s experiments/0010 -p 'test_*.py' -v
+      - name: Check artificial solver orchestration without Torch or fitting
+        working-directory: experiments/0010-solver
+        run: PYTHONDONTWRITEBYTECODE=1 python -W error test_admission_fake.py
+      - name: Check the cached first-probe guard with artificial files and processes
+        working-directory: experiments/0010-guard
+        run: PYTHONDONTWRITEBYTECODE=1 python -W error test_guard.py
       - name: Exercise the full output pipeline on a smoke partition
         run: python scripts/run_experiment.py --smoke --output scratch/ci-smoke --protocol protocols/0001-synthetic-localization.md

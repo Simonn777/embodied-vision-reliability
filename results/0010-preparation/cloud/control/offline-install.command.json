@@ -1,0 +1,35 @@
+{
+  "argv": [
+    "timeout",
+    "--kill-after=5s",
+    "300",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "pip",
+    "--isolated",
+    "install",
+    "--no-deps",
+    "--no-index",
+    "--no-compile",
+    "--no-cache-dir",
+    "--disable-pip-version-check",
+    "--target",
+    "/workspace/scratch/a349d03a0e0a/clip-0010-overlay",
+    "/workspace/scratch/a349d03a0e0a/clip-0010-wheels/ftfy-6.3.1-py3-none-any.whl",
+    "/workspace/scratch/a349d03a0e0a/clip-0010-wheels/regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "/workspace/scratch/a349d03a0e0a/clip-0010-wheels/tqdm-4.70.1-py3-none-any.whl",
+    "/workspace/scratch/a349d03a0e0a/clip-0010-wheels/wcwidth-0.9.2-py3-none-any.whl"
+  ],
+  "cwd": "/workspace/scratch/a349d03a0e0a/research-0010-capability",
+  "PYTHONPATH": "/workspace/scratch/a349d03a0e0a/clip-0010-overlay:/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay:/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed:/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime:/workspace/scratch/a349d03a0e0a/tapnextpp-recovery/source",
+  "numeric_threads": 4,
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "AS_bytes": 8589934592,
+  "deadline": 300,
+  "normal_runtime_TLS_proxy_settings_inherited_without_values_recorded": true
+}

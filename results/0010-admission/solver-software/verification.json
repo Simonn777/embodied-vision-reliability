@@ -1,0 +1,52 @@
+{
+  "scope": "software-only local fake verification; actual cloud functional and timing NOT RUN",
+  "manifest_sha256": "9d0f764ce380c99d98ee66fc836bf4d429b816b2f50035ab4394f3c01cff5868",
+  "files": {
+    "README.md": "fa14f1f819a9955ca464c0c9f7a5ae1f9d3f74ede76c891622f2b76c6a34e37b",
+    "config.json": "aafa3402e76c005fa1fba47084b5d0b78f1cee7a3780234d9eff08f88ab1f66d",
+    "run_admission.py": "37048f1d1f407b6ada7c5640364f9d301f4371275d5e78cad09b878421e81a38",
+    "stata_cpu.py": "15545b0fbe67655255d64a4343daeb43cac3bc7d649df984d2605a8795aee5be",
+    "supervise_0009.py": "2d306a8813d36c207eb276a187a298864965bffbe79c1dd463d9482f3bf7d77f",
+    "test_admission_fake.py": "92b09402ac7c8b31ef11d89cb5a21e94735e52a622570baea21dae8639ce4b53",
+    "test_stata_cpu.py": "6b4307926ae489aa2f6120ac786ad9685e52b7e6c8244daa39cef3d6b0d38883",
+    "upstream/LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+    "upstream/StatA.py": "9fcd2eb8a22cabc2c7eb43823625cb04557476c637a24c8a12eb3115ede2b962",
+    "upstream/identity.json": "abb4547bffd0b4117d9f5e18aac20ab10b4527036ec975954d2b9c67b152da7b"
+  },
+  "fake_command": "PYTHONDONTWRITEBYTECODE=1 <existing-work-venv-python> -W error test_admission_fake.py",
+  "attempts": [
+    {
+      "label": "attempt-1",
+      "tests": 10,
+      "failures": 1,
+      "errors": 1,
+      "exit_code": 1,
+      "unittest_seconds": 0.079,
+      "cause": "Artificial test assertions did not resolve macOS /var versus /private/var aliases; original production ROOT is resolved. Preserved source/tests/logs."
+    },
+    {
+      "label": "final",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "exit_code": 0,
+      "unittest_seconds": 0.033,
+      "change": "Resolve only temporary fixture paths; also require returned fit parity before heldout call and distinguish known two-execution count after heldout failure."
+    }
+  ],
+  "artifacts": {
+    "attempt-1/run_admission.py": "887ba8db5de85212b32fc7c516051e42c3a2f7281195e74d61ba53cadb94d04a",
+    "attempt-1/stderr.log": "0ccebf631838c2621834c5ecf207ec2e217138a58431cdbb56313bd7b51db11e",
+    "attempt-1/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt-1/test_admission_fake.py": "93cd593fabdda73909c66b26a0287beb5bb70630ac417dbd2d18785682b759f9",
+    "final.stderr.log": "c5632deb4ecd20568b869416e79eb505d9dd93a5fda5d3f390c89eeac6f853c1",
+    "final.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "not_run": [
+    "Torch import",
+    "20 real artificial functional tests",
+    "three real-shaped StatA timing fits",
+    "network",
+    "real features or image/model assets"
+  ]
+}

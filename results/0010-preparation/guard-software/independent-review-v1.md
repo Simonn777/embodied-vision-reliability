@@ -1,0 +1,15 @@
+# Cached first-probe guard: narrow independent review
+
+No blocking defect found in the guard's stated cache/source/process snapshot checks. This is a pre-execution code review, not an actual cloud guard PASS or model-capability result.
+
+Reviewed `guard.py` SHA256 `5f073d059995fc27ed51a7434ee09ceaf1d85ce9e426950e6a72deaf4005921f` and `preservation-pins.json` SHA256 `20a8aabd3f501d2475610ef8d8fd3b51e135acd74eaa2226426a1a2cbc906258`. All 65 preservation pins match the archived original files' byte counts and SHA256 values.
+
+The previous uncounted `fd.stat()` failure is closed: cmdline/list/stat/readlink/fdinfo outcomes separately count successes, ENOENT, permission errors and other errors. Permission/other gaps reject admission; any holder of a protected inode rejects it, even read-only holders. ENOENT is retained as an explicit disappearing-entry snapshot limitation; the code correctly does not certify global absence, hidden writers, memory mappings after descriptor closure, or future writers. Fixed process/fd enumeration caps fail closed.
+
+The original HEAD, source/receipt relationship and 25 frozen inputs are compared with current files, index and source Git objects. The 12 full assets are checked by frozen size/SHA256/Git identity. Separate full checkpoint, partial hash/prefix, separate inode and temporary-file identities are checked without deletion or overwrite; recorded stat identity is checked again at the end. Marker, output and supervision absence are checked before payload reads and again before PASS. Output must be fresh and disjoint from the listed preserved roots. A blocked result retains its reason; the old failed auxiliary stage remains exit 1.
+
+Execution-path responsibility remains external: this guard does not launch the probe or verify the new correction's own published freeze/CI. It also hashes the saved imports evidence but does not rehash the 133 actual overlay files or nine runtime module-entry files listed by that evidence. The launch recipe must use the recorded interpreter and exact PYTHONPATH; if unchanged dependency bytes are claimed, verify the existing saved manifest before import. These are existing-identity checks, not new imports, installation or model calls. No guarantee of future file immutability follows from a completed snapshot.
+
+Independent command: `python3 -m unittest -v test_guard` from `/tmp/evr-0010-cached-guard`, actual exit 0: **8 tests passed, 0 skipped, 0.028 s**. Tests use artificial files and fake /proc only; the full guard fixture mocks the real Git gate. Thus this test run does not validate the actual cloud Git tree, runtime or assets.
+
+Logs: `/tmp/evr-0010-cached-guard-review.stdout.log` (0 bytes, SHA256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`) and `/tmp/evr-0010-cached-guard-review.stderr.log` (678 bytes, SHA256 `5b511c5acd8f8c095c5b23770c6049590953918282921d2fd59eb5400bd65621`). No network, model/solver execution, original-cache mutation or repository edit occurred in this AI-assisted review.

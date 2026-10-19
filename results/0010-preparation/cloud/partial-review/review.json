@@ -1,0 +1,256 @@
+{
+  "scope": "Cached file bytes and saved provenance only; no probe/download/install/model, repair, deletion or retry.",
+  "status": "diagnosis_completed",
+  "files": {
+    "final": {
+      "path": "clip-0010-downloads/ViT-B-32.pt",
+      "before_stat": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "after_read_stat": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "final_stat": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+    },
+    "asset": {
+      "path": "clip-0010-assets/weights/ViT-B-32.pt",
+      "before_stat": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "after_read_stat": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "final_stat": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+    },
+    "partial": {
+      "path": "clip-0010-downloads/ViT-B-32.pt.partial",
+      "before_stat": {
+        "dev": 27,
+        "inode": 1070339,
+        "nlink": 1,
+        "size": 343605248,
+        "mtime_ns": 1792367495081251388,
+        "ctime_ns": 1792367512667122912
+      },
+      "after_read_stat": {
+        "dev": 27,
+        "inode": 1070339,
+        "nlink": 1,
+        "size": 343605248,
+        "mtime_ns": 1792367495081251388,
+        "ctime_ns": 1792367512667122912
+      },
+      "final_stat": {
+        "dev": 27,
+        "inode": 1070339,
+        "nlink": 1,
+        "size": 343605248,
+        "mtime_ns": 1792367495081251388,
+        "ctime_ns": 1792367512667122912
+      },
+      "sha256": "97127aac2ade9ec552c1828df711e2c40aeb5e50ddc08a44959734cb0d238e01"
+    }
+  },
+  "partial_prefix_comparison": {
+    "bytes_compared": 343605248,
+    "partial_equals_final_prefix": true,
+    "first_mismatch_byte_offset": null,
+    "algorithm": "Sequential 1MiB block exact-byte comparison; byte-level first mismatch within first differing block."
+  },
+  "process_review": {
+    "cmdline_separator": "bytes([0])",
+    "related_scripts": [
+      {
+        "pid": 23624,
+        "script_basenames": [
+          "outer.py"
+        ]
+      },
+      {
+        "pid": 23627,
+        "script_basenames": [
+          "diagnose.py"
+        ]
+      },
+      {
+        "pid": 23628,
+        "script_basenames": [
+          "diagnose.py"
+        ]
+      }
+    ],
+    "matching_file_descriptors": [],
+    "fd_entries_checked": 116,
+    "unreadable_or_raced_proc_entries": 0,
+    "boundary": "Read-only Linux /proc snapshot; inability to inspect hidden/platform processes or prior exited writers remains."
+  },
+  "downloader_source": {
+    "path": "experiments/0010/acquire.py",
+    "sha256": "412c6cddba8fcd32241026611edb627c76690bf8dcc93195d6360a4ef24b2d75",
+    "statements": [
+      {
+        "line": 222,
+        "statement": "os.link(partial, target)  # atomic, never overwrites a racing destination"
+      },
+      {
+        "line": 223,
+        "statement": "partial.unlink()"
+      },
+      {
+        "line": 225,
+        "statement": "reqrec['status'] = 'complete'; event('asset_published', id=a['id']); break"
+      }
+    ]
+  },
+  "saved_acquisition": {
+    "ledger_sha256": "405e2eff80bb494a3c042ceacd11ac5697c029efe4382373db6fee4e625c5e53",
+    "events_sha256": "a5e470ca360328ef360c17f10abb8d919f72dd8829842de9a5074a12576b8a0d",
+    "status": "completed",
+    "checkpoint_record": {
+      "id": "ViT-B-32-pt",
+      "new_body_bytes": 353976522,
+      "partial_bytes": 353976522,
+      "partial_exists": false,
+      "partial_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "status": "downloaded_verified"
+    },
+    "checkpoint_asset_published_events": [
+      {
+        "id": "ViT-B-32-pt",
+        "kind": "asset_published"
+      }
+    ],
+    "interpretation": "Source sequences link, unlink, then publication event. Saved completed ledger/event is consistent with that code path having reported completion; observed residual partial does not establish unlink persistence, creator, filesystem behavior or a root cause. No syscall/unlink audit log was recorded."
+  },
+  "cause": "UNKNOWN",
+  "probe_output_exists": false,
+  "probe_marker_exists": false,
+  "frozen_input_count": 25,
+  "frozen_sha256": {
+    ".github/workflows/ci.yml": "1b6dd07dcc6dcaf82d314a96a138e464e7841f974cc882fdcf3c05a87d7ce98f",
+    "experiments/0010/README.md": "1d287f6ec2ec38017459a620e94454cf504521e50ab968cc925ebc7c26c3d734",
+    "experiments/0010/acquire.py": "412c6cddba8fcd32241026611edb627c76690bf8dcc93195d6360a4ef24b2d75",
+    "experiments/0010/budget.json": "7ad38f52a1cb103b2266a8a206836f009831b2661ebb3b591f7a6924b5c6c60a",
+    "experiments/0010/bundle-manifest.json": "0eb88d5bbb443c2aa3080c3debd9866637a15214b16a3268eb39e2a4bcd5575a",
+    "experiments/0010/bundle/metadata/eurosat-spatial-test.txt": "de22dec83d350cac3b3e4ca8e285cb6733c81ab94bf5bcf9213a567993402452",
+    "experiments/0010/bundle/metadata/eurosat-spatial-train.txt": "2db7d455afb8dcbca898ea19a00f1f90c091734efdbba89e22aaf24056da243f",
+    "experiments/0010/bundle/metadata/eurosat-spatial-val.txt": "6c758477604b7057a0fd990d7f6327b63b99a6725aac11a6a9d0174a7fdd8f0b",
+    "experiments/0010/bundle/source/LICENSE": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+    "experiments/0010/bundle/source/clip/__init__.py": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+    "experiments/0010/bundle/source/clip/clip.py": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+    "experiments/0010/bundle/source/clip/model.py": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+    "experiments/0010/bundle/source/clip/simple_tokenizer.py": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+    "experiments/0010/cli.py": "08f8f918a045dd22855c69049ba1695c98f8df06725ae87fc30d542439c7143e",
+    "experiments/0010/config.json": "f4fa4d2645dfbbff5306f2550136f448a4bbc967e0c772b1d99abfef3bfdb8d6",
+    "experiments/0010/dependencies.json": "5557cef2a9b663c7249589031eff410750329270de75b9403cfa3a7a0b1ad578",
+    "experiments/0010/downloads.json": "8977bcb4af7ae30fd4ef61585395d067ad1e0dc42ac44710ff10f0096b1f3bc6",
+    "experiments/0010/layout.json": "c0510b9634817858fed2ec3a4e7d83c1ce690b58e6d41aaa39c57a2ca9d9b79e",
+    "experiments/0010/run_capability.py": "532ef917a87e976dfd1bc0fd1858c16ea8a4b5bebaa9569add017e394f6a7ba6",
+    "experiments/0010/selection.json": "75e31cc9742f6def800019dfd66009abb5294a9eafa7b8ef2d5130501617375c",
+    "experiments/0010/test_acquire.py": "16e109122e8e213fb3c6664a4876a2758041d29fd25813e902250abf4b809515",
+    "experiments/0010/test_capability.py": "74842a494f9f582a849e98a14cacd004a5231a31beb6c8d1c216ab5a520e30f3",
+    "experiments/0010/test_cli.py": "c903a367a4429188f03e09f03bd662aaf7e29c18cd67bb4b9998f741c6f34fc5",
+    "protocols/0010-clip-capability.md": "feb848c2320d2e2d4e080044daac23034070cc7014abf88feb622698612494e8",
+    "scripts/supervise_0009.py": "2d306a8813d36c207eb276a187a298864965bffbe79c1dd463d9482f3bf7d77f"
+  },
+  "asset_identities": {
+    "source/clip/__init__.py": {
+      "bytes": 20,
+      "sha256": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+      "git_blob_sha1": "dcc5619538c0f7c782508bdbd9587259d805e0d9"
+    },
+    "source/clip/clip.py": {
+      "bytes": 9644,
+      "sha256": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+      "git_blob_sha1": "398a6282cc243e449430d91c2562491fc799929d"
+    },
+    "source/clip/model.py": {
+      "bytes": 17374,
+      "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+      "git_blob_sha1": "232b7792eb97440642547bd462cf128df9243933"
+    },
+    "source/clip/simple_tokenizer.py": {
+      "bytes": 4632,
+      "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+      "git_blob_sha1": "0a66286b7d5019c6e221932a813768038f839c91"
+    },
+    "source/LICENSE": {
+      "bytes": 1064,
+      "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+      "git_blob_sha1": "4e97f0b45803b7c04ae89548934af4f257a97501"
+    },
+    "source/clip/bpe_simple_vocab_16e6.txt.gz": {
+      "bytes": 1356917,
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+      "git_blob_sha1": "7b5088a527f720063f044eb928eee315f63b2fc0"
+    },
+    "weights/ViT-B-32.pt": {
+      "bytes": 353976522,
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "git_blob_sha1": "c5b3153d60b71f362e199ac00bf2ade52961f658"
+    },
+    "data/EuroSAT.zip": {
+      "bytes": 94280567,
+      "sha256": "8ebea626349354c5328b142b96d0430e647051f26efc2dc974c843f25ecf70bd",
+      "git_blob_sha1": "deb94b03c91d9beaa1c76987055ec56dc66c9af6"
+    },
+    "metadata/eurosat-spatial-train.txt": {
+      "bytes": 316710,
+      "sha256": "2db7d455afb8dcbca898ea19a00f1f90c091734efdbba89e22aaf24056da243f",
+      "git_blob_sha1": "4c08f4eeac54040a0fcd3788296f6e0dae782641"
+    },
+    "metadata/eurosat-spatial-val.txt": {
+      "bytes": 99786,
+      "sha256": "6c758477604b7057a0fd990d7f6327b63b99a6725aac11a6a9d0174a7fdd8f0b",
+      "git_blob_sha1": "c3179b28d8fc0e2b5fea3fc7191f7eefb367f6ca"
+    },
+    "metadata/eurosat-spatial-test.txt": {
+      "bytes": 105934,
+      "sha256": "de22dec83d350cac3b3e4ca8e285cb6733c81ab94bf5bcf9213a567993402452",
+      "git_blob_sha1": "6fc8dfdf0c8ee837993d8b395c5cbc9896ac1ed7"
+    },
+    "metadata/stata-eurosat.py": {
+      "bytes": 1686,
+      "sha256": "b6b8d878d54cefdae77e9185767a3f5ea9a0235cdc4cdd47b5507a78ab04ee23",
+      "git_blob_sha1": "e4165bc45b875c573c6234c75b280c1c550ecbb7"
+    }
+  },
+  "source_sha256": "37ec6b2919d9eea47e3705c25470f47401c2b617ab9c4b1889bead863e9c459b"
+}
