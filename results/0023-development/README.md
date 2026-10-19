@@ -1,5 +1,19 @@
 # 0023 prospective development study
 
+## Active continuation: 0023 exact-cache verification repair, 2026-10-19
+
+The frozen acquisition and full real-image frontend completed:51 images,120
+match caches, no technical frontend failure. Prediction01 stopped before any
+pose fit because the adapter recomputed a resized principal point with a
+different floating-point operation order (one ULP); no GT was read.
+[Original receipts and failure](runtime-attempt-01/README.md)
+remain preserved. A narrow [technical amendment](../../docs/0023-cache-verification-repair.md)
+keeps exact equality and unchanged data/settings, and explicitly binds reuse of
+the original successful cache under its original input freeze. Independent
+review, artificial checks and new exact CI precede fresh prediction02.
+No accuracy result, method gain or manuscript is established.
+
+
 ## Active continuation: 0023 prospective directional-instability study, 2026-10-19
 
 The [protocol](../../protocols/0023-mapfree-directional-instability.md) fixes a small

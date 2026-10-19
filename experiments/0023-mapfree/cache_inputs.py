@@ -210,8 +210,11 @@ def image_input(row, arrays):
             and np.array_equal(old[2], [0., 0., 1.]), "cached authored calibration")
     scale = min(1., 512/max(ow, oh))
     require((w, h) == (max(1, math.floor(ow*scale+.5)), max(1, math.floor(oh*scale+.5))), "fixed resize dimensions")
-    expected = old.copy(); expected[0, 0] *= w/ow; expected[1, 1] *= h/oh
-    expected[0, 2] = (old[0, 2]+.5)*w/ow-.5; expected[1, 2] = (old[1, 2]+.5)*h/oh-.5
+    # Match the frozen producer's floating operation order exactly. Multiplying
+    # by an integer dimension and then dividing can differ by one ULP.
+    sx, sy = w/ow, h/oh
+    expected = old.copy(); expected[0, 0] *= sx; expected[1, 1] *= sy
+    expected[0, 2] = (old[0, 2]+.5)*sx-.5; expected[1, 2] = (old[1, 2]+.5)*sy-.5
     require(np.array_equal(k, expected) and row["input"]["authored_K_original"] == old.tolist()
             and row["input"]["authored_K_resized"] == k.tolist()
             and row["input"]["resized_shape_hwc"] == [h, w, 3]

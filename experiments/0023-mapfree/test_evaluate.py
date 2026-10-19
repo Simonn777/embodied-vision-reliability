@@ -114,8 +114,10 @@ class EvaluationTests(unittest.TestCase):
         self.frontend_record=dict(frontend_bindings={"artificial_model_admission":True},
                                   source_sha256={"artificial_frontend":"0"*64},frontend_freeze="b"*40,wall_seconds=.25)
         self.frontend_bindings={}
+        self.input_freeze=self.args.expected_commit
         def admit(args):
             self.assertEqual(args.expected_commit,self.args.expected_commit)
+            self.assertEqual(args.input_freeze,self.input_freeze)
             return SimpleNamespace(q=object()),None,self.frontend_record,self.frontend_bindings,{}
         self.admit_frontend=Mock(side_effect=admit)
         self.admit_native=Mock(return_value=self.native_identity)
@@ -145,6 +147,7 @@ class EvaluationTests(unittest.TestCase):
         self.frontend_bindings.update(frontend_receipt_sha256=ev.sha(frontend/"receipt.json"),frontend_supervision_sha256=ev.sha(fs),
                                       frontend_supervision_log_sha256={"stdout":"0"*64,"stderr":"0"*64})
         receipt=dict(schema="evr0023.prediction.v1",status="completed",eligible=True,expected_commit=self.args.expected_commit,
+                     input_freeze=self.input_freeze,
                      plan_sha256=self.args.plan_sha256,query_count=24,method_names=list(ev.METHODS),ground_truth_access=False,
                      offline_attempts=[],source_sha256=sources,outputs=outputs,wall_seconds=.5,
                      **self.frontend_bindings,installation_binding=self.frontend_record["frontend_bindings"],
@@ -244,6 +247,31 @@ class EvaluationTests(unittest.TestCase):
             admitted=ev.verify_prediction_seal(self.args)
         self.assertTrue(admitted["barrier_complete"]);self.assertEqual(len(admitted["prepared"]),24)
         self.admit_frontend.assert_called_once();self.admit_native.assert_called_once()
+
+    def test_explicit_old_input_freeze_is_reconstructed_from_sealed_command(self):
+        self.input_freeze='c'*40;self.seal_fixture()
+        outer=ev.read_json(self.args.prediction_supervision)
+        outer['command'].extend(['--input-freeze',self.input_freeze]);write(self.args.prediction_supervision,outer)
+        with patch.object(ev.supervisor,'verify_frozen',side_effect=self.frozen), patch.object(ev.ranges,'load_index',return_value=self.index), \
+             patch.object(ev.ranges,'RangeReader',side_effect=AssertionError('GT forbidden at barrier')):
+            admitted=ev.verify_prediction_seal(self.args)
+        self.assertEqual(admitted['bindings']['input_freeze'],'c'*40)
+        self.assertEqual(self.admit_frontend.call_args.args[0].expected_commit,'a'*40)
+        self.assertEqual(self.admit_frontend.call_args.args[0].input_freeze,'c'*40)
+
+    def test_missing_or_mismatched_input_freeze_blocks_before_gt(self):
+        self.input_freeze='c'*40;self.seal_fixture()
+        outer=ev.read_json(self.args.prediction_supervision)
+        with patch.object(ev.supervisor,'verify_frozen',side_effect=self.frozen), patch.object(ev.ranges,'load_index',return_value=self.index), \
+             patch.object(ev,'acquire_ground_truth') as acquire:
+            for i,value in enumerate((None,'d'*40,'main','')):
+                altered=copy.deepcopy(outer)
+                if value is not None:altered['command'].extend(['--input-freeze',value])
+                write(self.args.prediction_supervision,altered)
+                self.args.output_dir=self.root/('input-freeze-failure-'+str(i))
+                with self.assertRaisesRegex(ValueError,'input freeze binding'):ev.run(self.args)
+                self.assertFalse(ev.read_json(self.args.output_dir/'receipt.json')['gt_access_started'])
+            self.admit_frontend.assert_not_called();acquire.assert_not_called()
 
     def test_tampered_seal_blocks_before_any_gt_and_preserves_failed_receipt(self):
         self.seal_fixture()

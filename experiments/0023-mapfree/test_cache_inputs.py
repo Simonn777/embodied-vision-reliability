@@ -114,6 +114,37 @@ class CacheTests(unittest.TestCase):
     def load(self):
         x=self.fixture;return c.load_inputs(x.plan_path,x.cache,x.bindings)
 
+    def manufactured_resize(self):
+        row=copy.deepcopy(self.fixture.receipt["images"][0])
+        arrays=copy.deepcopy(self.fixture.image_arrays[row["filename"]])
+        ow,oh,w,h=1001,701,512,359
+        old=np.array([[731.125,0.,499.123],[0.,729.875,349.2345],[0.,0.,1.]],np.float64)
+        sx,sy=w/ow,h/oh
+        resized=old.copy();resized[0,0]*=sx;resized[1,1]*=sy
+        resized[0,2]=(old[0,2]+.5)*sx-.5;resized[1,2]=(old[1,2]+.5)*sy-.5
+        arrays.update(K_original=old,K_resized=resized,image_size_original=np.array([ow,oh],np.int64),
+                      image_size_resized=np.array([w,h],np.int64))
+        row["input"].update(authored_K_original=old.tolist(),authored_K_resized=resized.tolist(),
+                            original_shape_hwc=[oh,ow,3],resized_shape_hwc=[h,w,3])
+        return row,arrays
+
+    def test_nontrivial_resize_matches_exact_frozen_producer_operation_order(self):
+        row,arrays=self.manufactured_resize()
+        old=arrays["K_original"];w,h=map(int,arrays["image_size_resized"]);ow,oh=map(int,arrays["image_size_original"])
+        old_adapter=arrays["K_resized"].copy()
+        old_adapter[0,2]=(old[0,2]+.5)*w/ow-.5;old_adapter[1,2]=(old[1,2]+.5)*h/oh-.5
+        self.assertFalse(np.array_equal(old_adapter,arrays["K_resized"]))
+        result=c.image_input(row,arrays)
+        np.testing.assert_array_equal(result["K"],arrays["K_resized"])
+        self.assertEqual((result["width"],result["height"]),(512,359))
+
+    def test_one_ulp_calibration_tamper_is_still_rejected_even_if_metadata_matches(self):
+        row,arrays=self.manufactured_resize()
+        arrays["K_resized"][1,2]=np.nextafter(arrays["K_resized"][1,2],np.inf)
+        row["input"]["authored_K_resized"]=arrays["K_resized"].tolist()
+        with self.assertRaisesRegex(ValueError,"calibration/coordinate metadata mismatch"):
+            c.image_input(row,arrays)
+
     def test_complete51_120_mapping_empty_outcome_and_zero_depth_retained(self):
         result=self.load();self.assertEqual(len(result["scenes"]),3)
         for scene in result["scenes"]:

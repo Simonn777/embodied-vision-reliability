@@ -380,10 +380,15 @@ def verify_prediction_seal(args):
     require(isinstance(command, list) and command[:2] == ["$PYTHON", "$REPOSITORY/experiments/0023-mapfree/predict.py"]
             and len(command) >= 4 and len(command[2:])%2 == 0, "prediction command")
     flags = dict(zip(command[2::2], command[3::2]))
-    require(len(flags)*2 == len(command[2:]) and set(flags) == {"--protocol", "--plan", "--frontend-cache",
-            "--frontend-supervision", "--native-runtime", "--output-dir", "--expected-commit", "--plan-sha256"}
+    required_flags = {"--protocol", "--plan", "--frontend-cache", "--frontend-supervision",
+                      "--native-runtime", "--output-dir", "--expected-commit", "--plan-sha256"}
+    require(len(flags)*2 == len(command[2:]) and required_flags <= set(flags)
+            and set(flags) <= required_flags | {"--input-freeze"}
             and flags["--expected-commit"] == args.expected_commit and flags["--plan-sha256"] == args.plan_sha256,
             "prediction command flags")
+    input_commit = flags.get("--input-freeze", args.expected_commit)
+    require(isinstance(input_commit, str) and re.fullmatch(r"[0-9a-f]{40}", input_commit)
+            and receipt.get("input_freeze") == input_commit, "prediction input freeze binding")
     for flag, path in (("--protocol", args.protocol), ("--plan", args.plan), ("--output-dir", root)):
         require(expand(flags[flag]) == path.resolve(), "prediction command path binding")
     require(sha(expand(flags["--frontend-cache"]) / "receipt.json") == receipt.get("frontend_receipt_sha256")
@@ -393,7 +398,8 @@ def verify_prediction_seal(args):
     # the frozen predictor's complete admission proof before any GT request.
     # These functions hash opaque files and metadata; they load no arrays,
     # images, models, or native library and do not install the offline guard.
-    predictor_args = argparse.Namespace(expected_commit=args.expected_commit, plan_sha256=args.plan_sha256,
+    predictor_args = argparse.Namespace(expected_commit=args.expected_commit, input_freeze=input_commit,
+        plan_sha256=args.plan_sha256,
         **{name:expand(flags["--"+name.replace("_","-")]) for name in
            ("protocol","plan","frontend_cache","frontend_supervision","native_runtime","output_dir")})
     front, _, frontend_record, frontend_bindings, frontend_sources = predictor.frontend_admission(predictor_args)
@@ -410,7 +416,8 @@ def verify_prediction_seal(args):
             "prediction stdout/receipt summary mismatch")
     return dict(barrier_complete=True, plan=plan, index=index, prepared=prepared,
                 source_sha256={**prediction_sources, **frozen, **frontend_sources},
-                bindings=dict(plan_sha256=args.plan_sha256, prediction_receipt_sha256=sha(root / "receipt.json"),
+                bindings=dict(plan_sha256=args.plan_sha256, input_freeze=input_commit,
+                              prediction_receipt_sha256=sha(root / "receipt.json"),
                               prediction_seal_sha256=sha(root / "seal.json"), prediction_outputs=receipt["outputs"],
                               prediction_supervision_sha256=sha(args.prediction_supervision),
                               prediction_supervision_log_sha256=logs,

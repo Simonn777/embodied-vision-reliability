@@ -116,3 +116,25 @@ Reviewed source SHA256s (subsequent source changes require focused re-review):
 | frontend.py | 5076452d2e69645745eb68675a40bb47473ec4a4a28db87cf6f9652229614bf7 |
 | acquire_operation.py | fab653e3ed1c0e32cb0a97eac40ef0dbc7ff3df3894da57bf9d4dfac2ba38281 |
 | protocols/0023-mapfree-directional-instability.md | c4f5c0cf02e31b990f7aa54bb740cde4dfbaa43c46bca1f260ffbc6bc320673e |
+
+## Technical amendment review, before prediction02
+
+Prediction01 stopped before fitting or GT because the adapter principal-point
+recomputation differed from the frozen producer by one ULP. The exact-operation-
+order repair retains strict equality; the original successful frontend bytes and
+all earlier receipts remain unchanged. The predictor now records an explicit
+input-production freeze, and evaluation reconstructs it from the sealed command
+while verifying the original complete input chain independently of new predictor
+sources. This amendment document is itself source-bound by prediction.
+
+The independent evidence reviewer checked the adapter fix and its one-ULP
+rejection case; a separate source reviewer checked predictor/evaluator binding.
+No barrier regression was found. Nine public raw receipts and six path-only
+redacted logs independently match their originals and publication hashes.
+
+Root artificial-checks03 passed all132 cases in4.554402875s, exit0, with30
+source/config/document hashes unchanged. Checks02 is preserved: its runner
+omitted the existing SciPy runtime path, producing26 import errors. Correcting
+the test command required no source change; scientific execution already adds
+that exact qualified runtime. No real fitting or GT evaluation ran in these
+checks. New exact-commit CI remains required before prediction02.

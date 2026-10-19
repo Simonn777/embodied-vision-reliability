@@ -46,10 +46,11 @@ class PredictionTests(unittest.TestCase):
                       binary_name='fake.so',binary_sha256=sha(package/'fake.so'),binary_bytes=(package/'fake.so').stat().st_size)
         dump(self.root/'configs/0017-libraries.json', {'current':native})
         self.golden = {str(x.relative_to(self.root)):sha(x) for x in p.source_paths(self.args.protocol)}
+        self.frozen_commits = {self.args.expected_commit:dict(self.golden)}
         def verify_frozen(commit, paths):
-            if commit != self.args.expected_commit: raise ValueError('wrong fake freeze')
+            if commit not in self.frozen_commits: raise ValueError('wrong fake freeze')
             result = {str(x.resolve().relative_to(self.root)):sha(x) for x in paths}
-            if any(self.golden[k] != v for k,v in result.items()): raise ValueError('changed fake source')
+            if any(self.frozen_commits[commit][k] != v for k,v in result.items()): raise ValueError('changed fake source')
             return result
         self.sup = types.SimpleNamespace(THREAD_KEYS=('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS',
                     'VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS'),
@@ -126,6 +127,35 @@ class PredictionTests(unittest.TestCase):
         self.assertEqual(bindings['frontend_supervision_sha256'],sha(self.args.frontend_supervision))
         self.front.verify_qualification.assert_called_once();self.front.acquisition.verify_completed_chain.assert_called_once()
         self.assertIn('configs/0017-libraries.json',self.golden)
+        self.assertIn('docs/0023-cache-verification-repair.md',self.golden)
+
+    def test_explicit_old_input_freeze_and_new_prediction_sources_remain_separate(self):
+        old_commit=self.args.expected_commit
+        self.args.expected_commit='d'*40;self.args.input_freeze=old_commit
+        self.frozen_commits[self.args.expected_commit]=dict(self.golden)
+        self.sup.verify_frozen.reset_mock()
+        record=self.execute()
+        self.assertEqual(record['expected_commit'],'d'*40)
+        self.assertEqual(record['input_freeze'],old_commit)
+        self.assertEqual([call.args[0] for call in self.sup.verify_frozen.call_args_list],
+                         [old_commit,old_commit,'d'*40])
+        self.assertEqual(self.front.acquisition.verify_completed_chain.call_args.args[0].expected_commit,old_commit)
+        self.assertEqual(self.front.verify_inputs.call_args.args[0].expected_commit,old_commit)
+        self.assertEqual(record['frontend_freeze'],'b'*40)
+        self.assertEqual(record['frontend_source_sha256'],self.front_record['source_sha256'])
+
+    def test_input_freeze_is_explicit_and_does_not_relax_old_source_or_command(self):
+        old_commit=self.args.expected_commit;self.args.expected_commit='d'*40
+        with self.assertRaisesRegex(ValueError,'frontend commit'):p.frontend_admission(self.args)
+        self.args.input_freeze=''
+        with self.assertRaisesRegex(ValueError,'full Git commit'):p.frontend_admission(self.args)
+        self.args.input_freeze=old_commit
+        at=self.outer['command'].index('--expected-commit');self.outer['command'][at+1]='d'*40;self.refresh()
+        with self.assertRaisesRegex(ValueError,'command inputs'):p.frontend_admission(self.args)
+        self.outer['command'][at+1]=old_commit;self.refresh()
+        (self.here/'frontend.py').write_text('# changed old frontend source')
+        with self.assertRaisesRegex(ValueError,'changed fake source'):p.frontend_admission(self.args)
+        self.q.verify_files.assert_not_called()
 
     def test_failed_outer_and_wrong_sources_block_before_model_chain(self):
         self.outer['exit_code']=1;self.refresh()
@@ -153,6 +183,7 @@ class PredictionTests(unittest.TestCase):
             self.sup.verify_frozen.side_effect=AssertionError('Git proof after offline guard')
         self.q.install_guard.side_effect=guard
         record=self.execute();self.assertTrue(record['eligible']);self.assertEqual(record['query_count'],24)
+        self.assertEqual(record['input_freeze'],self.args.expected_commit)
         seal=json.loads((self.args.output_dir/'seal.json').read_text())
         self.assertTrue(seal['complete']);self.assertEqual(seal['receipt_sha256'],sha(self.args.output_dir/'receipt.json'))
         self.assertEqual(len(seal['outputs']),4)

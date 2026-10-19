@@ -4,6 +4,7 @@ import importlib.util
 import json
 import os
 from pathlib import Path
+import re
 import sys
 import time
 
@@ -21,7 +22,8 @@ def module(name,path):
 def source_paths(protocol):
     return [HERE/f for f in ('predict.py','supervise.py','cache_inputs.py','study.py','geometry_ba.py',
             'field_ba.py','conditional.py','covariance.py','frontend.py','acquire_operation.py',
-            'range_inputs.py','propose_plan.py')]+[Path(protocol),ROOT/'configs/0017-libraries.json']
+            'range_inputs.py','propose_plan.py')]+[Path(protocol),ROOT/'configs/0017-libraries.json',
+            ROOT/'docs/0023-cache-verification-repair.md']
 
 
 def expand(value):
@@ -32,14 +34,23 @@ def require(value,message):
     if not value:raise ValueError(message)
 
 
+def input_freeze(args):
+    """0023 input-production commit; distinct from the 0022 model qualification."""
+    value=getattr(args,'input_freeze',None)
+    if value is None:value=args.expected_commit
+    require(isinstance(value,str) and re.fullmatch(r'[0-9a-f]{40}',value),'input freeze must be a full Git commit SHA')
+    return value
+
+
 def frontend_admission(args):
     """All source/chain subprocess verification occurs before offline import guard."""
+    input_commit=input_freeze(args)
     frontend=module('_evr0023_prediction_frontend',HERE/'frontend.py')
     q=frontend.q;supervisor=frontend.acquisition.supervisor
     record=q.read_json(args.frontend_cache/'receipt.json');outer=q.read_json(args.frontend_supervision)
     require(record.get('schema')=='evr0023.frontend.v1' and record.get('status')=='completed'
             and record.get('eligible') is True,'complete frontend required')
-    require(record.get('expected_commit')==outer.get('expected_commit')==args.expected_commit,'frontend commit')
+    require(record.get('expected_commit')==outer.get('expected_commit')==input_commit,'frontend commit')
     require(outer.get('schema')=='evr0023.supervision.v1' and outer.get('operation')=='frontend'
             and outer.get('status')=='completed' and outer.get('exit_code')==0
             and outer.get('termination') is None and outer.get('remaining_descendant_pids')==[]
@@ -69,14 +80,14 @@ def frontend_admission(args):
     kwargs.update({k.replace('-','_'):flags['--'+k] for k in scalars})
     kwargs.update({k.replace('-','_'):Path(expand(flags.get('--'+k,str(v)))).resolve() for k,v in defaults.items()})
     fa=argparse.Namespace(**kwargs)
-    require(fa.expected_commit==args.expected_commit and fa.plan_sha256==args.plan_sha256
+    require(fa.expected_commit==input_commit and fa.plan_sha256==args.plan_sha256
             and fa.plan==args.plan.resolve() and fa.protocol==args.protocol.resolve()
             and fa.output_dir==args.frontend_cache.resolve(),'frontend command inputs')
     own=[HERE/f for f in ('frontend.py','range_inputs.py','propose_plan.py','acquire_operation.py','supervise.py')]+[args.protocol]
-    frozen=supervisor.verify_frozen(args.expected_commit,own)
+    frozen=supervisor.verify_frozen(input_commit,own)
     require(record['source_sha256']==frozen,'frontend source mismatch')
     outer_paths=[HERE/'supervise.py',HERE/'frontend.py']+[HERE/f for f in supervisor.HELPERS['frontend']]
-    require(outer['source_sha256']==supervisor.verify_frozen(args.expected_commit,outer_paths),'frontend supervisor source mismatch')
+    require(outer['source_sha256']==supervisor.verify_frozen(input_commit,outer_paths),'frontend supervisor source mismatch')
     qa=frontend.qualification_args(fa);qfrozen=q.frozen_bindings(qa)
     _,_,_,bindings=q.verify_files(qa,qfrozen)
     qualification=frontend.verify_qualification(fa,bindings,qfrozen)
@@ -102,7 +113,7 @@ def run(args):
     require(not args.output_dir.resolve().is_relative_to(ROOT),'private outputs outside repository required')
     args.output_dir.mkdir(parents=True)
     record=dict(schema='evr0023.prediction.v1',status='started',eligible=False,stage='verification',
-                expected_commit=args.expected_commit,plan_sha256=args.plan_sha256,query_count=0,
+                expected_commit=args.expected_commit,input_freeze=input_freeze(args),plan_sha256=args.plan_sha256,query_count=0,
                 method_names=METHOD_NAMES,outputs={},offline_attempts=[],compatibility_probes=[],ground_truth_access=False)
     def save():
         temp=args.output_dir/'receipt.pending';temp.write_text(json.dumps(record,indent=2,sort_keys=True,allow_nan=False)+'\n')
@@ -169,6 +180,7 @@ def main():
     for name in ('protocol','plan','frontend-cache','frontend-supervision','native-runtime','output-dir'):
         parser.add_argument('--'+name,type=Path,required=True)
     for name in ('expected-commit','plan-sha256'):parser.add_argument('--'+name,required=True)
+    parser.add_argument('--input-freeze',help='Exact 0023 acquisition/frontend commit; defaults to --expected-commit')
     result=run(parser.parse_args());print(json.dumps({k:result[k] for k in ('status','eligible','wall_seconds')}))
 
 
