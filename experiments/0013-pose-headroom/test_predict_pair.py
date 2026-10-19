@@ -94,6 +94,18 @@ class PredictionTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     worker.read_pair(GuardGroup({"0015-synthetic": data}), "0015-synthetic")
 
+    def test_zero_dimension_metadata_preserved_negative_rejected(self):
+        data = fixture()
+        for name in ("camera1", "camera2"):
+            data[name]["width"] = np.array([0])
+            data[name]["height"] = np.array([0])
+        _, _, calibration = worker.read_pair(GuardGroup({"0015-synthetic": data}), "0015-synthetic")
+        self.assertEqual(calibration["camera1"]["width"], 0)
+        self.assertEqual(calibration["camera2"]["height"], 0)
+        data["camera1"]["width"] = np.array([-1])
+        with self.assertRaises(ValueError):
+            worker.read_pair(GuardGroup({"0015-synthetic": data}), "0015-synthetic")
+
     def test_json_and_invalid_estimates_are_not_repaired(self):
         converted = worker.json_safe({"x": [np.int64(3), np.array([True]), np.float32(2)]})
         self.assertEqual(converted, {"x": [3, [True], 2.0]})
@@ -182,6 +194,10 @@ class PredictionTests(unittest.TestCase):
                   "params": [800., 820., 320., 240.]}
         def project(p): return p[:, :2] / p[:, 2, None] * [800., 820.] + [320., 240.]
         result = worker.estimate_pair(poselib, project(points), project(moved), {"camera1": camera, "camera2": camera})
+        zero_camera = {**camera, "width": 0, "height": 0}
+        zero_result = worker.estimate_pair(poselib, project(points), project(moved),
+            {"camera1": zero_camera, "camera2": zero_camera})
+        self.assertEqual(zero_result["estimate"], result["estimate"])
         np.testing.assert_allclose(result["estimate"]["R"], R, rtol=0, atol=1e-6)
         estimated_t = np.asarray(result["estimate"]["t"])
         self.assertGreater(np.dot(estimated_t, t) / (np.linalg.norm(estimated_t) * np.linalg.norm(t)), 1 - 1e-10)

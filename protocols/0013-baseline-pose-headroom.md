@@ -17,7 +17,8 @@ Newly admit the selected pairs' authored camera dictionaries and K1/K2 for
 calibration, and their R/t for a separately ordered evaluation stage. This is
 the first numeric camera/GT access in this continuation, prospectively declared.
 The prediction worker reads only x1/x2,K1/K2,camera1/camera2. Require finite
-PINHOLE parameters [fx,fy,cx,cy], positive focal lengths and dimensions, and
+PINHOLE parameters [fx,fy,cx,cy], positive focal lengths, nonnegative integer
+dimension metadata (preserving authored zero placeholders), and
 agreement with the saved3x3 intrinsics (relative and absolute tolerances both
 1e-6); unsupported cameras fail explicitly.
 Pass raw pixels plus authored cameras to PoseLib, without double normalization.
@@ -95,3 +96,25 @@ It cannot be reported as improvement. Any new method requires a separate
 mechanism/protocol freeze and strong official PoseLib/DMS comparisons, followed
 by the unchanged independent two-source accuracy/time and novelty gates before
 a manuscript. The old held-out set is not available for this diagnosis.
+
+## Disclosed input-compatibility amendment, before any estimation or GT access
+
+The first frozen attempt at2e6501c stopped on pair0 before the estimator: authored
+camera1 width/height are both zero. Preserve `results/0013-baseline/` and its
+ineligible seal; it is not a completed baseline. The original worker had already
+read that pair's x1/x2 and K1/K2, then rejected the first camera's width.
+No other pair was attempted and no R/t was read.
+
+Official PoseLib2.0.5 [camera documentation](https://github.com/PoseLib/PoseLib/blob/v2.0.5/README.md#camera-models)
+states these dimensions are unused metadata. The
+[relative-pose implementation](https://github.com/PoseLib/PoseLib/blob/v2.0.5/PoseLib/robust.cc#L169-L206)
+uses only unprojection and focal values; the Python camera loader stores the
+dimensions without positive validation. Our positive-dimension requirement was
+an unnecessary compatibility restriction, not a geometric validity requirement.
+
+Permit nonnegative integer dimension metadata without substituting image sizes;
+retain positive focal lengths, exact camera model, K checks, all estimator
+settings and all other failure gates. Freeze this two-line validation repair
+and an artificial zero-dimension regression before one separately named retry,
+`results/0013-baseline-calibration-compatibility/predictions`. No pose outcome
+has been observed or used to choose this change. Any later failure stays visible.

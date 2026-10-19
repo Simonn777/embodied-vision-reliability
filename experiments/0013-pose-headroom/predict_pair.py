@@ -35,6 +35,7 @@ RANSAC_OPTIONS = {"min_iterations": 1000, "max_iterations": 100000,
 SETTINGS = {"ransac_options": RANSAC_OPTIONS, "bundle_options": {},
     "initial_pose": None, "matches": 10000, "coordinate_convention": "raw_pixels",
     "camera_K_rtol": K_RTOL, "camera_K_atol": K_ATOL, "native_threads": 1,
+    "camera_dimensions": "nonnegative integers; authored zero metadata preserved",
     "rotation_validation_atol": 1e-6,
     "effective_final_bundle_defaults": {"loss_type": "CAUCHY", "loss_scale": 0.5,
         "max_iterations": 100, "gradient_tol": 1e-10, "step_tol": 1e-8,
@@ -122,8 +123,8 @@ def read_camera(group, K, name):
     camera = {"model": str(model)}
     for field in ("width", "height"):
         value = finite_array(group[field][()], (1,), name + "/" + field)[0]
-        if value <= 0 or value != int(value):
-            raise ValueError(name + " dimensions must be positive integers")
+        if value < 0 or value != int(value):
+            raise ValueError(name + " dimensions must be nonnegative integers")
         camera[field] = int(value)
     p = finite_array(group["params"][()], (4,), name + "/params")
     if np.any(p[:2] <= 0):
