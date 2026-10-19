@@ -1,0 +1,725 @@
+{
+  "status": "passed",
+  "scope": "Independent standard-library recalculation from saved errors; not a second GT/coordinate truth validation.",
+  "limits": [
+    "No raw GT, RGB, NPZ, model, frozen scorer or prior checker imported/read.",
+    "Saved solver diagnostics are described post hoc; raw-logit replay is a separate review.",
+    "Two simulated development groups do not establish population uncertainty, novelty or publication-level improvement."
+  ],
+  "source": {
+    "relative_path": "results/0011-oblique/independent-review/parent-arithmetic.py",
+    "bytes": 15316,
+    "sha256": "01df6841e367aac0a1bb6a8039ac7bd8dcfab0b8043fbd286179e19e5c236394"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "implementation": "CPython",
+    "stdlib_only": true
+  },
+  "inputs": {
+    "scratch/0011-oblique-v1/evaluation/receipt.json": {
+      "bytes": 506,
+      "sha256": "dda238559c324ffe4d5d2f958d76e400fd05798dca6808ad71c26689b4af12ce"
+    },
+    "scratch/0011-oblique-v1/derived/seal.json": {
+      "bytes": 22242,
+      "sha256": "8016c3c3b266ed3b14454682595b40ec775f4a2ab5a0bbee1de2e761338115c5"
+    },
+    "scratch/0011-oblique-v1/evaluation/case-errors.json": {
+      "bytes": 157255,
+      "sha256": "f94dfd3492a6c0f81186b906521dd06f46b395deb1ff6cdd4c2ee31166f33148"
+    },
+    "scratch/0011-oblique-v1/evaluation/results.json": {
+      "bytes": 13525,
+      "sha256": "4eb59a898288802c0ade31da98b76b77daa4048f4d3e9a4e74e7d0371196bea3"
+    },
+    "scratch/0011-oblique-v1/derived/diagnostics.json": {
+      "bytes": 909169,
+      "sha256": "9cd4b15e344c9baaeacabff788043277f380d3889cf1e292cfd996bb6aeba55c"
+    },
+    "scratch/0011-oblique-v1/derived/predictions.json": {
+      "bytes": 371075,
+      "sha256": "c1950b50f6ebf6e53e40ab57cb924f9578b6fbefbc474fe906c351f0585b9747"
+    }
+  },
+  "inputs_unchanged_after_review": true,
+  "comparison_absolute_tolerance": 1e-10,
+  "arithmetic_comparison": {
+    "leaves_checked": 341,
+    "floating_leaves": 157,
+    "max_absolute_float_difference": 1.4210854715202004e-14,
+    "mismatches": []
+  },
+  "denominators": {
+    "g-036": {
+      "saved": 128,
+      "initial_query_excluded": 8,
+      "postquery": 120,
+      "visible_eligible": 87,
+      "occluded_postquery": 33,
+      "point_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "g-002": {
+      "saved": 128,
+      "initial_query_excluded": 8,
+      "postquery": 120,
+      "visible_eligible": 53,
+      "occluded_postquery": 67,
+      "point_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "counts": {
+    "saved_rows": 256,
+    "methods": 11,
+    "finite_saved_errors": 2816,
+    "query_rows_excluded": 16,
+    "postquery_rows": 240,
+    "visible_eligible": 140
+  },
+  "definitions": {
+    "hits": "error < threshold, strictly",
+    "thresholds": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "macro": "equal weight for each of two groups, not pooled frame/point weighting",
+    "paired": "candidate <4 and comparator >=4 is correction; comparator <4 and candidate >=4 is harm",
+    "tie_control": "first in fixed METHODS order"
+  },
+  "recomputed": {
+    "groups": {
+      "g-036": {
+        "methods": {
+          "original_native": {
+            "quality": 0.6206896551724138,
+            "hit_counts": [
+              29,
+              41,
+              60,
+              69,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 13.6841562886582,
+            "median_epe": 2.164022735723134,
+            "all_point_epe": 14.950905556576881,
+            "occluded_epe": 18.290517262907944
+          },
+          "reference_native": {
+            "quality": 0.6229885057471264,
+            "hit_counts": [
+              27,
+              47,
+              57,
+              69,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 17.180143835642802,
+            "median_epe": 1.8676202733279428,
+            "all_point_epe": 20.17441600808353,
+            "occluded_epe": 28.068406280881806
+          },
+          "oblique_native": {
+            "quality": 0.6988505747126437,
+            "hit_counts": [
+              36,
+              54,
+              67,
+              71,
+              76
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 8.677961924140874,
+            "median_epe": 1.2169313643004647,
+            "all_point_epe": 11.784466171888047,
+            "occluded_epe": 19.974341006857866
+          },
+          "axis_control_native": {
+            "quality": 0.5701149425287356,
+            "hit_counts": [
+              19,
+              43,
+              51,
+              66,
+              69
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 18.766959140705364,
+            "median_epe": 2.136433536492587,
+            "all_point_epe": 22.648492002462444,
+            "occluded_epe": 32.8816240925493
+          },
+          "reference_independent": {
+            "quality": 0.6229885057471264,
+            "hit_counts": [
+              27,
+              47,
+              57,
+              69,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 17.180145146333274,
+            "median_epe": 1.8676219948203536,
+            "all_point_epe": 20.174417117756153,
+            "occluded_epe": 28.06840686059829
+          },
+          "coordinate_average": {
+            "quality": 0.6620689655172414,
+            "hit_counts": [
+              33,
+              46,
+              67,
+              71,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 12.559124100130358,
+            "median_epe": 1.8345001717860148,
+            "all_point_epe": 15.351259211287081,
+            "occluded_epe": 22.71234268615481
+          },
+          "entropy_select": {
+            "quality": 0.6367816091954023,
+            "hit_counts": [
+              27,
+              49,
+              59,
+              71,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 16.977365200349997,
+            "median_epe": 1.6665183926751226,
+            "all_point_epe": 19.892520312795423,
+            "occluded_epe": 27.577929245606107
+          },
+          "product_joint": {
+            "quality": 0.664367816091954,
+            "hit_counts": [
+              33,
+              48,
+              66,
+              71,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 16.599190963754904,
+            "median_epe": 1.62597227756041,
+            "all_point_epe": 19.215054700368274,
+            "occluded_epe": 26.111422733258063
+          },
+          "mixture_joint": {
+            "quality": 0.639080459770115,
+            "hit_counts": [
+              28,
+              43,
+              65,
+              71,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 16.58386352798235,
+            "median_epe": 2.0114126846883864,
+            "all_point_epe": 19.411764563847182,
+            "occluded_epe": 26.867140022036295
+          },
+          "oblique_coupling": {
+            "quality": 0.6252873563218391,
+            "hit_counts": [
+              28,
+              46,
+              58,
+              69,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 17.126807848202496,
+            "median_epe": 1.8764945066806722,
+            "all_point_epe": 20.05628317624902,
+            "occluded_epe": 27.779445404735313
+          },
+          "axis_coupling": {
+            "quality": 0.6229885057471264,
+            "hit_counts": [
+              27,
+              47,
+              57,
+              69,
+              71
+            ],
+            "eligible": 87,
+            "coverage": 1.0,
+            "mean_epe": 17.18014514633328,
+            "median_epe": 1.8676219948203807,
+            "all_point_epe": 20.174417117756157,
+            "occluded_epe": 28.068406860598287
+          }
+        },
+        "paired": {
+          "original_native": {
+            "corrections_4px": 1,
+            "harms_4px": 3
+          },
+          "reference_native": {
+            "corrections_4px": 1,
+            "harms_4px": 0
+          },
+          "oblique_native": {
+            "corrections_4px": 1,
+            "harms_4px": 10
+          },
+          "axis_control_native": {
+            "corrections_4px": 14,
+            "harms_4px": 7
+          },
+          "reference_independent": {
+            "corrections_4px": 1,
+            "harms_4px": 0
+          },
+          "coordinate_average": {
+            "corrections_4px": 0,
+            "harms_4px": 9
+          },
+          "entropy_select": {
+            "corrections_4px": 1,
+            "harms_4px": 2
+          },
+          "product_joint": {
+            "corrections_4px": 0,
+            "harms_4px": 8
+          },
+          "mixture_joint": {
+            "corrections_4px": 1,
+            "harms_4px": 8
+          },
+          "axis_coupling": {
+            "corrections_4px": 1,
+            "harms_4px": 0
+          }
+        }
+      },
+      "g-002": {
+        "methods": {
+          "original_native": {
+            "quality": 0.6415094339622641,
+            "hit_counts": [
+              20,
+              30,
+              36,
+              38,
+              46
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 9.81232583502394,
+            "median_epe": 1.5195193181223223,
+            "all_point_epe": 26.523829727561086,
+            "occluded_epe": 39.743377582851664
+          },
+          "reference_native": {
+            "quality": 0.6452830188679245,
+            "hit_counts": [
+              17,
+              28,
+              33,
+              45,
+              48
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 7.909830319751909,
+            "median_epe": 1.9071424773511692,
+            "all_point_epe": 24.46714957434079,
+            "occluded_epe": 37.564730477224536
+          },
+          "oblique_native": {
+            "quality": 0.5849056603773585,
+            "hit_counts": [
+              15,
+              23,
+              32,
+              40,
+              45
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 10.180033289744376,
+            "median_epe": 2.5900044839361955,
+            "all_point_epe": 32.306427617678054,
+            "occluded_epe": 49.809396265147974
+          },
+          "axis_control_native": {
+            "quality": 0.5886792452830188,
+            "hit_counts": [
+              15,
+              23,
+              32,
+              39,
+              47
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 10.043317376554485,
+            "median_epe": 2.2377473111881883,
+            "all_point_epe": 27.25933094792452,
+            "occluded_epe": 40.87796854915753
+          },
+          "reference_independent": {
+            "quality": 0.6452830188679245,
+            "hit_counts": [
+              17,
+              28,
+              33,
+              45,
+              48
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 7.909829420284561,
+            "median_epe": 1.9071441011600452,
+            "all_point_epe": 24.467149341450487,
+            "occluded_epe": 37.564730771626515
+          },
+          "coordinate_average": {
+            "quality": 0.6037735849056604,
+            "hit_counts": [
+              16,
+              25,
+              34,
+              40,
+              45
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 8.817043557689328,
+            "median_epe": 2.180071004115443,
+            "all_point_epe": 27.84370613039673,
+            "occluded_epe": 42.89464816552348
+          },
+          "entropy_select": {
+            "quality": 0.6188679245283019,
+            "hit_counts": [
+              15,
+              23,
+              33,
+              45,
+              48
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 8.19880987166028,
+            "median_epe": 2.462653129062568,
+            "all_point_epe": 25.13566156384236,
+            "occluded_epe": 38.53346961885207
+          },
+          "product_joint": {
+            "quality": 0.6113207547169811,
+            "hit_counts": [
+              13,
+              23,
+              35,
+              43,
+              48
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 8.288156281610807,
+            "median_epe": 2.407111083294186,
+            "all_point_epe": 28.154566109095565,
+            "occluded_epe": 43.86978582337455
+          },
+          "mixture_joint": {
+            "quality": 0.6075471698113207,
+            "hit_counts": [
+              12,
+              24,
+              35,
+              42,
+              48
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 8.219738293990705,
+            "median_epe": 2.1812833418601416,
+            "all_point_epe": 26.608064201690834,
+            "occluded_epe": 41.15405335255811
+          },
+          "oblique_coupling": {
+            "quality": 0.6339622641509434,
+            "hit_counts": [
+              16,
+              29,
+              33,
+              43,
+              47
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 8.064137247611907,
+            "median_epe": 1.9174582258391484,
+            "all_point_epe": 26.72705045890336,
+            "occluded_epe": 41.49025046186526
+          },
+          "axis_coupling": {
+            "quality": 0.6452830188679245,
+            "hit_counts": [
+              17,
+              28,
+              33,
+              45,
+              48
+            ],
+            "eligible": 53,
+            "coverage": 1.0,
+            "mean_epe": 7.909829420284561,
+            "median_epe": 1.9071441011600452,
+            "all_point_epe": 24.467149341450487,
+            "occluded_epe": 37.564730771626515
+          }
+        },
+        "paired": {
+          "original_native": {
+            "corrections_4px": 1,
+            "harms_4px": 4
+          },
+          "reference_native": {
+            "corrections_4px": 0,
+            "harms_4px": 0
+          },
+          "oblique_native": {
+            "corrections_4px": 2,
+            "harms_4px": 1
+          },
+          "axis_control_native": {
+            "corrections_4px": 2,
+            "harms_4px": 1
+          },
+          "reference_independent": {
+            "corrections_4px": 0,
+            "harms_4px": 0
+          },
+          "coordinate_average": {
+            "corrections_4px": 1,
+            "harms_4px": 2
+          },
+          "entropy_select": {
+            "corrections_4px": 0,
+            "harms_4px": 0
+          },
+          "product_joint": {
+            "corrections_4px": 0,
+            "harms_4px": 2
+          },
+          "mixture_joint": {
+            "corrections_4px": 0,
+            "harms_4px": 2
+          },
+          "axis_coupling": {
+            "corrections_4px": 0,
+            "harms_4px": 0
+          }
+        }
+      }
+    },
+    "macro": {
+      "original_native": {
+        "quality": 0.631099544567339,
+        "mean_epe": 11.74824106184107
+      },
+      "reference_native": {
+        "quality": 0.6341357623075254,
+        "mean_epe": 12.544987077697355
+      },
+      "oblique_native": {
+        "quality": 0.6418781175450011,
+        "mean_epe": 9.428997606942625
+      },
+      "axis_control_native": {
+        "quality": 0.5793970939058772,
+        "mean_epe": 14.405138258629925
+      },
+      "reference_independent": {
+        "quality": 0.6341357623075254,
+        "mean_epe": 12.544987283308917
+      },
+      "coordinate_average": {
+        "quality": 0.6329212752114509,
+        "mean_epe": 10.688083828909843
+      },
+      "entropy_select": {
+        "quality": 0.6278247668618521,
+        "mean_epe": 12.588087536005139
+      },
+      "product_joint": {
+        "quality": 0.6378442854044676,
+        "mean_epe": 12.443673622682855
+      },
+      "mixture_joint": {
+        "quality": 0.6233138147907179,
+        "mean_epe": 12.401800910986527
+      },
+      "oblique_coupling": {
+        "quality": 0.6296248102363913,
+        "mean_epe": 12.595472547907201
+      },
+      "axis_coupling": {
+        "quality": 0.6341357623075254,
+        "mean_epe": 12.54498728330892
+      }
+    },
+    "strongest_control": "oblique_native",
+    "macro_quality_gain": -0.012253307308609846,
+    "macro_quality_gain_exact": "-113/9222",
+    "group_quality_gains_over_strongest": {
+      "g-036": -0.0735632183908046,
+      "g-002": -0.011320754716981131
+    },
+    "quality_gates": {
+      "macro_gain_at_least_0.05": false,
+      "each_group_above_every_control": false,
+      "macro_epe_not_worse_than_best_quality_control": false
+    },
+    "numerical_gates": {
+      "all_couplings_converged": true,
+      "fixed_global_means": true,
+      "axis_joint_invariant": true,
+      "reference_decoder_parity": true
+    },
+    "status": "completed_evaluation",
+    "decision": "NO_GO",
+    "model_calls": 0
+  },
+  "paired_totals_across_groups_descriptive": {
+    "original_native": {
+      "corrections_4px": 2,
+      "harms_4px": 7
+    },
+    "reference_native": {
+      "corrections_4px": 1,
+      "harms_4px": 0
+    },
+    "oblique_native": {
+      "corrections_4px": 3,
+      "harms_4px": 11
+    },
+    "axis_control_native": {
+      "corrections_4px": 16,
+      "harms_4px": 8
+    },
+    "reference_independent": {
+      "corrections_4px": 1,
+      "harms_4px": 0
+    },
+    "coordinate_average": {
+      "corrections_4px": 1,
+      "harms_4px": 11
+    },
+    "entropy_select": {
+      "corrections_4px": 1,
+      "harms_4px": 2
+    },
+    "product_joint": {
+      "corrections_4px": 0,
+      "harms_4px": 10
+    },
+    "mixture_joint": {
+      "corrections_4px": 1,
+      "harms_4px": 10
+    },
+    "axis_coupling": {
+      "corrections_4px": 1,
+      "harms_4px": 0
+    }
+  },
+  "posthoc_saved_numerical_diagnostics": {
+    "label": "Post-hoc description of saved diagnostics; no parameter selection or rerun",
+    "scope": "Joint residuals/means come from saved diagnostics, not regenerated joints; parity is recalculated from saved coordinates.",
+    "solvers": {
+      "oblique_coupling": {
+        "rows": 256,
+        "iterations_min": 7,
+        "iterations_max": 357,
+        "iterations_median": 37.5,
+        "iterations_mean": 57.86328125,
+        "row_error_max": 9.987773039177306e-10,
+        "column_error_max": 1.3322676295501878e-15,
+        "residual_max": 9.987773039177306e-10,
+        "global_mean_max_difference_reference": 3.627042171584876e-06
+      },
+      "axis_coupling": {
+        "rows": 256,
+        "iterations_min": 1,
+        "iterations_max": 1,
+        "iterations_median": 1.0,
+        "iterations_mean": 1.0,
+        "row_error_max": 8.881784197001252e-16,
+        "column_error_max": 1.3322676295501878e-15,
+        "residual_max": 1.3322676295501878e-15,
+        "global_mean_max_difference_reference": 2.1324446962194769e-13
+      }
+    },
+    "axis_joint_max_difference": 8.881784197001252e-16,
+    "reference_parity_max_original": 5.0979568214870596e-05,
+    "mode_ties": {
+      "reference_independent": {
+        "records": 256,
+        "maximum": 1,
+        "records_with_multiple_modes": 0
+      },
+      "product_joint": {
+        "records": 256,
+        "maximum": 1,
+        "records_with_multiple_modes": 0
+      },
+      "mixture_joint": {
+        "records": 256,
+        "maximum": 1,
+        "records_with_multiple_modes": 0
+      },
+      "oblique_coupling": {
+        "records": 256,
+        "maximum": 1,
+        "records_with_multiple_modes": 0
+      },
+      "axis_coupling": {
+        "records": 256,
+        "maximum": 1,
+        "records_with_multiple_modes": 0
+      }
+    }
+  },
+  "wall_seconds": 0.013148166999999999
+}

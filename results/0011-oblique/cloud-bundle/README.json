@@ -1,0 +1,80 @@
+{
+  "status": "SAVED_INDEPENDENT_REVIEW_PASS_SCIENCE_NO_GO",
+  "AI_assisted": true,
+  "metrics": {
+    "status": "PASS",
+    "checks": 14935,
+    "numeric_checks": 3997,
+    "max_absolute_difference": 1.4210854715202004e-14
+  },
+  "coupling": {
+    "status": "passed",
+    "processed_points": 256,
+    "compared_coordinates": 5632,
+    "max_absolute_difference_by_method": {
+      "original_native": 0.0,
+      "reference_native": 2.842170943040401e-14,
+      "oblique_native": 2.842170943040401e-14,
+      "axis_control_native": 5.684341886080802e-14,
+      "reference_independent": 1.4210854715202004e-13,
+      "coordinate_average": 2.842170943040401e-14,
+      "entropy_select": 2.842170943040401e-14,
+      "product_joint": 1.4210854715202004e-13,
+      "mixture_joint": 1.7053025658242404e-13,
+      "oblique_coupling": 2.2737367544323206e-13,
+      "axis_coupling": 1.9895196601282805e-13
+    }
+  },
+  "executions": {
+    "metrics-selftest": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.11799064500519307,
+      "max_rss_kib": 30180
+    },
+    "coupling-selftest": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 5.888899485995353,
+      "max_rss_kib": 42656
+    },
+    "metrics-review": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 0.2129255049949279,
+      "max_rss_kib": 36932
+    },
+    "coupling-review": {
+      "actual_exit": 0,
+      "raw_wait_status": 0,
+      "wall_seconds": 5.270662703005655,
+      "max_rss_kib": 40672
+    }
+  },
+  "scientific_decision": "NO_GO",
+  "limitations": [
+    "Review PASS verifies saved arithmetic/bindings, not method efficacy or novelty.",
+    "No model/forward, preparation,derive,formal score,training or download repeated.",
+    "Raw RGB/GT NPZ, logits NPZ, weights and cache binary payloads excluded; only JSON/log/source records included.",
+    "Original read-only terminal summary errors preserved with honest truncated/missing closed-log boundary.",
+    "Full historical preexecution map remains private; a labeled derivative carries original hash/size."
+  ],
+  "new_asset_bytes": 0,
+  "published": false,
+  "git_transport": {
+    "owner_publication_authorized": true,
+    "last_fetch_exit": 0,
+    "origin_host": "github.com",
+    "credential_helper_configured": false,
+    "push_tested": false,
+    "actual_write_availability": "UNKNOWN; fetch demonstrates read access, no test push or credential access performed."
+  },
+  "original_preservation": {
+    "output_files": 174,
+    "frozen_files": 24,
+    "old_tracked_files": 3393,
+    "old_cache_metadata_files": 53,
+    "prior_controls_and_markers": 52
+  },
+  "wrapper_self_exclusion": "README.json, manifest.json, bundle.tar.gz and bundle-metadata.json excluded from payload manifest to avoid circular hashes; their hashes listed externally."
+}
