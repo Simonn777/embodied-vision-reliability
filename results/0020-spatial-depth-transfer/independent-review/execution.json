@@ -1,0 +1,40 @@
+{
+  "schema": "evr0020.independent-execution.v1",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "cwd": "repository root",
+  "records": [
+    {
+      "step": "tests",
+      "command": [
+        "$PYTHON",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments/0020-review",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.0906545,
+      "log_path": "tests.log",
+      "log_sha256": "748d4481626ede3491768aaebf3f26b2d63bae54511504114c9cb9d6c90175b2"
+    },
+    {
+      "step": "audit",
+      "command": [
+        "$PYTHON",
+        "experiments/0020-review/review_saved.py",
+        "--repo",
+        "<repository>",
+        "--output",
+        "<repository>/results/0020-spatial-depth-transfer/independent-review/audit.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.6172218749999998,
+      "log_path": "audit.log",
+      "log_sha256": "09d8824d7db71ec3f0119837ce7a84772fde68f40b98ca9aa80c1b4e828e389e"
+    }
+  ]
+}

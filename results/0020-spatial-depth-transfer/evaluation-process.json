@@ -1,0 +1,29 @@
+{
+  "schema": "evr0020.outer-operation.v1",
+  "mode": "evaluation",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "experiments/0020-spatial-depth-transfer/evaluate_saved.py",
+    "--manifest",
+    "configs/0017-development-manifest.json",
+    "--baseline-seal",
+    "results/0017-depth/predictions/seal.json",
+    "--seal",
+    "<repository>/results/0020-spatial-depth-transfer/predictions/seal.json",
+    "--output",
+    "<repository>/results/0020-spatial-depth-transfer/evaluation.json"
+  ],
+  "python_version": "3.9.6",
+  "cwd": "repository root",
+  "helper_sha256": "272bc02a7d0387b6f60bab1657302567a47654497a77ad5eb84661c22ad4ff4a",
+  "source_commit": "bec376568729c3a158cd9f1279cd00d3e5f1de76",
+  "hard_timeout_seconds": 600,
+  "group_rss_limit_kib": 8388608,
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 1.110610208,
+  "peak_group_rss_kib": 74992,
+  "remaining_process_groups_after_cleanup": [],
+  "log_sha256": "be2c8d145581d433d3b1a432193ad0baccfc3d647ffb147402b7211fb903aab0"
+}

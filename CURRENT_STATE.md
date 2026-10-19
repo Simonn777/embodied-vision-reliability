@@ -1,5 +1,27 @@
 # Current state
 
+## Active continuation: 0020 fixed selector closed, 2026-10-19
+
+[0020 results](results/0020-spatial-depth-transfer/README.md) fail the frozen
+accuracy gate. All80pairs completed and were sealed before one evaluation.
+Spatial transfer reaches71.107107% AUC5 versus74.071712% for the strongest
+fixed comparator, a loss of2.964605percentage points. Only one scene improves,
+and AUC20 loses0.865745points. Random-point transfer and global calibration are
+also better. Do not change this bank, folds, scoring rule or thresholds to rescue
+these results. No manuscript is admitted.
+
+[0019 publication](docs/0019-publication-verification.md) is independently
+verified through mergedPR48 and exact main CI. Its real gains remain stronger
+known-method controls, not novelty. The next research screen asks whether
+independent motion edges can supply a transferable image-attached depth-error
+signal. It begins with metadata/provenance and identifiability, not another
+same-pair reranking variant. No0021scientific run is admitted yet.
+
+The broader goal remains active. A substantial reproducible held-out improvement
+over strong baselines at matched complete-pipeline cost is still required before
+writing a results-backed manuscript. Earlier sections below are chronological.
+
+
 ## Active continuation: 0020 spatial-transfer freeze preparation, 2026-10-19
 
 [0020 preparation](results/0020-preparation/README.md) has 33 passing artificial
