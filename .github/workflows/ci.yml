@@ -39,5 +39,10 @@ jobs:
       - name: Check the cached first-probe guard with artificial files and processes
         working-directory: experiments/0010-guard
         run: PYTHONDONTWRITEBYTECODE=1 python -W error test_guard.py
+      - name: Check the prospective headroom pipeline with fake features and models
+        working-directory: experiments/0010-headroom
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python -W error test_headroom.py
+          PYTHONDONTWRITEBYTECODE=1 python -W error test_driver.py
       - name: Exercise the full output pipeline on a smoke partition
         run: python scripts/run_experiment.py --smoke --output scratch/ci-smoke --protocol protocols/0001-synthetic-localization.md

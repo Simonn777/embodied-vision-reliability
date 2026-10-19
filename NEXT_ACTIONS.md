@@ -12,27 +12,23 @@ Work from the first unfinished item. Record each outcome in a dated note before 
    Class-bearing filenames were read, but no pixels/predictions/accuracy. The
    old unknown HTTP total remains unknown; separate direct preparation caps
    and the original data/weight budget remain enforced.
-3. **Original freeze and preparation completed; auxiliary guard failed:**
-   [publication](docs/0010-capability-freeze-publication-verification.md) and
-   [actual preparation/diagnosis](results/0010-preparation/README.md).
-   Preserve completed downloads/install/imports, 456,087,034 direct body bytes
-   charged, residual temporary files and the before-probe exit 1.
-4. Publish/verify the separate [cached-probe correction and solver admission](protocols/0010-cached-probe-and-solver-admission.md).
-   Recheck the defined cache/marker/process conditions with complete failure
-   accounting, then run only the still-unattempted original eight-image /
-   ten-prompt probe once. No redownload, reinstall, changed runner or replacement.
-   If successful, check saved outputs and run the fixed artificial functional and
-   three-fit timing phases once. These establish resource/numerical admission,
-   not classification quality. Preserve every failure and original marker.
-5. If resources permit, separately freeze a real-data **development** headroom
-   screen with 128 new fixed train filenames, two author-scale batches of 64,
-   zero-shot, StatA alpha1/4, full query-out and matched other-out refits. The
-   current draft targets at least eight additional correct predictions over
-   the best fixed control, with both batches improving; this is not yet a
-   frozen experiment or observed result. Preserve graph-readout confounding,
-   scene-independence and pretraining-exposure limitations. Implement cheap
-   approximations only after useful quality headroom is observed. New independent
-   evidence and a distinct contribution remain prerequisites for any manuscript.
+3. **Cached first probe and artificial solver admission completed:**
+   [actual results](results/0010-capability/README.md) and
+   [source/CI publication](docs/0010-cached-admission-publication-verification.md).
+   Preserve8 image/1 text outputs,20 functional tests and3 timing fits. Do not
+   repeat them. Both fixed resource projections pass. All old failures, residual
+   files, one-shot markers and accounting limits remain. No accuracy result yet.
+4. Independent saved-output review passed769 checks. Publish/verify the separate
+   [fixed128-image protocol](protocols/0010-real-data-headroom.md), filled plan
+   and source freeze before one launch. Reuse saved text features; extract128
+   new fixed training images once in32 batches of4. Run the five fixed arms,
+   all132 fitted states/264 authored executions, seal all predictions before
+   one complete-cohort score. Any boundary stops; no subset score or rerun.
+5. Continue only under the unchanged quality gate: at least8 additional correct
+   versus the strongest fixed control, improvement in both64-image batches and
+   complete valid coverage. A pass permits a new common-peer diagnostic and
+   independent-data replication, not a novelty claim/manuscript. A failure stops
+   this cohort/direction without prompt/alpha/selection tuning or enlarged rescue.
 
 ## October 18 owner-authorized research pivot — active order
 

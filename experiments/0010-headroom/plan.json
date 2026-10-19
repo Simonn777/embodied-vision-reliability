@@ -1,0 +1,90 @@
+{
+  "schema": "0010-headroom-prospective-v1",
+  "admitted": true,
+  "driver_files": {
+    "driver.py": "2de2ea53c3bbdbc38191c36852b3a21afe10ab0bcc9238ec64690f455bcebc91",
+    "native.py": "14844b0e1979294cf89372cb6ae4acc77b160783ef1fc805a892f3189af80fbd",
+    "run.py": "c1064386ff6bc1eae8664387e4c3d7158a6d8d1eecacb5808d227148466c4141"
+  },
+  "inputs": {
+    "capability_runner": {
+      "path": "../0010/run_capability.py",
+      "sha256": "532ef917a87e976dfd1bc0fd1858c16ea8a4b5bebaa9569add017e394f6a7ba6"
+    },
+    "capability_config": {
+      "path": "../0010/config.json",
+      "sha256": "f4fa4d2645dfbbff5306f2550136f448a4bbc967e0c772b1d99abfef3bfdb8d6"
+    },
+    "capability_selection": {
+      "path": "../0010/selection.json",
+      "sha256": "75e31cc9742f6def800019dfd66009abb5294a9eafa7b8ef2d5130501617375c"
+    },
+    "capability_freeze": {
+      "path": "../../protocols/0010-clip-capability-freeze.json",
+      "sha256": "8dfec7362d01fac80c46f9871fe4e8696c90d12ba07038c2635a6f8dd947b29f"
+    },
+    "capability_receipt": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-capability-output/receipt.json",
+      "sha256": "2a4d28cb7ea1c93904f3f491421f47ca02b1327b9cd21a9ce72ddbf82f1d4228"
+    },
+    "capability_features": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-capability-output/features.npz",
+      "sha256": "c885214f5968196f4fdd3caff750d3f393da830ddceefac97b3cd6a917a896aa"
+    },
+    "headroom": {
+      "path": "headroom.py",
+      "sha256": "40dd054b74217dc43390cb3354c4064ead5215114a6db575ca06ff251cda7b47"
+    },
+    "stata_cpu": {
+      "path": "../0010-solver/stata_cpu.py",
+      "sha256": "15545b0fbe67655255d64a4343daeb43cac3bc7d649df984d2605a8795aee5be"
+    },
+    "stata_upstream": {
+      "path": "../0010-solver/upstream/StatA.py",
+      "sha256": "9fcd2eb8a22cabc2c7eb43823625cb04557476c637a24c8a12eb3115ede2b962"
+    },
+    "supervisor": {
+      "path": "../../scripts/supervise_0009.py",
+      "sha256": "2d306a8813d36c207eb276a187a298864965bffbe79c1dd463d9482f3bf7d77f"
+    },
+    "solver_manifest": {
+      "path": "../0010-solver/manifest.json",
+      "sha256": "9d0f764ce380c99d98ee66fc836bf4d429b816b2f50035ab4394f3c01cff5868"
+    },
+    "timing_receipt": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-solver-timing/child/receipt.json",
+      "sha256": "042fe86a3e7b1ca57d3db9bece1327b4b68174713445506e34d3825794cc814e"
+    },
+    "timing_execution": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-solver-timing/supervision/execution.json",
+      "sha256": "456ee0fcdeb425c434b051d80644eed4c23695a726b14e296ff01ca3883713e1"
+    },
+    "timing_artifacts": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-solver-timing/artifact-manifest.json",
+      "sha256": "86497593edc66f9818d94eec28e9d97789b49dfdce9e79117dfc66e5cf5117ec"
+    },
+    "functional_receipt": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-solver-functional/child/receipt.json",
+      "sha256": "04b84fe2b63445a1d2e71da5f087f4b4c49c9777edb212f7d1156783f13e2943"
+    },
+    "functional_execution": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-solver-functional/supervision/execution.json",
+      "sha256": "27355dd76cddeef997bb33d779c614dc452a39edad2f29ca171a5124a180ddf6"
+    },
+    "functional_artifacts": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-solver-functional/artifact-manifest.json",
+      "sha256": "ff1b540942f7cc283c4a77a4e24ec46c397c5b271c78bfb36c27a51f3bed3b46"
+    },
+    "selection": {
+      "path": "selection.json",
+      "sha256": "c0cafccd32261b7e6cd40743fb0a30d28f48cf39d86db76999393bfe816fe5e6"
+    }
+  },
+  "external_bindings": {
+    "capability_execution": {
+      "path": "/workspace/scratch/a349d03a0e0a/scratch/0010-capability-control/probe/execution.json",
+      "sha256": "6fb2aad71ad85c3811d5cfd4364638781339a19cd3bd1f8cab6df21892c6ac05"
+    }
+  },
+  "external_bindings_note": "Current consumer does not validate external_bindings; before admitted=true the caller must verify the actual capability parent zero exit/wait/log closure, bind this exact file/hash in the independent formal freeze, and preserve that admission evidence. Canonical published source/plan freeze is likewise an external prerequisite."
+}

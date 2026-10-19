@@ -1,0 +1,25 @@
+{
+  "scope": "test-only portable fixture imports; no runtime/scientific source change",
+  "test_driver.py": {
+    "original_sha256": "3a16f97d7af4eb1f5eb65b8c9043045f80fd736ba593c12633ad7f9ce328beec",
+    "new_sha256": "fd1145e7db3e8585938d82909b2d2f5c4cfab3bc06fd4197a903b4a340e21591",
+    "replacements": [
+      {
+        "before": "sys.path.insert(0,'/tmp/evr-0010-headroom-prototype')",
+        "after": "sys.path.insert(0,str(Path(__file__).resolve().parent))",
+        "count": 1
+      },
+      {
+        "before": "fake = load_fixture('headroom_fake_fixtures','/tmp/evr-0010-headroom-prototype/test_headroom.py')",
+        "after": "fake = load_fixture('headroom_fake_fixtures',Path(__file__).resolve().with_name('test_headroom.py'))",
+        "count": 1
+      }
+    ]
+  },
+  "test_headroom.py": {
+    "original_sha256": "315585d39daf4110155f1d8764789a122b6339522446c365f1ab4fe1c5aafc7b",
+    "new_sha256": "315585d39daf4110155f1d8764789a122b6339522446c365f1ab4fe1c5aafc7b",
+    "replacements": [],
+    "reason": "Already imports local headroom; no absolute /tmp fixture reference."
+  }
+}

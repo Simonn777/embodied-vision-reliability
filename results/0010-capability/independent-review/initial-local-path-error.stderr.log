@@ -1,0 +1,11 @@
+fatal: path 'experiments/0010/bundle/stata-eurosat.py' does not exist in 'ececb253bfa00acffdb8d84c91d848c2802444a0'
+Traceback (most recent call last):
+  File "/tmp/evr-0010-execution-independent/review_saved.py", line 111, in <module>
+    stata_tree=ast.parse(git('show',OLD+':experiments/0010/bundle/stata-eurosat.py').decode())
+  File "/tmp/evr-0010-execution-independent/review_saved.py", line 22, in git
+    def git(*args):return subprocess.check_output(['git',*args],cwd=REPO)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'show', 'ececb253bfa00acffdb8d84c91d848c2802444a0:experiments/0010/bundle/stata-eurosat.py']' returned non-zero exit status 128.

@@ -1,39 +1,31 @@
 # Current state
 
-Updated: 2026-10-18. Program day 3. Phase: 0010 cached first-probe admission after a failed auxiliary preparation guard; no model or quality result yet. 0009 completed once and failed its frozen continuation gates; stop this exact-tail candidate. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
+Updated: 2026-10-18. Program day 3. Phase: 0010 capability and artificial resource admission completed; real-data quality screen not yet executed. 0009 completed once and failed its frozen continuation gates; stop this exact-tail candidate. 0008 failed both frozen quality gates and remains stopped. The broader research objective remains active; no manuscript is warranted. 0006's OPEN stdout defect and 0003's deferred cache state remain unchanged.
 
-## 0010: real-data route qualified, capability unmeasured
+## 0010: CPU capability and artificial resource checks completed
 
-The prospective question is whether removing a query from transductive StatA
-fitting can reduce wrong self-reinforcement. Known self-exclusion precedents and
-singleton harms prevent claiming novelty or inevitable benefit. The next step
-is a fixed official CLIP ViT-B/32 CPU capability check, followed only if admitted
-by a separately frozen real-data headroom screen.
+The [original capability and solver admissions](results/0010-capability/README.md)
+completed once on existing cloud CPU:8 image/1 text calls,20 artificial tests
+without skips, and3 measured fitted states/6 authored parity executions. Saved
+float32 features passed the hash/normalization check without repeat inference.
+Encoder projection25.022366 s and solver projection23.220176 s pass the declared
+450/360 s allowances. These are resource results, not classification improvement.
 
-[Original admission evidence](results/0010-admission/README.md) records source
-identity, disjoint filename lists, fixed capability names and initial missing
-imports. [Actual preparation](results/0010-preparation/README.md) completed
-four-wheel acquisition, offline installation, nine import/version checks and
-fixed assets on cloud CPU. A non-frozen auxiliary pre-probe check then failed
-on a residual checkpoint partial. No model or forward was attempted. All
-original failures and temporary files remain unchanged.
+[PR37 publication](docs/0010-cached-admission-publication-verification.md) and
+exact CI preceded execution. The original preparation guard's exit1, residual
+partial/temporary copies and UNKNOWN origin are retained. A pre-scientific alias
+mapping failure also remains explicit; the correction changed only inventory
+paths. The new guard accounts for the visible disappearing-FD race. No new
+scientific download, installation or paid service occurred.
 
-Read-only diagnosis found that partial equals the complete checkpoint prefix
-in a distinct stable inode; complete download/layout assets match their fixed
-hashes. Cause remains UNKNOWN. The original fd inspection silently ignored
-fd-stat exceptions; its apparent zero-error count does not prove a complete
-writer check. The [prospective correction and artificial solver admission](protocols/0010-cached-probe-and-solver-admission.md)
-requires a new explicit cached-file/marker/process check and separate published
-freeze before the still-unattempted original probe. No acquisition, installation
-or scientific retry is allowed. Three additional temporary copies are also
-retained; none is a model input.
-
-[Original freeze and CI publication](docs/0010-capability-freeze-publication-verification.md)
-preceded acquisition. The unchanged original protocol still allows only eight
-fixed images and ten prompts, once, under 300 seconds/four CPUs/8 GiB. It checks
-capability, not quality. A later fixed artificial solver admission will measure
-resources only. The 128-image quality study remains an unfrozen draft and no
-manuscript is warranted.
+The prospective question is whether deleting a query from transductive StatA
+fitting reduces wrong self-reinforcement. Generic self-exclusion has prior art;
+LOO versus OTHER-out has a readout peer-pool confound. No novelty or benefit is
+claimed. The next fixed128-image train-only screen needs its own published
+source/plan receipt and exact CI; its gate remains at least8 additional correct
+versus the best fixed control, both batches improving and complete coverage.
+No selected image has been decoded or scored for that screen. A positive screen
+would require new-data replication and mechanism controls before a manuscript.
 
 ## 0009 geometry screen: stop this exact-tail candidate
 
