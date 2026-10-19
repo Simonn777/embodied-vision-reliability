@@ -31,6 +31,18 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install -e '.[dev]'
       - run: python -m pytest -q
+      - name: Check native grid bounds on artificial coordinates without dataset access
+        run: |
+          python - <<'PY'
+          import json, os, sys, unittest
+          sys.path.insert(0, 'experiments/0012-score-bounds')
+          from grid_backend import build_grid
+          receipt = json.loads(build_grid().read_text())
+          os.environ['GRID_LIBRARY'] = receipt['library']
+          suite = unittest.defaultTestLoader.discover('experiments/0012-score-bounds', pattern='test_grid_backend.py')
+          result = unittest.TextTestRunner(verbosity=2).run(suite)
+          sys.exit(0 if result.wasSuccessful() else 1)
+          PY
       - name: Check the bounded CLIP preparation helpers without model or network
         run: PYTHONDONTWRITEBYTECODE=1 python -W error -m unittest discover -s experiments/0010 -p 'test_*.py' -v
       - name: Check artificial solver orchestration without Torch or fitting
