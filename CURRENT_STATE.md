@@ -1,24 +1,41 @@
 # Current state
 
-## Active continuation: 0018 ineligible; stronger control next, 2026-10-19
+## Active continuation: 0019 official-loss freeze preparation, 2026-10-19
 
-[0018 replay](results/0018-trace/README.md) completed all160 calls once with
-bitwise-equivalent final outputs. Cost reconstruction failed after88 cases on a
+[0019 preparation](results/0019-preparation/README.md) has 14 passing artificial
+checks and independent source review. No scientific 0019 calls have run. Publish
+this source and verify exact CI, then execute 160 calls once and seal before one
+score. Only the final author-recommended TRUNCATED_CAUCHY loss changes; the
+original binary and all 80 pairs stay fixed. Existing-method gains become stronger
+controls, not a novel contribution.
+
+[0018](results/0018-trace/README.md) is published on PR47, but its mechanism study
+remains INELIGIBLE. All 160 final raw outputs have bitwise parity; reconstruction
+stopped on a nonfinite initial state after 88 cases, before labels were opened.
+Do not repair the failed study or score its partial cohort.
+
+The goal remains active; no substantial new-method gain or manuscript exists.
+Preserve old results and the unchanged independent-source, matched-cost and
+improvement requirements.
+
+## Historical checkpoint: 0018 ineligible; stronger control next, 2026-10-19
+
+[0018 replay](results/0018-trace/README.md) completed all 160 calls once with
+bitwise-equivalent final outputs. Cost reconstruction failed after 88 cases on a
 nonfinite initial state. No labels were opened by that pass; the frozen mechanism
 study is INELIGIBLE. Independent saved-only review finds three discarded bad LOs,
-not a demonstrated final-pose mechanism. Do not repair, rerun or score its subset.
+not a demonstrated final-pose mechanism. Do not rerun or score its subset.
 
-Next freeze and execute the [0019 author-loss control](docs/literature/0019-control-admission.md):
-all80developmentpairs/bothdeptharms, originalbinary, onlyfinalTRUNCATED_CAUCHY
-instead ofCAUCHY. Seal160outcomes before scoring saved0017labels. This strengthens
-known baselines; any gain is not a novel contribution. Current preparation is
-unexecuted. Generic affine-depth scoring and weak-direction fusion have close
-prior work; separately investigate a falsifiable additional mechanism.
+Next freeze the [0019 author-loss control](docs/literature/0019-control-admission.md):
+all 80 development pairs and both depth arms, with the original binary and only
+final TRUNCATED_CAUCHY instead of CAUCHY. Seal all 160 outcomes before scoring
+saved 0017 labels. This strengthens known baselines; any gain is not a novel
+contribution. Generic affine-depth scoring and weak-direction fusion have close
+prior work; investigate a falsifiable additional mechanism separately.
 
 The research goal remains active. No substantial deployable new-method gain or
-manuscript exists. Preserve all earlier results, immutable source/data, the
-untouched held-out allocation and unchanged independent-source efficacy gates.
-
+manuscript exists. Preserve all earlier results, immutable source/data, untouched
+held-out allocation and unchanged independent-source efficacy gates.
 
 ## Active continuation: 0018 scientific freeze preparation, 2026-10-19
 
