@@ -1,0 +1,390 @@
+{
+  "arm": "depth_scale",
+  "baseline_prediction_sha256": "16439adf55367df41af9f34e4cbd90f9c1fdbd00c7ac7eadf55447fd7263f662",
+  "baseline_seal_sha256": "aef331923ced37edfb896ac070d954e3da6e08145145aa2bd3de636f9abce510",
+  "calibration": {
+    "K1": [
+      [
+        1115.5216064453125,
+        0.0,
+        394.0
+      ],
+      [
+        0.0,
+        1115.5216064453125,
+        539.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        774.73291015625,
+        0.0,
+        346.5
+      ],
+      [
+        0.0,
+        774.73291015625,
+        527.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 1078,
+      "model": "PINHOLE",
+      "params": [
+        1115.5216064453125,
+        1115.5216064453125,
+        394.0,
+        539.0
+      ],
+      "width": 788
+    },
+    "camera2": {
+      "height": 1054,
+      "model": "PINHOLE",
+      "params": [
+        774.73291015625,
+        774.73291015625,
+        346.5,
+        527.0
+      ],
+      "width": 692
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10675000,
+  "dataset_sha256_declared": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+  "dataset_sha256_verified": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+  "depth_diagnostics": {
+    "all": {
+      "denominator": 2045,
+      "direction_denominator": 4090,
+      "fixed_reprojection_cost": 0.17057402881203523,
+      "forward": {
+        "cost_sum": 369.02791937149505,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2045,
+        "valid_projection_count": 2045
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4090,
+      "native_branch_positive_finite_z_count": 4090,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.17057402881203523,
+      "reverse": {
+        "cost_sum": 328.6198584697291,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2045,
+        "valid_projection_count": 2045
+      },
+      "status": "available"
+    },
+    "pixel_threshold": 16.0,
+    "raw_translation_norm": 2.040327489462071,
+    "raw_translation_norm_overflow": false,
+    "returned_mask": {
+      "denominator": 2005,
+      "direction_denominator": 4010,
+      "fixed_reprojection_cost": 0.16063016297591035,
+      "forward": {
+        "cost_sum": 341.11070059263807,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2005,
+        "valid_projection_count": 2005
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4010,
+      "native_branch_positive_finite_z_count": 4010,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.16063016297591035,
+      "reverse": {
+        "cost_sum": 303.01625294076246,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2005,
+        "valid_projection_count": 2005
+      },
+      "status": "available"
+    },
+    "returned_mask_semantics": "Pre-final-refinement epipolar support; not final depth-active support",
+    "scale": 1.083360058013437,
+    "shift1": 0.0,
+    "shift2": 0.0
+  },
+  "estimate": {
+    "R": [
+      [
+        0.9058641616480623,
+        0.13271926199784712,
+        0.4022383847128472
+      ],
+      [
+        -0.23974720281070083,
+        0.9435369531704789,
+        0.22860292374817587
+      ],
+      [
+        -0.3491867686297668,
+        -0.3035187234694368,
+        0.8865353828908272
+      ]
+    ],
+    "t": [
+      -1.43994375394651,
+      -0.8386406049999805,
+      -1.177361535540505
+    ]
+  },
+  "filename": "florence_cathedral_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2045,
+    "count": 2045,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 1987,
+    "pixel_msac": 142.7116798450529,
+    "pixel_threshold": 2.0
+  },
+  "geometry": {
+    "R": [
+      [
+        0.9058641616480623,
+        0.13271926199784712,
+        0.4022383847128472
+      ],
+      [
+        -0.23974720281070083,
+        0.9435369531704789,
+        0.22860292374817587
+      ],
+      [
+        -0.3491867686297668,
+        -0.3035187234694368,
+        0.8865353828908272
+      ]
+    ],
+    "scale": 1.083360058013437,
+    "shift1": 0.0,
+    "shift2": 0.0,
+    "t": [
+      -1.43994375394651,
+      -0.8386406049999805,
+      -1.177361535540505
+    ]
+  },
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "be6a3927a2097db083c10c1421449f250279f5b8131916c0a12674e755463536",
+      "shape": [
+        2045
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "2368e645ba20d59d33699ba365327ce9a93ef846f7b80b1ef6370f2210fafd47",
+      "shape": [
+        2045
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "d6abffdaeaed0475b5aee72eeaccd5f12ecf093f9674606a01b64af4d35aef7f",
+      "shape": [
+        2045,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "7a10bd931fc01a0d0dd1e0deaac90f8e422adcb6f888ac1593e09c829bcc72f6",
+      "shape": [
+        2045,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2045,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 2005,
+  "key": "76840078_3613849894_o_92168939_7218355182_o",
+  "library": {
+    "binary_bytes": 2673976,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "35d03b03304ebb6249b9139c027ab27eca5bd5a859294324786634e067e337b4",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2045,
+  "mask_sha256": "b99cdf988cd69c9ce3a6374c815319c7c6c062728c46385a0c20d26dd886e50e",
+  "native_inliers_packbits_big_hex": "ffffffffff7fffff5ffffdfffffeffffffffffffffffffffefffffffffffffffffffffffffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffff7fffdfffffffffffb7fffffffffffffffbfffffffdffffffffffffffffdfffeffff7ffffffffefffff7ffffffd7ffffffffeffdfffffffffffdfffffffffffffffbfffeffffffffeffffffffffffffffffffff7ffff7ffffffffffffbffffffffdffffffffffffffffffbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbffffffffffdfffffff5fff7ffffffffffffdfff7ffffffffffffffff7fffffffff8",
+  "options": {
+    "bundle": {},
+    "estimate_shift": false,
+    "max_errors": [
+      16.0,
+      2.0
+    ],
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "weight_sampson": 1.0
+  },
+  "pair_index": 6,
+  "parity": {
+    "all_float_components_bitwise_equal": true,
+    "bitwise_equal_float_components": 29,
+    "discrete_and_mask_exact": true,
+    "float_relative_max_tolerance": 1e-12,
+    "floating_components": 29,
+    "max_normalized_float_error": 0.0,
+    "passed": true,
+    "raw_translation_gauge_preserved": true
+  },
+  "phase": "complete",
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-06-depth_scale.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-06-depth_scale.worker.json",
+    "raw_worker_sha256": "1e3d52a48050d9d7bec0676aa5bed2eeb5c3d1fd12971f14d76ad4c4d020676b",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 41504,
+    "termination": null,
+    "wall_seconds": 0.3235146670000004,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.980440097799511,
+    "iterations": 101,
+    "model_score": 0.0005818410560213512,
+    "num_inliers": 2005,
+    "refinements": 3
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "florence_cathedral",
+  "schema": "evr0018.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "configs/0018-libraries.json": "bddb31bcb0e4fbcb17ed50339d1cbd69f3738fb4c6e81179a2977fdf5ff522ec",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "experiments/0018-depth-trace/build_instrumented.py": "23d06ecce77bd63cdebee3ce74ec458b02ce713dedb75086cd2ae0047ed16b08",
+    "experiments/0018-depth-trace/common.py": "f8f9d22d4b1db777f743910c90606ac941982bf3d59459b051ceee5819faf4a7",
+    "experiments/0018-depth-trace/diagnose_trace.py": "ef9dd1da6fbc094d54fb92504af93dbf63517920469cefa2754d05f1332205ae",
+    "experiments/0018-depth-trace/instrument_source.py": "0455a7b949759f8678378cbb2b17f490e9d66b6d1fde1d225acb4a13ff8b4921",
+    "experiments/0018-depth-trace/predict_pair.py": "7220525e58564d53f80aed247060146712e95a3925d34274d617af020803a03a",
+    "experiments/0018-depth-trace/qualify_native.py": "12f335231d3d6313829e3c54749e44c8056d2f3780c95e5b7fa6bc4866cd0412",
+    "experiments/0018-depth-trace/qualify_observer.cpp": "b24ee4b84006de62d0e115cb6a3b912aabe4871bb1438b9f574486704fb32e4e",
+    "experiments/0018-depth-trace/run_diagnostic.py": "54b68d98e24401eb845832a7b751ffb6095389ef45f8d52076047f284e498769",
+    "experiments/0018-depth-trace/run_operation.py": "7a34e2495a2244b94a16d336a81567818e628f4d60bb29640499bf2f774a8211",
+    "experiments/0018-depth-trace/trace0018.h.in": "57be50be30b82b10983f0191f5c3723b116f6b20c5a7de98001217fc11cbd7c2",
+    "experiments/0018-depth-trace/trace_pybind.cc.in": "8e125d141becdf2bcf3aadbd6b833777e2e9d3ce28f4798fcc5ae50041927d0a",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125",
+    "protocols/0018-depth-lo-trace.md": "546ef9629cb72f8e07880c294e195efe96d17cb182e7e697bb69450b9fa9d8b3"
+  },
+  "status": "completed",
+  "timing_semantics": {
+    "call_seconds": "Instrumented native call including observer and native-to-Python trace serialization; observation overhead is not separately isolated",
+    "trace_save_seconds": "Python trace validation/JSON serialization/file write and hash",
+    "worker_total_seconds": "Whole worker; supervisor separately charges outer process wall time"
+  },
+  "timings": {
+    "binding_seconds": 0.175679375,
+    "call_seconds": 0.012675583000000018,
+    "charged_total_seconds": 0.3235146670000004,
+    "input_seconds": 0.03173145800000002,
+    "score_seconds": 0.0009886250000000207,
+    "trace_save_seconds": 0.005385833999999978,
+    "worker_total_seconds": 0.23132750000000002
+  },
+  "trace_byte_budget": 67108864,
+  "trace_bytes": 101340,
+  "trace_capacity": 50000,
+  "trace_event_count": 58,
+  "trace_path": "pair-06-depth_scale.worker.trace.json",
+  "trace_required_bytes": 101340,
+  "trace_sha256": "455abc838912522ad439a5760c205d0ff26ff28a938856338f667e864cb4f443"
+}

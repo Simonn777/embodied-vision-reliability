@@ -1,5 +1,25 @@
 # Next actions
 
+## Active continuation: 0018 ineligible; stronger control next, 2026-10-19
+
+[0018 replay](results/0018-trace/README.md) completed all160 calls once with
+bitwise-equivalent final outputs. Cost reconstruction failed after88 cases on a
+nonfinite initial state. No labels were opened by that pass; the frozen mechanism
+study is INELIGIBLE. Independent saved-only review finds three discarded bad LOs,
+not a demonstrated final-pose mechanism. Do not repair, rerun or score its subset.
+
+Next freeze and execute the [0019 author-loss control](docs/literature/0019-control-admission.md):
+all80developmentpairs/bothdeptharms, originalbinary, onlyfinalTRUNCATED_CAUCHY
+instead ofCAUCHY. Seal160outcomes before scoring saved0017labels. This strengthens
+known baselines; any gain is not a novel contribution. Current preparation is
+unexecuted. Generic affine-depth scoring and weak-direction fusion have close
+prior work; separately investigate a falsifiable additional mechanism.
+
+The research goal remains active. No substantial deployable new-method gain or
+manuscript exists. Preserve all earlier results, immutable source/data, the
+untouched held-out allocation and unchanged independent-source efficacy gates.
+
+
 ## Active continuation: 0018 scientific freeze preparation, 2026-10-19
 
 [0017 publication](docs/0017-publication-verification.md) is verified through

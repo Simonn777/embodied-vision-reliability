@@ -1,0 +1,33 @@
+{
+  "schema": "evr0018.outer-operation.v1",
+  "mode": "prediction",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "experiments/0018-depth-trace/run_diagnostic.py",
+    "--data-dir",
+    "../0017-preparation/inputs",
+    "--manifest",
+    "configs/0017-development-manifest.json",
+    "--baseline-seal",
+    "results/0017-depth/predictions/seal.json",
+    "--output-dir",
+    "<repository>/results/0018-trace/predictions",
+    "--instrumented-runtime",
+    "../0018-preparation/runtime",
+    "--dependency-runtime",
+    "../runtime"
+  ],
+  "python_version": "3.9.6",
+  "cwd": "repository root",
+  "helper_sha256": "7a34e2495a2244b94a16d336a81567818e628f4d60bb29640499bf2f774a8211",
+  "source_commit": "4770af453750fce77dd0c655266c66530cc0138a",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 61.360974125,
+  "peak_group_rss_kib": 94640,
+  "remaining_process_groups_after_cleanup": [],
+  "log_sha256": "67c0ba614dd269aae4974333f2cde1b2972bfaebd7b8cb945bdbe763f46d463a"
+}
