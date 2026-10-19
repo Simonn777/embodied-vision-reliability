@@ -1,38 +1,41 @@
 # Next actions
 
-## Active continuation: 0016 search diagnostic, 2026-10-19
+## Active continuation: 0016 complete, 2026-10-19
 
-The owner requires substantial independent improvement before a manuscript. None
-is yet established; the research goal remains active. The next concrete step is
-the [prospective64-pair diagnostic](protocols/0016-search-headroom.md): three
-official backends, four fixed seeds each, common final-pose selection, actual
-charged-time prefixes and separately labeled oracle headroom. It distinguishes
-tested search/selection/version effects before implementing a new method.
-The64new pair keys were allocated from the existing0015development scene using
-only names; their coordinates and R/t remain unread at this preparation stage.
-Scene0022 remains downstream-held-out and numerically untouched. No new dataset
-or model weights were acquired; [current-library preparation](results/0016-preparation/README.md)
-and manufactured-scene qualification are complete. This is not an accuracy gain.
+No substantial new-method improvement is established. The [0016 diagnostic](results/0016-search/README.md)
+completed64pairs,192workers and768official native calls once after published
+freeze055ea70 and successful exact CI. The single score completed after the
+prediction seal. Current normalized full4 AUC@5 is78.2293102381%; its nondeployable
+oracle reaches78.2587614824%, only0.0294512443pp higher. The predeclared2pp
+necessary candidate-selection gate fails. Zero estimator failures; outer227.0784s.
 
-Run only after the full source/configuration freeze is published and checks
-pass. Seal all192workers before the separate evaluator accesses selected GT.
-Preserve failures and every pair. Do not select using GT, replace a hard pair,
-treat restarts as novel, or claim complete-pipeline speed from cached estimation.
-A later ordinal-depth branch needs at least2pp diagnostic candidate-bank headroom
-plus a distinct mechanism and strong depth controls. That necessary condition
-alone is not sufficient evidence of efficacy.
+Stop the tested restart/ordinal-selection branch. More complicated selection
+cannot recover good hypotheses absent from this fixed bank. Stable errors do
+not identify their cause. The three errors above5degrees under current normalized
+PoseLib are almost invariant across the tested seeds. Current TS is worse here;
+retain it and do not use it alone as a weak baseline. No paper is started.
 
-[0015 is published and closed](docs/0015-publication-verification.md): full AUC@5
-+0.009558333pp and subset−3.091052179pp failed its fixed criteria. No iteration,
-gating or propagation rescue. The0014noise and0012scoring branches remain closed.
-[Primary-source reviews](docs/literature/0016-headroom-diagnostic-review.md) exclude
-generic multimodal scoring, patch/pose coupling and affine-depth hybrid fitting
-as new contributions. Additional data routes are source-screened only.
+Independent saved-only audit is complete and agrees (768 candidate errors;
+maximum angular discrepancy6.96e-11deg). Next: publish all0016results, then
+qualify a genuinely additional source of information under a separate prospective
+protocol. [Official cached-depth resources](docs/literature/0016-monodepth-resources.md)
+and their [consumer contract](docs/literature/0016-monodepth-consumer-contract.md)
+permit a small downstream comparison against known depth methods without new
+neural inference. They are not yet acquired/evaluated or a novel contribution.
+A five-scene development diagnostic may test whether such inputs generate useful
+poses and when existing methods are harmed; simply combining RePoseD/MADPose
+components is already known. Do not infer a new method from an oracle table.
 
-The unchanged manuscript gate is a distinct contribution with≥2absoluteAUC@5pp
-at matched complete-pipeline time on two independent held-out sources, positive
-scene-level95%intervals,≤0.5pp AUC@20loss, strong controls, ablations and replication.
-No manuscript is started.
+Preserve all earlier results and stop decisions. [0015](docs/0015-publication-verification.md)
+failed with full+0.009558333pp/subset−3.091052179pp;0014noise and0012scoring remain
+closed. The64new0015pairs are now development forever;0022 remains numerically
+unread. No additional dataset/model weights or fees were incurred by0016.
+
+The research goal remains active. A manuscript still requires a distinct
+contribution with≥2absoluteAUC@5pp at matched complete-pipeline time on two
+independent held-out sources, positive scene-level95%intervals,≤0.5pp AUC@20loss,
+strong controls, ablations and replication. Neither baseline diagnostics nor
+GitHub publication satisfies that stopping criterion.
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
