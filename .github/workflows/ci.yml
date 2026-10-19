@@ -46,6 +46,8 @@ jobs:
         run: python -m pytest -q experiments/0018-depth-trace experiments/0018-review
       - name: Check author-loss control and sealed evaluation on artificial data
         run: python -m pytest -q experiments/0019-author-loss experiments/0019-review
+      - name: Check spatial calibration transfer and sealing on artificial data
+        run: python -m pytest -q experiments/0020-spatial-depth-transfer
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'

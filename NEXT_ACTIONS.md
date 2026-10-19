@@ -1,5 +1,23 @@
 # Next actions
 
+## Active continuation: 0020 spatial-transfer freeze preparation, 2026-10-19
+
+[0020 preparation](results/0020-preparation/README.md) has 33 passing artificial
+checks. The fixed four-pose selector tests regional transfer of affine depth
+calibration against four same-bank controls and six fixed methods, including
+both stronger author-recommended 0019 arms. No scientific scoring has run.
+Publish the separately reviewed source freeze and verify its exact CI before
+one bounded all-80 score pass, then seal every record before one evaluation.
+Failure of any fixed gate closes this formulation without bank expansion or
+retuning. A pass only admits further validation; it does not admit a manuscript.
+
+0019 is merged through PR48 at dc858b473dc57e2a218aaef99d51561a3a64f5f3.
+Its measured affine AUC5 gain is an existing-method baseline improvement, not
+a novel result. All earlier negative and ineligible conclusions remain intact.
+The held-out, strong-control, matched-cost and replication requirements remain.
+The older sections below preserve the chronological record.
+
+
 ## Active continuation: 0019 stronger baseline measured, 2026-10-19
 
 [0019](results/0019-author-loss/README.md) completed 160 calls and one saved-label
