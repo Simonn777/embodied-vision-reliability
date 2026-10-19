@@ -1,5 +1,9 @@
 # Current state
 
+## Active continuation: 2026-10-19
+
+The owner reaffirmed substantial validated task improvement before any manuscript. The [research decision](docs/0012-research-reset.md) and [0012 protocol](protocols/0012-score-bounds-development.md) set the next priority without changing historical results. No new measured benefit exists yet.
+
 Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0011
 oblique coordinate-coupling negative result and saved-output review.
 The broader research objective remains active; no manuscript is warranted.

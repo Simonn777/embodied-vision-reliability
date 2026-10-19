@@ -1,5 +1,9 @@
 # Next actions
 
+## Active priority: 2026-10-19
+
+Execute the bounded [0012 numerical diagnostic](protocols/0012-score-bounds-development.md) after independent math checks. Establish useful computation beyond spatial culling before an accuracy experiment. Preserve all old stop decisions; no manuscript before independent task-quality gains.
+
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
 ## Active research order: close 0011 and review the next mechanism
