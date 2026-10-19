@@ -1,0 +1,66 @@
+{
+  "schema": "0011-oblique-development-v1",
+  "cloud_base": "/workspace/scratch/a349d03a0e0a",
+  "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "output_relative": "scratch/0011-oblique-v1",
+  "groups": [
+    "g-036",
+    "g-002"
+  ],
+  "frame_ids": [
+    0,
+    16,
+    32,
+    48,
+    64,
+    80,
+    96,
+    112,
+    128,
+    144,
+    160,
+    176,
+    192,
+    208,
+    224,
+    240
+  ],
+  "query_count": 8,
+  "model_source_revision": "730cda1c730877cfedbe01bf87fb1cadb78a565d",
+  "checkpoint_revision": "5d3fb48e76c5422841e38501514121e251beabb7",
+  "checkpoint_sha256": "cb96a43444ccb4fbdb25d800b88c7ba196179a526e78f01b021a16b1c1eff6da",
+  "checkpoint_bytes": 2532282370,
+  "source_sha256": {
+    "tapnet.tapnext.tapnext_torch": "48072289b22439267b3a51eb4cde5e2f81f38c840b6c95b659d60032a07c691a",
+    "tapnet.tapnext.tapnext_lru_modules": "2a475419c2f7c67db9acdf412108fb3b025d168f60e9e087fe35d65157adf64f",
+    "tapnet.tapnext.pscan": "7df34bf5e8318e81bb330ded14fc5e675e7485ea39fa9f0d77fa470f85796a2d",
+    "tapnet.tapnextpp.votsp2026.model": "e1219e2341c33e0f9124fe02d09a521ac7c91bc27505fcbebbf05741f825e46b",
+    "tapnet.tapnextpp.votsp2026.utils": "0336c526dc2b91244c3e5b803f84b65c6323ede138340a4107441a6b9c9fdbf8"
+  },
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.0.2",
+    "torchvision": "0.25.0+cpu",
+    "einops": "0.8.2",
+    "Pillow": "13.0.0"
+  },
+  "asset_receipt_sha256": "af44450542f4f2e4cc92dae3e10f218ee227e40b31814c2633602c65fbe83ac5",
+  "threads": 4,
+  "address_space_bytes": 8589934592,
+  "phase_seconds": {
+    "prepare": 300,
+    "g-036": 900,
+    "g-002": 900,
+    "derive": 1800,
+    "score": 1800
+  },
+  "new_downloads": 0,
+  "solver": {
+    "max_iterations": 1000,
+    "tolerance": 1e-09,
+    "entropy_coefficient": 1,
+    "probability_floor": 1e-12
+  },
+  "quality_gain_gate": "1/20",
+  "expected_eligible_coverage": 1
+}

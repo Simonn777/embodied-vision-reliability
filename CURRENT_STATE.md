@@ -1,10 +1,31 @@
 # Current state
 
-Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0010
-real-image headroom screen completed once and failed the fixed quality gates.
+Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0011
+oblique coordinate-coupling developmental implementation and review.
 The broader research objective remains active; no manuscript is warranted.
 Historical failed candidates, 0006's OPEN stdout defect and 0003's deferred
 cache state remain unchanged.
+
+## 0011: one specific hypothesis, no new model result yet
+
+The [prospective pilot](protocols/0011-oblique-coupling-development.md) asks
+whether oblique network outputs can resolve x/y pairing while preserving
+reference marginal confidence. It uses standard entropy-regularized transport.
+[Closest prior work](docs/literature/0011-oblique-coupling-prior.md) already covers
+coordinate-factorization ambiguity, local-mode decoding and heatmap fusion;
+novelty remains conditional on this exact mechanism and evidence.
+
+[Live source/cache checks](docs/0011-cache-and-head-audit.md) verified cached
+archive and native head access without inference. The new allocation is the
+first two original reserve groups, g-036 and g-002, as development, preserving
+the original manifest. Fixed sparse frames and eight frame-zero-visible queries
+will be shared by four views. The candidate uses two of those views; ordinary
+coordinate/distribution fusion and native outputs are the strong controls.
+The primary gate is >=5pp over the strongest control, positive against every
+control in each group, and no higher macro EPE than the strongest-quality control.
+Neither this plan nor passing artificial fixtures is a scientific improvement.
+Source freeze and independent review must precede any cached data preparation
+or native run. No manuscript, fees, new data/weight downloads or old-test tuning.
 
 ## 0010: exact query deletion failed the real-image quality gate
 
@@ -29,6 +50,11 @@ reconstructs all640 predictions, complete paired tables and NO_GO from saved
 probabilities; source/seal and actual-tool closure pass without any model call.
 The initial inventory exit2, preflight path error exit1 and export-checker
 self-match exit1 remain explicit; none caused a scientific retry.
+
+[Result publication is verified](docs/0010-headroom-results-publication-verification.md)
+through PR39 and merge d9cb5694. Both exact PR/main CI passed649 tests with31
+historical skips and193 subtests, plus the bounded fake-helper suites and1,240
+smoke frames. This closes publication of the negative result, not the research goal.
 
 All capability/solver admissions remain [historical resource evidence](results/0010-capability/README.md),
 not accuracy improvement. Private arrays stay in the original cloud. No new
