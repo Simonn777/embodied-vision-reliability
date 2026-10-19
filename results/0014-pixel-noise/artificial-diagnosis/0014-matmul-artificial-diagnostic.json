@@ -1,0 +1,292 @@
+{
+  "numpy": "2.0.2",
+  "coordinate_bounds": "x,y each in [-.5,.5], homogeneous z=1; unit t, proper near-identity R",
+  "cases": [
+    {
+      "n": 120,
+      "probes": [
+        {
+          "name": "g1=y@E",
+          "shapeA": [
+            120,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "success",
+          "warn_messages": [],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 1.1102230246251565e-16,
+          "max_abs_output": 1.083631070196859
+        },
+        {
+          "name": "g2=x@E.T",
+          "shapeA": [
+            120,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "success",
+          "warn_messages": [],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 1.1102230246251565e-16,
+          "max_abs_output": 1.0824427481839263
+        }
+      ],
+      "kernel": {
+        "status": "success",
+        "residual_finite": true,
+        "jacobian_finite": true
+      }
+    },
+    {
+      "n": 512,
+      "probes": [
+        {
+          "name": "g1=y@E",
+          "shapeA": [
+            512,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "success",
+          "warn_messages": [],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 1.1102230246251565e-16,
+          "max_abs_output": 1.0993337267373704
+        },
+        {
+          "name": "g2=x@E.T",
+          "shapeA": [
+            512,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "success",
+          "warn_messages": [],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 1.1102230246251565e-16,
+          "max_abs_output": 1.0824427481839263
+        }
+      ],
+      "kernel": {
+        "status": "success",
+        "residual_finite": true,
+        "jacobian_finite": true
+      }
+    },
+    {
+      "n": 1000,
+      "probes": [
+        {
+          "name": "g1=y@E",
+          "shapeA": [
+            1000,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "FloatingPointError",
+          "strict_message": "divide by zero encountered in matmul",
+          "traceback": "Traceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 25, in probe\n    C = A @ B\nFloatingPointError: divide by zero encountered in matmul\n",
+          "warn_messages": [
+            "divide by zero encountered in matmul",
+            "overflow encountered in matmul",
+            "invalid value encountered in matmul"
+          ],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 2.220446049250313e-16,
+          "max_abs_output": 1.0984998008305926
+        },
+        {
+          "name": "g2=x@E.T",
+          "shapeA": [
+            1000,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "FloatingPointError",
+          "strict_message": "divide by zero encountered in matmul",
+          "traceback": "Traceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 25, in probe\n    C = A @ B\nFloatingPointError: divide by zero encountered in matmul\n",
+          "warn_messages": [
+            "divide by zero encountered in matmul",
+            "overflow encountered in matmul",
+            "invalid value encountered in matmul"
+          ],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 2.220446049250313e-16,
+          "max_abs_output": 1.0831945770901947
+        }
+      ],
+      "kernel": {
+        "status": "ValueError",
+        "message": "nonfinite or collapsed residual arithmetic",
+        "traceback": "Traceback (most recent call last):\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 140, in _evaluate\n    g1, g2 = y @ E, x @ E.T\nFloatingPointError: divide by zero encountered in matmul\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 55, in <module>\n    residual, jacobian = refine.residuals_and_jacobian(x, y, R, t, [620., 850.], [1100., 730.], 'N')\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 180, in residuals_and_jacobian\n    return _evaluate(x, y, R, t, _metric_weights(focals1, focals2, mode))\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 166, in _evaluate\n    raise ValueError(\"nonfinite or collapsed residual arithmetic\") from exc\nValueError: nonfinite or collapsed residual arithmetic\n"
+      }
+    },
+    {
+      "n": 4096,
+      "probes": [
+        {
+          "name": "g1=y@E",
+          "shapeA": [
+            4096,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "FloatingPointError",
+          "strict_message": "divide by zero encountered in matmul",
+          "traceback": "Traceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 25, in probe\n    C = A @ B\nFloatingPointError: divide by zero encountered in matmul\n",
+          "warn_messages": [
+            "divide by zero encountered in matmul",
+            "overflow encountered in matmul",
+            "invalid value encountered in matmul"
+          ],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 2.220446049250313e-16,
+          "max_abs_output": 1.099752232138664
+        },
+        {
+          "name": "g2=x@E.T",
+          "shapeA": [
+            4096,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "FloatingPointError",
+          "strict_message": "divide by zero encountered in matmul",
+          "traceback": "Traceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 25, in probe\n    C = A @ B\nFloatingPointError: divide by zero encountered in matmul\n",
+          "warn_messages": [
+            "divide by zero encountered in matmul",
+            "overflow encountered in matmul",
+            "invalid value encountered in matmul"
+          ],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 2.220446049250313e-16,
+          "max_abs_output": 1.08451909212982
+        }
+      ],
+      "kernel": {
+        "status": "ValueError",
+        "message": "nonfinite or collapsed residual arithmetic",
+        "traceback": "Traceback (most recent call last):\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 140, in _evaluate\n    g1, g2 = y @ E, x @ E.T\nFloatingPointError: divide by zero encountered in matmul\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 55, in <module>\n    residual, jacobian = refine.residuals_and_jacobian(x, y, R, t, [620., 850.], [1100., 730.], 'N')\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 180, in residuals_and_jacobian\n    return _evaluate(x, y, R, t, _metric_weights(focals1, focals2, mode))\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 166, in _evaluate\n    raise ValueError(\"nonfinite or collapsed residual arithmetic\") from exc\nValueError: nonfinite or collapsed residual arithmetic\n"
+      }
+    },
+    {
+      "n": 10000,
+      "probes": [
+        {
+          "name": "g1=y@E",
+          "shapeA": [
+            10000,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "FloatingPointError",
+          "strict_message": "divide by zero encountered in matmul",
+          "traceback": "Traceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 25, in probe\n    C = A @ B\nFloatingPointError: divide by zero encountered in matmul\n",
+          "warn_messages": [
+            "divide by zero encountered in matmul",
+            "overflow encountered in matmul",
+            "invalid value encountered in matmul"
+          ],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 2.220446049250313e-16,
+          "max_abs_output": 1.1004913863334342
+        },
+        {
+          "name": "g2=x@E.T",
+          "shapeA": [
+            10000,
+            3
+          ],
+          "shapeB": [
+            3,
+            3
+          ],
+          "max_abs_A": 1.0,
+          "max_abs_B": 0.9668345775086779,
+          "absolute_output_bound": 2.9005037325260337,
+          "strict_status": "FloatingPointError",
+          "strict_message": "divide by zero encountered in matmul",
+          "traceback": "Traceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 25, in probe\n    C = A @ B\nFloatingPointError: divide by zero encountered in matmul\n",
+          "warn_messages": [
+            "divide by zero encountered in matmul",
+            "overflow encountered in matmul",
+            "invalid value encountered in matmul"
+          ],
+          "explicit_finite": true,
+          "matmul_finite": true,
+          "max_abs_difference": 2.220446049250313e-16,
+          "max_abs_output": 1.0868499444528728
+        }
+      ],
+      "kernel": {
+        "status": "ValueError",
+        "message": "nonfinite or collapsed residual arithmetic",
+        "traceback": "Traceback (most recent call last):\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 140, in _evaluate\n    g1, g2 = y @ E, x @ E.T\nFloatingPointError: divide by zero encountered in matmul\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<work>/0014-matmul-artificial-diagnostic.py\", line 55, in <module>\n    residual, jacobian = refine.residuals_and_jacobian(x, y, R, t, [620., 850.], [1100., 730.], 'N')\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 180, in residuals_and_jacobian\n    return _evaluate(x, y, R, t, _metric_weights(focals1, focals2, mode))\n  File \"<work>/embodied-vision-reliability/experiments/0014-pixel-noise/refine.py\", line 166, in _evaluate\n    raise ValueError(\"nonfinite or collapsed residual arithmetic\") from exc\nValueError: nonfinite or collapsed residual arithmetic\n"
+      }
+    }
+  ]
+}

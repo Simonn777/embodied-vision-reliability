@@ -1,0 +1,1737 @@
+{
+  "P_minus_control_auc_percentage_points": {
+    "N": {
+      "10": 0.0032550880389976555,
+      "20": 0.001627544019470406,
+      "5": 0.006510176078023733
+    },
+    "native": {
+      "10": 0.0032552710824091946,
+      "20": 0.001627635541183281,
+      "5": 0.006510542164818389
+    },
+    "original": {
+      "10": 0.0032552710824091946,
+      "20": 0.001627635541183281,
+      "5": 0.006510542164818389
+    }
+  },
+  "all_pair_interpretation_gate": {
+    "failure_means": "convergence confounding; no rows removed",
+    "passed": false,
+    "passed_pairs": 15,
+    "required_pairs": 16
+  },
+  "auc": {
+    "N": {
+      "auc_fraction": {
+        "10": 0.9058481142196095,
+        "20": 0.9529240571098049,
+        "5": 0.8116962284392191
+      },
+      "auc_percent": {
+        "10": 90.58481142196095,
+        "20": 95.29240571098049,
+        "5": 81.1696228439219
+      },
+      "count": 16,
+      "count_strictly_below_threshold": {
+        "10": 16,
+        "20": 16,
+        "5": 16
+      }
+    },
+    "P": {
+      "auc_fraction": {
+        "10": 0.9058806650999995,
+        "20": 0.9529403325499997,
+        "5": 0.8117613301999992
+      },
+      "auc_percent": {
+        "10": 90.58806650999995,
+        "20": 95.29403325499996,
+        "5": 81.17613301999992
+      },
+      "count": 16,
+      "count_strictly_below_threshold": {
+        "10": 16,
+        "20": 16,
+        "5": 16
+      }
+    },
+    "native": {
+      "auc_fraction": {
+        "10": 0.9058481123891754,
+        "20": 0.9529240561945878,
+        "5": 0.811696224778351
+      },
+      "auc_percent": {
+        "10": 90.58481123891754,
+        "20": 95.29240561945878,
+        "5": 81.1696224778351
+      },
+      "count": 16,
+      "count_strictly_below_threshold": {
+        "10": 16,
+        "20": 16,
+        "5": 16
+      }
+    },
+    "original": {
+      "auc_fraction": {
+        "10": 0.9058481123891754,
+        "20": 0.9529240561945878,
+        "5": 0.811696224778351
+      },
+      "auc_percent": {
+        "10": 90.58481123891754,
+        "20": 95.29240561945878,
+        "5": 81.1696224778351
+      },
+      "count": 16,
+      "count_strictly_below_threshold": {
+        "10": 16,
+        "20": 16,
+        "5": 16
+      }
+    }
+  },
+  "baseline_evaluation_sha256": "f8fe46392810b78d485a8dd90ae1849eae6491eaba620d2c9454b6c0f15cb5a4",
+  "coverage": {
+    "completed_all_branches": 16,
+    "selected": 16
+  },
+  "rows": [
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 1.2074182697257333e-06,
+        "rotation_degrees": 1.2074182697257333e-06,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 1.683572939752433,
+          "rotation_degrees": 0.39102312498676123,
+          "translation_degrees": 1.683572939752433
+        },
+        "P": {
+          "max_degrees": 1.6855883676428514,
+          "rotation_degrees": 0.391522884543162,
+          "translation_degrees": 1.6855883676428514
+        },
+        "native": {
+          "max_degrees": 1.6835729397522166,
+          "rotation_degrees": 0.39102312498676123,
+          "translation_degrees": 1.6835729397522166
+        },
+        "original": {
+          "max_degrees": 1.6835729397522166,
+          "rotation_degrees": 0.39102312498676123,
+          "translation_degrees": 1.6835729397522166
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.0328421096305356e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.00019127966346956112,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 10,
+            "iteration_count": 10,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 7.704919063770156e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.001784286311654607,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-205993994_6969ba4619_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 0.4983919982322867,
+          "P": 8297.144617987613
+        },
+        "P": {
+          "N": 8146.600251233092,
+          "P": 4.770649794363392
+        },
+        "native": {
+          "N": 0.4983919982468386,
+          "P": 8297.144617987613
+        },
+        "original": {
+          "N": 0.4983919982322867,
+          "P": 8297.144617987613
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2605.567101029521,
+          "P": 2673.7081173326615
+        },
+        "P": {
+          "N": 2605.573135077892,
+          "P": 2673.701951980714
+        },
+        "native": {
+          "N": 2605.567101029521,
+          "P": 2673.7081173326615
+        },
+        "original": {
+          "N": 2605.567101029521,
+          "P": 2673.7081173326615
+        }
+      },
+      "pair_index": 0,
+      "timing_seconds": {
+        "N": 0.0046019160000000114,
+        "P": 0.044557125,
+        "loading_and_validation": 0.010960624999999988,
+        "native": 0.0003989580000000048,
+        "objectives": 0.03332591699999998,
+        "worker_elapsed": 0.192682792
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.8584872130861211,
+          "rotation_degrees": 0.3194329164811384,
+          "translation_degrees": 0.8584872130861211
+        },
+        "P": {
+          "max_degrees": 0.8588643419444869,
+          "rotation_degrees": 0.3195975484202878,
+          "translation_degrees": 0.8588643419444869
+        },
+        "native": {
+          "max_degrees": 0.8584872130861211,
+          "rotation_degrees": 0.3194329164811384,
+          "translation_degrees": 0.8584872130861211
+        },
+        "original": {
+          "max_degrees": 0.8584872130861211,
+          "rotation_degrees": 0.3194329164811384,
+          "translation_degrees": 0.8584872130861211
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 5.871370055688617e-14,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0003950412431405269,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 6,
+            "iteration_count": 6,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.416526931762749e-11,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.006178647813397863,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-2073853679_f35bb29c49_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 0.6491643394035439,
+          "P": 5118.385724954749
+        },
+        "P": {
+          "N": 5147.174582678724,
+          "P": 10.066576701625857
+        },
+        "native": {
+          "N": 0.6491633081309994,
+          "P": 5118.38572393175
+        },
+        "original": {
+          "N": 0.6491643394035439,
+          "P": 5118.385724954749
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 1643.2824437336496,
+          "P": 1629.2530568813484
+        },
+        "P": {
+          "N": 1643.2831163162111,
+          "P": 1629.2523875203499
+        },
+        "native": {
+          "N": 1643.2824437336624,
+          "P": 1629.2530568813613
+        },
+        "original": {
+          "N": 1643.2824437336496,
+          "P": 1629.2530568813484
+        }
+      },
+      "pair_index": 1,
+      "timing_seconds": {
+        "N": 0.003789291,
+        "P": 0.02554279099999998,
+        "loading_and_validation": 0.0010844170000000042,
+        "native": 0.000291874999999997,
+        "objectives": 0.028147417000000008,
+        "worker_elapsed": 0.17734333400000002
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 8.537736462515939e-07,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 8.537736462515939e-07
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 1.6572542362471172,
+          "rotation_degrees": 0.4481584790833408,
+          "translation_degrees": 1.6572542362471172
+        },
+        "P": {
+          "max_degrees": 1.654782679707975,
+          "rotation_degrees": 0.44726157008515033,
+          "translation_degrees": 1.654782679707975
+        },
+        "native": {
+          "max_degrees": 1.6572542362471172,
+          "rotation_degrees": 0.4481584790833408,
+          "translation_degrees": 1.6572542362471172
+        },
+        "original": {
+          "max_degrees": 1.6572542362471172,
+          "rotation_degrees": 0.4481584790833408,
+          "translation_degrees": 1.6572542362471172
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 2.434809991334822e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0008278216839286992,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 7,
+            "iteration_count": 7,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 7.612762087854216e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0049973470012119655,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-3158214253_16b5194f70_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 1.3073085187277518,
+          "P": 15544.810038849133
+        },
+        "P": {
+          "N": 15750.295183163278,
+          "P": 7.824626440672882
+        },
+        "native": {
+          "N": 1.3073131036374972,
+          "P": 15544.810034305434
+        },
+        "original": {
+          "N": 1.3073085187277518,
+          "P": 15544.810038849133
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 1579.2151185548687,
+          "P": 1565.760510857348
+        },
+        "P": {
+          "N": 1579.2196046291297,
+          "P": 1565.7560779299974
+        },
+        "native": {
+          "N": 1579.2151185548673,
+          "P": 1565.7605108573457
+        },
+        "original": {
+          "N": 1579.2151185548687,
+          "P": 1565.760510857348
+        }
+      },
+      "pair_index": 2,
+      "timing_seconds": {
+        "N": 0.004976834000000013,
+        "P": 0.07645516699999999,
+        "loading_and_validation": 0.0011926250000000027,
+        "native": 0.0003072079999999755,
+        "objectives": 0.029562584000000003,
+        "worker_elapsed": 0.2819695
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.5811492280592907,
+          "rotation_degrees": 0.3669236086579748,
+          "translation_degrees": 0.5811492280592907
+        },
+        "P": {
+          "max_degrees": 0.5794283471073961,
+          "rotation_degrees": 0.3657832290612577,
+          "translation_degrees": 0.5794283471073961
+        },
+        "native": {
+          "max_degrees": 0.5811492280592907,
+          "rotation_degrees": 0.36692360865996143,
+          "translation_degrees": 0.5811492280592907
+        },
+        "original": {
+          "max_degrees": 0.5811492280592907,
+          "rotation_degrees": 0.3669236086579748,
+          "translation_degrees": 0.5811492280592907
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 6.120134420816218e-15,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 7.20680838577762e-05,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 8,
+            "iteration_count": 8,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 6.859973360184055e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.00461567969392866,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1017541041_394e9f81d4_o.jpg_0015-389637286_3f18f449c8_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 0.14863586258550088,
+          "P": 5990.142082959161
+        },
+        "P": {
+          "N": 5804.071251875518,
+          "P": 9.799495443576088
+        },
+        "native": {
+          "N": 0.1486335480042922,
+          "P": 5990.142084842467
+        },
+        "original": {
+          "N": 0.14863586258550088,
+          "P": 5990.142082959161
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2062.4367213485025,
+          "P": 2123.0915117295235
+        },
+        "P": {
+          "N": 2062.43986847998,
+          "P": 2123.0882759187293
+        },
+        "native": {
+          "N": 2062.4367213484934,
+          "P": 2123.091511729515
+        },
+        "original": {
+          "N": 2062.4367213485025,
+          "P": 2123.0915117295235
+        }
+      },
+      "pair_index": 3,
+      "timing_seconds": {
+        "N": 0.0036521659999999984,
+        "P": 0.031273167000000004,
+        "loading_and_validation": 0.0017717919999999943,
+        "native": 0.0002974999999999922,
+        "objectives": 0.024513124999999997,
+        "worker_elapsed": 0.152163375
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 1.7075472925031877e-06,
+        "rotation_degrees": 1.7075472925031877e-06,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 2.2623476614184783,
+          "rotation_degrees": 0.23305397174867146,
+          "translation_degrees": 2.2623476614184783
+        },
+        "P": {
+          "max_degrees": 2.258428093759011,
+          "rotation_degrees": 0.2327879293990753,
+          "translation_degrees": 2.258428093759011
+        },
+        "native": {
+          "max_degrees": 2.2623476614184783,
+          "rotation_degrees": 0.23305397174867146,
+          "translation_degrees": 2.2623476614184783
+        },
+        "original": {
+          "max_degrees": 2.2623476614184783,
+          "rotation_degrees": 0.23305397174867146,
+          "translation_degrees": 2.2623476614184783
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.7696837771290264e-14,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0009709200609642712,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 5,
+            "iteration_count": 5,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 4.858461279198966e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0243826733732245,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1091880705_b783893319_o.jpg_0015-325576817_bd8d9843c0_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 2.2196922690312415,
+          "P": 26414.061054664788
+        },
+        "P": {
+          "N": 26918.53882470133,
+          "P": 54.294209886968645
+        },
+        "native": {
+          "N": 2.219688743946516,
+          "P": 26414.06105811359
+        },
+        "original": {
+          "N": 2.2196922690312415,
+          "P": 26414.061054664788
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2286.1740716601835,
+          "P": 2226.755501034335
+        },
+        "P": {
+          "N": 2286.1758310034797,
+          "P": 2226.753771249345
+        },
+        "native": {
+          "N": 2286.174071660183,
+          "P": 2226.7555010343344
+        },
+        "original": {
+          "N": 2286.1740716601835,
+          "P": 2226.755501034335
+        }
+      },
+      "pair_index": 4,
+      "timing_seconds": {
+        "N": 0.0037108750000000024,
+        "P": 0.022641833,
+        "loading_and_validation": 0.0015326249999999958,
+        "native": 0.0003673750000000031,
+        "objectives": 0.025973083000000008,
+        "worker_elapsed": 0.157841542
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.5822624361834656,
+          "rotation_degrees": 0.38254001693884887,
+          "translation_degrees": 0.5822624361834656
+        },
+        "P": {
+          "max_degrees": 0.5807009493640607,
+          "rotation_degrees": 0.3817991985939745,
+          "translation_degrees": 0.5807009493640607
+        },
+        "native": {
+          "max_degrees": 0.5822624361828397,
+          "rotation_degrees": 0.38254001693884887,
+          "translation_degrees": 0.5822624361828397
+        },
+        "original": {
+          "max_degrees": 0.5822624361828397,
+          "rotation_degrees": 0.38254001693884887,
+          "translation_degrees": 0.5822624361828397
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 2.2323266120999757e-15,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 1.421185953212502e-05,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 7,
+            "iteration_count": 7,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.8582440346044444e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0009351181062474683,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1105376832_6f92693a76_o.jpg_0015-2795419285_b4bbfa1862_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 0.01774753970969705,
+          "P": 1171.1373265935104
+        },
+        "P": {
+          "N": 1060.0570234862298,
+          "P": 1.2287521158734773
+        },
+        "native": {
+          "N": 0.017746969353473103,
+          "P": 1171.1373261672506
+        },
+        "original": {
+          "N": 0.01774753970969705,
+          "P": 1171.1373265935104
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 1248.783782979268,
+          "P": 1314.0090539232729
+        },
+        "P": {
+          "N": 1248.7853552978386,
+          "P": 1314.007404694934
+        },
+        "native": {
+          "N": 1248.7837829792677,
+          "P": 1314.0090539232724
+        },
+        "original": {
+          "N": 1248.783782979268,
+          "P": 1314.0090539232729
+        }
+      },
+      "pair_index": 5,
+      "timing_seconds": {
+        "N": 0.0023393339999999985,
+        "P": 0.01822583300000001,
+        "loading_and_validation": 0.0011418750000000005,
+        "native": 0.00020799999999999985,
+        "objectives": 0.016490792000000004,
+        "worker_elapsed": 0.12850175
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.2564661152281563,
+          "rotation_degrees": 0.03608395123078443,
+          "translation_degrees": 0.2564661152281563
+        },
+        "P": {
+          "max_degrees": 0.25718844469596513,
+          "rotation_degrees": 0.03611729209330324,
+          "translation_degrees": 0.25718844469596513
+        },
+        "native": {
+          "max_degrees": 0.2564661152281563,
+          "rotation_degrees": 0.03608395123078443,
+          "translation_degrees": 0.2564661152281563
+        },
+        "original": {
+          "max_degrees": 0.2564661152281563,
+          "rotation_degrees": 0.03608395123078443,
+          "translation_degrees": 0.2564661152281563
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.3755503654062932e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0029930884544314014,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 6,
+            "iteration_count": 6,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.5356148150224149e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.00236889958956902,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1162164006_4b2185f4e7_o.jpg_0015-2419051977_2fb8a8981c_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 7.169121569539697,
+          "P": 4253.554471709037
+        },
+        "P": {
+          "N": 4297.093781623436,
+          "P": 5.603580320909994
+        },
+        "native": {
+          "N": 7.169121593537624,
+          "P": 4253.554471685223
+        },
+        "original": {
+          "N": 7.169121569539697,
+          "P": 4253.554471709037
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2395.2254264071253,
+          "P": 2365.4804455982076
+        },
+        "P": {
+          "N": 2395.227704885101,
+          "P": 2365.4781931594944
+        },
+        "native": {
+          "N": 2395.2254264071253,
+          "P": 2365.480445598207
+        },
+        "original": {
+          "N": 2395.2254264071253,
+          "P": 2365.4804455982076
+        }
+      },
+      "pair_index": 6,
+      "timing_seconds": {
+        "N": 0.004269583000000007,
+        "P": 0.028057333000000004,
+        "loading_and_validation": 0.0010583329999999946,
+        "native": 0.00027212500000001194,
+        "objectives": 0.028843333,
+        "worker_elapsed": 0.153627916
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.3705486894030197,
+          "rotation_degrees": 0.21969027369861868,
+          "translation_degrees": 0.3705486894030197
+        },
+        "P": {
+          "max_degrees": 0.37024507980901883,
+          "rotation_degrees": 0.21927981524274504,
+          "translation_degrees": 0.37024507980901883
+        },
+        "native": {
+          "max_degrees": 0.3705486894040033,
+          "rotation_degrees": 0.21969027369861868,
+          "translation_degrees": 0.3705486894040033
+        },
+        "original": {
+          "max_degrees": 0.3705486894040033,
+          "rotation_degrees": 0.21969027369861868,
+          "translation_degrees": 0.3705486894040033
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 5.501777095645623e-14,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0003832105455333419,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 11,
+            "iteration_count": 11,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 8.886775308846583e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.000997833286085628,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1283321355_191a081149_o.jpg_0015-2431823248_3776ed43ec_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 1.0230688634120324,
+          "P": 22779.984349132552
+        },
+        "P": {
+          "N": 21720.722558521233,
+          "P": 2.8268622258288296
+        },
+        "native": {
+          "N": 1.0230685519184828,
+          "P": 22779.984348805476
+        },
+        "original": {
+          "N": 1.0230688634120324,
+          "P": 22779.984349132552
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2669.7304532372755,
+          "P": 2833.021865810464
+        },
+        "P": {
+          "N": 2669.750836435492,
+          "P": 2833.000527491168
+        },
+        "native": {
+          "N": 2669.7304532373078,
+          "P": 2833.021865810495
+        },
+        "original": {
+          "N": 2669.7304532372755,
+          "P": 2833.021865810464
+        }
+      },
+      "pair_index": 7,
+      "timing_seconds": {
+        "N": 0.003369374999999994,
+        "P": 0.038510917000000006,
+        "loading_and_validation": 0.0011549160000000058,
+        "native": 0.0002844580000000013,
+        "objectives": 0.023320000000000007,
+        "worker_elapsed": 0.155623583
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.1268497790723438,
+          "rotation_degrees": 0.07373352456984936,
+          "translation_degrees": 0.1268497790723438
+        },
+        "P": {
+          "max_degrees": 0.1275244931054143,
+          "rotation_degrees": 0.07453180613073174,
+          "translation_degrees": 0.1275244931054143
+        },
+        "native": {
+          "max_degrees": 0.1268497790665974,
+          "rotation_degrees": 0.07373352456984936,
+          "translation_degrees": 0.1268497790665974
+        },
+        "original": {
+          "max_degrees": 0.1268497790665974,
+          "rotation_degrees": 0.07373352456984936,
+          "translation_degrees": 0.1268497790665974
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 6.752160697871798e-14,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0008155092204210582,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 6,
+            "iteration_count": 6,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 9.920276944724835e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.002423311324805248,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1283321355_191a081149_o.jpg_0015-3475832871_843d6b914c_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 1.062883171172334,
+          "P": 2737.4782607308007
+        },
+        "P": {
+          "N": 2695.8745332769627,
+          "P": 3.213755804051459
+        },
+        "native": {
+          "N": 1.062883171172334,
+          "P": 2737.4782607308007
+        },
+        "original": {
+          "N": 1.062883171172334,
+          "P": 2737.4782607308007
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 1303.336791978334,
+          "P": 1326.1861811992635
+        },
+        "P": {
+          "N": 1303.3393201106028,
+          "P": 1326.1836278133749
+        },
+        "native": {
+          "N": 1303.336791978334,
+          "P": 1326.1861811992635
+        },
+        "original": {
+          "N": 1303.336791978334,
+          "P": 1326.1861811992635
+        }
+      },
+      "pair_index": 8,
+      "timing_seconds": {
+        "N": 0.0034456669999999995,
+        "P": 0.023766875000000007,
+        "loading_and_validation": 0.0011472079999999968,
+        "native": 0.0002657920000000008,
+        "objectives": 0.024637624999999996,
+        "worker_elapsed": 0.141660083
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 1.2439438923203208,
+          "rotation_degrees": 0.5364995609035225,
+          "translation_degrees": 1.2439438923203208
+        },
+        "P": {
+          "max_degrees": 1.2435684918302317,
+          "rotation_degrees": 0.536411612694044,
+          "translation_degrees": 1.2435684918302317
+        },
+        "native": {
+          "max_degrees": 1.2439438923203208,
+          "rotation_degrees": 0.5364995609035225,
+          "translation_degrees": 1.2439438923203208
+        },
+        "original": {
+          "max_degrees": 1.2439438923203208,
+          "rotation_degrees": 0.5364995609035225,
+          "translation_degrees": 1.2439438923203208
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 5.061049318363089e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.001237371894612425,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 8,
+            "iteration_count": 8,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 6.874538425031211e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.005252563496201749,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1283321355_191a081149_o.jpg_0015-3519412089_18daa2c071_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 1.6195492793413402,
+          "P": 8613.134979537805
+        },
+        "P": {
+          "N": 8223.495567892878,
+          "P": 7.265094707325877
+        },
+        "native": {
+          "N": 1.619549173525615,
+          "P": 8613.134979427732
+        },
+        "original": {
+          "N": 1.6195491883559519,
+          "P": 8613.13497944247
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 1308.862183142298,
+          "P": 1383.1556042281272
+        },
+        "P": {
+          "N": 1308.8654576807535,
+          "P": 1383.1521908453724
+        },
+        "native": {
+          "N": 1308.862183142286,
+          "P": 1383.1556042281145
+        },
+        "original": {
+          "N": 1308.8621831423006,
+          "P": 1383.1556042281302
+        }
+      },
+      "pair_index": 9,
+      "timing_seconds": {
+        "N": 0.0022186670000000075,
+        "P": 0.019084041999999996,
+        "loading_and_validation": 0.001334834000000007,
+        "native": 0.00020658399999999577,
+        "objectives": 0.015544375,
+        "worker_elapsed": 0.127007375
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 1.2074182697257333e-06,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 1.2074182697257333e-06
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.43737112908842035,
+          "rotation_degrees": 0.43737112908842035,
+          "translation_degrees": 0.303155171593539
+        },
+        "P": {
+          "max_degrees": 0.4399580724356834,
+          "rotation_degrees": 0.4399580724356834,
+          "translation_degrees": 0.2957912462724089
+        },
+        "native": {
+          "max_degrees": 0.4373714219638162,
+          "rotation_degrees": 0.4373714219638162,
+          "translation_degrees": 0.3031546047074141
+        },
+        "original": {
+          "max_degrees": 0.4373714219638162,
+          "rotation_degrees": 0.4373714219638162,
+          "translation_degrees": 0.3031546047074141
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 1,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 3.2370854715740686e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.001671351745727307,
+            "termination_reason": "relative_cost_tolerance"
+          },
+          "P": {
+            "accepted_steps": 7,
+            "iteration_count": 7,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 8.891856184026323e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.013935805855070177,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-2297788512_6d09de6efa_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 2.7883644799783904,
+          "P": 48950.44077960042
+        },
+        "P": {
+          "N": 56850.36797737303,
+          "P": 20.067834209949424
+        },
+        "native": {
+          "N": 7.236650904152796,
+          "P": 48954.42403625149
+        },
+        "original": {
+          "N": 7.236652098645341,
+          "P": 48954.4240372786
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 1668.3289362078617,
+          "P": 1440.0988223341542
+        },
+        "P": {
+          "N": 1668.420130968666,
+          "P": 1440.0196456990875
+        },
+        "native": {
+          "N": 1668.3289362100404,
+          "P": 1440.0988214537992
+        },
+        "original": {
+          "N": 1668.3289362100413,
+          "P": 1440.0988214538006
+        }
+      },
+      "pair_index": 10,
+      "timing_seconds": {
+        "N": 0.005496292,
+        "P": 0.022800083000000013,
+        "loading_and_validation": 0.0011834580000000122,
+        "native": 0.0003075000000000022,
+        "objectives": 0.0209105,
+        "worker_elapsed": 0.141912208
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 1.090650937996509,
+          "rotation_degrees": 0.4866771132797538,
+          "translation_degrees": 1.090650937996509
+        },
+        "P": {
+          "max_degrees": 1.091612831884467,
+          "rotation_degrees": 0.4867964309011032,
+          "translation_degrees": 1.091612831884467
+        },
+        "native": {
+          "max_degrees": 1.0906509379961749,
+          "rotation_degrees": 0.4866771132797538,
+          "translation_degrees": 1.0906509379961749
+        },
+        "original": {
+          "max_degrees": 1.0906509379961749,
+          "rotation_degrees": 0.4866771132797538,
+          "translation_degrees": 1.0906509379961749
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 2.24954064651342e-14,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.00018780674687614846,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 6,
+            "iteration_count": 6,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 9.358621720772667e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.009051084136804529,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-2947740433_8316ecf292_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 0.4348260677154829,
+          "P": 3449.486543258027
+        },
+        "P": {
+          "N": 3447.3533750816127,
+          "P": 20.787810156977727
+        },
+        "native": {
+          "N": 0.4348271704354645,
+          "P": 3449.48654435299
+        },
+        "original": {
+          "N": 0.4348260677154829,
+          "P": 3449.486543258027
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2315.2845941271453,
+          "P": 2296.72272945843
+        },
+        "P": {
+          "N": 2315.2868566545685,
+          "P": 2296.720463844548
+        },
+        "native": {
+          "N": 2315.284594127144,
+          "P": 2296.722729458429
+        },
+        "original": {
+          "N": 2315.2845941271453,
+          "P": 2296.72272945843
+        }
+      },
+      "pair_index": 11,
+      "timing_seconds": {
+        "N": 0.0031369579999999953,
+        "P": 0.022001459,
+        "loading_and_validation": 0.0010495840000000062,
+        "native": 0.0002492909999999987,
+        "objectives": 0.023111083000000004,
+        "worker_elapsed": 0.138109
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.6148855907691134,
+          "rotation_degrees": 0.4209446527034021,
+          "translation_degrees": 0.6148855907691134
+        },
+        "P": {
+          "max_degrees": 0.6147015153326865,
+          "rotation_degrees": 0.42052587681249437,
+          "translation_degrees": 0.6147015153326865
+        },
+        "native": {
+          "max_degrees": 0.6148855907691134,
+          "rotation_degrees": 0.4209446527034021,
+          "translation_degrees": 0.6148855907691134
+        },
+        "original": {
+          "max_degrees": 0.6148855907691134,
+          "rotation_degrees": 0.4209446527034021,
+          "translation_degrees": 0.6148855907691134
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 2.2317012113027208e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0010340476892530548,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 6,
+            "iteration_count": 6,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 4.788624636713206e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.006310515153733719,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-841149791_2ae77144de_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 2.497951338857977,
+          "P": 440.8280340724847
+        },
+        "P": {
+          "N": 443.4885775392611,
+          "P": 15.180350584570627
+        },
+        "native": {
+          "N": 2.4979512226150042,
+          "P": 440.8280340874604
+        },
+        "original": {
+          "N": 2.497951338857977,
+          "P": 440.8280340724847
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2415.7022590151273,
+          "P": 2405.5664943956053
+        },
+        "P": {
+          "N": 2415.7043514924676,
+          "P": 2405.564397637002
+        },
+        "native": {
+          "N": 2415.7022590151355,
+          "P": 2405.5664943956144
+        },
+        "original": {
+          "N": 2415.7022590151273,
+          "P": 2405.5664943956053
+        }
+      },
+      "pair_index": 12,
+      "timing_seconds": {
+        "N": 0.003869207999999999,
+        "P": 0.025442709000000008,
+        "loading_and_validation": 0.0011790420000000051,
+        "native": 0.0002884999999999971,
+        "objectives": 0.02848120799999998,
+        "worker_elapsed": 0.14834512500000002
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 0.710654063033348,
+          "rotation_degrees": 0.6015689448597042,
+          "translation_degrees": 0.710654063033348
+        },
+        "P": {
+          "max_degrees": 0.7088134518178733,
+          "rotation_degrees": 0.5991042477661062,
+          "translation_degrees": 0.7088134518178733
+        },
+        "native": {
+          "max_degrees": 0.710654063033348,
+          "rotation_degrees": 0.6015689448609159,
+          "translation_degrees": 0.710654063033348
+        },
+        "original": {
+          "max_degrees": 0.710654063033348,
+          "rotation_degrees": 0.6015689448597042,
+          "translation_degrees": 0.710654063033348
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.538776553635595e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0005254218712335327,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 6,
+            "iteration_count": 6,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 3.2564067895576716e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.002539928423205419,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": false,
+        "reasons": [
+          "N_objective_increased"
+        ]
+      },
+      "key": "0015-1307424764_836bfa2f6b_o.jpg_0015-878855662_a241416cff_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 1.162277750727424,
+          "P": 4565.0142574619385
+        },
+        "P": {
+          "N": 4639.043020343295,
+          "P": 5.54489390189888
+        },
+        "native": {
+          "N": 1.1622771004380164,
+          "P": 4565.014257585425
+        },
+        "original": {
+          "N": 1.1622777187905176,
+          "P": 4565.014257455619
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2212.0848300409443,
+          "P": 2183.106923840297
+        },
+        "P": {
+          "N": 2212.101215996804,
+          "P": 2183.0906143808415
+        },
+        "native": {
+          "N": 2212.084830040945,
+          "P": 2183.1069238402974
+        },
+        "original": {
+          "N": 2212.084830040944,
+          "P": 2183.106923840296
+        }
+      },
+      "pair_index": 13,
+      "timing_seconds": {
+        "N": 0.003233541999999992,
+        "P": 0.022994916000000004,
+        "loading_and_validation": 0.0011793750000000103,
+        "native": 0.0002854590000000018,
+        "objectives": 0.02403949999999999,
+        "worker_elapsed": 0.140266208
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 0.0,
+        "rotation_degrees": 0.0,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 1.4086990861924658,
+          "rotation_degrees": 0.4193048347017286,
+          "translation_degrees": 1.4086990861924658
+        },
+        "P": {
+          "max_degrees": 1.4087037251488062,
+          "rotation_degrees": 0.41930524609446235,
+          "translation_degrees": 1.4087037251488062
+        },
+        "native": {
+          "max_degrees": 1.4086990861924658,
+          "rotation_degrees": 0.4193048347017286,
+          "translation_degrees": 1.4086990861924658
+        },
+        "original": {
+          "max_degrees": 1.4086990861924658,
+          "rotation_degrees": 0.4193048347017286,
+          "translation_degrees": 1.4086990861924658
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 7.857808376184282e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0015911969932942954,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 2,
+            "iteration_count": 2,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 2.860444354738688e-12,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0027269934829469373,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1349576135_91cfa7d80a_o.jpg_0015-3480265591_02fd1d7f7e_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 3.3556726656935503,
+          "P": 28.8254297943251
+        },
+        "P": {
+          "N": 19.720852365167637,
+          "P": 5.750693576483711
+        },
+        "native": {
+          "N": 3.3556726682201266,
+          "P": 28.8254297968635
+        },
+        "original": {
+          "N": 3.3556726656935503,
+          "P": 28.8254297943251
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 2108.898319840472,
+          "P": 2108.8035645226823
+        },
+        "P": {
+          "N": 2108.898319998379,
+          "P": 2108.8035642348505
+        },
+        "native": {
+          "N": 2108.8983198404717,
+          "P": 2108.8035645226823
+        },
+        "original": {
+          "N": 2108.898319840472,
+          "P": 2108.8035645226823
+        }
+      },
+      "pair_index": 14,
+      "timing_seconds": {
+        "N": 0.0032065420000000067,
+        "P": 0.009171541999999991,
+        "loading_and_validation": 0.001100250000000011,
+        "native": 0.0004667500000000019,
+        "objectives": 0.022601042000000002,
+        "worker_elapsed": 0.12519391700000002
+      }
+    },
+    {
+      "N_native_pose_disagreement_degrees": {
+        "max_degrees": 1.2074182697257333e-06,
+        "rotation_degrees": 1.2074182697257333e-06,
+        "translation_degrees": 0.0
+      },
+      "errors": {
+        "N": {
+          "max_degrees": 2.358317454023721,
+          "rotation_degrees": 1.0147963915481593,
+          "translation_degrees": 2.358317454023721
+        },
+        "P": {
+          "max_degrees": 2.3579693968282656,
+          "rotation_degrees": 1.0146281449498102,
+          "translation_degrees": 2.3579693968282656
+        },
+        "native": {
+          "max_degrees": 2.358317454023721,
+          "rotation_degrees": 1.0147963915481593,
+          "translation_degrees": 2.358317454023721
+        },
+        "original": {
+          "max_degrees": 2.358317454023721,
+          "rotation_degrees": 1.0147963915481593,
+          "translation_degrees": 2.358317454023721
+        }
+      },
+      "interpretation_gate": {
+        "details": {
+          "N": {
+            "accepted_steps": 0,
+            "iteration_count": 1,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.3707390695091493e-13,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.0005450717142682137,
+            "termination_reason": "step_tolerance"
+          },
+          "P": {
+            "accepted_steps": 7,
+            "iteration_count": 7,
+            "local_GN_stationarity": {
+              "relative_predicted_decrease": 1.3076810291005022e-11,
+              "valid": true
+            },
+            "normalized_gradient_infinity": 0.006607357458805349,
+            "termination_reason": "relative_cost_tolerance"
+          }
+        },
+        "passed": true,
+        "reasons": []
+      },
+      "key": "0015-1349576135_91cfa7d80a_o.jpg_0015-4001663691_8460da38bb_o.jpg",
+      "objective_gradients_infinity": {
+        "N": {
+          "N": 1.0290551231763017,
+          "P": 20927.76555551817
+        },
+        "P": {
+          "N": 22261.059941851137,
+          "P": 11.781582258940366
+        },
+        "native": {
+          "N": 1.0290548830241417,
+          "P": 20927.765556521164
+        },
+        "original": {
+          "N": 1.0290551231763017,
+          "P": 20927.76555551817
+        }
+      },
+      "objectives": {
+        "N": {
+          "N": 1887.9261136451742,
+          "P": 1783.1106625987582
+        },
+        "P": {
+          "N": 1887.9368687835536,
+          "P": 1783.1004803954634
+        },
+        "native": {
+          "N": 1887.9261136451637,
+          "P": 1783.1106625987481
+        },
+        "original": {
+          "N": 1887.9261136451742,
+          "P": 1783.1106625987582
+        }
+      },
+      "pair_index": 15,
+      "timing_seconds": {
+        "N": 0.002944374999999999,
+        "P": 0.023496583999999987,
+        "loading_and_validation": 0.0010803749999999945,
+        "native": 0.000254041999999996,
+        "objectives": 0.02133154099999998,
+        "worker_elapsed": 0.139903334
+      }
+    }
+  ],
+  "schema": "evr0014.evaluation.v1",
+  "scope": "Known pixel-Sampson control on reused one-scene development; no novelty or population inference",
+  "seal_sha256": "6aeb2eee2634a1ca15827362bfab2a7618fccc0354f3376cbcd4ee4f115ed8b7",
+  "source_sha256": {
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0013-pose-headroom/predict_pair.py": "57aabb0bcacab56f495fbf3a882184f1291bd128b97fd29b230c74f9a324d3c8",
+    "experiments/0013-pose-headroom/run_baseline.py": "f5cd10992dde929f06465ef77f87a7490c8e518d83fca9ccc341ce08a77e0baf",
+    "experiments/0014-pixel-noise/evaluate_controls.py": "e47d1259d3ca811386d03bc3e768395acb0b5bd16eedab97883057eb8f37f32a",
+    "experiments/0014-pixel-noise/predict_pair.py": "2c4f1576a5cc1127a050c189260daa519bf3cfddb91d6b1ff4b7197d54cf7b1f",
+    "experiments/0014-pixel-noise/refine.py": "f63a55f5b971f86549a184ca52bdd61f5871c36b54ab944ca68d2c768c5bc262",
+    "experiments/0014-pixel-noise/run_controls.py": "be6d93e032db2f28caf96ef4285cdad1a058dbd71df307e0f4e0a299b626ca18",
+    "protocols/0014-pixel-noise-controls.md": "a9704dc93a8dee06689f875918d18ee79ddbc80fcfde27d1bf045dc24ccc4f78"
+  }
+}
