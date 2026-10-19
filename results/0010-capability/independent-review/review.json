@@ -1,0 +1,161 @@
+{
+  "public_package": {
+    "files": 102,
+    "bytes": 357715,
+    "manifest_sha256": "aa62ca2a069ad6ad9c0fa89bc2fdeef82e35e09de40b7a2b2783d0cae862b602"
+  },
+  "private_package": {
+    "files": 3,
+    "bytes": 264232,
+    "manifest_sha256": "1daa3c7730300e19bb83251ac9f42453e3ca1b6a8e56dde6c4424cf4567a715a"
+  },
+  "old_freeze_inputs": 25,
+  "new_freeze_inputs": 18,
+  "cached-guard_outer": {
+    "tool_exit": 0,
+    "tool_duration_ms": 2315,
+    "wait4_wall_seconds": 2.3805931189999683,
+    "peak_rss_kib": 14676
+  },
+  "probe_outer": {
+    "tool_exit": 0,
+    "tool_duration_ms": 8330,
+    "wait4_wall_seconds": 8.375168837999809,
+    "peak_rss_kib": 1301056
+  },
+  "saved-probe-review_outer": {
+    "tool_exit": 0,
+    "tool_duration_ms": 880,
+    "wait4_wall_seconds": 0.9444201449950924,
+    "peak_rss_kib": 64832
+  },
+  "solver-functional_outer": {
+    "tool_exit": 0,
+    "tool_duration_ms": 1603,
+    "wait4_wall_seconds": 1.635439966004924,
+    "peak_rss_kib": 239760
+  },
+  "solver-timing_outer": {
+    "tool_exit": 0,
+    "tool_duration_ms": 1581,
+    "wait4_wall_seconds": 1.6397331289990689,
+    "peak_rss_kib": 263140
+  },
+  "cached-admission-postcheck_outer": {
+    "tool_exit": 0,
+    "tool_duration_ms": 1332,
+    "wait4_wall_seconds": 1.388115335998009,
+    "peak_rss_kib": 14424
+  },
+  "read_only_tool_output_truncation_indices": [
+    3,
+    4,
+    5
+  ],
+  "capability": {
+    "calls": [
+      8,
+      8,
+      1,
+      1
+    ],
+    "array_norm_max_abs_float64": {
+      "image": 5.068159691923313e-08,
+      "text": 4.502980149867497e-08
+    },
+    "squared_unit_norm_max_abs_float64": {
+      "image": 1.4074534604446853e-07,
+      "text": 1.581873085854113e-07
+    },
+    "learned_logit_scale": {
+      "raw": 4.605170249938965,
+      "exp": 100.00000762939453
+    },
+    "elapsed_seconds": 7.464607741996588,
+    "encoder_projection_seconds": 25.022365751745383,
+    "encoder_projection_limit_seconds": 450
+  },
+  "solver": {
+    "functional": {
+      "run": 20,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "three_timing_seconds": [
+      0.11852241800079355,
+      0.08900357699894812,
+      0.06562033699447056
+    ],
+    "native_executions_in_timing_only": 6,
+    "projected_seconds": 23.220175998132618,
+    "limit_seconds": 360
+  },
+  "status": "PASS_SAVED_ADMISSION_EVIDENCE",
+  "checks": 769,
+  "guard_proc": {
+    "counts": {
+      "proc_list": {
+        "success": 1,
+        "enoent": 0,
+        "permission": 0,
+        "other": 0
+      },
+      "cmdline": {
+        "success": 14,
+        "enoent": 0,
+        "permission": 0,
+        "other": 0
+      },
+      "fd_list": {
+        "success": 14,
+        "enoent": 0,
+        "permission": 0,
+        "other": 0
+      },
+      "fd_stat": {
+        "success": 121,
+        "enoent": 1,
+        "permission": 0,
+        "other": 0
+      },
+      "fd_readlink": {
+        "success": 121,
+        "enoent": 1,
+        "permission": 0,
+        "other": 0
+      }
+    },
+    "errors": [
+      {
+        "operation": "fd_stat",
+        "path": "23958/fd/3",
+        "kind": "enoent",
+        "errno": 2
+      },
+      {
+        "operation": "fd_readlink",
+        "path": "23958/fd/3",
+        "kind": "enoent",
+        "errno": 2
+      }
+    ],
+    "related": [],
+    "matching_fds": [],
+    "fd_entries": 122,
+    "visible_processes": 14,
+    "admissible": true,
+    "cmdline_separator": "bytes([0])",
+    "scope": "Visible /proc snapshot only. ENOENT is a disappearing-entry race; hidden/prior/future writers and global absence remain unproven.",
+    "absence_proven": false
+  },
+  "new_asset_bytes_claimed": 0,
+  "old_preservation_cloud_counts": {
+    "tracked": 3046,
+    "markers": 45,
+    "export": 65
+  },
+  "probe_marker_raw_available_locally": false,
+  "tokenizer_exact_replay_local": false,
+  "private_arrays_published": false
+}

@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "scope": "prospective artificial numerical and resource admission only",
+  "mode": "timing",
+  "status": "completed",
+  "source_files": {
+    "README.md": "fa14f1f819a9955ca464c0c9f7a5ae1f9d3f74ede76c891622f2b76c6a34e37b",
+    "config.json": "aafa3402e76c005fa1fba47084b5d0b78f1cee7a3780234d9eff08f88ab1f66d",
+    "run_admission.py": "37048f1d1f407b6ada7c5640364f9d301f4371275d5e78cad09b878421e81a38",
+    "stata_cpu.py": "15545b0fbe67655255d64a4343daeb43cac3bc7d649df984d2605a8795aee5be",
+    "supervise_0009.py": "2d306a8813d36c207eb276a187a298864965bffbe79c1dd463d9482f3bf7d77f",
+    "test_admission_fake.py": "92b09402ac7c8b31ef11d89cb5a21e94735e52a622570baea21dae8639ce4b53",
+    "test_stata_cpu.py": "6b4307926ae489aa2f6120ac786ad9685e52b7e6c8244daa39cef3d6b0d38883",
+    "upstream/LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+    "upstream/StatA.py": "9fcd2eb8a22cabc2c7eb43823625cb04557476c637a24c8a12eb3115ede2b962",
+    "upstream/identity.json": "abb4547bffd0b4117d9f5e18aac20ab10b4527036ec975954d2b9c67b152da7b"
+  },
+  "manifest_sha256": "9d0f764ce380c99d98ee66fc836bf4d429b816b2f50035ab4394f3c01cff5868",
+  "attempts": [
+    {
+      "phase": "T63",
+      "alpha": 1,
+      "status": "completed",
+      "native_solver_execution_count_unknown": false,
+      "native_solver_executions": 2,
+      "seconds": 0.11852241800079355
+    },
+    {
+      "phase": "T641",
+      "alpha": 1,
+      "status": "completed",
+      "native_solver_execution_count_unknown": false,
+      "native_solver_executions": 2,
+      "seconds": 0.08900357699894812
+    },
+    {
+      "phase": "T644",
+      "alpha": 4,
+      "status": "completed",
+      "native_solver_execution_count_unknown": false,
+      "native_solver_executions": 2,
+      "seconds": 0.06562033699447056
+    }
+  ],
+  "argv": [
+    "/workspace/scratch/a349d03a0e0a/research-0010-cached-admission/experiments/0010-solver/run_admission.py",
+    "timing",
+    "--child",
+    "--output",
+    "/workspace/scratch/a349d03a0e0a/scratch/0010-solver-timing/child",
+    "--manifest-sha256",
+    "9d0f764ce380c99d98ee66fc836bf4d429b816b2f50035ab4394f3c01cff5868"
+  ],
+  "started_unix": 1792369182.7001,
+  "resource": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rlimit_as": [
+      8589934592,
+      8589934592
+    ],
+    "cgroup_memory_max": "8589934592",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "VECLIB_MAXIMUM_THREADS": "4",
+      "NUMEXPR_NUM_THREADS": "4"
+    }
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.0.2",
+    "torch": "2.10.0+cpu",
+    "numpy_path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/numpy/__init__.py",
+    "torch_path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/torch/__init__.py"
+  },
+  "adapter_execution": {
+    "original_sha256": "15545b0fbe67655255d64a4343daeb43cac3bc7d649df984d2605a8795aee5be",
+    "executed_sha256": "66b9658fe5694ba38a5b001913e6def69dd380a5d341b1d29241acf6a9d76057",
+    "exact_path_substitutions": 1,
+    "exact_test_interop_substitutions": 0
+  },
+  "actual_torch_threads": [
+    4,
+    4
+  ],
+  "inputs": {
+    "seed": 202610180010,
+    "rng": "NumPy Generator(PCG64(seed)); float64 normal64x512 then normal10x512; row-normalize float64 then cast float32",
+    "features_sha256": "47a64a0b93f877441d7da934dd134e1c997161b9d0f15e4a0c8c5e50c19534b8",
+    "prototypes_sha256": "68e3d03deeef929dd6a54f3bdf4dcbe465bace49527a4aafade55a97a40995e5",
+    "archive_sha256": "3304b88c4bdea28a3c925cf1a75eae1c8720bcf864a9f65249203a0180437f6b",
+    "ids": [
+      "artificial-000",
+      "artificial-001",
+      "artificial-002",
+      "artificial-003",
+      "artificial-004",
+      "artificial-005",
+      "artificial-006",
+      "artificial-007",
+      "artificial-008",
+      "artificial-009",
+      "artificial-010",
+      "artificial-011",
+      "artificial-012",
+      "artificial-013",
+      "artificial-014",
+      "artificial-015",
+      "artificial-016",
+      "artificial-017",
+      "artificial-018",
+      "artificial-019",
+      "artificial-020",
+      "artificial-021",
+      "artificial-022",
+      "artificial-023",
+      "artificial-024",
+      "artificial-025",
+      "artificial-026",
+      "artificial-027",
+      "artificial-028",
+      "artificial-029",
+      "artificial-030",
+      "artificial-031",
+      "artificial-032",
+      "artificial-033",
+      "artificial-034",
+      "artificial-035",
+      "artificial-036",
+      "artificial-037",
+      "artificial-038",
+      "artificial-039",
+      "artificial-040",
+      "artificial-041",
+      "artificial-042",
+      "artificial-043",
+      "artificial-044",
+      "artificial-045",
+      "artificial-046",
+      "artificial-047",
+      "artificial-048",
+      "artificial-049",
+      "artificial-050",
+      "artificial-051",
+      "artificial-052",
+      "artificial-053",
+      "artificial-054",
+      "artificial-055",
+      "artificial-056",
+      "artificial-057",
+      "artificial-058",
+      "artificial-059",
+      "artificial-060",
+      "artificial-061",
+      "artificial-062",
+      "artificial-063"
+    ],
+    "shape_features": [
+      64,
+      512
+    ],
+    "shape_prototypes": [
+      1,
+      512,
+      10
+    ]
+  },
+  "input_setup_seconds": 0.006635614001424983,
+  "projected_seconds": 23.220175998132618,
+  "resource_admitted": true,
+  "inputs_unchanged": true,
+  "wall_before_final_save_seconds": 1.2179211969996686
+}

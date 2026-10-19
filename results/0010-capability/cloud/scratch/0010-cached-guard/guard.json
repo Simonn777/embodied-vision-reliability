@@ -1,0 +1,5339 @@
+{
+  "status": "PASS_CACHED_GUARD_ONLY",
+  "scope": "cached guard only; no model/download/repair",
+  "cause": "UNKNOWN",
+  "cgroup_before": {
+    "memory.max": "8589934592\n",
+    "memory.current": "8329576448\n",
+    "memory.stat": "anon 98766848\nfile 7976136704\nkernel 253239296\nkernel_stack 688128\npagetables 3059712\nsec_pagetables 0\npercpu 2816\nsock 0\nvmalloc 0\nshmem 0\nfile_mapped 36864\nfile_dirty 59506688\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 4963958784\nshmem_thp 0\ninactive_anon 98488320\nactive_anon 73728\ninactive_file 1120595968\nactive_file 6855532544\nunevictable 0\nslab_reclaimable 248595368\nslab_unreclaimable 834528\nslab 249429896\nworkingset_refault_anon 0\nworkingset_refault_file 9154025\nworkingset_activate_anon 0\nworkingset_activate_file 8359217\nworkingset_restore_anon 0\nworkingset_restore_file 7337079\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 10042651\npgsteal 10027392\npswpin 0\npswpout 0\npgscan_kswapd 1624\npgscan_direct 10041027\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 1624\npgsteal_direct 10025768\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 48203447\npgmajfault 1455\npgrefill 9116824\npgactivate 2446870\npgdeactivate 9113760\npglazyfree 25\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nthp_fault_alloc 714\nthp_collapse_alloc 4\nthp_swpout 0\nthp_swpout_fallback 0\n",
+    "memory.events": "low 0\nhigh 0\nmax 63068\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "available_cpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "absent_before": {
+    "clip-0010-assets/0010-probe-started.json": true,
+    "scratch/0010-capability-output": true,
+    "scratch/0010-capability-control/probe": true
+  },
+  "source_checks": {
+    "protocols/0010-clip-capability-freeze.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1066754,
+        "nlink": 1,
+        "size": 6269,
+        "mtime_ns": 1792367312944017628,
+        "ctime_ns": 1792367312944017628
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066754,
+        "nlink": 1,
+        "size": 6269,
+        "mtime_ns": 1792367312944017628,
+        "ctime_ns": 1792367312944017628
+      },
+      "bytes": 6269,
+      "sha256": "8dfec7362d01fac80c46f9871fe4e8696c90d12ba07038c2635a6f8dd947b29f",
+      "git_blob_sha1": "a024e502bab367e827be4decca04afe827999ae7"
+    },
+    ".github/workflows/ci.yml": {
+      "before": {
+        "dev": 27,
+        "inode": 1066568,
+        "nlink": 1,
+        "size": 1154,
+        "mtime_ns": 1792367312926410623,
+        "ctime_ns": 1792367312926410623
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066568,
+        "nlink": 1,
+        "size": 1154,
+        "mtime_ns": 1792367312926410623,
+        "ctime_ns": 1792367312926410623
+      },
+      "bytes": 1154,
+      "sha256": "1b6dd07dcc6dcaf82d314a96a138e464e7841f974cc882fdcf3c05a87d7ce98f",
+      "git_blob_sha1": "9bb8faffcc62ce136870b096c28408db419fd94b"
+    },
+    "experiments/0010/README.md": {
+      "before": {
+        "dev": 27,
+        "inode": 1066685,
+        "nlink": 1,
+        "size": 8635,
+        "mtime_ns": 1792367312938527535,
+        "ctime_ns": 1792367312938527535
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066685,
+        "nlink": 1,
+        "size": 8635,
+        "mtime_ns": 1792367312938527535,
+        "ctime_ns": 1792367312938527535
+      },
+      "bytes": 8635,
+      "sha256": "1d287f6ec2ec38017459a620e94454cf504521e50ab968cc925ebc7c26c3d734",
+      "git_blob_sha1": "2bbbf8ce929a3d9f4bbf6c64ef3147d506410b60"
+    },
+    "experiments/0010/acquire.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066686,
+        "nlink": 1,
+        "size": 12327,
+        "mtime_ns": 1792367312938598630,
+        "ctime_ns": 1792367312938598630
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066686,
+        "nlink": 1,
+        "size": 12327,
+        "mtime_ns": 1792367312938598630,
+        "ctime_ns": 1792367312938598630
+      },
+      "bytes": 12327,
+      "sha256": "412c6cddba8fcd32241026611edb627c76690bf8dcc93195d6360a4ef24b2d75",
+      "git_blob_sha1": "76d1bfb735e7cb2acb5089b91691189ef0139846"
+    },
+    "experiments/0010/budget.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1066687,
+        "nlink": 1,
+        "size": 1071,
+        "mtime_ns": 1792367312938598630,
+        "ctime_ns": 1792367312938598630
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066687,
+        "nlink": 1,
+        "size": 1071,
+        "mtime_ns": 1792367312938598630,
+        "ctime_ns": 1792367312938598630
+      },
+      "bytes": 1071,
+      "sha256": "7ad38f52a1cb103b2266a8a206836f009831b2661ebb3b591f7a6924b5c6c60a",
+      "git_blob_sha1": "6a06607f297e50df6d2d6a7748a3ec360e8c5933"
+    },
+    "experiments/0010/bundle-manifest.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1066688,
+        "nlink": 1,
+        "size": 2544,
+        "mtime_ns": 1792367312938598630,
+        "ctime_ns": 1792367312938598630
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066688,
+        "nlink": 1,
+        "size": 2544,
+        "mtime_ns": 1792367312938598630,
+        "ctime_ns": 1792367312938598630
+      },
+      "bytes": 2544,
+      "sha256": "0eb88d5bbb443c2aa3080c3debd9866637a15214b16a3268eb39e2a4bcd5575a",
+      "git_blob_sha1": "0b0e8a2f5c007846c44ad7fc0f867154ba574780"
+    },
+    "experiments/0010/bundle/metadata/eurosat-spatial-test.txt": {
+      "before": {
+        "dev": 27,
+        "inode": 1066691,
+        "nlink": 2,
+        "size": 105934,
+        "mtime_ns": 1792367312938712158,
+        "ctime_ns": 1792367497086278969
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066691,
+        "nlink": 2,
+        "size": 105934,
+        "mtime_ns": 1792367312938712158,
+        "ctime_ns": 1792367497086278969
+      },
+      "bytes": 105934,
+      "sha256": "de22dec83d350cac3b3e4ca8e285cb6733c81ab94bf5bcf9213a567993402452",
+      "git_blob_sha1": "6fc8dfdf0c8ee837993d8b395c5cbc9896ac1ed7"
+    },
+    "experiments/0010/bundle/metadata/eurosat-spatial-train.txt": {
+      "before": {
+        "dev": 27,
+        "inode": 1066692,
+        "nlink": 2,
+        "size": 316710,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497086278969
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066692,
+        "nlink": 2,
+        "size": 316710,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497086278969
+      },
+      "bytes": 316710,
+      "sha256": "2db7d455afb8dcbca898ea19a00f1f90c091734efdbba89e22aaf24056da243f",
+      "git_blob_sha1": "4c08f4eeac54040a0fcd3788296f6e0dae782641"
+    },
+    "experiments/0010/bundle/metadata/eurosat-spatial-val.txt": {
+      "before": {
+        "dev": 27,
+        "inode": 1066693,
+        "nlink": 2,
+        "size": 99786,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497092362027
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066693,
+        "nlink": 2,
+        "size": 99786,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497092362027
+      },
+      "bytes": 99786,
+      "sha256": "6c758477604b7057a0fd990d7f6327b63b99a6725aac11a6a9d0174a7fdd8f0b",
+      "git_blob_sha1": "c3179b28d8fc0e2b5fea3fc7191f7eefb367f6ca"
+    },
+    "experiments/0010/bundle/source/LICENSE": {
+      "before": {
+        "dev": 27,
+        "inode": 1066695,
+        "nlink": 2,
+        "size": 1064,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497092403178
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066695,
+        "nlink": 2,
+        "size": 1064,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497092403178
+      },
+      "bytes": 1064,
+      "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+      "git_blob_sha1": "4e97f0b45803b7c04ae89548934af4f257a97501"
+    },
+    "experiments/0010/bundle/source/clip/__init__.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066697,
+        "nlink": 2,
+        "size": 20,
+        "mtime_ns": 1792367312940725972,
+        "ctime_ns": 1792367497092403178
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066697,
+        "nlink": 2,
+        "size": 20,
+        "mtime_ns": 1792367312940725972,
+        "ctime_ns": 1792367497092403178
+      },
+      "bytes": 20,
+      "sha256": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+      "git_blob_sha1": "dcc5619538c0f7c782508bdbd9587259d805e0d9"
+    },
+    "experiments/0010/bundle/source/clip/clip.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066698,
+        "nlink": 2,
+        "size": 9644,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092479902
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066698,
+        "nlink": 2,
+        "size": 9644,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092479902
+      },
+      "bytes": 9644,
+      "sha256": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+      "git_blob_sha1": "398a6282cc243e449430d91c2562491fc799929d"
+    },
+    "experiments/0010/bundle/source/clip/model.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066699,
+        "nlink": 2,
+        "size": 17374,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092565488
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066699,
+        "nlink": 2,
+        "size": 17374,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092565488
+      },
+      "bytes": 17374,
+      "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+      "git_blob_sha1": "232b7792eb97440642547bd462cf128df9243933"
+    },
+    "experiments/0010/bundle/source/clip/simple_tokenizer.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066700,
+        "nlink": 2,
+        "size": 4632,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092592378
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066700,
+        "nlink": 2,
+        "size": 4632,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092592378
+      },
+      "bytes": 4632,
+      "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+      "git_blob_sha1": "0a66286b7d5019c6e221932a813768038f839c91"
+    },
+    "experiments/0010/cli.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066701,
+        "nlink": 1,
+        "size": 6693,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066701,
+        "nlink": 1,
+        "size": 6693,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 6693,
+      "sha256": "08f8f918a045dd22855c69049ba1695c98f8df06725ae87fc30d542439c7143e",
+      "git_blob_sha1": "ecbbcabf3d39e75eeba9d32067efb7cc11f9862d"
+    },
+    "experiments/0010/config.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1066702,
+        "nlink": 1,
+        "size": 3324,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066702,
+        "nlink": 1,
+        "size": 3324,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 3324,
+      "sha256": "f4fa4d2645dfbbff5306f2550136f448a4bbc967e0c772b1d99abfef3bfdb8d6",
+      "git_blob_sha1": "701b780df9a1f7bd7292b106eddba2da8287821f"
+    },
+    "experiments/0010/dependencies.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1066703,
+        "nlink": 1,
+        "size": 1822,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066703,
+        "nlink": 1,
+        "size": 1822,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 1822,
+      "sha256": "5557cef2a9b663c7249589031eff410750329270de75b9403cfa3a7a0b1ad578",
+      "git_blob_sha1": "66002241463840159b079ceb8998f5006ab06e58"
+    },
+    "experiments/0010/downloads.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1066704,
+        "nlink": 1,
+        "size": 1695,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066704,
+        "nlink": 1,
+        "size": 1695,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 1695,
+      "sha256": "8977bcb4af7ae30fd4ef61585395d067ad1e0dc42ac44710ff10f0096b1f3bc6",
+      "git_blob_sha1": "a19e5f15872a8a65f07b8564a7ecdee0e9b03f5e"
+    },
+    "experiments/0010/layout.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1066705,
+        "nlink": 1,
+        "size": 1177,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066705,
+        "nlink": 1,
+        "size": 1177,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 1177,
+      "sha256": "c0510b9634817858fed2ec3a4e7d83c1ce690b58e6d41aaa39c57a2ca9d9b79e",
+      "git_blob_sha1": "972776e733314eb5c2c56d381108f35950d10738"
+    },
+    "experiments/0010/run_capability.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066706,
+        "nlink": 1,
+        "size": 17665,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066706,
+        "nlink": 1,
+        "size": 17665,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 17665,
+      "sha256": "532ef917a87e976dfd1bc0fd1858c16ea8a4b5bebaa9569add017e394f6a7ba6",
+      "git_blob_sha1": "ac231d1b1c44e3d7923130e77f6f1b2fbabcf763"
+    },
+    "experiments/0010/selection.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1066707,
+        "nlink": 1,
+        "size": 219,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066707,
+        "nlink": 1,
+        "size": 219,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 219,
+      "sha256": "75e31cc9742f6def800019dfd66009abb5294a9eafa7b8ef2d5130501617375c",
+      "git_blob_sha1": "5ed0aa889c21aacb9a6f07edfa3940fcf8a22615"
+    },
+    "experiments/0010/test_acquire.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066708,
+        "nlink": 1,
+        "size": 12961,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066708,
+        "nlink": 1,
+        "size": 12961,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 12961,
+      "sha256": "16e109122e8e213fb3c6664a4876a2758041d29fd25813e902250abf4b809515",
+      "git_blob_sha1": "3f31df8f1986395c8e4dcb38c1249ee399edbf5d"
+    },
+    "experiments/0010/test_capability.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066709,
+        "nlink": 1,
+        "size": 10893,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066709,
+        "nlink": 1,
+        "size": 10893,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 10893,
+      "sha256": "74842a494f9f582a849e98a14cacd004a5231a31beb6c8d1c216ab5a520e30f3",
+      "git_blob_sha1": "5a7f90ee42b78a67e4a6acc05d9af7adf9c38737"
+    },
+    "experiments/0010/test_cli.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066710,
+        "nlink": 1,
+        "size": 6877,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066710,
+        "nlink": 1,
+        "size": 6877,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367312940752361
+      },
+      "bytes": 6877,
+      "sha256": "c903a367a4429188f03e09f03bd662aaf7e29c18cd67bb4b9998f741c6f34fc5",
+      "git_blob_sha1": "e0ab8be0527c2727a9f970f4a3353b1a42623e82"
+    },
+    "protocols/0010-clip-capability.md": {
+      "before": {
+        "dev": 27,
+        "inode": 1066755,
+        "nlink": 1,
+        "size": 8073,
+        "mtime_ns": 1792367312944017628,
+        "ctime_ns": 1792367312944017628
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066755,
+        "nlink": 1,
+        "size": 8073,
+        "mtime_ns": 1792367312944017628,
+        "ctime_ns": 1792367312944017628
+      },
+      "bytes": 8073,
+      "sha256": "feb848c2320d2e2d4e080044daac23034070cc7014abf88feb622698612494e8",
+      "git_blob_sha1": "6086981ea4f6ae8d5580bc8b45025874b1462ae6"
+    },
+    "scripts/supervise_0009.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1070032,
+        "nlink": 1,
+        "size": 9761,
+        "mtime_ns": 1792367313164015725,
+        "ctime_ns": 1792367313164015725
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070032,
+        "nlink": 1,
+        "size": 9761,
+        "mtime_ns": 1792367313164015725,
+        "ctime_ns": 1792367313164015725
+      },
+      "bytes": 9761,
+      "sha256": "2d306a8813d36c207eb276a187a298864965bffbe79c1dd463d9482f3bf7d77f",
+      "git_blob_sha1": "f28bae28bba9e3f7860ea830ee10b3c1ad94599f"
+    }
+  },
+  "preserved": {
+    "clip-0010-assets/layout-receipt.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070336,
+        "nlink": 1,
+        "size": 3911,
+        "mtime_ns": 1792367497669941068,
+        "ctime_ns": 1792367497669941068
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070336,
+        "nlink": 1,
+        "size": 3911,
+        "mtime_ns": 1792367497669941068,
+        "ctime_ns": 1792367497669941068
+      },
+      "bytes": 3911,
+      "sha256": "66eff7c2f4195e1b3e2d4395ad7ea6e050a7a7f8c53188487965a37a7033d688",
+      "git_blob_sha1": "11f63bc3b3887f1cad81158912137fcc3e757455"
+    },
+    "clip-0010-downloads/events.jsonl": {
+      "before": {
+        "dev": 27,
+        "inode": 1070324,
+        "nlink": 1,
+        "size": 632811,
+        "mtime_ns": 1792367496466978878,
+        "ctime_ns": 1792367496466978878
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070324,
+        "nlink": 1,
+        "size": 632811,
+        "mtime_ns": 1792367496466978878,
+        "ctime_ns": 1792367496466978878
+      },
+      "bytes": 632811,
+      "sha256": "a5e470ca360328ef360c17f10abb8d919f72dd8829842de9a5074a12576b8a0d",
+      "git_blob_sha1": "c1e77931ce5b1bec328ffdcfd614edfd029dd583"
+    },
+    "clip-0010-downloads/ledger.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070149,
+        "nlink": 1,
+        "size": 3261,
+        "mtime_ns": 1792367496467942711,
+        "ctime_ns": 1792367496467942711
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070149,
+        "nlink": 1,
+        "size": 3261,
+        "mtime_ns": 1792367496467942711,
+        "ctime_ns": 1792367496467942711
+      },
+      "bytes": 3261,
+      "sha256": "405e2eff80bb494a3c042ceacd11ac5697c029efe4382373db6fee4e625c5e53",
+      "git_blob_sha1": "a366ba65d537846ed949fd8a756c2e080fffa1d9"
+    },
+    "clip-0010-downloads/operation.started.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070322,
+        "nlink": 1,
+        "size": 122,
+        "mtime_ns": 1792367460532967439,
+        "ctime_ns": 1792367460532967439
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070322,
+        "nlink": 1,
+        "size": 122,
+        "mtime_ns": 1792367460532967439,
+        "ctime_ns": 1792367460532967439
+      },
+      "bytes": 122,
+      "sha256": "b639da5884abb773233e1937e13235d358e0ed65e6c4c0a42d9aa055dabae25b",
+      "git_blob_sha1": "7f3b43eae3e34e3ae71e166334f1bd3e9644368d"
+    },
+    "clip-0010-wheels/events.jsonl": {
+      "before": {
+        "dev": 27,
+        "inode": 1070136,
+        "nlink": 1,
+        "size": 4202,
+        "mtime_ns": 1792367416558482515,
+        "ctime_ns": 1792367416558482515
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070136,
+        "nlink": 1,
+        "size": 4202,
+        "mtime_ns": 1792367416558482515,
+        "ctime_ns": 1792367416558482515
+      },
+      "bytes": 4202,
+      "sha256": "42297de16040603f7e0efbdd2784184c798ac8ee73d12aeca829ff7904a52d23",
+      "git_blob_sha1": "93a1c7c32e8d90c5cb1a8f8e8e0701d4d42964e2"
+    },
+    "clip-0010-wheels/ledger.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070141,
+        "nlink": 1,
+        "size": 2842,
+        "mtime_ns": 1792367416559491614,
+        "ctime_ns": 1792367416559491614
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070141,
+        "nlink": 1,
+        "size": 2842,
+        "mtime_ns": 1792367416559491614,
+        "ctime_ns": 1792367416559491614
+      },
+      "bytes": 2842,
+      "sha256": "8ece0f52535d3e3ce85a232b0d84531ec44120e412df12897de6a65c46f683a3",
+      "git_blob_sha1": "3e7326fe52b289f9aed9f25862780c6efc95ed7b"
+    },
+    "clip-0010-wheels/operation.started.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070134,
+        "nlink": 1,
+        "size": 122,
+        "mtime_ns": 1792367414656108179,
+        "ctime_ns": 1792367414656108179
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070134,
+        "nlink": 1,
+        "size": 122,
+        "mtime_ns": 1792367414656108179,
+        "ctime_ns": 1792367414656108179
+      },
+      "bytes": 122,
+      "sha256": "c82b9d4d14bcc3fe48b8f43af7833aee77bdaa7ed7fe10c35ec65e2d7dc70420",
+      "git_blob_sha1": "63925058f0112d9b9ad83df7a587a6f21018d67e"
+    },
+    "scratch/0010-capability-control/assets.command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070312,
+        "nlink": 1,
+        "size": 1263,
+        "mtime_ns": 1792367460404447072,
+        "ctime_ns": 1792367460404447072
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070312,
+        "nlink": 1,
+        "size": 1263,
+        "mtime_ns": 1792367460404447072,
+        "ctime_ns": 1792367460404447072
+      },
+      "bytes": 1263,
+      "sha256": "45d3af148718e12e543fe31b4cfdb437673f84cad7bce0196f694f232253ba3d",
+      "git_blob_sha1": "dc7fd0490e5d67d4ad4e5e7d63a2dbd4e484822b"
+    },
+    "scratch/0010-capability-control/assets.execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070338,
+        "nlink": 1,
+        "size": 827,
+        "mtime_ns": 1792367497710715354,
+        "ctime_ns": 1792367497710715354
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070338,
+        "nlink": 1,
+        "size": 827,
+        "mtime_ns": 1792367497710715354,
+        "ctime_ns": 1792367497710715354
+      },
+      "bytes": 827,
+      "sha256": "2c6a8efb5cf5b2443a7fd7d277b26e519e65ede59a9c1d9eda245c55532584bf",
+      "git_blob_sha1": "8962bff6b3026d2b36e04083c5771ffe92697ef9"
+    },
+    "scratch/0010-capability-control/assets.stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070314,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367460404447072,
+        "ctime_ns": 1792367460404447072
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070314,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367460404447072,
+        "ctime_ns": 1792367460404447072
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/assets.stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070313,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367460404447072,
+        "ctime_ns": 1792367460404447072
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070313,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367460404447072,
+        "ctime_ns": 1792367460404447072
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/assets/command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070316,
+        "nlink": 1,
+        "size": 761,
+        "mtime_ns": 1792367460467327162,
+        "ctime_ns": 1792367460467327162
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070316,
+        "nlink": 1,
+        "size": 761,
+        "mtime_ns": 1792367460467327162,
+        "ctime_ns": 1792367460467327162
+      },
+      "bytes": 761,
+      "sha256": "d418d630edaf06c9e0a80d4c3c14989a63d24105e8e30af12e59cf7c32f4a061",
+      "git_blob_sha1": "050d39bbdb0b2ec26ca989e3fb4daeed1243289a"
+    },
+    "scratch/0010-capability-control/assets/execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070337,
+        "nlink": 1,
+        "size": 1455,
+        "mtime_ns": 1792367497697127825,
+        "ctime_ns": 1792367497697127825
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070337,
+        "nlink": 1,
+        "size": 1455,
+        "mtime_ns": 1792367497697127825,
+        "ctime_ns": 1792367497697127825
+      },
+      "bytes": 1455,
+      "sha256": "47cdbcf69772e803f2c9e48f8581592b31195858c3d84104ea5e7d6d74a7fba7",
+      "git_blob_sha1": "49ee17e5079253e3191aaccc62e497cf8bb434a3"
+    },
+    "scratch/0010-capability-control/assets/stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070318,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367460467327162,
+        "ctime_ns": 1792367460467327162
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070318,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367460467327162,
+        "ctime_ns": 1792367460467327162
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/assets/stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070317,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367460467327162,
+        "ctime_ns": 1792367460467327162
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070317,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367460467327162,
+        "ctime_ns": 1792367460467327162
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/before-probe.command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070342,
+        "nlink": 1,
+        "size": 803,
+        "mtime_ns": 1792367516958353072,
+        "ctime_ns": 1792367516958353072
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070342,
+        "nlink": 1,
+        "size": 803,
+        "mtime_ns": 1792367516958353072,
+        "ctime_ns": 1792367516958353072
+      },
+      "bytes": 803,
+      "sha256": "3c27c66079041a2d0353685658c2731c89ecad99ac080e7f150b76f55a350ba4",
+      "git_blob_sha1": "bdce0792cde4168f690428e044029f9d3eaedca3"
+    },
+    "scratch/0010-capability-control/before-probe.execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070109,
+        "nlink": 1,
+        "size": 848,
+        "mtime_ns": 1792367517675475654,
+        "ctime_ns": 1792367517675475654
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070109,
+        "nlink": 1,
+        "size": 848,
+        "mtime_ns": 1792367517675475654,
+        "ctime_ns": 1792367517675475654
+      },
+      "bytes": 848,
+      "sha256": "93701d36e8de882a7da167f7dc5c79a78cc3161fd77de7666906b96e65dd213a",
+      "git_blob_sha1": "de2777c32fc78770142e653ea6497e229791f7c0"
+    },
+    "scratch/0010-capability-control/before-probe.stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070344,
+        "nlink": 1,
+        "size": 297,
+        "mtime_ns": 1792367517666118145,
+        "ctime_ns": 1792367517666118145
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070344,
+        "nlink": 1,
+        "size": 297,
+        "mtime_ns": 1792367517666118145,
+        "ctime_ns": 1792367517666118145
+      },
+      "bytes": 297,
+      "sha256": "f9886e0613eeda6abf8d77ae3e8d6c2eaa26e7df4dfa146f51786817ce4acb29",
+      "git_blob_sha1": "b352dfd4bf560114250d86aa0d8b6a65555f1a68"
+    },
+    "scratch/0010-capability-control/before-probe.stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070343,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367516958353072,
+        "ctime_ns": 1792367516958353072
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070343,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367516958353072,
+        "ctime_ns": 1792367516958353072
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/before_probe.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1070341,
+        "nlink": 1,
+        "size": 2940,
+        "mtime_ns": 1792367516786125476,
+        "ctime_ns": 1792367516786125476
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070341,
+        "nlink": 1,
+        "size": 2940,
+        "mtime_ns": 1792367516786125476,
+        "ctime_ns": 1792367516786125476
+      },
+      "bytes": 2940,
+      "sha256": "b82c254b7ff666943dca8533c8a2b765a48dfbf504169c4ddb03d95fad0d73b2",
+      "git_blob_sha1": "76f62eedb841ef749184df7c44ef75cd7c9b1eba"
+    },
+    "scratch/0010-capability-control/capture.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1070105,
+        "nlink": 1,
+        "size": 2728,
+        "mtime_ns": 1792367395047160545,
+        "ctime_ns": 1792367395047160545
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070105,
+        "nlink": 1,
+        "size": 2728,
+        "mtime_ns": 1792367395047160545,
+        "ctime_ns": 1792367395047160545
+      },
+      "bytes": 2728,
+      "sha256": "c776568f0d0413d8d2f0fdb39ef2c1c446331c3f44e71f1ddde6ba144e9921d6",
+      "git_blob_sha1": "921c8114740abfec0295751be0b50c44005070cf"
+    },
+    "scratch/0010-capability-control/compact-execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070352,
+        "nlink": 1,
+        "size": 4471,
+        "mtime_ns": 1792367594922670191,
+        "ctime_ns": 1792367594922670191
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070352,
+        "nlink": 1,
+        "size": 4471,
+        "mtime_ns": 1792367594922670191,
+        "ctime_ns": 1792367594922670191
+      },
+      "bytes": 4471,
+      "sha256": "37c1372c00227cd0b64b1a49a9cd7a22a0823b0990a770c587766a7c64c6ca80",
+      "git_blob_sha1": "35b89b0d256ca1192880c7db81619b065228d934"
+    },
+    "scratch/0010-capability-control/import_check.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1070306,
+        "nlink": 1,
+        "size": 2033,
+        "mtime_ns": 1792367447894682282,
+        "ctime_ns": 1792367447894682282
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070306,
+        "nlink": 1,
+        "size": 2033,
+        "mtime_ns": 1792367447894682282,
+        "ctime_ns": 1792367447894682282
+      },
+      "bytes": 2033,
+      "sha256": "5e04eb1b9dc30d6a38c82190233e8799f1089149978b44164970d3e17f99263c",
+      "git_blob_sha1": "95d84d3db223eed3ff0362d68f127a5767820006"
+    },
+    "scratch/0010-capability-control/imports.command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070307,
+        "nlink": 1,
+        "size": 803,
+        "mtime_ns": 1792367448061577484,
+        "ctime_ns": 1792367448061577484
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070307,
+        "nlink": 1,
+        "size": 803,
+        "mtime_ns": 1792367448061577484,
+        "ctime_ns": 1792367448061577484
+      },
+      "bytes": 803,
+      "sha256": "d1c3353cf9d49e4494e4fc4c7896c7fabeef58267dd2aa02e5e768d453550519",
+      "git_blob_sha1": "0ca8ab41bf14089f62f95fd75d4873f3cad7958e"
+    },
+    "scratch/0010-capability-control/imports.execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070311,
+        "nlink": 1,
+        "size": 841,
+        "mtime_ns": 1792367450786002439,
+        "ctime_ns": 1792367450786002439
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070311,
+        "nlink": 1,
+        "size": 841,
+        "mtime_ns": 1792367450786002439,
+        "ctime_ns": 1792367450786002439
+      },
+      "bytes": 841,
+      "sha256": "1d76b8b178ecc09464a4ce1b070c3a8cc9f3e3e2e9a17403cf3c9a24dcd31a1d",
+      "git_blob_sha1": "548fd57b5250ac0cc43d33d860247be634051824"
+    },
+    "scratch/0010-capability-control/imports.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070310,
+        "nlink": 1,
+        "size": 23247,
+        "mtime_ns": 1792367450187220521,
+        "ctime_ns": 1792367450187220521
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070310,
+        "nlink": 1,
+        "size": 23247,
+        "mtime_ns": 1792367450187220521,
+        "ctime_ns": 1792367450187220521
+      },
+      "bytes": 23247,
+      "sha256": "f6ed21a2ff4b603cc8e115aacb51ad7a2a884e60d1d32edff4ab1f5b8fa6040b",
+      "git_blob_sha1": "286d89730f6564e9f060f6be94ef27472df1f1b4"
+    },
+    "scratch/0010-capability-control/imports.stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070309,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367448061577484,
+        "ctime_ns": 1792367448061577484
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070309,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367448061577484,
+        "ctime_ns": 1792367448061577484
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/imports.stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070308,
+        "nlink": 1,
+        "size": 343,
+        "mtime_ns": 1792367450187220521,
+        "ctime_ns": 1792367450187220521
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070308,
+        "nlink": 1,
+        "size": 343,
+        "mtime_ns": 1792367450187220521,
+        "ctime_ns": 1792367450187220521
+      },
+      "bytes": 343,
+      "sha256": "d25d167177409f8be6df550a17b132d38f8b0fe2a98023e3485a2eda645c9d5e",
+      "git_blob_sha1": "9c3a295a3d7049474910618b216cd2586326c9ea"
+    },
+    "scratch/0010-capability-control/offline-install.command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070145,
+        "nlink": 1,
+        "size": 1364,
+        "mtime_ns": 1792367433215579432,
+        "ctime_ns": 1792367433215579432
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070145,
+        "nlink": 1,
+        "size": 1364,
+        "mtime_ns": 1792367433215579432,
+        "ctime_ns": 1792367433215579432
+      },
+      "bytes": 1364,
+      "sha256": "a96d4372709a283ef8bf2b6b5c7cbd743ee58a1ef5e009d903fcdbb1a829a465",
+      "git_blob_sha1": "914d441d9ddf903ad78701c467bdfa683ac0ec98"
+    },
+    "scratch/0010-capability-control/offline-install.execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070148,
+        "nlink": 1,
+        "size": 849,
+        "mtime_ns": 1792367433553222254,
+        "ctime_ns": 1792367433553222254
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070148,
+        "nlink": 1,
+        "size": 849,
+        "mtime_ns": 1792367433553222254,
+        "ctime_ns": 1792367433553222254
+      },
+      "bytes": 849,
+      "sha256": "e61741eab78c08e4b1171360148c1b5d1e77a97a233a5c6e353ce931b2c64cb6",
+      "git_blob_sha1": "e085798cf9c2ee64837deef98b86c7ec5048faa2"
+    },
+    "scratch/0010-capability-control/offline-install.stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070147,
+        "nlink": 1,
+        "size": 364,
+        "mtime_ns": 1792367433505156508,
+        "ctime_ns": 1792367433505156508
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070147,
+        "nlink": 1,
+        "size": 364,
+        "mtime_ns": 1792367433505156508,
+        "ctime_ns": 1792367433505156508
+      },
+      "bytes": 364,
+      "sha256": "abd6f7249a473f07f501069dde0fe2436ada294e0816606ef6d35309752ff944",
+      "git_blob_sha1": "cdd6d1a269163798290c6dc55a7553975eba2f61"
+    },
+    "scratch/0010-capability-control/offline-install.stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070146,
+        "nlink": 1,
+        "size": 560,
+        "mtime_ns": 1792367433505156508,
+        "ctime_ns": 1792367433505156508
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070146,
+        "nlink": 1,
+        "size": 560,
+        "mtime_ns": 1792367433505156508,
+        "ctime_ns": 1792367433505156508
+      },
+      "bytes": 560,
+      "sha256": "0a0d35d5fd397802023ea5e28e1be306dd70f8477b5937ffe0872f6a39d687d4",
+      "git_blob_sha1": "7a2d2dc86c0db3abc07023a47590d30ff99a9c0c"
+    },
+    "scratch/0010-capability-control/operation.started.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070104,
+        "nlink": 1,
+        "size": 488,
+        "mtime_ns": 1792367394545235287,
+        "ctime_ns": 1792367394545235287
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070104,
+        "nlink": 1,
+        "size": 488,
+        "mtime_ns": 1792367394545235287,
+        "ctime_ns": 1792367394545235287
+      },
+      "bytes": 488,
+      "sha256": "63c1673c552d566a9b40fb57bef1d5c606982477d66339833574d20c3b03bf82",
+      "git_blob_sha1": "5a7eee7e8ccbac66b8594746cc83e9572ff243c9"
+    },
+    "scratch/0010-capability-control/partial-inspection.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070118,
+        "nlink": 1,
+        "size": 2187,
+        "mtime_ns": 1792367538495822873,
+        "ctime_ns": 1792367538495822873
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070118,
+        "nlink": 1,
+        "size": 2187,
+        "mtime_ns": 1792367538495822873,
+        "ctime_ns": 1792367538495822873
+      },
+      "bytes": 2187,
+      "sha256": "d3da8a2a3f4417e51e49957e27b60f168b4a449ece782d90ce46ea6321f34db2",
+      "git_blob_sha1": "9a2770dafe1ee5e496c250255e8615790e7736d3"
+    },
+    "scratch/0010-capability-control/postcheck.command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070348,
+        "nlink": 1,
+        "size": 800,
+        "mtime_ns": 1792367573364417354,
+        "ctime_ns": 1792367573364417354
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070348,
+        "nlink": 1,
+        "size": 800,
+        "mtime_ns": 1792367573364417354,
+        "ctime_ns": 1792367573364417354
+      },
+      "bytes": 800,
+      "sha256": "65816768fe2a2d8ad05a6a7c1c439f30c8054e36e0993b47e7b01451c4334e55",
+      "git_blob_sha1": "641f3edf590a6f5dd89a91f763d942dc74925c0e"
+    },
+    "scratch/0010-capability-control/postcheck.execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070351,
+        "nlink": 1,
+        "size": 844,
+        "mtime_ns": 1792367573676529785,
+        "ctime_ns": 1792367573676529785
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070351,
+        "nlink": 1,
+        "size": 844,
+        "mtime_ns": 1792367573676529785,
+        "ctime_ns": 1792367573676529785
+      },
+      "bytes": 844,
+      "sha256": "5ddb48e8c4b261dd86b405c09f22ada7b2ad614146a7fa01903767fb100f4739",
+      "git_blob_sha1": "a36c0f4605cd23f70d116528e139df0eb25137ed"
+    },
+    "scratch/0010-capability-control/postcheck.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070350,
+        "nlink": 1,
+        "size": 8402,
+        "mtime_ns": 1792367573668687595,
+        "ctime_ns": 1792367573668687595
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070350,
+        "nlink": 1,
+        "size": 8402,
+        "mtime_ns": 1792367573668687595,
+        "ctime_ns": 1792367573668687595
+      },
+      "bytes": 8402,
+      "sha256": "bf3b4fad38c1215b1b0e2f7f5f90d4b0287ec4b3d2779a30652480c0243f1618",
+      "git_blob_sha1": "ee6082d7ccf1daf468e5262faa52ba544ca5ce30"
+    },
+    "scratch/0010-capability-control/postcheck.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1070347,
+        "nlink": 1,
+        "size": 4375,
+        "mtime_ns": 1792367573193701178,
+        "ctime_ns": 1792367573193701178
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070347,
+        "nlink": 1,
+        "size": 4375,
+        "mtime_ns": 1792367573193701178,
+        "ctime_ns": 1792367573193701178
+      },
+      "bytes": 4375,
+      "sha256": "0f4c19401080127afdb1581aaa427d6a6fdfc46fd3895d7c16b4f88b16881886",
+      "git_blob_sha1": "aff1b95bcab90ad21a237948836fab826ca0368e"
+    },
+    "scratch/0010-capability-control/postcheck.stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070349,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367573364417354,
+        "ctime_ns": 1792367573364417354
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070349,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367573364417354,
+        "ctime_ns": 1792367573364417354
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/postcheck.stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070340,
+        "nlink": 1,
+        "size": 347,
+        "mtime_ns": 1792367573668687595,
+        "ctime_ns": 1792367573668687595
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070340,
+        "nlink": 1,
+        "size": 347,
+        "mtime_ns": 1792367573668687595,
+        "ctime_ns": 1792367573668687595
+      },
+      "bytes": 347,
+      "sha256": "a13fbcced903e3ddda119be25f18748db06f639fcf5488878e91458816c6da19",
+      "git_blob_sha1": "f63cbba019d3c3bb89c933c1c7159afadbed1349"
+    },
+    "scratch/0010-capability-control/preflight.command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070107,
+        "nlink": 1,
+        "size": 800,
+        "mtime_ns": 1792367400863758917,
+        "ctime_ns": 1792367400863758917
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070107,
+        "nlink": 1,
+        "size": 800,
+        "mtime_ns": 1792367400863758917,
+        "ctime_ns": 1792367400863758917
+      },
+      "bytes": 800,
+      "sha256": "963f531961b263397d1f95870a4219103be61bf44e6c175d2b2c9c2af52be36a",
+      "git_blob_sha1": "d7e06276f14cf8f3c8e3b1a8e6f86dfd8f22a02c"
+    },
+    "scratch/0010-capability-control/preflight.execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070111,
+        "nlink": 1,
+        "size": 843,
+        "mtime_ns": 1792367401245800256,
+        "ctime_ns": 1792367401245800256
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070111,
+        "nlink": 1,
+        "size": 843,
+        "mtime_ns": 1792367401245800256,
+        "ctime_ns": 1792367401245800256
+      },
+      "bytes": 843,
+      "sha256": "77ece6a0b6379da3df9fba5710d52545a621d20ecd772997f971754e322e2291",
+      "git_blob_sha1": "59f3908ddae1597bc48fd8c4fdaa3ee33cc219cc"
+    },
+    "scratch/0010-capability-control/preflight.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1070106,
+        "nlink": 1,
+        "size": 5591,
+        "mtime_ns": 1792367395423157599,
+        "ctime_ns": 1792367395423157599
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070106,
+        "nlink": 1,
+        "size": 5591,
+        "mtime_ns": 1792367395423157599,
+        "ctime_ns": 1792367395423157599
+      },
+      "bytes": 5591,
+      "sha256": "ee0d1681c841fbb97c2a03e6bbdf15e77142742a513e820846721bf88e1e5418",
+      "git_blob_sha1": "523b14a32bb7075c25679c58a4c62d7f7990d8da"
+    },
+    "scratch/0010-capability-control/preflight.stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070108,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367400863758917,
+        "ctime_ns": 1792367400863758917
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070108,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367400863758917,
+        "ctime_ns": 1792367400863758917
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/preflight.stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1066008,
+        "nlink": 1,
+        "size": 230,
+        "mtime_ns": 1792367401236479352,
+        "ctime_ns": 1792367401236479352
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066008,
+        "nlink": 1,
+        "size": 230,
+        "mtime_ns": 1792367401236479352,
+        "ctime_ns": 1792367401236479352
+      },
+      "bytes": 230,
+      "sha256": "c903c18d811e64a8580ccabb98323dec7df47090b4e7ecdc3ea2303b1f89f9ea",
+      "git_blob_sha1": "aec2969ec170e425fdd63c50b202e05c6460135d"
+    },
+    "scratch/0010-capability-control/software-tests.command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070112,
+        "nlink": 1,
+        "size": 852,
+        "mtime_ns": 1792367405008852931,
+        "ctime_ns": 1792367405008852931
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070112,
+        "nlink": 1,
+        "size": 852,
+        "mtime_ns": 1792367405008852931,
+        "ctime_ns": 1792367405008852931
+      },
+      "bytes": 852,
+      "sha256": "b1ace5de3534200135d2b7160efda6bddbeee2510cf9b5838cd98c2bb435b2fb",
+      "git_blob_sha1": "e4aa6be1f82da979386a955aced8796a1c26e634"
+    },
+    "scratch/0010-capability-control/software-tests.execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070115,
+        "nlink": 1,
+        "size": 837,
+        "mtime_ns": 1792367405216377400,
+        "ctime_ns": 1792367405216377400
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070115,
+        "nlink": 1,
+        "size": 837,
+        "mtime_ns": 1792367405216377400,
+        "ctime_ns": 1792367405216377400
+      },
+      "bytes": 837,
+      "sha256": "7b99b448b85a27ebbf902ab30774e25364bf8dab2701476b8a62eab51634add8",
+      "git_blob_sha1": "71cbbe0bf0338abbe15dee05d7c8e8cfdc7a9aa0"
+    },
+    "scratch/0010-capability-control/software-tests.stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070114,
+        "nlink": 1,
+        "size": 6029,
+        "mtime_ns": 1792367405191066334,
+        "ctime_ns": 1792367405191066334
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070114,
+        "nlink": 1,
+        "size": 6029,
+        "mtime_ns": 1792367405191066334,
+        "ctime_ns": 1792367405191066334
+      },
+      "bytes": 6029,
+      "sha256": "dde6ba8b5b02901be6ef69534ff6e44c76da097967e1f3b34cd7c52ec0e0c229",
+      "git_blob_sha1": "e1fa20da843fdc990a8c8921a072c98291930f2f"
+    },
+    "scratch/0010-capability-control/software-tests.stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070113,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367405008852931,
+        "ctime_ns": 1792367405008852931
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070113,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367405008852931,
+        "ctime_ns": 1792367405008852931
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/wheels-review.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070143,
+        "nlink": 1,
+        "size": 1003,
+        "mtime_ns": 1792367427806613714,
+        "ctime_ns": 1792367427806613714
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070143,
+        "nlink": 1,
+        "size": 1003,
+        "mtime_ns": 1792367427806613714,
+        "ctime_ns": 1792367427806613714
+      },
+      "bytes": 1003,
+      "sha256": "d8a6136cff70eb95c90c410af45aadce68609c73c0ffda0cfbdbc2ced0fa4ce3",
+      "git_blob_sha1": "cd8dec2a86c9c8916cdcb0051fc7e42296a77ff4"
+    },
+    "scratch/0010-capability-control/wheels.command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070126,
+        "nlink": 1,
+        "size": 1186,
+        "mtime_ns": 1792367414514727142,
+        "ctime_ns": 1792367414514727142
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070126,
+        "nlink": 1,
+        "size": 1186,
+        "mtime_ns": 1792367414514727142,
+        "ctime_ns": 1792367414514727142
+      },
+      "bytes": 1186,
+      "sha256": "560d1dc4d31c979c153c29acf651e71ed7ab3bc9252a606e38963a5bcaa4e0ee",
+      "git_blob_sha1": "b30bdb613f19b2a82c3deba736fba7d17eb90ee6"
+    },
+    "scratch/0010-capability-control/wheels.execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070142,
+        "nlink": 1,
+        "size": 829,
+        "mtime_ns": 1792367416603967343,
+        "ctime_ns": 1792367416603967343
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070142,
+        "nlink": 1,
+        "size": 829,
+        "mtime_ns": 1792367416603967343,
+        "ctime_ns": 1792367416603967343
+      },
+      "bytes": 829,
+      "sha256": "0ace0c0738570b39a6f68ca0e4ec793241c5ce5710f15e9b57a0695bf201ea93",
+      "git_blob_sha1": "1cb4688feb525e80a6a0f4cb3adeb03edd4a6b3f"
+    },
+    "scratch/0010-capability-control/wheels.stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070128,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367414514727142,
+        "ctime_ns": 1792367414514727142
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070128,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367414514727142,
+        "ctime_ns": 1792367414514727142
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/wheels.stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070127,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367414514727142,
+        "ctime_ns": 1792367414514727142
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070127,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367414514727142,
+        "ctime_ns": 1792367414514727142
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/wheels/command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070130,
+        "nlink": 1,
+        "size": 684,
+        "mtime_ns": 1792367414590380894,
+        "ctime_ns": 1792367414590380894
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070130,
+        "nlink": 1,
+        "size": 684,
+        "mtime_ns": 1792367414590380894,
+        "ctime_ns": 1792367414590380894
+      },
+      "bytes": 684,
+      "sha256": "14d14471478346e86c62c63d0bc8441f9220a74126f5f38581747edb96c41fb3",
+      "git_blob_sha1": "39c64b87027e10b3adbb917065b38de0cce226e2"
+    },
+    "scratch/0010-capability-control/wheels/execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1070140,
+        "nlink": 1,
+        "size": 1368,
+        "mtime_ns": 1792367416588812759,
+        "ctime_ns": 1792367416588812759
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070140,
+        "nlink": 1,
+        "size": 1368,
+        "mtime_ns": 1792367416588812759,
+        "ctime_ns": 1792367416588812759
+      },
+      "bytes": 1368,
+      "sha256": "3395d2c782208a1ce797450a49a5760e597ed4a670b5c69b9e9c34a10cfbebad",
+      "git_blob_sha1": "8a463a400789c63f74ae4c67e6bab6277d58b5df"
+    },
+    "scratch/0010-capability-control/wheels/stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070132,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367414590380894,
+        "ctime_ns": 1792367414590380894
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070132,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367414590380894,
+        "ctime_ns": 1792367414590380894
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-capability-control/wheels/stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1070131,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367414590380894,
+        "ctime_ns": 1792367414590380894
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070131,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367414590380894,
+        "ctime_ns": 1792367414590380894
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-partial-review/command.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1179652,
+        "nlink": 1,
+        "size": 369,
+        "mtime_ns": 1792367736618940038,
+        "ctime_ns": 1792367736618940038
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1179652,
+        "nlink": 1,
+        "size": 369,
+        "mtime_ns": 1792367736618940038,
+        "ctime_ns": 1792367736618940038
+      },
+      "bytes": 369,
+      "sha256": "525a65579ab4acf04cfbe76c6f0cc9d6db9217b15f2b7f9c709930bb75f47c58",
+      "git_blob_sha1": "86bbda94151c33f26f2ca95ce369d7347f94d857"
+    },
+    "scratch/0010-partial-review/diagnose.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1179650,
+        "nlink": 1,
+        "size": 6454,
+        "mtime_ns": 1792367736028634094,
+        "ctime_ns": 1792367736028634094
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1179650,
+        "nlink": 1,
+        "size": 6454,
+        "mtime_ns": 1792367736028634094,
+        "ctime_ns": 1792367736028634094
+      },
+      "bytes": 6454,
+      "sha256": "37ec6b2919d9eea47e3705c25470f47401c2b617ab9c4b1889bead863e9c459b",
+      "git_blob_sha1": "54f034a3e9a1832ee04bca8d2fe1cfe6a5a7d9f1"
+    },
+    "scratch/0010-partial-review/execution.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1179656,
+        "nlink": 1,
+        "size": 769,
+        "mtime_ns": 1792367738037502684,
+        "ctime_ns": 1792367738037502684
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1179656,
+        "nlink": 1,
+        "size": 769,
+        "mtime_ns": 1792367738037502684,
+        "ctime_ns": 1792367738037502684
+      },
+      "bytes": 769,
+      "sha256": "0def5394313f35503de1027972ecbc2c82ed770f05588d1a56d6c7becb79e8ac",
+      "git_blob_sha1": "7f41de3e6a5ad261cbbf2db9cc7e27608b813b3e"
+    },
+    "scratch/0010-partial-review/outer.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1179651,
+        "nlink": 1,
+        "size": 1946,
+        "mtime_ns": 1792367736404631996,
+        "ctime_ns": 1792367736404631996
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1179651,
+        "nlink": 1,
+        "size": 1946,
+        "mtime_ns": 1792367736404631996,
+        "ctime_ns": 1792367736404631996
+      },
+      "bytes": 1946,
+      "sha256": "92fb21c943322fe8de4256a8877ddeea434d09ce9f465a385b2575a052449446",
+      "git_blob_sha1": "97b1a3ca77a76b6c148720a5b138ef7be76c1de1"
+    },
+    "scratch/0010-partial-review/review.json": {
+      "before": {
+        "dev": 27,
+        "inode": 1179655,
+        "nlink": 1,
+        "size": 10646,
+        "mtime_ns": 1792367738028034729,
+        "ctime_ns": 1792367738028034729
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1179655,
+        "nlink": 1,
+        "size": 10646,
+        "mtime_ns": 1792367738028034729,
+        "ctime_ns": 1792367738028034729
+      },
+      "bytes": 10646,
+      "sha256": "4db75084c752a79185b328d8ec2c7925af9a8307fed5d6880522e47b2021e778",
+      "git_blob_sha1": "92d7dc602d421d49e8f3b08b467d23b6855bf216"
+    },
+    "scratch/0010-partial-review/stderr.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1179654,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367736618940038,
+        "ctime_ns": 1792367736618940038
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1179654,
+        "nlink": 1,
+        "size": 0,
+        "mtime_ns": 1792367736618940038,
+        "ctime_ns": 1792367736618940038
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "scratch/0010-partial-review/stdout.log": {
+      "before": {
+        "dev": 27,
+        "inode": 1179653,
+        "nlink": 1,
+        "size": 583,
+        "mtime_ns": 1792367738028034729,
+        "ctime_ns": 1792367738028034729
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1179653,
+        "nlink": 1,
+        "size": 583,
+        "mtime_ns": 1792367738028034729,
+        "ctime_ns": 1792367738028034729
+      },
+      "bytes": 583,
+      "sha256": "5e100361defa9f09d60499e9433e45b87588837436b8ff3c8e345c7e22a2ae48",
+      "git_blob_sha1": "777028becce6ab90baf47e57d4ff38d53c77017a"
+    },
+    "clip-0010-downloads/ViT-B-32.pt": {
+      "before": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "bytes": 353976522,
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "git_blob_sha1": "c5b3153d60b71f362e199ac00bf2ade52961f658"
+    },
+    "clip-0010-downloads/ViT-B-32.pt.partial": {
+      "before": {
+        "dev": 27,
+        "inode": 1070339,
+        "nlink": 1,
+        "size": 343605248,
+        "mtime_ns": 1792367495081251388,
+        "ctime_ns": 1792367512667122912
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070339,
+        "nlink": 1,
+        "size": 343605248,
+        "mtime_ns": 1792367495081251388,
+        "ctime_ns": 1792367512667122912
+      },
+      "bytes": 343605248,
+      "sha256": "97127aac2ade9ec552c1828df711e2c40aeb5e50ddc08a44959734cb0d238e01",
+      "git_blob_sha1": "51982b989ce78b93c991be59fccb75bbd33ff71f"
+    },
+    "clip-0010-downloads/.EuroSAT.zip.91Kpzc": {
+      "before": {
+        "dev": 27,
+        "inode": 1070330,
+        "nlink": 1,
+        "size": 24117248,
+        "mtime_ns": 1792367472456107572,
+        "ctime_ns": 1792367473524370851
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070330,
+        "nlink": 1,
+        "size": 24117248,
+        "mtime_ns": 1792367472456107572,
+        "ctime_ns": 1792367473524370851
+      },
+      "bytes": 24117248,
+      "sha256": "9d8af0249aa8453abcaac6b1041206e8bd9f9f0ccf472e98ca727d0684e6dbb0",
+      "git_blob_sha1": "32191fb44133ca5fb0437df1956803492665f003"
+    },
+    "clip-0010-downloads/.ViT-B-32.pt.partial.hvJJcZ": {
+      "before": {
+        "dev": 27,
+        "inode": 1070346,
+        "nlink": 1,
+        "size": 197132288,
+        "mtime_ns": 1792367499902260558,
+        "ctime_ns": 1792367526443838720
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070346,
+        "nlink": 1,
+        "size": 197132288,
+        "mtime_ns": 1792367499902260558,
+        "ctime_ns": 1792367526443838720
+      },
+      "bytes": 197132288,
+      "sha256": "2f94819255723d35778be2b7835cc249c6d518784750e8cd6753ce82db5e5e27",
+      "git_blob_sha1": "6e39fb0ebb1e3aea2680e96e6df45f91a7f39c2c"
+    },
+    "clip-0010-downloads/.ViT-B-32.pt.partial.hvJJcZ.dBQxjR": {
+      "before": {
+        "dev": 27,
+        "inode": 1070150,
+        "nlink": 1,
+        "size": 185073664,
+        "mtime_ns": 1792367531427638146,
+        "ctime_ns": 1792367534245979380
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070150,
+        "nlink": 1,
+        "size": 185073664,
+        "mtime_ns": 1792367531427638146,
+        "ctime_ns": 1792367534245979380
+      },
+      "bytes": 185073664,
+      "sha256": "df3075a8d7e02781e6387aa3374f72e3693eb3ccaf2886be7856f8f725763ee2",
+      "git_blob_sha1": "26a259f1d93fb2225b5158e042a80d46ea8fd381"
+    }
+  },
+  "runtime_recheck": {
+    "overlay_file_count": 133,
+    "module_entry_count": 9,
+    "files": {
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy-6.3.1.dist-info/INSTALLER": {
+        "before": {
+          "dev": 27,
+          "inode": 1070302,
+          "nlink": 1,
+          "size": 4,
+          "mtime_ns": 1792367433503343229,
+          "ctime_ns": 1792367433503343229
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070302,
+          "nlink": 1,
+          "size": 4,
+          "mtime_ns": 1792367433503343229,
+          "ctime_ns": 1792367433503343229
+        },
+        "bytes": 4,
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "git_blob_sha1": "a1b589e38a32041e49332e5e81c2d363dc418d68"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy-6.3.1.dist-info/REQUESTED": {
+        "before": {
+          "dev": 27,
+          "inode": 1070304,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433504387953,
+          "ctime_ns": 1792367433504387953
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070304,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433504387953,
+          "ctime_ns": 1792367433504387953
+        },
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy-6.3.1.dist-info/direct_url.json": {
+        "before": {
+          "dev": 27,
+          "inode": 1070303,
+          "nlink": 1,
+          "size": 285,
+          "mtime_ns": 1792367433504387953,
+          "ctime_ns": 1792367433504387953
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070303,
+          "nlink": 1,
+          "size": 285,
+          "mtime_ns": 1792367433504387953,
+          "ctime_ns": 1792367433504387953
+        },
+        "bytes": 285,
+        "sha256": "ba115c6615dcaa8c75ab59ae616965de02f1ce6378e01c9732cc3bb87f2a35e1",
+        "git_blob_sha1": "fc54f0105ac7826fa7e3e14c14dfe930af93303e"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy-6.3.1.dist-info/WHEEL": {
+        "before": {
+          "dev": 27,
+          "inode": 1070296,
+          "nlink": 1,
+          "size": 87,
+          "mtime_ns": 1792367433502997559,
+          "ctime_ns": 1792367433502997559
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070296,
+          "nlink": 1,
+          "size": 87,
+          "mtime_ns": 1792367433502997559,
+          "ctime_ns": 1792367433502997559
+        },
+        "bytes": 87,
+        "sha256": "d7215d7625cc9af60aed0613aad44db57eba589d0ccfc3d8122114a0e514c516",
+        "git_blob_sha1": "cdd68a497cdfa8d3f2b837225beacef711b85047"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy-6.3.1.dist-info/entry_points.txt": {
+        "before": {
+          "dev": 27,
+          "inode": 1070297,
+          "nlink": 1,
+          "size": 39,
+          "mtime_ns": 1792367433503036937,
+          "ctime_ns": 1792367433503036937
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070297,
+          "nlink": 1,
+          "size": 39,
+          "mtime_ns": 1792367433503036937,
+          "ctime_ns": 1792367433503036937
+        },
+        "bytes": 39,
+        "sha256": "b32e048b6f48a998504606050b5ec656b4f526413a975fa8a0985e2ae952a8ef",
+        "git_blob_sha1": "99476a44fd1015a1c391431110d1773503340096"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy-6.3.1.dist-info/METADATA": {
+        "before": {
+          "dev": 27,
+          "inode": 1070295,
+          "nlink": 1,
+          "size": 7257,
+          "mtime_ns": 1792367433502944420,
+          "ctime_ns": 1792367433502944420
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070295,
+          "nlink": 1,
+          "size": 7257,
+          "mtime_ns": 1792367433502944420,
+          "ctime_ns": 1792367433502944420
+        },
+        "bytes": 7257,
+        "sha256": "83f67c6280377637c560b5e8802a00ba6ee512b0a1ea1dae5dff1e745b19d1df",
+        "git_blob_sha1": "1eaaae955f155091e4516629699af17fcfb8e57a"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy-6.3.1.dist-info/RECORD": {
+        "before": {
+          "dev": 27,
+          "inode": 1070305,
+          "nlink": 1,
+          "size": 1492,
+          "mtime_ns": 1792367433505156508,
+          "ctime_ns": 1792367433505156508
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070305,
+          "nlink": 1,
+          "size": 1492,
+          "mtime_ns": 1792367433505156508,
+          "ctime_ns": 1792367433505156508
+        },
+        "bytes": 1492,
+        "sha256": "b25c8cbcfa77c99452b8db832248ba6bc477a55335308e49231c1f0aca52c8ad",
+        "git_blob_sha1": "fee079bfac28f0c5dd9eb1e8a07e1567614957f5"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex-2026.9.29.dist-info/INSTALLER": {
+        "before": {
+          "dev": 27,
+          "inode": 1070279,
+          "nlink": 1,
+          "size": 4,
+          "mtime_ns": 1792367433497522601,
+          "ctime_ns": 1792367433497522601
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070279,
+          "nlink": 1,
+          "size": 4,
+          "mtime_ns": 1792367433497522601,
+          "ctime_ns": 1792367433497522601
+        },
+        "bytes": 4,
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "git_blob_sha1": "a1b589e38a32041e49332e5e81c2d363dc418d68"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex-2026.9.29.dist-info/REQUESTED": {
+        "before": {
+          "dev": 27,
+          "inode": 1070281,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433498937892,
+          "ctime_ns": 1792367433498937892
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070281,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433498937892,
+          "ctime_ns": 1792367433498937892
+        },
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex-2026.9.29.dist-info/direct_url.json": {
+        "before": {
+          "dev": 27,
+          "inode": 1070280,
+          "nlink": 1,
+          "size": 354,
+          "mtime_ns": 1792367433498937892,
+          "ctime_ns": 1792367433498937892
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070280,
+          "nlink": 1,
+          "size": 354,
+          "mtime_ns": 1792367433498937892,
+          "ctime_ns": 1792367433498937892
+        },
+        "bytes": 354,
+        "sha256": "fc73c40bf0dfadb311b50f0bbffcae4ca46833a7f05a92cce6b2fb284ca8147a",
+        "git_blob_sha1": "1c04aaa8a6a607157812ce006260a6a748fbde44"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex-2026.9.29.dist-info/top_level.txt": {
+        "before": {
+          "dev": 27,
+          "inode": 1070275,
+          "nlink": 1,
+          "size": 6,
+          "mtime_ns": 1792367433497202158,
+          "ctime_ns": 1792367433497202158
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070275,
+          "nlink": 1,
+          "size": 6,
+          "mtime_ns": 1792367433497202158,
+          "ctime_ns": 1792367433497202158
+        },
+        "bytes": 6,
+        "sha256": "6909a20cc84d4c5dba7022b8ffb0fea9a56f85bc42946d30c824e7121933601b",
+        "git_blob_sha1": "4f9256d62325c75de027d1cd48f1ff520117413e"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex-2026.9.29.dist-info/WHEEL": {
+        "before": {
+          "dev": 27,
+          "inode": 1070274,
+          "nlink": 1,
+          "size": 190,
+          "mtime_ns": 1792367433497152064,
+          "ctime_ns": 1792367433497152064
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070274,
+          "nlink": 1,
+          "size": 190,
+          "mtime_ns": 1792367433497152064,
+          "ctime_ns": 1792367433497152064
+        },
+        "bytes": 190,
+        "sha256": "797631520e4ac7d96fb6e40cd3e5f2d32e39caeb9cf024f466babe3777b7c296",
+        "git_blob_sha1": "0a4d0300062879d2c7e8ebd316e2fc3ba674f619"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex-2026.9.29.dist-info/METADATA": {
+        "before": {
+          "dev": 27,
+          "inode": 1070273,
+          "nlink": 1,
+          "size": 40564,
+          "mtime_ns": 1792367433497084675,
+          "ctime_ns": 1792367433497084675
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070273,
+          "nlink": 1,
+          "size": 40564,
+          "mtime_ns": 1792367433497084675,
+          "ctime_ns": 1792367433497084675
+        },
+        "bytes": 40564,
+        "sha256": "33859377dbf8dd38ee3de73fd97faebf4a63d50576e3cc1a9dfe44df08b0936a",
+        "git_blob_sha1": "1c76d1f19f8a4b62af771846df77fefa1d0413da"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex-2026.9.29.dist-info/RECORD": {
+        "before": {
+          "dev": 27,
+          "inode": 1070282,
+          "nlink": 1,
+          "size": 1110,
+          "mtime_ns": 1792367433499610806,
+          "ctime_ns": 1792367433499610806
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070282,
+          "nlink": 1,
+          "size": 1110,
+          "mtime_ns": 1792367433499610806,
+          "ctime_ns": 1792367433499610806
+        },
+        "bytes": 1110,
+        "sha256": "3682935b849aab4c1a201592f624b073d1240d42c57368bbd94f8215de7f6b41",
+        "git_blob_sha1": "93134ba999657fdddcd1fa5d1e678edc957e19ed"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/fixes.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070287,
+          "nlink": 1,
+          "size": 18233,
+          "mtime_ns": 1792367433502417342,
+          "ctime_ns": 1792367433502417342
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070287,
+          "nlink": 1,
+          "size": 18233,
+          "mtime_ns": 1792367433502417342,
+          "ctime_ns": 1792367433502417342
+        },
+        "bytes": 18233,
+        "sha256": "1bc5d02b332572cc3868f851ad081cc0031cc6a6ad7fb10398d68eaec63e0ba5",
+        "git_blob_sha1": "41d3c2f817f0dedfb6887a64a97bb6e5dc0a118f"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/py.typed": {
+        "before": {
+          "dev": 27,
+          "inode": 1070289,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433502487706,
+          "ctime_ns": 1792367433502487706
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070289,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433502487706,
+          "ctime_ns": 1792367433502487706
+        },
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/formatting.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070288,
+          "nlink": 1,
+          "size": 5882,
+          "mtime_ns": 1792367433502487706,
+          "ctime_ns": 1792367433502487706
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070288,
+          "nlink": 1,
+          "size": 5882,
+          "mtime_ns": 1792367433502487706,
+          "ctime_ns": 1792367433502487706
+        },
+        "bytes": 5882,
+        "sha256": "a5b981ba76327603ecddbc4c8425c5b5a4ccd3fdea4ffca9e9eb19be3bce2999",
+        "git_blob_sha1": "18df64b082ddfe26f079578de57a6bb6f5d2df03"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/badness.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070284,
+          "nlink": 1,
+          "size": 15561,
+          "mtime_ns": 1792367433501901109,
+          "ctime_ns": 1792367433501901109
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070284,
+          "nlink": 1,
+          "size": 15561,
+          "mtime_ns": 1792367433501901109,
+          "ctime_ns": 1792367433501901109
+        },
+        "bytes": 15561,
+        "sha256": "8ce47eb9c01f5fa2d38e650fe047474bde5537beba5971b722ca6b4079df6fd3",
+        "git_blob_sha1": "38ec1f44c44cdd3eba35eaa0aaf823ea37fbe0d8"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/chardata.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070285,
+          "nlink": 1,
+          "size": 34911,
+          "mtime_ns": 1792367433502155855,
+          "ctime_ns": 1792367433502155855
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070285,
+          "nlink": 1,
+          "size": 34911,
+          "mtime_ns": 1792367433502155855,
+          "ctime_ns": 1792367433502155855
+        },
+        "bytes": 34911,
+        "sha256": "b405eaad7d98df306c9406688fab45072f989feffe530175baccef28dedc55c9",
+        "git_blob_sha1": "afcc76715707694d4fdf25ca3d33247731e21c00"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/cli.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070286,
+          "nlink": 1,
+          "size": 4137,
+          "mtime_ns": 1792367433502291155,
+          "ctime_ns": 1792367433502291155
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070286,
+          "nlink": 1,
+          "size": 4137,
+          "mtime_ns": 1792367433502291155,
+          "ctime_ns": 1792367433502291155
+        },
+        "bytes": 4137,
+        "sha256": "abd0cd8b82ee84a1ab95ea07fd9dda07a274a124f7e1ad9659ab5aa7b39dafbb",
+        "git_blob_sha1": "2807a8604f03cf5b11aac1ad076070ada97e371e"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070283,
+          "nlink": 1,
+          "size": 29593,
+          "mtime_ns": 1792367433501707984,
+          "ctime_ns": 1792367433501707984
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070283,
+          "nlink": 1,
+          "size": 29593,
+          "mtime_ns": 1792367433501707984,
+          "ctime_ns": 1792367433501707984
+        },
+        "bytes": 29593,
+        "sha256": "7a45fa65b2674775319a05b0a4cdbfd04a22ce7f36ba4098411bf9ec1b22cb3c",
+        "git_blob_sha1": "cc0a12049eb1a3093fd921b18bb9dbcef5a7584e"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth-0.9.2.dist-info/INSTALLER": {
+        "before": {
+          "dev": 27,
+          "inode": 1070214,
+          "nlink": 1,
+          "size": 4,
+          "mtime_ns": 1792367433469963963,
+          "ctime_ns": 1792367433469963963
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070214,
+          "nlink": 1,
+          "size": 4,
+          "mtime_ns": 1792367433469963963,
+          "ctime_ns": 1792367433469963963
+        },
+        "bytes": 4,
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "git_blob_sha1": "a1b589e38a32041e49332e5e81c2d363dc418d68"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth-0.9.2.dist-info/REQUESTED": {
+        "before": {
+          "dev": 27,
+          "inode": 1070216,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433471853845,
+          "ctime_ns": 1792367433471853845
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070216,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433471853845,
+          "ctime_ns": 1792367433471853845
+        },
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth-0.9.2.dist-info/direct_url.json": {
+        "before": {
+          "dev": 27,
+          "inode": 1070215,
+          "nlink": 1,
+          "size": 288,
+          "mtime_ns": 1792367433471853845,
+          "ctime_ns": 1792367433471853845
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070215,
+          "nlink": 1,
+          "size": 288,
+          "mtime_ns": 1792367433471853845,
+          "ctime_ns": 1792367433471853845
+        },
+        "bytes": 288,
+        "sha256": "5fc5075427a4edba5aba930c0227a809b9b02615d0249191a95bd30a721468ab",
+        "git_blob_sha1": "4b571ed661c684456414bc3b06bbc37c49758c27"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth-0.9.2.dist-info/top_level.txt": {
+        "before": {
+          "dev": 27,
+          "inode": 1070212,
+          "nlink": 1,
+          "size": 8,
+          "mtime_ns": 1792367433469737088,
+          "ctime_ns": 1792367433469737088
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070212,
+          "nlink": 1,
+          "size": 8,
+          "mtime_ns": 1792367433469737088,
+          "ctime_ns": 1792367433469737088
+        },
+        "bytes": 8,
+        "sha256": "2cb8d2f121625d7b8b11c0f604d7457468692967b9a291edbe7eca363f402112",
+        "git_blob_sha1": "723a22ca00a76ffd3df5b5513c78c751654f075c"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth-0.9.2.dist-info/WHEEL": {
+        "before": {
+          "dev": 27,
+          "inode": 1070211,
+          "nlink": 1,
+          "size": 91,
+          "mtime_ns": 1792367433469695246,
+          "ctime_ns": 1792367433469695246
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070211,
+          "nlink": 1,
+          "size": 91,
+          "mtime_ns": 1792367433469695246,
+          "ctime_ns": 1792367433469695246
+        },
+        "bytes": 91,
+        "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1",
+        "git_blob_sha1": "13013d7b49be5a84c3ee5931b06285b9553cf5d0"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth-0.9.2.dist-info/METADATA": {
+        "before": {
+          "dev": 27,
+          "inode": 1070210,
+          "nlink": 1,
+          "size": 23692,
+          "mtime_ns": 1792367433469586806,
+          "ctime_ns": 1792367433469586806
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070210,
+          "nlink": 1,
+          "size": 23692,
+          "mtime_ns": 1792367433469586806,
+          "ctime_ns": 1792367433469586806
+        },
+        "bytes": 23692,
+        "sha256": "cce73426c72bcd655c08f6229262e5868bf69c1e9e10130119b275ebd200e2b8",
+        "git_blob_sha1": "a7d28360e32e6fafbebe9e0ba59e97ba66aee9a3"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth-0.9.2.dist-info/RECORD": {
+        "before": {
+          "dev": 27,
+          "inode": 1070217,
+          "nlink": 1,
+          "size": 5296,
+          "mtime_ns": 1792367433472709539,
+          "ctime_ns": 1792367433472709539
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070217,
+          "nlink": 1,
+          "size": 5296,
+          "mtime_ns": 1792367433472709539,
+          "ctime_ns": 1792367433472709539
+        },
+        "bytes": 5296,
+        "sha256": "89d26fa45ffab03102722c9baf7c8be30b0503734e9671ec3727b4e5c804161b",
+        "git_blob_sha1": "4781553e1067bb606aa2644b5e77671a2ed9c298"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/INSTALLER": {
+        "before": {
+          "dev": 27,
+          "inode": 1070262,
+          "nlink": 1,
+          "size": 4,
+          "mtime_ns": 1792367433477825386,
+          "ctime_ns": 1792367433477825386
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070262,
+          "nlink": 1,
+          "size": 4,
+          "mtime_ns": 1792367433477825386,
+          "ctime_ns": 1792367433477825386
+        },
+        "bytes": 4,
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "git_blob_sha1": "a1b589e38a32041e49332e5e81c2d363dc418d68"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/REQUESTED": {
+        "before": {
+          "dev": 27,
+          "inode": 1070264,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433478975725,
+          "ctime_ns": 1792367433478975725
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070264,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433478975725,
+          "ctime_ns": 1792367433478975725
+        },
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/direct_url.json": {
+        "before": {
+          "dev": 27,
+          "inode": 1070263,
+          "nlink": 1,
+          "size": 286,
+          "mtime_ns": 1792367433478975725,
+          "ctime_ns": 1792367433478975725
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070263,
+          "nlink": 1,
+          "size": 286,
+          "mtime_ns": 1792367433478975725,
+          "ctime_ns": 1792367433478975725
+        },
+        "bytes": 286,
+        "sha256": "ee6ecf4183b457a47ad6962d179c71ea052db773d426d3e37ad0b60161443687",
+        "git_blob_sha1": "c7751793e4175591079674cfc374c9ee4bca65b0"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/top_level.txt": {
+        "before": {
+          "dev": 27,
+          "inode": 1070258,
+          "nlink": 1,
+          "size": 5,
+          "mtime_ns": 1792367433477534777,
+          "ctime_ns": 1792367433477534777
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070258,
+          "nlink": 1,
+          "size": 5,
+          "mtime_ns": 1792367433477534777,
+          "ctime_ns": 1792367433477534777
+        },
+        "bytes": 5,
+        "sha256": "34b89424d7e673d02dd79b3b254462c2fa8c123522f46e4f30646b98c6333523",
+        "git_blob_sha1": "78620c472c9d799a14ccb02a0233f4669b3bcdcb"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/WHEEL": {
+        "before": {
+          "dev": 27,
+          "inode": 1070256,
+          "nlink": 1,
+          "size": 91,
+          "mtime_ns": 1792367433477455440,
+          "ctime_ns": 1792367433477455440
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070256,
+          "nlink": 1,
+          "size": 91,
+          "mtime_ns": 1792367433477455440,
+          "ctime_ns": 1792367433477455440
+        },
+        "bytes": 91,
+        "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1",
+        "git_blob_sha1": "13013d7b49be5a84c3ee5931b06285b9553cf5d0"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/entry_points.txt": {
+        "before": {
+          "dev": 27,
+          "inode": 1070257,
+          "nlink": 1,
+          "size": 39,
+          "mtime_ns": 1792367433477497452,
+          "ctime_ns": 1792367433477497452
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070257,
+          "nlink": 1,
+          "size": 39,
+          "mtime_ns": 1792367433477497452,
+          "ctime_ns": 1792367433477497452
+        },
+        "bytes": 39,
+        "sha256": "45e2421fb522dd9ca1e8cd7a1383a1b19d6853b5ad31709f6eda3206118edbd6",
+        "git_blob_sha1": "540e60f4e073bc53a5f0a521a3639e0d80780af4"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/METADATA": {
+        "before": {
+          "dev": 27,
+          "inode": 1070255,
+          "nlink": 1,
+          "size": 57366,
+          "mtime_ns": 1792367433477388110,
+          "ctime_ns": 1792367433477388110
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070255,
+          "nlink": 1,
+          "size": 57366,
+          "mtime_ns": 1792367433477388110,
+          "ctime_ns": 1792367433477388110
+        },
+        "bytes": 57366,
+        "sha256": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57",
+        "git_blob_sha1": "0ab47b047680ae0434cf9e70e0b9b9e49035cdb4"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/RECORD": {
+        "before": {
+          "dev": 27,
+          "inode": 1070265,
+          "nlink": 1,
+          "size": 3288,
+          "mtime_ns": 1792367433479817599,
+          "ctime_ns": 1792367433479817599
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070265,
+          "nlink": 1,
+          "size": 3288,
+          "mtime_ns": 1792367433479817599,
+          "ctime_ns": 1792367433479817599
+        },
+        "bytes": 3288,
+        "sha256": "ca85d9615455e722261f3f2b96cbfa2272772ac753dd4a8d72d765acf62214c7",
+        "git_blob_sha1": "db6ac8096e0f83c3f1080ccf23a4e14d91cf75b9"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex/_main.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070267,
+          "nlink": 1,
+          "size": 33410,
+          "mtime_ns": 1792367433481491241,
+          "ctime_ns": 1792367433481491241
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070267,
+          "nlink": 1,
+          "size": 33410,
+          "mtime_ns": 1792367433481491241,
+          "ctime_ns": 1792367433481491241
+        },
+        "bytes": 33410,
+        "sha256": "b3ef1c11f7a7721e6e0fe462d8bba85b32fb814ca6210d07bb17da1bb128e436",
+        "git_blob_sha1": "2b0f9bd989fd8062222000c314c62f15fd3d9afb"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex/_regex.cpython-312-x86_64-linux-gnu.so": {
+        "before": {
+          "dev": 27,
+          "inode": 1070268,
+          "nlink": 1,
+          "size": 2597112,
+          "mtime_ns": 1792367433490808887,
+          "ctime_ns": 1792367433490808887
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070268,
+          "nlink": 1,
+          "size": 2597112,
+          "mtime_ns": 1792367433490808887,
+          "ctime_ns": 1792367433490808887
+        },
+        "bytes": 2597112,
+        "sha256": "b625e4e77eae0efae30f930eb83fc5a345b0083b0d110a96041983fdab08a405",
+        "git_blob_sha1": "dce64ead4315eeb40c8bacf809af94c3a2155400"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex/_regex_core.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070269,
+          "nlink": 1,
+          "size": 147335,
+          "mtime_ns": 1792367433495906614,
+          "ctime_ns": 1792367433495906614
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070269,
+          "nlink": 1,
+          "size": 147335,
+          "mtime_ns": 1792367433495906614,
+          "ctime_ns": 1792367433495906614
+        },
+        "bytes": 147335,
+        "sha256": "604eb46253402336c66362f32c4a20af095d3bd0b5505501b44e6077e92951a2",
+        "git_blob_sha1": "60678919c2a774a2a8a6d0701bfd79b17e4d4ac8"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070266,
+          "nlink": 1,
+          "size": 75,
+          "mtime_ns": 1792367433481336272,
+          "ctime_ns": 1792367433481336272
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070266,
+          "nlink": 1,
+          "size": 75,
+          "mtime_ns": 1792367433481336272,
+          "ctime_ns": 1792367433481336272
+        },
+        "bytes": 75,
+        "sha256": "039934ae6f0b9fb1cab1f1bef2c11661e85e93ccc22847bab105b94065009925",
+        "git_blob_sha1": "5ce0ad5ba85933c3b4a42ee019cf306c08042ba7"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/_main.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070220,
+          "nlink": 1,
+          "size": 283,
+          "mtime_ns": 1792367433474521626,
+          "ctime_ns": 1792367433474521626
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070220,
+          "nlink": 1,
+          "size": 283,
+          "mtime_ns": 1792367433474521626,
+          "ctime_ns": 1792367433474521626
+        },
+        "bytes": 283,
+        "sha256": "f724af8268bfd92c38080a395035b44367717d3af26e8116187a217c2273d2c0",
+        "git_blob_sha1": "04fdeeff17b5cc84b210f445b54b87d5b99e3748"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/_tqdm_notebook.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070224,
+          "nlink": 1,
+          "size": 307,
+          "mtime_ns": 1792367433474712738,
+          "ctime_ns": 1792367433474712738
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070224,
+          "nlink": 1,
+          "size": 307,
+          "mtime_ns": 1792367433474712738,
+          "ctime_ns": 1792367433474712738
+        },
+        "bytes": 307,
+        "sha256": "06e1e22eec6eeae11f64568f256dd13e93dac5a55cb44400de47522520cbd61c",
+        "git_blob_sha1": "f225fbf5b52d04987ccf68f4d5ee4b735e3158b0"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/std.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070237,
+          "nlink": 1,
+          "size": 58047,
+          "mtime_ns": 1792367433475685725,
+          "ctime_ns": 1792367433475685725
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070237,
+          "nlink": 1,
+          "size": 58047,
+          "mtime_ns": 1792367433475685725,
+          "ctime_ns": 1792367433475685725
+        },
+        "bytes": 58047,
+        "sha256": "dd76d965de52c590819dec376644220cb35dc4831e40efb4c30944884fc57d86",
+        "git_blob_sha1": "a3a11dde4dd612a0d02c907190386548093bb64f"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/tqdm.1": {
+        "before": {
+          "dev": 27,
+          "inode": 1070239,
+          "nlink": 1,
+          "size": 7538,
+          "mtime_ns": 1792367433475902255,
+          "ctime_ns": 1792367433475902255
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070239,
+          "nlink": 1,
+          "size": 7538,
+          "mtime_ns": 1792367433475902255,
+          "ctime_ns": 1792367433475902255
+        },
+        "bytes": 7538,
+        "sha256": "30b83daa37874e16693c441b595adfe4fe6039730a1c4fd7eb4e8548e048f5e5",
+        "git_blob_sha1": "b134ddd74c2095149e0c902f004a162c3be9d2ed"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/auto.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070228,
+          "nlink": 1,
+          "size": 871,
+          "mtime_ns": 1792367433474949378,
+          "ctime_ns": 1792367433474949378
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070228,
+          "nlink": 1,
+          "size": 871,
+          "mtime_ns": 1792367433474949378,
+          "ctime_ns": 1792367433474949378
+        },
+        "bytes": 871,
+        "sha256": "9c365f963ea9db32a48c108d068babae14bcd7361f672d7f750bdb724add5bca",
+        "git_blob_sha1": "206c4409d5269594bdbab3a092ef6e09e7c01947"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/completion.sh": {
+        "before": {
+          "dev": 27,
+          "inode": 1070231,
+          "nlink": 1,
+          "size": 946,
+          "mtime_ns": 1792367433475129023,
+          "ctime_ns": 1792367433475129023
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070231,
+          "nlink": 1,
+          "size": 946,
+          "mtime_ns": 1792367433475129023,
+          "ctime_ns": 1792367433475129023
+        },
+        "bytes": 946,
+        "sha256": "8fbf4a6d29a9223fc4d758df4df057ac69d44f3297569435bc6550becc83465e",
+        "git_blob_sha1": "9f61c7f14bb8c1f6099b9eb75dce28ece6a7ae96"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/rich.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070236,
+          "nlink": 1,
+          "size": 5255,
+          "mtime_ns": 1792367433475436157,
+          "ctime_ns": 1792367433475436157
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070236,
+          "nlink": 1,
+          "size": 5255,
+          "mtime_ns": 1792367433475436157,
+          "ctime_ns": 1792367433475436157
+        },
+        "bytes": 5255,
+        "sha256": "274e32abacb652bf74d76cc2ecf91ccc0d6dedc0e37adf3c866064ac0bfeb36b",
+        "git_blob_sha1": "bddd1334c85a7ad306bcd152b260ebcefa595377"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/asyncio.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070227,
+          "nlink": 1,
+          "size": 3196,
+          "mtime_ns": 1792367433474903129,
+          "ctime_ns": 1792367433474903129
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070227,
+          "nlink": 1,
+          "size": 3196,
+          "mtime_ns": 1792367433474903129,
+          "ctime_ns": 1792367433474903129
+        },
+        "bytes": 3196,
+        "sha256": "229706a3a645c1ce8a287623e6cee1e246918a881c69b27a3dca878fa8ddcb42",
+        "git_blob_sha1": "ac5c2e67119bb77d25d1fd38e6590393a65b3e93"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/version.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070241,
+          "nlink": 1,
+          "size": 233,
+          "mtime_ns": 1792367433476155860,
+          "ctime_ns": 1792367433476155860
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070241,
+          "nlink": 1,
+          "size": 233,
+          "mtime_ns": 1792367433476155860,
+          "ctime_ns": 1792367433476155860
+        },
+        "bytes": 233,
+        "sha256": "d2e1f84cb7bc23c1fbd71dbd7659ad11904e6cb4f76f9216fa7cad177574215c",
+        "git_blob_sha1": "84739ef244b0504c9705b40b72f7f229584b24ca"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/__main__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070219,
+          "nlink": 1,
+          "size": 30,
+          "mtime_ns": 1792367433474471522,
+          "ctime_ns": 1792367433474471522
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070219,
+          "nlink": 1,
+          "size": 30,
+          "mtime_ns": 1792367433474471522,
+          "ctime_ns": 1792367433474471522
+        },
+        "bytes": 30,
+        "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+        "git_blob_sha1": "4e28416e104515e90fca4b69cc60d0c61fd15d61"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/_tqdm_gui.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070223,
+          "nlink": 1,
+          "size": 287,
+          "mtime_ns": 1792367433474669684,
+          "ctime_ns": 1792367433474669684
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070223,
+          "nlink": 1,
+          "size": 287,
+          "mtime_ns": 1792367433474669684,
+          "ctime_ns": 1792367433474669684
+        },
+        "bytes": 287,
+        "sha256": "d371dcf0a6b2c49bde89e239fb4fb6346883a4bbf0f6365e9287c9515ec20b09",
+        "git_blob_sha1": "f32aa894f54b3a5b47a0fbf4263c2fd20df56c9d"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/notebook.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070235,
+          "nlink": 1,
+          "size": 10888,
+          "mtime_ns": 1792367433475375026,
+          "ctime_ns": 1792367433475375026
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070235,
+          "nlink": 1,
+          "size": 10888,
+          "mtime_ns": 1792367433475375026,
+          "ctime_ns": 1792367433475375026
+        },
+        "bytes": 10888,
+        "sha256": "eb19144dc611b05c4de3f052518619e75900808ef27274f41cba4ff47ba412a8",
+        "git_blob_sha1": "f6e1b0a6d15c5286354264116d2815b4285b8880"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/_monitor.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070221,
+          "nlink": 1,
+          "size": 4013,
+          "mtime_ns": 1792367433474583707,
+          "ctime_ns": 1792367433474583707
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070221,
+          "nlink": 1,
+          "size": 4013,
+          "mtime_ns": 1792367433474583707,
+          "ctime_ns": 1792367433474583707
+        },
+        "bytes": 4013,
+        "sha256": "d5571abeea2d61237a2bed636e936ecba1d8b6bde6c28e4d87f8d9310fa38370",
+        "git_blob_sha1": "9d97b8313770b7ced3639d43db3c89d41c5b9b67"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/_tqdm_pandas.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070225,
+          "nlink": 1,
+          "size": 888,
+          "mtime_ns": 1792367433474764264,
+          "ctime_ns": 1792367433474764264
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070225,
+          "nlink": 1,
+          "size": 888,
+          "mtime_ns": 1792367433474764264,
+          "ctime_ns": 1792367433474764264
+        },
+        "bytes": 888,
+        "sha256": "73d8e9b5482280de9ac510e145de1189ff7c4e6c5ea297359c5345848a5b1541",
+        "git_blob_sha1": "c4fe6efdc603579e7f8acfa27ac10dccdf3e94ce"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/gui.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070233,
+          "nlink": 1,
+          "size": 5481,
+          "mtime_ns": 1792367433475242641,
+          "ctime_ns": 1792367433475242641
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070233,
+          "nlink": 1,
+          "size": 5481,
+          "mtime_ns": 1792367433475242641,
+          "ctime_ns": 1792367433475242641
+        },
+        "bytes": 5481,
+        "sha256": "99a43b8e007995e587c313256c1bf4f21a5ee65cadbe61f4844011bb6d8645d5",
+        "git_blob_sha1": "e7995089f09281d27d52eb082d935854360044a8"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/_tqdm.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070222,
+          "nlink": 1,
+          "size": 283,
+          "mtime_ns": 1792367433474628173,
+          "ctime_ns": 1792367433474628173
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070222,
+          "nlink": 1,
+          "size": 283,
+          "mtime_ns": 1792367433474628173,
+          "ctime_ns": 1792367433474628173
+        },
+        "bytes": 283,
+        "sha256": "2df2c2b89e9ba6c568f718a59ad057c849b5bc69d4085ae5896f398f727e9c3e",
+        "git_blob_sha1": "7fc4962774a4651db7a739a3f143633b6215a9bd"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/_utils.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070226,
+          "nlink": 1,
+          "size": 559,
+          "mtime_ns": 1792367433474846385,
+          "ctime_ns": 1792367433474846385
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070226,
+          "nlink": 1,
+          "size": 559,
+          "mtime_ns": 1792367433474846385,
+          "ctime_ns": 1792367433474846385
+        },
+        "bytes": 559,
+        "sha256": "09f2f3b71158f9046235fc500aa01bd8df04d77b9ab8833de5149088595a12e1",
+        "git_blob_sha1": "28665dfe7f518bfaabce9bd442e4f2b23aeac267"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/keras.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070234,
+          "nlink": 1,
+          "size": 4396,
+          "mtime_ns": 1792367433475298473,
+          "ctime_ns": 1792367433475298473
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070234,
+          "nlink": 1,
+          "size": 4396,
+          "mtime_ns": 1792367433475298473,
+          "ctime_ns": 1792367433475298473
+        },
+        "bytes": 4396,
+        "sha256": "ba077cd3ec42c4caa7adbc7f0c43a99a3e9cd92875c6856d43c57df9bc36f5ea",
+        "git_blob_sha1": "317b76a69539589f71334836cbe31fda063a7a46"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/dask.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070232,
+          "nlink": 1,
+          "size": 1319,
+          "mtime_ns": 1792367433475182702,
+          "ctime_ns": 1792367433475182702
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070232,
+          "nlink": 1,
+          "size": 1319,
+          "mtime_ns": 1792367433475182702,
+          "ctime_ns": 1792367433475182702
+        },
+        "bytes": 1319,
+        "sha256": "f448b9f1e56a4e8b2c44b8407d6c9414276e5d82a398b9b091a5c8cbe08761fb",
+        "git_blob_sha1": "57f1b668f59dc5991019eee34c7df3232a2c2cd7"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/tk.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070238,
+          "nlink": 1,
+          "size": 6702,
+          "mtime_ns": 1792367433475816599,
+          "ctime_ns": 1792367433475816599
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070238,
+          "nlink": 1,
+          "size": 6702,
+          "mtime_ns": 1792367433475816599,
+          "ctime_ns": 1792367433475816599
+        },
+        "bytes": 6702,
+        "sha256": "dd5b01d4c0c090222d696bbb0a631bd82a132cc8aa98388480d8b7ca2a90e466",
+        "git_blob_sha1": "6607cc7f55e9bcdd177ef57dae4dbc06c7e33951"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/autonotebook.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070229,
+          "nlink": 1,
+          "size": 1440,
+          "mtime_ns": 1792367433474997799,
+          "ctime_ns": 1792367433474997799
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070229,
+          "nlink": 1,
+          "size": 1440,
+          "mtime_ns": 1792367433474997799,
+          "ctime_ns": 1792367433474997799
+        },
+        "bytes": 1440,
+        "sha256": "da9360182243b1eb0d372627992bdef013502e2192828f7b4ac3e83170ab3514",
+        "git_blob_sha1": "df1d21b2b0f933b460c0f1021ae22a1f058b0871"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/cli.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070230,
+          "nlink": 1,
+          "size": 11011,
+          "mtime_ns": 1792367433475075023,
+          "ctime_ns": 1792367433475075023
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070230,
+          "nlink": 1,
+          "size": 11011,
+          "mtime_ns": 1792367433475075023,
+          "ctime_ns": 1792367433475075023
+        },
+        "bytes": 11011,
+        "sha256": "b758ff3ea2344ae3328491a807130f09763e5136df8dc89a010631014fdffd5d",
+        "git_blob_sha1": "e5599efdc7c1c2aaad1cd95dd02eacdffc71c658"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070218,
+          "nlink": 1,
+          "size": 1572,
+          "mtime_ns": 1792367433474411112,
+          "ctime_ns": 1792367433474411112
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070218,
+          "nlink": 1,
+          "size": 1572,
+          "mtime_ns": 1792367433474411112,
+          "ctime_ns": 1792367433474411112
+        },
+        "bytes": 1572,
+        "sha256": "f6640d6124aa3fdf496acb9b102d4f3892cc9a1924047e9c259c4f211e46da94",
+        "git_blob_sha1": "8081f77b8812f3b42d7949daa4195d2c35dc70ac"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/utils.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070240,
+          "nlink": 1,
+          "size": 9746,
+          "mtime_ns": 1792367433476076923,
+          "ctime_ns": 1792367433476076923
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070240,
+          "nlink": 1,
+          "size": 9746,
+          "mtime_ns": 1792367433476076923,
+          "ctime_ns": 1792367433476076923
+        },
+        "bytes": 9746,
+        "sha256": "a3f7f4577d87ff0ae7d179919e8de3f6927dc65a79c4bd1f1d3de0b6a2fe939f",
+        "git_blob_sha1": "329c064478e4c6f094249d85732d818fc400720b"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/bin/ftfy": {
+        "before": {
+          "dev": 27,
+          "inode": 1070301,
+          "nlink": 1,
+          "size": 211,
+          "mtime_ns": 1792367433503259506,
+          "ctime_ns": 1792367433503276040
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070301,
+          "nlink": 1,
+          "size": 211,
+          "mtime_ns": 1792367433503259506,
+          "ctime_ns": 1792367433503276040
+        },
+        "bytes": 211,
+        "sha256": "4fb6aedfc550da9b8a2ef452f1b1f58cf5b49d43983c31a648ee35ddfc1d1ef8",
+        "git_blob_sha1": "b5d012980fa3c69ab63770f5ddf7c4caa15160d3"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/bin/tqdm": {
+        "before": {
+          "dev": 27,
+          "inode": 1070261,
+          "nlink": 1,
+          "size": 211,
+          "mtime_ns": 1792367433477718999,
+          "ctime_ns": 1792367433477732399
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070261,
+          "nlink": 1,
+          "size": 211,
+          "mtime_ns": 1792367433477718999,
+          "ctime_ns": 1792367433477732399
+        },
+        "bytes": 211,
+        "sha256": "cda5456b72473034cd737b4ad3a6058775812baa6c9330802fc65624a924c009",
+        "git_blob_sha1": "bc421434163e4b36de138cf910152bbbc6a5cc50"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_overrides.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070174,
+          "nlink": 1,
+          "size": 47858,
+          "mtime_ns": 1792367433464822809,
+          "ctime_ns": 1792367433464822809
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070174,
+          "nlink": 1,
+          "size": 47858,
+          "mtime_ns": 1792367433464822809,
+          "ctime_ns": 1792367433464822809
+        },
+        "bytes": 47858,
+        "sha256": "4c8182ab694bc2fa5618a72ba7d7aefe0b8e8a8eab0bbe540a398a5e75a7b6b4",
+        "git_blob_sha1": "d9f15b7caf2c0f6c95375b7a452c0f2763e577f1"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/_constants.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070158,
+          "nlink": 1,
+          "size": 6414,
+          "mtime_ns": 1792367433462917114,
+          "ctime_ns": 1792367433462917114
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070158,
+          "nlink": 1,
+          "size": 6414,
+          "mtime_ns": 1792367433462917114,
+          "ctime_ns": 1792367433462917114
+        },
+        "bytes": 6414,
+        "sha256": "04425f05bce4197bac837bbb40c07e10e070da21fc1dd39c28be0f6052425a68",
+        "git_blob_sha1": "b3cc1fe142cf04f17de4e0d436b6d58a969d8be6"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_term_programs.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070175,
+          "nlink": 1,
+          "size": 1070,
+          "mtime_ns": 1792367433464902917,
+          "ctime_ns": 1792367433464902917
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070175,
+          "nlink": 1,
+          "size": 1070,
+          "mtime_ns": 1792367433464902917,
+          "ctime_ns": 1792367433464902917
+        },
+        "bytes": 1070,
+        "sha256": "89fb81aa4ed85258219d643be4ffba379e26ae2603f0e55932f35d6e4477d56e",
+        "git_blob_sha1": "b15fba227803542589a86df95a18352f41cd4ebc"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_zero.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070179,
+          "nlink": 1,
+          "size": 26107,
+          "mtime_ns": 1792367433465237101,
+          "ctime_ns": 1792367433465237101
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070179,
+          "nlink": 1,
+          "size": 26107,
+          "mtime_ns": 1792367433465237101,
+          "ctime_ns": 1792367433465237101
+        },
+        "bytes": 26107,
+        "sha256": "03d61051c69f286fe77acca5583be371fa674f86cff61a6abdc57fa1a5156cc6",
+        "git_blob_sha1": "be763e6fe1e3bf4fce2f74d87677af8246909143"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/sgr_state.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070170,
+          "nlink": 1,
+          "size": 13073,
+          "mtime_ns": 1792367433463945763,
+          "ctime_ns": 1792367433463945763
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070170,
+          "nlink": 1,
+          "size": 13073,
+          "mtime_ns": 1792367433463945763,
+          "ctime_ns": 1792367433463945763
+        },
+        "bytes": 13073,
+        "sha256": "99e142df163a8c13e2703ff8de4a2eb2c1cb6c8860de5fe0a6695bc9ca2762c2",
+        "git_blob_sha1": "dce06d871fba2f3408dff11a0da078e279c11a91"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/_width.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070162,
+          "nlink": 1,
+          "size": 22870,
+          "mtime_ns": 1792367433463270626,
+          "ctime_ns": 1792367433463270626
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070162,
+          "nlink": 1,
+          "size": 22870,
+          "mtime_ns": 1792367433463270626,
+          "ctime_ns": 1792367433463270626
+        },
+        "bytes": 22870,
+        "sha256": "4772af44d9bc0a83dd9a260ccbb9641449737bb240acaf799c3a0672e7efcca2",
+        "git_blob_sha1": "e51ea9899867972409a4bb869cf9a9caddee9a23"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/bisearch.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070164,
+          "nlink": 1,
+          "size": 813,
+          "mtime_ns": 1792367433463397543,
+          "ctime_ns": 1792367433463397543
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070164,
+          "nlink": 1,
+          "size": 813,
+          "mtime_ns": 1792367433463397543,
+          "ctime_ns": 1792367433463397543
+        },
+        "bytes": 813,
+        "sha256": "63f15dbd84f31570f6a5ae5ca6951e803e525dfcbe07c1c2e00f6bac939d6f8d",
+        "git_blob_sha1": "e95c51b8dc9362f65ee9bec03070e2362f5958c3"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_mc.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070173,
+          "nlink": 1,
+          "size": 14198,
+          "mtime_ns": 1792367433464605137,
+          "ctime_ns": 1792367433464605137
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070173,
+          "nlink": 1,
+          "size": 14198,
+          "mtime_ns": 1792367433464605137,
+          "ctime_ns": 1792367433464605137
+        },
+        "bytes": 14198,
+        "sha256": "f084236a9b43821968521672ec34c79c336f224c352c17b0eb82afbfcdb1fa61",
+        "git_blob_sha1": "4c5d21c8fb1d086a962c3d4eef454134e4cd5487"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/py.typed": {
+        "before": {
+          "dev": 27,
+          "inode": 1070169,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433463670457,
+          "ctime_ns": 1792367433463670457
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070169,
+          "nlink": 1,
+          "size": 0,
+          "mtime_ns": 1792367433463670457,
+          "ctime_ns": 1792367433463670457
+        },
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_wide.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070178,
+          "nlink": 1,
+          "size": 9159,
+          "mtime_ns": 1792367433465116553,
+          "ctime_ns": 1792367433465116553
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070178,
+          "nlink": 1,
+          "size": 9159,
+          "mtime_ns": 1792367433465116553,
+          "ctime_ns": 1792367433465116553
+        },
+        "bytes": 9159,
+        "sha256": "a167dfa17738fb939b8157193fc9d11f70b1e1ed0385e1a6faee07c8d5ad5085",
+        "git_blob_sha1": "af9f86f1910b629aa75d0f5c111c6e36f0b1435e"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/wcwidth.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070183,
+          "nlink": 1,
+          "size": 2858,
+          "mtime_ns": 1792367433465553208,
+          "ctime_ns": 1792367433465553208
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070183,
+          "nlink": 1,
+          "size": 2858,
+          "mtime_ns": 1792367433465553208,
+          "ctime_ns": 1792367433465553208
+        },
+        "bytes": 2858,
+        "sha256": "597eba94e3ed8a01ff6b1a9cbd4d0931315df79d23c55e0c1ab644047a06904b",
+        "git_blob_sha1": "523c34f9df59d796e0f5f735838c0b4e11c4ca9a"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/align.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070163,
+          "nlink": 1,
+          "size": 9604,
+          "mtime_ns": 1792367433463343924,
+          "ctime_ns": 1792367433463343924
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070163,
+          "nlink": 1,
+          "size": 9604,
+          "mtime_ns": 1792367433463343924,
+          "ctime_ns": 1792367433463343924
+        },
+        "bytes": 9604,
+        "sha256": "a563b14f9a297ca71d11d5202f0a49618384d86aac9e76211c8d833b95f99a57",
+        "git_blob_sha1": "4ddb1e8db8a5b121c5c3e28ab053889f083ead60"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/grapheme.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070167,
+          "nlink": 1,
+          "size": 13222,
+          "mtime_ns": 1792367433463607754,
+          "ctime_ns": 1792367433463607754
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070167,
+          "nlink": 1,
+          "size": 13222,
+          "mtime_ns": 1792367433463607754,
+          "ctime_ns": 1792367433463607754
+        },
+        "bytes": 13222,
+        "sha256": "d05c1dc8b13f302ab456ded777ac5bf37f61e1a46aacad859e0d3569a25c8208",
+        "git_blob_sha1": "7fab3342bd5ef9abf32476ecc4ccda41bff321d3"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_vs16.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070177,
+          "nlink": 1,
+          "size": 6857,
+          "mtime_ns": 1792367433465040500,
+          "ctime_ns": 1792367433465040500
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070177,
+          "nlink": 1,
+          "size": 6857,
+          "mtime_ns": 1792367433465040500,
+          "ctime_ns": 1792367433465040500
+        },
+        "bytes": 6857,
+        "sha256": "16371e2db996fd6e60ac63905f9d9e8323429b71742c765b83a4a5d7519ab0c6",
+        "git_blob_sha1": "065a4aaeed21f22b48806d5895ac95e4fe1a8197"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/_wcswidth.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070159,
+          "nlink": 1,
+          "size": 17687,
+          "mtime_ns": 1792367433463018383,
+          "ctime_ns": 1792367433463018383
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070159,
+          "nlink": 1,
+          "size": 17687,
+          "mtime_ns": 1792367433463018383,
+          "ctime_ns": 1792367433463018383
+        },
+        "bytes": 17687,
+        "sha256": "674f1420fce6114b02b7e371fc574c4553776efa5b7b0982df5fcaef93e40b4e",
+        "git_blob_sha1": "03b00a5145184cb41e8a511b6a5a415effaaf2ea"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/control_codes.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070165,
+          "nlink": 1,
+          "size": 1579,
+          "mtime_ns": 1792367433463450181,
+          "ctime_ns": 1792367433463450181
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070165,
+          "nlink": 1,
+          "size": 1579,
+          "mtime_ns": 1792367433463450181,
+          "ctime_ns": 1792367433463450181
+        },
+        "bytes": 1579,
+        "sha256": "34690fb17340fcc48d1ff1b5c508ef0e05f89928fe929d532df2cff86214cf4f",
+        "git_blob_sha1": "3a6fff76386241c07f760391aa320fd4dddb068b"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_ambiguous.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070171,
+          "nlink": 1,
+          "size": 11867,
+          "mtime_ns": 1792367433464058219,
+          "ctime_ns": 1792367433464058219
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070171,
+          "nlink": 1,
+          "size": 11867,
+          "mtime_ns": 1792367433464058219,
+          "ctime_ns": 1792367433464058219
+        },
+        "bytes": 11867,
+        "sha256": "762d8dfbdd8ad6a71bf50015e89d4dd4dbc5b3d270560e1c3c90130fda98657d",
+        "git_blob_sha1": "366ac3ba83768b5e9273eed55b44ca65888f2f21"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/textwrap.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070181,
+          "nlink": 1,
+          "size": 30038,
+          "mtime_ns": 1792367433465444277,
+          "ctime_ns": 1792367433465444277
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070181,
+          "nlink": 1,
+          "size": 30038,
+          "mtime_ns": 1792367433465444277,
+          "ctime_ns": 1792367433465444277
+        },
+        "bytes": 30038,
+        "sha256": "e2256595577749481106e0a14d5d37cf4ad61ff195d9477c53b9365222551964",
+        "git_blob_sha1": "5136d69e5cf34295c835db05512ee1e4f4b173b3"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_vs15.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070176,
+          "nlink": 1,
+          "size": 5170,
+          "mtime_ns": 1792367433464969175,
+          "ctime_ns": 1792367433464969175
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070176,
+          "nlink": 1,
+          "size": 5170,
+          "mtime_ns": 1792367433464969175,
+          "ctime_ns": 1792367433464969175
+        },
+        "bytes": 5170,
+        "sha256": "9af55c5c6801b678a4c110126f8032309ac8610640b1ca74be4ea0a3585e478b",
+        "git_blob_sha1": "4d3f4ebc3f92729832703a3b18ed22cadaa4a9fb"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/text_sizing.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070180,
+          "nlink": 1,
+          "size": 7946,
+          "mtime_ns": 1792367433465316838,
+          "ctime_ns": 1792367433465316838
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070180,
+          "nlink": 1,
+          "size": 7946,
+          "mtime_ns": 1792367433465316838,
+          "ctime_ns": 1792367433465316838
+        },
+        "bytes": 7946,
+        "sha256": "a04343ae0a0eedd6ab470d421c3ea039f9aeaaae325551b1be40033db8c5b8d5",
+        "git_blob_sha1": "e9348f743f2c297e3426c4a26d89728c9c4e26f9"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/unicode_versions.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070182,
+          "nlink": 1,
+          "size": 508,
+          "mtime_ns": 1792367433465501000,
+          "ctime_ns": 1792367433465501000
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070182,
+          "nlink": 1,
+          "size": 508,
+          "mtime_ns": 1792367433465501000,
+          "ctime_ns": 1792367433465501000
+        },
+        "bytes": 508,
+        "sha256": "0504f550c0e77dd1b3c81c408a0d7c1888cfae2ee319aac5c45e755040439bb0",
+        "git_blob_sha1": "0df7aa2cd704d0342cf49d3b912d24fdb049186e"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/hyperlink.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070168,
+          "nlink": 1,
+          "size": 4449,
+          "mtime_ns": 1792367433463670457,
+          "ctime_ns": 1792367433463670457
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070168,
+          "nlink": 1,
+          "size": 4449,
+          "mtime_ns": 1792367433463670457,
+          "ctime_ns": 1792367433463670457
+        },
+        "bytes": 4449,
+        "sha256": "8d6ae404454a0d6a5f590aee969400f55b5d92ebf4b699f33ee492d3982d3d21",
+        "git_blob_sha1": "4278b9f8c18dbf333da7cf86f0ada38df8fc45bc"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/_clip.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070157,
+          "nlink": 1,
+          "size": 36972,
+          "mtime_ns": 1792367433462807231,
+          "ctime_ns": 1792367433462807231
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070157,
+          "nlink": 1,
+          "size": 36972,
+          "mtime_ns": 1792367433462807231,
+          "ctime_ns": 1792367433462807231
+        },
+        "bytes": 36972,
+        "sha256": "c554e607f766cade102982ff753e8036236922712992f6d6a4fb0c74d4a7ed27",
+        "git_blob_sha1": "b77a60ab3cad9311303da2524151749f33d98f67"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/_wcwidth_c.pyi": {
+        "before": {
+          "dev": 27,
+          "inode": 1070161,
+          "nlink": 1,
+          "size": 1966,
+          "mtime_ns": 1792367433463162236,
+          "ctime_ns": 1792367433463162236
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070161,
+          "nlink": 1,
+          "size": 1966,
+          "mtime_ns": 1792367433463162236,
+          "ctime_ns": 1792367433463162236
+        },
+        "bytes": 1966,
+        "sha256": "863e5d3a16998856ae038fa752c21d261a3c2f4414465f90478e998d8e97a85b",
+        "git_blob_sha1": "17d5cc8036c641b6a3fd018c63fa37cd395806b3"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070172,
+          "nlink": 1,
+          "size": 146562,
+          "mtime_ns": 1792367433464480533,
+          "ctime_ns": 1792367433464480533
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070172,
+          "nlink": 1,
+          "size": 146562,
+          "mtime_ns": 1792367433464480533,
+          "ctime_ns": 1792367433464480533
+        },
+        "bytes": 146562,
+        "sha256": "3176cee3c7c78311592287cd5a44509d48199d98bdf46731058c66974df0ed6d",
+        "git_blob_sha1": "093d3a965b6068d81ba3a95a6704abbc2398158a"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/_wcwidth.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070160,
+          "nlink": 1,
+          "size": 6757,
+          "mtime_ns": 1792367433463102117,
+          "ctime_ns": 1792367433463102117
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070160,
+          "nlink": 1,
+          "size": 6757,
+          "mtime_ns": 1792367433463102117,
+          "ctime_ns": 1792367433463102117
+        },
+        "bytes": 6757,
+        "sha256": "d90e01620d4bacb231cc15584cd20c36f36bd1084894d93c5e26eec06fc0e688",
+        "git_blob_sha1": "82a39556cf459d506e283eed65f15e768ad7ea17"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/escape_sequences.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070166,
+          "nlink": 1,
+          "size": 8222,
+          "mtime_ns": 1792367433463520846,
+          "ctime_ns": 1792367433463520846
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070166,
+          "nlink": 1,
+          "size": 8222,
+          "mtime_ns": 1792367433463520846,
+          "ctime_ns": 1792367433463520846
+        },
+        "bytes": 8222,
+        "sha256": "ba4b74a7fb1466621686c7071863f8f29a9c58347cbb654d8397b6853c958871",
+        "git_blob_sha1": "b6fc1f639e680f54c7e1fefa9b91de0c93caaf47"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070156,
+          "nlink": 1,
+          "size": 4058,
+          "mtime_ns": 1792367433462597972,
+          "ctime_ns": 1792367433462597972
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070156,
+          "nlink": 1,
+          "size": 4058,
+          "mtime_ns": 1792367433462597972,
+          "ctime_ns": 1792367433462597972
+        },
+        "bytes": 4058,
+        "sha256": "646c6b7a3dc93d36475da57f1da58b83879ca323f97c8d7b0345614de51ad9cc",
+        "git_blob_sha1": "3fe2459fb5e29af961b701fa59c4dfee25fda5a3"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy-6.3.1.dist-info/licenses/LICENSE.txt": {
+        "before": {
+          "dev": 27,
+          "inode": 1070299,
+          "nlink": 1,
+          "size": 552,
+          "mtime_ns": 1792367433503101422,
+          "ctime_ns": 1792367433503101422
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070299,
+          "nlink": 1,
+          "size": 552,
+          "mtime_ns": 1792367433503101422,
+          "ctime_ns": 1792367433503101422
+        },
+        "bytes": 552,
+        "sha256": "a0bfc5020bc2e1e820551a0625c70c95faa898c15e737100ff4880aa10197857",
+        "git_blob_sha1": "275a4299e4d3204f13d5dec6cea39a852267b78d"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex-2026.9.29.dist-info/licenses/LICENSE.txt": {
+        "before": {
+          "dev": 27,
+          "inode": 1070278,
+          "nlink": 1,
+          "size": 11584,
+          "mtime_ns": 1792367433497373351,
+          "ctime_ns": 1792367433497373351
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070278,
+          "nlink": 1,
+          "size": 11584,
+          "mtime_ns": 1792367433497373351,
+          "ctime_ns": 1792367433497373351
+        },
+        "bytes": 11584,
+        "sha256": "bff55ef4cdcc8c14ce259f8e8ab60e264418440d6335f4dc138273fbd506144d",
+        "git_blob_sha1": "99c19cf844141395a87c34325da3a537f1e95815"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/bad_codecs/sloppy.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070292,
+          "nlink": 1,
+          "size": 6814,
+          "mtime_ns": 1792367433502676825,
+          "ctime_ns": 1792367433502676825
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070292,
+          "nlink": 1,
+          "size": 6814,
+          "mtime_ns": 1792367433502676825,
+          "ctime_ns": 1792367433502676825
+        },
+        "bytes": 6814,
+        "sha256": "6f3828640408af3454c5bfaa2660d55fafc4876975e3722ab2d7451456b24c82",
+        "git_blob_sha1": "656f01cf260feda58a15492bce82758c1b594d86"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/bad_codecs/utf8_variants.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070293,
+          "nlink": 1,
+          "size": 9964,
+          "mtime_ns": 1792367433502762662,
+          "ctime_ns": 1792367433502762662
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070293,
+          "nlink": 1,
+          "size": 9964,
+          "mtime_ns": 1792367433502762662,
+          "ctime_ns": 1792367433502762662
+        },
+        "bytes": 9964,
+        "sha256": "5a5c8c6ceb5415fb5e3c48ff4a9c434d78ab3c08fc1dcbb1559d5a498029561d",
+        "git_blob_sha1": "c15a3cf18431668c3817f9d9ff7a5478b4ccc5f8"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/ftfy/bad_codecs/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070291,
+          "nlink": 1,
+          "size": 3282,
+          "mtime_ns": 1792367433502603487,
+          "ctime_ns": 1792367433502603487
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070291,
+          "nlink": 1,
+          "size": 3282,
+          "mtime_ns": 1792367433502603487,
+          "ctime_ns": 1792367433502603487
+        },
+        "bytes": 3282,
+        "sha256": "b0f29669ef7be2f8dcdc978eb06859f1914d5283d3212c7df3ccc16f127b4884",
+        "git_blob_sha1": "a449a38ed1ca3e787ba3b97cf48ecf8c3f15ec06"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth-0.9.2.dist-info/licenses/LICENSE": {
+        "before": {
+          "dev": 27,
+          "inode": 1070209,
+          "nlink": 1,
+          "size": 1322,
+          "mtime_ns": 1792367433469451386,
+          "ctime_ns": 1792367433469451386
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070209,
+          "nlink": 1,
+          "size": 1322,
+          "mtime_ns": 1792367433469451386,
+          "ctime_ns": 1792367433469451386
+        },
+        "bytes": 1322,
+        "sha256": "70b98a95a2144eb70af8017fa8c6d95ce247e40867436e8bc649e137fe13d21a",
+        "git_blob_sha1": "a44c0757243a785b0b73c21a38c45f44a4a2c32f"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm-4.70.1.dist-info/licenses/LICENCE": {
+        "before": {
+          "dev": 27,
+          "inode": 1070254,
+          "nlink": 1,
+          "size": 1985,
+          "mtime_ns": 1792367433477146433,
+          "ctime_ns": 1792367433477146433
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070254,
+          "nlink": 1,
+          "size": 1985,
+          "mtime_ns": 1792367433477146433,
+          "ctime_ns": 1792367433477146433
+        },
+        "bytes": 1985,
+        "sha256": "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de",
+        "git_blob_sha1": "194caf554f8f10ba4cac8a81b631a61d0d81f60d"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/regex/tests/test_regex.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070271,
+          "nlink": 1,
+          "size": 225809,
+          "mtime_ns": 1792367433496484628,
+          "ctime_ns": 1792367433496484628
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070271,
+          "nlink": 1,
+          "size": 225809,
+          "mtime_ns": 1792367433496484628,
+          "ctime_ns": 1792367433496484628
+        },
+        "bytes": 225809,
+        "sha256": "884e1739f884a56ac62835192120f1971362f98d2b5fc28f1fcc80c293132db2",
+        "git_blob_sha1": "b391472b5bb4ea94924376c448a3674b8c6ff8ad"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/bells.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070244,
+          "nlink": 1,
+          "size": 921,
+          "mtime_ns": 1792367433476294575,
+          "ctime_ns": 1792367433476294575
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070244,
+          "nlink": 1,
+          "size": 921,
+          "mtime_ns": 1792367433476294575,
+          "ctime_ns": 1792367433476294575
+        },
+        "bytes": 921,
+        "sha256": "21ac42d985b9ef11c38a7c5d503407bd27a0a341d24dd0d313141010dbd207f9",
+        "git_blob_sha1": "e4968e7751920093aa6c3ddd72c5b5e2e29df8bc"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/itertools.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070247,
+          "nlink": 1,
+          "size": 2949,
+          "mtime_ns": 1792367433476762055,
+          "ctime_ns": 1792367433476762055
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070247,
+          "nlink": 1,
+          "size": 2949,
+          "mtime_ns": 1792367433476762055,
+          "ctime_ns": 1792367433476762055
+        },
+        "bytes": 2949,
+        "sha256": "300f7e26f6f74e8b1ea69227bdebf6885e1ba2437b190cb84382e08d4c98740e",
+        "git_blob_sha1": "469961867cbf2c22cb2b799ecb4736438a912520"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/discord.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070246,
+          "nlink": 1,
+          "size": 5337,
+          "mtime_ns": 1792367433476436104,
+          "ctime_ns": 1792367433476436104
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070246,
+          "nlink": 1,
+          "size": 5337,
+          "mtime_ns": 1792367433476436104,
+          "ctime_ns": 1792367433476436104
+        },
+        "bytes": 5337,
+        "sha256": "2cf8f10db99f898b70dce026fd686dc1b5fd05560394f73c949f7a698dd86431",
+        "git_blob_sha1": "f46a4992bcbaeb7f85d75f8e6c64dc6e09f5325b"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/logging.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070248,
+          "nlink": 1,
+          "size": 3902,
+          "mtime_ns": 1792367433476879148,
+          "ctime_ns": 1792367433476879148
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070248,
+          "nlink": 1,
+          "size": 3902,
+          "mtime_ns": 1792367433476879148,
+          "ctime_ns": 1792367433476879148
+        },
+        "bytes": 3902,
+        "sha256": "d27167d82eea51488a3c1d7da931ae4bd2df8daf1a8855b4bbd9326d1746d215",
+        "git_blob_sha1": "cb22940ed79cb69ed780be947978d8a785efa8a1"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/telegram.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070250,
+          "nlink": 1,
+          "size": 5081,
+          "mtime_ns": 1792367433477004273,
+          "ctime_ns": 1792367433477004273
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070250,
+          "nlink": 1,
+          "size": 5081,
+          "mtime_ns": 1792367433477004273,
+          "ctime_ns": 1792367433477004273
+        },
+        "bytes": 5081,
+        "sha256": "c9b4eb6868d4431e66e38dd3b17ea927b531ae9b21d66e1ae3705359597fe1ee",
+        "git_blob_sha1": "c019248e322214aeccbfaf2d8dac97a69d11470f"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/utils_worker.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070251,
+          "nlink": 1,
+          "size": 1199,
+          "mtime_ns": 1792367433477054638,
+          "ctime_ns": 1792367433477054638
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070251,
+          "nlink": 1,
+          "size": 1199,
+          "mtime_ns": 1792367433477054638,
+          "ctime_ns": 1792367433477054638
+        },
+        "bytes": 1199,
+        "sha256": "bdac722726a06303824172d431df3a6c26c8e2c3ea672b2e3066c34869af116a",
+        "git_blob_sha1": "89fafc8c92f8ed085077b37eb58329f2588bd5d7"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/slack.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070249,
+          "nlink": 1,
+          "size": 4049,
+          "mtime_ns": 1792367433476944996,
+          "ctime_ns": 1792367433476944996
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070249,
+          "nlink": 1,
+          "size": 4049,
+          "mtime_ns": 1792367433476944996,
+          "ctime_ns": 1792367433476944996
+        },
+        "bytes": 4049,
+        "sha256": "b02d7cdafef10647c67ed9c379499000b30e7f043353766235fd50fd70350e32",
+        "git_blob_sha1": "e9808f55ad0b074bfb66ae79df35de8bf629233c"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/concurrent.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070245,
+          "nlink": 1,
+          "size": 9873,
+          "mtime_ns": 1792367433476366561,
+          "ctime_ns": 1792367433476366561
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070245,
+          "nlink": 1,
+          "size": 9873,
+          "mtime_ns": 1792367433476366561,
+          "ctime_ns": 1792367433476366561
+        },
+        "bytes": 9873,
+        "sha256": "0a9c6bc1c29a4111fb9f04cf1b799562e95e1acfeed0c3615b8853b9a6e9618b",
+        "git_blob_sha1": "955e9e3a1b034c875ed0d642cf436b6502d70bc2"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/tqdm/contrib/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070243,
+          "nlink": 1,
+          "size": 2479,
+          "mtime_ns": 1792367433476240605,
+          "ctime_ns": 1792367433476240605
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070243,
+          "nlink": 1,
+          "size": 2479,
+          "mtime_ns": 1792367433476240605,
+          "ctime_ns": 1792367433476240605
+        },
+        "bytes": 2479,
+        "sha256": "d46318604f3ae960af94783931d9b33af3ec423e19b8c957cf3f317117090fad",
+        "git_blob_sha1": "87ec4601fcff138e0882808237375aed93f5ef35"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_fdc99132.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070205,
+          "nlink": 1,
+          "size": 70400,
+          "mtime_ns": 1792367433469282576,
+          "ctime_ns": 1792367433469282576
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070205,
+          "nlink": 1,
+          "size": 70400,
+          "mtime_ns": 1792367433469282576,
+          "ctime_ns": 1792367433469282576
+        },
+        "bytes": 70400,
+        "sha256": "d833e364b2ac8fcbf7df71ae319fb25f52ede91b05ae323c84fab01097e39472",
+        "git_blob_sha1": "fc54e93a28eb49a8448ed4b904e977c55ca822ad"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_336a71a1.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070189,
+          "nlink": 1,
+          "size": 73690,
+          "mtime_ns": 1792367433466153995,
+          "ctime_ns": 1792367433466153995
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070189,
+          "nlink": 1,
+          "size": 73690,
+          "mtime_ns": 1792367433466153995,
+          "ctime_ns": 1792367433466153995
+        },
+        "bytes": 73690,
+        "sha256": "96ac284d9954679b9c08e5fff960cf310c8e79f013f18a016f801312270e7df0",
+        "git_blob_sha1": "947b0c4b52dbd4d93f87815a443a2ddbefd7d9a6"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_e2b75ee3.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070203,
+          "nlink": 1,
+          "size": 765,
+          "mtime_ns": 1792367433468947922,
+          "ctime_ns": 1792367433468947922
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070203,
+          "nlink": 1,
+          "size": 765,
+          "mtime_ns": 1792367433468947922,
+          "ctime_ns": 1792367433468947922
+        },
+        "bytes": 765,
+        "sha256": "13e59e3a9dba314b215b75b0bb60203605cfe3a866086fbb12ddde4673ba7eb8",
+        "git_blob_sha1": "17a8bd2d0e3c94bf4e82e3de0be7705e5c45079f"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_244dc88b.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070188,
+          "nlink": 1,
+          "size": 1977,
+          "mtime_ns": 1792367433465988140,
+          "ctime_ns": 1792367433465988140
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070188,
+          "nlink": 1,
+          "size": 1977,
+          "mtime_ns": 1792367433465988140,
+          "ctime_ns": 1792367433465988140
+        },
+        "bytes": 1977,
+        "sha256": "2c4f6b92663672edf6ec4fa18a467dabaa27de432578e227d4d6427501b4eeac",
+        "git_blob_sha1": "1a454f686d36faa5dc68b13b48b97f952753421c"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_8c2ae14d.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070195,
+          "nlink": 1,
+          "size": 72055,
+          "mtime_ns": 1792367433467227631,
+          "ctime_ns": 1792367433467227631
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070195,
+          "nlink": 1,
+          "size": 72055,
+          "mtime_ns": 1792367433467227631,
+          "ctime_ns": 1792367433467227631
+        },
+        "bytes": 72055,
+        "sha256": "1ad3578a4208995d2e03645868b31a458027b65984191c20dde07adfc8d37703",
+        "git_blob_sha1": "77f94e1ebd974a8b7241107ae1dbce355120e592"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_900356bf.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070196,
+          "nlink": 1,
+          "size": 2579,
+          "mtime_ns": 1792367433467295521,
+          "ctime_ns": 1792367433467295521
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070196,
+          "nlink": 1,
+          "size": 2579,
+          "mtime_ns": 1792367433467295521,
+          "ctime_ns": 1792367433467295521
+        },
+        "bytes": 2579,
+        "sha256": "1d6fdc64300569255e558d4dc138e1b7d046e7738e2fc59dad00660110e2341b",
+        "git_blob_sha1": "1d3f1d601fcd480eff78bbb0585479851c9253cf"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_registry.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070206,
+          "nlink": 1,
+          "size": 785,
+          "mtime_ns": 1792367433469352440,
+          "ctime_ns": 1792367433469352440
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070206,
+          "nlink": 1,
+          "size": 785,
+          "mtime_ns": 1792367433469352440,
+          "ctime_ns": 1792367433469352440
+        },
+        "bytes": 785,
+        "sha256": "edca3118e4fc865056653ac7af7c8dd5311a941d2d533ac56544b414b8370182",
+        "git_blob_sha1": "82e870814a2d782fa134bf7d96c3c61fe52a59fc"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_78f828e8.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070194,
+          "nlink": 1,
+          "size": 29457,
+          "mtime_ns": 1792367433467058291,
+          "ctime_ns": 1792367433467058291
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070194,
+          "nlink": 1,
+          "size": 29457,
+          "mtime_ns": 1792367433467058291,
+          "ctime_ns": 1792367433467058291
+        },
+        "bytes": 29457,
+        "sha256": "dea2fb04295dd5bca549c0b8eff8d130c7ea70b91e5e58d15d0c30009abe6c3b",
+        "git_blob_sha1": "6e15a7b081491d6eae22e39ef7f91c6b80d7f0bf"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_c57c295b.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070200,
+          "nlink": 1,
+          "size": 141315,
+          "mtime_ns": 1792367433468358742,
+          "ctime_ns": 1792367433468358742
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070200,
+          "nlink": 1,
+          "size": 141315,
+          "mtime_ns": 1792367433468358742,
+          "ctime_ns": 1792367433468358742
+        },
+        "bytes": 141315,
+        "sha256": "9fe3ad344629f8bd7a3c8370c1f066ce6d32018b2608662efced9b79d207e8d7",
+        "git_blob_sha1": "658a0f02405ee215415d9ddb637d41f070cdefbb"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_59180a0d.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070192,
+          "nlink": 1,
+          "size": 69393,
+          "mtime_ns": 1792367433466604130,
+          "ctime_ns": 1792367433466604130
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070192,
+          "nlink": 1,
+          "size": 69393,
+          "mtime_ns": 1792367433466604130,
+          "ctime_ns": 1792367433466604130
+        },
+        "bytes": 69393,
+        "sha256": "b21883121b6481ad076949f927170f2fd10ff7c26a36707cd3cc0951691de522",
+        "git_blob_sha1": "06da76a827514bbaa3ae64dff9786ba3e0a9c7b6"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_b6d33cf4.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070199,
+          "nlink": 1,
+          "size": 78876,
+          "mtime_ns": 1792367433468062254,
+          "ctime_ns": 1792367433468062254
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070199,
+          "nlink": 1,
+          "size": 78876,
+          "mtime_ns": 1792367433468062254,
+          "ctime_ns": 1792367433468062254
+        },
+        "bytes": 78876,
+        "sha256": "2074de0df9b5879ce8e3e579a039b36a6e6c9510c0a0e459f6f753c56f913f70",
+        "git_blob_sha1": "74b8614d5015ca8ce41d2ebb5b243a117e12b697"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_3a1895d5.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070191,
+          "nlink": 1,
+          "size": 28356,
+          "mtime_ns": 1792367433466450864,
+          "ctime_ns": 1792367433466450864
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070191,
+          "nlink": 1,
+          "size": 28356,
+          "mtime_ns": 1792367433466450864,
+          "ctime_ns": 1792367433466450864
+        },
+        "bytes": 28356,
+        "sha256": "4dbd37b21db0bf8032a8967b002b00486ae9c581aac8ebea79b3fd72c8f558be",
+        "git_blob_sha1": "7a987be4b9cede40f9a0c211e5adcb2851340114"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_e18ac6a7.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070202,
+          "nlink": 1,
+          "size": 145380,
+          "mtime_ns": 1792367433468845511,
+          "ctime_ns": 1792367433468845511
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070202,
+          "nlink": 1,
+          "size": 145380,
+          "mtime_ns": 1792367433468845511,
+          "ctime_ns": 1792367433468845511
+        },
+        "bytes": 145380,
+        "sha256": "d02aabe197388e2edb39c5017705cd329109476bb39d164411753a965b8fb228",
+        "git_blob_sha1": "473228e8049ea2625292e5d35a72d49b974632f2"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_058c7585.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070186,
+          "nlink": 1,
+          "size": 70405,
+          "mtime_ns": 1792367433465802496,
+          "ctime_ns": 1792367433465802496
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070186,
+          "nlink": 1,
+          "size": 70405,
+          "mtime_ns": 1792367433465802496,
+          "ctime_ns": 1792367433465802496
+        },
+        "bytes": 70405,
+        "sha256": "f64dfb0e26ca9dd84dea2a905976d1ec839afd2889d3928355986b5b7981ccea",
+        "git_blob_sha1": "44df64e7c8d253d104314984732e190d3bd35416"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_2148ff29.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070187,
+          "nlink": 1,
+          "size": 32859,
+          "mtime_ns": 1792367433465929463,
+          "ctime_ns": 1792367433465929463
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070187,
+          "nlink": 1,
+          "size": 32859,
+          "mtime_ns": 1792367433465929463,
+          "ctime_ns": 1792367433465929463
+        },
+        "bytes": 32859,
+        "sha256": "41ac7973a19d28de6eefc106974252400de4830e2667c8db6a273dbfead87a42",
+        "git_blob_sha1": "fd2f7f3ec18bf0adb623767bf65446e06e60918f"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_33ac73f2.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070190,
+          "nlink": 1,
+          "size": 51607,
+          "mtime_ns": 1792367433466330816,
+          "ctime_ns": 1792367433466330816
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070190,
+          "nlink": 1,
+          "size": 51607,
+          "mtime_ns": 1792367433466330816,
+          "ctime_ns": 1792367433466330816
+        },
+        "bytes": 51607,
+        "sha256": "2c610dbb97770586ae889b4a8dc6878f92b2fcf84343c611d79b90a301214ac3",
+        "git_blob_sha1": "10f2eb2792c92ddb436290a2a4a00aa9811dfa75"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_fb5fd79b.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070204,
+          "nlink": 1,
+          "size": 76258,
+          "mtime_ns": 1792367433469115309,
+          "ctime_ns": 1792367433469115309
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070204,
+          "nlink": 1,
+          "size": 76258,
+          "mtime_ns": 1792367433469115309,
+          "ctime_ns": 1792367433469115309
+        },
+        "bytes": 76258,
+        "sha256": "51352006310a78333493fb22a31c822423db8ef88abd4263c33456bd4fb665b5",
+        "git_blob_sha1": "4cb0497a80d1141d1906540c1b161dc76df6ee10"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_cf02297d.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070201,
+          "nlink": 1,
+          "size": 32688,
+          "mtime_ns": 1792367433468479210,
+          "ctime_ns": 1792367433468479210
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070201,
+          "nlink": 1,
+          "size": 32688,
+          "mtime_ns": 1792367433468479210,
+          "ctime_ns": 1792367433468479210
+        },
+        "bytes": 32688,
+        "sha256": "8947a214a2b5092c67829e14886aa1df4aafdd53d97f3d7b40fc2b1906a909e1",
+        "git_blob_sha1": "ff6e2674c3b3610bbda78929fd8cfdec76ae03d1"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_65c6beb5.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070193,
+          "nlink": 1,
+          "size": 72065,
+          "mtime_ns": 1792367433466896602,
+          "ctime_ns": 1792367433466896602
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070193,
+          "nlink": 1,
+          "size": 72065,
+          "mtime_ns": 1792367433466896602,
+          "ctime_ns": 1792367433466896602
+        },
+        "bytes": 72065,
+        "sha256": "f019abaef06b32aa9660a160a951727de6b852d1d28b13fc1ec3aaf1f01a2265",
+        "git_blob_sha1": "26032e157e4e854216bb52f7f9a7ccf0122172eb"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_97904ece.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070197,
+          "nlink": 1,
+          "size": 68622,
+          "mtime_ns": 1792367433467445262,
+          "ctime_ns": 1792367433467445262
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070197,
+          "nlink": 1,
+          "size": 68622,
+          "mtime_ns": 1792367433467445262,
+          "ctime_ns": 1792367433467445262
+        },
+        "bytes": 68622,
+        "sha256": "a088789c30bf07ad7fda064db7d5630481d3ab23e128fb0634cba295ad8180c1",
+        "git_blob_sha1": "e9ddaf7a44d5468e975fb8eb44dda28973e2e931"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/_known_a5880eeb.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070198,
+          "nlink": 1,
+          "size": 68676,
+          "mtime_ns": 1792367433467842659,
+          "ctime_ns": 1792367433467842659
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070198,
+          "nlink": 1,
+          "size": 68676,
+          "mtime_ns": 1792367433467842659,
+          "ctime_ns": 1792367433467842659
+        },
+        "bytes": 68676,
+        "sha256": "104858312315bd685de023304f8e84e379993312d8f30c667392f97c9a94c801",
+        "git_blob_sha1": "de036053e0cde76005296abab39cb0e8a921bbd7"
+      },
+      "/workspace/scratch/a349d03a0e0a/clip-0010-overlay/wcwidth/table_grapheme_overrides/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 1070185,
+          "nlink": 1,
+          "size": 1231,
+          "mtime_ns": 1792367433465624413,
+          "ctime_ns": 1792367433465624413
+        },
+        "after": {
+          "dev": 27,
+          "inode": 1070185,
+          "nlink": 1,
+          "size": 1231,
+          "mtime_ns": 1792367433465624413,
+          "ctime_ns": 1792367433465624413
+        },
+        "bytes": 1231,
+        "sha256": "f011706d35210242e89cc7d1f80ad6c37a1a168f8c7eed102fa8a6ba9aec90d6",
+        "git_blob_sha1": "59391478877d8405f684ff499ca2ef1d232f39ab"
+      },
+      "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/torch/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 818207,
+          "nlink": 1,
+          "size": 106868,
+          "mtime_ns": 1792179947012839120,
+          "ctime_ns": 1792334575790042197
+        },
+        "after": {
+          "dev": 27,
+          "inode": 818207,
+          "nlink": 1,
+          "size": 106868,
+          "mtime_ns": 1792179947012839120,
+          "ctime_ns": 1792334575790042197
+        },
+        "bytes": 106868,
+        "sha256": "51c90fe34a7cf869517d1bab4cd114498790e169ec668f1a154c35ec64117a5e",
+        "git_blob_sha1": "4092e5b68377b1f48c23c5f27ebf9777cb987597"
+      },
+      "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/numpy/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 812750,
+          "nlink": 1,
+          "size": 21817,
+          "mtime_ns": 1792218411187511745,
+          "ctime_ns": 1792334575378046861
+        },
+        "after": {
+          "dev": 27,
+          "inode": 812750,
+          "nlink": 1,
+          "size": 21817,
+          "mtime_ns": 1792218411187511745,
+          "ctime_ns": 1792334575378046861
+        },
+        "bytes": 21817,
+        "sha256": "c09e25b58f6b2f8e2cb3c158168f902d447f8171e5ea6513c0aca41ecbda7c2b",
+        "git_blob_sha1": "e4696ba2108be49c54e0ffeb44785cafd37a034c"
+      },
+      "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay/torchvision/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 937412,
+          "nlink": 1,
+          "size": 3534,
+          "mtime_ns": 1792346526369488495,
+          "ctime_ns": 1792346526369488495
+        },
+        "after": {
+          "dev": 27,
+          "inode": 937412,
+          "nlink": 1,
+          "size": 3534,
+          "mtime_ns": 1792346526369488495,
+          "ctime_ns": 1792346526369488495
+        },
+        "bytes": 3534,
+        "sha256": "ee2c9f4110cf1203db48c42601607329ac1f19709fa91c152f8d95eb53437a73",
+        "git_blob_sha1": "5d06156c25f1dfd34e9f01529e5a6b4bbeda7b42"
+      },
+      "/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay/PIL/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 937717,
+          "nlink": 1,
+          "size": 2035,
+          "mtime_ns": 1792346526423262736,
+          "ctime_ns": 1792346526423262736
+        },
+        "after": {
+          "dev": 27,
+          "inode": 937717,
+          "nlink": 1,
+          "size": 2035,
+          "mtime_ns": 1792346526423262736,
+          "ctime_ns": 1792346526423262736
+        },
+        "bytes": 2035,
+        "sha256": "7361b6ad3878589affe5956e4a4da24d71398b0891fd3a8c15e9362217b4ca01",
+        "git_blob_sha1": "faf3e76e0ae13198dafe41bca9d2543abcbe92ae"
+      },
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/packaging/__init__.py": {
+        "before": {
+          "dev": 27,
+          "inode": 9223372036855232150,
+          "nlink": 1,
+          "size": 494,
+          "mtime_ns": 1792171689000000000,
+          "ctime_ns": 1792171689000000000
+        },
+        "after": {
+          "dev": 27,
+          "inode": 9223372036855232150,
+          "nlink": 1,
+          "size": 494,
+          "mtime_ns": 1792171689000000000,
+          "ctime_ns": 1792171689000000000
+        },
+        "bytes": 494,
+        "sha256": "6e758cdd0028b2cad74c739b9adc9c9f06f054932306280b878bfe59d39219b5",
+        "git_blob_sha1": "5a969154fefef91c98d6c42a5a709745ced5d0f8"
+      }
+    },
+    "original_interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "current_interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "original_PYTHONPATH": "/workspace/scratch/a349d03a0e0a/clip-0010-overlay:/workspace/scratch/a349d03a0e0a/tapnextpp-cache/overlay:/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed:/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime:/workspace/scratch/a349d03a0e0a/tapnextpp-recovery/source",
+    "original_command_cwd": "/workspace/scratch/a349d03a0e0a/research-0010-capability",
+    "scope": "Only the 133 recorded overlay files and 9 module entries; no imports, extra-file search or transitive/system-library inventory."
+  },
+  "assets": {
+    "source/clip/__init__.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066697,
+        "nlink": 2,
+        "size": 20,
+        "mtime_ns": 1792367312940725972,
+        "ctime_ns": 1792367497092403178
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066697,
+        "nlink": 2,
+        "size": 20,
+        "mtime_ns": 1792367312940725972,
+        "ctime_ns": 1792367497092403178
+      },
+      "bytes": 20,
+      "sha256": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+      "git_blob_sha1": "dcc5619538c0f7c782508bdbd9587259d805e0d9"
+    },
+    "source/clip/clip.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066698,
+        "nlink": 2,
+        "size": 9644,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092479902
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066698,
+        "nlink": 2,
+        "size": 9644,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092479902
+      },
+      "bytes": 9644,
+      "sha256": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+      "git_blob_sha1": "398a6282cc243e449430d91c2562491fc799929d"
+    },
+    "source/clip/model.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066699,
+        "nlink": 2,
+        "size": 17374,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092565488
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066699,
+        "nlink": 2,
+        "size": 17374,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092565488
+      },
+      "bytes": 17374,
+      "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+      "git_blob_sha1": "232b7792eb97440642547bd462cf128df9243933"
+    },
+    "source/clip/simple_tokenizer.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066700,
+        "nlink": 2,
+        "size": 4632,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092592378
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066700,
+        "nlink": 2,
+        "size": 4632,
+        "mtime_ns": 1792367312940752361,
+        "ctime_ns": 1792367497092592378
+      },
+      "bytes": 4632,
+      "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+      "git_blob_sha1": "0a66286b7d5019c6e221932a813768038f839c91"
+    },
+    "source/LICENSE": {
+      "before": {
+        "dev": 27,
+        "inode": 1066695,
+        "nlink": 2,
+        "size": 1064,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497092403178
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066695,
+        "nlink": 2,
+        "size": 1064,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497092403178
+      },
+      "bytes": 1064,
+      "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+      "git_blob_sha1": "4e97f0b45803b7c04ae89548934af4f257a97501"
+    },
+    "source/clip/bpe_simple_vocab_16e6.txt.gz": {
+      "before": {
+        "dev": 27,
+        "inode": 1070325,
+        "nlink": 2,
+        "size": 1356917,
+        "mtime_ns": 1792367461782401483,
+        "ctime_ns": 1792367497092403178
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070325,
+        "nlink": 2,
+        "size": 1356917,
+        "mtime_ns": 1792367461782401483,
+        "ctime_ns": 1792367497092403178
+      },
+      "bytes": 1356917,
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+      "git_blob_sha1": "7b5088a527f720063f044eb928eee315f63b2fc0"
+    },
+    "weights/ViT-B-32.pt": {
+      "before": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070329,
+        "nlink": 2,
+        "size": 353976522,
+        "mtime_ns": 1792367496466798542,
+        "ctime_ns": 1792367497092610415
+      },
+      "bytes": 353976522,
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "git_blob_sha1": "c5b3153d60b71f362e199ac00bf2ade52961f658"
+    },
+    "data/EuroSAT.zip": {
+      "before": {
+        "dev": 27,
+        "inode": 1070328,
+        "nlink": 2,
+        "size": 94280567,
+        "mtime_ns": 1792367469871058022,
+        "ctime_ns": 1792367497086278969
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070328,
+        "nlink": 2,
+        "size": 94280567,
+        "mtime_ns": 1792367469871058022,
+        "ctime_ns": 1792367497086278969
+      },
+      "bytes": 94280567,
+      "sha256": "8ebea626349354c5328b142b96d0430e647051f26efc2dc974c843f25ecf70bd",
+      "git_blob_sha1": "deb94b03c91d9beaa1c76987055ec56dc66c9af6"
+    },
+    "metadata/eurosat-spatial-train.txt": {
+      "before": {
+        "dev": 27,
+        "inode": 1066692,
+        "nlink": 2,
+        "size": 316710,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497086278969
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066692,
+        "nlink": 2,
+        "size": 316710,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497086278969
+      },
+      "bytes": 316710,
+      "sha256": "2db7d455afb8dcbca898ea19a00f1f90c091734efdbba89e22aaf24056da243f",
+      "git_blob_sha1": "4c08f4eeac54040a0fcd3788296f6e0dae782641"
+    },
+    "metadata/eurosat-spatial-val.txt": {
+      "before": {
+        "dev": 27,
+        "inode": 1066693,
+        "nlink": 2,
+        "size": 99786,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497092362027
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066693,
+        "nlink": 2,
+        "size": 99786,
+        "mtime_ns": 1792367312939080091,
+        "ctime_ns": 1792367497092362027
+      },
+      "bytes": 99786,
+      "sha256": "6c758477604b7057a0fd990d7f6327b63b99a6725aac11a6a9d0174a7fdd8f0b",
+      "git_blob_sha1": "c3179b28d8fc0e2b5fea3fc7191f7eefb367f6ca"
+    },
+    "metadata/eurosat-spatial-test.txt": {
+      "before": {
+        "dev": 27,
+        "inode": 1066691,
+        "nlink": 2,
+        "size": 105934,
+        "mtime_ns": 1792367312938712158,
+        "ctime_ns": 1792367497086278969
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066691,
+        "nlink": 2,
+        "size": 105934,
+        "mtime_ns": 1792367312938712158,
+        "ctime_ns": 1792367497086278969
+      },
+      "bytes": 105934,
+      "sha256": "de22dec83d350cac3b3e4ca8e285cb6733c81ab94bf5bcf9213a567993402452",
+      "git_blob_sha1": "6fc8dfdf0c8ee837993d8b395c5cbc9896ac1ed7"
+    },
+    "metadata/stata-eurosat.py": {
+      "before": {
+        "dev": 27,
+        "inode": 1066021,
+        "nlink": 2,
+        "size": 1686,
+        "mtime_ns": 1792367461074941527,
+        "ctime_ns": 1792367497092383589
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1066021,
+        "nlink": 2,
+        "size": 1686,
+        "mtime_ns": 1792367461074941527,
+        "ctime_ns": 1792367497092383589
+      },
+      "bytes": 1686,
+      "sha256": "b6b8d878d54cefdae77e9185767a3f5ea9a0235cdc4cdd47b5507a78ab04ee23",
+      "git_blob_sha1": "e4165bc45b875c573c6234c75b280c1c550ecbb7"
+    }
+  },
+  "prefix": {
+    "bytes_compared": 343605248,
+    "exact_prefix": true,
+    "origin": "UNKNOWN"
+  },
+  "excluded_temporary_copies": {
+    ".EuroSAT.zip.91Kpzc": {
+      "before": {
+        "dev": 27,
+        "inode": 1070330,
+        "nlink": 1,
+        "size": 24117248,
+        "mtime_ns": 1792367472456107572,
+        "ctime_ns": 1792367473524370851
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070330,
+        "nlink": 1,
+        "size": 24117248,
+        "mtime_ns": 1792367472456107572,
+        "ctime_ns": 1792367473524370851
+      },
+      "bytes": 24117248,
+      "sha256": "9d8af0249aa8453abcaac6b1041206e8bd9f9f0ccf472e98ca727d0684e6dbb0",
+      "git_blob_sha1": "32191fb44133ca5fb0437df1956803492665f003"
+    },
+    ".ViT-B-32.pt.partial.hvJJcZ": {
+      "before": {
+        "dev": 27,
+        "inode": 1070346,
+        "nlink": 1,
+        "size": 197132288,
+        "mtime_ns": 1792367499902260558,
+        "ctime_ns": 1792367526443838720
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070346,
+        "nlink": 1,
+        "size": 197132288,
+        "mtime_ns": 1792367499902260558,
+        "ctime_ns": 1792367526443838720
+      },
+      "bytes": 197132288,
+      "sha256": "2f94819255723d35778be2b7835cc249c6d518784750e8cd6753ce82db5e5e27",
+      "git_blob_sha1": "6e39fb0ebb1e3aea2680e96e6df45f91a7f39c2c"
+    },
+    ".ViT-B-32.pt.partial.hvJJcZ.dBQxjR": {
+      "before": {
+        "dev": 27,
+        "inode": 1070150,
+        "nlink": 1,
+        "size": 185073664,
+        "mtime_ns": 1792367531427638146,
+        "ctime_ns": 1792367534245979380
+      },
+      "after": {
+        "dev": 27,
+        "inode": 1070150,
+        "nlink": 1,
+        "size": 185073664,
+        "mtime_ns": 1792367531427638146,
+        "ctime_ns": 1792367534245979380
+      },
+      "bytes": 185073664,
+      "sha256": "df3075a8d7e02781e6387aa3374f72e3693eb3ccaf2886be7856f8f725763ee2",
+      "git_blob_sha1": "26a259f1d93fb2225b5158e042a80d46ea8fd381"
+    }
+  },
+  "processes": {
+    "counts": {
+      "proc_list": {
+        "success": 1,
+        "enoent": 0,
+        "permission": 0,
+        "other": 0
+      },
+      "cmdline": {
+        "success": 14,
+        "enoent": 0,
+        "permission": 0,
+        "other": 0
+      },
+      "fd_list": {
+        "success": 14,
+        "enoent": 0,
+        "permission": 0,
+        "other": 0
+      },
+      "fd_stat": {
+        "success": 121,
+        "enoent": 1,
+        "permission": 0,
+        "other": 0
+      },
+      "fd_readlink": {
+        "success": 121,
+        "enoent": 1,
+        "permission": 0,
+        "other": 0
+      }
+    },
+    "errors": [
+      {
+        "operation": "fd_stat",
+        "path": "23958/fd/3",
+        "kind": "enoent",
+        "errno": 2
+      },
+      {
+        "operation": "fd_readlink",
+        "path": "23958/fd/3",
+        "kind": "enoent",
+        "errno": 2
+      }
+    ],
+    "related": [],
+    "matching_fds": [],
+    "fd_entries": 122,
+    "visible_processes": 14,
+    "admissible": true,
+    "cmdline_separator": "bytes([0])",
+    "scope": "Visible /proc snapshot only. ENOENT is a disappearing-entry race; hidden/prior/future writers and global absence remain unproven.",
+    "absence_proven": false
+  },
+  "absent": {
+    "clip-0010-assets/0010-probe-started.json": true,
+    "scratch/0010-capability-output": true,
+    "scratch/0010-capability-control/probe": true
+  },
+  "stat_unchanged": true,
+  "old_failure_exit": 1,
+  "first_probe_executed": false
+}

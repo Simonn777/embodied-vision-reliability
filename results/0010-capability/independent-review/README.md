@@ -1,0 +1,23 @@
+# 0010 saved execution: independent admission review
+
+**PASS for the bounded resource/implementation admission.** The evidence supports one subsequent, separately frozen 128-image development screen with its existing cohort, methods and quality gates unchanged. It does not demonstrate classifier improvement or novelty. No additional marker export is needed for this bounded conclusion.
+
+The parent reviewer independently checked 102 public files / 357,715 bytes and three privately retained NPZ files / 264,232 bytes. All hashes agree. The 18 new and 25 original frozen inputs agree with their Git source/main blobs and exact receipt-parent relationships. The saved-output audit completed **769 assertions**, actual local exit 0. It uses only NumPy and standard libraries: no Torch, production-code import, RNG generation, model call, solver fit or network.
+
+Eight image and ten text feature rows have the prescribed 512 dimensions, finite float32 values, matching raw-array/file hashes and exact equality between partial and final raw features. Independent float64 normalization differs from the saved float32 normalization by at most **5.0682e-8** (image) and **4.5030e-8** (text). Fixed train-name selection and prompt/class order agree. Token dimensions/range/end/padding and the saved cloud token-check hash agree; exact BPE replay was performed by the cloud saved checker, not repeated locally. Saved logit scale is internally consistent; it was not independently extracted from absent model weights.
+
+The actual parent-retrieved tool records match all six relevant closed outer captures (guard, probe, saved review, functional tests, timing, postcheck), including command/source/log hashes and zero exits. Nested supervision confirms fixed four-core/8 GiB limits, no timeout or interruption. Probe wait4 wall time was **8.375168838 s**, peak RSS **1,301,056 KiB**, with image attempts/completions **8/8**, text **1/1**. Tool duration, nested supervisor duration and internal elapsed time remain separate observations. Three truncated outputs are read-only source displays, not the six execution receipts.
+
+All **20 functional tests passed with zero skips**. Timing has exactly three successful phases, with two native parity executions each (six timing-phase executions; this does not count functional-test work):
+
+- T63 = 0.11852241800079355 s, including the 63-row fit/parity and held-out readout.
+- T641 = 0.08900357699894812 s.
+- T644 = 0.06562033699447056 s.
+
+Recalculation gives **1.5 × (128 T63 + 2 T641 + 2 T644) = 23.220175998132618 s**, below 360 s. The separate encoder projection is **25.022365751745383 s**, below 450 s. Both are projections for admission, not measured full 128-image runtime. Artificial-input shapes, unit norms, identities and hashes match; no regenerated data or refitting was used.
+
+The guard records 121 successful FD stat/readlink checks plus one explicitly counted disappearing-entry race, 14 visible processes and no permission/other gaps or matching holders. The original marker/output/supervision were absent before launch. Full-file identities and the preserved partial prefix passed; cause of the residual partial and three temporary files remains UNKNOWN. The postcheck reports preservation of 3,046 old tracked files, 45 marker/preflight files, 65 old exported records and 142 runtime files. Those complete private-cloud preservation checks were executed successfully but cannot all be re-read from this compact export. Large model/data/runtime payloads are not local audit inputs. The 161-byte probe marker itself is not exported; its recorded postcheck hash plus prelaunch absence and the runner's exclusive creation suffice here, without pretending local raw-marker verification.
+
+The original auxiliary guard failure stays failed. The separate early transport-mapping preflight exit 1 was corrected before guard/probe; it was not a model retry. No new scientific assets were acquired in these phases; recorded direct-body charge stays 456,087,034 bytes and historical all-HTTP total remains UNKNOWN. Main CI is the parent's separate publication/launch check, not queried by this offline review.
+
+Artifacts: `review.json` and actual `stdout.log`/`stderr.log`. `review_saved.py` is the exact audit code but contains local private-audit paths; do not publish it unchanged or publish any NPZ. An initial local reviewer lookup used a nonexistent Git source path; its error log is retained, and the corrected run verifies the existing cached StatA metadata source against its frozen identity before AST reading. This was a local saved-evidence audit correction, not a scientific rerun. This review was AI-assisted.

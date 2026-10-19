@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "scope": "prospective artificial numerical and resource admission only",
+  "mode": "functional",
+  "status": "completed",
+  "source_files": {
+    "README.md": "fa14f1f819a9955ca464c0c9f7a5ae1f9d3f74ede76c891622f2b76c6a34e37b",
+    "config.json": "aafa3402e76c005fa1fba47084b5d0b78f1cee7a3780234d9eff08f88ab1f66d",
+    "run_admission.py": "37048f1d1f407b6ada7c5640364f9d301f4371275d5e78cad09b878421e81a38",
+    "stata_cpu.py": "15545b0fbe67655255d64a4343daeb43cac3bc7d649df984d2605a8795aee5be",
+    "supervise_0009.py": "2d306a8813d36c207eb276a187a298864965bffbe79c1dd463d9482f3bf7d77f",
+    "test_admission_fake.py": "92b09402ac7c8b31ef11d89cb5a21e94735e52a622570baea21dae8639ce4b53",
+    "test_stata_cpu.py": "6b4307926ae489aa2f6120ac786ad9685e52b7e6c8244daa39cef3d6b0d38883",
+    "upstream/LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+    "upstream/StatA.py": "9fcd2eb8a22cabc2c7eb43823625cb04557476c637a24c8a12eb3115ede2b962",
+    "upstream/identity.json": "abb4547bffd0b4117d9f5e18aac20ab10b4527036ec975954d2b9c67b152da7b"
+  },
+  "manifest_sha256": "9d0f764ce380c99d98ee66fc836bf4d429b816b2f50035ab4394f3c01cff5868",
+  "attempts": [],
+  "argv": [
+    "/workspace/scratch/a349d03a0e0a/research-0010-cached-admission/experiments/0010-solver/run_admission.py",
+    "functional",
+    "--child",
+    "--output",
+    "/workspace/scratch/a349d03a0e0a/scratch/0010-solver-functional/child",
+    "--manifest-sha256",
+    "9d0f764ce380c99d98ee66fc836bf4d429b816b2f50035ab4394f3c01cff5868"
+  ],
+  "started_unix": 1792369171.8886964,
+  "resource": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rlimit_as": [
+      8589934592,
+      8589934592
+    ],
+    "cgroup_memory_max": "8589934592",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "VECLIB_MAXIMUM_THREADS": "4",
+      "NUMEXPR_NUM_THREADS": "4"
+    }
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.0.2",
+    "torch": "2.10.0+cpu",
+    "numpy_path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/numpy/__init__.py",
+    "torch_path": "/workspace/scratch/a349d03a0e0a/bootstapir-cache/runtime-fixed/torch/__init__.py"
+  },
+  "adapter_execution": {
+    "original_sha256": "15545b0fbe67655255d64a4343daeb43cac3bc7d649df984d2605a8795aee5be",
+    "executed_sha256": "66b9658fe5694ba38a5b001913e6def69dd380a5d341b1d29241acf6a9d76057",
+    "exact_path_substitutions": 1,
+    "exact_test_interop_substitutions": 0
+  },
+  "test_execution": {
+    "original_sha256": "6b4307926ae489aa2f6120ac786ad9685e52b7e6c8244daa39cef3d6b0d38883",
+    "executed_sha256": "6a8de8477d1cfbda28b4084cc171b279b9dfca636bedc24fe4e220dc4cd28218",
+    "exact_path_substitutions": 0,
+    "exact_test_interop_substitutions": 1
+  },
+  "actual_torch_threads": [
+    4,
+    4
+  ],
+  "functional_attempt": "started",
+  "tests": {
+    "run": 20,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "wall_before_final_save_seconds": 1.1845156690033036
+}
