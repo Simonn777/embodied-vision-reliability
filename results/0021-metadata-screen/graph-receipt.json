@@ -1,0 +1,3514 @@
+{
+  "aggregate": {
+    "all_edges_as_queries_other_edges_as_references": {
+      "both_endpoints_have_reference_edge_count": 375,
+      "both_endpoints_have_reference_edge_fraction": 0.75,
+      "common_reference_neighbor_query_count": 15,
+      "common_reference_neighbor_query_fraction": 0.03,
+      "four_distinct_vertices_query_count": 375,
+      "four_distinct_vertices_query_fraction": 0.75,
+      "query_count": 500
+    },
+    "all_root_keys_topology": {
+      "raw_pair_key_count": 500,
+      "scene_qualified_candidate_node_count": 430,
+      "triangle_count": 5,
+      "unique_undirected_edge_count": 500
+    },
+    "selected_queries_all_other_edges_available": {
+      "both_endpoints_have_reference_edge_count": 63,
+      "both_endpoints_have_reference_edge_fraction": 0.7875,
+      "common_reference_neighbor_query_count": 1,
+      "common_reference_neighbor_query_fraction": 0.0125,
+      "four_distinct_vertices_query_count": 63,
+      "four_distinct_vertices_query_fraction": 0.7875,
+      "query_count": 80
+    },
+    "selected_queries_all_selected_edges_excluded_from_reference_pool": {
+      "both_endpoints_have_reference_edge_count": 53,
+      "both_endpoints_have_reference_edge_fraction": 0.6625,
+      "common_reference_neighbor_query_count": 1,
+      "common_reference_neighbor_query_fraction": 0.0125,
+      "four_distinct_vertices_query_count": 53,
+      "four_distinct_vertices_query_fraction": 0.6625,
+      "query_count": 80
+    },
+    "selected_queries_selected_edges_only_references": {
+      "both_endpoints_have_reference_edge_count": 10,
+      "both_endpoints_have_reference_edge_fraction": 0.125,
+      "common_reference_neighbor_query_count": 0,
+      "common_reference_neighbor_query_fraction": 0.0,
+      "four_distinct_vertices_query_count": 10,
+      "four_distinct_vertices_query_fraction": 0.125,
+      "query_count": 80
+    }
+  },
+  "allocation": "None. Existing selected pairs are only descriptive query cohorts; no new scientific allocation.",
+  "depth_schema_limitation": "Manifest shapes describe per-correspondence depth vectors, not per-image dense maps or provenance hashes.",
+  "identity_status": "unverified_candidate_tokens_not_canonical_image_ids",
+  "input_access": {
+    "dataset_values_read": false,
+    "ground_truth_read": false,
+    "hdf5_opened": false,
+    "images_read": false,
+    "manifest_only": true
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "reference_definition": "Query edge excluded. Reference-edge availability is combinatorial, not statistical independence, parallax, common pixel support, or validated shared depth.",
+  "scenes": [
+    {
+      "all_edges_as_queries_other_edges_as_references": {
+        "both_endpoints_have_reference_edge_count": 71,
+        "both_endpoints_have_reference_edge_fraction": 0.71,
+        "common_reference_neighbor_query_count": 0,
+        "common_reference_neighbor_query_fraction": 0.0,
+        "four_distinct_vertices_query_count": 71,
+        "four_distinct_vertices_query_fraction": 0.71,
+        "query_count": 100
+      },
+      "all_root_keys_topology": {
+        "component_sizes_descending": [
+          83,
+          2,
+          2,
+          2
+        ],
+        "degree_histogram": {
+          "1": 32,
+          "2": 28,
+          "3": 12,
+          "4": 11,
+          "5": 5,
+          "7": 1
+        },
+        "degree_max": 7,
+        "degree_mean": 2.247191011235955,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "05246669_3774806731_o": 7,
+          "05593705_2177935075_o": 2,
+          "05679914_8794523573_o": 1,
+          "06138839_8793674417_o": 2,
+          "06251111_6387606225_o": 1,
+          "06984097_7830261366_o": 5,
+          "07102255_5222394657_o": 2,
+          "07170052_39793444_o": 2,
+          "07688117_1026530950_o": 4,
+          "07691402_9180973630_o": 2,
+          "19554081_6203874230_o": 1,
+          "19618724_81816830_o": 3,
+          "19623962_9009504241_o": 2,
+          "20481977_7804855224_o": 1,
+          "20643929_3152668774_o": 2,
+          "21092931_6209688483_o": 1,
+          "21844166_13067314974_o": 1,
+          "33896507_8272283239_o": 3,
+          "33907107_2443351726_o": 4,
+          "34161017_5996545915_o": 1,
+          "34400199_9548039637_o": 3,
+          "34532087_392493646_o": 2,
+          "34736117_5001830643_o": 4,
+          "35243762_416446215_o": 3,
+          "35456492_13032392044_o": 4,
+          "35789284_4023629266_o": 1,
+          "35838002_13697957154_o": 2,
+          "36012353_13433924113_o": 1,
+          "36193603_3716775220_o": 5,
+          "36354171_3831140082_o": 2,
+          "36470436_130676209_o": 2,
+          "48394746_8534396715_o": 1,
+          "48537388_6040814708_o": 4,
+          "48890355_5768174237_o": 4,
+          "49346328_4692994092_o": 1,
+          "49350312_1193155509_o": 2,
+          "49415275_4483143975_o": 1,
+          "50314000_12592142_o": 1,
+          "50539085_639668401_o": 1,
+          "50787802_3314113427_o": 2,
+          "62752576_2777704234_o": 4,
+          "62803022_2343099629_o": 1,
+          "62969936_60912810_o": 2,
+          "63171471_386589435_o": 3,
+          "63184385_8522029473_o": 4,
+          "63239025_5812522935_o": 1,
+          "63383183_382026599_o": 2,
+          "63754032_4616826086_o": 1,
+          "63875841_2714057436_o": 1,
+          "64159275_6716434153_o": 2,
+          "64909672_392493972_o": 2,
+          "65092335_3535759515_o": 4,
+          "65129021_2335509128_o": 2,
+          "65254812_348995275_o": 1,
+          "76755276_3324277370_o": 3,
+          "76820645_7270040720_o": 4,
+          "76840078_3613849894_o": 2,
+          "76927395_4805660921_o": 1,
+          "77361965_67910438_o": 1,
+          "77439149_5156106058_o": 3,
+          "77489583_8137975807_o": 2,
+          "77715496_8436223314_o": 2,
+          "77895569_3992142858_o": 1,
+          "77919832_437428975_o": 2,
+          "78034643_9180969128_o": 2,
+          "78590203_7670206258_o": 1,
+          "78866526_10679960304_o": 1,
+          "79431289_3927070877_o": 5,
+          "91147212_137583658_o": 3,
+          "91278744_10804280636_o": 1,
+          "91289690_7477451478_o": 1,
+          "91308499_281913661_o": 1,
+          "91428113_11923905935_o": 5,
+          "92044893_9509611423_o": 1,
+          "92129283_2380877332_o": 3,
+          "92168939_7218355182_o": 5,
+          "92249583_11924182863_o": 2,
+          "92276925_6644068249_o": 1,
+          "92555707_8097576779_o": 1,
+          "92641518_198592315_o": 1,
+          "92653974_435154567_o": 2,
+          "92694930_8121841061_o": 2,
+          "92800430_2089968370_o": 2,
+          "92895298_2116859513_o": 4,
+          "92902059_7576580614_o": 2,
+          "92935174_9397071656_o": 3,
+          "93059960_5096970448_o": 3,
+          "93211981_9482880250_o": 1,
+          "93321195_8092708743_o": 3
+        },
+        "raw_pair_key_count": 100,
+        "scene_qualified_candidate_node_count": 89,
+        "triangle_count": 0,
+        "unique_undirected_edge_count": 100
+      },
+      "depth_vector_shape_histogram_both_sides": {
+        "(2040,)": 2,
+        "(2041,)": 2,
+        "(2044,)": 2,
+        "(2045,)": 6,
+        "(2046,)": 6,
+        "(2047,)": 22,
+        "(2048,)": 160
+      },
+      "filename": "florence_cathedral_roma_moge.h5",
+      "nonselected_reference_key_count": 84,
+      "scene": "florence_cathedral",
+      "selected_keys_only_topology": {
+        "component_sizes_descending": [
+          8,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "degree_histogram": {
+          "1": 15,
+          "2": 7,
+          "3": 1
+        },
+        "degree_max": 3,
+        "degree_mean": 1.391304347826087,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "05246669_3774806731_o": 2,
+          "06984097_7830261366_o": 1,
+          "07102255_5222394657_o": 1,
+          "07691402_9180973630_o": 1,
+          "19623962_9009504241_o": 1,
+          "21092931_6209688483_o": 1,
+          "33896507_8272283239_o": 2,
+          "33907107_2443351726_o": 1,
+          "35243762_416446215_o": 2,
+          "35456492_13032392044_o": 3,
+          "36012353_13433924113_o": 1,
+          "49350312_1193155509_o": 1,
+          "62752576_2777704234_o": 2,
+          "63184385_8522029473_o": 1,
+          "64909672_392493972_o": 1,
+          "65092335_3535759515_o": 2,
+          "76840078_3613849894_o": 1,
+          "78034643_9180969128_o": 1,
+          "92168939_7218355182_o": 2,
+          "92694930_8121841061_o": 1,
+          "92902059_7576580614_o": 1,
+          "93211981_9482880250_o": 1,
+          "93321195_8092708743_o": 2
+        },
+        "raw_pair_key_count": 16,
+        "scene_qualified_candidate_node_count": 23,
+        "triangle_count": 0,
+        "unique_undirected_edge_count": 16
+      },
+      "selected_queries_all_other_edges_available": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "33896507_8272283239_o",
+              "93321195_8092708743_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "33896507_8272283239_o_93321195_8092708743_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "35456492_13032392044_o",
+              "62752576_2777704234_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "35456492_13032392044_o_62752576_2777704234_o",
+            "reference_neighbor_counts": [
+              3,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "06984097_7830261366_o",
+              "21092931_6209688483_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "06984097_7830261366_o_21092931_6209688483_o",
+            "reference_neighbor_counts": [
+              4,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "35243762_416446215_o",
+              "93211981_9482880250_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "35243762_416446215_o_93211981_9482880250_o",
+            "reference_neighbor_counts": [
+              2,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "35456492_13032392044_o",
+              "64909672_392493972_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "35456492_13032392044_o_64909672_392493972_o",
+            "reference_neighbor_counts": [
+              3,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "33896507_8272283239_o",
+              "92902059_7576580614_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "33896507_8272283239_o_92902059_7576580614_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "76840078_3613849894_o",
+              "92168939_7218355182_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "76840078_3613849894_o_92168939_7218355182_o",
+            "reference_neighbor_counts": [
+              1,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "05246669_3774806731_o",
+              "07102255_5222394657_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "05246669_3774806731_o_07102255_5222394657_o",
+            "reference_neighbor_counts": [
+              6,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "65092335_3535759515_o",
+              "92694930_8121841061_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "65092335_3535759515_o_92694930_8121841061_o",
+            "reference_neighbor_counts": [
+              3,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "05246669_3774806731_o",
+              "07691402_9180973630_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "05246669_3774806731_o_07691402_9180973630_o",
+            "reference_neighbor_counts": [
+              6,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "19623962_9009504241_o",
+              "33907107_2443351726_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "19623962_9009504241_o_33907107_2443351726_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "78034643_9180969128_o",
+              "92168939_7218355182_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "78034643_9180969128_o_92168939_7218355182_o",
+            "reference_neighbor_counts": [
+              1,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "62752576_2777704234_o",
+              "93321195_8092708743_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "62752576_2777704234_o_93321195_8092708743_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "63184385_8522029473_o",
+              "65092335_3535759515_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "63184385_8522029473_o_65092335_3535759515_o",
+            "reference_neighbor_counts": [
+              3,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "35243762_416446215_o",
+              "35456492_13032392044_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "35243762_416446215_o_35456492_13032392044_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "36012353_13433924113_o",
+              "49350312_1193155509_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "36012353_13433924113_o_49350312_1193155509_o",
+            "reference_neighbor_counts": [
+              0,
+              1
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 13,
+          "both_endpoints_have_reference_edge_fraction": 0.8125,
+          "common_reference_neighbor_query_count": 0,
+          "common_reference_neighbor_query_fraction": 0.0,
+          "four_distinct_vertices_query_count": 13,
+          "four_distinct_vertices_query_fraction": 0.8125,
+          "query_count": 16
+        }
+      },
+      "selected_queries_all_selected_edges_excluded_from_reference_pool": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "33896507_8272283239_o",
+              "93321195_8092708743_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "33896507_8272283239_o_93321195_8092708743_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "35456492_13032392044_o",
+              "62752576_2777704234_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "35456492_13032392044_o_62752576_2777704234_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "06984097_7830261366_o",
+              "21092931_6209688483_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "06984097_7830261366_o_21092931_6209688483_o",
+            "reference_neighbor_counts": [
+              4,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "35243762_416446215_o",
+              "93211981_9482880250_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "35243762_416446215_o_93211981_9482880250_o",
+            "reference_neighbor_counts": [
+              1,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "35456492_13032392044_o",
+              "64909672_392493972_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "35456492_13032392044_o_64909672_392493972_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "33896507_8272283239_o",
+              "92902059_7576580614_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "33896507_8272283239_o_92902059_7576580614_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "76840078_3613849894_o",
+              "92168939_7218355182_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "76840078_3613849894_o_92168939_7218355182_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "05246669_3774806731_o",
+              "07102255_5222394657_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "05246669_3774806731_o_07102255_5222394657_o",
+            "reference_neighbor_counts": [
+              5,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "65092335_3535759515_o",
+              "92694930_8121841061_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "65092335_3535759515_o_92694930_8121841061_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "05246669_3774806731_o",
+              "07691402_9180973630_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "05246669_3774806731_o_07691402_9180973630_o",
+            "reference_neighbor_counts": [
+              5,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "19623962_9009504241_o",
+              "33907107_2443351726_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "19623962_9009504241_o_33907107_2443351726_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "78034643_9180969128_o",
+              "92168939_7218355182_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "78034643_9180969128_o_92168939_7218355182_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "62752576_2777704234_o",
+              "93321195_8092708743_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "62752576_2777704234_o_93321195_8092708743_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "63184385_8522029473_o",
+              "65092335_3535759515_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "63184385_8522029473_o_65092335_3535759515_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "35243762_416446215_o",
+              "35456492_13032392044_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "35243762_416446215_o_35456492_13032392044_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "36012353_13433924113_o",
+              "49350312_1193155509_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "36012353_13433924113_o_49350312_1193155509_o",
+            "reference_neighbor_counts": [
+              0,
+              1
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 13,
+          "both_endpoints_have_reference_edge_fraction": 0.8125,
+          "common_reference_neighbor_query_count": 0,
+          "common_reference_neighbor_query_fraction": 0.0,
+          "four_distinct_vertices_query_count": 13,
+          "four_distinct_vertices_query_fraction": 0.8125,
+          "query_count": 16
+        }
+      },
+      "selected_queries_selected_edges_only_references": {
+        "both_endpoints_have_reference_edge_count": 4,
+        "both_endpoints_have_reference_edge_fraction": 0.25,
+        "common_reference_neighbor_query_count": 0,
+        "common_reference_neighbor_query_fraction": 0.0,
+        "four_distinct_vertices_query_count": 4,
+        "four_distinct_vertices_query_fraction": 0.25,
+        "query_count": 16
+      }
+    },
+    {
+      "all_edges_as_queries_other_edges_as_references": {
+        "both_endpoints_have_reference_edge_count": 69,
+        "both_endpoints_have_reference_edge_fraction": 0.69,
+        "common_reference_neighbor_query_count": 12,
+        "common_reference_neighbor_query_fraction": 0.12,
+        "four_distinct_vertices_query_count": 69,
+        "four_distinct_vertices_query_fraction": 0.69,
+        "query_count": 100
+      },
+      "all_root_keys_topology": {
+        "component_sizes_descending": [
+          77,
+          5,
+          3,
+          2
+        ],
+        "degree_histogram": {
+          "1": 32,
+          "2": 23,
+          "3": 15,
+          "4": 12,
+          "5": 2,
+          "6": 2,
+          "7": 1
+        },
+        "degree_max": 7,
+        "degree_mean": 2.2988505747126435,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "00924277_2300346048_o": 3,
+          "02778342_12648320825_o": 1,
+          "03808205_2685585550_o": 1,
+          "03973389_5554221717_o": 2,
+          "05737592_3838776850_o": 3,
+          "07623661_4396998352_o": 2,
+          "08953896_3367363452_o": 2,
+          "09245044_3371099499_o": 2,
+          "09461115_7885042478_o": 2,
+          "16770484_7836429844_o": 1,
+          "17318660_7986785718_o": 3,
+          "18642195_2925519606_o": 4,
+          "20022220_2419745928_o": 5,
+          "20851484_434036928_o": 2,
+          "24633086_31698430_o": 1,
+          "26415303_3305299897_o": 2,
+          "27332396_5539357539_o": 3,
+          "28091227_8002910526_o": 4,
+          "32283917_8002907211_o": 3,
+          "32604671_8567094532_o": 1,
+          "33221600_3383608657_o": 2,
+          "35101410_6929321177_o": 2,
+          "35438832_5772577413_o": 3,
+          "36204391_24161076_o": 4,
+          "37626986_10874662824_o": 3,
+          "38207682_2230071122_o": 1,
+          "38309704_10569908794_o": 1,
+          "39840450_9458454489_o": 2,
+          "42391622_3971017916_o": 1,
+          "42528906_2548689901_o": 1,
+          "44543766_4988009197_o": 1,
+          "44927895_4377127964_o": 2,
+          "44943351_5316237356_o": 3,
+          "46497456_7877351350_o": 2,
+          "47383152_8703827307_o": 2,
+          "48078808_3305068611_o": 2,
+          "50491900_2454394163_o": 1,
+          "50530488_3343367811_o": 1,
+          "51823980_4597353636_o": 2,
+          "53429414_5918156152_o": 2,
+          "54600436_3967093280_o": 2,
+          "54877052_789475307_o": 5,
+          "54958168_5576734021_o": 2,
+          "56033362_2251041213_o": 2,
+          "56047732_7236104334_o": 4,
+          "56771377_3059871710_o": 1,
+          "58041138_6956765362_o": 1,
+          "64079536_4710381301_o": 3,
+          "64202274_3924130810_o": 6,
+          "65101356_2668964566_o": 1,
+          "65406246_5404167304_o": 3,
+          "66571795_4698151721_o": 3,
+          "67269621_4420850656_o": 1,
+          "70925228_5551859637_o": 1,
+          "71147788_2932214865_o": 1,
+          "72352446_6803354105_o": 1,
+          "72695835_2597639209_o": 1,
+          "74383616_261225765_o": 1,
+          "75621887_8846706474_o": 4,
+          "76663382_4972839220_o": 2,
+          "77412646_2597639151_o": 3,
+          "78475358_2889107366_o": 3,
+          "81233182_4943410370_o": 4,
+          "82762247_4943410524_o": 2,
+          "83337770_3217460703_o": 3,
+          "84038985_6341019678_o": 6,
+          "84575830_3456508930_o": 7,
+          "86668753_8907652813_o": 4,
+          "87495742_6081377753_o": 4,
+          "87946647_10864354576_o": 2,
+          "90337123_4009837083_o": 1,
+          "92217185_3934718943_o": 4,
+          "93557961_2501534987_o": 1,
+          "94154757_2927899608_o": 4,
+          "94578966_7153097663_o": 2,
+          "95305862_6941461829_o": 1,
+          "95317558_4854760568_o": 1,
+          "95554644_558540114_o": 4,
+          "95771557_4220973160_o": 1,
+          "95926960_6416281951_o": 1,
+          "96041539_3414552661_o": 1,
+          "96226160_7836430236_o": 1,
+          "98159832_2823293066_o": 1,
+          "98811732_7173614424_o": 1,
+          "99257940_5422860804_o": 4,
+          "99410732_4613563073_o": 3,
+          "99520978_4671185056_o": 1
+        },
+        "raw_pair_key_count": 100,
+        "scene_qualified_candidate_node_count": 87,
+        "triangle_count": 4,
+        "unique_undirected_edge_count": 100
+      },
+      "depth_vector_shape_histogram_both_sides": {
+        "(2043,)": 2,
+        "(2047,)": 4,
+        "(2048,)": 194
+      },
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "nonselected_reference_key_count": 84,
+      "scene": "lincoln_memorial",
+      "selected_keys_only_topology": {
+        "component_sizes_descending": [
+          5,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "degree_histogram": {
+          "1": 18,
+          "2": 7
+        },
+        "degree_max": 2,
+        "degree_mean": 1.28,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "00924277_2300346048_o": 1,
+          "03973389_5554221717_o": 1,
+          "08953896_3367363452_o": 1,
+          "20022220_2419745928_o": 1,
+          "20851484_434036928_o": 1,
+          "24633086_31698430_o": 1,
+          "26415303_3305299897_o": 1,
+          "27332396_5539357539_o": 1,
+          "36204391_24161076_o": 2,
+          "39840450_9458454489_o": 1,
+          "44927895_4377127964_o": 2,
+          "54877052_789475307_o": 1,
+          "56047732_7236104334_o": 2,
+          "64202274_3924130810_o": 1,
+          "72352446_6803354105_o": 1,
+          "75621887_8846706474_o": 1,
+          "76663382_4972839220_o": 2,
+          "78475358_2889107366_o": 1,
+          "81233182_4943410370_o": 1,
+          "83337770_3217460703_o": 2,
+          "84038985_6341019678_o": 2,
+          "87495742_6081377753_o": 1,
+          "94154757_2927899608_o": 2,
+          "96041539_3414552661_o": 1,
+          "99257940_5422860804_o": 1
+        },
+        "raw_pair_key_count": 16,
+        "scene_qualified_candidate_node_count": 25,
+        "triangle_count": 0,
+        "unique_undirected_edge_count": 16
+      },
+      "selected_queries_all_other_edges_available": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "20022220_2419745928_o",
+              "84038985_6341019678_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "20022220_2419745928_o_84038985_6341019678_o",
+            "reference_neighbor_counts": [
+              4,
+              5
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "03973389_5554221717_o",
+              "72352446_6803354105_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "03973389_5554221717_o_72352446_6803354105_o",
+            "reference_neighbor_counts": [
+              1,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "00924277_2300346048_o",
+              "87495742_6081377753_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "00924277_2300346048_o_87495742_6081377753_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "08953896_3367363452_o",
+              "75621887_8846706474_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "08953896_3367363452_o_75621887_8846706474_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "44927895_4377127964_o",
+              "54877052_789475307_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "44927895_4377127964_o_54877052_789475307_o",
+            "reference_neighbor_counts": [
+              1,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "64202274_3924130810_o",
+              "83337770_3217460703_o"
+            ],
+            "common_reference_neighbor_count": 1,
+            "four_distinct_vertices_possible": true,
+            "key": "64202274_3924130810_o_83337770_3217460703_o",
+            "reference_neighbor_counts": [
+              5,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "36204391_24161076_o",
+              "99257940_5422860804_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "36204391_24161076_o_99257940_5422860804_o",
+            "reference_neighbor_counts": [
+              3,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "76663382_4972839220_o",
+              "84038985_6341019678_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "76663382_4972839220_o_84038985_6341019678_o",
+            "reference_neighbor_counts": [
+              1,
+              5
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "78475358_2889107366_o",
+              "96041539_3414552661_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "78475358_2889107366_o_96041539_3414552661_o",
+            "reference_neighbor_counts": [
+              2,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "24633086_31698430_o",
+              "94154757_2927899608_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "24633086_31698430_o_94154757_2927899608_o",
+            "reference_neighbor_counts": [
+              0,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "36204391_24161076_o",
+              "56047732_7236104334_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "36204391_24161076_o_56047732_7236104334_o",
+            "reference_neighbor_counts": [
+              3,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "26415303_3305299897_o",
+              "27332396_5539357539_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "26415303_3305299897_o_27332396_5539357539_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "20851484_434036928_o",
+              "83337770_3217460703_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "20851484_434036928_o_83337770_3217460703_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "44927895_4377127964_o",
+              "56047732_7236104334_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "44927895_4377127964_o_56047732_7236104334_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "81233182_4943410370_o",
+              "94154757_2927899608_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "81233182_4943410370_o_94154757_2927899608_o",
+            "reference_neighbor_counts": [
+              3,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "39840450_9458454489_o",
+              "76663382_4972839220_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "39840450_9458454489_o_76663382_4972839220_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 13,
+          "both_endpoints_have_reference_edge_fraction": 0.8125,
+          "common_reference_neighbor_query_count": 1,
+          "common_reference_neighbor_query_fraction": 0.0625,
+          "four_distinct_vertices_query_count": 13,
+          "four_distinct_vertices_query_fraction": 0.8125,
+          "query_count": 16
+        }
+      },
+      "selected_queries_all_selected_edges_excluded_from_reference_pool": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "20022220_2419745928_o",
+              "84038985_6341019678_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "20022220_2419745928_o_84038985_6341019678_o",
+            "reference_neighbor_counts": [
+              4,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "03973389_5554221717_o",
+              "72352446_6803354105_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "03973389_5554221717_o_72352446_6803354105_o",
+            "reference_neighbor_counts": [
+              1,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "00924277_2300346048_o",
+              "87495742_6081377753_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "00924277_2300346048_o_87495742_6081377753_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "08953896_3367363452_o",
+              "75621887_8846706474_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "08953896_3367363452_o_75621887_8846706474_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "44927895_4377127964_o",
+              "54877052_789475307_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "44927895_4377127964_o_54877052_789475307_o",
+            "reference_neighbor_counts": [
+              0,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "64202274_3924130810_o",
+              "83337770_3217460703_o"
+            ],
+            "common_reference_neighbor_count": 1,
+            "four_distinct_vertices_possible": true,
+            "key": "64202274_3924130810_o_83337770_3217460703_o",
+            "reference_neighbor_counts": [
+              5,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "36204391_24161076_o",
+              "99257940_5422860804_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "36204391_24161076_o_99257940_5422860804_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "76663382_4972839220_o",
+              "84038985_6341019678_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "76663382_4972839220_o_84038985_6341019678_o",
+            "reference_neighbor_counts": [
+              0,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "78475358_2889107366_o",
+              "96041539_3414552661_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "78475358_2889107366_o_96041539_3414552661_o",
+            "reference_neighbor_counts": [
+              2,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "24633086_31698430_o",
+              "94154757_2927899608_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "24633086_31698430_o_94154757_2927899608_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "36204391_24161076_o",
+              "56047732_7236104334_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "36204391_24161076_o_56047732_7236104334_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "26415303_3305299897_o",
+              "27332396_5539357539_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "26415303_3305299897_o_27332396_5539357539_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "20851484_434036928_o",
+              "83337770_3217460703_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "20851484_434036928_o_83337770_3217460703_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "44927895_4377127964_o",
+              "56047732_7236104334_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "44927895_4377127964_o_56047732_7236104334_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "81233182_4943410370_o",
+              "94154757_2927899608_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "81233182_4943410370_o_94154757_2927899608_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "39840450_9458454489_o",
+              "76663382_4972839220_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "39840450_9458454489_o_76663382_4972839220_o",
+            "reference_neighbor_counts": [
+              1,
+              0
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 9,
+          "both_endpoints_have_reference_edge_fraction": 0.5625,
+          "common_reference_neighbor_query_count": 1,
+          "common_reference_neighbor_query_fraction": 0.0625,
+          "four_distinct_vertices_query_count": 9,
+          "four_distinct_vertices_query_fraction": 0.5625,
+          "query_count": 16
+        }
+      },
+      "selected_queries_selected_edges_only_references": {
+        "both_endpoints_have_reference_edge_count": 3,
+        "both_endpoints_have_reference_edge_fraction": 0.1875,
+        "common_reference_neighbor_query_count": 0,
+        "common_reference_neighbor_query_fraction": 0.0,
+        "four_distinct_vertices_query_count": 3,
+        "four_distinct_vertices_query_fraction": 0.1875,
+        "query_count": 16
+      }
+    },
+    {
+      "all_edges_as_queries_other_edges_as_references": {
+        "both_endpoints_have_reference_edge_count": 75,
+        "both_endpoints_have_reference_edge_fraction": 0.75,
+        "common_reference_neighbor_query_count": 3,
+        "common_reference_neighbor_query_fraction": 0.03,
+        "four_distinct_vertices_query_count": 75,
+        "four_distinct_vertices_query_fraction": 0.75,
+        "query_count": 100
+      },
+      "all_root_keys_topology": {
+        "component_sizes_descending": [
+          81,
+          2,
+          2
+        ],
+        "degree_histogram": {
+          "1": 27,
+          "2": 22,
+          "3": 21,
+          "4": 9,
+          "5": 6
+        },
+        "degree_max": 5,
+        "degree_mean": 2.3529411764705883,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "04908365_2367247064_o": 2,
+          "06716241_785233653_o": 3,
+          "07186335_3558850296_o": 3,
+          "07490932_4348794400_o": 1,
+          "08163360_2711465597_o": 2,
+          "08644785_244731653_o": 3,
+          "14207923_3335894234_o": 2,
+          "18527372_8101436669_o": 2,
+          "18711406_7660965028_o": 2,
+          "20023116_5421687643_o": 4,
+          "20329940_2712270512_o": 3,
+          "21416139_3508932720_o": 3,
+          "22122037_4607832628_o": 2,
+          "26002256_6628945241_o": 1,
+          "26231441_2376875056_o": 1,
+          "27129797_3617128902_o": 1,
+          "31866879_541449395_o": 4,
+          "34529561_93489958_o": 4,
+          "37017729_12854904724_o": 1,
+          "39838717_7995981621_o": 4,
+          "40557224_2373511082_o": 2,
+          "40696009_8084232635_o": 2,
+          "40721352_4307478728_o": 2,
+          "41036763_6827756012_o": 5,
+          "41138218_6777472832_o": 2,
+          "47591486_5809581591_o": 3,
+          "49058993_1029145575_o": 1,
+          "49190386_5209386933_o": 1,
+          "49214882_5798771946_o": 1,
+          "49697111_3486881518_o": 1,
+          "50666539_5168136646_o": 1,
+          "54047970_10330925914_o": 1,
+          "54682107_1186188936_o": 1,
+          "55462122_8860813211_o": 1,
+          "56560945_34426400_o": 3,
+          "61553594_4607556883_o": 3,
+          "61662402_4816310161_o": 5,
+          "61822782_3845791411_o": 2,
+          "63079410_5757866799_o": 2,
+          "63235406_4979890904_o": 3,
+          "64773119_3513275803_o": 3,
+          "68815788_335880037_o": 2,
+          "68849666_7062137551_o": 1,
+          "69075106_4349805138_o": 5,
+          "69628182_284368585_o": 2,
+          "70106401_3725909945_o": 5,
+          "70432432_1697399971_o": 2,
+          "74357344_11178597616_o": 3,
+          "75900528_10732147743_o": 3,
+          "77247594_6091723791_o": 2,
+          "77586104_6180620561_o": 1,
+          "77817574_10026650554_o": 1,
+          "78140681_7320118140_o": 3,
+          "78396322_5174957211_o": 2,
+          "78626430_4904147191_o": 1,
+          "79365652_4980553538_o": 3,
+          "82608548_2734289_o": 5,
+          "83340717_3410144340_o": 2,
+          "84081098_11840164244_o": 4,
+          "85207581_2971718441_o": 1,
+          "85476891_335880077_o": 3,
+          "88789939_7174080384_o": 1,
+          "89000669_3431396855_o": 1,
+          "90265556_5385991054_o": 2,
+          "90405763_4011914691_o": 2,
+          "90488918_4623221677_o": 3,
+          "91189023_385269920_o": 3,
+          "91220302_3617129116_o": 1,
+          "92273298_5039274514_o": 4,
+          "93183176_7717726854_o": 2,
+          "94209135_3287542860_o": 4,
+          "97454199_2345558379_o": 4,
+          "97624065_3617127746_o": 5,
+          "98205168_3552942721_o": 1,
+          "98278134_530526928_o": 1,
+          "98476918_4349092903_o": 1,
+          "98796621_4370084229_o": 3,
+          "98860476_3688315695_o": 3,
+          "98927097_8227903876_o": 1,
+          "98946189_10441466_o": 3,
+          "98972372_6890286021_o": 1,
+          "99233399_7660965546_o": 2,
+          "99417278_4904105741_o": 4,
+          "99732271_119644261_o": 3,
+          "99840569_5084689607_o": 1
+        },
+        "raw_pair_key_count": 100,
+        "scene_qualified_candidate_node_count": 85,
+        "triangle_count": 1,
+        "unique_undirected_edge_count": 100
+      },
+      "depth_vector_shape_histogram_both_sides": {
+        "(1891,)": 2,
+        "(1924,)": 2,
+        "(1925,)": 2,
+        "(1927,)": 4,
+        "(1930,)": 2,
+        "(1953,)": 2,
+        "(1956,)": 2,
+        "(1957,)": 2,
+        "(1962,)": 2,
+        "(1968,)": 2,
+        "(1969,)": 2,
+        "(1971,)": 2,
+        "(1972,)": 2,
+        "(1975,)": 2,
+        "(1976,)": 2,
+        "(1979,)": 2,
+        "(1983,)": 2,
+        "(1984,)": 2,
+        "(1986,)": 4,
+        "(1988,)": 2,
+        "(1991,)": 2,
+        "(1992,)": 4,
+        "(1995,)": 4,
+        "(1996,)": 2,
+        "(1997,)": 2,
+        "(1998,)": 2,
+        "(1999,)": 2,
+        "(2000,)": 2,
+        "(2001,)": 2,
+        "(2002,)": 2,
+        "(2003,)": 4,
+        "(2005,)": 10,
+        "(2006,)": 2,
+        "(2007,)": 4,
+        "(2011,)": 2,
+        "(2012,)": 4,
+        "(2013,)": 4,
+        "(2014,)": 4,
+        "(2017,)": 2,
+        "(2018,)": 2,
+        "(2019,)": 2,
+        "(2020,)": 2,
+        "(2022,)": 4,
+        "(2023,)": 8,
+        "(2025,)": 2,
+        "(2026,)": 2,
+        "(2027,)": 8,
+        "(2029,)": 2,
+        "(2030,)": 4,
+        "(2031,)": 2,
+        "(2032,)": 6,
+        "(2033,)": 2,
+        "(2034,)": 4,
+        "(2035,)": 8,
+        "(2036,)": 2,
+        "(2037,)": 2,
+        "(2038,)": 2,
+        "(2039,)": 2,
+        "(2040,)": 8,
+        "(2041,)": 4,
+        "(2043,)": 8,
+        "(2044,)": 2,
+        "(2046,)": 6,
+        "(2047,)": 2
+      },
+      "filename": "london_bridge_roma_moge.h5",
+      "nonselected_reference_key_count": 84,
+      "scene": "london_bridge",
+      "selected_keys_only_topology": {
+        "component_sizes_descending": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "degree_histogram": {
+          "1": 26,
+          "2": 3
+        },
+        "degree_max": 2,
+        "degree_mean": 1.103448275862069,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "06716241_785233653_o": 1,
+          "20023116_5421687643_o": 1,
+          "31866879_541449395_o": 2,
+          "34529561_93489958_o": 1,
+          "41036763_6827756012_o": 1,
+          "47591486_5809581591_o": 1,
+          "54682107_1186188936_o": 1,
+          "56560945_34426400_o": 1,
+          "61662402_4816310161_o": 1,
+          "61822782_3845791411_o": 1,
+          "63079410_5757866799_o": 1,
+          "68849666_7062137551_o": 1,
+          "69075106_4349805138_o": 1,
+          "69628182_284368585_o": 1,
+          "70106401_3725909945_o": 2,
+          "70432432_1697399971_o": 1,
+          "74357344_11178597616_o": 1,
+          "77586104_6180620561_o": 1,
+          "79365652_4980553538_o": 1,
+          "83340717_3410144340_o": 1,
+          "84081098_11840164244_o": 1,
+          "85476891_335880077_o": 1,
+          "90405763_4011914691_o": 1,
+          "90488918_4623221677_o": 1,
+          "92273298_5039274514_o": 1,
+          "97454199_2345558379_o": 1,
+          "98205168_3552942721_o": 1,
+          "98946189_10441466_o": 1,
+          "99732271_119644261_o": 2
+        },
+        "raw_pair_key_count": 16,
+        "scene_qualified_candidate_node_count": 29,
+        "triangle_count": 0,
+        "unique_undirected_edge_count": 16
+      },
+      "selected_queries_all_other_edges_available": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "69075106_4349805138_o",
+              "98205168_3552942721_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "69075106_4349805138_o_98205168_3552942721_o",
+            "reference_neighbor_counts": [
+              4,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "79365652_4980553538_o",
+              "90405763_4011914691_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "79365652_4980553538_o_90405763_4011914691_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "61822782_3845791411_o",
+              "74357344_11178597616_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "61822782_3845791411_o_74357344_11178597616_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "61662402_4816310161_o",
+              "68849666_7062137551_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "61662402_4816310161_o_68849666_7062137551_o",
+            "reference_neighbor_counts": [
+              4,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "90488918_4623221677_o",
+              "99732271_119644261_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "90488918_4623221677_o_99732271_119644261_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "20023116_5421687643_o",
+              "77586104_6180620561_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "20023116_5421687643_o_77586104_6180620561_o",
+            "reference_neighbor_counts": [
+              3,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "31866879_541449395_o",
+              "56560945_34426400_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "31866879_541449395_o_56560945_34426400_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "34529561_93489958_o",
+              "54682107_1186188936_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "34529561_93489958_o_54682107_1186188936_o",
+            "reference_neighbor_counts": [
+              3,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "47591486_5809581591_o",
+              "85476891_335880077_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "47591486_5809581591_o_85476891_335880077_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "63079410_5757866799_o",
+              "99732271_119644261_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "63079410_5757866799_o_99732271_119644261_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "41036763_6827756012_o",
+              "70106401_3725909945_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "41036763_6827756012_o_70106401_3725909945_o",
+            "reference_neighbor_counts": [
+              4,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "69628182_284368585_o",
+              "98946189_10441466_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "69628182_284368585_o_98946189_10441466_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "70106401_3725909945_o",
+              "97454199_2345558379_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "70106401_3725909945_o_97454199_2345558379_o",
+            "reference_neighbor_counts": [
+              4,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "83340717_3410144340_o",
+              "92273298_5039274514_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "83340717_3410144340_o_92273298_5039274514_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "06716241_785233653_o",
+              "31866879_541449395_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "06716241_785233653_o_31866879_541449395_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "70432432_1697399971_o",
+              "84081098_11840164244_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "70432432_1697399971_o_84081098_11840164244_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 12,
+          "both_endpoints_have_reference_edge_fraction": 0.75,
+          "common_reference_neighbor_query_count": 0,
+          "common_reference_neighbor_query_fraction": 0.0,
+          "four_distinct_vertices_query_count": 12,
+          "four_distinct_vertices_query_fraction": 0.75,
+          "query_count": 16
+        }
+      },
+      "selected_queries_all_selected_edges_excluded_from_reference_pool": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "69075106_4349805138_o",
+              "98205168_3552942721_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "69075106_4349805138_o_98205168_3552942721_o",
+            "reference_neighbor_counts": [
+              4,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "79365652_4980553538_o",
+              "90405763_4011914691_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "79365652_4980553538_o_90405763_4011914691_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "61822782_3845791411_o",
+              "74357344_11178597616_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "61822782_3845791411_o_74357344_11178597616_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "61662402_4816310161_o",
+              "68849666_7062137551_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "61662402_4816310161_o_68849666_7062137551_o",
+            "reference_neighbor_counts": [
+              4,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "90488918_4623221677_o",
+              "99732271_119644261_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "90488918_4623221677_o_99732271_119644261_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "20023116_5421687643_o",
+              "77586104_6180620561_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "20023116_5421687643_o_77586104_6180620561_o",
+            "reference_neighbor_counts": [
+              3,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "31866879_541449395_o",
+              "56560945_34426400_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "31866879_541449395_o_56560945_34426400_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "34529561_93489958_o",
+              "54682107_1186188936_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "34529561_93489958_o_54682107_1186188936_o",
+            "reference_neighbor_counts": [
+              3,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "47591486_5809581591_o",
+              "85476891_335880077_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "47591486_5809581591_o_85476891_335880077_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "63079410_5757866799_o",
+              "99732271_119644261_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "63079410_5757866799_o_99732271_119644261_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "41036763_6827756012_o",
+              "70106401_3725909945_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "41036763_6827756012_o_70106401_3725909945_o",
+            "reference_neighbor_counts": [
+              4,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "69628182_284368585_o",
+              "98946189_10441466_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "69628182_284368585_o_98946189_10441466_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "70106401_3725909945_o",
+              "97454199_2345558379_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "70106401_3725909945_o_97454199_2345558379_o",
+            "reference_neighbor_counts": [
+              3,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "83340717_3410144340_o",
+              "92273298_5039274514_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "83340717_3410144340_o_92273298_5039274514_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "06716241_785233653_o",
+              "31866879_541449395_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "06716241_785233653_o_31866879_541449395_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "70432432_1697399971_o",
+              "84081098_11840164244_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "70432432_1697399971_o_84081098_11840164244_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 12,
+          "both_endpoints_have_reference_edge_fraction": 0.75,
+          "common_reference_neighbor_query_count": 0,
+          "common_reference_neighbor_query_fraction": 0.0,
+          "four_distinct_vertices_query_count": 12,
+          "four_distinct_vertices_query_fraction": 0.75,
+          "query_count": 16
+        }
+      },
+      "selected_queries_selected_edges_only_references": {
+        "both_endpoints_have_reference_edge_count": 0,
+        "both_endpoints_have_reference_edge_fraction": 0.0,
+        "common_reference_neighbor_query_count": 0,
+        "common_reference_neighbor_query_fraction": 0.0,
+        "four_distinct_vertices_query_count": 0,
+        "four_distinct_vertices_query_fraction": 0.0,
+        "query_count": 16
+      }
+    },
+    {
+      "all_edges_as_queries_other_edges_as_references": {
+        "both_endpoints_have_reference_edge_count": 80,
+        "both_endpoints_have_reference_edge_fraction": 0.8,
+        "common_reference_neighbor_query_count": 0,
+        "common_reference_neighbor_query_fraction": 0.0,
+        "four_distinct_vertices_query_count": 80,
+        "four_distinct_vertices_query_fraction": 0.8,
+        "query_count": 100
+      },
+      "all_root_keys_topology": {
+        "component_sizes_descending": [
+          81,
+          2,
+          2
+        ],
+        "degree_histogram": {
+          "1": 22,
+          "2": 30,
+          "3": 18,
+          "4": 11,
+          "5": 4
+        },
+        "degree_max": 5,
+        "degree_mean": 2.3529411764705883,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "09491878_4406179803_o": 3,
+          "09552919_4222142873_o": 3,
+          "09932992_10193660434_o": 1,
+          "09938392_10075603284_o": 2,
+          "10273610_2867561643_o": 4,
+          "11665119_9718798941_o": 2,
+          "11772337_6005928979_o": 5,
+          "11984869_4871131843_o": 2,
+          "12598948_3917091308_o": 4,
+          "13103628_8003383048_o": 4,
+          "23702407_4728224411_o": 1,
+          "23721333_5020933386_o": 1,
+          "23778319_3399431445_o": 2,
+          "24233316_6944700088_o": 2,
+          "24449231_3882126092_o": 5,
+          "24543018_4255817801_o": 2,
+          "24893392_5965941089_o": 2,
+          "26118601_7878021902_o": 3,
+          "26424310_9554958453_o": 1,
+          "26872899_8774605072_o": 1,
+          "38203065_13966912134_o": 3,
+          "38282001_1248252532_o": 1,
+          "38563221_11151571323_o": 1,
+          "38668777_6910847202_o": 2,
+          "38694587_10820714163_o": 1,
+          "39011107_5067696969_o": 3,
+          "39062293_8665487142_o": 2,
+          "39470471_8239952420_o": 1,
+          "39482084_2491760334_o": 3,
+          "39863084_3824970896_o": 2,
+          "40314980_9700079070_o": 3,
+          "40601627_4990972162_o": 2,
+          "40789559_6046840301_o": 3,
+          "41071529_8754456844_o": 2,
+          "41356882_8106006560_o": 3,
+          "41458735_8067064688_o": 3,
+          "52533713_3985889024_o": 3,
+          "52729812_7420072674_o": 3,
+          "53356557_5939317819_o": 5,
+          "53471362_4657435792_o": 1,
+          "53801537_9617244539_o": 1,
+          "53849586_8585727848_o": 3,
+          "54047653_4871744560_o": 1,
+          "55131752_3494360425_o": 2,
+          "55339819_5966046893_o": 4,
+          "55536380_13171182884_o": 4,
+          "55563572_5038516088_o": 2,
+          "66724950_4113569852_o": 2,
+          "66962983_4566940153_o": 2,
+          "67431377_18110420_o": 2,
+          "67664985_8512266409_o": 2,
+          "68445107_1800316275_o": 4,
+          "68486528_7250839568_o": 2,
+          "68875767_5470865264_o": 4,
+          "70364995_248102962_o": 1,
+          "81385612_8027121340_o": 1,
+          "81455961_4688119718_o": 2,
+          "81874216_6464475995_o": 2,
+          "81919943_8062512982_o": 2,
+          "82180318_8665866581_o": 2,
+          "82656570_6648747811_o": 3,
+          "82744973_2713232606_o": 4,
+          "83481119_8234117159_o": 1,
+          "84130020_8585018861_o": 2,
+          "84536974_3522858107_o": 2,
+          "95327663_7389319598_o": 2,
+          "95778567_8067087428_o": 3,
+          "96066456_9619889204_o": 4,
+          "96070062_6464470413_o": 1,
+          "96102133_8988647089_o": 2,
+          "96121006_2929145265_o": 1,
+          "96321014_2180687528_o": 2,
+          "96484457_6404298151_o": 1,
+          "96758111_4832521003_o": 3,
+          "96842448_519450642_o": 2,
+          "96918685_4893888704_o": 1,
+          "97177075_4363672786_o": 4,
+          "97400342_4040694720_o": 5,
+          "97781435_5403505100_o": 2,
+          "97803267_5001703316_o": 1,
+          "97952572_3538223849_o": 4,
+          "98032155_13959989264_o": 3,
+          "98632867_8234125577_o": 1,
+          "98669736_5479262314_o": 3,
+          "99015226_7414618182_o": 1
+        },
+        "raw_pair_key_count": 100,
+        "scene_qualified_candidate_node_count": 85,
+        "triangle_count": 0,
+        "unique_undirected_edge_count": 100
+      },
+      "depth_vector_shape_histogram_both_sides": {
+        "(1977,)": 2,
+        "(1997,)": 2,
+        "(2005,)": 2,
+        "(2010,)": 2,
+        "(2012,)": 2,
+        "(2015,)": 2,
+        "(2018,)": 2,
+        "(2025,)": 4,
+        "(2028,)": 2,
+        "(2029,)": 2,
+        "(2030,)": 2,
+        "(2031,)": 2,
+        "(2033,)": 4,
+        "(2034,)": 4,
+        "(2035,)": 6,
+        "(2036,)": 2,
+        "(2037,)": 6,
+        "(2038,)": 10,
+        "(2039,)": 10,
+        "(2040,)": 6,
+        "(2041,)": 12,
+        "(2042,)": 8,
+        "(2043,)": 12,
+        "(2044,)": 10,
+        "(2045,)": 8,
+        "(2046,)": 14,
+        "(2047,)": 26,
+        "(2048,)": 36
+      },
+      "filename": "milan_cathedral_roma_moge.h5",
+      "nonselected_reference_key_count": 84,
+      "scene": "milan_cathedral",
+      "selected_keys_only_topology": {
+        "component_sizes_descending": [
+          5,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "degree_histogram": {
+          "1": 21,
+          "2": 4,
+          "3": 1
+        },
+        "degree_max": 3,
+        "degree_mean": 1.2307692307692308,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "09491878_4406179803_o": 1,
+          "09552919_4222142873_o": 2,
+          "10273610_2867561643_o": 2,
+          "11665119_9718798941_o": 1,
+          "11984869_4871131843_o": 1,
+          "12598948_3917091308_o": 1,
+          "13103628_8003383048_o": 1,
+          "23702407_4728224411_o": 1,
+          "23778319_3399431445_o": 1,
+          "24543018_4255817801_o": 1,
+          "38203065_13966912134_o": 1,
+          "38563221_11151571323_o": 1,
+          "38668777_6910847202_o": 1,
+          "40314980_9700079070_o": 1,
+          "40789559_6046840301_o": 1,
+          "41458735_8067064688_o": 3,
+          "52729812_7420072674_o": 1,
+          "53801537_9617244539_o": 1,
+          "53849586_8585727848_o": 1,
+          "55339819_5966046893_o": 2,
+          "55536380_13171182884_o": 2,
+          "68486528_7250839568_o": 1,
+          "95778567_8067087428_o": 1,
+          "96321014_2180687528_o": 1,
+          "97400342_4040694720_o": 1,
+          "98032155_13959989264_o": 1
+        },
+        "raw_pair_key_count": 16,
+        "scene_qualified_candidate_node_count": 26,
+        "triangle_count": 0,
+        "unique_undirected_edge_count": 16
+      },
+      "selected_queries_all_other_edges_available": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "24543018_4255817801_o",
+              "40314980_9700079070_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "24543018_4255817801_o_40314980_9700079070_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "12598948_3917091308_o",
+              "55339819_5966046893_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "12598948_3917091308_o_55339819_5966046893_o",
+            "reference_neighbor_counts": [
+              3,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "53801537_9617244539_o",
+              "68486528_7250839568_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "53801537_9617244539_o_68486528_7250839568_o",
+            "reference_neighbor_counts": [
+              0,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "23702407_4728224411_o",
+              "98032155_13959989264_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "23702407_4728224411_o_98032155_13959989264_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "23778319_3399431445_o",
+              "55339819_5966046893_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "23778319_3399431445_o_55339819_5966046893_o",
+            "reference_neighbor_counts": [
+              1,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "10273610_2867561643_o",
+              "95778567_8067087428_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "10273610_2867561643_o_95778567_8067087428_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "40789559_6046840301_o",
+              "55536380_13171182884_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "40789559_6046840301_o_55536380_13171182884_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "38563221_11151571323_o",
+              "53849586_8585727848_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "38563221_11151571323_o_53849586_8585727848_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "09491878_4406179803_o",
+              "55536380_13171182884_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "09491878_4406179803_o_55536380_13171182884_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "11665119_9718798941_o",
+              "38203065_13966912134_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "11665119_9718798941_o_38203065_13966912134_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "09552919_4222142873_o",
+              "41458735_8067064688_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "09552919_4222142873_o_41458735_8067064688_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "11984869_4871131843_o",
+              "41458735_8067064688_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "11984869_4871131843_o_41458735_8067064688_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "10273610_2867561643_o",
+              "96321014_2180687528_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "10273610_2867561643_o_96321014_2180687528_o",
+            "reference_neighbor_counts": [
+              3,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "13103628_8003383048_o",
+              "38668777_6910847202_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "13103628_8003383048_o_38668777_6910847202_o",
+            "reference_neighbor_counts": [
+              3,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "09552919_4222142873_o",
+              "52729812_7420072674_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "09552919_4222142873_o_52729812_7420072674_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "41458735_8067064688_o",
+              "97400342_4040694720_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "41458735_8067064688_o_97400342_4040694720_o",
+            "reference_neighbor_counts": [
+              2,
+              4
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 13,
+          "both_endpoints_have_reference_edge_fraction": 0.8125,
+          "common_reference_neighbor_query_count": 0,
+          "common_reference_neighbor_query_fraction": 0.0,
+          "four_distinct_vertices_query_count": 13,
+          "four_distinct_vertices_query_fraction": 0.8125,
+          "query_count": 16
+        }
+      },
+      "selected_queries_all_selected_edges_excluded_from_reference_pool": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "24543018_4255817801_o",
+              "40314980_9700079070_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "24543018_4255817801_o_40314980_9700079070_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "12598948_3917091308_o",
+              "55339819_5966046893_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "12598948_3917091308_o_55339819_5966046893_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "53801537_9617244539_o",
+              "68486528_7250839568_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "53801537_9617244539_o_68486528_7250839568_o",
+            "reference_neighbor_counts": [
+              0,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "23702407_4728224411_o",
+              "98032155_13959989264_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "23702407_4728224411_o_98032155_13959989264_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "23778319_3399431445_o",
+              "55339819_5966046893_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "23778319_3399431445_o_55339819_5966046893_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "10273610_2867561643_o",
+              "95778567_8067087428_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "10273610_2867561643_o_95778567_8067087428_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "40789559_6046840301_o",
+              "55536380_13171182884_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "40789559_6046840301_o_55536380_13171182884_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "38563221_11151571323_o",
+              "53849586_8585727848_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "38563221_11151571323_o_53849586_8585727848_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "09491878_4406179803_o",
+              "55536380_13171182884_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "09491878_4406179803_o_55536380_13171182884_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "11665119_9718798941_o",
+              "38203065_13966912134_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "11665119_9718798941_o_38203065_13966912134_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "09552919_4222142873_o",
+              "41458735_8067064688_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "09552919_4222142873_o_41458735_8067064688_o",
+            "reference_neighbor_counts": [
+              1,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "11984869_4871131843_o",
+              "41458735_8067064688_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "11984869_4871131843_o_41458735_8067064688_o",
+            "reference_neighbor_counts": [
+              1,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "10273610_2867561643_o",
+              "96321014_2180687528_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "10273610_2867561643_o_96321014_2180687528_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "13103628_8003383048_o",
+              "38668777_6910847202_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "13103628_8003383048_o_38668777_6910847202_o",
+            "reference_neighbor_counts": [
+              3,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "09552919_4222142873_o",
+              "52729812_7420072674_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "09552919_4222142873_o_52729812_7420072674_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "41458735_8067064688_o",
+              "97400342_4040694720_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "41458735_8067064688_o_97400342_4040694720_o",
+            "reference_neighbor_counts": [
+              0,
+              4
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 10,
+          "both_endpoints_have_reference_edge_fraction": 0.625,
+          "common_reference_neighbor_query_count": 0,
+          "common_reference_neighbor_query_fraction": 0.0,
+          "four_distinct_vertices_query_count": 10,
+          "four_distinct_vertices_query_fraction": 0.625,
+          "query_count": 16
+        }
+      },
+      "selected_queries_selected_edges_only_references": {
+        "both_endpoints_have_reference_edge_count": 1,
+        "both_endpoints_have_reference_edge_fraction": 0.0625,
+        "common_reference_neighbor_query_count": 0,
+        "common_reference_neighbor_query_fraction": 0.0,
+        "four_distinct_vertices_query_count": 1,
+        "four_distinct_vertices_query_fraction": 0.0625,
+        "query_count": 16
+      }
+    },
+    {
+      "all_edges_as_queries_other_edges_as_references": {
+        "both_endpoints_have_reference_edge_count": 80,
+        "both_endpoints_have_reference_edge_fraction": 0.8,
+        "common_reference_neighbor_query_count": 0,
+        "common_reference_neighbor_query_fraction": 0.0,
+        "four_distinct_vertices_query_count": 80,
+        "four_distinct_vertices_query_fraction": 0.8,
+        "query_count": 100
+      },
+      "all_root_keys_topology": {
+        "component_sizes_descending": [
+          80,
+          4
+        ],
+        "degree_histogram": {
+          "1": 20,
+          "2": 31,
+          "3": 18,
+          "4": 11,
+          "5": 4
+        },
+        "degree_max": 5,
+        "degree_mean": 2.380952380952381,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "06472125_1559910919_o": 1,
+          "10753602_5372457519_o": 1,
+          "10778191_3002196073_o": 1,
+          "11399998_1047042992_o": 2,
+          "11629342_67414785_o": 2,
+          "13134737_12094791465_o": 1,
+          "13355718_562944809_o": 1,
+          "20423959_8012701768_o": 2,
+          "21526113_4379776807_o": 5,
+          "21894637_6535518015_o": 4,
+          "25457322_544048311_o": 3,
+          "25696031_9137970326_o": 2,
+          "26362358_4619718880_o": 1,
+          "27546443_4564127164_o": 4,
+          "28333479_2097887375_o": 4,
+          "34379524_6829411432_o": 2,
+          "34858496_2223749849_o": 3,
+          "34936003_3973143738_o": 2,
+          "40051122_331460052_o": 1,
+          "40103707_6393354149_o": 2,
+          "40310572_1497416009_o": 2,
+          "42578175_457568876_o": 1,
+          "48695914_5981737011_o": 3,
+          "49664120_2786886525_o": 2,
+          "49685244_9896698815_o": 2,
+          "50095073_6418366613_o": 2,
+          "50555888_4522439720_o": 1,
+          "50577039_3490122371_o": 2,
+          "53139401_542430193_o": 3,
+          "53641146_3153048943_o": 4,
+          "53685662_3717501640_o": 4,
+          "54347804_2292452655_o": 3,
+          "54466114_7678685688_o": 2,
+          "62920559_282422375_o": 2,
+          "63287152_2719505336_o": 2,
+          "63711609_185195406_o": 4,
+          "63909348_185195410_o": 3,
+          "64221081_3554468955_o": 3,
+          "64323676_6818875446_o": 4,
+          "64602886_907577570_o": 2,
+          "64693381_4135965169_o": 2,
+          "64706254_8497647563_o": 4,
+          "64976089_4182584367_o": 2,
+          "67537706_7619283504_o": 5,
+          "68127387_81603260_o": 2,
+          "68153082_7213226096_o": 2,
+          "68575347_2223758745_o": 1,
+          "68778752_5850750270_o": 2,
+          "68789674_5090510748_o": 3,
+          "69264849_2284973187_o": 5,
+          "69733012_3474333183_o": 1,
+          "70340840_5145139104_o": 3,
+          "77600296_4997051701_o": 2,
+          "77972670_214814210_o": 3,
+          "78704325_620929655_o": 1,
+          "79122962_6371534875_o": 2,
+          "81920577_295842164_o": 2,
+          "82886906_4523025383_o": 1,
+          "83680294_218384449_o": 2,
+          "83811173_6286325013_o": 4,
+          "84090454_6168919500_o": 3,
+          "84314478_393653425_o": 4,
+          "84350044_12865220284_o": 1,
+          "91509894_45017296_o": 1,
+          "91642076_6950949551_o": 3,
+          "91746665_3049412939_o": 3,
+          "93158445_4059304687_o": 2,
+          "93215045_3631031195_o": 2,
+          "93246493_9227206143_o": 2,
+          "93267550_5089915841_o": 3,
+          "96007950_5659755459_o": 3,
+          "96713979_9585072075_o": 1,
+          "96907696_4120826724_o": 3,
+          "97250286_522198503_o": 1,
+          "97370029_2231232779_o": 1,
+          "97540863_4131767941_o": 2,
+          "98217564_268109025_o": 2,
+          "98220427_4936590967_o": 3,
+          "98262701_6263115408_o": 1,
+          "98527924_144697798_o": 1,
+          "98653115_457567968_o": 5,
+          "98656451_3998695577_o": 4,
+          "99606035_984570901_o": 3,
+          "99759589_12014053845_o": 2
+        },
+        "raw_pair_key_count": 100,
+        "scene_qualified_candidate_node_count": 84,
+        "triangle_count": 0,
+        "unique_undirected_edge_count": 100
+      },
+      "depth_vector_shape_histogram_both_sides": {
+        "(2002,)": 2,
+        "(2004,)": 2,
+        "(2006,)": 2,
+        "(2008,)": 2,
+        "(2012,)": 2,
+        "(2013,)": 2,
+        "(2014,)": 2,
+        "(2016,)": 2,
+        "(2019,)": 4,
+        "(2021,)": 4,
+        "(2023,)": 4,
+        "(2025,)": 2,
+        "(2031,)": 2,
+        "(2032,)": 8,
+        "(2033,)": 2,
+        "(2034,)": 2,
+        "(2035,)": 2,
+        "(2036,)": 4,
+        "(2037,)": 2,
+        "(2038,)": 4,
+        "(2039,)": 6,
+        "(2040,)": 6,
+        "(2041,)": 8,
+        "(2042,)": 10,
+        "(2043,)": 8,
+        "(2044,)": 8,
+        "(2045,)": 6,
+        "(2046,)": 18,
+        "(2047,)": 8,
+        "(2048,)": 66
+      },
+      "filename": "sagrada_familia_roma_moge.h5",
+      "nonselected_reference_key_count": 84,
+      "scene": "sagrada_familia",
+      "selected_keys_only_topology": {
+        "component_sizes_descending": [
+          7,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "degree_histogram": {
+          "1": 20,
+          "2": 3,
+          "3": 2
+        },
+        "degree_max": 3,
+        "degree_mean": 1.28,
+        "degree_min": 1,
+        "duplicate_undirected_edge_count": 0,
+        "node_degree": {
+          "13134737_12094791465_o": 1,
+          "21894637_6535518015_o": 2,
+          "25457322_544048311_o": 1,
+          "25696031_9137970326_o": 1,
+          "26362358_4619718880_o": 1,
+          "27546443_4564127164_o": 1,
+          "34379524_6829411432_o": 1,
+          "42578175_457568876_o": 1,
+          "53685662_3717501640_o": 1,
+          "54347804_2292452655_o": 1,
+          "62920559_282422375_o": 1,
+          "63711609_185195406_o": 1,
+          "63909348_185195410_o": 2,
+          "64323676_6818875446_o": 1,
+          "64706254_8497647563_o": 2,
+          "68153082_7213226096_o": 1,
+          "69264849_2284973187_o": 3,
+          "77972670_214814210_o": 1,
+          "83680294_218384449_o": 1,
+          "84090454_6168919500_o": 3,
+          "93215045_3631031195_o": 1,
+          "96907696_4120826724_o": 1,
+          "98217564_268109025_o": 1,
+          "98527924_144697798_o": 1,
+          "98653115_457567968_o": 1
+        },
+        "raw_pair_key_count": 16,
+        "scene_qualified_candidate_node_count": 25,
+        "triangle_count": 0,
+        "unique_undirected_edge_count": 16
+      },
+      "selected_queries_all_other_edges_available": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "25457322_544048311_o",
+              "63711609_185195406_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "25457322_544048311_o_63711609_185195406_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "34379524_6829411432_o",
+              "68153082_7213226096_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "34379524_6829411432_o_68153082_7213226096_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "27546443_4564127164_o",
+              "84090454_6168919500_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "27546443_4564127164_o_84090454_6168919500_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "63909348_185195410_o",
+              "98653115_457567968_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "63909348_185195410_o_98653115_457567968_o",
+            "reference_neighbor_counts": [
+              2,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "26362358_4619718880_o",
+              "62920559_282422375_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "26362358_4619718880_o_62920559_282422375_o",
+            "reference_neighbor_counts": [
+              0,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "42578175_457568876_o",
+              "96907696_4120826724_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "42578175_457568876_o_96907696_4120826724_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "21894637_6535518015_o",
+              "93215045_3631031195_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "21894637_6535518015_o_93215045_3631031195_o",
+            "reference_neighbor_counts": [
+              3,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "13134737_12094791465_o",
+              "69264849_2284973187_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "13134737_12094791465_o_69264849_2284973187_o",
+            "reference_neighbor_counts": [
+              0,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "64706254_8497647563_o",
+              "83680294_218384449_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "64706254_8497647563_o_83680294_218384449_o",
+            "reference_neighbor_counts": [
+              3,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "25696031_9137970326_o",
+              "84090454_6168919500_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "25696031_9137970326_o_84090454_6168919500_o",
+            "reference_neighbor_counts": [
+              1,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "53685662_3717501640_o",
+              "77972670_214814210_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "53685662_3717501640_o_77972670_214814210_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "54347804_2292452655_o",
+              "98217564_268109025_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "54347804_2292452655_o_98217564_268109025_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "63909348_185195410_o",
+              "98527924_144697798_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "63909348_185195410_o_98527924_144697798_o",
+            "reference_neighbor_counts": [
+              2,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "69264849_2284973187_o",
+              "84090454_6168919500_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "69264849_2284973187_o_84090454_6168919500_o",
+            "reference_neighbor_counts": [
+              4,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "64706254_8497647563_o",
+              "69264849_2284973187_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "64706254_8497647563_o_69264849_2284973187_o",
+            "reference_neighbor_counts": [
+              3,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "21894637_6535518015_o",
+              "64323676_6818875446_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "21894637_6535518015_o_64323676_6818875446_o",
+            "reference_neighbor_counts": [
+              3,
+              3
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 12,
+          "both_endpoints_have_reference_edge_fraction": 0.75,
+          "common_reference_neighbor_query_count": 0,
+          "common_reference_neighbor_query_fraction": 0.0,
+          "four_distinct_vertices_query_count": 12,
+          "four_distinct_vertices_query_fraction": 0.75,
+          "query_count": 16
+        }
+      },
+      "selected_queries_all_selected_edges_excluded_from_reference_pool": {
+        "queries": [
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "25457322_544048311_o",
+              "63711609_185195406_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "25457322_544048311_o_63711609_185195406_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "34379524_6829411432_o",
+              "68153082_7213226096_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "34379524_6829411432_o_68153082_7213226096_o",
+            "reference_neighbor_counts": [
+              1,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "27546443_4564127164_o",
+              "84090454_6168919500_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "27546443_4564127164_o_84090454_6168919500_o",
+            "reference_neighbor_counts": [
+              3,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "63909348_185195410_o",
+              "98653115_457567968_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "63909348_185195410_o_98653115_457567968_o",
+            "reference_neighbor_counts": [
+              1,
+              4
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "26362358_4619718880_o",
+              "62920559_282422375_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "26362358_4619718880_o_62920559_282422375_o",
+            "reference_neighbor_counts": [
+              0,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "42578175_457568876_o",
+              "96907696_4120826724_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "42578175_457568876_o_96907696_4120826724_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "21894637_6535518015_o",
+              "93215045_3631031195_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "21894637_6535518015_o_93215045_3631031195_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "13134737_12094791465_o",
+              "69264849_2284973187_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "13134737_12094791465_o_69264849_2284973187_o",
+            "reference_neighbor_counts": [
+              0,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "64706254_8497647563_o",
+              "83680294_218384449_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "64706254_8497647563_o_83680294_218384449_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "25696031_9137970326_o",
+              "84090454_6168919500_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "25696031_9137970326_o_84090454_6168919500_o",
+            "reference_neighbor_counts": [
+              1,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "53685662_3717501640_o",
+              "77972670_214814210_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "53685662_3717501640_o_77972670_214814210_o",
+            "reference_neighbor_counts": [
+              3,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "54347804_2292452655_o",
+              "98217564_268109025_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "54347804_2292452655_o_98217564_268109025_o",
+            "reference_neighbor_counts": [
+              2,
+              1
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "63909348_185195410_o",
+              "98527924_144697798_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "63909348_185195410_o_98527924_144697798_o",
+            "reference_neighbor_counts": [
+              1,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": false,
+            "candidate_tokens": [
+              "69264849_2284973187_o",
+              "84090454_6168919500_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": false,
+            "key": "69264849_2284973187_o_84090454_6168919500_o",
+            "reference_neighbor_counts": [
+              2,
+              0
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "64706254_8497647563_o",
+              "69264849_2284973187_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "64706254_8497647563_o_69264849_2284973187_o",
+            "reference_neighbor_counts": [
+              2,
+              2
+            ]
+          },
+          {
+            "both_endpoints_have_reference_edge": true,
+            "candidate_tokens": [
+              "21894637_6535518015_o",
+              "64323676_6818875446_o"
+            ],
+            "common_reference_neighbor_count": 0,
+            "four_distinct_vertices_possible": true,
+            "key": "21894637_6535518015_o_64323676_6818875446_o",
+            "reference_neighbor_counts": [
+              2,
+              3
+            ]
+          }
+        ],
+        "summary": {
+          "both_endpoints_have_reference_edge_count": 9,
+          "both_endpoints_have_reference_edge_fraction": 0.5625,
+          "common_reference_neighbor_query_count": 0,
+          "common_reference_neighbor_query_fraction": 0.0,
+          "four_distinct_vertices_query_count": 9,
+          "four_distinct_vertices_query_fraction": 0.5625,
+          "query_count": 16
+        }
+      },
+      "selected_queries_selected_edges_only_references": {
+        "both_endpoints_have_reference_edge_count": 2,
+        "both_endpoints_have_reference_edge_fraction": 0.125,
+        "common_reference_neighbor_query_count": 0,
+        "common_reference_neighbor_query_fraction": 0.0,
+        "four_distinct_vertices_query_count": 2,
+        "four_distinct_vertices_query_fraction": 0.125,
+        "query_count": 16
+      }
+    }
+  ],
+  "schema": "evr0021.metadata-graph.v1",
+  "scope": "Scene-qualified undirected simple token graph; shared strings across scenes are not merged.",
+  "script_sha256": "307d8256484772e0e071ab7e90bdea37602ae38df984fd3da2e6505d6835f21b",
+  "token_parser": "^([0-9]+_[0-9]+_o)_([0-9]+_[0-9]+_o)$"
+}

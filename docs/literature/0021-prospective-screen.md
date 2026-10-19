@@ -1,0 +1,53 @@
+# 0021 prospective source screen — no experiment admitted
+
+2026-10-19. Public primary literature only. No 0020 results, scientific arrays, images, models, or labels were inspected; no implementation or experiment was run. This note is a prospective, untracked research screen, not a novelty or performance claim.
+
+## What the strongest recent work already covers
+
+| Primary source and inspected depth | Consequence for a proposed contribution |
+|---|---|
+| [Robust Local Optimization Done Right](https://arxiv.org/html/2610.05743v1), October 2026 preprint v1; §§2–3, §3.5, objective/half-quadratic discussion inspected | Scale selection, IRLS versus half-quadratic optimization, continuation, and optimization-basin effects already have direct treatment. A new loss or improved LO schedule must be a strong control, not automatically the new mechanism. Its scope does not establish a model of image-attached depth deformation. |
+| [RANSAC Scoring Done Right](https://arxiv.org/html/2606.27385v1), June 2026 preprint v1; §§2–3 and validation protocol inspected | Profiling inlier membership while marginalizing residual scale is established. Replacing MSAC with a marginal likelihood is not an uncovered idea. Empirical-Bayes versions use validation annotations; the stated Jeffreys-limit version must be distinguished from those versions. |
+| [Scalix](https://arxiv.org/html/2608.17553v1), August 2026 preprint v1; §§IV–V inspected | It models per-image scale and independent pixel uncertainty, including the shared-scale covariance term \(\Sigma_s dd^T\), and optimizes scale with multi-view geometry. Generic correlated uncertainty, scale states, and Schur marginalization are covered. Its uncertainty heads require information absent from an opaque cached depth vector. |
+| [MegaSaM](https://arxiv.org/html/2412.04463v1), CVPR 2025, inspected arXiv v1 §3.2 | A particularly close prior to the earlier observability idea: disparity-Hessian information controls depth regularization, motivated by monocular depth harming well-constrained geometry. “Use depth only when geometry is weak” is insufficient differentiation. |
+| [MADPose](https://arxiv.org/html/2501.05446v3#S4.SS3), CVPR 2025, §§4.3–4.4 inspected | Affine depth calibration, hybrid depth/geometric hypotheses, three residual/inlier types, and joint refinement are known. A new method must beat this combination with a strong LO configuration. |
+| [RePoseD](https://arxiv.org/html/2501.07742v3), ICCV 2025, main formulation and supplementary §§6.2, 7.1, 7.3 inspected | Affine-invariant **inverse-depth** is explicitly covered by `3PT_suv(inverse)`. The reported PhotoTourism/DA-v2 comparison found no accuracy gain and substantially higher cost. Merely switching depth representation is not a new opportunity. |
+| [MP-SfM](https://arxiv.org/html/2504.20040v1), CVPR 2025; §§3.1–3.4 and component ablations inspected | Multi-view pose/structure/depth refinement, normal integration, uncertainty propagation, and depth consistency checks already form a strong system. Sharing depth across edges alone is not a contribution. This is the closest system-level control for the conditional proposal below. |
+| [AnchorD](https://arxiv.org/html/2605.02667v1), May 2026 preprint v1; §§IV-B/C inspected | Patch-wise scale/shift fields and factor-graph depth correction already exist, with external metric anchors. A spatial calibration field is not itself new; replacing real anchors with a pose fitted to the same query can create circular evidence. |
+
+The 2026 items are identified by the inspected arXiv versions; this screen does not infer acceptance or code availability. These sources were read at the named sections, not exhaustively reproduced or independently benchmarked.
+
+## One conditional mechanism worth a feasibility screen
+
+**Freeze an image-attached depth deformation using independent motion edges, then transfer it into a different two-view pose problem.** The hypothesis is that part of a depth map's spatial error repeats whenever the *same image and same depth realization* are reused. Diverse calibration edges could separate that error from the particular query pose's error. This adds observations; it does not obtain new information by fitting more variables to the same pair.
+
+For a query edge \((A,B)\), calibration may use edges \((A,C)\) and \((B,D)\), with the query edge excluded throughout calibration. A three-view version can use \(C=D\), but its dependence must be reported. Depth-only and pairwise-pose inputs are sufficient; no learned uncertainty, RGB, normals, or GT is presumed. A deliberately small initial family is
+
+\[
+\tilde d_j(u,v)=(a_{j0}+a_{j1}u+a_{j2}v)d_j(u,v)
+                 +b_{j0}+b_{j1}u+b_{j2}v.
+\]
+
+Here coordinates use a fixed camera/image convention. Fit six coefficients from reference-edge geometric depths with an explicit positive-depth/positive-slope domain. Freeze the spatial shape before solving the query. Different reference baselines provide different arbitrary scales, so transfer only the shape modulo a positive global affine gauge; let the existing query solver retain its global scale/shift nuisance. Do not transfer a purported metric scale. This family is a proposed engineering restriction, not a published default or frozen algorithm.
+
+The potential increment is **predictive calibration from independent geometry, with explicit abstention when deformation and reference pose are indistinguishable**. Ordinary joint BA may fit the same observations used to evaluate its calibration. The proposed mechanism must demonstrate that preventing this feedback, rather than just extra views or additional parameters, improves query pose. Its math uses standard regression and nuisance elimination; neither is claimed new. Existing MP-SfM, Scalix, and spatial depth alignment could subsume the practical benefit. A successful combination is still potentially useful, but the burden is an identifiable effect and substantial results over these controls.
+
+### Identifiability and decisive falsification
+
+Linearized reference residuals have the form \(r=J_p\delta p+J_b\delta b\). Any nonzero deformation with \(J_b\delta b\in\mathrm{col}(J_p)\) can be absorbed by reference-pose error. A single pair, pure rotation, nearly planar/constant-depth support, insufficient parallax, or one narrow image region may therefore supply no usable deformation constraint. A low residual or a large number of correlated matches does not repair this rank deficiency. Uncertainty must include reference-pose uncertainty; pretending triangulated depths are independent exact labels is invalid.
+
+Before scientific development, manufacture fixed scenes with (i) a spatial deformation shared across edges, (ii) independent deformation for every edge, (iii) coherent reference-pose/match bias, (iv) no deformation, and (v) weak/degenerate geometry. The proposed advantage should occur in (i), disappear in (ii), and not manufacture confident improvement in (iii–v). Swap reference-image identities while preserving calibration residual distributions as a negative control. If an arbitrary reference edge works equally well, the image-attached explanation is falsified. Synthetic success only verifies the proposed mechanism under its assumptions; it is not evidence those assumptions hold in cached data.
+
+### Minimum real-data plan, conditional on prospective qualification
+
+First inspect **metadata only**: canonical repeated-image IDs, pair graph, intrinsics, coordinate convention, and whether repeated depth samples come from the same per-image prediction. Pairwise-generated depth or undocumented resizing breaks the shared-field premise. Do not infer image identity from an unverified basename or scene label. If these bindings or sufficiently diverse reference edges do not exist, stop this direction; do not silently create fresh depth/model inputs.
+
+If bindings exist, allocate a small development graph by deterministic image IDs before any outcomes. All edges sharing images stay in the same statistical unit; this is not a new independent held-out domain. Freeze reference/query partition, initialization, support, and runtime budgets. Calibration uses only reference edges, and query poses are sealed before GT evaluation. Report all queries, abstentions, and full charged reference cost. Existing cached correspondences, depths, and cameras suffice; acquisition bytes can remain zero. A preliminary CPU allowance could be 30 minutes/8 GiB for the entire fixed development graph, not a performance forecast.
+
+Required controls on the **same reference observations and query inputs**: strongest fixed RePoseD/MADPose settings; geometry-only multi-view refinement; global-affine-only transfer; spatial field fitted on the query itself; joint multi-edge field/pose refinement; equal-budget spatial downweighting/subsampling; and a source-faithful depth-regularized multi-view formulation representing MP-SfM's relevant mechanism without silently borrowing its normals. If full MP-SfM/Scalix inputs or implementation are unavailable, state that limitation rather than claim state-of-the-art superiority. Apply the same strong robust LO and score to each feasible control. A gate must require meaningful aggregate pose gain across multiple independent scenes and no major high-error-tail loss; regression residual reduction is never an admission metric.
+
+## A second idea screened out for now
+
+A fractional-linear response \(f(d)=(ad+b)/(cd+e)\) would include affine depth and inverse-depth-affine calibration. Four scalar depths share a cross-ratio under this mapping, giving a possible calibration-invariant constraint. This is elementary projective geometry, **not a novelty claim**, and RePoseD already covers the important inverse-depth special case. Near-equal depths make cross-ratios unstable; extra nuisance can absorb pose error; a global response cannot repair arbitrary spatial distortion. No public evidence inspected here establishes that this response family explains the current opaque cached depth errors. Therefore do not build a solver or claim a new constraint yet. It would first need a separate calibration-family audit with held-out correspondences, an inverse-depth-affine baseline, uncertainty-aware triangulation, and a negative control showing that wrong poses do not fit equally well. A missing search hit does not establish novelty.
+
+**Recommendation:** retain only the independent-edge transfer hypothesis for a metadata/identifiability screen. No new scientific run is admitted by this note. If repeated-image bindings or identifiability fail, pivot inputs/problem rather than add another same-pair scoring function.

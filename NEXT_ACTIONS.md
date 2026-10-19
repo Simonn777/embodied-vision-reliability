@@ -1,5 +1,31 @@
 # Next actions
 
+## Active continuation: 0021 qualification complete, 2026-10-19
+
+The [metadata screen](results/0021-metadata-screen/README.md) cannot establish
+that repeated image tokens share one depth prediction. The old cache therefore
+does not admit an independent-edge transfer experiment. No new real-data fit ran.
+[Fixed manufactured checks](results/0021-identifiability/README.md) passed all
+nine tests: a generic local full-rank witness and an exact planar ambiguity are
+both verified. This is a mathematical qualification, not an accuracy result.
+Reference observability and per-edge baseline scales must be explicit; generic
+full rank does not prove stable or beneficial real-data calibration.
+
+The [fresh-source screen](results/0021-metadata-screen/fresh-source-screen.md)
+finds a public, bounded ETH3D route and small-model frontend feasible by download
+size. No images, intrinsics, poses, or model weights were acquired, and no new
+scientific cohort was allocated. Next qualify a traceable per-image depth and
+matching frontend on artificial input, then separately freeze a scientific test
+against same-observation multiview and same-field joint-optimization controls.
+No scientific efficacy claim is admitted by source or runtime qualification.
+
+[0020 publication](docs/0020-publication-verification.md) is verified through
+merged PR49 and exact main CI. Its fixed selector remains closed after a
+2.964605-point AUC5 loss to the strongest control. The only recent measured
+positive change, 0019, is an existing-method robust-loss improvement. The goal
+remains active; the unchanged held-out, cost, novelty and replication gates must
+be met before a manuscript. Earlier sections preserve the historical record.
+
 ## Active continuation: 0020 fixed selector closed, 2026-10-19
 
 [0020 results](results/0020-spatial-depth-transfer/README.md) fail the frozen
