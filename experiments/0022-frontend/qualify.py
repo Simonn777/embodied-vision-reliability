@@ -14,6 +14,7 @@ import json
 import math
 import os
 from pathlib import Path
+import struct
 import sys
 import time
 import warnings
@@ -288,13 +289,40 @@ def rename_lightglue(state, layers):
     return out
 
 
+def remove_unused_lightglue_entries(model, state, unexpected, torch):
+    """Exactly the nine legacy scalar entries unused by the pinned author code.
+
+    The official pinned constructor loads this same release with strict=False.
+    MatchAssignment has no r member or r read; active learned weights must still
+    all match strictly. This is not a general unexpected-key allowance.
+    """
+    legacy = {"log_assignment.%d.r" % i for i in range(9)}
+    require(set(unexpected) == legacy and model.conf.n_layers == 9
+            and len(model.log_assignment) == 9
+            and all(not hasattr(layer, "r") for layer in model.log_assignment),
+            "unexpected_lightglue_legacy_keys")
+    ignored = {}
+    for key in sorted(legacy):
+        value = state[key]
+        require(tuple(value.shape) == (1,) and value.dtype == torch.float32
+                and value.item() == 1.0, "lightglue_legacy_constant")
+        ignored[key] = {"shape": [1], "dtype": "torch.float32",
+                        "verified_constant_one": True,
+                        "float32_little_endian_sha256": hashlib.sha256(struct.pack("<f", value.item())).hexdigest(),
+                        "reason": "unused by pinned MatchAssignment; official loader ignores"}
+    return {k: v for k, v in state.items() if k not in legacy}, ignored
+
+
 def strict_state(model, state, torch, allow_confidence=False):
     require(isinstance(state, dict) and all(isinstance(k, str) and isinstance(v, torch.Tensor)
                                           for k, v in state.items()), "invalid_state_dict")
     expected = model.state_dict()
     missing, unexpected = sorted(set(expected) - set(state)), sorted(set(state) - set(expected))
     allowed = {"confidence_thresholds"} if allow_confidence else set()
-    if unexpected or not set(missing) <= allowed:
+    ignored = {}
+    if allow_confidence and unexpected:
+        state, ignored = remove_unused_lightglue_entries(model, state, unexpected, torch)
+    if (unexpected and not ignored) or not set(missing) <= allowed:
         raise QualificationError("state_key_mismatch", {"missing_keys": missing,
                                  "unexpected_keys": unexpected, "allowed_missing_buffers": sorted(allowed)})
     learned = dict(model.named_parameters())
@@ -314,6 +342,7 @@ def strict_state(model, state, torch, allow_confidence=False):
     require(all(torch.equal(loaded[k].cpu(), v.to(dtype=loaded[k].dtype, device="cpu"))
                 for k, v in enriched.items()), "loaded_weight_value_mismatch")
     return {"missing_keys": missing, "unexpected_keys": unexpected,
+            "ignored_unused_checkpoint_entries": ignored,
             "allowed_missing_buffers": sorted(allowed), "learned_keys": sorted(learned),
             "state_shapes": {k: list(v.shape) for k, v in loaded.items()},
             "strict_after_deterministic_buffer_completion": True}

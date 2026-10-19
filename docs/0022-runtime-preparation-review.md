@@ -122,3 +122,26 @@ No remaining source-level blocker to one fresh installation02 from the same
 assets and one qualification02 after the third exact freeze passes CI. The
 same-commit installation chain remains enforced. This authorizes no scientific
 payload, model-quality claim, changed fixture or acceptance threshold.
+
+
+## Attempt03 legacy-checkpoint compatibility review
+
+Independent source review confirms the pinned MatchAssignment owns only
+matchability/final_proj and never defines or reads r; its official release loader
+uses strict=False. Attempt02's stored exception names exactly nine .r entries,
+with no missing active weights. Imports, MoGe and SuperPoint strict checks passed;
+no fixture or inference arrays exist. The single optional CPU probe is recorded
+separately and ordinary violation count is zero.
+
+The narrow conversion is independently reviewed: exactly log_assignment.{0..8}.r,
+nine model layers and no r attribute, float32 shape[1] and exact constant one,
+and a canonical little-endian hash per entry. It copies the state mapping,
+removes only these unused entries, then retains strict active-key/shape/value
+checks. Other extra keys, partial legacy sets, nonfinite/changed constants or
+missing active weights remain fatal. Model configuration and inputs are unchanged.
+Reviewed qualifier SHA256 `d41711d25107c06862d78750dcd973a6429a5332eaefd64705662ae9bdb97cbb`;
+test SHA256 `cbc89ab722af7ffba44b202fcce2c1adbc1c98256fbb05a81029cb209d134d84`.
+Receipt04 binds the 13 passing artificial tests (exit0,0.273327417s). The reviewer
+checked the source/receipt/log bindings without an unnecessary duplicate rerun.
+No source-level blocker remains to fresh installation03/qualification03 after
+the next exact freeze passes CI. Earlier failed attempts remain unchanged.

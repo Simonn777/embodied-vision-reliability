@@ -334,6 +334,36 @@ print(json.dumps({'denied':len(attempts),'compatibility':probes}))
         self.assertEqual(outcome.returncode, 0, outcome.stderr)
         self.assertEqual(json.loads(outcome.stdout)["denied"], 6)
 
+    def test_exact_unused_legacy_keys_only_and_no_active_weight_removal(self):
+        class Tensor:
+            shape = (1,)
+            dtype = "float32"
+            def __init__(self, value=1.): self.value = value
+            def item(self): return self.value
+        backend = types.SimpleNamespace(float32="float32")
+        model = types.SimpleNamespace(conf=types.SimpleNamespace(n_layers=9),
+                                      log_assignment=[types.SimpleNamespace() for _ in range(9)])
+        keys = ["log_assignment.%d.r" % i for i in range(9)]
+        active = object()
+        state = dict({k: Tensor() for k in keys}, active_weight=active)
+        clean, ignored = q.remove_unused_lightglue_entries(model, state, keys, backend)
+        self.assertEqual(clean, {"active_weight": active})
+        self.assertEqual(len(ignored), 9)
+        self.assertEqual(len(state), 10)  # input checkpoint mapping remains intact
+        for altered in (keys[:-1], keys + ["other"], ["active_weight"]):
+            with self.assertRaisesRegex(q.QualificationError, "unexpected_lightglue_legacy_keys"):
+                q.remove_unused_lightglue_entries(model, state, altered, backend)
+        for bad in (2., float("nan"), float("inf")):
+            changed = dict(state); changed[keys[0]] = Tensor(bad)
+            with self.assertRaisesRegex(q.QualificationError, "lightglue_legacy_constant"):
+                q.remove_unused_lightglue_entries(model, changed, keys, backend)
+        changed = dict(state); changed[keys[0]] = Tensor(); changed[keys[0]].shape = (2,)
+        with self.assertRaisesRegex(q.QualificationError, "lightglue_legacy_constant"):
+            q.remove_unused_lightglue_entries(model, changed, keys, backend)
+        model.log_assignment[0].r = object()
+        with self.assertRaisesRegex(q.QualificationError, "unexpected_lightglue_legacy_keys"):
+            q.remove_unused_lightglue_entries(model, state, keys, backend)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -1,0 +1,12 @@
+$PRIVATE/0022-frontend-preparation/installation-02/runtime/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 557, in <module>
+    main()
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 552, in main
+    result = qualify(args)
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 451, in qualify
+    record["loads"]["lightglue"] = strict_state(lg, state, torch, allow_confidence=True); del state
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 298, in strict_state
+    raise QualificationError("state_key_mismatch", {"missing_keys": missing,
+__main__.QualificationError: state_key_mismatch

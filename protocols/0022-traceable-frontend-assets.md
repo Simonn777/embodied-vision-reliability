@@ -121,3 +121,20 @@ verified NumPy optional probe on macOS without launching a subprocess, recording
 it separately as a compatibility probe. All other process/network events remain
 denied and recorded as violations. This does not authorize arbitrary subprocess
 execution or any scientific payload. Keep the shared NumPy package unchanged.
+
+## Technical attempt03: exact unused LightGlue release entries
+
+Attempt02 at `6ec0980bc9c53ad70deb70667ef85d3d1c7cc27f` passed imports and
+strict MoGe/SuperPoint loading, then failed before inference on exactly nine
+unused release-checkpoint entries `log_assignment.{0..8}.r`. The pinned author
+MatchAssignment never defines/reads these members and its loader ignores them
+with strict=False. The retained local weights-only inspection verifies each is
+float32 shape[1], finite and exactly one. No scientific input or inference ran.
+
+After review and exact CI, attempt03 may freshly install the same assets and
+repeat the identical artificial qualification. Require that exact complete
+nine-key set, nine model layers with no r member, and the inspected dtype/shape/
+value; record canonical tensor hashes, remove only those entries, then strictly
+load and verify every active state value. All other unexpected/missing active
+keys remain fatal. This is an explicit compatibility conversion, not weight
+relaxation or a changed model. Keep both earlier attempts unchanged.

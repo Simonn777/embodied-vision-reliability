@@ -1,5 +1,15 @@
 # Current state
 
+## Active continuation: 0022 legacy checkpoint compatibility, 2026-10-19
+
+[Attempt02](results/0022-preparation/runtime-attempt-02/README.md) passed imports
+and complete MoGe/SuperPoint weight checks, but failed before inference on nine
+unused LightGlue release entries. The pinned official loader ignores these
+entries; the next narrow conversion checks their exact names, scalar constants
+and hashes before strict active-weight loading. Original attempts01/02 remain
+retained. Exact source review and CI precede attempt03 with unchanged inputs.
+No scientific images or poses have been read, and no novel gain is established.
+
 ## Active continuation: 0022 import repair, 2026-10-19
 
 [Runtime attempt 01](results/0022-preparation/runtime-attempt-01/README.md)
