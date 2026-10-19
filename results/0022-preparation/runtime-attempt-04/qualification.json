@@ -1,0 +1,3410 @@
+{
+  "bindings": {
+    "checkpoint_sha256": {
+      "moge2-small-model.pt": "79a16621928c2bf0ed04659218c55c01075e950507f40bb3332fb4c873d3e1dc",
+      "superpoint_lightglue.pth": "6ff7040d0a497fc6639337946d7538dae07428c18f77a067a0b5a960e7cc551a",
+      "superpoint_v1.pth": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+    },
+    "dependency_metadata_sha256": "e7a0f21d36e5e10131ef3afbb721c7e50bed6320b658cd0748f249edbdc73a40",
+    "install_receipt_sha256": "3c1b1366f5d24371a1f9d8cbff70706b094a3f0970b0eb8b94edd176f7ced18d",
+    "installation_supervision_log_sha256": {
+      "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "installation_supervision_sha256": "d9212b53d13d64051ba7878052a5bf73bf376dcae421d92159841a28d5f96a06",
+    "protocol_sha256": "99e94b075e5e7ffec9e06595ff1f0e3777bca6ad033cd97da327d790ef10ead8",
+    "source_acquisition_ledger_sha256": "31ae5f1a27a2ed3b03705f922c2ed6cfff60b680eceb25950d27a36ea8dc2023",
+    "source_manifest_canonical_sha256": "247074c2725ff43f1205585ecb0e40848f733f20ba3db9ee0ca2cf72d35b153c",
+    "source_manifest_sha256": "30d4474b3372c8cea8aed86f67620425146303c0fae52b652b37062936691944",
+    "source_sha256": "3f4fb5f38641c137b27a273fdffb284b65b0d024d94ce29986310b6091e07716",
+    "wheel_manifest_canonical_sha256": "2793d1ae31b41dfc8392d801122b8c4f654df610cd1e4256e70c70e5c6b60f29",
+    "wheel_manifest_sha256": "fc8bea8344e061857dbf025f80915f8d757a18a2f960a92d490349cbb12d0f14"
+  },
+  "compatibility_probes": [
+    {
+      "caller": "numpy.testing._private.utils.check_support_sve",
+      "command": [
+        "lscpu"
+      ],
+      "event": "subprocess.Popen",
+      "exception": "FileNotFoundError",
+      "outcome": "suppressed_optional_probe",
+      "reason": "macOS optional SVE probe treated as unavailable; no process executed"
+    }
+  ],
+  "depth_outputs": [],
+  "eligible": false,
+  "error": "NameError",
+  "execution_configuration": {
+    "moge_native_sdpa_enabled": true,
+    "opencv_parallelism_disabled": true,
+    "opencv_threads": 1,
+    "torch_interop_threads": 1,
+    "torch_intraop_threads": 4
+  },
+  "expected_commit": "fa4a335b9eb1da7056ee20a07c50d181a35c7b74",
+  "failed_stage": "moge_image0",
+  "feature_outputs": [],
+  "fixture": {
+    "dtype": "float32",
+    "formula": "0.55*RGB_gradient + 0.35*default_rng(0).random + 0.05; overwrite four squares",
+    "second_image": "right shift 12 pixels, zero left edge",
+    "seed": 0,
+    "shape_hwc": [
+      384,
+      512,
+      3
+    ],
+    "squares_y_x_side_rgb": [
+      [
+        36,
+        46,
+        42,
+        [
+          0.95,
+          0.1,
+          0.2
+        ]
+      ],
+      [
+        118,
+        207,
+        64,
+        [
+          0.1,
+          0.9,
+          0.3
+        ]
+      ],
+      [
+        265,
+        352,
+        70,
+        [
+          0.2,
+          0.25,
+          0.95
+        ]
+      ],
+      [
+        75,
+        395,
+        35,
+        [
+          0.92,
+          0.92,
+          0.2
+        ]
+      ]
+    ]
+  },
+  "frozen_files": {
+    "configs/0022-source-model-assets.json": "30d4474b3372c8cea8aed86f67620425146303c0fae52b652b37062936691944",
+    "configs/0022-wheel-assets.json": "fc8bea8344e061857dbf025f80915f8d757a18a2f960a92d490349cbb12d0f14",
+    "docs/literature/0022-runtime-source-contract.md": "e330987c37e4e87d187432ed6bf37c9e3c9c7bc6ba3758dcff655135e44fca57",
+    "experiments/0022-frontend/acquire.py": "5b09d48b3b81fcf1d62b90871475813e26544934711244dcff2d429d4ad7fa11",
+    "experiments/0022-frontend/acquire_operation.py": "28aed9e86d764ca3f336d7eab3b0ae001b261b21cbfb551350af2a6c0a1e0540",
+    "experiments/0022-frontend/install_runtime.py": "ae94b94817081ed31d41b7191c8c98dd835f5f363837318e195a7267a05e4ca4",
+    "experiments/0022-frontend/qualify.py": "3f4fb5f38641c137b27a273fdffb284b65b0d024d94ce29986310b6091e07716",
+    "experiments/0022-frontend/supervise.py": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5",
+    "protocols/0022-traceable-frontend-assets.md": "99e94b075e5e7ffec9e06595ff1f0e3777bca6ad033cd97da327d790ef10ead8",
+    "results/0022-preparation/dependency-wheels.json": "e7a0f21d36e5e10131ef3afbb721c7e50bed6320b658cd0748f249edbdc73a40"
+  },
+  "input_arrays": {
+    "arrays": {
+      "image0": {
+        "dtype": "float32",
+        "raw_c_order_sha256": "de66ac41adc38302fcf1d318401eac588acc6763d765bfe4af04681aa61e0012",
+        "shape": [
+          384,
+          512,
+          3
+        ]
+      },
+      "image1": {
+        "dtype": "float32",
+        "raw_c_order_sha256": "5f13ffb3566ba0737abdcc9c89edc410187421b3c250bf58fda87e03282a994e",
+        "shape": [
+          384,
+          512,
+          3
+        ]
+      }
+    },
+    "bytes": 4719102,
+    "filename": "inputs.npz",
+    "sha256": "7b8d415fb8786d1e7812d86ccb82303c9f81ed304c01e9ad8b9f1575a6a5d44d"
+  },
+  "loads": {
+    "lightglue": {
+      "allowed_missing_buffers": [
+        "confidence_thresholds"
+      ],
+      "ignored_unused_checkpoint_entries": {
+        "log_assignment.0.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.1.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.2.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.3.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.4.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.5.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.6.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.7.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.8.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        }
+      },
+      "learned_keys": [
+        "log_assignment.0.final_proj.bias",
+        "log_assignment.0.final_proj.weight",
+        "log_assignment.0.matchability.bias",
+        "log_assignment.0.matchability.weight",
+        "log_assignment.1.final_proj.bias",
+        "log_assignment.1.final_proj.weight",
+        "log_assignment.1.matchability.bias",
+        "log_assignment.1.matchability.weight",
+        "log_assignment.2.final_proj.bias",
+        "log_assignment.2.final_proj.weight",
+        "log_assignment.2.matchability.bias",
+        "log_assignment.2.matchability.weight",
+        "log_assignment.3.final_proj.bias",
+        "log_assignment.3.final_proj.weight",
+        "log_assignment.3.matchability.bias",
+        "log_assignment.3.matchability.weight",
+        "log_assignment.4.final_proj.bias",
+        "log_assignment.4.final_proj.weight",
+        "log_assignment.4.matchability.bias",
+        "log_assignment.4.matchability.weight",
+        "log_assignment.5.final_proj.bias",
+        "log_assignment.5.final_proj.weight",
+        "log_assignment.5.matchability.bias",
+        "log_assignment.5.matchability.weight",
+        "log_assignment.6.final_proj.bias",
+        "log_assignment.6.final_proj.weight",
+        "log_assignment.6.matchability.bias",
+        "log_assignment.6.matchability.weight",
+        "log_assignment.7.final_proj.bias",
+        "log_assignment.7.final_proj.weight",
+        "log_assignment.7.matchability.bias",
+        "log_assignment.7.matchability.weight",
+        "log_assignment.8.final_proj.bias",
+        "log_assignment.8.final_proj.weight",
+        "log_assignment.8.matchability.bias",
+        "log_assignment.8.matchability.weight",
+        "posenc.Wr.weight",
+        "token_confidence.0.token.0.bias",
+        "token_confidence.0.token.0.weight",
+        "token_confidence.1.token.0.bias",
+        "token_confidence.1.token.0.weight",
+        "token_confidence.2.token.0.bias",
+        "token_confidence.2.token.0.weight",
+        "token_confidence.3.token.0.bias",
+        "token_confidence.3.token.0.weight",
+        "token_confidence.4.token.0.bias",
+        "token_confidence.4.token.0.weight",
+        "token_confidence.5.token.0.bias",
+        "token_confidence.5.token.0.weight",
+        "token_confidence.6.token.0.bias",
+        "token_confidence.6.token.0.weight",
+        "token_confidence.7.token.0.bias",
+        "token_confidence.7.token.0.weight",
+        "transformers.0.cross_attn.ffn.0.bias",
+        "transformers.0.cross_attn.ffn.0.weight",
+        "transformers.0.cross_attn.ffn.1.bias",
+        "transformers.0.cross_attn.ffn.1.weight",
+        "transformers.0.cross_attn.ffn.3.bias",
+        "transformers.0.cross_attn.ffn.3.weight",
+        "transformers.0.cross_attn.to_out.bias",
+        "transformers.0.cross_attn.to_out.weight",
+        "transformers.0.cross_attn.to_qk.bias",
+        "transformers.0.cross_attn.to_qk.weight",
+        "transformers.0.cross_attn.to_v.bias",
+        "transformers.0.cross_attn.to_v.weight",
+        "transformers.0.self_attn.Wqkv.bias",
+        "transformers.0.self_attn.Wqkv.weight",
+        "transformers.0.self_attn.ffn.0.bias",
+        "transformers.0.self_attn.ffn.0.weight",
+        "transformers.0.self_attn.ffn.1.bias",
+        "transformers.0.self_attn.ffn.1.weight",
+        "transformers.0.self_attn.ffn.3.bias",
+        "transformers.0.self_attn.ffn.3.weight",
+        "transformers.0.self_attn.out_proj.bias",
+        "transformers.0.self_attn.out_proj.weight",
+        "transformers.1.cross_attn.ffn.0.bias",
+        "transformers.1.cross_attn.ffn.0.weight",
+        "transformers.1.cross_attn.ffn.1.bias",
+        "transformers.1.cross_attn.ffn.1.weight",
+        "transformers.1.cross_attn.ffn.3.bias",
+        "transformers.1.cross_attn.ffn.3.weight",
+        "transformers.1.cross_attn.to_out.bias",
+        "transformers.1.cross_attn.to_out.weight",
+        "transformers.1.cross_attn.to_qk.bias",
+        "transformers.1.cross_attn.to_qk.weight",
+        "transformers.1.cross_attn.to_v.bias",
+        "transformers.1.cross_attn.to_v.weight",
+        "transformers.1.self_attn.Wqkv.bias",
+        "transformers.1.self_attn.Wqkv.weight",
+        "transformers.1.self_attn.ffn.0.bias",
+        "transformers.1.self_attn.ffn.0.weight",
+        "transformers.1.self_attn.ffn.1.bias",
+        "transformers.1.self_attn.ffn.1.weight",
+        "transformers.1.self_attn.ffn.3.bias",
+        "transformers.1.self_attn.ffn.3.weight",
+        "transformers.1.self_attn.out_proj.bias",
+        "transformers.1.self_attn.out_proj.weight",
+        "transformers.2.cross_attn.ffn.0.bias",
+        "transformers.2.cross_attn.ffn.0.weight",
+        "transformers.2.cross_attn.ffn.1.bias",
+        "transformers.2.cross_attn.ffn.1.weight",
+        "transformers.2.cross_attn.ffn.3.bias",
+        "transformers.2.cross_attn.ffn.3.weight",
+        "transformers.2.cross_attn.to_out.bias",
+        "transformers.2.cross_attn.to_out.weight",
+        "transformers.2.cross_attn.to_qk.bias",
+        "transformers.2.cross_attn.to_qk.weight",
+        "transformers.2.cross_attn.to_v.bias",
+        "transformers.2.cross_attn.to_v.weight",
+        "transformers.2.self_attn.Wqkv.bias",
+        "transformers.2.self_attn.Wqkv.weight",
+        "transformers.2.self_attn.ffn.0.bias",
+        "transformers.2.self_attn.ffn.0.weight",
+        "transformers.2.self_attn.ffn.1.bias",
+        "transformers.2.self_attn.ffn.1.weight",
+        "transformers.2.self_attn.ffn.3.bias",
+        "transformers.2.self_attn.ffn.3.weight",
+        "transformers.2.self_attn.out_proj.bias",
+        "transformers.2.self_attn.out_proj.weight",
+        "transformers.3.cross_attn.ffn.0.bias",
+        "transformers.3.cross_attn.ffn.0.weight",
+        "transformers.3.cross_attn.ffn.1.bias",
+        "transformers.3.cross_attn.ffn.1.weight",
+        "transformers.3.cross_attn.ffn.3.bias",
+        "transformers.3.cross_attn.ffn.3.weight",
+        "transformers.3.cross_attn.to_out.bias",
+        "transformers.3.cross_attn.to_out.weight",
+        "transformers.3.cross_attn.to_qk.bias",
+        "transformers.3.cross_attn.to_qk.weight",
+        "transformers.3.cross_attn.to_v.bias",
+        "transformers.3.cross_attn.to_v.weight",
+        "transformers.3.self_attn.Wqkv.bias",
+        "transformers.3.self_attn.Wqkv.weight",
+        "transformers.3.self_attn.ffn.0.bias",
+        "transformers.3.self_attn.ffn.0.weight",
+        "transformers.3.self_attn.ffn.1.bias",
+        "transformers.3.self_attn.ffn.1.weight",
+        "transformers.3.self_attn.ffn.3.bias",
+        "transformers.3.self_attn.ffn.3.weight",
+        "transformers.3.self_attn.out_proj.bias",
+        "transformers.3.self_attn.out_proj.weight",
+        "transformers.4.cross_attn.ffn.0.bias",
+        "transformers.4.cross_attn.ffn.0.weight",
+        "transformers.4.cross_attn.ffn.1.bias",
+        "transformers.4.cross_attn.ffn.1.weight",
+        "transformers.4.cross_attn.ffn.3.bias",
+        "transformers.4.cross_attn.ffn.3.weight",
+        "transformers.4.cross_attn.to_out.bias",
+        "transformers.4.cross_attn.to_out.weight",
+        "transformers.4.cross_attn.to_qk.bias",
+        "transformers.4.cross_attn.to_qk.weight",
+        "transformers.4.cross_attn.to_v.bias",
+        "transformers.4.cross_attn.to_v.weight",
+        "transformers.4.self_attn.Wqkv.bias",
+        "transformers.4.self_attn.Wqkv.weight",
+        "transformers.4.self_attn.ffn.0.bias",
+        "transformers.4.self_attn.ffn.0.weight",
+        "transformers.4.self_attn.ffn.1.bias",
+        "transformers.4.self_attn.ffn.1.weight",
+        "transformers.4.self_attn.ffn.3.bias",
+        "transformers.4.self_attn.ffn.3.weight",
+        "transformers.4.self_attn.out_proj.bias",
+        "transformers.4.self_attn.out_proj.weight",
+        "transformers.5.cross_attn.ffn.0.bias",
+        "transformers.5.cross_attn.ffn.0.weight",
+        "transformers.5.cross_attn.ffn.1.bias",
+        "transformers.5.cross_attn.ffn.1.weight",
+        "transformers.5.cross_attn.ffn.3.bias",
+        "transformers.5.cross_attn.ffn.3.weight",
+        "transformers.5.cross_attn.to_out.bias",
+        "transformers.5.cross_attn.to_out.weight",
+        "transformers.5.cross_attn.to_qk.bias",
+        "transformers.5.cross_attn.to_qk.weight",
+        "transformers.5.cross_attn.to_v.bias",
+        "transformers.5.cross_attn.to_v.weight",
+        "transformers.5.self_attn.Wqkv.bias",
+        "transformers.5.self_attn.Wqkv.weight",
+        "transformers.5.self_attn.ffn.0.bias",
+        "transformers.5.self_attn.ffn.0.weight",
+        "transformers.5.self_attn.ffn.1.bias",
+        "transformers.5.self_attn.ffn.1.weight",
+        "transformers.5.self_attn.ffn.3.bias",
+        "transformers.5.self_attn.ffn.3.weight",
+        "transformers.5.self_attn.out_proj.bias",
+        "transformers.5.self_attn.out_proj.weight",
+        "transformers.6.cross_attn.ffn.0.bias",
+        "transformers.6.cross_attn.ffn.0.weight",
+        "transformers.6.cross_attn.ffn.1.bias",
+        "transformers.6.cross_attn.ffn.1.weight",
+        "transformers.6.cross_attn.ffn.3.bias",
+        "transformers.6.cross_attn.ffn.3.weight",
+        "transformers.6.cross_attn.to_out.bias",
+        "transformers.6.cross_attn.to_out.weight",
+        "transformers.6.cross_attn.to_qk.bias",
+        "transformers.6.cross_attn.to_qk.weight",
+        "transformers.6.cross_attn.to_v.bias",
+        "transformers.6.cross_attn.to_v.weight",
+        "transformers.6.self_attn.Wqkv.bias",
+        "transformers.6.self_attn.Wqkv.weight",
+        "transformers.6.self_attn.ffn.0.bias",
+        "transformers.6.self_attn.ffn.0.weight",
+        "transformers.6.self_attn.ffn.1.bias",
+        "transformers.6.self_attn.ffn.1.weight",
+        "transformers.6.self_attn.ffn.3.bias",
+        "transformers.6.self_attn.ffn.3.weight",
+        "transformers.6.self_attn.out_proj.bias",
+        "transformers.6.self_attn.out_proj.weight",
+        "transformers.7.cross_attn.ffn.0.bias",
+        "transformers.7.cross_attn.ffn.0.weight",
+        "transformers.7.cross_attn.ffn.1.bias",
+        "transformers.7.cross_attn.ffn.1.weight",
+        "transformers.7.cross_attn.ffn.3.bias",
+        "transformers.7.cross_attn.ffn.3.weight",
+        "transformers.7.cross_attn.to_out.bias",
+        "transformers.7.cross_attn.to_out.weight",
+        "transformers.7.cross_attn.to_qk.bias",
+        "transformers.7.cross_attn.to_qk.weight",
+        "transformers.7.cross_attn.to_v.bias",
+        "transformers.7.cross_attn.to_v.weight",
+        "transformers.7.self_attn.Wqkv.bias",
+        "transformers.7.self_attn.Wqkv.weight",
+        "transformers.7.self_attn.ffn.0.bias",
+        "transformers.7.self_attn.ffn.0.weight",
+        "transformers.7.self_attn.ffn.1.bias",
+        "transformers.7.self_attn.ffn.1.weight",
+        "transformers.7.self_attn.ffn.3.bias",
+        "transformers.7.self_attn.ffn.3.weight",
+        "transformers.7.self_attn.out_proj.bias",
+        "transformers.7.self_attn.out_proj.weight",
+        "transformers.8.cross_attn.ffn.0.bias",
+        "transformers.8.cross_attn.ffn.0.weight",
+        "transformers.8.cross_attn.ffn.1.bias",
+        "transformers.8.cross_attn.ffn.1.weight",
+        "transformers.8.cross_attn.ffn.3.bias",
+        "transformers.8.cross_attn.ffn.3.weight",
+        "transformers.8.cross_attn.to_out.bias",
+        "transformers.8.cross_attn.to_out.weight",
+        "transformers.8.cross_attn.to_qk.bias",
+        "transformers.8.cross_attn.to_qk.weight",
+        "transformers.8.cross_attn.to_v.bias",
+        "transformers.8.cross_attn.to_v.weight",
+        "transformers.8.self_attn.Wqkv.bias",
+        "transformers.8.self_attn.Wqkv.weight",
+        "transformers.8.self_attn.ffn.0.bias",
+        "transformers.8.self_attn.ffn.0.weight",
+        "transformers.8.self_attn.ffn.1.bias",
+        "transformers.8.self_attn.ffn.1.weight",
+        "transformers.8.self_attn.ffn.3.bias",
+        "transformers.8.self_attn.ffn.3.weight",
+        "transformers.8.self_attn.out_proj.bias",
+        "transformers.8.self_attn.out_proj.weight"
+      ],
+      "missing_keys": [
+        "confidence_thresholds"
+      ],
+      "state_shapes": {
+        "confidence_thresholds": [
+          9
+        ],
+        "log_assignment.0.final_proj.bias": [
+          256
+        ],
+        "log_assignment.0.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.0.matchability.bias": [
+          1
+        ],
+        "log_assignment.0.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.1.final_proj.bias": [
+          256
+        ],
+        "log_assignment.1.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.1.matchability.bias": [
+          1
+        ],
+        "log_assignment.1.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.2.final_proj.bias": [
+          256
+        ],
+        "log_assignment.2.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.2.matchability.bias": [
+          1
+        ],
+        "log_assignment.2.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.3.final_proj.bias": [
+          256
+        ],
+        "log_assignment.3.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.3.matchability.bias": [
+          1
+        ],
+        "log_assignment.3.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.4.final_proj.bias": [
+          256
+        ],
+        "log_assignment.4.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.4.matchability.bias": [
+          1
+        ],
+        "log_assignment.4.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.5.final_proj.bias": [
+          256
+        ],
+        "log_assignment.5.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.5.matchability.bias": [
+          1
+        ],
+        "log_assignment.5.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.6.final_proj.bias": [
+          256
+        ],
+        "log_assignment.6.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.6.matchability.bias": [
+          1
+        ],
+        "log_assignment.6.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.7.final_proj.bias": [
+          256
+        ],
+        "log_assignment.7.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.7.matchability.bias": [
+          1
+        ],
+        "log_assignment.7.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.8.final_proj.bias": [
+          256
+        ],
+        "log_assignment.8.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.8.matchability.bias": [
+          1
+        ],
+        "log_assignment.8.matchability.weight": [
+          1,
+          256
+        ],
+        "posenc.Wr.weight": [
+          32,
+          2
+        ],
+        "token_confidence.0.token.0.bias": [
+          1
+        ],
+        "token_confidence.0.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.1.token.0.bias": [
+          1
+        ],
+        "token_confidence.1.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.2.token.0.bias": [
+          1
+        ],
+        "token_confidence.2.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.3.token.0.bias": [
+          1
+        ],
+        "token_confidence.3.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.4.token.0.bias": [
+          1
+        ],
+        "token_confidence.4.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.5.token.0.bias": [
+          1
+        ],
+        "token_confidence.5.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.6.token.0.bias": [
+          1
+        ],
+        "token_confidence.6.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.7.token.0.bias": [
+          1
+        ],
+        "token_confidence.7.token.0.weight": [
+          1,
+          256
+        ],
+        "transformers.0.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.0.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.0.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.0.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.0.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.0.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.0.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.0.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.0.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.0.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.0.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.0.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.0.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.0.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.0.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.0.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.0.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.0.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.0.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.0.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.0.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.0.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.1.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.1.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.1.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.1.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.1.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.1.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.1.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.1.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.1.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.1.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.1.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.1.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.1.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.1.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.1.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.1.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.1.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.1.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.1.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.1.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.1.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.1.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.2.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.2.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.2.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.2.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.2.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.2.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.2.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.2.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.2.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.2.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.2.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.2.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.2.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.2.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.2.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.2.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.2.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.2.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.2.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.2.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.2.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.2.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.3.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.3.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.3.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.3.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.3.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.3.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.3.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.3.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.3.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.3.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.3.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.3.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.3.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.3.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.3.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.3.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.3.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.3.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.3.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.3.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.3.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.3.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.4.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.4.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.4.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.4.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.4.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.4.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.4.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.4.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.4.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.4.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.4.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.4.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.4.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.4.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.4.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.4.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.4.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.4.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.4.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.4.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.4.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.4.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.5.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.5.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.5.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.5.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.5.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.5.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.5.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.5.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.5.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.5.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.5.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.5.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.5.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.5.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.5.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.5.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.5.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.5.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.5.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.5.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.5.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.5.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.6.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.6.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.6.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.6.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.6.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.6.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.6.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.6.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.6.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.6.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.6.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.6.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.6.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.6.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.6.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.6.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.6.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.6.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.6.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.6.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.6.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.6.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.7.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.7.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.7.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.7.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.7.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.7.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.7.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.7.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.7.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.7.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.7.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.7.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.7.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.7.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.7.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.7.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.7.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.7.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.7.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.7.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.7.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.7.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.8.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.8.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.8.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.8.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.8.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.8.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.8.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.8.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.8.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.8.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.8.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.8.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.8.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.8.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.8.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.8.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.8.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.8.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.8.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.8.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.8.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.8.self_attn.out_proj.weight": [
+          256,
+          256
+        ]
+      },
+      "strict_after_deterministic_buffer_completion": true,
+      "unexpected_keys": [
+        "log_assignment.0.r",
+        "log_assignment.1.r",
+        "log_assignment.2.r",
+        "log_assignment.3.r",
+        "log_assignment.4.r",
+        "log_assignment.5.r",
+        "log_assignment.6.r",
+        "log_assignment.7.r",
+        "log_assignment.8.r"
+      ]
+    },
+    "moge": {
+      "allowed_missing_buffers": [],
+      "ignored_unused_checkpoint_entries": {},
+      "learned_keys": [
+        "encoder.backbone.blocks.0.attn.proj.bias",
+        "encoder.backbone.blocks.0.attn.proj.weight",
+        "encoder.backbone.blocks.0.attn.qkv.bias",
+        "encoder.backbone.blocks.0.attn.qkv.weight",
+        "encoder.backbone.blocks.0.ls1.gamma",
+        "encoder.backbone.blocks.0.ls2.gamma",
+        "encoder.backbone.blocks.0.mlp.fc1.bias",
+        "encoder.backbone.blocks.0.mlp.fc1.weight",
+        "encoder.backbone.blocks.0.mlp.fc2.bias",
+        "encoder.backbone.blocks.0.mlp.fc2.weight",
+        "encoder.backbone.blocks.0.norm1.bias",
+        "encoder.backbone.blocks.0.norm1.weight",
+        "encoder.backbone.blocks.0.norm2.bias",
+        "encoder.backbone.blocks.0.norm2.weight",
+        "encoder.backbone.blocks.1.attn.proj.bias",
+        "encoder.backbone.blocks.1.attn.proj.weight",
+        "encoder.backbone.blocks.1.attn.qkv.bias",
+        "encoder.backbone.blocks.1.attn.qkv.weight",
+        "encoder.backbone.blocks.1.ls1.gamma",
+        "encoder.backbone.blocks.1.ls2.gamma",
+        "encoder.backbone.blocks.1.mlp.fc1.bias",
+        "encoder.backbone.blocks.1.mlp.fc1.weight",
+        "encoder.backbone.blocks.1.mlp.fc2.bias",
+        "encoder.backbone.blocks.1.mlp.fc2.weight",
+        "encoder.backbone.blocks.1.norm1.bias",
+        "encoder.backbone.blocks.1.norm1.weight",
+        "encoder.backbone.blocks.1.norm2.bias",
+        "encoder.backbone.blocks.1.norm2.weight",
+        "encoder.backbone.blocks.10.attn.proj.bias",
+        "encoder.backbone.blocks.10.attn.proj.weight",
+        "encoder.backbone.blocks.10.attn.qkv.bias",
+        "encoder.backbone.blocks.10.attn.qkv.weight",
+        "encoder.backbone.blocks.10.ls1.gamma",
+        "encoder.backbone.blocks.10.ls2.gamma",
+        "encoder.backbone.blocks.10.mlp.fc1.bias",
+        "encoder.backbone.blocks.10.mlp.fc1.weight",
+        "encoder.backbone.blocks.10.mlp.fc2.bias",
+        "encoder.backbone.blocks.10.mlp.fc2.weight",
+        "encoder.backbone.blocks.10.norm1.bias",
+        "encoder.backbone.blocks.10.norm1.weight",
+        "encoder.backbone.blocks.10.norm2.bias",
+        "encoder.backbone.blocks.10.norm2.weight",
+        "encoder.backbone.blocks.11.attn.proj.bias",
+        "encoder.backbone.blocks.11.attn.proj.weight",
+        "encoder.backbone.blocks.11.attn.qkv.bias",
+        "encoder.backbone.blocks.11.attn.qkv.weight",
+        "encoder.backbone.blocks.11.ls1.gamma",
+        "encoder.backbone.blocks.11.ls2.gamma",
+        "encoder.backbone.blocks.11.mlp.fc1.bias",
+        "encoder.backbone.blocks.11.mlp.fc1.weight",
+        "encoder.backbone.blocks.11.mlp.fc2.bias",
+        "encoder.backbone.blocks.11.mlp.fc2.weight",
+        "encoder.backbone.blocks.11.norm1.bias",
+        "encoder.backbone.blocks.11.norm1.weight",
+        "encoder.backbone.blocks.11.norm2.bias",
+        "encoder.backbone.blocks.11.norm2.weight",
+        "encoder.backbone.blocks.2.attn.proj.bias",
+        "encoder.backbone.blocks.2.attn.proj.weight",
+        "encoder.backbone.blocks.2.attn.qkv.bias",
+        "encoder.backbone.blocks.2.attn.qkv.weight",
+        "encoder.backbone.blocks.2.ls1.gamma",
+        "encoder.backbone.blocks.2.ls2.gamma",
+        "encoder.backbone.blocks.2.mlp.fc1.bias",
+        "encoder.backbone.blocks.2.mlp.fc1.weight",
+        "encoder.backbone.blocks.2.mlp.fc2.bias",
+        "encoder.backbone.blocks.2.mlp.fc2.weight",
+        "encoder.backbone.blocks.2.norm1.bias",
+        "encoder.backbone.blocks.2.norm1.weight",
+        "encoder.backbone.blocks.2.norm2.bias",
+        "encoder.backbone.blocks.2.norm2.weight",
+        "encoder.backbone.blocks.3.attn.proj.bias",
+        "encoder.backbone.blocks.3.attn.proj.weight",
+        "encoder.backbone.blocks.3.attn.qkv.bias",
+        "encoder.backbone.blocks.3.attn.qkv.weight",
+        "encoder.backbone.blocks.3.ls1.gamma",
+        "encoder.backbone.blocks.3.ls2.gamma",
+        "encoder.backbone.blocks.3.mlp.fc1.bias",
+        "encoder.backbone.blocks.3.mlp.fc1.weight",
+        "encoder.backbone.blocks.3.mlp.fc2.bias",
+        "encoder.backbone.blocks.3.mlp.fc2.weight",
+        "encoder.backbone.blocks.3.norm1.bias",
+        "encoder.backbone.blocks.3.norm1.weight",
+        "encoder.backbone.blocks.3.norm2.bias",
+        "encoder.backbone.blocks.3.norm2.weight",
+        "encoder.backbone.blocks.4.attn.proj.bias",
+        "encoder.backbone.blocks.4.attn.proj.weight",
+        "encoder.backbone.blocks.4.attn.qkv.bias",
+        "encoder.backbone.blocks.4.attn.qkv.weight",
+        "encoder.backbone.blocks.4.ls1.gamma",
+        "encoder.backbone.blocks.4.ls2.gamma",
+        "encoder.backbone.blocks.4.mlp.fc1.bias",
+        "encoder.backbone.blocks.4.mlp.fc1.weight",
+        "encoder.backbone.blocks.4.mlp.fc2.bias",
+        "encoder.backbone.blocks.4.mlp.fc2.weight",
+        "encoder.backbone.blocks.4.norm1.bias",
+        "encoder.backbone.blocks.4.norm1.weight",
+        "encoder.backbone.blocks.4.norm2.bias",
+        "encoder.backbone.blocks.4.norm2.weight",
+        "encoder.backbone.blocks.5.attn.proj.bias",
+        "encoder.backbone.blocks.5.attn.proj.weight",
+        "encoder.backbone.blocks.5.attn.qkv.bias",
+        "encoder.backbone.blocks.5.attn.qkv.weight",
+        "encoder.backbone.blocks.5.ls1.gamma",
+        "encoder.backbone.blocks.5.ls2.gamma",
+        "encoder.backbone.blocks.5.mlp.fc1.bias",
+        "encoder.backbone.blocks.5.mlp.fc1.weight",
+        "encoder.backbone.blocks.5.mlp.fc2.bias",
+        "encoder.backbone.blocks.5.mlp.fc2.weight",
+        "encoder.backbone.blocks.5.norm1.bias",
+        "encoder.backbone.blocks.5.norm1.weight",
+        "encoder.backbone.blocks.5.norm2.bias",
+        "encoder.backbone.blocks.5.norm2.weight",
+        "encoder.backbone.blocks.6.attn.proj.bias",
+        "encoder.backbone.blocks.6.attn.proj.weight",
+        "encoder.backbone.blocks.6.attn.qkv.bias",
+        "encoder.backbone.blocks.6.attn.qkv.weight",
+        "encoder.backbone.blocks.6.ls1.gamma",
+        "encoder.backbone.blocks.6.ls2.gamma",
+        "encoder.backbone.blocks.6.mlp.fc1.bias",
+        "encoder.backbone.blocks.6.mlp.fc1.weight",
+        "encoder.backbone.blocks.6.mlp.fc2.bias",
+        "encoder.backbone.blocks.6.mlp.fc2.weight",
+        "encoder.backbone.blocks.6.norm1.bias",
+        "encoder.backbone.blocks.6.norm1.weight",
+        "encoder.backbone.blocks.6.norm2.bias",
+        "encoder.backbone.blocks.6.norm2.weight",
+        "encoder.backbone.blocks.7.attn.proj.bias",
+        "encoder.backbone.blocks.7.attn.proj.weight",
+        "encoder.backbone.blocks.7.attn.qkv.bias",
+        "encoder.backbone.blocks.7.attn.qkv.weight",
+        "encoder.backbone.blocks.7.ls1.gamma",
+        "encoder.backbone.blocks.7.ls2.gamma",
+        "encoder.backbone.blocks.7.mlp.fc1.bias",
+        "encoder.backbone.blocks.7.mlp.fc1.weight",
+        "encoder.backbone.blocks.7.mlp.fc2.bias",
+        "encoder.backbone.blocks.7.mlp.fc2.weight",
+        "encoder.backbone.blocks.7.norm1.bias",
+        "encoder.backbone.blocks.7.norm1.weight",
+        "encoder.backbone.blocks.7.norm2.bias",
+        "encoder.backbone.blocks.7.norm2.weight",
+        "encoder.backbone.blocks.8.attn.proj.bias",
+        "encoder.backbone.blocks.8.attn.proj.weight",
+        "encoder.backbone.blocks.8.attn.qkv.bias",
+        "encoder.backbone.blocks.8.attn.qkv.weight",
+        "encoder.backbone.blocks.8.ls1.gamma",
+        "encoder.backbone.blocks.8.ls2.gamma",
+        "encoder.backbone.blocks.8.mlp.fc1.bias",
+        "encoder.backbone.blocks.8.mlp.fc1.weight",
+        "encoder.backbone.blocks.8.mlp.fc2.bias",
+        "encoder.backbone.blocks.8.mlp.fc2.weight",
+        "encoder.backbone.blocks.8.norm1.bias",
+        "encoder.backbone.blocks.8.norm1.weight",
+        "encoder.backbone.blocks.8.norm2.bias",
+        "encoder.backbone.blocks.8.norm2.weight",
+        "encoder.backbone.blocks.9.attn.proj.bias",
+        "encoder.backbone.blocks.9.attn.proj.weight",
+        "encoder.backbone.blocks.9.attn.qkv.bias",
+        "encoder.backbone.blocks.9.attn.qkv.weight",
+        "encoder.backbone.blocks.9.ls1.gamma",
+        "encoder.backbone.blocks.9.ls2.gamma",
+        "encoder.backbone.blocks.9.mlp.fc1.bias",
+        "encoder.backbone.blocks.9.mlp.fc1.weight",
+        "encoder.backbone.blocks.9.mlp.fc2.bias",
+        "encoder.backbone.blocks.9.mlp.fc2.weight",
+        "encoder.backbone.blocks.9.norm1.bias",
+        "encoder.backbone.blocks.9.norm1.weight",
+        "encoder.backbone.blocks.9.norm2.bias",
+        "encoder.backbone.blocks.9.norm2.weight",
+        "encoder.backbone.cls_token",
+        "encoder.backbone.mask_token",
+        "encoder.backbone.norm.bias",
+        "encoder.backbone.norm.weight",
+        "encoder.backbone.patch_embed.proj.bias",
+        "encoder.backbone.patch_embed.proj.weight",
+        "encoder.backbone.pos_embed",
+        "encoder.output_projections.0.bias",
+        "encoder.output_projections.0.weight",
+        "encoder.output_projections.1.bias",
+        "encoder.output_projections.1.weight",
+        "mask_head.input_blocks.0.bias",
+        "mask_head.input_blocks.0.weight",
+        "mask_head.input_blocks.1.bias",
+        "mask_head.input_blocks.1.weight",
+        "mask_head.input_blocks.2.bias",
+        "mask_head.input_blocks.2.weight",
+        "mask_head.input_blocks.3.bias",
+        "mask_head.input_blocks.3.weight",
+        "mask_head.input_blocks.4.bias",
+        "mask_head.input_blocks.4.weight",
+        "mask_head.output_blocks.4.bias",
+        "mask_head.output_blocks.4.weight",
+        "mask_head.res_blocks.1.0.layers.2.bias",
+        "mask_head.res_blocks.1.0.layers.2.weight",
+        "mask_head.res_blocks.1.0.layers.5.bias",
+        "mask_head.res_blocks.1.0.layers.5.weight",
+        "mask_head.res_blocks.2.0.layers.2.bias",
+        "mask_head.res_blocks.2.0.layers.2.weight",
+        "mask_head.res_blocks.2.0.layers.5.bias",
+        "mask_head.res_blocks.2.0.layers.5.weight",
+        "mask_head.res_blocks.3.0.layers.2.bias",
+        "mask_head.res_blocks.3.0.layers.2.weight",
+        "mask_head.res_blocks.3.0.layers.5.bias",
+        "mask_head.res_blocks.3.0.layers.5.weight",
+        "mask_head.resamplers.0.0.bias",
+        "mask_head.resamplers.0.0.weight",
+        "mask_head.resamplers.0.1.bias",
+        "mask_head.resamplers.0.1.weight",
+        "mask_head.resamplers.1.0.bias",
+        "mask_head.resamplers.1.0.weight",
+        "mask_head.resamplers.1.1.bias",
+        "mask_head.resamplers.1.1.weight",
+        "mask_head.resamplers.2.0.bias",
+        "mask_head.resamplers.2.0.weight",
+        "mask_head.resamplers.2.1.bias",
+        "mask_head.resamplers.2.1.weight",
+        "mask_head.resamplers.3.1.bias",
+        "mask_head.resamplers.3.1.weight",
+        "neck.input_blocks.0.bias",
+        "neck.input_blocks.0.weight",
+        "neck.input_blocks.1.bias",
+        "neck.input_blocks.1.weight",
+        "neck.input_blocks.2.bias",
+        "neck.input_blocks.2.weight",
+        "neck.input_blocks.3.bias",
+        "neck.input_blocks.3.weight",
+        "neck.input_blocks.4.bias",
+        "neck.input_blocks.4.weight",
+        "neck.res_blocks.1.0.layers.2.bias",
+        "neck.res_blocks.1.0.layers.2.weight",
+        "neck.res_blocks.1.0.layers.5.bias",
+        "neck.res_blocks.1.0.layers.5.weight",
+        "neck.res_blocks.2.0.layers.2.bias",
+        "neck.res_blocks.2.0.layers.2.weight",
+        "neck.res_blocks.2.0.layers.5.bias",
+        "neck.res_blocks.2.0.layers.5.weight",
+        "neck.res_blocks.3.0.layers.2.bias",
+        "neck.res_blocks.3.0.layers.2.weight",
+        "neck.res_blocks.3.0.layers.5.bias",
+        "neck.res_blocks.3.0.layers.5.weight",
+        "neck.resamplers.0.0.bias",
+        "neck.resamplers.0.0.weight",
+        "neck.resamplers.0.1.bias",
+        "neck.resamplers.0.1.weight",
+        "neck.resamplers.1.0.bias",
+        "neck.resamplers.1.0.weight",
+        "neck.resamplers.1.1.bias",
+        "neck.resamplers.1.1.weight",
+        "neck.resamplers.2.0.bias",
+        "neck.resamplers.2.0.weight",
+        "neck.resamplers.2.1.bias",
+        "neck.resamplers.2.1.weight",
+        "neck.resamplers.3.1.bias",
+        "neck.resamplers.3.1.weight",
+        "normal_head.input_blocks.0.bias",
+        "normal_head.input_blocks.0.weight",
+        "normal_head.input_blocks.1.bias",
+        "normal_head.input_blocks.1.weight",
+        "normal_head.input_blocks.2.bias",
+        "normal_head.input_blocks.2.weight",
+        "normal_head.input_blocks.3.bias",
+        "normal_head.input_blocks.3.weight",
+        "normal_head.input_blocks.4.bias",
+        "normal_head.input_blocks.4.weight",
+        "normal_head.output_blocks.4.bias",
+        "normal_head.output_blocks.4.weight",
+        "normal_head.res_blocks.1.0.layers.2.bias",
+        "normal_head.res_blocks.1.0.layers.2.weight",
+        "normal_head.res_blocks.1.0.layers.5.bias",
+        "normal_head.res_blocks.1.0.layers.5.weight",
+        "normal_head.res_blocks.2.0.layers.2.bias",
+        "normal_head.res_blocks.2.0.layers.2.weight",
+        "normal_head.res_blocks.2.0.layers.5.bias",
+        "normal_head.res_blocks.2.0.layers.5.weight",
+        "normal_head.res_blocks.3.0.layers.2.bias",
+        "normal_head.res_blocks.3.0.layers.2.weight",
+        "normal_head.res_blocks.3.0.layers.5.bias",
+        "normal_head.res_blocks.3.0.layers.5.weight",
+        "normal_head.resamplers.0.0.bias",
+        "normal_head.resamplers.0.0.weight",
+        "normal_head.resamplers.0.1.bias",
+        "normal_head.resamplers.0.1.weight",
+        "normal_head.resamplers.1.0.bias",
+        "normal_head.resamplers.1.0.weight",
+        "normal_head.resamplers.1.1.bias",
+        "normal_head.resamplers.1.1.weight",
+        "normal_head.resamplers.2.0.bias",
+        "normal_head.resamplers.2.0.weight",
+        "normal_head.resamplers.2.1.bias",
+        "normal_head.resamplers.2.1.weight",
+        "normal_head.resamplers.3.1.bias",
+        "normal_head.resamplers.3.1.weight",
+        "points_head.input_blocks.0.bias",
+        "points_head.input_blocks.0.weight",
+        "points_head.input_blocks.1.bias",
+        "points_head.input_blocks.1.weight",
+        "points_head.input_blocks.2.bias",
+        "points_head.input_blocks.2.weight",
+        "points_head.input_blocks.3.bias",
+        "points_head.input_blocks.3.weight",
+        "points_head.input_blocks.4.bias",
+        "points_head.input_blocks.4.weight",
+        "points_head.output_blocks.4.bias",
+        "points_head.output_blocks.4.weight",
+        "points_head.res_blocks.1.0.layers.2.bias",
+        "points_head.res_blocks.1.0.layers.2.weight",
+        "points_head.res_blocks.1.0.layers.5.bias",
+        "points_head.res_blocks.1.0.layers.5.weight",
+        "points_head.res_blocks.2.0.layers.2.bias",
+        "points_head.res_blocks.2.0.layers.2.weight",
+        "points_head.res_blocks.2.0.layers.5.bias",
+        "points_head.res_blocks.2.0.layers.5.weight",
+        "points_head.res_blocks.3.0.layers.2.bias",
+        "points_head.res_blocks.3.0.layers.2.weight",
+        "points_head.res_blocks.3.0.layers.5.bias",
+        "points_head.res_blocks.3.0.layers.5.weight",
+        "points_head.resamplers.0.0.bias",
+        "points_head.resamplers.0.0.weight",
+        "points_head.resamplers.0.1.bias",
+        "points_head.resamplers.0.1.weight",
+        "points_head.resamplers.1.0.bias",
+        "points_head.resamplers.1.0.weight",
+        "points_head.resamplers.1.1.bias",
+        "points_head.resamplers.1.1.weight",
+        "points_head.resamplers.2.0.bias",
+        "points_head.resamplers.2.0.weight",
+        "points_head.resamplers.2.1.bias",
+        "points_head.resamplers.2.1.weight",
+        "points_head.resamplers.3.1.bias",
+        "points_head.resamplers.3.1.weight",
+        "scale_head.0.bias",
+        "scale_head.0.weight",
+        "scale_head.2.bias",
+        "scale_head.2.weight",
+        "scale_head.4.bias",
+        "scale_head.4.weight"
+      ],
+      "missing_keys": [],
+      "state_shapes": {
+        "encoder.backbone.blocks.0.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.0.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.0.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.0.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.0.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.0.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.0.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.0.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.0.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.0.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.0.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.0.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.0.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.0.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.1.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.1.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.1.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.1.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.1.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.1.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.1.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.1.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.1.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.1.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.1.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.1.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.1.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.1.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.10.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.10.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.10.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.10.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.10.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.10.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.10.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.10.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.10.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.10.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.10.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.10.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.10.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.10.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.11.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.11.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.11.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.11.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.11.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.11.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.11.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.11.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.11.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.11.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.11.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.11.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.11.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.11.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.2.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.2.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.2.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.2.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.2.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.2.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.2.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.2.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.2.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.2.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.2.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.2.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.2.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.2.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.3.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.3.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.3.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.3.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.3.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.3.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.3.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.3.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.3.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.3.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.3.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.3.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.3.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.3.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.4.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.4.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.4.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.4.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.4.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.4.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.4.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.4.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.4.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.4.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.4.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.4.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.4.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.4.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.5.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.5.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.5.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.5.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.5.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.5.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.5.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.5.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.5.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.5.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.5.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.5.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.5.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.5.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.6.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.6.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.6.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.6.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.6.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.6.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.6.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.6.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.6.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.6.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.6.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.6.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.6.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.6.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.7.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.7.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.7.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.7.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.7.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.7.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.7.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.7.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.7.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.7.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.7.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.7.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.7.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.7.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.8.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.8.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.8.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.8.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.8.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.8.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.8.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.8.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.8.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.8.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.8.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.8.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.8.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.8.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.9.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.9.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.9.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.9.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.9.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.9.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.9.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.9.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.9.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.9.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.9.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.9.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.9.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.9.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.cls_token": [
+          1,
+          1,
+          384
+        ],
+        "encoder.backbone.mask_token": [
+          1,
+          384
+        ],
+        "encoder.backbone.norm.bias": [
+          384
+        ],
+        "encoder.backbone.norm.weight": [
+          384
+        ],
+        "encoder.backbone.patch_embed.proj.bias": [
+          384
+        ],
+        "encoder.backbone.patch_embed.proj.weight": [
+          384,
+          3,
+          14,
+          14
+        ],
+        "encoder.backbone.pos_embed": [
+          1,
+          1370,
+          384
+        ],
+        "encoder.image_mean": [
+          1,
+          3,
+          1,
+          1
+        ],
+        "encoder.image_std": [
+          1,
+          3,
+          1,
+          1
+        ],
+        "encoder.output_projections.0.bias": [
+          384
+        ],
+        "encoder.output_projections.0.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "encoder.output_projections.1.bias": [
+          384
+        ],
+        "encoder.output_projections.1.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.0.bias": [
+          384
+        ],
+        "mask_head.input_blocks.0.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.1.bias": [
+          256
+        ],
+        "mask_head.input_blocks.1.weight": [
+          256,
+          256,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.2.bias": [
+          128
+        ],
+        "mask_head.input_blocks.2.weight": [
+          128,
+          128,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.3.bias": [
+          64
+        ],
+        "mask_head.input_blocks.3.weight": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.4.bias": [
+          32
+        ],
+        "mask_head.input_blocks.4.weight": [
+          32,
+          32,
+          1,
+          1
+        ],
+        "mask_head.output_blocks.4.bias": [
+          1
+        ],
+        "mask_head.output_blocks.4.weight": [
+          1,
+          32,
+          1,
+          1
+        ],
+        "mask_head.res_blocks.1.0.layers.2.bias": [
+          256
+        ],
+        "mask_head.res_blocks.1.0.layers.2.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.1.0.layers.5.bias": [
+          256
+        ],
+        "mask_head.res_blocks.1.0.layers.5.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.2.0.layers.2.bias": [
+          128
+        ],
+        "mask_head.res_blocks.2.0.layers.2.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.2.0.layers.5.bias": [
+          128
+        ],
+        "mask_head.res_blocks.2.0.layers.5.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.3.0.layers.2.bias": [
+          64
+        ],
+        "mask_head.res_blocks.3.0.layers.2.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.3.0.layers.5.bias": [
+          64
+        ],
+        "mask_head.res_blocks.3.0.layers.5.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "mask_head.resamplers.0.0.bias": [
+          256
+        ],
+        "mask_head.resamplers.0.0.weight": [
+          384,
+          256,
+          2,
+          2
+        ],
+        "mask_head.resamplers.0.1.bias": [
+          256
+        ],
+        "mask_head.resamplers.0.1.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "mask_head.resamplers.1.0.bias": [
+          128
+        ],
+        "mask_head.resamplers.1.0.weight": [
+          256,
+          128,
+          2,
+          2
+        ],
+        "mask_head.resamplers.1.1.bias": [
+          128
+        ],
+        "mask_head.resamplers.1.1.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "mask_head.resamplers.2.0.bias": [
+          64
+        ],
+        "mask_head.resamplers.2.0.weight": [
+          128,
+          64,
+          2,
+          2
+        ],
+        "mask_head.resamplers.2.1.bias": [
+          64
+        ],
+        "mask_head.resamplers.2.1.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "mask_head.resamplers.3.1.bias": [
+          32
+        ],
+        "mask_head.resamplers.3.1.weight": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "neck.input_blocks.0.bias": [
+          384
+        ],
+        "neck.input_blocks.0.weight": [
+          384,
+          386,
+          1,
+          1
+        ],
+        "neck.input_blocks.1.bias": [
+          256
+        ],
+        "neck.input_blocks.1.weight": [
+          256,
+          2,
+          1,
+          1
+        ],
+        "neck.input_blocks.2.bias": [
+          128
+        ],
+        "neck.input_blocks.2.weight": [
+          128,
+          2,
+          1,
+          1
+        ],
+        "neck.input_blocks.3.bias": [
+          64
+        ],
+        "neck.input_blocks.3.weight": [
+          64,
+          2,
+          1,
+          1
+        ],
+        "neck.input_blocks.4.bias": [
+          32
+        ],
+        "neck.input_blocks.4.weight": [
+          32,
+          2,
+          1,
+          1
+        ],
+        "neck.res_blocks.1.0.layers.2.bias": [
+          256
+        ],
+        "neck.res_blocks.1.0.layers.2.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "neck.res_blocks.1.0.layers.5.bias": [
+          256
+        ],
+        "neck.res_blocks.1.0.layers.5.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "neck.res_blocks.2.0.layers.2.bias": [
+          128
+        ],
+        "neck.res_blocks.2.0.layers.2.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "neck.res_blocks.2.0.layers.5.bias": [
+          128
+        ],
+        "neck.res_blocks.2.0.layers.5.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "neck.res_blocks.3.0.layers.2.bias": [
+          64
+        ],
+        "neck.res_blocks.3.0.layers.2.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "neck.res_blocks.3.0.layers.5.bias": [
+          64
+        ],
+        "neck.res_blocks.3.0.layers.5.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "neck.resamplers.0.0.bias": [
+          256
+        ],
+        "neck.resamplers.0.0.weight": [
+          384,
+          256,
+          2,
+          2
+        ],
+        "neck.resamplers.0.1.bias": [
+          256
+        ],
+        "neck.resamplers.0.1.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "neck.resamplers.1.0.bias": [
+          128
+        ],
+        "neck.resamplers.1.0.weight": [
+          256,
+          128,
+          2,
+          2
+        ],
+        "neck.resamplers.1.1.bias": [
+          128
+        ],
+        "neck.resamplers.1.1.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "neck.resamplers.2.0.bias": [
+          64
+        ],
+        "neck.resamplers.2.0.weight": [
+          128,
+          64,
+          2,
+          2
+        ],
+        "neck.resamplers.2.1.bias": [
+          64
+        ],
+        "neck.resamplers.2.1.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "neck.resamplers.3.1.bias": [
+          32
+        ],
+        "neck.resamplers.3.1.weight": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "normal_head.input_blocks.0.bias": [
+          384
+        ],
+        "normal_head.input_blocks.0.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "normal_head.input_blocks.1.bias": [
+          256
+        ],
+        "normal_head.input_blocks.1.weight": [
+          256,
+          256,
+          1,
+          1
+        ],
+        "normal_head.input_blocks.2.bias": [
+          128
+        ],
+        "normal_head.input_blocks.2.weight": [
+          128,
+          128,
+          1,
+          1
+        ],
+        "normal_head.input_blocks.3.bias": [
+          64
+        ],
+        "normal_head.input_blocks.3.weight": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "normal_head.input_blocks.4.bias": [
+          32
+        ],
+        "normal_head.input_blocks.4.weight": [
+          32,
+          32,
+          1,
+          1
+        ],
+        "normal_head.output_blocks.4.bias": [
+          3
+        ],
+        "normal_head.output_blocks.4.weight": [
+          3,
+          32,
+          1,
+          1
+        ],
+        "normal_head.res_blocks.1.0.layers.2.bias": [
+          256
+        ],
+        "normal_head.res_blocks.1.0.layers.2.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.1.0.layers.5.bias": [
+          256
+        ],
+        "normal_head.res_blocks.1.0.layers.5.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.2.0.layers.2.bias": [
+          128
+        ],
+        "normal_head.res_blocks.2.0.layers.2.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.2.0.layers.5.bias": [
+          128
+        ],
+        "normal_head.res_blocks.2.0.layers.5.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.3.0.layers.2.bias": [
+          64
+        ],
+        "normal_head.res_blocks.3.0.layers.2.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.3.0.layers.5.bias": [
+          64
+        ],
+        "normal_head.res_blocks.3.0.layers.5.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "normal_head.resamplers.0.0.bias": [
+          256
+        ],
+        "normal_head.resamplers.0.0.weight": [
+          384,
+          256,
+          2,
+          2
+        ],
+        "normal_head.resamplers.0.1.bias": [
+          256
+        ],
+        "normal_head.resamplers.0.1.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "normal_head.resamplers.1.0.bias": [
+          128
+        ],
+        "normal_head.resamplers.1.0.weight": [
+          256,
+          128,
+          2,
+          2
+        ],
+        "normal_head.resamplers.1.1.bias": [
+          128
+        ],
+        "normal_head.resamplers.1.1.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "normal_head.resamplers.2.0.bias": [
+          64
+        ],
+        "normal_head.resamplers.2.0.weight": [
+          128,
+          64,
+          2,
+          2
+        ],
+        "normal_head.resamplers.2.1.bias": [
+          64
+        ],
+        "normal_head.resamplers.2.1.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "normal_head.resamplers.3.1.bias": [
+          32
+        ],
+        "normal_head.resamplers.3.1.weight": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "points_head.input_blocks.0.bias": [
+          384
+        ],
+        "points_head.input_blocks.0.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "points_head.input_blocks.1.bias": [
+          256
+        ],
+        "points_head.input_blocks.1.weight": [
+          256,
+          256,
+          1,
+          1
+        ],
+        "points_head.input_blocks.2.bias": [
+          128
+        ],
+        "points_head.input_blocks.2.weight": [
+          128,
+          128,
+          1,
+          1
+        ],
+        "points_head.input_blocks.3.bias": [
+          64
+        ],
+        "points_head.input_blocks.3.weight": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "points_head.input_blocks.4.bias": [
+          32
+        ],
+        "points_head.input_blocks.4.weight": [
+          32,
+          32,
+          1,
+          1
+        ],
+        "points_head.output_blocks.4.bias": [
+          3
+        ],
+        "points_head.output_blocks.4.weight": [
+          3,
+          32,
+          1,
+          1
+        ],
+        "points_head.res_blocks.1.0.layers.2.bias": [
+          256
+        ],
+        "points_head.res_blocks.1.0.layers.2.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "points_head.res_blocks.1.0.layers.5.bias": [
+          256
+        ],
+        "points_head.res_blocks.1.0.layers.5.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "points_head.res_blocks.2.0.layers.2.bias": [
+          128
+        ],
+        "points_head.res_blocks.2.0.layers.2.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "points_head.res_blocks.2.0.layers.5.bias": [
+          128
+        ],
+        "points_head.res_blocks.2.0.layers.5.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "points_head.res_blocks.3.0.layers.2.bias": [
+          64
+        ],
+        "points_head.res_blocks.3.0.layers.2.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "points_head.res_blocks.3.0.layers.5.bias": [
+          64
+        ],
+        "points_head.res_blocks.3.0.layers.5.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "points_head.resamplers.0.0.bias": [
+          256
+        ],
+        "points_head.resamplers.0.0.weight": [
+          384,
+          256,
+          2,
+          2
+        ],
+        "points_head.resamplers.0.1.bias": [
+          256
+        ],
+        "points_head.resamplers.0.1.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "points_head.resamplers.1.0.bias": [
+          128
+        ],
+        "points_head.resamplers.1.0.weight": [
+          256,
+          128,
+          2,
+          2
+        ],
+        "points_head.resamplers.1.1.bias": [
+          128
+        ],
+        "points_head.resamplers.1.1.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "points_head.resamplers.2.0.bias": [
+          64
+        ],
+        "points_head.resamplers.2.0.weight": [
+          128,
+          64,
+          2,
+          2
+        ],
+        "points_head.resamplers.2.1.bias": [
+          64
+        ],
+        "points_head.resamplers.2.1.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "points_head.resamplers.3.1.bias": [
+          32
+        ],
+        "points_head.resamplers.3.1.weight": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "scale_head.0.bias": [
+          384
+        ],
+        "scale_head.0.weight": [
+          384,
+          384
+        ],
+        "scale_head.2.bias": [
+          384
+        ],
+        "scale_head.2.weight": [
+          384,
+          384
+        ],
+        "scale_head.4.bias": [
+          1
+        ],
+        "scale_head.4.weight": [
+          1,
+          384
+        ]
+      },
+      "strict_after_deterministic_buffer_completion": true,
+      "unexpected_keys": []
+    },
+    "superpoint": {
+      "allowed_missing_buffers": [],
+      "ignored_unused_checkpoint_entries": {},
+      "learned_keys": [
+        "conv1a.bias",
+        "conv1a.weight",
+        "conv1b.bias",
+        "conv1b.weight",
+        "conv2a.bias",
+        "conv2a.weight",
+        "conv2b.bias",
+        "conv2b.weight",
+        "conv3a.bias",
+        "conv3a.weight",
+        "conv3b.bias",
+        "conv3b.weight",
+        "conv4a.bias",
+        "conv4a.weight",
+        "conv4b.bias",
+        "conv4b.weight",
+        "convDa.bias",
+        "convDa.weight",
+        "convDb.bias",
+        "convDb.weight",
+        "convPa.bias",
+        "convPa.weight",
+        "convPb.bias",
+        "convPb.weight"
+      ],
+      "missing_keys": [],
+      "state_shapes": {
+        "conv1a.bias": [
+          64
+        ],
+        "conv1a.weight": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "conv1b.bias": [
+          64
+        ],
+        "conv1b.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "conv2a.bias": [
+          64
+        ],
+        "conv2a.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "conv2b.bias": [
+          64
+        ],
+        "conv2b.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "conv3a.bias": [
+          128
+        ],
+        "conv3a.weight": [
+          128,
+          64,
+          3,
+          3
+        ],
+        "conv3b.bias": [
+          128
+        ],
+        "conv3b.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "conv4a.bias": [
+          128
+        ],
+        "conv4a.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "conv4b.bias": [
+          128
+        ],
+        "conv4b.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "convDa.bias": [
+          256
+        ],
+        "convDa.weight": [
+          256,
+          128,
+          3,
+          3
+        ],
+        "convDb.bias": [
+          256
+        ],
+        "convDb.weight": [
+          256,
+          256,
+          1,
+          1
+        ],
+        "convPa.bias": [
+          256
+        ],
+        "convPa.weight": [
+          256,
+          128,
+          3,
+          3
+        ],
+        "convPb.bias": [
+          65
+        ],
+        "convPb.weight": [
+          65,
+          256,
+          1,
+          1
+        ]
+      },
+      "strict_after_deterministic_buffer_completion": true,
+      "unexpected_keys": []
+    }
+  },
+  "local_hub_calls": [
+    {
+      "asset": "superpoint_v1.pth",
+      "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+      "weights_only": true
+    },
+    {
+      "asset": "superpoint_lightglue.pth",
+      "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_lightglue.pth",
+      "weights_only": true
+    }
+  ],
+  "moge_config": {
+    "encoder": {
+      "backbone": "dinov2_vits14",
+      "dim_out": 384,
+      "intermediate_layers": [
+        5,
+        11
+      ]
+    },
+    "mask_head": {
+      "dim_in": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "dim_out": [
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "dim_res_blocks": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "num_res_blocks": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "res_block_hidden_norm": "none",
+      "res_block_in_norm": "none",
+      "resamplers": [
+        "conv_transpose",
+        "conv_transpose",
+        "conv_transpose",
+        "bilinear"
+      ]
+    },
+    "neck": {
+      "dim_in": [
+        386,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dim_out": null,
+      "dim_res_blocks": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "num_res_blocks": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "res_block_hidden_norm": "none",
+      "res_block_in_norm": "none",
+      "resamplers": [
+        "conv_transpose",
+        "conv_transpose",
+        "conv_transpose",
+        "bilinear"
+      ]
+    },
+    "normal_head": {
+      "dim_in": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "dim_out": [
+        null,
+        null,
+        null,
+        null,
+        3
+      ],
+      "dim_res_blocks": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "num_res_blocks": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "res_block_hidden_norm": "none",
+      "res_block_in_norm": "none",
+      "resamplers": [
+        "conv_transpose",
+        "conv_transpose",
+        "conv_transpose",
+        "bilinear"
+      ]
+    },
+    "num_tokens_range": [
+      1200,
+      3600
+    ],
+    "points_head": {
+      "dim_in": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "dim_out": [
+        null,
+        null,
+        null,
+        null,
+        3
+      ],
+      "dim_res_blocks": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "num_res_blocks": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "res_block_hidden_norm": "none",
+      "res_block_in_norm": "none",
+      "resamplers": [
+        "conv_transpose",
+        "conv_transpose",
+        "conv_transpose",
+        "bilinear"
+      ]
+    },
+    "remap_output": "exp",
+    "scale_head": {
+      "dims": [
+        384,
+        384,
+        384,
+        1
+      ]
+    }
+  },
+  "moge_config_sha256": "cd66bc79810111bb1a0e621e92107f36c93e3cd4a1e04c9f9a34681cf848e7d8",
+  "offline_attempts": [],
+  "offline_guard_scope": "Python audit events for socket/DNS/process/input; not an OS sandbox for arbitrary native syscalls",
+  "runtime_versions": {
+    "certifi": "2025.10.5",
+    "charset-normalizer": "3.4.4",
+    "filelock": "3.19.1",
+    "fsspec": "2025.10.0",
+    "hf-xet": "1.1.9",
+    "huggingface-hub": "0.34.4",
+    "idna": "3.11",
+    "jinja2": "3.1.6",
+    "kornia": "0.8.1",
+    "kornia-rs": "0.1.9",
+    "markupsafe": "3.0.4",
+    "mpmath": "1.3.0",
+    "networkx": "3.2.1",
+    "numpy": "2.0.2",
+    "opencv-python": "4.11.0.86",
+    "packaging": "26.3",
+    "pillow": "11.3.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.5",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0",
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.5.0"
+  },
+  "schema": "evr0022.qualification.v1",
+  "settings": {
+    "device": "cpu",
+    "dtype": "float32",
+    "extract_resize": null,
+    "lightglue": {
+      "depth_confidence": -1,
+      "features": "superpoint",
+      "flash": false,
+      "mp": false,
+      "width_confidence": -1
+    },
+    "moge": {
+      "apply_mask": false,
+      "force_projection": true,
+      "num_tokens": 1200,
+      "use_fp16": false
+    },
+    "superpoint": {
+      "max_num_keypoints": 2048
+    },
+    "threads": 4
+  },
+  "source_sha256": "3f4fb5f38641c137b27a273fdffb284b65b0d024d94ce29986310b6091e07716",
+  "stage": "moge_image0",
+  "status": "failed",
+  "timings": {
+    "imports_seconds": 16.750224125,
+    "lightglue_load_seconds": 0.08938958399999919,
+    "moge_load_seconds": 0.2768570409999995,
+    "superpoint_load_seconds": 0.010138915999998943,
+    "verification_seconds": 0.7968587920000001
+  },
+  "wall_seconds": 18.980205584,
+  "warnings": [
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    }
+  ]
+}

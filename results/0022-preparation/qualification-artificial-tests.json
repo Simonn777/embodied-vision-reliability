@@ -1,0 +1,22 @@
+{
+  "schema": "evr0022.qualification-artificial-tests.v1",
+  "status": "completed",
+  "scope": "Artificial files and NumPy only; no Torch/model/wheel/scientific-data loads",
+  "source_sha256": {
+    "experiments/0022-frontend/qualify.py": "1cd6f302fa704fe11ceb6cea267b548782a549a7b12ecda578181e6ae7f5d83b",
+    "experiments/0022-frontend/test_qualify.py": "bf5de5c0bd26b805e3a66fe564233f4340aaf3ede123a719b00272cf8aaf8850",
+    "experiments/0022-frontend/supervise.py": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5"
+  },
+  "command": [
+    "$PYTHON",
+    "experiments/0022-frontend/test_qualify.py"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.456340208,
+  "log_sha256": "5c7ecdef22db368e1eb986898bd096d2c1778b6d3193d4d12469a49982c101b0",
+  "source_unchanged": {
+    "experiments/0022-frontend/qualify.py": true,
+    "experiments/0022-frontend/test_qualify.py": true,
+    "experiments/0022-frontend/supervise.py": true
+  }
+}

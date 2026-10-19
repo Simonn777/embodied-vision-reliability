@@ -1,0 +1,27 @@
+{
+  "schema": "evr0022.acquisition-artificial-check.v1",
+  "command": [
+    "$PYTHON",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "experiments/0022-frontend",
+    "-p",
+    "test_acquire.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.12412466700000001,
+  "scientific_data_access": false,
+  "network_access": false,
+  "fixture_tests": 38,
+  "log_sha256": "e0b0905f1ce4b19d12192ab8c803f8e1dadad6daf474f17f0e01d66464109d35",
+  "source_sha256": {
+    "test_acquire.py": "20df56b44b4ba91867e487005eeb34dd88a7ca30337e8ac61a5f6b726c56de91",
+    "acquire.py": "5b09d48b3b81fcf1d62b90871475813e26544934711244dcff2d429d4ad7fa11"
+  },
+  "note": "Saved verification after the initial 38-test pass; no scientific run or model payload."
+}

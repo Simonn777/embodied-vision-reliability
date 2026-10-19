@@ -1,0 +1,14 @@
+$PRIVATE/0022-frontend-preparation/installation-03/runtime/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 586, in <module>
+    main()
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 581, in main
+    result = qualify(args)
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 487, in qualify
+    record["execution_configuration"] = configure_execution(moge, torch, cv2)
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 391, in configure_execution
+    require(settings["torch_intraop_threads"] == 4 and settings["torch_interop_threads"] == 1
+  File "$REPOSITORY/experiments/0022-frontend/qualify.py", line 42, in require
+    raise QualificationError(code)
+__main__.QualificationError: execution_thread_configuration

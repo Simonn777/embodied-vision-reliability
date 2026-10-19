@@ -1,0 +1,32 @@
+{
+  "schema": "evr0022.qualification-artificial-tests.v1",
+  "status": "completed",
+  "verification": 2,
+  "reason": "Pre-freeze explicit authored native SDPA and OpenCV thread configuration; artificial interpreter identity independent of CI host",
+  "scope": "Artificial files and NumPy only; no Torch/model/wheel/scientific-data loads",
+  "source_sha256": {
+    "experiments/0022-frontend/qualify.py": "cde436f3cb5131b5c10e5b01d1c3c80e3d4beecb6ac0fe609ec7bf5b9f584d99",
+    "experiments/0022-frontend/test_qualify.py": "c4b9670f20433eead3072c8afdd7f444119d0e21d24dbdcbfdcd5cb445486037",
+    "experiments/0022-frontend/supervise.py": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5"
+  },
+  "prior_artifacts_sha256": {
+    "qualification-artificial-tests.json": "29b0b066d09f123755ff5eca2cb6cef839f13f2520b1eaee56c464b75d0bdee4",
+    "qualification-artificial-tests.log": "5c7ecdef22db368e1eb986898bd096d2c1778b6d3193d4d12469a49982c101b0"
+  },
+  "command": [
+    "$PYTHON",
+    "experiments/0022-frontend/test_qualify.py"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.453951834,
+  "log_sha256": "5e817a72a7e380eb6e1e7cd2c6fe5d510fdb1ce119ca1157aa0be3c5b55cb77e",
+  "source_unchanged": {
+    "experiments/0022-frontend/qualify.py": true,
+    "experiments/0022-frontend/test_qualify.py": true,
+    "experiments/0022-frontend/supervise.py": true
+  },
+  "prior_artifacts_unchanged": {
+    "qualification-artificial-tests.json": true,
+    "qualification-artificial-tests.log": true
+  }
+}

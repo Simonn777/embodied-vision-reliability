@@ -1,0 +1,32 @@
+{
+  "scope": "runtime thread API diagnostic only; no checkpoint/model construction/inference",
+  "observations": [
+    {
+      "stage": "import",
+      "torch_intraop": 4,
+      "torch_interop": 10,
+      "opencv": 10
+    },
+    {
+      "stage": "torch_limits",
+      "torch_intraop": 4,
+      "torch_interop": 1,
+      "opencv": 10
+    },
+    {
+      "stage": "opencv_one",
+      "torch_intraop": 4,
+      "torch_interop": 1,
+      "opencv": 10
+    },
+    {
+      "stage": "torch_four_again",
+      "torch_intraop": 4,
+      "torch_interop": 1,
+      "opencv": 10
+    }
+  ],
+  "opencv_parallel_backend": [
+    "Parallel framework:            GCD"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "evr0022.supervision.v1",
+  "status": "completed",
+  "operation": "acquisition",
+  "expected_commit": "ce7b02ef130ca6f99a71fdb13f590a41e4293641",
+  "source_sha256": {
+    "experiments/0022-frontend/supervise.py": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5",
+    "experiments/0022-frontend/acquire_operation.py": "28aed9e86d764ca3f336d7eab3b0ae001b261b21cbfb551350af2a6c0a1e0540",
+    "experiments/0022-frontend/acquire.py": "5b09d48b3b81fcf1d62b90871475813e26544934711244dcff2d429d4ad7fa11"
+  },
+  "command": [
+    "$PYTHON",
+    "$REPOSITORY/experiments/0022-frontend/acquire_operation.py",
+    "--expected-commit",
+    "ce7b02ef130ca6f99a71fdb13f590a41e4293641",
+    "--output",
+    "$PRIVATE/0022-frontend-preparation/acquisition-01"
+  ],
+  "cwd": "$REPOSITORY",
+  "python_version": "3.9.6",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "hard_timeout_seconds": 1800.0,
+  "group_rss_limit_kib": 8388608,
+  "rss_sampling": "All observed descendants and retained process groups, approximately every 0.1s; transient peaks may be missed",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 34.676637916000004,
+  "peak_group_rss_kib": 28048,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "stdout_sha256": "3d9360e8121c42e2e4b5f4d807a8837416f80669f2d0adab2241eb18b37f6768",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,5 +1,104 @@
 # Current state
 
+## Active continuation: 0022 frontend qualification passed, 2026-10-19
+
+[Attempt05](results/0022-preparation/runtime-attempt-05/README.md) completed
+both full MoGe predictions, both SuperPoint extractions and one LightGlue pair
+on the unchanged artificial fixture. Outer exit0,23.377s,2,129,712KiB sampled
+peak;84/135 features and73 matches. Saved files/array hashes were checked.
+All strict weights,4/1 Torch threads,serial OpenCV and offline guards passed;
+compatibility conversions and warnings remain explicit. Earlier failures stay.
+
+This establishes local execution feasibility only. No new method gain or
+scientific allocation exists. Next: freeze/review the three-place0023 diagnostic,
+its strong controls and failure-inclusive gate before reading benchmark payloads.
+No manuscript until the unchanged two-source held-out/matched-cost gate passes.
+
+## Active continuation: 0022 annotation compatibility, 2026-10-19
+
+[Attempt04](results/0022-preparation/runtime-attempt-04/README.md) entered
+MoGe inference after all weights/thread settings passed, then failed in original
+utils3d postprocessing on Python3.9's absent ParamSpec. It retained fixed inputs
+but no complete depth output (19.423s,2,053,168KiB sampled peak). A narrow,
+byte-bound annotation prebinding is prepared for attempt05 after review/exact CI.
+No model calculation, fixture or eligibility threshold changes; all failures stay
+recorded. No benchmark data, scientific gain or manuscript yet.
+
+## Active continuation: 0022 OpenCV reporting compatibility, 2026-10-19
+
+[Attempt03](results/0022-preparation/runtime-attempt-03/README.md) passed all
+active model weight checks, then failed before inference on OpenCV's GCD thread
+report. Official source confirms set1 already serializes parallel_for, despite
+reporting CPU count. The narrow next repair explicitly disables parallelism
+with0, reporting1; Torch4/1 and all numerical settings remain fixed. This
+corrects the earlier execution interpretation, and preserves all failed attempts.
+Exact source review and CI precede installation04/qualification04. No benchmark
+payload, inference qualification pass, novel gain or manuscript is established.
+
+## Active continuation: 0022 legacy checkpoint compatibility, 2026-10-19
+
+[Attempt02](results/0022-preparation/runtime-attempt-02/README.md) passed imports
+and complete MoGe/SuperPoint weight checks, but failed before inference on nine
+unused LightGlue release entries. The pinned official loader ignores these
+entries; the next narrow conversion checks their exact names, scalar constants
+and hashes before strict active-weight loading. Original attempts01/02 remain
+retained. Exact source review and CI precede attempt03 with unchanged inputs.
+No scientific images or poses have been read, and no novel gain is established.
+
+## Active continuation: 0022 import repair, 2026-10-19
+
+[Runtime attempt 01](results/0022-preparation/runtime-attempt-01/README.md)
+installed successfully (1.949 s, 88,688 KiB sampled peak), then qualification
+failed during imports (10.201 s, 250,256 KiB) when the process guard intercepted
+NumPy's optional missing `lscpu` capability probe. No checkpoint was loaded and
+no model inference ran. All original receipts and raw private logs are retained;
+public logs explicitly redact local path prefixes.
+
+A narrow compatibility repair must preserve the exact manufactured inputs and
+settings, with independent review and exact CI before a fresh installation and
+qualification. It creates no subprocess and does not admit benchmark data.
+Scientific improvement and novelty remain unestablished; no manuscript.
+
+## Active continuation: 0022 installation/qualification freeze, 2026-10-19
+
+[Asset acquisition](results/0022-preparation/acquisition/README.md) completed
+all 119 files once after exact source CI: 270,952,703 response-body bytes,
+34.676637916 seconds, exit 0. No benchmark payload was acquired or allocated.
+The second implementation freeze binds successful acquisition and installation
+receipts and permits only isolated installation followed by the fixed artificial
+frontend qualification, after independent review and exact CI. It does not admit
+a scientific experiment. No model inference has run at this freeze.
+
+The qualifier preserves full author MoGe postprocessing, strict learned-weight
+checks, original LightGlue key conversion, fixed CPU/thread settings, and exact
+manufactured inputs. Both 11-test artificial verifications passed; the second
+follows pre-inference native-SDPA/OpenCV-thread completion and a CI-fixture
+interpreter correction. Original sources/test receipts are retained. Runtime,
+actual model compatibility, depth validity and real-image accuracy remain unknown.
+
+The research target remains a substantial, novel, independently replicated pose
+improvement. Source/runtime qualification is not that result. A later test of
+reference prediction error must beat in-sample/Hessian/scalar controls and strong
+same-observation joint optimization. No universal calibration guarantee is
+claimed; coherent reference bias is a known counterexample. No manuscript.
+
+## Active continuation: 0022 asset-only freeze, 2026-10-19
+
+The [asset protocol](protocols/0022-traceable-frontend-assets.md) fixes a small,
+traceable MoGe2-S plus SuperPoint/LightGlue frontend and an isolated CPU runtime.
+The manifests pin 105 source/model files (194,142,010 bytes) and 14 wheels
+(76,809,693 bytes); 38 acquisition tests pass with fake responses. This freeze
+admits asset acquisition after exact CI. No benchmark payload or new scientific
+allocation is admitted. Complete manufactured-inference source must receive a
+separate freeze and review before model execution. No new method gain exists.
+
+The old cache still fails the shared-depth provenance requirement. 0021's
+manufactured rank witness and planar counterexample remain qualification only.
+Same-observation multiview and same-field joint-BA controls are mandatory for a
+future transfer method. Do not label a reparameterization of existing inference
+as innovation. The broader held-out, matched-cost, harm and replication gate is
+unchanged, and a manuscript remains inadmissible. Earlier entries are historical.
+
 ## Active continuation: 0021 qualification complete, 2026-10-19
 
 The [metadata screen](results/0021-metadata-screen/README.md) cannot establish

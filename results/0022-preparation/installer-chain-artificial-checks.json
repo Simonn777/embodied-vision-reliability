@@ -1,0 +1,19 @@
+{
+  "schema": "evr0022.installer-chain-checks.v1",
+  "source_sha256": "ae94b94817081ed31d41b7191c8c98dd835f5f363837318e195a7267a05e4ca4",
+  "result": "passed",
+  "scope": "Artificial receipt/log/manifest bytes with git show mocked; no actual acquisition, install, process, model or network calls.",
+  "positive": [
+    "completed prior acquisition commit differs from current installer commit; exact source/manifest/operation/log/batch chain accepted"
+  ],
+  "negative": [
+    "outer failed status",
+    "nonzero exit",
+    "nonnull termination",
+    "wall limit exceeded",
+    "log hash mismatch",
+    "current manifest drift from acquisition freeze",
+    "batch ledger drift"
+  ],
+  "frozen_supervisor_unchanged_sha256": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5"
+}

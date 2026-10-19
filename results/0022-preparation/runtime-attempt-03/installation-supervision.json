@@ -1,0 +1,48 @@
+{
+  "schema": "evr0022.supervision.v1",
+  "status": "completed",
+  "operation": "installation",
+  "expected_commit": "472deb8a39bd9e4de754241aaa760044e4891787",
+  "source_sha256": {
+    "experiments/0022-frontend/supervise.py": "76c7291004d181150a2d1a0ea5d287fffec3cb41f07645ea5bd1409ef241ace5",
+    "experiments/0022-frontend/install_runtime.py": "ae94b94817081ed31d41b7191c8c98dd835f5f363837318e195a7267a05e4ca4"
+  },
+  "command": [
+    "$PYTHON",
+    "$REPOSITORY/experiments/0022-frontend/install_runtime.py",
+    "--expected-commit",
+    "472deb8a39bd9e4de754241aaa760044e4891787",
+    "--source-assets",
+    "$PRIVATE/0022-frontend-preparation/acquisition-01/source-model-assets",
+    "--wheel-assets",
+    "$PRIVATE/0022-frontend-preparation/acquisition-01/wheel-assets",
+    "--source-manifest",
+    "$REPOSITORY/configs/0022-source-model-assets.json",
+    "--wheel-manifest",
+    "$REPOSITORY/configs/0022-wheel-assets.json",
+    "--destination",
+    "$PRIVATE/0022-frontend-preparation/installation-03",
+    "--acquisition-supervision",
+    "$PRIVATE/0022-frontend-preparation/acquisition-supervision-01/receipt.json"
+  ],
+  "cwd": "$REPOSITORY",
+  "python_version": "3.9.6",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "hard_timeout_seconds": 1800.0,
+  "group_rss_limit_kib": 8388608,
+  "rss_sampling": "All observed descendants and retained process groups, approximately every 0.1s; transient peaks may be missed",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 1.8198946669999998,
+  "peak_group_rss_kib": 83696,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
