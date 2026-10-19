@@ -38,6 +38,8 @@ jobs:
           python -m pytest -q experiments/0014-pixel-noise
       - name: Check image-information pipeline on artificial data only
         run: python -m pytest -q experiments/0015-photometric
+      - name: Check search diagnostic bindings and scores on artificial data only
+        run: python -m pytest -q experiments/0016-search-headroom experiments/0016-review
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'

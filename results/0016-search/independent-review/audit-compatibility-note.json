@@ -1,0 +1,11 @@
+{
+  "artificial_tests_passed": 7,
+  "diagnosis": "Independent scalar reductions can change argmin identity for numerically tied nondeployable oracle candidates. All20 observed regret gaps were <=3.2980985997799195e-11 degrees.",
+  "first_audit_error": "ValueError: selection oracle_best4_nondeployable.seed differs: 1 versus 0",
+  "first_audit_exit_code": 1,
+  "first_audit_output_written": false,
+  "first_audit_script_sha256": "b10c6a4ac986a8e540fb39d6d8616167a09042b13017bc4ca80e1d85d0873564",
+  "new_audit_script_sha256": "cd6f84ecca06affcbe50bb6ceca0771ea6cc1a90a15aecfa69b4a13de3daf2dc",
+  "repair": "Verify exact oracle argmin of stored evaluator errors, independently recompute its error and require scalar-best regret <=unchanged3e-6 degree tolerance; disclose every identity discrepancy and scalar-best AUC. Deployed selectors remain exact.",
+  "scope": "Saved-only audit implementation clarification; no scientific estimator/evaluator/data rerun. No frozen source/result was modified."
+}

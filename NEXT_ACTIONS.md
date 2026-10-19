@@ -1,36 +1,41 @@
 # Next actions
 
-## Active continuation: 2026-10-19
+## Active continuation: 0016 complete, 2026-10-19
 
-The owner requires substantial independent improvement before a manuscript. None
-is yet established. [0015](results/0015-photometric/README.md) completed its32
-scientific workers after published freeze057a5ea and fails its fixed expansion
-gate: full AUC@5 +0.009558333pp (required≥0.25), same-index subset −3.091052179pp
-(required≥+2),9/16 full errors improve (required≥10). All16 remain in each metric;
-4 subsets are unavailable and penalized equally. There were191 admitted changes
-from1355 selected queries,0.119375% of the full160000 observations, and40 completed
-native calls. The first evaluator's baseline-time metadata error is preserved;
-a separately frozen saved-only repair produced the complete score without
-repeating any prediction. Independent saved-output review confirms the bindings,
-counts, metrics and failure. Strong patch-loss reduction is not task improvement.
+No substantial new-method improvement is established. The [0016 diagnostic](results/0016-search/README.md)
+completed64pairs,192workers and768official native calls once after published
+freeze055ea70 and successful exact CI. The single score completed after the
+prediction seal. Current normalized full4 AUC@5 is78.2293102381%; its nondeployable
+oracle reaches78.2587614824%, only0.0294512443pp higher. The predeclared2pp
+necessary candidate-selection gate fails. Zero estimator failures; outer227.0784s.
 
-Stop this sparse photometric configuration, with no iteration/gate/pair rescue or
-immediate propagation. Saved-only post-hoc epipolar compatibility also worsens on
-average; it is not ground-truth correspondence error. The [prior-work screen](docs/literature/0015-photometric-followup-prior.md)
-identifies JET, PixSfM, EpicFlow, ArgMatch and a2026 descriptor-JET preprint as
-close controls. A distinct next diagnostic must demonstrate recoverable image
-information or another explicit mechanism before a more complex method is run.
-A bounded nonquadratic-likelihood profile is only a possible falsification study,
-not an admitted experiment or novel contribution. No manuscript is started.
+Stop the tested restart/ordinal-selection branch. More complicated selection
+cannot recover good hypotheses absent from this fixed bank. Stable errors do
+not identify their cause. The three errors above5degrees under current normalized
+PoseLib are almost invariant across the tested seeds. Current TS is worse here;
+retain it and do not use it alone as a weak baseline. No paper is started.
 
-The [0013 official baseline](results/0013-baseline-calibration-compatibility/README.md)
-is AUC@5=81.169622478%. The [0014 noise control](results/0014-pixel-noise-arithmetic-repair/README.md)
-gains only0.006510542pp; that route remains closed. The [0012 scorer family](results/0012d-lazy-grid/development/README.md)
-is31.21% slower than ordinary partial scoring and remains closed. Preserve all
-prior failures, original sources, technical repairs and untouched held-out data.
-The final target remains≥2 absolute AUC@5 points at matched total time on two
-independent held-out sources, positive scene-level uncertainty bounds, strong
-baselines, novelty and ablations. The broader research goal remains active.
+Independent saved-only audit is complete and agrees (768 candidate errors;
+maximum angular discrepancy6.96e-11deg). Next: publish all0016results, then
+qualify a genuinely additional source of information under a separate prospective
+protocol. [Official cached-depth resources](docs/literature/0016-monodepth-resources.md)
+and their [consumer contract](docs/literature/0016-monodepth-consumer-contract.md)
+permit a small downstream comparison against known depth methods without new
+neural inference. They are not yet acquired/evaluated or a novel contribution.
+A five-scene development diagnostic may test whether such inputs generate useful
+poses and when existing methods are harmed; simply combining RePoseD/MADPose
+components is already known. Do not infer a new method from an oracle table.
+
+Preserve all earlier results and stop decisions. [0015](docs/0015-publication-verification.md)
+failed with full+0.009558333pp/subset−3.091052179pp;0014noise and0012scoring remain
+closed. The64new0015pairs are now development forever;0022 remains numerically
+unread. No additional dataset/model weights or fees were incurred by0016.
+
+The research goal remains active. A manuscript still requires a distinct
+contribution with≥2absoluteAUC@5pp at matched complete-pipeline time on two
+independent held-out sources, positive scene-level95%intervals,≤0.5pp AUC@20loss,
+strong controls, ablations and replication. Neither baseline diagnostics nor
+GitHub publication satisfies that stopping criterion.
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
