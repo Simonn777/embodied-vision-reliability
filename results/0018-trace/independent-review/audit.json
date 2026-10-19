@@ -1,0 +1,329 @@
+{
+  "all_event_nonfinite_state_counts": {
+    "nonfinite_exit_states": 3,
+    "nonfinite_incumbent_states": 3,
+    "nonfinite_initial_states": 3,
+    "nonfinite_lo_begin_states": 3,
+    "nonfinite_lo_end_states": 3,
+    "nonfinite_proposal_states": 3
+  },
+  "all_raw_state_stat_mask_parity_passed": true,
+  "bindings": {
+    "baseline_seal_sha256": "aef331923ced37edfb896ac070d954e3da6e08145145aa2bd3de636f9abce510",
+    "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+    "source_sha256": {
+      "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+      "configs/0018-libraries.json": "bddb31bcb0e4fbcb17ed50339d1cbd69f3738fb4c6e81179a2977fdf5ff522ec",
+      "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+      "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+      "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+      "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+      "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+      "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+      "experiments/0018-depth-trace/build_instrumented.py": "23d06ecce77bd63cdebee3ce74ec458b02ce713dedb75086cd2ae0047ed16b08",
+      "experiments/0018-depth-trace/common.py": "f8f9d22d4b1db777f743910c90606ac941982bf3d59459b051ceee5819faf4a7",
+      "experiments/0018-depth-trace/diagnose_trace.py": "ef9dd1da6fbc094d54fb92504af93dbf63517920469cefa2754d05f1332205ae",
+      "experiments/0018-depth-trace/instrument_source.py": "0455a7b949759f8678378cbb2b17f490e9d66b6d1fde1d225acb4a13ff8b4921",
+      "experiments/0018-depth-trace/predict_pair.py": "7220525e58564d53f80aed247060146712e95a3925d34274d617af020803a03a",
+      "experiments/0018-depth-trace/qualify_native.py": "12f335231d3d6313829e3c54749e44c8056d2f3780c95e5b7fa6bc4866cd0412",
+      "experiments/0018-depth-trace/qualify_observer.cpp": "b24ee4b84006de62d0e115cb6a3b912aabe4871bb1438b9f574486704fb32e4e",
+      "experiments/0018-depth-trace/run_diagnostic.py": "54b68d98e24401eb845832a7b751ffb6095389ef45f8d52076047f284e498769",
+      "experiments/0018-depth-trace/run_operation.py": "7a34e2495a2244b94a16d336a81567818e628f4d60bb29640499bf2f774a8211",
+      "experiments/0018-depth-trace/trace0018.h.in": "57be50be30b82b10983f0191f5c3723b116f6b20c5a7de98001217fc11cbd7c2",
+      "experiments/0018-depth-trace/trace_pybind.cc.in": "8e125d141becdf2bcf3aadbd6b833777e2e9d3ce28f4798fcc5ae50041927d0a",
+      "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+      "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125",
+      "protocols/0018-depth-lo-trace.md": "546ef9629cb72f8e07880c294e195efe96d17cb182e7e697bb69450b9fa9d8b3"
+    },
+    "trace_seal_sha256": "9ccf43cc4620ab68a44caf321663686faabea28cf6a9001c2848c1842dd96377"
+  },
+  "bitwise_equal_components": 4640,
+  "conclusion": "The frozen complete-state barrier failed. Final-output parity does not make invalid initial states admissible. No label/gate result or method gain is produced.",
+  "diagnosis_receipt": {
+    "completed_reconstructions": 88,
+    "error": "TraceMismatch: q has invalid shape or nonfinite entries",
+    "failed_phase": "reconstruction",
+    "output_bytes_before_receipt": 27910662,
+    "schema": "evr0018.diagnosis-operation.v1",
+    "status": "ineligible",
+    "total_seconds": 20.572926667
+  },
+  "floating_components": 4640,
+  "label_artifacts_present": false,
+  "nonfinite_required_case_count": 3,
+  "nonfinite_required_cases": [
+    {
+      "all_event_nonfinite_state_counts": {
+        "nonfinite_exit_states": 1,
+        "nonfinite_incumbent_states": 1,
+        "nonfinite_initial_states": 1,
+        "nonfinite_lo_begin_states": 1,
+        "nonfinite_lo_end_states": 1,
+        "nonfinite_proposal_states": 1
+      },
+      "arm": "depth_scale",
+      "counts": {
+        "nonfinite_required_states": 2,
+        "required_states": 119
+      },
+      "final_ancestry_lo_ids": [
+        10,
+        2
+      ],
+      "key": "70106401_3725909945_o_97454199_2345558379_o",
+      "nonfinite_required_states": [
+        {
+          "cost_paths": [
+            "native_cost.mean",
+            "native_cost.numerator"
+          ],
+          "event_index": 4,
+          "kind": "initial",
+          "lo_id": 0,
+          "on_final_ancestry": false,
+          "stage": "proposal_lo",
+          "state_paths": [
+            "state.R[0][0]",
+            "state.R[0][1]",
+            "state.R[0][2]",
+            "state.R[1][0]",
+            "state.R[1][1]",
+            "state.R[1][2]",
+            "state.R[2][0]",
+            "state.R[2][1]",
+            "state.R[2][2]",
+            "state.q[0]",
+            "state.q[1]",
+            "state.q[2]",
+            "state.q[3]",
+            "state.scale",
+            "state.t[0]",
+            "state.t[1]",
+            "state.t[2]"
+          ]
+        },
+        {
+          "cost_paths": [
+            "native_cost.mean",
+            "native_cost.numerator"
+          ],
+          "event_index": 5,
+          "kind": "exit",
+          "lo_id": 0,
+          "on_final_ancestry": false,
+          "stage": "proposal_lo",
+          "state_paths": [
+            "state.R[0][0]",
+            "state.R[0][1]",
+            "state.R[0][2]",
+            "state.R[1][0]",
+            "state.R[1][1]",
+            "state.R[1][2]",
+            "state.R[2][0]",
+            "state.R[2][1]",
+            "state.R[2][2]",
+            "state.q[0]",
+            "state.q[1]",
+            "state.q[2]",
+            "state.q[3]",
+            "state.scale",
+            "state.t[0]",
+            "state.t[1]",
+            "state.t[2]"
+          ]
+        }
+      ],
+      "pair_index": 44,
+      "scene": "london_bridge"
+    },
+    {
+      "all_event_nonfinite_state_counts": {
+        "nonfinite_exit_states": 1,
+        "nonfinite_incumbent_states": 1,
+        "nonfinite_initial_states": 1,
+        "nonfinite_lo_begin_states": 1,
+        "nonfinite_lo_end_states": 1,
+        "nonfinite_proposal_states": 1
+      },
+      "arm": "depth_scale",
+      "counts": {
+        "nonfinite_required_states": 2,
+        "required_states": 78
+      },
+      "final_ancestry_lo_ids": [
+        7,
+        2
+      ],
+      "key": "13103628_8003383048_o_38668777_6910847202_o",
+      "nonfinite_required_states": [
+        {
+          "cost_paths": [
+            "native_cost.mean",
+            "native_cost.numerator"
+          ],
+          "event_index": 4,
+          "kind": "initial",
+          "lo_id": 0,
+          "on_final_ancestry": false,
+          "stage": "proposal_lo",
+          "state_paths": [
+            "state.R[0][0]",
+            "state.R[0][1]",
+            "state.R[0][2]",
+            "state.R[1][0]",
+            "state.R[1][1]",
+            "state.R[1][2]",
+            "state.R[2][0]",
+            "state.R[2][1]",
+            "state.R[2][2]",
+            "state.q[0]",
+            "state.q[1]",
+            "state.q[2]",
+            "state.q[3]",
+            "state.scale",
+            "state.t[0]",
+            "state.t[1]",
+            "state.t[2]"
+          ]
+        },
+        {
+          "cost_paths": [
+            "native_cost.mean",
+            "native_cost.numerator"
+          ],
+          "event_index": 5,
+          "kind": "exit",
+          "lo_id": 0,
+          "on_final_ancestry": false,
+          "stage": "proposal_lo",
+          "state_paths": [
+            "state.R[0][0]",
+            "state.R[0][1]",
+            "state.R[0][2]",
+            "state.R[1][0]",
+            "state.R[1][1]",
+            "state.R[1][2]",
+            "state.R[2][0]",
+            "state.R[2][1]",
+            "state.R[2][2]",
+            "state.q[0]",
+            "state.q[1]",
+            "state.q[2]",
+            "state.q[3]",
+            "state.scale",
+            "state.t[0]",
+            "state.t[1]",
+            "state.t[2]"
+          ]
+        }
+      ],
+      "pair_index": 61,
+      "scene": "milan_cathedral"
+    },
+    {
+      "all_event_nonfinite_state_counts": {
+        "nonfinite_exit_states": 1,
+        "nonfinite_incumbent_states": 1,
+        "nonfinite_initial_states": 1,
+        "nonfinite_lo_begin_states": 1,
+        "nonfinite_lo_end_states": 1,
+        "nonfinite_proposal_states": 1
+      },
+      "arm": "depth_scale",
+      "counts": {
+        "nonfinite_required_states": 2,
+        "required_states": 74
+      },
+      "final_ancestry_lo_ids": [
+        5,
+        2
+      ],
+      "key": "25457322_544048311_o_63711609_185195406_o",
+      "nonfinite_required_states": [
+        {
+          "cost_paths": [
+            "native_cost.mean",
+            "native_cost.numerator"
+          ],
+          "event_index": 4,
+          "kind": "initial",
+          "lo_id": 0,
+          "on_final_ancestry": false,
+          "stage": "proposal_lo",
+          "state_paths": [
+            "state.R[0][0]",
+            "state.R[0][1]",
+            "state.R[0][2]",
+            "state.R[1][0]",
+            "state.R[1][1]",
+            "state.R[1][2]",
+            "state.R[2][0]",
+            "state.R[2][1]",
+            "state.R[2][2]",
+            "state.q[0]",
+            "state.q[1]",
+            "state.q[2]",
+            "state.q[3]",
+            "state.scale",
+            "state.t[0]",
+            "state.t[1]",
+            "state.t[2]"
+          ]
+        },
+        {
+          "cost_paths": [
+            "native_cost.mean",
+            "native_cost.numerator"
+          ],
+          "event_index": 5,
+          "kind": "exit",
+          "lo_id": 0,
+          "on_final_ancestry": false,
+          "stage": "proposal_lo",
+          "state_paths": [
+            "state.R[0][0]",
+            "state.R[0][1]",
+            "state.R[0][2]",
+            "state.R[1][0]",
+            "state.R[1][1]",
+            "state.R[1][2]",
+            "state.R[2][0]",
+            "state.R[2][1]",
+            "state.R[2][2]",
+            "state.q[0]",
+            "state.q[1]",
+            "state.q[2]",
+            "state.q[3]",
+            "state.scale",
+            "state.t[0]",
+            "state.t[1]",
+            "state.t[2]"
+          ]
+        }
+      ],
+      "pair_index": 64,
+      "scene": "sagrada_familia"
+    }
+  ],
+  "nonfinite_required_on_final_ancestry": 0,
+  "pair_count": 80,
+  "partial_reconstruction_count": 88,
+  "replay_count": 160,
+  "required_state_counts": {
+    "nonfinite_required_states": 6,
+    "rejected_trials": 829,
+    "required_states": 19343
+  },
+  "review_helper_sha256": "529b59d3234d3047ee60ba07406150ca478b5c74e8e8324a24a0a1d283b0aa00",
+  "review_source_sha256": "322f6ca6d6d2396f4171a1780c349629449473ed58d14b1e95373e21add1ca28",
+  "schema": "evr0018.failure-review.v1",
+  "scientific_diagnostic_status": "ineligible",
+  "scope": "Saved JSON/source/log hashes and graph-only ancestry; no private HDF5, baseline evaluation/labels, scientific module or native call.",
+  "status": "passed",
+  "timings": {
+    "instrumented_native_sum_seconds": 5.278665000000002,
+    "replay_outer_process_sum_seconds": 58.165735207000004
+  },
+  "trace_bytes": 37072987,
+  "worker_nonempty_logs": []
+}

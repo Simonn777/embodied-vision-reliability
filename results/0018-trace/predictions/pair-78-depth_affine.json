@@ -1,0 +1,390 @@
+{
+  "arm": "depth_affine",
+  "baseline_prediction_sha256": "1889fce74d89c9224a03061805bf27c7300ddeea28ac5d84a03e988abc3d61df",
+  "baseline_seal_sha256": "aef331923ced37edfb896ac070d954e3da6e08145145aa2bd3de636f9abce510",
+  "calibration": {
+    "K1": [
+      [
+        691.8839111328125,
+        0.0,
+        251.0
+      ],
+      [
+        0.0,
+        691.8839111328125,
+        251.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        856.843994140625,
+        0.0,
+        346.0
+      ],
+      [
+        0.0,
+        856.843994140625,
+        530.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 502,
+      "model": "PINHOLE",
+      "params": [
+        691.8839111328125,
+        691.8839111328125,
+        251.0,
+        251.0
+      ],
+      "width": 502
+    },
+    "camera2": {
+      "height": 1060,
+      "model": "PINHOLE",
+      "params": [
+        856.843994140625,
+        856.843994140625,
+        346.0,
+        530.0
+      ],
+      "width": 692
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10636488,
+  "dataset_sha256_declared": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+  "dataset_sha256_verified": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+  "depth_diagnostics": {
+    "all": {
+      "denominator": 2039,
+      "direction_denominator": 4078,
+      "fixed_reprojection_cost": 0.19971408348808506,
+      "forward": {
+        "cost_sum": 524.1180523500052,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2039,
+        "valid_projection_count": 2039
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4078,
+      "native_branch_positive_finite_z_count": 4078,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.19971408348808506,
+      "reverse": {
+        "cost_sum": 290.31598011440565,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2039,
+        "valid_projection_count": 2039
+      },
+      "status": "available"
+    },
+    "pixel_threshold": 16.0,
+    "raw_translation_norm": 0.636279514465671,
+    "raw_translation_norm_overflow": false,
+    "returned_mask": {
+      "denominator": 1935,
+      "direction_denominator": 3870,
+      "fixed_reprojection_cost": 0.19013367986011007,
+      "forward": {
+        "cost_sum": 470.189949777979,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 1935,
+        "valid_projection_count": 1935
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 3870,
+      "native_branch_positive_finite_z_count": 3870,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.19013367986011007,
+      "reverse": {
+        "cost_sum": 265.62739128064703,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 1935,
+        "valid_projection_count": 1935
+      },
+      "status": "available"
+    },
+    "returned_mask_semantics": "Pre-final-refinement epipolar support; not final depth-active support",
+    "scale": 0.7771700634446922,
+    "shift1": 0.13713624727296259,
+    "shift2": -0.06553798954155234
+  },
+  "estimate": {
+    "R": [
+      [
+        0.9391851059248605,
+        0.23706106911063526,
+        0.24846204201251967
+      ],
+      [
+        -0.1829614626230954,
+        0.9576914811334948,
+        -0.22215339331000705
+      ],
+      [
+        -0.2906139019450483,
+        0.16318417961449455,
+        0.9428226150871744
+      ]
+    ],
+    "t": [
+      -0.5814876318352765,
+      0.08719567855370142,
+      -0.24314742069952439
+    ]
+  },
+  "filename": "sagrada_familia_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2039,
+    "count": 2039,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 1917,
+    "pixel_msac": 326.9303123965754,
+    "pixel_threshold": 2.0
+  },
+  "geometry": {
+    "R": [
+      [
+        0.9391851059248605,
+        0.23706106911063526,
+        0.24846204201251967
+      ],
+      [
+        -0.1829614626230954,
+        0.9576914811334948,
+        -0.22215339331000705
+      ],
+      [
+        -0.2906139019450483,
+        0.16318417961449455,
+        0.9428226150871744
+      ]
+    ],
+    "scale": 0.7771700634446922,
+    "shift1": 0.13713624727296259,
+    "shift2": -0.06553798954155234,
+    "t": [
+      -0.5814876318352765,
+      0.08719567855370142,
+      -0.24314742069952439
+    ]
+  },
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "5bb4069d9eac73f32a08d58e85f3fc567021736c2644b4527d65a096cf941c2d",
+      "shape": [
+        2039
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "7706dce793bacbe6296d2f9d4f6b71a289618d141412a2e222b640abdfb90881",
+      "shape": [
+        2039
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "b5a41ccdd9e4a9b01bd9deb5bba717505eeac90710398d711a73f4eb361cbc6c",
+      "shape": [
+        2039,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "4a3c6eb88bb702155e879f9692b638a0ae190f5da996146dff6fdbe95180fefd",
+      "shape": [
+        2039,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2039,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 1935,
+  "key": "64706254_8497647563_o_69264849_2284973187_o",
+  "library": {
+    "binary_bytes": 2673976,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "35d03b03304ebb6249b9139c027ab27eca5bd5a859294324786634e067e337b4",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2039,
+  "mask_sha256": "b60aba6cc0320dd4f60c2d2757bdb1470d267102d83bc866219618d85624c75a",
+  "native_inliers_packbits_big_hex": "fbfffffdf7dff7fffefbfffbdffffffdffffffffff77ffffff7fffffff7f6f7dfbffcffffffffffffffff7fffff7fffefffffffffffffafffffffefffddfffeffffffffffbff7ffffafffffffbfffefffffffdbfeeffffffffffdffffff7ffffff7ffffffff7ffefffff7daffff7eff7f77feff9ffffffbffffffefffffffbefffff7ffffefffffffffeff7ffeddffffff7fffdffffffdfffffffffefffffffefffb7fbfbffffbf7afffffefffffeffffffffffff7ffffffdffffffffffffffffffffffffefffffffffffdffdfdfffffff7fffffe7ffffdfffefbfffffffffefffffffffffbfffffbfffffffffffffffbffffffffdfffffcffdffffffefffe",
+  "options": {
+    "bundle": {},
+    "estimate_shift": true,
+    "max_errors": [
+      16.0,
+      2.0
+    ],
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "weight_sampson": 1.0
+  },
+  "pair_index": 78,
+  "parity": {
+    "all_float_components_bitwise_equal": true,
+    "bitwise_equal_float_components": 29,
+    "discrete_and_mask_exact": true,
+    "float_relative_max_tolerance": 1e-12,
+    "floating_components": 29,
+    "max_normalized_float_error": 0.0,
+    "passed": true,
+    "raw_translation_gauge_preserved": true
+  },
+  "phase": "complete",
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-78-depth_affine.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-78-depth_affine.worker.json",
+    "raw_worker_sha256": "d6d2e322595f26baf06cca6f74ddab5a6be3d9bba57e158da32dad42517d14d8",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 50160,
+    "termination": null,
+    "wall_seconds": 0.42784541700000034,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.9489946051986268,
+    "iterations": 101,
+    "model_score": 0.0022340458042471012,
+    "num_inliers": 1935,
+    "refinements": 7
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "sagrada_familia",
+  "schema": "evr0018.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "configs/0018-libraries.json": "bddb31bcb0e4fbcb17ed50339d1cbd69f3738fb4c6e81179a2977fdf5ff522ec",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "experiments/0018-depth-trace/build_instrumented.py": "23d06ecce77bd63cdebee3ce74ec458b02ce713dedb75086cd2ae0047ed16b08",
+    "experiments/0018-depth-trace/common.py": "f8f9d22d4b1db777f743910c90606ac941982bf3d59459b051ceee5819faf4a7",
+    "experiments/0018-depth-trace/diagnose_trace.py": "ef9dd1da6fbc094d54fb92504af93dbf63517920469cefa2754d05f1332205ae",
+    "experiments/0018-depth-trace/instrument_source.py": "0455a7b949759f8678378cbb2b17f490e9d66b6d1fde1d225acb4a13ff8b4921",
+    "experiments/0018-depth-trace/predict_pair.py": "7220525e58564d53f80aed247060146712e95a3925d34274d617af020803a03a",
+    "experiments/0018-depth-trace/qualify_native.py": "12f335231d3d6313829e3c54749e44c8056d2f3780c95e5b7fa6bc4866cd0412",
+    "experiments/0018-depth-trace/qualify_observer.cpp": "b24ee4b84006de62d0e115cb6a3b912aabe4871bb1438b9f574486704fb32e4e",
+    "experiments/0018-depth-trace/run_diagnostic.py": "54b68d98e24401eb845832a7b751ffb6095389ef45f8d52076047f284e498769",
+    "experiments/0018-depth-trace/run_operation.py": "7a34e2495a2244b94a16d336a81567818e628f4d60bb29640499bf2f774a8211",
+    "experiments/0018-depth-trace/trace0018.h.in": "57be50be30b82b10983f0191f5c3723b116f6b20c5a7de98001217fc11cbd7c2",
+    "experiments/0018-depth-trace/trace_pybind.cc.in": "8e125d141becdf2bcf3aadbd6b833777e2e9d3ce28f4798fcc5ae50041927d0a",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125",
+    "protocols/0018-depth-lo-trace.md": "546ef9629cb72f8e07880c294e195efe96d17cb182e7e697bb69450b9fa9d8b3"
+  },
+  "status": "completed",
+  "timing_semantics": {
+    "call_seconds": "Instrumented native call including observer and native-to-Python trace serialization; observation overhead is not separately isolated",
+    "trace_save_seconds": "Python trace validation/JSON serialization/file write and hash",
+    "worker_total_seconds": "Whole worker; supervisor separately charges outer process wall time"
+  },
+  "timings": {
+    "binding_seconds": 0.190448208,
+    "call_seconds": 0.032270666999999975,
+    "charged_total_seconds": 0.42784541700000034,
+    "input_seconds": 0.034107957999999994,
+    "score_seconds": 0.0010769170000000106,
+    "trace_save_seconds": 0.011104166000000026,
+    "worker_total_seconds": 0.273017583
+  },
+  "trace_byte_budget": 67108864,
+  "trace_bytes": 250789,
+  "trace_capacity": 50000,
+  "trace_event_count": 164,
+  "trace_path": "pair-78-depth_affine.worker.trace.json",
+  "trace_required_bytes": 250789,
+  "trace_sha256": "562591681d6051d46a208f013a59a163ca59933e6fcc3111a5ce0883acb723e7"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "evr0018.independent-review-execution.v1",
+  "record_type": "Retrospective transcription of retained tool outputs; no new execution",
+  "cwd": "repository root",
+  "audit": {
+    "python": "existing research venv/bin/python",
+    "argv_after_python": ["experiments/0018-review/review_failure.py", "--repo", ".", "--manifest", "configs/0017-development-manifest.json", "--baseline-seal", "results/0017-depth/predictions/seal.json", "--result-dir", "results/0018-trace", "--output", "../0018-failure-audit.json"],
+    "observed_stdout": "{\"status\": \"passed\", \"replay_count\": 160, \"nonfinite_required_case_count\": 3, \"nonfinite_required_on_final_ancestry\": 0, \"required_state_counts\": {\"required_states\": 19343, \"rejected_trials\": 829, \"nonfinite_required_states\": 6}}",
+    "exit_code": null,
+    "wall_seconds": null,
+    "metadata_note": "The tool invocation retained stdout only; its process exit code and precise duration were not retained. No value is inferred or fabricated.",
+    "output_copy": "The completed scratch audit JSON was copied byte-for-byte to audit.json."
+  },
+  "artificial_tests": {
+    "python": "existing research venv/bin/python",
+    "argv_after_python": ["-m", "unittest", "discover", "-s", "experiments/0018-review", "-p", "test_review_failure.py", "-v"],
+    "observed_exit_code": 0,
+    "observed_process_wall_seconds": 0.024413166,
+    "unittest_reported_seconds": 0.001,
+    "test_count": 4,
+    "result": "OK",
+    "scope": "Artificial graph, initial-versus-rejected nonfinite state, auxiliary-null and cycle cases only."
+  },
+  "final_source_followup": {
+    "reason": "Following a parent request to remove the uninvoked label-auditor dependency, the failure reviewer was made compact: it imports the existing 0017 independent JSON/hash helpers and keeps raw parity local. The unused planned auditor was moved outside the repository. A later request to retain the dependency arrived after this change and the saved-only verification had finished.",
+    "initial_public_audit_preserved_as": "initial-audit.json",
+    "initial_audit_sha256": "ce70e52fea15d4921a9d2fefca9af16fbdd0aed0d97f96745d9deac185ae9013",
+    "combined_shell_operations": [
+      "mkdir -p ../0018-preparation",
+      "mv experiments/0018-review/review_saved.py ../0018-preparation/unused_review_saved.py",
+      "<existing research venv>/bin/python -m unittest discover -s experiments/0018-review -p test_review_failure.py -v",
+      "<existing research venv>/bin/python experiments/0018-review/review_failure.py --repo . --manifest configs/0017-development-manifest.json --baseline-seal results/0017-depth/predictions/seal.json --result-dir results/0018-trace --output ../0018-failure-audit-final-source.json"
+    ],
+    "observed_combined_exit_code": 0,
+    "observed_combined_wall_seconds": 1.574464667,
+    "separate_audit_wall_seconds": null,
+    "test_count": 4,
+    "unittest_reported_seconds": 0.000,
+    "test_result": "OK",
+    "audit_observed_result": "passed; 160 replays; 3 nonfinite required-state cases; 6 nonfinite required states; none on final ancestry",
+    "final_output_copy": "../0018-failure-audit-final-source.json copied byte-for-byte to audit.json",
+    "scope": "Only the saved-output audit was repeated. No scientific replay, diagnosis, native call, original result, frozen source, threshold or label access changed."
+  },
+  "boundaries": "No scientific replay, diagnostic rerun, label file, HDF5 cache or native binary access."
+}

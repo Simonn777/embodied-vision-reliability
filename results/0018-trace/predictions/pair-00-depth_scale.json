@@ -1,0 +1,390 @@
+{
+  "arm": "depth_scale",
+  "baseline_prediction_sha256": "ccf901d3e5147fe4dfc366ddc035f6af4a617931ac370cf4fa3ee53ecbd5ea21",
+  "baseline_seal_sha256": "aef331923ced37edfb896ac070d954e3da6e08145145aa2bd3de636f9abce510",
+  "calibration": {
+    "K1": [
+      [
+        1034.0543212890625,
+        0.0,
+        341.5
+      ],
+      [
+        0.0,
+        1034.0543212890625,
+        516.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        1759.5635986328125,
+        0.0,
+        511.0
+      ],
+      [
+        0.0,
+        1759.5635986328125,
+        383.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 1032,
+      "model": "PINHOLE",
+      "params": [
+        1034.0543212890625,
+        1034.0543212890625,
+        341.5,
+        516.0
+      ],
+      "width": 682
+    },
+    "camera2": {
+      "height": 766,
+      "model": "PINHOLE",
+      "params": [
+        1759.5635986328125,
+        1759.5635986328125,
+        511.0,
+        383.0
+      ],
+      "width": 1022
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10675000,
+  "dataset_sha256_declared": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+  "dataset_sha256_verified": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+  "depth_diagnostics": {
+    "all": {
+      "denominator": 2048,
+      "direction_denominator": 4096,
+      "fixed_reprojection_cost": 0.1751714516101114,
+      "forward": {
+        "cost_sum": 363.31692637069364,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2048,
+        "valid_projection_count": 2048
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4096,
+      "native_branch_positive_finite_z_count": 4096,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.1751714516101114,
+      "reverse": {
+        "cost_sum": 354.1853394243227,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2048,
+        "valid_projection_count": 2048
+      },
+      "status": "available"
+    },
+    "pixel_threshold": 16.0,
+    "raw_translation_norm": 0.24017194748102622,
+    "raw_translation_norm_overflow": false,
+    "returned_mask": {
+      "denominator": 1700,
+      "direction_denominator": 3400,
+      "fixed_reprojection_cost": 0.0078115403535068744,
+      "forward": {
+        "cost_sum": 17.255904051938032,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 1700,
+        "valid_projection_count": 1700
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 3400,
+      "native_branch_positive_finite_z_count": 3400,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.0078115403535068744,
+      "reverse": {
+        "cost_sum": 9.30333314998534,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 1700,
+        "valid_projection_count": 1700
+      },
+      "status": "available"
+    },
+    "returned_mask_semantics": "Pre-final-refinement epipolar support; not final depth-active support",
+    "scale": 0.5509121535085527,
+    "shift1": 0.0,
+    "shift2": 0.0
+  },
+  "estimate": {
+    "R": [
+      [
+        0.8565112377350094,
+        0.22004333605117035,
+        0.4668719630617308
+      ],
+      [
+        -0.16769080467580108,
+        0.9741320814233418,
+        -0.15148096239795267
+      ],
+      [
+        -0.4881273334498128,
+        0.051455011430368396,
+        0.871254318863256
+      ]
+    ],
+    "t": [
+      -0.1271608732140575,
+      0.07276914295031527,
+      0.19030850878125183
+    ]
+  },
+  "filename": "florence_cathedral_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2048,
+    "count": 2048,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 1700,
+    "pixel_msac": 363.4788855603667,
+    "pixel_threshold": 2.0
+  },
+  "geometry": {
+    "R": [
+      [
+        0.8565112377350094,
+        0.22004333605117035,
+        0.4668719630617308
+      ],
+      [
+        -0.16769080467580108,
+        0.9741320814233418,
+        -0.15148096239795267
+      ],
+      [
+        -0.4881273334498128,
+        0.051455011430368396,
+        0.871254318863256
+      ]
+    ],
+    "scale": 0.5509121535085527,
+    "shift1": 0.0,
+    "shift2": 0.0,
+    "t": [
+      -0.1271608732140575,
+      0.07276914295031527,
+      0.19030850878125183
+    ]
+  },
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "b1eb0c4967ee2e3aba9ca53e811d3914d72ff3e139d6046fe92cc5dfa0f1c129",
+      "shape": [
+        2048
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "6eb276e935d91ee93197c25672c900363cdfa2f1ef7581c103e4537d8a2dd255",
+      "shape": [
+        2048
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "299392954ce8e0a2243b3dd4c0060ed029f50bb84fe181d0249aeccf9d7c12eb",
+      "shape": [
+        2048,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "19703ef94ceffceb8e92fbca0564ea49ab002a6deb87ac75560cc8260b0ef8a1",
+      "shape": [
+        2048,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2048,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 1700,
+  "key": "33896507_8272283239_o_93321195_8092708743_o",
+  "library": {
+    "binary_bytes": 2673976,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "35d03b03304ebb6249b9139c027ab27eca5bd5a859294324786634e067e337b4",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2048,
+  "mask_sha256": "b7fe0c340d247a3fac2854b38a76998f2679e8b2f1f0699f30ddfc03001be293",
+  "native_inliers_packbits_big_hex": "f1eabef8fff74fdee7c99dd67fbef0ecfdfbefedf87abbdfc7fdcfa7313ffaffe9f5cdb1faf5ffd7fffbd365af3d3edf6c1bfffbb37fbf5e6ba7b7fd7d5affff4fbe6abebafdff6fd5fffff9ffdbeefdcfffffa1bfeceeeeffe5fffdeeb7bfe7deef36dfffaf7dffdfffefff7fffffdffffeffffff7f6eff6ff7ffff3eeffffdf7ff9bff7ffeff78ff6dfdedbedffbdffdbf7ffff87bef7dbffd7dff7f3f7fff9ffffffffd6fffafbfefeeff779fffffffdffdfdfff7dfebffffcab7fefff9febfeffdff9e3ffffffdff7ffffffff7fafffeff73fb7ffb3fffafbfbfffefefffff7f7cbfffffeff7ff7aefbff7ffffff7fff7b8ff7febdfdff7ff77fffffdfff",
+  "options": {
+    "bundle": {},
+    "estimate_shift": false,
+    "max_errors": [
+      16.0,
+      2.0
+    ],
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "weight_sampson": 1.0
+  },
+  "pair_index": 0,
+  "parity": {
+    "all_float_components_bitwise_equal": true,
+    "bitwise_equal_float_components": 29,
+    "discrete_and_mask_exact": true,
+    "float_relative_max_tolerance": 1e-12,
+    "floating_components": 29,
+    "max_normalized_float_error": 0.0,
+    "passed": true,
+    "raw_translation_gauge_preserved": true
+  },
+  "phase": "complete",
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-00-depth_scale.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-00-depth_scale.worker.json",
+    "raw_worker_sha256": "af98f72c19cb4ec081e3a41264f653f7f6f51dd1e1bb27250125754ed42ceec6",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 52144,
+    "termination": null,
+    "wall_seconds": 0.432580208,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.830078125,
+    "iterations": 101,
+    "model_score": 0.0008571951300185674,
+    "num_inliers": 1700,
+    "refinements": 6
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "florence_cathedral",
+  "schema": "evr0018.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "configs/0018-libraries.json": "bddb31bcb0e4fbcb17ed50339d1cbd69f3738fb4c6e81179a2977fdf5ff522ec",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "experiments/0018-depth-trace/build_instrumented.py": "23d06ecce77bd63cdebee3ce74ec458b02ce713dedb75086cd2ae0047ed16b08",
+    "experiments/0018-depth-trace/common.py": "f8f9d22d4b1db777f743910c90606ac941982bf3d59459b051ceee5819faf4a7",
+    "experiments/0018-depth-trace/diagnose_trace.py": "ef9dd1da6fbc094d54fb92504af93dbf63517920469cefa2754d05f1332205ae",
+    "experiments/0018-depth-trace/instrument_source.py": "0455a7b949759f8678378cbb2b17f490e9d66b6d1fde1d225acb4a13ff8b4921",
+    "experiments/0018-depth-trace/predict_pair.py": "7220525e58564d53f80aed247060146712e95a3925d34274d617af020803a03a",
+    "experiments/0018-depth-trace/qualify_native.py": "12f335231d3d6313829e3c54749e44c8056d2f3780c95e5b7fa6bc4866cd0412",
+    "experiments/0018-depth-trace/qualify_observer.cpp": "b24ee4b84006de62d0e115cb6a3b912aabe4871bb1438b9f574486704fb32e4e",
+    "experiments/0018-depth-trace/run_diagnostic.py": "54b68d98e24401eb845832a7b751ffb6095389ef45f8d52076047f284e498769",
+    "experiments/0018-depth-trace/run_operation.py": "7a34e2495a2244b94a16d336a81567818e628f4d60bb29640499bf2f774a8211",
+    "experiments/0018-depth-trace/trace0018.h.in": "57be50be30b82b10983f0191f5c3723b116f6b20c5a7de98001217fc11cbd7c2",
+    "experiments/0018-depth-trace/trace_pybind.cc.in": "8e125d141becdf2bcf3aadbd6b833777e2e9d3ce28f4798fcc5ae50041927d0a",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125",
+    "protocols/0018-depth-lo-trace.md": "546ef9629cb72f8e07880c294e195efe96d17cb182e7e697bb69450b9fa9d8b3"
+  },
+  "status": "completed",
+  "timing_semantics": {
+    "call_seconds": "Instrumented native call including observer and native-to-Python trace serialization; observation overhead is not separately isolated",
+    "trace_save_seconds": "Python trace validation/JSON serialization/file write and hash",
+    "worker_total_seconds": "Whole worker; supervisor separately charges outer process wall time"
+  },
+  "timings": {
+    "binding_seconds": 0.179819209,
+    "call_seconds": 0.016230334000000013,
+    "charged_total_seconds": 0.432580208,
+    "input_seconds": 0.06552116699999999,
+    "score_seconds": 0.0012243749999999998,
+    "trace_save_seconds": 0.007545542000000016,
+    "worker_total_seconds": 0.27408204199999997
+  },
+  "trace_byte_budget": 67108864,
+  "trace_bytes": 165969,
+  "trace_capacity": 50000,
+  "trace_event_count": 95,
+  "trace_path": "pair-00-depth_scale.worker.trace.json",
+  "trace_required_bytes": 165969,
+  "trace_sha256": "f9cefbcbcd3e9e4216b4d8718f4fee078fa351c7e16dfc5328915c230b26af3f"
+}

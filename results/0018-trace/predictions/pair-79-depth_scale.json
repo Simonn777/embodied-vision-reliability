@@ -1,0 +1,390 @@
+{
+  "arm": "depth_scale",
+  "baseline_prediction_sha256": "369a4a221bfb74a56b9836da28accd43320711e9dfc1cdab71be8b8fbc989d13",
+  "baseline_seal_sha256": "aef331923ced37edfb896ac070d954e3da6e08145145aa2bd3de636f9abce510",
+  "calibration": {
+    "K1": [
+      [
+        821.4075317382812,
+        0.0,
+        328.5
+      ],
+      [
+        0.0,
+        821.4075317382812,
+        521.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        829.5690307617188,
+        0.0,
+        513.0
+      ],
+      [
+        0.0,
+        829.5690307617188,
+        287.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 1042,
+      "model": "PINHOLE",
+      "params": [
+        821.4075317382812,
+        821.4075317382812,
+        328.5,
+        521.5
+      ],
+      "width": 656
+    },
+    "camera2": {
+      "height": 574,
+      "model": "PINHOLE",
+      "params": [
+        829.5690307617188,
+        829.5690307617188,
+        513.0,
+        287.5
+      ],
+      "width": 1026
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10636488,
+  "dataset_sha256_declared": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+  "dataset_sha256_verified": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+  "depth_diagnostics": {
+    "all": {
+      "denominator": 2042,
+      "direction_denominator": 4084,
+      "fixed_reprojection_cost": 0.13699740245112996,
+      "forward": {
+        "cost_sum": 217.72611480337545,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2042,
+        "valid_projection_count": 2042
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4084,
+      "native_branch_positive_finite_z_count": 4084,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.13699740245112996,
+      "reverse": {
+        "cost_sum": 341.77127680703927,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2042,
+        "valid_projection_count": 2042
+      },
+      "status": "available"
+    },
+    "pixel_threshold": 16.0,
+    "raw_translation_norm": 0.6943768466200659,
+    "raw_translation_norm_overflow": false,
+    "returned_mask": {
+      "denominator": 2013,
+      "direction_denominator": 4026,
+      "fixed_reprojection_cost": 0.1357856899570498,
+      "forward": {
+        "cost_sum": 211.84624262249102,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2013,
+        "valid_projection_count": 2013
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4026,
+      "native_branch_positive_finite_z_count": 4026,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.1357856899570498,
+      "reverse": {
+        "cost_sum": 334.8269451445915,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2013,
+        "valid_projection_count": 2013
+      },
+      "status": "available"
+    },
+    "returned_mask_semantics": "Pre-final-refinement epipolar support; not final depth-active support",
+    "scale": 1.3001774615603856,
+    "shift1": 0.0,
+    "shift2": 0.0
+  },
+  "estimate": {
+    "R": [
+      [
+        0.9979161904638427,
+        -0.06445102526898105,
+        0.0030564934007506358
+      ],
+      [
+        0.06409414962010498,
+        0.9956190662399191,
+        0.06807800616959296
+      ],
+      [
+        -0.007430800401522103,
+        -0.0677402412257936,
+        0.9976753193920675
+      ]
+    ],
+    "t": [
+      0.6350346069068389,
+      0.17338790320421776,
+      0.22096807048790526
+    ]
+  },
+  "filename": "sagrada_familia_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2042,
+    "count": 2042,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 2010,
+    "pixel_msac": 221.1838191541811,
+    "pixel_threshold": 2.0
+  },
+  "geometry": {
+    "R": [
+      [
+        0.9979161904638427,
+        -0.06445102526898105,
+        0.0030564934007506358
+      ],
+      [
+        0.06409414962010498,
+        0.9956190662399191,
+        0.06807800616959296
+      ],
+      [
+        -0.007430800401522103,
+        -0.0677402412257936,
+        0.9976753193920675
+      ]
+    ],
+    "scale": 1.3001774615603856,
+    "shift1": 0.0,
+    "shift2": 0.0,
+    "t": [
+      0.6350346069068389,
+      0.17338790320421776,
+      0.22096807048790526
+    ]
+  },
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "a1d534a6c03e41a0e794b09723624ed9653ad9629692b6a14ffc3b3f1aa57350",
+      "shape": [
+        2042
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "d891b83268682e5cbbfb94205f54e974bcaf116e85b3b973fa67a1dd93638e95",
+      "shape": [
+        2042
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "18ec99704fa2c65e56815819665f5b67146c75ea1e295df0205184bb93c349d9",
+      "shape": [
+        2042,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "31f0da3c91d4ac4c87b5d6facce4acfcdd26bbc791f6623a480a413ad819c1ce",
+      "shape": [
+        2042,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2042,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 2013,
+  "key": "21894637_6535518015_o_64323676_6818875446_o",
+  "library": {
+    "binary_bytes": 2673976,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "35d03b03304ebb6249b9139c027ab27eca5bd5a859294324786634e067e337b4",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2042,
+  "mask_sha256": "5e16c5149fac0add31e0a09159c8ffb9ea0cf7c5358f3e54c29190bba74fe121",
+  "native_inliers_packbits_big_hex": "ff7ffffffffffffffffffffffffeffffffffffffffdffffffffeffffffbfffffffffffffffbfffffffbfffffffff7ffffffffffffffffffffffffffffffffffebffffffbffffffdfffffffffbfffffffffffffffffffffffffffffffbffffffffffffff7fffffffefffffffefffffff7ffffffffffffffdffffffffffffffffffffffffffffffbffffffffbfffdffffffffffffffffffffffdffffbfffffeffffffffffffffffffffffefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdfffffffffffff7ffffffffffffffffffffffffffffffffffffffefffffffffc0",
+  "options": {
+    "bundle": {},
+    "estimate_shift": false,
+    "max_errors": [
+      16.0,
+      2.0
+    ],
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "weight_sampson": 1.0
+  },
+  "pair_index": 79,
+  "parity": {
+    "all_float_components_bitwise_equal": true,
+    "bitwise_equal_float_components": 29,
+    "discrete_and_mask_exact": true,
+    "float_relative_max_tolerance": 1e-12,
+    "floating_components": 29,
+    "max_normalized_float_error": 0.0,
+    "passed": true,
+    "raw_translation_gauge_preserved": true
+  },
+  "phase": "complete",
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-79-depth_scale.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-79-depth_scale.worker.json",
+    "raw_worker_sha256": "94f11a08a13d1d852c479b261a24e17a9fe8022179b21743e30b59e395d56e9a",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 39984,
+    "termination": null,
+    "wall_seconds": 0.3236175840000044,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.9857982370225269,
+    "iterations": 101,
+    "model_score": 0.001222208824822051,
+    "num_inliers": 2013,
+    "refinements": 4
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "sagrada_familia",
+  "schema": "evr0018.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "configs/0018-libraries.json": "bddb31bcb0e4fbcb17ed50339d1cbd69f3738fb4c6e81179a2977fdf5ff522ec",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "experiments/0018-depth-trace/build_instrumented.py": "23d06ecce77bd63cdebee3ce74ec458b02ce713dedb75086cd2ae0047ed16b08",
+    "experiments/0018-depth-trace/common.py": "f8f9d22d4b1db777f743910c90606ac941982bf3d59459b051ceee5819faf4a7",
+    "experiments/0018-depth-trace/diagnose_trace.py": "ef9dd1da6fbc094d54fb92504af93dbf63517920469cefa2754d05f1332205ae",
+    "experiments/0018-depth-trace/instrument_source.py": "0455a7b949759f8678378cbb2b17f490e9d66b6d1fde1d225acb4a13ff8b4921",
+    "experiments/0018-depth-trace/predict_pair.py": "7220525e58564d53f80aed247060146712e95a3925d34274d617af020803a03a",
+    "experiments/0018-depth-trace/qualify_native.py": "12f335231d3d6313829e3c54749e44c8056d2f3780c95e5b7fa6bc4866cd0412",
+    "experiments/0018-depth-trace/qualify_observer.cpp": "b24ee4b84006de62d0e115cb6a3b912aabe4871bb1438b9f574486704fb32e4e",
+    "experiments/0018-depth-trace/run_diagnostic.py": "54b68d98e24401eb845832a7b751ffb6095389ef45f8d52076047f284e498769",
+    "experiments/0018-depth-trace/run_operation.py": "7a34e2495a2244b94a16d336a81567818e628f4d60bb29640499bf2f774a8211",
+    "experiments/0018-depth-trace/trace0018.h.in": "57be50be30b82b10983f0191f5c3723b116f6b20c5a7de98001217fc11cbd7c2",
+    "experiments/0018-depth-trace/trace_pybind.cc.in": "8e125d141becdf2bcf3aadbd6b833777e2e9d3ce28f4798fcc5ae50041927d0a",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125",
+    "protocols/0018-depth-lo-trace.md": "546ef9629cb72f8e07880c294e195efe96d17cb182e7e697bb69450b9fa9d8b3"
+  },
+  "status": "completed",
+  "timing_semantics": {
+    "call_seconds": "Instrumented native call including observer and native-to-Python trace serialization; observation overhead is not separately isolated",
+    "trace_save_seconds": "Python trace validation/JSON serialization/file write and hash",
+    "worker_total_seconds": "Whole worker; supervisor separately charges outer process wall time"
+  },
+  "timings": {
+    "binding_seconds": 0.18013029200000003,
+    "call_seconds": 0.017478084000000005,
+    "charged_total_seconds": 0.3236175840000044,
+    "input_seconds": 0.03327495800000002,
+    "score_seconds": 0.0010499999999999954,
+    "trace_save_seconds": 0.006273500000000043,
+    "worker_total_seconds": 0.24232587500000002
+  },
+  "trace_byte_budget": 67108864,
+  "trace_bytes": 135356,
+  "trace_capacity": 50000,
+  "trace_event_count": 82,
+  "trace_path": "pair-79-depth_scale.worker.trace.json",
+  "trace_required_bytes": 135356,
+  "trace_sha256": "a0491dcfa2c6b05e09911e9703803f925b57948b8f26b053f0d8ee7921176fe2"
+}

@@ -1,0 +1,240 @@
+// 0018 read-only observer. Added to a fresh pinned PoseLib source copy only.
+// No diagnostic calculation is fed back to the optimizer.
+#pragma once
+#include "PoseLib/camera_pose.h"
+#include "PoseLib/types.h"
+#include <algorithm>
+#include <array>
+#include <cmath>
+#include <cstdint>
+#include <cstring>
+#include <new>
+#include <numeric>
+#include <type_traits>
+#include <utility>
+#include <vector>
+
+namespace poselib { namespace trace0018 {
+
+struct State {
+    std::array<double, 19> values{}; // q(wxyz), R(row major), raw t, s,b1,b2
+};
+inline State state_of(const MonoDepthTwoViewGeometry &m) {
+    State s;
+    for (int k=0;k<4;++k) s.values[k]=m.pose.q(k);
+    const Eigen::Matrix3d R=m.pose.R();
+    for (int r=0;r<3;++r) for (int c=0;c<3;++c) s.values[4+3*r+c]=R(r,c);
+    for (int k=0;k<3;++k) s.values[13+k]=m.pose.t(k);
+    s.values[16]=m.scale; s.values[17]=m.shift1; s.values[18]=m.shift2;
+    return s;
+}
+struct Cost { double numerator=0,mean=0; std::size_t count=0; };
+struct Blocks {
+    std::size_t sampson=0,forward=0,backward=0,forward_nonfinite_z=0,backward_nonfinite_z=0;
+};
+struct Source { const char *kind="none"; std::int64_t id=-1; };
+struct Event {
+    const char *kind="", *stage="none", *phase="", *reason="";
+    std::int64_t lo_id=-1, proposal_id=-1, ransac_iteration=-1, model_index=-1;
+    Source source, previous, parent;
+    State state;
+    Cost cost;
+    Blocks blocks;
+    BundleOptions options;
+    std::vector<std::size_t> support;
+    double scale_reproj=0,weight_sampson=0;
+    bool refine_shift=false,uniform_weights=true;
+    bool accepted=false,more_inliers=false,better_score=false,final_enabled=false,final_performed=false;
+    double score=0,lambda_before=0,lambda_after=0,grad_norm=-1,step_norm=-1,nu=2;
+    std::size_t inlier_count=0,iteration=0,invalid_steps=0,jacobian_count=0,solve_count=0,live_count=0;
+};
+
+struct Context {
+    std::size_t capacity,event_attempts=0,dropped_events=0,sampled_draws=0,scored_proposals=0;
+    bool complete=true,final_performed=false;
+    std::vector<Event> events;
+    std::vector<std::size_t> support;
+    std::int64_t next_lo=0,active_lo=-1,last_lo=-1,ransac_iteration=-1;
+    const char *pending_stage="none", *active_stage="none";
+    Source pending_parent,incumbent,returned_source;
+    Blocks last_blocks;
+    std::uint64_t rolling_hash=14695981039346656037ULL;
+    explicit Context(std::size_t cap,std::size_t n):capacity(cap),support(n) {
+        std::iota(support.begin(),support.end(),std::size_t(0));
+        events.reserve(std::min(cap,std::size_t(4096)));
+    }
+    void hash_bytes(const void *p,std::size_t n) noexcept {
+        const auto *b=static_cast<const unsigned char*>(p);
+        for(std::size_t i=0;i<n;++i) {rolling_hash^=b[i];rolling_hash*=1099511628211ULL;}
+    }
+    void hash_u64(std::uint64_t u) noexcept {
+        // Canonical little-endian byte order, independent of size_t width.
+        for(int k=0;k<8;++k){const unsigned char b=static_cast<unsigned char>((u>>(8*k))&255U);hash_bytes(&b,1);}
+    }
+    void hash_double(double d) noexcept {std::uint64_t u=0;std::memcpy(&u,&d,8);hash_u64(u);}
+    void push(Event &&e) noexcept {
+        ++event_attempts;
+        if(events.size()>=capacity || !complete){++dropped_events;complete=false;return;}
+        try {events.emplace_back(std::move(e));}
+        catch(const std::bad_alloc&){++dropped_events;complete=false;}
+    }
+};
+inline thread_local Context *current=nullptr;
+struct Scope {
+    Context *previous;
+    explicit Scope(Context *p):previous(current){current=p;}
+    ~Scope(){current=previous;}
+    Scope(const Scope&)=delete; Scope&operator=(const Scope&)=delete;
+};
+
+inline void pipeline(const char *phase,const MonoDepthTwoViewGeometry *model,bool enabled=false) {
+    if(!current)return;
+    Event e;e.kind="pipeline";e.phase=phase;e.final_enabled=enabled;e.final_performed=current->final_performed;
+    e.source=(std::strcmp(phase,"returned")==0)?current->returned_source:current->incumbent;
+    if(model)e.state=state_of(*model);
+    current->push(std::move(e));
+}
+inline void set_final_support(const std::vector<char> &mask) {
+    if(!current)return;
+    current->support.clear();
+    for(std::size_t i=0;i<mask.size();++i)if(mask[i])current->support.push_back(i);
+    current->pending_stage="final_refinement";current->pending_parent=current->incumbent;
+}
+inline void final_done() {
+    if(!current)return;
+    current->final_performed=true;current->returned_source={"lo",current->last_lo};
+}
+inline void prepare_lo(const char *stage,Source parent) {
+    if(!current)return;
+    current->pending_stage=stage;current->pending_parent=parent;
+}
+template<class Model> inline void ransac_iteration(std::size_t iteration) {
+    if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>){
+        if(current)current->ransac_iteration=static_cast<std::int64_t>(iteration);
+    }
+}
+inline void sample(const std::vector<std::size_t> &indices) {
+    if(!current)return;
+    ++current->sampled_draws;current->hash_u64(0x53414d504c45ULL);current->hash_u64(indices.size());
+    for(auto i:indices)current->hash_u64(i);
+}
+template<class Model> inline std::int64_t proposal(const Model &m,std::size_t index,double score,
+                                                   std::size_t inliers,bool more,bool better) {
+    if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>){
+        if(!current)return -1;
+        const auto id=static_cast<std::int64_t>(current->scored_proposals++);
+        current->hash_u64(0x4d4f44454cULL);current->hash_u64(id);current->hash_u64(index);
+        for(int k=0;k<4;++k)current->hash_double(m.pose.q(k));
+        for(int k=0;k<3;++k)current->hash_double(m.pose.t(k));
+        current->hash_double(m.scale);current->hash_double(m.shift1);current->hash_double(m.shift2);
+        current->hash_double(score);current->hash_u64(inliers);
+        if(more||better){
+            Event e;e.kind="proposal";e.proposal_id=id;e.ransac_iteration=current->ransac_iteration;
+            e.model_index=static_cast<std::int64_t>(index);e.state=state_of(m);e.score=score;e.inlier_count=inliers;
+            e.more_inliers=more;e.better_score=better;current->push(std::move(e));
+        }
+        return id;
+    } else return -1;
+}
+template<class Model> inline void adopt(const Model &m,Source source,double score,std::size_t inliers) {
+    if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>){
+        if(!current)return;
+        Event e;e.kind="incumbent";e.state=state_of(m);e.source=source;e.previous=current->incumbent;
+        e.score=score;e.inlier_count=inliers;e.ransac_iteration=current->ransac_iteration;
+        current->incumbent=source;current->returned_source=source;current->push(std::move(e));
+    }
+}
+template<class Model> inline void prepare_proposal_lo(std::int64_t proposal_id) {
+    if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>)prepare_lo("proposal_lo",{"proposal",proposal_id});
+}
+template<class Model> inline void prepare_terminal_lo() {
+    if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>){
+        if(current)prepare_lo("terminal_lo",current->incumbent);
+    }
+}
+inline std::int64_t last_lo(){return current?current->last_lo:-1;}
+
+// Refiner's existing branches supply counts; no residual is recomputed here.
+struct ResidualBlocks {
+    Context *ctx;
+    Blocks blocks;
+    ResidualBlocks():ctx(current&&current->active_lo>=0?current:nullptr){}
+    void sampson(){if(ctx)++blocks.sampson;}
+    void direction(bool forward,double z){
+        if(!ctx)return;
+        if(z>0){if(forward)++blocks.forward;else ++blocks.backward;}
+        if(!std::isfinite(z)){if(forward)++blocks.forward_nonfinite_z;else ++blocks.backward_nonfinite_z;}
+    }
+    ~ResidualBlocks(){if(ctx)ctx->last_blocks=blocks;}
+};
+
+class LOScope {
+    Context *ctx=nullptr;
+    const MonoDepthTwoViewGeometry *model=nullptr;
+  public:
+    LOScope(const MonoDepthTwoViewGeometry *m,const BundleOptions &opt,double sr,double ws,bool shift,bool uniform)
+        :ctx(current),model(m){
+        if(!ctx)return;
+        ctx->active_lo=ctx->next_lo++;ctx->last_lo=ctx->active_lo;ctx->active_stage=ctx->pending_stage;
+        Event e;e.kind="lo_begin";e.lo_id=ctx->active_lo;e.stage=ctx->active_stage;e.parent=ctx->pending_parent;
+        e.state=state_of(*m);e.options=opt;e.scale_reproj=sr;e.weight_sampson=ws;e.refine_shift=shift;
+        e.uniform_weights=uniform;
+        if(!uniform)ctx->complete=false; // This diagnostic only admits the API's uniform weights.
+        try{e.support=ctx->support;}catch(const std::bad_alloc&){ctx->complete=false;}
+        ctx->push(std::move(e));
+    }
+    ~LOScope(){
+        if(!ctx)return;
+        Event e;e.kind="lo_end";e.lo_id=ctx->active_lo;e.stage=ctx->active_stage;e.state=state_of(*model);
+        ctx->push(std::move(e));ctx->active_lo=-1;ctx->active_stage="none";
+    }
+};
+
+template<class Model> class LMObserver {
+    Context *ctx=nullptr;
+    Cost accepted_cost;
+    Blocks accepted_blocks;
+    Event pending;
+    std::size_t jacobian_count=0,solve_count=0;
+    double lambda_before=0;
+    const char *reason="iteration_limit";
+    Event event(const char *kind)const{Event e;e.kind=kind;e.lo_id=ctx->active_lo;e.stage=ctx->active_stage;return e;}
+  public:
+    LMObserver(){
+        if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>)
+            if(current&&current->active_lo>=0)ctx=current;
+    }
+    template<class Acc>void initial(const Model &m,const Acc &acc,double mean){
+        if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>){
+            if(!ctx)return;accepted_cost={acc.residual_acc,mean,acc.residual_count};accepted_blocks=ctx->last_blocks;
+            Event e=event("initial");e.state=state_of(m);e.cost=accepted_cost;e.blocks=accepted_blocks;ctx->push(std::move(e));
+        }
+    }
+    void jacobian(std::size_t count){if(ctx)jacobian_count=count;}
+    void before_solve(std::size_t count,double lambda){if(ctx){solve_count=count;lambda_before=lambda;}}
+    void stopping(const char *why){if(ctx)reason=why;}
+    template<class Acc>void trial(const Model &m,const Acc &acc,double mean,const BundleStats &stats){
+        if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>){
+            if(!ctx)return;pending=event("attempt");pending.state=state_of(m);
+            pending.cost={acc.residual_acc,mean,acc.residual_count};pending.blocks=ctx->last_blocks;
+            pending.iteration=stats.iterations;pending.jacobian_count=jacobian_count;pending.solve_count=solve_count;
+            pending.lambda_before=lambda_before;pending.grad_norm=stats.grad_norm;pending.step_norm=stats.step_norm;
+        }
+    }
+    void decision(bool accepted,const BundleStats &stats){
+        if(!ctx)return;pending.accepted=accepted;pending.lambda_after=stats.lambda;pending.invalid_steps=stats.invalid_steps;
+        pending.nu=stats.nu;if(accepted){accepted_cost=pending.cost;accepted_blocks=pending.blocks;}
+        ctx->push(std::move(pending));
+    }
+    template<class Acc>void exit(const Model &m,const Acc &acc,const BundleStats &stats){
+        if constexpr(std::is_same_v<Model,MonoDepthTwoViewGeometry>){
+            if(!ctx)return;Event e=event("exit");e.state=state_of(m);e.cost=accepted_cost;e.blocks=accepted_blocks;
+            e.iteration=stats.iterations;e.invalid_steps=stats.invalid_steps;e.reason=reason;
+            e.live_count=acc.residual_count;e.jacobian_count=jacobian_count;e.solve_count=solve_count;
+            e.grad_norm=stats.grad_norm;e.step_norm=stats.step_norm;e.lambda_after=stats.lambda;e.nu=stats.nu;
+            ctx->push(std::move(e));
+        }
+    }
+};
+
+}} // namespace poselib::trace0018

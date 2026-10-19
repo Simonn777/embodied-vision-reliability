@@ -1,0 +1,30 @@
+"""Reconstruct existing synthetic traces after the prospective angle-report fix.
+Never imports a native package or invokes an estimator.
+"""
+import hashlib,importlib.util,json,sys,time
+from pathlib import Path
+HERE=Path(__file__).resolve().parent
+SOURCE=HERE.parent/'embodied-vision-reliability/experiments/0018-depth-trace'
+def load(name,path):
+ spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);sys.modules[name]=m;spec.loader.exec_module(m);return m
+def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+q=load('artificial_fixtures',SOURCE/'qualify_native.py')
+d=load('saved_artificial_diagnosis',SOURCE/'diagnose_trace.py')
+started=time.perf_counter();checks=[]
+prior=json.loads((HERE/'native-qualification.json').read_text())
+traces=json.loads((HERE/'native-qualification.instrumented.json').read_text())
+assert prior['status']=='passed' and traces['status']=='completed' and len(traces['calls'])==6
+for old,item in zip(prior['checks'],traces['calls']):
+ assert (old['case'],old['arm'])==(item['case'],item['arm'])
+ pair=q.fixture(item['case']);support=q.np.flatnonzero(item['enabled']['info']['inliers']).tolist()
+ result=d.diagnose_native_trace(d.prepare_inputs(pair),item['trace'],item['arm'],support)
+ comparable=lambda x:{k:v for k,v in x.items() if k!='reconstruction_seconds'}
+ assert comparable(result)==comparable(old['cost_reconstruction'])
+ checks.append({'case':item['case'],'arm':item['arm'],'all_reconstruction_values_unchanged':True})
+record={'schema':'evr0018.saved-artificial-recheck.v1','status':'passed','checks':checks,
+ 'seconds':time.perf_counter()-started,'native_calls':0,'scientific_inputs_read':0,
+ 'source_sha256':{n:sha(SOURCE/n) for n in ('qualify_native.py','diagnose_trace.py')},
+ 'helper_sha256':sha(Path(__file__)),
+ 'prior_receipts_sha256':{n:sha(HERE/n) for n in ('native-qualification.json','native-qualification.instrumented.json')}}
+with (HERE/'saved-artificial-recheck.json').open('x') as f:json.dump(record,f,indent=2,sort_keys=True);f.write('\n')
+print(json.dumps({'status':'passed','cases':len(checks),'native_calls':0}))
