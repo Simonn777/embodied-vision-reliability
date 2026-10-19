@@ -10,8 +10,9 @@ Work from the first unfinished item. Record each outcome in a dated note before 
    quality gates failed; numerical gates passed. Independent saved-only metrics
    and coupling replay passed. No re-inference, solver rescue, weaker baseline,
    threshold change or selected-group claim is permitted.
-2. Finish parent retrieval/review and publish the [complete negative evidence](results/0011-oblique/README.md),
-   then verify the exact PR/main CI. Keep original private arrays and174 output
+2. **Completed:** parent retrieval/review and [publication verification](docs/0011-results-publication-verification.md)
+   of the [complete negative evidence](results/0011-oblique/README.md), through
+   PR41/main 6ee2638 and successful exact PR/main CI. Keep private arrays and 174 output
    files unchanged. Preserve the two failed read-only summary commands and the
    explicit missing/truncated terminal-log boundary. Publication is not an
    achievement of the broader method-improvement goal.

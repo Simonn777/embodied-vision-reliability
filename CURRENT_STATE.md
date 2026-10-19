@@ -40,6 +40,11 @@ installations, extra fees or old-test tuning occurred. The broader research goal
 remains active; another experiment requires a distinct, defensible mechanism,
 not more variants chosen to obtain a positive result.
 
+[Result publication is verified](docs/0011-results-publication-verification.md)
+through PR41, merge 6ee2638 and successful exact PR/main CI. The complete negative
+evidence is on main. The remaining task is substantive mechanism admission and
+eventual independent improvement, not further packaging or repeating 0011.
+
 ## 0010: exact query deletion failed the real-image quality gate
 
 [Complete saved results](results/0010-headroom/README.md) show **NO_GO**:
