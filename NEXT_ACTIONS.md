@@ -2,21 +2,34 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
-## Active research order: close0010 and select a defensible new hypothesis
+## Active research order: 0011 oblique coordinate-coupling pilot
+
+1. Finish independent implementation/protocol review and artificial tests for
+   [0011](protocols/0011-oblique-coupling-development.md). Publish a canonical
+   source/config freeze and verify exact main CI before real preparation.
+2. Under that freeze only: prepare cached g-036/g-002 once; collect four-view
+   native predictions once per group; derive/seal all controls and candidate
+   without labels; then score once. Preserve failures and all partial markers.
+   No downloads, installs, paid services, old-test tuning or alternate groups.
+3. Independently review saved evidence, publish all actual outcomes, and apply
+   the fixed 5pp/both-groups/EPE/numerical gates. A positive developmental screen
+   admits only separately designed confirmation; it does not admit a manuscript.
+
+## Preserved 0010 closure
 
 1. **0010 completed once: NO_GO.** [Full results](results/0010-headroom/README.md)
    preserve all128 cases/640predictions. ExactLOO61 correct versus zero-shot65;
    paired7 corrections/11harms, batch nets−1/−3. Both frozen quality gates failed.
    No partial-cohort, α4-only or singleton-safety success claim. No repeat,
    prompt/alpha tuning, rehashing, enlargement or old-test rescue.
-2. Independent saved-output parent review is complete. Publish the complete
-   failed result and verify exact remote/main CI. Keep all original files,
+2. Independent saved-output parent review and [publication verification](docs/0010-headroom-results-publication-verification.md)
+   are complete: PR39, merge d9cb5694, exact PR/main CI passed. Keep all original files,
    private cloud feature caches and once-only markers. No inference is needed
    for review or publication. The prospective common-peer diagnostic and
    spatial-validation follow-up are not activated by this failed gate.
 3. The broader owner-authorized goal remains active. The [full-covariance
    extension was rejected during primary-source review](docs/literature/0011-covariance-prior-review.md):
-   StatA AppendixC.2 already supplies its matrix update. No0011 experiment is
+   StatA AppendixC.2 already supplies its matrix update. No full-covariance experiment is
    admitted. Before a new experiment,
    evaluate one distinct mechanism with an explicit usable information source,
    strong closest-method comparisons and an explanation of why it could improve
