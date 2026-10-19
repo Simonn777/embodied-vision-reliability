@@ -2,7 +2,7 @@
 
 ## Active continuation: 2026-10-19
 
-The owner reaffirmed substantial validated task improvement before any manuscript. The [0012 diagnostic](results/0012-development/README.md) completed all16 development pairs with correct winners, but saved only0.0884% of residual evaluations against culling and was slower. This is insufficient practical benefit, not a successful research outcome. The [research decision](docs/0012-research-reset.md) remains active. A separate signed-mean/variance bound is under mathematical review to address the identified loss of correspondence correlation; no task-accuracy gain or manuscript exists.
+The owner reaffirmed substantial validated task improvement before any manuscript. The [initial0012 diagnostic](results/0012-development/README.md) was computationally inadequate. The separately frozen [0012b signed-moment follow-up](results/0012b-mean-variance/README.md) reduces direct residual work45.38% against ordinary partial scoring and71.12% against full scoring, with all16 correct winners. It remains44.65times slower in Python. This admits a bounded native comparison, not a speed/pose-quality/paper claim. The [research decision](docs/0012-research-reset.md) remains active; no task-accuracy gain or manuscript exists.
 
 Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0011
 oblique coordinate-coupling negative result and saved-output review.

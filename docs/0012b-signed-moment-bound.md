@@ -142,6 +142,17 @@ only on generated arrays and do not load development or held-out match files.
   Any future claim would have to distinguish efficient aggregate capped-cost
   bounds from existing conservative cell culling and demonstrate an actual gain.
   A search without a direct identical result is insufficient to establish novelty.
+* [Variance Shadow Maps, coauthor's GPU Gems chapter](https://developer.nvidia.com/gpugems/gpugems3/part-ii-light-and-shadows/chapter-8-summed-area-variance-shadow-maps)
+  already stores first/second moments and applies exactly the complementary
+  Cantelli factor. [Moment Shadow Mapping](https://momentsingraphics.de/Media/I3D2015/MomentShadowMapping.pdf)
+  extends compressed-moment lower bounds with four moments; only the author
+  abstract and indexed sections were accessible during this check. Compressed
+  moments plus a probability inequality is therefore not a new general idea.
+* [Capel's BMVC2005 bail-out paper](https://bmva-archive.org.uk/bmvc/2005/papers/224/paper.pdf),
+  section3, already describes deterministic accumulated nonnegative-cost
+  termination. This directly motivates the partial-score baseline. No inspected
+  source supplied this exact signed-Sampson aggregate bound, but the narrow
+  application-level distinction remains unverified, with substantial novelty risk.
 
 The scientific question remains whether this additional constant-size statistic
 reduces total verification work enough to compensate for its own cost. The

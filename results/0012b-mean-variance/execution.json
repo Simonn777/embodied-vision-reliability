@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "experiments/0012-score-bounds/run_mean_variance.py",
+    "--data",
+    "<acquired-dms-hdf5>",
+    "--manifest",
+    "configs/0012-development-manifest.json",
+    "--reference",
+    "results/0012-development/diagnostic.jsonl",
+    "--output",
+    "results/0012b-mean-variance/diagnostic.jsonl"
+  ],
+  "timeout_seconds": 1800,
+  "thread_limit": 4,
+  "exit_code": 0,
+  "wall_seconds": 48.18997425,
+  "max_rss_bytes_macos": 58064896
+}

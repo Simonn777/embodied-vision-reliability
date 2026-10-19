@@ -2,7 +2,7 @@
 
 ## Active priority: 2026-10-19
 
-The [initial0012 diagnostic](results/0012-development/README.md) is complete and computationally inadequate. Preserve it. Review a signed residual mean/variance bound that retains correspondence correlation before freezing any exploratory follow-up on the same development scene. Test against both the original bound and ordinary partial exact scoring. Official pose integration must preserve calibrated five-point hypotheses and cheirality semantics. Establish material computation savings, then strong same-backend pose comparisons before untouched confirmation data. Preserve all old stop decisions; no manuscript before independent task-quality gains.
+The [0012b follow-up](results/0012b-mean-variance/README.md) passes its aggregate residual-work gate but has no runtime improvement. Preserve both initial and follow-up results. Implement, independently review and freeze the [native scoring diagnostic](protocols/0012c-native-scoring.md); require actual setup-inclusive speed before calibrated pose integration. Official pose comparisons must retain DDD/CCC/CCA, five-point hypotheses and cheirality semantics. No held-out data access or manuscript before the appropriate evidence gates.
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
