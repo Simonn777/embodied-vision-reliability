@@ -1,5 +1,23 @@
 # Current state
 
+## Active continuation: 0017 asset preparation, 2026-10-19
+
+[0016 publication](docs/0016-publication-verification.md) is verified through
+PR45/main748215ca and successful exact CI. The0.02945pp oracle headroom result
+remains NO_GO; no substantial new-method improvement or manuscript exists.
+
+Next perform only the [0017 asset plan](protocols/0017-depth-assets.md): five
+public outdoor author-hosted RoMa/MoGe caches,53,112,544bytes, then metadata-only
+16pairs/scene allocation. All five scenes will be development permanently.
+The [prospective design review](docs/literature/0017-depth-diagnostic-review.md)
+compares four existing methods and tests a specific residual-omission mechanism.
+Acquisition is not yet run at this freeze. Scientific source/protocol/manifest
+must receive a separate published freeze before any coordinate/depth/GT access.
+
+The objective remains a distinct method with substantial replicated gains on
+independent held-out sources. Known-method reproduction, oracle bounds and
+software repairs do not satisfy it. All earlier results remain unchanged.
+
 ## Active continuation: 0016 complete, 2026-10-19
 
 No substantial new-method improvement is established. The [0016 diagnostic](results/0016-search/README.md)

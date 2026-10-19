@@ -40,6 +40,8 @@ jobs:
         run: python -m pytest -q experiments/0015-photometric
       - name: Check search diagnostic bindings and scores on artificial data only
         run: python -m pytest -q experiments/0016-search-headroom experiments/0016-review
+      - name: Check prospective depth allocation without network or data values
+        run: python -m pytest -q experiments/0017-depth-information/test_allocate.py
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'
