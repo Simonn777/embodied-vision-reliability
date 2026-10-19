@@ -1,0 +1,28 @@
+{
+  "source_freeze": "07f535046cb5475453f3cb51508cefb65a6e3ac3",
+  "published_branch": "research/0013-pose-headroom",
+  "prediction_command": "PYTHONPATH=<work>/runtime <existing-venv>/bin/python experiments/0013-pose-headroom/run_baseline.py --data <work>/assets/megadepth1500_dkm.h5 --manifest configs/0012-development-manifest.json --output-dir results/0013-baseline-calibration-compatibility/predictions",
+  "prediction_exit": 0,
+  "seal_checked_before_GT": {
+    "sha256": "a6ce0b6a98385294baa62c04f24e0bbb39700d2f233c4821ad771915ea47270a",
+    "rows": 16,
+    "all_status_completed": true,
+    "eligible": true
+  },
+  "evaluation_command": "PYTHONPATH=<work>/runtime <existing-venv>/bin/python experiments/0013-pose-headroom/evaluate_sealed.py --data <work>/assets/megadepth1500_dkm.h5 --manifest configs/0012-development-manifest.json --seal results/0013-baseline-calibration-compatibility/predictions/seal.json --output results/0013-baseline-calibration-compatibility/evaluation.json",
+  "evaluation_exit": 0,
+  "evaluation_log_bytes": 0,
+  "evaluation_sha256": "f8fe46392810b78d485a8dd90ae1849eae6491eaba620d2c9454b6c0f15cb5a4",
+  "prediction_whole_operation_seconds": 5.92627975,
+  "sum_estimator_call_seconds": 3.098394957999999,
+  "median_estimator_call_seconds": 0.1964784585,
+  "max_sampled_worker_rss_kib": 40096,
+  "sampling_limitation": "ps interval sampling may miss peak RSS",
+  "source_sha256": {
+    "evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "predict_pair.py": "57aabb0bcacab56f495fbf3a882184f1291bd128b97fd29b230c74f9a324d3c8",
+    "run_baseline.py": "f5cd10992dde929f06465ef77f87a7490c8e518d83fca9ccc341ce08a77e0baf"
+  },
+  "protocol_sha256": "b179823c8ccef24a338cabfe7750f65e03a324de3127dca2c26ec6a18a5cecd0",
+  "scope": "First selected-pair numeric calibration and R/t evaluation; all16 permanent development; no held-out numeric access; baseline only"
+}

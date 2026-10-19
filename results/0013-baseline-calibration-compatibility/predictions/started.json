@@ -1,0 +1,47 @@
+{
+  "command": "python experiments/0013-pose-headroom/run_baseline.py --data <cache>/megadepth1500_dkm.h5 --manifest configs/0012-development-manifest.json --output-dir <results>/predictions",
+  "pair_timeout_seconds": 90.0,
+  "protocol_sha256": "b179823c8ccef24a338cabfe7750f65e03a324de3127dca2c26ec6a18a5cecd0",
+  "rss_limit_kib": 8388608,
+  "schema": "evr0013.operation.v1",
+  "settings": {
+    "bundle_options": {},
+    "camera_K_atol": 1e-06,
+    "camera_K_rtol": 1e-06,
+    "camera_dimensions": "nonnegative integers; authored zero metadata preserved",
+    "coordinate_convention": "raw_pixels",
+    "effective_final_bundle_defaults": {
+      "gradient_tol": 1e-10,
+      "initial_lambda": 0.001,
+      "loss_scale": 0.5,
+      "loss_type": "CAUCHY",
+      "max_iterations": 100,
+      "max_lambda": 10000000000.0,
+      "min_lambda": 1e-10,
+      "step_tol": 1e-08,
+      "verbose": false
+    },
+    "initial_pose": null,
+    "matches": 10000,
+    "native_threads": 1,
+    "ransac_options": {
+      "dyn_num_trials_mult": 3.0,
+      "max_epipolar_error": 1.0,
+      "max_iterations": 100000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 1000,
+      "progressive_sampling": false,
+      "real_focal_check": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "rotation_validation_atol": 1e-06
+  },
+  "source_sha256": {
+    "evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "predict_pair.py": "57aabb0bcacab56f495fbf3a882184f1291bd128b97fd29b230c74f9a324d3c8",
+    "run_baseline.py": "f5cd10992dde929f06465ef77f87a7490c8e518d83fca9ccc341ce08a77e0baf"
+  },
+  "total_timeout_seconds": 1800.0,
+  "utc": "2026-10-19T18:04:01.052407+00:00"
+}
