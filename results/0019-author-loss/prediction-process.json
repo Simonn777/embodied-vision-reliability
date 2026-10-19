@@ -1,0 +1,33 @@
+{
+  "schema": "evr0019.outer-operation.v1",
+  "mode": "prediction",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "experiments/0019-author-loss/run_diagnostic.py",
+    "--manifest",
+    "configs/0017-development-manifest.json",
+    "--baseline-seal",
+    "results/0017-depth/predictions/seal.json",
+    "--data-dir",
+    "../0017-preparation/inputs",
+    "--output-dir",
+    "<repository>/results/0019-author-loss/predictions",
+    "--runtime",
+    "../0016-preparation/runtime",
+    "--dependency-runtime",
+    "../runtime"
+  ],
+  "python_version": "3.9.6",
+  "cwd": "repository root",
+  "helper_sha256": "23d7f244fecc60844929e838df45d75811472b6ae5c0166b4ea33905c2504ecc",
+  "source_commit": "542ca5ecee4ef9fc3316de8e6eae0a9d96429406",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 53.605883500000004,
+  "peak_group_rss_kib": 92480,
+  "remaining_process_groups_after_cleanup": [],
+  "log_sha256": "d12da508166a83a19d0aeb435b43509efe5b8dc5c19b94252bed537546185204"
+}

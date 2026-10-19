@@ -1,0 +1,376 @@
+{
+  "arm": "depth_scale",
+  "baseline_prediction_sha256": "c8c091fac82f5ff4be16420407979d8b2d7752c7df026e7a0c90689401a43116",
+  "baseline_seal_sha256": "aef331923ced37edfb896ac070d954e3da6e08145145aa2bd3de636f9abce510",
+  "calibration": {
+    "K1": [
+      [
+        691.8839111328125,
+        0.0,
+        251.0
+      ],
+      [
+        0.0,
+        691.8839111328125,
+        251.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K2": [
+      [
+        856.843994140625,
+        0.0,
+        346.0
+      ],
+      [
+        0.0,
+        856.843994140625,
+        530.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera1": {
+      "height": 502,
+      "model": "PINHOLE",
+      "params": [
+        691.8839111328125,
+        691.8839111328125,
+        251.0,
+        251.0
+      ],
+      "width": 502
+    },
+    "camera2": {
+      "height": 1060,
+      "model": "PINHOLE",
+      "params": [
+        856.843994140625,
+        856.843994140625,
+        346.0,
+        530.0
+      ],
+      "width": 692
+    },
+    "camera_K_max_abs_difference": [
+      0.0,
+      0.0
+    ]
+  },
+  "dataset_bytes": 10636488,
+  "dataset_sha256_declared": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+  "dataset_sha256_verified": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+  "depth_diagnostics": {
+    "all": {
+      "denominator": 2039,
+      "direction_denominator": 4078,
+      "fixed_reprojection_cost": 0.25003203777283595,
+      "forward": {
+        "cost_sum": 612.1060039074089,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2039,
+        "valid_projection_count": 2039
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 4078,
+      "native_branch_positive_finite_z_count": 4078,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.25003203777283595,
+      "reverse": {
+        "cost_sum": 407.52464613021607,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 2039,
+        "valid_projection_count": 2039
+      },
+      "status": "available"
+    },
+    "pixel_threshold": 16.0,
+    "raw_translation_norm": 0.5758403832109807,
+    "raw_translation_norm_overflow": false,
+    "returned_mask": {
+      "denominator": 1921,
+      "direction_denominator": 3842,
+      "fixed_reprojection_cost": 0.23537280874897037,
+      "forward": {
+        "cost_sum": 565.7668732280704,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 1921,
+        "valid_projection_count": 1921
+      },
+      "inactive_transformed_direction_count": 0,
+      "invalid_direction_fraction": 0.0,
+      "native_branch_inactive_count": 0,
+      "native_branch_inactive_finite_z_count": 0,
+      "native_branch_inactive_nonfinite_z_count": 0,
+      "native_branch_positive_count": 3842,
+      "native_branch_positive_finite_z_count": 3842,
+      "native_branch_positive_nonfinite_z_count": 0,
+      "nonfinite_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonfinite_transformed_direction_count": 0,
+      "nonfinite_union_count": 0,
+      "nonpositive_counts": {
+        "corrected_source_depth": 0,
+        "corrected_target_depth": 0,
+        "forward_transformed_z": 0,
+        "reverse_transformed_z": 0,
+        "scaled_target_depth": 0
+      },
+      "nonpositive_transformed_direction_count": 0,
+      "nonpositive_union_count": 0,
+      "omission_same_denominator_cost": 0.23537280874897037,
+      "reverse": {
+        "cost_sum": 338.5354579854738,
+        "nonfinite_projection_count": 0,
+        "nonfinite_transformed_count": 0,
+        "transformed_z_positive_count": 1921,
+        "valid_projection_count": 1921
+      },
+      "status": "available"
+    },
+    "returned_mask_semantics": "Pre-final-refinement epipolar support; not final depth-active support",
+    "scale": 0.6836514351032564,
+    "shift1": 0.0,
+    "shift2": 0.0
+  },
+  "estimate": {
+    "R": [
+      [
+        0.9415674324395948,
+        0.23667253701058455,
+        0.23965992655027343
+      ],
+      [
+        -0.1838555343330175,
+        0.9573110845858075,
+        -0.2230529753764014
+      ],
+      [
+        -0.2822196177876896,
+        0.16595661346905816,
+        0.9448864957134545
+      ]
+    ],
+    "t": [
+      -0.5212807266746081,
+      0.08185977443640508,
+      -0.23055916434482185
+    ]
+  },
+  "filename": "sagrada_familia_roma_moge.h5",
+  "final_scores": {
+    "cheiral_count": 2039,
+    "count": 2039,
+    "degenerate_count": 0,
+    "nonfinite_arithmetic_count": 0,
+    "pixel_inliers": 1865,
+    "pixel_msac": 375.87471160117906,
+    "pixel_threshold": 2.0
+  },
+  "geometry": {
+    "R": [
+      [
+        0.9415674324395948,
+        0.23667253701058455,
+        0.23965992655027343
+      ],
+      [
+        -0.1838555343330175,
+        0.9573110845858075,
+        -0.2230529753764014
+      ],
+      [
+        -0.2822196177876896,
+        0.16595661346905816,
+        0.9448864957134545
+      ]
+    ],
+    "scale": 0.6836514351032564,
+    "shift1": 0.0,
+    "shift2": 0.0,
+    "t": [
+      -0.5212807266746081,
+      0.08185977443640508,
+      -0.23055916434482185
+    ]
+  },
+  "input_arrays": {
+    "depth1": {
+      "dtype": "float64",
+      "sha256": "5bb4069d9eac73f32a08d58e85f3fc567021736c2644b4527d65a096cf941c2d",
+      "shape": [
+        2039
+      ]
+    },
+    "depth2": {
+      "dtype": "float64",
+      "sha256": "7706dce793bacbe6296d2f9d4f6b71a289618d141412a2e222b640abdfb90881",
+      "shape": [
+        2039
+      ]
+    },
+    "x1": {
+      "dtype": "float64",
+      "sha256": "b5a41ccdd9e4a9b01bd9deb5bba717505eeac90710398d711a73f4eb361cbc6c",
+      "shape": [
+        2039,
+        2
+      ]
+    },
+    "x2": {
+      "dtype": "float64",
+      "sha256": "4a3c6eb88bb702155e879f9692b638a0ae190f5da996146dff6fdbe95180fefd",
+      "shape": [
+        2039,
+        2
+      ]
+    }
+  },
+  "input_diagnostics": {
+    "all_finite": true,
+    "count": 2039,
+    "depth1_nonpositive_count": 0,
+    "depth1_zero_count": 0,
+    "depth2_nonpositive_count": 0,
+    "depth2_zero_count": 0,
+    "depth_convention": "unchanged author field interpreted as axial z proxy"
+  },
+  "kept_count": 1921,
+  "key": "64706254_8497647563_o_69264849_2284973187_o",
+  "library": {
+    "binary_bytes": 2607368,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "3228d488ca11f966378b6b7657ee6ebc5716da474c7ae88fccff7ab433a6981d",
+    "python_files": {
+      "__init__.py": "e497eee0e9c386976b747ddaca98ce72de2a4cd93eb113fbb3b0b97b5dc79a1a",
+      "utils.py": "9dca5af374826a16120e8e02747533d26ccd12bef7534538947222b21c3dcb39"
+    },
+    "version": "3.0.0"
+  },
+  "manifest_sha256": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+  "mask_length": 2039,
+  "mask_sha256": "d607f4178bad3489726c86eee1092a89365d8d46d4d9d1e4fd39f60cd526fde7",
+  "native_inliers_packbits_big_hex": "fbfffffdf7dff7fffefbfffbdffffffdffffffffff77ffffff7fffffff7f6f7dfbbfcffffffffffffffff7fffff7f7fefffffffffffbfafffffffefffddbffeffffffffffbff7ffffafffffffbfffefffffffdbfeeffffffffffdffffff7dfffff7feffffff7ffefffff7daffff7eff7e77feff9ffffffbbfffffefffffffbefffff7ffffefffffffffeff7ffeddffffff7fffdffffffdfffffffffefffffffefffb7bbfbffffbf7afffffffffffeffffffffffff3efffffd7ff7ffffffffffffffffffffefffffffffffdffdfdfffffff7fffffe7ff7fdfffefefffffffffefffffffffffbfffffbfffffffffffffffbffffffffdffeffcffdffffffefffe",
+  "options": {
+    "bundle": {
+      "loss_type": "TRUNCATED_CAUCHY"
+    },
+    "estimate_shift": false,
+    "max_errors": [
+      16.0,
+      2.0
+    ],
+    "ransac": {
+      "dyn_num_trials_mult": 3.0,
+      "max_iterations": 1000,
+      "max_prosac_iterations": 100000,
+      "min_iterations": 100,
+      "progressive_sampling": false,
+      "score_initial_model": false,
+      "seed": 0,
+      "success_prob": 0.9999
+    },
+    "weight_sampson": 1.0
+  },
+  "pair_index": 78,
+  "phase": "complete",
+  "prefinal_parity": {
+    "available": true,
+    "bitwise_equal_float_components": 2,
+    "discrete_and_mask_exact": true,
+    "final_geometry_constrained": false,
+    "float_relative_max_tolerance": 1e-12,
+    "floating_components": 2,
+    "max_normalized_float_error": 0.0,
+    "passed": true
+  },
+  "process_receipt": {
+    "exit_code": 0,
+    "log_path": "pair-78-depth_scale.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_worker_path": "pair-78-depth_scale.worker.json",
+    "raw_worker_sha256": "6cd39aab37eb4cbb73c75535791cd54c07922d11794de3641d7d2aaabe1a0bb3",
+    "rss_sampling": "ps at about 0.1-second intervals; peaks may be missed",
+    "sampled_peak_rss_kib": 41264,
+    "termination": null,
+    "wall_seconds": 0.31741699999999895,
+    "watchdog_error": null
+  },
+  "returned_ransac_stats": {
+    "inlier_ratio": 0.9421284943599804,
+    "iterations": 101,
+    "model_score": 0.0024216938836700325,
+    "num_inliers": 1921,
+    "refinements": 12
+  },
+  "returned_stats_semantics": "RANSAC stats and epipolar mask precede final refinement; mask is not final active directional depth support",
+  "scene": "sagrada_familia",
+  "schema": "evr0019.prediction.v1",
+  "source_sha256": {
+    "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+    "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+    "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+    "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+    "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+    "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+    "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+    "experiments/0019-author-loss/common.py": "037955c57c1cd0f5876d709d1a91b7ad2f604326f9f18dadeb8cd3cfecc0fdab",
+    "experiments/0019-author-loss/evaluate_saved.py": "bd8e0daaf6df9943ccfdd1ca8943a22be65036fa997c52ee214c40ca4ddbfaac",
+    "experiments/0019-author-loss/predict_pair.py": "64e4dab66e78bcea028c10888112574697ee35005e1ac08b9b431ccbe5f648ea",
+    "experiments/0019-author-loss/run_diagnostic.py": "730702695796d1e9626b1e042acda1c1c45234ed1ed3be87686c8b6ddc105e19",
+    "experiments/0019-author-loss/run_operation.py": "23d7f244fecc60844929e838df45d75811472b6ae5c0166b4ea33905c2504ecc",
+    "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+    "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125",
+    "protocols/0019-author-loss.md": "2ed80eea8d2d238214b0129e67f064718f52ee478af0496d87e965e74c819929"
+  },
+  "status": "completed",
+  "timing_semantics": {
+    "call_seconds": "One native call including Python result conversion",
+    "worker_total_seconds": "Whole worker; supervisor charges outer process wall time"
+  },
+  "timings": {
+    "binding_seconds": 0.17135758299999998,
+    "call_seconds": 0.04676783400000001,
+    "charged_total_seconds": 0.31741699999999895,
+    "input_seconds": 0.032068916999999975,
+    "score_seconds": 0.001153375000000012,
+    "worker_total_seconds": 0.25496562500000003
+  }
+}

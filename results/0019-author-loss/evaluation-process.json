@@ -1,0 +1,29 @@
+{
+  "schema": "evr0019.outer-operation.v1",
+  "mode": "evaluation",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "experiments/0019-author-loss/evaluate_saved.py",
+    "--manifest",
+    "configs/0017-development-manifest.json",
+    "--baseline-seal",
+    "results/0017-depth/predictions/seal.json",
+    "--seal",
+    "<repository>/results/0019-author-loss/predictions/seal.json",
+    "--output",
+    "<repository>/results/0019-author-loss/evaluation.json"
+  ],
+  "python_version": "3.9.6",
+  "cwd": "repository root",
+  "helper_sha256": "23d7f244fecc60844929e838df45d75811472b6ae5c0166b4ea33905c2504ecc",
+  "source_commit": "542ca5ecee4ef9fc3316de8e6eae0a9d96429406",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.6177850420000001,
+  "peak_group_rss_kib": 52976,
+  "remaining_process_groups_after_cleanup": [],
+  "log_sha256": "25815f0fa855718b332e8d00cf4422fcd5ec686567d70ec902430da7ec514750"
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "evr0019.independent-execution.v1",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "cwd": "repository root",
+  "records": [
+    {
+      "step": "tests",
+      "command": [
+        "$PYTHON",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments/0019-review",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.074318459,
+      "log_path": "tests.log",
+      "log_sha256": "6838a4cce6bdec1b64b47416b193373db9d8d51a71360edd17028c8b8ff63e68"
+    },
+    {
+      "step": "audit",
+      "command": [
+        "$PYTHON",
+        "experiments/0019-review/review_saved.py",
+        "--repo",
+        "<repository>",
+        "--output",
+        "<repository>/results/0019-author-loss/independent-review/audit.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6073525830000001,
+      "log_path": "audit.log",
+      "log_sha256": "388c9286258ba1da2e78a77343b7a8c6f10cd94e04155c6e47927571aaa1770f"
+    }
+  ]
+}
