@@ -1,0 +1,13 @@
+# Independent metadata conclusion: 0021
+
+Reviewed 2026-10-19 from the [prospective screen](literature/0021-prospective-screen.md) and [metadata/source receipts](../results/0021-metadata-screen/README.md). No HDF5, correspondence/depth/calibration values, images, models or GT were accessed. Frozen 0020 files were not changed.
+
+**The current opaque cache does not admit scientific fitting of the shared-image-depth hypothesis.** This is an evidence limitation, not a mathematical rejection of cross-edge transfer.
+
+Independent summation of the saved graph rows confirms 430 scene-qualified token nodes, 500 edges, 16 components and 5 triangles. Excluding all 80 selected query edges leaves 53 queries with at least one reference neighbor at each endpoint, 19 with at least two, and 3 with at least three. Only one query has a shared third neighbor. Few triangles alone does not invalidate a four-image construction. Conversely, node degree establishes neither distinct motion/parallax nor useful spatial support. These are candidate-token counts, not certified image identities or independent samples.
+
+The authored consumer supports interpreting the key tokens as image names. The old preparation script provides a precedent for reusable per-image depth maps. However, its LightGlue/hyphen-key output is not the hosted RoMa pair-group export. Neither that precedent, the `moge` label, matching vector shapes nor within-pair camera usage binds this particular cache to one common per-image prediction function, preprocessing or pixel/depth-sampling convention.
+
+The missing evidence is the actual hosted exporter and invocation/version, or equivalent explicit producer documentation linking canonical image identity, image-only prediction settings/preprocessing and sampling coordinates. A per-image map digest would be strong evidence; a documented deterministic image-only producer can also establish the intended contract. Pair-dependent crop/resize, model/configuration changes or prediction generation could otherwise change the spatial depth field. Source code describing a different producer cannot retrospectively certify this artifact. Numerical consistency checks can expose contradictions but cannot alone establish its provenance.
+
+The minimal next step is a bounded producer-contract check or a switch to inputs with documented generation. Do not fit the present cache first and use low residuals as proof of shared prediction error. Even after provenance is resolved, Jacobian identifiability, reference-pose uncertainty, query transfer and actual pose improvement require separate tests. Artificial generic-rank results would not establish real shared error or held-out generalization.
