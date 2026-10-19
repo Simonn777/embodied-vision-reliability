@@ -1,3 +1,21 @@
+# 0022 current stage: installation and manufactured qualification freeze
+
+[Acquisition completed](acquisition/README.md) under the first freeze with all
+119 fixed files and 270,952,703 observed response-body bytes. The second freeze
+adds the full isolated installer and offline manufactured-input qualifier. Neither
+has executed yet. Their successful preceding outer/inner/source/log chains are
+required. No scientific images or ground truth are admitted by this stage.
+
+The qualifier's first 11 artificial tests passed. Before inference, native SDPA
+and OpenCV thread controls were made explicit and the fake interpreter fixture
+was corrected for Python 3.11 CI; the second 11-test verification also passed.
+Both immutable logs/receipts remain here, with distinct source hashes. Only
+invented artifacts, NumPy fixtures and fake model interfaces were used. The
+first source snapshot remains private; no model was loaded for these tests.
+
+All later scientific accuracy and complete-pipeline cost requirements remain.
+The initial asset-only freeze record follows for chronology.
+
 # 0022 frontend preparation: asset-only admission
 
 This record freezes acquisition of a traceable per-image MoGe2-S and

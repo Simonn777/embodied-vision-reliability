@@ -5,9 +5,13 @@ method. No benchmark image, intrinsic, depth, match or pose payload is admitted
 by this protocol. No scene or pair is allocated. The 0012 efficacy gate and all
 closed studies remain unchanged. Model feasibility does not establish novelty.
 
-The asset-only freeze admits acquisition after exact source CI. Isolated
-installation and qualification each require a subsequent complete implementation
-freeze and review before execution; that source is still being prepared.
+The asset-only freeze `ce7b02ef130ca6f99a71fdb13f590a41e4293641` completed
+acquisition after exact CI. The second implementation freeze admits isolated
+installation and manufactured qualification after independent review and exact
+CI. Installation must validate the successful acquisition outer/inner receipts;
+qualification must validate the successful installation outer/inner receipts and
+same second-freeze source identities. A failed outer operation cannot be
+promoted by an inner success. All original acquisition evidence is retained.
 
 ## Fixed assets and bounds
 
@@ -53,14 +57,17 @@ Do not modify the shared environment or allow resolver downloads. Reconstruct
 upstream package directories from the verified source layout. Preserve utils3d's
 checked-in lazy export maps. Model constructors use local checkpoints only;
 loading uses `weights_only=True`, CPU mapping and complete learned-key checks.
-Do not invoke MoGe `init_weights` or fetch DINO weights. Any attempted network
-access during import/model load/inference fails and is recorded. No GPU/MPS or
+Do not invoke MoGe `init_weights` or fetch DINO weights. Enable the author
+PyTorch native-SDPA adapter after strict weight checks. Set Torch intra-op to
+four, inter-op to one and OpenCV to one thread. Inspected Python network/process
+audit events are denied and recorded during import/model loading/inference;
+this is not an OS sandbox for arbitrary native syscalls. No GPU/MPS or
 paid/cloud execution.
 
 ## Fixed artificial qualification
 
-Before execution, freeze the exact deterministic manufactured RGB construction
-in `qualify.py`. Two 384 by 512 images differ by a 12-pixel horizontal shift with
+The exact deterministic manufactured RGB construction is fixed in `qualify.py`:
+seed 0 noise, fixed gradients and four fixed colored squares. Two 384 by 512 images differ by a 12-pixel horizontal shift with
 zero fill. This is a numerical/API fixture, not real scene data and not evidence
 of depth or pose quality. MoGe uses full author `infer` on CPU float32,
 `num_tokens=1200`, `use_fp16=False`, `apply_mask=False`, and

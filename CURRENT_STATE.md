@@ -1,5 +1,28 @@
 # Current state
 
+## Active continuation: 0022 installation/qualification freeze, 2026-10-19
+
+[Asset acquisition](results/0022-preparation/acquisition/README.md) completed
+all 119 files once after exact source CI: 270,952,703 response-body bytes,
+34.676637916 seconds, exit 0. No benchmark payload was acquired or allocated.
+The second implementation freeze binds successful acquisition and installation
+receipts and permits only isolated installation followed by the fixed artificial
+frontend qualification, after independent review and exact CI. It does not admit
+a scientific experiment. No model inference has run at this freeze.
+
+The qualifier preserves full author MoGe postprocessing, strict learned-weight
+checks, original LightGlue key conversion, fixed CPU/thread settings, and exact
+manufactured inputs. Both 11-test artificial verifications passed; the second
+follows pre-inference native-SDPA/OpenCV-thread completion and a CI-fixture
+interpreter correction. Original sources/test receipts are retained. Runtime,
+actual model compatibility, depth validity and real-image accuracy remain unknown.
+
+The research target remains a substantial, novel, independently replicated pose
+improvement. Source/runtime qualification is not that result. A later test of
+reference prediction error must beat in-sample/Hessian/scalar controls and strong
+same-observation joint optimization. No universal calibration guarantee is
+claimed; coherent reference bias is a known counterexample. No manuscript.
+
 ## Active continuation: 0022 asset-only freeze, 2026-10-19
 
 The [asset protocol](protocols/0022-traceable-frontend-assets.md) fixes a small,
