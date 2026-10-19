@@ -1,0 +1,24 @@
+{
+  "command": [
+    "python",
+    "experiments/0012-score-bounds/run_grid.py",
+    "--data",
+    "<acquired-dms-hdf5>",
+    "--manifest",
+    "configs/0012-development-manifest.json",
+    "--reference",
+    "results/0012-development/diagnostic.jsonl",
+    "--build-receipt",
+    "<local-grid-build-receipt>",
+    "--synthetic-admission",
+    "results/0012d-lazy-grid/synthetic-serialization-retry/diagnostic.json",
+    "--output",
+    "results/0012d-lazy-grid/development/diagnostic.jsonl"
+  ],
+  "timeout_seconds": 1800,
+  "native_threads": 1,
+  "python_thread_limit": 1,
+  "exit_code": 0,
+  "wall_seconds": 0.459690125,
+  "max_rss_bytes_macos": 43171840
+}
