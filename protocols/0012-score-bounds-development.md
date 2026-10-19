@@ -28,7 +28,10 @@ bound on unresolved aggregate costs, not clustering or outlier culling alone.
   baseline. Fixed leaf size32, starting partition128 cells, threshold1pixel;
   convert only if coordinates are normalized and intrinsics are supplied.
 - Compare direct MSAC, the same partition with spatial-culling-only bounds,
-  aggregate-moment bounds, and DMS-form approximate costs. Report exact argmin
+  aggregate-moment bounds, and DMS-form approximate costs. Both bound-based
+  selectors use at most128 refinement operations per unresolved hypothesis,
+  starting from128 cells; overlapping intervals use full-score fallback. This
+  numerical budget was fixed before the first coordinate read. Report exact argmin
   agreement, bound containment, residual/bound counts, timing including setup,
   and approximation-ranking differences. Record all16 pairs, no selected summary.
 - Stop on bound violation/wrong winner. If no residual work is saved beyond
