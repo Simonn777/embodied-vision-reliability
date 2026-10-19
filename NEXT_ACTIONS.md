@@ -2,7 +2,7 @@
 
 ## Active priority: 2026-10-19
 
-Execute the bounded [0012 numerical diagnostic](protocols/0012-score-bounds-development.md) after independent math checks. Establish useful computation beyond spatial culling before an accuracy experiment. Preserve all old stop decisions; no manuscript before independent task-quality gains.
+The [initial0012 diagnostic](results/0012-development/README.md) is complete and computationally inadequate. Preserve it. Review a signed residual mean/variance bound that retains correspondence correlation before freezing any exploratory follow-up on the same development scene. Test against both the original bound and ordinary partial exact scoring. Official pose integration must preserve calibrated five-point hypotheses and cheirality semantics. Establish material computation savings, then strong same-backend pose comparisons before untouched confirmation data. Preserve all old stop decisions; no manuscript before independent task-quality gains.
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 

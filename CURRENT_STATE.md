@@ -2,7 +2,7 @@
 
 ## Active continuation: 2026-10-19
 
-The owner reaffirmed substantial validated task improvement before any manuscript. The [research decision](docs/0012-research-reset.md) and [0012 protocol](protocols/0012-score-bounds-development.md) set the next priority without changing historical results. No new measured benefit exists yet.
+The owner reaffirmed substantial validated task improvement before any manuscript. The [0012 diagnostic](results/0012-development/README.md) completed all16 development pairs with correct winners, but saved only0.0884% of residual evaluations against culling and was slower. This is insufficient practical benefit, not a successful research outcome. The [research decision](docs/0012-research-reset.md) remains active. A separate signed-mean/variance bound is under mathematical review to address the identified loss of correspondence correlation; no task-accuracy gain or manuscript exists.
 
 Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0011
 oblique coordinate-coupling negative result and saved-output review.
