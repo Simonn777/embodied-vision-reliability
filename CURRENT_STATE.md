@@ -1,36 +1,38 @@
 # Current state
 
-## Active continuation: 2026-10-19
+## Active continuation: 0016 search diagnostic, 2026-10-19
 
 The owner requires substantial independent improvement before a manuscript. None
-is yet established. [0015](results/0015-photometric/README.md) completed its32
-scientific workers after published freeze057a5ea and fails its fixed expansion
-gate: full AUC@5 +0.009558333pp (required≥0.25), same-index subset −3.091052179pp
-(required≥+2),9/16 full errors improve (required≥10). All16 remain in each metric;
-4 subsets are unavailable and penalized equally. There were191 admitted changes
-from1355 selected queries,0.119375% of the full160000 observations, and40 completed
-native calls. The first evaluator's baseline-time metadata error is preserved;
-a separately frozen saved-only repair produced the complete score without
-repeating any prediction. Independent saved-output review confirms the bindings,
-counts, metrics and failure. Strong patch-loss reduction is not task improvement.
+is yet established; the research goal remains active. The next concrete step is
+the [prospective64-pair diagnostic](protocols/0016-search-headroom.md): three
+official backends, four fixed seeds each, common final-pose selection, actual
+charged-time prefixes and separately labeled oracle headroom. It distinguishes
+tested search/selection/version effects before implementing a new method.
+The64new pair keys were allocated from the existing0015development scene using
+only names; their coordinates and R/t remain unread at this preparation stage.
+Scene0022 remains downstream-held-out and numerically untouched. No new dataset
+or model weights were acquired; [current-library preparation](results/0016-preparation/README.md)
+and manufactured-scene qualification are complete. This is not an accuracy gain.
 
-Stop this sparse photometric configuration, with no iteration/gate/pair rescue or
-immediate propagation. Saved-only post-hoc epipolar compatibility also worsens on
-average; it is not ground-truth correspondence error. The [prior-work screen](docs/literature/0015-photometric-followup-prior.md)
-identifies JET, PixSfM, EpicFlow, ArgMatch and a2026 descriptor-JET preprint as
-close controls. A distinct next diagnostic must demonstrate recoverable image
-information or another explicit mechanism before a more complex method is run.
-A bounded nonquadratic-likelihood profile is only a possible falsification study,
-not an admitted experiment or novel contribution. No manuscript is started.
+Run only after the full source/configuration freeze is published and checks
+pass. Seal all192workers before the separate evaluator accesses selected GT.
+Preserve failures and every pair. Do not select using GT, replace a hard pair,
+treat restarts as novel, or claim complete-pipeline speed from cached estimation.
+A later ordinal-depth branch needs at least2pp diagnostic candidate-bank headroom
+plus a distinct mechanism and strong depth controls. That necessary condition
+alone is not sufficient evidence of efficacy.
 
-The [0013 official baseline](results/0013-baseline-calibration-compatibility/README.md)
-is AUC@5=81.169622478%. The [0014 noise control](results/0014-pixel-noise-arithmetic-repair/README.md)
-gains only0.006510542pp; that route remains closed. The [0012 scorer family](results/0012d-lazy-grid/development/README.md)
-is31.21% slower than ordinary partial scoring and remains closed. Preserve all
-prior failures, original sources, technical repairs and untouched held-out data.
-The final target remains≥2 absolute AUC@5 points at matched total time on two
-independent held-out sources, positive scene-level uncertainty bounds, strong
-baselines, novelty and ablations. The broader research goal remains active.
+[0015 is published and closed](docs/0015-publication-verification.md): full AUC@5
++0.009558333pp and subset−3.091052179pp failed its fixed criteria. No iteration,
+gating or propagation rescue. The0014noise and0012scoring branches remain closed.
+[Primary-source reviews](docs/literature/0016-headroom-diagnostic-review.md) exclude
+generic multimodal scoring, patch/pose coupling and affine-depth hybrid fitting
+as new contributions. Additional data routes are source-screened only.
+
+The unchanged manuscript gate is a distinct contribution with≥2absoluteAUC@5pp
+at matched complete-pipeline time on two independent held-out sources, positive
+scene-level95%intervals,≤0.5pp AUC@20loss, strong controls, ablations and replication.
+No manuscript is started.
 
 Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0011
 oblique coordinate-coupling negative result and saved-output review.

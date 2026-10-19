@@ -1,0 +1,43 @@
+{
+  "bundle_defaults": {
+    "gradient_tol": 1e-10,
+    "initial_lambda": 0.001,
+    "loss_scale": 1.0,
+    "loss_type": "CAUCHY",
+    "max_iterations": 100,
+    "max_lambda": 10000000000.0,
+    "min_lambda": 1e-10,
+    "step_tol": 1e-08,
+    "verbose": false
+  },
+  "checks": [
+    {
+      "finite_pose": true,
+      "requested_iterations": 2,
+      "returned_iterations": 2,
+      "rotation_identity_max_abs_error": 8.94053387474913e-15,
+      "seconds": 0.000647459000000003
+    },
+    {
+      "finite_pose": true,
+      "requested_iterations": 4,
+      "returned_iterations": 4,
+      "rotation_identity_max_abs_error": 8.94053387474913e-15,
+      "seconds": 3.3124999999994964e-05
+    }
+  ],
+  "dataset_access": false,
+  "kind": "old_norm",
+  "library": {
+    "binary_bytes": 2319704,
+    "binary_name": "_core.cpython-39-darwin.so",
+    "binary_sha256": "2e937f7a5289438710cbf00bc29fbc5583033b308beedd1da5f0634b527a4e26",
+    "python_files": {
+      "__init__.py": "983ff88910dcfa2cb95eb8b50bc8478d6b4153ca05c5b018928c14f07f3830af",
+      "utils.py": "1042d5b75a55ead04645665f000c9659b6794f0bfd1e2a8995d6bbd08f92a048"
+    },
+    "version": "2.0.5"
+  },
+  "manufactured_points": 48,
+  "status": "passed"
+}
