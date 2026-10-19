@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "all_reconstruction_values_unchanged": true,
+      "arm": "depth_scale",
+      "case": "clean"
+    },
+    {
+      "all_reconstruction_values_unchanged": true,
+      "arm": "depth_affine",
+      "case": "clean"
+    },
+    {
+      "all_reconstruction_values_unchanged": true,
+      "arm": "depth_scale",
+      "case": "pixel_noise"
+    },
+    {
+      "all_reconstruction_values_unchanged": true,
+      "arm": "depth_affine",
+      "case": "pixel_noise"
+    },
+    {
+      "all_reconstruction_values_unchanged": true,
+      "arm": "depth_scale",
+      "case": "affine_depth"
+    },
+    {
+      "all_reconstruction_values_unchanged": true,
+      "arm": "depth_affine",
+      "case": "affine_depth"
+    }
+  ],
+  "helper_sha256": "15741a056652768d8ee14b1c503d862d4434b9b31f536abfc34115b5110d2c93",
+  "native_calls": 0,
+  "prior_receipts_sha256": {
+    "native-qualification.instrumented.json": "cdad845cd362a525a90fbd0d89fcf8ef2c511a77946529bb085df393a8e2167f",
+    "native-qualification.json": "907fa222b536656a6adca71f27ae36d947641e01ca578c90cf9771ac4dcb4d04"
+  },
+  "schema": "evr0018.saved-artificial-recheck.v1",
+  "scientific_inputs_read": 0,
+  "seconds": 0.041259833999999995,
+  "source_sha256": {
+    "diagnose_trace.py": "ef9dd1da6fbc094d54fb92504af93dbf63517920469cefa2754d05f1332205ae",
+    "qualify_native.py": "12f335231d3d6313829e3c54749e44c8056d2f3780c95e5b7fa6bc4866cd0412"
+  },
+  "status": "passed"
+}

@@ -1,6 +1,31 @@
 # Next actions
 
-## Active continuation: 0017 complete, 2026-10-19
+## Active continuation: 0018 scientific freeze preparation, 2026-10-19
+
+[0017 publication](docs/0017-publication-verification.md) is verified through
+PR46/main275db67d and exact CI. Additional oracle headroom remains9.202524pp;
+deployable selection only+0.032132pp. No substantial new-method success.
+
+The [0018 observer](results/0018-preparation/README.md) is built and qualified:
+24 artificial API calls/six cases, nine native controls and49 artificial tests
+passed. Original source/dependencies preserved. No scientific160case replay yet.
+
+1. Publish source/config/binary bindings and verify exact CI before replay.
+2. Replay all80existing pairs/both depth arms once. Require all160 raw-output
+   parity checks and independent cost reconstructions before saved-label access.
+3. Apply the frozen same-step support-loss/material-harm final-ancestry gate in
+   at least two scenes. Passing admits a matched-initialization intervention only.
+4. A distinct method must face official TRUNCATED_CAUCHY/MADPose controls and the
+   unchanged>=2AUC5pp, matched complete-pipeline time, two independent held-out
+   sources, scene-level confidence, harm limits, ablations and replication gate.
+
+[Map-free metadata](docs/literature/0018-small-heldout-plan.md) confirms a bounded
+future acquisition route for65validation places, all unallocated. No image,
+calibration, pose or model payload read. Conservative transfer remainder is
+2,764,780,692bytes. Second source/inference runtime unresolved. Goal active;
+preparation and diagnostics are not improvement. No manuscript.
+
+## Historical checkpoint: 0017 complete, 2026-10-19
 
 [0017](results/0017-depth/README.md) completed80pairs and320known-method calls
 once, with alloutputs sealed before one score. Independent saved-only audit

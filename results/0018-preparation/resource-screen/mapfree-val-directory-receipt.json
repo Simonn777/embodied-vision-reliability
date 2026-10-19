@@ -1,0 +1,70 @@
+{
+  "body_bytes": 3945798,
+  "body_cap_bytes": 4194304,
+  "central_directory": {
+    "bytes": 3945700,
+    "entries": 37195,
+    "offset": 7903444078
+  },
+  "head": {
+    "accept_ranges": "bytes",
+    "archive_bytes": 7907389876,
+    "etag": "\"efdc0e742961dbe955226543ad213d35\"",
+    "status": 200
+  },
+  "members_sha256": "e5d205f57c7cc30224b260b644ffb62bbdd0f4c4a67b74d72b0e5337ae297dbb",
+  "payload_members_read": 0,
+  "requests": [
+    {
+      "body_bytes": 22,
+      "content_range": "bytes 7907389854-7907389875/7907389876",
+      "etag": "\"efdc0e742961dbe955226543ad213d35\"",
+      "kind": "EOCD",
+      "requested_range": [
+        7907389854,
+        7907389875
+      ],
+      "sha256": "d19bc92eb1ae2d87e105591b86a89e71f5b2985c4be70b4d09aba0d1b9a44fb0",
+      "status": 206
+    },
+    {
+      "body_bytes": 20,
+      "content_range": "bytes 7907389834-7907389853/7907389876",
+      "etag": "\"efdc0e742961dbe955226543ad213d35\"",
+      "kind": "ZIP64 locator",
+      "requested_range": [
+        7907389834,
+        7907389853
+      ],
+      "sha256": "f7b9b53fd7eee9ea227db830f2d49eea3c13c1062841811aca0d539d91435c1a",
+      "status": 206
+    },
+    {
+      "body_bytes": 56,
+      "content_range": "bytes 7907389778-7907389833/7907389876",
+      "etag": "\"efdc0e742961dbe955226543ad213d35\"",
+      "kind": "ZIP64 EOCD fixed record",
+      "requested_range": [
+        7907389778,
+        7907389833
+      ],
+      "sha256": "f637c41b4253998e7c69c8f06133662cfddff7d05b89776978932620843e503f",
+      "status": 206
+    },
+    {
+      "body_bytes": 3945700,
+      "content_range": "bytes 7903444078-7907389777/7907389876",
+      "etag": "\"efdc0e742961dbe955226543ad213d35\"",
+      "kind": "central directory only",
+      "requested_range": [
+        7903444078,
+        7907389777
+      ],
+      "sha256": "5c53ffaf13fcbcaf3c40d2d30a979ba104fe2cf4110237f667fac446e24782f9",
+      "status": 206
+    }
+  ],
+  "schema": "evr0018.resource-directory.v1",
+  "status": "completed",
+  "url": "https://storage.googleapis.com/niantic-lon-static/research/map-free-reloc/dataset/val.zip"
+}

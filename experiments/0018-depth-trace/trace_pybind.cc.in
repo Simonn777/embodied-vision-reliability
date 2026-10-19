@@ -1,0 +1,120 @@
+// Inserted in the existing anonymous binding namespace, after both ordinary
+// calibrated-monodepth wrapper overloads. Native optimization is called once.
+py::object trace0018_number(double value,bool &finite) {
+    if(std::isfinite(value))return py::float_(value);
+    finite=false;return py::none();
+}
+py::dict trace0018_state(const trace0018::State &state,bool &finite) {
+    py::dict out;py::list q,R,t;
+    for(int i=0;i<4;++i)q.append(trace0018_number(state.values[i],finite));
+    for(int r=0;r<3;++r){py::list row;for(int c=0;c<3;++c)row.append(trace0018_number(state.values[4+3*r+c],finite));R.append(row);}
+    for(int i=0;i<3;++i)t.append(trace0018_number(state.values[13+i],finite));
+    out["q"]=q;out["R"]=R;out["t"]=t;
+    out["scale"]=trace0018_number(state.values[16],finite);
+    out["shift1"]=trace0018_number(state.values[17],finite);
+    out["shift2"]=trace0018_number(state.values[18],finite);
+    return out;
+}
+const char *trace0018_loss(BundleOptions::LossType value){
+    switch(value){
+    case BundleOptions::TRIVIAL:return "TRIVIAL";
+    case BundleOptions::TRUNCATED:return "TRUNCATED";
+    case BundleOptions::HUBER:return "HUBER";
+    case BundleOptions::CAUCHY:return "CAUCHY";
+    case BundleOptions::TRUNCATED_CAUCHY:return "TRUNCATED_CAUCHY";
+    case BundleOptions::TRUNCATED_LE_ZACH:return "TRUNCATED_LE_ZACH";
+    }
+    return "UNKNOWN";
+}
+py::dict trace0018_options(const trace0018::Event &e,bool &finite){
+    const auto &o=e.options;py::dict d;
+    d["loss_type"]=trace0018_loss(o.loss_type);d["max_iterations"]=o.max_iterations;
+    d["loss_scale"]=trace0018_number(o.loss_scale,finite);
+    d["gradient_tol"]=trace0018_number(o.gradient_tol,finite);
+    d["step_tol"]=trace0018_number(o.step_tol,finite);
+    d["relative_cost_tol"]=trace0018_number(o.relative_cost_tol,finite);
+    d["initial_lambda"]=trace0018_number(o.initial_lambda,finite);
+    d["min_lambda"]=trace0018_number(o.min_lambda,finite);
+    d["max_lambda"]=trace0018_number(o.max_lambda,finite);
+    d["lambda_factor"]=trace0018_number(o.lambda_factor,finite);
+    d["lambda_update"]=o.lambda_update==BundleOptions::NIELSEN?"NIELSEN":"FIXED_FACTOR";
+    d["damping"]=o.damping==BundleOptions::LEVENBERG?"LEVENBERG":"MARQUARDT";
+    d["verbose"]=o.verbose;d["refine_focal_length"]=o.refine_focal_length;
+    d["refine_extra_params"]=o.refine_extra_params;d["refine_principal_point"]=o.refine_principal_point;
+    d["scale_reproj"]=trace0018_number(e.scale_reproj,finite);
+    d["weight_sampson"]=trace0018_number(e.weight_sampson,finite);
+    d["refine_shift"]=e.refine_shift;d["weights"]=e.uniform_weights?"uniform":"unsupported_nonuniform";
+    return d;
+}
+py::dict trace0018_cost(const trace0018::Event &e,bool &finite){
+    py::dict d;d["numerator"]=trace0018_number(e.cost.numerator,finite);
+    d["count"]=e.cost.count;d["mean"]=trace0018_number(e.cost.mean,finite);return d;
+}
+py::dict trace0018_blocks(const trace0018::Blocks &b){
+    py::dict d;d["sampson_blocks"]=b.sampson;d["forward_active"]=b.forward;d["backward_active"]=b.backward;
+    d["forward_nonfinite_z"]=b.forward_nonfinite_z;d["backward_nonfinite_z"]=b.backward_nonfinite_z;return d;
+}
+py::dict trace0018_event(const trace0018::Event &e){
+    py::dict d;bool finite=true;d["kind"]=e.kind;d["lo_id"]=e.lo_id;
+    const std::string kind(e.kind);
+    if(e.lo_id>=0)d["stage"]=e.stage;
+    if(kind!="pipeline"||std::strcmp(e.phase,"begin")!=0)d["state"]=trace0018_state(e.state,finite);
+    if(kind=="lo_begin"){
+        d["support"]=e.support;d["effective"]=trace0018_options(e,finite);
+        d["parent_kind"]=e.parent.kind;d["parent_id"]=e.parent.id;
+    }else if(kind=="initial"||kind=="attempt"||kind=="exit"){
+        d["native_cost"]=trace0018_cost(e,finite);d["blocks"]=trace0018_blocks(e.blocks);
+        if(kind!="initial"){
+            d["iteration"]=e.iteration;d["invalid_steps"]=e.invalid_steps;
+            d["jacobian_count"]=e.jacobian_count;d["solve_count"]=e.solve_count;
+            d["lambda_after"]=trace0018_number(e.lambda_after,finite);
+            d["grad_norm"]=trace0018_number(e.grad_norm,finite);d["step_norm"]=trace0018_number(e.step_norm,finite);
+            d["nu"]=trace0018_number(e.nu,finite);
+        }
+        if(kind=="attempt"){
+            d["accepted"]=e.accepted;d["lambda_before"]=trace0018_number(e.lambda_before,finite);
+        }else if(kind=="exit"){
+            d["iterations"]=e.iteration;d["reason"]=e.reason;d["live_count"]=e.live_count;
+        }
+    }else if(kind=="proposal"){
+        d["proposal_id"]=e.proposal_id;d["ransac_iteration"]=e.ransac_iteration;d["model_index"]=e.model_index;
+        d["score"]=trace0018_number(e.score,finite);d["inlier_count"]=e.inlier_count;
+        d["more_inliers"]=e.more_inliers;d["better_score"]=e.better_score;
+    }else if(kind=="incumbent"){
+        d["source_kind"]=e.source.kind;d["source_id"]=e.source.id;
+        d["previous_source_kind"]=e.previous.kind;d["previous_source_id"]=e.previous.id;
+        d["score"]=trace0018_number(e.score,finite);d["inlier_count"]=e.inlier_count;
+        d["ransac_iteration"]=e.ransac_iteration;
+    }else if(kind=="pipeline"){
+        d["phase"]=e.phase;d["source_kind"]=e.source.kind;d["source_id"]=e.source.id;
+        if(std::strcmp(e.phase,"pre_final")==0)d["final_refinement_enabled"]=e.final_enabled;
+        if(std::strcmp(e.phase,"returned")==0)d["final_refinement_performed"]=e.final_performed;
+    }
+    d["finite"]=finite;return d;
+}
+py::dict trace0018_export(const trace0018::Context &ctx){
+    py::dict d;py::list events;
+    for(const auto &event:ctx.events)events.append(trace0018_event(event));
+    const char *hex="0123456789abcdef";std::string hash(16,'0');auto value=ctx.rolling_hash;
+    for(int i=15;i>=0;--i){hash[i]=hex[value&15U];value>>=4;}
+    d["schema"]="evr0018.native-trace.v1";d["complete"]=ctx.complete;d["capacity"]=ctx.capacity;
+    d["event_count"]=ctx.events.size();d["event_attempts"]=ctx.event_attempts;d["dropped_events"]=ctx.dropped_events;
+    d["events"]=events;d["proposal_trace_hash_hex"]=hash;d["sampled_draws"]=ctx.sampled_draws;
+    d["scored_proposals"]=ctx.scored_proposals;return d;
+}
+std::tuple<MonoDepthTwoViewGeometry,py::dict,py::dict> estimate_monodepth_relative_pose_trace_wrapper(
+    const std::vector<Eigen::Vector2d> &x1,const std::vector<Eigen::Vector2d> &x2,
+    const std::vector<double> &d1,const std::vector<double> &d2,const py::dict &c1,const py::dict &c2,
+    const py::dict &options,const std::optional<MonoDepthTwoViewGeometry> &initial_pose,std::size_t capacity){
+    if(capacity>50000)throw std::invalid_argument("trace_capacity must be at most 50000");
+    if(x1.size()!=x2.size()||x1.size()!=d1.size()||x1.size()!=d2.size())
+        throw std::invalid_argument("trace input lengths differ");
+    trace0018::Context ctx(capacity,x1.size());
+    std::pair<MonoDepthTwoViewGeometry,py::dict> result;
+    {
+        trace0018::Scope scope(&ctx);trace0018::pipeline("begin",nullptr);
+        result=estimate_monodepth_relative_pose_wrapper(x1,x2,d1,d2,c1,c2,options,initial_pose);
+        trace0018::pipeline("returned",&result.first);
+    }
+    return std::make_tuple(result.first,result.second,trace0018_export(ctx));
+}
