@@ -1,0 +1,100 @@
+{
+  "schema": "0011-parent-observed-review-closure-v1",
+  "turn_id": "01a151d0-4a53-747a-95a6-7f9818fcc223",
+  "retrieval": "Actual commandExecution tool records; maxOutputCharsPerItem=20000, all selected outputs untruncated.",
+  "review_commands": [
+    {
+      "id": "exec-444da2db-ade4-4f2f-b110-402aaca31d94",
+      "command": "/bin/bash -lc \"cat > scratch/0011-independent-review/capture_review.py <<'PY'\n\\\"\\\"\\\"External command receipt for four authorized saved-only checker invocations.\\\"\\\"\\\"\nfrom pathlib import Path\nimport os,sys,json,hashlib,time,platform\nfrom datetime import datetime,timezone\nb=Path('/workspace/scratch/a349d03a0e0a');c=Path(__file__).parent;r=b/'research-0011-oblique';o=b/'scratch/0011-oblique-v1'\ndef sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()\ndef spec(p):return dict(bytes=p.stat().st_size,sha256=sha(p))\nlabel=sys.argv[1]\ncommands={\n 'metrics-selftest':[str(c/'review_0011_saved_metrics.py'),'--self-test','--output',str(c/'metrics-selftest.json')],\n 'coupling-selftest':[str(c/'review_0011_saved_coupling.py'),'--self-test'],\n 'metrics-review':[str(c/'review_0011_saved_metrics.py'),'--root',str(o),'--repo',str(r),'--output',str(c/'metrics-review.json')],\n 'coupling-review':[str(c/'review_0011_saved_coupling.py'),'--root',str(o),'--output',str(c/'coupling-review.json')],\n}\nargs=commands[label];cmd=['timeout','--kill-after=5s','1800',sys.executable,'-W','error',*args]\nexpected={'review_0011_saved_metrics.py':'aee7c5ad9ccefb5772d3c03891127b047b1010fe47de2856dad7cfa792e45af1','review_0011_saved_coupling.py':'cc46b586d0bc11f0f8006e51282eaf13fd6670da50fafef3cb25a88a1f77295f'}\nfor n,h in expected.items():assert sha(c/n)==h\nbinding=c/'original-binding.json'\nif not binding.exists():\n p=b/'scratch/0011-pilot-control/postcheck.json';d=json.loads(p.read_text());f=json.loads((r/'protocols/0011-oblique-development-freeze.json').read_text())\n for n,v in d['new_output_inventory'].items():assert spec(o/n)==v\n for n,h in f['files'].items():assert sha(r/n)==h\n with binding.open('x') as w:json.dump(dict(postcheck=spec(p),original_output_files=d['new_output_inventory'],freeze=spec(r/'protocols/0011-oblique-development-freeze.json'),frozen_files=f['files']),w,indent=2);w.write('\\\\n')\nenv={'PATH':'/usr/bin:/bin','LANG':'C.UTF-8','LC_ALL':'C.UTF-8','PYTHONDONTWRITEBYTECODE':'1','PYTHONNOUSERSITE':'1','PYTHONPATH':str(b/'bootstapir-cache/runtime-fixed'),'CUDA_VISIBLE_DEVICES':''}\nfor k in ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS']:env[k]='4'\nrecord=dict(argv=cmd,cwd=str(r),environment=env,limits=dict(affinity=[0,1,2,3],address_space_bytes=8*1024**3,external_timeout_seconds=1800),checker_sha256=sha(Path(args[0])),capture_sha256=sha(Path(__file__)),input_binding_sha256=sha(binding),python_version=sys.version,platform=platform.platform())\nwith (c/(label+'.command.json')).open('x') as w:json.dump(record,w,indent=2);w.write('\\\\n')\nstart=datetime.now(timezone.utc).isoformat();t=time.monotonic();pid=os.fork()\nif pid==0:\n os.chdir(r);os.sched_setaffinity(0,[0,1,2,3]);import resource;resource.setrlimit(resource.RLIMIT_AS,(8*1024**3,8*1024**3));resource.setrlimit(resource.RLIMIT_CORE,(0,0))\n for fd,suffix in [(1,'.stdout.log'),(2,'.stderr.log')]:\n  q=os.open(c/(label+suffix),os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600);os.dup2(q,fd);os.close(q)\n os.execve('/usr/bin/timeout',cmd,env)\n_,st,us=os.wait4(pid,0);exitcode=os.waitstatus_to_exitcode(st)\nd=dict(label=label,actual_exit=exitcode,raw_wait_status=st,started_utc=start,ended_utc=datetime.now(timezone.utc).isoformat(),wall_seconds=time.monotonic()-t,user_cpu_seconds=us.ru_utime,system_cpu_seconds=us.ru_stime,max_rss_kib=us.ru_maxrss,command=spec(c/(label+'.command.json')),logs={n:spec(c/(label+n)) for n in ['.stdout.log','.stderr.log']},checker_sha256=sha(Path(args[0])),input_binding_sha256=sha(binding),parent_observer_boundary='Actual wait4 for timeout/checker child; recording parent itself has tool return only, no recursive observer.')\nwith (c/(label+'.execution.json')).open('x') as w:json.dump(d,w,indent=2);w.write('\\\\n')\nprint(json.dumps(d));print((c/(label+'.stdout.log')).read_text()[:1500]);print((c/(label+'.stderr.log')).read_text()[-1600:]);sys.exit(exitcode)\nPY\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0011-independent-review/capture_review.py metrics-selftest\"",
+      "exit_code": 0,
+      "tool_duration_ms": 63,
+      "output": {
+        "text": "{\"label\": \"metrics-selftest\", \"actual_exit\": 0, \"raw_wait_status\": 0, \"started_utc\": \"2026-10-19T01:40:23.244012+00:00\", \"ended_utc\": \"2026-10-19T01:40:23.361994+00:00\", \"wall_seconds\": 0.11799064500519307, \"user_cpu_seconds\": 0.32509299999999997, \"system_cpu_seconds\": 0.013833999999999999, \"max_rss_kib\": 30180, \"command\": {\"bytes\": 1458, \"sha256\": \"3a58c8db4e41983bf1ec65c806b8933a332e338ebfafcbe4d9bc446b30e49a3b\"}, \"logs\": {\".stdout.log\": {\"bytes\": 118, \"sha256\": \"17fff664933894d5e3f2c28cae9afbaea0eecb4306e70b7c68e5634f7a7616f2\"}, \".stderr.log\": {\"bytes\": 0, \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"}}, \"checker_sha256\": \"aee7c5ad9ccefb5772d3c03891127b047b1010fe47de2856dad7cfa792e45af1\", \"input_binding_sha256\": \"b018ce78de64723dac83b4f3f7437ba395f6d86d3b1c5f39b7cf7e80c542872d\", \"parent_observer_boundary\": \"Actual wait4 for timeout/checker child; recording parent itself has tool return only, no recursive observer.\"}\n{\"status\": \"PASS\", \"checks\": 8, \"numeric_checks\": 1, \"failure_count\": 0, \"checker_wall_seconds\": 0.06800611300423043}\n\n\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-2aab2306-f1f8-4f08-a232-216154fbeca7",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0011-independent-review/capture_review.py coupling-selftest'",
+      "exit_code": 0,
+      "tool_duration_ms": 5836,
+      "output": {
+        "text": "{\"label\": \"coupling-selftest\", \"actual_exit\": 0, \"raw_wait_status\": 0, \"started_utc\": \"2026-10-19T01:40:26.691488+00:00\", \"ended_utc\": \"2026-10-19T01:40:32.580379+00:00\", \"wall_seconds\": 5.888899485995353, \"user_cpu_seconds\": 5.335381, \"system_cpu_seconds\": 0.601646, \"max_rss_kib\": 42656, \"command\": {\"bytes\": 1350, \"sha256\": \"60dd3d56780452a6847e3b35d403f9d2006fd34bd2209a800f1a6be8860a07c9\"}, \"logs\": {\".stdout.log\": {\"bytes\": 0, \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"}, \".stderr.log\": {\"bytes\": 914, \"sha256\": \"93ad43db3c9a587aca76bae7d8bfbf3abb96d3954ea4c123721f7364d2b4d55f\"}}, \"checker_sha256\": \"cc46b586d0bc11f0f8006e51282eaf13fd6670da50fafef3cb25a88a1f77295f\", \"input_binding_sha256\": \"b018ce78de64723dac83b4f3f7437ba395f6d86d3b1c5f39b7cf7e80c542872d\", \"parent_observer_boundary\": \"Actual wait4 for timeout/checker child; recording parent itself has tool return only, no recursive observer.\"}\n\ntest_artificial_saved_complete_grid_and_persistent_failures (__main__.ArtificialTests.test_artificial_saved_complete_grid_and_persistent_failures) ... ok\ntest_full_256_bin_fixture (__main__.ArtificialTests.test_full_256_bin_fixture) ... ok\ntest_invalid_and_logits_axis (__main__.ArtificialTests.test_invalid_and_logits_axis) ... ok\ntest_inverse_and_axis_geometry (__main__.ArtificialTests.test_inverse_and_axis_geometry) ... ok\ntest_known_three_by_three (__main__.ArtificialTests.test_known_three_by_three) ... ok\ntest_lexicographic_tie_and_local_mean (__main__.ArtificialTests.test_lexicographic_tie_and_local_mean) ... ok\ntest_nonconvergence_is_explicit (__main__.ArtificialTests.test_nonconvergence_is_explicit) ... ok\ntest_separable_and_nonuniform (__main__.ArtificialTests.test_separable_and_nonuniform) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 5.783s\n\nOK\n\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-d0177ccd-85cf-4267-af05-fb85d799147c",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0011-independent-review/capture_review.py metrics-review'",
+      "exit_code": 0,
+      "tool_duration_ms": 149,
+      "output": {
+        "text": "{\"label\": \"metrics-review\", \"actual_exit\": 0, \"raw_wait_status\": 0, \"started_utc\": \"2026-10-19T01:40:35.890961+00:00\", \"ended_utc\": \"2026-10-19T01:40:36.103877+00:00\", \"wall_seconds\": 0.2129255049949279, \"user_cpu_seconds\": 0.483035, \"system_cpu_seconds\": 0.039487999999999995, \"max_rss_kib\": 36932, \"command\": {\"bytes\": 1589, \"sha256\": \"fe33278e8bcbc7a36970465ea3d5d7f527f0d87f1f82bfca3f1eace8bc779dc6\"}, \"logs\": {\".stdout.log\": {\"bytes\": 123, \"sha256\": \"0a5ca32a6f9dc5c4c40e2aff3bbcfddd362025fc5cde7b3e4d25798966cde424\"}, \".stderr.log\": {\"bytes\": 0, \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"}}, \"checker_sha256\": \"aee7c5ad9ccefb5772d3c03891127b047b1010fe47de2856dad7cfa792e45af1\", \"input_binding_sha256\": \"b018ce78de64723dac83b4f3f7437ba395f6d86d3b1c5f39b7cf7e80c542872d\", \"parent_observer_boundary\": \"Actual wait4 for timeout/checker child; recording parent itself has tool return only, no recursive observer.\"}\n{\"status\": \"PASS\", \"checks\": 14935, \"numeric_checks\": 3997, \"failure_count\": 0, \"checker_wall_seconds\": 0.163600656997005}\n\n\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-25c2a693-573d-4a89-8753-1da8c105107e",
+      "command": "/bin/bash -lc '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scratch/0011-independent-review/capture_review.py coupling-review'",
+      "exit_code": 0,
+      "tool_duration_ms": 5253,
+      "output": {
+        "text": "{\"label\": \"coupling-review\", \"actual_exit\": 0, \"raw_wait_status\": 0, \"started_utc\": \"2026-10-19T01:40:38.820325+00:00\", \"ended_utc\": \"2026-10-19T01:40:44.090977+00:00\", \"wall_seconds\": 5.270662703005655, \"user_cpu_seconds\": 5.177825, \"system_cpu_seconds\": 0.401744, \"max_rss_kib\": 40672, \"command\": {\"bytes\": 1516, \"sha256\": \"5b4188b6ad7c59f18c21fe2ba4b0bc78588eb4f0636b52e700aa44b83455af51\"}, \"logs\": {\".stdout.log\": {\"bytes\": 131, \"sha256\": \"d0e6eda06269e46b8ad3d84bec313ebb21ba5f7f6d6bd41efbd48e07a16c7023\"}, \".stderr.log\": {\"bytes\": 0, \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"}}, \"checker_sha256\": \"cc46b586d0bc11f0f8006e51282eaf13fd6670da50fafef3cb25a88a1f77295f\", \"input_binding_sha256\": \"b018ce78de64723dac83b4f3f7437ba395f6d86d3b1c5f39b7cf7e80c542872d\", \"parent_observer_boundary\": \"Actual wait4 for timeout/checker child; recording parent itself has tool return only, no recursive observer.\"}\n{\"status\": \"passed\", \"processed_points\": 256, \"source_sha256\": \"cc46b586d0bc11f0f8006e51282eaf13fd6670da50fafef3cb25a88a1f77295f\"}\n\n\n",
+        "truncated": false
+      }
+    }
+  ],
+  "all_command_statuses": [
+    {
+      "id": "exec-8aed76b4-7117-4638-8749-b028b28604a6",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-0bfd52b7-a102-4c3f-868f-122e37c55a2b",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-453fbb7a-59dd-4354-b17d-3a8deaeccf5c",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-444da2db-ade4-4f2f-b110-402aaca31d94",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-2aab2306-f1f8-4f08-a232-216154fbeca7",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-d0177ccd-85cf-4267-af05-fb85d799147c",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-25c2a693-573d-4a89-8753-1da8c105107e",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-c995793b-c65d-4448-b26f-3e08752a7cea",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-902e973b-df06-4b1d-85c7-9398cddaa60c",
+      "exit_code": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-8c285e1a-b446-432c-910a-da59c9eecb14",
+      "exit_code": 0,
+      "output_truncated": false
+    }
+  ],
+  "publication_retrieval_limit": "The later publication turn could not be retrieved in full because it exceeded read_thread size limits. Parent independently fetched Git commit0302bdab and verified all four published blobs and every archive member; publication is established by that live Git evidence, not unavailable tool history."
+}

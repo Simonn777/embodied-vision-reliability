@@ -1,0 +1,188 @@
+{
+  "schema": "0011-parent-observed-tool-closure-v1",
+  "thread_id": "01a1434c-d43f-776d-888e-82ed314590ed",
+  "turn_id": "01a151c5-e83d-70e1-93ea-99788a91f6b4",
+  "retrieval": "Codex read_thread with maxOutputCharsPerItem=20000; commandExecution records, not the assistant completion narrative.",
+  "science_commands": [
+    {
+      "id": "exec-7649b704-56b7-42ae-a50a-bafb07572078",
+      "command": "/bin/bash -lc 'export PYTHONDONTWRITEBYTECODE=1\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/supervise_oblique.py prepare --freeze-sha256 f45cfe56f99cdb8c4cb2ad6376a3c0813693666e2798941b9627d535c7a61e46 > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/prepare.stdout.log 2> /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/prepare.stderr.log\nactual=$?\nprintf '\"'%s\\\\n' \\\"\"'$actual\" > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/prepare.tool-exit.txt\ncat /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/prepare.stdout.log /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/prepare.stderr.log\nprintf '\"'actual_tool_command_exit=%s\\\\n' \\\"\"'$actual\"\nexit \"$actual\"'",
+      "exit_code": 0,
+      "tool_duration_ms": 23506,
+      "output": {
+        "text": "{\"supervisor_exit_code\": 0, \"child_exit_code\": 0, \"wall_seconds\": 23.51562449499761, \"max_rss_kib\": 2568120}\nactual_tool_command_exit=0\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-b4555a97-b093-4a32-92f6-e8d135cdeee0",
+      "command": "/bin/bash -lc 'export PYTHONDONTWRITEBYTECODE=1\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/supervise_oblique.py g-036 --freeze-sha256 f45cfe56f99cdb8c4cb2ad6376a3c0813693666e2798941b9627d535c7a61e46 > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-036.stdout.log 2> /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-036.stderr.log\nactual=$?\nprintf '\"'%s\\\\n' \\\"\"'$actual\" > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-036.tool-exit.txt\ncat /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-036.stdout.log /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-036.stderr.log\nprintf '\"'actual_tool_command_exit=%s\\\\n' \\\"\"'$actual\"\nexit \"$actual\"'",
+      "exit_code": 0,
+      "tool_duration_ms": 167128,
+      "output": {
+        "text": "{\"supervisor_exit_code\": 0, \"child_exit_code\": 0, \"wall_seconds\": 167.10908749399823, \"max_rss_kib\": 3733668}\nactual_tool_command_exit=0\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-f066ecb0-fc07-4315-8df3-a84159846172",
+      "command": "/bin/bash -lc 'export PYTHONDONTWRITEBYTECODE=1\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/supervise_oblique.py g-002 --freeze-sha256 f45cfe56f99cdb8c4cb2ad6376a3c0813693666e2798941b9627d535c7a61e46 > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-002.stdout.log 2> /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-002.stderr.log\nactual=$?\nprintf '\"'%s\\\\n' \\\"\"'$actual\" > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-002.tool-exit.txt\ncat /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-002.stdout.log /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/g-002.stderr.log\nprintf '\"'actual_tool_command_exit=%s\\\\n' \\\"\"'$actual\"\nexit \"$actual\"'",
+      "exit_code": 0,
+      "tool_duration_ms": 153845,
+      "output": {
+        "text": "{\"supervisor_exit_code\": 0, \"child_exit_code\": 0, \"wall_seconds\": 153.88826687200344, \"max_rss_kib\": 3735396}\nactual_tool_command_exit=0\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-3a67caa8-a39a-413d-980a-6314dd784b5e",
+      "command": "/bin/bash -lc 'export PYTHONDONTWRITEBYTECODE=1\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/supervise_oblique.py derive --freeze-sha256 f45cfe56f99cdb8c4cb2ad6376a3c0813693666e2798941b9627d535c7a61e46 > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/derive.stdout.log 2> /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/derive.stderr.log\nactual=$?\nprintf '\"'%s\\\\n' \\\"\"'$actual\" > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/derive.tool-exit.txt\ncat /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/derive.stdout.log /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/derive.stderr.log\nprintf '\"'actual_tool_command_exit=%s\\\\n' \\\"\"'$actual\"\nexit \"$actual\"'",
+      "exit_code": 0,
+      "tool_duration_ms": 11792,
+      "output": {
+        "text": "{\"supervisor_exit_code\": 0, \"child_exit_code\": 0, \"wall_seconds\": 11.847667734000424, \"max_rss_kib\": 39084}\nactual_tool_command_exit=0\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-08d799e8-3255-4c6b-8d4a-961a070db742",
+      "command": "/bin/bash -lc 'export PYTHONDONTWRITEBYTECODE=1\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/supervise_oblique.py score --freeze-sha256 f45cfe56f99cdb8c4cb2ad6376a3c0813693666e2798941b9627d535c7a61e46 > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/score.stdout.log 2> /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/score.stderr.log\nactual=$?\nprintf '\"'%s\\\\n' \\\"\"'$actual\" > /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/score.tool-exit.txt\ncat /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/score.stdout.log /workspace/scratch/a349d03a0e0a/scratch/0011-pilot-control/score.stderr.log\nprintf '\"'actual_tool_command_exit=%s\\\\n' \\\"\"'$actual\"\nexit \"$actual\"'",
+      "exit_code": 0,
+      "tool_duration_ms": 102,
+      "output": {
+        "text": "{\"supervisor_exit_code\": 0, \"child_exit_code\": 0, \"wall_seconds\": 0.1550387960014632, \"max_rss_kib\": 33596}\nactual_tool_command_exit=0\n",
+        "truncated": false
+      }
+    }
+  ],
+  "all_command_statuses": [
+    {
+      "id": "exec-48d0636c-8350-4282-9a47-e17da854b7c2",
+      "exit_code": 0,
+      "tool_duration_ms": 1040,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-a04ab904-e512-4568-a10e-b72fe35d121b",
+      "exit_code": 0,
+      "tool_duration_ms": 17,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-e2c892ed-2eea-488b-a944-f050247c572c",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-16b2e12a-3792-4617-9b31-df8bf2c915cd",
+      "exit_code": 0,
+      "tool_duration_ms": 170,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-7649b704-56b7-42ae-a50a-bafb07572078",
+      "exit_code": 0,
+      "tool_duration_ms": 23506,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-824daea5-9ea9-4097-a5dc-4139e065e1cf",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-b4555a97-b093-4a32-92f6-e8d135cdeee0",
+      "exit_code": 0,
+      "tool_duration_ms": 167128,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-ec425db1-1a54-42ca-b0d8-c2f0ffcedb2d",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-f066ecb0-fc07-4315-8df3-a84159846172",
+      "exit_code": 0,
+      "tool_duration_ms": 153845,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-58201b96-e5ab-4f7f-a470-fe8b385b112c",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-3a67caa8-a39a-413d-980a-6314dd784b5e",
+      "exit_code": 0,
+      "tool_duration_ms": 11792,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-8ade0990-6d7c-4a04-be0b-de897c8e4861",
+      "exit_code": 1,
+      "tool_duration_ms": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-c1bce082-d74d-4f7f-8dae-7603ce587d27",
+      "exit_code": 1,
+      "tool_duration_ms": 1470,
+      "output_truncated": true
+    },
+    {
+      "id": "exec-201f276b-43b8-4622-9010-dc8782b5add6",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-08d799e8-3255-4c6b-8d4a-961a070db742",
+      "exit_code": 0,
+      "tool_duration_ms": 102,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-7f2ff768-54b3-4b25-b344-d1dc804bf31f",
+      "exit_code": 0,
+      "tool_duration_ms": 0,
+      "output_truncated": false
+    },
+    {
+      "id": "exec-449af3c4-fe33-42e4-abbb-d384652c05b4",
+      "exit_code": 0,
+      "tool_duration_ms": 93,
+      "output_truncated": false
+    }
+  ],
+  "readonly_summary_failures": [
+    {
+      "id": "exec-8ade0990-6d7c-4a04-be0b-de897c8e4861",
+      "command": "/bin/bash -lc \"python - <<'PY'\nfrom pathlib import Path\nimport json\np=Path('/workspace/scratch/a349d03a0e0a/scratch/0011-oblique-v1/derived');print('files',[(q.name,q.stat().st_size) for q in p.iterdir() if q.is_file()]);d=json.loads((p/'receipt.json').read_text());print(json.dumps(d));assert d['status']=='completed_derivation';assert (p/'prediction-seal.json').is_file()\nPY\"",
+      "exit_code": 1,
+      "output": {
+        "text": "Traceback (most recent call last):\n  File \"<stdin>\", line 3, in <module>\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1027, in read_text\nfiles [('started.json', 77), ('diagnostics.json', 909169), ('seal.json', 22242), ('predictions.json', 371075)]\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/a349d03a0e0a/scratch/0011-oblique-v1/derived/receipt.json'\n",
+        "truncated": false
+      }
+    },
+    {
+      "id": "exec-c1bce082-d74d-4f7f-8dae-7603ce587d27",
+      "command": "/bin/bash -lc \"rg -n 'def derive|def main|seal.json|completed|write_json|write\\\\(' scripts/evaluate_oblique_saved.py | tail -30\npython - <<'PY'\nfrom pathlib import Path\nimport json\np=Path('/workspace/scratch/a349d03a0e0a/scratch/0011-oblique-v1/derived')\nfor name in ['seal.json','predictions.json','diagnostics.json']:\n d=json.loads((p/name).read_text());print(name, 'keys', list(d));print(json.dumps({k:v for k,v in d.items() if k in ['status','schema','phase','methods','groups','numerical_gates']}))\nPY\"",
+      "exit_code": 1,
+      "output": {
+        "text": "35:def write_json(path, value):\n37:        stream.write(json.dumps(value, indent=2, allow_nan=False) + \"\\n\")\n52:    write_json(output / \"started.json\", {\"phase\": phase,\n76:def derive(prediction_root, preparation, output, *, fusion=None):\n86:        if prep[\"status\"] != \"completed_preparation\":\n93:            if receipt[\"status\"] != \"completed_predictions\" or receipt[\"group_id\"] != group:\n137:                    if result[\"status\"] != \"completed\":\n153:        write_json(output / \"predictions.json\", {\"methods\": list(METHODS), \"rows\": rows})\n154:        write_json(output / \"diagnostics.json\", diagnostics)\n155:        write_json(output / \"seal.json\", {\"status\": \"sealed\", \"created_utc\": datetime.now(timezone.utc).isoformat(),\n160:        write_json(output / \"failure.json\", {\"type\": type(exc).__name__, \"error\": str(exc),\n163:    return load_json(output / \"seal.json\")\n217:        seal = load_json(derived / \"seal.json\")\n273:        result.update(numerical_gates=numerical, model_calls=0, status=\"completed_evaluation\",\n275:                      seal_sha256=sha(derived / \"seal.json\"), wall_seconds=time.monotonic()-started)\n276:        write_json(output / \"case-errors.json\", cases)\n277:        write_json(output / \"results.json\", result)\n278:        write_json(output / \"receipt.json\", {\"status\": \"completed_evaluation\", \"seal\": record(derived / \"seal.json\"),\n282:        write_json(output / \"failure.json\", {\"type\": type(exc).__name__, \"error\": str(exc)})\n287:def main():\nseal.json keys ['status', 'created_utc', 'rows', 'inputs', 'files', 'wall_seconds', 'model_calls', 'GT_opened']\n{\"status\": \"sealed\"}\npredictions.json keys ['methods', 'rows']\n{\"methods\": [\"original_native\", \"reference_native\", \"oblique_native\", \"axis_control_native\", \"reference_independent\", \"coordinate_average\", \"entropy_select\", \"product_joint\", \"mixture_joint\", \"oblique_coupling\", \"axis_coupling\"]}\ndiagnostics.json keys [{'group_id': 'g-036', 'frame_id': 0, 'point_id': 0, 'observation_index': 0, 'point_index': 0, 'solvers': {'oblique_coupling': {'iterations': 234, 'row_error': 9.819279833678252e-10, 'column_error': 4.440892098500626e-16, 'residual': 9.819279833678252e-10, 'converged': True}, 'axis_coupling': {'iterations': 1, 'row_error': 1.1102230246251565e-16, 'column_error': 1.1102230246251565e-15, 'residual': 1.1102230246251565e-15, 'converged': True}}, 'marginal_entropies': {'reference': 0.7886195199980284, 'oblique': 0.7542625443145005}, 'entropy_selected_view': 'oblique', 'reference_native_parity_max_abs_difference_original': 1.3180648181787546e-05, 'axis_joint_max_abs_difference': 3.3306690738754696e-16, 'axis_coordinate_max_abs_difference_original': 1.4210854715202004e-14, 'axis_joint_check_passed': True, 'global_means': {'oblique_coupling': {'reference_delta_xy': [-1.6106073813864618e-13, -1.4264857579814996e-09], 'reference_bound_xy': [1.613774935687867e-13, 1.4864295470864995e-07], 'reference_max_abs_difference': 1.4264857579814996e-09, 'original_delta_xy': [-2.3008676876949457e-13, -2.037836797116428e-09], 'original_bound_xy': [2.305392765268381e-13, 2.1234707815521422e-07], 'original_max_abs_difference': 2.037836797116428e-09, 'mean_check_passed': True}, 'axis_coupling': {'reference_delta_xy': [4.2238460860466584e-14, 2.0694942341024056e-14], 'reference_bound_xy': [4.23942637781841e-14, 6.864623784936139e-14], 'reference_max_abs_difference': 4.2238460860466584e-14, 'original_delta_xy': [6.034065837209512e-14, 2.956420334432008e-14], 'original_bound_xy': [6.056323396883444e-14, 9.806605407051627e-14], 'original_max_abs_difference': 6.034065837209512e-14, 'mean_check_passed': True}}, 'joint_distributions': {'reference_independent': {'entropy': 0.7886195199980283, 'l1_change_from_independent': 0.0, 'kl_to_independent': 0.0, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999997}, 'product_joint': {'entropy': 0.14223157425236452, 'l1_change_from_independent': 0.2840939819051122, 'kl_to_independent': 0.11051070017373635, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999999}, 'mixture_joint': {'entropy': 1.2029673969736845, 'l1_change_from_independent': 0.23831293786841704, 'kl_to_independent': 0.21395985146831462, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999998}, 'oblique_coupling': {'entropy': 0.7040461499549682, 'l1_change_from_independent': 0.0798661873572816, 'kl_to_independent': 0.08457337804827224, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999997}, 'axis_coupling': {'entropy': 0.788619519998028, 'l1_change_from_independent': 3.8195246198285895e-16, 'kl_to_independent': 3.4909173742165926e-16, 'exact_mode_tie_count': 1, 'total_mass': 1.0}}}, {'group_id': 'g-036', 'frame_id': 0, 'point_id': 1, 'observation_index': 0, 'point_index': 1, 'solvers': {'oblique_coupling': {'iterations': 104, 'row_error': 9.7979568902673e-10, 'column_error': 1.3322676295501878e-15, 'residual': 9.7979568902673e-10, 'converged': True}, 'axis_coupling': {'iterations': 1, 'row_error': 5.551115123125783e-16, 'column_error': 3.885780586188048e-16, 'residual': 5.551115123125783e-16, 'converged': True}}, 'marginal_entropies': {'reference': 1.3431647355318268, 'oblique': 0.6471542869091067}, 'entropy_selected_view': 'oblique', 'reference_native_parity_max_abs_difference_original': 1.4053539189262665e-05, 'axis_joint_max_abs_difference': 3.3306690738754696e-16, 'axis_coordinate_max_abs_difference_original': 0.0, 'axis_joint_check_passed': True, 'global_means': {'oblique_coupling': {'reference_delta_xy': [3.132039798123839e-13, 1.255220419870058e-08], 'reference_bound_xy': [3.1373381635620444e-13, 8.298945013122509e-08], 'reference_max_abs_difference': 1.255220419870058e-08, 'original_delta_xy': [4.4743425687483416e-13, 1.793172028385797e-08], 'original_bound_xy': [4.481911662231492e-13, 1.1855635733032156e-07], 'original_max_abs_difference': 1.793172028385797e-08, 'mean_check_passed': True}, 'axis_coupling': {'reference_delta_xy': [-1.276500891159456e-13, -6.314523621998108e-14], 'reference_bound_xy': [1.2793023595581372e-13, 1.0320097232415025e-13], 'reference_max_abs_difference': 1.276500891159456e-13, 'original_delta_xy': [-1.823572701656366e-13, -9.02074803142587e-14], 'original_bound_xy': [1.8275747993687673e-13, 1.474299604630718e-13], 'original_max_abs_difference': 1.823572701656366e-13, 'mean_check_passed': True}}, 'joint_distributions': {'reference_independent': {'entropy': 1.3431647355318268, 'l1_change_from_independent': 0.0, 'kl_to_independent': 0.0, 'exact_mode_tie_count': 1, 'total_mass': 1.0}, 'product_joint': {'entropy': 0.6494085724128283, 'l1_change_from_independent': 0.29815288148918945, 'kl_to_independent': 0.12047967765607913, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999997}, 'mixture_joint': {'entropy': 1.3991896222153037, 'l1_change_from_independent': 0.08712778601525462, 'kl_to_independent': 0.17579611801182715, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000002}, 'oblique_coupling': {'entropy': 1.241762158247252, 'l1_change_from_independent': 0.08925641466658993, 'kl_to_independent': 0.10140256869534901, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000007}, 'axis_coupling': {'entropy': 1.3431647355318268, 'l1_change_from_independent': 6.697143916825793e-16, 'kl_to_independent': -6.738265817888504e-16, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999994}}}, {'group_id': 'g-036', 'frame_id': 0, 'point_id': 2, 'observation_index': 0, 'point_index': 2, 'solvers': {'oblique_coupling': {'iterations': 128, 'row_error': 9.295957337229765e-10, 'column_error': 6.661338147750939e-16, 'residual': 9.295957337229765e-10, 'converged': True}, 'axis_coupling': {'iterations': 1, 'row_error': 8.881784197001252e-16, 'column_error': 1.1102230246251565e-15, 'residual': 1.1102230246251565e-15, 'converged': True}}, 'marginal_entropies': {'reference': 0.9780090635889476, 'oblique': 1.1144248920778321}, 'entropy_selected_view': 'reference', 'reference_native_parity_max_abs_difference_original': 3.891462051797134e-05, 'axis_joint_max_abs_difference': 7.771561172376096e-16, 'axis_coordinate_max_abs_difference_original': 0.0, 'axis_joint_check_passed': True, 'global_means': {'oblique_coupling': {'reference_delta_xy': [-5.20443433378372e-14, 6.1615374274710195e-09], 'reference_bound_xy': [5.2571435582589755e-14, 6.687228092157612e-08], 'reference_max_abs_difference': 6.1615374274710195e-09, 'original_delta_xy': [-7.4349061911196e-14, 8.8021963249586e-09], 'original_bound_xy': [7.510205083227108e-14, 9.55318298879659e-08], 'original_max_abs_difference': 8.8021963249586e-09, 'mean_check_passed': True}, 'axis_coupling': {'reference_delta_xy': [-1.2327487210630222e-13, -7.724288645778296e-14], 'reference_bound_xy': [1.240130643258087e-13, 1.3619140791273628e-13], 'reference_max_abs_difference': 1.2327487210630222e-13, 'original_delta_xy': [-1.7610696015186033e-13, -1.1034698065397565e-13], 'original_bound_xy': [1.77161520465441e-13, 1.9455915416105184e-13], 'original_max_abs_difference': 1.7610696015186033e-13, 'mean_check_passed': True}}, 'joint_distributions': {'reference_independent': {'entropy': 0.9780090635889476, 'l1_change_from_independent': 0.0, 'kl_to_independent': 0.0, 'exact_mode_tie_count': 1, 'total_mass': 1.0}, 'product_joint': {'entropy': 0.14611445018975644, 'l1_change_from_independent': 0.3377431116109693, 'kl_to_independent': 0.14182713786354317, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999998}, 'mixture_joint': {'entropy': 1.4884400193753433, 'l1_change_from_independent': 0.2518724834253104, 'kl_to_independent': 0.4562447148611255, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999999}, 'oblique_coupling': {'entropy': 0.8595153107974076, 'l1_change_from_independent': 0.0831509926199781, 'kl_to_independent': 0.11849375928564046, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999996}, 'axis_coupling': {'entropy': 0.9780090635889477, 'l1_change_from_independent': 9.242404387006368e-16, 'kl_to_independent': -9.332005747107513e-16, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999992}}}, {'group_id': 'g-036', 'frame_id': 0, 'point_id': 3, 'observation_index': 0, 'point_index': 3, 'solvers': {'oblique_coupling': {'iterations': 84, 'row_error': 8.61580473632273e-10, 'column_error': 3.3306690738754696e-16, 'residual': 8.61580473632273e-10, 'converged': True}, 'axis_coupling': {'iterations': 1, 'row_error': 1.1102230246251565e-16, 'column_error': 2.220446049250313e-16, 'residual': 2.220446049250313e-16, 'converged': True}}, 'marginal_entropies': {'reference': 1.367393587530212, 'oblique': 1.4773117014614172}, 'entropy_selected_view': 'reference', 'reference_native_parity_max_abs_difference_original': 4.440169078634426e-06, 'axis_joint_max_abs_difference': 1.1102230246251565e-16, 'axis_coordinate_max_abs_difference_original': 1.4210854715202004e-14, 'axis_joint_check_passed': True, 'global_means': {'oblique_coupling': {'reference_delta_xy': [3.4138390655686335e-14, 1.0813418664805597e-08], 'reference_bound_xy': [4.246678568798825e-14, 1.8523214669247283e-07], 'reference_max_abs_difference': 1.0813418664805597e-08, 'original_delta_xy': [4.8769129508123335e-14, 1.5447740949722282e-08], 'original_bound_xy': [6.066683669712607e-14, 2.6461735241781835e-07], 'original_max_abs_difference': 1.5447740949722282e-08, 'mean_check_passed': True}, 'axis_coupling': {'reference_delta_xy': [1.2911025119577256e-14, 5.6494471706313065e-15], 'reference_bound_xy': [1.6229849617658518e-14, 2.417416329187263e-14], 'reference_max_abs_difference': 1.2911025119577256e-14, 'original_delta_xy': [1.844432159939608e-14, 8.070638815187582e-15], 'original_bound_xy': [2.3185499453797884e-14, 3.453451898838947e-14], 'original_max_abs_difference': 1.844432159939608e-14, 'mean_check_passed': True}}, 'joint_distributions': {'reference_independent': {'entropy': 1.3673935875302123, 'l1_change_from_independent': 0.0, 'kl_to_independent': 0.0, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000002}, 'product_joint': {'entropy': 0.7629416322168652, 'l1_change_from_independent': 0.4729862990304286, 'kl_to_independent': 0.15824298219655566, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999999}, 'mixture_joint': {'entropy': 1.8145942526597998, 'l1_change_from_independent': 0.41955436205457763, 'kl_to_independent': 0.42499975086444025, 'exact_mode_tie_count': 1, 'total_mass': 1.0}, 'oblique_coupling': {'entropy': 1.2857218326564657, 'l1_change_from_independent': 0.07681904158552272, 'kl_to_independent': 0.08167176416288023, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000004}, 'axis_coupling': {'entropy': 1.3673935875302123, 'l1_change_from_independent': 1.5270020846188192e-16, 'kl_to_independent': 6.374710617043553e-17, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000004}}}, {'group_id': 'g-036', 'frame_id': 0, 'point_id': 4, 'observation_index': 0, 'point_index': 4, 'solvers': {'oblique_coupling': {'iterations': 253, 'row_error': 9.765829256380698e-10, 'column_error': 5.551115123125783e-16, 'residual': 9.765829256380698e-10, 'converged': True}, 'axis_coupling': {'iterations': 1, 'row_error': 6.661338147750939e-16, 'column_error': 6.071532165918825e-18, 'residual': 6.661338147750939e-16, 'converged': True}}, 'marginal_entropies': {'reference': 0.3795515190246408, 'oblique': 1.1407746097759779}, 'entropy_selected_view': 'reference', 'reference_native_parity_max_abs_difference_original': 1.18288907913211e-05, 'axis_joint_max_abs_difference': 6.661338147750939e-16, 'axis_coordinate_max_abs_difference_original': 2.842170943040401e-14, 'axis_joint_check_passed': True, 'global_means': {'oblique_coupling': {'reference_delta_xy': [1.0251807879627307e-14, 1.8970739580288334e-09], 'reference_bound_xy': [1.8962725930421588e-14, 7.120415192623455e-08], 'reference_max_abs_difference': 1.8970739580288334e-09, 'original_delta_xy': [1.464543982803901e-14, 2.710105654326905e-09], 'original_bound_xy': [2.708960847203084e-14, 1.0172021703747793e-07], 'original_max_abs_difference': 2.710105654326905e-09, 'mean_check_passed': True}, 'axis_coupling': {'reference_delta_xy': [6.395395362852126e-14, 6.830600550584083e-14], 'reference_bound_xy': [1.0911338381145631e-13, 1.1303010742405064e-13], 'reference_max_abs_difference': 6.830600550584083e-14, 'original_delta_xy': [9.136279089788752e-14, 9.758000786548691e-14], 'original_bound_xy': [1.5587626258779474e-13, 1.6147158203435806e-13], 'original_max_abs_difference': 9.758000786548691e-14, 'mean_check_passed': True}}, 'joint_distributions': {'reference_independent': {'entropy': 0.3795515190246408, 'l1_change_from_independent': 0.0, 'kl_to_independent': 0.0, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999997}, 'product_joint': {'entropy': 0.060240441250272274, 'l1_change_from_independent': 0.09058263175261029, 'kl_to_independent': 0.0354600147561516, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000002}, 'mixture_joint': {'entropy': 1.3992100358935489, 'l1_change_from_independent': 0.5430032863612848, 'kl_to_independent': 0.8788978553020991, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999999}, 'oblique_coupling': {'entropy': 0.3061824696356798, 'l1_change_from_independent': 0.0417820381619015, 'kl_to_independent': 0.07336904157217393, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999998}, 'axis_coupling': {'entropy': 0.37955151902464035, 'l1_change_from_independent': 7.185946200212563e-16, 'kl_to_independent': 7.059566226945466e-16, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000004}}}, {'group_id': 'g-036', 'frame_id': 0, 'point_id': 5, 'observation_index': 0, 'point_index': 5, 'solvers': {'oblique_coupling': {'iterations': 55, 'row_error': 9.799918654351814e-10, 'column_error': 7.771561172376096e-16, 'residual': 9.799918654351814e-10, 'converged': True}, 'axis_coupling': {'iterations': 1, 'row_error': 3.3306690738754696e-16, 'column_error': 2.220446049250313e-16, 'residual': 3.3306690738754696e-16, 'converged': True}}, 'marginal_entropies': {'reference': 0.6447962615920652, 'oblique': 1.3440319498793512}, 'entropy_selected_view': 'reference', 'reference_native_parity_max_abs_difference_original': 1.2737270111529142e-05, 'axis_joint_max_abs_difference': 3.3306690738754696e-16, 'axis_coordinate_max_abs_difference_original': 0.0, 'axis_joint_check_passed': True, 'global_means': {'oblique_coupling': {'reference_delta_xy': [8.159402760579963e-14, 1.5486370050677547e-09], 'reference_bound_xy': [8.286459665402266e-14, 7.063647700411495e-08], 'reference_max_abs_difference': 1.5486370050677547e-09, 'original_delta_xy': [1.1656289657971375e-13, 2.212338578668221e-09], 'original_bound_xy': [1.1837799522003238e-13, 1.0090925286302135e-07], 'original_max_abs_difference': 2.212338578668221e-09, 'mean_check_passed': True}, 'axis_coupling': {'reference_delta_xy': [-6.730272108170914e-14, -3.536206478915928e-14], 'reference_bound_xy': [6.744464942273398e-14, 5.6763095125534535e-14], 'reference_max_abs_difference': 6.730272108170914e-14, 'original_delta_xy': [-9.614674440244162e-14, -5.0517235413084686e-14], 'original_bound_xy': [9.634949917533425e-14, 8.109013589362077e-14], 'original_max_abs_difference': 9.614674440244162e-14, 'mean_check_passed': True}}, 'joint_distributions': {'reference_independent': {'entropy': 0.6447962615920653, 'l1_change_from_independent': 0.0, 'kl_to_independent': 0.0, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999998}, 'product_joint': {'entropy': 0.24877110277848885, 'l1_change_from_independent': 0.11410191123120418, 'kl_to_independent': 0.05445348702787677, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000004}, 'mixture_joint': {'entropy': 1.6833922614978367, 'l1_change_from_independent': 0.6972998682558644, 'kl_to_independent': 1.1307862829498003, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000002}, 'oblique_coupling': {'entropy': 0.5489711764581789, 'l1_change_from_independent': 0.08040859527215813, 'kl_to_independent': 0.09582509307386777, 'exact_mode_tie_count': 1, 'total_mass': 1.0000000000000016}, 'axis_coupling': {'entropy': 0.6447962615920654, 'l1_change_from_independent': 3.82373351447402e-16, 'kl_to_independent': -3.9563750624203853e-16, 'exact_mode_tie_count': 1, 'total_mass': 0.9999999999999994}}}, {'group_id': 'g-036', 'frame_id': 0, 'point_id': 6, 'observation_index': 0, 'point_index': 6, 'solvers': {'oblique_coupling': {'iterations': 111, 'row_error': 9.421813329524298e-10, 'column_error': 6.938893903907228e-18, 'residual': 9.421813329524298e-10, 'converged': True}, 'axis_coupling': {'iterations': 1, 'row_error': 5.551115123125783e-17, 'column_error': 2.220446049250313e-16, 'residual': 2.220446049250313e-16, 'converged': True}}, 'marginal_entropies': {'reference': 1.289385946183954, 'oblique': 1.2829282017355121}, 'entropy_selected_view': 'oblique', 'reference_native_parity_max_abs_difference_original': 1.0202552488181027e-05, 'axis_joint_max_abs_difference': 1.1102230246251565e-16, 'axis_coordinate_max_abs_difference_original': 0.0, 'axis_joint_check_passed': True, 'global_means': {'oblique_coupling': {'reference_delta_xy': [-3.7859181825949275e-14, 1.0018375003123111e-08], 'reference_bound_xy': [5.422745590328915e-14, 1.0100622230875726e-07], 'reference_max_abs_difference': 1.0018375003123111e-08, 'original_delta_xy': [-5.408454546564182e-14, 1.4311964290175873e-08], 'original_bound_xy': [7.746779414755593e-14, 1.4429460329822466e-07], 'original_max_abs_difference': 1.4311964290175873e-08, 'mean_check_passed': True}, 'axis_coupling': {'reference_delta_xy': [-1.605883313928836e-14, -6.4519109369228116e-15], 'reference_bound_xy': [2.227240019019685e-14, 1.531592121045302e-14], 'reference_max_abs_difference': 1.605883313928836e-14, 'original_delta_xy': [-2.2941190198983374e-14, -9.217015624175446e-15], 'original_bound_xy': [3.181771455742407e-14, 2.1879887443504315e-14], 'original_max_abs_difference': 2.2941190198983374e-14, 'mean_check_passed': True}}, 'joint_distributions': {'reference_independent': {'entropy': 1.2893859461839543, 'l1_change_from_independent': 0.0, 'kl_to_inde",
+        "truncated": true,
+        "originalChars": 65536
+      }
+    }
+  ],
+  "limitations": [
+    "Tool timing and supervised child wall timing are separate measurements.",
+    "The second failed read-only summary output was already truncated at the original tool boundary. Its complete failure is to be checked against the preserved cloud control record.",
+    "This parent did not rerun inference, preparation, derivation, or the frozen scorer."
+  ]
+}

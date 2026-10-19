@@ -2,18 +2,27 @@
 
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
-## Active research order: 0011 oblique coordinate-coupling pilot
+## Active research order: close 0011 and review the next mechanism
 
-1. Finish independent implementation/protocol review and artificial tests for
-   [0011](protocols/0011-oblique-coupling-development.md). Publish a canonical
-   source/config freeze and verify exact main CI before real preparation.
-2. Under that freeze only: prepare cached g-036/g-002 once; collect four-view
-   native predictions once per group; derive/seal all controls and candidate
-   without labels; then score once. Preserve failures and all partial markers.
-   No downloads, installs, paid services, old-test tuning or alternate groups.
-3. Independently review saved evidence, publish all actual outcomes, and apply
-   the fixed 5pp/both-groups/EPE/numerical gates. A positive developmental screen
-   admits only separately designed confirmation; it does not admit a manuscript.
+1. **Completed once: 0011 NO_GO.** Preserve the [frozen protocol](protocols/0011-oblique-coupling-development.md),
+   all128 forwards,256 rows, eleven methods and one formal score. Candidate
+   quality62.9625% versus strongest control64.1878%, with worse EPE. All three
+   quality gates failed; numerical gates passed. Independent saved-only metrics
+   and coupling replay passed. No re-inference, solver rescue, weaker baseline,
+   threshold change or selected-group claim is permitted.
+2. Finish parent retrieval/review and publish the [complete negative evidence](results/0011-oblique/README.md),
+   then verify the exact PR/main CI. Keep original private arrays and174 output
+   files unchanged. Preserve the two failed read-only summary commands and the
+   explicit missing/truncated terminal-log boundary. Publication is not an
+   achievement of the broader method-improvement goal.
+3. Before allocating any more of the17 reserve groups, review one genuinely
+   different source of useful information or computation saving. It must explain
+   why strong existing methods do not already exploit it. Check the closest
+   primary methods and establish task relevance before implementing a system.
+   Ordinary rotation pooling, labeled feature caches, token pruning and generic
+   incremental replay are not new merely in combination. No next experimental
+   protocol or dataset allocation is admitted yet. A manuscript still requires
+   substantial reproducible improvement and separate confirmation.
 
 ## Preserved 0010 closure
 

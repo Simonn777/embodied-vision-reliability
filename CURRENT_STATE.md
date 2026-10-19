@@ -1,31 +1,44 @@
 # Current state
 
 Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0011
-oblique coordinate-coupling developmental implementation and review.
+oblique coordinate-coupling negative result and saved-output review.
 The broader research objective remains active; no manuscript is warranted.
 Historical failed candidates, 0006's OPEN stdout defect and 0003's deferred
 cache state remain unchanged.
 
-## 0011: one specific hypothesis, no new model result yet
+## 0011: oblique fixed-marginal coupling failed the quality gate
 
-The [prospective pilot](protocols/0011-oblique-coupling-development.md) asks
-whether oblique network outputs can resolve x/y pairing while preserving
-reference marginal confidence. It uses standard entropy-regularized transport.
-[Closest prior work](docs/literature/0011-oblique-coupling-prior.md) already covers
-coordinate-factorization ambiguity, local-mode decoding and heatmap fusion;
-novelty remains conditional on this exact mechanism and evidence.
+The [frozen pilot](protocols/0011-oblique-coupling-development.md) completed once:
+**NO_GO**. Candidate macro coordinate quality was 0.6296248102 versus
+0.6418781175 for the strongest control, oblique-native: **-1.22533 percentage
+points**. Candidate macro EPE was 12.59547px versus 9.42900px. All three quality
+gates failed; all four numerical gates passed. Do not weaken the 5pp gate,
+replace groups or tune/retry this configuration. [Complete evidence](results/0011-oblique/README.md).
 
-[Live source/cache checks](docs/0011-cache-and-head-audit.md) verified cached
-archive and native head access without inference. The new allocation is the
-first two original reserve groups, g-036 and g-002, as development, preserving
-the original manifest. Fixed sparse frames and eight frame-zero-visible queries
-will be shared by four views. The candidate uses two of those views; ordinary
-coordinate/distribution fusion and native outputs are the strong controls.
-The primary gate is >=5pp over the strongest control, positive against every
-control in each group, and no higher macro EPE than the strongest-quality control.
-Neither this plan nor passing artificial fixtures is a scientific improvement.
-Source freeze and independent review must precede any cached data preparation
-or native run. No manuscript, fees, new data/weight downloads or old-test tuning.
+[Published freeze and CI](docs/0011-freeze-publication-verification.md) preceded
+preparation. The two newly allocated development groups g-036/g-002 each used
+16 sparse frames, eight queries and four independent views: **128 forwards**,
+256 rows and eleven methods. Five scientific phases exited0; derivation and
+scoring made no model calls. The two prediction phases took 167.109s/153.888s;
+maximum RSS was 3,735,396KiB. All methods retained the same eligible points.
+The original manifest and other17 reserve groups remain unchanged.
+
+Independent saved-output review passed14,935 binding/arithmetic checks,
+including3,997 numeric comparisons (maximum difference1.4211e-14), and a
+separate positive-domain IPF replay compared all5,632 coordinates across256
+points. It did not import the frozen solver, read RGB or call the model. Parent
+directly observed actual scientific and reviewer command exits. Two failed
+read-only summary commands remain documented; the complete second terminal
+output was not archived and its transport was truncated. Do not call that log
+complete. Review agreement confirms the negative result, not efficacy.
+
+The method used known transport/IPF. [Closest prior work](docs/literature/0011-oblique-coupling-prior.md)
+and the [coordinate co-attention addendum](docs/literature/0011-coordinate-coattention-addendum.md)
+limit novelty claims. Two dependent simulated groups cannot establish independent
+scene generalization or paper readiness. No manuscript, new asset downloads,
+installations, extra fees or old-test tuning occurred. The broader research goal
+remains active; another experiment requires a distinct, defensible mechanism,
+not more variants chosen to obtain a positive result.
 
 ## 0010: exact query deletion failed the real-image quality gate
 
