@@ -1,0 +1,116 @@
+{
+  "schema": "evr0023.calibration-order-diagnostic.v1",
+  "scope": "Only saved image000 calibration/dimension arrays and their metadata; no pixels, depth, keypoints, GT, native call or fit.",
+  "array_keys_read": [
+    "K_original",
+    "K_resized",
+    "image_size_original",
+    "image_size_resized"
+  ],
+  "metadata_sha256": "80ef920e3ae2227b4a933d49d78d026d9f5d8fe0721d042b8d85dc7bc88138d3",
+  "cache_sha256": "c34ea991d8f96e5c36a793252c01fa8d545e66dd6e7094f710c382bb1b157b0d",
+  "original_wh": [
+    540,
+    720
+  ],
+  "resized_wh": [
+    384,
+    512
+  ],
+  "scales_xy": [
+    0.7111111111111111,
+    0.7111111111111111
+  ],
+  "K_original": [
+    [
+      552.6893,
+      0.0,
+      268.2665
+    ],
+    [
+      0.0,
+      552.6893,
+      349.9513
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "K_saved": [
+    [
+      393.02350222222225,
+      0.0,
+      190.62284444444447
+    ],
+    [
+      0.0,
+      393.02350222222225,
+      248.70981333333336
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "frozen_adapter_K": [
+    [
+      393.02350222222225,
+      0.0,
+      190.62284444444447
+    ],
+    [
+      0.0,
+      393.02350222222225,
+      248.70981333333333
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "frozen_producer_K": [
+    [
+      393.02350222222225,
+      0.0,
+      190.62284444444447
+    ],
+    [
+      0.0,
+      393.02350222222225,
+      248.70981333333336
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "producer_exactly_matches_saved": true,
+  "old_adapter_exactly_matches_saved": false,
+  "metadata_K_original_exact": true,
+  "metadata_K_resized_exact": true,
+  "dimension_metadata_exact": true,
+  "mismatches": [
+    {
+      "index": [
+        1,
+        2
+      ],
+      "adapter": 248.70981333333333,
+      "saved": 248.70981333333336,
+      "adapter_hex": "0x1.f16b6ca739dcep+7",
+      "saved_hex": "0x1.f16b6ca739dcfp+7",
+      "difference": -2.842170943040401e-14,
+      "difference_in_saved_ulps": -1.0
+    }
+  ],
+  "old_adapter_source_sha256": "592a278c30efeb797a979bf6f1fc69ad56d121060b790b2bed6510878754d8e5",
+  "unchanged_frontend_source_sha256": "5076452d2e69645745eb68675a40bb47473ec4a4a28db87cf6f9652229614bf7",
+  "scientific_fits": 0,
+  "gt_reads": 0,
+  "raw_pixel_reads": 0
+}

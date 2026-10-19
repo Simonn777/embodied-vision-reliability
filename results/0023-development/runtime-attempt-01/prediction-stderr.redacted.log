@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "$REPOSITORY/experiments/0023-mapfree/predict.py", line 175, in <module>
+    if __name__=='__main__':main()
+  File "$REPOSITORY/experiments/0023-mapfree/predict.py", line 172, in main
+    result=run(parser.parse_args());print(json.dumps({k:result[k] for k in ('status','eligible','wall_seconds')}))
+  File "$REPOSITORY/experiments/0023-mapfree/predict.py", line 131, in run
+    record['stage']='canonical_cache';save();inputs=cache_inputs.load_inputs(args.plan,args.frontend_cache,bindings)
+  File "$REPOSITORY/experiments/0023-mapfree/cache_inputs.py", line 267, in load_inputs
+    images[row["filename"]] = image_input(row, read_arrays(cache_dir, row, IMAGE_READS))
+  File "$REPOSITORY/experiments/0023-mapfree/cache_inputs.py", line 215, in image_input
+    require(np.array_equal(k, expected) and row["input"]["authored_K_original"] == old.tolist()
+  File "$REPOSITORY/experiments/0023-mapfree/cache_inputs.py", line 36, in require
+    raise ValueError(message)
+ValueError: calibration/coordinate metadata mismatch

@@ -1,0 +1,1819 @@
+{
+  "schema": "evr0023.proposed-plan.v1",
+  "status": "candidate_only",
+  "allocated": false,
+  "scientific_member_payloads_read": 0,
+  "http_requests": 0,
+  "source": {
+    "url": "https://storage.googleapis.com/niantic-lon-static/research/map-free-reloc/dataset/val.zip",
+    "archive_bytes": 7907389876,
+    "etag": "\"efdc0e742961dbe955226543ad213d35\"",
+    "cached_index_sha256": {
+      "members": "e5d205f57c7cc30224b260b644ffb62bbdd0f4c4a67b74d72b0e5337ae297dbb",
+      "directory": "5c53ffaf13fcbcaf3c40d2d30a979ba104fe2cf4110237f667fac446e24782f9",
+      "receipt": "dc6a155e20c839aa23b9429bfdeb4c6b77390d2d6562bab69fb3db37de723f9c"
+    }
+  },
+  "prior_resource_draft_sha256": "0feae6f0741c81b4e2e4211741f34976e69b4959cac6d24108642245523e2581",
+  "prospective_change": {
+    "original_draft_preserved": true,
+    "unchanged": "Original scene salt and three candidate places.",
+    "previous_seq1_selection": "16 smallest SHA256(salt + full_filename), hash order.",
+    "new_seq1_selection": "16 uniform chronological member ranks; round-half-up(k*(N-1)/15), k=0..15.",
+    "rationale": "Prospective connected multiview coverage before any image, K, pose or estimator outcome.",
+    "quality_or_overlap_guaranteed": false
+  },
+  "selection": {
+    "scene_salt": "evr-mapfree-development-draft-v1\u0000",
+    "scene_sort": "(SHA256(salt + scene_id), scene_id)",
+    "candidate_scene_ids": [
+      "s00513",
+      "s00475",
+      "s00478"
+    ],
+    "seq1_sort": "(actual frame number, filename)",
+    "role_rule": "1-based odd selected positions B; even selected positions C.",
+    "reference_rule": "A->each C; each B->3 C nearest by absolute actual frame-number difference.",
+    "distance_ties": "Lower actual C frame number, then filename.",
+    "query_rule": "A->each B; query edges are excluded from the reference edge set."
+  },
+  "scenes": [
+    {
+      "scene": "s00513",
+      "candidate_only": true,
+      "available_seq1_members": 580,
+      "anchor": "val/s00513/seq0/frame_00000.jpg",
+      "selected_seq1_chronological": [
+        {
+          "filename": "val/s00513/seq1/frame_00000.jpg",
+          "frame_number": 0,
+          "chronological_rank_zero_based": 0,
+          "selected_index_one_based": 1,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00039.jpg",
+          "frame_number": 39,
+          "chronological_rank_zero_based": 39,
+          "selected_index_one_based": 2,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00077.jpg",
+          "frame_number": 77,
+          "chronological_rank_zero_based": 77,
+          "selected_index_one_based": 3,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00116.jpg",
+          "frame_number": 116,
+          "chronological_rank_zero_based": 116,
+          "selected_index_one_based": 4,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00154.jpg",
+          "frame_number": 154,
+          "chronological_rank_zero_based": 154,
+          "selected_index_one_based": 5,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00193.jpg",
+          "frame_number": 193,
+          "chronological_rank_zero_based": 193,
+          "selected_index_one_based": 6,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00232.jpg",
+          "frame_number": 232,
+          "chronological_rank_zero_based": 232,
+          "selected_index_one_based": 7,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00270.jpg",
+          "frame_number": 270,
+          "chronological_rank_zero_based": 270,
+          "selected_index_one_based": 8,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00309.jpg",
+          "frame_number": 309,
+          "chronological_rank_zero_based": 309,
+          "selected_index_one_based": 9,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00347.jpg",
+          "frame_number": 347,
+          "chronological_rank_zero_based": 347,
+          "selected_index_one_based": 10,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00386.jpg",
+          "frame_number": 386,
+          "chronological_rank_zero_based": 386,
+          "selected_index_one_based": 11,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00425.jpg",
+          "frame_number": 425,
+          "chronological_rank_zero_based": 425,
+          "selected_index_one_based": 12,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00463.jpg",
+          "frame_number": 463,
+          "chronological_rank_zero_based": 463,
+          "selected_index_one_based": 13,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00502.jpg",
+          "frame_number": 502,
+          "chronological_rank_zero_based": 502,
+          "selected_index_one_based": 14,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00540.jpg",
+          "frame_number": 540,
+          "chronological_rank_zero_based": 540,
+          "selected_index_one_based": 15,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00579.jpg",
+          "frame_number": 579,
+          "chronological_rank_zero_based": 579,
+          "selected_index_one_based": 16,
+          "role": "C_reference"
+        }
+      ],
+      "query_images": [
+        "val/s00513/seq1/frame_00000.jpg",
+        "val/s00513/seq1/frame_00077.jpg",
+        "val/s00513/seq1/frame_00154.jpg",
+        "val/s00513/seq1/frame_00232.jpg",
+        "val/s00513/seq1/frame_00309.jpg",
+        "val/s00513/seq1/frame_00386.jpg",
+        "val/s00513/seq1/frame_00463.jpg",
+        "val/s00513/seq1/frame_00540.jpg"
+      ],
+      "reference_images": [
+        "val/s00513/seq1/frame_00039.jpg",
+        "val/s00513/seq1/frame_00116.jpg",
+        "val/s00513/seq1/frame_00193.jpg",
+        "val/s00513/seq1/frame_00270.jpg",
+        "val/s00513/seq1/frame_00347.jpg",
+        "val/s00513/seq1/frame_00425.jpg",
+        "val/s00513/seq1/frame_00502.jpg",
+        "val/s00513/seq1/frame_00579.jpg"
+      ],
+      "image_members": [
+        {
+          "filename": "val/s00513/seq0/frame_00000.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "5ed762de",
+          "compressed_bytes": 213372,
+          "uncompressed_bytes": 213509,
+          "local_header_offset": 2625536476
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00000.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "3dbfa96c",
+          "compressed_bytes": 292836,
+          "uncompressed_bytes": 293393,
+          "local_header_offset": 2527813975
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00039.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "15e90e27",
+          "compressed_bytes": 278840,
+          "uncompressed_bytes": 279303,
+          "local_header_offset": 2536636038
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00077.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "eb81a569",
+          "compressed_bytes": 269634,
+          "uncompressed_bytes": 269932,
+          "local_header_offset": 2597508925
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00116.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "a49aaee7",
+          "compressed_bytes": 269379,
+          "uncompressed_bytes": 269713,
+          "local_header_offset": 2616980863
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00154.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "e0086559",
+          "compressed_bytes": 279281,
+          "uncompressed_bytes": 279553,
+          "local_header_offset": 2583914165
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00193.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "894ba84e",
+          "compressed_bytes": 266917,
+          "uncompressed_bytes": 267123,
+          "local_header_offset": 2562573275
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00232.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "743c5426",
+          "compressed_bytes": 258984,
+          "uncompressed_bytes": 259169,
+          "local_header_offset": 2587916329
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00270.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "6493fa00",
+          "compressed_bytes": 262911,
+          "uncompressed_bytes": 263089,
+          "local_header_offset": 2555403341
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00309.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "b7f3eef3",
+          "compressed_bytes": 266312,
+          "uncompressed_bytes": 266526,
+          "local_header_offset": 2526734589
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00347.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "f45fc9ec",
+          "compressed_bytes": 272340,
+          "uncompressed_bytes": 272555,
+          "local_header_offset": 2568991918
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00386.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "534e0289",
+          "compressed_bytes": 272934,
+          "uncompressed_bytes": 273221,
+          "local_header_offset": 2479453638
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00425.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "6508d6b8",
+          "compressed_bytes": 268822,
+          "uncompressed_bytes": 269057,
+          "local_header_offset": 2478919080
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00463.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "07a326bb",
+          "compressed_bytes": 260747,
+          "uncompressed_bytes": 260952,
+          "local_header_offset": 2546001732
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00502.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "f756496c",
+          "compressed_bytes": 254508,
+          "uncompressed_bytes": 254714,
+          "local_header_offset": 2518231635
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00540.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "64790937",
+          "compressed_bytes": 257562,
+          "uncompressed_bytes": 257783,
+          "local_header_offset": 2564197657
+        },
+        {
+          "filename": "val/s00513/seq1/frame_00579.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "e9e955b3",
+          "compressed_bytes": 258621,
+          "uncompressed_bytes": 258848,
+          "local_header_offset": 2583655455
+        }
+      ],
+      "intrinsics_member": {
+        "filename": "val/s00513/intrinsics.txt",
+        "flags": 0,
+        "compression_method": 8,
+        "crc32_hex": "950b0011",
+        "compressed_bytes": 7211,
+        "uncompressed_bytes": 37764,
+        "local_header_offset": 972711
+      },
+      "frontend_budget": {
+        "members": 18,
+        "compressed_bytes": 4511211,
+        "uncompressed_bytes": 4546204,
+        "local_header_and_name_upper_bound": 1180722,
+        "range_requests": 54,
+        "response_extra_byte_probe_reserve": 54,
+        "response_body_upper_bound": 5691987,
+        "maximum_member_uncompressed_bytes": 293393
+      },
+      "reference_edges": [
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00039.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00116.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00193.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00270.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00347.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00425.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00502.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00579.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00513/seq1/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00513/seq1/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 193
+        },
+        {
+          "source": "val/s00513/seq1/frame_00077.jpg",
+          "target": "val/s00513/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00513/seq1/frame_00077.jpg",
+          "target": "val/s00513/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00077.jpg",
+          "target": "val/s00513/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00513/seq1/frame_00154.jpg",
+          "target": "val/s00513/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00513/seq1/frame_00154.jpg",
+          "target": "val/s00513/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00154.jpg",
+          "target": "val/s00513/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        },
+        {
+          "source": "val/s00513/seq1/frame_00232.jpg",
+          "target": "val/s00513/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00513/seq1/frame_00232.jpg",
+          "target": "val/s00513/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00232.jpg",
+          "target": "val/s00513/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        },
+        {
+          "source": "val/s00513/seq1/frame_00309.jpg",
+          "target": "val/s00513/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00513/seq1/frame_00309.jpg",
+          "target": "val/s00513/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00309.jpg",
+          "target": "val/s00513/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00513/seq1/frame_00386.jpg",
+          "target": "val/s00513/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00386.jpg",
+          "target": "val/s00513/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00386.jpg",
+          "target": "val/s00513/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00513/seq1/frame_00463.jpg",
+          "target": "val/s00513/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00513/seq1/frame_00463.jpg",
+          "target": "val/s00513/seq1/frame_00502.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00463.jpg",
+          "target": "val/s00513/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00513/seq1/frame_00540.jpg",
+          "target": "val/s00513/seq1/frame_00502.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00513/seq1/frame_00540.jpg",
+          "target": "val/s00513/seq1/frame_00579.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00513/seq1/frame_00540.jpg",
+          "target": "val/s00513/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        }
+      ],
+      "query_edges": [
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00000.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00077.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00154.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00232.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00309.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00386.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00463.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00513/seq0/frame_00000.jpg",
+          "target": "val/s00513/seq1/frame_00540.jpg",
+          "role": "A_to_B"
+        }
+      ]
+    },
+    {
+      "scene": "s00475",
+      "candidate_only": true,
+      "available_seq1_members": 580,
+      "anchor": "val/s00475/seq0/frame_00000.jpg",
+      "selected_seq1_chronological": [
+        {
+          "filename": "val/s00475/seq1/frame_00000.jpg",
+          "frame_number": 0,
+          "chronological_rank_zero_based": 0,
+          "selected_index_one_based": 1,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00039.jpg",
+          "frame_number": 39,
+          "chronological_rank_zero_based": 39,
+          "selected_index_one_based": 2,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00077.jpg",
+          "frame_number": 77,
+          "chronological_rank_zero_based": 77,
+          "selected_index_one_based": 3,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00116.jpg",
+          "frame_number": 116,
+          "chronological_rank_zero_based": 116,
+          "selected_index_one_based": 4,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00154.jpg",
+          "frame_number": 154,
+          "chronological_rank_zero_based": 154,
+          "selected_index_one_based": 5,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00193.jpg",
+          "frame_number": 193,
+          "chronological_rank_zero_based": 193,
+          "selected_index_one_based": 6,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00232.jpg",
+          "frame_number": 232,
+          "chronological_rank_zero_based": 232,
+          "selected_index_one_based": 7,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00270.jpg",
+          "frame_number": 270,
+          "chronological_rank_zero_based": 270,
+          "selected_index_one_based": 8,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00309.jpg",
+          "frame_number": 309,
+          "chronological_rank_zero_based": 309,
+          "selected_index_one_based": 9,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00347.jpg",
+          "frame_number": 347,
+          "chronological_rank_zero_based": 347,
+          "selected_index_one_based": 10,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00386.jpg",
+          "frame_number": 386,
+          "chronological_rank_zero_based": 386,
+          "selected_index_one_based": 11,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00425.jpg",
+          "frame_number": 425,
+          "chronological_rank_zero_based": 425,
+          "selected_index_one_based": 12,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00463.jpg",
+          "frame_number": 463,
+          "chronological_rank_zero_based": 463,
+          "selected_index_one_based": 13,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00502.jpg",
+          "frame_number": 502,
+          "chronological_rank_zero_based": 502,
+          "selected_index_one_based": 14,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00540.jpg",
+          "frame_number": 540,
+          "chronological_rank_zero_based": 540,
+          "selected_index_one_based": 15,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00579.jpg",
+          "frame_number": 579,
+          "chronological_rank_zero_based": 579,
+          "selected_index_one_based": 16,
+          "role": "C_reference"
+        }
+      ],
+      "query_images": [
+        "val/s00475/seq1/frame_00000.jpg",
+        "val/s00475/seq1/frame_00077.jpg",
+        "val/s00475/seq1/frame_00154.jpg",
+        "val/s00475/seq1/frame_00232.jpg",
+        "val/s00475/seq1/frame_00309.jpg",
+        "val/s00475/seq1/frame_00386.jpg",
+        "val/s00475/seq1/frame_00463.jpg",
+        "val/s00475/seq1/frame_00540.jpg"
+      ],
+      "reference_images": [
+        "val/s00475/seq1/frame_00039.jpg",
+        "val/s00475/seq1/frame_00116.jpg",
+        "val/s00475/seq1/frame_00193.jpg",
+        "val/s00475/seq1/frame_00270.jpg",
+        "val/s00475/seq1/frame_00347.jpg",
+        "val/s00475/seq1/frame_00425.jpg",
+        "val/s00475/seq1/frame_00502.jpg",
+        "val/s00475/seq1/frame_00579.jpg"
+      ],
+      "image_members": [
+        {
+          "filename": "val/s00475/seq0/frame_00000.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "d6fbe586",
+          "compressed_bytes": 234406,
+          "uncompressed_bytes": 234717,
+          "local_header_offset": 2349818544
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00000.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "5e3be349",
+          "compressed_bytes": 236690,
+          "uncompressed_bytes": 237222,
+          "local_header_offset": 2258352023
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00039.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "31b04be5",
+          "compressed_bytes": 242512,
+          "uncompressed_bytes": 243167,
+          "local_header_offset": 2266536524
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00077.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "990ab79a",
+          "compressed_bytes": 240273,
+          "uncompressed_bytes": 240905,
+          "local_header_offset": 2323507564
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00116.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "84e9049b",
+          "compressed_bytes": 259449,
+          "uncompressed_bytes": 260289,
+          "local_header_offset": 2341769353
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00154.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "4602fb2b",
+          "compressed_bytes": 254476,
+          "uncompressed_bytes": 255280,
+          "local_header_offset": 2310732657
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00193.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "9af2b9f6",
+          "compressed_bytes": 255671,
+          "uncompressed_bytes": 256485,
+          "local_header_offset": 2290676121
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00232.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "167416ac",
+          "compressed_bytes": 255082,
+          "uncompressed_bytes": 255956,
+          "local_header_offset": 2314471766
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00270.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "ab3c2450",
+          "compressed_bytes": 239258,
+          "uncompressed_bytes": 240014,
+          "local_header_offset": 2283919568
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00309.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "aaf7647e",
+          "compressed_bytes": 235881,
+          "uncompressed_bytes": 236430,
+          "local_header_offset": 2257369746
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00347.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "9a399b19",
+          "compressed_bytes": 249700,
+          "uncompressed_bytes": 250240,
+          "local_header_offset": 2296651325
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00386.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "de3d5ca3",
+          "compressed_bytes": 246919,
+          "uncompressed_bytes": 247488,
+          "local_header_offset": 2213466893
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00425.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "2ab3d277",
+          "compressed_bytes": 253436,
+          "uncompressed_bytes": 253851,
+          "local_header_offset": 2212972583
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00463.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "2e393239",
+          "compressed_bytes": 265227,
+          "uncompressed_bytes": 265659,
+          "local_header_offset": 2275222769
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00502.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "7057c2ee",
+          "compressed_bytes": 253205,
+          "uncompressed_bytes": 253561,
+          "local_header_offset": 2249386624
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00540.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "fb6c319f",
+          "compressed_bytes": 247796,
+          "uncompressed_bytes": 248167,
+          "local_header_offset": 2292163554
+        },
+        {
+          "filename": "val/s00475/seq1/frame_00579.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "79d94625",
+          "compressed_bytes": 229686,
+          "uncompressed_bytes": 229989,
+          "local_header_offset": 2310502882
+        }
+      ],
+      "intrinsics_member": {
+        "filename": "val/s00475/intrinsics.txt",
+        "flags": 0,
+        "compression_method": 8,
+        "crc32_hex": "52f29dc2",
+        "compressed_bytes": 6183,
+        "uncompressed_bytes": 37764,
+        "local_header_offset": 879311
+      },
+      "frontend_budget": {
+        "members": 18,
+        "compressed_bytes": 4205850,
+        "uncompressed_bytes": 4247184,
+        "local_header_and_name_upper_bound": 1180722,
+        "range_requests": 54,
+        "response_extra_byte_probe_reserve": 54,
+        "response_body_upper_bound": 5386626,
+        "maximum_member_uncompressed_bytes": 265659
+      },
+      "reference_edges": [
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00039.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00116.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00193.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00270.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00347.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00425.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00502.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00579.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00475/seq1/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00475/seq1/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 193
+        },
+        {
+          "source": "val/s00475/seq1/frame_00077.jpg",
+          "target": "val/s00475/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00475/seq1/frame_00077.jpg",
+          "target": "val/s00475/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00077.jpg",
+          "target": "val/s00475/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00475/seq1/frame_00154.jpg",
+          "target": "val/s00475/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00475/seq1/frame_00154.jpg",
+          "target": "val/s00475/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00154.jpg",
+          "target": "val/s00475/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        },
+        {
+          "source": "val/s00475/seq1/frame_00232.jpg",
+          "target": "val/s00475/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00475/seq1/frame_00232.jpg",
+          "target": "val/s00475/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00232.jpg",
+          "target": "val/s00475/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        },
+        {
+          "source": "val/s00475/seq1/frame_00309.jpg",
+          "target": "val/s00475/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00475/seq1/frame_00309.jpg",
+          "target": "val/s00475/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00309.jpg",
+          "target": "val/s00475/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00475/seq1/frame_00386.jpg",
+          "target": "val/s00475/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00386.jpg",
+          "target": "val/s00475/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00386.jpg",
+          "target": "val/s00475/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00475/seq1/frame_00463.jpg",
+          "target": "val/s00475/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00475/seq1/frame_00463.jpg",
+          "target": "val/s00475/seq1/frame_00502.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00463.jpg",
+          "target": "val/s00475/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00475/seq1/frame_00540.jpg",
+          "target": "val/s00475/seq1/frame_00502.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00475/seq1/frame_00540.jpg",
+          "target": "val/s00475/seq1/frame_00579.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00475/seq1/frame_00540.jpg",
+          "target": "val/s00475/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        }
+      ],
+      "query_edges": [
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00000.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00077.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00154.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00232.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00309.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00386.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00463.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00475/seq0/frame_00000.jpg",
+          "target": "val/s00475/seq1/frame_00540.jpg",
+          "role": "A_to_B"
+        }
+      ]
+    },
+    {
+      "scene": "s00478",
+      "candidate_only": true,
+      "available_seq1_members": 580,
+      "anchor": "val/s00478/seq0/frame_00000.jpg",
+      "selected_seq1_chronological": [
+        {
+          "filename": "val/s00478/seq1/frame_00000.jpg",
+          "frame_number": 0,
+          "chronological_rank_zero_based": 0,
+          "selected_index_one_based": 1,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00039.jpg",
+          "frame_number": 39,
+          "chronological_rank_zero_based": 39,
+          "selected_index_one_based": 2,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00077.jpg",
+          "frame_number": 77,
+          "chronological_rank_zero_based": 77,
+          "selected_index_one_based": 3,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00116.jpg",
+          "frame_number": 116,
+          "chronological_rank_zero_based": 116,
+          "selected_index_one_based": 4,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00154.jpg",
+          "frame_number": 154,
+          "chronological_rank_zero_based": 154,
+          "selected_index_one_based": 5,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00193.jpg",
+          "frame_number": 193,
+          "chronological_rank_zero_based": 193,
+          "selected_index_one_based": 6,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00232.jpg",
+          "frame_number": 232,
+          "chronological_rank_zero_based": 232,
+          "selected_index_one_based": 7,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00270.jpg",
+          "frame_number": 270,
+          "chronological_rank_zero_based": 270,
+          "selected_index_one_based": 8,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00309.jpg",
+          "frame_number": 309,
+          "chronological_rank_zero_based": 309,
+          "selected_index_one_based": 9,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00347.jpg",
+          "frame_number": 347,
+          "chronological_rank_zero_based": 347,
+          "selected_index_one_based": 10,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00386.jpg",
+          "frame_number": 386,
+          "chronological_rank_zero_based": 386,
+          "selected_index_one_based": 11,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00425.jpg",
+          "frame_number": 425,
+          "chronological_rank_zero_based": 425,
+          "selected_index_one_based": 12,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00463.jpg",
+          "frame_number": 463,
+          "chronological_rank_zero_based": 463,
+          "selected_index_one_based": 13,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00502.jpg",
+          "frame_number": 502,
+          "chronological_rank_zero_based": 502,
+          "selected_index_one_based": 14,
+          "role": "C_reference"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00540.jpg",
+          "frame_number": 540,
+          "chronological_rank_zero_based": 540,
+          "selected_index_one_based": 15,
+          "role": "B_query"
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00579.jpg",
+          "frame_number": 579,
+          "chronological_rank_zero_based": 579,
+          "selected_index_one_based": 16,
+          "role": "C_reference"
+        }
+      ],
+      "query_images": [
+        "val/s00478/seq1/frame_00000.jpg",
+        "val/s00478/seq1/frame_00077.jpg",
+        "val/s00478/seq1/frame_00154.jpg",
+        "val/s00478/seq1/frame_00232.jpg",
+        "val/s00478/seq1/frame_00309.jpg",
+        "val/s00478/seq1/frame_00386.jpg",
+        "val/s00478/seq1/frame_00463.jpg",
+        "val/s00478/seq1/frame_00540.jpg"
+      ],
+      "reference_images": [
+        "val/s00478/seq1/frame_00039.jpg",
+        "val/s00478/seq1/frame_00116.jpg",
+        "val/s00478/seq1/frame_00193.jpg",
+        "val/s00478/seq1/frame_00270.jpg",
+        "val/s00478/seq1/frame_00347.jpg",
+        "val/s00478/seq1/frame_00425.jpg",
+        "val/s00478/seq1/frame_00502.jpg",
+        "val/s00478/seq1/frame_00579.jpg"
+      ],
+      "image_members": [
+        {
+          "filename": "val/s00478/seq0/frame_00000.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "ee4d7c19",
+          "compressed_bytes": 160131,
+          "uncompressed_bytes": 160384,
+          "local_header_offset": 3621930030
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00000.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "0f77a41c",
+          "compressed_bytes": 170370,
+          "uncompressed_bytes": 170593,
+          "local_header_offset": 3573270099
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00039.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "491749df",
+          "compressed_bytes": 154903,
+          "uncompressed_bytes": 155181,
+          "local_header_offset": 3577852888
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00077.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "eed8f0d0",
+          "compressed_bytes": 126284,
+          "uncompressed_bytes": 126472,
+          "local_header_offset": 3607844501
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00116.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "fe3b635f",
+          "compressed_bytes": 95875,
+          "uncompressed_bytes": 96103,
+          "local_header_offset": 3617701618
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00154.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "e7734011",
+          "compressed_bytes": 102096,
+          "uncompressed_bytes": 102328,
+          "local_header_offset": 3601171471
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00193.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "053a43cd",
+          "compressed_bytes": 124191,
+          "uncompressed_bytes": 124384,
+          "local_header_offset": 3590921745
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00232.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "183240cc",
+          "compressed_bytes": 130771,
+          "uncompressed_bytes": 131048,
+          "local_header_offset": 3603002236
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00270.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "f1b81bcb",
+          "compressed_bytes": 130940,
+          "uncompressed_bytes": 131263,
+          "local_header_offset": 3587212648
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00309.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "bc196c20",
+          "compressed_bytes": 120521,
+          "uncompressed_bytes": 120832,
+          "local_header_offset": 3572769350
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00347.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "8dae7f71",
+          "compressed_bytes": 126707,
+          "uncompressed_bytes": 127000,
+          "local_header_offset": 3594013160
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00386.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "35f571ca",
+          "compressed_bytes": 151266,
+          "uncompressed_bytes": 151569,
+          "local_header_offset": 3548960484
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00425.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "c04c877d",
+          "compressed_bytes": 165348,
+          "uncompressed_bytes": 165657,
+          "local_header_offset": 3548672365
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00463.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "f87afc39",
+          "compressed_bytes": 164530,
+          "uncompressed_bytes": 164762,
+          "local_header_offset": 3582338932
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00502.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "5120f2c4",
+          "compressed_bytes": 143763,
+          "uncompressed_bytes": 143970,
+          "local_header_offset": 3568468803
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00540.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "efb65dd8",
+          "compressed_bytes": 135995,
+          "uncompressed_bytes": 136234,
+          "local_header_offset": 3591700654
+        },
+        {
+          "filename": "val/s00478/seq1/frame_00579.jpg",
+          "flags": 0,
+          "compression_method": 8,
+          "crc32_hex": "446a0670",
+          "compressed_bytes": 130789,
+          "uncompressed_bytes": 131051,
+          "local_header_offset": 3601040593
+        }
+      ],
+      "intrinsics_member": {
+        "filename": "val/s00478/intrinsics.txt",
+        "flags": 0,
+        "compression_method": 8,
+        "crc32_hex": "f871d99c",
+        "compressed_bytes": 6536,
+        "uncompressed_bytes": 37764,
+        "local_header_offset": 1393369
+      },
+      "frontend_budget": {
+        "members": 18,
+        "compressed_bytes": 2341016,
+        "uncompressed_bytes": 2376595,
+        "local_header_and_name_upper_bound": 1180722,
+        "range_requests": 54,
+        "response_extra_byte_probe_reserve": 54,
+        "response_body_upper_bound": 3521792,
+        "maximum_member_uncompressed_bytes": 170593
+      },
+      "reference_edges": [
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00039.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00116.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00193.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00270.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00347.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00425.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00502.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00579.jpg",
+          "role": "A_to_C"
+        },
+        {
+          "source": "val/s00478/seq1/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00478/seq1/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 193
+        },
+        {
+          "source": "val/s00478/seq1/frame_00077.jpg",
+          "target": "val/s00478/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00478/seq1/frame_00077.jpg",
+          "target": "val/s00478/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00077.jpg",
+          "target": "val/s00478/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00478/seq1/frame_00154.jpg",
+          "target": "val/s00478/seq1/frame_00116.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00478/seq1/frame_00154.jpg",
+          "target": "val/s00478/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00154.jpg",
+          "target": "val/s00478/seq1/frame_00039.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        },
+        {
+          "source": "val/s00478/seq1/frame_00232.jpg",
+          "target": "val/s00478/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00478/seq1/frame_00232.jpg",
+          "target": "val/s00478/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00232.jpg",
+          "target": "val/s00478/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        },
+        {
+          "source": "val/s00478/seq1/frame_00309.jpg",
+          "target": "val/s00478/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00478/seq1/frame_00309.jpg",
+          "target": "val/s00478/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00309.jpg",
+          "target": "val/s00478/seq1/frame_00193.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00478/seq1/frame_00386.jpg",
+          "target": "val/s00478/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00386.jpg",
+          "target": "val/s00478/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00386.jpg",
+          "target": "val/s00478/seq1/frame_00270.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00478/seq1/frame_00463.jpg",
+          "target": "val/s00478/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00478/seq1/frame_00463.jpg",
+          "target": "val/s00478/seq1/frame_00502.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00463.jpg",
+          "target": "val/s00478/seq1/frame_00347.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 116
+        },
+        {
+          "source": "val/s00478/seq1/frame_00540.jpg",
+          "target": "val/s00478/seq1/frame_00502.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 38
+        },
+        {
+          "source": "val/s00478/seq1/frame_00540.jpg",
+          "target": "val/s00478/seq1/frame_00579.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 39
+        },
+        {
+          "source": "val/s00478/seq1/frame_00540.jpg",
+          "target": "val/s00478/seq1/frame_00425.jpg",
+          "role": "B_to_C",
+          "frame_number_distance": 115
+        }
+      ],
+      "query_edges": [
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00000.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00077.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00154.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00232.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00309.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00386.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00463.jpg",
+          "role": "A_to_B"
+        },
+        {
+          "source": "val/s00478/seq0/frame_00000.jpg",
+          "target": "val/s00478/seq1/frame_00540.jpg",
+          "role": "A_to_B"
+        }
+      ]
+    }
+  ],
+  "frontend_acquisition": {
+    "member_names": [
+      "val/s00513/seq0/frame_00000.jpg",
+      "val/s00513/seq1/frame_00000.jpg",
+      "val/s00513/seq1/frame_00039.jpg",
+      "val/s00513/seq1/frame_00077.jpg",
+      "val/s00513/seq1/frame_00116.jpg",
+      "val/s00513/seq1/frame_00154.jpg",
+      "val/s00513/seq1/frame_00193.jpg",
+      "val/s00513/seq1/frame_00232.jpg",
+      "val/s00513/seq1/frame_00270.jpg",
+      "val/s00513/seq1/frame_00309.jpg",
+      "val/s00513/seq1/frame_00347.jpg",
+      "val/s00513/seq1/frame_00386.jpg",
+      "val/s00513/seq1/frame_00425.jpg",
+      "val/s00513/seq1/frame_00463.jpg",
+      "val/s00513/seq1/frame_00502.jpg",
+      "val/s00513/seq1/frame_00540.jpg",
+      "val/s00513/seq1/frame_00579.jpg",
+      "val/s00513/intrinsics.txt",
+      "val/s00475/seq0/frame_00000.jpg",
+      "val/s00475/seq1/frame_00000.jpg",
+      "val/s00475/seq1/frame_00039.jpg",
+      "val/s00475/seq1/frame_00077.jpg",
+      "val/s00475/seq1/frame_00116.jpg",
+      "val/s00475/seq1/frame_00154.jpg",
+      "val/s00475/seq1/frame_00193.jpg",
+      "val/s00475/seq1/frame_00232.jpg",
+      "val/s00475/seq1/frame_00270.jpg",
+      "val/s00475/seq1/frame_00309.jpg",
+      "val/s00475/seq1/frame_00347.jpg",
+      "val/s00475/seq1/frame_00386.jpg",
+      "val/s00475/seq1/frame_00425.jpg",
+      "val/s00475/seq1/frame_00463.jpg",
+      "val/s00475/seq1/frame_00502.jpg",
+      "val/s00475/seq1/frame_00540.jpg",
+      "val/s00475/seq1/frame_00579.jpg",
+      "val/s00475/intrinsics.txt",
+      "val/s00478/seq0/frame_00000.jpg",
+      "val/s00478/seq1/frame_00000.jpg",
+      "val/s00478/seq1/frame_00039.jpg",
+      "val/s00478/seq1/frame_00077.jpg",
+      "val/s00478/seq1/frame_00116.jpg",
+      "val/s00478/seq1/frame_00154.jpg",
+      "val/s00478/seq1/frame_00193.jpg",
+      "val/s00478/seq1/frame_00232.jpg",
+      "val/s00478/seq1/frame_00270.jpg",
+      "val/s00478/seq1/frame_00309.jpg",
+      "val/s00478/seq1/frame_00347.jpg",
+      "val/s00478/seq1/frame_00386.jpg",
+      "val/s00478/seq1/frame_00425.jpg",
+      "val/s00478/seq1/frame_00463.jpg",
+      "val/s00478/seq1/frame_00502.jpg",
+      "val/s00478/seq1/frame_00540.jpg",
+      "val/s00478/seq1/frame_00579.jpg",
+      "val/s00478/intrinsics.txt"
+    ],
+    "image_names": [
+      "val/s00513/seq0/frame_00000.jpg",
+      "val/s00513/seq1/frame_00000.jpg",
+      "val/s00513/seq1/frame_00039.jpg",
+      "val/s00513/seq1/frame_00077.jpg",
+      "val/s00513/seq1/frame_00116.jpg",
+      "val/s00513/seq1/frame_00154.jpg",
+      "val/s00513/seq1/frame_00193.jpg",
+      "val/s00513/seq1/frame_00232.jpg",
+      "val/s00513/seq1/frame_00270.jpg",
+      "val/s00513/seq1/frame_00309.jpg",
+      "val/s00513/seq1/frame_00347.jpg",
+      "val/s00513/seq1/frame_00386.jpg",
+      "val/s00513/seq1/frame_00425.jpg",
+      "val/s00513/seq1/frame_00463.jpg",
+      "val/s00513/seq1/frame_00502.jpg",
+      "val/s00513/seq1/frame_00540.jpg",
+      "val/s00513/seq1/frame_00579.jpg",
+      "val/s00475/seq0/frame_00000.jpg",
+      "val/s00475/seq1/frame_00000.jpg",
+      "val/s00475/seq1/frame_00039.jpg",
+      "val/s00475/seq1/frame_00077.jpg",
+      "val/s00475/seq1/frame_00116.jpg",
+      "val/s00475/seq1/frame_00154.jpg",
+      "val/s00475/seq1/frame_00193.jpg",
+      "val/s00475/seq1/frame_00232.jpg",
+      "val/s00475/seq1/frame_00270.jpg",
+      "val/s00475/seq1/frame_00309.jpg",
+      "val/s00475/seq1/frame_00347.jpg",
+      "val/s00475/seq1/frame_00386.jpg",
+      "val/s00475/seq1/frame_00425.jpg",
+      "val/s00475/seq1/frame_00463.jpg",
+      "val/s00475/seq1/frame_00502.jpg",
+      "val/s00475/seq1/frame_00540.jpg",
+      "val/s00475/seq1/frame_00579.jpg",
+      "val/s00478/seq0/frame_00000.jpg",
+      "val/s00478/seq1/frame_00000.jpg",
+      "val/s00478/seq1/frame_00039.jpg",
+      "val/s00478/seq1/frame_00077.jpg",
+      "val/s00478/seq1/frame_00116.jpg",
+      "val/s00478/seq1/frame_00154.jpg",
+      "val/s00478/seq1/frame_00193.jpg",
+      "val/s00478/seq1/frame_00232.jpg",
+      "val/s00478/seq1/frame_00270.jpg",
+      "val/s00478/seq1/frame_00309.jpg",
+      "val/s00478/seq1/frame_00347.jpg",
+      "val/s00478/seq1/frame_00386.jpg",
+      "val/s00478/seq1/frame_00425.jpg",
+      "val/s00478/seq1/frame_00463.jpg",
+      "val/s00478/seq1/frame_00502.jpg",
+      "val/s00478/seq1/frame_00540.jpg",
+      "val/s00478/seq1/frame_00579.jpg"
+    ],
+    "intrinsics_names": [
+      "val/s00513/intrinsics.txt",
+      "val/s00475/intrinsics.txt",
+      "val/s00478/intrinsics.txt"
+    ],
+    "image_compressed_bytes": 11038147,
+    "members": 54,
+    "compressed_bytes": 11058077,
+    "uncompressed_bytes": 11169983,
+    "local_header_and_name_upper_bound": 3542166,
+    "range_requests": 162,
+    "response_extra_byte_probe_reserve": 162,
+    "response_body_upper_bound": 14600405,
+    "maximum_member_uncompressed_bytes": 293393
+  },
+  "future_evaluation_only": {
+    "pose_member_names": [
+      "val/s00513/poses.txt",
+      "val/s00475/poses.txt",
+      "val/s00478/poses.txt"
+    ],
+    "acquisition_authorized": false,
+    "read_authorized": false,
+    "prerequisite": "All scientific predictions sealed before any pose download or read.",
+    "included_in_frontend_acquisition": false
+  },
+  "totals": {
+    "places": 3,
+    "images": 51,
+    "query_images": 24,
+    "reference_images": 24,
+    "anchor_images": 3,
+    "reference_edges": 96,
+    "query_edges": 24,
+    "all_edges": 120
+  },
+  "interpretation": "Unadopted development proposal only. Graph adjacency does not establish image overlap, parallax, motion diversity or method efficacy. If adopted, the three places become development forever; other 62 cached scene IDs remain unallocated.",
+  "planning_source_sha256": {
+    "propose_plan.py": "3e36ce21fe8e91f2135a99ba1d4fe9e1401888ae07f98972420f2ee9c84c4bcf",
+    "range_inputs.py": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "evr0023.supervision.v1",
+  "status": "completed",
+  "operation": "acquisition",
+  "expected_commit": "acf502b831ad9e3485ab56549217c8a603d56bf7",
+  "source_sha256": {
+    "experiments/0023-mapfree/supervise.py": "98a83c732a88e2cfd46842c14353b3c0e73744d55969bbc7d8eacc866b4dec30",
+    "experiments/0023-mapfree/acquire_operation.py": "fab653e3ed1c0e32cb0a97eac40ef0dbc7ff3df3894da57bf9d4dfac2ba38281",
+    "experiments/0023-mapfree/range_inputs.py": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50",
+    "experiments/0023-mapfree/propose_plan.py": "3e36ce21fe8e91f2135a99ba1d4fe9e1401888ae07f98972420f2ee9c84c4bcf"
+  },
+  "command": [
+    "$PYTHON",
+    "$REPOSITORY/experiments/0023-mapfree/acquire_operation.py",
+    "--expected-commit",
+    "acf502b831ad9e3485ab56549217c8a603d56bf7",
+    "--protocol",
+    "$REPOSITORY/protocols/0023-mapfree-directional-instability.md",
+    "--plan",
+    "$PRIVATE/0023-preparation/proposed-plan.json",
+    "--plan-sha256",
+    "cc9b02cac8946107f1c945643b316695e5ebbf6339b34baf737541f8cec886d5",
+    "--members-index",
+    "$PRIVATE/0018-resource-screen/mapfree-val-members.json",
+    "--central-directory",
+    "$PRIVATE/0018-resource-screen/mapfree-val-central-directory.bin",
+    "--index-receipt",
+    "$PRIVATE/0018-resource-screen/mapfree-val-directory-receipt.json",
+    "--output",
+    "$PRIVATE/0023-preparation/acquisition-01"
+  ],
+  "cwd": "$REPOSITORY",
+  "python_version": "3.9.6",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "hard_timeout_seconds": 1800.0,
+  "group_rss_limit_kib": 8388608,
+  "rss_sampling": "All observed descendants and retained process groups, approximately every 0.1s; transient peaks may be missed",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 75.97503279099999,
+  "peak_group_rss_kib": 122336,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "stdout_sha256": "6b5e878ff3e1e699bc147fbd36c23e943b03f32e5171963ce0a798dde9275902",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
