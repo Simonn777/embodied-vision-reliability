@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python",
+    "experiments/0012-score-bounds/run_native.py",
+    "--data",
+    "<acquired-dms-hdf5>",
+    "--manifest",
+    "configs/0012-development-manifest.json",
+    "--reference",
+    "results/0012-development/diagnostic.jsonl",
+    "--build-receipt",
+    "<local-native-build-receipt>",
+    "--output",
+    "results/0012c-native/diagnostic.jsonl"
+  ],
+  "timeout_seconds": 1800,
+  "native_threads": 1,
+  "python_thread_limit": 4,
+  "exit_code": 0,
+  "wall_seconds": 1.1599306660000002,
+  "max_rss_bytes_macos": 46301184
+}

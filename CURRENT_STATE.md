@@ -1,5 +1,9 @@
 # Current state
 
+## Active continuation: 2026-10-19
+
+The owner reaffirmed substantial validated task improvement before any manuscript. The [0012d lazy-grid real diagnostic](results/0012d-lazy-grid/development/README.md) now **fails its speed gate**:17.142249ms versus13.064877ms ordinary partial scoring, or31.21% slower. All240 calls choose the exact winner and69376cell/2048aggregate lower checks show zero violations. The favorable artificial cost test passed only after a disclosed serialization repair; it did not predict real-data superiority. Earlier0012/0012b/0012c results are preserved. This closes the present moment-bound scorer as a route to pose integration: do not tune its grid/order/thresholds further on these pairs or write a paper from work-count savings. The broader [research objective](docs/0012-research-reset.md) remains active. Source review now examines genuinely different quality mechanisms and a prospective baseline-only calibrated-pose headroom diagnostic, not integration of this failed scorer. No pose GT/calibration values or held-out coordinates have yet been read; no task-accuracy gain or manuscript exists.
+
 Updated: 2026-10-18 (execution October19 UTC). Program day3. Phase: 0011
 oblique coordinate-coupling negative result and saved-output review.
 The broader research objective remains active; no manuscript is warranted.

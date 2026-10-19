@@ -1,5 +1,9 @@
 # Next actions
 
+## Active priority: 2026-10-19
+
+The [0012d real diagnostic](results/0012d-lazy-grid/development/README.md) failed its unchanged1.5x speed gate despite passing the artificial fixture. Preserve all0012 sources/results and the incomplete original serialization record. Stop this scorer family; no pose integration, grid tuning, selected-pair rescue or manuscript. Next, review the information required for an actual pose-quality failure and prospectively specify a baseline-only headroom study on already allocated development pairs before further algorithm design. This is not permission to read GT or integrate0012 without that new protocol. Strong official DMS DDD/CCC/CCA and PoseLib comparisons remain necessary for any future method. Held-out data remains untouched.
+
 Work from the first unfinished item. Record each outcome in a dated note before choosing the next experiment. Complete one substantive step per daily session; avoid replacing experiments with generic literature summaries.
 
 ## Active research order: close 0011 and review the next mechanism
