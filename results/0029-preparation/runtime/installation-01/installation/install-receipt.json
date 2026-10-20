@@ -1,0 +1,926 @@
+{
+  "schema": "evr0029.install.v1",
+  "status": "failed",
+  "expected_commit": "fe4ae08ccd708541a1e23f6018ed7925959558bb",
+  "phase": "install_reviewed_builds",
+  "commands": [
+    {
+      "name": "create-venv",
+      "command": [
+        "/opt/homebrew/bin/python3.12",
+        "-S",
+        "$INSTALLATION/offline_guard.py",
+        "module",
+        "venv",
+        "--without-pip",
+        "$INSTALLATION/venv"
+      ],
+      "status": "completed",
+      "exit_code": 0,
+      "wall_seconds": 0.048207499959971756,
+      "logs": {
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "install-wheels",
+      "command": [
+        "$INSTALLATION/venv/bin/python",
+        "-S",
+        "$INSTALLATION/offline_guard.py",
+        "module",
+        "pip",
+        "--disable-pip-version-check",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "--no-compile",
+        "--no-cache-dir",
+        "$ACQUISITION/runtime-assets/filelock-3.19.1-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/fsspec-2025.9.0-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/hydra_core-1.3.2-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/jinja2-3.1.6-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/kornia_rs-0.1.9-cp312-cp312-macosx_11_0_arm64.whl",
+        "$ACQUISITION/runtime-assets/MarkupSafe-3.0.2-cp312-cp312-macosx_11_0_arm64.whl",
+        "$ACQUISITION/runtime-assets/mpmath-1.3.0-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/networkx-3.5-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/numpy-2.2.6-cp312-cp312-macosx_14_0_arm64.whl",
+        "$ACQUISITION/runtime-assets/omegaconf-2.3.0-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/packaging-25.0-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/pillow-11.3.0-cp312-cp312-macosx_11_0_arm64.whl",
+        "$ACQUISITION/runtime-assets/pip-25.2-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/portalocker-3.2.0-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/PyYAML-6.0.2-cp312-cp312-macosx_11_0_arm64.whl",
+        "$ACQUISITION/runtime-assets/setuptools-80.9.0-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/sympy-1.14.0-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/torch-2.8.0-cp312-none-macosx_11_0_arm64.whl",
+        "$ACQUISITION/runtime-assets/torchvision-0.23.0-cp312-cp312-macosx_11_0_arm64.whl",
+        "$ACQUISITION/runtime-assets/typing_extensions-4.15.0-py3-none-any.whl",
+        "$ACQUISITION/runtime-assets/wheel-0.45.1-py3-none-any.whl",
+        "$PRIOR_ASSETS/wheel-assets/opencv_python-4.11.0.86-cp37-abi3-macosx_13_0_arm64.whl",
+        "$PRIOR_ASSETS/wheel-assets/kornia-0.8.1-py2.py3-none-any.whl",
+        "$PRIOR_ASSETS/wheel-assets/tqdm-4.67.1-py3-none-any.whl"
+      ],
+      "status": "completed",
+      "exit_code": 0,
+      "wall_seconds": 2.932509124977514,
+      "logs": {
+        "stdout": {
+          "bytes": 4797,
+          "sha256": "a48c3dc6ef52bb63301c12bd0b22c4ac2dfc45a7d67900fd62ad73476c22a8b9"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "build-antlr4-python3-runtime",
+      "command": [
+        "$INSTALLATION/venv/bin/python",
+        "-S",
+        "$INSTALLATION/offline_guard.py",
+        "module",
+        "pip",
+        "--disable-pip-version-check",
+        "wheel",
+        "--use-pep517",
+        "--no-build-isolation",
+        "--no-deps",
+        "--no-index",
+        "--no-cache-dir",
+        "--wheel-dir",
+        "$INSTALLATION/built-wheels/antlr4-python3-runtime",
+        "$ACQUISITION/runtime-assets/antlr4-python3-runtime-4.9.3.tar.gz"
+      ],
+      "status": "completed",
+      "exit_code": 0,
+      "wall_seconds": 0.7265831659897231,
+      "logs": {
+        "stdout": {
+          "bytes": 965,
+          "sha256": "3f4b47f37d45569767238ee3456be2c403782e1747cedbbed6e9c992e5465621"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "build-iopath",
+      "command": [
+        "$INSTALLATION/venv/bin/python",
+        "-S",
+        "$INSTALLATION/offline_guard.py",
+        "module",
+        "pip",
+        "--disable-pip-version-check",
+        "wheel",
+        "--use-pep517",
+        "--no-build-isolation",
+        "--no-deps",
+        "--no-index",
+        "--no-cache-dir",
+        "--wheel-dir",
+        "$INSTALLATION/built-wheels/iopath",
+        "$ACQUISITION/runtime-assets/iopath-0.1.10.tar.gz"
+      ],
+      "status": "completed",
+      "exit_code": 0,
+      "wall_seconds": 0.8967450829804875,
+      "logs": {
+        "stdout": {
+          "bytes": 854,
+          "sha256": "045e39a9464ad8feeed12289d4081af2c27270e0b04efc12cd0dc13f397c63e5"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "install-built",
+      "command": [
+        "$INSTALLATION/venv/bin/python",
+        "-S",
+        "$INSTALLATION/offline_guard.py",
+        "module",
+        "pip",
+        "--disable-pip-version-check",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "--no-compile",
+        "--no-cache-dir",
+        "$INSTALLATION/built-wheels/antlr4-python3-runtime/antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+        "$INSTALLATION/built-wheels/iopath/iopath-0.1.10-py3-none-any.whl"
+      ],
+      "status": "completed",
+      "exit_code": 0,
+      "wall_seconds": 0.3823283329838887,
+      "logs": {
+        "stdout": {
+          "bytes": 502,
+          "sha256": "00c9bdb672b6cb557dd1c4a7625c0e83d1f4ccb043d738f045387783c4d6eb89"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    }
+  ],
+  "scientific_input_access": false,
+  "model_invocations": 0,
+  "wall_seconds": 5.903453874983825,
+  "source_sha256": {
+    "experiments/0029-memory-information/install_runtime.py": "b3cb74fb35b1be96525449559ae999ded2823fb793ae0283c44ae7b5e5d75f2a",
+    "configs/0029-sam2-assets.json": "27e57398a4d62e6dc31c8b3a89d9d2ea9b309baad8f204416c29588292cc1b12",
+    "configs/0029-runtime-assets.json": "f2e7e7b6d5a12cda87bb5512f9e0a3b7cc018a1b1b8f1c25ef5525f4041226cd",
+    "configs/0022-source-model-assets.json": "30d4474b3372c8cea8aed86f67620425146303c0fae52b652b37062936691944",
+    "configs/0022-wheel-assets.json": "fc8bea8344e061857dbf025f80915f8d757a18a2f960a92d490349cbb12d0f14",
+    "protocols/0029-native-runtime.md": "041af28ccbddd6ba4a45afb5679280f96e28c017308768c39f8f31a183df5cd5",
+    "configs/0029-sdist-build-review.json": "710138a7813afb32db8d1a9688aa979758c61b3ad5ebe11b0b85f1d6303450ff"
+  },
+  "acquisition_bindings": {
+    "commit": "a28a6d054230efd15ab108348f79bdbbb35a6203",
+    "operation_sha256": "c84eeb165504f08c99b4fd665ea12c81cf3b968970632cc2ad9dbd947eafcbef",
+    "outer_sha256": "f78520b358178aea1ab2a8974f5e43df0a0d3668970f0e383e81c69f16b39fc3",
+    "spec_sha256": "5937fcfb53657d640a8d03b6fafcfc8c9ad71b8a80a43c7efd8aadfcd7df7f50",
+    "log_sha256": {
+      "stdout.log": "bcb2ad95565ef1975d67c9f1354d8ccfc0936d41e6e85a021a11c2d2db5377a2",
+      "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "batch_ledger_sha256": {
+      "sam2-assets": "d9de1c22b25442acb26ffc9fa135770a1fcebed2b21389427b5148850784907c",
+      "runtime-assets": "dd5ee1b0d90d7f844856f57b8d6cdfdb33fdcacf652a5ea4d16fedbfe6b0efb4"
+    },
+    "source_sha256": {
+      "configs/0029-sam2-assets.json": "27e57398a4d62e6dc31c8b3a89d9d2ea9b309baad8f204416c29588292cc1b12",
+      "configs/0029-runtime-assets.json": "f2e7e7b6d5a12cda87bb5512f9e0a3b7cc018a1b1b8f1c25ef5525f4041226cd",
+      "protocols/0029-runtime-assets.md": "fe3fa635f3c117a025d5ea3aef245042740d0ab1663b0e5399b49523e3959b90",
+      "experiments/0022-frontend/acquire.py": "5b09d48b3b81fcf1d62b90871475813e26544934711244dcff2d429d4ad7fa11",
+      "experiments/0029-memory-information/acquire_assets.py": "5f5165b3b519ed8cab4fc9c4bbef417619cf0eb4f29ec2989c17473581201641"
+    }
+  },
+  "input_files": {
+    "sam2-assets/sam2.1_hiera_tiny.pt": {
+      "bytes": 156008466,
+      "sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
+    },
+    "sam2-assets/sam2--INSTALL.md": {
+      "bytes": 10583,
+      "sha256": "3295dc994038232f8e90b3123996d4bb087570ce7c10eb5da91a37cccada48aa"
+    },
+    "sam2-assets/sam2--LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "sam2-assets/sam2--LICENSE_cctorch": {
+      "bytes": 1566,
+      "sha256": "687d4f65ffe399358b170e22572564a16689e496f85a79dc5385fccf6bbc9558"
+    },
+    "sam2-assets/sam2--MANIFEST.in": {
+      "bytes": 254,
+      "sha256": "969fc588abbd8d84b1e2b055eafd46573a317647d86c796a1e062983e17f9f33"
+    },
+    "sam2-assets/sam2--README.md": {
+      "bytes": 16249,
+      "sha256": "eea69ee1042fb30933c5ca5019fbf0f6f9366cec5e792109281b5023a4f1589c"
+    },
+    "sam2-assets/sam2--pyproject.toml": {
+      "bytes": 120,
+      "sha256": "c58230f78769620dcd11d15824d491b049be8f542eeb875d2e8091be797ec3f3"
+    },
+    "sam2-assets/sam2--sam2--__init__.py": {
+      "bytes": 395,
+      "sha256": "b87ca1e95cd54b81766e8c74acf0e937952639529e40d2b4088693286f49419e"
+    },
+    "sam2-assets/sam2--sam2--build_sam.py": {
+      "bytes": 6405,
+      "sha256": "856d64d71e44407401297b551884fb4cd1aba8082de0ff5fc60fac3dd42f094d"
+    },
+    "sam2-assets/sam2--sam2--configs--sam2.1--sam2.1_hiera_t.yaml": {
+      "bytes": 3855,
+      "sha256": "f932eac1c6241e910031b2f000a81cd9f8a8d4896e2277ab5ffb721f378b188d"
+    },
+    "sam2-assets/sam2--sam2--modeling--__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sam2-assets/sam2--sam2--modeling--backbones--__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sam2-assets/sam2--sam2--modeling--backbones--hieradet.py": {
+      "bytes": 10003,
+      "sha256": "03785581ca304d0451ae0df7a08ee0bf1e1dbe66fad285066e6b9ffc0d88d64f"
+    },
+    "sam2-assets/sam2--sam2--modeling--backbones--image_encoder.py": {
+      "bytes": 4706,
+      "sha256": "16eaad232220386f510ca8dfab8655e63699977149a4daf9ce9c6f374e6777a9"
+    },
+    "sam2-assets/sam2--sam2--modeling--backbones--utils.py": {
+      "bytes": 3007,
+      "sha256": "c4a0657db2a92bda2a7ff116cd4017f6b1c59af6408093d8874eb08a0df476ad"
+    },
+    "sam2-assets/sam2--sam2--modeling--memory_attention.py": {
+      "bytes": 5509,
+      "sha256": "07358cb7f58ec3788e88ff4e6415f8a9d628a3963529d6e2c915494a5347c8e2"
+    },
+    "sam2-assets/sam2--sam2--modeling--memory_encoder.py": {
+      "bytes": 5657,
+      "sha256": "73f7089ae5fdacdfcaaf3deca1ca6d9f84d89e7deb9cf97589622a9ef17ba42f"
+    },
+    "sam2-assets/sam2--sam2--modeling--position_encoding.py": {
+      "bytes": 8980,
+      "sha256": "b51404718c0d38f381293c8e5e00a15d129651b7f09b1158002d8974a30967b5"
+    },
+    "sam2-assets/sam2--sam2--modeling--sam--__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sam2-assets/sam2--sam2--modeling--sam--mask_decoder.py": {
+      "bytes": 12657,
+      "sha256": "ca3523c58365574faddf1bfb54f374e4b4beba05127185ea2b17d22b916e099a"
+    },
+    "sam2-assets/sam2--sam2--modeling--sam--prompt_encoder.py": {
+      "bytes": 7541,
+      "sha256": "4965ccb4a4504aa4d7246b2ad66ffeacd2626415c86a261dc1c65ffd8ae1d40d"
+    },
+    "sam2-assets/sam2--sam2--modeling--sam--transformer.py": {
+      "bytes": 10761,
+      "sha256": "cda19052331e775190ce8b1159efcb828a4632d931a6d8bd4d47109f121782f1"
+    },
+    "sam2-assets/sam2--sam2--modeling--sam2_base.py": {
+      "bytes": 46983,
+      "sha256": "69a46b44e8625f509791352bd09beaafe589cd7d872721384e63d37f9fdc6e41"
+    },
+    "sam2-assets/sam2--sam2--modeling--sam2_utils.py": {
+      "bytes": 13173,
+      "sha256": "e35bbf13bc2e544a0272cd3f9539af38a752676ac3cd744be31cd8220afee804"
+    },
+    "sam2-assets/sam2--sam2--sam2_image_predictor.py": {
+      "bytes": 19937,
+      "sha256": "f13e5f9d94e5c8d9d2c3622dab20c8f334c089ef2ee5ea8e199da7d332b029ba"
+    },
+    "sam2-assets/sam2--sam2--sam2_video_predictor.py": {
+      "bytes": 58921,
+      "sha256": "912555920a77f72ded07839efa33fcceecc79f3523abbec783f0be46ee2c55c2"
+    },
+    "sam2-assets/sam2--sam2--utils--__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sam2-assets/sam2--sam2--utils--misc.py": {
+      "bytes": 13090,
+      "sha256": "01600c01c161cd079d7106fb1d4da845cf91aa31ab2bcecaf8cb151b6d6d20a2"
+    },
+    "sam2-assets/sam2--sam2--utils--transforms.py": {
+      "bytes": 4885,
+      "sha256": "ba3a64f4600c62f209206a6df3b40e3fcf133edae32fad658831bb0c2a6d1146"
+    },
+    "sam2-assets/sam2--setup.py": {
+      "bytes": 5051,
+      "sha256": "9ca49a33def161d2cafa56ddef744178fa56d3219242bd8b69909904c2e63dff"
+    },
+    "sam2-assets/dam4sam--LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "sam2-assets/dam4sam--README.md": {
+      "bytes": 11920,
+      "sha256": "95518b5886bcae706765001bddd3eed0f3c4c18a35499891601ed70db45c491b"
+    },
+    "sam2-assets/dam4sam--dam4sam_config.yaml": {
+      "bytes": 135,
+      "sha256": "309026ea7ffb7e45d4ead72cf2b5135f8bcce2fc4887c17869925ddbe2f8f538"
+    },
+    "sam2-assets/dam4sam--dam4sam_tracker.py": {
+      "bytes": 16874,
+      "sha256": "2f216a01acb49ba245a3171d276fd1ef3f983de884e342d11cfe14bb886e07ea"
+    },
+    "sam2-assets/dam4sam--pyproject.toml": {
+      "bytes": 120,
+      "sha256": "69d67034ea5cac1eb6eaad38a04d8389d7d7fb651efa541fa671743bae212258"
+    },
+    "sam2-assets/dam4sam--requirements.txt": {
+      "bytes": 2320,
+      "sha256": "51f17c88b5cf7ca145c6211a915cee64d09a0d521f620e60b31af6f112682d6f"
+    },
+    "sam2-assets/dam4sam--sam2--__init__.py": {
+      "bytes": 395,
+      "sha256": "b87ca1e95cd54b81766e8c74acf0e937952639529e40d2b4088693286f49419e"
+    },
+    "sam2-assets/dam4sam--sam2--build_sam.py": {
+      "bytes": 6160,
+      "sha256": "bc49ac8e9ebf871790fa2e5f0e70bd5734e010966eff66af0c350ceaf14f3f1e"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--backbones--__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--backbones--hieradet.py": {
+      "bytes": 10003,
+      "sha256": "03785581ca304d0451ae0df7a08ee0bf1e1dbe66fad285066e6b9ffc0d88d64f"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--backbones--image_encoder.py": {
+      "bytes": 4706,
+      "sha256": "16eaad232220386f510ca8dfab8655e63699977149a4daf9ce9c6f374e6777a9"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--backbones--utils.py": {
+      "bytes": 3053,
+      "sha256": "84bd48cda1ad468fb8c231d0c2eb83ad53386633d6e63ddaa6ed929c5521bdba"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--memory_attention.py": {
+      "bytes": 5509,
+      "sha256": "07358cb7f58ec3788e88ff4e6415f8a9d628a3963529d6e2c915494a5347c8e2"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--memory_encoder.py": {
+      "bytes": 5657,
+      "sha256": "73f7089ae5fdacdfcaaf3deca1ca6d9f84d89e7deb9cf97589622a9ef17ba42f"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--position_encoding.py": {
+      "bytes": 8361,
+      "sha256": "14ae89d7ae68f61e2ffcba09eb171d8df9a7298332d4da99036d703294f89ec1"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--sam--__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--sam--mask_decoder.py": {
+      "bytes": 12657,
+      "sha256": "ca3523c58365574faddf1bfb54f374e4b4beba05127185ea2b17d22b916e099a"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--sam--prompt_encoder.py": {
+      "bytes": 7016,
+      "sha256": "486596f5ba976cb9ced3836d65f1793dae586be2180567a451098f96c45ae401"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--sam--transformer.py": {
+      "bytes": 12870,
+      "sha256": "17aac13abc8f73023f6be4b78af708df9f9f254964729421b1ba60e72a9011c1"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--sam2_base.py": {
+      "bytes": 49796,
+      "sha256": "437fbd6f3edc914a815bc2008da2da9c13bd34f4c06e1d1548aa49b44fc55189"
+    },
+    "sam2-assets/dam4sam--sam2--modeling--sam2_utils.py": {
+      "bytes": 12721,
+      "sha256": "c9092079725e0a629e33f3871492b12f2e03994b964f278ba33837d6a0ab712e"
+    },
+    "sam2-assets/dam4sam--sam2--sam21pp_hiera_t.yaml": {
+      "bytes": 4073,
+      "sha256": "e6aa4d9c0840dcc9833643c903056729034ad8230b0913437372f32658320f37"
+    },
+    "sam2-assets/dam4sam--sam2--sam2_image_predictor.py": {
+      "bytes": 19937,
+      "sha256": "f13e5f9d94e5c8d9d2c3622dab20c8f334c089ef2ee5ea8e199da7d332b029ba"
+    },
+    "sam2-assets/dam4sam--sam2--sam2_video_predictor.py": {
+      "bytes": 63383,
+      "sha256": "677ded69378e30cb210f52d026873ef59de7d44c2757e6f7f017bfb9e71c3410"
+    },
+    "sam2-assets/dam4sam--sam2--utils--__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sam2-assets/dam4sam--sam2--utils--misc.py": {
+      "bytes": 13112,
+      "sha256": "099da6fbcfb0296bb0d08c86a21fd8ed94e5fd908a527d3b82a868b8c0a39392"
+    },
+    "sam2-assets/dam4sam--sam2--utils--transforms.py": {
+      "bytes": 4885,
+      "sha256": "ba3a64f4600c62f209206a6df3b40e3fcf133edae32fad658831bb0c2a6d1146"
+    },
+    "sam2-assets/dam4sam--setup.py": {
+      "bytes": 5051,
+      "sha256": "bfbe5e88155ceedba93959832d4b1486bcf18748d4fe321f874ccb4395a68f09"
+    },
+    "sam2-assets/dam4sam--utils--utils.py": {
+      "bytes": 3485,
+      "sha256": "3063fe0a5f4ba5e0bd99016c3a834a5b54702cf241407d2019179ed453711c70"
+    },
+    "runtime-assets/filelock-3.19.1-py3-none-any.whl": {
+      "bytes": 15988,
+      "sha256": "d38e30481def20772f5baf097c122c3babc4fcdb7e14e57049eb9d88c6dc017d"
+    },
+    "runtime-assets/fsspec-2025.9.0-py3-none-any.whl": {
+      "bytes": 199289,
+      "sha256": "530dc2a2af60a414a832059574df4a6e10cce927f6f4a78209390fe38955cfb7"
+    },
+    "runtime-assets/hydra_core-1.3.2-py3-none-any.whl": {
+      "bytes": 154547,
+      "sha256": "fa0238a9e31df3373b35b0bfb672c34cc92718d21f81311d8996a16de1141d8b"
+    },
+    "runtime-assets/jinja2-3.1.6-py3-none-any.whl": {
+      "bytes": 134899,
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"
+    },
+    "runtime-assets/kornia_rs-0.1.9-cp312-cp312-macosx_11_0_arm64.whl": {
+      "bytes": 2299529,
+      "sha256": "a0834f6aa44a35b486fe9802516dde24ec5d8b3b51563f18b488098062074671"
+    },
+    "runtime-assets/MarkupSafe-3.0.2-cp312-cp312-macosx_11_0_arm64.whl": {
+      "bytes": 12348,
+      "sha256": "846ade7b71e3536c4e56b386c2a47adf5741d2d8b94ec9dc3e92e5e1ee1e2225"
+    },
+    "runtime-assets/mpmath-1.3.0-py3-none-any.whl": {
+      "bytes": 536198,
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    },
+    "runtime-assets/networkx-3.5-py3-none-any.whl": {
+      "bytes": 2034406,
+      "sha256": "0030d386a9a06dee3565298b4a734b68589749a544acbb6c412dc9e2489ec6ec"
+    },
+    "runtime-assets/numpy-2.2.6-cp312-cp312-macosx_14_0_arm64.whl": {
+      "bytes": 5084103,
+      "sha256": "894b3a42502226a1cac872f840030665f33326fc3dac8e57c607905773cdcde3"
+    },
+    "runtime-assets/omegaconf-2.3.0-py3-none-any.whl": {
+      "bytes": 79500,
+      "sha256": "7b4df175cdb08ba400f45cae3bdcae7ba8365db4d165fc65fd04b050ab63b46b"
+    },
+    "runtime-assets/packaging-25.0-py3-none-any.whl": {
+      "bytes": 66469,
+      "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484"
+    },
+    "runtime-assets/pillow-11.3.0-cp312-cp312-macosx_11_0_arm64.whl": {
+      "bytes": 4686296,
+      "sha256": "921bd305b10e82b4d1f5e802b6850677f965d8394203d182f078873851dada69"
+    },
+    "runtime-assets/pip-25.2-py3-none-any.whl": {
+      "bytes": 1752557,
+      "sha256": "6d67a2b4e7f14d8b31b8b52648866fa717f45a1eb70e83002f4331d07e953717"
+    },
+    "runtime-assets/portalocker-3.2.0-py3-none-any.whl": {
+      "bytes": 22424,
+      "sha256": "3cdc5f565312224bc570c49337bd21428bba0ef363bbcf58b9ef4a9f11779968"
+    },
+    "runtime-assets/PyYAML-6.0.2-cp312-cp312-macosx_11_0_arm64.whl": {
+      "bytes": 173302,
+      "sha256": "ce826d6ef20b1bc864f0a68340c8b3287705cae2f8b4b1d932177dcc76721725"
+    },
+    "runtime-assets/setuptools-80.9.0-py3-none-any.whl": {
+      "bytes": 1201486,
+      "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922"
+    },
+    "runtime-assets/sympy-1.14.0-py3-none-any.whl": {
+      "bytes": 6299353,
+      "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+    },
+    "runtime-assets/torch-2.8.0-cp312-none-macosx_11_0_arm64.whl": {
+      "bytes": 73630478,
+      "sha256": "619c2869db3ada2c0105487ba21b5008defcc472d23f8b80ed91ac4a380283b0"
+    },
+    "runtime-assets/torchvision-0.23.0-cp312-cp312-macosx_11_0_arm64.whl": {
+      "bytes": 1856885,
+      "sha256": "e0e2c04a91403e8dd3af9756c6a024a1d9c0ed9c0d592a8314ded8f4fe30d440"
+    },
+    "runtime-assets/typing_extensions-4.15.0-py3-none-any.whl": {
+      "bytes": 44614,
+      "sha256": "f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548"
+    },
+    "runtime-assets/wheel-0.45.1-py3-none-any.whl": {
+      "bytes": 72494,
+      "sha256": "708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248"
+    },
+    "runtime-assets/antlr4-python3-runtime-4.9.3.tar.gz": {
+      "bytes": 117034,
+      "sha256": "f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b"
+    },
+    "runtime-assets/iopath-0.1.10.tar.gz": {
+      "bytes": 42226,
+      "sha256": "3311c16a4d9137223e20f141655759933e1eda24f8bff166af834af3c645ef01"
+    },
+    "prior/source-model-assets/superpoint_v1.pth": {
+      "bytes": 5206086,
+      "sha256": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+    },
+    "prior/source-model-assets/superpoint_lightglue.pth": {
+      "bytes": 47500279,
+      "sha256": "6ff7040d0a497fc6639337946d7538dae07428c18f77a067a0b5a960e7cc551a"
+    },
+    "prior/source-model-assets/lightglue--LICENSE": {
+      "bytes": 11340,
+      "sha256": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+    },
+    "prior/source-model-assets/lightglue--lightglue--__init__.py": {
+      "bytes": 263,
+      "sha256": "cf4322abb908f69282198931fb23c09a1ef1101b066d57842402e6436a92eaa3"
+    },
+    "prior/source-model-assets/lightglue--lightglue--aliked.py": {
+      "bytes": 27527,
+      "sha256": "60b24397c52e8a08d838828967cd03f5d6066c1f7c3c433805bf11dcb0d5228e"
+    },
+    "prior/source-model-assets/lightglue--lightglue--disk.py": {
+      "bytes": 1751,
+      "sha256": "386583f7ad0011d0574bd1039b18d9b7fdc94b9221279b79adaa6179240bdfa4"
+    },
+    "prior/source-model-assets/lightglue--lightglue--dog_hardnet.py": {
+      "bytes": 1500,
+      "sha256": "54525b5b0bc347c53f5d363892f085347069c6ede68d260d234824cb426b0b2d"
+    },
+    "prior/source-model-assets/lightglue--lightglue--lightglue.py": {
+      "bytes": 26417,
+      "sha256": "dcb75b9cad1985c5e7a537c512d4318d47fbcc99df75b39a513de60e027c039f"
+    },
+    "prior/source-model-assets/lightglue--lightglue--sift.py": {
+      "bytes": 8194,
+      "sha256": "9fa24851ff25b6f09cb06fa62aed1d07fa9cb6aa340c79d6467b3bdfdd4508cd"
+    },
+    "prior/source-model-assets/lightglue--lightglue--superpoint.py": {
+      "bytes": 8618,
+      "sha256": "23e8a26137b44f37e9a319313822c5b38d9c55796e756202eb46d64f1979d2b0"
+    },
+    "prior/source-model-assets/lightglue--lightglue--utils.py": {
+      "bytes": 5510,
+      "sha256": "c6d9260656a24d826128b68c95d0b7798106d04f4244a77f3b1856573f58e690"
+    },
+    "prior/source-model-assets/lightglue--lightglue--viz2d.py": {
+      "bytes": 6474,
+      "sha256": "142195bd74971bbfb8de871e731d412b7a505c2a7389ca8f5d0f29af2a3701e7"
+    },
+    "prior/wheel-assets/opencv_python-4.11.0.86-cp37-abi3-macosx_13_0_arm64.whl": {
+      "bytes": 37326322,
+      "sha256": "432f67c223f1dc2824f5e73cdfcd9db0efc8710647d4e813012195dc9122a52a"
+    },
+    "prior/wheel-assets/kornia-0.8.1-py2.py3-none-any.whl": {
+      "bytes": 1078646,
+      "sha256": "5dcb00faa795dfb45a3630d771387290bc4f40473451352ca250e5bcc81af3d1"
+    },
+    "prior/wheel-assets/tqdm-4.67.1-py3-none-any.whl": {
+      "bytes": 78540,
+      "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2"
+    }
+  },
+  "build_review_sha256": "710138a7813afb32db8d1a9688aa979758c61b3ad5ebe11b0b85f1d6303450ff",
+  "copied_files": {
+    "sources/sam2/INSTALL.md": {
+      "bytes": 10583,
+      "sha256": "3295dc994038232f8e90b3123996d4bb087570ce7c10eb5da91a37cccada48aa"
+    },
+    "sources/sam2/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "sources/sam2/LICENSE_cctorch": {
+      "bytes": 1566,
+      "sha256": "687d4f65ffe399358b170e22572564a16689e496f85a79dc5385fccf6bbc9558"
+    },
+    "sources/sam2/MANIFEST.in": {
+      "bytes": 254,
+      "sha256": "969fc588abbd8d84b1e2b055eafd46573a317647d86c796a1e062983e17f9f33"
+    },
+    "sources/sam2/README.md": {
+      "bytes": 16249,
+      "sha256": "eea69ee1042fb30933c5ca5019fbf0f6f9366cec5e792109281b5023a4f1589c"
+    },
+    "sources/sam2/pyproject.toml": {
+      "bytes": 120,
+      "sha256": "c58230f78769620dcd11d15824d491b049be8f542eeb875d2e8091be797ec3f3"
+    },
+    "sources/sam2/sam2/__init__.py": {
+      "bytes": 395,
+      "sha256": "b87ca1e95cd54b81766e8c74acf0e937952639529e40d2b4088693286f49419e"
+    },
+    "sources/sam2/sam2/build_sam.py": {
+      "bytes": 6405,
+      "sha256": "856d64d71e44407401297b551884fb4cd1aba8082de0ff5fc60fac3dd42f094d"
+    },
+    "sources/sam2/sam2/configs/sam2.1/sam2.1_hiera_t.yaml": {
+      "bytes": 3855,
+      "sha256": "f932eac1c6241e910031b2f000a81cd9f8a8d4896e2277ab5ffb721f378b188d"
+    },
+    "sources/sam2/sam2/modeling/__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sources/sam2/sam2/modeling/backbones/__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sources/sam2/sam2/modeling/backbones/hieradet.py": {
+      "bytes": 10003,
+      "sha256": "03785581ca304d0451ae0df7a08ee0bf1e1dbe66fad285066e6b9ffc0d88d64f"
+    },
+    "sources/sam2/sam2/modeling/backbones/image_encoder.py": {
+      "bytes": 4706,
+      "sha256": "16eaad232220386f510ca8dfab8655e63699977149a4daf9ce9c6f374e6777a9"
+    },
+    "sources/sam2/sam2/modeling/backbones/utils.py": {
+      "bytes": 3007,
+      "sha256": "c4a0657db2a92bda2a7ff116cd4017f6b1c59af6408093d8874eb08a0df476ad"
+    },
+    "sources/sam2/sam2/modeling/memory_attention.py": {
+      "bytes": 5509,
+      "sha256": "07358cb7f58ec3788e88ff4e6415f8a9d628a3963529d6e2c915494a5347c8e2"
+    },
+    "sources/sam2/sam2/modeling/memory_encoder.py": {
+      "bytes": 5657,
+      "sha256": "73f7089ae5fdacdfcaaf3deca1ca6d9f84d89e7deb9cf97589622a9ef17ba42f"
+    },
+    "sources/sam2/sam2/modeling/position_encoding.py": {
+      "bytes": 8980,
+      "sha256": "b51404718c0d38f381293c8e5e00a15d129651b7f09b1158002d8974a30967b5"
+    },
+    "sources/sam2/sam2/modeling/sam/__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sources/sam2/sam2/modeling/sam/mask_decoder.py": {
+      "bytes": 12657,
+      "sha256": "ca3523c58365574faddf1bfb54f374e4b4beba05127185ea2b17d22b916e099a"
+    },
+    "sources/sam2/sam2/modeling/sam/prompt_encoder.py": {
+      "bytes": 7541,
+      "sha256": "4965ccb4a4504aa4d7246b2ad66ffeacd2626415c86a261dc1c65ffd8ae1d40d"
+    },
+    "sources/sam2/sam2/modeling/sam/transformer.py": {
+      "bytes": 10761,
+      "sha256": "cda19052331e775190ce8b1159efcb828a4632d931a6d8bd4d47109f121782f1"
+    },
+    "sources/sam2/sam2/modeling/sam2_base.py": {
+      "bytes": 46983,
+      "sha256": "69a46b44e8625f509791352bd09beaafe589cd7d872721384e63d37f9fdc6e41"
+    },
+    "sources/sam2/sam2/modeling/sam2_utils.py": {
+      "bytes": 13173,
+      "sha256": "e35bbf13bc2e544a0272cd3f9539af38a752676ac3cd744be31cd8220afee804"
+    },
+    "sources/sam2/sam2/sam2_image_predictor.py": {
+      "bytes": 19937,
+      "sha256": "f13e5f9d94e5c8d9d2c3622dab20c8f334c089ef2ee5ea8e199da7d332b029ba"
+    },
+    "sources/sam2/sam2/sam2_video_predictor.py": {
+      "bytes": 58921,
+      "sha256": "912555920a77f72ded07839efa33fcceecc79f3523abbec783f0be46ee2c55c2"
+    },
+    "sources/sam2/sam2/utils/__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sources/sam2/sam2/utils/misc.py": {
+      "bytes": 13090,
+      "sha256": "01600c01c161cd079d7106fb1d4da845cf91aa31ab2bcecaf8cb151b6d6d20a2"
+    },
+    "sources/sam2/sam2/utils/transforms.py": {
+      "bytes": 4885,
+      "sha256": "ba3a64f4600c62f209206a6df3b40e3fcf133edae32fad658831bb0c2a6d1146"
+    },
+    "sources/sam2/setup.py": {
+      "bytes": 5051,
+      "sha256": "9ca49a33def161d2cafa56ddef744178fa56d3219242bd8b69909904c2e63dff"
+    },
+    "sources/dam4sam/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "sources/dam4sam/README.md": {
+      "bytes": 11920,
+      "sha256": "95518b5886bcae706765001bddd3eed0f3c4c18a35499891601ed70db45c491b"
+    },
+    "sources/dam4sam/dam4sam_config.yaml": {
+      "bytes": 135,
+      "sha256": "309026ea7ffb7e45d4ead72cf2b5135f8bcce2fc4887c17869925ddbe2f8f538"
+    },
+    "sources/dam4sam/dam4sam_tracker.py": {
+      "bytes": 16874,
+      "sha256": "2f216a01acb49ba245a3171d276fd1ef3f983de884e342d11cfe14bb886e07ea"
+    },
+    "sources/dam4sam/pyproject.toml": {
+      "bytes": 120,
+      "sha256": "69d67034ea5cac1eb6eaad38a04d8389d7d7fb651efa541fa671743bae212258"
+    },
+    "sources/dam4sam/requirements.txt": {
+      "bytes": 2320,
+      "sha256": "51f17c88b5cf7ca145c6211a915cee64d09a0d521f620e60b31af6f112682d6f"
+    },
+    "sources/dam4sam/sam2/__init__.py": {
+      "bytes": 395,
+      "sha256": "b87ca1e95cd54b81766e8c74acf0e937952639529e40d2b4088693286f49419e"
+    },
+    "sources/dam4sam/sam2/build_sam.py": {
+      "bytes": 6160,
+      "sha256": "bc49ac8e9ebf871790fa2e5f0e70bd5734e010966eff66af0c350ceaf14f3f1e"
+    },
+    "sources/dam4sam/sam2/modeling/__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sources/dam4sam/sam2/modeling/backbones/__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sources/dam4sam/sam2/modeling/backbones/hieradet.py": {
+      "bytes": 10003,
+      "sha256": "03785581ca304d0451ae0df7a08ee0bf1e1dbe66fad285066e6b9ffc0d88d64f"
+    },
+    "sources/dam4sam/sam2/modeling/backbones/image_encoder.py": {
+      "bytes": 4706,
+      "sha256": "16eaad232220386f510ca8dfab8655e63699977149a4daf9ce9c6f374e6777a9"
+    },
+    "sources/dam4sam/sam2/modeling/backbones/utils.py": {
+      "bytes": 3053,
+      "sha256": "84bd48cda1ad468fb8c231d0c2eb83ad53386633d6e63ddaa6ed929c5521bdba"
+    },
+    "sources/dam4sam/sam2/modeling/memory_attention.py": {
+      "bytes": 5509,
+      "sha256": "07358cb7f58ec3788e88ff4e6415f8a9d628a3963529d6e2c915494a5347c8e2"
+    },
+    "sources/dam4sam/sam2/modeling/memory_encoder.py": {
+      "bytes": 5657,
+      "sha256": "73f7089ae5fdacdfcaaf3deca1ca6d9f84d89e7deb9cf97589622a9ef17ba42f"
+    },
+    "sources/dam4sam/sam2/modeling/position_encoding.py": {
+      "bytes": 8361,
+      "sha256": "14ae89d7ae68f61e2ffcba09eb171d8df9a7298332d4da99036d703294f89ec1"
+    },
+    "sources/dam4sam/sam2/modeling/sam/__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sources/dam4sam/sam2/modeling/sam/mask_decoder.py": {
+      "bytes": 12657,
+      "sha256": "ca3523c58365574faddf1bfb54f374e4b4beba05127185ea2b17d22b916e099a"
+    },
+    "sources/dam4sam/sam2/modeling/sam/prompt_encoder.py": {
+      "bytes": 7016,
+      "sha256": "486596f5ba976cb9ced3836d65f1793dae586be2180567a451098f96c45ae401"
+    },
+    "sources/dam4sam/sam2/modeling/sam/transformer.py": {
+      "bytes": 12870,
+      "sha256": "17aac13abc8f73023f6be4b78af708df9f9f254964729421b1ba60e72a9011c1"
+    },
+    "sources/dam4sam/sam2/modeling/sam2_base.py": {
+      "bytes": 49796,
+      "sha256": "437fbd6f3edc914a815bc2008da2da9c13bd34f4c06e1d1548aa49b44fc55189"
+    },
+    "sources/dam4sam/sam2/modeling/sam2_utils.py": {
+      "bytes": 12721,
+      "sha256": "c9092079725e0a629e33f3871492b12f2e03994b964f278ba33837d6a0ab712e"
+    },
+    "sources/dam4sam/sam2/sam21pp_hiera_t.yaml": {
+      "bytes": 4073,
+      "sha256": "e6aa4d9c0840dcc9833643c903056729034ad8230b0913437372f32658320f37"
+    },
+    "sources/dam4sam/sam2/sam2_image_predictor.py": {
+      "bytes": 19937,
+      "sha256": "f13e5f9d94e5c8d9d2c3622dab20c8f334c089ef2ee5ea8e199da7d332b029ba"
+    },
+    "sources/dam4sam/sam2/sam2_video_predictor.py": {
+      "bytes": 63383,
+      "sha256": "677ded69378e30cb210f52d026873ef59de7d44c2757e6f7f017bfb9e71c3410"
+    },
+    "sources/dam4sam/sam2/utils/__init__.py": {
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    "sources/dam4sam/sam2/utils/misc.py": {
+      "bytes": 13112,
+      "sha256": "099da6fbcfb0296bb0d08c86a21fd8ed94e5fd908a527d3b82a868b8c0a39392"
+    },
+    "sources/dam4sam/sam2/utils/transforms.py": {
+      "bytes": 4885,
+      "sha256": "ba3a64f4600c62f209206a6df3b40e3fcf133edae32fad658831bb0c2a6d1146"
+    },
+    "sources/dam4sam/setup.py": {
+      "bytes": 5051,
+      "sha256": "bfbe5e88155ceedba93959832d4b1486bcf18748d4fe321f874ccb4395a68f09"
+    },
+    "sources/dam4sam/utils/utils.py": {
+      "bytes": 3485,
+      "sha256": "3063fe0a5f4ba5e0bd99016c3a834a5b54702cf241407d2019179ed453711c70"
+    },
+    "sources/lightglue/LICENSE": {
+      "bytes": 11340,
+      "sha256": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+    },
+    "sources/lightglue/lightglue/__init__.py": {
+      "bytes": 263,
+      "sha256": "cf4322abb908f69282198931fb23c09a1ef1101b066d57842402e6436a92eaa3"
+    },
+    "sources/lightglue/lightglue/aliked.py": {
+      "bytes": 27527,
+      "sha256": "60b24397c52e8a08d838828967cd03f5d6066c1f7c3c433805bf11dcb0d5228e"
+    },
+    "sources/lightglue/lightglue/disk.py": {
+      "bytes": 1751,
+      "sha256": "386583f7ad0011d0574bd1039b18d9b7fdc94b9221279b79adaa6179240bdfa4"
+    },
+    "sources/lightglue/lightglue/dog_hardnet.py": {
+      "bytes": 1500,
+      "sha256": "54525b5b0bc347c53f5d363892f085347069c6ede68d260d234824cb426b0b2d"
+    },
+    "sources/lightglue/lightglue/lightglue.py": {
+      "bytes": 26417,
+      "sha256": "dcb75b9cad1985c5e7a537c512d4318d47fbcc99df75b39a513de60e027c039f"
+    },
+    "sources/lightglue/lightglue/sift.py": {
+      "bytes": 8194,
+      "sha256": "9fa24851ff25b6f09cb06fa62aed1d07fa9cb6aa340c79d6467b3bdfdd4508cd"
+    },
+    "sources/lightglue/lightglue/superpoint.py": {
+      "bytes": 8618,
+      "sha256": "23e8a26137b44f37e9a319313822c5b38d9c55796e756202eb46d64f1979d2b0"
+    },
+    "sources/lightglue/lightglue/utils.py": {
+      "bytes": 5510,
+      "sha256": "c6d9260656a24d826128b68c95d0b7798106d04f4244a77f3b1856573f58e690"
+    },
+    "sources/lightglue/lightglue/viz2d.py": {
+      "bytes": 6474,
+      "sha256": "142195bd74971bbfb8de871e731d412b7a505c2a7389ca8f5d0f29af2a3701e7"
+    },
+    "weights/sam2.1_hiera_tiny.pt": {
+      "bytes": 156008466,
+      "sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
+    },
+    "weights/superpoint_v1.pth": {
+      "bytes": 5206086,
+      "sha256": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+    },
+    "weights/superpoint_lightglue.pth": {
+      "bytes": 47500279,
+      "sha256": "6ff7040d0a497fc6639337946d7538dae07428c18f77a067a0b5a960e7cc551a"
+    }
+  },
+  "guard_sha256": "977970a4b9473fe95cb421bb738f1122dc2e6c0f924fe5d0a46f9467b0354ebf",
+  "base_python": {
+    "path": "/opt/homebrew/bin/python3.12",
+    "resolved_path": "/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/bin/python3.12",
+    "bytes": 52448,
+    "sha256": "31b9c9a8d50289f3a13f014b3efd8ea3534fc3eea7ca7d9809e166139910b805"
+  },
+  "built_wheels": [
+    {
+      "id": "antlr4-python3-runtime",
+      "source_sha256": "f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b",
+      "wheel": "built-wheels/antlr4-python3-runtime/antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "bytes": 144591,
+      "sha256": "363d718dd399696f3f51ebfeae28f326c2ac20744a1a5becc2ebfa9195db0925"
+    },
+    {
+      "id": "iopath",
+      "source_sha256": "3311c16a4d9137223e20f141655759933e1eda24f8bff166af834af3c645ef01",
+      "wheel": "built-wheels/iopath/iopath-0.1.10-py3-none-any.whl",
+      "bytes": 31600,
+      "sha256": "160f274943dc2253f5d5f3a9c77ea34983b33de356a349c3e55c1355cf3a214d"
+    }
+  ],
+  "error_type": "ValueError",
+  "error": "installed METADATA missing/ambiguous"
+}

@@ -287,6 +287,27 @@ def inventory(root):
     return result
 
 
+def installed_metadata_path(dist, site):
+    """Return this installed distribution's own top-level METADATA.
+
+    RECORD also inventories vendored distributions. Those nested records remain
+    in the complete runtime inventory but are not separate installed packages.
+    """
+    candidates = []
+    for entry in dist.files or ():
+        parts = PurePosixPath(str(entry)).parts
+        if len(parts) == 2 and parts[0].endswith(".dist-info") and parts[1] == "METADATA":
+            candidates.append(entry)
+    if len(candidates) != 1:
+        raise ValueError("installed METADATA missing/ambiguous")
+    path = Path(dist.locate_file(candidates[0]))
+    if (path.is_symlink() or not path.is_file()
+            or path.parent.is_symlink() or path.parent.parent.resolve() != Path(site).resolve()):
+        raise ValueError("installed METADATA outside direct site-packages distribution")
+    if path.read_text(encoding="utf-8") != dist.read_text("METADATA"):
+        raise ValueError("installed METADATA identity mismatch")
+    return path
+
 def run(args):
     root = Path(args.repo_root).resolve(); acq = Path(args.acquisition).resolve(); prior = Path(args.prior_assets).resolve(); out = Path(args.destination).absolute()
     require(not out.exists() and not out.is_symlink() and root not in out.resolve().parents and out.resolve() != root, 'destination must be fresh and private')
@@ -361,9 +382,8 @@ def run(args):
         command('install-built', [py, '-S', str(guard), 'module', 'pip', '--disable-pip-version-check', 'install', '--no-index', '--no-deps', '--no-compile', '--no-cache-dir', *[str(out / x['wheel']) for x in built]], env)
         distributions = []
         for dist in metadata.distributions(path=[str(site)]):
-            paths = [str(x) for x in (dist.files or []) if str(x).endswith('.dist-info/METADATA')]
-            require(len(paths) == 1, 'installed METADATA missing/ambiguous')
-            path = Path(dist.locate_file(paths[0])); distributions.append({'name': dist.metadata['Name'], 'version': dist.version, 'metadata': path.relative_to(out).as_posix(), **file_record(path)})
+            path = installed_metadata_path(dist, site)
+            distributions.append({'name': dist.metadata['Name'], 'version': dist.version, 'metadata': path.relative_to(out).as_posix(), **file_record(path)})
         normalize = lambda s: re.sub(r'[-_.]+', '-', s).lower()
         expected = {(normalize(a['name']), a['version']) for a in manifests[1]['assets'] + manifests[1]['non_downloaded_inputs']['wheels']}
         require(len(distributions) == len(expected) and {(normalize(d['name']), d['version']) for d in distributions} == expected, 'installed versions differ from exact closure')

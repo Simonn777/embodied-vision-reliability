@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: 0029 offline runtime and artificial native check prepared
+## Current work: 0029 installation failure isolated; native check still pending
+
+The [first installation](results/0029-preparation/runtime/README.md) failed after all five install/build commands succeeded: its metadata reader miscounted setuptools' nested vendored records. A narrow top-level metadata identity repair retains the exact dependency closure and complete inventory. Preserve attempt01; a fresh source CI and attempt02 are required. No model inference or scientific data has run.
+
+## Historical: 0029 offline runtime and artificial native check prepared
 
 The [native runtime protocol](protocols/0029-native-runtime.md) prepares an isolated Python3.12 installation from verified assets, two inspected offline builds and a fixed nine-frame manufactured check. It checks real memory/pointer removal, discarded-branch isolation, next-frame parity and the same control interfaces. Installation and model execution still await complete review and exact-source CI. No benchmark data, measured gain or manuscript. [Asset publication/main CI](docs/0029-asset-publication-verification.md) is verified.
 
