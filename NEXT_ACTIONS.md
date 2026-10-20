@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: resolve one falsifiable information question before implementation
+## Current: qualify the minimum native runtime, then test information
+
+1. Preserve [0029 acquisition receipts](results/0029-preparation/acquisition/README.md), exact source CI and all original assets. Acquisition passed; do not repeat it. Publish and verify this result as preparation, not improvement.
+2. Inspect the two acquired source-distribution build hooks, then prepare the smallest explicitly offline Python 3.12 installation and manufactured-input qualification. Native SAM2 plus LightGlue comes first; DAM VOT/device equivalence remains necessary before a larger efficacy claim.
+3. Freeze a small independent-recording development diagnostic, fixed frame schedule, signed/unsigned and same-evidence prompt/reset controls, numeric stopping gates and GT separation before any image/mask acquisition. A necessary-information failure closes this variant rather than prompting hidden tuning.
+4. Preserve the two-source +3 absolute J&F gate, complete-cost controls, ablations and independent replication before any manuscript. No asset receipt or artificial check counts toward this gate.
+
+## Historical: resolve one falsifiable information question before implementation
 
 1. Preserve [0028's verified publication](docs/0028-publication-verification.md) and the [0029 rejection record](docs/0029-task-screen.md). Neither repository activity nor a literature screen meets the improvement goal.
 2. Determine whether sparse initial-object correspondences can distinguish harmful from helpful memory influence, beyond existing recollection-effect, distractor-aware and automatic-prompt methods. Resolve the exact observable, failure cases and strongest same-evidence controls; do not infer novelty from different terminology.
