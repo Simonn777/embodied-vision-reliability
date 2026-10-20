@@ -1,6 +1,32 @@
 # Current state
 
-## Latest: 0025b physical depth qualification passed
+## Current: 0025c failed and closed
+
+[The frozen noise falsifier](results/0025c-development/README.md) completed all
+132 records and 13,332 solves. Every D4 yield condition fails (0–13 useful outputs
+per 1,120 against a required144), and the simpler A2 control dominates. D8 never
+beats A8 across the96 primary records. No robust stage or real-data acquisition
+is justified for this fixed initializer. The original independent audit remains
+FAILED: three residual comparisons differ in one already-invalid E-clean N8
+diagnostic. Saved-only exact-sum forensics explain the cancellation; independent
+gate counts still confirm closure. No audit tolerance, status or source changed.
+
+Generic trajectory coupling is separately vetoed as a novelty claim by prior
+asynchronous-motion work and a depth-free two-point direction derivation. Seek a
+structurally different mechanism with a specific observable advantage and strong
+controls before another experiment. No manuscript or main-goal completion.
+
+## Historical source preparation: 0025c prospective initializer-noise qualification
+
+The [fixed noise falsifier](docs/0025c-admission.md) challenges four-point RS
+affine-depth initialization against same-input eight-point depth, depth-free RS
+and angular-only affine controls. Its 132 records and 13,332 solve attempts are
+prospective, with no target cohort generated at source preparation. Manufactured
+angular inputs do not establish real-IMU performance. Exact source CI must precede
+one supervised run and independent saved-output audit. No renderer or paper.
+
+
+## Historical result: 0025b physical depth qualification passed
 
 The first [physical-depth diagnostic](results/0025b-development/README.md)
 completed 80 predictions and all 64 required paired cases. Scene median held-out
@@ -42,7 +68,7 @@ GrandTour ETH-1/2/3 timing is unsuitable; alternative sources remain conditional
 The two-source matched-cost improvement gate is unchanged.
 
 
-## Latest result: 0024 failed and closed, 2026-10-19
+## Historical result: 0024 failed and closed, 2026-10-19
 
 [The complete virtual-rotation transfer probe](results/0024-development/README.md)
 finished all 135 frozen depth forwards in 112.995 seconds. Usable offset coverage
@@ -73,7 +99,7 @@ The [0023 failed result](results/0023-development/completed-study/README.md) is
 published and independently audited; [PR/main verification](docs/0023-publication-verification.md)
 confirms the GitHub state. No manuscript is admitted; the broader goal stays open.
 
-## Latest result: 0023 failed and closed, 2026-10-19
+## Historical result: 0023 failed and closed, 2026-10-19
 
 [Complete development results](results/0023-development/completed-study/README.md):
 All 24 queries evaluated after sealed predictions. Directional AUC@5 = 56.497091%,

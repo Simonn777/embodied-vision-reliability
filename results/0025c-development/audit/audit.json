@@ -1,0 +1,28 @@
+{
+  "schema": "evr0025c.saved-audit.v1",
+  "status": "failed",
+  "failures": [
+    "99/99.residual",
+    "99/99.normal_equation",
+    "99/99.residual_norm"
+  ],
+  "max_absolute_difference": 16.0,
+  "max_tolerance_ratio": 20994508.380318195,
+  "expected_commit": "93349f34790496c5c838a2b97f9440a471d6dc68",
+  "source_sha256": "e24a771a5d0fd5eb6e7e820de98fb95e213070f798caa8f73c7a88cc4799831b",
+  "tolerances": {
+    "atol": 1e-08,
+    "rtol": 1e-08,
+    "metrics": 1e-10,
+    "geometry_absolute": 1e-10
+  },
+  "scope": "Independent saved-input geometry and metric reconstruction; verified saved matrices use the same NumPy SVD numerical backend. Alternate QR discrepancies descriptive. Not independent-team or algorithmically independent factorization replication. No model, original fixture generation or original solver imported.",
+  "alternate_QR_max_parameter_difference": 0.05479252338409424,
+  "case_count": 132,
+  "solve_count": 13332,
+  "independent_gate_passed": false,
+  "input_receipt_sha256": "ce7dc7db922647e2bf53f6afe9d97a8dd7e5c3eeb4d2324e9ed476d96f8f8be1",
+  "seal_sha256": "d221ae0c293ed030a2458bb2d359dc422117e2c733110e3a51711ea817d677f9",
+  "outer_sha256": "48490d5f345ddde6bf02f9ba79bb36f694970337e42647850301cc9f0bd0ec8d",
+  "wall_seconds": 18.420117041999998
+}

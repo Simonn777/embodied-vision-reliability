@@ -1,0 +1,5 @@
+Exception ignored in: <_io.FileIO name='$WORKSPACE/work/0025c-feasibility/noise-01/all-solves.csv' mode='rb' closefd=True>
+Traceback (most recent call last):
+  File "$WORKSPACE/work/0025c-feasibility/forensic_saved_residual.py", line 39, in main
+    csvrows=list(csv.DictReader(paths[1].open()));assert len(csvrows)==13332
+ResourceWarning: unclosed file <_io.TextIOWrapper name='$WORKSPACE/work/0025c-feasibility/noise-01/all-solves.csv' mode='r' encoding='UTF-8'>

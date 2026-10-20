@@ -1,0 +1,66 @@
+# 0025c: fixed conditional RS initializer noise falsifier
+
+**Prospective source freeze; no new cohort case generated or benchmark solver executed.** This is a necessary test of useful translation initialization, not a pose benchmark, a robustness result, or permission to start a rendered-image campaign. The existing 0025 exact rank witness does not establish stability. The 0025b depth result does not distinguish row-axial from mid-frame semantics: the two interpretations were similar, and row prediction was usually worse than transported GS prediction.
+
+## 1. Frozen question and equal-input controls
+
+Can the four-correspondence affine-depth initializer produce a useful **directed translation direction** often enough under modest errors-in-variables to justify testing robust sampling? Middle rotation and both angular rates are manufactured sensor inputs. Exact inputs are an explicitly ideal conditional regime; perturbed inputs are angular-input parameter stress, not a physically coupled IMU noise process, measured IMU, or full relative-pose recovery.
+
+Keep the exact 0025 model, with known observed times, `Q_k=Exp(s_k omega_k)`, `B_k=Q_k^T J_l(s_k omega_k)s_k`, and **unnormalized** `rbar_k=Q_k^T K^-1[x,y,1]`. Fix the length gauge `a1=1`. Four arms receive the same eight observations, K, timestamps, input R/omega and depth predictions:
+
+* **D4:** solve `[−I, R B1, −B2, −R rbar1, d2 rbar2, rbar2] beta = d1 R rbar1`, `beta=(t,v1,v2,b1,a2,b2)`, separately for every lexicographically ordered 4-subset (70). Record every result; never choose the best subset, average poses, or use truth to select a hypothesis.
+* **D8:** the identical affine RS least-squares system on all eight points. This directly tests whether D4 merely interpolates depth error.
+* **N8:** exact angular integration, depth-free uniform RS: `n=rbar2 cross (R rbar1)`, `C=[n^T,−n^T R B1,n^T B2]`, solve the homogeneous nine-vector `(t,v1,v2)` on eight points. For each of the two homogeneous signs, triangulate every pair with `[R rbar1,−rbar2](z1,z2)=−(t−R B1 v1+B2 v2)`. Each two-column triangulation must be finite and rank two. Choose a sign only if it uniquely has a strict majority (at least 5/8) of both-positive row depths; retain all votes and residuals, and mark a tie/no-majority unavailable. This uses no predictor depth or truth translation.
+* **A8:** the stronger same-input **angular-only RS affine** control: set `v1=v2=0` and solve `[−I,−R rbar1,d2 rbar2,rbar2](t,b1,a2,b2)=d1 R rbar1` on all eight. It is not conventional GS on raw rays. Do not normalize rbar while leaving the depth offsets unchanged.
+
+Use direct double-precision SVD with column L2 equilibration, undoing scaling afterward. The homogeneous N8 solution is normalized in physical parameter coordinates. Numerical rank threshold is `max(rows,columns)*eps*smax` on the equilibrated system; no condition-number rejection or parameter clipping. Also report the fixed `1e−8*smax` spectrum/null diagnostic separately, without turning it into an adaptive success filter. D4/D8/A8 require positive recovered scale and positive corrected depths on the complete eight-observation pool; preserve fitting-support and full-pool positivity counts separately; any full-system rank deficiency, undefined translation, nonfinite result, or unresolved physical/sign test is unavailable. Report whether a rank deficiency concerns translation or only nuisance parameters; this conservative solver failure is not a proof that translation is intrinsically unobservable.
+
+**No refiner and no consensus scorer in Stage A.** All-inlier affine least-squares refitting would erase D4 versus D8 initialization differences. There is consequently no claim about equal-budget RANSAC, selection quality, or final optimization. Timing and number of solves are descriptive, not an efficiency claim.
+
+## 2. Fixed manufactured cohort
+
+Reuse the eight POINTS, K, 40 ms readout, exact SE(3) exponential and implicit-row projector already declared in `experiments/0025-rs-identifiability/check_manufactured.py` in the repository; copy/bind the source rather than modify it. Generate clean observations once, then keep their scene/depth truth fixed. No visibility-based replacement of a point or fixture is allowed.
+
+Four predeclared motion cases:
+
+1. **G:** the existing `generic` R, t, xi1, xi2. Independently specified readout segments can be connected between exposures; they are not called one constant trajectory.
+2. **N:** G with middle rotation `Exp(.1*[.20,−.13,.11])`; all other values unchanged. This is the near-identity stress case, not selected for an observed condition number.
+3. **C:** `xi1=xi2=generic.xi1`, middle transform `T=Exp(.12*xi1)` and the same readout. This is one physically constant left W2C twist, with the middle pose tied to the trajectory rather than drawn independently. The tested solvers are not given this extra constraint.
+4. **E:** the existing `equal_row` case, a declared critical diagnostic. Do not demand a unique 12-parameter answer. Preserve its task-relevant nullspace and failure behavior.
+
+Each case has one clean sanity record and **16 paired noise realizations**, using NumPy PCG64 seed `20261019`. The serialized draw order is case G,N,C,E, then realization 0..15; for each realization draw standard-normal `pixel(2,8,2)`, `coherent_c(2)`, `epsilon(2,8)`, then `angular_axes(3,3)`, in that order from one generator. The first axis is the middle-R perturbation and the next two are the angular-rate perturbations. Clean sanity records consume no draws. Two noisy regimes reuse the same pixel/depth arrays:
+
+* **P:** independent pixel noise N(0,0.5² px²), plus depth error below; exact manufactured R and omega.
+* **S:** identical P observations, with left middle-R error of exactly 0.1° about a random unit Gaussian axis, and per-camera angular-rate error of exactly 0.5°/s about independent unit Gaussian axes. Draw these axes for every realization in both regimes so branch order cannot alter observations. These independent R/omega changes are a fixed parameter sensitivity probe, not an integrated, empirically calibrated gyro noise process. No timestamp-error claim is tested.
+
+For image k, let `g_i=sin(2*pi*u_i)+cos(2*pi*v_i)` using clean normalized pixel coordinates `u=(x+.5)/W`, `v=(y+.5)/H`; center g over the eight points and divide by its RMS. Draw one scalar `c_k` and eight independent `epsilon_ki`, all standard normal. Add to raw predictor depth
+
+`delta d_ki=(z_ki/a_k)*.03*(g_i*c_k+epsilon_ki)/sqrt(2)`.
+
+This is a declared 3% RMS mixture of spatially coherent and independent error, not a fitted MoGe error model. Preserve all draws; no depth or sensor clipping/resampling. Any undefined zero-RMS pattern/axis is a technical failure, not a reason to pick another fixture.
+
+**Coupled measurement rule:** pixel noise changes rays **and** observed row times via the sensor-row equation. Do not regenerate scene/depth truth or solve new row roots after perturbation. The attached predicted depth value receives the specified error; this is a correspondence/depth localization-noise model, not a rendered depth-map sampler. No outliers are inserted. Total: 4 clean records plus 128 noisy records, with 70 D4 outputs and three full-eight outputs each.
+
+## 3. Measurements and necessary advance gate
+
+For every solve save the raw matrix/RHS, column scales, singular values, raw solution, validity reason, physical cheirality/sign evidence and actual solve time. For every finite translation report the **directed**, non-folded angle to truth using `atan2(||t_hat cross t_truth_hat||, t_hat dot t_truth_hat)`; unavailable outputs receive 180° and remain in every denominator. Define AUC@5 exactly as `100*mean(max(0,1−error_degrees/5))`, the integral of the empirical CDF, not the historical PoseBench trapezoid convention. Report complete error curves/AUC@5, median and tail errors, and the useful-angle yield `p=number(valid and angle<=5°)/number(attempted)`.
+
+Evaluate the translation functional on every declared null direction using `(I−t_hat*t_hat^T) delta_t/||t||`. The solver reports this differential at its returned direction; clean records additionally evaluate every basis at the manufactured truth direction, so a rank-deficient minimum-norm representative does not substitute for the physical task. These diagnostics never choose a solution or change admission. Report weak full-parameter conditioning separately from actual translation-direction sensitivity. Since all 70 subsets share the same eight measurements, they are not 70 independent trials; no subset-level confidence interval or population-accuracy claim.
+
+**Advance to a separately frozen robust Stage B only if each of G, N and C, separately in P and S, has D4 useful yield at least 9/70 over its fixed 16×70 denominator** (at least 144 useful outputs). No pooling across motion or input-quality groups. Clean exact checks must agree with the known equations; E is reported completely but does not enter this utility threshold. A physical generation or technical failure blocks advancement; do not replace the failed case. All D8/N8/A8 comparisons and their possible near-perfect performance are reported, including D4 harm and any absence of practical headroom.
+
+Why this modest gate is useful but insufficient: in the explicitly hypothetical future 50% correspondence-inlier setting, a 4-sample has 16 times the pure-inlier sampling chance of an 8-sample. Yield 9/70 exceeds 1/8, giving just over twice the *idealized* useful-proposal rate even if the eight-point initializer has yield one. This arithmetic ignores computation, correlation of real outliers, selection and refinement. It is **not measured robust advantage**. Failure closes this four-point initializer at the fixed noise/case contract; success permits only a matched-cost robust test, not image acquisition or a paper.
+
+Independent saved-output audit tolerances are fixed before execution: general numerical arrays/scalars `atol=1e−8, rtol=1e−8`, geometric construction/equation checks absolute tolerance `1e−10`, and reported metrics absolute tolerance `1e−10`; identities, coverage, validity/status, counts and source hashes require exact equality. Reconstruct geometry independently at its fixed tolerance, then factor the verified saved matrix for solution/rank/status checks. Both implementations may use the same NumPy SVD backend; this is not an algorithmically independent factorization or independent-team replication. An alternate QR solution discrepancy is descriptive in near-null systems, not a new pass/fail criterion. Compare null subspaces/projectors, never arbitrary basis signs. Tolerance does not permit changing a scientific decision.
+
+Resource bound: one CPU process, at most four numerical-library threads, 8 GiB RSS and 1800 s; no model, archive, real cache, label or network access. Preserve source/inputs/all outputs and actual exit/wall/RSS receipt. No second noise grid, seed search or tolerance change after the first run.
+
+## 4. Novelty and later task boundary
+
+The exact conditional block is motivated by the same translation/velocity elimination already used by Lee and Yoon, [*Inertial-aided Rolling Shutter Relative Pose Estimation*](https://arxiv.org/html/1712.00184v1), §§3–4.2, Eqs.3–4 and 16–17. Their **linear** model has zero angular motion; nonzero angular plus translational motion is **uniform**. Adding affine depth draws on Ding et al., [*Fixing the Scale and Shift in Monocular Depth For Camera Pose Estimation*](https://arxiv.org/html/2501.07742v1), and Yu et al., [*Relative Pose Estimation through Affine Corrections of Monocular Depth Priors*](https://openaccess.thecvf.com/content/CVPR2025/papers/Yu_Relative_Pose_Estimation_through_Affine_Corrections_of_Monocular_Depth_Priors_CVPR_2025_paper.pdf). The distinction that remains to test is useful lower-sample RS initialization with affine depth, not conditional linearity or rank counting.
+
+Barath's current [*Rolling Shutter Relative Pose Estimation Made Practical*](https://arxiv.org/html/2606.26863v1), §§3–4, is a mandatory later strong competitor; its affine-correspondence input and approximation/cost must be explicit. Before a method claim, Stage B must compare identical observation banks, exact-Q/B scoring, same depth-aware refinement, a nonminimal D8 control and actual wall cost. An N8 proposal can enter the same depth-aware refiner by an additional affine/scale lift, rather than reserving depth refinement for D4.
+
+The angular-only affine control has six conditional unknowns; a later robust stage must qualify its possible smaller-sample initializer as well, rather than infer all baseline sampling costs from the eight-point controls here. The 4-versus-8 arithmetic above is only an optimistic necessary screen.
+
+A later RGB-D stage would require visibility-correct row-exact rendering; translation exposes surfaces absent from one RGB-D frame, so no hole-free claim or hidden GT match filtering is allowed. Exact simulated R/gyro remain an oracle-conditional regime, even when images are rendered photometrically. Real measured-gyro calibration and the unchanged two-source pose improvement gate remain outstanding. Nothing in this proposal reopens 0023/0024 or changes their failed outcomes.
