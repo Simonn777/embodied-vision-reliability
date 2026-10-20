@@ -1,6 +1,12 @@
 # Next actions
 
-## Current: freeze and test the necessary four-point noise assumption
+## Current: close the failed initializer and find a distinct mechanism
+
+1. Publish [0025c complete negative evidence](results/0025c-development/README.md), retaining the original failed numerical audit and scoped saved-only explanation; verify exact result and merged-main CI.
+2. Keep D4/D8 free-velocity noise variants closed. Do not recycle generic known-angular trajectory coupling, measured-acceleration linearity or a depth-assisted two-point sample-size claim; the source/math screen rejects those novelty premises.
+3. Screen a structurally different testable mechanism against current primary work and strong equal-information controls. Do not spend remaining acquisition budget before a concrete advantage and cheap falsifier are defined. The two-independent-source, matched-time improvement gate remains required before any manuscript.
+
+## Historical prospective actions: four-point noise assumption
 
 1. Finish independent source review and artificial tests for [0025c](docs/0025c-admission.md), then verify exact source CI before generating its fixed cohort.
 2. Execute one bounded all-inlier noise falsifier and independent saved-output audit, retaining all 13,332 attempts, failures and strong controls. No same-outcome noise, seed or threshold tuning.

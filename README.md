@@ -3,15 +3,14 @@
 **Goal: a reproducible improvement in visual camera-motion estimation before a
 CVPR-targeted manuscript. No method currently meets that goal.**
 
-The current candidate studies rolling-shutter camera translation with learned
-affine-depth priors, with measured rotations as a later deployment requirement. Fixed numerical checks and an exact
-four-point existence construction establish conditional mathematical feasibility;
-a physical pure-rotation depth approximation passed its fixed oracle diagnostic,
-while task-level robustness remains unverified. A prospective all-inlier noise
-test next challenges four-point initialization against equal-input controls,
-using manufactured angular inputs, before any real-IMU campaign. Earlier methods
-failed their scientific gates and remain public. This concerns visual geometry
-for embodied systems and driving; no controller or driving result is claimed.
+The latest rolling-shutter affine-depth initializer failed its frozen noise
+test: 13,332 attempts yielded no practical headroom over the simpler angular-only
+control. The eight-point version also failed to help. Its mathematical and
+physical-assumption checks had passed, showing why those checks alone were
+insufficient. Complete failures remain public, including a narrowly explained
+numerical audit failure. A different mechanism is required before another task
+experiment. This concerns visual geometry for embodied systems and driving;
+no controller or driving result is claimed.
 
 The next experiment must test a concrete accuracy mechanism against strong
 controls. The current target is at least **+2 absolute AUC@5 percentage points**
@@ -25,13 +24,14 @@ meet this standard. [Full prospective gate](protocols/0012-score-bounds-developm
 
 | Study | Verified result | Decision |
 |---|---|---|
+| [0025c initializer noise](results/0025c-development/README.md) | 13,332 attempts; every required D4 yield fails; D8 beats A8 in 0/96 primary records. Independent gate agrees; original numerical audit remains failed on one invalid diagnostic. | Closed. No robust stage, real-data expansion or manuscript. |
 | [0025b physical depth qualification](results/0025b-development/README.md) | 80 forwards, 64/64 primary pairs; scene median AbsRel 2.936% / 2.293%; fixed tolerances pass and independent arithmetic audit agrees. | Assumption qualified only. GS oracle remains better; no pose improvement or manuscript. |
 | [0025 rolling-shutter geometry](results/0025-identifiability/README.md) | Fixed numerical rank checks, exact nonzero four-point determinant under given rotations, and independently checked critical configurations. | Mathematical feasibility only; no accuracy or novelty result. Subsequent physical assumption check: 0025b above. |
 | [0024 virtual-rotation offset](results/0024-development/README.md) | 16/27 usable offsets; cross-axis residual increased 1.986%; all four conditions failed. | Closed. No downstream pose experiment. |
 | [0023 directional instability](results/0023-development/completed-study/README.md) | AUC@5 56.4971% versus strongest geometry control 61.9844% (−5.4874 pp). | Closed. All efficacy conditions failed. |
 | [0020 spatial depth transfer](results/0020-spatial-depth-transfer/README.md) | Candidate AUC@5 71.1071% versus strong affine control 74.0717% (−2.9646 pp). | Closed. No same-label rescue tuning. |
 
-[Current noise-test admission](docs/0025c-admission.md) · [Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md)
+[Closed noise-test result](results/0025c-development/README.md) · [Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md)
 
 ## Historical evidence through 0015
 

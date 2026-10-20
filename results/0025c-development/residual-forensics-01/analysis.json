@@ -1,0 +1,318 @@
+{
+  "schema": "evr0025c.posthoc-residual-forensics.v1",
+  "scope": "Saved-only exact arithmetic on one already-unavailable E-clean N8 row. No decomposition, refit, original audit rerun, fixture generation or model execution.",
+  "source_sha256": "a9e9794d39e464c03ffbd134fc3ea5099e2c3699c665a4b22e743f233018ff79",
+  "input_sha256": {
+    "noise-01/case-099.json": "5ba53c9684f91b2cb232b9bdd14c3b597c266ca62443e22ec955e9b70b5fd5f3",
+    "noise-01/all-solves.csv": "fe621795ae442367e46b447c92a681486257ceafcbb7be16b3a4d1c9f600130c",
+    "noise-01/aggregate.json": "ec8ccc1a187d7fe6cfed50ed325313424cdbfa4fe1dbdb063ca676dd4439a275",
+    "noise-01/receipt.json": "ce7dc7db922647e2bf53f6afe9d97a8dd7e5c3eeb4d2324e9ed476d96f8f8be1",
+    "noise-01/seal.json": "d221ae0c293ed030a2458bb2d359dc422117e2c733110e3a51711ea817d677f9",
+    "audit-01/audit.json": "ea716ab3afa18d02afd8a401fee3b609e180a8247dced242ab198a3c1e2d26e2",
+    "audit-supervision-01/receipt.json": "f7020de73a55cd58f6c94618693031be3cf852726cf93e39d72adc61e98f34d6"
+  },
+  "numpy": "2.0.2",
+  "original_audit_status": "failed",
+  "original_audit_failure_list": [
+    "99/99.residual",
+    "99/99.normal_equation",
+    "99/99.residual_norm"
+  ],
+  "target": {
+    "record_index": 99,
+    "case": "E",
+    "regime": "clean",
+    "arm": "N8",
+    "status": "unavailable",
+    "reason": "rank_not_eight",
+    "rank": 3,
+    "weak_rank": 3,
+    "raw_angle_degrees": 30.24330277352614,
+    "error_degrees": 180.0
+  },
+  "raw_translation_norm": 1.155056320713823e-16,
+  "normalization_factor": 8657586492250020.0,
+  "normalized_max_abs_velocity": 8.539971332116705e+18,
+  "saved_solution_exactly_matches_frozen_normalization": true,
+  "saved_residual_bitwise_matches_einsum": true,
+  "saved_normal_bitwise_matches_einsum": true,
+  "residual_rows": [
+    {
+      "index": 0,
+      "saved": -0.5,
+      "einsum": -0.5,
+      "dot": -0.8438455929758725,
+      "exact_binary64_product_sum": "-619064228921262128146967579403389/1298074214633706907132624082305024",
+      "exact_rounded": -0.47690973439138135,
+      "sum_absolute_products": 5635245681548594.0,
+      "cancellation_ratio": 1.1816168291763082e+16,
+      "einsum_absolute_error": 0.023090265608618633,
+      "dot_absolute_error": 0.3669358585844911,
+      "saved_dot_absolute_difference": 0.34384559297587247
+    },
+    {
+      "index": 1,
+      "saved": -0.125,
+      "einsum": -0.125,
+      "dot": -0.17761632754239615,
+      "exact_binary64_product_sum": "-297896579619721365608351140874259/2596148429267413814265248164610048",
+      "exact_rounded": -0.11474558860403154,
+      "sum_absolute_products": 1702739170069435.0,
+      "cancellation_ratio": 1.4839256051448848e+16,
+      "einsum_absolute_error": 0.01025441139596845,
+      "dot_absolute_error": 0.0628707389383646,
+      "saved_dot_absolute_difference": 0.052616327542396146
+    },
+    {
+      "index": 2,
+      "saved": -1.0,
+      "einsum": -1.0,
+      "dot": -0.6529675823909822,
+      "exact_binary64_product_sum": "-509786024611957337998512542803247/649037107316853453566312041152512",
+      "exact_rounded": -0.7854497360242376,
+      "sum_absolute_products": 4731634857976667.0,
+      "cancellation_ratio": 6024109043472461.0,
+      "einsum_absolute_error": 0.21455026397576238,
+      "dot_absolute_error": 0.13248215363325544,
+      "saved_dot_absolute_difference": 0.3470324176090178
+    },
+    {
+      "index": 3,
+      "saved": -0.25,
+      "einsum": -0.25,
+      "dot": -0.18413539674286483,
+      "exact_binary64_product_sum": "-632661702576990949700069747702931/2596148429267413814265248164610048",
+      "exact_rounded": -0.24369242353200762,
+      "sum_absolute_products": 1313266176127847.2,
+      "cancellation_ratio": 5389031620654210.0,
+      "einsum_absolute_error": 0.0063075764679923745,
+      "dot_absolute_error": 0.05955702678914279,
+      "saved_dot_absolute_difference": 0.06586460325713517
+    },
+    {
+      "index": 4,
+      "saved": -0.25,
+      "einsum": -0.25,
+      "dot": -0.34886378753052305,
+      "exact_binary64_product_sum": "-346849948364364680870680024240299/1298074214633706907132624082305024",
+      "exact_rounded": -0.2672034807056386,
+      "sum_absolute_products": 3794191881585115.0,
+      "cancellation_ratio": 1.4199634943247388e+16,
+      "einsum_absolute_error": 0.0172034807056386,
+      "dot_absolute_error": 0.08166030682488445,
+      "saved_dot_absolute_difference": 0.09886378753052305
+    },
+    {
+      "index": 5,
+      "saved": -0.5,
+      "einsum": -0.5,
+      "dot": -0.6268309441147782,
+      "exact_binary64_product_sum": "-3894834482223542858525254006399915/5192296858534827628530496329220096",
+      "exact_rounded": -0.7501178357746277,
+      "sum_absolute_products": 4763088959965036.0,
+      "cancellation_ratio": 6349787637093464.0,
+      "einsum_absolute_error": 0.25011783577462765,
+      "dot_absolute_error": 0.1232868916598494,
+      "saved_dot_absolute_difference": 0.12683094411477824
+    },
+    {
+      "index": 6,
+      "saved": -0.09375,
+      "einsum": -0.09375,
+      "dot": -0.10143404255970456,
+      "exact_binary64_product_sum": "-286604945306790205256579665088201/2596148429267413814265248164610048",
+      "exact_rounded": -0.11039620927516265,
+      "sum_absolute_products": 405056035932903.9,
+      "cancellation_ratio": 3669111816360481.5,
+      "einsum_absolute_error": 0.016646209275162648,
+      "dot_absolute_error": 0.008962166715458084,
+      "saved_dot_absolute_difference": 0.0076840425597045625
+    },
+    {
+      "index": 7,
+      "saved": -0.021484375,
+      "einsum": -0.021484375,
+      "dot": -0.022481908762683564,
+      "exact_binary64_product_sum": "-3559367452759457133299798283709/162259276829213363391578010288128",
+      "exact_rounded": -0.02193629555310963,
+      "sum_absolute_products": 30829907420149.36,
+      "cancellation_ratio": 1405429068253915.0,
+      "einsum_absolute_error": 0.00045192055310962757,
+      "dot_absolute_error": 0.0005456132095739365,
+      "saved_dot_absolute_difference": 0.000997533762683564
+    }
+  ],
+  "residual_norms": {
+    "saved": 1.2844748502283494,
+    "einsum": 1.2844748502283494,
+    "dot": 1.3150333564374745,
+    "exact_rounded": 1.2504678011456873
+  },
+  "normal_equation": {
+    "saved": [
+      0.0,
+      0.25474155525645126,
+      -0.024786996875856507,
+      0.0,
+      -0.0006203210896981819,
+      0.0006709124075736853,
+      0.0,
+      0.0006203210896981819,
+      -0.0006709124075736853
+    ],
+    "einsum": [
+      0.0,
+      0.25474155525645126,
+      -0.024786996875856507,
+      0.0,
+      -0.0006203210896981819,
+      0.0006709124075736853,
+      0.0,
+      0.0006203210896981819,
+      -0.0006709124075736853
+    ],
+    "dot": [
+      0.0,
+      0.27235594009521474,
+      0.0006601095747791982,
+      0.0,
+      1.6519947648280006e-05,
+      0.0007459171269549464,
+      0.0,
+      -1.6519947648280006e-05,
+      -0.0007459171269549464
+    ],
+    "exact_AtAx": [
+      0.0,
+      0.2504613686822966,
+      -0.02499645612617248,
+      0.0,
+      -0.0006255630313119287,
+      0.0006763179554125552,
+      0.0,
+      0.0006255630313119287,
+      -0.0006763179554125552
+    ],
+    "saved_absolute_errors_vs_exact_AtAx": [
+      0.0,
+      0.004280186574154626,
+      0.00020945925031597002,
+      0.0,
+      5.241941613746814e-06,
+      5.405547838870017e-06,
+      0.0,
+      5.241941613746814e-06,
+      5.405547838870017e-06
+    ],
+    "dot_absolute_errors_vs_exact_AtAx": [
+      0.0,
+      0.02189457141291811,
+      0.025656565700951674,
+      0.0,
+      0.0006420829789602087,
+      6.959917154239107e-05,
+      0.0,
+      0.0006420829789602087,
+      6.959917154239107e-05
+    ]
+  },
+  "csv_count": 13332,
+  "target_group": {
+    "case": "E",
+    "regime": "clean",
+    "arm": "N8",
+    "attempted": 1,
+    "available": 0,
+    "useful_count": 0,
+    "useful_yield": 0.0,
+    "median_error_degrees": 180.0,
+    "p90_error_degrees": 180.0,
+    "maximum_error_degrees": 180.0,
+    "empirical_cdf_integral_auc5_percent": 0.0,
+    "recall": {
+      "1": 0.0,
+      "2": 0.0,
+      "5": 0.0,
+      "10": 0.0,
+      "20": 0.0,
+      "90": 0.0,
+      "180": 0.0
+    }
+  },
+  "decisions": [
+    {
+      "case": "G",
+      "regime": "P",
+      "attempted": 1120,
+      "useful_count": 7,
+      "pass_gate": false
+    },
+    {
+      "case": "G",
+      "regime": "S",
+      "attempted": 1120,
+      "useful_count": 6,
+      "pass_gate": false
+    },
+    {
+      "case": "N",
+      "regime": "P",
+      "attempted": 1120,
+      "useful_count": 12,
+      "pass_gate": false
+    },
+    {
+      "case": "N",
+      "regime": "S",
+      "attempted": 1120,
+      "useful_count": 13,
+      "pass_gate": false
+    },
+    {
+      "case": "C",
+      "regime": "P",
+      "attempted": 1120,
+      "useful_count": 0,
+      "pass_gate": false
+    },
+    {
+      "case": "C",
+      "regime": "S",
+      "attempted": 1120,
+      "useful_count": 0,
+      "pass_gate": false
+    }
+  ],
+  "optimistic_A2_headroom": [
+    {
+      "case": "G",
+      "regime": "S",
+      "D4_attempted": 1120,
+      "D4_useful_count": 6,
+      "A2_attempted": 448,
+      "A2_useful_count": 341,
+      "pass_gate": false
+    },
+    {
+      "case": "N",
+      "regime": "S",
+      "D4_attempted": 1120,
+      "D4_useful_count": 13,
+      "A2_attempted": 448,
+      "A2_useful_count": 357,
+      "pass_gate": false
+    },
+    {
+      "case": "C",
+      "regime": "S",
+      "D4_attempted": 1120,
+      "D4_useful_count": 0,
+      "A2_attempted": 448,
+      "A2_useful_count": 115,
+      "pass_gate": false
+    }
+  ],
+  "recomputed_gate": false,
+  "residual_diagnostics_used_by_gate": false,
+  "original_output_unchanged": true
+}

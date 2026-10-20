@@ -1,0 +1,43 @@
+{
+  "schema": "evr0025c.supervision.v1",
+  "status": "completed",
+  "operation": "noise",
+  "expected_commit": "93349f34790496c5c838a2b97f9440a471d6dc68",
+  "source_sha256": {
+    "experiments/0025c-rs-noise/core.py": "256da665cbdbf5c59973acd9b2b0bc16dd2ffeb5e085b1fcf9462b80a84c0c14",
+    "experiments/0025c-rs-noise/fixtures.py": "75345172c395248920fb99529b950385e87955f99024119288cb279e9a374509",
+    "experiments/0025c-rs-noise/run.py": "2f6eab6109fe4cec12f349fcd1a88fce9ff0dfb92fc7a282daf9bbdc080ee7e1",
+    "experiments/0025c-rs-noise/audit_saved.py": "e24a771a5d0fd5eb6e7e820de98fb95e213070f798caa8f73c7a88cc4799831b",
+    "experiments/0025c-rs-noise/supervise.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+    "protocols/0025c-rs-initializer-noise.md": "bcab6b419eff6b53ff0bb6a593a0788be4e4a0ab66bd90deeb19aaf3ac9ab6a5",
+    "experiments/0025-rs-identifiability/check_manufactured.py": "0b058405fbc151b8765dafdb4e4a81f8c7e48f515da3d217b2df33b9a9565683"
+  },
+  "command": [
+    "$PYTHON",
+    "$REPOSITORY/experiments/0025c-rs-noise/run.py",
+    "--expected-commit",
+    "93349f34790496c5c838a2b97f9440a471d6dc68",
+    "--output-dir",
+    "$PRIVATE/0025c-feasibility/noise-01"
+  ],
+  "cwd": "$REPOSITORY",
+  "python_version": "3.9.6",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "hard_timeout_seconds": 1800.0,
+  "group_rss_limit_kib": 8388608,
+  "rss_sampling": "All observed descendants and retained process groups, approximately every 0.1s; transient peaks may be missed",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 13.104796458,
+  "peak_group_rss_kib": 49008,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "stdout_sha256": "9cb5a8c3ef7cfa32bc3bdb9a075e4ecaa5f57dc4d6b03c86c773d3c7fad8d6a9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
