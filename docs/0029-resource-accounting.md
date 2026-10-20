@@ -31,3 +31,5 @@ The [0022 operation](../results/0022-preparation/acquisition/operation.json) act
 The [completed0029 acquisition](../results/0029-preparation/acquisition/README.md) read257,104,722 bytes, including1,054redirect-body bytes beyond the257,103,668 asset payload. All83files verified. Retain the entire300MB debit and the1,349,868,314-byte conservative planning balance. No installation or benchmark payload at this receipt.
 
 Before scientific payload access, the new60,000,000-byte hold covers386RGB+6initial masks+48query masks and bounded ZIP local headers. Only the first two phases are prepared; query GT is closed pending all-six prediction sealing. Retain every preceding allowance. Scientific assets are not rehosted.
+
+The completed first scientific acquisition read54,201,147RGB response-body bytes and27,524initial-mask bytes, total54,228,671. All392files verified. The48query masks remain unacquired; retain the full60MB hold and planning balance1,289,868,314bytes.

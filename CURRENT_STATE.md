@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: fixed 0029 real-video evidence diagnostic prepared
+## Current work: 0029 real-video evidence coverage passes; accuracy untested
+
+The [complete first-stage result](results/0029-development/evidence/README.md) has38 actionable queries out of48, across all6 fixed development videos (3/8/8/8/8/3). All54SP extractions and48LG matches completed; independent saved-output audit passed77,458checks. Acquisition read54,228,671bytes and computation took27.674457s under the outer limit. The six parents are permanent development. This is an evidence-availability result; no scientific SAM predictions or query GT were accessed, and no accuracy improvement is established. Next qualify/freeze the complete native comparison, mandatory controls and all-six GT barrier. No manuscript.
+
+## Historical: fixed 0029 real-video evidence diagnostic prepared
 
 The [prospective protocol](protocols/0029-signed-memory-diagnostic.md) fixes six DAVIS development parents,48 queries, all signed/unsigned/native-bank/same-evidence prompt controls and numerical gates before media access. Only the first evidence stage is prepared:386RGB+6initial masks,54 SuperPoint extractions and48 LightGlue matches. A full60,000,000-byte acquisition hold is allocated; conservative planning balance1,289,868,314bytes. Query GT and scientific SAM execution remain closed pending their separate complete source freeze. No scientific media have been acquired at this source preparation, and no accuracy gain or manuscript is established.
 

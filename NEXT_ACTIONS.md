@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: run the fixed evidence stage before SAM comparisons
+## Current: qualify complete native controls, then test actual segmentation
 
-1. Preserve native runtime02 and the original installation/audit failures. [PR62 result and merged-main CI are verified](docs/0029-native-publication-verification.md); do not repeat acquisition or native qualification.
-2. Review and run manufactured tests for the [fixed diagnostic](protocols/0029-signed-memory-diagnostic.md), then commit and verify exact-source CI before the single bounded RGB phase, initial-mask phase and54-extraction/48-match evidence operation. Publish all outcomes. No query GT or scientific SAM stage is admitted yet.
-3. If fewer than four videos have any actionable query, close this fixed variant without SAM/GT or same-cohort tuning. Otherwise freeze/qualify the complete native video predictor, all same-evidence controls, all-six prediction-seal verifier and evaluator before subsequent execution. Preserve all48queries and complete six-video coverage.
-4. No manuscript before innovative, reproducible +3 absolute J&F on each of two independently held-out sources, complete-cost strong controls, recording-level uncertainty, ablations and replication. A development pass only admits later tests.
+1. Publish and verify the [complete evidence result](results/0029-development/evidence/README.md), exact result CI and merged-main CI. Retain every original acquisition/prediction/audit receipt; no repeat downloads or matching. All6 videos passed the fixed necessary coverage gate, with38/48 actionable queries.
+2. Preserve the immutable first-stage source/protocol at c09e240009869402e2b97a55af42617eea3c6405. Complete/freeze the separate native-video worker,25-frame manufactured qualification, all same-evidence controls, six prediction seals, GT barrier and evaluator. Require review and exact-source CI before native qualification and scientific SAM; no query GT before all six complete clean predictions.
+3. Run every complete video and all48 fixed queries once under the original resource/control limits. Evaluate only after all predictions are sealed. Preserve necessary oracle headroom and signed-versus-strong-control numerical gates; no cohort, age, point or threshold rescue tuning.
+4. No manuscript before innovative, reproducible +3 absolute J&F on each of two independent held-out sources, complete-cost strong controls, recording-level uncertainty, ablations and replication. This availability pass is not accuracy improvement.
 
 ## Historical: resolve one falsifiable information question before implementation
 
