@@ -1,12 +1,18 @@
 # Current state
 
+## Current development: qualify a learned memory-content correction
+
+The [0030 proposal](docs/0030-memory-content-proposal.md) asks whether a causal residual head can amortize a multistep optimizer of training-only future segmentation loss better than the identical head trained directly on that loss. This changes spatial memory content, not the closed 0029 deletion bank. [Closest-source review](docs/0030-memory-content-prior.md) identifies existing future-return memory selection, learned content reinforcement and distillation; no novelty or performance claim follows. A one-step gradient target is locally equivalent to direct training under the stated assumptions.
+
+The [source feasibility review](docs/0030-learning-feasibility.md) locates the native memory/autograd interfaces, but CPU backward memory and runtime remain unmeasured. The immediate work is one manufactured gradient/API check using existing weights. No real training, new labels, protected evaluation or manuscript is admitted by that check. The [development policy](docs/0030-development-policy.md) permits bounded documented TRAIN/DEV iteration for this different method while preserving historical failures and the two-independent-source +3 J&F final gate. The main research goal remains unmet.
+
 ## Current result: 0029 fixed memory-deletion diagnostic failed and closed
 
 The [complete six-video replication](results/0029-development/native-attempt-02/README.md) gives signed fixed-query J93.923162% versus baseline93.935668% and the strongest predicted-IoU control93.970921% (signed margin−0.047759percentage points). Even admissible oracle deletion gains only0.076821points against the required2; none of six per-video margins is positive. Three numerical efficacy conditions fail. The [independent audit](results/0029-development/native-attempt-02/audit/receipt.json) passes12,463checks/0errors. All386frames/48queries/606native calls and complete costs are preserved; attempt01 stays ineligible and separate.
 
 The [closure decision](docs/0029-closure.md) forbids rescue tuning or held-out expansion of this fixed variant. [Saved diagnosis](docs/0029-saved-mechanism-review.md) finds28actions,13improvements and15losses, with insufficient candidate headroom. [Joint object ownership](docs/0029-successor-source-review.md) was separately screened and is not admitted because its present formulation duplicates close priors. A materially different evidence-backed mechanism is still needed. No substantial held-out improvement or manuscript; the main goal remains unmet.
 
-The first publication check found one incorrect provenance description for a constructed historical summary; a metadata-only correction preserves the initial failure and all scientific values. The narrow second check passes180checks, with73payload files unchanged. Source098dee CI39390638932 preceded the scientific replication; result publication CI remains to be verified.
+The first publication check found one incorrect provenance description for a constructed historical summary; a metadata-only correction preserves the initial failure and all scientific values. The narrow second check passes180checks, with73payload files unchanged. Source098dee CI39390638932 preceded the scientific replication. [Result and merged-main publication are verified](docs/0029-complete-result-publication-verification.md): result b9f071 CI39395006116 and PR65 merge 6ca373e CI39395943736 both passed.
 
 ## Historical preparation: test-only platform correction; replication awaits CI
 

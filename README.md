@@ -1,30 +1,18 @@
 # Embodied Vision Reliability
 
-Current result: [0028 normal-information comparison failed](results/0028-development/README.md): ANG 2.6954% versus strongest control 51.0001% AUC@5. All 24 fits completed; independent audit agrees. The fixed variant is closed, with no manuscript admission. See [current state](CURRENT_STATE.md).
+Current result: [0029 fixed memory deletion failed](results/0029-development/native-attempt-02/README.md): signed fixed-query J is 93.9232% versus the strongest control's 93.9709%; the permitted deletion bank's oracle gain is only 0.0768 points. All six videos completed and an independent saved-output audit passed. The fixed variant is closed. [Publication and merged-main CI are verified](docs/0029-complete-result-publication-verification.md).
 
 **Goal: a substantial, reproducible computer-vision improvement relevant to embodied systems or driving before a CVPR-targeted manuscript. No method currently meets that goal.**
 
-The latest normal-guided correction reduced its own fitting objective but lost
-substantially to the geometric pose baseline. Earlier tangent and moment-based
-initializers also failed their fixed comparisons.
-All failures remain visible and independently audited. A different testable
-mechanism is required before another task experiment. This concerns visual
-geometry for embodied systems and driving; no controller or driving result
-is claimed.
+The [0030 development question](docs/0030-memory-content-proposal.md) asks whether a causal memory-content residual can learn from a multistep future-loss optimizer more effectively than the same head trained directly. Existing learned memory selection, content reinforcement and distillation are explicitly acknowledged. The immediate artifact is a [manufactured gradient/API probe](experiments/0030-memory-content/README.md); actual CPU backward remains unmeasured at this source freeze. No controller or driving result is claimed.
 
-The next experiment must test a concrete accuracy mechanism against strong
-controls. The existing camera-motion target is at least **+2 absolute AUC@5 percentage points**
-at matched complete-pipeline time on two independent held-out sources, positive
-paired scene-level uncertainty bounds, and no more than0.5point AUC@20 loss.
-Novelty, ablations and independent reproduction are also required before a
-paper. A successful software check or reduction in operation count does not
-meet this standard. [Full prospective gate](protocols/0012-score-bounds-development.md).
-The [0029 task screen](docs/0029-task-screen.md) records rejected alternatives and unresolved resource contracts. A task change requires an equally substantial new gate before outcomes; no replacement method or successful result is admitted yet.
+The current VOS manuscript gate is **+3 absolute official J&F points on each of two independent held-out sources**, positive paired recording-level 95% intervals, neither J nor F down more than 0.5 point, strong controls at a common complete-pipeline budget, ablations and independent replication. A successful software check or training-loss reduction does not meet it. [Development and final-evidence policy](docs/0030-development-policy.md). Historical camera-motion gates and failed results remain unchanged.
 
 ## Current evidence · October 20, 2026
 
 | Study | Verified result | Decision |
 |---|---|---|
+| [0029 fixed memory deletion](results/0029-development/native-attempt-02/README.md) | Six videos/386 frames/48 queries; signed loses 0.047759 pp to strongest control; admissible oracle headroom 0.076821 pp; independent audit 12,463 checks/0 errors. | Closed. Custom query J, not official J&F; no manuscript. |
 | [0028 normal information](results/0028-development/README.md) | ANG AUC@5 2.6954% versus E 51.0001% (−48.3047 pp), all 3 scene margins negative; independent audit 2,451 checks pass. | Closed. No held-out expansion or manuscript. |
 | [0027 affine tangent](results/0027-development/README.md) | All138 rows;57/128 useful noisy T poses versus57/128V. Two of four fixed clauses fail;41,707 audit checks pass. | Closed. No real-data expansion or manuscript. |
 | [0026 calibration moments](results/0026-development/README.md) | AUC@5 73.5881% versus strongest control74.1397% (−0.5516pp); three of four conditions fail. Independent saved-output audit agrees. | Closed. No held-out expansion or manuscript. |

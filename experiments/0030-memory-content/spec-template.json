@@ -1,0 +1,37 @@
+{
+  "repo": "__REPOSITORY__",
+  "commit": "__REVIEWED_REPO_COMMIT__",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "__PRIVATE__/work/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "-B",
+    "-W",
+    "error",
+    "__REPOSITORY__/experiments/0030-memory-content/probe.py",
+    "--repo-root",
+    "__REPOSITORY__",
+    "--expected-commit",
+    "__REVIEWED_REPO_COMMIT__",
+    "--native-root",
+    "__PRIVATE__/work/0029-runtime-02",
+    "--native-commit",
+    "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+    "--source-sha256",
+    "5d8414398a715c3d8e5bd81f4c5fb1daa6490142a5b378f1a0c271daf0bed6dd",
+    "--output-dir",
+    "__PRIVATE__/work/0030-memory-content/gradient-probe/run-01"
+  ],
+  "operation_output": "__PRIVATE__/work/0030-memory-content/gradient-probe/supervision-01",
+  "result_file": "__PRIVATE__/work/0030-memory-content/gradient-probe/run-01/receipt.json"
+}

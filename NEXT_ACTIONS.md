@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: publish the failed 0029 result and select a distinct information question
+## Current: qualify the minimum 0030 trainable memory-content path
+
+1. Review the compact manufactured gradient probe, reuse the qualified runtime/supervisor and cached weights, and measure one complete CPU operation. Check native zero-residual parity, an explicitly declared raw-logit gradient surrogate, finite memory/head gradients and unchanged frozen parameters. No benchmark data or efficacy claim belongs to this check.
+2. If the backward path fits the resource envelope, complete one bounded iterative TRAIN/DEV campaign file: exact residual family, teacher and direct-control gradient paths, parent split, full development-mask acquisition, training cost and selection budget. A fixed-context gradient is not full recurrent BPTT. Use the same architecture, supervision and fair complete training cost for strong controls.
+3. Evaluate learned students in their own complete causal rollouts. Teacher optimization, target regression and artificial checks do not establish a useful method. Keep the failed 0029 bank closed, and allow only the documented development iterations for the distinct 0030 question.
+4. Do not write a manuscript before the unchanged substantial two-independent-source held-out result, strong complete-cost controls, uncertainty, ablations and independent replication.
+
+## Historical: publish the failed 0029 result and select a distinct information question
 
 1. Publish the complete audited six-video result and verify exact result/main CI. Preserve original attempt01, the failed Linux CI and the first publication-metadata failure. No result or cost is replaced by a successful subset.
 2. Keep the fixed B/D1/D3 instantaneous deletion variant closed. Its admissible oracle gain is only0.076821points; do not tune ages, witnesses, thresholds, targets or cohort to rescue it. The same-information controls and all six negative strongest-control margins remain visible.
