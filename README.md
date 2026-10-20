@@ -1,6 +1,8 @@
 # Embodied Vision Reliability
 
-Latest result: the [fixed initial-boundary-pair information screen](results/0031-development/complete-01/README.md) fails its prospective continuation rule. Across 96 TRAIN events, paired crossing correctness is 65.3646% versus native 82.6497%; its joint loss is worse than native and the deranged-pair control. No paired refinement head is admitted. A five-choice global threshold selected on TRAIN chooses the native threshold 0, so DEV J&F remains 92.1772%. Neither result is an improvement or manuscript contribution.
+Latest result: the [fixed current-frame crop-detail baseline](results/0032-development/complete-01/README.md) loses **3.7811 J&F points** on DEV (92.1772%→88.3962%), with both parents worse. All241 outputs were sealed before scoring;239 additional encodings/decodings cost145.7963seconds. The unchanged rule closes this exact known-method adaptation. No substantial improvement or new method is established.
+
+Previous result: the [fixed initial-boundary-pair information screen](results/0031-development/complete-01/README.md) fails its prospective continuation rule. Across 96 TRAIN events, paired crossing correctness is 65.3646% versus native 82.6497%; its joint loss is worse than native and the deranged-pair control. No paired refinement head is admitted. A five-choice global threshold selected on TRAIN chooses the native threshold 0, so DEV J&F remains 92.1772%. Neither result is an improvement or manuscript contribution.
 
 The closed learned-memory comparison: the complete seven-arm rho=0.15 / seed=0 comparison closes this exact channel-affine memory-content family under its predeclared rule. All-active direct training gains **+0.2233 J&F points** overall but changes the two DEV parents by **+0.4765/−0.0299**; both had to improve. Multistep distillation loses **0.4934** points, and the current-GT-memory control gains only **+0.2139**. [All seven arms and actual costs](results/0030-development/active-write-01/README.md) · [Closure and limits](results/0030-development/channel-affine-closure.md). These exposed single-object development results do not meet the research goal.
 
@@ -18,6 +20,8 @@ The current VOS manuscript gate is **+3 absolute official J&F points on each of 
 
 | Study | Verified result | Decision |
 |---|---|---|
+| [0032 fixed crop detail](results/0032-development/complete-01/README.md) | DEV J&F−3.7811pp; both parents decline; all241 predictions and150 interior metrics complete. | Exact recipe closed. Known-method adaptation, no paper. |
+| [0031 paired boundary and calibration](results/0031-development/complete-01/README.md) | Paired crossing correctness65.36% versus native82.65%; global calibration selects native threshold0. | Pair lookup closed; no gain. |
 | [0030 learned memory content, complete seven-arm result](results/0030-development/active-write-01/README.md) | J&F 92.1772 native; 91.6838 multistep; 91.9915 one-step; 92.3911 GT-memory; 91.2875 cost-matched direct; 91.4281 update-matched direct; 92.4005 all-active direct. | Exact family closed by fixed rule: all-active improves only one of two DEV parents. No paper or held-out success. |
 | [0029 fixed memory deletion](results/0029-development/native-attempt-02/README.md) | Six videos/386 frames/48 queries; signed loses 0.047759 pp to strongest control; admissible oracle headroom 0.076821 pp; independent audit 12,463 checks/0 errors. | Closed. Custom query J, not official J&F; no manuscript. |
 | [0028 normal information](results/0028-development/README.md) | ANG AUC@5 2.6954% versus E 51.0001% (−48.3047 pp), all 3 scene margins negative; independent audit 2,451 checks pass. | Closed. No held-out expansion or manuscript. |

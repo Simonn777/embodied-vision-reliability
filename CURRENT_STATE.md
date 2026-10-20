@@ -1,5 +1,17 @@
 # Current state
 
+## Current: fixed crop-detail baseline failed and is closed
+
+The [complete0032 result](results/0032-development/complete-01/README.md) retains241 sealed predictions,96 TRAIN events,154 DEV raw rows and150 DEV interior frames. The simplified SAMRefiner-inspired adaptation adds239 image encodings and239 decoder calls while leaving native video history unchanged. It is an established-method adaptation, not an invention or full reproduction.
+
+DEV J&F falls **92.1772205%→88.3961688% (−3.7810516pp)**. Cat-girl/upside-down lose5.7743521/1.7877512points; equal-parent J/F lose1.1874663/6.3746370points. TRAIN mean loses0.6646533points, with two improving and two declining parents retained. All four predeclared continuation conditions fail. The exact crop/prompt/selection recipe is closed without outcome-based rescue; no manuscript or held-out success.
+
+Prediction/metric outer times are145.796326875/1.975912333seconds; peak RSS1,384,160/78,672KiB. All241 native zero-logit parities pass, model weights are unchanged, and prediction seal precedes current GT decoding. Native-cache cost458.300764250seconds remains inherited separately; no matched-pipeline efficiency claim. Six manufactured geometry tests passed before execution.
+
+[Detail-refinement priors](docs/0032-detail-prior.md) cover error gating, local detail fusion and temporal memory integration. [Application grounding](docs/0032-application-grounding.md) limits current DAVIS evidence to mask accuracy; first-mask single-target J/F does not establish driving identity association, ego-motion or control. A [source-only motion-information question](docs/0032-successor-information-proposal.md) remains covered by a strong two-layer-motion precedent and is not an admitted new method. A different supervised native-feature baseline is only being assessed for feasibility, with no new execution or efficacy claim.
+
+PR68 result e550544 and merged main2845418 both passed exact CI39419197116/39420096298; [verification metadata](results/0032-development/complete-01/pr68-verification.json). The original goal and two-independent-source paper gate remain unmet.
+
 ## Current: fixed paired-boundary lookup failed; calibration selects native
 
 The [0031 complete evidence](results/0031-development/complete-01/README.md) covers all 96 fixed TRAIN events, 87 unique future frames and 6,144 sampled native crossings. Initial-reference pairs, independent foreground/background maxima, an outside-only derangement and native zero displacement use the same candidate geometry. All rankings were sealed before current TRAIN labels. No whole-mask modification or DEV pairing evaluation occurred.

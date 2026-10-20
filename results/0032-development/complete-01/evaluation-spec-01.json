@@ -1,0 +1,75 @@
+{
+  "output": "${WORKSPACE}/work/0032-crop-detail/evaluation-01",
+  "python": "${WORKSPACE}/work/0029-runtime-02/installation/venv/bin/python",
+  "campaign_root": "${WORKSPACE}/work/0030-memory-content/campaign",
+  "evaluation_root": "${WORKSPACE}/work/0030-memory-content/evaluation",
+  "source_sha256": {
+    "${WORKSPACE}/work/0032-crop-detail/evaluate.py": "9567dc40f25e757195627c0b7c36fe0be0b14a51355b920c20e8710c46bfc543",
+    "${WORKSPACE}/work/0032-crop-detail/METRIC_SCOPE.md": "f1bb88833341ac0892243bb50d399b0ac4a8af5aedf4f3b153621326a571fad1",
+    "${WORKSPACE}/work/0032-crop-detail/ADMISSION.md": "333f776b2b3ceb3b5e91e8d64cfcd3dad57a117a497da749d56f411776893101",
+    "${WORKSPACE}/work/0032-crop-detail/refine.py": "dd9a8a8ca0f4fb9f5b7d93296f1d5f42d9e8e1f4b5410ac57f987c2c209ef36b",
+    "${WORKSPACE}/work/0032-crop-detail/SCOPE.md": "4e552f067e13dcca50d0d0080c27292d41d2cb68bc3aa86a0ebf2fc2c40134fc",
+    "${WORKSPACE}/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+    "${WORKSPACE}/work/0030-memory-content/campaign/cache_baselines.py": "5d16b4658cef5d451e88f33b3b3f99562a9c782abf199b1e22c1c9c5b0b8f0da",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f"
+  },
+  "bindings": {
+    "cache_receipt": {
+      "path": "${WORKSPACE}/work/0030-memory-content/campaign/cache-01/receipt.json",
+      "sha256": "75b054bbc06796a175bb028386ed91a2809e4dc1545e74a420f29a04cc7c14be",
+      "bytes": 414146
+    },
+    "cache_outer": {
+      "path": "${WORKSPACE}/work/0030-memory-content/campaign/cache-supervision-01/receipt.json",
+      "sha256": "d7d9d59d664b55c2ca897f3c8c112133f54ff6ee894f5e17d98d85a13c81aceb",
+      "bytes": 1362
+    },
+    "cache_operation": {
+      "path": "${WORKSPACE}/work/0030-memory-content/campaign/cache-operation-01.json",
+      "sha256": "50ca8c4222da050d5e8ccc6bca132913ebdafb068e99944d1b3a248634bdd7ad",
+      "bytes": 1763
+    },
+    "cache_worker_spec": {
+      "path": "${WORKSPACE}/work/0030-memory-content/campaign/cache-spec-01.json",
+      "sha256": "83e7ad326c64e203cac223bd818cbf783b95d012c7438cc587df19e44009cfa3",
+      "bytes": 1118
+    },
+    "mapping": {
+      "path": "${WORKSPACE}/work/0030-memory-content/data-acquisition/complete-mapping.json",
+      "sha256": "866bf2d4403d8f5520f0af1a168f043a58fa0f2e1ba47d8aea3d53fca8ab2990",
+      "bytes": 245673
+    },
+    "data_index": {
+      "path": "${WORKSPACE}/work/0030-memory-content/campaign/data-index-01.json",
+      "sha256": "879bdaced9dda0637f0e678de5c6d3478fc2c51e50e5eee7b5867aefa7b9c99d",
+      "bytes": 257070
+    },
+    "refinement_receipt": {
+      "path": "${WORKSPACE}/work/0032-crop-detail/prediction-01/receipt.json",
+      "sha256": "877b33ad1bb1782cdf9b6f2a9dc6ae831e26d47163b4a42a9b556d5e4f6e0ae2",
+      "bytes": 1294392
+    },
+    "refinement_outer": {
+      "path": "${WORKSPACE}/work/0032-crop-detail/prediction-supervision-01/receipt.json",
+      "sha256": "0a5897e91111f76ef149ecd585f693a5b1c3dc3f3e193fabae595e4c668e5a10",
+      "bytes": 2571
+    },
+    "refinement_operation": {
+      "path": "${WORKSPACE}/work/0032-crop-detail/prediction-outer-spec-01.json",
+      "sha256": "65f7c945dfcd5a900c20c5d88b490bcff18c44ad6b276ded32fdc61c5d86e008",
+      "bytes": 1253
+    },
+    "refinement_worker_spec": {
+      "path": "${WORKSPACE}/work/0032-crop-detail/prediction-spec-01.json",
+      "sha256": "2cc967fbdbf5cb03f202708a5f80f842dc8b63272460431bcbc0d658177654f2",
+      "bytes": 4656
+    }
+  },
+  "baseline_reference": {
+    "path": "${WORKSPACE}/work/0030-memory-content/campaign/evaluate-native-rho015-seed0-01/evaluation.json",
+    "sha256": "dc56acc9c1c00d03646b6b9ce35580813239ac171f3d58f9d25f2ef42b49cc68",
+    "bytes": 47003
+  }
+}
