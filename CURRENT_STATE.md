@@ -1,6 +1,10 @@
 # Current state
 
-## Current: 0026 failed; fixed variant closed
+## Current preparation: 0027 prospective tangent sensitivity screen
+
+The [new candidate and limits](docs/0027-admission.md) are source-reviewed. It uses local affine image/depth derivatives with two depth offsets; a138-row manufactured necessary test is fixed before execution. No scientific cohort has run at this preparation. Artificial checks are not a research gain. The prior0026 result is published, failed and closed; no manuscript is admitted.
+
+## Historical result: 0026 failed; fixed variant closed
 
 The [complete 80-pair comparison](results/0026-development/README.md) gives
 primary G_lift AUC@5 **73.588101%**, against **74.139670%** for the strongest

@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: publish and close 0026; screen a distinct mechanism
+## Current: 0027 necessary screen, no efficacy claim
+
+1. Finish independent saved-output auditor qualification, freeze the reviewed [0027 source/protocol](experiments/0027-affine-tangent/protocol.md), and verify exact-commit CI.
+2. Run the complete138-row generated sensitivity cohort once under its fixed resource limit; seal observations-only predictions and require clean outer completion before independent evaluation/audit.
+3. A failed necessary gate closes this fixed candidate. If all clauses pass, first qualify a corrected/independent native control because of the disclosed source limitation, then the required full-nine nonminimal control. Passing this screen alone does not permit an accuracy, novelty, speed or manuscript claim.
+4. Keep the substantial two-source matched-cost held-out goal active.
+
+## Historical actions: publish and close 0026; screen a distinct mechanism
 
 1. Preserve [all80 predictions, evaluation and independent audit](results/0026-development/README.md). Publish the failed fixed comparison through PR57, verify exact result/main CI, and keep its original source freeze and all unavailable attempts.
 2. Do not promote descriptive G_all or ordinary F_local multistart as a new successful method. The primary loses0.551569AUC@5points to its strongest control and fails the development gate. Saved-only diagnosis may guide a different hypothesis, but cannot reopen this fixed variant by retuning.

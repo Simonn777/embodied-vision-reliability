@@ -1,0 +1,37 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "-v",
+    "test_audit",
+    "test_pipeline"
+  ],
+  "spec_sha256": "a05e13287cfe812c70e75f3dcce59f09dbb08dfa9c810ea3e34be2611f434a15",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "0f3c9ec5a9c56d6d25ba967b17e1c26d63f4a27d",
+  "hard_timeout_seconds": 30,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.44058991599999997,
+  "peak_group_rss_kib": 36912,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "322bb63cb06f1f0a6621c2f393ca231e43ca01437a5f4a24d5280fa6e5e5c7fe"
+  }
+}

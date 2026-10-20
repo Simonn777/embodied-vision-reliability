@@ -1,6 +1,6 @@
 # Embodied Vision Reliability
 
-Current work: [0026 complete comparison](results/0026-development/README.md). The fixed candidate failed:73.5881% AUC@5 versus74.1397% for its strongest control. No manuscript admission. See [current state](CURRENT_STATE.md).
+Current work: [0027 prospective tangent sensitivity screen](docs/0027-admission.md), with a fixed manufactured falsifier and no scientific outcome yet. The prior0026 comparison failed:73.5881% AUC@5 versus74.1397% for its strongest control. No manuscript admission. See [current state](CURRENT_STATE.md).
 
 **Goal: a reproducible improvement in visual camera-motion estimation before a
 CVPR-targeted manuscript. No method currently meets that goal.**
