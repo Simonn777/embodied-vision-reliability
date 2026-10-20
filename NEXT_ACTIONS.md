@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: preserve the failed pairing screen; establish a credible repair baseline
+## Current: close the fixed crop baseline; require a distinct information advantage
 
-1. Publish [0031's complete TRAIN information screen and calibration control](results/0031-development/complete-01/README.md), retaining the failed first attempt, numerical qualification, all events/candidate outcomes and costs. The unchanged prospective rule closes the fixed initial-pair lookup; do not train its proposed head or tune its feature level/radius/cap/score to these outcomes.
-2. Complete source-only feasibility of a known crop-based mask-refinement adaptation on the existing frozen SAM2 tiny model. Specify prompts, crop geometry, original-coordinate mapping, causal input contract, complete costs and unchanged native baseline before any new bounded TRAIN experiment. Treat this as an established-method control, not an invention; an unavailable or ineffective strong baseline is not evidence for novelty.
-3. Only formulate a distinct mechanism when a concrete remaining error and credible baseline justify it. Keep initial-label adaptation's known precedents and initial-mask reconstruction/input-distribution mismatch explicit. All six DAVIS parents remain exposed development; no protected-source access now.
-4. Preserve the +3 absolute official J&F points on each of two independent held-out sources, paired recording-level 95% intervals, component-loss limits, strong complete-cost controls, ablations and independent replication before writing a manuscript. The goal remains unachieved.
+1. Publish [all0032 results](results/0032-development/complete-01/README.md), complete per-frame records and costs. Its −3.7811-point DEV J&F change and both-parent declines fail every fixed condition. Keep the exact crop/prompt/selection recipe closed; no outcome-based rescue.
+2. Assess one distinct supervised native-feature residual head as a known capacity/control baseline, using the existing frozen fine-scale image features and native logits. Source feasibility comes first; no new executor, fit or gain is currently admitted. Do not infer that a visible GT boundary error is recoverable from causal inputs.
+3. Require a defensible mechanism and an information advantage over the strongest same-input alternatives before an innovation claim. Known error-gated refiners and two-layer-motion segmentation remain close controls, not new methods merely after a SAM2 substitution. Generic DAVIS mask improvements do not establish driving association or control.
+4. Preserve the +3 absolute official J&F points on each of two independent held-out sources, paired recording-level95% intervals, component-loss limits, strong complete-pipeline-cost controls, ablations and independent replication before a manuscript. All six current parents stay permanently exposed development. The goal remains unachieved.
 
 ## Historical: fixed channel-affine closure and boundary-screen motivation
 

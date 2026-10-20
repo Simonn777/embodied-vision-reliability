@@ -1,0 +1,28 @@
+{
+  "repo": "${WORKSPACE}/work/embodied-vision-reliability",
+  "commit": "2845418434ced63a5b411ba0f966964aa0643d90",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "command": [
+    "${WORKSPACE}/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "${WORKSPACE}/work/0032-crop-detail/refine.py",
+    "${WORKSPACE}/work/0032-crop-detail/prediction-spec-01.json"
+  ],
+  "operation_output": "${WORKSPACE}/work/0032-crop-detail/prediction-supervision-01",
+  "result_file": "${WORKSPACE}/work/0032-crop-detail/prediction-01/receipt.json"
+}
