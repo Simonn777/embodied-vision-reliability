@@ -1,0 +1,86 @@
+{
+  "schema": "evr0029.exit-checked-operation.v1",
+  "status": "completed",
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "$PRIVATE/0030-memory-content/evaluation/evaluate_rollout.py",
+    "$PRIVATE/0030-memory-content/campaign/evaluate-gt_memory-rho015-seed0-01-spec.json"
+  ],
+  "spec_sha256": "73e6dc5ddae6605749f7bdd3f45ae85d4c588eb59409c572b340e547d8b348cd",
+  "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "43aef1615ee95d636f5fe9a712740f87ea8b3e17",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "child_pid": 95423,
+  "declared_child_pgid": 95423,
+  "observed_child_pgid": 95423,
+  "pgid_observation_error": null,
+  "exit_observed_at_seconds": 1.0554763750405982,
+  "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+  "pre_poll_snapshot": {
+    "label": "before_poll",
+    "started_seconds": 1.0307276250096038,
+    "finished_seconds": 1.0554659999907017,
+    "known_groups": [
+      95423
+    ],
+    "discovered_groups": [
+      95423
+    ],
+    "rows": [
+      [
+        95423,
+        95422,
+        95423,
+        0
+      ]
+    ]
+  },
+  "post_exit_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 1.0554769160225987,
+    "finished_seconds": 1.0757378750131465,
+    "known_groups": [
+      95423
+    ],
+    "discovered_groups": [],
+    "rows": []
+  },
+  "triggering_snapshot": null,
+  "cleanup_snapshots": [
+    {
+      "label": "final",
+      "started_seconds": 1.0757459159940481,
+      "finished_seconds": 1.0947077500168234,
+      "known_groups": [
+        95423
+      ],
+      "discovered_groups": [],
+      "rows": []
+    }
+  ],
+  "signal_attempts": [],
+  "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 1.0947177080088295,
+  "peak_group_rss_kib": 73200,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "0aa925436910a7e70f5c2a0900f8b387d732a172b2c899f68b51a899bdda686c"
+}

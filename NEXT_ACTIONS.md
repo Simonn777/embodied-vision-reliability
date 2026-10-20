@@ -2,10 +2,10 @@
 
 ## Current: execute the bounded 0030 learning comparison
 
-1. Finish the complete six-parent baseline/image-feature cache operation under the existing CPU/RSS/time envelope. Preserve all native predictions and costs.
-2. Construct the five-step bounded teacher on all 48 TRAIN anchors, then fit multistep, one-step and GT-memory heads. Run the same-head direct controls with update and full-cost accounting.
-3. Evaluate each final head on its own complete causal DEV rollout, using original-resolution J/F and disclosed single-object subset aggregation. Keep all unsuccessful runs and use only the three documented development configurations.
-4. Repeat the selected comparison with seed 1 before considering protected data. No manuscript before the unchanged substantial independent-source held-out result, closest-prior distinction, strong controls, uncertainty, ablations and replication.
+1. Complete the already-running same-head direct training and full causal DEV rollouts under both actual complete-cost and 288-update comparisons. Preserve all measured costs and failures.
+2. Compare all arms with the published first-configuration results: multistep -0.4934pp, one-step -0.1857pp, GT-memory +0.2139pp. Run the prepared TRAIN-only fixed-final-checkpoint fit diagnostic after model operations finish; do not infer final fit from online training losses.
+3. Use the predeclared rho=0.05/0.40 opportunities only if the controls and diagnostics justify them, with matched arms and all attempts retained. Any substantive development change receives an explicit new scope entry; historical frozen studies remain closed.
+4. Repeat a selected promising comparison with seed1 before considering protected data. No manuscript before substantial independent-source held-out improvement, closest-prior distinction, strong controls, uncertainty, ablations and replication.
 
 ## Historical: publish the failed 0029 result and select a distinct information question
 

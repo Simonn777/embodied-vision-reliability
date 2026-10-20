@@ -1,0 +1,1512 @@
+{
+  "schema": "evr0030.development-jf.cohort.v1",
+  "official_benchmark_result": false,
+  "metric_scale": "[0,1]; multiply by 100 for percentage points",
+  "aggregation": "equal objects within sequence; equal sequences within parent; equal parents",
+  "parents": [
+    {
+      "parent_id": "cat-girl",
+      "sequences": [
+        "cat-girl"
+      ],
+      "mean": {
+        "J": 0.9413987321156478,
+        "F": 0.9034128204893707,
+        "JF": 0.9224057763025093
+      }
+    },
+    {
+      "parent_id": "upside-down",
+      "sequences": [
+        "upside-down"
+      ],
+      "mean": {
+        "J": 0.9555626234029666,
+        "F": 0.8952708007825834,
+        "JF": 0.925416712092775
+      }
+    }
+  ],
+  "mean": {
+    "J": 0.9484806777593072,
+    "F": 0.899341810635977,
+    "JF": 0.923911244197642
+  },
+  "equal_object_mean": {
+    "J": 0.9484806777593072,
+    "F": 0.899341810635977,
+    "JF": 0.923911244197642
+  },
+  "sequences": [
+    {
+      "schema": "evr0030.development-jf.sequence.v1",
+      "sequence": "cat-girl",
+      "parent_id": "cat-girl",
+      "scope": "object-subset development J&F",
+      "official_benchmark_result": false,
+      "reference_commit": "ac7c43fca936f9722837b7fbd337d284ba37004b",
+      "endpoint_policy": "exclude_first_and_last",
+      "void_policy": "official_background",
+      "boundary_fraction": 0.008,
+      "boundary_radius_pixels": 9,
+      "shape_hw": [
+        480,
+        911
+      ],
+      "frame_count": 89,
+      "included_frame_count": 87,
+      "initial_object_ids": [
+        1,
+        2
+      ],
+      "object_ids": [
+        1
+      ],
+      "objects": [
+        {
+          "object_id": 1,
+          "frames": [
+            {
+              "frame_id": "00000",
+              "index": 0,
+              "included": false,
+              "J": 0.9960347048058023,
+              "F": 0.9948586118251929,
+              "JF": 0.9954466583154975,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00001",
+              "index": 1,
+              "included": true,
+              "J": 0.957786343909211,
+              "F": 0.9520155709314672,
+              "JF": 0.9549009574203391,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00002",
+              "index": 2,
+              "included": true,
+              "J": 0.9342795904418743,
+              "F": 0.8907339568298211,
+              "JF": 0.9125067736358476,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00003",
+              "index": 3,
+              "included": true,
+              "J": 0.9090250418874247,
+              "F": 0.8517855796875026,
+              "JF": 0.8804053107874636,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00004",
+              "index": 4,
+              "included": true,
+              "J": 0.9648766468389673,
+              "F": 0.9780834545271823,
+              "JF": 0.9714800506830747,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00005",
+              "index": 5,
+              "included": true,
+              "J": 0.9580241107184109,
+              "F": 0.9284604281333206,
+              "JF": 0.9432422694258658,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00006",
+              "index": 6,
+              "included": true,
+              "J": 0.9615967732707821,
+              "F": 0.9258690683021626,
+              "JF": 0.9437329207864724,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00007",
+              "index": 7,
+              "included": true,
+              "J": 0.9597645507099961,
+              "F": 0.8977318488439086,
+              "JF": 0.9287481997769523,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00008",
+              "index": 8,
+              "included": true,
+              "J": 0.9608646404905146,
+              "F": 0.914077842103921,
+              "JF": 0.9374712412972177,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00009",
+              "index": 9,
+              "included": true,
+              "J": 0.9694922004646531,
+              "F": 0.9508922996547068,
+              "JF": 0.96019225005968,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00010",
+              "index": 10,
+              "included": true,
+              "J": 0.971227604686597,
+              "F": 0.965297079796669,
+              "JF": 0.968262342241633,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00011",
+              "index": 11,
+              "included": true,
+              "J": 0.9776744899720612,
+              "F": 0.9637892901538512,
+              "JF": 0.9707318900629562,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00012",
+              "index": 12,
+              "included": true,
+              "J": 0.974526338294755,
+              "F": 0.9568331686112553,
+              "JF": 0.9656797534530052,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00013",
+              "index": 13,
+              "included": true,
+              "J": 0.975234794275492,
+              "F": 0.9713641394299347,
+              "JF": 0.9732994668527133,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00014",
+              "index": 14,
+              "included": true,
+              "J": 0.9808759326128257,
+              "F": 0.9645842597840035,
+              "JF": 0.9727300961984147,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00015",
+              "index": 15,
+              "included": true,
+              "J": 0.9786462630960419,
+              "F": 0.9707698317405747,
+              "JF": 0.9747080474183083,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00016",
+              "index": 16,
+              "included": true,
+              "J": 0.979548124093139,
+              "F": 0.9576674367922905,
+              "JF": 0.9686077804427147,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00017",
+              "index": 17,
+              "included": true,
+              "J": 0.9766412558302824,
+              "F": 0.9406072793779852,
+              "JF": 0.9586242676041338,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00018",
+              "index": 18,
+              "included": true,
+              "J": 0.9507623849026835,
+              "F": 0.8420050545379626,
+              "JF": 0.896383719720323,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00019",
+              "index": 19,
+              "included": true,
+              "J": 0.9641168220239056,
+              "F": 0.9181475359468038,
+              "JF": 0.9411321789853546,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00020",
+              "index": 20,
+              "included": true,
+              "J": 0.9570571306104954,
+              "F": 0.9185084927402215,
+              "JF": 0.9377828116753584,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00021",
+              "index": 21,
+              "included": true,
+              "J": 0.9466700705236621,
+              "F": 0.9166773490049762,
+              "JF": 0.9316737097643192,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00022",
+              "index": 22,
+              "included": true,
+              "J": 0.9456046262815043,
+              "F": 0.9301718067560609,
+              "JF": 0.9378882165187826,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00023",
+              "index": 23,
+              "included": true,
+              "J": 0.9462908517618986,
+              "F": 0.9494960725933347,
+              "JF": 0.9478934621776167,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00024",
+              "index": 24,
+              "included": true,
+              "J": 0.942157176092822,
+              "F": 0.9237064779226264,
+              "JF": 0.9329318270077243,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00025",
+              "index": 25,
+              "included": true,
+              "J": 0.95083156275185,
+              "F": 0.910696967815442,
+              "JF": 0.930764265283646,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00026",
+              "index": 26,
+              "included": true,
+              "J": 0.9526508468595625,
+              "F": 0.9339150809492538,
+              "JF": 0.9432829639044081,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00027",
+              "index": 27,
+              "included": true,
+              "J": 0.9500390810373224,
+              "F": 0.9511127331938966,
+              "JF": 0.9505759071156095,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00028",
+              "index": 28,
+              "included": true,
+              "J": 0.951120473412143,
+              "F": 0.9434569505397719,
+              "JF": 0.9472887119759574,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00029",
+              "index": 29,
+              "included": true,
+              "J": 0.9510590009746935,
+              "F": 0.9237328487173361,
+              "JF": 0.9373959248460149,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00030",
+              "index": 30,
+              "included": true,
+              "J": 0.9609493388798098,
+              "F": 0.9107031063336022,
+              "JF": 0.935826222606706,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00031",
+              "index": 31,
+              "included": true,
+              "J": 0.9550658808513833,
+              "F": 0.9085106323350745,
+              "JF": 0.931788256593229,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00032",
+              "index": 32,
+              "included": true,
+              "J": 0.9550643218933497,
+              "F": 0.9011207118201183,
+              "JF": 0.928092516856734,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00033",
+              "index": 33,
+              "included": true,
+              "J": 0.9571122713443263,
+              "F": 0.8866382122197132,
+              "JF": 0.9218752417820197,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00034",
+              "index": 34,
+              "included": true,
+              "J": 0.9538828199595516,
+              "F": 0.8591784600049224,
+              "JF": 0.906530639982237,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00035",
+              "index": 35,
+              "included": true,
+              "J": 0.9518683719448364,
+              "F": 0.9079468148499588,
+              "JF": 0.9299075933973976,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00036",
+              "index": 36,
+              "included": true,
+              "J": 0.9536985392767234,
+              "F": 0.8834550369787381,
+              "JF": 0.9185767881277307,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00037",
+              "index": 37,
+              "included": true,
+              "J": 0.9568892893508852,
+              "F": 0.9225983871231259,
+              "JF": 0.9397438382370056,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00038",
+              "index": 38,
+              "included": true,
+              "J": 0.9498913653433863,
+              "F": 0.8909253430882829,
+              "JF": 0.9204083542158346,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00039",
+              "index": 39,
+              "included": true,
+              "J": 0.9585431919586725,
+              "F": 0.8802916704619657,
+              "JF": 0.9194174312103192,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00040",
+              "index": 40,
+              "included": true,
+              "J": 0.9543520113486675,
+              "F": 0.8701380899273304,
+              "JF": 0.912245050637999,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00041",
+              "index": 41,
+              "included": true,
+              "J": 0.9608166722649804,
+              "F": 0.8980876727137296,
+              "JF": 0.929452172489355,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00042",
+              "index": 42,
+              "included": true,
+              "J": 0.9597632271265711,
+              "F": 0.9093483594977755,
+              "JF": 0.9345557933121733,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00043",
+              "index": 43,
+              "included": true,
+              "J": 0.957228530769901,
+              "F": 0.9079910722141239,
+              "JF": 0.9326098014920124,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00044",
+              "index": 44,
+              "included": true,
+              "J": 0.9607641609107832,
+              "F": 0.9386173083060142,
+              "JF": 0.9496907346083987,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00045",
+              "index": 45,
+              "included": true,
+              "J": 0.9632808808579487,
+              "F": 0.9499423491830326,
+              "JF": 0.9566116150204906,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00046",
+              "index": 46,
+              "included": true,
+              "J": 0.9597202157028222,
+              "F": 0.9607038621552885,
+              "JF": 0.9602120389290554,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00047",
+              "index": 47,
+              "included": true,
+              "J": 0.963291744927619,
+              "F": 0.9684952510714975,
+              "JF": 0.9658934979995583,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00048",
+              "index": 48,
+              "included": true,
+              "J": 0.9612759516806123,
+              "F": 0.9608450037980735,
+              "JF": 0.9610604777393429,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00049",
+              "index": 49,
+              "included": true,
+              "J": 0.9616520442685934,
+              "F": 0.9512386807641695,
+              "JF": 0.9564453625163815,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00050",
+              "index": 50,
+              "included": true,
+              "J": 0.9617698188139625,
+              "F": 0.9605662798642517,
+              "JF": 0.961168049339107,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00051",
+              "index": 51,
+              "included": true,
+              "J": 0.9606215918233559,
+              "F": 0.9591163563483622,
+              "JF": 0.959868974085859,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00052",
+              "index": 52,
+              "included": true,
+              "J": 0.9535566870537194,
+              "F": 0.9536783629982796,
+              "JF": 0.9536175250259995,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00053",
+              "index": 53,
+              "included": true,
+              "J": 0.949230745957067,
+              "F": 0.9411837549464915,
+              "JF": 0.9452072504517792,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00054",
+              "index": 54,
+              "included": true,
+              "J": 0.9475034238542384,
+              "F": 0.9299526524806042,
+              "JF": 0.9387280381674212,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00055",
+              "index": 55,
+              "included": true,
+              "J": 0.9486124292927376,
+              "F": 0.9300557130975949,
+              "JF": 0.9393340711951663,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00056",
+              "index": 56,
+              "included": true,
+              "J": 0.9433877652007175,
+              "F": 0.9398360104498074,
+              "JF": 0.9416118878252624,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00057",
+              "index": 57,
+              "included": true,
+              "J": 0.9172926625692389,
+              "F": 0.9223241732251896,
+              "JF": 0.9198084178972142,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00058",
+              "index": 58,
+              "included": true,
+              "J": 0.87277843315477,
+              "F": 0.8159509522295152,
+              "JF": 0.8443646926921426,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00059",
+              "index": 59,
+              "included": true,
+              "J": 0.9500625250690136,
+              "F": 0.9401681471138706,
+              "JF": 0.9451153360914422,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00060",
+              "index": 60,
+              "included": true,
+              "J": 0.9474445043367472,
+              "F": 0.965950759559979,
+              "JF": 0.9566976319483631,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00061",
+              "index": 61,
+              "included": true,
+              "J": 0.9498299530819453,
+              "F": 0.9653458791711859,
+              "JF": 0.9575879161265656,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00062",
+              "index": 62,
+              "included": true,
+              "J": 0.9523391272189349,
+              "F": 0.9657335551905589,
+              "JF": 0.9590363412047469,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00063",
+              "index": 63,
+              "included": true,
+              "J": 0.94436312096287,
+              "F": 0.9477390538910443,
+              "JF": 0.9460510874269572,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00064",
+              "index": 64,
+              "included": true,
+              "J": 0.9516863219902907,
+              "F": 0.9450006043215433,
+              "JF": 0.948343463155917,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00065",
+              "index": 65,
+              "included": true,
+              "J": 0.9526983245394798,
+              "F": 0.9372108849928538,
+              "JF": 0.9449546047661668,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00066",
+              "index": 66,
+              "included": true,
+              "J": 0.9446055451763384,
+              "F": 0.9279256611668523,
+              "JF": 0.9362656031715954,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00067",
+              "index": 67,
+              "included": true,
+              "J": 0.9350502069937462,
+              "F": 0.8774709793544654,
+              "JF": 0.9062605931741058,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00068",
+              "index": 68,
+              "included": true,
+              "J": 0.8540114613180516,
+              "F": 0.7784446058955828,
+              "JF": 0.8162280336068173,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00069",
+              "index": 69,
+              "included": true,
+              "J": 0.9492670490758445,
+              "F": 0.9598231136519966,
+              "JF": 0.9545450813639205,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00070",
+              "index": 70,
+              "included": true,
+              "J": 0.8632133772436945,
+              "F": 0.7172058846934066,
+              "JF": 0.7902096309685506,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00071",
+              "index": 71,
+              "included": true,
+              "J": 0.8676272058114494,
+              "F": 0.7056071600794531,
+              "JF": 0.7866171829454512,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00072",
+              "index": 72,
+              "included": true,
+              "J": 0.8726819485614299,
+              "F": 0.7357451903890875,
+              "JF": 0.8042135694752587,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00073",
+              "index": 73,
+              "included": true,
+              "J": 0.8743877226463105,
+              "F": 0.7744737719246617,
+              "JF": 0.8244307472854862,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00074",
+              "index": 74,
+              "included": true,
+              "J": 0.925526834478028,
+              "F": 0.7847502879174182,
+              "JF": 0.8551385611977231,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00075",
+              "index": 75,
+              "included": true,
+              "J": 0.8618471987612613,
+              "F": 0.8397578056355219,
+              "JF": 0.8508025021983916,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00076",
+              "index": 76,
+              "included": true,
+              "J": 0.8763381866130624,
+              "F": 0.8673572928294481,
+              "JF": 0.8718477397212552,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00077",
+              "index": 77,
+              "included": true,
+              "J": 0.8835803068194543,
+              "F": 0.8694497786182641,
+              "JF": 0.8765150427188593,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00078",
+              "index": 78,
+              "included": true,
+              "J": 0.9222574388570888,
+              "F": 0.8574110202442153,
+              "JF": 0.8898342295506521,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00079",
+              "index": 79,
+              "included": true,
+              "J": 0.89578042674716,
+              "F": 0.8649055056218174,
+              "JF": 0.8803429661844887,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00080",
+              "index": 80,
+              "included": true,
+              "J": 0.872791302209576,
+              "F": 0.8338785057042877,
+              "JF": 0.8533349039569318,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00081",
+              "index": 81,
+              "included": true,
+              "J": 0.8781214143696736,
+              "F": 0.820633319426324,
+              "JF": 0.8493773668979988,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00082",
+              "index": 82,
+              "included": true,
+              "J": 0.9020157321107101,
+              "F": 0.8307293296292657,
+              "JF": 0.8663725308699879,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00083",
+              "index": 83,
+              "included": true,
+              "J": 0.9429404922707489,
+              "F": 0.8755074775408991,
+              "JF": 0.909223984905824,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00084",
+              "index": 84,
+              "included": true,
+              "J": 0.9437023259309361,
+              "F": 0.8431003676646409,
+              "JF": 0.8934013467977885,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00085",
+              "index": 85,
+              "included": true,
+              "J": 0.9306284163028724,
+              "F": 0.7994333369009556,
+              "JF": 0.865030876601914,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00086",
+              "index": 86,
+              "included": true,
+              "J": 0.9053630796150481,
+              "F": 0.83428984414247,
+              "JF": 0.869826461878759,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00087",
+              "index": 87,
+              "included": true,
+              "J": 0.9432190277427944,
+              "F": 0.8702360733982997,
+              "JF": 0.906727550570547,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00088",
+              "index": 88,
+              "included": false,
+              "J": 0.9521979319994912,
+              "F": 0.9277452628086676,
+              "JF": 0.9399715974040794,
+              "void_pixels_as_background": 0
+            }
+          ],
+          "mean": {
+            "J": 0.9413987321156478,
+            "F": 0.9034128204893707,
+            "JF": 0.9224057763025093
+          }
+        }
+      ],
+      "mean": {
+        "J": 0.9413987321156478,
+        "F": 0.9034128204893707,
+        "JF": 0.9224057763025093
+      }
+    },
+    {
+      "schema": "evr0030.development-jf.sequence.v1",
+      "sequence": "upside-down",
+      "parent_id": "upside-down",
+      "scope": "object-subset development J&F",
+      "official_benchmark_result": false,
+      "reference_commit": "ac7c43fca936f9722837b7fbd337d284ba37004b",
+      "endpoint_policy": "exclude_first_and_last",
+      "void_policy": "official_background",
+      "boundary_fraction": 0.008,
+      "boundary_radius_pixels": 8,
+      "shape_hw": [
+        480,
+        854
+      ],
+      "frame_count": 65,
+      "included_frame_count": 63,
+      "initial_object_ids": [
+        1,
+        2
+      ],
+      "object_ids": [
+        1
+      ],
+      "objects": [
+        {
+          "object_id": 1,
+          "frames": [
+            {
+              "frame_id": "00000",
+              "index": 0,
+              "included": false,
+              "J": 0.9832080200501253,
+              "F": 0.988442487616951,
+              "JF": 0.9858252538335381,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00001",
+              "index": 1,
+              "included": true,
+              "J": 0.9586868438136599,
+              "F": 0.9306011985308332,
+              "JF": 0.9446440211722466,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00002",
+              "index": 2,
+              "included": true,
+              "J": 0.9516013972252287,
+              "F": 0.8965932809898531,
+              "JF": 0.9240973391075409,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00003",
+              "index": 3,
+              "included": true,
+              "J": 0.9562734131799715,
+              "F": 0.7903017252412351,
+              "JF": 0.8732875692106032,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00004",
+              "index": 4,
+              "included": true,
+              "J": 0.9559039559039559,
+              "F": 0.8906276265187666,
+              "JF": 0.9232657912113613,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00005",
+              "index": 5,
+              "included": true,
+              "J": 0.9561722056650555,
+              "F": 0.8524371244157578,
+              "JF": 0.9043046650404066,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00006",
+              "index": 6,
+              "included": true,
+              "J": 0.9578934461406413,
+              "F": 0.8891073964820279,
+              "JF": 0.9235004213113346,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00007",
+              "index": 7,
+              "included": true,
+              "J": 0.9604979737870103,
+              "F": 0.934847685867331,
+              "JF": 0.9476728298271706,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00008",
+              "index": 8,
+              "included": true,
+              "J": 0.9597520590982423,
+              "F": 0.9457181259886737,
+              "JF": 0.952735092543458,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00009",
+              "index": 9,
+              "included": true,
+              "J": 0.9612412951761298,
+              "F": 0.9022462963663371,
+              "JF": 0.9317437957712335,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00010",
+              "index": 10,
+              "included": true,
+              "J": 0.9569875427680683,
+              "F": 0.8999255918462036,
+              "JF": 0.9284565673071359,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00011",
+              "index": 11,
+              "included": true,
+              "J": 0.9565948665762098,
+              "F": 0.9364666816495026,
+              "JF": 0.9465307741128562,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00012",
+              "index": 12,
+              "included": true,
+              "J": 0.9568028471861793,
+              "F": 0.9193263605927933,
+              "JF": 0.9380646038894862,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00013",
+              "index": 13,
+              "included": true,
+              "J": 0.9571827077767774,
+              "F": 0.8992227328027622,
+              "JF": 0.9282027202897698,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00014",
+              "index": 14,
+              "included": true,
+              "J": 0.9568172496630926,
+              "F": 0.8958802220422626,
+              "JF": 0.9263487358526776,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00015",
+              "index": 15,
+              "included": true,
+              "J": 0.9591093056945295,
+              "F": 0.8906272635086195,
+              "JF": 0.9248682846015746,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00016",
+              "index": 16,
+              "included": true,
+              "J": 0.9571548543834918,
+              "F": 0.8996670044882004,
+              "JF": 0.928410929435846,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00017",
+              "index": 17,
+              "included": true,
+              "J": 0.9597941740798883,
+              "F": 0.8868273143646032,
+              "JF": 0.9233107442222457,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00018",
+              "index": 18,
+              "included": true,
+              "J": 0.9603232815289445,
+              "F": 0.8944404332129964,
+              "JF": 0.9273818573709705,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00019",
+              "index": 19,
+              "included": true,
+              "J": 0.9598257566702525,
+              "F": 0.8881029848634884,
+              "JF": 0.9239643707668704,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00020",
+              "index": 20,
+              "included": true,
+              "J": 0.9615013006317354,
+              "F": 0.8725754310344829,
+              "JF": 0.9170383658331092,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00021",
+              "index": 21,
+              "included": true,
+              "J": 0.9651253029597526,
+              "F": 0.8983410253211925,
+              "JF": 0.9317331641404726,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00022",
+              "index": 22,
+              "included": true,
+              "J": 0.9597742134335755,
+              "F": 0.8969894025090419,
+              "JF": 0.9283818079713086,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00023",
+              "index": 23,
+              "included": true,
+              "J": 0.9582768930380133,
+              "F": 0.8860540004954174,
+              "JF": 0.9221654467667153,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00024",
+              "index": 24,
+              "included": true,
+              "J": 0.958832495772501,
+              "F": 0.8861099191997748,
+              "JF": 0.9224712074861379,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00025",
+              "index": 25,
+              "included": true,
+              "J": 0.9581446179499312,
+              "F": 0.8791626176284204,
+              "JF": 0.9186536177891758,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00026",
+              "index": 26,
+              "included": true,
+              "J": 0.9613534828592268,
+              "F": 0.9059575277025855,
+              "JF": 0.9336555052809061,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00027",
+              "index": 27,
+              "included": true,
+              "J": 0.9614077639241546,
+              "F": 0.9305294561811451,
+              "JF": 0.9459686100526499,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00028",
+              "index": 28,
+              "included": true,
+              "J": 0.9554464703132305,
+              "F": 0.8849015317286653,
+              "JF": 0.9201740010209478,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00029",
+              "index": 29,
+              "included": true,
+              "J": 0.9479827550501723,
+              "F": 0.8237051792828686,
+              "JF": 0.8858439671665204,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00030",
+              "index": 30,
+              "included": true,
+              "J": 0.9456602835115643,
+              "F": 0.8255553642156018,
+              "JF": 0.885607823863583,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00031",
+              "index": 31,
+              "included": true,
+              "J": 0.9481248650334717,
+              "F": 0.8584747342905091,
+              "JF": 0.9032997996619905,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00032",
+              "index": 32,
+              "included": true,
+              "J": 0.9355494534509162,
+              "F": 0.8220305762446098,
+              "JF": 0.878790014847763,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00033",
+              "index": 33,
+              "included": true,
+              "J": 0.9313997167313258,
+              "F": 0.7916041696872649,
+              "JF": 0.8615019432092954,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00034",
+              "index": 34,
+              "included": true,
+              "J": 0.9256173757810175,
+              "F": 0.8330928330928332,
+              "JF": 0.8793551044369254,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00035",
+              "index": 35,
+              "included": true,
+              "J": 0.9183965348152991,
+              "F": 0.7770253323300728,
+              "JF": 0.847710933572686,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00036",
+              "index": 36,
+              "included": true,
+              "J": 0.9188171588120823,
+              "F": 0.8657945736434108,
+              "JF": 0.8923058662277465,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00037",
+              "index": 37,
+              "included": true,
+              "J": 0.9326894311722723,
+              "F": 0.8281653746770027,
+              "JF": 0.8804274029246375,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00038",
+              "index": 38,
+              "included": true,
+              "J": 0.9395350861918857,
+              "F": 0.8821442648797793,
+              "JF": 0.9108396755358326,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00039",
+              "index": 39,
+              "included": true,
+              "J": 0.9511926956355466,
+              "F": 0.8948069241011983,
+              "JF": 0.9229998098683725,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00040",
+              "index": 40,
+              "included": true,
+              "J": 0.9443546411951996,
+              "F": 0.9132584269662922,
+              "JF": 0.9288065340807459,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00041",
+              "index": 41,
+              "included": true,
+              "J": 0.9498518551275815,
+              "F": 0.9177804779262859,
+              "JF": 0.9338161665269338,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00042",
+              "index": 42,
+              "included": true,
+              "J": 0.9391341102590424,
+              "F": 0.9913518434228493,
+              "JF": 0.9652429768409458,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00043",
+              "index": 43,
+              "included": true,
+              "J": 0.9545299015321447,
+              "F": 0.9182751540041068,
+              "JF": 0.9364025277681257,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00044",
+              "index": 44,
+              "included": true,
+              "J": 0.9568678491434106,
+              "F": 0.8811769143719351,
+              "JF": 0.9190223817576728,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00045",
+              "index": 45,
+              "included": true,
+              "J": 0.9682988072818581,
+              "F": 0.9184521911537148,
+              "JF": 0.9433754992177865,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00046",
+              "index": 46,
+              "included": true,
+              "J": 0.9711196941171903,
+              "F": 0.9200518272481335,
+              "JF": 0.9455857606826619,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00047",
+              "index": 47,
+              "included": true,
+              "J": 0.9667281633691711,
+              "F": 0.9294676896557195,
+              "JF": 0.9480979265124453,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00048",
+              "index": 48,
+              "included": true,
+              "J": 0.9500048281189648,
+              "F": 0.9121921667867627,
+              "JF": 0.9310984974528638,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00049",
+              "index": 49,
+              "included": true,
+              "J": 0.9611380212683035,
+              "F": 0.9272308198880475,
+              "JF": 0.9441844205781755,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00050",
+              "index": 50,
+              "included": true,
+              "J": 0.9527556690193723,
+              "F": 0.911291561875705,
+              "JF": 0.9320236154475386,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00051",
+              "index": 51,
+              "included": true,
+              "J": 0.9624536649527682,
+              "F": 0.9251237623762376,
+              "JF": 0.9437887136645029,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00052",
+              "index": 52,
+              "included": true,
+              "J": 0.9689789936492428,
+              "F": 0.9299544560051782,
+              "JF": 0.9494667248272105,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00053",
+              "index": 53,
+              "included": true,
+              "J": 0.9679491424408979,
+              "F": 0.9300813008130081,
+              "JF": 0.949015221626953,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00054",
+              "index": 54,
+              "included": true,
+              "J": 0.9684181568088033,
+              "F": 0.9399339933993399,
+              "JF": 0.9541760751040715,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00055",
+              "index": 55,
+              "included": true,
+              "J": 0.9675425590825458,
+              "F": 0.9247671654387127,
+              "JF": 0.9461548622606293,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00056",
+              "index": 56,
+              "included": true,
+              "J": 0.966453003159298,
+              "F": 0.920104209034265,
+              "JF": 0.9432786060967815,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00057",
+              "index": 57,
+              "included": true,
+              "J": 0.9656089377498572,
+              "F": 0.9087591275983173,
+              "JF": 0.9371840326740872,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00058",
+              "index": 58,
+              "included": true,
+              "J": 0.9612248204352757,
+              "F": 0.8310608499678042,
+              "JF": 0.8961428352015399,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00059",
+              "index": 59,
+              "included": true,
+              "J": 0.9621082148062058,
+              "F": 0.9139372654027581,
+              "JF": 0.938022740104482,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00060",
+              "index": 60,
+              "included": true,
+              "J": 0.9657619963763379,
+              "F": 0.9247436641516734,
+              "JF": 0.9452528302640056,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00061",
+              "index": 61,
+              "included": true,
+              "J": 0.9644352632460499,
+              "F": 0.9371907118385991,
+              "JF": 0.9508129875423246,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00062",
+              "index": 62,
+              "included": true,
+              "J": 0.9653388515261252,
+              "F": 0.9399815327793167,
+              "JF": 0.9526601921527209,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00063",
+              "index": 63,
+              "included": true,
+              "J": 0.9659450563362451,
+              "F": 0.9499060491798678,
+              "JF": 0.9579255527580564,
+              "void_pixels_as_background": 0
+            },
+            {
+              "frame_id": "00064",
+              "index": 64,
+              "included": false,
+              "J": 0.9644302059496568,
+              "F": 0.929787641094318,
+              "JF": 0.9471089235219874,
+              "void_pixels_as_background": 0
+            }
+          ],
+          "mean": {
+            "J": 0.9555626234029666,
+            "F": 0.8952708007825834,
+            "JF": 0.925416712092775
+          }
+        }
+      ],
+      "mean": {
+        "J": 0.9555626234029666,
+        "F": 0.8952708007825834,
+        "JF": 0.925416712092775
+      }
+    }
+  ]
+}

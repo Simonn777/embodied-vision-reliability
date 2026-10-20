@@ -1,0 +1,28 @@
+{
+  "repo": "$TASK/work/embodied-vision-reliability",
+  "native_root": "$TASK/work/0029-runtime-02",
+  "native_commit": "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+  "source_sha256": {
+    "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+    "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+    "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+    "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+    "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951"
+  },
+  "seed": 0,
+  "output": "$TASK/work/0030-memory-content/campaign/fit-gt_memory-rho015-seed0-01",
+  "mode": "regress",
+  "rho": 0.15,
+  "train_sequences": [
+    "dog-agility",
+    "planes-water",
+    "dogs-scale",
+    "dog-gooses"
+  ],
+  "family_root": "$TASK/work/0030-memory-content/residual-family",
+  "cache": "$TASK/work/0030-memory-content/campaign/cache-01",
+  "cache_receipt_sha256": "75b054bbc06796a175bb028386ed91a2809e4dc1545e74a420f29a04cc7c14be",
+  "arm": "gt_memory",
+  "targets": "$TASK/work/0030-memory-content/campaign/teacher-rho015-01/targets.pt",
+  "targets_sha256": "6bae49f7e07211cbddc2911ef5ce8a22d4849a28efce7786fd0915d3406e726c"
+}
