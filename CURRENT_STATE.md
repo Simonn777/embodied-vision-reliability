@@ -1,5 +1,9 @@
 # Current state
 
+## Current work: 0029 source screen; no new result
+
+[0028 publication and merged-main CI are verified](docs/0028-publication-verification.md). The [0029 screen](docs/0029-task-screen.md) rejects five generic replacement proposals because their mechanisms already have direct precedents or their required observations are unavailable. Delayed tracker-memory replay is covered by Det-SAM2; its initially conditional opening is explicitly superseded. Video sequence access is feasible in part, but no new method, data cohort, model acquisition or experiment is admitted. The [signed identity-evidence question](docs/0029-signed-memory-question.md) specifies a narrow diagnostic and a prospective two-source +3-point J&F topic gate; exact prior-work distinction and execution prerequisites remain unresolved. No measured improvement or manuscript is established.
+
 ## Current result: 0028 failed; fixed variant closed
 
 The [complete 27-image/24-query comparison](results/0028-development/README.md) gives ANG AUC@5 **2.695397%** versus **51.000123%** for the strongest E/AFFINE control (−48.304727 points). All 24 ANG fits completed and FULL was valid; all three scene margins are negative. Three of four fixed gate clauses fail. Independent saved-output audit passes 2,451 comparisons. No rescue tuning, held-out expansion or manuscript is admitted. A materially different task/observable is being screened; the main improvement goal remains unmet.

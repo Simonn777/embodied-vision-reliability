@@ -2,8 +2,7 @@
 
 Current result: [0028 normal-information comparison failed](results/0028-development/README.md): ANG 2.6954% versus strongest control 51.0001% AUC@5. All 24 fits completed; independent audit agrees. The fixed variant is closed, with no manuscript admission. See [current state](CURRENT_STATE.md).
 
-**Goal: a reproducible improvement in visual camera-motion estimation before a
-CVPR-targeted manuscript. No method currently meets that goal.**
+**Goal: a substantial, reproducible computer-vision improvement relevant to embodied systems or driving before a CVPR-targeted manuscript. No method currently meets that goal.**
 
 The latest normal-guided correction reduced its own fitting objective but lost
 substantially to the geometric pose baseline. Earlier tangent and moment-based
@@ -14,12 +13,13 @@ geometry for embodied systems and driving; no controller or driving result
 is claimed.
 
 The next experiment must test a concrete accuracy mechanism against strong
-controls. The current target is at least **+2 absolute AUC@5 percentage points**
+controls. The existing camera-motion target is at least **+2 absolute AUC@5 percentage points**
 at matched complete-pipeline time on two independent held-out sources, positive
 paired scene-level uncertainty bounds, and no more than0.5point AUC@20 loss.
 Novelty, ablations and independent reproduction are also required before a
 paper. A successful software check or reduction in operation count does not
 meet this standard. [Full prospective gate](protocols/0012-score-bounds-development.md).
+The [0029 task screen](docs/0029-task-screen.md) records rejected alternatives and unresolved resource contracts. A task change requires an equally substantial new gate before outcomes; no replacement method or successful result is admitted yet.
 
 ## Current evidence · October 20, 2026
 

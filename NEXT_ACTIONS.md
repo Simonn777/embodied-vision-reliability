@@ -1,8 +1,15 @@
 # Next actions
 
-## Current: publish 0028 closure and reset the hypothesis search
+## Current: resolve one falsifiable information question before implementation
 
-1. Preserve the [complete negative result](results/0028-development/README.md), initial zero-forward startup failure, clean scientific operations and independent audit. Verify exact result/main CI through PR59.
+1. Preserve [0028's verified publication](docs/0028-publication-verification.md) and the [0029 rejection record](docs/0029-task-screen.md). Neither repository activity nor a literature screen meets the improvement goal.
+2. Determine whether sparse initial-object correspondences can distinguish harmful from helpful memory influence, beyond existing recollection-effect, distractor-aware and automatic-prompt methods. Resolve the exact observable, failure cases and strongest same-evidence controls; do not infer novelty from different terminology.
+3. Only if that question remains testable, specify a small fixed information diagnostic, its acquisition/runtime bounds and failure-inclusive gate. Establish exact remaining transfer reservations and data grouping before allocating payloads. Use existing supervision helpers and the smallest implementation needed to answer the question.
+4. Preserve the [prospective VOS topic gate](docs/0029-signed-memory-question.md): at least +3 absolute J&F points on each of two independent held-out sources, positive paired recording-level intervals, bounded component loss and strong controls at a common complete-pipeline budget. Bind the exact cohort, controls and time budget before outcomes. A successful small diagnostic would authorize a larger comparison only; manuscript writing still requires innovation, substantial reproducible gains, ablations and replication.
+
+## Historical: publish 0028 closure and reset the hypothesis search
+
+1. Preserve the [complete negative result](results/0028-development/README.md), initial zero-forward startup failure, clean scientific operations and independent audit. Exact result/main CI through PR59 is now verified.
 2. Keep this ANG/depth-normal offset formulation closed. It loses to raw C, FULL and the strong E control, with no scene win. Do not retune its grid, losses, bounds, camera controls or selector on these outcomes.
 3. Screen a materially different embodied/driving task or observable against current primary work and compute/data constraints before building more code. Require a concrete information advantage and a cheap decisive falsifier. If the task/metric changes, freeze an equally substantial two-source matched-cost validation gate prospectively; the old goal has not been met.
 4. No manuscript before innovative, reproducible, substantial improvement with strong controls, ablations and independent validation.
