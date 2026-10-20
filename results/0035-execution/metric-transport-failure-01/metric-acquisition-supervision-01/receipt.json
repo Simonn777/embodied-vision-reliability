@@ -1,0 +1,133 @@
+{
+  "schema": "evr0029.exit-checked-operation.v1",
+  "status": "failed",
+  "command": [
+    "$PYTHON",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "$REPOSITORY/experiments/0035-transformation-support/acquire.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+    "--metadata-root",
+    "$PRIVATE",
+    "--manifest-relative",
+    "experiments/0035-transformation-support/proposed-manifest-v2.json",
+    "--admission-relative",
+    "experiments/0035-transformation-support/acquisition-admission.json",
+    "--output-dir",
+    "$PRIVATE/0035-transformation-support/metric-acquisition-01",
+    "--phase",
+    "metric",
+    "--initial-dir",
+    "$PRIVATE/0035-transformation-support/initial-acquisition-01",
+    "--initial-inspection",
+    "$PRIVATE/0035-transformation-support/initial-inspection-02/receipt.json",
+    "--initial-inspection-outer",
+    "$PRIVATE/0035-transformation-support/initial-inspection-supervision-02/receipt.json",
+    "--prediction-proof",
+    "$PRIVATE/0035-transformation-support/prediction-proof-01.json"
+  ],
+  "spec_sha256": "45837c8fea9a4538a5f60c40b0a9813e4bfdb3206d1cbbb2639befedea8a3dba",
+  "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "child_pid": 66422,
+  "declared_child_pgid": 66422,
+  "observed_child_pgid": 66422,
+  "pgid_observation_error": null,
+  "exit_observed_at_seconds": 26.929237791977357,
+  "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+  "pre_poll_snapshot": {
+    "label": "before_poll",
+    "started_seconds": 26.90780749998521,
+    "finished_seconds": 26.929225250030868,
+    "known_groups": [
+      66422
+    ],
+    "discovered_groups": [
+      66422
+    ],
+    "rows": [
+      [
+        66422,
+        66411,
+        66422,
+        0
+      ]
+    ]
+  },
+  "post_exit_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 26.929238667013124,
+    "finished_seconds": 26.95016129198484,
+    "known_groups": [
+      66422
+    ],
+    "discovered_groups": [],
+    "rows": []
+  },
+  "triggering_snapshot": null,
+  "cleanup_snapshots": [
+    {
+      "label": "before_group_kill",
+      "started_seconds": 26.950220375030767,
+      "finished_seconds": 26.97172116697766,
+      "known_groups": [
+        66422
+      ],
+      "discovered_groups": [],
+      "rows": []
+    },
+    {
+      "label": "final",
+      "started_seconds": 26.97175550000975,
+      "finished_seconds": 26.992665541998576,
+      "known_groups": [
+        66422
+      ],
+      "discovered_groups": [],
+      "rows": []
+    }
+  ],
+  "signal_attempts": [
+    {
+      "pgid": 66422,
+      "signal": "SIGSTOP",
+      "attempted_seconds": 26.950201499974355,
+      "result": "not_found",
+      "finished_seconds": 26.950219916994683
+    },
+    {
+      "pgid": 66422,
+      "signal": "SIGKILL",
+      "attempted_seconds": 26.971734833030496,
+      "result": "not_found",
+      "finished_seconds": 26.97175349999452
+    }
+  ],
+  "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+  "exit_code": 1,
+  "termination": null,
+  "wall_seconds": 26.99276854202617,
+  "peak_group_rss_kib": 251440,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "d0c714a8560fa4291e53c21e1656c2cb1fa3ebb16c469c48d2f78563daba1da4"
+  },
+  "output_sha256": "60dd51670ac4ad69b89dc5c299c086761db732264c2fa32e3a0f321b9181c5b3"
+}

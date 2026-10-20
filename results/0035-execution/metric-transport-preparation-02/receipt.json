@@ -1,0 +1,36 @@
+{
+  "schema": "evr0035.metric-transport-manufactured-tests.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "-S",
+    "-Werror",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "${WORKSPACE}/work/0035-transformation-support/metric-transport",
+    "-p",
+    "test_reuse_https.py",
+    "-v"
+  ],
+  "source_sha256": {
+    "reuse_https.py": "214abc01bb9915c3815c9173552c1d720c99bd8a50c2f3065cf55565d37ed856",
+    "test_reuse_https.py": "df708907ec346d121bd67954d371515f48cc31b9987566f9a40634a0c9699d6a"
+  },
+  "timeout_seconds": 60,
+  "network_calls": 0,
+  "model_calls": 0,
+  "scientific_payload_reads": 0,
+  "exit_code": 0,
+  "wall_seconds": 0.12740770902018994,
+  "source_sha256_after": {
+    "reuse_https.py": "214abc01bb9915c3815c9173552c1d720c99bd8a50c2f3065cf55565d37ed856",
+    "test_reuse_https.py": "df708907ec346d121bd67954d371515f48cc31b9987566f9a40634a0c9699d6a"
+  },
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "6c2e5f12ac685a0c0ebfceed583e4151f0569acf74f6ddf85e5f88cdd3a89aea"
+  }
+}

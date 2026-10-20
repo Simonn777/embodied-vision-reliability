@@ -2,6 +2,8 @@
 
 ## Current: complete predictions sealed; fixed evaluation pending
 
+Metric acquisition 01 failed after45/442 opaque PNG members (74,500 response-body bytes,26.992768542s) before any annotation decoding or scoring. Its failure is preserved. A separately frozen persistent-HTTPS transport adapter passed seven manufactured tests and retains all original identity, quota and prediction-seal checks. The next fresh whole442-member phase has a new5,000,000-byte reservation; all earlier holds remain, leaving908,590,729B. This transport change does not rerun or change the70-source prediction/scoring closure.
+
 The [0035 prediction bundle](results/0035-execution/prediction-01/README.md) records all446frames/fourcompleteVOST TRAIN clips, allinitialobjects and allfour native/union arms, with no noninitial GT decoded during prediction. One complete operation finished cleanly in686.546369958s at3,217,040KiB. Allnativeparities passed and3,636,956,105B of saved predictions were sealed before metric-label acquisition. Accuracy results are pending; no methodgain or manuscript is claimed.
 
 The explicit complete RGB recovery verified all716parent copies and308overlaps, materialized408verified copies+38newmembers, and finished cleanly in35.102463625s. AllRGBattempts cost272,152,809response-body bytes; both failed attempts remain failed and their costs remain visible. Refreshed qualification/inspection and allpredictionmetadata use the same70-source closureb5cb28c, whose CI39447141219 passed. Original66scientific sources remain unchanged. Conservative acquisition balance913,590,729B retains everyhold withoutrefund.
