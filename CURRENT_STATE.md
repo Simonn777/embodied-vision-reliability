@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: complete technical replication source prepared
+## Current work: test-only platform correction; replication awaits CI
+
+Exact-source CI39389319650 failed two actual-process tests on Linux. The [preserved failure and test-only correction](results/0029-preparation/supervisor-platform-qualification/README.md) scope actual process qualification to Darwin and add two portable controlled cases; all four focused local tests pass. Production supervision/scientific sources and gates are unchanged. No new video operation or query GT has run. Require new exact-source CI before the complete technical replication.
+
+## Historical preparation: complete technical replication source prepared
 
 [Attempt01 remains ineligible](results/0029-development/native-attempt-01/README.md) and [publication/main CI are verified](docs/0029-native-attempt-publication-verification.md). Before queryGT access, a [separate technical amendment](protocols/0029-native-technical-replication.md) fixes six entirely new primary operations with byte-identical scientific code/data/evidence/controls/gates. The new supervisor passes two manufactured process cases; targeted23 and integrated89 checks pass with independent source review. All original costs/failures remain, no old predictions can mix into the new cohort, and exact-source CI must precede any new scientific operation. New replication and queryGT have not run; no accuracy gain or manuscript.
 

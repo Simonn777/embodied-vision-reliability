@@ -1,0 +1,143 @@
+{
+  "schema": "evr0029.exit-checked-operation.v1",
+  "status": "failed",
+  "command": [
+    "/bin/sh",
+    "-c",
+    "/bin/sleep 3 & echo $! > \"$PRIVATE/0029-preparation/portable-exit-tests-01/process-cases/ExitOrderingTests/test_genuinely_live_post_exit_child_is_rejected_and_signalled/leaked.pid\"; exit 0"
+  ],
+  "spec_sha256": "9500dc8e080ac727f772f3a3f913afb6719026ba04b23565a0cfc5babbc10bcb",
+  "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "0000000000000000000000000000000000000000",
+  "hard_timeout_seconds": 4,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "child_pid": 58590,
+  "declared_child_pgid": 58590,
+  "observed_child_pgid": 58590,
+  "pgid_observation_error": null,
+  "exit_observed_at_seconds": 0.020567250030580908,
+  "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+  "pre_poll_snapshot": {
+    "label": "before_poll",
+    "started_seconds": 0.001730583026073873,
+    "finished_seconds": 0.020560832985211164,
+    "known_groups": [
+      58590
+    ],
+    "discovered_groups": [
+      58590
+    ],
+    "rows": [
+      [
+        58590,
+        58588,
+        58590,
+        2240
+      ]
+    ]
+  },
+  "post_exit_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 0.020567541010677814,
+    "finished_seconds": 0.03818158298963681,
+    "known_groups": [
+      58590
+    ],
+    "discovered_groups": [
+      58590
+    ],
+    "rows": [
+      [
+        58592,
+        1,
+        58590,
+        1136
+      ]
+    ]
+  },
+  "triggering_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 0.020567541010677814,
+    "finished_seconds": 0.03818158298963681,
+    "known_groups": [
+      58590
+    ],
+    "discovered_groups": [
+      58590
+    ],
+    "rows": [
+      [
+        58592,
+        1,
+        58590,
+        1136
+      ]
+    ]
+  },
+  "cleanup_snapshots": [
+    {
+      "label": "before_group_kill",
+      "started_seconds": 0.03822320798644796,
+      "finished_seconds": 0.05595900001935661,
+      "known_groups": [
+        58590
+      ],
+      "discovered_groups": [
+        58590
+      ],
+      "rows": [
+        [
+          58592,
+          1,
+          58590,
+          1136
+        ]
+      ]
+    },
+    {
+      "label": "final",
+      "started_seconds": 0.05599437502678484,
+      "finished_seconds": 0.07312900002580136,
+      "known_groups": [
+        58590
+      ],
+      "discovered_groups": [],
+      "rows": []
+    }
+  ],
+  "signal_attempts": [
+    {
+      "pgid": 58590,
+      "signal": "SIGSTOP",
+      "attempted_seconds": 0.03821208298904821,
+      "result": "sent",
+      "finished_seconds": 0.03822270798264071
+    },
+    {
+      "pgid": 58590,
+      "signal": "SIGKILL",
+      "attempted_seconds": 0.05598104099044576,
+      "result": "sent",
+      "finished_seconds": 0.05599141598213464
+    }
+  ],
+  "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+  "exit_code": 0,
+  "termination": "descendants_remain_after_fresh_exit_sample",
+  "wall_seconds": 0.0731382499798201,
+  "peak_group_rss_kib": 2240,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "repo": "<WORKSPACE>/work/embodied-vision-reliability",
+  "commit": "ce3af7378be2a432916856b5db7f757113ce8c4d",
+  "timeout": 10,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "EVR_EXIT_TEST_OUTPUT": "<WORKSPACE>/work/0029-preparation/portable-exit-tests-01/process-cases"
+  },
+  "command": [
+    "<WORKSPACE>/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "<WORKSPACE>/work/0029-preparation",
+    "-p",
+    "test_supervise_exit_checked_portable.py",
+    "-v"
+  ],
+  "operation_output": "<WORKSPACE>/work/0029-preparation/portable-exit-tests-01/supervision",
+  "source_sha256": {
+    "test_supervise_exit_checked_portable.py": "2202236d6ba047c47dae078d3b7d34c9a137ebc4fcb1017450892e3f5d4a8688",
+    "supervise_exit_checked.py": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+    "old_supervise_0027.py": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+    "old_monitor_0025c.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd"
+  }
+}

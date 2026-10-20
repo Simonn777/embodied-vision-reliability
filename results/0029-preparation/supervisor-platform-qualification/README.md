@@ -1,0 +1,9 @@
+# Supervisor test platform scope
+
+Exact-source CI [39389319650](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39389319650) failed at ce3af7378be2a432916856b5db7f757113ce8c4d: both actual process lifecycle tests failed on Linux. One received the unchanged monitor's generic process-row validation error; the other never reached its forced snapshot. The offending process-table row was not recorded, so its precise cause is unresolved. The complete failed log and original e6c35 test source are retained here.
+
+The test-only correction preserves both actual lifecycle cases and explicitly limits them to Darwin, the qualified native execution platform. Two additional controlled fake-process cases call the unchanged supervisor and verify fresh post-exit sampling, stale-row rejection, genuine-residual failure and recorded STOP/KILL attempts. This does not fix or qualify Linux process monitoring. Production supervisor, scientific code and all admission conditions remain unchanged.
+
+The first focused local execution passed all four cases: 0.3037728749914095 supervised seconds, 29,296 KiB peak sampled group RSS, exit0 with clean descendants and cleanup. Source pre/post hashes match. Test SHA is 2202236d6ba047c47dae078d3b7d34c9a137ebc4fcb1017450892e3f5d4a8688; supervisor remains 8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8. The intentional residual cases have failed inner receipts as required; the overall test operation passes.
+
+The file manifest binds original and published bytes, with private-path redaction. Named FIFO special files are excluded; generated logs, proofs, receipts, source snapshots and reviews remain. The earlier two-case and integrated 89-case local successes, and the subsequent Linux CI failure, remain distinct observations. New exact-source CI must pass before any scientific replication. No query GT or accuracy result was accessed.

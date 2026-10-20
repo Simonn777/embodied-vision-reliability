@@ -3,7 +3,7 @@
 ## Current: freeze and execute the separate complete technical replication
 
 1. Preserve attempt01 unchanged and its verified publication. No old prediction may supply the new primary result; the old failure remains technically ineligible.
-2. Complete publication of the reviewed [new execution contract](protocols/0029-native-technical-replication.md), qualified supervisor, all-six v2 proof/GT admission and byte-identical-science checks. Require exact-source CI, then freeze six fresh specifications and output roots under that one new commit.
+2. Complete publication of the reviewed [new execution contract](protocols/0029-native-technical-replication.md), qualified supervisor, all-six v2 proof/GT admission and byte-identical-science checks. Preserve CI39389319650's Linux failure and the test-only Darwin/portable-case correction. Require new exact-source CI, then freeze six fresh specifications and output roots under that one new commit; retain superseded unexecuted ce3 specifications.
 3. Execute each complete video once in fixed order. Stop the replication on any technical failure, retaining artifacts; no subset scoring or silent repair/retry. Only six clean new operations admit the48fixed query labels, evaluation and independent saved-output audit. All original/new costs remain separately reported.
 4. Preserve all unchanged development and two-independent-source held-out improvement conditions before a manuscript. This is technical resumption, not an efficacy result or goal completion.
 

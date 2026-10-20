@@ -1,13 +1,20 @@
-"""Two manufactured process cases; no ML/data/network."""
+"""Darwin lifecycle qualification plus portable controlled process-order tests.
+
+The actual unchanged process-table monitor is qualified only on Darwin here.
+Controlled fake rows test supervisor decisions on other platforms, not their OS
+monitor compatibility. No ML/data/network.
+"""
 import importlib.util
 import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import time
 from types import SimpleNamespace
 import unittest
+from unittest import mock
 
 HERE = Path(__file__).resolve().parent
 MONITOR_PATH = Path("experiments/0025c-rs-noise/supervise.py")
@@ -32,13 +39,13 @@ def module(name, path):
 supervisor = module("new_exit_checked_supervisor", HERE / "supervise_exit_checked.py")
 
 
-class ExitOrderingTests(unittest.TestCase):
+class _ArtifactPaths(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Explicit fresh artifact root: retain the actual process receipts,
         # logs and sampled race witness even if an assertion later fails.
         if "EVR_EXIT_TEST_OUTPUT" in os.environ:
-            cls.artifacts = Path(os.environ["EVR_EXIT_TEST_OUTPUT"]).absolute()
+            cls.artifacts = Path(os.environ["EVR_EXIT_TEST_OUTPUT"]).absolute() / cls.__name__
         else:
             # Preserve artifacts outside R in local runs and CI alike.
             retained = Path(tempfile.mkdtemp(prefix="exit-supervisor-tests-", dir=ROOT.parent))
@@ -61,6 +68,9 @@ class ExitOrderingTests(unittest.TestCase):
             command=["/bin/sh", "-c", script], operation_output=str(self.directory / output))))
         return path
 
+@unittest.skipUnless(sys.platform == "darwin",
+    "Actual unchanged ps monitor/native runtime qualified only on Darwin")
+class ExitOrderingTests(_ArtifactPaths):
     def test_stale_pre_poll_descendant_does_not_become_post_exit_leak(self):
         fifo, pidfile = self.directory / "release.fifo", self.directory / "child.pid"
         os.mkfifo(fifo)
@@ -125,6 +135,7 @@ class ExitOrderingTests(unittest.TestCase):
         self.assertEqual(record["signal_attempts"], [])
         self.assertLess(record["wall_seconds"], 4)
 
+
     def test_genuinely_live_post_exit_child_is_rejected_and_signalled(self):
         pidfile = self.directory / "leaked.pid"
         self.assertNotIn('"', str(self.directory))
@@ -139,6 +150,86 @@ class ExitOrderingTests(unittest.TestCase):
         self.assertTrue(any(r["signal"] == "SIGKILL" and r["result"] == "sent"
                             for r in record["signal_attempts"]))
         self.assertLess(record["wall_seconds"], 4)
+
+
+class ControlledExitOrderingTests(_ArtifactPaths):
+    def controlled_run(self, *, leak):
+        parent, descendant = 91001, 91002
+        parent_row = (parent, 90000, parent, 128)
+        child_row = (descendant, parent, parent, 64)
+        samples = ([parent_row], [child_row], [child_row], []) if leak else (
+            [parent_row, child_row], [], [])
+        pending = list(samples)
+        events = []
+
+        def snapshot(pid, known):
+            self.assertEqual(pid, parent)
+            self.assertIn(parent, known)
+            self.assertTrue(pending, "unexpected extra process sample")
+            rows = pending.pop(0)
+            events.append({"kind": "snapshot", "rows": [list(row) for row in rows]})
+            return rows, ({parent} if rows else set())
+
+        class Child:
+            pid = parent
+            returncode = 0
+
+            def poll(self):
+                events.append({"kind": "poll", "code": 0})
+                return 0
+
+            def wait(self, timeout):
+                events.append({"kind": "wait", "timeout": timeout, "code": 0})
+                return 0
+
+        def send(pgid, sig):
+            events.append({"kind": "signal", "pgid": pgid, "signal": sig.name})
+
+        monitor = SimpleNamespace(**{name: getattr(self.original, name)
+            for name in ("THREAD_KEYS", "display", "sha256", "save")}, snapshot=snapshot)
+        record = None
+        try:
+            with mock.patch.object(supervisor.subprocess, "Popen", return_value=Child()) as popen, \
+                 mock.patch.object(supervisor.subprocess, "run",
+                                   side_effect=AssertionError("real process sampling forbidden")), \
+                 mock.patch.object(supervisor.os, "getpgid", return_value=parent), \
+                 mock.patch.object(supervisor.os, "getpgrp", return_value=90000), \
+                 mock.patch.object(supervisor.os, "killpg", side_effect=send):
+                record = supervisor.run_spec(self.spec("never executed", "controlled"), monitor=monitor)
+                self.assertEqual(popen.call_count, 1)
+                self.assertTrue(popen.call_args.kwargs["start_new_session"])
+                for key in self.original.THREAD_KEYS:
+                    self.assertEqual(popen.call_args.kwargs["env"][key], "4")
+        finally:
+            (self.directory / "controlled-proof.json").write_text(json.dumps(
+                {"scope": "Controlled fake process observations; no OS-monitor qualification",
+                 "events": events, "unconsumed_samples": pending, "record": record},
+                indent=2, allow_nan=False) + "\n")
+        self.assertEqual(pending, [])
+        self.assertEqual([item["kind"] for item in events[:3]], ["snapshot", "poll", "snapshot"])
+        self.assertEqual(record["exit_code"], 0)
+        self.assertEqual(record["remaining_descendant_pids"], [])
+        self.assertEqual(record["cleanup_errors"], [])
+        return record
+
+    def test_stale_pre_exit_row_is_not_used_as_post_exit_evidence(self):
+        record = self.controlled_run(leak=False)
+        self.assertEqual(len(record["pre_poll_snapshot"]["rows"]), 2)
+        self.assertEqual(record["post_exit_snapshot"]["rows"], [])
+        self.assertEqual(record["status"], "completed")
+        self.assertIsNone(record["termination"])
+        self.assertIsNone(record["triggering_snapshot"])
+        self.assertEqual(record["signal_attempts"], [])
+
+    def test_fresh_post_exit_row_still_fails_and_signals(self):
+        record = self.controlled_run(leak=True)
+        self.assertEqual(record["post_exit_snapshot"]["rows"][0][0], 91002)
+        self.assertEqual(record["status"], "failed")
+        self.assertEqual(record["termination"], "descendants_remain_after_fresh_exit_sample")
+        self.assertEqual(record["triggering_snapshot"], record["post_exit_snapshot"])
+        self.assertEqual([(row["pgid"], row["signal"], row["result"])
+                          for row in record["signal_attempts"]],
+                         [(91001, "SIGSTOP", "sent"), (91001, "SIGKILL", "sent")])
 
 
 if __name__ == "__main__":
