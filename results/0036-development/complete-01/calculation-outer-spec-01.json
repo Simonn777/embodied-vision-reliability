@@ -1,0 +1,27 @@
+{
+  "repo": "${WORKSPACE}/work/embodied-vision-reliability",
+  "commit": "b1e9fc94d5dc3b08286a004dd2e1fb18ae03c7e1",
+  "timeout": 60,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0036-candidate-verification/saved_selection.py",
+    "--spec",
+    "${WORKSPACE}/work/0036-candidate-verification/calculation-spec-01.json"
+  ],
+  "operation_output": "${WORKSPACE}/work/0036-candidate-verification/calculation-supervision-01",
+  "result_file": "${WORKSPACE}/work/0036-candidate-verification/calculation-01/receipt.json"
+}

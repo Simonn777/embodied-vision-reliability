@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: determine whether whole-mask selection has sufficient opportunity
+## Current: preserve the action-class limit and design a richer realizable comparison
 
-1. The complete 0035 support screen is published and merged through PR72, with successful result and main CI. Preserve its positive mean union gain, onion decline, seven passed opportunity clauses and all limits. No new method or manuscript is established.
-2. Run the separately frozen [0036 saved-score diagnostic](experiments/0036-candidate-verification/ADMISSION.md) after source CI. It uses all 446 already exposed scalar rows, no media or model, to compare privileged whole-arm selection with fixed union and the pixel support ceiling. Its two necessary 3-point clauses guide action granularity only.
-3. After the result, design one realizable verifier comparison using strong ordinary same-input learning, fixed union and relevant reverse consistency. Null/background memory subtraction is not admitted: no coherent alternate-object reference or new identity-information advantage has been established. Keep every frame and ambiguous case; no outcome-based rescues or novelty claims from known combinations.
-4. The final two-independent-source official J&F gate, strong matched-cost controls, innovation, ablations and replication remain required. The goal is active and no manuscript is written.
+1. Publish the complete 0036 saved-score diagnostic through PR73 and verify result/main CI. Its whole-arm oracle fails the necessary Jtr condition. Do not train a more elaborate four-arm selector or weaken that criterion; preserve both policies and the positive D35 support opportunity.
+2. Specify one richer action: local selection within candidate support, or a defensible change to future causal tracking state. Explain the discriminative observation and the strong ordinary same-input comparison. Existing SAM-PT, FluxGraph, SAM2Long and distractor-memory work constrain novelty; adding parts, memories or a graph is not by itself a contribution.
+3. Keep known controls explicit and fully charged: native, fixed unions, ordinary supervision, relevant reverse consistency, and any same-information ablations. Do not call cheap KLT checks a SAM reverse-tracking reproduction. Include absent, untrackable and ambiguous cases in complete videos. No new inference, learning, acquisition or manuscript is currently admitted.
+4. The final two-independent-source official J&F gate, positive recording-level intervals, bounded component loss, strong matched-cost comparisons, novelty, ablations and independent replication remain unmet. Keep the goal active.
 
 ## Historical: preserve 0034 closure; reassess the failure mechanism and task
 

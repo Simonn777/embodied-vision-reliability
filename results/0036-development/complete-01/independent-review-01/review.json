@@ -1,0 +1,59 @@
+{
+  "schema": "evr0036.independent-scalar-review.v1",
+  "passed": true,
+  "checks": 1158,
+  "errors": [],
+  "source_sha256": "8f390ab625db5c22b6e7563bc99429a9bcaeabbc7d2b40adfcc3b7bcfca4f594",
+  "input_text_sha256": {
+    "${WORKSPACE}/work/0036-candidate-verification/calculation-spec-01.json": "f29193a674c82f0b76c008e46faf1b468a0832b7028a6eb428a9d18d8ac1cd88",
+    "${WORKSPACE}/work/0036-candidate-verification/calculation-outer-spec-01.json": "ac65319746fe44f90b773f80f76d40cafbc45b272bae429fc6dd6f34b7e99065",
+    "${WORKSPACE}/work/0036-candidate-verification/calculation-01/receipt.json": "c19e4d2f9c0065cfbca18515f978c1477a2c953b16a398e8791c6e7db076e05f",
+    "${WORKSPACE}/work/0036-candidate-verification/calculation-01/report.json": "ec5f7e6390d21bd33bc600f7b60eb4b7d5a9ef4c5e9df3619decf1ca3becfa44",
+    "${WORKSPACE}/work/0036-candidate-verification/calculation-supervision-01/receipt.json": "ea97bd94cf118a0c47244802e6c90ec7488e9f508b1164cb4f48edc55a81acc5",
+    "${WORKSPACE}/work/0035-transformation-support/evaluation-01/evaluation.json": "7fe9592298d1cced864eaa6f75faf973e98c10ea3ce8c91100a678cc6cd60fe3",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0036-candidate-verification/saved_selection.py": "17cfba5fd1a86a4a33d23135e73cfd28b218b81252eb252ecc7656bf978b30a6",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/supervise_exit_checked.py": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0025c-rs-noise/supervise.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+    "${WORKSPACE}/work/0036-candidate-verification/calculation-supervision-01/stdout.log": "c2fdd6fb3c6c9b02deaf6694abf82cd43690ad3934899b7a670df88d09511b22",
+    "${WORKSPACE}/work/0036-candidate-verification/calculation-supervision-01/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "max_absolute_difference": 1.1102230246251565e-16,
+  "comparison_tolerance": 1e-12,
+  "recomputed": {
+    "primary": {
+      "oracle": {
+        "J": 0.5503723021861647,
+        "Jtr": 0.33135259546111684
+      },
+      "gains": {
+        "J": 0.06436740845934108,
+        "Jtr": 0.017969410716616983
+      },
+      "clauses": {
+        "J_gain_at_least_3pp": true,
+        "Jtr_gain_at_least_3pp": false
+      },
+      "passed": false,
+      "tied_frames": 151
+    },
+    "void_ignore_sensitivity": {
+      "oracle": {
+        "J": 0.5679309656907693,
+        "Jtr": 0.3382282148127681
+      },
+      "gains": {
+        "J": 0.06988354302896764,
+        "Jtr": 0.018747077598973188
+      },
+      "clauses": {
+        "J_gain_at_least_3pp": true,
+        "Jtr_gain_at_least_3pp": false
+      },
+      "passed": false,
+      "tied_frames": 159
+    }
+  },
+  "wall_seconds": 0.022476292040664703,
+  "scope": "Exact Fraction arithmetic on saved scalar scores; no original producer import/rerun or media/array/model/network access.",
+  "conclusion": "Whole-arm action-class sufficiency fails; the earlier D35 support opportunity remains unchanged."
+}
