@@ -1,14 +1,14 @@
 # Embodied Vision Reliability
 
-Current work: [0027 prospective tangent sensitivity screen](docs/0027-admission.md), with a fixed manufactured falsifier and no scientific outcome yet. The prior0026 comparison failed:73.5881% AUC@5 versus74.1397% for its strongest control. No manuscript admission. See [current state](CURRENT_STATE.md).
+Current work: [0027 complete sensitivity result](results/0027-development/README.md). The fixed tangent candidate failed its noisy-yield and point-control benefit gates; independent audit agrees. No manuscript admission. See [current state](CURRENT_STATE.md).
 
 **Goal: a reproducible improvement in visual camera-motion estimation before a
 CVPR-targeted manuscript. No method currently meets that goal.**
 
-The latest moment-based affine-depth initialization failed its frozen80-pair
-comparison. A small convex relaxation and local polishing did not outperform
-the simpler Procrustes multistart control. All failures remain visible, and an
-independent saved-output audit confirms the negative decision. A different
+The latest tangent initializer recovered exact clean examples but failed its
+fixed noisy-utility gate and required advantage over the virtual-point control.
+The earlier moment-based initialization also failed its80-pair comparison.
+All failures remain visible and independently audited. A different testable
 mechanism is required before another task experiment. This concerns visual
 geometry for embodied systems and driving; no controller or driving result
 is claimed.
@@ -25,6 +25,7 @@ meet this standard. [Full prospective gate](protocols/0012-score-bounds-developm
 
 | Study | Verified result | Decision |
 |---|---|---|
+| [0027 affine tangent](results/0027-development/README.md) | All138 rows;57/128 useful noisy T poses versus57/128V. Two of four fixed clauses fail;41,707 audit checks pass. | Closed. No real-data expansion or manuscript. |
 | [0026 calibration moments](results/0026-development/README.md) | AUC@5 73.5881% versus strongest control74.1397% (−0.5516pp); three of four conditions fail. Independent saved-output audit agrees. | Closed. No held-out expansion or manuscript. |
 | [0025c initializer noise](results/0025c-development/README.md) | 13,332 attempts; every required D4 yield fails; D8 beats A8 in 0/96 primary records. Independent gate agrees; original numerical audit remains failed on one invalid diagnostic. | Closed. No robust stage, real-data expansion or manuscript. |
 | [0025b physical depth qualification](results/0025b-development/README.md) | 80 forwards, 64/64 primary pairs; scene median AbsRel 2.936% / 2.293%; fixed tolerances pass and independent arithmetic audit agrees. | Assumption qualified only. GS oracle remains better; no pose improvement or manuscript. |

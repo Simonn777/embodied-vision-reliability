@@ -1,6 +1,10 @@
 # Current state
 
-## Current preparation: 0027 prospective tangent sensitivity screen
+## Current result: 0027 failed and closed
+
+[All138 fixed rows](results/0027-development/README.md) completed with all1,656 native attempts. Exact clean correctness passed, but noisy useful yield and required point-control advantage failed. T:57/128 useful noisy poses and29.238564% AUC5; pinned V:57/128 and29.474902%. Independent saved-output audit passed41,707 checks. This is a manufactured negative result, not held-out success. No rescue tuning, F-all expansion or manuscript is admitted. The broader improvement goal stays active.
+
+## Historical preparation: 0027 prospective tangent sensitivity screen
 
 The [new candidate and limits](docs/0027-admission.md) are source-reviewed. It uses local affine image/depth derivatives with two depth offsets; a138-row manufactured necessary test is fixed before execution. No scientific cohort has run at this preparation. Artificial checks are not a research gain. The prior0026 result is published, failed and closed; no manuscript is admitted.
 
