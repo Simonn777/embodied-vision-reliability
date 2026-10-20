@@ -1,0 +1,60 @@
+{
+  "output": "$TASK/work/0030-memory-content/analysis/fixed-fit-01",
+  "family_root": "$TASK/work/0030-memory-content/residual-family",
+  "source_sha256": {
+    "$TASK/work/0030-memory-content/analysis/fixed_checkpoint_error.py": "59bc41717b484d34d84df4153a9db060fd8eb534407c4bdd7ff0f86e3df60d61",
+    "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+    "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951"
+  },
+  "targets": {
+    "path": "$TASK/work/0030-memory-content/campaign/teacher-rho015-01/targets.pt",
+    "sha256": "6bae49f7e07211cbddc2911ef5ce8a22d4849a28efce7786fd0915d3406e726c",
+    "bytes": 50699551
+  },
+  "teacher_receipt": {
+    "path": "$TASK/work/0030-memory-content/campaign/teacher-rho015-01/receipt.json",
+    "sha256": "4b80716988801029ca71ce88aae8b34d54cd7d8d54ba61486384ea5d8073d219",
+    "bytes": 115979
+  },
+  "checkpoints": [
+    {
+      "arm": "multistep",
+      "checkpoint": {
+        "path": "$TASK/work/0030-memory-content/campaign/fit-multistep-rho015-seed0-01/epoch-06.pt",
+        "sha256": "189df3ddc1b715effae8c2df0292d06258ec718912bfddc3e84c888a97549874",
+        "bytes": 406665
+      },
+      "receipt": {
+        "path": "$TASK/work/0030-memory-content/campaign/fit-multistep-rho015-seed0-01/receipt.json",
+        "sha256": "a516991c6399647165e133dce91e10b5729604b340277355203b61efb4c8abc6",
+        "bytes": 85596
+      }
+    },
+    {
+      "arm": "one_step",
+      "checkpoint": {
+        "path": "$TASK/work/0030-memory-content/campaign/fit-one_step-rho015-seed0-01/epoch-06.pt",
+        "sha256": "4d4dbb4081bdedc5f73f922271f9eeda33f6f5da107ea204e2b251ffd49f56f1",
+        "bytes": 406665
+      },
+      "receipt": {
+        "path": "$TASK/work/0030-memory-content/campaign/fit-one_step-rho015-seed0-01/receipt.json",
+        "sha256": "84042f171bd312da7b0e64b8365e5863b73c7d3f2b1655ddc0ffc1c3786201bd",
+        "bytes": 85876
+      }
+    },
+    {
+      "arm": "gt_memory",
+      "checkpoint": {
+        "path": "$TASK/work/0030-memory-content/campaign/fit-gt_memory-rho015-seed0-01/epoch-06.pt",
+        "sha256": "ae287c6a70ccd0de86b160e1cf25ba3ba880326619a08d04273aa7a3aa2eb4c6",
+        "bytes": 406665
+      },
+      "receipt": {
+        "path": "$TASK/work/0030-memory-content/campaign/fit-gt_memory-rho015-seed0-01/receipt.json",
+        "sha256": "341d1630f7cc7d27c204693a9461f1d67302eb8abf98dfec2f9fd7acf123c635",
+        "bytes": 86131
+      }
+    }
+  ]
+}
