@@ -1,0 +1,42 @@
+{
+  "schema": "evr0026.artificial-test.v1",
+  "scope": "artificial PSD quadratics only; no scientific arrays, models or network",
+  "command": [
+    "<user-home>/Documents/Codex/2026-10-12/ban/work/venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "test_lift_relaxation.py"
+  ],
+  "cwd": "<project>/work/0026-preparation",
+  "source_sha256": {
+    "lift_relaxation.py": "6f14df204ffca7cfa85c107b91fa83f81bff1e70a04981861d33b0d30487017e",
+    "test_lift_relaxation.py": "6f1b1c020a7766f38d5a0f61d261f219e0bb08da7eedd880df15e1428b01c28e"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "wall_limit_seconds": 120,
+  "status": "completed",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.23825775,
+  "max_rss_native": 31637504,
+  "max_rss_native_unit": "bytes",
+  "source_unchanged": true,
+  "logs": {
+    "stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr.log": {
+      "bytes": 1143,
+      "sha256": "fe13be067980e908f30488ff6d64632aa3285086cf8ba6e8d8fd68ab609fed89"
+    }
+  }
+}

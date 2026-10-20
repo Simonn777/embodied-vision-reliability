@@ -1,0 +1,42 @@
+{
+  "schema": "evr0026.artificial-test.v1",
+  "scope": "manufactured arithmetic only; no scientific arrays, models, fitting or network",
+  "command": [
+    "<user-home>/Documents/Codex/2026-10-12/ban/work/venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "test_moments.py"
+  ],
+  "cwd": "<project>/work/0026-preparation",
+  "source_sha256": {
+    "moments.py": "3b96ee5d9928b961db68be7ebab51a6fd840f715197a868982c8633c88bedef4",
+    "test_moments.py": "284567d53af8836ab7a4359ad9e1730a3159db8ac7a51ff6f7a3040f1fda1e01"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "wall_limit_seconds": 120,
+  "status": "completed",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.131762709,
+  "max_rss_native": 33423360,
+  "max_rss_native_unit": "bytes",
+  "source_unchanged": true,
+  "logs": {
+    "stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr.log": {
+      "bytes": 798,
+      "sha256": "308c97dc773a772ec1ee79c1b13922bbff3d64677d8c9464ed3b94c3a3feb62e"
+    }
+  }
+}

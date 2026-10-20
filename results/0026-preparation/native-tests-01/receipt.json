@@ -1,0 +1,39 @@
+{
+  "schema": "evr0026.native-qualification-operation.v1",
+  "stage": "artificial-tests",
+  "status": "completed",
+  "command": [
+    "<user-home>/Documents/Codex/2026-10-12/ban/work/venv/bin/python",
+    "-W",
+    "error",
+    "<project>/work/0026-preparation/native_bridge/test_bridge.py",
+    "--library",
+    "<project>/work/0026-preparation/native-build-02/libevr0026_refiner.dylib",
+    "--build-receipt",
+    "<project>/work/0026-preparation/native-build-02/receipt.json"
+  ],
+  "sources": {
+    "NOTICE.md": "b8b140d5d7e2ebb9192ea9d9871fd256676b963e48bd7e68fcab9fe82a53e749",
+    "README.md": "fc7f4a210c43cccb10a6df15640b460426882774697ca482a41dd143527edc11",
+    "bridge.py": "5f3746e2ec7562c63dd6ae9c8180e28ca542510b0e3762e7297c5c335f6ee820",
+    "build.py": "bea68b06b0c173ce3b454855defbbe678fd208d50ff5d17caff042f35184b4fd",
+    "input-lock.json": "80a0c7a2ba76025403bcc7d1abc4d3ace94c9dc141c479a1afe2180c026197ed",
+    "refiner.cc": "a2ebb24202efa5c4b26dabdfe1ea96bbd04541a063dfc626ebc47d8a79c86657",
+    "test_bridge.py": "2fee77efee97966526c72f7585b63d138cb076999e76cf94df4ffb828d372ce9"
+  },
+  "threads": 1,
+  "timeout_seconds": 180,
+  "rss_limit_kib": 8388608,
+  "scientific_data_access": false,
+  "expected_test_count": 8,
+  "prior_failed_build_preserved": "native-build-01",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.7692315000000001,
+  "peak_group_rss_kib": 35856,
+  "logs": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "fbb3da3eedd9992cae223b6707255ab83d9bd8ef0b5c9f2d4f2ca67aa6125e78"
+  },
+  "sources_unchanged": true
+}

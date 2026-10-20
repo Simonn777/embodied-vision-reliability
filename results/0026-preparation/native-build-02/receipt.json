@@ -1,0 +1,83 @@
+{
+  "abi_version": 260001,
+  "bridge_python_sha256": "5f3746e2ec7562c63dd6ae9c8180e28ca542510b0e3762e7297c5c335f6ee820",
+  "build_amendment": "After preserved build-01 unused-parameter failures in upstream camera_models.h, use -isystem for dependency headers; bridge retains -Wall -Wextra -Werror. No source/archive or algorithm change.",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/c++",
+    "-std=gnu++17",
+    "-O3",
+    "-DNDEBUG",
+    "-arch",
+    "arm64",
+    "-isysroot",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX27.0.sdk",
+    "-fPIC",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-dynamiclib",
+    "-Wl,-undefined,error",
+    "-isystem",
+    "<project>/work/0016-preparation/inputs/PoseLib-6a636b1d84273d5e3ba97676463476569611572a",
+    "-isystem",
+    "<project>/work/0016-preparation/pose-build/generated_headers",
+    "-isystem",
+    "<project>/work/0016-preparation/eigen-install/include/eigen3",
+    "<project>/work/0026-preparation/native_bridge/refiner.cc",
+    "<project>/work/0016-preparation/pose-build/PoseLib/libPoseLib.a",
+    "-o",
+    "<project>/work/0026-preparation/native-build-02/libevr0026_refiner.dylib"
+  ],
+  "exit_code": 0,
+  "inputs": {
+    "archive": "work/0016-preparation/pose-build/PoseLib/libPoseLib.a",
+    "compiler_sha256": "1590ac950a3d627817d09ade5cb60b2115f17a72182a3141e010b4bcc482a0c9",
+    "eigen_directory": "work/0016-preparation/eigen-install/include/eigen3",
+    "files": {
+      "work/0016-preparation/pose-build/PoseLib/CMakeFiles/PoseLib.dir/flags.make": "9f59613d33a8b9a48dd00c6b36a439ad866a01113b58b1206396a9cd0f613867",
+      "work/0016-preparation/pose-build/PoseLib/libPoseLib.a": "dc5b2b9a778a22d8449262777d861fc57a5b89a9678424fa84ecec86958abdfc",
+      "work/0016-preparation/pose-build/pybind/CMakeFiles/pyposelib.dir/link.txt": "079155cc7ad47dc792a4b3edb60af80795a8c134c8bf1ba4f1b72c317e5e5ec5"
+    },
+    "generated_directory": "work/0016-preparation/pose-build/generated_headers",
+    "schema": "evr0026.native-input-lock.v1",
+    "source_directory": "work/0016-preparation/inputs/PoseLib-6a636b1d84273d5e3ba97676463476569611572a",
+    "trees": {
+      "work/0016-preparation/eigen-install/include/eigen3": {
+        "file_count": 530,
+        "sha256": "91c3b17bda8c75b0efef33733f2a53f326d42e500970803cdd34d37d3e245f28"
+      },
+      "work/0016-preparation/inputs/PoseLib-6a636b1d84273d5e3ba97676463476569611572a/PoseLib": {
+        "file_count": 150,
+        "sha256": "df80caae3a92fe472f793a5c0dd58e163995b173b543f9429a3d6d73505d214f"
+      },
+      "work/0016-preparation/pose-build/generated_headers": {
+        "file_count": 2,
+        "sha256": "9b8f28643c4b61f242a4bf2d9d547e42335abe2128fae7c742ea2739a19fea31"
+      }
+    },
+    "upstream_commit": "6a636b1d84273d5e3ba97676463476569611572a"
+  },
+  "library_bytes": 858360,
+  "library_name": "libevr0026_refiner.dylib",
+  "library_sha256": "00418b002b005e664e75198c45e4a318d576a2ad04d8d0cb7eb7788affc18621",
+  "log_sha256": {
+    "stderr.log": "69b6d71fa30c544a0dd74dbed59e93e265fbdc66d9afe992bf515f532799a269",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "native_calls": 0,
+  "project_root": "<project>",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "python_executable": "<user-home>/Documents/Codex/2026-10-12/ban/work/venv/bin/python",
+  "schema": "evr0026.native-build.v1",
+  "source_sha256": {
+    "NOTICE.md": "b8b140d5d7e2ebb9192ea9d9871fd256676b963e48bd7e68fcab9fe82a53e749",
+    "bridge.py": "5f3746e2ec7562c63dd6ae9c8180e28ca542510b0e3762e7297c5c335f6ee820",
+    "build.py": "bea68b06b0c173ce3b454855defbbe678fd208d50ff5d17caff042f35184b4fd",
+    "input-lock.json": "80a0c7a2ba76025403bcc7d1abc4d3ace94c9dc141c479a1afe2180c026197ed",
+    "refiner.cc": "a2ebb24202efa5c4b26dabdfe1ea96bbd04541a063dfc626ebc47d8a79c86657"
+  },
+  "status": "completed",
+  "wall_seconds": 1.014889417
+}

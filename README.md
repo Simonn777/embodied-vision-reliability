@@ -1,5 +1,7 @@
 # Embodied Vision Reliability
 
+Current work: [0026 prospective calibration study](experiments/0026-calibration-moments/protocol.md). Source preparation only; no new measured pose gain or manuscript admission. See [current state](CURRENT_STATE.md).
+
 **Goal: a reproducible improvement in visual camera-motion estimation before a
 CVPR-targeted manuscript. No method currently meets that goal.**
 

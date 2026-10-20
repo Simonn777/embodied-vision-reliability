@@ -1,6 +1,12 @@
 # Current state
 
-## Current: 0025c failed and closed
+## Current: 0026 source preparation; no scientific result yet
+
+The [prospective fixed-support calibration comparison](experiments/0026-calibration-moments/protocol.md) tests a moment-based lifted initialization against continued native TC and equally compressed Procrustes/multistart controls. All80 old development pairs are retained. The independent arithmetic, optimizer, native bridge and fake-cohort checks passed; one initial compiler warning failure and its dependency-only repair are preserved. Exact source CI must precede the one supervised real-pair operation.
+
+Pose elimination, nonminimal refinement, moment compression and SDP machinery have close prior work. No novelty proof, pose improvement, matched-time claim or manuscript is established. The main two-source held-out gate remains unmet. [0025c publication](docs/0025c-publication-verification.md) is verified and its failed method remains closed.
+
+## Historical: 0025c failed and closed
 
 [The frozen noise falsifier](results/0025c-development/README.md) completed all
 132 records and 13,332 solves. Every D4 yield condition fails (0–13 useful outputs
