@@ -1,0 +1,43 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "$REPOSITORY/experiments/0029-memory-information/acquire_davis.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "c09e240009869402e2b97a55af42617eea3c6405",
+    "--metadata-root",
+    "$WORKSPACE",
+    "--phase",
+    "predictive_rgb",
+    "--output-dir",
+    "$PRIVATE/0029-davis-development-01/rgb"
+  ],
+  "spec_sha256": "1e2b7bea033553de04fa528aad9502263dd813f298a64b0a827c36f08c750ff8",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "c09e240009869402e2b97a55af42617eea3c6405",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 503.10138562502107,
+  "peak_group_rss_kib": 47376,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "b8abbe8299ca6257d564ca093a1c3e81a362551f9280b94e55cd71291337f0f8",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "4456842c36854ebd62e4725a7ebf9e19fae27434a89fc3b6a7e016a61920b5c8"
+}

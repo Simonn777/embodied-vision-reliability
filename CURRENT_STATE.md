@@ -1,6 +1,14 @@
 # Current state
 
-## Current work: 0029 native runtime qualified; real-video evidence test pending
+## Current work: 0029 real-video evidence coverage passes; accuracy untested
+
+The [complete first-stage result](results/0029-development/evidence/README.md) has38 actionable queries out of48, across all6 fixed development videos (3/8/8/8/8/3). All54SP extractions and48LG matches completed; independent saved-output audit passed77,458checks. Acquisition read54,228,671bytes and computation took27.674457s under the outer limit. The six parents are permanent development. This is an evidence-availability result; no scientific SAM predictions or query GT were accessed, and no accuracy improvement is established. Next qualify/freeze the complete native comparison, mandatory controls and all-six GT barrier. No manuscript.
+
+## Historical: fixed 0029 real-video evidence diagnostic prepared
+
+The [prospective protocol](protocols/0029-signed-memory-diagnostic.md) fixes six DAVIS development parents,48 queries, all signed/unsigned/native-bank/same-evidence prompt controls and numerical gates before media access. Only the first evidence stage is prepared:386RGB+6initial masks,54 SuperPoint extractions and48 LightGlue matches. A full60,000,000-byte acquisition hold is allocated; conservative planning balance1,289,868,314bytes. Query GT and scientific SAM execution remain closed pending their separate complete source freeze. No scientific media have been acquired at this source preparation, and no accuracy gain or manuscript is established.
+
+## Historical: 0029 native runtime qualified; real-video evidence test pending
 
 The [fresh runtime02 installation and fixed artificial sequence](results/0029-preparation/runtime/README.md) passed after the narrow metadata repair. Native qualification took37.009693s and2.55GiB peak sampled RSS, verified exact branch/no-op/future-state parity, found3 same-history native mask candidates and69 mutual artificial-image matches. A first independent audit's extra cross-batch pointer-position equality assertion failed; exact isolated arithmetic reproduced both hashes and the separately corrected audit passed18,197checks. All original failures remain. No benchmark image/mask has been acquired, no accuracy gain is established, and the manuscript gate remains unmet. Next freeze the complete first-stage real-video evidence diagnostic before its separate acquisition.
 

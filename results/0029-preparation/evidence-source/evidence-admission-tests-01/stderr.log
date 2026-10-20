@@ -1,0 +1,23 @@
+.........E
+======================================================================
+ERROR: test_worker_gets_only_scheduled_rgb_and_initial_annotations (__main__.EvidenceContracts.test_worker_gets_only_scheduled_rgb_and_initial_annotations)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "$PRIVATE/0029-preparation/test_run_evidence.py", line 335, in test_worker_gets_only_scheduled_rgb_and_initial_annotations
+    result, loads, guard = self.run_fake(worker)
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "$PRIVATE/0029-preparation/test_run_evidence.py", line 321, in run_fake
+    result = r.run(args)
+             ^^^^^^^^^^^
+  File "$PRIVATE/0029-preparation/run_evidence.py", line 227, in run
+    record["evidence"] = worker.run(inputs, out / "evidence", record)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$PRIVATE/0029-preparation/test_run_evidence.py", line 332, in worker
+    self.assertEqual(cohort["initial_mask"]["frame"], 0)
+                     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'frame'
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.586s
+
+FAILED (errors=1)

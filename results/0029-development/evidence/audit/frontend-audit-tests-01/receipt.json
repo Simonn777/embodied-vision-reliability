@@ -1,0 +1,32 @@
+{
+  "schema": "evr0029.frontend-audit-artificial-tests.v1",
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "$PRIVATE/0029-preparation/test_audit_frontend_saved.py"
+  ],
+  "cwd": "$PRIVATE/0029-preparation",
+  "exit_code": 0,
+  "error": null,
+  "wall_seconds": 0.14582445804262534,
+  "timeout_seconds": 60,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "source_sha256": {
+    "audit_frontend_saved.py": "ed110ab0de54a55f003bf8df9cdf065ef2e9e3b9ed67b47bc48e59f3b8574e11",
+    "test_audit_frontend_saved.py": "09bf819909fa0bece253a8ea3904d7401181fc7f3029028b977fe9b1dc65998a"
+  },
+  "source_unchanged": true,
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "6273232de4d3ef7acd4ecafa5c86beeeb974f56586b21089a2990b3f72facbe6"
+  },
+  "scope": "five manufactured witness-array tests only; no saved media, model or network access"
+}

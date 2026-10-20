@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: qualify the minimum native runtime, then test information
+## Current: qualify complete native controls, then test actual segmentation
 
-1. Preserve [0029 acquisition receipts](results/0029-preparation/acquisition/README.md), exact source CI and all original assets. Acquisition passed; do not repeat it. Publish and verify this result as preparation, not improvement.
-2. Preserve failed installation01 and completed runtime02, independently verify saved artificial outputs, publish/verify result and merged-main CI. Native SAM2/LightGlue qualification passed; DAM VOT/device equivalence remains necessary before a larger efficacy claim.
-3. Freeze the complete first-stage independent-recording development evidence diagnostic, fixed frame schedule, signed/unsigned and same-evidence prompt/reset controls, numeric stopping gates and GT separation before any image/mask acquisition. Only if all48 evidence rows support the fixed necessary coverage condition, finish/freeze all native comparison controls and all-six prediction seals before SAM sequence execution or query GT. A necessary-information failure closes this variant rather than prompting hidden tuning.
-4. Preserve the two-source +3 absolute J&F gate, complete-cost controls, ablations and independent replication before any manuscript. No asset receipt or artificial check counts toward this gate.
+1. Publish and verify the [complete evidence result](results/0029-development/evidence/README.md), exact result CI and merged-main CI. Retain every original acquisition/prediction/audit receipt; no repeat downloads or matching. All6 videos passed the fixed necessary coverage gate, with38/48 actionable queries.
+2. Preserve the immutable first-stage source/protocol at c09e240009869402e2b97a55af42617eea3c6405. Complete/freeze the separate native-video worker,25-frame manufactured qualification, all same-evidence controls, six prediction seals, GT barrier and evaluator. Require review and exact-source CI before native qualification and scientific SAM; no query GT before all six complete clean predictions.
+3. Run every complete video and all48 fixed queries once under the original resource/control limits. Evaluate only after all predictions are sealed. Preserve necessary oracle headroom and signed-versus-strong-control numerical gates; no cohort, age, point or threshold rescue tuning.
+4. No manuscript before innovative, reproducible +3 absolute J&F on each of two independent held-out sources, complete-cost strong controls, recording-level uncertainty, ablations and replication. This availability pass is not accuracy improvement.
 
 ## Historical: resolve one falsifiable information question before implementation
 

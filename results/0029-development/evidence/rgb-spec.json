@@ -1,0 +1,30 @@
+{
+  "repo": "$REPOSITORY",
+  "commit": "c09e240009869402e2b97a55af42617eea3c6405",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": ""
+  },
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "$REPOSITORY/experiments/0029-memory-information/acquire_davis.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "c09e240009869402e2b97a55af42617eea3c6405",
+    "--metadata-root",
+    "$WORKSPACE",
+    "--phase",
+    "predictive_rgb",
+    "--output-dir",
+    "$PRIVATE/0029-davis-development-01/rgb"
+  ],
+  "operation_output": "$PRIVATE/0029-davis-development-01/rgb-supervision",
+  "result_file": "$PRIVATE/0029-davis-development-01/rgb/receipt.json"
+}
