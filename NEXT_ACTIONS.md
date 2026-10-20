@@ -1,5 +1,12 @@
 # Next actions
 
+1. Publish the complete0037 negative result with all controls, failures, costs and independent review; verify result and merged-main CI.
+2. Keep the exact constrained-flow/cell-readout recipe closed without threshold/optimizer/seed rescue. Assess a materially different observable/mechanism before another experiment; existing visibility/ancestry combinations remain close prior art.
+3. Qualify M3-VOS original-recording metadata, immutable evaluator and bounded file manifest before any new acquisition or final-source claim. No endpoint amendment is currently adopted.
+4. Preserve the substantial two-independent-source final gate, strong complete-cost controls, uncertainty, ablations and replication before a manuscript.
+
+## Previous action records
+
 Startup follow-up: complete01 stopped before data at the incorrect copied D35 spec SHA. Corrected-source qualification03 passes26/26; freeze and verify exact-source CI before the unchanged complete02 comparison. Preserve both earlier failures.
 
 ## Current: execute the frozen complete local comparison
