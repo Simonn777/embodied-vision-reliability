@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: publish the positive support screen and design a realizable test
+## Current: preserve the action-class limit and design a richer realizable comparison
 
-1. Finish independent saved-text arithmetic, coverage and seal review. Publish all 0035 results through PR72, including the sharp onion decline, both void policies, all failed transports and costs. Verify result and merged-main CI. Do not rerun predictions or select favorable clips.
-2. Treat the seven-clause screen as evidence of available target support. Develop one causal verifier hypothesis with a specific discriminative observation, an ordinary same-input supervised control, fixed union, reverse-consistency control and complete-pipeline costs. Existing FluxGraph and material-ancestry work limit novelty claims. Positive mean union gain establishes a stronger baseline, not an invention.
-3. Freeze the next complete development comparison before executing it. Preserve every object and frame, including cases with absent or ambiguous evidence. Prediction cannot use GT-derived pair locations, event times or correct parent identities. Distinguish gains from supervision from gains due to the proposed mechanism. No successor run is yet admitted.
-4. Preserve the final requirements: +3 official J&F points on each of two independent held-out sources; positive paired recording-level 95% intervals; bounded J/F component loss; strong same-information controls at matched complete-pipeline cost; ablations; independent replication. The goal remains unachieved; no manuscript.
+1. Publish the complete 0036 saved-score diagnostic through PR73 and verify result/main CI. Its whole-arm oracle fails the necessary Jtr condition. Do not train a more elaborate four-arm selector or weaken that criterion; preserve both policies and the positive D35 support opportunity.
+2. Specify one richer action: local selection within candidate support, or a defensible change to future causal tracking state. Explain the discriminative observation and the strong ordinary same-input comparison. Existing SAM-PT, FluxGraph, SAM2Long and distractor-memory work constrain novelty; adding parts, memories or a graph is not by itself a contribution.
+3. Keep known controls explicit and fully charged: native, fixed unions, ordinary supervision, relevant reverse consistency, and any same-information ablations. Do not call cheap KLT checks a SAM reverse-tracking reproduction. Include absent, untrackable and ambiguous cases in complete videos. No new inference, learning, acquisition or manuscript is currently admitted.
+4. The final two-independent-source official J&F gate, positive recording-level intervals, bounded component loss, strong matched-cost comparisons, novelty, ablations and independent replication remain unmet. Keep the goal active.
 
 ## Historical: preserve 0034 closure; reassess the failure mechanism and task
 

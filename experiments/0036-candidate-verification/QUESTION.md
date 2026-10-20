@@ -1,0 +1,17 @@
+# 0036: realizable verification after the positive support screen
+
+Status: source/design only. No method, fit, acquisition or new data access is admitted by this note. D35's four clips are exposed development; their raw source-recording grouping is unresolved. Any cross-fit must be called leave-one-clip-out, not leave-one-recording-out.
+
+The measured target is now specific: fixed native alternative support improves average J/Jtr, but accepting it damages the onion clip. A verifier must exceed the complete fixed-union control and native, while retaining the losing/ambiguous cases. GT-assisted pixel support ceilings do not establish a realizable whole-mask action.
+
+The next minimal decision is the required action granularity. Use the already published D35 scalar per-frame J values to calculate the privileged best-of-four real-arm value at every frame, using fixed arm order to resolve ties. Also calculate the best constant arm per clip. This requires no arrays, media, labels, model or new prediction. It cannot establish learning, novelty, independence or generalization. Formula, fixed population and result interpretation will be recorded before the calculation; original D35 clauses are unchanged.
+
+If complete whole-arm selection has at least 3 absolute J and 3 Jtr points of possible gain above the strongest fixed real arm, a low-capacity ordinary causal arm selector is a justified next control. Otherwise, any future candidate verifier must explain a richer action such as selecting disjoint added regions. This screen is necessary effort allocation, not an efficacy gate or permission to invent a successful method. All outcomes and both void policies will be retained.
+
+Any actual learned comparison requires a separate complete design with native, union, ordinary same-input learning, point/appearance ablation where applicable, and a relevant causal reverse-consistency control. Keep GT-derived positions/events/parents out of prediction. Do not call KLT forward/backward checking a FluxGraph SAM reverse control. Capacity, fitting rule, labels, grouping, cost and outcome criteria must be fixed before the new fits.
+
+A null/background memory subtraction proposal was considered and not admitted. In the pinned native source, spatial memory and object pointers both carry target identity. No-memory/no-prompt decoding removes the task condition; the background complement is not a coherent alternate object, and the four current clips have no other initial target. Complete alternative-object memory is just the existing other object's prediction when such an object exists. Extra decoder outputs would need a new fully charged pass because D35 saved no encoder features or memory state. SANSA negative references, DAM4SAM and Competitive Memory Readout further limit any novelty claim for target-versus-competitor memory contrast.
+
+Relevant primary sources: SANSA Appendix F https://arxiv.org/html/2505.21795v2#A6 ; Competitive Memory Readout technical report https://arxiv.org/html/2608.22064v1#S3.SS2 ; DAM4SAM CVPR2025 https://openaccess.thecvf.com/content/CVPR2025/papers/Videnovic_A_Distractor-Aware_Memory_for_Visual_Object_Tracking_with_SAM2_CVPR_2025_paper.pdf . These source checks do not prove no possible useful intervention exists.
+
+The unchanged final two-independent-source official J&F gate, strong matched-cost controls, innovation, ablations and replication remain required before any manuscript. No additional transfer reservation, runtime, fee or schedule change follows from this source-only note.

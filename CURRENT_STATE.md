@@ -1,6 +1,10 @@
 # Current state
 
-## Current: support screen passes; a new method remains unproven
+## Current: local verification or a different causal state action is needed
+
+The [0036 saved-score bound](results/0036-development/complete-01/README.md) rules out the limited whole-arm selector for its declared target. GT-assisted best-of-four per frame reaches **55.0372302 J / 33.1352595 Jtr%**, changes of **+6.4367408 / +1.7969411 pp** over union. The 3-point J clause passes and Jtr fails, under both void policies. All 446 scalar rows are retained. A clean 0.190451334s operation and independent 1,158-check exact-rational review confirm the result. No model, media or new labels were read; no selector was trained. The original D35 support gate remains positive.
+
+PR72 is merged at `18e5285`, with successful result CI `39472015480` and main CI `39472467563`. PR73 records the narrower action-class limit. A richer future action is not automatically admitted or innovative; it needs a defensible observable, strong ordinary same-information controls and a complete prospective comparison.
 
 The [complete 0035 results](results/0035-development/complete-01/README.md) retain all 446 raw frames, six arms and both void policies. Native J/Jtr is **44.3324994 / 24.1167225%**; fixed union reaches **48.6004894 / 31.3383185%**, changes of **+4.2679900 / +7.2215959 pp**. Union improves guava, clothing and film but worsens onion J by 16.1220367 pp. All four complete clips remain in the comparison. The mean gain does not establish consistent transfer or innovation.
 

@@ -1,0 +1,37 @@
+{
+  "schema": "evr0036.manufactured-tests.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "-S",
+    "-Werror",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "${WORKSPACE}/work/0036-candidate-verification",
+    "-p",
+    "test_saved_selection.py",
+    "-v"
+  ],
+  "source_sha256": {
+    "saved_selection.py": "17cfba5fd1a86a4a33d23135e73cfd28b218b81252eb252ecc7656bf978b30a6",
+    "test_saved_selection.py": "2e7d1bd4bfd74e4d9934500eeb455a896a9fd601a0a3e6184325522bab9df993"
+  },
+  "timeout_seconds": 60,
+  "real_scalar_reads": 0,
+  "media_reads": 0,
+  "model_calls": 0,
+  "network_calls": 0,
+  "exit_code": 0,
+  "wall_seconds": 0.13684125000145286,
+  "source_sha256_after": {
+    "saved_selection.py": "17cfba5fd1a86a4a33d23135e73cfd28b218b81252eb252ecc7656bf978b30a6",
+    "test_saved_selection.py": "2e7d1bd4bfd74e4d9934500eeb455a896a9fd601a0a3e6184325522bab9df993"
+  },
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "ffcc2a3cadb8b5558d928b99af6ee94e636505465813cd96566528f0d8d741f4"
+  }
+}
