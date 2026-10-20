@@ -1,0 +1,22 @@
+{
+  "repo": "$REPO",
+  "commit": "098dee64878b5ef33edbac12223f86da176e091e",
+  "timeout": 60,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": ""
+  },
+  "command": [
+    "$PYTHON",
+    "-B",
+    "-W",
+    "error",
+    "$PRIVATE/0030-memory-content/data-acquisition/test_acquire_masks.py",
+    "-v"
+  ],
+  "operation_output": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/supervision"
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "evr0030.development-mask-transport.v1",
+  "root": "$PRIVATE/0030-memory-content/data-acquisition",
+  "inventory": "$PRIVATE/0030-memory-content/data-acquisition/inventory.json",
+  "bindings": [
+    {
+      "path": "$PRIVATE/0030-memory-content/development-mask-metadata-plan.json",
+      "bytes": 150148,
+      "sha256": "a5b52f4d3c49753084ab40d27c43711df988a333bb043b9ebf9e6d2f4e56330d"
+    },
+    {
+      "path": "$PRIVATE/0029-screening/video-cohort-metadata/davis-central.bin",
+      "bytes": 1401029,
+      "sha256": "97277af1eff6ad51f60bcad90139e82a7b46f3d0766eee2e8b83d62fa0728d9b"
+    },
+    {
+      "path": "$PRIVATE/0029-screening/video-cohort-metadata/davis-members.json",
+      "bytes": 3735257,
+      "sha256": "32ad50e44e7c2c2fc325d81d42c56fb995492f3438268116fe1f101ccd19c5f0"
+    },
+    {
+      "path": "$PRIVATE/0030-memory-content/data-acquisition/inventory.json",
+      "bytes": 215108,
+      "sha256": "af61649da7a6a4526007f532f2b68bec18d8ee8c7a55e316a8ef54bf2e2cbdd9"
+    },
+    {
+      "path": "$REPO/experiments/0029-memory-information/acquire_davis.py",
+      "bytes": 17642,
+      "sha256": "4e2897ee0b1dfea25b3388805f019e155be53986d155f71c369101293919ee69"
+    },
+    {
+      "path": "$REPO/experiments/0023-mapfree/range_inputs.py",
+      "bytes": 19406,
+      "sha256": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50"
+    },
+    {
+      "path": "$REPO/experiments/0029-memory-information/supervise_exit_checked.py",
+      "bytes": 9772,
+      "sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8"
+    },
+    {
+      "path": "$REPO/experiments/0025c-rs-noise/supervise.py",
+      "bytes": 11411,
+      "sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd"
+    },
+    {
+      "path": "$PRIVATE/0029-davis-development-01/initial/receipt.json",
+      "bytes": 16947,
+      "sha256": "4aa30f6ba11b5d43886a63d084d432b2a653b2e69f16e830a61327837f1232c1"
+    },
+    {
+      "path": "$PRIVATE/0029-davis-development-01/initial-supervision/receipt.json",
+      "bytes": 1560,
+      "sha256": "d1cbeaba49dabbe52c964864be885907790878a85374d2570f028bb8bdcbe51a"
+    },
+    {
+      "path": "$PRIVATE/0029-davis-development-01/initial-supervision/stdout.log",
+      "bytes": 121,
+      "sha256": "a38ced4cac63c50efff067f0a70c7d0efded759c829c71158faf2403c622add0"
+    },
+    {
+      "path": "$PRIVATE/0029-davis-development-01/initial-supervision/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "$PRIVATE/0029-native-development-02/gt/acquisition/receipt.json",
+      "bytes": 394183,
+      "sha256": "b9390b07e1dc8cea32b17d10072370cc2d79a4978386e988edb49780e96d1275"
+    },
+    {
+      "path": "$PRIVATE/0029-native-development-02/gt/receipt.json",
+      "bytes": 275099,
+      "sha256": "e843005de8e1033b25fed87663bbc4e9c1a09f4d28bcd995fea009347bd7f415"
+    },
+    {
+      "path": "$PRIVATE/0029-native-development-02/gt-supervision/receipt.json",
+      "bytes": 2764,
+      "sha256": "5f5b0e5a355133f61ac17336ff1a01424532d98b1b31c43f1cb506dd2daa61d0"
+    },
+    {
+      "path": "$PRIVATE/0029-native-development-02/gt-supervision/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "$PRIVATE/0029-native-development-02/gt-supervision/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "$PRIVATE/0030-memory-content/data-acquisition/contract.md",
+      "bytes": 3295,
+      "sha256": "e47dda3791199a276327ef0f20a04b22d14dbc1936ffbae15adb11c3e9a26390"
+    }
+  ],
+  "reuse_chains": [
+    {
+      "receipt": "$PRIVATE/0029-davis-development-01/initial/receipt.json",
+      "outer": "$PRIVATE/0029-davis-development-01/initial-supervision/receipt.json"
+    },
+    {
+      "receipt": "$PRIVATE/0029-native-development-02/gt/acquisition/receipt.json",
+      "operation": "$PRIVATE/0029-native-development-02/gt/receipt.json",
+      "outer": "$PRIVATE/0029-native-development-02/gt-supervision/receipt.json"
+    }
+  ],
+  "sequences": [
+    "dog-agility",
+    "planes-water",
+    "dogs-scale",
+    "dog-gooses",
+    "cat-girl",
+    "upside-down"
+  ],
+  "url": "https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip",
+  "etag": "\"31a3032d-54c6d0af8b4dc\"",
+  "archive_bytes": 832766765,
+  "directory_offset": 831365714,
+  "body_cap": 6000000,
+  "request_cap": 1992,
+  "max_starts": 2,
+  "remaining_planning_balance": 1283590729,
+  "range_helper": "$REPO/experiments/0023-mapfree/range_inputs.py",
+  "extractor": "$REPO/experiments/0029-memory-information/acquire_davis.py"
+}

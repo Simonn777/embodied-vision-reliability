@@ -1,30 +1,19 @@
 # Embodied Vision Reliability
 
-Current result: [0028 normal-information comparison failed](results/0028-development/README.md): ANG 2.6954% versus strongest control 51.0001% AUC@5. All 24 fits completed; independent audit agrees. The fixed variant is closed, with no manuscript admission. See [current state](CURRENT_STATE.md).
+Current development result: the complete rho=0.15 / seed=0 comparison shows multistep memory-content distillation **−0.4934 J&F points**, one-step **−0.1857**, cost-matched direct training **−0.8897**, and update-matched direct training **−0.7492** versus native SAM2. The same-head current-GT-memory control gains only **+0.2139** on two exposed single-object DEV videos. [All six arms and actual costs](results/0030-development/rho015-seed0-complete/README.md) · [Saved-result diagnosis](results/0030-development/rho015-seed0-diagnosis.md). These negative and small positive development results do not meet the research goal.
 
 **Goal: a substantial, reproducible computer-vision improvement relevant to embodied systems or driving before a CVPR-targeted manuscript. No method currently meets that goal.**
 
-The latest normal-guided correction reduced its own fitting objective but lost
-substantially to the geometric pose baseline. Earlier tangent and moment-based
-initializers also failed their fixed comparisons.
-All failures remain visible and independently audited. A different testable
-mechanism is required before another task experiment. This concerns visual
-geometry for embodied systems and driving; no controller or driving result
-is claimed.
+The [0030 development campaign](protocols/0030-development-campaign.md) tests a causal memory-content head learned from a multistep future-loss optimizer against the same head trained directly. All 48 teacher anchors, three 288-update regressor fits, both direct controls and all six complete DEV rollouts are finished. Native replay reproduces the baseline exactly: J 94.7652%, F 89.5893%, J&F 92.1772%. Teacher TRAIN surrogate loss falls about 5.67%, and the final multistep head reduces target-fit error to 0.5097 of the zero predictor's error. The [saved-teacher replay](results/0030-development/teacher-task-alignment-01/README.md) gains only +0.3276 J&F pp on fixed TRAIN contexts, with one negative parent; it is neither causal deployment nor an upper bound. No all-active-write training is admitted. [Related future-supervision methods, including DiTTA](docs/0030-future-memory-write-prior.md), limit broad novelty claims; no new-method or driving result is established.
 
-The next experiment must test a concrete accuracy mechanism against strong
-controls. The existing camera-motion target is at least **+2 absolute AUC@5 percentage points**
-at matched complete-pipeline time on two independent held-out sources, positive
-paired scene-level uncertainty bounds, and no more than0.5point AUC@20 loss.
-Novelty, ablations and independent reproduction are also required before a
-paper. A successful software check or reduction in operation count does not
-meet this standard. [Full prospective gate](protocols/0012-score-bounds-development.md).
-The [0029 task screen](docs/0029-task-screen.md) records rejected alternatives and unresolved resource contracts. A task change requires an equally substantial new gate before outcomes; no replacement method or successful result is admitted yet.
+The current VOS manuscript gate is **+3 absolute official J&F points on each of two independent held-out sources**, positive paired recording-level 95% intervals, neither J nor F down more than 0.5 point, strong controls at a common complete-pipeline budget, ablations and independent replication. A successful software check or training-loss reduction does not meet it. [Development and final-evidence policy](docs/0030-development-policy.md). Historical camera-motion gates and failed results remain unchanged.
 
 ## Current evidence · October 20, 2026
 
 | Study | Verified result | Decision |
 |---|---|---|
+| [0030 learned memory content, complete first configuration](results/0030-development/rho015-seed0-complete/README.md) | J&F 92.1772 native; 91.6838 multistep; 91.9915 one-step; 92.3911 GT-memory; 91.2875 cost-matched direct; 91.4281 update-matched direct. All own rollouts and both parents retained. | No multistep gain; GT control's +0.2139 pp is modest. TRAIN fit diagnostic complete; development remains open, no manuscript. |
+| [0029 fixed memory deletion](results/0029-development/native-attempt-02/README.md) | Six videos/386 frames/48 queries; signed loses 0.047759 pp to strongest control; admissible oracle headroom 0.076821 pp; independent audit 12,463 checks/0 errors. | Closed. Custom query J, not official J&F; no manuscript. |
 | [0028 normal information](results/0028-development/README.md) | ANG AUC@5 2.6954% versus E 51.0001% (−48.3047 pp), all 3 scene margins negative; independent audit 2,451 checks pass. | Closed. No held-out expansion or manuscript. |
 | [0027 affine tangent](results/0027-development/README.md) | All138 rows;57/128 useful noisy T poses versus57/128V. Two of four fixed clauses fail;41,707 audit checks pass. | Closed. No real-data expansion or manuscript. |
 | [0026 calibration moments](results/0026-development/README.md) | AUC@5 73.5881% versus strongest control74.1397% (−0.5516pp); three of four conditions fail. Independent saved-output audit agrees. | Closed. No held-out expansion or manuscript. |

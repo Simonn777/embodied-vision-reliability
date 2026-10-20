@@ -1,0 +1,80 @@
+{
+  "repo": "$TASK/work/embodied-vision-reliability",
+  "native_root": "$TASK/work/0029-runtime-02",
+  "native_commit": "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+  "source_sha256": {
+    "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+    "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+    "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+    "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+    "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+    "$TASK/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f",
+    "$TASK/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+    "$TASK/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645"
+  },
+  "seed": 0,
+  "output": "$TASK/work/0030-memory-content/campaign/evaluate-native-rho015-seed0-01",
+  "mode": "metric",
+  "rho": 0.15,
+  "train_sequences": [
+    "dog-agility",
+    "planes-water",
+    "dogs-scale",
+    "dog-gooses"
+  ],
+  "family_root": "$TASK/work/0030-memory-content/residual-family",
+  "cache": "$TASK/work/0030-memory-content/campaign/cache-01",
+  "cache_receipt_sha256": "75b054bbc06796a175bb028386ed91a2809e4dc1545e74a420f29a04cc7c14be",
+  "bindings": {
+    "cache_receipt": {
+      "path": "$TASK/work/0030-memory-content/campaign/cache-01/receipt.json",
+      "bytes": 414146,
+      "sha256": "75b054bbc06796a175bb028386ed91a2809e4dc1545e74a420f29a04cc7c14be"
+    },
+    "cache_outer": {
+      "path": "$TASK/work/0030-memory-content/campaign/cache-supervision-01/receipt.json",
+      "bytes": 1362,
+      "sha256": "d7d9d59d664b55c2ca897f3c8c112133f54ff6ee894f5e17d98d85a13c81aceb"
+    },
+    "cache_operation": {
+      "path": "$TASK/work/0030-memory-content/campaign/cache-operation-01.json",
+      "bytes": 1763,
+      "sha256": "50ca8c4222da050d5e8ccc6bca132913ebdafb068e99944d1b3a248634bdd7ad"
+    },
+    "cache_worker_spec": {
+      "path": "$TASK/work/0030-memory-content/campaign/cache-spec-01.json",
+      "bytes": 1118,
+      "sha256": "83e7ad326c64e203cac223bd818cbf783b95d012c7438cc587df19e44009cfa3"
+    },
+    "mapping": {
+      "path": "$TASK/work/0030-memory-content/data-acquisition/complete-mapping.json",
+      "bytes": 245673,
+      "sha256": "866bf2d4403d8f5520f0af1a168f043a58fa0f2e1ba47d8aea3d53fca8ab2990"
+    },
+    "data_index": {
+      "path": "$TASK/work/0030-memory-content/campaign/data-index-01.json",
+      "bytes": 257070,
+      "sha256": "879bdaced9dda0637f0e678de5c6d3478fc2c51e50e5eee7b5867aefa7b9c99d"
+    },
+    "rollout_receipt": {
+      "path": "$TASK/work/0030-memory-content/campaign/rollout-native-rho015-seed0-01/receipt.json",
+      "bytes": 146259,
+      "sha256": "200f44f0241603c16c8876680b7af93fcc119160682725785904d05f43e816eb"
+    },
+    "rollout_outer": {
+      "path": "$TASK/work/0030-memory-content/campaign/rollout-native-rho015-seed0-01-supervision/receipt.json",
+      "bytes": 2615,
+      "sha256": "3e0d65f2b17dabb921a5ffa48484275cca74c3210adf1fff2e0ab070491b5918"
+    },
+    "rollout_operation": {
+      "path": "$TASK/work/0030-memory-content/campaign/rollout-native-rho015-seed0-01-outer-spec.json",
+      "bytes": 1293,
+      "sha256": "f6a129e47a096646b7d60b978c9584ad4730900ac5dde29965f3c0cf882ed747"
+    },
+    "rollout_worker_spec": {
+      "path": "$TASK/work/0030-memory-content/campaign/rollout-native-rho015-seed0-01-spec.json",
+      "bytes": 2275,
+      "sha256": "bd75496b953124fc0e5ccb6073fd2e7e7af57147fdf3ea40fd01acfdf8987872"
+    }
+  }
+}

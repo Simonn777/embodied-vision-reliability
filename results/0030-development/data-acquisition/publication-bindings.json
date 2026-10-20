@@ -1,0 +1,496 @@
+{
+  "schema": "evr0030.acquisition-publication-bindings.v1",
+  "scope": "metadata_and_original_local_source_only_no_media",
+  "path_aliases": {
+    "$PRIVATE": "private work directory",
+    "$REPO": "repository checkout",
+    "$PROJECT": "project root",
+    "$PYTHON": "qualified CPython interpreter"
+  },
+  "transformation_rule": "Replace the qualified interpreter prefix, then repository root, then private work root, then project root, in that order, as literal UTF-8 substrings. Preserve every other byte; embedded original hashes are not rewritten.",
+  "original_receipts_immutable": true,
+  "media_included": false,
+  "events_included": false,
+  "original_event_logs_retained_privately": true,
+  "original_snapshot_checks": [
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/source-snapshot/acquire_masks.py",
+      "original_sha256": "bd99aefde39e30cc0ebf7dee221278bd63640082f300d51bf477e758f11b1769",
+      "original_bytes": 16248,
+      "identical_to_original_for_bundle_path": "source/acquire_masks.py"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/source-snapshot/config.json",
+      "original_sha256": "e338e7bf1aa65f081f97ad287875a752477a8202ca3481de84090aa38f11ba58",
+      "original_bytes": 6859,
+      "identical_to_original_for_bundle_path": "config.json"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/source-snapshot/inventory.json",
+      "original_sha256": "af61649da7a6a4526007f532f2b68bec18d8ee8c7a55e316a8ef54bf2e2cbdd9",
+      "original_bytes": 215108,
+      "identical_to_original_for_bundle_path": "inventory.json"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/source-snapshot/contract.md",
+      "original_sha256": "e47dda3791199a276327ef0f20a04b22d14dbc1936ffbae15adb11c3e9a26390",
+      "original_bytes": 3295,
+      "identical_to_original_for_bundle_path": "contract.md"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/source/acquire_masks.py",
+      "original_sha256": "bd99aefde39e30cc0ebf7dee221278bd63640082f300d51bf477e758f11b1769",
+      "original_bytes": 16248,
+      "identical_to_original_for_bundle_path": "source/acquire_masks.py"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/source/test_acquire_masks.py",
+      "original_sha256": "20ad0ff1ab94d11c84ae0fc64fb5b96b7c0513191ab6ab67bb4d2be0da5a4788",
+      "original_bytes": 6297,
+      "identical_to_original_for_bundle_path": "source/test_acquire_masks.py"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/source/config.json",
+      "original_sha256": "e338e7bf1aa65f081f97ad287875a752477a8202ca3481de84090aa38f11ba58",
+      "original_bytes": 6859,
+      "identical_to_original_for_bundle_path": "config.json"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/source/inventory.json",
+      "original_sha256": "af61649da7a6a4526007f532f2b68bec18d8ee8c7a55e316a8ef54bf2e2cbdd9",
+      "original_bytes": 215108,
+      "identical_to_original_for_bundle_path": "inventory.json"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/source/contract.md",
+      "original_sha256": "e47dda3791199a276327ef0f20a04b22d14dbc1936ffbae15adb11c3e9a26390",
+      "original_bytes": 3295,
+      "identical_to_original_for_bundle_path": "contract.md"
+    }
+  ],
+  "files": [
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/acquire_masks.py",
+      "original_sha256": "bd99aefde39e30cc0ebf7dee221278bd63640082f300d51bf477e758f11b1769",
+      "original_bytes": 16248,
+      "bundle_path": "source/acquire_masks.py",
+      "bundle_sha256": "bd99aefde39e30cc0ebf7dee221278bd63640082f300d51bf477e758f11b1769",
+      "bundle_bytes": 16248,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/test_acquire_masks.py",
+      "original_sha256": "20ad0ff1ab94d11c84ae0fc64fb5b96b7c0513191ab6ab67bb4d2be0da5a4788",
+      "original_bytes": 6297,
+      "bundle_path": "source/test_acquire_masks.py",
+      "bundle_sha256": "20ad0ff1ab94d11c84ae0fc64fb5b96b7c0513191ab6ab67bb4d2be0da5a4788",
+      "bundle_bytes": 6297,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/config.json",
+      "original_sha256": "e338e7bf1aa65f081f97ad287875a752477a8202ca3481de84090aa38f11ba58",
+      "original_bytes": 6859,
+      "bundle_path": "config.json",
+      "bundle_sha256": "7c914ce4336c9db0ade0244f3cc522dc473558dd34796bf15f5015b593045ed3",
+      "bundle_bytes": 4756,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/inventory.json",
+      "original_sha256": "af61649da7a6a4526007f532f2b68bec18d8ee8c7a55e316a8ef54bf2e2cbdd9",
+      "original_bytes": 215108,
+      "bundle_path": "inventory.json",
+      "bundle_sha256": "af61649da7a6a4526007f532f2b68bec18d8ee8c7a55e316a8ef54bf2e2cbdd9",
+      "bundle_bytes": 215108,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/contract.md",
+      "original_sha256": "e47dda3791199a276327ef0f20a04b22d14dbc1936ffbae15adb11c3e9a26390",
+      "original_bytes": 3295,
+      "bundle_path": "contract.md",
+      "bundle_sha256": "e47dda3791199a276327ef0f20a04b22d14dbc1936ffbae15adb11c3e9a26390",
+      "bundle_bytes": 3295,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/complete-mapping.json",
+      "original_sha256": "866bf2d4403d8f5520f0af1a168f043a58fa0f2e1ba47d8aea3d53fca8ab2990",
+      "original_bytes": 245673,
+      "bundle_path": "complete-mapping.json",
+      "bundle_sha256": "7ca271959f0efdc0eca34d4b16886a7dec8cb5ef0e78bf05c3bbbc1d296ac289",
+      "bundle_bytes": 190009,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/development-mask-metadata-plan.json",
+      "original_sha256": "a5b52f4d3c49753084ab40d27c43711df988a333bb043b9ebf9e6d2f4e56330d",
+      "original_bytes": 150148,
+      "bundle_path": "metadata-plan.json",
+      "bundle_sha256": "a5b52f4d3c49753084ab40d27c43711df988a333bb043b9ebf9e6d2f4e56330d",
+      "bundle_bytes": 150148,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/attempts/dog-agility-01/receipt.json",
+      "original_sha256": "4e93e291ef85a5fd3d9ebfb5c23d040719affaeba0b5bc9dbf998835046b106f",
+      "original_bytes": 27820,
+      "bundle_path": "acquisitions/dog-agility/receipt.json",
+      "bundle_sha256": "4394622df17147afc1f70eb6a953ed69b85f6b79e18c8c0999cbf850fef5c9f9",
+      "bundle_bytes": 26684,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dog-agility-01/receipt.json",
+      "original_sha256": "ea05cb1ef9fee6e22570be51f787db62e90484e886a5a9a2d81e2130f35c9db1",
+      "original_bytes": 2874,
+      "bundle_path": "acquisitions/dog-agility/supervision.json",
+      "bundle_sha256": "ea05cb1ef9fee6e22570be51f787db62e90484e886a5a9a2d81e2130f35c9db1",
+      "bundle_bytes": 2874,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/specs/dog-agility-01.json",
+      "original_sha256": "0b2134222c664dfdec960984fa3529e0d2b31c32a506cae1245949fd2e8c66e5",
+      "original_bytes": 1597,
+      "bundle_path": "acquisitions/dog-agility/spec.json",
+      "bundle_sha256": "73fbeaf08308b48dd8eb43a17de104cda4a4a65a849c6a3e95af05248f8e6c7b",
+      "bundle_bytes": 1023,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dog-agility-01/stdout.log",
+      "original_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "original_bytes": 65,
+      "bundle_path": "acquisitions/dog-agility/stdout.log",
+      "bundle_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "bundle_bytes": 65,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dog-agility-01/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "bundle_path": "acquisitions/dog-agility/stderr.log",
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundle_bytes": 0,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/attempts/planes-water-01/receipt.json",
+      "original_sha256": "68c1b0eb5f816cfa2ccc6e0758ff465c77090e8d3c2c545739410db359d9fcf1",
+      "original_bytes": 50556,
+      "bundle_path": "acquisitions/planes-water/receipt.json",
+      "bundle_sha256": "5858af6e5ee8ccab0c17989f7837c43fdb1e1ea5f8641ba75622627e8cf9da4c",
+      "bundle_bytes": 48426,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/planes-water-01/receipt.json",
+      "original_sha256": "a6d5c35bf1c7e0225186f51c6bf17eb992655aad150eafdfacb1dd9b2cf45fb5",
+      "original_bytes": 2879,
+      "bundle_path": "acquisitions/planes-water/supervision.json",
+      "bundle_sha256": "a6d5c35bf1c7e0225186f51c6bf17eb992655aad150eafdfacb1dd9b2cf45fb5",
+      "bundle_bytes": 2879,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/specs/planes-water-01.json",
+      "original_sha256": "51a24a81a2012b39f0f7ad94e8ae87ce6389c879fea07d6da60d3f16de136568",
+      "original_bytes": 1601,
+      "bundle_path": "acquisitions/planes-water/spec.json",
+      "bundle_sha256": "f5c5fdbde6fc89211bcbb5aef20cb9d9a44adedecfd7d91b20f7ce5972f7ed5e",
+      "bundle_bytes": 1027,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/planes-water-01/stdout.log",
+      "original_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "original_bytes": 65,
+      "bundle_path": "acquisitions/planes-water/stdout.log",
+      "bundle_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "bundle_bytes": 65,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/planes-water-01/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "bundle_path": "acquisitions/planes-water/stderr.log",
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundle_bytes": 0,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/attempts/dogs-scale-01/receipt.json",
+      "original_sha256": "10211cb25989d383fb15df4c36f86985f1fa354146a54deb55f731bce685a250",
+      "original_bytes": 125836,
+      "bundle_path": "acquisitions/dogs-scale/receipt.json",
+      "bundle_sha256": "1a47e5cc8178df12f59b6d42b73e988f55805544654bf1fc7fd04e8b43f9d105",
+      "bundle_bytes": 120440,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dogs-scale-01/receipt.json",
+      "original_sha256": "3ccb98ae87f3e60cc39a88f1aadb0a42c1763dc2abfcff56fbf3b9d9eb826a1d",
+      "original_bytes": 2868,
+      "bundle_path": "acquisitions/dogs-scale/supervision.json",
+      "bundle_sha256": "3ccb98ae87f3e60cc39a88f1aadb0a42c1763dc2abfcff56fbf3b9d9eb826a1d",
+      "bundle_bytes": 2868,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/specs/dogs-scale-01.json",
+      "original_sha256": "c51131dfab5cdacfb66be1e2a0f4ec0d4596d666256bc55dd74567ad924d6069",
+      "original_bytes": 1593,
+      "bundle_path": "acquisitions/dogs-scale/spec.json",
+      "bundle_sha256": "a7a814765dfe8de9c9b1b03a0d059762fd9d55c66e19c9f47d4bdf86bf3d59e5",
+      "bundle_bytes": 1019,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dogs-scale-01/stdout.log",
+      "original_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "original_bytes": 65,
+      "bundle_path": "acquisitions/dogs-scale/stdout.log",
+      "bundle_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "bundle_bytes": 65,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dogs-scale-01/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "bundle_path": "acquisitions/dogs-scale/stderr.log",
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundle_bytes": 0,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/attempts/dog-gooses-01/receipt.json",
+      "original_sha256": "0cea7fde96e761ebaf097d416a75ca1d334f1d4b84ddca4a9106833d70441798",
+      "original_bytes": 131175,
+      "bundle_path": "acquisitions/dog-gooses/receipt.json",
+      "bundle_sha256": "2775ad5296086efe52b646d34292f106038f1fb10fe3d1b0d9b6008d76429968",
+      "bundle_bytes": 125495,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dog-gooses-01/receipt.json",
+      "original_sha256": "4c7a202e2f3bea6913afcc063261ff090fdaa5531e8de43bb788c76115036686",
+      "original_bytes": 2865,
+      "bundle_path": "acquisitions/dog-gooses/supervision.json",
+      "bundle_sha256": "4c7a202e2f3bea6913afcc063261ff090fdaa5531e8de43bb788c76115036686",
+      "bundle_bytes": 2865,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/specs/dog-gooses-01.json",
+      "original_sha256": "07b3e522d30d5786c799156f6ad6b6dc99be0a73af3b84e4a812499cd663c872",
+      "original_bytes": 1593,
+      "bundle_path": "acquisitions/dog-gooses/spec.json",
+      "bundle_sha256": "97d26e3d332982c7758a842eb92112f70fc4d55be2ceaa1d5eb6e947f3dfcbee",
+      "bundle_bytes": 1019,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dog-gooses-01/stdout.log",
+      "original_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "original_bytes": 65,
+      "bundle_path": "acquisitions/dog-gooses/stdout.log",
+      "bundle_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "bundle_bytes": 65,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/dog-gooses-01/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "bundle_path": "acquisitions/dog-gooses/stderr.log",
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundle_bytes": 0,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/attempts/cat-girl-01/receipt.json",
+      "original_sha256": "1e0d3bd3c4c074ca2e89a2154c5971e32582faaea141b574c97f53bacdfe9e15",
+      "original_bytes": 135505,
+      "bundle_path": "acquisitions/cat-girl/receipt.json",
+      "bundle_sha256": "3ccc28cbcfdf00543a2bbf8731bdddf698d3dba719b5a7986b0bfef96c3f7e44",
+      "bundle_bytes": 129541,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/cat-girl-01/receipt.json",
+      "original_sha256": "7595f3c4340175ed1a001ae59f8b961751e7d798c7a336b9f8126c19b4bec21d",
+      "original_bytes": 2861,
+      "bundle_path": "acquisitions/cat-girl/supervision.json",
+      "bundle_sha256": "7595f3c4340175ed1a001ae59f8b961751e7d798c7a336b9f8126c19b4bec21d",
+      "bundle_bytes": 2861,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/specs/cat-girl-01.json",
+      "original_sha256": "0ffff7a047ce81573acae0a7cadcba391bf906025cf4e936eebd10d160c6dcbb",
+      "original_bytes": 1585,
+      "bundle_path": "acquisitions/cat-girl/spec.json",
+      "bundle_sha256": "f884b1b7b53f2ad6752aec0d4f5122a58e1ac42cc044d0cfb2a6856ac07b1c1c",
+      "bundle_bytes": 1011,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/cat-girl-01/stdout.log",
+      "original_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "original_bytes": 65,
+      "bundle_path": "acquisitions/cat-girl/stdout.log",
+      "bundle_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "bundle_bytes": 65,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/cat-girl-01/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "bundle_path": "acquisitions/cat-girl/stderr.log",
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundle_bytes": 0,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/attempts/upside-down-01/receipt.json",
+      "original_sha256": "e7871d7e4ff15a20014169d528409f6ac6d67dd871a328c00ce1f5d96fec6f0a",
+      "original_bytes": 97260,
+      "bundle_path": "acquisitions/upside-down/receipt.json",
+      "bundle_sha256": "5a9e343f7b1832af028efe136606dc2c5423fa3c3bf05152d8618e01c4e66d3b",
+      "bundle_bytes": 92929,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/upside-down-01/receipt.json",
+      "original_sha256": "4dedce620e3f420ad8003fbef3a0f7d33e259205bce89cce43cdd90d7612f03b",
+      "original_bytes": 2872,
+      "bundle_path": "acquisitions/upside-down/supervision.json",
+      "bundle_sha256": "4dedce620e3f420ad8003fbef3a0f7d33e259205bce89cce43cdd90d7612f03b",
+      "bundle_bytes": 2872,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/specs/upside-down-01.json",
+      "original_sha256": "0d9834ccb3eac483727d342006ce5c49486e1de1535c85c736a3a1c37b55f432",
+      "original_bytes": 1597,
+      "bundle_path": "acquisitions/upside-down/spec.json",
+      "bundle_sha256": "8923b52553ed120bf911d69fdccb0c68611ddfcac6af35843cc79b11256e2630",
+      "bundle_bytes": 1023,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/upside-down-01/stdout.log",
+      "original_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "original_bytes": 65,
+      "bundle_path": "acquisitions/upside-down/stdout.log",
+      "bundle_sha256": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+      "bundle_bytes": 65,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/supervision/upside-down-01/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "bundle_path": "acquisitions/upside-down/stderr.log",
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundle_bytes": 0,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/finalize-supervision/receipt.json",
+      "original_sha256": "3672708ad208b1fb6738b5893bf17dcc6e9d39f6b09f3462978ac9de82f3f7e1",
+      "original_bytes": 2859,
+      "bundle_path": "finalization/supervision.json",
+      "bundle_sha256": "3672708ad208b1fb6738b5893bf17dcc6e9d39f6b09f3462978ac9de82f3f7e1",
+      "bundle_bytes": 2859,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/specs/finalize.json",
+      "original_sha256": "c4f07265094e6914fb4ec2555aa2bf2e68a1ad6f1a96869a8e2aff7afd4484f4",
+      "original_bytes": 1555,
+      "bundle_path": "finalization/spec.json",
+      "bundle_sha256": "eabf9c99f33494c4b8093668127719001b681b5c8fccdd7fc59bc4f3d751b47e",
+      "bundle_bytes": 981,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/finalize-supervision/stdout.log",
+      "original_sha256": "4809dcaf5022a58b1ffa199e4765d8ffae5ac0aa577813a5be548824e138599e",
+      "original_bytes": 75,
+      "bundle_path": "finalization/stdout.log",
+      "bundle_sha256": "4809dcaf5022a58b1ffa199e4765d8ffae5ac0aa577813a5be548824e138599e",
+      "bundle_bytes": 75,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/finalize-supervision/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "bundle_path": "finalization/stderr.log",
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundle_bytes": 0,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/supervision/receipt.json",
+      "original_sha256": "0dd6e6933074daa682ba33f864f60103bf44fc025e8bb81cd1540d3a55f98227",
+      "original_bytes": 2418,
+      "bundle_path": "tests-01/supervision.json",
+      "bundle_sha256": "0dd6e6933074daa682ba33f864f60103bf44fc025e8bb81cd1540d3a55f98227",
+      "bundle_bytes": 2418,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/spec.json",
+      "original_sha256": "43d4a83cbb5a2d821161dfdbba5b701e145ef21e5344f1d3bb6a2bc7a3308922",
+      "original_bytes": 901,
+      "bundle_path": "tests-01/spec.json",
+      "bundle_sha256": "2cca461ea379c05c2b27e48cbe097e7abb7728efbc01cd75e6fd8773c888cb30",
+      "bundle_bytes": 540,
+      "transformation": "literal_path_prefix_substitution_only"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/supervision/stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "bundle_path": "tests-01/stdout.log",
+      "bundle_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundle_bytes": 0,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/supervision/stderr.log",
+      "original_sha256": "7c3381b720d697e8aa986141cf6f66cd01ccca11e0e3f508d2689c336ac3f43a",
+      "original_bytes": 731,
+      "bundle_path": "tests-01/stderr.log",
+      "bundle_sha256": "7c3381b720d697e8aa986141cf6f66cd01ccca11e0e3f508d2689c336ac3f43a",
+      "bundle_bytes": 731,
+      "transformation": "identity"
+    },
+    {
+      "original_path": "$PRIVATE/0030-memory-content/data-acquisition/tests-01/qualification.json",
+      "original_sha256": "a9c68f9b0c86fc741bf8a2a0702c2212f614045866ec1f3769a041eb44fc8889",
+      "original_bytes": 662,
+      "bundle_path": "tests-01/qualification.json",
+      "bundle_sha256": "a9c68f9b0c86fc741bf8a2a0702c2212f614045866ec1f3769a041eb44fc8889",
+      "bundle_bytes": 662,
+      "transformation": "identity"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "original_bytes": null,
+      "bundle_path": "README.md",
+      "bundle_sha256": "167b7034ce7a52170d32c68f8992e5949825326a28313a148dae3d6634f3e052",
+      "bundle_bytes": 5694,
+      "transformation": "new_metadata_summary_of_retained_receipts"
+    }
+  ]
+}

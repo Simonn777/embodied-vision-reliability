@@ -1,0 +1,36 @@
+{
+  "bundle": "$TASK/work/0030-memory-content/publication-baseline",
+  "original_summary_sha256": "2c079c6d1b7a21f8ff616d5cc473ba3e4fcc432748939c14b8d15dac9f46639c",
+  "original_bindings_sha256": "754355823102cec3a4dc2d16f02dffb516093ad975b7661f4042de85475ff3e5",
+  "attempts": [
+    {
+      "attempt": "01",
+      "status": "failed",
+      "error_type": "KeyError",
+      "error": "'signal_attempts'",
+      "inner_seconds": 0.0024826250155456364,
+      "outer_seconds": 0.3393173750373535,
+      "peak_rss_kib": 41232,
+      "exit_code": 1,
+      "evaluation_sha256": null
+    },
+    {
+      "attempt": "02",
+      "status": "completed",
+      "error_type": null,
+      "error": null,
+      "inner_seconds": 0.7158262919983827,
+      "outer_seconds": 0.9313110830262303,
+      "peak_rss_kib": 72960,
+      "exit_code": 0,
+      "evaluation_sha256": "dc56acc9c1c00d03646b6b9ce35580813239ac171f3d58f9d25f2ef42b49cc68"
+    }
+  ],
+  "cache_cost": {
+    "wall_seconds": 458.30076425000004,
+    "peak_group_rss_kib": 4672848,
+    "status": "completed",
+    "exit_code": 0
+  },
+  "note": "Existing bundle retains both original evaluation attempts, including failure 01 and all its cost. Not recopied here."
+}

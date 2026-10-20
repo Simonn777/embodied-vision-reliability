@@ -1,0 +1,934 @@
+{
+  "schema": "evr0030.first-configuration-receipts-summary.v1",
+  "snapshot_utc": "2026-10-20T10:16:48.232120+00:00",
+  "attempts": [
+    {
+      "id": "campaign/teacher-rho015-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/teacher-rho015-spec-01.json",
+      "spec_sha256": "15ca60aaf28396ee21884dd9ead6662f2ecb11814efd66e7b846ba7aa1333579",
+      "arm": null,
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "teacher",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.development.training.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 1161.8727888750145,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951"
+      },
+      "rows_recorded": 48,
+      "stage": "teacher",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/teacher-rho015-supervision-01/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 1162.078428250039,
+      "peak_group_rss_kib": 1979408,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "training_diagnostics": {
+        "interpretation": "TRAIN fixed-context surrogate diagnostics, not accuracy; best-state loss improvement is selected on TRAIN",
+        "anchors_recorded": 48,
+        "anchors_expected": 48,
+        "parents": {
+          "dog-agility": 12,
+          "planes-water": 12,
+          "dogs-scale": 12,
+          "dog-gooses": 12
+        },
+        "best_steps": {
+          "5": 46,
+          "4": 1,
+          "3": 1
+        },
+        "one_steps": {
+          "1": 47,
+          "0": 1
+        },
+        "baseline_loss": {
+          "count": 48,
+          "mean": 0.01845906018570531,
+          "median": 0.020126009825617075,
+          "min": 0.004625936038792133,
+          "max": 0.039743822067976
+        },
+        "selected_loss": {
+          "count": 48,
+          "mean": 0.017412602586167242,
+          "median": 0.01866031880490482,
+          "min": 0.004219350405037403,
+          "max": 0.03413961315527558
+        },
+        "baseline_minus_selected": {
+          "count": 48,
+          "mean": 0.001046457599538068,
+          "median": 0.0006648658309131861,
+          "min": 0.00028353137895464897,
+          "max": 0.007317370735108852
+        },
+        "one_step_minus_multistep": {
+          "count": 48,
+          "mean": 0.0007355690322583541,
+          "median": 0.0005361158400774002,
+          "min": 0.0002579065039753914,
+          "max": 0.003949404694139957
+        },
+        "changed_bf16_entries": {
+          "count": 48,
+          "mean": 256811.85416666666,
+          "median": 256978.0,
+          "min": 253199.0,
+          "max": 259822.0
+        },
+        "zero_bf16_change_anchors": 0,
+        "post_bf16_rms": {
+          "count": 48,
+          "mean": 0.1081462178578075,
+          "median": 0.1096434562950585,
+          "min": 0.08733992383023842,
+          "max": 0.11745256270256066
+        },
+        "anchor_wall_seconds_sum": 1154.7642801259062,
+        "cost_note": "Anchor wall sum excludes context loading before each row timer; use complete outer wall for cost."
+      },
+      "future_forward_calls": 576,
+      "zero_parity_checks": 96,
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01"
+      }
+    },
+    {
+      "id": "campaign/fit-multistep-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/fit-multistep-rho015-seed0-01-spec.json",
+      "spec_sha256": "a56976766e7e4eb1ee6877211c683a690153ee35d7dc4137ad872c0f98243bbd",
+      "arm": "multistep",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "regress",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.development.training.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 6.11035220901249,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951"
+      },
+      "rows_recorded": 6,
+      "stage": "regress",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/fit-multistep-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 6.431160416977946,
+      "peak_group_rss_kib": 693648,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "training_diagnostics": {
+        "interpretation": "Training objective only, not DEV accuracy",
+        "completed_steps": 288,
+        "epoch_mean_losses": [
+          0.7831116486293199,
+          0.6999418111783525,
+          0.6055546262153041,
+          0.5761145956764867,
+          0.555408372589162,
+          0.5507409743132522
+        ],
+        "direct_losses": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "checkpoint_steps": [
+          48,
+          96,
+          144,
+          192,
+          240,
+          288
+        ]
+      },
+      "dependency_paths": {
+        "targets": "$TASK/work/0030-memory-content/campaign/teacher-rho015-01/targets.pt",
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01"
+      }
+    },
+    {
+      "id": "campaign/fit-one_step-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/fit-one_step-rho015-seed0-01-spec.json",
+      "spec_sha256": "4f1f21ce60cca1991160d19cf32b436ebdf2800f9dcad4d38358d94d4bb67e8c",
+      "arm": "one_step",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "regress",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.development.training.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 4.642072916030884,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951"
+      },
+      "rows_recorded": 6,
+      "stage": "regress",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/fit-one_step-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 4.884037624986377,
+      "peak_group_rss_kib": 692800,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "training_diagnostics": {
+        "interpretation": "Training objective only, not DEV accuracy",
+        "completed_steps": 288,
+        "epoch_mean_losses": [
+          0.09776737629618047,
+          0.08473455367936128,
+          0.08503359304264681,
+          0.07905711253794219,
+          0.08046637381531206,
+          0.07528288314237916
+        ],
+        "direct_losses": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "checkpoint_steps": [
+          48,
+          96,
+          144,
+          192,
+          240,
+          288
+        ]
+      },
+      "dependency_paths": {
+        "targets": "$TASK/work/0030-memory-content/campaign/teacher-rho015-01/targets.pt",
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01"
+      }
+    },
+    {
+      "id": "campaign/fit-gt_memory-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/fit-gt_memory-rho015-seed0-01-spec.json",
+      "spec_sha256": "c6e2f1ec04301abc92621a7800d5513207930342d1ffa948e399d069f9c172cc",
+      "arm": "gt_memory",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "regress",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.development.training.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 4.49103220901452,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951"
+      },
+      "rows_recorded": 6,
+      "stage": "regress",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/fit-gt_memory-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 4.810073249973357,
+      "peak_group_rss_kib": 693440,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "training_diagnostics": {
+        "interpretation": "Training objective only, not DEV accuracy",
+        "completed_steps": 288,
+        "epoch_mean_losses": [
+          0.04971216175827106,
+          0.042553301184262045,
+          0.03783292640175492,
+          0.027093764202829763,
+          0.019146298798979933,
+          0.02258118923978335
+        ],
+        "direct_losses": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "checkpoint_steps": [
+          48,
+          96,
+          144,
+          192,
+          240,
+          288
+        ]
+      },
+      "dependency_paths": {
+        "targets": "$TASK/work/0030-memory-content/campaign/teacher-rho015-01/targets.pt",
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01"
+      }
+    },
+    {
+      "id": "campaign/rollout-native-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/rollout-native-rho015-seed0-01-spec.json",
+      "spec_sha256": "bd75496b953124fc0e5ccb6073fd2e7e7af57147fdf3ea40fd01acfdf8987872",
+      "arm": "native",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "rollout",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.development.own-rollout.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 108.77114279102534,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+        "$TASK/work/0030-memory-content/campaign/rollout.py": "813a2c681544dfadc7999dad066fa4e936e26094a7e600516d6141ba345be459"
+      },
+      "rows_recorded": 2,
+      "stage": "rollout",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/rollout-native-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 108.97485858300934,
+      "peak_group_rss_kib": 1061760,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "rollout_diagnostics": {
+        "frames": 154,
+        "changed_writes": 0,
+        "post_bf16_rms": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "changed_entries": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01",
+        "checkpoint": null
+      }
+    },
+    {
+      "id": "campaign/evaluate-native-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/evaluate-native-rho015-seed0-01-spec.json",
+      "spec_sha256": "d27b3b2fcca03e1992e816edec40504f20e4144b1705fa1b5a5c779296a04fea",
+      "arm": "native",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "metric",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.rollout-evaluation.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 0.7364977499819361,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645"
+      },
+      "rows_recorded": 0,
+      "stage": "evaluation",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/evaluate-native-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 1.067922374990303,
+      "peak_group_rss_kib": 74176,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "accuracy": {
+        "mean_points": {
+          "J": 94.76518252321502,
+          "F": 89.58925838174294,
+          "JF": 92.17722045247898
+        },
+        "parents": {
+          "cat-girl": {
+            "J": 94.12263070887728,
+            "F": 90.29948804551942,
+            "JF": 92.21105937719835
+          },
+          "upside-down": {
+            "J": 95.40773433755277,
+            "F": 88.87902871796646,
+            "JF": 92.14338152775962
+          }
+        },
+        "scope": "Saved single-target exposed-DEV J/F/JF; not final held-out evidence"
+      },
+      "rollout_receipt": {
+        "path": "$TASK/work/0030-memory-content/campaign/rollout-native-rho015-seed0-01/receipt.json",
+        "bytes": 146259,
+        "sha256": "200f44f0241603c16c8876680b7af93fcc119160682725785904d05f43e816eb"
+      },
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01"
+      }
+    },
+    {
+      "id": "campaign/rollout-multistep-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/rollout-multistep-rho015-seed0-01-spec.json",
+      "spec_sha256": "9abe926ca9a4f662921d4d1803d76d1a8ab7e16c36b57479f612cc392886c473",
+      "arm": "multistep",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "rollout",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.development.own-rollout.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 112.87263149995124,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+        "$TASK/work/0030-memory-content/campaign/rollout.py": "813a2c681544dfadc7999dad066fa4e936e26094a7e600516d6141ba345be459"
+      },
+      "rows_recorded": 2,
+      "stage": "rollout",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/rollout-multistep-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 113.12521149998065,
+      "peak_group_rss_kib": 1069136,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "rollout_diagnostics": {
+        "frames": 154,
+        "changed_writes": 152,
+        "post_bf16_rms": {
+          "count": 152,
+          "mean": 0.06800270888840737,
+          "median": 0.0661661411289471,
+          "min": 0.06070787263304432,
+          "max": 0.07644801480204916
+        },
+        "changed_entries": {
+          "count": 152,
+          "mean": 256064.09210526315,
+          "median": 256058.5,
+          "min": 255093.0,
+          "max": 257210.0
+        }
+      },
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01",
+        "checkpoint": {
+          "path": "$TASK/work/0030-memory-content/campaign/fit-multistep-rho015-seed0-01/epoch-06.pt",
+          "sha256": "189df3ddc1b715effae8c2df0292d06258ec718912bfddc3e84c888a97549874",
+          "bytes": 406665,
+          "step": 288
+        }
+      }
+    },
+    {
+      "id": "campaign/evaluate-multistep-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/evaluate-multistep-rho015-seed0-01-spec.json",
+      "spec_sha256": "a15a8a71bc0c3011c525ab232c4f1aa75e474860b0efa5ce2b331ae9bd2392a1",
+      "arm": "multistep",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "metric",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.rollout-evaluation.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 0.7403856249875389,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645"
+      },
+      "rows_recorded": 0,
+      "stage": "evaluation",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/evaluate-multistep-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 1.0965834169765003,
+      "peak_group_rss_kib": 73360,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "accuracy": {
+        "mean_points": {
+          "J": 94.24417227233067,
+          "F": 89.12340512011671,
+          "JF": 91.68378869622369
+        },
+        "parents": {
+          "cat-girl": {
+            "J": 93.75344995663349,
+            "F": 90.3198981023322,
+            "JF": 92.03667402948284
+          },
+          "upside-down": {
+            "J": 94.73489458802786,
+            "F": 87.92691213790124,
+            "JF": 91.33090336296455
+          }
+        },
+        "scope": "Saved single-target exposed-DEV J/F/JF; not final held-out evidence"
+      },
+      "rollout_receipt": {
+        "path": "$TASK/work/0030-memory-content/campaign/rollout-multistep-rho015-seed0-01/receipt.json",
+        "bytes": 173580,
+        "sha256": "f7587cde5c7432eb65505a6711251b77b1f84ee4e98dd0fa280c49f3bf872659"
+      },
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01"
+      }
+    },
+    {
+      "id": "campaign/rollout-one_step-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/rollout-one_step-rho015-seed0-01-spec.json",
+      "spec_sha256": "81164f9444b3d57c9c72c26e143b04fa2134170ffd2563f8ce1ac6f1ea7ce9ca",
+      "arm": "one_step",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "rollout",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.development.own-rollout.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 112.93389137502527,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+        "$TASK/work/0030-memory-content/campaign/rollout.py": "813a2c681544dfadc7999dad066fa4e936e26094a7e600516d6141ba345be459"
+      },
+      "rows_recorded": 2,
+      "stage": "rollout",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/rollout-one_step-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 113.1909522920032,
+      "peak_group_rss_kib": 1067248,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "rollout_diagnostics": {
+        "frames": 154,
+        "changed_writes": 152,
+        "post_bf16_rms": {
+          "count": 152,
+          "mean": 0.01830763864404082,
+          "median": 0.01852051407528254,
+          "min": 0.013197864065565695,
+          "max": 0.02202838256739426
+        },
+        "changed_entries": {
+          "count": 152,
+          "mean": 234123.90789473685,
+          "median": 234158.0,
+          "min": 227663.0,
+          "max": 238441.0
+        }
+      },
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01",
+        "checkpoint": {
+          "path": "$TASK/work/0030-memory-content/campaign/fit-one_step-rho015-seed0-01/epoch-06.pt",
+          "sha256": "4d4dbb4081bdedc5f73f922271f9eeda33f6f5da107ea204e2b251ffd49f56f1",
+          "bytes": 406665,
+          "step": 288
+        }
+      }
+    },
+    {
+      "id": "campaign/evaluate-one_step-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/evaluate-one_step-rho015-seed0-01-spec.json",
+      "spec_sha256": "3f90db3f3492fae9efe971a3145575080b1d10685245f7cbf9422d25f4ffcc7a",
+      "arm": "one_step",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "metric",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.rollout-evaluation.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 0.7385846670367755,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645"
+      },
+      "rows_recorded": 0,
+      "stage": "evaluation",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/evaluate-one_step-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 1.0998687500250526,
+      "peak_group_rss_kib": 73184,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "accuracy": {
+        "mean_points": {
+          "J": 94.58602352352278,
+          "F": 89.3969181336994,
+          "JF": 91.9914708286111
+        },
+        "parents": {
+          "cat-girl": {
+            "J": 93.7767204012336,
+            "F": 90.02817882100554,
+            "JF": 91.90244961111958
+          },
+          "upside-down": {
+            "J": 95.39532664581199,
+            "F": 88.76565744639326,
+            "JF": 92.08049204610262
+          }
+        },
+        "scope": "Saved single-target exposed-DEV J/F/JF; not final held-out evidence"
+      },
+      "rollout_receipt": {
+        "path": "$TASK/work/0030-memory-content/campaign/rollout-one_step-rho015-seed0-01/receipt.json",
+        "bytes": 173809,
+        "sha256": "018d5a4d87f7ad62d59da2881bd94433b5c3726977b1c81edae35063dd72e4f2"
+      },
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01"
+      }
+    },
+    {
+      "id": "campaign/rollout-gt_memory-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/rollout-gt_memory-rho015-seed0-01-spec.json",
+      "spec_sha256": "f3f6eac0fec10a33208dbb74c15745215419951745f132c4d214ad1c5194bc18",
+      "arm": "gt_memory",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "rollout",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.development.own-rollout.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 112.71678737504408,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+        "$TASK/work/0030-memory-content/campaign/rollout.py": "813a2c681544dfadc7999dad066fa4e936e26094a7e600516d6141ba345be459"
+      },
+      "rows_recorded": 2,
+      "stage": "rollout",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/rollout-gt_memory-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 112.93525416695047,
+      "peak_group_rss_kib": 1067376,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "rollout_diagnostics": {
+        "frames": 154,
+        "changed_writes": 152,
+        "post_bf16_rms": {
+          "count": 152,
+          "mean": 0.022428170937013492,
+          "median": 0.021686944789679828,
+          "min": 0.010688473844073976,
+          "max": 0.03959760877908381
+        },
+        "changed_entries": {
+          "count": 152,
+          "mean": 234647.46710526315,
+          "median": 234792.0,
+          "min": 221260.0,
+          "max": 248903.0
+        }
+      },
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01",
+        "checkpoint": {
+          "path": "$TASK/work/0030-memory-content/campaign/fit-gt_memory-rho015-seed0-01/epoch-06.pt",
+          "sha256": "ae287c6a70ccd0de86b160e1cf25ba3ba880326619a08d04273aa7a3aa2eb4c6",
+          "bytes": 406665,
+          "step": 288
+        }
+      }
+    },
+    {
+      "id": "campaign/evaluate-gt_memory-rho015-seed0-01/receipt.json",
+      "worker_spec": "$TASK/work/0030-memory-content/campaign/evaluate-gt_memory-rho015-seed0-01-spec.json",
+      "spec_sha256": "617b399cdfbd1d8daa84221e9b2a02e969302ef97c46bf9a9ec35072ca9bb1ad",
+      "arm": "gt_memory",
+      "rho": 0.15,
+      "seed": 0,
+      "mode": "metric",
+      "comparison": null,
+      "status": "completed",
+      "clean_completed": true,
+      "issues": [],
+      "schema": "evr0030.rollout-evaluation.v1",
+      "error_type": null,
+      "error": null,
+      "inner_wall_seconds": 0.7461135000339709,
+      "source_sha256": {
+        "$TASK/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+        "$TASK/work/0030-memory-content/campaign/train.py": "f49b7f2e9feec56f46b9bcc2a6f0efe4bcac608dc32d1f6f652a5f2b18ac7569",
+        "$TASK/work/0030-memory-content/campaign/CAMPAIGN.md": "68422efa9f69b0c3cafd5bec6254319ed13a8ff011527a6810a2876d5c38765e",
+        "$TASK/work/0030-memory-content/residual-family/family.py": "e8b413a06064bcf609004ce0f6bb33939e299a93ac4ca3e2da9fb6aca3e474ed",
+        "$TASK/work/0030-memory-content/residual-family/head.py": "d1dd929e9cfdba71a6d69ef46110faa9f2b1878d024024e292183e495f9f8951",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+        "$TASK/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645"
+      },
+      "rows_recorded": 0,
+      "stage": "evaluation",
+      "outer_receipt": "$TASK/work/0030-memory-content/campaign/evaluate-gt_memory-rho015-seed0-01-supervision/receipt.json",
+      "outer_status": "completed",
+      "outer_wall_seconds": 1.0947177080088295,
+      "peak_group_rss_kib": 73200,
+      "termination": null,
+      "outer_schema": "evr0029.exit-checked-operation.v1",
+      "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+      "accuracy": {
+        "mean_points": {
+          "J": 94.84806777593072,
+          "F": 89.93418106359769,
+          "JF": 92.3911244197642
+        },
+        "parents": {
+          "cat-girl": {
+            "J": 94.13987321156479,
+            "F": 90.34128204893706,
+            "JF": 92.24057763025093
+          },
+          "upside-down": {
+            "J": 95.55626234029666,
+            "F": 89.52708007825834,
+            "JF": 92.5416712092775
+          }
+        },
+        "scope": "Saved single-target exposed-DEV J/F/JF; not final held-out evidence"
+      },
+      "rollout_receipt": {
+        "path": "$TASK/work/0030-memory-content/campaign/rollout-gt_memory-rho015-seed0-01/receipt.json",
+        "bytes": 173799,
+        "sha256": "3cdf7dcf9328aeaadcdf88c0a994bb10d1b348ceec5fee2cacaa05af17724f48"
+      },
+      "dependency_paths": {
+        "cache": "$TASK/work/0030-memory-content/campaign/cache-01"
+      }
+    }
+  ],
+  "paired_dev_differences": [
+    {
+      "left": "campaign/evaluate-multistep-rho015-seed0-01/receipt.json",
+      "right": "campaign/evaluate-native-rho015-seed0-01/receipt.json",
+      "mean_delta_pp": {
+        "J": -0.5210102508843448,
+        "F": -0.4658532616262221,
+        "JF": -0.49343175625529057
+      },
+      "parent_delta_pp": {
+        "cat-girl": {
+          "J": -0.36918075224379265,
+          "F": 0.02041005681277852,
+          "JF": -0.17438534771551417
+        },
+        "upside-down": {
+          "J": -0.6728397495249112,
+          "F": -0.9521165800652227,
+          "JF": -0.812478164795067
+        }
+      }
+    },
+    {
+      "left": "campaign/evaluate-one_step-rho015-seed0-01/receipt.json",
+      "right": "campaign/evaluate-native-rho015-seed0-01/receipt.json",
+      "mean_delta_pp": {
+        "J": -0.17915899969223403,
+        "F": -0.19234024804353567,
+        "JF": -0.18574962386787774
+      },
+      "parent_delta_pp": {
+        "cat-girl": {
+          "J": -0.3459103076436776,
+          "F": -0.2713092245138853,
+          "JF": -0.30860976607877433
+        },
+        "upside-down": {
+          "J": -0.012407691740776272,
+          "F": -0.11337127157320026,
+          "JF": -0.06288948165699537
+        }
+      }
+    },
+    {
+      "left": "campaign/evaluate-one_step-rho015-seed0-01/receipt.json",
+      "right": "campaign/evaluate-multistep-rho015-seed0-01/receipt.json",
+      "mean_delta_pp": {
+        "J": 0.3418512511921108,
+        "F": 0.2735130135826864,
+        "JF": 0.3076821323874128
+      },
+      "parent_delta_pp": {
+        "cat-girl": {
+          "J": 0.02327044460011507,
+          "F": -0.2917192813266638,
+          "JF": -0.13422441836326016
+        },
+        "upside-down": {
+          "J": 0.6604320577841349,
+          "F": 0.8387453084920224,
+          "JF": 0.7495886831380716
+        }
+      }
+    },
+    {
+      "left": "campaign/evaluate-gt_memory-rho015-seed0-01/receipt.json",
+      "right": "campaign/evaluate-native-rho015-seed0-01/receipt.json",
+      "mean_delta_pp": {
+        "J": 0.08288525271569824,
+        "F": 0.3449226818547544,
+        "JF": 0.2139039672852192
+      },
+      "parent_delta_pp": {
+        "cat-girl": {
+          "J": 0.01724250268750893,
+          "F": 0.041794003417635395,
+          "JF": 0.029518253052572163
+        },
+        "upside-down": {
+          "J": 0.14852800274388755,
+          "F": 0.6480513602918734,
+          "JF": 0.39828968151788047
+        }
+      }
+    },
+    {
+      "left": "campaign/evaluate-gt_memory-rho015-seed0-01/receipt.json",
+      "right": "campaign/evaluate-multistep-rho015-seed0-01/receipt.json",
+      "mean_delta_pp": {
+        "J": 0.6038955036000431,
+        "F": 0.8107759434809765,
+        "JF": 0.7073357235405098
+      },
+      "parent_delta_pp": {
+        "cat-girl": {
+          "J": 0.3864232549313016,
+          "F": 0.021383946604856874,
+          "JF": 0.20390360076808633
+        },
+        "upside-down": {
+          "J": 0.8213677522687988,
+          "F": 1.600167940357096,
+          "JF": 1.2107678463129474
+        }
+      }
+    },
+    {
+      "left": "campaign/evaluate-gt_memory-rho015-seed0-01/receipt.json",
+      "right": "campaign/evaluate-one_step-rho015-seed0-01/receipt.json",
+      "mean_delta_pp": {
+        "J": 0.2620442524079323,
+        "F": 0.53726292989829,
+        "JF": 0.39965359115309695
+      },
+      "parent_delta_pp": {
+        "cat-girl": {
+          "J": 0.3631528103311865,
+          "F": 0.3131032279315207,
+          "JF": 0.3381280191313465
+        },
+        "upside-down": {
+          "J": 0.16093569448466383,
+          "F": 0.7614226318650736,
+          "JF": 0.46117916317487584
+        }
+      }
+    }
+  ],
+  "executed_outer_wall_seconds": 1630.789068333921,
+  "pending_arms": "Direct training/rollout controls are outside this completed snapshot.",
+  "limitations": [
+    "JSON snapshot only; source/array/model/GT payloads and metrics are not re-executed.",
+    "Started receipts can advance after this snapshot; missing outer cost is unknown, not zero.",
+    "Costs sum each actual outer attempt once; inner/anchor timers are nested and are not added.",
+    "Shared cache cost is listed once as executed; this is not a per-arm complete-pipeline cost claim.",
+    "All attempts and checkpoints are retained; no best-on-DEV selection or incomplete-result accuracy.",
+    "Teacher best-state improvement is TRAIN-selected and cannot establish causal student benefit."
+  ]
+}

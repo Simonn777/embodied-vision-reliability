@@ -1,0 +1,26 @@
+{
+  "repo": "$TASK/work/embodied-vision-reliability",
+  "commit": "473103b8fe06f550d56390e7eea057bd432ae45c",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "$TASK/work/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "-B",
+    "-W",
+    "error",
+    "$TASK/work/0030-memory-content/teacher-task-alignment/replay.py",
+    "$TASK/work/0030-memory-content/teacher-task-alignment/spec-01.json"
+  ],
+  "operation_output": "$TASK/work/0030-memory-content/teacher-task-alignment/supervision-01",
+  "result_file": "$TASK/work/0030-memory-content/teacher-task-alignment/run-01/receipt.json"
+}

@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: publish the failed 0029 result and select a distinct information question
+## Current: interpret the complete 0030 first configuration
+
+1. Publish and verify the [complete six-arm comparison and fixed TRAIN-fit diagnostic](results/0030-development/rho015-seed0-complete/README.md), preserving all costs, original failures and the earlier twelve-operation bundle. Both direct controls are complete: −0.8897/−0.7492 J&F pp versus native. Multistep remains −0.4934; the modest GT-memory +0.2139 is not multistep benefit or a paper result.
+2. Publish and interpret the [completed saved-TRAIN-teacher replay](results/0030-development/teacher-task-alignment-01/README.md): +0.3276 J&F pp in fixed contexts, one negative parent, no deployment or upper-bound claim. Next prepare and source-bind the chosen TRAIN-only full-GT-memory replay: replace one baseline write with its cached unprojected GT-mask/presence memory at all 48 anchors and both futures, for 96 native calls. Retain the hard-mask path, GT-presence and unbounded-energy confounds; this is not an attainable causal-head or universal upper bound. No execution of this new diagnostic is reported yet. All-active-write direct training remains unadmitted.
+3. Use the predeclared rho=0.05/0.40 opportunities only if the complete controls and diagnostics justify them, with matched arms and all attempts retained. Diagnostics guide development; they are not a new universal prerequisite for learning. Any substantive change receives an explicit scope entry; historical frozen studies remain closed.
+4. Repeat a selected promising comparison with seed 1 before considering protected data. Equal same-seed prefixes do not count as replication. No manuscript before substantial independent-source held-out improvement, closest-prior distinction, strong controls, uncertainty, ablations and replication.
+
+## Historical: publish the failed 0029 result and select a distinct information question
 
 1. Publish the complete audited six-video result and verify exact result/main CI. Preserve original attempt01, the failed Linux CI and the first publication-metadata failure. No result or cost is replaced by a successful subset.
 2. Keep the fixed B/D1/D3 instantaneous deletion variant closed. Its admissible oracle gain is only0.076821points; do not tune ages, witnesses, thresholds, targets or cohort to rescue it. The same-information controls and all six negative strongest-control margins remain visible.

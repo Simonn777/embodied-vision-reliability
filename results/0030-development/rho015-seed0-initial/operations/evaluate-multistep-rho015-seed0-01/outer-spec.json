@@ -1,0 +1,25 @@
+{
+  "repo": "$TASK/work/embodied-vision-reliability",
+  "commit": "43aef1615ee95d636f5fe9a712740f87ea8b3e17",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "$TASK/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "$TASK/work/0030-memory-content/evaluation/evaluate_rollout.py",
+    "$TASK/work/0030-memory-content/campaign/evaluate-multistep-rho015-seed0-01-spec.json"
+  ],
+  "operation_output": "$TASK/work/0030-memory-content/campaign/evaluate-multistep-rho015-seed0-01-supervision",
+  "result_file": "$TASK/work/0030-memory-content/campaign/evaluate-multistep-rho015-seed0-01/receipt.json"
+}
