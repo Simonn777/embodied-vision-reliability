@@ -1,0 +1,51 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "$REPOSITORY/experiments/0029-memory-information/install_runtime.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+    "--protocol",
+    "$REPOSITORY/protocols/0029-native-runtime.md",
+    "--acquisition",
+    "$PRIVATE/0029-acquisition-01/assets",
+    "--acquisition-supervision",
+    "$PRIVATE/0029-acquisition-01/supervision/receipt.json",
+    "--acquisition-spec",
+    "$PRIVATE/0029-acquisition-01/spec.json",
+    "--prior-assets",
+    "$PRIVATE/0022-frontend-preparation/acquisition-01",
+    "--build-review",
+    "$REPOSITORY/configs/0029-sdist-build-review.json",
+    "--destination",
+    "$PRIVATE/0029-runtime-02/installation"
+  ],
+  "spec_sha256": "e002fe2c7ef8d647e94e7e77a0219578606c1702c3bb544b1cb9d5cd4288b0bf",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 7.26368187495973,
+  "peak_group_rss_kib": 130656,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "9e99c19d7d2442acd297949fca722fec6e909083ea9fdaf67f0f780acd63b555",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "bad95faf8079618e05007e1369d89b76b493bdb5d6847de560ea524daca835e4"
+}

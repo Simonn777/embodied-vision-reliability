@@ -1,6 +1,18 @@
 # Current state
 
-## Current work: 0029 assets acquired; runtime not yet qualified
+## Current work: 0029 native runtime qualified; real-video evidence test pending
+
+The [fresh runtime02 installation and fixed artificial sequence](results/0029-preparation/runtime/README.md) passed after the narrow metadata repair. Native qualification took37.009693s and2.55GiB peak sampled RSS, verified exact branch/no-op/future-state parity, found3 same-history native mask candidates and69 mutual artificial-image matches. A first independent audit's extra cross-batch pointer-position equality assertion failed; exact isolated arithmetic reproduced both hashes and the separately corrected audit passed18,197checks. All original failures remain. No benchmark image/mask has been acquired, no accuracy gain is established, and the manuscript gate remains unmet. Next freeze the complete first-stage real-video evidence diagnostic before its separate acquisition.
+
+## Historical: 0029 installation failure isolated; native check pending
+
+The [first installation](results/0029-preparation/runtime/README.md) failed after all five install/build commands succeeded: its metadata reader miscounted setuptools' nested vendored records. A narrow top-level metadata identity repair retains the exact dependency closure and complete inventory. Preserve attempt01; a fresh source CI and attempt02 are required. No model inference or scientific data has run.
+
+## Historical: 0029 offline runtime and artificial native check prepared
+
+The [native runtime protocol](protocols/0029-native-runtime.md) prepares an isolated Python3.12 installation from verified assets, two inspected offline builds and a fixed nine-frame manufactured check. It checks real memory/pointer removal, discarded-branch isolation, next-frame parity and the same control interfaces. Installation and model execution still await complete review and exact-source CI. No benchmark data, measured gain or manuscript. [Asset publication/main CI](docs/0029-asset-publication-verification.md) is verified.
+
+## Historical: 0029 assets acquired; runtime not yet qualified
 
 [The one-shot acquisition](results/0029-preparation/acquisition/README.md) completed after exact source CI:83 verified files,257,104,722 response-body bytes,21.944468s supervised wall time. All payload hashes were independently reread. Next inspect/freeze the offline runtime and manufactured native SAM2/LightGlue check. No scientific data, inference result or improvement is established.
 

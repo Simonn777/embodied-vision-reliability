@@ -1,0 +1,32 @@
+{
+  "repo": "$REPOSITORY",
+  "commit": "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": ""
+  },
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "$REPOSITORY/experiments/0029-memory-information/qualify.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+    "--installation",
+    "$PRIVATE/0029-runtime-02/installation",
+    "--installation-supervision",
+    "$PRIVATE/0029-runtime-02/installation-supervision/receipt.json",
+    "--installation-spec",
+    "$PRIVATE/0029-runtime-02/installation-spec.json",
+    "--output-dir",
+    "$PRIVATE/0029-runtime-02/qualification"
+  ],
+  "operation_output": "$PRIVATE/0029-runtime-02/qualification-supervision",
+  "result_file": "$PRIVATE/0029-runtime-02/qualification/receipt.json"
+}

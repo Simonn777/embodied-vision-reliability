@@ -1,0 +1,469 @@
+{
+  "schema": "evr0029.sdist-build-review.v1",
+  "approved": true,
+  "network": "disabled",
+  "build_tool_versions": {
+    "pip": "25.2",
+    "setuptools": "80.9.0",
+    "wheel": "0.45.1"
+  },
+  "scope": "Source inspection permits separately frozen offline builds only; no build executed at review.",
+  "sdists": [
+    {
+      "id": "antlr4-python3-runtime",
+      "filename": "antlr4-python3-runtime-4.9.3.tar.gz",
+      "sha256": "f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b",
+      "approved": true,
+      "files": {
+        "antlr4-python3-runtime-4.9.3/MANIFEST.in": {
+          "bytes": 46,
+          "sha256": "0c40080d4ae8d7ec11ff70ad36efd16ab8ffc2a17b8269b975210b8aa399244a"
+        },
+        "antlr4-python3-runtime-4.9.3/PKG-INFO": {
+          "bytes": 282,
+          "sha256": "e429f7ad3decb95a8255138cec6a1f2d681f75ccc4d08cb052d044c85d1c459b"
+        },
+        "antlr4-python3-runtime-4.9.3/README.txt": {
+          "bytes": 186,
+          "sha256": "a7c46d10e83cbf0cde0fb9d0baf284a372e63527018f11b335ad5a25ac79fa6f"
+        },
+        "antlr4-python3-runtime-4.9.3/RELEASE-4.5.txt": {
+          "bytes": 387,
+          "sha256": "7393d6d3a8ad74f95b3b975e0943b2ddf91310161f3ddb24edcc0fd3c930497d"
+        },
+        "antlr4-python3-runtime-4.9.3/bin/pygrun": {
+          "bytes": 6111,
+          "sha256": "02d4202c724d47965d015e9d62ad2f243359b840516db9629ce964d4e1150461"
+        },
+        "antlr4-python3-runtime-4.9.3/setup.cfg": {
+          "bytes": 38,
+          "sha256": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e"
+        },
+        "antlr4-python3-runtime-4.9.3/setup.py": {
+          "bytes": 527,
+          "sha256": "00ce3bb1670e8e4961d9ef2414dfa6ac467b52465382841b432578f91733ec67"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/BufferedTokenStream.py": {
+          "bytes": 10780,
+          "sha256": "fc1c26cce1f54ceeb22f6c82fd9694ce4821abcc3373450f1df2375299d95303"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/CommonTokenFactory.py": {
+          "bytes": 2110,
+          "sha256": "4efd7ace0fe9583d43bf722986cc45bbc9f059d2de5d872a27c082e721f08c7f"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/CommonTokenStream.py": {
+          "bytes": 2770,
+          "sha256": "34d2475f0460dbf667e3a6612720f166dbd9cec3d685be898d76bb063338e5e8"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/FileStream.py": {
+          "bytes": 868,
+          "sha256": "f9947ffa397f21ff4820160b20d230950ae54d29aee64d5550a0dcde27bb591e"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/InputStream.py": {
+          "bytes": 2334,
+          "sha256": "b208231368c41af4a0426c45bea79eb93dda39581c1f9b52ee63326d6f30292e"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/IntervalSet.py": {
+          "bytes": 5965,
+          "sha256": "09dd162a177f9186e22d82a40cd9dc812335f4602e4bb39a4ce0b8fb962e6ece"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/LL1Analyzer.py": {
+          "bytes": 7752,
+          "sha256": "a0906f3bbfd2f1c0256ff0f8a963717762252b4a8fe246bea1ea03c71d7a099e"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/Lexer.py": {
+          "bytes": 11542,
+          "sha256": "0bbda1a9ac9f9329a9c5be3a01c4a784f0fd915674aae5a06e81b16ba81c21c8"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/ListTokenSource.py": {
+          "bytes": 5356,
+          "sha256": "21f7cb328ed84270ff0a32abcabae03564a4d2ae5049877ba6e672c9493bbce9"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/Parser.py": {
+          "bytes": 22883,
+          "sha256": "176436e73d3efff2877dadf9e0a4210eedd9395ccb15f6a0decda2c49e1d97fa"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/ParserInterpreter.py": {
+          "bytes": 7206,
+          "sha256": "f9053d927e31dd6090f8b480f7d476df51e889c4ea6a488767928cef697e848a"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/ParserRuleContext.py": {
+          "bytes": 6762,
+          "sha256": "c0701574ec4c00ee63914aa5a135d5ce7ff16272618876efbee859a6d874645f"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/PredictionContext.py": {
+          "bytes": 22977,
+          "sha256": "71be0a23a106a52eec47327c52f3c4931a6120d66e5a1ca267de7be76837a6b2"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/Recognizer.py": {
+          "bytes": 5383,
+          "sha256": "be6280b528c8811f4b42be58cee2b93a63d958c277c7af4eb95650fc54f34071"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/RuleContext.py": {
+          "bytes": 8099,
+          "sha256": "1a2be246fda4fda97520181d24e104a03d2884969577efe1e53fc23c6fc1b268"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/StdinStream.py": {
+          "bytes": 303,
+          "sha256": "30c487e3337c4fa8bf9eefb7fd394dfb71389cf3386f92a02b8193ea7fc55100"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/Token.py": {
+          "bytes": 5206,
+          "sha256": "3ad58269be14b79d97fe72cb000fbcc78665eb1685e9310dfb4d37dee6a8684a"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/TokenStreamRewriter.py": {
+          "bytes": 10324,
+          "sha256": "72e12b413ad7c02ff492a56fdccb135866529be135572d72cc0fb748e84a77fb"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/Utils.py": {
+          "bytes": 931,
+          "sha256": "3b283c0890912f54eb17f41207f2cb955756381e25a1570a3a014d4fe89c3bb7"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/__init__.py": {
+          "bytes": 1125,
+          "sha256": "83c506a5f96794c59c0322ed8a17a3ceb8003f5528ddbf468707c8f109d98edc"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ATN.py": {
+          "bytes": 5789,
+          "sha256": "2d813c913f83f05a547797e93adc8e2eabd72c591449af374d5168c210960226"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ATNConfig.py": {
+          "bytes": 6565,
+          "sha256": "b4d7480bafc6af15e5947071de7a405b20e1e8aae884b64357f5f23ebc9d44c6"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ATNConfigSet.py": {
+          "bytes": 8312,
+          "sha256": "a91cd5b0178caa4dadc631b70eb1a9b7017a55bda11c2e70dee9a448bd06349c"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ATNDeserializationOptions.py": {
+          "bytes": 1010,
+          "sha256": "95457f6c65ba9b18fbb76d1eb1d6b962ff97f66f94ff1d7ed3168b89f85720fa"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ATNDeserializer.py": {
+          "bytes": 22252,
+          "sha256": "6982c30ed43ec32a3780877a03ec03d44dd09a97eb3d9957c63e3f2039be9946"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ATNSimulator.py": {
+          "bytes": 2298,
+          "sha256": "98373e1b7185de449eaa97c60da6d438b27458b553aa26f166592f5d06260519"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ATNState.py": {
+          "bytes": 7663,
+          "sha256": "35b9dd212594c050c5fefb817db4e2659f063c7a106ba51776a6c3fb28c913b7"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ATNType.py": {
+          "bytes": 422,
+          "sha256": "c60bfc00c554eed734ed4ef7fe14539b502267b32f1a1a1a3f97d388eaeb0868"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/LexerATNSimulator.py": {
+          "bytes": 25465,
+          "sha256": "9185d1c14bc7a6d49153c4ff2bda52ac694293d632a5678794072382bcb5555a"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/LexerAction.py": {
+          "bytes": 10014,
+          "sha256": "294789c0a7a405c8749b5a6848fb241c887ed7975c2801b8951ef396af7cb737"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/LexerActionExecutor.py": {
+          "bytes": 6420,
+          "sha256": "eeb960d7b4c77302ecb939a1ecdb0bad36d11f80d3ae6f2a21d5bdff6df90847"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/ParserATNSimulator.py": {
+          "bytes": 80365,
+          "sha256": "20a0b3b032dcce744e495a2353e75a03280aaf7b2f9740e62b90e19149650126"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/PredictionMode.py": {
+          "bytes": 22486,
+          "sha256": "8bc07b3142c0eeffaa6d778263fc69eac822db590733a9326ea22b1baad2aeba"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/SemanticContext.py": {
+          "bytes": 10495,
+          "sha256": "76cd1398ce2a7a76f42cdfab976169fcdff107de7d69b37aec8d7d105eabb3ca"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/Transition.py": {
+          "bytes": 8762,
+          "sha256": "640b041696b923f9fecf10fa53e0dab8ce7fdf78c52bae71dcf5aeebe356d110"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn/__init__.py": {
+          "bytes": 28,
+          "sha256": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/dfa/DFA.py": {
+          "bytes": 5388,
+          "sha256": "c1e221d2e6917da90fd76985bc7a3b534b6a3b718e355dfe9c7164736c64f991"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/dfa/DFASerializer.py": {
+          "bytes": 2518,
+          "sha256": "d6cb7f1cef39c972d8cbb8089d3127933b6003a6a6e024fec917a1fa66b3a7d1"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/dfa/DFAState.py": {
+          "bytes": 5583,
+          "sha256": "47b27029fd06b4012cf49fcc0ff63458a72ecddb740555f5b28c3ebaff721587"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/dfa/__init__.py": {
+          "bytes": 28,
+          "sha256": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/error/DiagnosticErrorListener.py": {
+          "bytes": 4430,
+          "sha256": "1304b60ff3b1e829af09ad7a34f27db9de1060f1e694f5edebe59d9f58792a0f"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/error/ErrorListener.py": {
+          "bytes": 2722,
+          "sha256": "c8ffcc0e0ba89780a3d3fa443f2373787defe19bd48d6e62c038e16135401db1"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/error/ErrorStrategy.py": {
+          "bytes": 30391,
+          "sha256": "d2687314be7b6559e32a41abb5a76d6bddd99b7357745f875b5d03543d3b557b"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/error/Errors.py": {
+          "bytes": 6759,
+          "sha256": "8652a781c9417d77640e20329a162cbe1d8e09796f98733691397f035be0a7ec"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/error/__init__.py": {
+          "bytes": 28,
+          "sha256": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/Chunk.py": {
+          "bytes": 695,
+          "sha256": "a022198e894babdc64c6d54344e103c5f50682775c127b035b479498b33b1a99"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/ParseTreeMatch.py": {
+          "bytes": 4485,
+          "sha256": "0dce86556494aa820015751a519a94c0252565f4dc8146c62c6ccd7fa43142f1"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/ParseTreePattern.py": {
+          "bytes": 2825,
+          "sha256": "01204d6903918777fb7fc2a715e6490b6c96145c78b90971bc2d98e7989f858d"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/ParseTreePatternMatcher.py": {
+          "bytes": 16388,
+          "sha256": "1ed13dca2d54aebd903cb18b24306faf4971bfa6e3ba3f421e5fb87256a149ef"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/RuleTagToken.py": {
+          "bytes": 2022,
+          "sha256": "9f8cd7726aeb7ec1b297dd698f965871cfc278a3213ebbd8914769a60301a5b6"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/TokenTagToken.py": {
+          "bytes": 1576,
+          "sha256": "4b7a370c985fccbe64a42971b0ac88f8897ec6fbae650881008b0b08a163447a"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/Tree.py": {
+          "bytes": 5572,
+          "sha256": "648ed4ff923104b9bf22b9df24eb5bd760423c85b2cdf799b4b9e11ca555648c"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/Trees.py": {
+          "bytes": 3968,
+          "sha256": "26d43b7185a62b023d4c804feb2f572208e5352e26623bf7011c0e7f059ce558"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree/__init__.py": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/xpath/XPath.py": {
+          "bytes": 13015,
+          "sha256": "3bdb38f840ef2db01b632b4ffdb69ef59da484b974880b51ccf02d55bb9650ce"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4/xpath/__init__.py": {
+          "bytes": 28,
+          "sha256": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4_python3_runtime.egg-info/PKG-INFO": {
+          "bytes": 282,
+          "sha256": "e429f7ad3decb95a8255138cec6a1f2d681f75ccc4d08cb052d044c85d1c459b"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4_python3_runtime.egg-info/SOURCES.txt": {
+          "bytes": 1968,
+          "sha256": "2fc22be0f30a6f4c49a5b066f2bb663644dbf53c029aa488db8bc02fab7692c8"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4_python3_runtime.egg-info/dependency_links.txt": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4_python3_runtime.egg-info/requires.txt": {
+          "bytes": 34,
+          "sha256": "8fcd1d96b48b64e6c60bf1f3296fdd7c9849ab03a4d291c046541009b24574b4"
+        },
+        "antlr4-python3-runtime-4.9.3/src/antlr4_python3_runtime.egg-info/top_level.txt": {
+          "bytes": 7,
+          "sha256": "3aca19b21f5b6f7d308176f6cc1523743c18838e8c7d5f9155903a3e4f29701d"
+        }
+      },
+      "directories": [
+        "antlr4-python3-runtime-4.9.3",
+        "antlr4-python3-runtime-4.9.3/bin",
+        "antlr4-python3-runtime-4.9.3/src",
+        "antlr4-python3-runtime-4.9.3/src/antlr4",
+        "antlr4-python3-runtime-4.9.3/src/antlr4/atn",
+        "antlr4-python3-runtime-4.9.3/src/antlr4/dfa",
+        "antlr4-python3-runtime-4.9.3/src/antlr4/error",
+        "antlr4-python3-runtime-4.9.3/src/antlr4/tree",
+        "antlr4-python3-runtime-4.9.3/src/antlr4/xpath",
+        "antlr4-python3-runtime-4.9.3/src/antlr4_python3_runtime.egg-info"
+      ],
+      "build_hooks": [
+        "antlr4-python3-runtime-4.9.3/setup.cfg",
+        "antlr4-python3-runtime-4.9.3/setup.py"
+      ],
+      "archive_root": "antlr4-python3-runtime-4.9.3",
+      "review_note": "Root inspected actual setup.py and setup.cfg; no custom commands, extensions or pyproject build hooks. ANTLR uses explicit package list; iopath uses setuptools.find_packages and runpy only on its inspected constant version.py. No setup network/process operation. Runtime package code is not executed by this approval."
+    },
+    {
+      "id": "iopath",
+      "filename": "iopath-0.1.10.tar.gz",
+      "sha256": "3311c16a4d9137223e20f141655759933e1eda24f8bff166af834af3c645ef01",
+      "approved": true,
+      "files": {
+        "iopath-0.1.10/.circleci/config.yml": {
+          "bytes": 3534,
+          "sha256": "93fad97d37edff8560c990f2a6801f67efb2ec5c3565c4c7917cac6abc6e8013"
+        },
+        "iopath-0.1.10/CODE_OF_CONDUCT.md": {
+          "bytes": 244,
+          "sha256": "1ce27940af665ed0b061c37de87b728100f1f548d9dccd4fd78158d2cf8f51f0"
+        },
+        "iopath-0.1.10/CONTRIBUTING.md": {
+          "bytes": 1249,
+          "sha256": "564c3f0011694ff9d485ad6b4171a1d24d6c52dd28f8aea0feb42552ccd6b74b"
+        },
+        "iopath-0.1.10/LICENSE": {
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        "iopath-0.1.10/PKG-INFO": {
+          "bytes": 313,
+          "sha256": "7e2184f831a9a35687c62788a9ac2d4bd626d3f4dd08b212f1fa8dc766c537cb"
+        },
+        "iopath-0.1.10/README.md": {
+          "bytes": 757,
+          "sha256": "8e13f2c33e6a46ae46b2c22e859eae08665e7c6e4f19e66c000086bc90acd962"
+        },
+        "iopath-0.1.10/iopath/__init__.py": {
+          "bytes": 466,
+          "sha256": "0c235d04461021792c89ad3d3415d4f35d3b9ac14bf5f0a58970d77dc9648749"
+        },
+        "iopath-0.1.10/iopath/common/__init__.py": {
+          "bytes": 244,
+          "sha256": "0123fdedd9c5b94cb5ae583416f1240b79e3f0d85efd7b927eda466d726bdbd2"
+        },
+        "iopath-0.1.10/iopath/common/download.py": {
+          "bytes": 2653,
+          "sha256": "c3035d7e194d7925f68845d4e74b02c5f3273f4a3f44d322192a52e90383cec5"
+        },
+        "iopath-0.1.10/iopath/common/event_logger.py": {
+          "bytes": 3322,
+          "sha256": "004fc65fae8f0b260c43391785d70f1293e93c4e3c51837c6906fbbc51441f37"
+        },
+        "iopath-0.1.10/iopath/common/file_io.py": {
+          "bytes": 58735,
+          "sha256": "fd20391c8ebebacf9acbc1336f0643433dd5668410e55c0d05e066d51cfd541e"
+        },
+        "iopath-0.1.10/iopath/common/non_blocking_io.py": {
+          "bytes": 15720,
+          "sha256": "cd01da0240677799725922620b02b5dee029d786e7ee369824e94ce4a4af9590"
+        },
+        "iopath-0.1.10/iopath/common/s3.py": {
+          "bytes": 31653,
+          "sha256": "2ca5edbf55ba3f54415ebceb9d8a4cd927d24108993e2163b04c5ecbba7c9dad"
+        },
+        "iopath-0.1.10/iopath/tabular/__init__.py": {
+          "bytes": 72,
+          "sha256": "25bf9e4803f238790789a985fa2551fbb02665bc3f0a337fb2fc8256b14e14f7"
+        },
+        "iopath-0.1.10/iopath/tabular/tabular_io.py": {
+          "bytes": 504,
+          "sha256": "5b287921eea080e7f953a35629355d407ef8913fda4ecdfdd90c68c368848165"
+        },
+        "iopath-0.1.10/iopath/version.py": {
+          "bytes": 96,
+          "sha256": "d5410e9558f50c0b3fc60d7f5956eba31b1db82cab5d5f4c05dc4750a0126111"
+        },
+        "iopath-0.1.10/iopath.egg-info/PKG-INFO": {
+          "bytes": 313,
+          "sha256": "7e2184f831a9a35687c62788a9ac2d4bd626d3f4dd08b212f1fa8dc766c537cb"
+        },
+        "iopath-0.1.10/iopath.egg-info/SOURCES.txt": {
+          "bytes": 738,
+          "sha256": "12c0fb2f905d42b44d188a7574b3c3eb2100f3e4b9a93b033c6c3bd814f20dcb"
+        },
+        "iopath-0.1.10/iopath.egg-info/dependency_links.txt": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "iopath-0.1.10/iopath.egg-info/requires.txt": {
+          "bytes": 87,
+          "sha256": "1c4daac588447a222f59fbae2e1a6ee96e9fa401ae7bc14a016f04b132308176"
+        },
+        "iopath-0.1.10/iopath.egg-info/top_level.txt": {
+          "bytes": 7,
+          "sha256": "b21ccd8bb89fb6c37554616f4b49a19d60eddf4edc0404fa32da7e771c0b4005"
+        },
+        "iopath-0.1.10/packaging/build_all_conda.sh": {
+          "bytes": 608,
+          "sha256": "29eebfaddd6fc99a998f20e290c3dbd4eb0afd62ed9591cb7faa47fd75fe2951"
+        },
+        "iopath-0.1.10/packaging/build_conda.sh": {
+          "bytes": 547,
+          "sha256": "7896b89b525f497431346f207e2fdafc4a478ffadebd9d700d243f8fc0b720d1"
+        },
+        "iopath-0.1.10/packaging/iopath/meta.yaml": {
+          "bytes": 601,
+          "sha256": "c9439905c6abeb51eb9f52ebe726797d075dd7821eb1b1fc1e5ebd2369c742cc"
+        },
+        "iopath-0.1.10/setup.cfg": {
+          "bytes": 215,
+          "sha256": "2f19ed619f78a641df740511d42534ae4433402f3fab77511ad9af974693a88c"
+        },
+        "iopath-0.1.10/setup.py": {
+          "bytes": 755,
+          "sha256": "ccf96877a3598ba208445ea557044913a14c18283f054942e17a953fec6a9ed9"
+        },
+        "iopath-0.1.10/tests/__init__.py": {
+          "bytes": 182,
+          "sha256": "3f75d38950313b00b5cfd0720dad4afc472eea762c7db03626d81bcd18424f40"
+        },
+        "iopath-0.1.10/tests/async_torch_test.py": {
+          "bytes": 3156,
+          "sha256": "8daa922906e3e4823b584e2292ea5a30347548c9812b4670086275e588a27a9b"
+        },
+        "iopath-0.1.10/tests/async_writes_test.py": {
+          "bytes": 2439,
+          "sha256": "15c47c2542330a25e17ed57bdd012540da8c91600be2bcdd3b2f2961c0b2c276"
+        },
+        "iopath-0.1.10/tests/test_download.py": {
+          "bytes": 914,
+          "sha256": "50af914b7831798173e6d82edadfd7892ee1500ef539e88559c36b8cdda5a0d0"
+        },
+        "iopath-0.1.10/tests/test_file_io.py": {
+          "bytes": 19886,
+          "sha256": "9a7c12959140b1d20a1c73e5e27a4c61f06f17f5202528190a43b2b5396951c6"
+        },
+        "iopath-0.1.10/tests/test_non_blocking_io.py": {
+          "bytes": 19433,
+          "sha256": "babb0113349643eb851334b5f42591dc4bcfb053cf2ea3e4f478a614b428431a"
+        },
+        "iopath-0.1.10/tests/test_s3.py": {
+          "bytes": 18500,
+          "sha256": "244cf8e49322e1541e8ed431b7241e0fd48578796ff136945e84752a05e9a3ef"
+        }
+      },
+      "directories": [
+        "iopath-0.1.10",
+        "iopath-0.1.10/.circleci",
+        "iopath-0.1.10/iopath",
+        "iopath-0.1.10/iopath/common",
+        "iopath-0.1.10/iopath/tabular",
+        "iopath-0.1.10/iopath.egg-info",
+        "iopath-0.1.10/packaging",
+        "iopath-0.1.10/packaging/iopath",
+        "iopath-0.1.10/tests"
+      ],
+      "build_hooks": [
+        "iopath-0.1.10/iopath/version.py",
+        "iopath-0.1.10/setup.cfg",
+        "iopath-0.1.10/setup.py"
+      ],
+      "archive_root": "iopath-0.1.10",
+      "review_note": "Root inspected actual setup.py and setup.cfg; no custom commands, extensions or pyproject build hooks. ANTLR uses explicit package list; iopath uses setuptools.find_packages and runpy only on its inspected constant version.py. No setup network/process operation. Runtime package code is not executed by this approval."
+    }
+  ]
+}
