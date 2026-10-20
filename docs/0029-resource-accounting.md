@@ -1,6 +1,6 @@
 # 0029 conservative acquisition planning balance
 
-October 20, 2026. Local reconciliation of existing receipts and reservations; no scientific payload or model acquisition. **Planning balance after the latest metadata reservations: 1,649,868,314 bytes.** This keeps all identified prior holds. It is not an exact measurement of remaining network allowance: provider-managed web traffic is unmetered, and its full assignment to the earlier metadata reserve is unresolved. Leave additional headroom rather than spending to this number.
+October 20, 2026. Local reconciliation of existing receipts and reservations; no scientific payload or model acquisition. **Planning balance after the metadata and acquisition-only reservations: 1,349,868,314 bytes.** This keeps all identified prior holds. It is not an exact measurement of remaining network allowance: provider-managed web traffic is unmetered, and its full assignment to the earlier metadata reserve is unresolved. Leave additional headroom rather than spending to this number.
 
 | Entry | Retained debit, bytes | Balance, bytes |
 |---|---:|---:|
@@ -18,10 +18,11 @@ October 20, 2026. Local reconciliation of existing receipts and reservations; no
 | 0029 video metadata, full allowance | 2,000,000 | 1,678,868,314 |
 | 0029 multi-object/model-source metadata, full allowance | 1,000,000 | 1,677,868,314 |
 | 0029 native-runtime dependency/source metadata, new full allowance | 3,000,000 | 1,674,868,314 |
-| 0029 full VOST directory and split/parent metadata, new full allowance | 25,000,000 | **1,649,868,314** |
+| 0029 full VOST directory and split/parent metadata, full allowance | 25,000,000 | 1,649,868,314 |
+| [0029 pinned asset-only acquisition](../protocols/0029-runtime-assets.md), full allowance | 300,000,000 | **1,349,868,314** |
 
 The three extra holds total 4,141,572 bytes and may overlap the old 20 MB metadata reservation. They are deliberately retained pending a full assignment; this is **not a claim that these bodies were transferred twice**. No earlier reserve is released.
 
 The [0022 operation](../results/0022-preparation/acquisition/operation.json) actually read 270,952,703 asset/dependency bytes. Actual 0023 RGB/intrinsic and GT-text bodies were 11,062,865 and 117,919 bytes. Using those two actual amounts explains the historical rounded balance: 2,444,780,692 − 11,062,865 − 117,919 = 2,433,599,908 bytes, approximately 2.43 GB. The table instead keeps their complete caps. The former hypothetical 430 MB physical-falsifier example was never an additional acquisition; the actual two-archive debit above supersedes that sizing example.
 
-[0029 source-screen accounting](0029-task-screen.md) distinguishes exact body counts from full reservations. The 1 MB check read 200,553 direct source/metadata body bytes plus unmetered provider text; retain the full allowance. The later 3 MB check prepares native-runtime/source manifests only. The separate 25 MB allowance covers the known 21,042,989-byte VOST central directory plus bounded official split/parent-recording text; both checks are pending. No RGB, annotation-value, SAM2 checkpoint or dependency-wheel payload is allocated here. Before scientific acquisition, bind exact assets and prospective cohort, reserve their entire response-body limits, and retain failures and actual transfer receipts.
+[0029 source-screen accounting](0029-task-screen.md) distinguishes exact body counts from full reservations. The 1 MB check read 200,553 direct source/metadata body bytes plus unmetered provider text; retain the full allowance. The completed 3 MB check read 1,319,651 direct source/metadata bytes across 58 requests. The completed 25 MB check read 22,806,230 bytes across 41 requests, including the 21,042,989-byte VOST central directory and bounded official split/parent text. Retain both full allowances. No image or mask values were read. The new 300 MB reservation admits only the pinned assets after review, source freeze and exact CI; expected payload is 257,103,668 bytes. Scientific cohort allocation and inference remain separate. Preserve every failure and actual transfer receipt; no reserve is refunded against a smaller measured subtotal.

@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: 0029 source screen; no new result
+## Current work: 0029 pinned asset preparation; no measured improvement
+
+The [acquisition-only protocol](protocols/0029-runtime-assets.md) prepares native SAM2.1 tiny and a pinned Python 3.12 runtime under a full 300 MB reservation. Source/metadata checks identify an expected 257,103,668-byte payload; installation, conditional offline builds and model inference require subsequent qualification. DAM4SAM still needs a reviewed VOT/device adapter. DAVIS parent candidates are identified but unallocated; VOST frame/mask inventory pairs, while its parent-recording mapping remains unresolved. Exact source CI must precede acquisition. This is preparation for a small signed-memory information test, not an empirical gain or manuscript.
+
+## Historical: 0029 source screen; no new result
 
 [0028 publication and merged-main CI are verified](docs/0028-publication-verification.md). The [0029 screen](docs/0029-task-screen.md) rejects five generic replacement proposals because their mechanisms already have direct precedents or their required observations are unavailable. Delayed tracker-memory replay is covered by Det-SAM2; its initially conditional opening is explicitly superseded. Video sequence access is feasible in part, but no new method, data cohort, model acquisition or experiment is admitted. The [signed identity-evidence question](docs/0029-signed-memory-question.md) specifies a narrow diagnostic and a prospective two-source +3-point J&F topic gate; exact prior-work distinction and execution prerequisites remain unresolved. No measured improvement or manuscript is established.
 
