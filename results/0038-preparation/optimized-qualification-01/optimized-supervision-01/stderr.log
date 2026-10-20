@@ -1,0 +1,13 @@
+frame loading (JPEG):   0%|          | 0/10 [00:00<?, ?it/s]frame loading (JPEG): 100%|██████████| 10/10 [00:00<00:00, 147.90it/s]
+propagate in video:   0%|          | 0/10 [00:00<?, ?it/s]propagate in video:  20%|██        | 2/10 [00:00<00:03,  2.55it/s]propagate in video:  30%|███       | 3/10 [00:01<00:04,  1.71it/s]propagate in video:  40%|████      | 4/10 [00:02<00:04,  1.42it/s]propagate in video:  50%|█████     | 5/10 [00:03<00:03,  1.26it/s]propagate in video:  60%|██████    | 6/10 [00:04<00:03,  1.13it/s]propagate in video:  70%|███████   | 7/10 [00:05<00:02,  1.05it/s]propagate in video:  80%|████████  | 8/10 [00:06<00:02,  1.02s/it]propagate in video:  80%|████████  | 8/10 [00:14<00:03,  1.85s/it]
+Traceback (most recent call last):
+  File "$REPOSITORY/experiments/0038-late-memory-readout/qualify_optimized.py", line 229, in <module>
+    result = run(parser.parse_args().spec)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$REPOSITORY/experiments/0038-late-memory-readout/qualify_optimized.py", line 122, in run
+    compare("stack_"+name, audit["stack_by_name"][name], expected)
+  File "$REPOSITORY/experiments/0038-late-memory-readout/qualify_optimized.py", line 120, in compare
+    require(okay, name + " exceeds prospective numeric tolerance")
+  File "$REPOSITORY/experiments/0030-memory-content/campaign/common.py", line 13, in require
+    raise ValueError(message)
+ValueError: stack_flat exceeds prospective numeric tolerance

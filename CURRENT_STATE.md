@@ -1,6 +1,12 @@
 # Current state
 
-## Current: merge-location implementation passes; complete-run cost unresolved
+## Current: original readout qualified; optimized implementation fails qualification
+
+[Compressed/batched attempt](results/0038-preparation/optimized-qualification-01/README.md) passes22 unit checks but fails native numerical qualification at the first compressed-flat stack comparison (maximum absolute difference0.0002875328064; frozen tolerance1e-4/1e-5). Later SAM-field/mask/max-pointer/final-state comparisons were not reached. Preserve this failed20.395268125s/2557632KiB operation without tolerance rescue. Its conservative1916.660337081s cost projection also remains above1800s. It provides no scientific accuracy evidence; use no unqualified optimization.
+
+The complete scientific executor may be prepared using the separately qualified original implementation, but its launch remains unadmitted under the existing cap. No timeout subdivision, control omission, shorter cohort or silent resource exception.
+
+## Original merge-location implementation qualification
 
 [D38 manufactured qualification](results/0038-preparation/qualification-01/README.md) passes15 unit checks and an invented ten-frame native-model parity operation. Every native output and the complete final state match the plain tracker exactly; candidate selected-context/stack/head parity also passes. This is implementation evidence only, with zero scientific predictions or accuracy scores. Full native qualification costs30.387568042s/2180672KiB.
 

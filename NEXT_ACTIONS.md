@@ -1,6 +1,6 @@
 # Next actions
 
-1. Preserve the complete D38 manufactured qualification and exact source. Native state/output parity passes, but the2253s combined-cost extrapolation does not admit the complete1800s screen. Assess only operator-equivalent implementation economies, then qualify any change before a new admission decision. No partial-cohort or missing-control run.
+1. Preserve the original D38 native parity and the failed compressed/batched qualification. The latter fails the fixed numerical tolerance and still projects1917s; do not relax tolerance or use it. Prepare a complete reviewed scientific executor against the qualified original implementation, while keeping launch unadmitted under the1800s cap. Any resource exception must be explicit before execution; no partial-cohort, missing-control or timeout-subdivision run.
 2. PR74 publication/result/main CI are verified. Keep the exact constrained-flow/cell-readout recipe closed without threshold/optimizer/seed rescue. D38 is a different matched-context readout question, with no established novelty or scientific outcome.
 3. Qualify M3-VOS original-recording metadata, immutable evaluator and bounded file manifest before any new acquisition or final-source claim. No endpoint amendment is currently adopted.
 4. Preserve the substantial two-independent-source final gate, strong complete-cost controls, uncertainty, ablations and replication before a manuscript.
