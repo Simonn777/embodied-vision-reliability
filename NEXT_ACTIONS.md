@@ -1,6 +1,18 @@
 # Next actions
 
-## Current: 0025 conditional RS-depth candidate
+## Current: translate qualified depth assumption into a falsifiable pose study
+
+1. Publish the complete [0025b qualification](results/0025b-development/README.md), including the better GS oracle, the unavailable middle-Z arm and all 256 case-arm records, after exact result CI.
+2. Prepare a separate prospective test with within-readout translation and strictly identified rotation/gyro inputs. Address the four-point system's poor conditioning and critical motions before large data acquisition; compare strong same-information RS/no-depth and affine-depth controls.
+3. Freeze any new task-level experiment before outcomes. The current oracle-assisted depth tolerance pass is not a method gain. Keep the two-source held-out, matched-cost improvement and replication gate before a manuscript.
+
+## Historical pre-run actions: 0025b physical qualification
+
+1. Finish independent source review and artificial barrier/geometry/aggregation tests; commit the exact protocol and verify CI before scientific payload access.
+2. Run one bounded acquisition of the two official clean archives, then exactly 80 RGB-only forwards. Verify the complete seal and clean outer receipt before GT numeric decoding.
+3. Evaluate all 64 paired cases and all four oracle diagnostic arms, audit saved outputs, and retain failures. Pass permits only a separately frozen task-level proposal; failure closes this fixed approximation. No paper before the unchanged two-source held-out improvement gate.
+
+## Historical qualification actions: 0025 conditional RS-depth candidate
 
 1. Publish the [audited mathematical qualification](results/0025-identifiability/README.md), retaining the distinction between invertibility and practical accuracy.
 2. Qualify independent rendered-depth format and bounded acquisition; freeze a physical falsifier with fixed supports, paired GS and temporal-depth controls before scientific payload access. No GT pose/rotation may enter an estimator.

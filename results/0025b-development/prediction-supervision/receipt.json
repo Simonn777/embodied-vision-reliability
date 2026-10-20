@@ -1,0 +1,50 @@
+{
+  "schema": "evr0025b.supervision.v1",
+  "status": "completed",
+  "operation": "predict",
+  "expected_commit": "13d4b3259f8d12a1ba4d5d0de9ff56ec6527cf62",
+  "source_sha256": {
+    "experiments/0025b-physical-depth/acquire.py": "24fe53c00070ca7b4720623cae163ece80e8d79183aa9998b748828efb2fb8bf",
+    "experiments/0025b-physical-depth/common.py": "84c826022385a1be25ce1975e39ca509f54c1086209aaa4d340f17b9dd1fe7fc",
+    "experiments/0025b-physical-depth/geometry_core.py": "39d824700cd76c09ddd235b3a3e6d1de597866bb69e4f8af5844111ab2120897",
+    "experiments/0025b-physical-depth/predict.py": "607d3c40ad6b87fab361917f3d151c6a9e153801ef070b5f41f54108b2b9fe15",
+    "experiments/0025b-physical-depth/evaluate.py": "3923b562672487bdc2685c072e429e1b2b6031504248e1489ef6758abbbf8c14",
+    "experiments/0025b-physical-depth/audit_saved.py": "3acec9735abbe249ba4bd918cd95507f5b2b7ae39cf7f16f26541f5be7a64442",
+    "experiments/0025b-physical-depth/supervise.py": "27859c16a6f6f5cd755dcd3faba1f54b8f656a8baa301c84600382fe44cb3556",
+    "protocols/0025b-rs-depth-semantics.md": "9d7deab703b5be55ac104130485b97063099fb91618a6af96c8d6edaf4318032"
+  },
+  "command": [
+    "$PYTHON",
+    "$REPOSITORY/experiments/0025b-physical-depth/predict.py",
+    "--expected-commit",
+    "13d4b3259f8d12a1ba4d5d0de9ff56ec6527cf62",
+    "--acquisition-dir",
+    "$PRIVATE/0025b-physical-depth/acquisition-01",
+    "--acquisition-supervision",
+    "$PRIVATE/0025b-physical-depth/acquisition-supervision-01/receipt.json",
+    "--original-frontend-supervision",
+    "$PRIVATE/0023-preparation/frontend-supervision-01/receipt.json",
+    "--output-dir",
+    "$PRIVATE/0025b-physical-depth/prediction-01"
+  ],
+  "cwd": "$REPOSITORY",
+  "python_version": "3.9.6",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "hard_timeout_seconds": 1800.0,
+  "group_rss_limit_kib": 8388608,
+  "rss_sampling": "All observed descendants and retained process groups, approximately every 0.1s; transient peaks may be missed",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 72.034816792,
+  "peak_group_rss_kib": 2083040,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "stdout_sha256": "e67ff442831df6b6b3048be30066f67fc209148001fa150d081402ec6dc63c47",
+  "stderr_sha256": "8d9677e68c3ba5724cec0d272076e506525e87c115d1c8e70d7af9e9f5300dbe"
+}
