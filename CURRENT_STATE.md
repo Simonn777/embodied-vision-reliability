@@ -1,6 +1,16 @@
 # Current state
 
-## Current result: 0027 failed and closed
+## Current result: 0028 failed; fixed variant closed
+
+The [complete 27-image/24-query comparison](results/0028-development/README.md) gives ANG AUC@5 **2.695397%** versus **51.000123%** for the strongest E/AFFINE control (−48.304727 points). All 24 ANG fits completed and FULL was valid; all three scene margins are negative. Three of four fixed gate clauses fail. Independent saved-output audit passes 2,451 comparisons. No rescue tuning, held-out expansion or manuscript is admitted. A materially different task/observable is being screened; the main improvement goal remains unmet.
+
+## Historical preparation: 0028 normal-information opportunity test
+
+Superseded by the failed result above; these prerequisites do not authorize another run.
+
+The [fixed 27-image/24-query study](experiments/0028-normal-information/protocol.md) asks whether restricted normal-guided depth correction improves actual pose after camera calibration. All eleven strong controls and failure-inclusive thresholds are prespecified. This compares known constructions; no new method, scientific gain or manuscript is established. Artificial qualification is recorded [here](results/0028-qualification/README.md). Scientific execution requires the complete source freeze and exact CI. The earlier 0027 failed variant remains closed and [its publication/main CI is verified](docs/0027-publication-verification.md).
+
+## Historical result: 0027 failed and closed
 
 [All138 fixed rows](results/0027-development/README.md) completed with all1,656 native attempts. Exact clean correctness passed, but noisy useful yield and required point-control advantage failed. T:57/128 useful noisy poses and29.238564% AUC5; pinned V:57/128 and29.474902%. Independent saved-output audit passed41,707 checks. This is a manufactured negative result, not held-out success. No rescue tuning, F-all expansion or manuscript is admitted. The broader improvement goal stays active.
 

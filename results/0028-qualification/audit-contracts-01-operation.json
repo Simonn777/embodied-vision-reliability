@@ -1,0 +1,35 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "failed",
+  "command": [
+    "$PYTHON",
+    "-W",
+    "error",
+    "$PRIVATE/0028-preparation/run_audit_qualification.py",
+    "$PRIVATE/0028-preparation/audit-contracts-01"
+  ],
+  "spec_sha256": "b11e9578c9eb2be644ab336e7029e116b5def1743f403e7d2e8ec8cfe7e34843",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "95c7a15b16306b4221347f31adce6d02a4098975",
+  "hard_timeout_seconds": 120,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 1,
+  "termination": null,
+  "wall_seconds": 0.956602875,
+  "peak_group_rss_kib": 42352,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "d132b8a40201a80da6fc7a1f28cd749af532116da630f3c59d1f40f56f75ca5d",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "81d0b25817901605780d6694c31f4ac26e7fbe888b47e6c542ba1784f24d779b"
+}

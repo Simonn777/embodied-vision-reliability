@@ -1,0 +1,21 @@
+# 0028 saved-JSON evidence review
+
+The fixed ANG formulation **fails**. Its AUC@5 is **2.695396598%**, versus E **51.000123279%** (−48.304726681 percentage points). Trustworthy-comparator clause passes; AUC5/coverage, scene consistency and AUC20 clauses fail. ANG has 24 genuine outcomes, so coverage itself passes. AUC20 is 24.551825632% versus 79.148343644% (−54.596518013 pp). All three AUC5 scene margins are negative: s00513 −16.336062218, s00475 −54.248102240, s00478 −81.475769353 pp. Close this fixed candidate without changing its sample grid, objective, bounds, support, selector or gate.
+
+## Evidence and scope
+
+Reviewed frozen commit `e7448319ff9a32fa07436fbd8da53c605fdada74` and its matching successful CI metadata. Four saved outer receipts report exit0, completed status, no termination, no descendants and no cleanup errors. Their spec/result hashes, source/job/dispatch bindings and every sealed JSON file were rehashed. The frozen independent audit reports **2,451 checks, zero errors, 264 pose outcomes**. This additional review performed 635 saved-evidence checks and independently recomputed all pooled/per-scene AUCs from the saved errors, the gate, exact E fallback identity and minimum saved-score/generation-order selections. It does not rerun pose errors from GT, numerical fits, model/native pipelines or the frozen audit. NPZs, original GT files, native binaries and logs were not opened; their full provenance/array claims remain those of the admitted pipeline and frozen audit. Exact JSON digests and scope are in `evidence-review-summary.json`.
+
+## Population and attempts
+
+All 27 new raw forwards and all 24 queries completed. All 264 outcomes retain the denominator and valid poses; none is penalized or dropped. Common fixed supports contain 18–256 points (median 150.5); full-match scoring populations contain 35–256. All seven similarity arms retain the same support whenever fitted, and stored selector scores use all selected matches.
+
+There are 24 native E invocation intents/returns and 118 TC refinement intents/returns. TC has 117 admissible completions and one retained nonphysical output (s00475/B3, E seed). The two missing LS seeds follow the two declared unavailable LS corrections; there is no retry. NORMAL_REFINE records 48 completed, converged attempts (360 SciPy nfev, 2,173 actual residual calls), retaining both signs and all starts. LS falls back to E in s00513/B1 and B2. AFFINE selects E in 23 queries; its one genuine selected refinement is s00513/B2. Its AUC@5/10/20 equals E's, which is a metric tie rather than 24 bitwise-identical poses.
+
+## Descriptive failure patterns, not rescue criteria
+
+All 27 ANG and IRLS calibrations complete; LS completes 25 and rejects two out-of-domain offsets (5.43236 and 7.26989, fixed upper bound4). FULL author refinement is available for all27 images and all24 pair fits, so this result cannot be attributed to a missing stronger normal/depth comparator. ANG improves its own saved angular objective over zero on 27/27 images, yet its pose error worsens versus raw C on 16/24 queries (median paired increase1.25909°), versus FULL on15/24, and versus E on21/24. This is direct evidence that this fitted image-consistency objective did not transfer into useful pose accuracy here; it does not identify the unique causal error source.
+
+ANG hits its fixed upper bound4 on five images (indices0,1,3,7,9, all s00513). This is recorded saturation, not evidence that increasing the bound would help. ANG median max-pose error is20.79786°, versus raw C17.07620°, FULL17.83340°, NORMAL20.37929°, NORMAL_REFINE7.53007°, and E1.61322°. ANG has one query below5°, versus E17. Known-FoV B/full-K C and the normal-based controls also fail to outperform E on this specific cohort; no broader claim about the information content of normals follows.
+
+Outer wall times are frontend42.278514333s, prediction114.506634375s, evaluation9.629114209s and audit4.397504833s. Prediction includes evidence serialization/checkpoints and shared work; these are not matched complete-pipeline per-method speed results. The frontend preserves the known NotOpenSSLWarning. All three places and these queries are development data. This is a negative opportunity test, not pose improvement, held-out validation, novelty evidence or manuscript admission.

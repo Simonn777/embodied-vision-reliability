@@ -1,0 +1,155 @@
+{
+  "schema": "evr0028.qualification-manifest.v1",
+  "status": "completed",
+  "operations": [
+    {
+      "name": "arithmetic",
+      "tests": 24,
+      "source_sha256": {
+        "normal_offset.py": "cd842dbd93c88c1a2ac5c3e0f2eb696b4847482103cc1da154596dc61e4ce296",
+        "test_normal_offset.py": "a00e60420080f6b682cac3c0f99cd1954ed25c7bce88bda0b153dc12b5251598",
+        "pose_controls.py": "303c2471b780fd9fe5c0e7188f8100b2be83c2decd647b977710b9fb0c97b25e",
+        "test_pose_controls.py": "6426b3bfc1a676bd847722b08cb2ab586f319a4f79c62fa466d68d1d0175d038",
+        "point_postprocess.py": "db3fd6a275e1e5d00a4d5d21ba947f270eb2bb6e49d3071895084be41534de03",
+        "test_point_postprocess.py": "021fdc4a601a326339bc5554fe2767585d2e61ca81a22ebd51b45068cccee68a",
+        "protocol.md": "93824f0a36dd514080cb6eb40dac001fc5442cae56b7b2a58e8c83a4d499bb9d"
+      },
+      "result_sha256": "f320785a55a0f47cad8e982acf4820ccaaedc85f606bb238c720051bbe03ddf8",
+      "operation_sha256": "fcfd41f7690166adb291284cb61c1eccbb6d14623cd0ceb5af0a5b5eeb9c794e",
+      "spec_sha256": "65e80991391609c7f33bc794fea4baa4ae4c67f97a3c6a39415bdec3aaf502d2",
+      "scientific_inputs_opened": false
+    },
+    {
+      "name": "normal-arithmetic",
+      "tests": 17,
+      "source_sha256": {
+        "normal_offset.py": "cd842dbd93c88c1a2ac5c3e0f2eb696b4847482103cc1da154596dc61e4ce296",
+        "test_normal_offset.py": "a00e60420080f6b682cac3c0f99cd1954ed25c7bce88bda0b153dc12b5251598",
+        "protocol.md": "93824f0a36dd514080cb6eb40dac001fc5442cae56b7b2a58e8c83a4d499bb9d"
+      },
+      "result_sha256": "563f461b657cc7db67df361a21ab5ad4f36b3e613cb80bfe6e294b8ed0372037",
+      "operation_sha256": "2d6757b8a4c5864472f925b00901503669c5851681c74ca60cacfd8d6efe6163",
+      "spec_sha256": "548fd21cc7b08158292ebf4bad7d77bcd11d19e932da32942eef5b5e7c66e400",
+      "scientific_inputs_opened": false
+    },
+    {
+      "name": "contracts",
+      "tests": 32,
+      "source_sha256": {
+        "common.py": "ec87a22ea40fa2e401ca236deb06880372613e9609893e2e4d2dde0786852762",
+        "frontend.py": "fd87566a7045612d4a8f7e96b6239c01d079fa3c7cc8f713ba1c7582f1759391",
+        "predict.py": "30fde86208993af2c23356b9c04835530d3b9824b94f8b0b64605362d85ff2c7",
+        "study_core.py": "b4db39e3431a5ed0fcacefff131611817764c0003f6c4ca6f889d9bc46c4d25c",
+        "pose_controls.py": "303c2471b780fd9fe5c0e7188f8100b2be83c2decd647b977710b9fb0c97b25e",
+        "metrics.py": "07ea36b2934bc988153438c8400b9fc3ade622785a4c8ff0c8b3a888d1f3506f",
+        "test_study_core.py": "4129ddb02fc697065d6f56ea0fcb54c69f0ff795ab2026c7a858a16f287652e6",
+        "test_metrics.py": "c9edd5f36f642ec07ce33f43cff50ca2f84c3d9fa4e0b29fede07123e8bde3d2",
+        "test_frontend_contract.py": "6f043898857b94394486713bc084bab514e00e524f026ac288d65c3aeb3cde77",
+        "protocol.md": "93824f0a36dd514080cb6eb40dac001fc5442cae56b7b2a58e8c83a4d499bb9d"
+      },
+      "result_sha256": "ace7deb21314fb1953904ea1d23a34d59d90ab7c5e3ceaebb7ff22282b717479",
+      "operation_sha256": "a965cdb34f2249a543d3f5a77e68734803c21d0837ca635c362276b4d0d588d6",
+      "spec_sha256": "097bcceb405986cdbcf1e00a19f51860b2392445d546adf60aa9b56cfd2bc31e",
+      "scientific_inputs_opened": false
+    },
+    {
+      "name": "evaluation-contracts",
+      "tests": 19,
+      "source_sha256": {
+        "common.py": "ec87a22ea40fa2e401ca236deb06880372613e9609893e2e4d2dde0786852762",
+        "frontend.py": "fd87566a7045612d4a8f7e96b6239c01d079fa3c7cc8f713ba1c7582f1759391",
+        "predict.py": "30fde86208993af2c23356b9c04835530d3b9824b94f8b0b64605362d85ff2c7",
+        "study_core.py": "b4db39e3431a5ed0fcacefff131611817764c0003f6c4ca6f889d9bc46c4d25c",
+        "pose_controls.py": "303c2471b780fd9fe5c0e7188f8100b2be83c2decd647b977710b9fb0c97b25e",
+        "metrics.py": "07ea36b2934bc988153438c8400b9fc3ade622785a4c8ff0c8b3a888d1f3506f",
+        "evaluate.py": "487d5539456a408d49d729f5e33268f3ce9d4eb3f3b43ce96ab1ae942e2a85e2",
+        "test_evaluate.py": "d3b7337b03e4ecad8a79cca5b9143e2c6bf56e34b66c0f55cf631f26d79990be",
+        "test_predict_contract.py": "ac4f89b6cf1341cc16be5ab8aadb5d1c87d58c31e3ff4ab68dd8123a21a06124",
+        "protocol.md": "0e8657e20f88ad9c1762b9091324b06d6515de8c0ae804a13ea95fb6ee7ebdc7"
+      },
+      "result_sha256": "8d81eff1ea5fbae0a2b024bb41884d5c15c41b6ee1aef5e681e6ea884d2cc2c2",
+      "operation_sha256": "887e98e3fb6ffe111898cfed0828d1716a0c042bdda16f8853fe4dd55f352fb3",
+      "spec_sha256": "9a6689f01207112bad03a357e28d546de172279548df147583d66eda430e9ba8",
+      "scientific_inputs_opened": false
+    },
+    {
+      "name": "audit-contracts-01",
+      "status": "failed",
+      "tests": 11,
+      "failures": 1,
+      "source_sha256": {
+        "common.py": "ec87a22ea40fa2e401ca236deb06880372613e9609893e2e4d2dde0786852762",
+        "frontend.py": "fd87566a7045612d4a8f7e96b6239c01d079fa3c7cc8f713ba1c7582f1759391",
+        "predict.py": "30fde86208993af2c23356b9c04835530d3b9824b94f8b0b64605362d85ff2c7",
+        "study_core.py": "b4db39e3431a5ed0fcacefff131611817764c0003f6c4ca6f889d9bc46c4d25c",
+        "pose_controls.py": "303c2471b780fd9fe5c0e7188f8100b2be83c2decd647b977710b9fb0c97b25e",
+        "metrics.py": "07ea36b2934bc988153438c8400b9fc3ade622785a4c8ff0c8b3a888d1f3506f",
+        "evaluate.py": "487d5539456a408d49d729f5e33268f3ce9d4eb3f3b43ce96ab1ae942e2a85e2",
+        "audit_saved.py": "b8f2cd92d5509a03f35030193b490114d8ed1278e27def7f1c30b42416e256d7",
+        "test_audit_saved.py": "ff3e15e855fcc5a531a237ff94f6d31e6514d72d949ff9953d87d47603605fb9",
+        "protocol.md": "0e8657e20f88ad9c1762b9091324b06d6515de8c0ae804a13ea95fb6ee7ebdc7"
+      },
+      "result_sha256": "81d0b25817901605780d6694c31f4ac26e7fbe888b47e6c542ba1784f24d779b",
+      "operation_sha256": "aa751a57c6d1ada134aee257333c15e2dea34de2c53ca8e1d3ab0a7d6c9ffef7",
+      "spec_sha256": "b11e9578c9eb2be644ab336e7029e116b5def1743f403e7d2e8ec8cfe7e34843",
+      "scientific_inputs_opened": false
+    },
+    {
+      "name": "audit-contracts-02",
+      "status": "completed",
+      "tests": 11,
+      "failures": 0,
+      "source_sha256": {
+        "common.py": "ec87a22ea40fa2e401ca236deb06880372613e9609893e2e4d2dde0786852762",
+        "frontend.py": "fd87566a7045612d4a8f7e96b6239c01d079fa3c7cc8f713ba1c7582f1759391",
+        "predict.py": "30fde86208993af2c23356b9c04835530d3b9824b94f8b0b64605362d85ff2c7",
+        "study_core.py": "b4db39e3431a5ed0fcacefff131611817764c0003f6c4ca6f889d9bc46c4d25c",
+        "pose_controls.py": "303c2471b780fd9fe5c0e7188f8100b2be83c2decd647b977710b9fb0c97b25e",
+        "metrics.py": "07ea36b2934bc988153438c8400b9fc3ade622785a4c8ff0c8b3a888d1f3506f",
+        "evaluate.py": "487d5539456a408d49d729f5e33268f3ce9d4eb3f3b43ce96ab1ae942e2a85e2",
+        "audit_saved.py": "b8f2cd92d5509a03f35030193b490114d8ed1278e27def7f1c30b42416e256d7",
+        "test_audit_saved.py": "e1e37261daec1c47308feca485b28dc2025516723d901e93339bddc2c0891b27",
+        "protocol.md": "0e8657e20f88ad9c1762b9091324b06d6515de8c0ae804a13ea95fb6ee7ebdc7"
+      },
+      "result_sha256": "0eee9165bdff347958914e91c90af135235ef8d08fb9fe8cad5bcde1b34bf42f",
+      "operation_sha256": "23ee968db92bf950e47634e723920fcc5dfd794414972c3774de6dc76d278be1",
+      "spec_sha256": "f7e9482c3e298691b905c4f6ad182f7b6716380e54088e6bcf832e7f0963d891",
+      "scientific_inputs_opened": false
+    },
+    {
+      "name": "startup-contracts",
+      "status": "completed",
+      "tests": 11,
+      "source_sha256": {
+        "common.py": "ec87a22ea40fa2e401ca236deb06880372613e9609893e2e4d2dde0786852762",
+        "frontend.py": "4ab6d2976e01f6af219cf2e9e3f71baa1464b65ded0e85a86896dd3e2df47eb2",
+        "predict.py": "30fde86208993af2c23356b9c04835530d3b9824b94f8b0b64605362d85ff2c7",
+        "study_core.py": "b4db39e3431a5ed0fcacefff131611817764c0003f6c4ca6f889d9bc46c4d25c",
+        "pose_controls.py": "303c2471b780fd9fe5c0e7188f8100b2be83c2decd647b977710b9fb0c97b25e",
+        "metrics.py": "07ea36b2934bc988153438c8400b9fc3ade622785a4c8ff0c8b3a888d1f3506f",
+        "test_study_core.py": "4129ddb02fc697065d6f56ea0fcb54c69f0ff795ab2026c7a858a16f287652e6",
+        "test_metrics.py": "c9edd5f36f642ec07ce33f43cff50ca2f84c3d9fa4e0b29fede07123e8bde3d2",
+        "test_frontend_contract.py": "cf100764f8cfccfd41246cbff54a9196d0c71bb13691581c5e1a20d7dcd79503",
+        "protocol.md": "0e8657e20f88ad9c1762b9091324b06d6515de8c0ae804a13ea95fb6ee7ebdc7"
+      },
+      "result_sha256": "fd8ea465db487410d899f1612503499cfddeeaec60ff3d131fc59a5e0ed884e5",
+      "operation_sha256": "e0bf77d673e0b0914acf32a1d8958810d9860550d45e33aa613ed3e9bdfa2ac5",
+      "spec_sha256": "517e17f3576b6b86d1c8ce53b4d3334196133eb2ff11db6a2ddee62e86b486c5",
+      "scientific_inputs_opened": false
+    }
+  ],
+  "distinct_tests": 104,
+  "scientific_result": false,
+  "all_distinct_tests_pass_final": true,
+  "retained_failed_operations": 1,
+  "repair": "Artificial audit coverage assertion only; no numerical source or scientific threshold changed.",
+  "startup_failure": {
+    "source_commit": "427d3038399653908803ea6bb62114771e9f655c",
+    "child_receipt_sha256": "8def4a304c4f58d31129d655ee8dcb68e800a000e6d95897ada6f0c67683ef7d",
+    "outer_receipt_sha256": "bc5a2101fd57c6a0219bdbbe069a0c0e54cc64126c5b0a077953ff7c9b8a4062",
+    "raw_forwards_attempted": 0,
+    "raw_forwards_completed": 0,
+    "source_ci": 39371128015,
+    "repair": "Capture and retain model-import warnings with existing qualified capture_warnings helper; no numerical or gate change."
+  }
+}

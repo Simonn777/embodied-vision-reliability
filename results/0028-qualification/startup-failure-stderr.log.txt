@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "$REPOSITORY/experiments/0028-normal-information/frontend.py", line 129, in <module>
+    sys.exit(run(parser.parse_args()))
+  File "$REPOSITORY/experiments/0028-normal-information/frontend.py", line 51, in run
+    backend = f.Backend(fa,files,wheels,record)
+  File "$REPOSITORY/experiments/0023-mapfree/frontend.py", line 327, in __init__
+    from moge.model.v2 import MoGeModel
+  File "$PRIVATE/0022-frontend-preparation/installation-05/sources/moge/moge/model/v2.py", line 15, in <module>
+    from huggingface_hub import hf_hub_download
+  File "<frozen importlib._bootstrap>", line 1055, in _handle_fromlist
+  File "$PRIVATE/0022-frontend-preparation/installation-05/runtime/huggingface_hub/__init__.py", line 1028, in __getattr__
+    submod = importlib.import_module(submod_path)
+  File "$SYSTEM_PYTHON/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "$PRIVATE/0022-frontend-preparation/installation-05/runtime/huggingface_hub/file_download.py", line 16, in <module>
+    import requests
+  File "$PRIVATE/0022-frontend-preparation/installation-05/runtime/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "$PRIVATE/0022-frontend-preparation/installation-05/runtime/urllib3/__init__.py", line 35, in <module>
+    warnings.warn(
+urllib3.exceptions.NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
