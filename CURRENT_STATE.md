@@ -1,6 +1,29 @@
 # Current state
 
-## Current: 0025c failed and closed
+## Current: 0026 failed; fixed variant closed
+
+The [complete 80-pair comparison](results/0026-development/README.md) gives
+primary G_lift AUC@5 **73.588101%**, against **74.139670%** for the strongest
+prespecified control F_all: **−0.551569 percentage points**. Only two of five
+scene margins are positive; London Bridge loses2.250535points. Three of the
+four development conditions fail. No same-outcome seed, threshold or selector
+tuning is authorized by this result. All80 pairs and all560 attempted new slots
+are retained, including failures and unavailable proposals.
+
+The independent saved-output audit passes14,496 comparisons and confirms the
+fixed decision. It does not rerun fitting or recompute pixel scores from image
+arrays. Predictions took53.000seconds under the outer resource monitor; this
+cached-input run provides no complete-pipeline speed claim. No held-out gain,
+manuscript or main-goal completion. Next: diagnose the saved failure and screen
+a materially different information source against primary prior work.
+
+## Historical: 0026 source preparation; no scientific result yet
+
+The [prospective fixed-support calibration comparison](experiments/0026-calibration-moments/protocol.md) tests a moment-based lifted initialization against continued native TC and equally compressed Procrustes/multistart controls. All80 old development pairs are retained. The independent arithmetic, optimizer, native bridge and fake-cohort checks passed; one initial compiler warning failure and its dependency-only repair are preserved. Exact source CI must precede the one supervised real-pair operation.
+
+Pose elimination, nonminimal refinement, moment compression and SDP machinery have close prior work. No novelty proof, pose improvement, matched-time claim or manuscript is established. The main two-source held-out gate remains unmet. [0025c publication](docs/0025c-publication-verification.md) is verified and its failed method remains closed.
+
+## Historical: 0025c failed and closed
 
 [The frozen noise falsifier](results/0025c-development/README.md) completed all
 132 records and 13,332 solves. Every D4 yield condition fails (0–13 useful outputs

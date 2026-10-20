@@ -1,6 +1,19 @@
 # Next actions
 
-## Current: close the failed initializer and find a distinct mechanism
+## Current: publish and close 0026; screen a distinct mechanism
+
+1. Preserve [all80 predictions, evaluation and independent audit](results/0026-development/README.md). Publish the failed fixed comparison through PR57, verify exact result/main CI, and keep its original source freeze and all unavailable attempts.
+2. Do not promote descriptive G_all or ordinary F_local multistart as a new successful method. The primary loses0.551569AUC@5points to its strongest control and fails the development gate. Saved-only diagnosis may guide a different hypothesis, but cannot reopen this fixed variant by retuning.
+3. Review a different observable input before implementation or acquisition. Local image derivatives and affine-depth ambiguities are being screened against existing affine-correspondence solvers; no novelty or experiment is admitted yet. A specific remaining mechanism, cheap falsifier and strong same-information controls must precede another frozen test.
+4. Keep the main goal active: substantial matched-complete-pipeline gains on two independent held-out sources, scene-level uncertainty, ablations and replication remain required before a manuscript.
+
+## Historical: execute the frozen 0026 development falsifier
+
+1. Complete source review and exact-commit CI for [0026](experiments/0026-calibration-moments/protocol.md). Preserve every qualification receipt and the original failed native build.
+2. Run the all80 fixed-support comparison once, seal every prediction and clean outer receipt before evaluating already-development labels. Compare the fixed G-lift union against every declared strong control; retain unavailable and failed attempts.
+3. Continue only if the prospective development gate passes. A pass still requires independent held-out, complete-pipeline time-matched validation and replication before any manuscript. A failure closes this fixed variant without same-outcome tuning.
+
+## Historical: close the failed initializer and find a distinct mechanism
 
 1. Publish [0025c complete negative evidence](results/0025c-development/README.md), retaining the original failed numerical audit and scoped saved-only explanation; verify exact result and merged-main CI.
 2. Keep D4/D8 free-velocity noise variants closed. Do not recycle generic known-angular trajectory coupling, measured-acceleration linearity or a depth-assisted two-point sample-size claim; the source/math screen rejects those novelty premises.

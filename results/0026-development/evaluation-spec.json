@@ -1,0 +1,26 @@
+{
+  "repo": "<project>/work/embodied-vision-reliability",
+  "operation_output": "<project>/work/0026-development/evaluation-operation-01",
+  "command": [
+    "<user-home>/Documents/Codex/2026-10-12/ban/work/venv/bin/python",
+    "-B",
+    "<project>/work/embodied-vision-reliability/experiments/0026-calibration-moments/evaluate_saved.py",
+    "--repo",
+    "<project>/work/embodied-vision-reliability",
+    "--predictions",
+    "<project>/work/0026-development/predictions-01",
+    "--output",
+    "<project>/work/0026-development/evaluation-01.json"
+  ],
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "<project>/work/0022-frontend-preparation/installation-05/runtime:<project>/work/runtime"
+  },
+  "timeout": 120,
+  "commit": "b596542f9eee399219ac03fdbcd91b33e8417fd6",
+  "result_file": "<project>/work/0026-development/evaluation-01.json"
+}
