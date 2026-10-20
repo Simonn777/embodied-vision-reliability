@@ -1,6 +1,6 @@
 # Embodied Vision Reliability
 
-Current work: [0027 complete sensitivity result](results/0027-development/README.md). The fixed tangent candidate failed its noisy-yield and point-control benefit gates; independent audit agrees. No manuscript admission. See [current state](CURRENT_STATE.md).
+Current work: [0028 normal-information opportunity test](experiments/0028-normal-information/protocol.md), in preparation with fixed camera and same-information controls. No scientific gain or manuscript is established. The [0027 failed comparison](results/0027-development/README.md) remains closed. See [current state](CURRENT_STATE.md).
 
 **Goal: a reproducible improvement in visual camera-motion estimation before a
 CVPR-targeted manuscript. No method currently meets that goal.**

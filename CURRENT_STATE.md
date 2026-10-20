@@ -1,5 +1,9 @@
 # Current state
 
+## Current preparation: 0028 normal-information opportunity test
+
+The [fixed 27-image/24-query study](experiments/0028-normal-information/protocol.md) asks whether restricted normal-guided depth correction improves actual pose after camera calibration. All eleven strong controls and failure-inclusive thresholds are prespecified. This compares known constructions; no new method, scientific gain or manuscript is established. Artificial qualification is recorded [here](results/0028-qualification/README.md). Scientific execution requires the complete source freeze and exact CI. The earlier 0027 failed variant remains closed and [its publication/main CI is verified](docs/0027-publication-verification.md).
+
 ## Current result: 0027 failed and closed
 
 [All138 fixed rows](results/0027-development/README.md) completed with all1,656 native attempts. Exact clean correctness passed, but noisy useful yield and required point-control advantage failed. T:57/128 useful noisy poses and29.238564% AUC5; pinned V:57/128 and29.474902%. Independent saved-output audit passed41,707 checks. This is a manufactured negative result, not held-out success. No rescue tuning, F-all expansion or manuscript is admitted. The broader improvement goal stays active.

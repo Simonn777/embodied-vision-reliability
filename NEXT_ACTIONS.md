@@ -1,5 +1,12 @@
 # Next actions
 
+## Current: freeze and run 0028 once
+
+1. Complete predictor/evaluator/independent-auditor artificial qualification, freeze the complete [0028 protocol and source](experiments/0028-normal-information/protocol.md), and verify exact-commit CI.
+2. Run 27 raw forwards with shared A/B/C camera postprocessing, then all24 query predictions under separate monitored operations. Require complete clean seals before evaluation and independent saved-output audit. No new downloads or model training.
+3. A failed opportunity gate closes the fixed variant without outcome-based tuning. A pass only permits further contribution assessment and a separately frozen larger comparison; known angular/normal geometry is not a novelty claim.
+4. Keep the two-independent-source, matched-complete-pipeline improvement gate before a manuscript. No code check, null result or publication receipt completes the user objective.
+
 ## Current: close 0027 and review a distinct observable
 
 1. Publish the complete failed [0027 comparison](results/0027-development/README.md), final receipt review and saved-only diagnosis; verify exact result/main CI. Preserve the source freeze and every attempted row/root.
