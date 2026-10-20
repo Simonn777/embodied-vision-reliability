@@ -1,6 +1,21 @@
 # Current state
 
-## Current: 0025b physical assumption test, source preparation
+## Latest: 0025b physical depth qualification passed
+
+The first [physical-depth diagnostic](results/0025b-development/README.md)
+completed 80 predictions and all 64 required paired cases. Scene median held-out
+AbsRel was 2.93645% / 2.29345%, with paired RS-minus-GS excess +0.97345 / +1.09796
+percentage points. The fixed qualification gate passed; independent closed-form
+reconstruction agreed across all 256 arm records (maximum difference 1.046e-13).
+The GS oracle control remained better. This is not a pose improvement, unique
+time-anchor identification or a deployable GT-assisted calibration method.
+
+Only a separately frozen translation/pose proposal is now permitted. Both ICL
+layouts are development forever; no manuscript or main-goal completion. Source
+freeze13d4b325 and CI39353648975 preceded the one-shot acquisition and execution.
+No retries or threshold changes occurred; all original outputs are preserved.
+
+## Historical pre-run preparation: 0025b physical assumption test
 
 The [prospective physical-depth protocol](protocols/0025b-rs-depth-semantics.md)
 fixes 16 ICL-NUIM development frames, 80 unchanged-model predictions and 64
@@ -14,7 +29,7 @@ unavailable primary case or failed threshold closes this unadapted approximation
 in the tested regime. The substantial two-source held-out gain gate remains
 unmet; no manuscript. [0025 publication is verified](docs/0025-publication-verification.md).
 
-## Current candidate: 0025 mathematical qualification, 2026-10-19
+## Historical qualification: 0025 mathematical candidate, 2026-10-19
 
 [0025](docs/0025-admission.md) establishes a fixed numerical rank witness and an
 exact-rational four-point existence construction for given-orientation RS

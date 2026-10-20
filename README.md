@@ -6,7 +6,8 @@ CVPR-targeted manuscript. No method currently meets that goal.**
 The current candidate studies rolling-shutter camera translation with learned
 affine-depth priors and measured rotations. Fixed numerical checks and an exact
 four-point existence construction establish conditional mathematical feasibility;
-real depth semantics and practical robustness remain unverified. Earlier methods
+a physical pure-rotation depth approximation passed its fixed oracle diagnostic,
+while task-level robustness remains unverified. Earlier methods
 failed their scientific gates and remain public. This concerns visual geometry
 for embodied systems and driving; no controller or driving result is claimed.
 
@@ -22,7 +23,8 @@ meet this standard. [Full prospective gate](protocols/0012-score-bounds-developm
 
 | Study | Verified result | Decision |
 |---|---|---|
-| [0025 rolling-shutter geometry](results/0025-identifiability/README.md) | Fixed numerical rank checks, exact nonzero four-point determinant under given rotations, and independently checked critical configurations. | Mathematical feasibility only; no accuracy or novelty result. Physical depth assumption needs testing. |
+| [0025b physical depth qualification](results/0025b-development/README.md) | 80 forwards, 64/64 primary pairs; scene median AbsRel 2.936% / 2.293%; fixed tolerances pass and independent arithmetic audit agrees. | Assumption qualified only. GS oracle remains better; no pose improvement or manuscript. |
+| [0025 rolling-shutter geometry](results/0025-identifiability/README.md) | Fixed numerical rank checks, exact nonzero four-point determinant under given rotations, and independently checked critical configurations. | Mathematical feasibility only; no accuracy or novelty result. Subsequent physical assumption check: 0025b above. |
 | [0024 virtual-rotation offset](results/0024-development/README.md) | 16/27 usable offsets; cross-axis residual increased 1.986%; all four conditions failed. | Closed. No downstream pose experiment. |
 | [0023 directional instability](results/0023-development/completed-study/README.md) | AUC@5 56.4971% versus strongest geometry control 61.9844% (−5.4874 pp). | Closed. All efficacy conditions failed. |
 | [0020 spatial depth transfer](results/0020-spatial-depth-transfer/README.md) | Candidate AUC@5 71.1071% versus strong affine control 74.0717% (−2.9646 pp). | Closed. No same-label rescue tuning. |
