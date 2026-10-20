@@ -1,0 +1,94 @@
+{
+  "schema": "evr0029.exit-checked-operation.v1",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "-B",
+    "-S",
+    "$PRIVATE/0030-memory-content/data-acquisition/acquire_masks.py",
+    "--config",
+    "$PRIVATE/0030-memory-content/data-acquisition/config.json",
+    "--config-sha256",
+    "e338e7bf1aa65f081f97ad287875a752477a8202ca3481de84090aa38f11ba58",
+    "--source-sha256",
+    "bd99aefde39e30cc0ebf7dee221278bd63640082f300d51bf477e758f11b1769",
+    "--sequence",
+    "planes-water",
+    "--output",
+    "$PRIVATE/0030-memory-content/data-acquisition/attempts/planes-water-01"
+  ],
+  "spec_sha256": "51a24a81a2012b39f0f7ad94e8ae87ce6389c879fea07d6da60d3f16de136568",
+  "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "098dee64878b5ef33edbac12223f86da176e091e",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "child_pid": 74124,
+  "declared_child_pgid": 74124,
+  "observed_child_pgid": 74124,
+  "pgid_observation_error": null,
+  "exit_observed_at_seconds": 25.051195916021243,
+  "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+  "pre_poll_snapshot": {
+    "label": "before_poll",
+    "started_seconds": 25.025330458011013,
+    "finished_seconds": 25.051185208023526,
+    "known_groups": [
+      74124
+    ],
+    "discovered_groups": [
+      74124
+    ],
+    "rows": [
+      [
+        74124,
+        74120,
+        74124,
+        37312
+      ]
+    ]
+  },
+  "post_exit_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 25.051196707994677,
+    "finished_seconds": 25.071271124994382,
+    "known_groups": [
+      74124
+    ],
+    "discovered_groups": [],
+    "rows": []
+  },
+  "triggering_snapshot": null,
+  "cleanup_snapshots": [
+    {
+      "label": "final",
+      "started_seconds": 25.071295083034784,
+      "finished_seconds": 25.08958554104902,
+      "known_groups": [
+        74124
+      ],
+      "discovered_groups": [],
+      "rows": []
+    }
+  ],
+  "signal_attempts": [],
+  "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 25.08964008302428,
+  "peak_group_rss_kib": 37312,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "9dc6b4db9173b0459ad43720b9764e35afd89895ed330dfd7fe0a2a6332e09ca",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "68c1b0eb5f816cfa2ccc6e0758ff465c77090e8d3c2c545739410db359d9fcf1"
+}

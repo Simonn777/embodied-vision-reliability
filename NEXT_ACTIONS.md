@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: qualify the minimum 0030 trainable memory-content path
+## Current: execute the bounded 0030 learning comparison
 
-1. Review the compact manufactured gradient probe, reuse the qualified runtime/supervisor and cached weights, and measure one complete CPU operation. Check native zero-residual parity, an explicitly declared raw-logit gradient surrogate, finite memory/head gradients and unchanged frozen parameters. No benchmark data or efficacy claim belongs to this check.
-2. If the backward path fits the resource envelope, complete one bounded iterative TRAIN/DEV campaign file: exact residual family, teacher and direct-control gradient paths, parent split, full development-mask acquisition, training cost and selection budget. A fixed-context gradient is not full recurrent BPTT. Use the same architecture, supervision and fair complete training cost for strong controls.
-3. Evaluate learned students in their own complete causal rollouts. Teacher optimization, target regression and artificial checks do not establish a useful method. Keep the failed 0029 bank closed, and allow only the documented development iterations for the distinct 0030 question.
-4. Do not write a manuscript before the unchanged substantial two-independent-source held-out result, strong complete-cost controls, uncertainty, ablations and independent replication.
+1. Finish the complete six-parent baseline/image-feature cache operation under the existing CPU/RSS/time envelope. Preserve all native predictions and costs.
+2. Construct the five-step bounded teacher on all 48 TRAIN anchors, then fit multistep, one-step and GT-memory heads. Run the same-head direct controls with update and full-cost accounting.
+3. Evaluate each final head on its own complete causal DEV rollout, using original-resolution J/F and disclosed single-object subset aggregation. Keep all unsuccessful runs and use only the three documented development configurations.
+4. Repeat the selected comparison with seed 1 before considering protected data. No manuscript before the unchanged substantial independent-source held-out result, closest-prior distinction, strong controls, uncertainty, ablations and replication.
 
 ## Historical: publish the failed 0029 result and select a distinct information question
 

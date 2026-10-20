@@ -1,0 +1,31 @@
+{
+  "repo": "$REPO",
+  "commit": "098dee64878b5ef33edbac12223f86da176e091e",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": ""
+  },
+  "command": [
+    "$PYTHON",
+    "-B",
+    "-S",
+    "$PRIVATE/0030-memory-content/data-acquisition/acquire_masks.py",
+    "--config",
+    "$PRIVATE/0030-memory-content/data-acquisition/config.json",
+    "--config-sha256",
+    "e338e7bf1aa65f081f97ad287875a752477a8202ca3481de84090aa38f11ba58",
+    "--source-sha256",
+    "bd99aefde39e30cc0ebf7dee221278bd63640082f300d51bf477e758f11b1769",
+    "--sequence",
+    "upside-down",
+    "--output",
+    "$PRIVATE/0030-memory-content/data-acquisition/attempts/upside-down-01"
+  ],
+  "operation_output": "$PRIVATE/0030-memory-content/data-acquisition/supervision/upside-down-01",
+  "result_file": "$PRIVATE/0030-memory-content/data-acquisition/attempts/upside-down-01/receipt.json"
+}
