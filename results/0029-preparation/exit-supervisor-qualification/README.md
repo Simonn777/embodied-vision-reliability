@@ -1,0 +1,7 @@
+# New exit-monitor manufactured qualification
+
+The first2 actual small-process checks pass (0.277s unittest,0.436426s outer,31,456KiB sampled groupRSS,exit0/clean). The original monitor and failed scientific attempt remain unchanged. The new supervisor source is8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8; the executed test source isbab32c2d2c3dc23326a0c95fe643f70ee2f3fbde495c31f2dc5b265bac921b8a. Root source inspection preceded execution; independent source review is separately recorded with its actual timing.
+
+The coordinated normal-exit case preserves an actual pre-poll snapshot containing a child while both processes subsequently exit. The old predicate would flag that stale snapshot; the fresh post-exit snapshot is empty, so the new supervisor completes with no cleanup signals. The real-leak case retains a live child after parent exit, correctly records FAILED, sends groupSTOP/KILL, and leaves no remaining PID or cleanup error. Specs, receipts, logs and the forced-snapshot proof are retained. FIFO special files are not published.
+
+This demonstrates the ordering issue on manufactured processes, not the cause of the historical cat-girl failure. No model, data, scientific prediction, queryGT or accuracy was accessed. No original failed status is changed. New scientific execution still requires its complete prospective contract, admission review and exact-source CI.

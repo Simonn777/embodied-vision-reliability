@@ -40,25 +40,27 @@ def merge(h, destination, incoming):
         destination[path] = digest
 
 
-def video_arguments(h, root, commit, evidence_commit, sequence, spec_path):
+def video_arguments(h, root, commit, evidence_commit, qualification_commit, sequence, spec_path):
     spec = h.read_json(spec_path)
     command = spec.get("command")
-    h.require(isinstance(command, list) and len(command) == 21
+    h.require(isinstance(command, list) and len(command) == 23
               and all(isinstance(x, str) for x in command)
               and command[1:3] == ["-S", str(root / OWN / "run_video.py")],
               "video command prefix/length")
     names = ("repo-root", "expected-commit", "evidence-root", "evidence-spec",
-             "evidence-commit", "qualification-root", "qualification-spec", "sequence", "output-dir")
+             "evidence-commit", "qualification-root", "qualification-spec", "qualification-commit",
+             "sequence", "output-dir")
     flags = dict(zip(command[3::2], command[4::2]))
-    h.require(len(set(command[3::2])) == 9 and set(flags) == {"--" + n for n in names}
+    h.require(len(set(command[3::2])) == 10 and set(flags) == {"--" + n for n in names}
               and flags["--repo-root"] == str(root)
               and flags["--expected-commit"] == commit
               and flags["--evidence-commit"] == evidence_commit
+              and flags["--qualification-commit"] == qualification_commit
               and flags["--sequence"] == sequence, "video argument identity")
     parsed = {}
     for name in names:
         value = flags["--" + name]
-        if name in ("expected-commit", "evidence-commit", "sequence"):
+        if name in ("expected-commit", "evidence-commit", "qualification-commit", "sequence"):
             parsed[name.replace("-", "_")] = value
         else:
             path = Path(value)
@@ -73,13 +75,17 @@ def prepare(root, commit, proof_path):
     h = module("evr0029_seal_installer", root / OWN / "install_runtime.py")
     video = module("evr0029_seal_video", root / OWN / "run_video.py")
     sources = h.frozen(root, commit, (*video.SOURCES, SELF, GT_WRAPPER))
+    scientific_sources = video.unchanged_scientific_sources(h, root)
     h.require(h.sha(Path(__file__)) == sources[SELF], "wrong executing seal verifier")
     old = module("evr0029_seal_evidence", root / OWN / "run_evidence.py")
     proof = h.read_json(proof_path)
-    h.require(set(proof) == {"schema", "expected_commit", "evidence_commit", "videos"}
-              and proof.get("schema") == "evr0029.prediction-proof.v1"
+    h.require(set(proof) == {"schema", "expected_commit", "evidence_commit", "qualification_commit", "replication", "videos"}
+              and proof.get("schema") == "evr0029.prediction-proof.v2"
               and proof.get("expected_commit") == commit
+              and commit != video.QUALIFICATION_COMMIT
               and proof.get("evidence_commit") == video.EVIDENCE_COMMIT
+              and proof.get("qualification_commit") == video.QUALIFICATION_COMMIT
+              and proof.get("replication") == video.REPLICATION
               and isinstance(proof["videos"], list) and len(proof["videos"]) == 6
               and [r.get("sequence") for r in proof["videos"]] == [n for n, _ in COHORT]
               and all(set(r) == {"sequence", "spec_path"} for r in proof["videos"]),
@@ -90,7 +96,8 @@ def prepare(root, commit, proof_path):
         spec = Path(row["spec_path"])
         h.require(spec.is_absolute() and spec.resolve() == spec and not spec.is_symlink(),
                   "video spec path")
-        arguments, command = video_arguments(h, root, commit, proof["evidence_commit"], row["sequence"], spec)
+        arguments, command = video_arguments(h, root, commit, proof["evidence_commit"],
+                                             proof["qualification_commit"], row["sequence"], spec)
         layouts.append(dict(sequence=row["sequence"], spec=spec, arguments=arguments, command=command))
         files[str(spec)] = h.sha(spec)
     h.require(len({str(row["spec"]) for row in layouts}) == 6
@@ -100,7 +107,8 @@ def prepare(root, commit, proof_path):
     h.require(all(all(row["arguments"][k] == layouts[0]["arguments"][k] for k in shared)
                   for row in layouts), "videos use different evidence/qualification chains")
     return dict(h=h, video=video, old=old, root=root, commit=commit, proof_path=proof_path,
-                proof=proof, sources=sources, layouts=layouts, files=files)
+                proof=proof, sources=sources, scientific_sources=scientific_sources,
+                layouts=layouts, files=files)
 
 
 def check_choices(h, row):
@@ -176,15 +184,16 @@ def verify_queries(root, commit, proof_path, *, prepared=None):
     first = context["layouts"][0]["arguments"]
     admitted = v.admit_evidence(h, old, root, context["proof"]["evidence_commit"],
                                 first["evidence_root"], first["evidence_spec"])
-    qualification = v.qualification_contract(h, old, root, commit, admitted,
+    qualification = v.qualification_contract(h, old, root, context["proof"]["qualification_commit"], admitted,
         first["qualification_root"], first["qualification_spec"])
     context["admitted"] = admitted
-    context.update(old_admission=old, plan=admitted["plan"],
+    context.update(old_admission=old, new_outer_contract=v.new_outer_contract, plan=admitted["plan"],
                    installation=admitted["installation"], installed=admitted["installed"],
                    prior={**admitted["prior"], "evidence_root": first["evidence_root"],
                           "evidence_spec": first["evidence_spec"],
                           "qualification_root": first["qualification_root"],
-                          "qualification_spec": first["qualification_spec"]},
+                          "qualification_spec": first["qualification_spec"],
+                          "qualification_commit": context["proof"]["qualification_commit"]},
                    videos=[], rows=[], query_prediction_dirs=[])
     require_runtime(context)
     sources = h.frozen(root, commit, v.SOURCES)
@@ -197,18 +206,21 @@ def verify_queries(root, commit, proof_path, *, prepared=None):
         output = args["output_dir"]
         h.require(command[0] == str(admitted["installation"] / "venv/bin/python"),
                   "video did not use qualified interpreter")
-        outer = old.outer_contract(h, root, commit, layout["spec"], output / "seal.json", command)
+        outer = v.new_outer_contract(h, root, commit, layout["spec"], output / "seal.json", command)
         record, seal = h.read_json(output / "receipt.json"), h.read_json(output / "seal.json")
-        h.require(record.get("schema") == "evr0029.video-operation.v1"
+        h.require(record.get("schema") == "evr0029.video-operation.v2"
                   and record.get("status") == "completed" and record.get("eligible") is True
                   and record.get("expected_commit") == commit
                   and record.get("evidence_commit") == context["proof"]["evidence_commit"]
+                  and record.get("qualification_commit") == context["proof"]["qualification_commit"]
+                  and record.get("replication") == v.REPLICATION
                   and record.get("sequence") == layout["sequence"]
                   and record.get("frame_count") == count and record.get("query_count") == 8
                   and record.get("noninitial_annotation_access") is False
                   and record.get("sam_sequence_invocations") == 1
                   and record.get("offline_attempts") == []
                   and record.get("source_sha256") == sources
+                  and record.get("scientific_source_sha256") == context["scientific_sources"]
                   and record.get("evidence_binding") == admitted["binding"]
                   and record.get("qualification_binding") == qualification, "video operation binding")
         inputs = v.video_inputs(h, root, sources, admitted, layout["sequence"])
@@ -219,9 +231,11 @@ def verify_queries(root, commit, proof_path, *, prepared=None):
                   and worker.get("descriptive_controls") == ["ungated_D1", "ungated_D3"]
                   and record.get("query_frames") == [w["frame"] for w in inputs["video"]["witnesses"]]
                   and record.get("outputs") == inventory
-                  and seal.get("schema") == "evr0029.video-seal.v1"
+                  and seal.get("schema") == "evr0029.video-seal.v2"
                   and seal.get("status") == "completed" and seal.get("expected_commit") == commit
                   and seal.get("evidence_commit") == context["proof"]["evidence_commit"]
+                  and seal.get("qualification_commit") == context["proof"]["qualification_commit"]
+                  and seal.get("replication") == v.REPLICATION
                   and seal.get("source_sha256") == sources and seal.get("sequence") == layout["sequence"]
                   and seal.get("frame_count") == count and seal.get("query_count") == 8
                   and seal.get("receipt_sha256") == h.sha(output / "receipt.json")
@@ -254,8 +268,10 @@ def verify_queries(root, commit, proof_path, *, prepared=None):
               and total_calls["verification_completed"] == 48 and total_calls["deletion_completed"] == 96,
               "fixed whole-cohort call/identity coverage")
     recheck(context)
-    admission = dict(schema="evr0029.query-admission.v1", eligible=True, expected_commit=commit,
+    admission = dict(schema="evr0029.query-admission.v2", eligible=True, expected_commit=commit,
         evidence_commit=context["proof"]["evidence_commit"], source_sha256=context["sources"],
+        qualification_commit=context["proof"]["qualification_commit"], replication=v.REPLICATION,
+        scientific_source_sha256=context["scientific_sources"],
         proof_sha256=h.sha(context["proof_path"]), manifest_sha256=h.sha(root / v.MANIFEST),
         video_count=6, frame_count=386, query_count=48, videos=summaries, queries=rows, calls=total_calls,
         evidence_coverage=admitted["binding"]["coverage"],

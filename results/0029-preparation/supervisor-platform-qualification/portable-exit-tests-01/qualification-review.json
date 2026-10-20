@@ -1,0 +1,114 @@
+{
+  "schema": "evr0029.portable-supervisor-tests.v1",
+  "scientific_eligible": false,
+  "execution_count": 1,
+  "test_count": 4,
+  "passed": true,
+  "source_sha256_before": {
+    "test_supervise_exit_checked_portable.py": "2202236d6ba047c47dae078d3b7d34c9a137ebc4fcb1017450892e3f5d4a8688",
+    "supervise_exit_checked.py": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+    "old_supervise_0027.py": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+    "old_monitor_0025c.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd"
+  },
+  "source_sha256_after": {
+    "test_supervise_exit_checked_portable.py": "2202236d6ba047c47dae078d3b7d34c9a137ebc4fcb1017450892e3f5d4a8688",
+    "supervise_exit_checked.py": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+    "old_supervise_0027.py": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+    "old_monitor_0025c.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd"
+  },
+  "sources_unchanged": true,
+  "outer_receipt_sha256": "97c67cb880d290bb00a71cdf5d82c3f033f367a4144e1479b9d41bf3b57b1153",
+  "outer_status": "completed",
+  "outer_exit_code": 0,
+  "outer_wall_seconds": 0.3037728749914095,
+  "outer_peak_group_rss_kib": 29296,
+  "spec_sha256": "da5cba47adb6d0c8d91194a70f053857456910f40a8468cce536c4e2130269d7",
+  "log_sha256": {
+    "supervision/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "supervision/stderr.log": "1230cdacade3be20bed1d05376b6a8837639c5d54c9bd42be6b853e52a49e4d7",
+    "launcher.stdout.log": "97c67cb880d290bb00a71cdf5d82c3f033f367a4144e1479b9d41bf3b57b1153",
+    "launcher.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cases": [
+    {
+      "path": "process-cases/ControlledExitOrderingTests/test_fresh_post_exit_row_still_fails_and_signals/controlled/receipt.json",
+      "sha256": "37371e4abd89e34780f26a204568649649fb5ec3db811b6de7b9d173824f0d4f",
+      "status": "failed",
+      "exit_code": 0,
+      "termination": "descendants_remain_after_fresh_exit_sample",
+      "signals": [
+        {
+          "pgid": 91001,
+          "signal": "SIGSTOP",
+          "attempted_seconds": 0.00031774997478350997,
+          "result": "sent",
+          "finished_seconds": 0.00032954197376966476
+        },
+        {
+          "pgid": 91001,
+          "signal": "SIGKILL",
+          "attempted_seconds": 0.0003325419966131449,
+          "result": "sent",
+          "finished_seconds": 0.0003400829737074673
+        }
+      ],
+      "post_exit_rows": [
+        [
+          91002,
+          91001,
+          91001,
+          64
+        ]
+      ]
+    },
+    {
+      "path": "process-cases/ControlledExitOrderingTests/test_stale_pre_exit_row_is_not_used_as_post_exit_evidence/controlled/receipt.json",
+      "sha256": "21b73f72af3f2fd65a119efaf1b42b18301e3523dfd7f7ffcb98b5e0192402fa",
+      "status": "completed",
+      "exit_code": 0,
+      "termination": null,
+      "signals": [],
+      "post_exit_rows": []
+    },
+    {
+      "path": "process-cases/ExitOrderingTests/test_genuinely_live_post_exit_child_is_rejected_and_signalled/leak/receipt.json",
+      "sha256": "bf6bb694c40f018f0b1e5764e5af42ac2df6e86f5717aaac4281476f6ada5c56",
+      "status": "failed",
+      "exit_code": 0,
+      "termination": "descendants_remain_after_fresh_exit_sample",
+      "signals": [
+        {
+          "pgid": 58590,
+          "signal": "SIGSTOP",
+          "attempted_seconds": 0.03821208298904821,
+          "result": "sent",
+          "finished_seconds": 0.03822270798264071
+        },
+        {
+          "pgid": 58590,
+          "signal": "SIGKILL",
+          "attempted_seconds": 0.05598104099044576,
+          "result": "sent",
+          "finished_seconds": 0.05599141598213464
+        }
+      ],
+      "post_exit_rows": [
+        [
+          58592,
+          1,
+          58590,
+          1136
+        ]
+      ]
+    },
+    {
+      "path": "process-cases/ExitOrderingTests/test_stale_pre_poll_descendant_does_not_become_post_exit_leak/race/receipt.json",
+      "sha256": "c0a7523ea4a9d4d032ac63a9d88a7717f448765be50f28ec2bed4c8fbb775435",
+      "status": "completed",
+      "exit_code": 0,
+      "termination": null,
+      "signals": [],
+      "post_exit_rows": []
+    }
+  ]
+}

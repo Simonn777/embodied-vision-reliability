@@ -1,0 +1,28 @@
+{
+  "repo": "$REPOSITORY",
+  "commit": "098dee64878b5ef33edbac12223f86da176e091e",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": ""
+  },
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "$REPOSITORY/experiments/0029-memory-information/acquire_query_gt.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "098dee64878b5ef33edbac12223f86da176e091e",
+    "--proof",
+    "$PRIVATE/0029-native-development-02/prediction-proof.json",
+    "--output-dir",
+    "$PRIVATE/0029-native-development-02/gt"
+  ],
+  "operation_output": "$PRIVATE/0029-native-development-02/gt-supervision",
+  "result_file": "$PRIVATE/0029-native-development-02/gt/receipt.json"
+}

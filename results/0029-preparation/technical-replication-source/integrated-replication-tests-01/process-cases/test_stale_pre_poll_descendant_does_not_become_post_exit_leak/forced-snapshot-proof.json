@@ -1,0 +1,113 @@
+{
+  "scope": "Manufactured process history only; no historical cat-girl inference",
+  "forced_snapshots": [
+    {
+      "parent": 57547,
+      "descendant": 57549,
+      "captured_rows": [
+        [
+          57547,
+          57511,
+          57547,
+          2304
+        ],
+        [
+          57549,
+          57547,
+          57547,
+          544
+        ]
+      ],
+      "parent_exit_observed_before_snapshot_return": true
+    }
+  ],
+  "returned_record": {
+    "schema": "evr0029.exit-checked-operation.v1",
+    "status": "completed",
+    "command": [
+      "/bin/sh",
+      "-c",
+      "/bin/sh -c 'read item < \"$PRIVATE/0029-preparation/integrated-replication-tests-01/process-cases/test_stale_pre_poll_descendant_does_not_become_post_exit_leak/release.fifo\"' & echo $! > \"$PRIVATE/0029-preparation/integrated-replication-tests-01/process-cases/test_stale_pre_poll_descendant_does_not_become_post_exit_leak/child.pid\"; wait $!; exit 0"
+    ],
+    "spec_sha256": "09752c1975390bdfdfb4efe6d573ee1f9d7dca909726740add3a3225aad33228",
+    "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+    "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+    "expected_commit": "0000000000000000000000000000000000000000",
+    "hard_timeout_seconds": 4,
+    "group_rss_limit_kib": 8388608,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "VECLIB_MAXIMUM_THREADS": "4",
+      "NUMEXPR_NUM_THREADS": "4"
+    },
+    "child_pid": 57547,
+    "declared_child_pgid": 57547,
+    "observed_child_pgid": 57547,
+    "pgid_observation_error": null,
+    "exit_observed_at_seconds": 0.0228985829744488,
+    "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+    "pre_poll_snapshot": {
+      "label": "before_poll",
+      "started_seconds": 0.0019457910093478858,
+      "finished_seconds": 0.022886999999172986,
+      "known_groups": [
+        57547
+      ],
+      "discovered_groups": [
+        57547
+      ],
+      "rows": [
+        [
+          57547,
+          57511,
+          57547,
+          2304
+        ],
+        [
+          57549,
+          57547,
+          57547,
+          544
+        ]
+      ]
+    },
+    "post_exit_snapshot": {
+      "label": "after_exit_observed",
+      "started_seconds": 0.022898915980476886,
+      "finished_seconds": 0.04763854097109288,
+      "known_groups": [
+        57547
+      ],
+      "discovered_groups": [],
+      "rows": []
+    },
+    "triggering_snapshot": null,
+    "cleanup_snapshots": [
+      {
+        "label": "final",
+        "started_seconds": 0.04764562495984137,
+        "finished_seconds": 0.06664137495681643,
+        "known_groups": [
+          57547
+        ],
+        "discovered_groups": [],
+        "rows": []
+      }
+    ],
+    "signal_attempts": [],
+    "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+    "exit_code": 0,
+    "termination": null,
+    "wall_seconds": 0.06665999995311722,
+    "peak_group_rss_kib": 2848,
+    "remaining_descendant_pids": [],
+    "cleanup_errors": [],
+    "log_sha256": {
+      "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "old_predicate_would_fail": true
+}

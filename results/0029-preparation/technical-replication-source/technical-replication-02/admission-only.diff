@@ -1,0 +1,574 @@
+--- original/audit_queries_saved.py
++++ replication-02/audit_queries_saved.py
+@@ -432,7 +432,8 @@
+     command = [str(context['installation']/'venv/bin/python'), '-S', str(root/OWN/'run_evaluation.py'),
+         '--repo-root', str(root), '--expected-commit', args.expected_commit, '--proof', str(proof),
+         '--gt-root', str(gt_root), '--gt-spec', str(gt_spec), '--output-dir', str(evaluation_root)]
+-    outer = old.outer_contract(h, root, args.expected_commit, evaluation_spec, evaluation_root/'receipt.json', command)
++    outer = context['new_outer_contract'](h, root, args.expected_commit, evaluation_spec,
++                                           evaluation_root/'receipt.json', command)
+     masks, gt_binding = evaluator.gt_contract(h, old, root, args.expected_commit, proof, gt_root, gt_spec, admitted, context)
+     record = read(evaluation_root/'receipt.json')
+     require(record.get('schema') == 'evr0029.query-evaluation-operation.v1' and record.get('status') == 'completed'
+--- original/run_evaluation.py
++++ replication-02/run_evaluation.py
+@@ -23,7 +23,7 @@
+     command = [str(context["installation"] / "venv/bin/python"), "-S",
+                str(root / OWN / "acquire_query_gt.py"), "--repo-root", str(root),
+                "--expected-commit", commit, "--proof", str(proof), "--output-dir", str(gt_root)]
+-    binding = old.outer_contract(h, root, commit, gt_spec, gt_root / "receipt.json", command)
++    binding = context["new_outer_contract"](h, root, commit, gt_spec, gt_root / "receipt.json", command)
+     record = h.read_json(gt_root / "receipt.json")
+     h.require(record.get("schema") == "evr0029.query-gt-operation.v1"
+               and record.get("status") == "completed" and record.get("eligible") is True
+--- original/run_video.py
++++ replication-02/run_video.py
+@@ -4,8 +4,13 @@
+ all 392 RGB/initial-mask files have been verified. No query annotation is
+ accepted. Old evidence sources remain byte-identical at their own commit; the
+ new scientific wrapper/worker use a separate commit and additional protocol.
++
++This separately frozen all-six technical replication cannot admit any output
++from the failed original attempt. Scientific worker bytes remain unchanged;
++the manufactured qualification is reused at its explicit original commit.
+ """
+ import argparse
++import hashlib
+ import importlib.util
+ import json
+ import os
+@@ -21,12 +26,22 @@
+ MONITOR = "experiments/0025c-rs-noise/supervise.py"
+ OLD_HELPER = "experiments/0022-frontend/qualify.py"
+ EVIDENCE_COMMIT = "c09e240009869402e2b97a55af42617eea3c6405"
++QUALIFICATION_COMMIT = "ec94d0927fcd2779f702e161550d9a3e87303d6f"
++REPLICATION = "all-six-technical-replication-02"
++REPLICATION_PROTOCOL = "protocols/0029-native-technical-replication.md"
++EXIT_CHECKED_SUPERVISOR = OWN + "supervise_exit_checked.py"
++SCIENTIFIC_SOURCES = tuple(OWN + name for name in (
++    "native_video.py", "qualify_native_video.py", "run_native_video_qualification.py",
++    "native_fixture.py", "diagnostic_core.py", "evaluate_queries.py", "frontend_evidence.py",
++))
+ EVIDENCE_SOURCES = tuple(OWN + name for name in (
+     "run_evidence.py", "frontend_evidence.py", "diagnostic_core.py", "acquire_davis.py",
+ )) + (OLD_PROTOCOL, MANIFEST, SUPERVISOR, MONITOR)
+ SOURCES = EVIDENCE_SOURCES + (
+     OWN + "run_video.py", OWN + "native_video.py", OWN + "install_runtime.py",
+     OWN + "run_native_video_qualification.py", OWN + "qualify_native_video.py", PROTOCOL,
++    OWN + "native_fixture.py", OWN + "evaluate_queries.py",
++    EXIT_CHECKED_SUPERVISOR, REPLICATION_PROTOCOL,
+ )
+ QUALIFICATION_SOURCES = tuple(OWN + name for name in (
+     "run_native_video_qualification.py", "qualify_native_video.py", "native_video.py",
+@@ -40,6 +55,97 @@
+     sys.modules[name] = value
+     spec.loader.exec_module(value)
+     return value
++
++
++def unchanged_scientific_sources(h, root):
++    """Current file bytes must equal the original, already qualified science."""
++    sources = h.frozen(root, QUALIFICATION_COMMIT, SCIENTIFIC_SOURCES)
++    h.require(set(sources) == set(SCIENTIFIC_SOURCES), "scientific source inventory")
++    return sources
++
++
++def new_outer_contract(h, root, commit, spec_path, receipt_path, command):
++    """Only new-attempt video/GT/evaluation operations use this supervisor.
++
++    Legacy qualification/evidence/native operations continue to use the
++    unchanged old.outer_contract. A failed old receipt is never translated.
++    """
++    spec = h.read_json(spec_path)
++    outer_path = Path(spec["operation_output"]) / "receipt.json"
++    outer = h.read_json(outer_path)
++    h.require(spec.get("commit") == commit and Path(spec["repo"]).resolve() == root
++              and Path(spec["result_file"]).resolve() == receipt_path.resolve()
++              and spec.get("command") == command and spec.get("timeout") == 1800,
++              "replication operation specification identity")
++    expected = [x.replace(str(root), "$REPOSITORY").replace(str(root.parent), "$PRIVATE") for x in command]
++    observed = outer.get("command")
++    h.require(isinstance(observed, list) and observed[1:] == expected[1:]
++              and observed[0] in (expected[0], "$PYTHON"), "replication outer command identity")
++    h.require(outer.get("schema") == "evr0029.exit-checked-operation.v1"
++              and outer.get("status") == "completed" and outer.get("exit_code") == 0
++              and outer.get("termination") is None
++              and outer.get("remaining_descendant_pids") == []
++              and outer.get("cleanup_errors") == [] and outer.get("signal_attempts") == [],
++              "unclean replication operation")
++    h.require(outer.get("expected_commit") == commit
++              and outer.get("spec_sha256") == h.sha(spec_path)
++              and outer.get("output_sha256") == h.sha(receipt_path), "replication artifact binding")
++    wall = outer.get("wall_seconds")
++    h.require(outer.get("hard_timeout_seconds") == 1800
++              and outer.get("group_rss_limit_kib") == 8388608
++              and h.number(wall, 0, 1800) and wall < 1800
++              and h.number(outer.get("peak_group_rss_kib"), 0, 8388608)
++              and outer.get("thread_environment") == {k: "4" for k in h.THREAD_KEYS},
++              "replication resource contract")
++    pid = outer.get("child_pid")
++    h.require(type(pid) is int and pid > 0 and outer.get("declared_child_pgid") == pid
++              and ((outer.get("observed_child_pgid") == pid and outer.get("pgid_observation_error") is None)
++                   or (outer.get("observed_child_pgid") is None
++                       and outer.get("pgid_observation_error") == "ProcessLookupError")),
++              "replication child identity")
++    exit_time = outer.get("exit_observed_at_seconds")
++    h.require(h.number(exit_time, 0, wall) and outer.get("triggering_snapshot") is None,
++              "missing clean exit observation")
++
++    def snapshot(item, label, after_exit=False):
++        h.require(isinstance(item, dict) and item.get("label") == label
++                  and h.number(item.get("started_seconds"), 0, wall)
++                  and h.number(item.get("finished_seconds"), item["started_seconds"], wall)
++                  and isinstance(item.get("rows"), list), "invalid process snapshot")
++        for key in ("known_groups", "discovered_groups"):
++            h.require(isinstance(item.get(key), list)
++                      and all(type(g) is int and g > 0 for g in item[key]), "process group snapshot")
++        h.require(pid in item["known_groups"], "child group missing from observation")
++        rows = item["rows"]
++        h.require(all(isinstance(row, list) and len(row) == 4
++                      and all(type(x) is int for x in row)
++                      and row[0] > 0 and row[1] >= 0 and row[2] > 0 and row[3] >= 0
++                      for row in rows), "invalid process rows")
++        h.require(sum(row[3] for row in rows) <= outer["peak_group_rss_kib"],
++                  "snapshot RSS exceeds recorded peak")
++        if after_exit:
++            h.require(item["started_seconds"] >= exit_time
++                      and rows == [], "process remains in post-exit observation")
++        else:
++            h.require(item["finished_seconds"] <= exit_time, "pre-poll observation after exit")
++
++    snapshot(outer.get("pre_poll_snapshot"), "before_poll")
++    snapshot(outer.get("post_exit_snapshot"), "after_exit_observed", after_exit=True)
++    final = outer.get("cleanup_snapshots")
++    h.require(isinstance(final, list) and len(final) == 1, "unexpected clean-operation cleanup")
++    snapshot(final[0], "final", after_exit=True)
++    h.require(final[0]["started_seconds"] >= outer["post_exit_snapshot"]["finished_seconds"],
++              "final process sample precedes post-exit sample")
++    for key, rel in (("supervisor_sha256", EXIT_CHECKED_SUPERVISOR), ("monitor_sha256", MONITOR)):
++        h.require(outer.get(key) == hashlib.sha256(h.git_bytes(root, commit, rel)).hexdigest(),
++                  "replication supervisor source")
++    h.require(outer.get("log_sha256") == {n: h.sha(outer_path.parent / n)
++              for n in ("stdout.log", "stderr.log")}, "replication operation logs changed")
++    paths = [receipt_path, spec_path, outer_path, outer_path.parent / "stdout.log",
++             outer_path.parent / "stderr.log", root / EXIT_CHECKED_SUPERVISOR, root / MONITOR]
++    return {"receipt_sha256": h.sha(receipt_path), "outer_sha256": h.sha(outer_path),
++            "spec_sha256": h.sha(spec_path), "file_sha256": {str(p): h.sha(p) for p in paths},
++            "supervisor_schema": outer["schema"], "fresh_post_exit_verified": True}
+ 
+ 
+ def artifact(h, directory, descriptor, filename):
+@@ -304,6 +410,7 @@
+ 
+ def qualification_contract(h, old, root, commit, admitted, qualification_root, spec_path):
+     """Require the separate 25-frame general-worker qualification, not just cond0 tests."""
++    h.require(commit == QUALIFICATION_COMMIT, "unadmitted manufactured qualification freeze")
+     prior = admitted["prior"]
+     command = [str(admitted["installation"] / "venv/bin/python"), "-S",
+         str(root / OWN / "run_native_video_qualification.py"),
+@@ -395,8 +502,9 @@
+         raise ValueError("fresh private video output required")
+     out.mkdir(parents=True, exist_ok=False)
+     began = time.perf_counter()
+-    record = dict(schema="evr0029.video-operation.v1", status="started", eligible=False,
++    record = dict(schema="evr0029.video-operation.v2", status="started", eligible=False,
+         expected_commit=args.expected_commit, evidence_commit=args.evidence_commit,
++        qualification_commit=args.qualification_commit, replication=REPLICATION,
+         sequence=args.sequence, noninitial_annotation_access=False, sam_sequence_invocations=0,
+         offline_attempts=[], compatibility_probes=[])
+     def save():
+@@ -407,14 +515,18 @@
+     save()
+     try:
+         h = module("evr0029_video_install", root / OWN / "install_runtime.py")
++        h.require(args.qualification_commit == QUALIFICATION_COMMIT
++                  and args.expected_commit != QUALIFICATION_COMMIT,
++                  "technical replication requires new science freeze and original qualification")
+         bindings = h.frozen(root, args.expected_commit, SOURCES)
+         h.require(h.sha(Path(__file__)) == bindings[OWN + "run_video.py"], "wrong executing wrapper")
+         record["source_sha256"] = bindings
++        record["scientific_source_sha256"] = unchanged_scientific_sources(h, root)
+         old = module("evr0029_video_admission", root / OWN / "run_evidence.py")
+         admitted = admit_evidence(h, old, root, args.evidence_commit,
+                                   Path(args.evidence_root).resolve(), Path(args.evidence_spec).resolve())
+         record["evidence_binding"] = admitted["binding"]
+-        record["qualification_binding"] = qualification_contract(h, old, root, args.expected_commit,
++        record["qualification_binding"] = qualification_contract(h, old, root, args.qualification_commit,
+             admitted, Path(args.qualification_root).resolve(), Path(args.qualification_spec).resolve())
+         inputs = video_inputs(h, root, bindings, admitted, args.sequence)
+         record["frame_count"] = inputs["video"]["frame_count"]
+@@ -453,8 +565,9 @@
+         h.require(time.perf_counter() - began <= 1800, "complete video wall limit")
+         record.update(status="completed", eligible=True, query_count=8, outputs=files)
+         save()
+-        seal = dict(schema="evr0029.video-seal.v1", status="completed",
++        seal = dict(schema="evr0029.video-seal.v2", status="completed",
+             expected_commit=args.expected_commit, evidence_commit=args.evidence_commit,
++            qualification_commit=args.qualification_commit, replication=REPLICATION,
+             source_sha256=bindings, sequence=args.sequence, frame_count=record["frame_count"],
+             query_count=8, receipt_sha256=h.sha(out / "receipt.json"),
+             files={"predictions/" + name: entry for name, entry in files.items()})
+@@ -472,6 +585,7 @@
+ if __name__ == "__main__":
+     parser = argparse.ArgumentParser(description=__doc__)
+     for name in ("repo-root", "expected-commit", "evidence-root", "evidence-spec",
+-                 "evidence-commit", "qualification-root", "qualification-spec", "sequence", "output-dir"):
++                 "evidence-commit", "qualification-root", "qualification-spec", "qualification-commit",
++                 "sequence", "output-dir"):
+         parser.add_argument("--" + name, required=True)
+     run(parser.parse_args())
+--- original/seal_queries.py
++++ replication-02/seal_queries.py
+@@ -40,25 +40,27 @@
+         destination[path] = digest
+ 
+ 
+-def video_arguments(h, root, commit, evidence_commit, sequence, spec_path):
++def video_arguments(h, root, commit, evidence_commit, qualification_commit, sequence, spec_path):
+     spec = h.read_json(spec_path)
+     command = spec.get("command")
+-    h.require(isinstance(command, list) and len(command) == 21
++    h.require(isinstance(command, list) and len(command) == 23
+               and all(isinstance(x, str) for x in command)
+               and command[1:3] == ["-S", str(root / OWN / "run_video.py")],
+               "video command prefix/length")
+     names = ("repo-root", "expected-commit", "evidence-root", "evidence-spec",
+-             "evidence-commit", "qualification-root", "qualification-spec", "sequence", "output-dir")
++             "evidence-commit", "qualification-root", "qualification-spec", "qualification-commit",
++             "sequence", "output-dir")
+     flags = dict(zip(command[3::2], command[4::2]))
+-    h.require(len(set(command[3::2])) == 9 and set(flags) == {"--" + n for n in names}
++    h.require(len(set(command[3::2])) == 10 and set(flags) == {"--" + n for n in names}
+               and flags["--repo-root"] == str(root)
+               and flags["--expected-commit"] == commit
+               and flags["--evidence-commit"] == evidence_commit
++              and flags["--qualification-commit"] == qualification_commit
+               and flags["--sequence"] == sequence, "video argument identity")
+     parsed = {}
+     for name in names:
+         value = flags["--" + name]
+-        if name in ("expected-commit", "evidence-commit", "sequence"):
++        if name in ("expected-commit", "evidence-commit", "qualification-commit", "sequence"):
+             parsed[name.replace("-", "_")] = value
+         else:
+             path = Path(value)
+@@ -73,13 +75,17 @@
+     h = module("evr0029_seal_installer", root / OWN / "install_runtime.py")
+     video = module("evr0029_seal_video", root / OWN / "run_video.py")
+     sources = h.frozen(root, commit, (*video.SOURCES, SELF, GT_WRAPPER))
++    scientific_sources = video.unchanged_scientific_sources(h, root)
+     h.require(h.sha(Path(__file__)) == sources[SELF], "wrong executing seal verifier")
+     old = module("evr0029_seal_evidence", root / OWN / "run_evidence.py")
+     proof = h.read_json(proof_path)
+-    h.require(set(proof) == {"schema", "expected_commit", "evidence_commit", "videos"}
+-              and proof.get("schema") == "evr0029.prediction-proof.v1"
++    h.require(set(proof) == {"schema", "expected_commit", "evidence_commit", "qualification_commit", "replication", "videos"}
++              and proof.get("schema") == "evr0029.prediction-proof.v2"
+               and proof.get("expected_commit") == commit
++              and commit != video.QUALIFICATION_COMMIT
+               and proof.get("evidence_commit") == video.EVIDENCE_COMMIT
++              and proof.get("qualification_commit") == video.QUALIFICATION_COMMIT
++              and proof.get("replication") == video.REPLICATION
+               and isinstance(proof["videos"], list) and len(proof["videos"]) == 6
+               and [r.get("sequence") for r in proof["videos"]] == [n for n, _ in COHORT]
+               and all(set(r) == {"sequence", "spec_path"} for r in proof["videos"]),
+@@ -90,7 +96,8 @@
+         spec = Path(row["spec_path"])
+         h.require(spec.is_absolute() and spec.resolve() == spec and not spec.is_symlink(),
+                   "video spec path")
+-        arguments, command = video_arguments(h, root, commit, proof["evidence_commit"], row["sequence"], spec)
++        arguments, command = video_arguments(h, root, commit, proof["evidence_commit"],
++                                             proof["qualification_commit"], row["sequence"], spec)
+         layouts.append(dict(sequence=row["sequence"], spec=spec, arguments=arguments, command=command))
+         files[str(spec)] = h.sha(spec)
+     h.require(len({str(row["spec"]) for row in layouts}) == 6
+@@ -100,7 +107,8 @@
+     h.require(all(all(row["arguments"][k] == layouts[0]["arguments"][k] for k in shared)
+                   for row in layouts), "videos use different evidence/qualification chains")
+     return dict(h=h, video=video, old=old, root=root, commit=commit, proof_path=proof_path,
+-                proof=proof, sources=sources, layouts=layouts, files=files)
++                proof=proof, sources=sources, scientific_sources=scientific_sources,
++                layouts=layouts, files=files)
+ 
+ 
+ def check_choices(h, row):
+@@ -176,15 +184,16 @@
+     first = context["layouts"][0]["arguments"]
+     admitted = v.admit_evidence(h, old, root, context["proof"]["evidence_commit"],
+                                 first["evidence_root"], first["evidence_spec"])
+-    qualification = v.qualification_contract(h, old, root, commit, admitted,
++    qualification = v.qualification_contract(h, old, root, context["proof"]["qualification_commit"], admitted,
+         first["qualification_root"], first["qualification_spec"])
+     context["admitted"] = admitted
+-    context.update(old_admission=old, plan=admitted["plan"],
++    context.update(old_admission=old, new_outer_contract=v.new_outer_contract, plan=admitted["plan"],
+                    installation=admitted["installation"], installed=admitted["installed"],
+                    prior={**admitted["prior"], "evidence_root": first["evidence_root"],
+                           "evidence_spec": first["evidence_spec"],
+                           "qualification_root": first["qualification_root"],
+-                          "qualification_spec": first["qualification_spec"]},
++                          "qualification_spec": first["qualification_spec"],
++                          "qualification_commit": context["proof"]["qualification_commit"]},
+                    videos=[], rows=[], query_prediction_dirs=[])
+     require_runtime(context)
+     sources = h.frozen(root, commit, v.SOURCES)
+@@ -197,18 +206,21 @@
+         output = args["output_dir"]
+         h.require(command[0] == str(admitted["installation"] / "venv/bin/python"),
+                   "video did not use qualified interpreter")
+-        outer = old.outer_contract(h, root, commit, layout["spec"], output / "seal.json", command)
++        outer = v.new_outer_contract(h, root, commit, layout["spec"], output / "seal.json", command)
+         record, seal = h.read_json(output / "receipt.json"), h.read_json(output / "seal.json")
+-        h.require(record.get("schema") == "evr0029.video-operation.v1"
++        h.require(record.get("schema") == "evr0029.video-operation.v2"
+                   and record.get("status") == "completed" and record.get("eligible") is True
+                   and record.get("expected_commit") == commit
+                   and record.get("evidence_commit") == context["proof"]["evidence_commit"]
++                  and record.get("qualification_commit") == context["proof"]["qualification_commit"]
++                  and record.get("replication") == v.REPLICATION
+                   and record.get("sequence") == layout["sequence"]
+                   and record.get("frame_count") == count and record.get("query_count") == 8
+                   and record.get("noninitial_annotation_access") is False
+                   and record.get("sam_sequence_invocations") == 1
+                   and record.get("offline_attempts") == []
+                   and record.get("source_sha256") == sources
++                  and record.get("scientific_source_sha256") == context["scientific_sources"]
+                   and record.get("evidence_binding") == admitted["binding"]
+                   and record.get("qualification_binding") == qualification, "video operation binding")
+         inputs = v.video_inputs(h, root, sources, admitted, layout["sequence"])
+@@ -219,9 +231,11 @@
+                   and worker.get("descriptive_controls") == ["ungated_D1", "ungated_D3"]
+                   and record.get("query_frames") == [w["frame"] for w in inputs["video"]["witnesses"]]
+                   and record.get("outputs") == inventory
+-                  and seal.get("schema") == "evr0029.video-seal.v1"
++                  and seal.get("schema") == "evr0029.video-seal.v2"
+                   and seal.get("status") == "completed" and seal.get("expected_commit") == commit
+                   and seal.get("evidence_commit") == context["proof"]["evidence_commit"]
++                  and seal.get("qualification_commit") == context["proof"]["qualification_commit"]
++                  and seal.get("replication") == v.REPLICATION
+                   and seal.get("source_sha256") == sources and seal.get("sequence") == layout["sequence"]
+                   and seal.get("frame_count") == count and seal.get("query_count") == 8
+                   and seal.get("receipt_sha256") == h.sha(output / "receipt.json")
+@@ -254,8 +268,10 @@
+               and total_calls["verification_completed"] == 48 and total_calls["deletion_completed"] == 96,
+               "fixed whole-cohort call/identity coverage")
+     recheck(context)
+-    admission = dict(schema="evr0029.query-admission.v1", eligible=True, expected_commit=commit,
++    admission = dict(schema="evr0029.query-admission.v2", eligible=True, expected_commit=commit,
+         evidence_commit=context["proof"]["evidence_commit"], source_sha256=context["sources"],
++        qualification_commit=context["proof"]["qualification_commit"], replication=v.REPLICATION,
++        scientific_source_sha256=context["scientific_sources"],
+         proof_sha256=h.sha(context["proof_path"]), manifest_sha256=h.sha(root / v.MANIFEST),
+         video_count=6, frame_count=386, query_count=48, videos=summaries, queries=rows, calls=total_calls,
+         evidence_coverage=admitted["binding"]["coverage"],
+--- original/test_run_evaluation.py
++++ replication-02/test_run_evaluation.py
+@@ -17,6 +17,8 @@
+ 
+ 
+ def load(name, path):
++    if not path.exists():
++        path = HERE.parent / path.name
+     spec = importlib.util.spec_from_file_location(name, path)
+     value = importlib.util.module_from_spec(spec)
+     spec.loader.exec_module(value)
+@@ -75,6 +77,18 @@
+         write(outer, {"wall_seconds": 0.1, "peak_group_rss_kib": 1})
+         with self.assertRaisesRegex(ValueError, "outer receipt changed"):
+             r.complete_video_costs(self.h, context)
++
++    def test_new_gt_outer_is_required_before_any_gt_receipt_read(self):
++        root = self.base / "repo"
++        old = SimpleNamespace(outer_contract=mock.Mock(side_effect=AssertionError("legacy outer used")))
++        new = mock.Mock(side_effect=ValueError("unclean replication operation"))
++        context = {"installation": self.base / "installation", "new_outer_contract": new}
++        with mock.patch.object(self.h, "read_json", side_effect=AssertionError("GT receipt read")):
++            with self.assertRaisesRegex(ValueError, "unclean replication operation"):
++                r.gt_contract(self.h, old, root, "a" * 40, self.base / "proof.json",
++                              self.base / "gt", self.base / "gt-spec.json", {}, context)
++        new.assert_called_once()
++        old.outer_contract.assert_not_called()
+ 
+     def array_context(self, nonfinite_last=False):
+         rows, _ = helpers.fixture()
+--- original/test_run_video.py
++++ replication-02/test_run_video.py
+@@ -13,6 +13,8 @@
+ 
+ 
+ def load(name, path):
++    if not path.exists():
++        path = path.parent.parent / path.name
+     spec = importlib.util.spec_from_file_location(name, path)
+     value = importlib.util.module_from_spec(spec)
+     spec.loader.exec_module(value)
+@@ -225,6 +227,7 @@
+         out = self.base / "fresh-operation"
+         args = SimpleNamespace(repo_root=str(self.root), expected_commit="b" * 40,
+             evidence_commit=r.EVIDENCE_COMMIT, sequence="dog-agility",
++            qualification_commit=r.QUALIFICATION_COMMIT,
+             evidence_root=str(self.base / "old"), evidence_spec=str(self.base / "old-spec.json"),
+             qualification_root=str(self.base / "qualification"),
+             qualification_spec=str(self.base / "qualification-spec.json"), output_dir=str(out))
+@@ -242,6 +245,7 @@
+             raise AssertionError("guard/model/other source must not load after failed qualification")
+ 
+         with mock.patch.object(r, "module", side_effect=fake_module), \
++             mock.patch.object(r, "unchanged_scientific_sources", return_value={}), \
+              mock.patch.object(r, "admit_evidence", return_value=admitted), \
+              mock.patch.object(r, "qualification_contract", side_effect=ValueError("qualification not admitted")), \
+              mock.patch.object(r, "video_inputs", side_effect=AssertionError("too late")) as video:
+--- original/test_seal_queries.py
++++ replication-02/test_seal_queries.py
+@@ -20,7 +20,10 @@
+ 
+ 
+ def load(name, filename):
+-    spec = importlib.util.spec_from_file_location(name, HERE / filename)
++    path = HERE / filename
++    if not path.exists():
++        path = HERE.parent / filename
++    spec = importlib.util.spec_from_file_location(name, path)
+     value = importlib.util.module_from_spec(spec)
+     spec.loader.exec_module(value)
+     return value
+@@ -58,12 +61,12 @@
+         return type(value) in (int, float) and math.isfinite(value) and low <= value <= high
+     @staticmethod
+     def git_bytes(root, commit, relative):
+-        if commit != COMMIT:
++        if commit not in (COMMIT, v.QUALIFICATION_COMMIT):
+             raise ValueError("fake commit mismatch")
+         return (root / relative).read_bytes()
+     @staticmethod
+     def frozen(root, commit, names):
+-        if commit != COMMIT:
++        if commit not in (COMMIT, v.QUALIFICATION_COMMIT):
+             raise ValueError("fake source freeze mismatch")
+         return {name: sha(root / name) for name in names}
+ 
+@@ -124,8 +127,9 @@
+         self.index = SimpleNamespace(fingerprints={"manifest": sha(self.root / v.MANIFEST)}, entries={})
+         self.verified = {"predictive_rgb": {}, "initial_supervision": {}}
+         self.witnesses = {}
+-        self.proof = dict(schema="evr0029.prediction-proof.v1", expected_commit=COMMIT,
+-                          evidence_commit=v.EVIDENCE_COMMIT, videos=[])
++        self.proof = dict(schema="evr0029.prediction-proof.v2", expected_commit=COMMIT,
++                          evidence_commit=v.EVIDENCE_COMMIT, qualification_commit=v.QUALIFICATION_COMMIT,
++                          replication=v.REPLICATION, videos=[])
+         self.outputs, self.outer_paths = [], []
+         self.evidence_binding = {"file_sha256": {}, "coverage": {"pass": True}}
+         self.qualification_binding = {"file_sha256": {}, "receipt_sha256": "c" * 64}
+@@ -156,7 +160,8 @@
+             prior={"metadata_root": self.base / "metadata", "native_root": self.base / "native"},
+             binding=self.evidence_binding)
+         self.fake_v = SimpleNamespace(**{name: getattr(v, name) for name in
+-            ("SOURCES", "EVIDENCE_COMMIT", "MANIFEST", "video_inputs", "prediction_inventory")})
++            ("SOURCES", "EVIDENCE_COMMIT", "QUALIFICATION_COMMIT", "REPLICATION", "MANIFEST",
++             "video_inputs", "prediction_inventory", "unchanged_scientific_sources", "new_outer_contract")})
+         self.fake_v.admit_evidence = mock.Mock(side_effect=lambda *a: self.admitted)
+         self.fake_v.qualification_contract = mock.Mock(return_value=self.qualification_binding)
+         self.fake_v.evidence_arguments = lambda *a: (self.admitted["prior"], [])
+@@ -216,15 +221,18 @@
+         write(prediction / "video-record.json", worker)
+         inventory = {name: {"sha256": sha(prediction / name), "bytes": (prediction / name).stat().st_size}
+                      for name in sorted(p.name for p in prediction.iterdir())}
+-        record = dict(schema="evr0029.video-operation.v1", status="completed", eligible=True,
++        record = dict(schema="evr0029.video-operation.v2", status="completed", eligible=True,
+             expected_commit=COMMIT, evidence_commit=v.EVIDENCE_COMMIT, sequence=sequence,
++            qualification_commit=v.QUALIFICATION_COMMIT, replication=v.REPLICATION,
++            scientific_source_sha256=self.h.frozen(self.root, v.QUALIFICATION_COMMIT, v.SCIENTIFIC_SOURCES),
+             frame_count=count, query_count=8, noninitial_annotation_access=False,
+             sam_sequence_invocations=1, offline_attempts=[], source_sha256=self.source_hashes,
+             evidence_binding=self.evidence_binding, qualification_binding=self.qualification_binding,
+             query_frames=queries, outputs=inventory, native_video=worker)
+         write(out / "receipt.json", record)
+-        write(out / "seal.json", dict(schema="evr0029.video-seal.v1", status="completed",
++        write(out / "seal.json", dict(schema="evr0029.video-seal.v2", status="completed",
+             expected_commit=COMMIT, evidence_commit=v.EVIDENCE_COMMIT,
++            qualification_commit=v.QUALIFICATION_COMMIT, replication=v.REPLICATION,
+             source_sha256=self.source_hashes, sequence=sequence, frame_count=count, query_count=8,
+             receipt_sha256=sha(out / "receipt.json"),
+             files={"predictions/" + name: item for name, item in inventory.items()}))
+@@ -232,6 +240,7 @@
+             "evidence-root": str(self.base / "evidence"), "evidence-spec": str(self.base / "evidence-spec.json"),
+             "evidence-commit": v.EVIDENCE_COMMIT, "qualification-root": str(self.base / "qualification"),
+             "qualification-spec": str(self.base / "qualification-spec.json"),
++            "qualification-commit": v.QUALIFICATION_COMMIT,
+             "sequence": sequence, "output-dir": str(out)}
+         command = [str(self.installation / "venv/bin/python"), "-S", str(self.root / v.OWN / "run_video.py")]
+         for name, value in flags.items():
+@@ -243,13 +252,21 @@
+                          operation_output=str(outerdir), command=command, timeout=1800))
+         for name in ("stdout.log", "stderr.log"):
+             (outerdir / name).write_bytes(b"manufactured clean operation")
+-        outer = dict(schema="evr0026.operation.v1", status="completed", exit_code=0, termination=None,
++        def snapshot(label, start, end, rows):
++            return dict(label=label, started_seconds=start, finished_seconds=end,
++                        known_groups=[123], discovered_groups=[], rows=rows)
++        outer = dict(schema="evr0029.exit-checked-operation.v1", status="completed", exit_code=0, termination=None,
+             remaining_descendant_pids=[], cleanup_errors=[], expected_commit=COMMIT,
++            signal_attempts=[], child_pid=123, declared_child_pgid=123, observed_child_pgid=123,
++            pgid_observation_error=None, exit_observed_at_seconds=.02, triggering_snapshot=None,
++            pre_poll_snapshot=snapshot("before_poll", .001, .01, [[123, 1, 123, 1], [124, 123, 123, 0]]),
++            post_exit_snapshot=snapshot("after_exit_observed", .03, .04, []),
++            cleanup_snapshots=[snapshot("final", .05, .06, [])],
+             command=[x.replace(str(self.root), "$REPOSITORY").replace(str(self.root.parent), "$PRIVATE")
+                      for x in command], spec_sha256=sha(spec), output_sha256=sha(out / "seal.json"),
+             hard_timeout_seconds=1800, group_rss_limit_kib=8388608, wall_seconds=.1,
+             peak_group_rss_kib=1, thread_environment={k: "4" for k in self.h.THREAD_KEYS},
+-            supervisor_sha256=sha(self.root / old.SUPERVISOR),
++            supervisor_sha256=sha(self.root / v.EXIT_CHECKED_SUPERVISOR),
+             monitor_sha256=sha(self.root / old.MONITOR),
+             log_sha256={name: sha(outerdir / name) for name in ("stdout.log", "stderr.log")})
+         write(outerdir / "receipt.json", outer)
+@@ -273,6 +290,8 @@
+         admission = result["prediction_admission"]
+         self.assertEqual((admission["video_count"], admission["frame_count"], admission["query_count"]), (6, 386, 48))
+         self.assertEqual(admission["calls"]["track_step_completed"], 626)
++        self.assertEqual(admission["qualification_commit"], v.QUALIFICATION_COMMIT)
++        self.assertEqual(self.fake_v.qualification_contract.call_args.args[3], v.QUALIFICATION_COMMIT)
+         self.assertFalse(result["query_gt_decoded"])
+ 
+     def test_missing_video_blocks_before_transport(self):
+@@ -287,7 +306,7 @@
+         outer = self.h.read_json(path)
+         outer.update(status="failed", exit_code=1)
+         write(path, outer)
+-        with self.assertRaisesRegex(ValueError, "unclean operation"):
++        with self.assertRaisesRegex(ValueError, "unclean.*operation"):
+             self.acquire()
+         self.assertEqual(self.http_calls, 0)
+ 
+@@ -298,6 +317,31 @@
+         spec["command"][position] = "dogs-scale"
+         write(path, spec)
+         with self.assertRaisesRegex(ValueError, "argument identity"):
++            self.acquire()
++        self.assertEqual(self.http_calls, 0)
++
++    def test_original_attempt_commit_cannot_mix_into_new_six(self):
++        path = Path(self.proof["videos"][2]["spec_path"])
++        spec = self.h.read_json(path)
++        spec["command"][spec["command"].index("--expected-commit")+1] = v.QUALIFICATION_COMMIT
++        write(path, spec)
++        with self.assertRaisesRegex(ValueError, "argument identity"):
++            self.acquire()
++        self.assertEqual(self.http_calls, 0)
++
++    def test_wrong_qualification_freeze_rejected_before_transport(self):
++        self.proof["qualification_commit"] = COMMIT
++        write(self.proof_path, self.proof)
++        with self.assertRaisesRegex(ValueError, "six-video"):
++            self.acquire()
++        self.assertEqual(self.http_calls, 0)
++
++    def test_post_exit_descendant_blocks_even_with_empty_final_remaining(self):
++        path = self.outer_paths[-1]
++        outer = self.h.read_json(path)
++        outer["post_exit_snapshot"]["rows"] = [[124, 1, 123, 0]]
++        write(path, outer)
++        with self.assertRaisesRegex(ValueError, "post-exit"):
+             self.acquire()
+         self.assertEqual(self.http_calls, 0)
+ 

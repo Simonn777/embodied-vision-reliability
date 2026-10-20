@@ -1,0 +1,32 @@
+{
+  "repo": "$REPO",
+  "commit": "d4cc894724d6dafb9d1c1877b2ef77d899442b12",
+  "timeout": 10,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": ""
+  },
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "$PRIVATE/0029-preparation",
+    "-p",
+    "test_supervise_exit_checked.py",
+    "-v"
+  ],
+  "operation_output": "$PRIVATE/0029-preparation/exit-supervisor-tests-01/supervision",
+  "source_sha256": {
+    "supervise_exit_checked.py": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+    "test_supervise_exit_checked.py": "bab32c2d2c3dc23326a0c95fe643f70ee2f3fbde495c31f2dc5b265bac921b8a"
+  }
+}

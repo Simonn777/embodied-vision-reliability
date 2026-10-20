@@ -1,0 +1,41 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "$PRIVATE/0029-preparation",
+    "-p",
+    "test_supervise_exit_checked.py",
+    "-v"
+  ],
+  "spec_sha256": "48751472310f004bfcab7c543c1dce13485af4b50bd76825f4c7609250a997e7",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "d4cc894724d6dafb9d1c1877b2ef77d899442b12",
+  "hard_timeout_seconds": 10,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.43642620800528675,
+  "peak_group_rss_kib": 31456,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "8f6944b53421f4a74166b3dd8c6514feb1690f9de9f620843e70fd1419e9245e"
+  }
+}

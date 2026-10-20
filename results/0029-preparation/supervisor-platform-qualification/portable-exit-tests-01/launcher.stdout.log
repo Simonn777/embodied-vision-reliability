@@ -1,0 +1,41 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "$PRIVATE/0029-preparation",
+    "-p",
+    "test_supervise_exit_checked_portable.py",
+    "-v"
+  ],
+  "spec_sha256": "da5cba47adb6d0c8d91194a70f053857456910f40a8468cce536c4e2130269d7",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "ce3af7378be2a432916856b5db7f757113ce8c4d",
+  "hard_timeout_seconds": 10,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.3037728749914095,
+  "peak_group_rss_kib": 29296,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "1230cdacade3be20bed1d05376b6a8837639c5d54c9bd42be6b853e52a49e4d7"
+  }
+}

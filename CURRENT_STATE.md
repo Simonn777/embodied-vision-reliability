@@ -1,6 +1,22 @@
 # Current state
 
-## Current work: 0029 native attempt01 technically ineligible
+## Current result: 0029 fixed memory-deletion diagnostic failed and closed
+
+The [complete six-video replication](results/0029-development/native-attempt-02/README.md) gives signed fixed-query J93.923162% versus baseline93.935668% and the strongest predicted-IoU control93.970921% (signed margin−0.047759percentage points). Even admissible oracle deletion gains only0.076821points against the required2; none of six per-video margins is positive. Three numerical efficacy conditions fail. The [independent audit](results/0029-development/native-attempt-02/audit/receipt.json) passes12,463checks/0errors. All386frames/48queries/606native calls and complete costs are preserved; attempt01 stays ineligible and separate.
+
+The [closure decision](docs/0029-closure.md) forbids rescue tuning or held-out expansion of this fixed variant. [Saved diagnosis](docs/0029-saved-mechanism-review.md) finds28actions,13improvements and15losses, with insufficient candidate headroom. [Joint object ownership](docs/0029-successor-source-review.md) was separately screened and is not admitted because its present formulation duplicates close priors. A materially different evidence-backed mechanism is still needed. No substantial held-out improvement or manuscript; the main goal remains unmet.
+
+The first publication check found one incorrect provenance description for a constructed historical summary; a metadata-only correction preserves the initial failure and all scientific values. The narrow second check passes180checks, with73payload files unchanged. Source098dee CI39390638932 preceded the scientific replication; result publication CI remains to be verified.
+
+## Historical preparation: test-only platform correction; replication awaits CI
+
+Exact-source CI39389319650 failed two actual-process tests on Linux. The [preserved failure and test-only correction](results/0029-preparation/supervisor-platform-qualification/README.md) scope actual process qualification to Darwin and add two portable controlled cases; all four focused local tests pass. Production supervision/scientific sources and gates are unchanged. No new video operation or query GT has run. Require new exact-source CI before the complete technical replication.
+
+## Historical preparation: complete technical replication source prepared
+
+[Attempt01 remains ineligible](results/0029-development/native-attempt-01/README.md) and [publication/main CI are verified](docs/0029-native-attempt-publication-verification.md). Before queryGT access, a [separate technical amendment](protocols/0029-native-technical-replication.md) fixes six entirely new primary operations with byte-identical scientific code/data/evidence/controls/gates. The new supervisor passes two manufactured process cases; targeted23 and integrated89 checks pass with independent source review. All original costs/failures remain, no old predictions can mix into the new cohort, and exact-source CI must precede any new scientific operation. New replication and queryGT have not run; no accuracy gain or manuscript.
+
+## Historical: 0029 native attempt01 technically ineligible
 
 The [original native attempt](results/0029-development/native-attempt-01/README.md) has three clean complete videos and a fourth completed worker whose supervisor failed with `descendants_remain`; the final two were not started. All262worker frames/32queries and412native calls are preserved, but the all-six-clean requirement fails. No query annotations or accuracy scores were accessed. The [25-frame manufactured qualification](results/0029-preparation/native-video-qualification/README.md) and independent audit passed before scientific execution; they do not override the later failure. A stale process-snapshot window is possible but not proven to explain this alarm. Preserve failure unchanged. Next separately qualify a narrow new supervisor and freeze a complete all-six technical replication with byte-identical science and no outcome-based changes; no GT until its own six clean operations. No improvement or manuscript.
 
