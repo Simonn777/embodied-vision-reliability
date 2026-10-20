@@ -1,0 +1,776 @@
+{
+  "commit": "b596542f9eee399219ac03fdbcd91b33e8417fd6",
+  "native": {
+    "library_sha256": "00418b002b005e664e75198c45e4a318d576a2ad04d8d0cb7eb7788affc18621",
+    "receipt_sha256": "e36382ced70ba8bf065247c5ff6854c59b580f7b2338bd2322cea95853e50e82"
+  },
+  "prior": {
+    "TC_seal": "fb2537ea13b52ac1cc3d2f26fb84053e7fe2da62dedef3b857d3dd8718c9b38e",
+    "baselines": {
+      "0": "2681eafa533d4423b3ffe8e00cdc1b87e2c00f7afa0c28f2d796f65f57d151e5",
+      "1": "eb616fc29b7243b6a29a4088abf115dc7c1938bb3f46b8cf588fa87b661f3821",
+      "10": "b5d9c79a06295f2ca29b50a0f444d4ff1f6ec15200aa9ed386dea20ef103295f",
+      "11": "1cf9c6a013c3f48a26760cdde405c1342ffe7dd64b6f9cd883059a9fcdf1e19b",
+      "12": "8fbe1a98dc6eaa1852b022dcf702cb6b4164fde1f95c6e61a90d3ad07b07e8c4",
+      "13": "c5169c1da1d06ed919f04f45922c599d99181291a7f940f2a882f5b1ed6aaa64",
+      "14": "4ac80c88a9433efea0bf4af7530cb99e0cf51b99ae8d2e3b014b153986722d9c",
+      "15": "c2377540d095263fe76f8856a3451e8797ab0ee06f9f708b9888c54559e0a33b",
+      "16": "8f73f21de36535504c98600a51c1d9d288cfcde01b4f92f25bee4e9b152d11aa",
+      "17": "f03bb94992886376a36315054d2d9e80945f4e9f52cafe70400ed4ba907a92f5",
+      "18": "87534b92aed8fb076291f07c1257ced6d40a7b8a1450373fe9ea4be65ca4dca1",
+      "19": "df2045b5160e2866c776ce23bf3af8e09aa57c1192e79c286df647a235a49802",
+      "2": "928c99a2169439f11e3aee3e68a25cfdfec501f9015a20f1bbabb88109a7c447",
+      "20": "9178d39abb81c0b0da5118cb9fcd0607bed3ae7a1e7e405b44f5681be1267b28",
+      "21": "f2cd3e7124343bdfcf294752048ffa131761eb1a5427cc2af89780cedd4d99bc",
+      "22": "16fe898270ded4dc69e82da7b2867e19514a530437912324b70b19dbac7cbc93",
+      "23": "597bdccd9ef207683fecf6b833b4e8f1424cc1d7e7b64d85451bd44870283ebf",
+      "24": "fd0ee9ef50871f8f69cc51dec4d87f2220f59e3d16ab5427e49cc5d64899d33c",
+      "25": "cded5b6d8a1cb4e4c733fd5b414db3f06a78997aa0417fc7035a082d718a8b87",
+      "26": "87db868680a07117b766ab0b322c1316828e04b86d9af9d40e10568256cf8fe6",
+      "27": "1c80a37470855355007878df2f0ee41722b93110e58dac4d4562bd2f7308d682",
+      "28": "8dfe45464376cbafb2df9c5f7bd0759df87855a148a167b665fcf6dcc0698364",
+      "29": "f6b759585ed5d86e72b7d8cd9089411578411fb3415a2f5ad7e11cc48a56688b",
+      "3": "55b9268d24fc90c42f186bb9797ed208f3d30547aaaa5225ad35297770afccd6",
+      "30": "d1ee70c81d32d1275b84c1b725aad951da22de2bb92b3549359fa0828803e818",
+      "31": "59853ec628805f275c7782c9b51c2b997026c5adf1017d6f48bfe7d37d6d3d89",
+      "32": "41f8ac7b1b1bfd5fe9a8bbbb720911a43436d476a303925c0f7dca5eadbaa213",
+      "33": "913851f7f8d5fce20b5a3fadef16a8d2eacc56559a03227ad539984ca09a4bc2",
+      "34": "4c0559156d6320eaf0a6c10270949a8fb1eba54b781f3100abc640b2f24d0f5f",
+      "35": "b5414ec41a96e90dc251b3cbe12d79e2132ac7be0b5132b3ad7cec1c01127717",
+      "36": "3207addd9a9d70f1621ee9704d0d5c28d872106b5b301de2768c16ad7230c61c",
+      "37": "757125875ed2dcb5c077c21acbef957026f2e757176a3cca332219d53ec9e687",
+      "38": "6dc08789922540129fa28f85ee9c618b33391e82e135d26e11155c67ed60d58a",
+      "39": "240b86b76f3b56fb568b784f7b0dcd0db156142afd9ede21ab4d669ecf3635ca",
+      "4": "c47f6018dd9edce60d819904da646c430643a57d49fcbb9ea4b6460a1a6030d0",
+      "40": "bf1efd78c56bed871374d6dca10cda214d4097552d2ffcb2b9b15d3c0fad2447",
+      "41": "d0581e1287361de277080c635237c515eb77107ef6aa0ab2b2fd9aaa0189c038",
+      "42": "d43c54fb9519d622c8d5eb99048a9f9a47d4dbc7066a65c8da43f797c61d8147",
+      "43": "5d3f44b94f0eda5f4219259e298ff4f9e33f8059eef83314a4c31bacc28ef54e",
+      "44": "2d7233db4d63b3c24057eb5af656c4c1a0d457ef8fba8834e54cfe62740b7341",
+      "45": "0ea27458592027dda3ff7f8a081c7ab1c79cf76dfdaa86431e0626fdecfb48bf",
+      "46": "66f0f75038710a6c9f6e780da14a626840967186e9815b7555c89266ef1b1c49",
+      "47": "38782b5805eef319c06c6682b9d9b1699371f519e3831a043efd7249efed63c1",
+      "48": "b8de77af98e263c5a60abf34d56625dcca3c68e4f801f8964ab20041066071b2",
+      "49": "8f10733bf1a5b3ae0dae43db376fdbbc055a7bb5201b01c5d5fe59b2a57b842f",
+      "5": "d0c63dac0a3557282a1ab3129f1765d33e177cde2e682a2fb328ce8f011c1eb8",
+      "50": "05769116b7e44c73079e0c7dfd6242106bb6c45b6db5b6f7b5e1b80161c58055",
+      "51": "07c169868f1880b079656cbdb9a3ee43531506220a713471709da7c078ff9b62",
+      "52": "59bdbf2baa1b609ddf8ee81451f44337836573c2b194bb1bb64fb779774e9b9c",
+      "53": "fefff2249a8bb637497978876bd5402519de900722062d34572e09b6e58824df",
+      "54": "8bacf5c471ef988db38814ecc969f2a26d8be225fb6950523f3e7029e4ce6ef6",
+      "55": "1ecb756d971e228fce5194c68915a07bbee9895a864037efb819086d24d4b928",
+      "56": "bb9d1cec0891421b2d95de611dc1fbd7a404e50486e4d9c37e4992058c98b827",
+      "57": "fed65d705f9d67e9b158420ac34d7ed3b6d494b43c502196a7498cb775b55079",
+      "58": "03730e44653b0de782e546b0d1bf8a68b6fbb8d11e0049b183be2fc2d3cae948",
+      "59": "b96663b58d14dda5e9f9522cffbbd3f79fa5f574c12bf4801fc689a577306382",
+      "6": "4062f7a99c323d786dfaa05674635a2554e1552baf87b894c2c17b2a58a4992b",
+      "60": "542dec3e4b802724d693b7b22e20a42e7c96cb85d2fc3926c9ce5c8dc1bf0533",
+      "61": "93a2ac8e5d54ddad2704efcfe5cb137132110f67d63f6630eba92f96206d26fb",
+      "62": "a045536111a7d7d9d76ee84f8fff7d68fee45da289346f28e7aa28c99f1c360a",
+      "63": "b485c52814a56d0488cbbefab3f693f712c913950e4c5b734bf15e88067e7458",
+      "64": "46a63ba328d2b0dbd5b3acff28309f2353bea8a4707a63e5deed7dc422b6ceba",
+      "65": "32be5cdaa682dc603989909d6f9b321090592c5f197329d74aa182ba6fee705f",
+      "66": "407c196d5e2063f8fbe1e5cf636efb9def2dc081fb4df3a88fc0e23d7b38f71a",
+      "67": "a221e8e4b5421f4dccb7dab60aa81158d2c8049d1bf74910eb0446018e783388",
+      "68": "6a3ae79481bb70b770333577bc07c349db0d61095029835d486ff1ff0c323389",
+      "69": "0070094d30e41c400caf252917b2f0282b4ae992833a5139eb085251fcca6abf",
+      "7": "4f4fabc6f709ca03cc1bafb4487c886d113bdf55de1d3642640f7e661c746666",
+      "70": "e6e12125eaaf417baa2018982403ea2c45e07676ef2cecc1265f51d50e17b8d2",
+      "71": "f8de5cc0f2a05129cff656c58bc4b751b880c67b2d1c6c1c2bee350032926a7f",
+      "72": "97f6fa61676b54c1ecac378b7df12a6e2b064a0a1fda3ad5f92f5e5a779a83fb",
+      "73": "ec2ef6e0465816c01b61f35a96eb4bfea645551c3e32614932b238da13511ab7",
+      "74": "15a9e16e6d350bc543bb668fa56985c24c5ad26acaaa56e6a8c9fa78d9fff1a9",
+      "75": "2669966aa090b9cecb8af1dd98db1175d1bd5de3d730d014bbfcc8f67f3466ee",
+      "76": "f9265b62a55ecdd9a6c7405ffd8799020b72f65afaf4a5c525428b26daea5055",
+      "77": "44f0628a5f3f68a125fe06d1206d58008de1037897213abed98906075770426c",
+      "78": "62845c13c6ba22dce7079501b8066536d23dcce9082a90a8ebb16ebf97fd054b",
+      "79": "cce8420ebb48aaffdedd9903b61ee60844b1dbbb641e9b5b741a837654317130",
+      "8": "6fba523924f9fde46ed7f7af217ca614a5029589e9a6b29cf751efc69147e134",
+      "9": "afba22fd4709de751998e7d9d1b13ed7890262c1d02cd7502293f75baaceffa0"
+    },
+    "legacy_sources": {
+      "configs/0017-libraries.json": "767d0cebc6c7f8e149e2f2c6780800a9d5cfaa78583af50391a8468186fa737a",
+      "experiments/0013-pose-headroom/evaluate_sealed.py": "8582990b6a44d7181ec5ed8ccf9474eff5e525419c74242dccb6b0431535c16b",
+      "experiments/0017-depth-information/acquire_and_allocate.py": "67b42ca5079c0c05b4b08b1c03b165562839f291a28b8169ec3a32221dc97e5d",
+      "experiments/0017-depth-information/common.py": "be07bb11bb29a59a1f9ca67fa0de1d2a9a06b1ef40cf08836c6efb4758d9e30a",
+      "experiments/0017-depth-information/evaluate_saved.py": "57dc453e7aa5ffa087c34a0c924714bb889d54688923a3115e6d5da84f8634be",
+      "experiments/0017-depth-information/predict_pair.py": "bc29f31f080cd6184600a253622dd5ae4aff2e4bc2634e95035a6e1054f4a1e3",
+      "experiments/0017-depth-information/run_diagnostic.py": "04f6f27ab2e3d8611422bb8f949f3c93e356017a38ae5de18eb44d31b57e49e5",
+      "experiments/0019-author-loss/common.py": "037955c57c1cd0f5876d709d1a91b7ad2f604326f9f18dadeb8cd3cfecc0fdab",
+      "experiments/0019-author-loss/evaluate_saved.py": "bd8e0daaf6df9943ccfdd1ca8943a22be65036fa997c52ee214c40ca4ddbfaac",
+      "experiments/0019-author-loss/predict_pair.py": "64e4dab66e78bcea028c10888112574697ee35005e1ac08b9b431ccbe5f648ea",
+      "experiments/0019-author-loss/run_diagnostic.py": "730702695796d1e9626b1e042acda1c1c45234ed1ed3be87686c8b6ddc105e19",
+      "experiments/0019-author-loss/run_operation.py": "23d7f244fecc60844929e838df45d75811472b6ae5c0166b4ea33905c2504ecc",
+      "protocols/0017-depth-assets.md": "68f63202a052bfbc51f669ac3d8dbbe1a1315a550d85cae7aeb3ea57e0fa5d8b",
+      "protocols/0017-depth-information.md": "962a311e2820ed0fb73121d124c236e7af388127645e6dd07d59dd07b1df1125",
+      "protocols/0019-author-loss.md": "2ed80eea8d2d238214b0129e67f064718f52ee478af0496d87e965e74c819929"
+    },
+    "manifest": "a034601021b4baa08a6cc04e91e951ce27dc061d0c0556cf7f1ac141d6a66e34",
+    "original_seal": "aef331923ced37edfb896ac070d954e3da6e08145145aa2bd3de636f9abce510"
+  },
+  "schema": "evr0026.job.v1",
+  "selected_pairs": [
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "33896507_8272283239_o_93321195_8092708743_o",
+      "pair_index": 0,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "35456492_13032392044_o_62752576_2777704234_o",
+      "pair_index": 1,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "06984097_7830261366_o_21092931_6209688483_o",
+      "pair_index": 2,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "35243762_416446215_o_93211981_9482880250_o",
+      "pair_index": 3,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "35456492_13032392044_o_64909672_392493972_o",
+      "pair_index": 4,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "33896507_8272283239_o_92902059_7576580614_o",
+      "pair_index": 5,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "76840078_3613849894_o_92168939_7218355182_o",
+      "pair_index": 6,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "05246669_3774806731_o_07102255_5222394657_o",
+      "pair_index": 7,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "65092335_3535759515_o_92694930_8121841061_o",
+      "pair_index": 8,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "05246669_3774806731_o_07691402_9180973630_o",
+      "pair_index": 9,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "19623962_9009504241_o_33907107_2443351726_o",
+      "pair_index": 10,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "78034643_9180969128_o_92168939_7218355182_o",
+      "pair_index": 11,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "62752576_2777704234_o_93321195_8092708743_o",
+      "pair_index": 12,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "63184385_8522029473_o_65092335_3535759515_o",
+      "pair_index": 13,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "35243762_416446215_o_35456492_13032392044_o",
+      "pair_index": 14,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10675000,
+      "dataset_sha256": "112a7533333b518cbe57c3bb2f45ad4b2a714962a69c568c89a43228077f5558",
+      "filename": "florence_cathedral_roma_moge.h5",
+      "key": "36012353_13433924113_o_49350312_1193155509_o",
+      "pair_index": 15,
+      "scene": "florence_cathedral"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "20022220_2419745928_o_84038985_6341019678_o",
+      "pair_index": 16,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "03973389_5554221717_o_72352446_6803354105_o",
+      "pair_index": 17,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "00924277_2300346048_o_87495742_6081377753_o",
+      "pair_index": 18,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "08953896_3367363452_o_75621887_8846706474_o",
+      "pair_index": 19,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "44927895_4377127964_o_54877052_789475307_o",
+      "pair_index": 20,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "64202274_3924130810_o_83337770_3217460703_o",
+      "pair_index": 21,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "36204391_24161076_o_99257940_5422860804_o",
+      "pair_index": 22,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "76663382_4972839220_o_84038985_6341019678_o",
+      "pair_index": 23,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "78475358_2889107366_o_96041539_3414552661_o",
+      "pair_index": 24,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "24633086_31698430_o_94154757_2927899608_o",
+      "pair_index": 25,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "36204391_24161076_o_56047732_7236104334_o",
+      "pair_index": 26,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "26415303_3305299897_o_27332396_5539357539_o",
+      "pair_index": 27,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "20851484_434036928_o_83337770_3217460703_o",
+      "pair_index": 28,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "44927895_4377127964_o_56047732_7236104334_o",
+      "pair_index": 29,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "81233182_4943410370_o_94154757_2927899608_o",
+      "pair_index": 30,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10678136,
+      "dataset_sha256": "c224b9ebfa4efd21fd1b552e794179f77cb37cee8d8c124ac39cc9699c1d8c87",
+      "filename": "lincoln_memorial_roma_moge.h5",
+      "key": "39840450_9458454489_o_76663382_4972839220_o",
+      "pair_index": 31,
+      "scene": "lincoln_memorial"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "69075106_4349805138_o_98205168_3552942721_o",
+      "pair_index": 32,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "79365652_4980553538_o_90405763_4011914691_o",
+      "pair_index": 33,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "61822782_3845791411_o_74357344_11178597616_o",
+      "pair_index": 34,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "61662402_4816310161_o_68849666_7062137551_o",
+      "pair_index": 35,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "90488918_4623221677_o_99732271_119644261_o",
+      "pair_index": 36,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "20023116_5421687643_o_77586104_6180620561_o",
+      "pair_index": 37,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "31866879_541449395_o_56560945_34426400_o",
+      "pair_index": 38,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "34529561_93489958_o_54682107_1186188936_o",
+      "pair_index": 39,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "47591486_5809581591_o_85476891_335880077_o",
+      "pair_index": 40,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "63079410_5757866799_o_99732271_119644261_o",
+      "pair_index": 41,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "41036763_6827756012_o_70106401_3725909945_o",
+      "pair_index": 42,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "69628182_284368585_o_98946189_10441466_o",
+      "pair_index": 43,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "70106401_3725909945_o_97454199_2345558379_o",
+      "pair_index": 44,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "83340717_3410144340_o_92273298_5039274514_o",
+      "pair_index": 45,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "06716241_785233653_o_31866879_541449395_o",
+      "pair_index": 46,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10486136,
+      "dataset_sha256": "bdaa585e9eb114bf055b3a53c584a517caf9e6a59dcafd5b3cbfc4589e1cafb7",
+      "filename": "london_bridge_roma_moge.h5",
+      "key": "70432432_1697399971_o_84081098_11840164244_o",
+      "pair_index": 47,
+      "scene": "london_bridge"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "24543018_4255817801_o_40314980_9700079070_o",
+      "pair_index": 48,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "12598948_3917091308_o_55339819_5966046893_o",
+      "pair_index": 49,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "53801537_9617244539_o_68486528_7250839568_o",
+      "pair_index": 50,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "23702407_4728224411_o_98032155_13959989264_o",
+      "pair_index": 51,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "23778319_3399431445_o_55339819_5966046893_o",
+      "pair_index": 52,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "10273610_2867561643_o_95778567_8067087428_o",
+      "pair_index": 53,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "40789559_6046840301_o_55536380_13171182884_o",
+      "pair_index": 54,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "38563221_11151571323_o_53849586_8585727848_o",
+      "pair_index": 55,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "09491878_4406179803_o_55536380_13171182884_o",
+      "pair_index": 56,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "11665119_9718798941_o_38203065_13966912134_o",
+      "pair_index": 57,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "09552919_4222142873_o_41458735_8067064688_o",
+      "pair_index": 58,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "11984869_4871131843_o_41458735_8067064688_o",
+      "pair_index": 59,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "10273610_2867561643_o_96321014_2180687528_o",
+      "pair_index": 60,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "13103628_8003383048_o_38668777_6910847202_o",
+      "pair_index": 61,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "09552919_4222142873_o_52729812_7420072674_o",
+      "pair_index": 62,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636784,
+      "dataset_sha256": "88cf66ca2a8929f012894639b92bac29b43dbf9ec142becb0f0cc9a71f2612fe",
+      "filename": "milan_cathedral_roma_moge.h5",
+      "key": "41458735_8067064688_o_97400342_4040694720_o",
+      "pair_index": 63,
+      "scene": "milan_cathedral"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "25457322_544048311_o_63711609_185195406_o",
+      "pair_index": 64,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "34379524_6829411432_o_68153082_7213226096_o",
+      "pair_index": 65,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "27546443_4564127164_o_84090454_6168919500_o",
+      "pair_index": 66,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "63909348_185195410_o_98653115_457567968_o",
+      "pair_index": 67,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "26362358_4619718880_o_62920559_282422375_o",
+      "pair_index": 68,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "42578175_457568876_o_96907696_4120826724_o",
+      "pair_index": 69,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "21894637_6535518015_o_93215045_3631031195_o",
+      "pair_index": 70,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "13134737_12094791465_o_69264849_2284973187_o",
+      "pair_index": 71,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "64706254_8497647563_o_83680294_218384449_o",
+      "pair_index": 72,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "25696031_9137970326_o_84090454_6168919500_o",
+      "pair_index": 73,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "53685662_3717501640_o_77972670_214814210_o",
+      "pair_index": 74,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "54347804_2292452655_o_98217564_268109025_o",
+      "pair_index": 75,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "63909348_185195410_o_98527924_144697798_o",
+      "pair_index": 76,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "69264849_2284973187_o_84090454_6168919500_o",
+      "pair_index": 77,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "64706254_8497647563_o_69264849_2284973187_o",
+      "pair_index": 78,
+      "scene": "sagrada_familia"
+    },
+    {
+      "dataset_bytes": 10636488,
+      "dataset_sha256": "340530086724f39c7ed18670e91f53a821563ee36a5b5b643abb3f1feaaf9a05",
+      "filename": "sagrada_familia_roma_moge.h5",
+      "key": "21894637_6535518015_o_64323676_6818875446_o",
+      "pair_index": 79,
+      "scene": "sagrada_familia"
+    }
+  ],
+  "source_sha256": {
+    "calibration_controls.py": "1def821931043a560e45ee7e93d403f5ec3c2b96e8d074aad01de159600fa8b9",
+    "core.py": "f2bfc0ac6a0fa995f4cfbdb7059396dc3f7eb53fbcfbde72576920432053fdd3",
+    "evaluate_saved.py": "7e73f1426959b17fda776f7e6c8d6a08d4c889557ccf663f6b87fad3f97ff569",
+    "lift_relaxation.py": "6f14df204ffca7cfa85c107b91fa83f81bff1e70a04981861d33b0d30487017e",
+    "moments.py": "3b96ee5d9928b961db68be7ebab51a6fd840f715197a868982c8633c88bedef4",
+    "native_bridge/bridge.py": "5f3746e2ec7562c63dd6ae9c8180e28ca542510b0e3762e7297c5c335f6ee820",
+    "native_bridge/build.py": "bea68b06b0c173ce3b454855defbbe678fd208d50ff5d17caff042f35184b4fd",
+    "native_bridge/input-lock.json": "80a0c7a2ba76025403bcc7d1abc4d3ace94c9dc141c479a1afe2180c026197ed",
+    "native_bridge/refiner.cc": "a2ebb24202efa5c4b26dabdfe1ea96bbd04541a063dfc626ebc47d8a79c86657",
+    "native_bridge/test_bridge.py": "2fee77efee97966526c72f7585b63d138cb076999e76cf94df4ffb828d372ce9",
+    "predict_pair.py": "aeb98f95d369c9c43365df97cb392c66bae2072de5dc6dd42ff0d3b9a715a0e8",
+    "protocol.md": "4b72521f6dc2f2bc5fbd2060ade494aea00383d7cac03d0b84dd66e0d463c680",
+    "run_study.py": "a407d34a2b4ab090414ea68d3b0d125087124357d38a2c9bcf8735cd0ca1e6d9",
+    "study_io.py": "d05b2556bf93ba309e814f3b3af6631227fbcc45bb88cadf454e56449b1b9ac6",
+    "test_calibration_controls.py": "04fb56499c7784dbe9e3b3ce3d2349370aa6f44b8b6d6391d0139ff877183208",
+    "test_core.py": "fed4cb01537fd89e35788505eb0214abef5bf90179f262b91030e7e5fb15fea9",
+    "test_gate.py": "177ae5862eda5ca898aebce96e2f4b2a40efe78fb138799d1b3cf6e4c17b400b",
+    "test_lift_relaxation.py": "6f1b1c020a7766f38d5a0f61d261f219e0bb08da7eedd880df15e1428b01c28e",
+    "test_moments.py": "284567d53af8836ab7a4359ad9e1730a3159db8ac7a51ff6f7a3040f1fda1e01",
+    "test_optimizer_api.py": "227a0b8dc6bf7446d1a79636c9cbebcfb73f01a3b08c2b8398d12f2b1eda4678"
+  }
+}

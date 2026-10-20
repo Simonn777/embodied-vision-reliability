@@ -1,18 +1,17 @@
 # Embodied Vision Reliability
 
-Current work: [0026 prospective calibration study](experiments/0026-calibration-moments/protocol.md). Source preparation only; no new measured pose gain or manuscript admission. See [current state](CURRENT_STATE.md).
+Current work: [0026 complete comparison](results/0026-development/README.md). The fixed candidate failed:73.5881% AUC@5 versus74.1397% for its strongest control. No manuscript admission. See [current state](CURRENT_STATE.md).
 
 **Goal: a reproducible improvement in visual camera-motion estimation before a
 CVPR-targeted manuscript. No method currently meets that goal.**
 
-The latest rolling-shutter affine-depth initializer failed its frozen noise
-test: 13,332 attempts yielded no practical headroom over the simpler angular-only
-control. The eight-point version also failed to help. Its mathematical and
-physical-assumption checks had passed, showing why those checks alone were
-insufficient. Complete failures remain public, including a narrowly explained
-numerical audit failure. A different mechanism is required before another task
-experiment. This concerns visual geometry for embodied systems and driving;
-no controller or driving result is claimed.
+The latest moment-based affine-depth initialization failed its frozen80-pair
+comparison. A small convex relaxation and local polishing did not outperform
+the simpler Procrustes multistart control. All failures remain visible, and an
+independent saved-output audit confirms the negative decision. A different
+mechanism is required before another task experiment. This concerns visual
+geometry for embodied systems and driving; no controller or driving result
+is claimed.
 
 The next experiment must test a concrete accuracy mechanism against strong
 controls. The current target is at least **+2 absolute AUC@5 percentage points**
@@ -26,6 +25,7 @@ meet this standard. [Full prospective gate](protocols/0012-score-bounds-developm
 
 | Study | Verified result | Decision |
 |---|---|---|
+| [0026 calibration moments](results/0026-development/README.md) | AUC@5 73.5881% versus strongest control74.1397% (−0.5516pp); three of four conditions fail. Independent saved-output audit agrees. | Closed. No held-out expansion or manuscript. |
 | [0025c initializer noise](results/0025c-development/README.md) | 13,332 attempts; every required D4 yield fails; D8 beats A8 in 0/96 primary records. Independent gate agrees; original numerical audit remains failed on one invalid diagnostic. | Closed. No robust stage, real-data expansion or manuscript. |
 | [0025b physical depth qualification](results/0025b-development/README.md) | 80 forwards, 64/64 primary pairs; scene median AbsRel 2.936% / 2.293%; fixed tolerances pass and independent arithmetic audit agrees. | Assumption qualified only. GS oracle remains better; no pose improvement or manuscript. |
 | [0025 rolling-shutter geometry](results/0025-identifiability/README.md) | Fixed numerical rank checks, exact nonzero four-point determinant under given rotations, and independently checked critical configurations. | Mathematical feasibility only; no accuracy or novelty result. Subsequent physical assumption check: 0025b above. |

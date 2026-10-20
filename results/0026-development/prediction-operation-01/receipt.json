@@ -1,0 +1,47 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "-B",
+    "$REPOSITORY/experiments/0026-calibration-moments/run_study.py",
+    "--repo",
+    "$REPOSITORY",
+    "--data-dir",
+    "$PRIVATE/0017-preparation/inputs",
+    "--native-library",
+    "$PRIVATE/0026-preparation/native-build-02/libevr0026_refiner.dylib",
+    "--native-receipt",
+    "$PRIVATE/0026-preparation/native-build-02/receipt.json",
+    "--runtime",
+    "$PRIVATE/0022-frontend-preparation/installation-05/runtime",
+    "--runtime",
+    "$PRIVATE/runtime",
+    "--output",
+    "$PRIVATE/0026-development/predictions-01"
+  ],
+  "spec_sha256": "a003b68b431b34b5bccede96c866d14463612b3c8834358b1c8ce2481ceb68da",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "b596542f9eee399219ac03fdbcd91b33e8417fd6",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 53.0001145,
+  "peak_group_rss_kib": 124080,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "697492faf28c8892ceafc88ceaf791bfa728024802ea410aaaf446f846c32e32",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "f295b3f240d9af080148a4680c81d42098d25579ac01117e1dd499d78d980736"
+}

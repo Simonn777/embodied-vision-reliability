@@ -1,0 +1,39 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "-B",
+    "$REPOSITORY/experiments/0026-calibration-moments/evaluate_saved.py",
+    "--repo",
+    "$REPOSITORY",
+    "--predictions",
+    "$PRIVATE/0026-development/predictions-01",
+    "--output",
+    "$PRIVATE/0026-development/evaluation-01.json"
+  ],
+  "spec_sha256": "a61160734f5bd61ef42a2241e0cfec4e5d2291d18d92de99f26b9891e94d1506",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "b596542f9eee399219ac03fdbcd91b33e8417fd6",
+  "hard_timeout_seconds": 120,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.5412159169999999,
+  "peak_group_rss_kib": 62912,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "9135e1b4b9f15bb4cf131cb64d2bba5c7abc328904ef231495c599a272751a2c",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "a45edff1176723122a89c0e5d709ff464f13417f1aacf91418b2e376ad8d2617"
+}
