@@ -1,0 +1,30 @@
+{
+  "repo": "$REPOSITORY",
+  "commit": "fc12968bb8776cb453f6d0a07e7648afa3957111",
+  "timeout": 3600,
+  "operation_id": "d38-complete-01",
+  "resource_exception": {
+    "path": "$REPOSITORY/experiments/0038-late-memory-readout/resource-authorization-01.json",
+    "sha256": "05bc131cc974df1df0d267ae727b5c8a641188839960b501391c79c2dd0175ce"
+  },
+  "worker_spec_sha256": "a7b22d30620d265996c7ebe7d6d0b362ca0a0443f460eb3d703a39fc0f76ad86",
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-S",
+    "$REPOSITORY/experiments/0038-late-memory-readout/run_complete.py",
+    "$PRIVATE/0038-late-memory-readout/complete-spec-01.json"
+  ],
+  "operation_output": "$PRIVATE/0038-late-memory-readout/complete-supervision-01",
+  "result_file": "$PRIVATE/0038-late-memory-readout/complete-01/receipt.json"
+}

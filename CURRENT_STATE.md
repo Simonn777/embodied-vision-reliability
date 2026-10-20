@@ -1,16 +1,24 @@
 # Current state
 
-## Current: user authorized one complete 60-minute D38 operation
+## Current: complete D38 comparison failed; exact readout recipe closed
+
+The [complete D38 result](results/0038-development/complete-01/README.md) covers all446 frames, four clips and nine arms. Primary late mean reaches44.5832299 J /24.3306200 Jtr%, only+0.2507305/+0.2138975 points over native and−6.7847371/−7.6512308 points against the strongest included fixed-negative control. Three of four frozen clauses fail under both void policies. Close this exact uniform/latest-write/full-stack shadow-readout recipe without weight, threshold, layer, seed, cohort or resolution rescue. This failure does not establish a unique cause or a general impossibility for memory methods.
+
+The one user-authorized3600s operation completed cleanly in2515.293119708s with4949600KiB peak sampled group RSS, all446 native output parities and all four complete native-state parities. All47 manufactured tests and exact-source CI39489941451 pass. A separately implemented saved-pixel review passes31128 checks with0 errors and0 score discrepancy; its clean outer costs3.718287709s/160064KiB. This is technical validation, not independent researcher replication or a positive scientific result. The one-off60-minute exception is consumed; subsequent operations return to1800s.
+
+All sources, receipts, both policies, complete per-frame/per-clip metrics, costs, original failures and negative decision are preserved. No new acquisition or fees. No official held-out benchmark, comparable-budget recurrent-policy result, novelty proof or manuscript. The unchanged substantial two-independent-source final gate and the research goal remain unmet. The next action is a substantive source-level choice of a different information/action mechanism and a complete feasible comparison, not a retuned D38 readout.
+
+## Historical: user authorized one complete 60-minute D38 operation
 
 The user directly approved "允许这一次最多 60 分钟" on October20. [The bound exception](experiments/0038-late-memory-readout/RESOURCE_EXCEPTION.md) applies only to d38-complete-01, retaining four CPU threads,8GiB group RSS, zero additional fees/acquisition and all four clips/nine arms. A separate supervisor preserves the original process-monitor/cleanup logic and historical supervisor. Manufactured resource-boundary checks and exact-source CI precede the complete launch. Scientific methods, controls, scoring and paper gate are unchanged. No D38 scientific result exists yet.
 
-## Current: complete comparison program prepared; resource exception not granted
+## Historical: complete comparison program prepared; resource exception not granted at preparation
 
 [The complete program and manufactured evidence](results/0038-preparation/complete-program-01/README.md) now preserve all four clips and nine arms, exact native output/state checks, an immutable pre-GT prediction seal and unchanged dual-policy scoring. All 40 manufactured tests pass under the qualified interpreter; clean outer cost is 1.812834042s / 248336KiB. Source a587b6f includes explicit rejection of unadmitted prepared specifications. The prepared complete spec binds 93 source files and remains launch_admitted=false. No new scientific prediction or score exists.
 
 The reviewable proposal is a single complete operation with a one-off 3600s cap, retaining four CPU threads, 8GiB group RSS, no fees or new acquisition and every control/clip. This exception has NOT been granted. The current worker and supervisor still enforce1800s, below the original implementation's2253.200867329s extrapolation. Preserve the failed compressed implementation and do not use it, split timeouts or drop controls. The standing evidence gate and active research goal remain unmet; no manuscript.
 
-## Current: original readout qualified; optimized implementation fails qualification
+## Historical: original readout qualified; optimized implementation fails qualification
 
 [Compressed/batched attempt](results/0038-preparation/optimized-qualification-01/README.md) passes22 unit checks but fails native numerical qualification at the first compressed-flat stack comparison (maximum absolute difference0.0002875328064; frozen tolerance1e-4/1e-5). Later SAM-field/mask/max-pointer/final-state comparisons were not reached. Preserve this failed20.395268125s/2557632KiB operation without tolerance rescue. Its conservative1916.660337081s cost projection also remains above1800s. It provides no scientific accuracy evidence; use no unqualified optimization.
 
