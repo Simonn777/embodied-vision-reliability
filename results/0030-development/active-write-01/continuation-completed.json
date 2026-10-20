@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "operations": [
+    {
+      "name": "rollout-01",
+      "status": "completed",
+      "worker": {
+        "path": "$TASK/work/0030-memory-content/active-write-diagnostic/rollout-01-spec.json",
+        "bytes": 2980,
+        "sha256": "39fd5efebe9ade5ed657cc454dd046af741b5feb7ae073a7c43b26f2d807766d"
+      },
+      "operation": {
+        "path": "$TASK/work/0030-memory-content/active-write-diagnostic/rollout-01-outer-spec.json",
+        "bytes": 1278,
+        "sha256": "09f3d8bdf96d0ba1630c49ad431acb6e9a52a1aa08857a2e7a6e14cd1926d712"
+      },
+      "wall_seconds": 109.80328466696665,
+      "peak_group_rss_kib": 991360,
+      "result": {
+        "path": "$TASK/work/0030-memory-content/active-write-diagnostic/rollout-01/receipt.json",
+        "bytes": 174006,
+        "sha256": "c9504e9cd58e19591f34bed8e021a51fd74f0b1712f36094eac6716629ccf856"
+      }
+    },
+    {
+      "name": "evaluate-01",
+      "status": "completed",
+      "worker": {
+        "path": "$TASK/work/0030-memory-content/active-write-diagnostic/evaluate-01-spec.json",
+        "bytes": 5960,
+        "sha256": "4435c6ef7e8677eae7a94a781831694109be4876699086d611efb1b6ca8304ec"
+      },
+      "operation": {
+        "path": "$TASK/work/0030-memory-content/active-write-diagnostic/evaluate-01-outer-spec.json",
+        "bytes": 1282,
+        "sha256": "be4d4b9323647f5b4f7716f974132e4c8a88dd9da825cc88abc8d1601a0c6277"
+      },
+      "wall_seconds": 1.1027645420399494,
+      "peak_group_rss_kib": 73296,
+      "result": {
+        "path": "$TASK/work/0030-memory-content/active-write-diagnostic/evaluate-01/receipt.json",
+        "bytes": 5408,
+        "sha256": "8656b85b891bda226cdbf3ce752e545138818b3702f4c292e7849b10f232c296"
+      }
+    }
+  ],
+  "source_sha256": "d78a899880f192d4f07cb96a5c8bc1586511c94885dbffbd77f317df35edc13b",
+  "helper_sha256": "c9964f66d38909dc393007a0bc5a8f8b5a8c554fe5628d84ae733edd02e96800",
+  "fit": {
+    "path": "$TASK/work/0030-memory-content/active-write-diagnostic/fit-01/receipt.json",
+    "bytes": 308360,
+    "sha256": "48019b9a2817b0f1681b8c407723663d7ed3035cedd8c9fc5028f52577057d4e"
+  },
+  "fit_outer": {
+    "path": "$TASK/work/0030-memory-content/active-write-diagnostic/fit-supervision-01/receipt.json",
+    "bytes": 2628,
+    "sha256": "1a7d21d72d74faf45a2e7e0b63d791d49ac08ec5d80bccfca018d7ede89777e1"
+  },
+  "score": {
+    "mean": {
+      "J": 0.9475132938154118,
+      "F": 0.9004974590500994,
+      "JF": 0.9240053764327556
+    },
+    "parents": [
+      {
+        "parent_id": "cat-girl",
+        "sequences": [
+          "cat-girl"
+        ],
+        "mean": {
+          "J": 0.9425968341111278,
+          "F": 0.9111542529030975,
+          "JF": 0.9268755435071127
+        }
+      },
+      {
+        "parent_id": "upside-down",
+        "sequences": [
+          "upside-down"
+        ],
+        "mean": {
+          "J": 0.9524297535196957,
+          "F": 0.8898406651971013,
+          "JF": 0.9211352093583984
+        }
+      }
+    ]
+  },
+  "development_decision": {
+    "exceeds_gt_control_mean": true,
+    "both_parents_exceed_native": false,
+    "action": "close_exact_channel_affine_family",
+    "final_evidence_gate_met": false
+  }
+}
