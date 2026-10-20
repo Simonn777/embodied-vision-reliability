@@ -1,0 +1,39 @@
+{
+  "schema": "evr0025.manufactured-execution.v1",
+  "source_sha256": "0b058405fbc151b8765dafdb4e4a81f8c7e48f515da3d217b2df33b9a9565683",
+  "command": [
+    "$PYTHON",
+    "$PRIVATE/0025-rs-identifiability/check_manufactured.py",
+    "--output-dir",
+    "$PRIVATE/0025-rs-identifiability/manufactured-01"
+  ],
+  "started_utc": "2026-10-20T00:45:10.178607+00:00",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "BLIS_NUM_THREADS": "4"
+  },
+  "timeout_seconds": 120,
+  "rss_limit_kib": 8388608,
+  "no_real_data_or_model_inputs": true,
+  "status": "completed",
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 0.337930375,
+  "sampled_peak_rss_kib": 25056,
+  "resource_children_peak_rss_bytes": 28491776,
+  "finished_utc": "2026-10-20T00:45:10.516813+00:00",
+  "files": {
+    "stdout.log": {
+      "sha256": "858eef587567a039d8cdfa7876aaf04f1c8659c01ec2c5c7c7329467c5a5a202",
+      "bytes": 1025
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}
