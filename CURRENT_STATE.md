@@ -1,6 +1,14 @@
 # Current state
 
-## Current: complete local comparison failed; primary recipe closed
+## Current: merge-location implementation passes; complete-run cost unresolved
+
+[D38 manufactured qualification](results/0038-preparation/qualification-01/README.md) passes15 unit checks and an invented ten-frame native-model parity operation. Every native output and the complete final state match the plain tracker exactly; candidate selected-context/stack/head parity also passes. This is implementation evidence only, with zero scientific predictions or accuracy scores. Full native qualification costs30.387568042s/2180672KiB.
+
+The measured side readout costs4.066262125s at one full-memory frame. Even after qualified selected-path reuse, the conservative combined-cost extrapolation is2253.200867329s, above the1800s operation cap. A complete scientific run remains unadmitted. Assess operator-equivalent computation only; do not remove controls, shorten the complete cohort or split a timeout. Novelty remains unestablished relative to known attention mixtures and memory-path methods. No new acquisition, fee, manuscript or goal completion.
+
+PR74 is merged at bedc81b with result CI39479834073 and main CI39480384244 successful; [verification](results/0038-preparation/qualification-01/pr74-verification.json). The substantive D37 negative result below remains unchanged.
+
+## Historical: complete local comparison failed; primary recipe closed
 
 The [0037 complete results](results/0037-development/complete-02/README.md) retain all446 frames, nine arms and twelve fits. The constrained MLP reaches48.5946093 J /31.3380559 Jtr%, marginally below union48.6004894/31.3383185. It fails six of ten predeclared clauses. Fixed negative veto reaches51.3679670/31.9818508 (+2.7674776/+0.6435323 pp over union), but its onion J still loses to native. Ordinary same-input MLP37.5326969/18.4181181 and no-correspondence MLP43.0119028/24.9908963 also provide no substantial gain. Do not retune this exact failed recipe or write a paper from it.
 

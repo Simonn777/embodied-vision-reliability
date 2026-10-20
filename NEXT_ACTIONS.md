@@ -1,7 +1,7 @@
 # Next actions
 
-1. Publish the complete0037 negative result with all controls, failures, costs and independent review; verify result and merged-main CI.
-2. Keep the exact constrained-flow/cell-readout recipe closed without threshold/optimizer/seed rescue. Assess a materially different observable/mechanism before another experiment; existing visibility/ancestry combinations remain close prior art.
+1. Preserve the complete D38 manufactured qualification and exact source. Native state/output parity passes, but the2253s combined-cost extrapolation does not admit the complete1800s screen. Assess only operator-equivalent implementation economies, then qualify any change before a new admission decision. No partial-cohort or missing-control run.
+2. PR74 publication/result/main CI are verified. Keep the exact constrained-flow/cell-readout recipe closed without threshold/optimizer/seed rescue. D38 is a different matched-context readout question, with no established novelty or scientific outcome.
 3. Qualify M3-VOS original-recording metadata, immutable evaluator and bounded file manifest before any new acquisition or final-source claim. No endpoint amendment is currently adopted.
 4. Preserve the substantial two-independent-source final gate, strong complete-cost controls, uncertainty, ablations and replication before a manuscript.
 
