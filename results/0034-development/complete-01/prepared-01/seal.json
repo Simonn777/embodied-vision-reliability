@@ -1,0 +1,1881 @@
+{
+  "schema": "evr0034.stage-seal.v1",
+  "complete": true,
+  "stage": "prepare",
+  "receipt_sha256": "b890fe480ed01a402426bed34d0c98eede583b02179dceed81c88e79fe72aec2",
+  "source_sha256": {
+    "${WORKSPACE}/work/0034-relative-rgb/run.py": "1affa3347efe2e9b0f1cfa02572cc45d3cdd855d8b363fc5c22c7a3ad398b823",
+    "${WORKSPACE}/work/0034-relative-rgb/features.py": "f6b35e1666cb9a3592e3bcaa63c0dd620eca5722a329e2ca249e57db40ae14b7",
+    "${WORKSPACE}/work/0034-relative-rgb/models.py": "6cb310b416e370243a0c25c35eb52fea5b68391e9df823e23b3c4de3b8efe15e",
+    "${WORKSPACE}/work/0034-relative-rgb/metrics.py": "a4f16fa06916313802bcba39d5fb7ce2ea9ee39e2fe564a35c5758c2b349dafd",
+    "${WORKSPACE}/work/0034-relative-rgb/ADMISSION.md": "9fb57caec5d907b514ad2421d39d41fa3fdecb73e673ce2aa2cb115aa23d66f2",
+    "${WORKSPACE}/work/0034-relative-rgb/SCOPE.md": "f697d4e757d310d8385e246de72e716b2e5eb7d6b0f61b47a27049d410781dfe",
+    "${WORKSPACE}/work/0034-relative-rgb/FEATURES.md": "0e9f5bb91fd0304e737eb37c1c8b750805512c7dfe79454740e9d13eb00da01d",
+    "${WORKSPACE}/work/0034-relative-rgb/MODEL.md": "e049c32c8ce4d0523717d2479bb7c83c1789376b06c184f05964e90d5edabcba",
+    "${WORKSPACE}/work/0034-relative-rgb/METRICS.md": "26a6d732d647e0241c64d3611e627812c22e4ac9be001bb25dd2fd731be191d7",
+    "${WORKSPACE}/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+    "${WORKSPACE}/work/0030-memory-content/campaign/cache_baselines.py": "5d16b4658cef5d451e88f33b3b3f99562a9c782abf199b1e22c1c9c5b0b8f0da",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0022-frontend/qualify.py": "174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e"
+  },
+  "outputs": [
+    {
+      "path": "dog-agility-frame-00000.npz",
+      "bytes": 2053294,
+      "sha256": "fe6db68b7bd93665c3fceb76ecf7df1096811015563572c44c475d9ba327621f",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 0
+    },
+    {
+      "path": "dog-agility-frame-00001.npz",
+      "bytes": 14743518,
+      "sha256": "724d64965cb2c11479d7f846aaed91580681d10ff8f82fc8bf01abc88284e9d7",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 1
+    },
+    {
+      "path": "dog-agility-frame-00002.npz",
+      "bytes": 12210174,
+      "sha256": "a6d9cb03d38a7ba2ff7b2d9ecbea4f26e156edc25a8b13b4dd32d5ee51d0c551",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 2
+    },
+    {
+      "path": "dog-agility-frame-00003.npz",
+      "bytes": 10465662,
+      "sha256": "c7bf0066f5ece937778a59fc09b7c8402fa63c2b34b238961d8ca64aae977775",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 3
+    },
+    {
+      "path": "dog-agility-frame-00004.npz",
+      "bytes": 12661614,
+      "sha256": "8367901a74fe9e7ede6112b68afbfe40df6368670bbe2277575f2bb555bd05b1",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 4
+    },
+    {
+      "path": "dog-agility-frame-00005.npz",
+      "bytes": 12171102,
+      "sha256": "2cc9eeee4e14c06566b16e4efa89e5729c59cc4dc492e28b435efd8d8b3c0055",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 5
+    },
+    {
+      "path": "dog-agility-frame-00006.npz",
+      "bytes": 11629902,
+      "sha256": "b4796144eacaa46484f87e86be8a4e1f8818721358a7f1dd254a62f233ccb6d5",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 6
+    },
+    {
+      "path": "dog-agility-frame-00007.npz",
+      "bytes": 13937262,
+      "sha256": "2a81a7e050f649c541e580910a0b69beaa79ed47c60aaafe88c4ca0eac601cf1",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 7
+    },
+    {
+      "path": "dog-agility-frame-00008.npz",
+      "bytes": 13289934,
+      "sha256": "d9131aaa314687851d72c5c12b3476e50e49262a654011ae3a04cf2881cc6e66",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 8
+    },
+    {
+      "path": "dog-agility-frame-00009.npz",
+      "bytes": 15435726,
+      "sha256": "c20178857dc50f9c919620f7bc11c3ca06596a8ff4b57da4073d4947dd1f18c6",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 9
+    },
+    {
+      "path": "dog-agility-frame-00010.npz",
+      "bytes": 17695566,
+      "sha256": "8a92f4b714cc472d4bdd6e14acbffa34a37a4b609325082c7f65e772266c2d21",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 10
+    },
+    {
+      "path": "dog-agility-frame-00011.npz",
+      "bytes": 19133838,
+      "sha256": "9e16320d471265435f288ea59231b75be3e51a946a850bfd547db738ae29223c",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 11
+    },
+    {
+      "path": "dog-agility-frame-00012.npz",
+      "bytes": 21846174,
+      "sha256": "79eb7d0289aef172e572d5199634de0911620e48f6dcd34cc4692f5d42bf315c",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 12
+    },
+    {
+      "path": "dog-agility-frame-00013.npz",
+      "bytes": 16108926,
+      "sha256": "d00cb36e7af02a4051ce58207d88653d96f9f777d243db473e1e27c3d6cb630f",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 13
+    },
+    {
+      "path": "dog-agility-frame-00014.npz",
+      "bytes": 15892446,
+      "sha256": "a1ad7e289b7cfdf0ce39d327ca3a1c0260c42576394a6467d28bb1f10a1b4a5a",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 14
+    },
+    {
+      "path": "dog-agility-frame-00015.npz",
+      "bytes": 14760942,
+      "sha256": "d8d3f61ff311d13bcba4db58483fb7759af1a9660c60371b6e8b539956e6fe3a",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 15
+    },
+    {
+      "path": "dog-agility-frame-00016.npz",
+      "bytes": 14468430,
+      "sha256": "94ff8f3e3f1cc36573a60a2c4d87dc4af85e2ca08b024d8d179478d09be190f2",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 16
+    },
+    {
+      "path": "dog-agility-frame-00017.npz",
+      "bytes": 12963630,
+      "sha256": "ba3e7ebf9e89b3a85c5ad35d6f970d664b6d928e56d49a57279e8a65d5829bf9",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 17
+    },
+    {
+      "path": "dog-agility-frame-00018.npz",
+      "bytes": 9399102,
+      "sha256": "d422c51ab0b3e228b862bbd2812173e271686286be370963ba16b998ba3383b8",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 18
+    },
+    {
+      "path": "dog-agility-frame-00019.npz",
+      "bytes": 9532158,
+      "sha256": "ba9a92e9b6636708c4ef4b9c74807f5bc911bb6bd4fe7e0ca66bc33e28906284",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 19
+    },
+    {
+      "path": "dog-agility-frame-00020.npz",
+      "bytes": 9650430,
+      "sha256": "26dd2ca7c0d414e1804031123a4d62222cd0d2b578807eb0cd2dc1c7b00df78f",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 20
+    },
+    {
+      "path": "dog-agility-frame-00021.npz",
+      "bytes": 6754350,
+      "sha256": "9fd14cb451ebe149cc63d648a4a4e2817088539990c8003a3c168de097e0c012",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 21
+    },
+    {
+      "path": "dog-agility-frame-00022.npz",
+      "bytes": 8389038,
+      "sha256": "4c9e53af29e1a8f19bf8637339799f2b02909858e4f673f10cc80c30ffaebee2",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 22
+    },
+    {
+      "path": "dog-agility-frame-00023.npz",
+      "bytes": 10503150,
+      "sha256": "22a371bc899f693b401cc8c09dafaf704397c83a634d83ed30021b9b78465c53",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 23
+    },
+    {
+      "path": "dog-agility-frame-00024.npz",
+      "bytes": 12889182,
+      "sha256": "6ca5cfe878fd4d9e22a6a1d7370a5453296ae31dfb255dad4bada62aad0909aa",
+      "kind": "causal-features",
+      "sequence": "dog-agility",
+      "frame": 24
+    },
+    {
+      "path": "planes-water-frame-00000.npz",
+      "bytes": 2053294,
+      "sha256": "c12c2ed755861f4eab4bd783f73f709963f6df2b33ad72fcf2f346eed2047009",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 0
+    },
+    {
+      "path": "planes-water-frame-00001.npz",
+      "bytes": 22645038,
+      "sha256": "8cf64815298984cc1178eb4c50930613ca12a3cca89100700c4f3abcbceb4ce2",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 1
+    },
+    {
+      "path": "planes-water-frame-00002.npz",
+      "bytes": 22674606,
+      "sha256": "5e0fb27430f0427478111e13ce8623879ebb8d5c1a574d41b651adc90cca1a44",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 2
+    },
+    {
+      "path": "planes-water-frame-00003.npz",
+      "bytes": 22677246,
+      "sha256": "df3abac92efa061cca9b65c9f3f759ad5f36fc6799c0390109669cc6502bfed1",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 3
+    },
+    {
+      "path": "planes-water-frame-00004.npz",
+      "bytes": 22686750,
+      "sha256": "4d0ed115d97e5de501cefc1e5e11f708fd1db91e66874c716dca59dbc8c2f00f",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 4
+    },
+    {
+      "path": "planes-water-frame-00005.npz",
+      "bytes": 22699950,
+      "sha256": "f4c2f1d4b3fb8ba8f05e4604fa2929142ff64be5756c9a18a55cf917272ccd7c",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 5
+    },
+    {
+      "path": "planes-water-frame-00006.npz",
+      "bytes": 22715790,
+      "sha256": "75b08522a4534c37655970a1e79021de4f17cbf87d08ef6744d8a482203159a4",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 6
+    },
+    {
+      "path": "planes-water-frame-00007.npz",
+      "bytes": 22821918,
+      "sha256": "83a4c58600d4cdd4143ea35cdd7875e601c670de46e651b1060e18dfe66a2b31",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 7
+    },
+    {
+      "path": "planes-water-frame-00008.npz",
+      "bytes": 22830366,
+      "sha256": "efd43c4c5af96f0d39acebe3678301b5cc28391861d101e2c33e89de75477ad6",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 8
+    },
+    {
+      "path": "planes-water-frame-00009.npz",
+      "bytes": 22891086,
+      "sha256": "691e0b395a76624089d187243d5819395166e07d7250a068bda25efdd14d552d",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 9
+    },
+    {
+      "path": "planes-water-frame-00010.npz",
+      "bytes": 23015166,
+      "sha256": "37d9dc52d3551888871afb0d68e740f29bbb0f5701fe26ef5ad4f8803343b357",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 10
+    },
+    {
+      "path": "planes-water-frame-00011.npz",
+      "bytes": 23359422,
+      "sha256": "7ab19ba76bd5b548aced450ff1b277716449a09693f8dbfd99ac7a37281c2332",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 11
+    },
+    {
+      "path": "planes-water-frame-00012.npz",
+      "bytes": 22989822,
+      "sha256": "35bf0e9083cd9f066b62d2d33906e7e1f66085baf120ecaa617f1d46ee1fa830",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 12
+    },
+    {
+      "path": "planes-water-frame-00013.npz",
+      "bytes": 23129742,
+      "sha256": "a13b61b8e9f132f8c24acfd8131a5843d16bfbf9da08fe0875f71f106c74cd25",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 13
+    },
+    {
+      "path": "planes-water-frame-00014.npz",
+      "bytes": 23180958,
+      "sha256": "c5abcb788ca7e1f280a6953d6e0eedb0e83f69bd4e4232f9a6d19ef2a76275e8",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 14
+    },
+    {
+      "path": "planes-water-frame-00015.npz",
+      "bytes": 23167758,
+      "sha256": "786123bb9e64131df046defa5a2e637b6c249f6514b96bc01b1d3eb0320b5edd",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 15
+    },
+    {
+      "path": "planes-water-frame-00016.npz",
+      "bytes": 22869966,
+      "sha256": "e98bd884c70737837e8aee77c9558838749e85bf1f45afbef087d1b1f04f330c",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 16
+    },
+    {
+      "path": "planes-water-frame-00017.npz",
+      "bytes": 23016750,
+      "sha256": "8a058f5836b50f4c43d78c9389e2abc348ee5e59ed06eb54bdf766d63db77827",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 17
+    },
+    {
+      "path": "planes-water-frame-00018.npz",
+      "bytes": 22978734,
+      "sha256": "423fbbbfef4dbdf0ce7175c36603cbeaf59bac58e275b6c1e79f60e2fe5dbac8",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 18
+    },
+    {
+      "path": "planes-water-frame-00019.npz",
+      "bytes": 23030478,
+      "sha256": "b4a54c340033cac0817db6c5bef8b24e9ac5929ba7fa0d977ca0ee847828a97d",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 19
+    },
+    {
+      "path": "planes-water-frame-00020.npz",
+      "bytes": 23309262,
+      "sha256": "723974a97dbe5ad6d1fec44b40401c9ec0d42c74675f97f547cf9a62e6c1555d",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 20
+    },
+    {
+      "path": "planes-water-frame-00021.npz",
+      "bytes": 23406414,
+      "sha256": "da802bacbc1fc6df36e9a52128136959ada0d0bd0724b52dbb444d09a39619f5",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 21
+    },
+    {
+      "path": "planes-water-frame-00022.npz",
+      "bytes": 23443902,
+      "sha256": "dbaa8cbcbc41f1e4b9668bc8c9ff9ae9b12d319fe481bdfedeefdb189608f713",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 22
+    },
+    {
+      "path": "planes-water-frame-00023.npz",
+      "bytes": 23535246,
+      "sha256": "79cfba75afc45e0ebdd6e85daf9e9fc97b95dc415502fc8f879daf5a6bf8e9b7",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 23
+    },
+    {
+      "path": "planes-water-frame-00024.npz",
+      "bytes": 23682030,
+      "sha256": "eaf7228dc7f4ff628c8e3db232315e736df572c6f2b2393f4cef06437f7ec536",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 24
+    },
+    {
+      "path": "planes-water-frame-00025.npz",
+      "bytes": 23626590,
+      "sha256": "ee85ea5b0b75b6c66da84e229aed8e8c82bae21c661066dda9530904fec55ae4",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 25
+    },
+    {
+      "path": "planes-water-frame-00026.npz",
+      "bytes": 23722686,
+      "sha256": "e6aed1cb03ea4ff0b81a4077768282a5cf036240e47e5d6948a17c60e7f31afd",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 26
+    },
+    {
+      "path": "planes-water-frame-00027.npz",
+      "bytes": 23993550,
+      "sha256": "08e8bea99dc0f1178409d292dea71c9cde98bffc8d17e28ce0c9c70f4ef56a19",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 27
+    },
+    {
+      "path": "planes-water-frame-00028.npz",
+      "bytes": 24084366,
+      "sha256": "99c4a3715947dee68a3333e949db5e9a9301cc82063b4b4870137c2842c3c5c9",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 28
+    },
+    {
+      "path": "planes-water-frame-00029.npz",
+      "bytes": 24057966,
+      "sha256": "ecfcbcb8bdb7bbe0970048c09e57276fecc9c1b31a5e7fd17b9c7a4a7a42ccb0",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 29
+    },
+    {
+      "path": "planes-water-frame-00030.npz",
+      "bytes": 23757006,
+      "sha256": "bebe084c482dc03c7c640448c48a30c8d11a593ed755d90c77804b43b38cc77b",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 30
+    },
+    {
+      "path": "planes-water-frame-00031.npz",
+      "bytes": 24076974,
+      "sha256": "59d98024ad8eb39032d03cb0afaa8c9a5ac70275f5e2350964f4990394240032",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 31
+    },
+    {
+      "path": "planes-water-frame-00032.npz",
+      "bytes": 23823006,
+      "sha256": "e143a9eb356d261aa44e207a8745dc22edece8bb0aef989669ea99d805d5cd74",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 32
+    },
+    {
+      "path": "planes-water-frame-00033.npz",
+      "bytes": 24179406,
+      "sha256": "6df1d6007a1c5f18e68c66c2c2ad83bb8ccfeb714a0eb68156b3786caf7a75c2",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 33
+    },
+    {
+      "path": "planes-water-frame-00034.npz",
+      "bytes": 24258606,
+      "sha256": "9d438075e34051483657d487e315ecc7249eccb7752e7319f479810729c1f2ab",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 34
+    },
+    {
+      "path": "planes-water-frame-00035.npz",
+      "bytes": 24102318,
+      "sha256": "2fe0ac326afcd197c2ae1d7e31cba6de007d47130551f5be5266c60587eddb42",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 35
+    },
+    {
+      "path": "planes-water-frame-00036.npz",
+      "bytes": 23863134,
+      "sha256": "1e9b5fbaa2f163a8611e6e262bcc0de49614ae498c2464355d3368a1ae6c201b",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 36
+    },
+    {
+      "path": "planes-water-frame-00037.npz",
+      "bytes": 23804526,
+      "sha256": "4ff5f44b5fac74bc5ead47f6417191d408e25482648030095f9530a9a6cf89eb",
+      "kind": "causal-features",
+      "sequence": "planes-water",
+      "frame": 37
+    },
+    {
+      "path": "dogs-scale-frame-00000.npz",
+      "bytes": 2053294,
+      "sha256": "f4265e7ec327a52f4a1941a9a37282b7d22236370e61404b310a48dc8b1fb892",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 0
+    },
+    {
+      "path": "dogs-scale-frame-00001.npz",
+      "bytes": 7780254,
+      "sha256": "db95dc241b0036d0cbd5c6f1105b61e14ddcd61423afeb64e166cca47ac0f8a7",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 1
+    },
+    {
+      "path": "dogs-scale-frame-00002.npz",
+      "bytes": 7591758,
+      "sha256": "a9b50939e935c9e61026acac8e9e478e57c20c273e88e394b87d0460ebfc672a",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 2
+    },
+    {
+      "path": "dogs-scale-frame-00003.npz",
+      "bytes": 6958686,
+      "sha256": "01644cc1daa0db70f66214e67d81bb0d0cc6e188f021ce697aff21ceffbfb57c",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 3
+    },
+    {
+      "path": "dogs-scale-frame-00004.npz",
+      "bytes": 6902190,
+      "sha256": "c0566845f3303105d0a33a581da6e1631254bd318ae805a53fc1d74b1a367c41",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 4
+    },
+    {
+      "path": "dogs-scale-frame-00005.npz",
+      "bytes": 7214238,
+      "sha256": "6b2abffbc9b88339fd5ac3a69f91710b57e2698c6d9c9faffe10076bf9b1ec95",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 5
+    },
+    {
+      "path": "dogs-scale-frame-00006.npz",
+      "bytes": 7562718,
+      "sha256": "28c62eadbe60ebf3da52494d1300dd50f4693500347feb56cf08380733c37800",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 6
+    },
+    {
+      "path": "dogs-scale-frame-00007.npz",
+      "bytes": 8137710,
+      "sha256": "cb685a2b324b35f3e9c79a30e9df30ab76fe596ce865b2dcffd98029ae62d91c",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 7
+    },
+    {
+      "path": "dogs-scale-frame-00008.npz",
+      "bytes": 11091342,
+      "sha256": "e5357d27f5ed16346ccf5ca47e957aff780ed0b6bc0e0c39ca239b4888dba327",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 8
+    },
+    {
+      "path": "dogs-scale-frame-00009.npz",
+      "bytes": 10008942,
+      "sha256": "d43309532544d21e0ba949853c3c6004537057261262c2ee2346391c9505bf08",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 9
+    },
+    {
+      "path": "dogs-scale-frame-00010.npz",
+      "bytes": 10266078,
+      "sha256": "e6fe9fa574ae414f5d1ad97cc2fba0f653e5da194d208653965ef5f3e1961454",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 10
+    },
+    {
+      "path": "dogs-scale-frame-00011.npz",
+      "bytes": 12955182,
+      "sha256": "f748fe55f7742bcfc2552351c71fe96a3e2c9807290a49c14222581fdb0042b2",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 11
+    },
+    {
+      "path": "dogs-scale-frame-00012.npz",
+      "bytes": 12709662,
+      "sha256": "8383a1afac8c930223dadc05aa8ef3b3b00f3f1cba29f9fb784bc7fdba71d788",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 12
+    },
+    {
+      "path": "dogs-scale-frame-00013.npz",
+      "bytes": 12501102,
+      "sha256": "3078230c5be95d8522024414939b94855409a0889bd0626b38f23d24d1fc4d82",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 13
+    },
+    {
+      "path": "dogs-scale-frame-00014.npz",
+      "bytes": 11968878,
+      "sha256": "b75b244fa4acb733c51f181f352d4f0418234d0615bedc1f427372de7942a2c6",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 14
+    },
+    {
+      "path": "dogs-scale-frame-00015.npz",
+      "bytes": 11295678,
+      "sha256": "43405562f8bc64c6b4a5a9d07de60a3bffd900927ab79d79a7fababd67250580",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 15
+    },
+    {
+      "path": "dogs-scale-frame-00016.npz",
+      "bytes": 11108238,
+      "sha256": "ca9ca16a709ed8ebe063a600e1ec6e013bbeb02b4b22e5084ae72d91c32afd11",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 16
+    },
+    {
+      "path": "dogs-scale-frame-00017.npz",
+      "bytes": 11254494,
+      "sha256": "82aba3cc77814d43aede968bdb8b085d7c1f3f67c9b66812bb2c796d711b3f44",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 17
+    },
+    {
+      "path": "dogs-scale-frame-00018.npz",
+      "bytes": 11383326,
+      "sha256": "7d4f23919a41827608722d57052195a62d652374166458d3e83d80a8c999f167",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 18
+    },
+    {
+      "path": "dogs-scale-frame-00019.npz",
+      "bytes": 10993662,
+      "sha256": "6dd7b494c70967faa1106a8dee5db07cf32fff3ee9fee5194a9b5ed64cba01c8",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 19
+    },
+    {
+      "path": "dogs-scale-frame-00020.npz",
+      "bytes": 10761870,
+      "sha256": "31b8c012231f08880570cc00ade920354b83d291d49bedecca1b8185c33f76fb",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 20
+    },
+    {
+      "path": "dogs-scale-frame-00021.npz",
+      "bytes": 10991022,
+      "sha256": "5341b7e99c5a760632fbc81641f164b0021d72aefb26b13a0b227ed4423ecf3f",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 21
+    },
+    {
+      "path": "dogs-scale-frame-00022.npz",
+      "bytes": 10361646,
+      "sha256": "41cbb664a02bca0bbc12b60a57e75af59b9869f818b04b37575ad0f35a77815e",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 22
+    },
+    {
+      "path": "dogs-scale-frame-00023.npz",
+      "bytes": 9693726,
+      "sha256": "ab544378ce40c2260c5a3f67a7fc852e6a2d9981a80a020a03d0d24686774bc9",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 23
+    },
+    {
+      "path": "dogs-scale-frame-00024.npz",
+      "bytes": 11198526,
+      "sha256": "024c3c9acd5d309eda16821f7e40286ab538824284f29229b72dbf6ef0a1ee69",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 24
+    },
+    {
+      "path": "dogs-scale-frame-00025.npz",
+      "bytes": 9496782,
+      "sha256": "4684dd51601c84c8143c8bddbed13d91390fe2211560faefa161602df0ad6f26",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 25
+    },
+    {
+      "path": "dogs-scale-frame-00026.npz",
+      "bytes": 10948782,
+      "sha256": "5f428ba285672b63ac502c244711ff5ab11dd8b66d03c1baf907962ed50d840e",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 26
+    },
+    {
+      "path": "dogs-scale-frame-00027.npz",
+      "bytes": 9419694,
+      "sha256": "c7b1a2aec2c4b0d794ffab71236d7e47eb724ea557db60b8d99a28ee16771fc5",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 27
+    },
+    {
+      "path": "dogs-scale-frame-00028.npz",
+      "bytes": 8465070,
+      "sha256": "ebe3d38b33c9301972369f01c2df7751aa1cfe3f29d1aeb537ceb94f328b0cd9",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 28
+    },
+    {
+      "path": "dogs-scale-frame-00029.npz",
+      "bytes": 8050062,
+      "sha256": "9b2448e04588144653be9dba779dd214bde062bd1ee36a83b00a31819f27dfa2",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 29
+    },
+    {
+      "path": "dogs-scale-frame-00030.npz",
+      "bytes": 9085998,
+      "sha256": "9b7d6462d761deca9a3dbb29ca570127ca2952b8392bae61d70f1c653ce3831c",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 30
+    },
+    {
+      "path": "dogs-scale-frame-00031.npz",
+      "bytes": 9786654,
+      "sha256": "be0df636f222c5327d5c97a6130e62edeaec79e3271c0fb77bf1b853abaa61fb",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 31
+    },
+    {
+      "path": "dogs-scale-frame-00032.npz",
+      "bytes": 8927598,
+      "sha256": "f98a76dbc1641a710d2845c0328a0e0a891739c968d8ce59055707872bafbe20",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 32
+    },
+    {
+      "path": "dogs-scale-frame-00033.npz",
+      "bytes": 9215358,
+      "sha256": "b36e89e49b679343ddd9ec74612a0b7f25e5bcf221b8b0a76090284c3134de37",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 33
+    },
+    {
+      "path": "dogs-scale-frame-00034.npz",
+      "bytes": 9130350,
+      "sha256": "26ecc9909150580096e3bd9c60e7831012e0e5b5602943a84babfdcbf20d50d9",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 34
+    },
+    {
+      "path": "dogs-scale-frame-00035.npz",
+      "bytes": 10958286,
+      "sha256": "ba615f2b1c6938b3a0e0dcb1f4d97acb00af5580f25edaa54407527b6e1c3eb4",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 35
+    },
+    {
+      "path": "dogs-scale-frame-00036.npz",
+      "bytes": 9871134,
+      "sha256": "5143b1ab1cab2a90b40487fb7b88589bb8cae60c389d79cc86da41c2ebd4c90b",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 36
+    },
+    {
+      "path": "dogs-scale-frame-00037.npz",
+      "bytes": 10087614,
+      "sha256": "60470a66e807db000a2ae10ad29668955618bc5285e5e88790121d030e9540ff",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 37
+    },
+    {
+      "path": "dogs-scale-frame-00038.npz",
+      "bytes": 10409694,
+      "sha256": "badbd9980deb68b7a6f6583c6ef16a5a49b2f5fe76f130d3b1617972ca6c7536",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 38
+    },
+    {
+      "path": "dogs-scale-frame-00039.npz",
+      "bytes": 11102430,
+      "sha256": "667a19620d2e31ca7183a5d96641f66b081e9c87303f96ec50b59a97f0e2f136",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 39
+    },
+    {
+      "path": "dogs-scale-frame-00040.npz",
+      "bytes": 11354814,
+      "sha256": "2b745bbd75a85766b415b80ffc8f1a17614bf81b90bb9e8fedb0a96da7de3aa6",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 40
+    },
+    {
+      "path": "dogs-scale-frame-00041.npz",
+      "bytes": 11816814,
+      "sha256": "d98ab7394aa5452a2457d3f0ba449d1ef0ba6ab6f107eef6bf20a5c1e33c30de",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 41
+    },
+    {
+      "path": "dogs-scale-frame-00042.npz",
+      "bytes": 11927166,
+      "sha256": "bf0b6134051736e4a997f2e561c0a54e47d012113e36f0ff4221d3b958542e14",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 42
+    },
+    {
+      "path": "dogs-scale-frame-00043.npz",
+      "bytes": 11845854,
+      "sha256": "d91b5d5194facdb6bf8cbcdb7ceaa04ebd3799c5c2f0326fb940029f3fdceb21",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 43
+    },
+    {
+      "path": "dogs-scale-frame-00044.npz",
+      "bytes": 11052798,
+      "sha256": "07f2934012b5da7aee6b0573c6f878350a5faaf13802e4a67f50cb18ce369e7e",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 44
+    },
+    {
+      "path": "dogs-scale-frame-00045.npz",
+      "bytes": 11596638,
+      "sha256": "b78f554743446e87e04fefe91ac5d82d3507f9d3184f5293cd65800b2d5d1894",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 45
+    },
+    {
+      "path": "dogs-scale-frame-00046.npz",
+      "bytes": 11775630,
+      "sha256": "fa1f480d6976882150e9e2a284e2c7df14630f72d1cd320ea1a41ecf222b5acd",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 46
+    },
+    {
+      "path": "dogs-scale-frame-00047.npz",
+      "bytes": 11543310,
+      "sha256": "7219a38d0dc9cbad0cc9c4ed540206742c530f76f0e765a3da035c530e370e28",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 47
+    },
+    {
+      "path": "dogs-scale-frame-00048.npz",
+      "bytes": 11436126,
+      "sha256": "ac4084ea10bacdf71ab32caad4fd50eb68b7786c3203f53cb28880a137b705a0",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 48
+    },
+    {
+      "path": "dogs-scale-frame-00049.npz",
+      "bytes": 11556510,
+      "sha256": "10dfe5faa8d1b320ce5bc4519039750e0183499598eee17c5a11fa28d037b702",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 49
+    },
+    {
+      "path": "dogs-scale-frame-00050.npz",
+      "bytes": 11375934,
+      "sha256": "8d95baed217c03aea33d96088efc5ed7927b3b9796a12fda12a14e182ef45860",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 50
+    },
+    {
+      "path": "dogs-scale-frame-00051.npz",
+      "bytes": 11407086,
+      "sha256": "bba4fb718d167382edbe021be184dbd30f8c6d87dcb6c00ce588210600682d3f",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 51
+    },
+    {
+      "path": "dogs-scale-frame-00052.npz",
+      "bytes": 11614590,
+      "sha256": "0f1b480f515baf481efd56e1f45b390a16c7a4d0042ed630b0b5230b4d4c5a68",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 52
+    },
+    {
+      "path": "dogs-scale-frame-00053.npz",
+      "bytes": 11513214,
+      "sha256": "6bd2bfd0ed82c5ffb6964230e7f373354f8ee06e878d85ce8f20c19bae2e665c",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 53
+    },
+    {
+      "path": "dogs-scale-frame-00054.npz",
+      "bytes": 11295150,
+      "sha256": "f3bd998e1a78d943103f1bcfe9f16bffc274fc4f7178cd2b4fee352374b0c1cb",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 54
+    },
+    {
+      "path": "dogs-scale-frame-00055.npz",
+      "bytes": 11546478,
+      "sha256": "75e7276d46759b0f08918f432d02a7da0fe239781f743cd124ee4486996b15ea",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 55
+    },
+    {
+      "path": "dogs-scale-frame-00056.npz",
+      "bytes": 11444046,
+      "sha256": "0a238efd1d68c02e0e40bd81197e08e1e77f32406fa5dc63d84fac33d441b9e2",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 56
+    },
+    {
+      "path": "dogs-scale-frame-00057.npz",
+      "bytes": 11529054,
+      "sha256": "06ee73fb61384337a9ca607d3c3d915c250020d1a78006585452a80afb663224",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 57
+    },
+    {
+      "path": "dogs-scale-frame-00058.npz",
+      "bytes": 11670030,
+      "sha256": "a0a56f73da1196a7743efd6b5e92c89f19a5df95fc3dbd76465467e1ef06a8c6",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 58
+    },
+    {
+      "path": "dogs-scale-frame-00059.npz",
+      "bytes": 11765070,
+      "sha256": "be96d015b321eec646422ace7dc999695bc0b445da1be4715c3c26cb32ef05f5",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 59
+    },
+    {
+      "path": "dogs-scale-frame-00060.npz",
+      "bytes": 11404446,
+      "sha256": "abe93bfc444a0951383645c3dfb95208b3e83f619e37ce14dc5ddfa2c5c54689",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 60
+    },
+    {
+      "path": "dogs-scale-frame-00061.npz",
+      "bytes": 11450910,
+      "sha256": "9a23cff783aca7d901a57c3c454b00ed762d745ca5efef23fb65d2a70dd43250",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 61
+    },
+    {
+      "path": "dogs-scale-frame-00062.npz",
+      "bytes": 10898622,
+      "sha256": "ea8b379f8fd0de6371035d6433d2de38e34c12d506199f7ca041f5b248e87b00",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 62
+    },
+    {
+      "path": "dogs-scale-frame-00063.npz",
+      "bytes": 10205886,
+      "sha256": "e83b162732dd25ff816bf71d067e48f660e7f79029d671415e3da2e71eeca71d",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 63
+    },
+    {
+      "path": "dogs-scale-frame-00064.npz",
+      "bytes": 10422894,
+      "sha256": "6bfdc33d169766b4cfdf63e38082c4e12e41e3a27476b87d6c18980f3cd34141",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 64
+    },
+    {
+      "path": "dogs-scale-frame-00065.npz",
+      "bytes": 10475166,
+      "sha256": "a78963018dfffae5d5c5a079b526e33b7a1beeefc3c552ec9d8fd392dbf4f9d3",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 65
+    },
+    {
+      "path": "dogs-scale-frame-00066.npz",
+      "bytes": 9632478,
+      "sha256": "e4568890363a11c26913b42f8d92f7224bf403ed3ffe052305477be53e816691",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 66
+    },
+    {
+      "path": "dogs-scale-frame-00067.npz",
+      "bytes": 10032702,
+      "sha256": "e58e7d07196507e1f2f9dd1aa827af15c806458f98d9f3d5b5e390f4107c9db8",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 67
+    },
+    {
+      "path": "dogs-scale-frame-00068.npz",
+      "bytes": 10305150,
+      "sha256": "0b0d9ca0c6f5ec1bf4bbb1e10bde12f967bd5c19f1c145ecdc1a5d50de682495",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 68
+    },
+    {
+      "path": "dogs-scale-frame-00069.npz",
+      "bytes": 10564398,
+      "sha256": "ead1ffadd75903a2b7320a5181a5005a26c48d3e8d4c1ab9c262365d5ca368df",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 69
+    },
+    {
+      "path": "dogs-scale-frame-00070.npz",
+      "bytes": 10674750,
+      "sha256": "b60694f25c6928c00f8be73b4160205e3a05fc58c52b96b67a07339b4500b702",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 70
+    },
+    {
+      "path": "dogs-scale-frame-00071.npz",
+      "bytes": 10926606,
+      "sha256": "4b309d22e1f09baea4c5e07058bf8e8f952e3c0eccde88170e30ee7b07938b3c",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 71
+    },
+    {
+      "path": "dogs-scale-frame-00072.npz",
+      "bytes": 10965678,
+      "sha256": "ed13b9be412c80d1ff3c7b91cc36bbc2130a95059b15c7854110ae403f0b807d",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 72
+    },
+    {
+      "path": "dogs-scale-frame-00073.npz",
+      "bytes": 10142526,
+      "sha256": "2d0afa55cb6bc76e2b9252129b57492f85a2e9dba515faa22093453d02d940e0",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 73
+    },
+    {
+      "path": "dogs-scale-frame-00074.npz",
+      "bytes": 10549086,
+      "sha256": "572df01106676e7add3bf0a0a020b4ffee4245cbc9f71fc6db01b62fb29f1f8e",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 74
+    },
+    {
+      "path": "dogs-scale-frame-00075.npz",
+      "bytes": 10568622,
+      "sha256": "2a55b8de509726a6d7b0b86b3f49a1e5770c3ed297738c8899e9986fa170a4bf",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 75
+    },
+    {
+      "path": "dogs-scale-frame-00076.npz",
+      "bytes": 10802526,
+      "sha256": "ff73b4a86afc4fa24bc58b7a6e0fd5e5807cc68ab371af57c426c424dbabf164",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 76
+    },
+    {
+      "path": "dogs-scale-frame-00077.npz",
+      "bytes": 11361678,
+      "sha256": "d44ff0546b37c716f43103464c36c2ad04d2be0bdaf759a5df098e134c500554",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 77
+    },
+    {
+      "path": "dogs-scale-frame-00078.npz",
+      "bytes": 11550702,
+      "sha256": "49609b7925a319db501acf0a3db606919947ed6cb6ae3e366ab8024cd4ae2260",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 78
+    },
+    {
+      "path": "dogs-scale-frame-00079.npz",
+      "bytes": 10913934,
+      "sha256": "2023a877fcb48dadc75653196f522555e210b8d8009ec9eb841410f38e658509",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 79
+    },
+    {
+      "path": "dogs-scale-frame-00080.npz",
+      "bytes": 9871662,
+      "sha256": "4148fe25d5ac98f24f7c9ed750ed9bde5391685c526fec9a224f0166fb14f6b8",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 80
+    },
+    {
+      "path": "dogs-scale-frame-00081.npz",
+      "bytes": 10529550,
+      "sha256": "480a73e901e18adc1ecf372ebaa77743dfec5d13132de37537535feece9090ee",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 81
+    },
+    {
+      "path": "dogs-scale-frame-00082.npz",
+      "bytes": 11146254,
+      "sha256": "d5e1dc2da33839c860481e6110fe5c55f0e84206bd6ee0d013f22ca74f7ffa85",
+      "kind": "causal-features",
+      "sequence": "dogs-scale",
+      "frame": 82
+    },
+    {
+      "path": "dog-gooses-frame-00000.npz",
+      "bytes": 2053294,
+      "sha256": "ac47c4ea1f2c4fd92429212b7cbf9f21f632e9ce5de0e5ad2652c6f52c7debcf",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 0
+    },
+    {
+      "path": "dog-gooses-frame-00001.npz",
+      "bytes": 4652382,
+      "sha256": "028a52bd7c8cf4e88d7a438156143c3190b487f9349fc8ce9680926e0dbc9407",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 1
+    },
+    {
+      "path": "dog-gooses-frame-00002.npz",
+      "bytes": 4544670,
+      "sha256": "469a0c049973ec346eea00e37acd1a72af52b7735ca3bfa60a4144da9fed1f7a",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 2
+    },
+    {
+      "path": "dog-gooses-frame-00003.npz",
+      "bytes": 4727358,
+      "sha256": "4c17a256300ec301f85d0f216d92ec17c3743aed19869087175718fc49d7d789",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 3
+    },
+    {
+      "path": "dog-gooses-frame-00004.npz",
+      "bytes": 4747422,
+      "sha256": "feac660eaa0b6ee6e5c42edff18050d19c21551650d0c2661d1c01702d2565d6",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 4
+    },
+    {
+      "path": "dog-gooses-frame-00005.npz",
+      "bytes": 4738446,
+      "sha256": "6e3f974959b526ebbcafa7d0e4f876492c6a9fbb89c89338ca4549b558250b6f",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 5
+    },
+    {
+      "path": "dog-gooses-frame-00006.npz",
+      "bytes": 4753758,
+      "sha256": "aad01519c0b4cbe6a541aed547ef50ce3027ae720a694f9c0c2fd87a0d6c7943",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 6
+    },
+    {
+      "path": "dog-gooses-frame-00007.npz",
+      "bytes": 4717326,
+      "sha256": "252cba66a5ff7826d2dee52d84d1ac03accba6720c240261fbe4ac4aa113bdb1",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 7
+    },
+    {
+      "path": "dog-gooses-frame-00008.npz",
+      "bytes": 4697262,
+      "sha256": "23a830ceb71b2164cb6f1a5c1890baa621897bef17da71c9866391379ec045d8",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 8
+    },
+    {
+      "path": "dog-gooses-frame-00009.npz",
+      "bytes": 4676142,
+      "sha256": "8d1fef80a89ca209bfbb73ac7723ec192fe9342bf2a3fef92f7fb5a18cd51122",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 9
+    },
+    {
+      "path": "dog-gooses-frame-00010.npz",
+      "bytes": 4706766,
+      "sha256": "7db7a01f9d9d78fae4d4b2789dc1ed56230dc01ede80c6d46662565680316972",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 10
+    },
+    {
+      "path": "dog-gooses-frame-00011.npz",
+      "bytes": 4695150,
+      "sha256": "81d9a675864826d2edc19cf343505539eac4f531d9d6557ce0b8cdd63031a86a",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 11
+    },
+    {
+      "path": "dog-gooses-frame-00012.npz",
+      "bytes": 4712046,
+      "sha256": "39c2dd7cb39cf1908cd3f072f14ca54402674766c828f2f9201df643ff9db451",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 12
+    },
+    {
+      "path": "dog-gooses-frame-00013.npz",
+      "bytes": 4689342,
+      "sha256": "6354c34b78a5ad0bc5a0ee7dfad3c1a4281d16d3edaae58eb888f2254f272ced",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 13
+    },
+    {
+      "path": "dog-gooses-frame-00014.npz",
+      "bytes": 4715742,
+      "sha256": "e4d55e219bf3ea64613ce4d7a8a563f93bd7d02912e252bef3e6a15abc21ebc2",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 14
+    },
+    {
+      "path": "dog-gooses-frame-00015.npz",
+      "bytes": 4711518,
+      "sha256": "e34f0fdf1bafcc9d0d56b2e08941a6082a2f5565412661c389dd57bc61ff3296",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 15
+    },
+    {
+      "path": "dog-gooses-frame-00016.npz",
+      "bytes": 4696734,
+      "sha256": "f03bd7acbc1f2c3190c00cd5ddeea59f6a1e527fd606aeaa0cafce900de19170",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 16
+    },
+    {
+      "path": "dog-gooses-frame-00017.npz",
+      "bytes": 4736862,
+      "sha256": "2412e7f76182ca629131fa5290a031842556c83df31d1befd4aa873ed4643862",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 17
+    },
+    {
+      "path": "dog-gooses-frame-00018.npz",
+      "bytes": 4677726,
+      "sha256": "7eebc028ce61d3cc2c4f7faad9e9a13729f760ff1acc4d9571e0f84c2b34ebb9",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 18
+    },
+    {
+      "path": "dog-gooses-frame-00019.npz",
+      "bytes": 4656078,
+      "sha256": "8e9a7b1357cb808ab42f9bf597c8434ef51ac7e68e2e9ee7de97c2ae318bf7ca",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 19
+    },
+    {
+      "path": "dog-gooses-frame-00020.npz",
+      "bytes": 4677726,
+      "sha256": "b16991e06555e2a8fdcb935d7a80a311f2dcd77a72b58167f4c412f4983a08f2",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 20
+    },
+    {
+      "path": "dog-gooses-frame-00021.npz",
+      "bytes": 4670862,
+      "sha256": "7ebcc422e5a159da2c84f0be5946de1345ab03c573df25f344d34eeb6009b57c",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 21
+    },
+    {
+      "path": "dog-gooses-frame-00022.npz",
+      "bytes": 4677726,
+      "sha256": "33fb3e3b993dba2ee11c9414578209b088d13de4fa8a774cb862f669f7ca4268",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 22
+    },
+    {
+      "path": "dog-gooses-frame-00023.npz",
+      "bytes": 4688286,
+      "sha256": "cb8651253a9b8b8e5c5194b3fb5cdc483260963f887adc7960f2a69508f40d7d",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 23
+    },
+    {
+      "path": "dog-gooses-frame-00024.npz",
+      "bytes": 4666638,
+      "sha256": "121877c0c9f89a602257922550cabace8e1a9abec66c75ade24154cc7ee347d8",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 24
+    },
+    {
+      "path": "dog-gooses-frame-00025.npz",
+      "bytes": 4693566,
+      "sha256": "acf3c61162c063235052ecf219f253f41b3f107dd573576c3d9f15d3def98f38",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 25
+    },
+    {
+      "path": "dog-gooses-frame-00026.npz",
+      "bytes": 4661886,
+      "sha256": "8bd654a802f43f283710f659dbafb997de484252f674dab6ba4825c6e125662e",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 26
+    },
+    {
+      "path": "dog-gooses-frame-00027.npz",
+      "bytes": 4654494,
+      "sha256": "38d52055311cd800ba5895c46bf99cfcb72a2fb8dbb64346cd40e5c200012573",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 27
+    },
+    {
+      "path": "dog-gooses-frame-00028.npz",
+      "bytes": 4694622,
+      "sha256": "a6d8015400bdad379cec5dfaa1d28164eddde7452c860f6095240f69a62fb37b",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 28
+    },
+    {
+      "path": "dog-gooses-frame-00029.npz",
+      "bytes": 4933806,
+      "sha256": "e5d1b17484d2918489f7332c2cb2a60a30a9ed5115474496d873fb26c437199e",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 29
+    },
+    {
+      "path": "dog-gooses-frame-00030.npz",
+      "bytes": 5034126,
+      "sha256": "2fca706b9f224ee268741eb6324ec2b59be0d2d0152bf7d2940088283650e919",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 30
+    },
+    {
+      "path": "dog-gooses-frame-00031.npz",
+      "bytes": 5037822,
+      "sha256": "5c9d4026fbec5cb6e4dea93ddf0da0f8297824d8c924f05e998e07e15cfc3fe0",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 31
+    },
+    {
+      "path": "dog-gooses-frame-00032.npz",
+      "bytes": 5200974,
+      "sha256": "da8946530e79bf3eccc44a848246f18345eb7a3b48cb33fd050d22ecba28659a",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 32
+    },
+    {
+      "path": "dog-gooses-frame-00033.npz",
+      "bytes": 5136558,
+      "sha256": "628b356a0091d503db25c8e9e60a1f987852e13b248d6a0b20f771806a326689",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 33
+    },
+    {
+      "path": "dog-gooses-frame-00034.npz",
+      "bytes": 5523582,
+      "sha256": "9220c8c7eb12ffac2920e8f58ea047d1a0afcfbdbb27ad1a5d2b09101ebce013",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 34
+    },
+    {
+      "path": "dog-gooses-frame-00035.npz",
+      "bytes": 5469726,
+      "sha256": "5e8eeb8e509a7e4d752c19c43a5a30b9c0395e3693ed25122d6955e1bc76101f",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 35
+    },
+    {
+      "path": "dog-gooses-frame-00036.npz",
+      "bytes": 5351454,
+      "sha256": "188f1ef6cfe901b4fb262ff702a0c05a91d915dec30f268dab7944d6696f1227",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 36
+    },
+    {
+      "path": "dog-gooses-frame-00037.npz",
+      "bytes": 5978718,
+      "sha256": "df67f92b576cee6e3bf445aa4e9decdde61eaa156d970b4cb0c8c748be326930",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 37
+    },
+    {
+      "path": "dog-gooses-frame-00038.npz",
+      "bytes": 6020430,
+      "sha256": "22e0f2614eefb12f704882c9d5337868efa8ddeaf9c1879010b35ab9d8f93e63",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 38
+    },
+    {
+      "path": "dog-gooses-frame-00039.npz",
+      "bytes": 6101214,
+      "sha256": "f66124b06c867a9fa6915762d2c4b3dbf12bb498bb4b317c4aa39abdaecbf61f",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 39
+    },
+    {
+      "path": "dog-gooses-frame-00040.npz",
+      "bytes": 5689374,
+      "sha256": "b8c65056546d167807cf2c93a8132786d2952cdc0f8aa3d1ff0f68f4fb4a84b2",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 40
+    },
+    {
+      "path": "dog-gooses-frame-00041.npz",
+      "bytes": 5542590,
+      "sha256": "de978e2d3e29f63edd2ed456438fb40aafbdcc0a9534a5a088f594e0335cf12a",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 41
+    },
+    {
+      "path": "dog-gooses-frame-00042.npz",
+      "bytes": 5817150,
+      "sha256": "be66f0a06917c7f6e04e10f9c55b64c1d103305c3f04f5a3ace388cfa5392871",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 42
+    },
+    {
+      "path": "dog-gooses-frame-00043.npz",
+      "bytes": 5893710,
+      "sha256": "b208fe05ee15cdc836c5461d6512908605cdfbc75e4ec966b58db3448d051d50",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 43
+    },
+    {
+      "path": "dog-gooses-frame-00044.npz",
+      "bytes": 5532030,
+      "sha256": "96ee27db4c6632ddf543602cd544753b69d2db088258b0dce9d4f84ef3472485",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 44
+    },
+    {
+      "path": "dog-gooses-frame-00045.npz",
+      "bytes": 5149230,
+      "sha256": "7fd1eb59e1084d509006f943227fefaeeeffdeb75c5dcc6eefb4b2429d88e1b0",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 45
+    },
+    {
+      "path": "dog-gooses-frame-00046.npz",
+      "bytes": 4963374,
+      "sha256": "aad441947850550b8dd1d1e14bdf3a32686f26783bceb43203aa7413e587dd8d",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 46
+    },
+    {
+      "path": "dog-gooses-frame-00047.npz",
+      "bytes": 4611198,
+      "sha256": "b68771d16a9dc6bb6bd0a3053c5979f8b983cd864328b4c2444fd6516d77f2f7",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 47
+    },
+    {
+      "path": "dog-gooses-frame-00048.npz",
+      "bytes": 4431678,
+      "sha256": "c33167085703092354e970f5cb9ad9d520a7108a6ba5ffb463735aa82dea5dc5",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 48
+    },
+    {
+      "path": "dog-gooses-frame-00049.npz",
+      "bytes": 3939582,
+      "sha256": "2276af95000ff93a80730cb0cf71444dce855aad6fcc4b919585ffaba473b692",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 49
+    },
+    {
+      "path": "dog-gooses-frame-00050.npz",
+      "bytes": 3923742,
+      "sha256": "5370411ab06536e59d3db280c900832f1c4712c2fc1a73f4bc81985607477f25",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 50
+    },
+    {
+      "path": "dog-gooses-frame-00051.npz",
+      "bytes": 4191966,
+      "sha256": "0bf5f39f1a63dd9daaa6e1d2b2c447a89a709211b321a8cbf98fe6d3a7fe61f5",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 51
+    },
+    {
+      "path": "dog-gooses-frame-00052.npz",
+      "bytes": 4600638,
+      "sha256": "fe1823a97e2728647b8c43daf0d564659a4738e91f04c252bb070feb2734fce6",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 52
+    },
+    {
+      "path": "dog-gooses-frame-00053.npz",
+      "bytes": 4987134,
+      "sha256": "f921c55a8770313385cc059d8d3f112bfa9f4b1cfe5c7b7170ecb072a37c4fd1",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 53
+    },
+    {
+      "path": "dog-gooses-frame-00054.npz",
+      "bytes": 4922190,
+      "sha256": "6e5e0ef63c4882e21d8061aa1fd954bc0111f27146c052f3786455d74bf027a9",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 54
+    },
+    {
+      "path": "dog-gooses-frame-00055.npz",
+      "bytes": 4824510,
+      "sha256": "2350764b624bb6d02177d91b64bfd52c9762be33f2cf9d05cce7505fba76cbc0",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 55
+    },
+    {
+      "path": "dog-gooses-frame-00056.npz",
+      "bytes": 4655550,
+      "sha256": "bd1865bad56fafe04335b00c7c642263f725723d5e2ea09f2e3c414d863b94cb",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 56
+    },
+    {
+      "path": "dog-gooses-frame-00057.npz",
+      "bytes": 4667166,
+      "sha256": "77d7caab4a3c090a12a909643e7e9fc7509ae46ea148c38791452d4df465f86b",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 57
+    },
+    {
+      "path": "dog-gooses-frame-00058.npz",
+      "bytes": 4662942,
+      "sha256": "fbe3fcc75595e85db228bde5af3dac182776fee8df445fc3812ca8b4ccd1589e",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 58
+    },
+    {
+      "path": "dog-gooses-frame-00059.npz",
+      "bytes": 4694094,
+      "sha256": "a1974085b1699c4ec19192e45befa52c9b048d5374272566f09fc31ab8c00531",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 59
+    },
+    {
+      "path": "dog-gooses-frame-00060.npz",
+      "bytes": 4722078,
+      "sha256": "b197f9f5b8e4967bb632230a4da2b104f7685ee412193485ca423b3b410e3492",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 60
+    },
+    {
+      "path": "dog-gooses-frame-00061.npz",
+      "bytes": 4691454,
+      "sha256": "ce63ae8095586878c52290d05f0fd01e0e8e623e00cc3431a9bbc9627c927f6f",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 61
+    },
+    {
+      "path": "dog-gooses-frame-00062.npz",
+      "bytes": 4506654,
+      "sha256": "3e56dcd6d93b7147691d38e42943b2036d422eb776e644ed206a5db9cf681ad0",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 62
+    },
+    {
+      "path": "dog-gooses-frame-00063.npz",
+      "bytes": 4502958,
+      "sha256": "9e9ad1d3df52751aa7ae1ec5142c894b0a1355363c4cbeb6222a7586c7625edf",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 63
+    },
+    {
+      "path": "dog-gooses-frame-00064.npz",
+      "bytes": 4655022,
+      "sha256": "46c07823c83d346e1c0a541d7319f98efb2eeef1ae6d3b5ee90880cfc792a668",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 64
+    },
+    {
+      "path": "dog-gooses-frame-00065.npz",
+      "bytes": 4637070,
+      "sha256": "f4f89eff2c4dd04f6a2721cf62186debaf6756fbc0a6983a9087a4d9d1036552",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 65
+    },
+    {
+      "path": "dog-gooses-frame-00066.npz",
+      "bytes": 4669278,
+      "sha256": "02efd03d1c4af367c6b79e5eb946e8100d506e9e889a06f60c8e3b29a53629d2",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 66
+    },
+    {
+      "path": "dog-gooses-frame-00067.npz",
+      "bytes": 4873086,
+      "sha256": "6bc308e70a343015221dc048aba74a47268907d0d9e7bdab3d2d8096b2118d56",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 67
+    },
+    {
+      "path": "dog-gooses-frame-00068.npz",
+      "bytes": 5204142,
+      "sha256": "e222d1aba3029be4ba8d1e8e688351f618647c879c323498688e7973375d1673",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 68
+    },
+    {
+      "path": "dog-gooses-frame-00069.npz",
+      "bytes": 5048382,
+      "sha256": "e6ca85f41f23f9bdae5e510a1998920961b5fd5a69bdf31ea6a2cb477c2d10bc",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 69
+    },
+    {
+      "path": "dog-gooses-frame-00070.npz",
+      "bytes": 4888926,
+      "sha256": "c952ec15087423e54fa6961cb5657d6f543e44be3f0113cbe381642ed76e8ac3",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 70
+    },
+    {
+      "path": "dog-gooses-frame-00071.npz",
+      "bytes": 4724718,
+      "sha256": "aa75ef5ab21fff9cadae8da10866429d21dba32d6e572b65394511df239e8cb3",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 71
+    },
+    {
+      "path": "dog-gooses-frame-00072.npz",
+      "bytes": 4548894,
+      "sha256": "787300e1d5b8945402c85a5a1ffa4b607d87ad7e8d171c6fde0ad18978356730",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 72
+    },
+    {
+      "path": "dog-gooses-frame-00073.npz",
+      "bytes": 4732110,
+      "sha256": "621200e7cdd21e85af2286fabac11f6ed6a993feabec1a1426e8490a11e48fef",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 73
+    },
+    {
+      "path": "dog-gooses-frame-00074.npz",
+      "bytes": 4838238,
+      "sha256": "b43ce0398c26b530a98eb2b1de8ea0700955b1aa603daf9bed83db543a019f30",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 74
+    },
+    {
+      "path": "dog-gooses-frame-00075.npz",
+      "bytes": 4521966,
+      "sha256": "7616f1663d1d1c928acba69ec690620cce3b04213293f207234e5ab258d7796e",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 75
+    },
+    {
+      "path": "dog-gooses-frame-00076.npz",
+      "bytes": 4817646,
+      "sha256": "510db73645bfd5670252cfe68801caeba0141c753e05b357f355c04c7507b7a4",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 76
+    },
+    {
+      "path": "dog-gooses-frame-00077.npz",
+      "bytes": 4571598,
+      "sha256": "a48dd48c34bcb4e61d6156bae51504fd0da62718262b80619b835aeba4540fd2",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 77
+    },
+    {
+      "path": "dog-gooses-frame-00078.npz",
+      "bytes": 4832958,
+      "sha256": "344ba2aeeb9f773e68c3c252b304828199fcd0a9e4f80ea2aa6d766a92552900",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 78
+    },
+    {
+      "path": "dog-gooses-frame-00079.npz",
+      "bytes": 4982382,
+      "sha256": "cbd506373c3e1d5644509b4c3e4b43105645c169e55e141c56bf7d77092e60a2",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 79
+    },
+    {
+      "path": "dog-gooses-frame-00080.npz",
+      "bytes": 5278590,
+      "sha256": "8375fe21f45ba2d1c45046194c0481f5b89aa4e0383a388efc911c459f41a44c",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 80
+    },
+    {
+      "path": "dog-gooses-frame-00081.npz",
+      "bytes": 6104910,
+      "sha256": "ce66fcb3fc9116db0f576fd22d8a714046f17430fbad048c8039a4bc1362ccd3",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 81
+    },
+    {
+      "path": "dog-gooses-frame-00082.npz",
+      "bytes": 6393198,
+      "sha256": "07a63755c3d05ddfecfcaf9a33e1a97de932c05a85b853a358e8d175da1fc3df",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 82
+    },
+    {
+      "path": "dog-gooses-frame-00083.npz",
+      "bytes": 6520446,
+      "sha256": "c66fd3664e1d32493eefd7c85fc66dbd924bafb80d0db942138784cfe8d61efd",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 83
+    },
+    {
+      "path": "dog-gooses-frame-00084.npz",
+      "bytes": 6569550,
+      "sha256": "5a38d9ed1cf53e4844d270d29ed50d5a44d9348ad306f60c5e43b362c318bc06",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 84
+    },
+    {
+      "path": "dog-gooses-frame-00085.npz",
+      "bytes": 6631854,
+      "sha256": "1235e9b18bff3db313eda6b4406c2652450949c21bfc0093ba9f4fd4969d4763",
+      "kind": "causal-features",
+      "sequence": "dog-gooses",
+      "frame": 85
+    }
+  ]
+}

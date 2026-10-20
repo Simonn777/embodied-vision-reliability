@@ -1,0 +1,25 @@
+{
+  "command": [
+    "${WORKSPACE}/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-c",
+    "import sys, unittest, torch, cv2; torch.set_num_threads(4); torch.set_num_interop_threads(1); cv2.setNumThreads(0); sys.path.insert(0,sys.argv[1]); suite=unittest.TestSuite(unittest.defaultTestLoader.loadTestsFromName(n) for n in ('test_features','test_models','test_metrics')); result=unittest.TextTestRunner(verbosity=2).run(suite); sys.exit(not result.wasSuccessful())",
+    "${WORKSPACE}/work/0034-relative-rgb"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 3.119596874981653,
+  "scope": "artificial feature/model/aggregation tests only; no dataset or native model",
+  "source_sha256": {
+    "${WORKSPACE}/work/0034-relative-rgb/ADMISSION.md": "9fb57caec5d907b514ad2421d39d41fa3fdecb73e673ce2aa2cb115aa23d66f2",
+    "${WORKSPACE}/work/0034-relative-rgb/features.py": "f6b35e1666cb9a3592e3bcaa63c0dd620eca5722a329e2ca249e57db40ae14b7",
+    "${WORKSPACE}/work/0034-relative-rgb/models.py": "6cb310b416e370243a0c25c35eb52fea5b68391e9df823e23b3c4de3b8efe15e",
+    "${WORKSPACE}/work/0034-relative-rgb/metrics.py": "a4f16fa06916313802bcba39d5fb7ce2ea9ee39e2fe564a35c5758c2b349dafd",
+    "${WORKSPACE}/work/0034-relative-rgb/test_features.py": "d72d591a0e5c3df0a73935acb6c050e349018738df00aaa7d2815a3a679ada0d",
+    "${WORKSPACE}/work/0034-relative-rgb/test_models.py": "f8c7c97d84bcf2ed3ef871b75490b0c707b18eba375a3dfa071ce269391d9e21",
+    "${WORKSPACE}/work/0034-relative-rgb/test_metrics.py": "4264aef249fb4ed0f04ca0aed4cc7057a01a386780ee33e5226d7c3befe5bf87"
+  },
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "3d160dc637e2a1f7dd742b74fc53f2dde5f2a6f387b912b91432aea2d8654d95"
+}

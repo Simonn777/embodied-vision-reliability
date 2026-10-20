@@ -1,0 +1,100 @@
+{
+  "schema": "evr0034.pointwise-model.v1",
+  "name": "signed_gram",
+  "status": "completed",
+  "dtype": "float64",
+  "input_dim": 14,
+  "family": "signed_gate",
+  "coefficients": [
+    -2.5258104258538796,
+    -0.7704432785664519,
+    -37.65043456157657,
+    -34.224234911888146,
+    6.0957149833552275,
+    4.817518704343006,
+    -4.885867331049804,
+    7.6943265640119805,
+    9.09972558296735,
+    7.238359686099849,
+    -6.148038508614816,
+    -12.127075258506697,
+    10.413638204297687,
+    -14.071977717215354
+  ],
+  "initial_coefficients": [
+    -4.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "config": {
+    "correction_bound": 4.0,
+    "regularization": 0.001,
+    "gate_initial_intercept": -4.0,
+    "lbfgs": {
+      "lr": 1.0,
+      "max_iter": 80,
+      "max_eval": 400,
+      "tolerance_grad": 1e-06,
+      "tolerance_change": 1e-12,
+      "history_size": 20,
+      "line_search_fn": "strong_wolfe"
+    }
+  },
+  "training": {
+    "sample_count": 146432,
+    "positive_weight_count": 146432,
+    "weight_sum": 1.0,
+    "weights_renormalized": false,
+    "weight_sum_roundoff_tolerance": 3.552713678800501e-15
+  },
+  "torch_version": "2.8.0",
+  "terminal": {
+    "loss": 0.21518295760736098,
+    "data_loss": 0.21517015022780303,
+    "penalty_loss": 1.2807379557952198e-05,
+    "weighted_delta_squared": 0.012807379557952197,
+    "gradient": [
+      -6.380312473993286e-08,
+      3.3418323805606944e-07,
+      2.9024566409193065e-08,
+      -1.7270884315025645e-07,
+      -1.8889499656740647e-07,
+      -2.952701276487118e-07,
+      5.0887759904649655e-08,
+      -1.9850431838394156e-07,
+      9.627052076741074e-07,
+      -1.0751583098001357e-07,
+      1.1450543291455171e-07,
+      1.6485150739900875e-07,
+      -2.8396613344535073e-07,
+      8.677688147514104e-08
+    ],
+    "gradient_norm": 1.1739228332271806e-06,
+    "gradient_max_abs": 9.627052076741074e-07
+  },
+  "optimizer": {
+    "n_iter": 16,
+    "func_evals": 22,
+    "observed_closure_evals": 22,
+    "terminal_loss_gradient_evals": 1,
+    "configured_max_iter": 80,
+    "configured_max_eval": 400,
+    "max_iter_reached": false,
+    "max_eval_reached": false,
+    "max_eval_is_hard_cap": false,
+    "returned_successfully": true,
+    "convergence_claimed": false,
+    "terminal_gradient_tolerance_satisfied": true
+  }
+}

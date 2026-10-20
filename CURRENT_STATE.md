@@ -1,6 +1,18 @@
 # Current state
 
-## Current: supervised native-feature baseline failed; fixed recipe closed
+## Current: fixed relative-RGB screen failed; exact recipe closed
+
+The [complete 0034 evidence](results/0034-development/complete-01/README.md) retains all 40 fits, 80 terminal/trace JSONs, four fold-specific normalizations, 232 prediction archives / 2,552 masks, 232 metric rows and all fixed controls. The primary cross-fit uses 224 interior frames of four permanently exposed TRAIN parents, with equal-parent weighting. All TRAIN labels are loaded for use by the appropriate other-parent fits; no fold fits its own held parent's labels. This computational exclusion is not a fresh confirmatory partition. No current DEV payload or final-test access occurred.
+
+Native J/F/J&F is **93.6297400 / 97.1822813 / 95.4060107%**. Signed Gram is **93.6087984 / 97.0918545 / 95.3503264%**, a **−0.0556843 pp** J&F change. All ten learned arms fall below native; signed Gram is also below displaced Gram95.3546105% and RGB25695.3612041%. Parent J&F changes in fixed order are −0.0279983/+0.0280290/−0.2347613/+0.0119935 pp. The candidate beats ordinary relations on only one parent and no-Gram on three. Five of eleven continuation clauses fail, so the saved action is `close_fixed_signed_rgb_gram_recipe` without support/radius/gate/optimizer/threshold/seed rescue.
+
+All three complete operations exit cleanly: preparation62.897802250 s /584,368 KiB; fit-predict18.160135750 s /1,360,192 KiB; evaluation10.060370875 s /483,568 KiB. Native-cache cost458.300764250 s stays separate. No complete-pipeline efficiency claim follows. All232 native parities pass;228 noninitial frames yield3,780,352 query sites and233,472 samples. There are zero fit failures;32/40 terminal gradients meet tolerance,8/40 reach the80-iteration limit. Finite optimizer completion is not a convergence claim. Twenty-six manufactured tests passed before execution.
+
+The descriptive older96-event population covers87unique frames and retains four final-frame events. Native/signedGram J&F is95.2091636/95.1730261%, also negative. It does not replace the primary endpoint. The text bundle preserves original fields and floats with only a literal workspace-prefix substitution; it is not an independent metric rerun. PR70 result618b92c and merged main176d7c3 have separately verified successful CI39425830025/39426214163, recorded in the bundle.
+
+A source-level strategic review is underway because the current four-parent native boundary score is high and every learned variant loses in this comparison. Limited coverage, surrogate mismatch and weak causal evidence are hypotheses, not established causes. Broader data alone would not be a new method or reopen0033. No successor operation, acquisition or manuscript is admitted by this result. The final +3 official J&F points on each of two independent held-out sources and all other evidence requirements remain unchanged and unmet.
+
+## Historical: supervised native-feature baseline failed; fixed recipe closed
 
 The [complete 0033 result](results/0033-development/complete-01/README.md) compares native predictions with identical 1,377-parameter visual and logit-only residual heads. Both heads finish twelve epochs over all 228 noninitial TRAIN frames, with 2,736 updates each and TRAIN-only normalization. Only terminal checkpoints are evaluated. The [source and fixed admission](experiments/0033-native-feature) implement a known supervised capacity baseline, not a new method.
 

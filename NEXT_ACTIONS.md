@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: preserve 0033 closure; compare distinct transferable cues at source level
+## Current: preserve 0034 closure; reassess the failure mechanism and task
+
+1. Publish and verify [all 0034 evidence](results/0034-development/complete-01/README.md). All ten learned arms lose to native in pooled cross-fit J&F; the signed-Gram candidate also loses to displaced relations and coarse RGB. Preserve every fit/trace/normalization/prediction descriptor, all parent scores, the complete primary and secondary populations and measured costs. Do not select a positive parent or substitute a secondary endpoint.
+2. Keep the exact signed RGB/Gram recipe closed, along with the earlier exact head/crop/memory variants. A different question must explain what information was absent from these actions and include the strongest same-information control. Do not use support/radius/gate/optimizer/threshold/seed changes to rescue this result.
+3. Complete a source-level task/data/transfer review before new scientific execution. Distinguish a real failure mechanism from near-ceiling mask detail, a broader training control from innovation, and first-mask single-object VOS from driving association or embodied action. Select a complete, feasible development population before viewing new outcomes; preserve the protected final data and acquisition balance.
+4. Keep the unchanged final gate: +3 absolute official J&F points on each of two independent held-out sources, positive paired recording-level95% intervals, neither J nor F down>0.5point, strong controls at a fixed common complete-pipeline budget, ablations and independent replication. The goal remains unachieved; no manuscript.
+
+## Historical: preserve 0033 closure; compare distinct transferable cues at source level
 
 1. Publish the [complete 0033 comparison](results/0033-development/complete-01/README.md), preserving all 5,472 training rows, both terminal checkpoint hashes, 482 predictions, complete metrics and costs. Visual DEV J&F loses 0.2785256 pp to native and 0.0714592 pp to logit-only; four of five fixed conditions fail. Keep the [exact training recipe](experiments/0033-native-feature) closed without width, loss, epoch, radius or seed rescue.
 2. Compare transferable target-relative cues and the feasibility of broader TRAIN controls through the [baseline feasibility](docs/0033-native-feature-baseline-feasibility.md) and [target-conditioning source question](docs/0033-target-conditioning-source-question.md) notes. This is prospective source-only work: no successor implementation, training or evaluation is admitted or executed, and no new-method claim follows from adding target conditioning.
