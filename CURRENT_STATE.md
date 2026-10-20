@@ -2,7 +2,7 @@
 
 ## Current: local comparison implemented; scientific result pending
 
-[0037 source](experiments/0037-causal-local-verification/ADMISSION.md) fixes small disjoint union cells, causal first-mask label transport, ordinary same-input MLP and a negative-evidence-constrained MLP. All26 manufactured checks pass after one preserved thread-configuration failure. [Preparation evidence](results/0037-preparation/README.md) includes complete failed/passed receipts and source snapshots. No scientific operation or efficacy result has run. Exact-source CI precedes one complete four-clip comparison; no new acquisition, native inference, fees or manuscript.
+[0037 source](experiments/0037-causal-local-verification/ADMISSION.md) fixes small disjoint union cells, causal first-mask label transport, ordinary same-input MLP and a negative-evidence-constrained MLP. All26 manufactured checks pass after one preserved thread-configuration failure. [Preparation evidence](results/0037-preparation/README.md) includes complete failed/passed receipts and source snapshots. The first complete launch failed at identity admission before data reads; the wrong copied spec SHA was corrected and all26 checks passed again. [Failure and repair](results/0037-preparation/startup-repair-02/README.md) are preserved. No efficacy result exists. Exact-source CI precedes a fresh complete four-clip comparison; no new acquisition, native inference, fees or manuscript.
 
 PR73 result and merged-main CI are now both verified. Its negative whole-arm sufficiency result remains final; richer local selection is a distinct action class, not a four-arm selector rescue.
 

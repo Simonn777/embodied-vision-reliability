@@ -19,7 +19,7 @@ FIXED = ("B", "B+M1", "B+M2", "B+M1+M2")
 LEARNED = ("ordinary_mlp", "no_ancestry_mlp", "negative_gate_mlp")
 LOCAL = ("fixed_negative", "positive_required") + LEARNED
 POLICIES = ("author_background", "void_ignore")
-D35_SPEC_SHA = "42580099639494c0b096ac88d3d7445275fd36658dd66c59e20123ca455b8887"
+D35_SPEC_SHA = "325961b52bed72c8710fee107265b02545002f9b7591fdd4119095841611a68d"
 D35_RESULT_SHA = "7fe9592298d1cced864eaa6f75faf973e98c10ea3ce8c91100a678cc6cd60fe3"
 THREADS = ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS",
            "VECLIB_MAXIMUM_THREADS", "NUMEXPR_NUM_THREADS")

@@ -1,5 +1,7 @@
 # Next actions
 
+Startup follow-up: complete01 stopped before data at the incorrect copied D35 spec SHA. Corrected-source qualification03 passes26/26; freeze and verify exact-source CI before the unchanged complete02 comparison. Preserve both earlier failures.
+
 ## Current: execute the frozen complete local comparison
 
 1. Freeze reviewed0037 source and verify exact-source CI. Preserve both manufactured attempts and all26 passing tests; no scientific result yet.
