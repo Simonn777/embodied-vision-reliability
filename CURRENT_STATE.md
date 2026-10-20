@@ -1,6 +1,18 @@
 # Current state
 
-## Current: fixed crop-detail baseline failed and is closed
+## Current: supervised native-feature baseline failed; fixed recipe closed
+
+The [complete 0033 result](results/0033-development/complete-01/README.md) compares native predictions with identical 1,377-parameter visual and logit-only residual heads. Both heads finish twelve epochs over all 228 noninitial TRAIN frames, with 2,736 updates each and TRAIN-only normalization. Only terminal checkpoints are evaluated. The [source and fixed admission](experiments/0033-native-feature) implement a known supervised capacity baseline, not a new method.
+
+DEV J&F is **92.1772205% native, 91.8986949% visual and 91.9701540% logit-only**. Visual loses **0.2785256 pp** to native and **0.0714592 pp** to logit-only. Its cat-girl/upside-down changes are **−1.5730673/+1.0160161 pp**; mean J/F changes are −0.5806481/+0.0235969 pp. Four of five continuation clauses fail; only the mean-F-loss limit passes. The saved decision is `close_fixed_native_feature_training_recipe`, without width, loss, epoch, radius or seed rescue.
+
+The descriptive TRAIN fit-subset improves by +0.6513107 J&F pp for visual and +0.0428790 pp for logit-only. Those 96 horizon events cover 87 unique frames, retain duplicates and four final-frame events, and are not a held-out test or a full 228-frame terminal evaluation. All 154 raw DEV rows and 150 interior frames are retained with equal parent weighting. The upside-down gain does not satisfy the missing both-parent condition.
+
+All 482 arm predictions for 241 shared frames are sealed before current metric-label decoding. The run passes 241 native parities and 482 zero-head parities, preserves native history and both trained states, and uses no SAM encoder/decoder calls. Fit/prediction/evaluation outer times are 115.000076459/17.848059458/2.350311334 seconds, with peak RSS 2,428,400/377,712/78,112 KiB. The inherited 458.300764250-second native cache remains separately charged; no complete-pipeline speed advantage is claimed. All 5,472 training rows, orders, normalization, terminal hashes, sources, receipts and costs remain available.
+
+The [baseline feasibility note](docs/0033-native-feature-baseline-feasibility.md) and [target-conditioning source question](docs/0033-target-conditioning-source-question.md) support only a prospective source-only comparison of transferable target-relative cues and the feasibility of broader TRAIN controls. No successor implementation, training or evaluation is admitted or executed, and no novelty is claimed. This failure does not identify its cause or prove all feature-based methods must fail. The original goal and unchanged two-independent-held-out-source +3 official J&F gate remain unmet; no manuscript.
+
+## Historical result: fixed crop-detail baseline failed and is closed
 
 The [complete0032 result](results/0032-development/complete-01/README.md) retains241 sealed predictions,96 TRAIN events,154 DEV raw rows and150 DEV interior frames. The simplified SAMRefiner-inspired adaptation adds239 image encodings and239 decoder calls while leaving native video history unchanged. It is an established-method adaptation, not an invention or full reproduction.
 
@@ -12,7 +24,7 @@ Prediction/metric outer times are145.796326875/1.975912333seconds; peak RSS1,384
 
 PR68 result e550544 and merged main2845418 both passed exact CI39419197116/39420096298; [verification metadata](results/0032-development/complete-01/pr68-verification.json). The original goal and two-independent-source paper gate remain unmet.
 
-## Current: fixed paired-boundary lookup failed; calibration selects native
+## Historical result: fixed paired-boundary lookup failed; calibration selects native
 
 The [0031 complete evidence](results/0031-development/complete-01/README.md) covers all 96 fixed TRAIN events, 87 unique future frames and 6,144 sampled native crossings. Initial-reference pairs, independent foreground/background maxima, an outside-only derangement and native zero displacement use the same candidate geometry. All rankings were sealed before current TRAIN labels. No whole-mask modification or DEV pairing evaluation occurred.
 
@@ -50,7 +62,7 @@ The 250-update fit used 1,152.3876841 outer seconds, within 1,168.509588667017; 
 
 The completed [native output-error analysis](results/0030-development/output-error-analysis-01/README.md) covers all 150 interior frames and exactly reproduces saved native J/F. Error-pixel mass within the official GT-boundary tolerance radius is 77.9971399% for cat-girl and 97.8041950% for upside-down; complete target-miss and nonempty-disjoint counts are zero on both. Outer cost is 2.7693725 seconds, peak 79,872 KiB. These are descriptive pixel sums using evaluator GT, not evidence that a causal method can locate or repair the errors. A distinct TRAIN paired-boundary information screen is being prepared; no new model, head, gain or manuscript is claimed.
 
-## Current result: 0029 fixed memory-deletion diagnostic failed and closed
+## Historical result: 0029 fixed memory-deletion diagnostic failed and closed
 
 The [complete six-video replication](results/0029-development/native-attempt-02/README.md) gives signed fixed-query J93.923162% versus baseline93.935668% and the strongest predicted-IoU control93.970921% (signed margin−0.047759percentage points). Even admissible oracle deletion gains only0.076821points against the required2; none of six per-video margins is positive. Three numerical efficacy conditions fail. The [independent audit](results/0029-development/native-attempt-02/audit/receipt.json) passes12,463checks/0errors. All386frames/48queries/606native calls and complete costs are preserved; attempt01 stays ineligible and separate.
 
@@ -108,7 +120,7 @@ The [acquisition-only protocol](protocols/0029-runtime-assets.md) prepares nativ
 
 [0028 publication and merged-main CI are verified](docs/0028-publication-verification.md). The [0029 screen](docs/0029-task-screen.md) rejects five generic replacement proposals because their mechanisms already have direct precedents or their required observations are unavailable. Delayed tracker-memory replay is covered by Det-SAM2; its initially conditional opening is explicitly superseded. Video sequence access is feasible in part, but no new method, data cohort, model acquisition or experiment is admitted. The [signed identity-evidence question](docs/0029-signed-memory-question.md) specifies a narrow diagnostic and a prospective two-source +3-point J&F topic gate; exact prior-work distinction and execution prerequisites remain unresolved. No measured improvement or manuscript is established.
 
-## Current result: 0028 failed; fixed variant closed
+## Historical result: 0028 failed; fixed variant closed
 
 The [complete 27-image/24-query comparison](results/0028-development/README.md) gives ANG AUC@5 **2.695397%** versus **51.000123%** for the strongest E/AFFINE control (−48.304727 points). All 24 ANG fits completed and FULL was valid; all three scene margins are negative. Three of four fixed gate clauses fail. Independent saved-output audit passes 2,451 comparisons. No rescue tuning, held-out expansion or manuscript is admitted. A materially different task/observable is being screened; the main improvement goal remains unmet.
 

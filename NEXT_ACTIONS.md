@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: close the fixed crop baseline; require a distinct information advantage
+## Current: preserve 0033 closure; compare distinct transferable cues at source level
+
+1. Publish the [complete 0033 comparison](results/0033-development/complete-01/README.md), preserving all 5,472 training rows, both terminal checkpoint hashes, 482 predictions, complete metrics and costs. Visual DEV J&F loses 0.2785256 pp to native and 0.0714592 pp to logit-only; four of five fixed conditions fail. Keep the [exact training recipe](experiments/0033-native-feature) closed without width, loss, epoch, radius or seed rescue.
+2. Compare transferable target-relative cues and the feasibility of broader TRAIN controls through the [baseline feasibility](docs/0033-native-feature-baseline-feasibility.md) and [target-conditioning source question](docs/0033-target-conditioning-source-question.md) notes. This is prospective source-only work: no successor implementation, training or evaluation is admitted or executed, and no new-method claim follows from adding target conditioning.
+3. Distinguish the visual head's +0.6513107 pp descriptive TRAIN fit-subset gain from its negative DEV transfer. Retain both DEV parents and the stronger logit-only comparison; do not select the improving upside-down parent or infer a unique failure cause. Ordinary bounded development of a materially different mechanism remains possible, with explicit same-input controls and complete costs.
+4. Preserve the final requirement of +3 absolute official J&F points on each of two independent held-out sources, positive paired recording-level 95% intervals, neither J nor F down more than 0.5 point, strong complete-pipeline-cost controls, ablations and independent replication. All six current parents remain permanently exposed development. The goal remains unmet; no manuscript.
+
+## Historical: close the fixed crop baseline; require a distinct information advantage
 
 1. Publish [all0032 results](results/0032-development/complete-01/README.md), complete per-frame records and costs. Its −3.7811-point DEV J&F change and both-parent declines fail every fixed condition. Keep the exact crop/prompt/selection recipe closed; no outcome-based rescue.
 2. Assess one distinct supervised native-feature residual head as a known capacity/control baseline, using the existing frozen fine-scale image features and native logits. Source feasibility comes first; no new executor, fit or gain is currently admitted. Do not infer that a visible GT boundary error is recoverable from causal inputs.

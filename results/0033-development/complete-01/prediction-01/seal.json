@@ -1,0 +1,4366 @@
+{
+  "schema": "evr0033.native-feature-seal.v1",
+  "complete": true,
+  "receipt_sha256": "314054cb1c35d1e87f12908ffcb6e8d29c8d1133ab611980e504c40c3b79a9bc",
+  "source_sha256": {
+    "${WORKSPACE}/work/0033-native-feature/train.py": "0fc0c067387dada3f2d6c4c549e37e9efd2a4372f5caaeb62d5af432cd100037",
+    "${WORKSPACE}/work/0033-native-feature/head.py": "6ff9a8e367ae28743c8b1bf8226f0f914dba85af2f504974f533919ce7d9e716",
+    "${WORKSPACE}/work/0033-native-feature/SCOPE.md": "849a22c7d2f0be44f420dec61f6b932d26a287a97d4f70c3c4cb82ae5e5a7114",
+    "${WORKSPACE}/work/0033-native-feature/ADMISSION.md": "dc3cf086e2b8213a9108f7b67d09c617ad1edd5042f02730a564d66ac4851279",
+    "${WORKSPACE}/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+    "${WORKSPACE}/work/0030-memory-content/campaign/cache_baselines.py": "5d16b4658cef5d451e88f33b3b3f99562a9c782abf199b1e22c1c9c5b0b8f0da",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0022-frontend/qualify.py": "174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e",
+    "${WORKSPACE}/work/0033-native-feature/predict.py": "65d530d676beeb556bf7af50a3f70533d11b8043fe2e250f1d2e536f19fe7785",
+    "${WORKSPACE}/work/0033-native-feature/METRIC_SCOPE.md": "3a633baf286555e4720cf3aaa9f566413cb2ead57e741f276dda8cf9d363a5c2"
+  },
+  "spec_sha256": "20c3173b17968e9da098883f007927661243d82bb75f176a202fc6129aab3081",
+  "frame_count": 241,
+  "arm_prediction_count": 482,
+  "outputs": [
+    {
+      "path": "dog-agility/visual-00002.npz",
+      "sha256": "edf1bd77aa6fcecf6c6c658dff91852ecb6c2769ea7baadac42fee20f0164d5f",
+      "bytes": 2389,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 2,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00002.npz",
+      "sha256": "b3f572e473ae2e7feb92ec1c4b4cf450a78c5a041fd14c124caea0b0bb8c40a0",
+      "bytes": 2393,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 2,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00003.npz",
+      "sha256": "3eaf880671eaf0a059684dd587338fd63c5ef18fd647af048d8c609e3f6fe97f",
+      "bytes": 2413,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 3,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00003.npz",
+      "sha256": "668d8b1dfeb25fd983303fec8010567a41e2f485824314f0b76d7120d6d571d4",
+      "bytes": 2438,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 3,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00004.npz",
+      "sha256": "c9630cdf1174c2016aff8390f991a64c5c0f95e2114ff277090acfcaa3046176",
+      "bytes": 2386,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 4,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00004.npz",
+      "sha256": "d68b1bdb55e1b7693045fe79fb4bb946ecc1ac6d4f741b858a541cb9a4a33af2",
+      "bytes": 2389,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 4,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00005.npz",
+      "sha256": "3e7e8ca664d55efaa36baf420a45acd2dca5f455b6bb46c6a434a071f6698adc",
+      "bytes": 2240,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 5,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00005.npz",
+      "sha256": "dca64013f3b33d5573321c04ca256942607e96006d21cbac27f16d82387650d8",
+      "bytes": 2139,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 5,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00007.npz",
+      "sha256": "75444045914f9524dee57c4f068f570a79363dc41f831a29c64e230c86d04f85",
+      "bytes": 2749,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 7,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00007.npz",
+      "sha256": "eddda042873bdfc8f7e70390f16ca6382c4d008ea46653b9a8d5009a0363f22c",
+      "bytes": 2765,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 7,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00009.npz",
+      "sha256": "82d667463b307c9d463abf642112692f2c43b39e47e1c5ee905e2d5f39f8b5b8",
+      "bytes": 2947,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 9,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00009.npz",
+      "sha256": "67b7c221190e10466fae54ea7695c34fc52d8bbb093723039d6ae4a9af8e27ea",
+      "bytes": 2969,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 9,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00011.npz",
+      "sha256": "b80362f879a5413de0f0388530d34b65cebc7b07f18310bb33f20569c35a8d01",
+      "bytes": 3276,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 11,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00011.npz",
+      "sha256": "29314563e20c155be30a3ac6996ceb4c17d0c3b4733666cb3d7a7116e42ab652",
+      "bytes": 3253,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 11,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00012.npz",
+      "sha256": "7798cf5329ec27e49bccbb74b8101c358e12a5d1e77bbe63db30e7460974dbe6",
+      "bytes": 3491,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 12,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00012.npz",
+      "sha256": "96747ac47853dbde2264d1dc2901415905fe50522eeff07c455eac17faf1c8e8",
+      "bytes": 3493,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 12,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00013.npz",
+      "sha256": "0795076fd0db4ac2850fd322abb9ebf791559dc4ce4d29350b4d7005f5f6b992",
+      "bytes": 2905,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 13,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00013.npz",
+      "sha256": "f9d2ed91326134fd8d2220aef68e6040efae613c9746964ce5d36deb4c25e472",
+      "bytes": 2886,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 13,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00014.npz",
+      "sha256": "4a2adbdb6776609edd73c72ebef1dd75ae3a4b3224b98dbf4db73fafc90a61f4",
+      "bytes": 3190,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 14,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00014.npz",
+      "sha256": "c6d6908b0d88657f2435983a0be4c77f341c818e54ab4fdce12a72c5c80e427e",
+      "bytes": 3147,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 14,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00016.npz",
+      "sha256": "b312c23e65112a18aa17644ec4b53231fb6312ff5dc225c79090d7e7d5791c3d",
+      "bytes": 3126,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 16,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00016.npz",
+      "sha256": "06aa8077fc65b5e371194d3096f2db87791279e78654f91fcc5bf84fa4f81b9d",
+      "bytes": 3132,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 16,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00018.npz",
+      "sha256": "98af2d4dbb0a033e1aa858a0cd1906523c6e701e452e1988ea6f1583f7cd269c",
+      "bytes": 2612,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 18,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00018.npz",
+      "sha256": "9621eaa9c3f55da0febad7c57e755239b89cedb0c235be0a8bf55bdfd7093d75",
+      "bytes": 2617,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 18,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00020.npz",
+      "sha256": "ef99e32201210e4cc3f256a5365595d8e6ed3e0299592ac1d1844869744c6d72",
+      "bytes": 3093,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 20,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00020.npz",
+      "sha256": "bc7cddfdefb88678b68889615ed509e2ac11ff5cda7387097ea2531f7972641a",
+      "bytes": 3073,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 20,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00022.npz",
+      "sha256": "3239ed16c3c21cdd8e15cb02375477654cf053e1d890faa19b0d34fed1173063",
+      "bytes": 2701,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 22,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00022.npz",
+      "sha256": "236c7578f8f4ae9ef57cb91b95ff6fbb833b6020f6a54ffdfacabc69341a36dc",
+      "bytes": 2672,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 22,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-agility/visual-00024.npz",
+      "sha256": "366119b15112668652409ba741fae172aa4a86aeb03d474f3fc669821c96354b",
+      "bytes": 3210,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 24,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-agility/logit_only-00024.npz",
+      "sha256": "2017e192d2a8167e768343fa36acf406c2cefdc1ab1bb208dfd8ecb07f3c1862",
+      "bytes": 3102,
+      "kind": "prediction",
+      "sequence": "dog-agility",
+      "frame": 24,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00002.npz",
+      "sha256": "eb7af51f65133ce86a21b1db11dca53c85c9c1ed0687b1df7e36aed8fcba66de",
+      "bytes": 3387,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 2,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00002.npz",
+      "sha256": "5db10e78e6164f4aef359f1dc12b7091411b1d01d7fdb8db26cea3558c04a2b0",
+      "bytes": 3378,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 2,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00004.npz",
+      "sha256": "582746a9a12489878149e03594a96ea7c0007b9c2b99e8392a844879d6b4b76c",
+      "bytes": 3404,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 4,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00004.npz",
+      "sha256": "a2f3351f497b2eabb651d030c517ad028c90568173378ac75393443490f896e7",
+      "bytes": 3357,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 4,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00005.npz",
+      "sha256": "641f91f528b1799df6cefc13c30f87dcabafa9bf7caae7fbbfbb6fed5edc6da8",
+      "bytes": 3449,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 5,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00005.npz",
+      "sha256": "f2aecd7f75169b521b4cd7969af51369ac269ccfac37e076c5975cf81bd1f469",
+      "bytes": 3392,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 5,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00007.npz",
+      "sha256": "11a758779fad2d31412114e21afe47fae356e8e007adba4c1724e7c948dd29e8",
+      "bytes": 3453,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 7,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00007.npz",
+      "sha256": "b2945de8cff030c9aaeac0917f12aab7d4664026df89173211a7a2fd909dbafb",
+      "bytes": 3324,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 7,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00008.npz",
+      "sha256": "15a5f6683bf7d36521ec436327063f651a8da8aa8101950ffd4d981324b5dded",
+      "bytes": 3463,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 8,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00008.npz",
+      "sha256": "bf7044aef5dd42e650ae6869900f028c18a330ba946baa9c885c31d888133cc6",
+      "bytes": 3392,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 8,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00010.npz",
+      "sha256": "9c593d9e20784742829bc915f111b5a6c9b510b866e8c7802c577699efa21094",
+      "bytes": 3452,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 10,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00010.npz",
+      "sha256": "e2493b7b50ff1de831bb42b9cd457827e7cf747110f411463a92e1c765b1a8ad",
+      "bytes": 3392,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 10,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00011.npz",
+      "sha256": "9e40c8d7979036891a411f59ed5b2b80af17104457b5d7bc1e8299c178b16c2a",
+      "bytes": 3488,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 11,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00011.npz",
+      "sha256": "6fe8460f0880278e914f2e3c11b132f65fd3b7666877cda8854e3f76377c4d8e",
+      "bytes": 3382,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 11,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00013.npz",
+      "sha256": "566591848b3f7d5d279562999ee6038c37cdf883ba87a27a2a3c52f177c7b4ce",
+      "bytes": 3513,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 13,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00013.npz",
+      "sha256": "10fa236a11a53172fd4c488b5878ff2565a0564c13a2392f5599dbf440020a5e",
+      "bytes": 3426,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 13,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00014.npz",
+      "sha256": "2eec39d2f4021a1a55188220a2d0117e2ab6cf11fc655a2a41a0a5347ed5143b",
+      "bytes": 3539,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 14,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00014.npz",
+      "sha256": "d59c7b66824ff977bbecefe3de3276fbcf51a33626f5d27ddafd612c98b4e493",
+      "bytes": 3437,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 14,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00016.npz",
+      "sha256": "b85edfc5878791f98bb55d6eaaa11120111a9ebb49219e77fa6772f9a9783a4a",
+      "bytes": 3583,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 16,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00016.npz",
+      "sha256": "81f72401b5262ac032a96223a92b4154154b2145bc47448c582c90592a7242da",
+      "bytes": 3467,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 16,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00017.npz",
+      "sha256": "251025aa6ec04d1dfb661801d5e7fc6da19f829997dddd5617af02d8897eda62",
+      "bytes": 3603,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 17,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00017.npz",
+      "sha256": "3c5c40613562ab457a54516580e902867f62fbed379a79dc0edbaebf5c086ac1",
+      "bytes": 3447,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 17,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00019.npz",
+      "sha256": "66c282b69dd463d971b6472cb983a432bea567e9b283059bd92465574c26ffc8",
+      "bytes": 3581,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 19,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00019.npz",
+      "sha256": "c1d82b8280064531214ef6c6fdb89537fc20800dea35c8695398ce935e574530",
+      "bytes": 3455,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 19,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00020.npz",
+      "sha256": "7369d0d2c8d5f95614fd527bfdc91b9df071816accf08b0e3e81a34b7c24a403",
+      "bytes": 3620,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 20,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00020.npz",
+      "sha256": "5cd4b4cefbdd24d246acc821cd31026f564337d8d8bac3e9effbc1afac70c2ae",
+      "bytes": 3489,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 20,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00022.npz",
+      "sha256": "7cf68c097501736e8174daf48da43cc0407acc5f8a1f04246abefe84f788cbbf",
+      "bytes": 3617,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 22,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00022.npz",
+      "sha256": "60802d430d07fdb519c683dd8f44d485ee8ad9f6f09bedcbfd14ec4cb351db7e",
+      "bytes": 3513,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 22,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00023.npz",
+      "sha256": "f8d6c8621052fe288964f7640b75b1ca08da88d43df783a4ff9f47375a209c65",
+      "bytes": 3615,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 23,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00023.npz",
+      "sha256": "e3e3ed27e3b7e1658bf4ad14fdef6665d890a9137ec05028675db10a3d305e7e",
+      "bytes": 3531,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 23,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00025.npz",
+      "sha256": "0a2ab7053e313a4786c96c09222a5a3cec71d42f56b96c550975b991d85b5489",
+      "bytes": 3611,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 25,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00025.npz",
+      "sha256": "0cc7b60c80118a51c651c091afcadf7092e6b6649a4de53b4988e652bcc78c9a",
+      "bytes": 3548,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 25,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00026.npz",
+      "sha256": "7fa539ce4608583fc968802626949d834f60ec06752836aa37267a3667b5783a",
+      "bytes": 3594,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 26,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00026.npz",
+      "sha256": "551405a07a9899876003e5c8f642cb3af0e3cc9f269a2ee255f0505378b047b3",
+      "bytes": 3557,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 26,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00028.npz",
+      "sha256": "dc6188f0b8451be7bfa784536dd4fb15f83ab4dec11e30a3624074aea9f4fd5c",
+      "bytes": 3632,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 28,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00028.npz",
+      "sha256": "114e57fe6b42cd5584640021771e9494379fcdc5355b7d61585f34b7e1116e9d",
+      "bytes": 3559,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 28,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00029.npz",
+      "sha256": "99392d268067156858a33d253bfa1034d4fed90d9f04b17dfbf7d663fdfce26b",
+      "bytes": 3625,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 29,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00029.npz",
+      "sha256": "32f3ca495cab6f7f10a03d3985fdb350ed76e4704c8a0afc560e47e27bdb8313",
+      "bytes": 3571,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 29,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00031.npz",
+      "sha256": "807a58e03daff80dc74693097e2baad26d6adc1971f306bbf58fc16f62c135d4",
+      "bytes": 3633,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 31,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00031.npz",
+      "sha256": "3408e40fe49c68d10a4a64a6fe847ad6cac276f9cd8cf03ee71146a8e72874c2",
+      "bytes": 3576,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 31,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00032.npz",
+      "sha256": "44ef950a76ea7e03457838bcc2ca433cc7540e15369502bd73aaf755a1ba661e",
+      "bytes": 3693,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 32,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00032.npz",
+      "sha256": "bbd2b1a34ddcc117e09f046fd1568bfcfbb311aa3ce42b1cf9efc16ed8f7c33a",
+      "bytes": 3581,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 32,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00034.npz",
+      "sha256": "47deeec929a2251c883e4f77fbc65366d6d2b1a58e7bd372da6ef5a2a87394a9",
+      "bytes": 3726,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 34,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00034.npz",
+      "sha256": "0a7c5d1ca55ff2b4b6a1e968b045769940e1dacdd31ee2685a4b685041679fb5",
+      "bytes": 3620,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 34,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00035.npz",
+      "sha256": "c526ac637672b2a830482b8eb5536ad6ad5cdc4ca50b4e938d6d566b3bcbbca0",
+      "bytes": 3690,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 35,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00035.npz",
+      "sha256": "f76205b21c336bf6a2de50873c18a06964a7a69bff7a837bad3530a58ecfe9de",
+      "bytes": 3641,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 35,
+      "arm": "logit_only"
+    },
+    {
+      "path": "planes-water/visual-00037.npz",
+      "sha256": "b7ec15677ddb7ec8ee654e7a0c0d1768797af8d12bf50cf73c00cb30786e0b3c",
+      "bytes": 3730,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 37,
+      "arm": "visual"
+    },
+    {
+      "path": "planes-water/logit_only-00037.npz",
+      "sha256": "94f1371a41840412daa40627593ebf37f127d11ffbf5856f8337ffda2de4907b",
+      "bytes": 3661,
+      "kind": "prediction",
+      "sequence": "planes-water",
+      "frame": 37,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00002.npz",
+      "sha256": "225d50f3fef362b3d9b50908814e509a615a416fdb6dc3aaa0439dbc36a3fb09",
+      "bytes": 1661,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 2,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00002.npz",
+      "sha256": "f7f9cb0eab8a0caa9c3d7da212ae6aee7fbda1eb85055e95d7e05de1ae086065",
+      "bytes": 1656,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 2,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00004.npz",
+      "sha256": "fcd10cdaa3cdda5f5b0b040479440ac0bf79122b8a16eb273772954ce8e2594b",
+      "bytes": 1533,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 4,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00004.npz",
+      "sha256": "424bcccee51a9eb1882728a66e7ce0985ba5bb29f1468c33c75802a1d284b4bd",
+      "bytes": 1540,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 4,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00009.npz",
+      "sha256": "0dcc9dc748c7e4f298de20eb9562ba9646fdfba52fb0f791c9633545b7bb40b3",
+      "bytes": 1881,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 9,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00009.npz",
+      "sha256": "14fd69470770da75888c7a65dfa74db0ff61fcbf875d7e3dbed79592e4b97564",
+      "bytes": 1854,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 9,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00011.npz",
+      "sha256": "d60bf200f88b399be887ac78a407a6eff52b689f7ef97f728687110a8e12cbe8",
+      "bytes": 2554,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 11,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00011.npz",
+      "sha256": "f3f7332d07e0b17357dfa91baf36c6ab80aca4bb9ecf296bf4d1e7429ba92c62",
+      "bytes": 2476,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 11,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00016.npz",
+      "sha256": "f298f032beb23679e8d36bfe1cb975cf2a921dc4ee083bfd981dae61500ba154",
+      "bytes": 2348,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 16,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00016.npz",
+      "sha256": "841b2c83aff6b93b0f4d7d1a8da496b6e0aa4a00332f5e5a4addd85e3f5b3127",
+      "bytes": 2326,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 16,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00018.npz",
+      "sha256": "18caa23b0fd5c882b381db66708277f4506b416a5a0798b767dbf891fcec47e9",
+      "bytes": 2375,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 18,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00018.npz",
+      "sha256": "4f92111499ac66ba88447201b000b7473e85a9c4a0a79879a6a6fa612b38072e",
+      "bytes": 2351,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 18,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00023.npz",
+      "sha256": "84bd22f49f257766c8b6103bf343cd8ff064c843e87cc108e29b33fc9acb1c51",
+      "bytes": 2073,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 23,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00023.npz",
+      "sha256": "1ff333268740969f9a66a7180f72271a873ae0574f7cb86ab0165fbf3c80b1af",
+      "bytes": 2047,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 23,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00025.npz",
+      "sha256": "e80216b020e93ad380afeb633992007c03fbf05cb6988c483cd3f47dd28ee047",
+      "bytes": 1783,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 25,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00025.npz",
+      "sha256": "6392f03c95d8b1ec1f0f4db2891e8694f6ed5e03ae5038c3e6f579500ae3a23f",
+      "bytes": 1902,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 25,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00030.npz",
+      "sha256": "e3dcba6a1fe33eeb379fc5da979870c7153da2d30594cc43ca6f0eac424f0d3a",
+      "bytes": 1925,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 30,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00030.npz",
+      "sha256": "07d835ad94fb2e9474cc31bb8e3a7966b4482bc7e97605aa79a5539b11b1e890",
+      "bytes": 1728,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 30,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00032.npz",
+      "sha256": "f0c3d3e675d94de67f785df22616fcae1b7c337854c97232fd09ee130247a33d",
+      "bytes": 2120,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 32,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00032.npz",
+      "sha256": "8199671f1aab8396bbca33f717911deef97bae8dba644fe71a0c1232a6163cea",
+      "bytes": 2145,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 32,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00037.npz",
+      "sha256": "9e690e2a987bdfbffdc3cc15c78c87d5abad7ef1f915c737e82a5f897fb2d7cb",
+      "bytes": 2179,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 37,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00037.npz",
+      "sha256": "25d244cbee9d52c4b95f42dfbf22c32fe5a2cca8d67fc8883202dd0a15ed517b",
+      "bytes": 2185,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 37,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00039.npz",
+      "sha256": "dbdcd9da0f88af16aa2dd027489505b76d8bceb54da4a6429da4ff18263bdb2f",
+      "bytes": 2452,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 39,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00039.npz",
+      "sha256": "7e32a4e73056d4297f287eda20ae6d257b09b61e3b0024f905d255411b481023",
+      "bytes": 2415,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 39,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00044.npz",
+      "sha256": "bb2282f27971fa4e232f84c65be7d166efb6d376c6fd1ca90eaa905bd9ba2c1c",
+      "bytes": 2450,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 44,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00044.npz",
+      "sha256": "7c794db71cfe2761cc24e5b032e25e1f870c3b228859a5b89bae9a92c1af87ff",
+      "bytes": 2443,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 44,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00046.npz",
+      "sha256": "2df8a51246bc0c18d6235f2109f01fb780c779524e74bd17ea81e5acb1f0c726",
+      "bytes": 2467,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 46,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00046.npz",
+      "sha256": "a40485ac1ce80138c5145789e5a34a8cedd7aa078e1b39788f8b9f40c68b06a4",
+      "bytes": 2437,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 46,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00051.npz",
+      "sha256": "64762fa466345e2c53e64d3407746b7a96ec1aae4ba878a15dfb1d277e00f454",
+      "bytes": 2537,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 51,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00051.npz",
+      "sha256": "357981214705d5014dcffc28b98a25329f207164d7b40344be4883c18ceb302b",
+      "bytes": 2464,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 51,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00053.npz",
+      "sha256": "810aca26ec77c858d65acae03e418ae73e384649417d34bc51d6cb56b7216757",
+      "bytes": 2581,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 53,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00053.npz",
+      "sha256": "b95219a67499ff24972817af87c8c01e3924c0e389162526dac7381db996a522",
+      "bytes": 2526,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 53,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00058.npz",
+      "sha256": "146746306e912a418fc34b9ddc9dd05137a68676d715eb91075fbdf19dd1c586",
+      "bytes": 2482,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 58,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00058.npz",
+      "sha256": "da3e150e8fe91b4b36328f1addf44712f09ea9c65a51affff10a87d7bb791076",
+      "bytes": 2492,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 58,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00060.npz",
+      "sha256": "991c573372972c576350c4a17f825c062dc8453e5e425154d61bf7a1187db283",
+      "bytes": 2553,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 60,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00060.npz",
+      "sha256": "5c1f782f8726fb720d9e8ca2cd8392feb72e487ed5b274c1fe8638815860a29b",
+      "bytes": 2532,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 60,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00065.npz",
+      "sha256": "ec52fba5253bab21edc65e26b5946d5a0c8222c4412ccf6d9e5941d92c210ddc",
+      "bytes": 2467,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 65,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00065.npz",
+      "sha256": "9ce982a1b1be3adede0688155afc93b9c84cc90de33fcb7665b6f2b68c21a66a",
+      "bytes": 2403,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 65,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00067.npz",
+      "sha256": "078af040b7ace0b22a5b75f2d3920793b17d8149d817cc76b50da1a8b057edd4",
+      "bytes": 2346,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 67,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00067.npz",
+      "sha256": "87e19625b29589bb90584aa30351ee31b3f238ad0970f4038c107f1a706a060a",
+      "bytes": 2318,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 67,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00072.npz",
+      "sha256": "a1d2a760a9dbf68519317c12c13f60f348f007eb7c6915c2ea713f24da2e3d68",
+      "bytes": 2419,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 72,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00072.npz",
+      "sha256": "de004864f03e1d89e6752bd7141e0336203fd5bb9d051216517b66d05937fb81",
+      "bytes": 2384,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 72,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00074.npz",
+      "sha256": "911bcc8c6808672f5e44e7b1bf536364a740d579507834527fadce85e2b34bd3",
+      "bytes": 2336,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 74,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00074.npz",
+      "sha256": "424e563293e8eec1af4aafd611c12dc906c56d15092c86805d914fd866888f30",
+      "bytes": 2284,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 74,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00080.npz",
+      "sha256": "a5e33e9370594b85571a163f4b5303b9d01a51325af1ed238e75694ec6315ce0",
+      "bytes": 2611,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 80,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00080.npz",
+      "sha256": "5fb877ce066e6e00b7c6ae9684d1a25e8e2125afdb1c3fafed884c962b5cc24e",
+      "bytes": 2609,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 80,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dogs-scale/visual-00082.npz",
+      "sha256": "b63cb3e16ad93a4f94510c65ee84418a87919bb2bcceefe2944ddebc363d6578",
+      "bytes": 3133,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 82,
+      "arm": "visual"
+    },
+    {
+      "path": "dogs-scale/logit_only-00082.npz",
+      "sha256": "b6041927697d0b9f85dfad6de403145a8a1245e3a7763ecbce16e15baa326a20",
+      "bytes": 3120,
+      "kind": "prediction",
+      "sequence": "dogs-scale",
+      "frame": 82,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00002.npz",
+      "sha256": "32975c286e87fc13e2a28c0999fa7b14af9f67bb1057230626504dcf25efb051",
+      "bytes": 1041,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 2,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00002.npz",
+      "sha256": "eff6bb8c478ed52ac879fe004071f8a3b8f629d0fb96ecf66d2436683ae0ffae",
+      "bytes": 1050,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 2,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00004.npz",
+      "sha256": "d92f18d1cd9d8883dae839ec9dcf286f5be8da8027fee3021b71466a83aae73d",
+      "bytes": 1038,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 4,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00004.npz",
+      "sha256": "b7f383b962dd2334a7e456fc5afc32a3c7ce32dbfe4fe94c598f1e55c4cfb9b7",
+      "bytes": 1035,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 4,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00009.npz",
+      "sha256": "57c23dd5dd9c29530699a224a8020787af896cc3241b6abde30720235cc4db1f",
+      "bytes": 1023,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 9,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00009.npz",
+      "sha256": "487810c8034722e54d2b8dea6f1a96a45506b83f21ef47decbcb64be3d5a6730",
+      "bytes": 1037,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 9,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00011.npz",
+      "sha256": "f51def62a5933b2ab9a55b2fb71f931933224379ae971bafad2389d0f60f0ca2",
+      "bytes": 1024,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 11,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00011.npz",
+      "sha256": "f1dd2dac7a6f31705b0a7bc7e1edb026532625167f5f44f21edf957b002a31c5",
+      "bytes": 1024,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 11,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00016.npz",
+      "sha256": "7466a441306a3a2724bca4bc3effcb34a2c9c20924a3daabd013b50b7aa4897b",
+      "bytes": 1030,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 16,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00016.npz",
+      "sha256": "0906a12397939f4eb7cb433b7184a428e8b7ed463f84ae08312913abcc220cea",
+      "bytes": 1031,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 16,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00018.npz",
+      "sha256": "4b9c97e782d9e9782efb805bc9b837559296b14ab1f07506b80d0e963754122e",
+      "bytes": 1017,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 18,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00018.npz",
+      "sha256": "1bac98639b056e506539b0d8a3e9028b3dbb76e0ecaa993dbcc9d406c02d136c",
+      "bytes": 1023,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 18,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00024.npz",
+      "sha256": "5973289cf1bac0905f0edf0f26f7727c174998c9e97d48b050836190dbe37539",
+      "bytes": 1025,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 24,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00024.npz",
+      "sha256": "f1075ed1f1cf89852c1022d3fac26180a7c0e10ccceadb5bb77c5c2df5ba7ec9",
+      "bytes": 1022,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 24,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00026.npz",
+      "sha256": "a4b658a23eec9766462fe678ae95060995f4d6664b0ff8cfc77320ecd40c280d",
+      "bytes": 1019,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 26,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00026.npz",
+      "sha256": "0ef312206884cf906a6ac34f5d534a3e9a07bc0a62038e9ad8b426692e72ec12",
+      "bytes": 1016,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 26,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00031.npz",
+      "sha256": "ed6f84b138c60b9f6a4185cdb47d9b7352abf67fac06565eb46b294d6ca23468",
+      "bytes": 1218,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 31,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00031.npz",
+      "sha256": "2353ec7202285b57f4dc2e345070d75c5123272146dd6074624fb06ce137d860",
+      "bytes": 1221,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 31,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00033.npz",
+      "sha256": "fcaeeb05da655c5e66c9a4a34b3491ffdad3b27b3394ed86ef021d31dd73f9e5",
+      "bytes": 1216,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 33,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00033.npz",
+      "sha256": "e6216072818d1d51d32edda91b8abd93af1fd14e20f173ff51b018fa520076d5",
+      "bytes": 1222,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 33,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00038.npz",
+      "sha256": "ed9652924e34952a7175940ab70aad033f38879b855ac318dfc47f90e1be754e",
+      "bytes": 1323,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 38,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00038.npz",
+      "sha256": "fc5fdf186b164c2abd557540c60056d590e3eb63420d9e9824f80944064f3611",
+      "bytes": 1334,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 38,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00040.npz",
+      "sha256": "0596944885670d5afc5364aff09aa287c7b69905146d4693e841d6bdf80eecc5",
+      "bytes": 1294,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 40,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00040.npz",
+      "sha256": "08b6f963c3920653fb94d17efa91af787e5755664258f65aa6b96f098bc032b2",
+      "bytes": 1297,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 40,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00046.npz",
+      "sha256": "839bf1382c82ec5fe81fb6e550a30ee82cb0455cb0f6f555f78c489f753cb52c",
+      "bytes": 1192,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 46,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00046.npz",
+      "sha256": "e7ffb74a3386b407e7d3b2044f0dbe3bae79deb9bc9890fd9aa52dc25bfaf84f",
+      "bytes": 1181,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 46,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00048.npz",
+      "sha256": "58786f28d1600143576ec8cd9d857c0f5b045b6885042f690ac99a1fabb270b1",
+      "bytes": 1195,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 48,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00048.npz",
+      "sha256": "8d9bfb07a60ae91788449037772ea627d61dad273e5c8dcc04f71d3d6b37d644",
+      "bytes": 1201,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 48,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00053.npz",
+      "sha256": "25716850f39f2a38e5fe0aa37e8329778838964fb803295df64aa6a134a3b9f4",
+      "bytes": 1126,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 53,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00053.npz",
+      "sha256": "117e84f839fe2d818c327f2974a26c9ab67780883835ab0bb644fd75999dfd6b",
+      "bytes": 1142,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 53,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00055.npz",
+      "sha256": "20ddae04a60aeeb3af756101ef8978030c48672b4c07061b04e478cf6f258bb8",
+      "bytes": 1095,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 55,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00055.npz",
+      "sha256": "8d0032632f532416e081e11c88fa854033e57d33fabe18e62b403db3f7665919",
+      "bytes": 1081,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 55,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00060.npz",
+      "sha256": "eda0a59e9c443925ad1a14143ab379e2cf63b52b088759a535b141bc92c2e8b6",
+      "bytes": 1063,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 60,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00060.npz",
+      "sha256": "21a402d9ae82e7732ae65ce0f6ea0784c247413970fbeca593cd0240eabbbfe7",
+      "bytes": 1051,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 60,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00062.npz",
+      "sha256": "297c5b534e12257c990bb9ecfe47cb8f3c6ed60f0029f92b38eee9f14de047dd",
+      "bytes": 1041,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 62,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00062.npz",
+      "sha256": "a580b000b385c37d3cf2a292f49e6bab0cfb32d8c2faddaa4d22b63aa2903956",
+      "bytes": 1036,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 62,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00068.npz",
+      "sha256": "9f54739ec14f02921814d019b4cec77d33196121623c35d8a3839541092ca7e5",
+      "bytes": 1152,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 68,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00068.npz",
+      "sha256": "5803ba53e4d35e76a6a5d9de3bfa7dd1defad6066891a301aaca4ee54031dafe",
+      "bytes": 1150,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 68,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00070.npz",
+      "sha256": "3da7265b97d9edbf087a08e71797d7dfd4c051ad99ffe61322ff110b160e12e9",
+      "bytes": 1195,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 70,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00070.npz",
+      "sha256": "4cd61cc129bd80f4d6b1a1768178d4d1351afb3945c0c5af012915ce0ef30513",
+      "bytes": 1200,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 70,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00075.npz",
+      "sha256": "f2e100ce03a3cd816d035b2ba8a023f9673cb4b1e6a219d778bb6cca657c3ffa",
+      "bytes": 1201,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 75,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00075.npz",
+      "sha256": "b48bafcafc92599f9a209c1d7b25e18734d68fc6bec21a0ffae8da0437eebe1c",
+      "bytes": 1145,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 75,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00077.npz",
+      "sha256": "cca47a566658674fd832ba766044d17761a36dc415519f7c753d38c39da7b7f2",
+      "bytes": 1137,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 77,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00077.npz",
+      "sha256": "d9e45c39119fc1df27342c96e5df3998d4aba2db267fc55549c5ae0572e2ff20",
+      "bytes": 1137,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 77,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00083.npz",
+      "sha256": "78c16f2aa981b2c0612957291b6d29016a5cca8a115b2ab0bb89673696d15a74",
+      "bytes": 1435,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 83,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00083.npz",
+      "sha256": "e7e56e27827b59af552699b40e87b2c384ec6454f510d03d08f8e26f75d7345c",
+      "bytes": 1401,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 83,
+      "arm": "logit_only"
+    },
+    {
+      "path": "dog-gooses/visual-00085.npz",
+      "sha256": "b2bf28148a5c0d6f1bd332fc0b9029143d90ce78dc41c894ab28186535f3239d",
+      "bytes": 1554,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 85,
+      "arm": "visual"
+    },
+    {
+      "path": "dog-gooses/logit_only-00085.npz",
+      "sha256": "0f5f0e33d9e76ab2b004a901ce3b25c24b19f2ee4ee389b8cce2f7e6ee2c2268",
+      "bytes": 1558,
+      "kind": "prediction",
+      "sequence": "dog-gooses",
+      "frame": 85,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00000.npz",
+      "sha256": "751e7524427c5f390fe66389261818e5ce8153d341a5565e2d63dbd8aa8510f3",
+      "bytes": 5415,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 0,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00000.npz",
+      "sha256": "751e7524427c5f390fe66389261818e5ce8153d341a5565e2d63dbd8aa8510f3",
+      "bytes": 5415,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 0,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00001.npz",
+      "sha256": "9661aa7abe42cd285eca4d172bd14b0145a5b1d99c722daf459e4c5a6ede2e74",
+      "bytes": 5663,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 1,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00001.npz",
+      "sha256": "3f02213c2a3cc41542dc60efbd851aa128aaae1024443e27bd98fdb8d0a2a366",
+      "bytes": 5313,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 1,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00002.npz",
+      "sha256": "83bc5f5e4b6fece3d5b2218e3b07c48807f3a95477e2f8192c2d606fcc658a41",
+      "bytes": 5292,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 2,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00002.npz",
+      "sha256": "a8df7007da1565e4ab0c4dd7e3ce77213c36785f763af7f1cc2a8cf9315c5f2c",
+      "bytes": 4997,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 2,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00003.npz",
+      "sha256": "be3b2e727dc1f1c9cd372dac33fa11421763a0f62f953d0f4976df894af939a0",
+      "bytes": 4839,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 3,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00003.npz",
+      "sha256": "1b1c418682997a6cd545373655d7e1f3d4ce820648acbd9370c18104233c65f6",
+      "bytes": 4725,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 3,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00004.npz",
+      "sha256": "ae5fd645c9f61ab1dbbf8c5b8f08abe862326d8e26cf6016a77737525b36f187",
+      "bytes": 4948,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 4,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00004.npz",
+      "sha256": "bb9798e9ab00bf8f39f23c0233dc9c79e79f79057243a3361c94e907800ef0e3",
+      "bytes": 4830,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 4,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00005.npz",
+      "sha256": "6ce6a0ab0aa6b5cb50e208823880aa119e6490437f01f0d83692dd8aaa41ceac",
+      "bytes": 5013,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 5,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00005.npz",
+      "sha256": "292f2d24c9ab45b4e00bffdb539868319ba5fc4b9dda099595deed4463d98c12",
+      "bytes": 4772,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 5,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00006.npz",
+      "sha256": "052ee111426fa34980c23abbb6de9a52763f4ed220191afd52a118d020b87b91",
+      "bytes": 4842,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 6,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00006.npz",
+      "sha256": "6ec32fcbf5708febd22b1c32ad426a3b6a8a31d8113fb41b89b36e7b525930a6",
+      "bytes": 4676,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 6,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00007.npz",
+      "sha256": "36f5d074cc00e7b7f7b88da89c9da6c0b6affd2a2b2c6ab068cd7a4e0261d1f1",
+      "bytes": 4659,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 7,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00007.npz",
+      "sha256": "0d6a91ad308da2f37a1d7d7b28d3baced6c9aa383173abfa3ae8a6e7cc4acc5b",
+      "bytes": 4515,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 7,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00008.npz",
+      "sha256": "66b7c6e7f930604be208ec1162fff3dbff1cb96a948c9b515281cd0f8eea91d7",
+      "bytes": 4596,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 8,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00008.npz",
+      "sha256": "4fd9f458e97f53e6172ce96116f1ad88438d5109b2fe8008505851286205a882",
+      "bytes": 4438,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 8,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00009.npz",
+      "sha256": "01667b84433340eb6ba4ade7429aa2fa93b307bbef6283d93e6cecefa2f56b13",
+      "bytes": 4535,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 9,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00009.npz",
+      "sha256": "c2a1a9690972387db652e4d1cefcd946d6a596e1ae1420437a5aac7d3e4e6807",
+      "bytes": 4308,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 9,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00010.npz",
+      "sha256": "2a1a930e82c0ad8522aa599d2964ebb0eedc7bb80168f8a2e34b3715be05022f",
+      "bytes": 4353,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 10,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00010.npz",
+      "sha256": "88e94edd07b53524d933f714013756122371fbd0effe2fefd31b08d7e9547410",
+      "bytes": 4194,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 10,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00011.npz",
+      "sha256": "b0d54cc083444e2874176c2a41098dec0ef5fb0b3f52013af1a9e64a444cc1e6",
+      "bytes": 4372,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 11,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00011.npz",
+      "sha256": "7969edf229d2b4deb8eccf0d0c365e6020a754f79a67248ddbd6446263aebe3c",
+      "bytes": 4149,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 11,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00012.npz",
+      "sha256": "72c35a06db0cb4f8e662b82ecfceaba909a6a6a488e1cd8886cd69494181d6f0",
+      "bytes": 4627,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 12,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00012.npz",
+      "sha256": "eaec807863d93eea4805099318add207b4c0b4f6042b23606108059a5b3d75ef",
+      "bytes": 4440,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 12,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00013.npz",
+      "sha256": "b2fbd561a61a2eae73816289bac47ebbad0cb81824fac9162d2c4ff3250ba257",
+      "bytes": 4306,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 13,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00013.npz",
+      "sha256": "e7d6bf1aaf0eb5480ca233be65014d4502d9da022ea874b1a04bdb6e8a2b178a",
+      "bytes": 4134,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 13,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00014.npz",
+      "sha256": "5978e46a4f7ddf30a1eb8439db5d85bf0ca2ab936c66e0757c8d12c665a2bcc8",
+      "bytes": 4217,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 14,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00014.npz",
+      "sha256": "47b010f00940ad8f31809e030fed7c55d834cae372b493966fc74e6df6dcdea4",
+      "bytes": 4116,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 14,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00015.npz",
+      "sha256": "cdec020935221aa28336c6e380ab800eb7b15c34c57834bb56578c21352cdbc7",
+      "bytes": 4400,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 15,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00015.npz",
+      "sha256": "07073a549d4090e2bf0e9f0dd411e9105e1e933c52977ac9723cfa4440a1da6e",
+      "bytes": 4160,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 15,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00016.npz",
+      "sha256": "f20b285855c2bd8bb6d1843fa7957810d087b7e145de8bbd90a27a30953ecc4b",
+      "bytes": 4372,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 16,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00016.npz",
+      "sha256": "a9648492ff66993783fb3807bfc6aefa71de448602c26f07564f50c07a319c9e",
+      "bytes": 4192,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 16,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00017.npz",
+      "sha256": "0b72582b9250f464f0860e0ef52096f311828b9813f25bc5683571310cceae04",
+      "bytes": 4518,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 17,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00017.npz",
+      "sha256": "9141999a9a13af352084e140e80351182d307e84c7443382b72584518d90377e",
+      "bytes": 4266,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 17,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00018.npz",
+      "sha256": "bb72d3249c1217738106559fa906a3be6273e6d746573515dc886a7a614e6bf7",
+      "bytes": 4683,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 18,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00018.npz",
+      "sha256": "158e76821dde8569fd72f28e2b967cba3402b6df7c53d97e5d81b1c8390583e1",
+      "bytes": 4386,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 18,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00019.npz",
+      "sha256": "2f9b4b1fefd0324d18af8e25b7a510ced45d470461a43ccd8ff740678f7efa3c",
+      "bytes": 4684,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 19,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00019.npz",
+      "sha256": "2c95b573a54350b94fb4113ba181291d9ab5f82db32585d7deebcec2311b653b",
+      "bytes": 4518,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 19,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00020.npz",
+      "sha256": "acc7280e7d4923b5935f9cd5d46a568306f33fee48db5f2a829cdd381d0d095a",
+      "bytes": 5007,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 20,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00020.npz",
+      "sha256": "d967f6748bc622902e244a10e1bcf75a4605fb37f87ba13a30cb5a3c7c752daa",
+      "bytes": 4627,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 20,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00021.npz",
+      "sha256": "209d7a1f9383cf9e8665791eee2b35a0d36220b610789bbab07775523d6debbc",
+      "bytes": 5732,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 21,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00021.npz",
+      "sha256": "d2a13469908f4fa3461b0e182f54a5aaa092abad38de4e185996e274c1c3ba78",
+      "bytes": 5141,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 21,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00022.npz",
+      "sha256": "7a74b80bf610d87a9ebdd80818178c46cf3e8fa7e3d3eaa9fa0c0cc547de182f",
+      "bytes": 5973,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 22,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00022.npz",
+      "sha256": "fd74d378e5bf37c424ecb996439f4fcd6179acd18fa3d0be105904adebec40da",
+      "bytes": 5736,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 22,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00023.npz",
+      "sha256": "16c27bf2e5dcf2cb2bca97655cca925cc80bc4186692ba9414e0e93711cd3af3",
+      "bytes": 5668,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 23,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00023.npz",
+      "sha256": "3507488edb98f21fde8d620da1fe73091a6ce1f1513fce5b785981a7725e794c",
+      "bytes": 5379,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 23,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00024.npz",
+      "sha256": "6f5ed482e1a592b90392654f6038ae3f0febe0c49f33aab616a676a932424e14",
+      "bytes": 5421,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 24,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00024.npz",
+      "sha256": "b512656b80e64ddc9f53bcd3d5a8e333f22b1734d29c430ef427f3a5a9796351",
+      "bytes": 5328,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 24,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00025.npz",
+      "sha256": "bad1458e1fbed85034da9dc2ba28ea2b37a38aa036766efaef45f1b52d52c189",
+      "bytes": 5534,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 25,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00025.npz",
+      "sha256": "bd132905a4d2fd1b2f4d200e902d6f9aae88f5c6d91bd69b9986163411e20548",
+      "bytes": 5277,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 25,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00026.npz",
+      "sha256": "2e68bbb0e1176cc261858560f72e8747e828039e32ad533ff2a39aaaadfe0147",
+      "bytes": 5887,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 26,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00026.npz",
+      "sha256": "5b50fb10cd0902292a41fcc4abd72f4f2564d661feeccf58a84a0c4435469d66",
+      "bytes": 5749,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 26,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00027.npz",
+      "sha256": "6427681d8c28f22e6e589496fbbbbed181c763e63079ecd3d34945db02e28696",
+      "bytes": 5719,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 27,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00027.npz",
+      "sha256": "f7ffcaf7820ba1847c4d8986b7e905aaa80e1bfed80af35dbeb9bf2e32479b8f",
+      "bytes": 5520,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 27,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00028.npz",
+      "sha256": "3f5a2e40530b1807e6aa86cc179d46481503fefd90f7f5640ce67d0c23b338bb",
+      "bytes": 5841,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 28,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00028.npz",
+      "sha256": "9ad14db246381bf84a6d11d8a023bd233c7156daa65185cf75e234f7cd1e086e",
+      "bytes": 5697,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 28,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00029.npz",
+      "sha256": "df5cdf8e79c8c503c86aff76f5c8dc3d8ad1d09f5df2e3d182c34c2e25793006",
+      "bytes": 5355,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 29,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00029.npz",
+      "sha256": "0f5f3d9222323026b2975931ea0e034585355a70b69db58e14938a3680ab4658",
+      "bytes": 5270,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 29,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00030.npz",
+      "sha256": "23ee1eac53475a9b791a828aff9751d36a2f5aee7839caac68353778c76089e4",
+      "bytes": 5143,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 30,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00030.npz",
+      "sha256": "6950dafab80135c42ac553fb6d8992e5226514c8cd3495455a78656af2116920",
+      "bytes": 4961,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 30,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00031.npz",
+      "sha256": "abccb16c524868bb1d7c1021e5496199459f11b41210781e95be1d46c4240733",
+      "bytes": 5084,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 31,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00031.npz",
+      "sha256": "6b07c99b10b1cd48a7fca6ce7972a01831be6c5d80555dce5b01fd2832b08097",
+      "bytes": 5002,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 31,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00032.npz",
+      "sha256": "d5b2d1187b2ed719a9a25b847670210ff35df3888c0d7bc36f2ab347da86a0fd",
+      "bytes": 5055,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 32,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00032.npz",
+      "sha256": "6fa76379e27f526489a53b8026b29b99404d31fb9a3abb9a6cf627c02e0720c4",
+      "bytes": 4974,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 32,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00033.npz",
+      "sha256": "b84d7fbc967a6311e5b7b8426ac093a0bb8a48dd5385a32e43133cd457d59aa1",
+      "bytes": 4998,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 33,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00033.npz",
+      "sha256": "b6b4860618827259932039b95002f12a1405e01c7daa21c371f83c7b7a6ad061",
+      "bytes": 4851,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 33,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00034.npz",
+      "sha256": "f8e1bc280d29ee629402b0d1d9fc8c0dc70cde8a74efbd024a82aa3bf26c15b8",
+      "bytes": 4979,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 34,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00034.npz",
+      "sha256": "cbdebf1b857a2185da4a9c1eacbf8e98a28a83c5308c23a5bb4c199d36a75e44",
+      "bytes": 4872,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 34,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00035.npz",
+      "sha256": "efb5dd475a85ec212597cde4bfced2c1a442425c159dd3441813a4d5c859fb7b",
+      "bytes": 5096,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 35,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00035.npz",
+      "sha256": "55fb925cda6cc9ff8527080b2df82af23785a3cca83cdc36e7f3b7b66cd557c3",
+      "bytes": 5022,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 35,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00036.npz",
+      "sha256": "2b829b67e5d3d12793ce7d5ce105a209d7a620ba2b022b53a1b1540b54e66506",
+      "bytes": 5058,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 36,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00036.npz",
+      "sha256": "fcdc6ad2efedcab6831d129da2ffbed0c71cfb26a1b6ddd5c5fe69234df030f0",
+      "bytes": 4871,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 36,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00037.npz",
+      "sha256": "cc3a0f4c1aa2041c72b2f5bc968730ad2a0392c5a875982ad549688635877b9d",
+      "bytes": 4998,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 37,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00037.npz",
+      "sha256": "36bb559058c461e36f8f7ad06ba889906db055f5149a1ac618de7c829b00d468",
+      "bytes": 4963,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 37,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00038.npz",
+      "sha256": "575a13536624e9f9ab139c4e49b6a8a4b69ca17f126ab14886c50f20346140d6",
+      "bytes": 5051,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 38,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00038.npz",
+      "sha256": "7a20009651e6189429e2a0f2151761ac4424ed2aaac3cc463292927048b0f509",
+      "bytes": 4936,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 38,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00039.npz",
+      "sha256": "1c50cf586c556dd895409ed736419883fe88b993737cc04c90626a5ebf39104c",
+      "bytes": 4906,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 39,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00039.npz",
+      "sha256": "c80a6d0d389c2eb684b1ee2bf8e36486a0e05595f58e471490c82a62b4a1a34c",
+      "bytes": 4917,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 39,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00040.npz",
+      "sha256": "4a4e97ce683993c65f9b8b47c78bc876f7bfcfbce4c780b614469fcb4b759e1a",
+      "bytes": 4836,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 40,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00040.npz",
+      "sha256": "cd4b835d6deb4b7e208dd6e1f8572ab624c587a55df9f874f00aa3316659e783",
+      "bytes": 4832,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 40,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00041.npz",
+      "sha256": "3e321ffdbaa030a676d0b511e4e5a1613fa7b9ab25ca9228bc3d79c27bbcff10",
+      "bytes": 4910,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 41,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00041.npz",
+      "sha256": "25082a1b3c956e4a8835f82b878b8b1b07c14a683ec9749a39f2f79909528c7d",
+      "bytes": 4787,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 41,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00042.npz",
+      "sha256": "37ebe82815ae4756d08582db3015ee30b53bb2b19f8fdfefc98f9e79c461089e",
+      "bytes": 4890,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 42,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00042.npz",
+      "sha256": "087094f7324da3999abc2702525840aba9566c76317c7f35c44ad3f00578e8a2",
+      "bytes": 4769,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 42,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00043.npz",
+      "sha256": "87b995e1f847a67cf368340d70d6b06c9cc4ca916415dd4c7b3b4d428c256ba4",
+      "bytes": 4879,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 43,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00043.npz",
+      "sha256": "9b8a649ee6e0b5c5f75a79580b2ddb624c5f3f0e58a003e3ba5a3066890467d4",
+      "bytes": 4732,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 43,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00044.npz",
+      "sha256": "1617ff7a62008850d534d7efec518972d7f472fb3bd351996ce4ad6cfbac3709",
+      "bytes": 4886,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 44,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00044.npz",
+      "sha256": "a16e19c8a540f3f3e8d378ea1cc9fd33e6d40f5b7d6806079573838222be5c1b",
+      "bytes": 4683,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 44,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00045.npz",
+      "sha256": "cfc9ffdc5a961ebb6735ffd5d21cbbf9f1da54c28a2b2a113e2cd194557e73fa",
+      "bytes": 4886,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 45,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00045.npz",
+      "sha256": "c1ce479f772caa07ce8b80e3157ee057baab821634d532793aa9b4034db16bef",
+      "bytes": 4744,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 45,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00046.npz",
+      "sha256": "b1226e58af700fbf6f99ca2714ae203ddb2d182f8ebcbfae88bbb8ae16007637",
+      "bytes": 4967,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 46,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00046.npz",
+      "sha256": "2a9f34f71473ff3423a0a74a89d7efdf5ca7e133a8a09db22dfc737cdf0637fb",
+      "bytes": 4754,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 46,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00047.npz",
+      "sha256": "67fe460a4595fbb6e0b328cc0ea644d2e4129f894823361d20a2868d0ce88f1a",
+      "bytes": 4954,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 47,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00047.npz",
+      "sha256": "bec31fd406de1068e8caa61c3146e5852b415e28d2e178dbb45da09fdd1c5fed",
+      "bytes": 4743,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 47,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00048.npz",
+      "sha256": "2b1d8de3a35824bc80de0cdfdd0f03e72f34590b6a5b5e5b6a6602be189bf192",
+      "bytes": 4986,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 48,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00048.npz",
+      "sha256": "da943c9fd61310e04bd2cfe54f8b80d84e3ca77a0687d27770588d4f2524bc49",
+      "bytes": 4740,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 48,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00049.npz",
+      "sha256": "32bef5356983eeff604f21776f0d05444ab74e41f817fa8690a9bb130c91f7a6",
+      "bytes": 4884,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 49,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00049.npz",
+      "sha256": "bb16b0a7950267a238f2e765b0d809aa8c0b6953baa5e73f441556bd7d46d6ae",
+      "bytes": 4739,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 49,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00050.npz",
+      "sha256": "d78da19b5ec762dbf2dd39cebee79237d9523485b436db3a389585b6bfc6f5cf",
+      "bytes": 4916,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 50,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00050.npz",
+      "sha256": "92238b94ceba3d54ed911dd4ff03a3ee0adf15bd45928572d1222db4b8808d2b",
+      "bytes": 4708,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 50,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00051.npz",
+      "sha256": "8b673201530498a9c6b96f03d05efb2747266f9b9f187e5f3d51586c16eb6fb1",
+      "bytes": 4814,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 51,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00051.npz",
+      "sha256": "27362d12b22f1ba0db8aca6dd94fb820f25b66114c3766853d7e94e8522b122a",
+      "bytes": 4677,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 51,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00052.npz",
+      "sha256": "34a4ee5f45028cc94e9dbff87ec8beb988e1ceb731f9d15fd304a4c398c6befa",
+      "bytes": 4941,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 52,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00052.npz",
+      "sha256": "3c58966d5d7a46f2ca33db016e4a7be69706c3a29c0b0ac3fdcd85f5ea782047",
+      "bytes": 4720,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 52,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00053.npz",
+      "sha256": "720b5ec3859b26ae8ab471fe87f02bb3d9bc3f532ce18a1bddbf7a10b8663f40",
+      "bytes": 4836,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 53,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00053.npz",
+      "sha256": "3cf7b57b47d1ef78ca94ece80b12bf1e914a7c9a801344b784e3c482dcc37511",
+      "bytes": 4739,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 53,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00054.npz",
+      "sha256": "4f5efedb3b86fbc0b8317269da4f4b8c10174bd419b5dc49baa3f4e110113fd4",
+      "bytes": 4878,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 54,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00054.npz",
+      "sha256": "0fcd76d9f6cbfede4c16c3dd62c965131557d2633586077b45be714a1b182205",
+      "bytes": 4748,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 54,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00055.npz",
+      "sha256": "6212ab12e6e51cdcb12769cc53eaaba0d4cc47f4538b1ab49ee618b835c16835",
+      "bytes": 4884,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 55,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00055.npz",
+      "sha256": "ac20fc110e7fef3e492ac2e3588505682f904d2fa26b0f8d238f33a4fdb53c29",
+      "bytes": 4735,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 55,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00056.npz",
+      "sha256": "308f4869702c926903cb38bb8e3d8dbc801b7864b9553bbb8d32631b24c8cf18",
+      "bytes": 4999,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 56,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00056.npz",
+      "sha256": "e9fcecce0f28da5b80780b2a566969e746f3d9278f710dc1115394856ac84e46",
+      "bytes": 4751,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 56,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00057.npz",
+      "sha256": "239967f6c0cadfa6feb27a1ea15bfceda5f9dd3657306e1d276ed98612fc9682",
+      "bytes": 4677,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 57,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00057.npz",
+      "sha256": "20ef6c76d169414d0341d28d366c70dd0c79bb576d7c5cf62ed1dbb64b383d9f",
+      "bytes": 4509,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 57,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00058.npz",
+      "sha256": "1cf6c141e5fc8b16abfd3a49e2e966561f3e3fc58f9f222d9f1202767dd58f3e",
+      "bytes": 4075,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 58,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00058.npz",
+      "sha256": "97990cc4442a131100abf321bb5afd66a6dae6455ec73a8d219a5c4ebcd26e68",
+      "bytes": 4001,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 58,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00059.npz",
+      "sha256": "d0fc93d301a6c141e1e7759039788299af8f79d5275493d5d08fb727e1adabf0",
+      "bytes": 3372,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 59,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00059.npz",
+      "sha256": "5d55f37f4dd7aee25ea728089d193136a8bc29fbb3668c049ad37f585e7a5675",
+      "bytes": 3347,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 59,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00060.npz",
+      "sha256": "cdfc1cbcd1b3176717f1ccbe50a3c35235295cfd865ad645382816bac0e628ea",
+      "bytes": 3271,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 60,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00060.npz",
+      "sha256": "7a10fddf964883926187190fbdb19871b5b07b0eafa11795a9bfacce30c70865",
+      "bytes": 3201,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 60,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00061.npz",
+      "sha256": "453d6535eea67fd68d1b747dcbadc3f8b514aa4caa6b072cb4602679b7528dd0",
+      "bytes": 3276,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 61,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00061.npz",
+      "sha256": "5d5c49a758f7c460d64038a6b0c88dcf3b2ba4f788f8eb5724f6e58ff23d7556",
+      "bytes": 3206,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 61,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00062.npz",
+      "sha256": "3c07d68e77e073249a6bc2215470224d88bf4d37fb0653f4d8ba15c5b3fbd707",
+      "bytes": 3595,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 62,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00062.npz",
+      "sha256": "b64d7dd279a7fbf21efa0e9987595e86408f5834584f7b437f23adad4f25aec3",
+      "bytes": 3526,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 62,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00063.npz",
+      "sha256": "a2e2f5e9fd2a151a9ccf92a4a9aebe63f8cda3ef266e750cfdc8d9e083af94df",
+      "bytes": 3534,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 63,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00063.npz",
+      "sha256": "372cc7445cbccde67c2464032f9c435fa9d1d69f9db1a9f5780664a4988e9bea",
+      "bytes": 3388,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 63,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00064.npz",
+      "sha256": "3e2b1c8bdf109a1fd180cefc2b80c97e56b8600dd30e1c243cec3c93d1f0b303",
+      "bytes": 3614,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 64,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00064.npz",
+      "sha256": "cee8521651f25fd118f0e8e6ffa8677e85b6fcf1a13ab27d171edfb40d66e8ba",
+      "bytes": 3400,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 64,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00065.npz",
+      "sha256": "f2c5595d6a7670216df0e44a429dd45b4ae181d6a8a5dabb0294c87037f6f7c0",
+      "bytes": 3621,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 65,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00065.npz",
+      "sha256": "045bbee1e9a28db3b0cbf4c1ca52fbaea3a220d61666b5e4fb09ed93a0e33186",
+      "bytes": 3483,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 65,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00066.npz",
+      "sha256": "e2f5b5ad51af2b6ec6740a83bbd056e2275062a693337ea8886c5b400cf409e4",
+      "bytes": 3676,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 66,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00066.npz",
+      "sha256": "541a439b053cb7796f491a54cb4c327c99775c46b504f7fe410f3eddc5988f60",
+      "bytes": 3558,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 66,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00067.npz",
+      "sha256": "f3c1d18b26e6cb44d0e8f95f716055781e89c65be00eeaead505b9878e7a97f7",
+      "bytes": 3791,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 67,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00067.npz",
+      "sha256": "df0b497a246e525d1a061c31488f2e75ce85aee3999732eb8033f23efeb2714c",
+      "bytes": 3684,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 67,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00068.npz",
+      "sha256": "3944b453732aa3cfc5790a31b3888d8cc99881f91cb2ed32720081d43f7b0d4f",
+      "bytes": 4550,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 68,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00068.npz",
+      "sha256": "792d6e505bf211fb74ffca96522a0ef551443a7a9898258471621de7321138eb",
+      "bytes": 4208,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 68,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00069.npz",
+      "sha256": "48a3745b8baae99999aef22c70eaafe44d15f27a32ac5b8e718f77d408964c63",
+      "bytes": 4545,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 69,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00069.npz",
+      "sha256": "184888197e62dd8ea9a36a74d1781ed932e828e9d7ba4c5aa1bdd16aa362f561",
+      "bytes": 4366,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 69,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00070.npz",
+      "sha256": "423ebc890e3d3e7ba6c54405c34a6018486c6ed8e1d6077a1b528a0a3f31550e",
+      "bytes": 4939,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 70,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00070.npz",
+      "sha256": "b22536d295f5285af7e00e1b38c1b513d72384249bc8b9d5be094443b024ac99",
+      "bytes": 4514,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 70,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00071.npz",
+      "sha256": "89f7ee8d1665dedfdb295982e50d43e10fecc4251779c5675642526eaebafad3",
+      "bytes": 4807,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 71,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00071.npz",
+      "sha256": "0b887066a6f83dd2b6fcf79fcdb6e6a6d67f16690c02c3a78d21d8f5251a86d9",
+      "bytes": 4360,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 71,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00072.npz",
+      "sha256": "67a65cda62e399fac942861abdc3a713e3a914e8a53e6daf8d0db68cde0aa7ec",
+      "bytes": 4532,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 72,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00072.npz",
+      "sha256": "b93be3aba72c4eed721f8e4309e88ef54035598bb3037be48227030f4d3a1c39",
+      "bytes": 4374,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 72,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00073.npz",
+      "sha256": "c55d4fa13c9cad54957cead480537c0852d8a0ce028546f8aca883e3ec2fba34",
+      "bytes": 4735,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 73,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00073.npz",
+      "sha256": "f9a7a8c9dd72722d9cd7f9032d6f9ff1d6768adc97f858e25ee41e181a0d475b",
+      "bytes": 4351,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 73,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00074.npz",
+      "sha256": "ab9cf507af339011e39bc6f0617e30e922b7a80c2040936a03608605bacebb15",
+      "bytes": 4803,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 74,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00074.npz",
+      "sha256": "44eb30535a6bbfcac773864439bb6991657f990440c7cf3dc3f9d163d643f882",
+      "bytes": 4241,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 74,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00075.npz",
+      "sha256": "881dbce8c093b39e51ddb21128b03670c4b48f897bde47f6d5a185ccc2f81912",
+      "bytes": 4810,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 75,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00075.npz",
+      "sha256": "37d0abe108a6a081bce7fa7c7fec8ed830f838131576998181156ea5b25d2293",
+      "bytes": 4554,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 75,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00076.npz",
+      "sha256": "0276caf6a01e0c9cca14789e8edad93036af076483a9311ab1983f6afd85f8e4",
+      "bytes": 5226,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 76,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00076.npz",
+      "sha256": "11069c20ed2bd0a630420962c12eb3e676218a07dd21ad9db52bff920348937e",
+      "bytes": 4982,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 76,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00077.npz",
+      "sha256": "5c7812e00954dd353c3ff602fa4c7119370a464ec122c1fcb59408936f9504a8",
+      "bytes": 5119,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 77,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00077.npz",
+      "sha256": "fa7671eb5e56f79d1f0ae726521424e499fc01a2577cf230ebb2b7a4165f17de",
+      "bytes": 4843,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 77,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00078.npz",
+      "sha256": "0685ecc5a8f59208011f4dfdc03163ec3911c4ea25d869093b54873fbbf3dde5",
+      "bytes": 4923,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 78,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00078.npz",
+      "sha256": "87827ee8ba3da202f7d5595cbbefb66aef07bf925b08bc1c8f6f3f3f732d5f70",
+      "bytes": 4683,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 78,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00079.npz",
+      "sha256": "0fc90dc25dee696d13fabd8207bead4ccdbbde6bd1db21bdcb919200bd905d44",
+      "bytes": 4986,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 79,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00079.npz",
+      "sha256": "fee85fb0aaa496548f07af4fad027831541947722cf55ceda977d1c6d4d72900",
+      "bytes": 4639,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 79,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00080.npz",
+      "sha256": "24bc53475b49b21ae0c617e17acca06be4b644ffb0734b9d35663b2d56a52dad",
+      "bytes": 4766,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 80,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00080.npz",
+      "sha256": "2192ae11f3b3f96924d2d1dcf2b624b897667a330bffee6bac3b5fbb25eb3e4d",
+      "bytes": 4602,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 80,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00081.npz",
+      "sha256": "38e30ba2129725853219b8a4d765bf148802530670755960fe7e63b3ea73deb1",
+      "bytes": 4640,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 81,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00081.npz",
+      "sha256": "b01d374bbcc27811d111a6fc407bd5d3ef90b8d0217823dc07761c10842afedb",
+      "bytes": 4535,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 81,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00082.npz",
+      "sha256": "901f7057de5ae2b61bb403bf0772b21533a40a0b81bcd9359555121c1f42535d",
+      "bytes": 4748,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 82,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00082.npz",
+      "sha256": "6e35df353e64d9ac5afb9071d52b5d8638140a44a4bbf0fcd611990075ed554c",
+      "bytes": 4396,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 82,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00083.npz",
+      "sha256": "dfa728027a6d9d01a2ff498ad17789c8eba16ebf11747a6002e2532bb33d1ece",
+      "bytes": 4387,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 83,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00083.npz",
+      "sha256": "ac9aff3479a1611ab87629f3a43f1b77cbceef4070c6dde362f8db2ae21fe2ef",
+      "bytes": 4338,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 83,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00084.npz",
+      "sha256": "a1500029d23c2105a1b68651843d5a0edf672ebeeac44bbc9a083d1ef7d521e6",
+      "bytes": 4604,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 84,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00084.npz",
+      "sha256": "6ccf358d78098f13f24773fc05465067bf2e324620b8cc22dbc243a9c5b43bb8",
+      "bytes": 4282,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 84,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00085.npz",
+      "sha256": "2e024adf64c43c6c3b647d65b733376e8304d2c5e9baf6a3616edf763f9ab45b",
+      "bytes": 4684,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 85,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00085.npz",
+      "sha256": "bc3d02a668612998936f4f96e0795a64660b092cf47deb7bb23325db1bf1207b",
+      "bytes": 4534,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 85,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00086.npz",
+      "sha256": "c5dc1bf1db9bf72cfb7d7bba50a767db56daa8618068cb2c42e38aa89326bb5f",
+      "bytes": 4428,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 86,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00086.npz",
+      "sha256": "ca753b5bac27fc09923d7992600519c9505e97fe6bac8d82896cf06bd1e9117e",
+      "bytes": 4270,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 86,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00087.npz",
+      "sha256": "f65f69e7802fc95abb7b9ea17a67b2e19093f10739bc5b9acbdef9adb893bca8",
+      "bytes": 4527,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 87,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00087.npz",
+      "sha256": "45eeae51801a19ea7fe8ca62a63e09551d0b764228783c1c426a57416b56db5d",
+      "bytes": 4330,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 87,
+      "arm": "logit_only"
+    },
+    {
+      "path": "cat-girl/visual-00088.npz",
+      "sha256": "853f373ce5a5a86187932daef8e9fa52e436a01eb0e5d8ebb39350e3ce2b01ac",
+      "bytes": 4569,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 88,
+      "arm": "visual"
+    },
+    {
+      "path": "cat-girl/logit_only-00088.npz",
+      "sha256": "424fe64ae246d205423ce944ecb72bc3f27331e694d9e1ee1283ab2aba4206e2",
+      "bytes": 4335,
+      "kind": "prediction",
+      "sequence": "cat-girl",
+      "frame": 88,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00000.npz",
+      "sha256": "ee29805eac10839525bb3c8ea7f31889d26e77b0660ee93503841b10d014688e",
+      "bytes": 4480,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 0,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00000.npz",
+      "sha256": "ee29805eac10839525bb3c8ea7f31889d26e77b0660ee93503841b10d014688e",
+      "bytes": 4480,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 0,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00001.npz",
+      "sha256": "4f803e26d14d4ecfe3784eab4b20a9c5f3c3c5cc9e42aa13e7823fe6aa21fe96",
+      "bytes": 4019,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 1,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00001.npz",
+      "sha256": "634355eb6f6e82e76931fad81cb60bfe434ed0f4a5194e22985020fb14345a56",
+      "bytes": 3815,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 1,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00002.npz",
+      "sha256": "11781dd45108abdce6a28c09fe832c258c5546ffc11c649fccf2fc19db873d97",
+      "bytes": 3719,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 2,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00002.npz",
+      "sha256": "ae35d0086a3b1b45bc3000def5983804cb28c6608d0438e7271431237039b306",
+      "bytes": 3740,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 2,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00003.npz",
+      "sha256": "66b11bf722f2c076cbbe40bf1c8c527e15aa2e1025537e9b907fbf36d263cbde",
+      "bytes": 3647,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 3,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00003.npz",
+      "sha256": "8503320ea7d2c175281398dc5eef1a3bebb39cae4c92ea9c844e85a31679928a",
+      "bytes": 3350,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 3,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00004.npz",
+      "sha256": "3fa4fe42c2bf8fabc5020328d187dd23be41d2f5b06623dca610b7ad6f65d4c7",
+      "bytes": 3582,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 4,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00004.npz",
+      "sha256": "d41b379eb511d419c39b8ac090d84449462c9944bbd7cb9ba2e3394862c65004",
+      "bytes": 3601,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 4,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00005.npz",
+      "sha256": "92d265bc53419460b83c8b903bfd7aff9d5e59ae723a634d4c932dae1de41d3b",
+      "bytes": 3625,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 5,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00005.npz",
+      "sha256": "66a595fc6cfbcd29b774127d66f31fbf25d73c5c98cb1253fd14efce4f3aec38",
+      "bytes": 3613,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 5,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00006.npz",
+      "sha256": "e6395ab267a62fa04f538d073921b81d1a55247dfe2b2d5266ccaa73fc8a88a9",
+      "bytes": 3721,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 6,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00006.npz",
+      "sha256": "90d8faea55e836fa3c4f8abe8b1515a89a74458b2abb9af5c5651ecd4b03c830",
+      "bytes": 3669,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 6,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00007.npz",
+      "sha256": "0acc03a9a105c0155a6ca40d8effbbf9ef2f9240071fbe5dd55ac65831e0b482",
+      "bytes": 3943,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 7,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00007.npz",
+      "sha256": "2799b60166b05eaccafc0e1a4587cda26426d59862634d5a05844acdf5b2d36d",
+      "bytes": 3816,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 7,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00008.npz",
+      "sha256": "f683c5248ca5f75b95f1bc237b9da8d19707beb2b800d637f489cd17f2931fb5",
+      "bytes": 4026,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 8,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00008.npz",
+      "sha256": "1c8841c2c1cf70ce0ef5dd13d2d655a436dcab8835f47b818e8e28ecdff1012e",
+      "bytes": 3929,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 8,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00009.npz",
+      "sha256": "4b639276d65f757693ea0b61c1a200ff918442ab163e89455c9063399926e779",
+      "bytes": 3891,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 9,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00009.npz",
+      "sha256": "867adaed1e54568a41b1193bc64a63939e8627228c811d9873cd710c9acdfbca",
+      "bytes": 3832,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 9,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00010.npz",
+      "sha256": "210ebce8195cace548e639985108135a038e06bcd75517f721307bdabd42bb8c",
+      "bytes": 3830,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 10,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00010.npz",
+      "sha256": "d17c0e7312832e9bbdbf64b71b3e7e30f0018b047ba9f4f38c15656610c34d46",
+      "bytes": 3760,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 10,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00011.npz",
+      "sha256": "7dc7ae803fb540d0260ac46f0eed9d25bd6606ad3cb0740a34d1082f55086125",
+      "bytes": 3683,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 11,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00011.npz",
+      "sha256": "51dfdb80efc92f19a9583675f6b8da62b258ad6a4272d78d9abf0ba83270d5b5",
+      "bytes": 3692,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 11,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00012.npz",
+      "sha256": "a0536a6bd2d9e5e6b5c0bc508129ee64626afdec0d7bd39a987262d8b45e27b3",
+      "bytes": 3587,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 12,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00012.npz",
+      "sha256": "d2bf66f3ab98d5383f4569c67dca0efbcbdccf1dfaf4ecbc15b3fa7187553cbe",
+      "bytes": 3520,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 12,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00013.npz",
+      "sha256": "4fcd918b4815b312e79f0e2d0b3cb455a9c6103c19d8202e102699ce532050d7",
+      "bytes": 3577,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 13,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00013.npz",
+      "sha256": "1ea7034db978b9ac17a266f7ddc751f3643623f4d922e953423a0059710441bc",
+      "bytes": 3519,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 13,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00014.npz",
+      "sha256": "00c2bdaed53b8b68a2b35635a4d0b12c8d9940c15a2898487863c826bf189e37",
+      "bytes": 3573,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 14,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00014.npz",
+      "sha256": "53fa5d485ef6809e4da2b79ef59cdca74fa1d9545fda33cf44411934cc340f4d",
+      "bytes": 3522,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 14,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00015.npz",
+      "sha256": "f4bde65e87cbfa9bb242e077f36c82c45fb88d02f6ffff80e6f4a4e6c8b401a2",
+      "bytes": 3573,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 15,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00015.npz",
+      "sha256": "4e75a39005e45ec1f6a2f29a01dd91de32902cf5ca76b6ec222ef1d1d5d0211e",
+      "bytes": 3515,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 15,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00016.npz",
+      "sha256": "24e4c420aee536501fd744b788c49109a77c35b9ceb24766c21e411882c0855a",
+      "bytes": 3603,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 16,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00016.npz",
+      "sha256": "d547932c2c75a698d18542e4c51cc856ff2182f5e7b3be75b16c16e28b1475e1",
+      "bytes": 3499,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 16,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00017.npz",
+      "sha256": "0b85722bb58adcea8b20ad61bc4f5c9c66c4e4d74f4cde7851fc2d113727c4b4",
+      "bytes": 3652,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 17,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00017.npz",
+      "sha256": "12368ff27afa928691b64f9425e039c3acab70bf6c6f0e2a06c7cedf96946060",
+      "bytes": 3569,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 17,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00018.npz",
+      "sha256": "498ac1e70674f76a0c8cff5e9ab92cc09a9bc47c7098bf9088aa611e144bb050",
+      "bytes": 3684,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 18,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00018.npz",
+      "sha256": "b5b946056c263ae785f8d4bb3113ab354b597762ddc5d77b265dfb48720c7a4f",
+      "bytes": 3685,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 18,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00019.npz",
+      "sha256": "b579bcd132290db22b80a32f28f60e6688ffbdbd4b0d6708d70bd89975caad5d",
+      "bytes": 3831,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 19,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00019.npz",
+      "sha256": "f7fa48dbc40dd69b8c9429fde7824695c8ad807494098bb6de21dbf55b7b912c",
+      "bytes": 3758,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 19,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00020.npz",
+      "sha256": "c0517a05433cbd47d03d54e00b0a0d37ee2f6f5cc8263c8b1469c8fef0987cb0",
+      "bytes": 4053,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 20,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00020.npz",
+      "sha256": "2a80243520463a81db3139064efe11a414d49d8a586b74bb0ac8f0c7929dfd36",
+      "bytes": 3914,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 20,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00021.npz",
+      "sha256": "fa83822aa676b4c3f6c49a79e297ffac72c5d83ad929f0f3d9e01931f292fa16",
+      "bytes": 4167,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 21,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00021.npz",
+      "sha256": "1e850e81041659a30f344a8a3093843e3a64ee4477033fdef8fa53f3f977212a",
+      "bytes": 4119,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 21,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00022.npz",
+      "sha256": "0a16f3a428e5d2e4998b38671f8568da9370e82e60e67d141201571707f4b805",
+      "bytes": 4076,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 22,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00022.npz",
+      "sha256": "7c19886e0ee4e76cc64278c9a0e76d960fc72b9b685c23ddf3b2cdf6c42490c5",
+      "bytes": 4042,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 22,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00023.npz",
+      "sha256": "33aa3cddb67f5a2303799beadad973129e5be503f16439035d3d10e8cec15660",
+      "bytes": 4138,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 23,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00023.npz",
+      "sha256": "ad34fbe18efeba37896f2e8db0caf2aa786ecc5f321201e9c9437bf4526738e6",
+      "bytes": 3994,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 23,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00024.npz",
+      "sha256": "574178eed8590ecf3c30919aad18f3e748e124f8b228981ab5535c18b744b2ad",
+      "bytes": 4147,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 24,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00024.npz",
+      "sha256": "14eff97d6a87647b3cd68f17413064c6cb2951670bb4b0cefaf46dc8dd781fd0",
+      "bytes": 4055,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 24,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00025.npz",
+      "sha256": "f233d073e5d2489ff10f2556fa4bfc682a8f2ae0979a65a24132dcb713ef0bc3",
+      "bytes": 4287,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 25,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00025.npz",
+      "sha256": "e7a37ef9c752f10f5e66d116e1099a5e9680d20a8b73a6a3119436c7bc672499",
+      "bytes": 4192,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 25,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00026.npz",
+      "sha256": "9fe571cd7b083c531f0842b9a8d606bacf1070f5ed1bc66bae278def8dd93f57",
+      "bytes": 4273,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 26,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00026.npz",
+      "sha256": "398cd9a1c4c9a003b305da0b43b9fe9a9bb54a65e537473f205f8a0dcc854353",
+      "bytes": 4158,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 26,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00027.npz",
+      "sha256": "d9cd929409c96652cadd63597539f58d2b9e7a1ef07b823368493db235d624a5",
+      "bytes": 4066,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 27,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00027.npz",
+      "sha256": "b13102db6e6d590fba6a9155ea3fc2011be828a7019a51572e6d734aff962c72",
+      "bytes": 3886,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 27,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00028.npz",
+      "sha256": "6d9d10e52e316f94c1450d31195fb74d375be7499f2343dc418ba698af8f0999",
+      "bytes": 3538,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 28,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00028.npz",
+      "sha256": "866027ce61722bce0811cfb0459ee43c5f9f25dcd52a650d86140cd467a6f4ac",
+      "bytes": 3431,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 28,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00029.npz",
+      "sha256": "048d6bebceac56d954c54e5d462a3bb6c153bfb9ebb93572f53c0af5aa1e747a",
+      "bytes": 3214,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 29,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00029.npz",
+      "sha256": "2c0d6e25154f1d944066ce8edc3add68d71a7798094f6cb9f8f76e9a4e872f9b",
+      "bytes": 3083,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 29,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00030.npz",
+      "sha256": "4a375b2515e1ab3c97c895ba6aea4444c8aae904491a19870446bbd6899973b8",
+      "bytes": 3013,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 30,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00030.npz",
+      "sha256": "25bc9c93f4463c4ee3b46da37620a089f6367fe0f248ddea24ee05830bbae724",
+      "bytes": 2888,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 30,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00031.npz",
+      "sha256": "29a533e679fa355085c4f8f777324160f120e296fde3724d453b84b04b7f94fd",
+      "bytes": 2684,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 31,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00031.npz",
+      "sha256": "78e01e2a6a201ffe77e37ec2952ff38ce28298a346fb6c28eafa95894dea8695",
+      "bytes": 2600,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 31,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00032.npz",
+      "sha256": "31975bad1666751c071dfc2e817965ce4eb1a8b06f35c5f031f2300f35f2671a",
+      "bytes": 2503,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 32,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00032.npz",
+      "sha256": "6c5a047ce718b80d20b72705794de313600908eadffee1aee7b54c8d9472d114",
+      "bytes": 2489,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 32,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00033.npz",
+      "sha256": "67ff4c81d1059716f3201879f7d1e5433f0e4d2bb6cc5a016261e005f0d07e13",
+      "bytes": 2330,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 33,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00033.npz",
+      "sha256": "b8313aa10462b85d1f0fc2a11d9cae73c8d872ba203bada122042b2fee681932",
+      "bytes": 2243,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 33,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00034.npz",
+      "sha256": "0fd8bb9f81aece2bb6894a133b5c7b8a439dc5fbefded234e5a55b87577e8c8b",
+      "bytes": 1819,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 34,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00034.npz",
+      "sha256": "a6e80c344a813461d17a5367c7ba7669f51b48d66e761534ce6cc3dcd87512e7",
+      "bytes": 1802,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 34,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00035.npz",
+      "sha256": "3a987be6f6e87d03b2cde6263e03f03b843e71cd3525b0fffa3f2ffee6cfb1fd",
+      "bytes": 1644,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 35,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00035.npz",
+      "sha256": "5011e4eaa8f47d547a91d0962b3a8e513bf7168e55220e5f119997af98a309c8",
+      "bytes": 1596,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 35,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00036.npz",
+      "sha256": "4d5868fe6405d5d08572ca1800f32c07298d643ae535e83bce26f0c4660e58f7",
+      "bytes": 1650,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 36,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00036.npz",
+      "sha256": "18352e25962ce4ae50d7cabcc52594a3c9368689ad5bc414bc6c45f43e8c9a36",
+      "bytes": 1632,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 36,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00037.npz",
+      "sha256": "b4bded4e717a69db73116ec09a7bf9d256ebdad340ac65e37c784005e4053b29",
+      "bytes": 1799,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 37,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00037.npz",
+      "sha256": "2be3e1d6f0cf708bb6cc47822c8f99190e029dbe958ad27fab96ad274918ea6b",
+      "bytes": 1802,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 37,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00038.npz",
+      "sha256": "cfa0329cf0c8a21ce59c8e5f43d5b51bed74b84a6745d08402f4b03a7ce38e52",
+      "bytes": 1866,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 38,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00038.npz",
+      "sha256": "5d279d060c7c54e648e61f9e68ee9c59fb82c676231f949ec1ce085c81a812f1",
+      "bytes": 1861,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 38,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00039.npz",
+      "sha256": "ed33a031d564addd13529dbba3169c5f6e1ce3d526acb627893be474d6845d8f",
+      "bytes": 1891,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 39,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00039.npz",
+      "sha256": "21043e62d35aaf6fc1fbeb799529d64e8e166dea4c86dc941beb89f01626e963",
+      "bytes": 1858,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 39,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00040.npz",
+      "sha256": "6b51e32979b7f4d82de864970ab23989edfb9b47f850edc3a2e3704203a9bc21",
+      "bytes": 1914,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 40,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00040.npz",
+      "sha256": "27281485d4d6ba2b5f14624d32704bc91a096599a0021cf001c64c2d8a9aa469",
+      "bytes": 1885,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 40,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00041.npz",
+      "sha256": "1143b22333fb964e51a3e5bdd88e2ceca70743979ba1f4bf97901f9bb13034e1",
+      "bytes": 2083,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 41,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00041.npz",
+      "sha256": "f6655a6843d737f99cb7bf00dadef26e56237e06c2e0176cde70b60456bdf95c",
+      "bytes": 2055,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 41,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00042.npz",
+      "sha256": "f597f002e9d77a43d024441d2cb02c00b571783974be6006721e4e63c91f12c0",
+      "bytes": 2026,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 42,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00042.npz",
+      "sha256": "fc62681d6a4bc1c57a5b4eb33542f0d046961fefa2af19d59eea095d4568e92d",
+      "bytes": 2001,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 42,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00043.npz",
+      "sha256": "265e46a85185e2dd9244f7b332d2b4d7739512e5926cc5e9fc43cbceffe98c7e",
+      "bytes": 2269,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 43,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00043.npz",
+      "sha256": "c2fcb5fe6fe65d24fe95e30c3cb10bbd4356d60b90341901ed6e56a825f38615",
+      "bytes": 2239,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 43,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00044.npz",
+      "sha256": "99e984966ede3c189c77dc33d4e5ca47a52e7f1cc3f58dfb876b491ebfd7a148",
+      "bytes": 2432,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 44,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00044.npz",
+      "sha256": "0bad3e416208871ad9fcec39acc47ef0e9f44615ec2dff6ea182a8ecf452a741",
+      "bytes": 2385,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 44,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00045.npz",
+      "sha256": "e30d8fab4a56f695b0b978c226be85dc1a72c2d395793af8fa02a6c9bc8cb15d",
+      "bytes": 2633,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 45,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00045.npz",
+      "sha256": "75494372b8ff1530abac6e383c13dd761b18b059e77e7694bd3ae5e4d0ff9f09",
+      "bytes": 2602,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 45,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00046.npz",
+      "sha256": "83cc38c3986b2fe21be89a61e5f3d3140c261b65be5cc2ae2c705dad7435cfc0",
+      "bytes": 2843,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 46,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00046.npz",
+      "sha256": "1d8b9d2a24b3e13a18dfdad2d6ebf1768ecb12e02a6cb1248879b443b1c7c61b",
+      "bytes": 2731,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 46,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00047.npz",
+      "sha256": "32c0c9cae3f1f0f85d23028a058d57c3349a7536f63967114c56c47ba5819b4e",
+      "bytes": 2870,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 47,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00047.npz",
+      "sha256": "bb724a648b70d790ccfdbf8303b4eea3bdfd184e8ac7468b992328b6b2c44794",
+      "bytes": 2676,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 47,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00048.npz",
+      "sha256": "41ca811781acbef1b2e5b789f99d9b42079ab9b1e422053e29af26c0abef2fef",
+      "bytes": 2618,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 48,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00048.npz",
+      "sha256": "273a1e67f7f4aeb9ccfd513a86d30fd990642df66851553bf24f1830c417ccff",
+      "bytes": 2575,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 48,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00049.npz",
+      "sha256": "1f77415085ebb0bde1b85b283dcf36bd1bcc4fe012b0516d618661abcf954fe9",
+      "bytes": 2549,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 49,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00049.npz",
+      "sha256": "1880c452015610524023a0687cae4c09d115b1a426100beabfe06a554acdcd91",
+      "bytes": 2484,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 49,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00050.npz",
+      "sha256": "ff7d31337b156f2f7f93ea12a8bfaabba24a27853f089c3393a574808f812793",
+      "bytes": 2521,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 50,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00050.npz",
+      "sha256": "89811ebfda76c9b367fbd34a27cba474b312767f0d51dc47282bdac5f621feb9",
+      "bytes": 2471,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 50,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00051.npz",
+      "sha256": "372364df5d47425b2551c7a5c74baf96ded18a6b64b1fc2b7da9b0ca75ae57f2",
+      "bytes": 2543,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 51,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00051.npz",
+      "sha256": "4229e90eb427d303e672ba5251b2de49cc815143f52ab86ae75423afd43738a9",
+      "bytes": 2469,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 51,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00052.npz",
+      "sha256": "35aba0a082cdd2e2479a78c31ee2f88f9330d1411f1bce1f2826d9c91b55e6a8",
+      "bytes": 2634,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 52,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00052.npz",
+      "sha256": "0b874afb19e8672e217d13f75ca6282ad4d4eeb76d94cf285753a4490ae73264",
+      "bytes": 2558,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 52,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00053.npz",
+      "sha256": "6b131a9c40e2ae2581fd8fec5c795db8647ffd348c7bb65e898aacf5ee176a3c",
+      "bytes": 2613,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 53,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00053.npz",
+      "sha256": "33f39e3f57274b2c31a71f1a24c9eaeab735c8b0c94859c8151ea6f190e57cac",
+      "bytes": 2541,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 53,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00054.npz",
+      "sha256": "66b856fd77e4476475d0bb8ba45318d16d95bcc2a2a0c846c2714d85b8b563c5",
+      "bytes": 3023,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 54,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00054.npz",
+      "sha256": "03d2cdcc70e7eef2816ef20d4f0ff29a32077be828f01d88f1850ac41907333f",
+      "bytes": 3032,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 54,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00055.npz",
+      "sha256": "09c426eed332efc047732c5e82dbc9ee26c37eff2f725da740061a56d571abae",
+      "bytes": 3523,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 55,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00055.npz",
+      "sha256": "7a2765762667bc513458e6d5349eec2034e2deb77a76fa4cc01cc2e6ad5cac19",
+      "bytes": 3454,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 55,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00056.npz",
+      "sha256": "938748e8b02525b5699e3616c7be75ccf5ba293261abf499b696ee5c26bc943b",
+      "bytes": 3364,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 56,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00056.npz",
+      "sha256": "ad21e3dbc73b536bd76deafca7540ab434ad488f31521e0877f5673fd80cb651",
+      "bytes": 3263,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 56,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00057.npz",
+      "sha256": "a1ea969b04c45ac30d150377d50ab35e4b75ee06cc696d7a7837eae4f004e9ac",
+      "bytes": 3712,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 57,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00057.npz",
+      "sha256": "08732dea43049b9f0f0820b40b6a36bcdd42202ad6cdf9c95723bc3204db117e",
+      "bytes": 3616,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 57,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00058.npz",
+      "sha256": "14a27c495447d6fd0cfadeafbdaf92f5f686b72134f32629f572fb5ca67ca360",
+      "bytes": 3682,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 58,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00058.npz",
+      "sha256": "98dea46f4b07adcbfdb9b4966157d375274dfc63276e36452c7410281a81437e",
+      "bytes": 3715,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 58,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00059.npz",
+      "sha256": "c31c33d72a2b2533a327dca9a412c91199d08e62c5e273ceb3b026c210b9235e",
+      "bytes": 3525,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 59,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00059.npz",
+      "sha256": "53a9b5a2b60f3e04a5c9ef08d573ec6952a807b6180546f5547a6d992167c118",
+      "bytes": 3312,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 59,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00060.npz",
+      "sha256": "b5edca292aa1ca992869ef2dad8485e67db7db87c84a392a57c24fdb9ae071fa",
+      "bytes": 3509,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 60,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00060.npz",
+      "sha256": "cd2b2bce6ee4e6fb9332ce9d863473ce48990d6b44b596f29e4c7c8632d1da89",
+      "bytes": 3411,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 60,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00061.npz",
+      "sha256": "3d0077198309184320cb95f514cb3d54f21ba504e51267eae9a6a15a562beebd",
+      "bytes": 3487,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 61,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00061.npz",
+      "sha256": "b3f01b0a1785559adf4f17c71ea053221ecace82764b029d761c51a9aa025f8e",
+      "bytes": 3383,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 61,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00062.npz",
+      "sha256": "cd66978773e28dffa8bc9e74114351413c0813ebf3c8745ffd621b4c5ba79795",
+      "bytes": 3569,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 62,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00062.npz",
+      "sha256": "1cf643c4c008277529015c970467e45c3562229b8601ec757f79112adf80dbc9",
+      "bytes": 3514,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 62,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00063.npz",
+      "sha256": "b08e7b4d693b79a0a8ccb9ce62df567e175695424e688e86e95f81f9335b02f1",
+      "bytes": 3475,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 63,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00063.npz",
+      "sha256": "05fc03e9f1c4f97cb6a0614eec9a3b842740b4cf5ce80e54dbcd72684a178c06",
+      "bytes": 3382,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 63,
+      "arm": "logit_only"
+    },
+    {
+      "path": "upside-down/visual-00064.npz",
+      "sha256": "18d79e45bf20bffff3d8d6d1629d4cd43d00b0694691d412f8bd36188c9536b1",
+      "bytes": 3435,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 64,
+      "arm": "visual"
+    },
+    {
+      "path": "upside-down/logit_only-00064.npz",
+      "sha256": "1fd1f357024eb204b0d0c5afec42b76a447ce08aa58d1bf7154e03e9c11ca93f",
+      "bytes": 3262,
+      "kind": "prediction",
+      "sequence": "upside-down",
+      "frame": 64,
+      "arm": "logit_only"
+    }
+  ],
+  "arms": [
+    "visual",
+    "logit_only"
+  ]
+}

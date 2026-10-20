@@ -1,0 +1,23 @@
+{
+  "scope": "manufactured head tensors only; no dataset/native model",
+  "source_sha256": {
+    "${WORKSPACE}/work/0033-native-feature/head.py": "6ff9a8e367ae28743c8b1bf8226f0f914dba85af2f504974f533919ce7d9e716",
+    "${WORKSPACE}/work/0033-native-feature/test_head.py": "ee0a4afd584b2b5ca79cdfcdfbd0e200cb0b0127e4f1dd2d9d0d54a448f68e80",
+    "${WORKSPACE}/work/0033-native-feature/ADMISSION.md": "dc3cf086e2b8213a9108f7b67d09c617ad1edd5042f02730a564d66ac4851279"
+  },
+  "command": [
+    "${WORKSPACE}/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-c",
+    "import torch,runpy,sys; torch.set_num_threads(4); torch.set_num_interop_threads(1); sys.path.insert(0,sys.argv[1]); sys.argv=[sys.argv[1]+'/test_head.py','-v']; runpy.run_path(sys.argv[0],run_name='__main__')",
+    "${WORKSPACE}/work/0033-native-feature"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 1.4500460000126623,
+  "log_sha256": {
+    "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "43d5b26d08fa3e9b090309da692227839a6569c6cc03366c2c3240e9b3fc96be"
+  }
+}
