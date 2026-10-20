@@ -28,3 +28,19 @@ the original test source. This is a qualification repair, not outcome tuning.
 The [manifest](manifest.json) binds every attempt. All listed source checks
 precede exact-commit CI and the scientific experiment. The main held-out
 improvement gate is unchanged.
+
+## Preserved initial startup failure and compatibility repair
+
+The exact source427d303 passed [CI39371128015](https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39371128015).
+Its first frontend operation then failed in4.383394seconds during imports:
+`urllib3.exceptions.NotOpenSSLWarning` was promoted by `-W error`. There were
+zero attempted/completed raw forwards and no0028 image predictions or accuracy
+results. The original child/outer records and aliased logs remain here.
+
+The narrow repair wraps existing backend construction with the existing
+qualified `capture_warnings` context. Import warnings are retained by category
+and message; ordinary failures still propagate. It does not change model
+weights, calculations, matching, support, losses, seeds or scientific gates.
+Eleven frontend tests, including one new warnings-as-errors case, pass;
+there are now104 distinct artificial checks. A fresh exact source CI and a
+fresh private operation directory are required before the first real forward.

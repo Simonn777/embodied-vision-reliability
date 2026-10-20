@@ -1,0 +1,39 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "failed",
+  "command": [
+    "$PYTHON",
+    "-W",
+    "error",
+    "$REPOSITORY/experiments/0028-normal-information/frontend.py",
+    "--job",
+    "$PRIVATE/0028-development/job.json",
+    "--expected-commit",
+    "427d3038399653908803ea6bb62114771e9f655c",
+    "--output",
+    "$PRIVATE/0028-development/frontend-01"
+  ],
+  "spec_sha256": "bf87e23e6c67fe8d384965a8ba2488f7e252f4c1cb75475adfbf18387762cf56",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "427d3038399653908803ea6bb62114771e9f655c",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 1,
+  "termination": null,
+  "wall_seconds": 4.383393833,
+  "peak_group_rss_kib": 243504,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "7e74209eccc3a134516595800f057d7479372d7fcff6099afe16e2cf130f2faf",
+    "stderr.log": "9bc3813b0531fc0a0ee54c9437f18206d6d59969f637a45351247253df83a05b"
+  }
+}

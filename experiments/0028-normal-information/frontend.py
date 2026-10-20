@@ -48,7 +48,10 @@ def run(args):
             selected_edges=[dict(scene=e['scene'],source=e['source'],target=e['target'],
                                  edge_index=e['edge_index']) for e in edges])
         record['stage'] = 'load_qualified_backend'; save()
-        backend = f.Backend(fa,files,wheels,record)
+        # Imports can emit the already observed local SSL compatibility warning.
+        # Retain it in the same warning ledger used by the qualified loader.
+        with f.q.capture_warnings(record):
+            backend = f.Backend(fa,files,wheels,record)
         np,torch = backend.np,backend.torch
         import point_postprocess as post
         record['timings']['binding_and_load_seconds'] = time.perf_counter()-start

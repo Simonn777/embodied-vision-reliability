@@ -13,6 +13,7 @@ import sys
 import tempfile
 from types import SimpleNamespace
 import unittest
+import warnings
 from unittest.mock import Mock, patch
 
 import numpy as np
@@ -200,7 +201,7 @@ class FrontendContractTests(unittest.TestCase):
                     c.verify_outer(path, result, COMMIT, "frontend.py", job)
 
     def fake_run(self, *, control_error=False, changed_pixels=False, forward_error=False,
-                 mutate_job=False, bad_source=False):
+                 mutate_job=False, bad_source=False, startup_warning=False):
         verified = manufactured_metadata()
         by_name = {r["filename"]: r for r in verified["receipt"]["images"]}
         job = self.root/"job.json"
@@ -214,6 +215,8 @@ class FrontendContractTests(unittest.TestCase):
         class Backend:
             def __init__(self, *unused):
                 calls["load"] += 1
+                if startup_warning:
+                    warnings.warn("manufactured import compatibility warning", UserWarning)
                 self.np, self.torch, self.Image = np, fake_torch, object()
                 self.moge = SimpleNamespace(forward=self.forward)
             def tensor(self, pixels):
@@ -242,10 +245,19 @@ class FrontendContractTests(unittest.TestCase):
                 meta["resized_rgb_float32_sha256"] = "9"*64
             K = np.asarray(meta["authored_K_resized"], dtype=np.float64)
             return np.zeros((4, 6, 3), np.float32), {"K_original": K.copy(), "K_resized": K}, meta
+        @contextlib.contextmanager
+        def capture(record):
+            with warnings.catch_warnings(record=True) as caught:
+                warnings.simplefilter("always")
+                try:
+                    yield
+                finally:
+                    record['warnings'].extend(dict(category=type(w.message).__name__, message=str(w.message))
+                                              for w in caught)
         qualified = SimpleNamespace(
             qualification_args=lambda value: value,
             q=SimpleNamespace(verify_files=lambda *a: ({}, None, {}, {"manufactured_model": True}),
-                              capture_warnings=lambda record: contextlib.nullcontext()),
+                              capture_warnings=capture),
             Backend=Backend, prepare_image=prepare, safe_input=lambda root, name: root/name)
         def postprocess(raw, K):
             calls["postprocess"] += 1
@@ -307,6 +319,16 @@ class FrontendContractTests(unittest.TestCase):
         self.assertEqual(set(row["controls"]), {"A", "B", "C"})
         self.assertNotIn("depth", row["controls"]["A"])  # arrays are not huge JSON fields
         self.assertEqual(row["processed"]["arrays"]["A_depth"]["shape"], [4, 6])
+
+    def test_startup_warning_is_retained_before_forward(self):
+        stack, args, calls = self.fake_run(startup_warning=True)
+        with stack, warnings.catch_warnings():
+            warnings.simplefilter('error')
+            self.assertEqual(front.run(args), 0)
+        receipt = c.read(args.output/'receipt.json')
+        self.assertEqual(receipt['warnings'], [dict(category='UserWarning',
+                         message='manufactured import compatibility warning')])
+        self.assertEqual(calls['forward'], 27)
 
     def test_failed_camera_control_keeps_raw_warning_and_partial_arrays(self):
         stack, args, calls = self.fake_run(control_error=True)

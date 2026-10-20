@@ -39,3 +39,8 @@ continues to prevent labels entering this implementation.
 Failure closes this fixed variant. Passing is not novelty proof, held-out
 success, a matched-runtime claim or manuscript admission. No experiment log,
 code test or negative comparison satisfies the user's improvement objective.
+
+Initial exact-source CI passed, but the first startup stopped on a local SSL
+compatibility warning before any raw forward. The narrowly scoped warning-ledger
+repair and complete first failure are recorded in [qualification](../results/0028-qualification/README.md).
+No scientific result, gate or method changed; a new source freeze/CI is required.

@@ -115,11 +115,41 @@
       "operation_sha256": "23ee968db92bf950e47634e723920fcc5dfd794414972c3774de6dc76d278be1",
       "spec_sha256": "f7e9482c3e298691b905c4f6ad182f7b6716380e54088e6bcf832e7f0963d891",
       "scientific_inputs_opened": false
+    },
+    {
+      "name": "startup-contracts",
+      "status": "completed",
+      "tests": 11,
+      "source_sha256": {
+        "common.py": "ec87a22ea40fa2e401ca236deb06880372613e9609893e2e4d2dde0786852762",
+        "frontend.py": "4ab6d2976e01f6af219cf2e9e3f71baa1464b65ded0e85a86896dd3e2df47eb2",
+        "predict.py": "30fde86208993af2c23356b9c04835530d3b9824b94f8b0b64605362d85ff2c7",
+        "study_core.py": "b4db39e3431a5ed0fcacefff131611817764c0003f6c4ca6f889d9bc46c4d25c",
+        "pose_controls.py": "303c2471b780fd9fe5c0e7188f8100b2be83c2decd647b977710b9fb0c97b25e",
+        "metrics.py": "07ea36b2934bc988153438c8400b9fc3ade622785a4c8ff0c8b3a888d1f3506f",
+        "test_study_core.py": "4129ddb02fc697065d6f56ea0fcb54c69f0ff795ab2026c7a858a16f287652e6",
+        "test_metrics.py": "c9edd5f36f642ec07ce33f43cff50ca2f84c3d9fa4e0b29fede07123e8bde3d2",
+        "test_frontend_contract.py": "cf100764f8cfccfd41246cbff54a9196d0c71bb13691581c5e1a20d7dcd79503",
+        "protocol.md": "0e8657e20f88ad9c1762b9091324b06d6515de8c0ae804a13ea95fb6ee7ebdc7"
+      },
+      "result_sha256": "fd8ea465db487410d899f1612503499cfddeeaec60ff3d131fc59a5e0ed884e5",
+      "operation_sha256": "e0bf77d673e0b0914acf32a1d8958810d9860550d45e33aa613ed3e9bdfa2ac5",
+      "spec_sha256": "517e17f3576b6b86d1c8ce53b4d3334196133eb2ff11db6a2ddee62e86b486c5",
+      "scientific_inputs_opened": false
     }
   ],
-  "distinct_tests": 103,
+  "distinct_tests": 104,
   "scientific_result": false,
   "all_distinct_tests_pass_final": true,
   "retained_failed_operations": 1,
-  "repair": "Artificial audit coverage assertion only; no numerical source or scientific threshold changed."
+  "repair": "Artificial audit coverage assertion only; no numerical source or scientific threshold changed.",
+  "startup_failure": {
+    "source_commit": "427d3038399653908803ea6bb62114771e9f655c",
+    "child_receipt_sha256": "8def4a304c4f58d31129d655ee8dcb68e800a000e6d95897ada6f0c67683ef7d",
+    "outer_receipt_sha256": "bc5a2101fd57c6a0219bdbbe069a0c0e54cc64126c5b0a077953ff7c9b8a4062",
+    "raw_forwards_attempted": 0,
+    "raw_forwards_completed": 0,
+    "source_ci": 39371128015,
+    "repair": "Capture and retain model-import warnings with existing qualified capture_warnings helper; no numerical or gate change."
+  }
 }
