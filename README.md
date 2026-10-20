@@ -1,13 +1,13 @@
 # Embodied Vision Reliability
 
-Current work: [0028 normal-information opportunity test](experiments/0028-normal-information/protocol.md), in preparation with fixed camera and same-information controls. No scientific gain or manuscript is established. The [0027 failed comparison](results/0027-development/README.md) remains closed. See [current state](CURRENT_STATE.md).
+Current result: [0028 normal-information comparison failed](results/0028-development/README.md): ANG 2.6954% versus strongest control 51.0001% AUC@5. All 24 fits completed; independent audit agrees. The fixed variant is closed, with no manuscript admission. See [current state](CURRENT_STATE.md).
 
 **Goal: a reproducible improvement in visual camera-motion estimation before a
 CVPR-targeted manuscript. No method currently meets that goal.**
 
-The latest tangent initializer recovered exact clean examples but failed its
-fixed noisy-utility gate and required advantage over the virtual-point control.
-The earlier moment-based initialization also failed its80-pair comparison.
+The latest normal-guided correction reduced its own fitting objective but lost
+substantially to the geometric pose baseline. Earlier tangent and moment-based
+initializers also failed their fixed comparisons.
 All failures remain visible and independently audited. A different testable
 mechanism is required before another task experiment. This concerns visual
 geometry for embodied systems and driving; no controller or driving result
@@ -21,10 +21,11 @@ Novelty, ablations and independent reproduction are also required before a
 paper. A successful software check or reduction in operation count does not
 meet this standard. [Full prospective gate](protocols/0012-score-bounds-development.md).
 
-## Current evidence · October 19, 2026
+## Current evidence · October 20, 2026
 
 | Study | Verified result | Decision |
 |---|---|---|
+| [0028 normal information](results/0028-development/README.md) | ANG AUC@5 2.6954% versus E 51.0001% (−48.3047 pp), all 3 scene margins negative; independent audit 2,451 checks pass. | Closed. No held-out expansion or manuscript. |
 | [0027 affine tangent](results/0027-development/README.md) | All138 rows;57/128 useful noisy T poses versus57/128V. Two of four fixed clauses fail;41,707 audit checks pass. | Closed. No real-data expansion or manuscript. |
 | [0026 calibration moments](results/0026-development/README.md) | AUC@5 73.5881% versus strongest control74.1397% (−0.5516pp); three of four conditions fail. Independent saved-output audit agrees. | Closed. No held-out expansion or manuscript. |
 | [0025c initializer noise](results/0025c-development/README.md) | 13,332 attempts; every required D4 yield fails; D8 beats A8 in 0/96 primary records. Independent gate agrees; original numerical audit remains failed on one invalid diagnostic. | Closed. No robust stage, real-data expansion or manuscript. |

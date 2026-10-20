@@ -1,13 +1,22 @@
 # Next actions
 
-## Current: freeze and run 0028 once
+## Current: publish 0028 closure and reset the hypothesis search
+
+1. Preserve the [complete negative result](results/0028-development/README.md), initial zero-forward startup failure, clean scientific operations and independent audit. Verify exact result/main CI through PR59.
+2. Keep this ANG/depth-normal offset formulation closed. It loses to raw C, FULL and the strong E control, with no scene win. Do not retune its grid, losses, bounds, camera controls or selector on these outcomes.
+3. Screen a materially different embodied/driving task or observable against current primary work and compute/data constraints before building more code. Require a concrete information advantage and a cheap decisive falsifier. If the task/metric changes, freeze an equally substantial two-source matched-cost validation gate prospectively; the old goal has not been met.
+4. No manuscript before innovative, reproducible, substantial improvement with strong controls, ablations and independent validation.
+
+## Historical: freeze and run 0028 once
+
+Completed and superseded by the closure above; do not repeat this execution.
 
 1. Complete predictor/evaluator/independent-auditor artificial qualification, freeze the complete [0028 protocol and source](experiments/0028-normal-information/protocol.md), and verify exact-commit CI.
 2. Run 27 raw forwards with shared A/B/C camera postprocessing, then all24 query predictions under separate monitored operations. Require complete clean seals before evaluation and independent saved-output audit. No new downloads or model training.
 3. A failed opportunity gate closes the fixed variant without outcome-based tuning. A pass only permits further contribution assessment and a separately frozen larger comparison; known angular/normal geometry is not a novelty claim.
 4. Keep the two-independent-source, matched-complete-pipeline improvement gate before a manuscript. No code check, null result or publication receipt completes the user objective.
 
-## Current: close 0027 and review a distinct observable
+## Historical: close 0027 and review a distinct observable
 
 1. Publish the complete failed [0027 comparison](results/0027-development/README.md), final receipt review and saved-only diagnosis; verify exact result/main CI. Preserve the source freeze and every attempted row/root.
 2. Keep the fixed affine-gradient initializer closed. It failed absolute noisy yield and required point-control advantage; neither the positive clean witness nor comparison to weak scale-only depth supports a contribution.
