@@ -1,0 +1,39 @@
+{
+  "repo": "${WORKSPACE}/work/embodied-vision-reliability",
+  "commit": "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquire.py",
+    "--repo-root",
+    "${WORKSPACE}/work/embodied-vision-reliability",
+    "--expected-commit",
+    "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+    "--metadata-root",
+    "${WORKSPACE}/work",
+    "--manifest-relative",
+    "experiments/0035-transformation-support/proposed-manifest-v2.json",
+    "--admission-relative",
+    "experiments/0035-transformation-support/acquisition-admission.json",
+    "--output-dir",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01",
+    "--phase",
+    "initial"
+  ],
+  "operation_output": "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-supervision-01",
+  "result_file": "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01/receipt.json"
+}

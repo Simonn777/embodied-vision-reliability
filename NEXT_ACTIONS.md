@@ -1,8 +1,8 @@
 # Next actions
 
-## Current: run the fixed whole-clip transformation-support screen after qualification
+## Current: complete explicit full-RGB recovery, then fixed prediction/evaluation
 
-1. Review/freeze [0035](experiments/0035-transformation-support/ADMISSION.md), retain all manufactured test attempts, and require exact-source CI. Run the complete seven-frame/two-object native qualification, comparing all captured/ordinary outputs and complete native state. Any technical failure remains a failure and closes downstream access until a separate justified technical repair.
+1. First finish the separately declared [complete RGB recovery](experiments/0035-transformation-support/TECHNICAL_RECOVERY_01.md), retaining the failed01 and its costs; only a fresh complete clean02 can proceed. The following original dependencies remain: review/freeze [0035](experiments/0035-transformation-support/ADMISSION.md), retain all manufactured test attempts, and require exact-source CI. Run the complete seven-frame/two-object native qualification, comparing all captured/ordinary outputs and complete native state. Any technical failure remains a failure and closes downstream access until a separate justified technical repair.
 2. Acquire only the four initial masks under the reserved cap, inspect every ID/dimension, and require the fixed whole-population memory/storage/call-count checks before446RGB acquisition. No cohort or object subset may replace an infeasible population.
 3. Run one complete all-four native-bank operation, seal every candidate/control and clean outer receipt, then admit442noninitial masks and one complete saved-output evaluation. Preserve all clips/objects, both void conventions, native cleanup versus extra-support headroom, every failed operation and full costs.
 4. Apply the prospective necessary information gate without threshold/cohort/slot rescue. A pass only permits a separately scoped actual candidate verifier against direct-supervision, ordinary-classifier, fixed-union and reverse-consistency controls. An oracle is never the method result. Preserve the unchanged substantial two-independent-source final gate and no-manuscript boundary.

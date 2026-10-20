@@ -1,0 +1,15 @@
+# Explicit complete RGB transport recovery 01
+
+Declared on2026-10-20 after RGB operation01 failed and before operation02 starts. This is a technical transport recovery, not a scientific result or a change to the fixed question. All original0035 scientific criteria, source hashes, native qualification, exact four-clip population, all objects/frames and metric-label barrier remain unchanged.
+
+The full source at784fc1a22d068dd7ce155129ac60d09d723f3f4d passed CI39438179793. Manufactured native qualification passed7frames/twoobjects with exact output/full-state parity in24.079890583s and1,640,432KiB peak groupRSS. Four initial masks were acquired cleanly (8,190 response-body bytes), then initial-only inspection passed all fixed checks: each clip hasone initial object,446object-frames, planning peak5,130,715,136B and prediction output cap8,663,674,512B. These are not tracking gains.
+
+RGB operation01 completed408of446members, then the409th member's77-byte local filename/extra request failed during TLS handshake at30.007145834s. It returned no HTTP response/body. The phase failed at359.055364750s and the outer operation failed cleanly at359.641420000s with no residual children. Total observed response-body bytes148,478,342 and requested upper bound148,479,645 remain charged. No RGB has been decoded, no scientific prediction exists, and no noninitial annotation was acquired. See the complete [preserved text record](../../results/0035-execution/transport-failure-01/manifest.json).
+
+This declaration supersedes only the original one-operation RGB execution allocation; the failed attempt remains failed and ineligible.
+
+**Prospective recovery:** allocate an additional170,000,000 response-body bytes, retaining the entire original180,000,000hold and all older holds. Conservative balance changes from1,103,590,729to933,590,729B. The original hold still covers the unexecuted metric phase; no refund is made for the failed RGB phase. Each acquisition receipt's180MB field describes its original single-attempt protocol; this explicit additional hold records the second complete RGB operation outside that original hold.
+
+Run exactly one fresh complete446-member RGB phase as operation02, in a new output directory, using unchanged acquire.py and all original limits (30s/request,1800s/full phase,4threads,8GiB,170MB phase cap). No per-request retry, cached-member reuse, missing-tail continuation, body-cap increase, altered source or reduced population is introduced. No failure receipt is converted into success. A successful02 must independently satisfy every existing complete-acquisition check before any scientific prediction. Preserve both operations and report their combined transport costs. If02fails, preserve it and reassess explicitly; do not automatically loop.
+
+This recovery is justified by an observed transport timeout before scientific prediction/outcomes, not by accuracy or resource-limit selection. It does not subdivide a timed-out scientific operation: operation01 ended below the1800s overall limit and operation02 again covers the entire unchanged population. The existing manuscript gate remains unmet.
