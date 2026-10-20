@@ -1,0 +1,4200 @@
+{
+  "compatibility_probes": [
+    {
+      "caller": "numpy.testing._private.utils.check_support_sve",
+      "command": [
+        "lscpu"
+      ],
+      "event": "subprocess.Popen",
+      "exception": "FileNotFoundError",
+      "outcome": "suppressed_optional_probe",
+      "reason": "macOS optional SVE probe treated as unavailable; no process executed"
+    }
+  ],
+  "depth_forwards_attempted": 135,
+  "depth_forwards_completed": 135,
+  "diagnostic_sha256": "2817d7352468f228bd7694222de35f6a37dc0364af05b7b67cbbfc06c3a8f62d",
+  "eligibility_requires_clean_outer_supervision": true,
+  "eligible": true,
+  "execution_configuration": {
+    "moge_native_sdpa_enabled": true,
+    "opencv_parallelism_disabled": true,
+    "opencv_threads": 1,
+    "torch_interop_threads": 1,
+    "torch_intraop_threads": 4
+  },
+  "expected_commit": "5d282a4b8b50094f433c6914931b005e7e16e73a",
+  "feature_forwards": 0,
+  "frontend_bindings": {
+    "checkpoint_sha256": {
+      "moge2-small-model.pt": "79a16621928c2bf0ed04659218c55c01075e950507f40bb3332fb4c873d3e1dc",
+      "superpoint_lightglue.pth": "6ff7040d0a497fc6639337946d7538dae07428c18f77a067a0b5a960e7cc551a",
+      "superpoint_v1.pth": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+    },
+    "dependency_metadata_sha256": "e7a0f21d36e5e10131ef3afbb721c7e50bed6320b658cd0748f249edbdc73a40",
+    "install_receipt_sha256": "0e51d4995c91e0b446daedf640c0d8549e9683b81906c76d7d438cccc0796b3e",
+    "installation_supervision_log_sha256": {
+      "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "installation_supervision_sha256": "5d10b3359220e8c0ba2ba09134eb443c25953b651a7018b9c8fe6a6b6cf5e398",
+    "protocol_sha256": "e8d3139da5167fbc703efc9fd66433ba1daccd948d5503eb91de45b892b9625c",
+    "qualification_log_sha256": {
+      "stderr": "8d9677e68c3ba5724cec0d272076e506525e87c115d1c8e70d7af9e9f5300dbe",
+      "stdout": "44949e0d08917a8d6c28c460c14737d29da258517712c736b7157db0bf6098b2"
+    },
+    "qualification_receipt_sha256": "88dfc856c4824f20d4969acd1c56afdba3e3c26381a0ca6527283ba13018fd64",
+    "qualification_supervision_sha256": "05bc1f990ad0fa8f7322323a69c6f723cf3cf076ce9712d226e7768130808f3a",
+    "source_acquisition_ledger_sha256": "31ae5f1a27a2ed3b03705f922c2ed6cfff60b680eceb25950d27a36ea8dc2023",
+    "source_manifest_canonical_sha256": "247074c2725ff43f1205585ecb0e40848f733f20ba3db9ee0ca2cf72d35b153c",
+    "source_manifest_sha256": "30d4474b3372c8cea8aed86f67620425146303c0fae52b652b37062936691944",
+    "source_sha256": "174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e",
+    "wheel_manifest_canonical_sha256": "2793d1ae31b41dfc8392d801122b8c4f654df610cd1e4256e70c70e5c6b60f29",
+    "wheel_manifest_sha256": "fc8bea8344e061857dbf025f80915f8d757a18a2f960a92d490349cbb12d0f14"
+  },
+  "gt_read": false,
+  "images": [
+    {
+      "image_id": "val/s00513/seq0/frame_00000.jpg",
+      "index": 0,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "33c2ec1c02c7edc92aa8c5e05fb7fd72af7e1fe74f0dd628ca6c2ae102e0d604",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00513/seq1/frame_00000.jpg",
+      "index": 1,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "466ac7781376243001fd282eb65a0e376c12117311b53aafa86cad9539a6d598",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00513/seq1/frame_00077.jpg",
+      "index": 2,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "514b7eb8c5eed2fd78e3707af89cb73c91541fde84bf28edc685b607b82ffa09",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00513/seq1/frame_00154.jpg",
+      "index": 3,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "08263c4f333664830add13f9a58562132c0a1bcfdc2d291a7a35ef3422aa3cf7",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00513/seq1/frame_00232.jpg",
+      "index": 4,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "ffe59f0846371d3b04001efd7d7bd258eab26e87acb259ecd0c98cb81a632b97",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00513/seq1/frame_00309.jpg",
+      "index": 5,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "ac95e2d8ecd4fa0108326ce33c487e00e1174303f1f986f4b11cefcd305d033e",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00513/seq1/frame_00386.jpg",
+      "index": 6,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "bb3ba47472212acd9935f5aa437af40d2814fe582e3979d91837c1f059d806f6",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00513/seq1/frame_00463.jpg",
+      "index": 7,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "3fe4dd0f1a5232351e615a5323b7252275ee3ea66223bb5284d1427dd9d814d5",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00513/seq1/frame_00540.jpg",
+      "index": 8,
+      "intrinsics_member": "val/s00513/intrinsics.txt",
+      "json_sha256": "d246ae57834ba1274d9348b0c38731f11c2c7a0426e0e703d3436f31cbaf0908",
+      "scene": "s00513",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00475/seq0/frame_00000.jpg",
+      "index": 9,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "3a774a58e7d0cb7166d4dfc462ab9a417d2b98a2957da03c9f9c25601189291b",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00475/seq1/frame_00000.jpg",
+      "index": 10,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "90bd96e4df10ce9d799a33c6c887a2ff9efc3988bef0ba5ea3b2cddf232df7e7",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00475/seq1/frame_00077.jpg",
+      "index": 11,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "02a98f44746c0ffea34a101a17608aa3899497560574d95228d4c7f72d7b21f7",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00475/seq1/frame_00154.jpg",
+      "index": 12,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "045d32fefe7f06d0b6d4f7a0fc7693c86c6f896048f542c42d4c150cdda62883",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00475/seq1/frame_00232.jpg",
+      "index": 13,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "932ef4bfb855facc22a5cfd8104b3308ff6a787aba6b8789ef7a3f98cfe1a7d6",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00475/seq1/frame_00309.jpg",
+      "index": 14,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "68d1b14102e1062ec50e5d6a768978de579aad55f0df3ed4ae9b4c95386d2830",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00475/seq1/frame_00386.jpg",
+      "index": 15,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "136ddeed6e43613bb8fb09580f4239be2b6f049c0dfd0ef2a51ef861188e4516",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00475/seq1/frame_00463.jpg",
+      "index": 16,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "c349ef65a0098752247c46de1641d29d9bbf9b74373c32db05b0a4110a2764ee",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00475/seq1/frame_00540.jpg",
+      "index": 17,
+      "intrinsics_member": "val/s00475/intrinsics.txt",
+      "json_sha256": "764b2a44cdd690a49c4d769d6c9b3dec3d4c07c7341771820471e4461c3b1ed0",
+      "scene": "s00475",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00478/seq0/frame_00000.jpg",
+      "index": 18,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "9d2079ef78234c1c4526e9efa7f7037e41487bbb3b5864425a64c7cbae8240e9",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00478/seq1/frame_00000.jpg",
+      "index": 19,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "4519a691f469dd33da29bdcf5e5192424de899e242786945e3e98fc5dc4b9f2a",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": false
+    },
+    {
+      "image_id": "val/s00478/seq1/frame_00077.jpg",
+      "index": 20,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "fe0fa8e0d37853a312995f01263de16a36c749c8c8af272b812877d8ae6c10c2",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00478/seq1/frame_00154.jpg",
+      "index": 21,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "1169ca2b2baf2623254ec475509e6f8d57aa2e9f80a031fd385cc5bbd5bee868",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00478/seq1/frame_00232.jpg",
+      "index": 22,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "188ea985e40faa54e0453cbc46e3a0c197142148238adf8d15b38e33b2eacc4e",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00478/seq1/frame_00309.jpg",
+      "index": 23,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "3ad3e8bb4bd3e08c8ba29f6306e57cf970338df104d71e15ce75596469124983",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00478/seq1/frame_00386.jpg",
+      "index": 24,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "36b5b13310f6f544717e4ab48b3fa282c4bcfa9b81a0c456522c6729b63b5f75",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00478/seq1/frame_00463.jpg",
+      "index": 25,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "9ec0f29f4478afe3b034c173b7970d0e1052d5ec94e94ac264c5d4aaabbf0c90",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": true
+    },
+    {
+      "image_id": "val/s00478/seq1/frame_00540.jpg",
+      "index": 26,
+      "intrinsics_member": "val/s00478/intrinsics.txt",
+      "json_sha256": "b448d5d9d3593b52ac04cd0bea9001fb553227ea43e955cc141d144a7a7e2ea0",
+      "scene": "s00478",
+      "status": "completed",
+      "usable_offset": true
+    }
+  ],
+  "input_acquisition_bindings": {
+    "input_operation_sha256": "6663a9e7e02ec04a889c93d962a0e481987a377a14ca00b6d9060e4e12dfc613",
+    "input_supervision_log_sha256": {
+      "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "6b5e878ff3e1e699bc147fbd36c23e943b03f32e5171963ce0a798dde9275902"
+    },
+    "input_supervision_sha256": "62b21ab90969008e4f111327e7f9d8016e060146d8891e1331b41eaf9552c60b"
+  },
+  "input_freeze": "acf502b831ad9e3485ab56549217c8a603d56bf7",
+  "input_sha256": {
+    "val/s00475/intrinsics.txt": "3bb5ee376af655534547107f4a51218df8fb521df00f5278efc7355984a7d7df",
+    "val/s00475/seq0/frame_00000.jpg": "f8766f0b634c136083f54d6c74214bb7bd7f0fcd3e3138f05c58a4f52baa256f",
+    "val/s00475/seq1/frame_00000.jpg": "ee00d3bcf6a54b5d3a4c463748c1b6b0b5403cbde645ed0c343c1f64f25ae8f7",
+    "val/s00475/seq1/frame_00039.jpg": "5acb5911c8110e9c2da865f6f247a7b82c292e02e6ee860177719b051151376a",
+    "val/s00475/seq1/frame_00077.jpg": "7613bac9be06c41e915444c7ebcbf625dd17a8a82be5665fc624da9a322c910a",
+    "val/s00475/seq1/frame_00116.jpg": "6f655b49deaa43e733fb437a81b37f96cf768b9cdb456c1b9c3bdd7981dd9758",
+    "val/s00475/seq1/frame_00154.jpg": "e6fc88d4a18a0735ed50bc13deda954cda57dd13803f9d1b1385a8f878c53ee4",
+    "val/s00475/seq1/frame_00193.jpg": "c2809c7a1cde2fb95829d95c48cf83c1dc615030489dfc76f38c7c568aaa0e20",
+    "val/s00475/seq1/frame_00232.jpg": "7c22d68eb9f1db1043d1c0ed609dfb3d34f3115f12d43eb99defa5b0fce6c442",
+    "val/s00475/seq1/frame_00270.jpg": "ea9c6d3757b8d0b76f9274d5d7bfb829da49b791c7585b61265393f3f7a0591c",
+    "val/s00475/seq1/frame_00309.jpg": "c5a6658b2bc8741a0b30178185a134793c1d554acd3c01ed412193594f3bff80",
+    "val/s00475/seq1/frame_00347.jpg": "7f5195e11b38ac67433a4bc0d33030f1ed9b0966509aaa7328e36bf8603c32eb",
+    "val/s00475/seq1/frame_00386.jpg": "dd03bff47adbdc8e3d964edd03cb0db5bc1c8e923e0a3fcee99ef98b3ca9ab96",
+    "val/s00475/seq1/frame_00425.jpg": "eec53596df9b8d14bf300c97b04f645ae465375b23e5266fd735113f63054453",
+    "val/s00475/seq1/frame_00463.jpg": "60483f15fef1b5d6c5790f3203d1e4403bcf561c39e39c51f08f7803ad619ce0",
+    "val/s00475/seq1/frame_00502.jpg": "b12e1a1b7158031a5b391247c741755e535a73ff57b9405a6bfa35eac5942985",
+    "val/s00475/seq1/frame_00540.jpg": "8a6d1f3e190a7f7f2e618e2113cb8de98824ec1f361b97341d97b388d47f938e",
+    "val/s00475/seq1/frame_00579.jpg": "24b8b3411977b396c977e8a1dcf9f02a9e091e9d73e44eb886caf14502c303fe",
+    "val/s00478/intrinsics.txt": "9f83893905088b86f563b1ca79734ec6d34fa932337c228e0e7d18df2cdb80a4",
+    "val/s00478/seq0/frame_00000.jpg": "4d0563f5eb71b7e03a793a628634a0b9e4e5a96d8425dbf16dc6423105c6fbd3",
+    "val/s00478/seq1/frame_00000.jpg": "44f54b4eed73232e98e684646e9fc402e38a6416e1af08d60182996594a69ec1",
+    "val/s00478/seq1/frame_00039.jpg": "b15e9388f33d395d0137ffcff220f377c668fe8bea60794829fb41249e6364e7",
+    "val/s00478/seq1/frame_00077.jpg": "aa6447be26547ca4932cc0b955d162bd15e76f6fd4fb16c029bba7f9aee64606",
+    "val/s00478/seq1/frame_00116.jpg": "dc0d2cb267888f58b82b0d1f0cc522fa94334971cc2cedbf1c95ef1d45666964",
+    "val/s00478/seq1/frame_00154.jpg": "d7602484bc89c965f6443695726e1aeaca691ca5d61c413d8f9649a52e46145d",
+    "val/s00478/seq1/frame_00193.jpg": "df5a791ca384456f3ca7d161b813429b7fe8e40b792321cc5e7a813fe9c2e1ac",
+    "val/s00478/seq1/frame_00232.jpg": "9fe982d98738f1450a16e498099cb1428dbd95ee1ad2c595722e2ab1ea8dc877",
+    "val/s00478/seq1/frame_00270.jpg": "d367b33041c45c0e9e3797ec21e53a2425fffff6105a16ac7b58b95e7920e06b",
+    "val/s00478/seq1/frame_00309.jpg": "3342180fdff94d66b69f49ceed3efa28362b2399e750720cdb2f892fe160cdf8",
+    "val/s00478/seq1/frame_00347.jpg": "825bb44ff6b3789fd310135f5964227b8be66a62e92cd81f039f2202ad740cca",
+    "val/s00478/seq1/frame_00386.jpg": "0a99783fcfaae8122397fbb98c3c70a2bc43973d42c7f8421625560cfc4611c3",
+    "val/s00478/seq1/frame_00425.jpg": "96e76b31061f030db4601a7583e06c5f1342611a6008cf5ce78a193ed5c1a9bd",
+    "val/s00478/seq1/frame_00463.jpg": "1a8a68fc0c1144dcf48f4bf151d4631808b5ec7989fb0c0661a79dbc0592c4cf",
+    "val/s00478/seq1/frame_00502.jpg": "fa7059b59e6e3bc985a197a165f01a1951d09a8d3c8fb7c566359a2889be3c9b",
+    "val/s00478/seq1/frame_00540.jpg": "90a0f0280dc67886a03a2894c16a2980f2813a99559b2c14f3213482c5361b06",
+    "val/s00478/seq1/frame_00579.jpg": "0d53b705701dce761c4a64570ecf6c61272b4a212448f1ff4c712bec9c24c74d",
+    "val/s00513/intrinsics.txt": "f1812125c7d101f208f2ee7c79f62ad8dd7c41409df0ce8b78c14e04897836a0",
+    "val/s00513/seq0/frame_00000.jpg": "2d99f3e5fb55340039a31665aaba97761f44fb3c039869b0e615c7d0df3039f4",
+    "val/s00513/seq1/frame_00000.jpg": "7cbbac737087c633e30a4b7c324f9059924a0220f297173d0da20bad5277de60",
+    "val/s00513/seq1/frame_00039.jpg": "538fc9196232c8b3518aa50d146895acf3b4964cd0f0a7258ff764686cf12d39",
+    "val/s00513/seq1/frame_00077.jpg": "52d04408c2b7d90c4407c899b92d45ee3fe60c8f177bf28ee8169bbc859caacb",
+    "val/s00513/seq1/frame_00116.jpg": "2c16753018a150d4b110af69ebc752c98fb185d95637df4807f6d6f93c87d6fa",
+    "val/s00513/seq1/frame_00154.jpg": "130b41ac6a27290c5b8eac57b2b3afc50603aad02be16b05bebc78053b116c41",
+    "val/s00513/seq1/frame_00193.jpg": "c86833ea62c2fceb023bf50d3410c864568b3a58f24fb01b2e020826c2098a62",
+    "val/s00513/seq1/frame_00232.jpg": "37b0bad99824d8d44221f187206654b27fa837bddb1381c1de5ac6720b3d8a48",
+    "val/s00513/seq1/frame_00270.jpg": "6b4fe8e0ccb6eae431c4d571711ee9ab0b27410c4aecd964ccefe97ab67d5904",
+    "val/s00513/seq1/frame_00309.jpg": "907389e0914aa3af093800c665f202067b10749e3ee77f3b5d709f127050359e",
+    "val/s00513/seq1/frame_00347.jpg": "195e1758a2af5c736e12a622a534e6ae54211f4453ce6e2341adb4380f87f4e4",
+    "val/s00513/seq1/frame_00386.jpg": "c2b9d24b7dbc806f2b951580c19c1d2ea8e662a03bf74357af6ad967deab0605",
+    "val/s00513/seq1/frame_00425.jpg": "aad45937233d0eb5e851cf0ad2ba4964c87420742b5dabd54cdab6732eff94b7",
+    "val/s00513/seq1/frame_00463.jpg": "496e505fb529da3b60fe736c9d9db9b2b7b04e717ebcf71b0701b136de707b7f",
+    "val/s00513/seq1/frame_00502.jpg": "e8dca945c0c6ed0697fdb814cc823422c5982be36b82d27fb281f47f3ba99a6c",
+    "val/s00513/seq1/frame_00540.jpg": "8c4537343efd92f5c5a0e315b987ae5c4a82d28e0fb2e1de194d1a1185c8c235",
+    "val/s00513/seq1/frame_00579.jpg": "fd23461bc482471698bed78a18daeca4ec859471780ad452062f9ae6e6b1e330"
+  },
+  "input_source_sha256": {
+    "experiments/0023-mapfree/acquire_operation.py": "fab653e3ed1c0e32cb0a97eac40ef0dbc7ff3df3894da57bf9d4dfac2ba38281",
+    "experiments/0023-mapfree/frontend.py": "5076452d2e69645745eb68675a40bb47473ec4a4a28db87cf6f9652229614bf7",
+    "experiments/0023-mapfree/propose_plan.py": "3e36ce21fe8e91f2135a99ba1d4fe9e1401888ae07f98972420f2ee9c84c4bcf",
+    "experiments/0023-mapfree/range_inputs.py": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50",
+    "experiments/0023-mapfree/supervise.py": "98a83c732a88e2cfd46842c14353b3c0e73744d55969bbc7d8eacc866b4dec30",
+    "protocols/0023-mapfree-directional-instability.md": "c4f5c0cf02e31b990f7aa54bb740cde4dfbaa43c46bca1f260ffbc6bc320673e"
+  },
+  "loads": {
+    "lightglue": {
+      "allowed_missing_buffers": [
+        "confidence_thresholds"
+      ],
+      "ignored_unused_checkpoint_entries": {
+        "log_assignment.0.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.1.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.2.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.3.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.4.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.5.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.6.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.7.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        },
+        "log_assignment.8.r": {
+          "dtype": "torch.float32",
+          "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+          "reason": "unused by pinned MatchAssignment; official loader ignores",
+          "shape": [
+            1
+          ],
+          "verified_constant_one": true
+        }
+      },
+      "learned_keys": [
+        "log_assignment.0.final_proj.bias",
+        "log_assignment.0.final_proj.weight",
+        "log_assignment.0.matchability.bias",
+        "log_assignment.0.matchability.weight",
+        "log_assignment.1.final_proj.bias",
+        "log_assignment.1.final_proj.weight",
+        "log_assignment.1.matchability.bias",
+        "log_assignment.1.matchability.weight",
+        "log_assignment.2.final_proj.bias",
+        "log_assignment.2.final_proj.weight",
+        "log_assignment.2.matchability.bias",
+        "log_assignment.2.matchability.weight",
+        "log_assignment.3.final_proj.bias",
+        "log_assignment.3.final_proj.weight",
+        "log_assignment.3.matchability.bias",
+        "log_assignment.3.matchability.weight",
+        "log_assignment.4.final_proj.bias",
+        "log_assignment.4.final_proj.weight",
+        "log_assignment.4.matchability.bias",
+        "log_assignment.4.matchability.weight",
+        "log_assignment.5.final_proj.bias",
+        "log_assignment.5.final_proj.weight",
+        "log_assignment.5.matchability.bias",
+        "log_assignment.5.matchability.weight",
+        "log_assignment.6.final_proj.bias",
+        "log_assignment.6.final_proj.weight",
+        "log_assignment.6.matchability.bias",
+        "log_assignment.6.matchability.weight",
+        "log_assignment.7.final_proj.bias",
+        "log_assignment.7.final_proj.weight",
+        "log_assignment.7.matchability.bias",
+        "log_assignment.7.matchability.weight",
+        "log_assignment.8.final_proj.bias",
+        "log_assignment.8.final_proj.weight",
+        "log_assignment.8.matchability.bias",
+        "log_assignment.8.matchability.weight",
+        "posenc.Wr.weight",
+        "token_confidence.0.token.0.bias",
+        "token_confidence.0.token.0.weight",
+        "token_confidence.1.token.0.bias",
+        "token_confidence.1.token.0.weight",
+        "token_confidence.2.token.0.bias",
+        "token_confidence.2.token.0.weight",
+        "token_confidence.3.token.0.bias",
+        "token_confidence.3.token.0.weight",
+        "token_confidence.4.token.0.bias",
+        "token_confidence.4.token.0.weight",
+        "token_confidence.5.token.0.bias",
+        "token_confidence.5.token.0.weight",
+        "token_confidence.6.token.0.bias",
+        "token_confidence.6.token.0.weight",
+        "token_confidence.7.token.0.bias",
+        "token_confidence.7.token.0.weight",
+        "transformers.0.cross_attn.ffn.0.bias",
+        "transformers.0.cross_attn.ffn.0.weight",
+        "transformers.0.cross_attn.ffn.1.bias",
+        "transformers.0.cross_attn.ffn.1.weight",
+        "transformers.0.cross_attn.ffn.3.bias",
+        "transformers.0.cross_attn.ffn.3.weight",
+        "transformers.0.cross_attn.to_out.bias",
+        "transformers.0.cross_attn.to_out.weight",
+        "transformers.0.cross_attn.to_qk.bias",
+        "transformers.0.cross_attn.to_qk.weight",
+        "transformers.0.cross_attn.to_v.bias",
+        "transformers.0.cross_attn.to_v.weight",
+        "transformers.0.self_attn.Wqkv.bias",
+        "transformers.0.self_attn.Wqkv.weight",
+        "transformers.0.self_attn.ffn.0.bias",
+        "transformers.0.self_attn.ffn.0.weight",
+        "transformers.0.self_attn.ffn.1.bias",
+        "transformers.0.self_attn.ffn.1.weight",
+        "transformers.0.self_attn.ffn.3.bias",
+        "transformers.0.self_attn.ffn.3.weight",
+        "transformers.0.self_attn.out_proj.bias",
+        "transformers.0.self_attn.out_proj.weight",
+        "transformers.1.cross_attn.ffn.0.bias",
+        "transformers.1.cross_attn.ffn.0.weight",
+        "transformers.1.cross_attn.ffn.1.bias",
+        "transformers.1.cross_attn.ffn.1.weight",
+        "transformers.1.cross_attn.ffn.3.bias",
+        "transformers.1.cross_attn.ffn.3.weight",
+        "transformers.1.cross_attn.to_out.bias",
+        "transformers.1.cross_attn.to_out.weight",
+        "transformers.1.cross_attn.to_qk.bias",
+        "transformers.1.cross_attn.to_qk.weight",
+        "transformers.1.cross_attn.to_v.bias",
+        "transformers.1.cross_attn.to_v.weight",
+        "transformers.1.self_attn.Wqkv.bias",
+        "transformers.1.self_attn.Wqkv.weight",
+        "transformers.1.self_attn.ffn.0.bias",
+        "transformers.1.self_attn.ffn.0.weight",
+        "transformers.1.self_attn.ffn.1.bias",
+        "transformers.1.self_attn.ffn.1.weight",
+        "transformers.1.self_attn.ffn.3.bias",
+        "transformers.1.self_attn.ffn.3.weight",
+        "transformers.1.self_attn.out_proj.bias",
+        "transformers.1.self_attn.out_proj.weight",
+        "transformers.2.cross_attn.ffn.0.bias",
+        "transformers.2.cross_attn.ffn.0.weight",
+        "transformers.2.cross_attn.ffn.1.bias",
+        "transformers.2.cross_attn.ffn.1.weight",
+        "transformers.2.cross_attn.ffn.3.bias",
+        "transformers.2.cross_attn.ffn.3.weight",
+        "transformers.2.cross_attn.to_out.bias",
+        "transformers.2.cross_attn.to_out.weight",
+        "transformers.2.cross_attn.to_qk.bias",
+        "transformers.2.cross_attn.to_qk.weight",
+        "transformers.2.cross_attn.to_v.bias",
+        "transformers.2.cross_attn.to_v.weight",
+        "transformers.2.self_attn.Wqkv.bias",
+        "transformers.2.self_attn.Wqkv.weight",
+        "transformers.2.self_attn.ffn.0.bias",
+        "transformers.2.self_attn.ffn.0.weight",
+        "transformers.2.self_attn.ffn.1.bias",
+        "transformers.2.self_attn.ffn.1.weight",
+        "transformers.2.self_attn.ffn.3.bias",
+        "transformers.2.self_attn.ffn.3.weight",
+        "transformers.2.self_attn.out_proj.bias",
+        "transformers.2.self_attn.out_proj.weight",
+        "transformers.3.cross_attn.ffn.0.bias",
+        "transformers.3.cross_attn.ffn.0.weight",
+        "transformers.3.cross_attn.ffn.1.bias",
+        "transformers.3.cross_attn.ffn.1.weight",
+        "transformers.3.cross_attn.ffn.3.bias",
+        "transformers.3.cross_attn.ffn.3.weight",
+        "transformers.3.cross_attn.to_out.bias",
+        "transformers.3.cross_attn.to_out.weight",
+        "transformers.3.cross_attn.to_qk.bias",
+        "transformers.3.cross_attn.to_qk.weight",
+        "transformers.3.cross_attn.to_v.bias",
+        "transformers.3.cross_attn.to_v.weight",
+        "transformers.3.self_attn.Wqkv.bias",
+        "transformers.3.self_attn.Wqkv.weight",
+        "transformers.3.self_attn.ffn.0.bias",
+        "transformers.3.self_attn.ffn.0.weight",
+        "transformers.3.self_attn.ffn.1.bias",
+        "transformers.3.self_attn.ffn.1.weight",
+        "transformers.3.self_attn.ffn.3.bias",
+        "transformers.3.self_attn.ffn.3.weight",
+        "transformers.3.self_attn.out_proj.bias",
+        "transformers.3.self_attn.out_proj.weight",
+        "transformers.4.cross_attn.ffn.0.bias",
+        "transformers.4.cross_attn.ffn.0.weight",
+        "transformers.4.cross_attn.ffn.1.bias",
+        "transformers.4.cross_attn.ffn.1.weight",
+        "transformers.4.cross_attn.ffn.3.bias",
+        "transformers.4.cross_attn.ffn.3.weight",
+        "transformers.4.cross_attn.to_out.bias",
+        "transformers.4.cross_attn.to_out.weight",
+        "transformers.4.cross_attn.to_qk.bias",
+        "transformers.4.cross_attn.to_qk.weight",
+        "transformers.4.cross_attn.to_v.bias",
+        "transformers.4.cross_attn.to_v.weight",
+        "transformers.4.self_attn.Wqkv.bias",
+        "transformers.4.self_attn.Wqkv.weight",
+        "transformers.4.self_attn.ffn.0.bias",
+        "transformers.4.self_attn.ffn.0.weight",
+        "transformers.4.self_attn.ffn.1.bias",
+        "transformers.4.self_attn.ffn.1.weight",
+        "transformers.4.self_attn.ffn.3.bias",
+        "transformers.4.self_attn.ffn.3.weight",
+        "transformers.4.self_attn.out_proj.bias",
+        "transformers.4.self_attn.out_proj.weight",
+        "transformers.5.cross_attn.ffn.0.bias",
+        "transformers.5.cross_attn.ffn.0.weight",
+        "transformers.5.cross_attn.ffn.1.bias",
+        "transformers.5.cross_attn.ffn.1.weight",
+        "transformers.5.cross_attn.ffn.3.bias",
+        "transformers.5.cross_attn.ffn.3.weight",
+        "transformers.5.cross_attn.to_out.bias",
+        "transformers.5.cross_attn.to_out.weight",
+        "transformers.5.cross_attn.to_qk.bias",
+        "transformers.5.cross_attn.to_qk.weight",
+        "transformers.5.cross_attn.to_v.bias",
+        "transformers.5.cross_attn.to_v.weight",
+        "transformers.5.self_attn.Wqkv.bias",
+        "transformers.5.self_attn.Wqkv.weight",
+        "transformers.5.self_attn.ffn.0.bias",
+        "transformers.5.self_attn.ffn.0.weight",
+        "transformers.5.self_attn.ffn.1.bias",
+        "transformers.5.self_attn.ffn.1.weight",
+        "transformers.5.self_attn.ffn.3.bias",
+        "transformers.5.self_attn.ffn.3.weight",
+        "transformers.5.self_attn.out_proj.bias",
+        "transformers.5.self_attn.out_proj.weight",
+        "transformers.6.cross_attn.ffn.0.bias",
+        "transformers.6.cross_attn.ffn.0.weight",
+        "transformers.6.cross_attn.ffn.1.bias",
+        "transformers.6.cross_attn.ffn.1.weight",
+        "transformers.6.cross_attn.ffn.3.bias",
+        "transformers.6.cross_attn.ffn.3.weight",
+        "transformers.6.cross_attn.to_out.bias",
+        "transformers.6.cross_attn.to_out.weight",
+        "transformers.6.cross_attn.to_qk.bias",
+        "transformers.6.cross_attn.to_qk.weight",
+        "transformers.6.cross_attn.to_v.bias",
+        "transformers.6.cross_attn.to_v.weight",
+        "transformers.6.self_attn.Wqkv.bias",
+        "transformers.6.self_attn.Wqkv.weight",
+        "transformers.6.self_attn.ffn.0.bias",
+        "transformers.6.self_attn.ffn.0.weight",
+        "transformers.6.self_attn.ffn.1.bias",
+        "transformers.6.self_attn.ffn.1.weight",
+        "transformers.6.self_attn.ffn.3.bias",
+        "transformers.6.self_attn.ffn.3.weight",
+        "transformers.6.self_attn.out_proj.bias",
+        "transformers.6.self_attn.out_proj.weight",
+        "transformers.7.cross_attn.ffn.0.bias",
+        "transformers.7.cross_attn.ffn.0.weight",
+        "transformers.7.cross_attn.ffn.1.bias",
+        "transformers.7.cross_attn.ffn.1.weight",
+        "transformers.7.cross_attn.ffn.3.bias",
+        "transformers.7.cross_attn.ffn.3.weight",
+        "transformers.7.cross_attn.to_out.bias",
+        "transformers.7.cross_attn.to_out.weight",
+        "transformers.7.cross_attn.to_qk.bias",
+        "transformers.7.cross_attn.to_qk.weight",
+        "transformers.7.cross_attn.to_v.bias",
+        "transformers.7.cross_attn.to_v.weight",
+        "transformers.7.self_attn.Wqkv.bias",
+        "transformers.7.self_attn.Wqkv.weight",
+        "transformers.7.self_attn.ffn.0.bias",
+        "transformers.7.self_attn.ffn.0.weight",
+        "transformers.7.self_attn.ffn.1.bias",
+        "transformers.7.self_attn.ffn.1.weight",
+        "transformers.7.self_attn.ffn.3.bias",
+        "transformers.7.self_attn.ffn.3.weight",
+        "transformers.7.self_attn.out_proj.bias",
+        "transformers.7.self_attn.out_proj.weight",
+        "transformers.8.cross_attn.ffn.0.bias",
+        "transformers.8.cross_attn.ffn.0.weight",
+        "transformers.8.cross_attn.ffn.1.bias",
+        "transformers.8.cross_attn.ffn.1.weight",
+        "transformers.8.cross_attn.ffn.3.bias",
+        "transformers.8.cross_attn.ffn.3.weight",
+        "transformers.8.cross_attn.to_out.bias",
+        "transformers.8.cross_attn.to_out.weight",
+        "transformers.8.cross_attn.to_qk.bias",
+        "transformers.8.cross_attn.to_qk.weight",
+        "transformers.8.cross_attn.to_v.bias",
+        "transformers.8.cross_attn.to_v.weight",
+        "transformers.8.self_attn.Wqkv.bias",
+        "transformers.8.self_attn.Wqkv.weight",
+        "transformers.8.self_attn.ffn.0.bias",
+        "transformers.8.self_attn.ffn.0.weight",
+        "transformers.8.self_attn.ffn.1.bias",
+        "transformers.8.self_attn.ffn.1.weight",
+        "transformers.8.self_attn.ffn.3.bias",
+        "transformers.8.self_attn.ffn.3.weight",
+        "transformers.8.self_attn.out_proj.bias",
+        "transformers.8.self_attn.out_proj.weight"
+      ],
+      "missing_keys": [
+        "confidence_thresholds"
+      ],
+      "state_shapes": {
+        "confidence_thresholds": [
+          9
+        ],
+        "log_assignment.0.final_proj.bias": [
+          256
+        ],
+        "log_assignment.0.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.0.matchability.bias": [
+          1
+        ],
+        "log_assignment.0.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.1.final_proj.bias": [
+          256
+        ],
+        "log_assignment.1.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.1.matchability.bias": [
+          1
+        ],
+        "log_assignment.1.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.2.final_proj.bias": [
+          256
+        ],
+        "log_assignment.2.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.2.matchability.bias": [
+          1
+        ],
+        "log_assignment.2.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.3.final_proj.bias": [
+          256
+        ],
+        "log_assignment.3.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.3.matchability.bias": [
+          1
+        ],
+        "log_assignment.3.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.4.final_proj.bias": [
+          256
+        ],
+        "log_assignment.4.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.4.matchability.bias": [
+          1
+        ],
+        "log_assignment.4.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.5.final_proj.bias": [
+          256
+        ],
+        "log_assignment.5.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.5.matchability.bias": [
+          1
+        ],
+        "log_assignment.5.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.6.final_proj.bias": [
+          256
+        ],
+        "log_assignment.6.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.6.matchability.bias": [
+          1
+        ],
+        "log_assignment.6.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.7.final_proj.bias": [
+          256
+        ],
+        "log_assignment.7.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.7.matchability.bias": [
+          1
+        ],
+        "log_assignment.7.matchability.weight": [
+          1,
+          256
+        ],
+        "log_assignment.8.final_proj.bias": [
+          256
+        ],
+        "log_assignment.8.final_proj.weight": [
+          256,
+          256
+        ],
+        "log_assignment.8.matchability.bias": [
+          1
+        ],
+        "log_assignment.8.matchability.weight": [
+          1,
+          256
+        ],
+        "posenc.Wr.weight": [
+          32,
+          2
+        ],
+        "token_confidence.0.token.0.bias": [
+          1
+        ],
+        "token_confidence.0.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.1.token.0.bias": [
+          1
+        ],
+        "token_confidence.1.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.2.token.0.bias": [
+          1
+        ],
+        "token_confidence.2.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.3.token.0.bias": [
+          1
+        ],
+        "token_confidence.3.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.4.token.0.bias": [
+          1
+        ],
+        "token_confidence.4.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.5.token.0.bias": [
+          1
+        ],
+        "token_confidence.5.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.6.token.0.bias": [
+          1
+        ],
+        "token_confidence.6.token.0.weight": [
+          1,
+          256
+        ],
+        "token_confidence.7.token.0.bias": [
+          1
+        ],
+        "token_confidence.7.token.0.weight": [
+          1,
+          256
+        ],
+        "transformers.0.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.0.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.0.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.0.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.0.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.0.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.0.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.0.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.0.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.0.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.0.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.0.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.0.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.0.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.0.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.0.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.0.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.0.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.0.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.0.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.0.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.0.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.1.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.1.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.1.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.1.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.1.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.1.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.1.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.1.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.1.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.1.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.1.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.1.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.1.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.1.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.1.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.1.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.1.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.1.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.1.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.1.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.1.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.1.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.2.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.2.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.2.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.2.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.2.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.2.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.2.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.2.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.2.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.2.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.2.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.2.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.2.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.2.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.2.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.2.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.2.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.2.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.2.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.2.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.2.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.2.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.3.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.3.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.3.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.3.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.3.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.3.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.3.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.3.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.3.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.3.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.3.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.3.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.3.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.3.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.3.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.3.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.3.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.3.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.3.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.3.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.3.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.3.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.4.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.4.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.4.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.4.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.4.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.4.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.4.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.4.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.4.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.4.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.4.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.4.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.4.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.4.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.4.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.4.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.4.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.4.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.4.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.4.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.4.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.4.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.5.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.5.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.5.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.5.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.5.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.5.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.5.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.5.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.5.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.5.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.5.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.5.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.5.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.5.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.5.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.5.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.5.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.5.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.5.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.5.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.5.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.5.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.6.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.6.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.6.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.6.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.6.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.6.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.6.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.6.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.6.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.6.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.6.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.6.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.6.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.6.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.6.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.6.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.6.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.6.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.6.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.6.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.6.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.6.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.7.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.7.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.7.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.7.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.7.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.7.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.7.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.7.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.7.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.7.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.7.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.7.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.7.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.7.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.7.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.7.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.7.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.7.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.7.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.7.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.7.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.7.self_attn.out_proj.weight": [
+          256,
+          256
+        ],
+        "transformers.8.cross_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.8.cross_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.8.cross_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.8.cross_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.8.cross_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.8.cross_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.8.cross_attn.to_out.bias": [
+          256
+        ],
+        "transformers.8.cross_attn.to_out.weight": [
+          256,
+          256
+        ],
+        "transformers.8.cross_attn.to_qk.bias": [
+          256
+        ],
+        "transformers.8.cross_attn.to_qk.weight": [
+          256,
+          256
+        ],
+        "transformers.8.cross_attn.to_v.bias": [
+          256
+        ],
+        "transformers.8.cross_attn.to_v.weight": [
+          256,
+          256
+        ],
+        "transformers.8.self_attn.Wqkv.bias": [
+          768
+        ],
+        "transformers.8.self_attn.Wqkv.weight": [
+          768,
+          256
+        ],
+        "transformers.8.self_attn.ffn.0.bias": [
+          512
+        ],
+        "transformers.8.self_attn.ffn.0.weight": [
+          512,
+          512
+        ],
+        "transformers.8.self_attn.ffn.1.bias": [
+          512
+        ],
+        "transformers.8.self_attn.ffn.1.weight": [
+          512
+        ],
+        "transformers.8.self_attn.ffn.3.bias": [
+          256
+        ],
+        "transformers.8.self_attn.ffn.3.weight": [
+          256,
+          512
+        ],
+        "transformers.8.self_attn.out_proj.bias": [
+          256
+        ],
+        "transformers.8.self_attn.out_proj.weight": [
+          256,
+          256
+        ]
+      },
+      "strict_after_deterministic_buffer_completion": true,
+      "unexpected_keys": [
+        "log_assignment.0.r",
+        "log_assignment.1.r",
+        "log_assignment.2.r",
+        "log_assignment.3.r",
+        "log_assignment.4.r",
+        "log_assignment.5.r",
+        "log_assignment.6.r",
+        "log_assignment.7.r",
+        "log_assignment.8.r"
+      ]
+    },
+    "moge": {
+      "allowed_missing_buffers": [],
+      "ignored_unused_checkpoint_entries": {},
+      "learned_keys": [
+        "encoder.backbone.blocks.0.attn.proj.bias",
+        "encoder.backbone.blocks.0.attn.proj.weight",
+        "encoder.backbone.blocks.0.attn.qkv.bias",
+        "encoder.backbone.blocks.0.attn.qkv.weight",
+        "encoder.backbone.blocks.0.ls1.gamma",
+        "encoder.backbone.blocks.0.ls2.gamma",
+        "encoder.backbone.blocks.0.mlp.fc1.bias",
+        "encoder.backbone.blocks.0.mlp.fc1.weight",
+        "encoder.backbone.blocks.0.mlp.fc2.bias",
+        "encoder.backbone.blocks.0.mlp.fc2.weight",
+        "encoder.backbone.blocks.0.norm1.bias",
+        "encoder.backbone.blocks.0.norm1.weight",
+        "encoder.backbone.blocks.0.norm2.bias",
+        "encoder.backbone.blocks.0.norm2.weight",
+        "encoder.backbone.blocks.1.attn.proj.bias",
+        "encoder.backbone.blocks.1.attn.proj.weight",
+        "encoder.backbone.blocks.1.attn.qkv.bias",
+        "encoder.backbone.blocks.1.attn.qkv.weight",
+        "encoder.backbone.blocks.1.ls1.gamma",
+        "encoder.backbone.blocks.1.ls2.gamma",
+        "encoder.backbone.blocks.1.mlp.fc1.bias",
+        "encoder.backbone.blocks.1.mlp.fc1.weight",
+        "encoder.backbone.blocks.1.mlp.fc2.bias",
+        "encoder.backbone.blocks.1.mlp.fc2.weight",
+        "encoder.backbone.blocks.1.norm1.bias",
+        "encoder.backbone.blocks.1.norm1.weight",
+        "encoder.backbone.blocks.1.norm2.bias",
+        "encoder.backbone.blocks.1.norm2.weight",
+        "encoder.backbone.blocks.10.attn.proj.bias",
+        "encoder.backbone.blocks.10.attn.proj.weight",
+        "encoder.backbone.blocks.10.attn.qkv.bias",
+        "encoder.backbone.blocks.10.attn.qkv.weight",
+        "encoder.backbone.blocks.10.ls1.gamma",
+        "encoder.backbone.blocks.10.ls2.gamma",
+        "encoder.backbone.blocks.10.mlp.fc1.bias",
+        "encoder.backbone.blocks.10.mlp.fc1.weight",
+        "encoder.backbone.blocks.10.mlp.fc2.bias",
+        "encoder.backbone.blocks.10.mlp.fc2.weight",
+        "encoder.backbone.blocks.10.norm1.bias",
+        "encoder.backbone.blocks.10.norm1.weight",
+        "encoder.backbone.blocks.10.norm2.bias",
+        "encoder.backbone.blocks.10.norm2.weight",
+        "encoder.backbone.blocks.11.attn.proj.bias",
+        "encoder.backbone.blocks.11.attn.proj.weight",
+        "encoder.backbone.blocks.11.attn.qkv.bias",
+        "encoder.backbone.blocks.11.attn.qkv.weight",
+        "encoder.backbone.blocks.11.ls1.gamma",
+        "encoder.backbone.blocks.11.ls2.gamma",
+        "encoder.backbone.blocks.11.mlp.fc1.bias",
+        "encoder.backbone.blocks.11.mlp.fc1.weight",
+        "encoder.backbone.blocks.11.mlp.fc2.bias",
+        "encoder.backbone.blocks.11.mlp.fc2.weight",
+        "encoder.backbone.blocks.11.norm1.bias",
+        "encoder.backbone.blocks.11.norm1.weight",
+        "encoder.backbone.blocks.11.norm2.bias",
+        "encoder.backbone.blocks.11.norm2.weight",
+        "encoder.backbone.blocks.2.attn.proj.bias",
+        "encoder.backbone.blocks.2.attn.proj.weight",
+        "encoder.backbone.blocks.2.attn.qkv.bias",
+        "encoder.backbone.blocks.2.attn.qkv.weight",
+        "encoder.backbone.blocks.2.ls1.gamma",
+        "encoder.backbone.blocks.2.ls2.gamma",
+        "encoder.backbone.blocks.2.mlp.fc1.bias",
+        "encoder.backbone.blocks.2.mlp.fc1.weight",
+        "encoder.backbone.blocks.2.mlp.fc2.bias",
+        "encoder.backbone.blocks.2.mlp.fc2.weight",
+        "encoder.backbone.blocks.2.norm1.bias",
+        "encoder.backbone.blocks.2.norm1.weight",
+        "encoder.backbone.blocks.2.norm2.bias",
+        "encoder.backbone.blocks.2.norm2.weight",
+        "encoder.backbone.blocks.3.attn.proj.bias",
+        "encoder.backbone.blocks.3.attn.proj.weight",
+        "encoder.backbone.blocks.3.attn.qkv.bias",
+        "encoder.backbone.blocks.3.attn.qkv.weight",
+        "encoder.backbone.blocks.3.ls1.gamma",
+        "encoder.backbone.blocks.3.ls2.gamma",
+        "encoder.backbone.blocks.3.mlp.fc1.bias",
+        "encoder.backbone.blocks.3.mlp.fc1.weight",
+        "encoder.backbone.blocks.3.mlp.fc2.bias",
+        "encoder.backbone.blocks.3.mlp.fc2.weight",
+        "encoder.backbone.blocks.3.norm1.bias",
+        "encoder.backbone.blocks.3.norm1.weight",
+        "encoder.backbone.blocks.3.norm2.bias",
+        "encoder.backbone.blocks.3.norm2.weight",
+        "encoder.backbone.blocks.4.attn.proj.bias",
+        "encoder.backbone.blocks.4.attn.proj.weight",
+        "encoder.backbone.blocks.4.attn.qkv.bias",
+        "encoder.backbone.blocks.4.attn.qkv.weight",
+        "encoder.backbone.blocks.4.ls1.gamma",
+        "encoder.backbone.blocks.4.ls2.gamma",
+        "encoder.backbone.blocks.4.mlp.fc1.bias",
+        "encoder.backbone.blocks.4.mlp.fc1.weight",
+        "encoder.backbone.blocks.4.mlp.fc2.bias",
+        "encoder.backbone.blocks.4.mlp.fc2.weight",
+        "encoder.backbone.blocks.4.norm1.bias",
+        "encoder.backbone.blocks.4.norm1.weight",
+        "encoder.backbone.blocks.4.norm2.bias",
+        "encoder.backbone.blocks.4.norm2.weight",
+        "encoder.backbone.blocks.5.attn.proj.bias",
+        "encoder.backbone.blocks.5.attn.proj.weight",
+        "encoder.backbone.blocks.5.attn.qkv.bias",
+        "encoder.backbone.blocks.5.attn.qkv.weight",
+        "encoder.backbone.blocks.5.ls1.gamma",
+        "encoder.backbone.blocks.5.ls2.gamma",
+        "encoder.backbone.blocks.5.mlp.fc1.bias",
+        "encoder.backbone.blocks.5.mlp.fc1.weight",
+        "encoder.backbone.blocks.5.mlp.fc2.bias",
+        "encoder.backbone.blocks.5.mlp.fc2.weight",
+        "encoder.backbone.blocks.5.norm1.bias",
+        "encoder.backbone.blocks.5.norm1.weight",
+        "encoder.backbone.blocks.5.norm2.bias",
+        "encoder.backbone.blocks.5.norm2.weight",
+        "encoder.backbone.blocks.6.attn.proj.bias",
+        "encoder.backbone.blocks.6.attn.proj.weight",
+        "encoder.backbone.blocks.6.attn.qkv.bias",
+        "encoder.backbone.blocks.6.attn.qkv.weight",
+        "encoder.backbone.blocks.6.ls1.gamma",
+        "encoder.backbone.blocks.6.ls2.gamma",
+        "encoder.backbone.blocks.6.mlp.fc1.bias",
+        "encoder.backbone.blocks.6.mlp.fc1.weight",
+        "encoder.backbone.blocks.6.mlp.fc2.bias",
+        "encoder.backbone.blocks.6.mlp.fc2.weight",
+        "encoder.backbone.blocks.6.norm1.bias",
+        "encoder.backbone.blocks.6.norm1.weight",
+        "encoder.backbone.blocks.6.norm2.bias",
+        "encoder.backbone.blocks.6.norm2.weight",
+        "encoder.backbone.blocks.7.attn.proj.bias",
+        "encoder.backbone.blocks.7.attn.proj.weight",
+        "encoder.backbone.blocks.7.attn.qkv.bias",
+        "encoder.backbone.blocks.7.attn.qkv.weight",
+        "encoder.backbone.blocks.7.ls1.gamma",
+        "encoder.backbone.blocks.7.ls2.gamma",
+        "encoder.backbone.blocks.7.mlp.fc1.bias",
+        "encoder.backbone.blocks.7.mlp.fc1.weight",
+        "encoder.backbone.blocks.7.mlp.fc2.bias",
+        "encoder.backbone.blocks.7.mlp.fc2.weight",
+        "encoder.backbone.blocks.7.norm1.bias",
+        "encoder.backbone.blocks.7.norm1.weight",
+        "encoder.backbone.blocks.7.norm2.bias",
+        "encoder.backbone.blocks.7.norm2.weight",
+        "encoder.backbone.blocks.8.attn.proj.bias",
+        "encoder.backbone.blocks.8.attn.proj.weight",
+        "encoder.backbone.blocks.8.attn.qkv.bias",
+        "encoder.backbone.blocks.8.attn.qkv.weight",
+        "encoder.backbone.blocks.8.ls1.gamma",
+        "encoder.backbone.blocks.8.ls2.gamma",
+        "encoder.backbone.blocks.8.mlp.fc1.bias",
+        "encoder.backbone.blocks.8.mlp.fc1.weight",
+        "encoder.backbone.blocks.8.mlp.fc2.bias",
+        "encoder.backbone.blocks.8.mlp.fc2.weight",
+        "encoder.backbone.blocks.8.norm1.bias",
+        "encoder.backbone.blocks.8.norm1.weight",
+        "encoder.backbone.blocks.8.norm2.bias",
+        "encoder.backbone.blocks.8.norm2.weight",
+        "encoder.backbone.blocks.9.attn.proj.bias",
+        "encoder.backbone.blocks.9.attn.proj.weight",
+        "encoder.backbone.blocks.9.attn.qkv.bias",
+        "encoder.backbone.blocks.9.attn.qkv.weight",
+        "encoder.backbone.blocks.9.ls1.gamma",
+        "encoder.backbone.blocks.9.ls2.gamma",
+        "encoder.backbone.blocks.9.mlp.fc1.bias",
+        "encoder.backbone.blocks.9.mlp.fc1.weight",
+        "encoder.backbone.blocks.9.mlp.fc2.bias",
+        "encoder.backbone.blocks.9.mlp.fc2.weight",
+        "encoder.backbone.blocks.9.norm1.bias",
+        "encoder.backbone.blocks.9.norm1.weight",
+        "encoder.backbone.blocks.9.norm2.bias",
+        "encoder.backbone.blocks.9.norm2.weight",
+        "encoder.backbone.cls_token",
+        "encoder.backbone.mask_token",
+        "encoder.backbone.norm.bias",
+        "encoder.backbone.norm.weight",
+        "encoder.backbone.patch_embed.proj.bias",
+        "encoder.backbone.patch_embed.proj.weight",
+        "encoder.backbone.pos_embed",
+        "encoder.output_projections.0.bias",
+        "encoder.output_projections.0.weight",
+        "encoder.output_projections.1.bias",
+        "encoder.output_projections.1.weight",
+        "mask_head.input_blocks.0.bias",
+        "mask_head.input_blocks.0.weight",
+        "mask_head.input_blocks.1.bias",
+        "mask_head.input_blocks.1.weight",
+        "mask_head.input_blocks.2.bias",
+        "mask_head.input_blocks.2.weight",
+        "mask_head.input_blocks.3.bias",
+        "mask_head.input_blocks.3.weight",
+        "mask_head.input_blocks.4.bias",
+        "mask_head.input_blocks.4.weight",
+        "mask_head.output_blocks.4.bias",
+        "mask_head.output_blocks.4.weight",
+        "mask_head.res_blocks.1.0.layers.2.bias",
+        "mask_head.res_blocks.1.0.layers.2.weight",
+        "mask_head.res_blocks.1.0.layers.5.bias",
+        "mask_head.res_blocks.1.0.layers.5.weight",
+        "mask_head.res_blocks.2.0.layers.2.bias",
+        "mask_head.res_blocks.2.0.layers.2.weight",
+        "mask_head.res_blocks.2.0.layers.5.bias",
+        "mask_head.res_blocks.2.0.layers.5.weight",
+        "mask_head.res_blocks.3.0.layers.2.bias",
+        "mask_head.res_blocks.3.0.layers.2.weight",
+        "mask_head.res_blocks.3.0.layers.5.bias",
+        "mask_head.res_blocks.3.0.layers.5.weight",
+        "mask_head.resamplers.0.0.bias",
+        "mask_head.resamplers.0.0.weight",
+        "mask_head.resamplers.0.1.bias",
+        "mask_head.resamplers.0.1.weight",
+        "mask_head.resamplers.1.0.bias",
+        "mask_head.resamplers.1.0.weight",
+        "mask_head.resamplers.1.1.bias",
+        "mask_head.resamplers.1.1.weight",
+        "mask_head.resamplers.2.0.bias",
+        "mask_head.resamplers.2.0.weight",
+        "mask_head.resamplers.2.1.bias",
+        "mask_head.resamplers.2.1.weight",
+        "mask_head.resamplers.3.1.bias",
+        "mask_head.resamplers.3.1.weight",
+        "neck.input_blocks.0.bias",
+        "neck.input_blocks.0.weight",
+        "neck.input_blocks.1.bias",
+        "neck.input_blocks.1.weight",
+        "neck.input_blocks.2.bias",
+        "neck.input_blocks.2.weight",
+        "neck.input_blocks.3.bias",
+        "neck.input_blocks.3.weight",
+        "neck.input_blocks.4.bias",
+        "neck.input_blocks.4.weight",
+        "neck.res_blocks.1.0.layers.2.bias",
+        "neck.res_blocks.1.0.layers.2.weight",
+        "neck.res_blocks.1.0.layers.5.bias",
+        "neck.res_blocks.1.0.layers.5.weight",
+        "neck.res_blocks.2.0.layers.2.bias",
+        "neck.res_blocks.2.0.layers.2.weight",
+        "neck.res_blocks.2.0.layers.5.bias",
+        "neck.res_blocks.2.0.layers.5.weight",
+        "neck.res_blocks.3.0.layers.2.bias",
+        "neck.res_blocks.3.0.layers.2.weight",
+        "neck.res_blocks.3.0.layers.5.bias",
+        "neck.res_blocks.3.0.layers.5.weight",
+        "neck.resamplers.0.0.bias",
+        "neck.resamplers.0.0.weight",
+        "neck.resamplers.0.1.bias",
+        "neck.resamplers.0.1.weight",
+        "neck.resamplers.1.0.bias",
+        "neck.resamplers.1.0.weight",
+        "neck.resamplers.1.1.bias",
+        "neck.resamplers.1.1.weight",
+        "neck.resamplers.2.0.bias",
+        "neck.resamplers.2.0.weight",
+        "neck.resamplers.2.1.bias",
+        "neck.resamplers.2.1.weight",
+        "neck.resamplers.3.1.bias",
+        "neck.resamplers.3.1.weight",
+        "normal_head.input_blocks.0.bias",
+        "normal_head.input_blocks.0.weight",
+        "normal_head.input_blocks.1.bias",
+        "normal_head.input_blocks.1.weight",
+        "normal_head.input_blocks.2.bias",
+        "normal_head.input_blocks.2.weight",
+        "normal_head.input_blocks.3.bias",
+        "normal_head.input_blocks.3.weight",
+        "normal_head.input_blocks.4.bias",
+        "normal_head.input_blocks.4.weight",
+        "normal_head.output_blocks.4.bias",
+        "normal_head.output_blocks.4.weight",
+        "normal_head.res_blocks.1.0.layers.2.bias",
+        "normal_head.res_blocks.1.0.layers.2.weight",
+        "normal_head.res_blocks.1.0.layers.5.bias",
+        "normal_head.res_blocks.1.0.layers.5.weight",
+        "normal_head.res_blocks.2.0.layers.2.bias",
+        "normal_head.res_blocks.2.0.layers.2.weight",
+        "normal_head.res_blocks.2.0.layers.5.bias",
+        "normal_head.res_blocks.2.0.layers.5.weight",
+        "normal_head.res_blocks.3.0.layers.2.bias",
+        "normal_head.res_blocks.3.0.layers.2.weight",
+        "normal_head.res_blocks.3.0.layers.5.bias",
+        "normal_head.res_blocks.3.0.layers.5.weight",
+        "normal_head.resamplers.0.0.bias",
+        "normal_head.resamplers.0.0.weight",
+        "normal_head.resamplers.0.1.bias",
+        "normal_head.resamplers.0.1.weight",
+        "normal_head.resamplers.1.0.bias",
+        "normal_head.resamplers.1.0.weight",
+        "normal_head.resamplers.1.1.bias",
+        "normal_head.resamplers.1.1.weight",
+        "normal_head.resamplers.2.0.bias",
+        "normal_head.resamplers.2.0.weight",
+        "normal_head.resamplers.2.1.bias",
+        "normal_head.resamplers.2.1.weight",
+        "normal_head.resamplers.3.1.bias",
+        "normal_head.resamplers.3.1.weight",
+        "points_head.input_blocks.0.bias",
+        "points_head.input_blocks.0.weight",
+        "points_head.input_blocks.1.bias",
+        "points_head.input_blocks.1.weight",
+        "points_head.input_blocks.2.bias",
+        "points_head.input_blocks.2.weight",
+        "points_head.input_blocks.3.bias",
+        "points_head.input_blocks.3.weight",
+        "points_head.input_blocks.4.bias",
+        "points_head.input_blocks.4.weight",
+        "points_head.output_blocks.4.bias",
+        "points_head.output_blocks.4.weight",
+        "points_head.res_blocks.1.0.layers.2.bias",
+        "points_head.res_blocks.1.0.layers.2.weight",
+        "points_head.res_blocks.1.0.layers.5.bias",
+        "points_head.res_blocks.1.0.layers.5.weight",
+        "points_head.res_blocks.2.0.layers.2.bias",
+        "points_head.res_blocks.2.0.layers.2.weight",
+        "points_head.res_blocks.2.0.layers.5.bias",
+        "points_head.res_blocks.2.0.layers.5.weight",
+        "points_head.res_blocks.3.0.layers.2.bias",
+        "points_head.res_blocks.3.0.layers.2.weight",
+        "points_head.res_blocks.3.0.layers.5.bias",
+        "points_head.res_blocks.3.0.layers.5.weight",
+        "points_head.resamplers.0.0.bias",
+        "points_head.resamplers.0.0.weight",
+        "points_head.resamplers.0.1.bias",
+        "points_head.resamplers.0.1.weight",
+        "points_head.resamplers.1.0.bias",
+        "points_head.resamplers.1.0.weight",
+        "points_head.resamplers.1.1.bias",
+        "points_head.resamplers.1.1.weight",
+        "points_head.resamplers.2.0.bias",
+        "points_head.resamplers.2.0.weight",
+        "points_head.resamplers.2.1.bias",
+        "points_head.resamplers.2.1.weight",
+        "points_head.resamplers.3.1.bias",
+        "points_head.resamplers.3.1.weight",
+        "scale_head.0.bias",
+        "scale_head.0.weight",
+        "scale_head.2.bias",
+        "scale_head.2.weight",
+        "scale_head.4.bias",
+        "scale_head.4.weight"
+      ],
+      "missing_keys": [],
+      "state_shapes": {
+        "encoder.backbone.blocks.0.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.0.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.0.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.0.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.0.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.0.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.0.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.0.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.0.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.0.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.0.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.0.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.0.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.0.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.1.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.1.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.1.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.1.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.1.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.1.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.1.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.1.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.1.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.1.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.1.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.1.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.1.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.1.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.10.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.10.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.10.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.10.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.10.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.10.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.10.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.10.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.10.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.10.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.10.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.10.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.10.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.10.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.11.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.11.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.11.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.11.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.11.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.11.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.11.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.11.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.11.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.11.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.11.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.11.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.11.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.11.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.2.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.2.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.2.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.2.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.2.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.2.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.2.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.2.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.2.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.2.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.2.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.2.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.2.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.2.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.3.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.3.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.3.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.3.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.3.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.3.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.3.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.3.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.3.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.3.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.3.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.3.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.3.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.3.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.4.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.4.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.4.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.4.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.4.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.4.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.4.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.4.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.4.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.4.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.4.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.4.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.4.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.4.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.5.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.5.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.5.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.5.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.5.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.5.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.5.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.5.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.5.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.5.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.5.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.5.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.5.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.5.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.6.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.6.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.6.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.6.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.6.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.6.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.6.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.6.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.6.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.6.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.6.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.6.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.6.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.6.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.7.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.7.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.7.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.7.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.7.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.7.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.7.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.7.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.7.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.7.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.7.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.7.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.7.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.7.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.8.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.8.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.8.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.8.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.8.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.8.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.8.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.8.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.8.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.8.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.8.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.8.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.8.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.8.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.9.attn.proj.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.9.attn.proj.weight": [
+          384,
+          384
+        ],
+        "encoder.backbone.blocks.9.attn.qkv.bias": [
+          1152
+        ],
+        "encoder.backbone.blocks.9.attn.qkv.weight": [
+          1152,
+          384
+        ],
+        "encoder.backbone.blocks.9.ls1.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.9.ls2.gamma": [
+          384
+        ],
+        "encoder.backbone.blocks.9.mlp.fc1.bias": [
+          1536
+        ],
+        "encoder.backbone.blocks.9.mlp.fc1.weight": [
+          1536,
+          384
+        ],
+        "encoder.backbone.blocks.9.mlp.fc2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.9.mlp.fc2.weight": [
+          384,
+          1536
+        ],
+        "encoder.backbone.blocks.9.norm1.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.9.norm1.weight": [
+          384
+        ],
+        "encoder.backbone.blocks.9.norm2.bias": [
+          384
+        ],
+        "encoder.backbone.blocks.9.norm2.weight": [
+          384
+        ],
+        "encoder.backbone.cls_token": [
+          1,
+          1,
+          384
+        ],
+        "encoder.backbone.mask_token": [
+          1,
+          384
+        ],
+        "encoder.backbone.norm.bias": [
+          384
+        ],
+        "encoder.backbone.norm.weight": [
+          384
+        ],
+        "encoder.backbone.patch_embed.proj.bias": [
+          384
+        ],
+        "encoder.backbone.patch_embed.proj.weight": [
+          384,
+          3,
+          14,
+          14
+        ],
+        "encoder.backbone.pos_embed": [
+          1,
+          1370,
+          384
+        ],
+        "encoder.image_mean": [
+          1,
+          3,
+          1,
+          1
+        ],
+        "encoder.image_std": [
+          1,
+          3,
+          1,
+          1
+        ],
+        "encoder.output_projections.0.bias": [
+          384
+        ],
+        "encoder.output_projections.0.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "encoder.output_projections.1.bias": [
+          384
+        ],
+        "encoder.output_projections.1.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.0.bias": [
+          384
+        ],
+        "mask_head.input_blocks.0.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.1.bias": [
+          256
+        ],
+        "mask_head.input_blocks.1.weight": [
+          256,
+          256,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.2.bias": [
+          128
+        ],
+        "mask_head.input_blocks.2.weight": [
+          128,
+          128,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.3.bias": [
+          64
+        ],
+        "mask_head.input_blocks.3.weight": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "mask_head.input_blocks.4.bias": [
+          32
+        ],
+        "mask_head.input_blocks.4.weight": [
+          32,
+          32,
+          1,
+          1
+        ],
+        "mask_head.output_blocks.4.bias": [
+          1
+        ],
+        "mask_head.output_blocks.4.weight": [
+          1,
+          32,
+          1,
+          1
+        ],
+        "mask_head.res_blocks.1.0.layers.2.bias": [
+          256
+        ],
+        "mask_head.res_blocks.1.0.layers.2.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.1.0.layers.5.bias": [
+          256
+        ],
+        "mask_head.res_blocks.1.0.layers.5.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.2.0.layers.2.bias": [
+          128
+        ],
+        "mask_head.res_blocks.2.0.layers.2.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.2.0.layers.5.bias": [
+          128
+        ],
+        "mask_head.res_blocks.2.0.layers.5.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.3.0.layers.2.bias": [
+          64
+        ],
+        "mask_head.res_blocks.3.0.layers.2.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "mask_head.res_blocks.3.0.layers.5.bias": [
+          64
+        ],
+        "mask_head.res_blocks.3.0.layers.5.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "mask_head.resamplers.0.0.bias": [
+          256
+        ],
+        "mask_head.resamplers.0.0.weight": [
+          384,
+          256,
+          2,
+          2
+        ],
+        "mask_head.resamplers.0.1.bias": [
+          256
+        ],
+        "mask_head.resamplers.0.1.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "mask_head.resamplers.1.0.bias": [
+          128
+        ],
+        "mask_head.resamplers.1.0.weight": [
+          256,
+          128,
+          2,
+          2
+        ],
+        "mask_head.resamplers.1.1.bias": [
+          128
+        ],
+        "mask_head.resamplers.1.1.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "mask_head.resamplers.2.0.bias": [
+          64
+        ],
+        "mask_head.resamplers.2.0.weight": [
+          128,
+          64,
+          2,
+          2
+        ],
+        "mask_head.resamplers.2.1.bias": [
+          64
+        ],
+        "mask_head.resamplers.2.1.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "mask_head.resamplers.3.1.bias": [
+          32
+        ],
+        "mask_head.resamplers.3.1.weight": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "neck.input_blocks.0.bias": [
+          384
+        ],
+        "neck.input_blocks.0.weight": [
+          384,
+          386,
+          1,
+          1
+        ],
+        "neck.input_blocks.1.bias": [
+          256
+        ],
+        "neck.input_blocks.1.weight": [
+          256,
+          2,
+          1,
+          1
+        ],
+        "neck.input_blocks.2.bias": [
+          128
+        ],
+        "neck.input_blocks.2.weight": [
+          128,
+          2,
+          1,
+          1
+        ],
+        "neck.input_blocks.3.bias": [
+          64
+        ],
+        "neck.input_blocks.3.weight": [
+          64,
+          2,
+          1,
+          1
+        ],
+        "neck.input_blocks.4.bias": [
+          32
+        ],
+        "neck.input_blocks.4.weight": [
+          32,
+          2,
+          1,
+          1
+        ],
+        "neck.res_blocks.1.0.layers.2.bias": [
+          256
+        ],
+        "neck.res_blocks.1.0.layers.2.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "neck.res_blocks.1.0.layers.5.bias": [
+          256
+        ],
+        "neck.res_blocks.1.0.layers.5.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "neck.res_blocks.2.0.layers.2.bias": [
+          128
+        ],
+        "neck.res_blocks.2.0.layers.2.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "neck.res_blocks.2.0.layers.5.bias": [
+          128
+        ],
+        "neck.res_blocks.2.0.layers.5.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "neck.res_blocks.3.0.layers.2.bias": [
+          64
+        ],
+        "neck.res_blocks.3.0.layers.2.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "neck.res_blocks.3.0.layers.5.bias": [
+          64
+        ],
+        "neck.res_blocks.3.0.layers.5.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "neck.resamplers.0.0.bias": [
+          256
+        ],
+        "neck.resamplers.0.0.weight": [
+          384,
+          256,
+          2,
+          2
+        ],
+        "neck.resamplers.0.1.bias": [
+          256
+        ],
+        "neck.resamplers.0.1.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "neck.resamplers.1.0.bias": [
+          128
+        ],
+        "neck.resamplers.1.0.weight": [
+          256,
+          128,
+          2,
+          2
+        ],
+        "neck.resamplers.1.1.bias": [
+          128
+        ],
+        "neck.resamplers.1.1.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "neck.resamplers.2.0.bias": [
+          64
+        ],
+        "neck.resamplers.2.0.weight": [
+          128,
+          64,
+          2,
+          2
+        ],
+        "neck.resamplers.2.1.bias": [
+          64
+        ],
+        "neck.resamplers.2.1.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "neck.resamplers.3.1.bias": [
+          32
+        ],
+        "neck.resamplers.3.1.weight": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "normal_head.input_blocks.0.bias": [
+          384
+        ],
+        "normal_head.input_blocks.0.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "normal_head.input_blocks.1.bias": [
+          256
+        ],
+        "normal_head.input_blocks.1.weight": [
+          256,
+          256,
+          1,
+          1
+        ],
+        "normal_head.input_blocks.2.bias": [
+          128
+        ],
+        "normal_head.input_blocks.2.weight": [
+          128,
+          128,
+          1,
+          1
+        ],
+        "normal_head.input_blocks.3.bias": [
+          64
+        ],
+        "normal_head.input_blocks.3.weight": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "normal_head.input_blocks.4.bias": [
+          32
+        ],
+        "normal_head.input_blocks.4.weight": [
+          32,
+          32,
+          1,
+          1
+        ],
+        "normal_head.output_blocks.4.bias": [
+          3
+        ],
+        "normal_head.output_blocks.4.weight": [
+          3,
+          32,
+          1,
+          1
+        ],
+        "normal_head.res_blocks.1.0.layers.2.bias": [
+          256
+        ],
+        "normal_head.res_blocks.1.0.layers.2.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.1.0.layers.5.bias": [
+          256
+        ],
+        "normal_head.res_blocks.1.0.layers.5.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.2.0.layers.2.bias": [
+          128
+        ],
+        "normal_head.res_blocks.2.0.layers.2.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.2.0.layers.5.bias": [
+          128
+        ],
+        "normal_head.res_blocks.2.0.layers.5.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.3.0.layers.2.bias": [
+          64
+        ],
+        "normal_head.res_blocks.3.0.layers.2.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "normal_head.res_blocks.3.0.layers.5.bias": [
+          64
+        ],
+        "normal_head.res_blocks.3.0.layers.5.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "normal_head.resamplers.0.0.bias": [
+          256
+        ],
+        "normal_head.resamplers.0.0.weight": [
+          384,
+          256,
+          2,
+          2
+        ],
+        "normal_head.resamplers.0.1.bias": [
+          256
+        ],
+        "normal_head.resamplers.0.1.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "normal_head.resamplers.1.0.bias": [
+          128
+        ],
+        "normal_head.resamplers.1.0.weight": [
+          256,
+          128,
+          2,
+          2
+        ],
+        "normal_head.resamplers.1.1.bias": [
+          128
+        ],
+        "normal_head.resamplers.1.1.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "normal_head.resamplers.2.0.bias": [
+          64
+        ],
+        "normal_head.resamplers.2.0.weight": [
+          128,
+          64,
+          2,
+          2
+        ],
+        "normal_head.resamplers.2.1.bias": [
+          64
+        ],
+        "normal_head.resamplers.2.1.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "normal_head.resamplers.3.1.bias": [
+          32
+        ],
+        "normal_head.resamplers.3.1.weight": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "points_head.input_blocks.0.bias": [
+          384
+        ],
+        "points_head.input_blocks.0.weight": [
+          384,
+          384,
+          1,
+          1
+        ],
+        "points_head.input_blocks.1.bias": [
+          256
+        ],
+        "points_head.input_blocks.1.weight": [
+          256,
+          256,
+          1,
+          1
+        ],
+        "points_head.input_blocks.2.bias": [
+          128
+        ],
+        "points_head.input_blocks.2.weight": [
+          128,
+          128,
+          1,
+          1
+        ],
+        "points_head.input_blocks.3.bias": [
+          64
+        ],
+        "points_head.input_blocks.3.weight": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "points_head.input_blocks.4.bias": [
+          32
+        ],
+        "points_head.input_blocks.4.weight": [
+          32,
+          32,
+          1,
+          1
+        ],
+        "points_head.output_blocks.4.bias": [
+          3
+        ],
+        "points_head.output_blocks.4.weight": [
+          3,
+          32,
+          1,
+          1
+        ],
+        "points_head.res_blocks.1.0.layers.2.bias": [
+          256
+        ],
+        "points_head.res_blocks.1.0.layers.2.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "points_head.res_blocks.1.0.layers.5.bias": [
+          256
+        ],
+        "points_head.res_blocks.1.0.layers.5.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "points_head.res_blocks.2.0.layers.2.bias": [
+          128
+        ],
+        "points_head.res_blocks.2.0.layers.2.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "points_head.res_blocks.2.0.layers.5.bias": [
+          128
+        ],
+        "points_head.res_blocks.2.0.layers.5.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "points_head.res_blocks.3.0.layers.2.bias": [
+          64
+        ],
+        "points_head.res_blocks.3.0.layers.2.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "points_head.res_blocks.3.0.layers.5.bias": [
+          64
+        ],
+        "points_head.res_blocks.3.0.layers.5.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "points_head.resamplers.0.0.bias": [
+          256
+        ],
+        "points_head.resamplers.0.0.weight": [
+          384,
+          256,
+          2,
+          2
+        ],
+        "points_head.resamplers.0.1.bias": [
+          256
+        ],
+        "points_head.resamplers.0.1.weight": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "points_head.resamplers.1.0.bias": [
+          128
+        ],
+        "points_head.resamplers.1.0.weight": [
+          256,
+          128,
+          2,
+          2
+        ],
+        "points_head.resamplers.1.1.bias": [
+          128
+        ],
+        "points_head.resamplers.1.1.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "points_head.resamplers.2.0.bias": [
+          64
+        ],
+        "points_head.resamplers.2.0.weight": [
+          128,
+          64,
+          2,
+          2
+        ],
+        "points_head.resamplers.2.1.bias": [
+          64
+        ],
+        "points_head.resamplers.2.1.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "points_head.resamplers.3.1.bias": [
+          32
+        ],
+        "points_head.resamplers.3.1.weight": [
+          32,
+          64,
+          3,
+          3
+        ],
+        "scale_head.0.bias": [
+          384
+        ],
+        "scale_head.0.weight": [
+          384,
+          384
+        ],
+        "scale_head.2.bias": [
+          384
+        ],
+        "scale_head.2.weight": [
+          384,
+          384
+        ],
+        "scale_head.4.bias": [
+          1
+        ],
+        "scale_head.4.weight": [
+          1,
+          384
+        ]
+      },
+      "strict_after_deterministic_buffer_completion": true,
+      "unexpected_keys": []
+    },
+    "superpoint": {
+      "allowed_missing_buffers": [],
+      "ignored_unused_checkpoint_entries": {},
+      "learned_keys": [
+        "conv1a.bias",
+        "conv1a.weight",
+        "conv1b.bias",
+        "conv1b.weight",
+        "conv2a.bias",
+        "conv2a.weight",
+        "conv2b.bias",
+        "conv2b.weight",
+        "conv3a.bias",
+        "conv3a.weight",
+        "conv3b.bias",
+        "conv3b.weight",
+        "conv4a.bias",
+        "conv4a.weight",
+        "conv4b.bias",
+        "conv4b.weight",
+        "convDa.bias",
+        "convDa.weight",
+        "convDb.bias",
+        "convDb.weight",
+        "convPa.bias",
+        "convPa.weight",
+        "convPb.bias",
+        "convPb.weight"
+      ],
+      "missing_keys": [],
+      "state_shapes": {
+        "conv1a.bias": [
+          64
+        ],
+        "conv1a.weight": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "conv1b.bias": [
+          64
+        ],
+        "conv1b.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "conv2a.bias": [
+          64
+        ],
+        "conv2a.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "conv2b.bias": [
+          64
+        ],
+        "conv2b.weight": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "conv3a.bias": [
+          128
+        ],
+        "conv3a.weight": [
+          128,
+          64,
+          3,
+          3
+        ],
+        "conv3b.bias": [
+          128
+        ],
+        "conv3b.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "conv4a.bias": [
+          128
+        ],
+        "conv4a.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "conv4b.bias": [
+          128
+        ],
+        "conv4b.weight": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "convDa.bias": [
+          256
+        ],
+        "convDa.weight": [
+          256,
+          128,
+          3,
+          3
+        ],
+        "convDb.bias": [
+          256
+        ],
+        "convDb.weight": [
+          256,
+          256,
+          1,
+          1
+        ],
+        "convPa.bias": [
+          256
+        ],
+        "convPa.weight": [
+          256,
+          128,
+          3,
+          3
+        ],
+        "convPb.bias": [
+          65
+        ],
+        "convPb.weight": [
+          65,
+          256,
+          1,
+          1
+        ]
+      },
+      "strict_after_deterministic_buffer_completion": true,
+      "unexpected_keys": []
+    }
+  },
+  "local_hub_calls": [
+    {
+      "asset": "superpoint_v1.pth",
+      "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+      "weights_only": true
+    },
+    {
+      "asset": "superpoint_lightglue.pth",
+      "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_lightglue.pth",
+      "weights_only": true
+    }
+  ],
+  "matcher_forwards": 0,
+  "model_freeze": "fa454585e67a8f0395ad5f67a03d5a28cc33a66a",
+  "moge_config": {
+    "encoder": {
+      "backbone": "dinov2_vits14",
+      "dim_out": 384,
+      "intermediate_layers": [
+        5,
+        11
+      ]
+    },
+    "mask_head": {
+      "dim_in": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "dim_out": [
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "dim_res_blocks": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "num_res_blocks": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "res_block_hidden_norm": "none",
+      "res_block_in_norm": "none",
+      "resamplers": [
+        "conv_transpose",
+        "conv_transpose",
+        "conv_transpose",
+        "bilinear"
+      ]
+    },
+    "neck": {
+      "dim_in": [
+        386,
+        2,
+        2,
+        2,
+        2
+      ],
+      "dim_out": null,
+      "dim_res_blocks": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "num_res_blocks": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "res_block_hidden_norm": "none",
+      "res_block_in_norm": "none",
+      "resamplers": [
+        "conv_transpose",
+        "conv_transpose",
+        "conv_transpose",
+        "bilinear"
+      ]
+    },
+    "normal_head": {
+      "dim_in": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "dim_out": [
+        null,
+        null,
+        null,
+        null,
+        3
+      ],
+      "dim_res_blocks": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "num_res_blocks": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "res_block_hidden_norm": "none",
+      "res_block_in_norm": "none",
+      "resamplers": [
+        "conv_transpose",
+        "conv_transpose",
+        "conv_transpose",
+        "bilinear"
+      ]
+    },
+    "num_tokens_range": [
+      1200,
+      3600
+    ],
+    "points_head": {
+      "dim_in": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "dim_out": [
+        null,
+        null,
+        null,
+        null,
+        3
+      ],
+      "dim_res_blocks": [
+        384,
+        256,
+        128,
+        64,
+        32
+      ],
+      "num_res_blocks": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "res_block_hidden_norm": "none",
+      "res_block_in_norm": "none",
+      "resamplers": [
+        "conv_transpose",
+        "conv_transpose",
+        "conv_transpose",
+        "bilinear"
+      ]
+    },
+    "remap_output": "exp",
+    "scale_head": {
+      "dims": [
+        384,
+        384,
+        384,
+        1
+      ]
+    }
+  },
+  "moge_config_sha256": "cd66bc79810111bb1a0e621e92107f36c93e3cd4a1e04c9f9a34681cf848e7d8",
+  "native_calls": 0,
+  "offline_attempts": [],
+  "offline_guard_scope": "Python network/process/input audit events; not an OS native-syscall sandbox",
+  "original_frontend_supervision_sha256": "4439b3d24550e425d976a18f114aeb5734c526e3ec08bba73dfb4e206c3bba5f",
+  "runtime_versions": {
+    "certifi": "2025.10.5",
+    "charset-normalizer": "3.4.4",
+    "filelock": "3.19.1",
+    "fsspec": "2025.10.0",
+    "hf-xet": "1.1.9",
+    "huggingface-hub": "0.34.4",
+    "idna": "3.11",
+    "jinja2": "3.1.6",
+    "kornia": "0.8.1",
+    "kornia-rs": "0.1.9",
+    "markupsafe": "3.0.4",
+    "mpmath": "1.3.0",
+    "networkx": "3.2.1",
+    "numpy": "2.0.2",
+    "opencv-python": "4.11.0.86",
+    "packaging": "26.3",
+    "pillow": "11.3.0",
+    "pyyaml": "6.0.2",
+    "requests": "2.32.5",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0",
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "tqdm": "4.67.1",
+    "typing-extensions": "4.16.0",
+    "urllib3": "2.5.0"
+  },
+  "schema": "evr0024.probe.v1",
+  "seal_sha256": "fee81b941fa0514f1e2affe4f66f704dd221595660957f169504e9feebcc598e",
+  "settings": {
+    "cpu_threads": 4,
+    "moge": {
+      "apply_mask": false,
+      "force_projection": true,
+      "fov_x": "explicit canonical per-image camera",
+      "num_tokens": 1200,
+      "use_fp16": false
+    },
+    "protocol_sha256": "4ae8f943112afa705a072e194e94a424252c282dd6beff54606584310007da3b",
+    "tokens": 1200,
+    "views": [
+      "identity",
+      "yaw_positive",
+      "yaw_negative",
+      "pitch_positive",
+      "pitch_negative"
+    ]
+  },
+  "source_sha256": {
+    "experiments/0024-virtual-depth/math_core.py": "9e6f18fc1781c39e087ee8f40edfac79963fac5068ff4f99ec9b96b0897ae737",
+    "experiments/0024-virtual-depth/run.py": "56db02536178762d540bef75feceef2eae8ea6a5fabac1f8d3bde2c1bbe53f1f",
+    "experiments/0024-virtual-depth/supervise.py": "3e7124bfccf8642c40d212b62c1bb638fdd094e060e291fa0a8813f2f97f3bcd",
+    "protocols/0024-virtual-rotation-falsifier.md": "4ae8f943112afa705a072e194e94a424252c282dd6beff54606584310007da3b"
+  },
+  "stage": "complete",
+  "status": "completed",
+  "timings": {
+    "imports_seconds": 3.8936808330000003,
+    "lightglue_load_seconds": 0.07841020799999932,
+    "moge_load_seconds": 0.25623866600000067,
+    "superpoint_load_seconds": 0.006987624999999831,
+    "verification_seconds": 1.312573792
+  },
+  "typing_compatibility": {
+    "applied": true,
+    "global_typing_module_modified": false,
+    "module": "utils3d.torch.helpers",
+    "provider": "typing_extensions",
+    "provider_sha256": "4040ca1a1ecbee00d1385c12a93084d1c5bd46f0b774f07e5ae7e91c4f55e696",
+    "provider_version": "4.16.0",
+    "source_bytes_modified": false,
+    "source_sha256": "d5a34ced1e5b4841f15ec956a4044ab82076bb75a7b9998ecdc812eb8252d80b",
+    "supplied_global": "ParamSpec"
+  },
+  "wall_seconds": 112.67479212500001,
+  "warnings": [
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    },
+    {
+      "category": "UserWarning",
+      "message": "In CPU autocast, but the target dtype is not supported. Disabling autocast.\nCPU Autocast only supports dtype of torch.bfloat16, torch.float16 currently."
+    }
+  ]
+}

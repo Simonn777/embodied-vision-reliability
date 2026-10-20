@@ -1,0 +1,247 @@
+{
+  "started_utc": "2026-10-20T00:19:36.757371+00:00",
+  "source_commit": "5d282a4b8b50094f433c6914931b005e7e16e73a",
+  "ci": {
+    "conclusion": "success",
+    "createdAt": "2026-10-20T00:17:12Z",
+    "databaseId": 39346730569,
+    "headSha": "5d282a4b8b50094f433c6914931b005e7e16e73a",
+    "jobs": [
+      {
+        "completedAt": "2026-10-20T00:19:19Z",
+        "conclusion": "success",
+        "databaseId": 118381009616,
+        "name": "diagnostic",
+        "startedAt": "2026-10-20T00:17:14Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-20T00:17:16Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-20T00:17:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:17:19Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 2,
+            "startedAt": "2026-10-20T00:17:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:17:19Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+            "number": 3,
+            "startedAt": "2026-10-20T00:17:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:17:31Z",
+            "conclusion": "success",
+            "name": "Run python -m pip install -e '.[dev]'",
+            "number": 4,
+            "startedAt": "2026-10-20T00:17:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:01Z",
+            "conclusion": "success",
+            "name": "Run python -m pytest -q",
+            "number": 5,
+            "startedAt": "2026-10-20T00:17:31Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:05Z",
+            "conclusion": "success",
+            "name": "Check calibrated-pose sealing and metrics on artificial data",
+            "number": 6,
+            "startedAt": "2026-10-20T00:18:01Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:08Z",
+            "conclusion": "success",
+            "name": "Check image-information pipeline on artificial data only",
+            "number": 7,
+            "startedAt": "2026-10-20T00:18:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:14Z",
+            "conclusion": "success",
+            "name": "Check search diagnostic bindings and scores on artificial data only",
+            "number": 8,
+            "startedAt": "2026-10-20T00:18:08Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:23Z",
+            "conclusion": "success",
+            "name": "Check depth diagnostic on artificial arrays and fake native workers",
+            "number": 9,
+            "startedAt": "2026-10-20T00:18:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:30Z",
+            "conclusion": "success",
+            "name": "Check native trace supervision and reconstruction on artificial data",
+            "number": 10,
+            "startedAt": "2026-10-20T00:18:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:32Z",
+            "conclusion": "success",
+            "name": "Check author-loss control and sealed evaluation on artificial data",
+            "number": 11,
+            "startedAt": "2026-10-20T00:18:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:35Z",
+            "conclusion": "success",
+            "name": "Check spatial calibration transfer and sealing on artificial data",
+            "number": 12,
+            "startedAt": "2026-10-20T00:18:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:36Z",
+            "conclusion": "success",
+            "name": "Check depth-field identifiability on manufactured geometry only",
+            "number": 13,
+            "startedAt": "2026-10-20T00:18:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:36Z",
+            "conclusion": "success",
+            "name": "Check frontend acquisition using invented bytes and fake responses",
+            "number": 14,
+            "startedAt": "2026-10-20T00:18:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:36Z",
+            "conclusion": "success",
+            "name": "Check offline frontend qualification with invented artifacts",
+            "number": 15,
+            "startedAt": "2026-10-20T00:18:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:53Z",
+            "conclusion": "success",
+            "name": "Check prospective multiview method and GT barrier on artificial inputs",
+            "number": 16,
+            "startedAt": "2026-10-20T00:18:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:18:54Z",
+            "conclusion": "success",
+            "name": "Check virtual-rotation falsifier using artificial geometry and fake inference only",
+            "number": 17,
+            "startedAt": "2026-10-20T00:18:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:01Z",
+            "conclusion": "success",
+            "name": "Check native grid bounds on artificial coordinates without dataset access",
+            "number": 18,
+            "startedAt": "2026-10-20T00:18:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:02Z",
+            "conclusion": "success",
+            "name": "Check the bounded CLIP preparation helpers without model or network",
+            "number": 19,
+            "startedAt": "2026-10-20T00:19:01Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:02Z",
+            "conclusion": "success",
+            "name": "Check artificial solver orchestration without Torch or fitting",
+            "number": 20,
+            "startedAt": "2026-10-20T00:19:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:02Z",
+            "conclusion": "success",
+            "name": "Check the cached first-probe guard with artificial files and processes",
+            "number": 21,
+            "startedAt": "2026-10-20T00:19:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:12Z",
+            "conclusion": "success",
+            "name": "Check the prospective headroom pipeline with fake features and models",
+            "number": 22,
+            "startedAt": "2026-10-20T00:19:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:17Z",
+            "conclusion": "success",
+            "name": "Exercise the full output pipeline on a smoke partition",
+            "number": 23,
+            "startedAt": "2026-10-20T00:19:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:17Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+            "number": 45,
+            "startedAt": "2026-10-20T00:19:17Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:17Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 46,
+            "startedAt": "2026-10-20T00:19:17Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-20T00:19:17Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 47,
+            "startedAt": "2026-10-20T00:19:17Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39346730569/job/118381009616"
+      }
+    ],
+    "status": "completed",
+    "updatedAt": "2026-10-20T00:19:20Z",
+    "url": "https://github.com/Simonn777/embodied-vision-reliability/actions/runs/39346730569"
+  },
+  "command": [
+    "$PYTHON",
+    "$REPOSITORY/experiments/0024-virtual-depth/supervise.py",
+    "--operation",
+    "probe",
+    "--expected-commit",
+    "5d282a4b8b50094f433c6914931b005e7e16e73a",
+    "--output-dir",
+    "$PRIVATE/0024-preparation/probe-supervision-01",
+    "--command-json",
+    "[\"$REPOSITORY/experiments/0024-virtual-depth/run.py\", \"--expected-commit\", \"5d282a4b8b50094f433c6914931b005e7e16e73a\", \"--original-frontend-supervision\", \"$PRIVATE/0023-preparation/frontend-supervision-01/receipt.json\", \"--output-dir\", \"$PRIVATE/0024-preparation/probe-01\"]"
+  ],
+  "scope": "One frozen 135-forward model-transfer falsifier, no GT or pose evaluation"
+}

@@ -1,6 +1,19 @@
 # Next actions
 
-## Current investigation: 0024 virtual-rotation falsifier, 2026-10-19
+## After 0024: distinct mechanism required
+
+1. Preserve and publish the [failed one-shot 0024 probe](results/0024-development/README.md)
+   after independent audit and exact result-commit CI. All four conditions failed;
+   no downstream pose experiment is admitted for this fixed variant.
+2. Screen a structurally different mechanism against current primary sources.
+   Reject known affine reparameterizations, generic consistency/fusion and known
+   losses as novelty claims. Admit another bounded test only for a concrete
+   remaining hypothesis; no rescue tuning on 0024 outputs.
+3. Keep the main goal open. A results-backed paper still requires the unchanged
+   substantial matched-cost, two-source held-out gate. Negative diagnostics,
+   code tests and publication receipts do not meet it.
+
+## Historical pre-run admission: 0024 virtual-rotation falsifier, 2026-10-19
 
 The [prospective protocol](protocols/0024-virtual-rotation-falsifier.md) admits
 only a small necessary-assumption test after source review and exact CI: 27

@@ -1,0 +1,42 @@
+{
+  "schema": "evr0024.supervision.v1",
+  "status": "completed",
+  "operation": "probe",
+  "expected_commit": "5d282a4b8b50094f433c6914931b005e7e16e73a",
+  "source_sha256": {
+    "experiments/0024-virtual-depth/supervise.py": "3e7124bfccf8642c40d212b62c1bb638fdd094e060e291fa0a8813f2f97f3bcd",
+    "experiments/0024-virtual-depth/run.py": "56db02536178762d540bef75feceef2eae8ea6a5fabac1f8d3bde2c1bbe53f1f",
+    "protocols/0024-virtual-rotation-falsifier.md": "4ae8f943112afa705a072e194e94a424252c282dd6beff54606584310007da3b",
+    "experiments/0024-virtual-depth/math_core.py": "9e6f18fc1781c39e087ee8f40edfac79963fac5068ff4f99ec9b96b0897ae737"
+  },
+  "command": [
+    "$PYTHON",
+    "$REPOSITORY/experiments/0024-virtual-depth/run.py",
+    "--expected-commit",
+    "5d282a4b8b50094f433c6914931b005e7e16e73a",
+    "--original-frontend-supervision",
+    "$PRIVATE/0023-preparation/frontend-supervision-01/receipt.json",
+    "--output-dir",
+    "$PRIVATE/0024-preparation/probe-01"
+  ],
+  "cwd": "$REPOSITORY",
+  "python_version": "3.9.6",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "hard_timeout_seconds": 1800.0,
+  "group_rss_limit_kib": 8388608,
+  "rss_sampling": "All observed descendants and retained process groups, approximately every 0.1s; transient peaks may be missed",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 112.99456137499999,
+  "peak_group_rss_kib": 2032256,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "stdout_sha256": "3b877ce663590eee16e7618d8b2533234f13bcdf11a78954e736b9af2014cb65",
+  "stderr_sha256": "8d9677e68c3ba5724cec0d272076e506525e87c115d1c8e70d7af9e9f5300dbe"
+}
