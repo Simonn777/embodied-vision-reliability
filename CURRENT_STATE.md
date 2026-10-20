@@ -1,6 +1,18 @@
 # Current state
 
-## Current development: seven-arm comparison complete; exact channel-affine family closed
+## Current: fixed paired-boundary lookup failed; calibration selects native
+
+The [0031 complete evidence](results/0031-development/complete-01/README.md) covers all 96 fixed TRAIN events, 87 unique future frames and 6,144 sampled native crossings. Initial-reference pairs, independent foreground/background maxima, an outside-only derangement and native zero displacement use the same candidate geometry. All rankings were sealed before current TRAIN labels. No whole-mask modification or DEV pairing evaluation occurred.
+
+Paired joint loss is **0.46895345**, versus native **0.25856527**, unpaired **0.48055013** and deranged **0.46304321** (lower is better). Correct endpoint crossings are **65.3646%**, versus native **82.6497%**. All four parents lose to native; only two beat both matching controls. The unchanged [prospective admission](experiments/0031-paired-boundary/ADMISSION.md) therefore closes this fixed initial-pair lookup. No feature/radius/cap/score rescue or paired head follows. Counts are correlated descriptive TRAIN observations, not independent replicates or official J/F.
+
+The separate global-threshold control uses all five fixed values −2/−1/0/1/2, choosing only on the 96-event TRAIN objective. It chooses **0**. All 241 unique cached-frame zero-threshold masks match native exactly; both DEV parents and all 150 interior frames reproduce native J/F/J&F, with no gain. This is generic calibration, not novelty.
+
+The first pairing attempt stopped before any completed rank/current-label decode on a strided `matmul` warning. It remains intact. A manufactured-only check reproduced warnings in 400/400 bounded strided products; explicit multiply/sum agrees with `math.fsum` within 1.11e−16 and actual adapter scores within 3.33e−16. All 100 cases and seven adapter geometry tests pass. The complete fresh retry changes only arithmetic reduction, keeps warnings as errors and finishes cleanly in 8.6592 outer seconds at 306,016 KiB. Calibration, failed attempt and numerical qualification costs are 6.6594, 1.9958 and 1.3576 seconds, retained separately. No ignored warning or incomplete scientific run is promoted.
+
+[Nearest matching priors](docs/0031-paired-reference-prior.md) reduce the proposed primitive to concatenated-descriptor nearest neighbor; [initial-mask adaptation priors](docs/0031-initial-mask-adaptation-prior.md) also preclude claiming generic first-frame fitting as new. [Source inspection](docs/0031-crop-refiner-feasibility.md) supports preparing a frozen, current-frame crop-refinement adaptation as a stronger baseline; it is not yet a new method or measured result. PR67 result commit 540943f and merge bc220ac passed CI 39416982031 and 39417542844 respectively. The research goal and unchanged two-source paper gate remain unmet.
+
+## Closed development: seven-arm comparison complete; exact channel-affine family closed
 
 The [first manufactured gradient operation](results/0030-development/gradient-probe/README.md) completed in 21.2745 seconds at peak 2,335,824 KiB. Memory and head gradients are finite and nonzero, frozen state is unchanged, and native parity passed. The fixed tiny SGD step changed **zero BF16 entries** and no output; this is API qualification, not efficacy. A saved-only review passed 51 checks. Scale-aware residual math, causal head and J/F evaluator manufactured checks separately passed 8, 6 and 7 tests.
 

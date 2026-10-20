@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "$TASK/work/0031-paired-boundary/screen.py", line 493, in <module>
+    main(sys.argv[1])
+  File "$TASK/work/0031-paired-boundary/screen.py", line 447, in main
+    ranked = rank_frame(prediction, fmap, bank, permutation, radius)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$TASK/work/0031-paired-boundary/screen.py", line 212, in rank_frame
+    candidate["scores"], candidate["paired_components"] = scores(vectors, bank, permutation)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$TASK/work/0031-paired-boundary/screen.py", line 184, in scores
+    xu, xv, yu, yv = u@x, v@x, u@y, v@y
+                     ~^~
+RuntimeWarning: divide by zero encountered in matmul

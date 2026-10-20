@@ -1,0 +1,68 @@
+{
+  "output": "<P>/work/0031-paired-boundary/calibration/run-01",
+  "seed": 0,
+  "python": "<P>/work/0029-runtime-02/installation/venv/bin/python",
+  "campaign_root": "<P>/work/0030-memory-content/campaign",
+  "evaluation_root": "<P>/work/0030-memory-content/evaluation",
+  "sam2_source": "<P>/work/0029-runtime-02/installation/sources/sam2",
+  "thresholds": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "train_sequences": [
+    "dog-agility",
+    "planes-water",
+    "dogs-scale",
+    "dog-gooses"
+  ],
+  "dev_sequences": [
+    "cat-girl",
+    "upside-down"
+  ],
+  "source_sha256": {
+    "<P>/work/0031-paired-boundary/calibration/calibrate.py": "<SHA256>",
+    "<P>/work/0030-memory-content/campaign/common.py": "<SHA256>",
+    "<P>/work/0030-memory-content/campaign/cache_baselines.py": "<SHA256>",
+    "<P>/work/0030-memory-content/evaluation/evaluate_jf.py": "<SHA256>",
+    "<P>/work/0030-memory-content/evaluation/evaluate_baseline.py": "<SHA256>",
+    "<P>/work/0030-memory-content/evaluation/evaluate_rollout.py": "<SHA256>",
+    "<P>/work/0029-runtime-02/installation/sources/sam2/sam2/sam2_video_predictor.py": "<SHA256>",
+    "<P>/work/0029-runtime-02/installation/sources/sam2/sam2/modeling/sam2_base.py": "<SHA256>",
+    "<P>/work/0031-paired-boundary/calibration/SCOPE.md": "<SHA256>"
+  },
+  "bindings": {
+    "cache_receipt": {
+      "path": "<P>/work/0030-memory-content/campaign/cache-01/receipt.json",
+      "sha256": "<SHA256>",
+      "bytes": 0
+    },
+    "cache_outer": {
+      "path": "<P>/work/0030-memory-content/campaign/cache-supervision-01/receipt.json",
+      "sha256": "<SHA256>",
+      "bytes": 0
+    },
+    "cache_operation": {
+      "path": "<P>/work/0030-memory-content/campaign/cache-operation-01.json",
+      "sha256": "<SHA256>",
+      "bytes": 0
+    },
+    "cache_worker_spec": {
+      "path": "<P>/work/0030-memory-content/campaign/cache-spec-01.json",
+      "sha256": "<SHA256>",
+      "bytes": 0
+    },
+    "mapping": {
+      "path": "<P>/work/0030-memory-content/data-acquisition/complete-mapping.json",
+      "sha256": "<SHA256>",
+      "bytes": 0
+    },
+    "data_index": {
+      "path": "<P>/work/0030-memory-content/campaign/data-index-01.json",
+      "sha256": "<SHA256>",
+      "bytes": 0
+    }
+  }
+}
