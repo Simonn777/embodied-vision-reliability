@@ -1,5 +1,11 @@
 # Next actions
 
+## Current: 0025b physical qualification
+
+1. Finish independent source review and artificial barrier/geometry/aggregation tests; commit the exact protocol and verify CI before scientific payload access.
+2. Run one bounded acquisition of the two official clean archives, then exactly 80 RGB-only forwards. Verify the complete seal and clean outer receipt before GT numeric decoding.
+3. Evaluate all 64 paired cases and all four oracle diagnostic arms, audit saved outputs, and retain failures. Pass permits only a separately frozen task-level proposal; failure closes this fixed approximation. No paper before the unchanged two-source held-out improvement gate.
+
 ## Current: 0025 conditional RS-depth candidate
 
 1. Publish the [audited mathematical qualification](results/0025-identifiability/README.md), retaining the distinction between invertibility and practical accuracy.

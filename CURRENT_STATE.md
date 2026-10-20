@@ -1,5 +1,19 @@
 # Current state
 
+## Current: 0025b physical assumption test, source preparation
+
+The [prospective physical-depth protocol](protocols/0025b-rs-depth-semantics.md)
+fixes 16 ICL-NUIM development frames, 80 unchanged-model predictions and 64
+paired RS/GS oracle diagnostics with independent rendered depth. No source
+payload, model inference or GT samples have been inspected at this preparation.
+All source review and artificial tests must pass exact-commit CI before one
+supervised acquisition, sealed RGB-only prediction and GT diagnostic.
+
+A pass admits only a separate prospective translation/pose proposal. An
+unavailable primary case or failed threshold closes this unadapted approximation
+in the tested regime. The substantial two-source held-out gain gate remains
+unmet; no manuscript. [0025 publication is verified](docs/0025-publication-verification.md).
+
 ## Current candidate: 0025 mathematical qualification, 2026-10-19
 
 [0025](docs/0025-admission.md) establishes a fixed numerical rank witness and an

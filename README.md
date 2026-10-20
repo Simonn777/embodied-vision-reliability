@@ -27,7 +27,7 @@ meet this standard. [Full prospective gate](protocols/0012-score-bounds-developm
 | [0023 directional instability](results/0023-development/completed-study/README.md) | AUC@5 56.4971% versus strongest geometry control 61.9844% (−5.4874 pp). | Closed. All efficacy conditions failed. |
 | [0020 spatial depth transfer](results/0020-spatial-depth-transfer/README.md) | Candidate AUC@5 71.1071% versus strong affine control 74.0717% (−2.9646 pp). | Closed. No same-label rescue tuning. |
 
-[Current research admission](docs/0025-admission.md) · [Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md)
+[Current physical-test admission](docs/0025b-admission.md) · [Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md)
 
 ## Historical evidence through 0015
 
