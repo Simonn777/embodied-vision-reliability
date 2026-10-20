@@ -1,0 +1,25 @@
+{
+  "repo": "$REPOSITORY",
+  "commit": "a587b6f70e5eab01109e23439847860f806c8405",
+  "timeout": 60,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-S",
+    "$REPOSITORY/experiments/0038-late-memory-readout/qualify.py",
+    "--spec",
+    "$PRIVATE/0038-late-memory-readout/unit-spec-03.json"
+  ],
+  "operation_output": "$PRIVATE/0038-late-memory-readout/unit-supervision-03",
+  "result_file": "$PRIVATE/0038-late-memory-readout/unit-qualification-03/receipt.json"
+}

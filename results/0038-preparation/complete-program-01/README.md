@@ -1,0 +1,13 @@
+# Complete comparison prepared; scientific launch remains unadmitted
+
+Source a587b6f70e5eab01109e23439847860f806c8405 prepares one all-four, all-nine comparison using only the qualified original uncompressed implementation. All 40 manufactured checks pass, with 0 failures/errors/skips and unchanged source hashes. The clean complete test operation took 1.812834042 seconds at 248336 KiB group RSS, exit 0, with no timeout or remaining descendants. No scientific media, native model or accuracy result was used by this qualification.
+
+The new executor checks the original 446 native outputs and four complete native states, seals every new prediction before numerical GT decoding, then evaluates both unchanged void policies. It preserves all 438 interior and 110 tail positions. The primary must exceed all eight controls by at least 3 J and 3 Jtr points, satisfy per-clip restrictions, and receive an independent scoring review. Tests exercise failed/partial/unadmitted paths as well as packed-mask and reference-receipt integrity.
+
+The unexecuted complete-spec-prepared-01.json binds 93 source files and the completed historical/qualification evidence. It is explicitly preparation-only and launch_admitted=false; the executor rejects it before creating an output or loading a model. No scientific outer specification has been activated. The code and existing supervisor still enforce the 1800-second maximum.
+
+The original implementation's cost extrapolation is 2253.200867329 seconds, approximately 38 minutes, before a full new run has been measured. The compressed alternative failed its fixed numeric qualification and still projects 1916.660337081 seconds; it is excluded. The proposed resource exception is one complete operation capped at 3600 seconds, retaining four CPU threads, 8 GiB group RSS, no fees, no new acquisition, the full cohort and all controls. This proposal is NOT granted. Any authorized exception must be recorded prospectively with matching supervisor/worker admission before launch; no timeout subdivision or partial result can substitute.
+
+These artifacts establish software preparation only. Neither this test pass nor a future exposed-development pass establishes innovation, held-out transfer, a paper, or completion of the research goal. The final two-independent-source official J&F evidence gate remains unchanged and unmet.
+
+The manifest binds every published file to its original bytes. Only literal workspace prefixes are replaced in saved JSON/logs; the five source snapshots are byte-exact. Older native parity and failed compression evidence remain in their respective sibling folders.

@@ -1,5 +1,11 @@
 # Current state
 
+## Current: complete comparison program prepared; resource exception not granted
+
+[The complete program and manufactured evidence](results/0038-preparation/complete-program-01/README.md) now preserve all four clips and nine arms, exact native output/state checks, an immutable pre-GT prediction seal and unchanged dual-policy scoring. All 40 manufactured tests pass under the qualified interpreter; clean outer cost is 1.812834042s / 248336KiB. Source a587b6f includes explicit rejection of unadmitted prepared specifications. The prepared complete spec binds 93 source files and remains launch_admitted=false. No new scientific prediction or score exists.
+
+The reviewable proposal is a single complete operation with a one-off 3600s cap, retaining four CPU threads, 8GiB group RSS, no fees or new acquisition and every control/clip. This exception has NOT been granted. The current worker and supervisor still enforce1800s, below the original implementation's2253.200867329s extrapolation. Preserve the failed compressed implementation and do not use it, split timeouts or drop controls. The standing evidence gate and active research goal remain unmet; no manuscript.
+
 ## Current: original readout qualified; optimized implementation fails qualification
 
 [Compressed/batched attempt](results/0038-preparation/optimized-qualification-01/README.md) passes22 unit checks but fails native numerical qualification at the first compressed-flat stack comparison (maximum absolute difference0.0002875328064; frozen tolerance1e-4/1e-5). Later SAM-field/mask/max-pointer/final-state comparisons were not reached. Preserve this failed20.395268125s/2557632KiB operation without tolerance rescue. Its conservative1916.660337081s cost projection also remains above1800s. It provides no scientific accuracy evidence; use no unqualified optimization.
