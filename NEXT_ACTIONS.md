@@ -1,5 +1,22 @@
 # Next actions
 
+## Current investigation: 0024 virtual-rotation falsifier, 2026-10-19
+
+The [prospective protocol](protocols/0024-virtual-rotation-falsifier.md) admits
+only a small necessary-assumption test after source review and exact CI: 27
+already-development images, five frozen depth predictions each, and bidirectional
+yaw/pitch offset transfer on a held-out pixel grid. No new data, GT, pose solver,
+training or fees. The affine equation and virtual-view consistency have close
+prior work; no new-solver claim is made.
+
+First complete artificial checks and independent source review, freeze and
+verify exact CI, then run one supervised 135-forward probe. A failed transfer
+closes this fixed variant. A pass only permits considering a separately frozen
+pose experiment with strong same-cost controls; it is not an accuracy result.
+The [0023 failed result](results/0023-development/completed-study/README.md) is
+published and independently audited; [PR/main verification](docs/0023-publication-verification.md)
+confirms the GitHub state. No manuscript is admitted; the broader goal stays open.
+
 ## Latest result: 0023 failed and closed, 2026-10-19
 
 [Complete development results](results/0023-development/completed-study/README.md):

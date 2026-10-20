@@ -1,0 +1,15 @@
+.......E...
+======================================================================
+ERROR: test_remap_checks_float64_and_float32_before_image_operation (__main__.RunTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "$REPOSITORY/experiments/0024-virtual-depth/test_run.py", line 187, in test_remap_checks_float64_and_float32_before_image_operation
+    probe.remap_rgb(giant_metadata_only, np.array([[[float(2**25+3), 2.]]]), cv, np)
+  File "$REPOSITORY/experiments/0024-virtual-depth/run.py", line 130, in remap_rgb
+    return np.ascontiguousarray(rgb.astype(np.float32) / np.float32(255)), rgb
+TypeError: unsupported operand type(s) for /: 'Mock' and 'float'
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.126s
+
+FAILED (errors=1)
