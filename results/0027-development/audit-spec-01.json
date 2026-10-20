@@ -1,0 +1,36 @@
+{
+  "repo": "$WORKSPACE/work/embodied-vision-reliability",
+  "operation_output": "$WORKSPACE/work/0027-development/operations/audit-01",
+  "command": [
+    "$PYTHON",
+    "-W",
+    "error",
+    "$WORKSPACE/work/embodied-vision-reliability/experiments/0027-affine-tangent/audit_saved.py",
+    "--predictions",
+    "$WORKSPACE/work/0027-development/predictions-01/predictions.jsonl",
+    "--inputs",
+    "$WORKSPACE/work/0027-development/generation-01/inputs.jsonl",
+    "--truth",
+    "$WORKSPACE/work/0027-development/generation-01/truth.jsonl",
+    "--seal",
+    "$WORKSPACE/work/0027-development/predictions-01/seal.json",
+    "--evaluation",
+    "$WORKSPACE/work/0027-development/evaluation-01.json",
+    "--prediction-receipt",
+    "$WORKSPACE/work/0027-development/operations/prediction-01/receipt.json",
+    "--output",
+    "$WORKSPACE/work/0027-development/audit-01.json"
+  ],
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "timeout": 30,
+  "commit": "7c6144492f6f07247fb603db4bb79e9d1344a853",
+  "result_file": "$WORKSPACE/work/0027-development/audit-01.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "-W",
+    "error",
+    "$REPOSITORY/experiments/0027-affine-tangent/pipeline.py",
+    "predict",
+    "--repo",
+    "$REPOSITORY",
+    "--expected-commit",
+    "7c6144492f6f07247fb603db4bb79e9d1344a853",
+    "--generation",
+    "$PRIVATE/0027-development/generation-01",
+    "--native-runtime",
+    "$PRIVATE/0016-preparation/runtime",
+    "--output",
+    "$PRIVATE/0027-development/predictions-01"
+  ],
+  "spec_sha256": "a8aaa6654dea937183e8fcb66ab747549a96e70ae6807af41cb78074f60406c6",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "7c6144492f6f07247fb603db4bb79e9d1344a853",
+  "hard_timeout_seconds": 30,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 13.715273292000001,
+  "peak_group_rss_kib": 39632,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "f6c91775ca5ec7c63fd951693ff10855aa11ec0a2cd11a0ae9dbacf6b38d4256",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "1feef85e7f0f2477367098add178b684639f68370fd0ff1edc7d9b0a8f31c48d"
+}

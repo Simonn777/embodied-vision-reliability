@@ -1,6 +1,20 @@
 # Next actions
 
-## Current: publish and close 0026; screen a distinct mechanism
+## Current: close 0027 and review a distinct observable
+
+1. Publish the complete failed [0027 comparison](results/0027-development/README.md), final receipt review and saved-only diagnosis; verify exact result/main CI. Preserve the source freeze and every attempted row/root.
+2. Keep the fixed affine-gradient initializer closed. It failed absolute noisy yield and required point-control advantage; neither the positive clean witness nor comparison to weak scale-only depth supports a contribution.
+3. The [normal-pose source screen](docs/0028-normal-pose-prior.md) rejects a two-normal/two-point affine-depth solve as a new pose direction: it reduces to the ICCV2019 normal-guided construction. No implementation or experiment is admitted for that algebraic claim. Any next hypothesis must identify a concrete benefit beyond the same-normal depth-free pose/cheirality/refinement controls before a prospective test.
+4. The two-source matched-cost held-out improvement gate remains required before a manuscript; code, arithmetic and negative screens do not satisfy it.
+
+## Historical: 0027 necessary screen, no efficacy claim
+
+1. Finish independent saved-output auditor qualification, freeze the reviewed [0027 source/protocol](experiments/0027-affine-tangent/protocol.md), and verify exact-commit CI.
+2. Run the complete138-row generated sensitivity cohort once under its fixed resource limit; seal observations-only predictions and require clean outer completion before independent evaluation/audit.
+3. A failed necessary gate closes this fixed candidate. If all clauses pass, first qualify a corrected/independent native control because of the disclosed source limitation, then the required full-nine nonminimal control. Passing this screen alone does not permit an accuracy, novelty, speed or manuscript claim.
+4. Keep the substantial two-source matched-cost held-out goal active.
+
+## Historical actions: publish and close 0026; screen a distinct mechanism
 
 1. Preserve [all80 predictions, evaluation and independent audit](results/0026-development/README.md). Publish the failed fixed comparison through PR57, verify exact result/main CI, and keep its original source freeze and all unavailable attempts.
 2. Do not promote descriptive G_all or ordinary F_local multistart as a new successful method. The primary loses0.551569AUC@5points to its strongest control and fails the development gate. Saved-only diagnosis may guide a different hypothesis, but cannot reopen this fixed variant by retuning.
