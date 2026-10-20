@@ -1,5 +1,11 @@
 # Current state
 
+## Current: local comparison implemented; scientific result pending
+
+[0037 source](experiments/0037-causal-local-verification/ADMISSION.md) fixes small disjoint union cells, causal first-mask label transport, ordinary same-input MLP and a negative-evidence-constrained MLP. All26 manufactured checks pass after one preserved thread-configuration failure. [Preparation evidence](results/0037-preparation/README.md) includes complete failed/passed receipts and source snapshots. No scientific operation or efficacy result has run. Exact-source CI precedes one complete four-clip comparison; no new acquisition, native inference, fees or manuscript.
+
+PR73 result and merged-main CI are now both verified. Its negative whole-arm sufficiency result remains final; richer local selection is a distinct action class, not a four-arm selector rescue.
+
 ## Current: local verification or a different causal state action is needed
 
 The [0036 saved-score bound](results/0036-development/complete-01/README.md) rules out the limited whole-arm selector for its declared target. GT-assisted best-of-four per frame reaches **55.0372302 J / 33.1352595 Jtr%**, changes of **+6.4367408 / +1.7969411 pp** over union. The 3-point J clause passes and Jtr fails, under both void policies. All 446 scalar rows are retained. A clean 0.190451334s operation and independent 1,158-check exact-rational review confirm the result. No model, media or new labels were read; no selector was trained. The original D35 support gate remains positive.

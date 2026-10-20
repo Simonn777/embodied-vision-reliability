@@ -1,5 +1,12 @@
 # Next actions
 
+## Current: execute the frozen complete local comparison
+
+1. Freeze reviewed0037 source and verify exact-source CI. Preserve both manufactured attempts and all26 passing tests; no scientific result yet.
+2. Run one complete all-four operation for446 causal feature frames,12 cross-fit outcomes, sealed predictions and both-policy metrics. No per-fold timeout reset or source/outcome tuning. Compare original-resolution fixed controls exactly to D35.
+3. Independently audit complete saved records and publish all results. The constrained MLP must pass the predeclared substantial gains and ordinary-control margins; useful ordinary controls are labeled as such. Failures close this exact recipe without threshold/seed/optimizer rescue.
+4. Keep the original independent-source official-J&F manuscript gate and research goal active. Passing source checks or exposed development results does not finish the goal.
+
 ## Current: preserve the action-class limit and design a richer realizable comparison
 
 1. Publish the complete 0036 saved-score diagnostic through PR73 and verify result/main CI. Its whole-arm oracle fails the necessary Jtr condition. Do not train a more elaborate four-arm selector or weaken that criterion; preserve both policies and the positive D35 support opportunity.
