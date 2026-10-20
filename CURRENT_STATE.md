@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: 0029 native attempt01 technically ineligible
+## Current work: complete technical replication source prepared
+
+[Attempt01 remains ineligible](results/0029-development/native-attempt-01/README.md) and [publication/main CI are verified](docs/0029-native-attempt-publication-verification.md). Before queryGT access, a [separate technical amendment](protocols/0029-native-technical-replication.md) fixes six entirely new primary operations with byte-identical scientific code/data/evidence/controls/gates. The new supervisor passes two manufactured process cases; targeted23 and integrated89 checks pass with independent source review. All original costs/failures remain, no old predictions can mix into the new cohort, and exact-source CI must precede any new scientific operation. New replication and queryGT have not run; no accuracy gain or manuscript.
+
+## Historical: 0029 native attempt01 technically ineligible
 
 The [original native attempt](results/0029-development/native-attempt-01/README.md) has three clean complete videos and a fourth completed worker whose supervisor failed with `descendants_remain`; the final two were not started. All262worker frames/32queries and412native calls are preserved, but the all-six-clean requirement fails. No query annotations or accuracy scores were accessed. The [25-frame manufactured qualification](results/0029-preparation/native-video-qualification/README.md) and independent audit passed before scientific execution; they do not override the later failure. A stale process-snapshot window is possible but not proven to explain this alarm. Preserve failure unchanged. Next separately qualify a narrow new supervisor and freeze a complete all-six technical replication with byte-identical science and no outcome-based changes; no GT until its own six clean operations. No improvement or manuscript.
 

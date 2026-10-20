@@ -23,7 +23,7 @@ def gt_contract(h, old, root, commit, proof, gt_root, gt_spec, admission, contex
     command = [str(context["installation"] / "venv/bin/python"), "-S",
                str(root / OWN / "acquire_query_gt.py"), "--repo-root", str(root),
                "--expected-commit", commit, "--proof", str(proof), "--output-dir", str(gt_root)]
-    binding = old.outer_contract(h, root, commit, gt_spec, gt_root / "receipt.json", command)
+    binding = context["new_outer_contract"](h, root, commit, gt_spec, gt_root / "receipt.json", command)
     record = h.read_json(gt_root / "receipt.json")
     h.require(record.get("schema") == "evr0029.query-gt-operation.v1"
               and record.get("status") == "completed" and record.get("eligible") is True

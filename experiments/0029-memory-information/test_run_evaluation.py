@@ -17,6 +17,8 @@ HERE = Path(__file__).resolve().parent
 
 
 def load(name, path):
+    if not path.exists():
+        path = HERE.parent / path.name
     spec = importlib.util.spec_from_file_location(name, path)
     value = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(value)
@@ -75,6 +77,18 @@ class EvaluationOperationTests(unittest.TestCase):
         write(outer, {"wall_seconds": 0.1, "peak_group_rss_kib": 1})
         with self.assertRaisesRegex(ValueError, "outer receipt changed"):
             r.complete_video_costs(self.h, context)
+
+    def test_new_gt_outer_is_required_before_any_gt_receipt_read(self):
+        root = self.base / "repo"
+        old = SimpleNamespace(outer_contract=mock.Mock(side_effect=AssertionError("legacy outer used")))
+        new = mock.Mock(side_effect=ValueError("unclean replication operation"))
+        context = {"installation": self.base / "installation", "new_outer_contract": new}
+        with mock.patch.object(self.h, "read_json", side_effect=AssertionError("GT receipt read")):
+            with self.assertRaisesRegex(ValueError, "unclean replication operation"):
+                r.gt_contract(self.h, old, root, "a" * 40, self.base / "proof.json",
+                              self.base / "gt", self.base / "gt-spec.json", {}, context)
+        new.assert_called_once()
+        old.outer_contract.assert_not_called()
 
     def array_context(self, nonfinite_last=False):
         rows, _ = helpers.fixture()

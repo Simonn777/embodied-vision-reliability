@@ -4,8 +4,13 @@ Only stdlib is imported before source, old evidence, native qualification and
 all 392 RGB/initial-mask files have been verified. No query annotation is
 accepted. Old evidence sources remain byte-identical at their own commit; the
 new scientific wrapper/worker use a separate commit and additional protocol.
+
+This separately frozen all-six technical replication cannot admit any output
+from the failed original attempt. Scientific worker bytes remain unchanged;
+the manufactured qualification is reused at its explicit original commit.
 """
 import argparse
+import hashlib
 import importlib.util
 import json
 import os
@@ -21,12 +26,22 @@ SUPERVISOR = "experiments/0027-affine-tangent/supervise.py"
 MONITOR = "experiments/0025c-rs-noise/supervise.py"
 OLD_HELPER = "experiments/0022-frontend/qualify.py"
 EVIDENCE_COMMIT = "c09e240009869402e2b97a55af42617eea3c6405"
+QUALIFICATION_COMMIT = "ec94d0927fcd2779f702e161550d9a3e87303d6f"
+REPLICATION = "all-six-technical-replication-02"
+REPLICATION_PROTOCOL = "protocols/0029-native-technical-replication.md"
+EXIT_CHECKED_SUPERVISOR = OWN + "supervise_exit_checked.py"
+SCIENTIFIC_SOURCES = tuple(OWN + name for name in (
+    "native_video.py", "qualify_native_video.py", "run_native_video_qualification.py",
+    "native_fixture.py", "diagnostic_core.py", "evaluate_queries.py", "frontend_evidence.py",
+))
 EVIDENCE_SOURCES = tuple(OWN + name for name in (
     "run_evidence.py", "frontend_evidence.py", "diagnostic_core.py", "acquire_davis.py",
 )) + (OLD_PROTOCOL, MANIFEST, SUPERVISOR, MONITOR)
 SOURCES = EVIDENCE_SOURCES + (
     OWN + "run_video.py", OWN + "native_video.py", OWN + "install_runtime.py",
     OWN + "run_native_video_qualification.py", OWN + "qualify_native_video.py", PROTOCOL,
+    OWN + "native_fixture.py", OWN + "evaluate_queries.py",
+    EXIT_CHECKED_SUPERVISOR, REPLICATION_PROTOCOL,
 )
 QUALIFICATION_SOURCES = tuple(OWN + name for name in (
     "run_native_video_qualification.py", "qualify_native_video.py", "native_video.py",
@@ -40,6 +55,97 @@ def module(name, path):
     sys.modules[name] = value
     spec.loader.exec_module(value)
     return value
+
+
+def unchanged_scientific_sources(h, root):
+    """Current file bytes must equal the original, already qualified science."""
+    sources = h.frozen(root, QUALIFICATION_COMMIT, SCIENTIFIC_SOURCES)
+    h.require(set(sources) == set(SCIENTIFIC_SOURCES), "scientific source inventory")
+    return sources
+
+
+def new_outer_contract(h, root, commit, spec_path, receipt_path, command):
+    """Only new-attempt video/GT/evaluation operations use this supervisor.
+
+    Legacy qualification/evidence/native operations continue to use the
+    unchanged old.outer_contract. A failed old receipt is never translated.
+    """
+    spec = h.read_json(spec_path)
+    outer_path = Path(spec["operation_output"]) / "receipt.json"
+    outer = h.read_json(outer_path)
+    h.require(spec.get("commit") == commit and Path(spec["repo"]).resolve() == root
+              and Path(spec["result_file"]).resolve() == receipt_path.resolve()
+              and spec.get("command") == command and spec.get("timeout") == 1800,
+              "replication operation specification identity")
+    expected = [x.replace(str(root), "$REPOSITORY").replace(str(root.parent), "$PRIVATE") for x in command]
+    observed = outer.get("command")
+    h.require(isinstance(observed, list) and observed[1:] == expected[1:]
+              and observed[0] in (expected[0], "$PYTHON"), "replication outer command identity")
+    h.require(outer.get("schema") == "evr0029.exit-checked-operation.v1"
+              and outer.get("status") == "completed" and outer.get("exit_code") == 0
+              and outer.get("termination") is None
+              and outer.get("remaining_descendant_pids") == []
+              and outer.get("cleanup_errors") == [] and outer.get("signal_attempts") == [],
+              "unclean replication operation")
+    h.require(outer.get("expected_commit") == commit
+              and outer.get("spec_sha256") == h.sha(spec_path)
+              and outer.get("output_sha256") == h.sha(receipt_path), "replication artifact binding")
+    wall = outer.get("wall_seconds")
+    h.require(outer.get("hard_timeout_seconds") == 1800
+              and outer.get("group_rss_limit_kib") == 8388608
+              and h.number(wall, 0, 1800) and wall < 1800
+              and h.number(outer.get("peak_group_rss_kib"), 0, 8388608)
+              and outer.get("thread_environment") == {k: "4" for k in h.THREAD_KEYS},
+              "replication resource contract")
+    pid = outer.get("child_pid")
+    h.require(type(pid) is int and pid > 0 and outer.get("declared_child_pgid") == pid
+              and ((outer.get("observed_child_pgid") == pid and outer.get("pgid_observation_error") is None)
+                   or (outer.get("observed_child_pgid") is None
+                       and outer.get("pgid_observation_error") == "ProcessLookupError")),
+              "replication child identity")
+    exit_time = outer.get("exit_observed_at_seconds")
+    h.require(h.number(exit_time, 0, wall) and outer.get("triggering_snapshot") is None,
+              "missing clean exit observation")
+
+    def snapshot(item, label, after_exit=False):
+        h.require(isinstance(item, dict) and item.get("label") == label
+                  and h.number(item.get("started_seconds"), 0, wall)
+                  and h.number(item.get("finished_seconds"), item["started_seconds"], wall)
+                  and isinstance(item.get("rows"), list), "invalid process snapshot")
+        for key in ("known_groups", "discovered_groups"):
+            h.require(isinstance(item.get(key), list)
+                      and all(type(g) is int and g > 0 for g in item[key]), "process group snapshot")
+        h.require(pid in item["known_groups"], "child group missing from observation")
+        rows = item["rows"]
+        h.require(all(isinstance(row, list) and len(row) == 4
+                      and all(type(x) is int for x in row)
+                      and row[0] > 0 and row[1] >= 0 and row[2] > 0 and row[3] >= 0
+                      for row in rows), "invalid process rows")
+        h.require(sum(row[3] for row in rows) <= outer["peak_group_rss_kib"],
+                  "snapshot RSS exceeds recorded peak")
+        if after_exit:
+            h.require(item["started_seconds"] >= exit_time
+                      and rows == [], "process remains in post-exit observation")
+        else:
+            h.require(item["finished_seconds"] <= exit_time, "pre-poll observation after exit")
+
+    snapshot(outer.get("pre_poll_snapshot"), "before_poll")
+    snapshot(outer.get("post_exit_snapshot"), "after_exit_observed", after_exit=True)
+    final = outer.get("cleanup_snapshots")
+    h.require(isinstance(final, list) and len(final) == 1, "unexpected clean-operation cleanup")
+    snapshot(final[0], "final", after_exit=True)
+    h.require(final[0]["started_seconds"] >= outer["post_exit_snapshot"]["finished_seconds"],
+              "final process sample precedes post-exit sample")
+    for key, rel in (("supervisor_sha256", EXIT_CHECKED_SUPERVISOR), ("monitor_sha256", MONITOR)):
+        h.require(outer.get(key) == hashlib.sha256(h.git_bytes(root, commit, rel)).hexdigest(),
+                  "replication supervisor source")
+    h.require(outer.get("log_sha256") == {n: h.sha(outer_path.parent / n)
+              for n in ("stdout.log", "stderr.log")}, "replication operation logs changed")
+    paths = [receipt_path, spec_path, outer_path, outer_path.parent / "stdout.log",
+             outer_path.parent / "stderr.log", root / EXIT_CHECKED_SUPERVISOR, root / MONITOR]
+    return {"receipt_sha256": h.sha(receipt_path), "outer_sha256": h.sha(outer_path),
+            "spec_sha256": h.sha(spec_path), "file_sha256": {str(p): h.sha(p) for p in paths},
+            "supervisor_schema": outer["schema"], "fresh_post_exit_verified": True}
 
 
 def artifact(h, directory, descriptor, filename):
@@ -304,6 +410,7 @@ def prediction_inventory(h, output, result, video):
 
 def qualification_contract(h, old, root, commit, admitted, qualification_root, spec_path):
     """Require the separate 25-frame general-worker qualification, not just cond0 tests."""
+    h.require(commit == QUALIFICATION_COMMIT, "unadmitted manufactured qualification freeze")
     prior = admitted["prior"]
     command = [str(admitted["installation"] / "venv/bin/python"), "-S",
         str(root / OWN / "run_native_video_qualification.py"),
@@ -395,8 +502,9 @@ def run(args):
         raise ValueError("fresh private video output required")
     out.mkdir(parents=True, exist_ok=False)
     began = time.perf_counter()
-    record = dict(schema="evr0029.video-operation.v1", status="started", eligible=False,
+    record = dict(schema="evr0029.video-operation.v2", status="started", eligible=False,
         expected_commit=args.expected_commit, evidence_commit=args.evidence_commit,
+        qualification_commit=args.qualification_commit, replication=REPLICATION,
         sequence=args.sequence, noninitial_annotation_access=False, sam_sequence_invocations=0,
         offline_attempts=[], compatibility_probes=[])
     def save():
@@ -407,14 +515,18 @@ def run(args):
     save()
     try:
         h = module("evr0029_video_install", root / OWN / "install_runtime.py")
+        h.require(args.qualification_commit == QUALIFICATION_COMMIT
+                  and args.expected_commit != QUALIFICATION_COMMIT,
+                  "technical replication requires new science freeze and original qualification")
         bindings = h.frozen(root, args.expected_commit, SOURCES)
         h.require(h.sha(Path(__file__)) == bindings[OWN + "run_video.py"], "wrong executing wrapper")
         record["source_sha256"] = bindings
+        record["scientific_source_sha256"] = unchanged_scientific_sources(h, root)
         old = module("evr0029_video_admission", root / OWN / "run_evidence.py")
         admitted = admit_evidence(h, old, root, args.evidence_commit,
                                   Path(args.evidence_root).resolve(), Path(args.evidence_spec).resolve())
         record["evidence_binding"] = admitted["binding"]
-        record["qualification_binding"] = qualification_contract(h, old, root, args.expected_commit,
+        record["qualification_binding"] = qualification_contract(h, old, root, args.qualification_commit,
             admitted, Path(args.qualification_root).resolve(), Path(args.qualification_spec).resolve())
         inputs = video_inputs(h, root, bindings, admitted, args.sequence)
         record["frame_count"] = inputs["video"]["frame_count"]
@@ -453,8 +565,9 @@ def run(args):
         h.require(time.perf_counter() - began <= 1800, "complete video wall limit")
         record.update(status="completed", eligible=True, query_count=8, outputs=files)
         save()
-        seal = dict(schema="evr0029.video-seal.v1", status="completed",
+        seal = dict(schema="evr0029.video-seal.v2", status="completed",
             expected_commit=args.expected_commit, evidence_commit=args.evidence_commit,
+            qualification_commit=args.qualification_commit, replication=REPLICATION,
             source_sha256=bindings, sequence=args.sequence, frame_count=record["frame_count"],
             query_count=8, receipt_sha256=h.sha(out / "receipt.json"),
             files={"predictions/" + name: entry for name, entry in files.items()})
@@ -472,6 +585,7 @@ def run(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ("repo-root", "expected-commit", "evidence-root", "evidence-spec",
-                 "evidence-commit", "qualification-root", "qualification-spec", "sequence", "output-dir"):
+                 "evidence-commit", "qualification-root", "qualification-spec", "qualification-commit",
+                 "sequence", "output-dir"):
         parser.add_argument("--" + name, required=True)
     run(parser.parse_args())

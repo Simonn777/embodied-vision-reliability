@@ -13,6 +13,8 @@ HERE = Path(__file__).resolve().parent
 
 
 def load(name, path):
+    if not path.exists():
+        path = path.parent.parent / path.name
     spec = importlib.util.spec_from_file_location(name, path)
     value = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(value)
@@ -225,6 +227,7 @@ class VideoAdmission(unittest.TestCase):
         out = self.base / "fresh-operation"
         args = SimpleNamespace(repo_root=str(self.root), expected_commit="b" * 40,
             evidence_commit=r.EVIDENCE_COMMIT, sequence="dog-agility",
+            qualification_commit=r.QUALIFICATION_COMMIT,
             evidence_root=str(self.base / "old"), evidence_spec=str(self.base / "old-spec.json"),
             qualification_root=str(self.base / "qualification"),
             qualification_spec=str(self.base / "qualification-spec.json"), output_dir=str(out))
@@ -242,6 +245,7 @@ class VideoAdmission(unittest.TestCase):
             raise AssertionError("guard/model/other source must not load after failed qualification")
 
         with mock.patch.object(r, "module", side_effect=fake_module), \
+             mock.patch.object(r, "unchanged_scientific_sources", return_value={}), \
              mock.patch.object(r, "admit_evidence", return_value=admitted), \
              mock.patch.object(r, "qualification_contract", side_effect=ValueError("qualification not admitted")), \
              mock.patch.object(r, "video_inputs", side_effect=AssertionError("too late")) as video:

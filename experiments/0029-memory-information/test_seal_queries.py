@@ -20,7 +20,10 @@ COMMIT = "a" * 40
 
 
 def load(name, filename):
-    spec = importlib.util.spec_from_file_location(name, HERE / filename)
+    path = HERE / filename
+    if not path.exists():
+        path = HERE.parent / filename
+    spec = importlib.util.spec_from_file_location(name, path)
     value = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(value)
     return value
@@ -58,12 +61,12 @@ class Helper:
         return type(value) in (int, float) and math.isfinite(value) and low <= value <= high
     @staticmethod
     def git_bytes(root, commit, relative):
-        if commit != COMMIT:
+        if commit not in (COMMIT, v.QUALIFICATION_COMMIT):
             raise ValueError("fake commit mismatch")
         return (root / relative).read_bytes()
     @staticmethod
     def frozen(root, commit, names):
-        if commit != COMMIT:
+        if commit not in (COMMIT, v.QUALIFICATION_COMMIT):
             raise ValueError("fake source freeze mismatch")
         return {name: sha(root / name) for name in names}
 
@@ -124,8 +127,9 @@ class SealContracts(unittest.TestCase):
         self.index = SimpleNamespace(fingerprints={"manifest": sha(self.root / v.MANIFEST)}, entries={})
         self.verified = {"predictive_rgb": {}, "initial_supervision": {}}
         self.witnesses = {}
-        self.proof = dict(schema="evr0029.prediction-proof.v1", expected_commit=COMMIT,
-                          evidence_commit=v.EVIDENCE_COMMIT, videos=[])
+        self.proof = dict(schema="evr0029.prediction-proof.v2", expected_commit=COMMIT,
+                          evidence_commit=v.EVIDENCE_COMMIT, qualification_commit=v.QUALIFICATION_COMMIT,
+                          replication=v.REPLICATION, videos=[])
         self.outputs, self.outer_paths = [], []
         self.evidence_binding = {"file_sha256": {}, "coverage": {"pass": True}}
         self.qualification_binding = {"file_sha256": {}, "receipt_sha256": "c" * 64}
@@ -156,7 +160,8 @@ class SealContracts(unittest.TestCase):
             prior={"metadata_root": self.base / "metadata", "native_root": self.base / "native"},
             binding=self.evidence_binding)
         self.fake_v = SimpleNamespace(**{name: getattr(v, name) for name in
-            ("SOURCES", "EVIDENCE_COMMIT", "MANIFEST", "video_inputs", "prediction_inventory")})
+            ("SOURCES", "EVIDENCE_COMMIT", "QUALIFICATION_COMMIT", "REPLICATION", "MANIFEST",
+             "video_inputs", "prediction_inventory", "unchanged_scientific_sources", "new_outer_contract")})
         self.fake_v.admit_evidence = mock.Mock(side_effect=lambda *a: self.admitted)
         self.fake_v.qualification_contract = mock.Mock(return_value=self.qualification_binding)
         self.fake_v.evidence_arguments = lambda *a: (self.admitted["prior"], [])
@@ -216,15 +221,18 @@ class SealContracts(unittest.TestCase):
         write(prediction / "video-record.json", worker)
         inventory = {name: {"sha256": sha(prediction / name), "bytes": (prediction / name).stat().st_size}
                      for name in sorted(p.name for p in prediction.iterdir())}
-        record = dict(schema="evr0029.video-operation.v1", status="completed", eligible=True,
+        record = dict(schema="evr0029.video-operation.v2", status="completed", eligible=True,
             expected_commit=COMMIT, evidence_commit=v.EVIDENCE_COMMIT, sequence=sequence,
+            qualification_commit=v.QUALIFICATION_COMMIT, replication=v.REPLICATION,
+            scientific_source_sha256=self.h.frozen(self.root, v.QUALIFICATION_COMMIT, v.SCIENTIFIC_SOURCES),
             frame_count=count, query_count=8, noninitial_annotation_access=False,
             sam_sequence_invocations=1, offline_attempts=[], source_sha256=self.source_hashes,
             evidence_binding=self.evidence_binding, qualification_binding=self.qualification_binding,
             query_frames=queries, outputs=inventory, native_video=worker)
         write(out / "receipt.json", record)
-        write(out / "seal.json", dict(schema="evr0029.video-seal.v1", status="completed",
+        write(out / "seal.json", dict(schema="evr0029.video-seal.v2", status="completed",
             expected_commit=COMMIT, evidence_commit=v.EVIDENCE_COMMIT,
+            qualification_commit=v.QUALIFICATION_COMMIT, replication=v.REPLICATION,
             source_sha256=self.source_hashes, sequence=sequence, frame_count=count, query_count=8,
             receipt_sha256=sha(out / "receipt.json"),
             files={"predictions/" + name: item for name, item in inventory.items()}))
@@ -232,6 +240,7 @@ class SealContracts(unittest.TestCase):
             "evidence-root": str(self.base / "evidence"), "evidence-spec": str(self.base / "evidence-spec.json"),
             "evidence-commit": v.EVIDENCE_COMMIT, "qualification-root": str(self.base / "qualification"),
             "qualification-spec": str(self.base / "qualification-spec.json"),
+            "qualification-commit": v.QUALIFICATION_COMMIT,
             "sequence": sequence, "output-dir": str(out)}
         command = [str(self.installation / "venv/bin/python"), "-S", str(self.root / v.OWN / "run_video.py")]
         for name, value in flags.items():
@@ -243,13 +252,21 @@ class SealContracts(unittest.TestCase):
                          operation_output=str(outerdir), command=command, timeout=1800))
         for name in ("stdout.log", "stderr.log"):
             (outerdir / name).write_bytes(b"manufactured clean operation")
-        outer = dict(schema="evr0026.operation.v1", status="completed", exit_code=0, termination=None,
+        def snapshot(label, start, end, rows):
+            return dict(label=label, started_seconds=start, finished_seconds=end,
+                        known_groups=[123], discovered_groups=[], rows=rows)
+        outer = dict(schema="evr0029.exit-checked-operation.v1", status="completed", exit_code=0, termination=None,
             remaining_descendant_pids=[], cleanup_errors=[], expected_commit=COMMIT,
+            signal_attempts=[], child_pid=123, declared_child_pgid=123, observed_child_pgid=123,
+            pgid_observation_error=None, exit_observed_at_seconds=.02, triggering_snapshot=None,
+            pre_poll_snapshot=snapshot("before_poll", .001, .01, [[123, 1, 123, 1], [124, 123, 123, 0]]),
+            post_exit_snapshot=snapshot("after_exit_observed", .03, .04, []),
+            cleanup_snapshots=[snapshot("final", .05, .06, [])],
             command=[x.replace(str(self.root), "$REPOSITORY").replace(str(self.root.parent), "$PRIVATE")
                      for x in command], spec_sha256=sha(spec), output_sha256=sha(out / "seal.json"),
             hard_timeout_seconds=1800, group_rss_limit_kib=8388608, wall_seconds=.1,
             peak_group_rss_kib=1, thread_environment={k: "4" for k in self.h.THREAD_KEYS},
-            supervisor_sha256=sha(self.root / old.SUPERVISOR),
+            supervisor_sha256=sha(self.root / v.EXIT_CHECKED_SUPERVISOR),
             monitor_sha256=sha(self.root / old.MONITOR),
             log_sha256={name: sha(outerdir / name) for name in ("stdout.log", "stderr.log")})
         write(outerdir / "receipt.json", outer)
@@ -273,6 +290,8 @@ class SealContracts(unittest.TestCase):
         admission = result["prediction_admission"]
         self.assertEqual((admission["video_count"], admission["frame_count"], admission["query_count"]), (6, 386, 48))
         self.assertEqual(admission["calls"]["track_step_completed"], 626)
+        self.assertEqual(admission["qualification_commit"], v.QUALIFICATION_COMMIT)
+        self.assertEqual(self.fake_v.qualification_contract.call_args.args[3], v.QUALIFICATION_COMMIT)
         self.assertFalse(result["query_gt_decoded"])
 
     def test_missing_video_blocks_before_transport(self):
@@ -287,7 +306,7 @@ class SealContracts(unittest.TestCase):
         outer = self.h.read_json(path)
         outer.update(status="failed", exit_code=1)
         write(path, outer)
-        with self.assertRaisesRegex(ValueError, "unclean operation"):
+        with self.assertRaisesRegex(ValueError, "unclean.*operation"):
             self.acquire()
         self.assertEqual(self.http_calls, 0)
 
@@ -298,6 +317,31 @@ class SealContracts(unittest.TestCase):
         spec["command"][position] = "dogs-scale"
         write(path, spec)
         with self.assertRaisesRegex(ValueError, "argument identity"):
+            self.acquire()
+        self.assertEqual(self.http_calls, 0)
+
+    def test_original_attempt_commit_cannot_mix_into_new_six(self):
+        path = Path(self.proof["videos"][2]["spec_path"])
+        spec = self.h.read_json(path)
+        spec["command"][spec["command"].index("--expected-commit")+1] = v.QUALIFICATION_COMMIT
+        write(path, spec)
+        with self.assertRaisesRegex(ValueError, "argument identity"):
+            self.acquire()
+        self.assertEqual(self.http_calls, 0)
+
+    def test_wrong_qualification_freeze_rejected_before_transport(self):
+        self.proof["qualification_commit"] = COMMIT
+        write(self.proof_path, self.proof)
+        with self.assertRaisesRegex(ValueError, "six-video"):
+            self.acquire()
+        self.assertEqual(self.http_calls, 0)
+
+    def test_post_exit_descendant_blocks_even_with_empty_final_remaining(self):
+        path = self.outer_paths[-1]
+        outer = self.h.read_json(path)
+        outer["post_exit_snapshot"]["rows"] = [[124, 1, 123, 0]]
+        write(path, outer)
+        with self.assertRaisesRegex(ValueError, "post-exit"):
             self.acquire()
         self.assertEqual(self.http_calls, 0)
 

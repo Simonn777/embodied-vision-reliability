@@ -1,0 +1,101 @@
+{
+  "schema": "evr0029.replication-admission-artificial-tests.v1",
+  "status": "completed",
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "test_run_video",
+    "test_seal_queries",
+    "test_run_evaluation",
+    "-v"
+  ],
+  "cwd": "$PRIVATE/0029-preparation/technical-replication-02",
+  "source_sha256": {
+    "technical-replication-02/run_video.py": {
+      "sha256": "cbebe19b2708835e0a48a4951f2f7d037c287f6740361702de93e2b92ec21b78",
+      "bytes": 36524
+    },
+    "technical-replication-02/run_evaluation.py": {
+      "sha256": "39117b1b72407cf297f36216cf305335be81d2917a486ae5a4d06674429741cd",
+      "bytes": 11635
+    },
+    "technical-replication-02/test_seal_queries.py": {
+      "sha256": "e37dac19b82f64ec4660f1c2af4b84d4521eda28440af158bf7441c8c95e7201",
+      "bytes": 21457
+    },
+    "technical-replication-02/acquire_query_gt.py": {
+      "sha256": "67ced391f8f911bb93554d35d8ce53d0df028758037b4001e61121dd60e0edc4",
+      "bytes": 5642
+    },
+    "technical-replication-02/audit_queries_saved.py": {
+      "sha256": "900862d5fd657a649089d97a282267f523914259d200426242be5d1ebd059aed",
+      "bytes": 31629
+    },
+    "technical-replication-02/test_run_video.py": {
+      "sha256": "d8a329d61f7195eafdd41c5114136c86bf4186d2b370a75debebb6c3a214a39d",
+      "bytes": 14521
+    },
+    "technical-replication-02/test_run_evaluation.py": {
+      "sha256": "8d2d315cb1c3dbe8d125e913aa64121eab1dfe84825d16538e93d8e9d37e4522",
+      "bytes": 8044
+    },
+    "technical-replication-02/seal_queries.py": {
+      "sha256": "10ce2701348fb4fc31c1aea7eac7bb041431c7dcce366c4bdaacd386c8e39fd2",
+      "bytes": 19117
+    },
+    "technical-replication-02/test_audit_queries_saved.py": {
+      "sha256": "7d08f1c29641b9ac254dbbeffab6f2a5fb1d1731fb14ea163e2cea9ad0bbc632",
+      "bytes": 10490
+    },
+    "qualify_native_video.py": {
+      "sha256": "dc40d641d353d13af7bf0198c853c4b8c548ec5d10ec7cf09ba683292cf6de59",
+      "bytes": 14324
+    },
+    "run_evidence.py": {
+      "sha256": "766990f0a4e127c7773c51cc21b487389cf57a94c3a646ae4066eee9d0ef0051",
+      "bytes": 15351
+    },
+    "acquire_davis.py": {
+      "sha256": "4e2897ee0b1dfea25b3388805f019e155be53986d155f71c369101293919ee69",
+      "bytes": 17642
+    },
+    "test_evaluate_queries.py": {
+      "sha256": "c0310b2d50464f235e9f4370c26ddcaf5842fca837de89f29651b0c43a3a97e0",
+      "bytes": 6496
+    },
+    "evaluate_queries.py": {
+      "sha256": "272ae306b0f80573d3350d892cefbc13cf9df5a06d89b6188ee9c86584c5237f",
+      "bytes": 14595
+    },
+    "diagnostic_core.py": {
+      "sha256": "4c76bdb492bef0507b4322be67a2a157ec34c420bfacb874388b1f7facef0c34",
+      "bytes": 18464
+    }
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "timeout_seconds": 180,
+  "artificial_only": true,
+  "model_calls": 0,
+  "scientific_data_access": false,
+  "network_requests": 0,
+  "resource_scope": "Bounded direct child; ru_maxrss is direct-child peak, not a scientific supervision qualification.",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 1.799906125,
+  "peak_child_rss_bytes": 51937280,
+  "sources_unchanged": true,
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "1b8098cdc489daca75145d42a3fb9207e01db4ce291589ccdc6a86831fd936a7"
+  }
+}

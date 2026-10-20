@@ -1,0 +1,21 @@
+{
+  "scope": "AST and byte comparison only; no module imports, tests, models or data",
+  "checks": {
+    "run_evaluation.py": {
+      "changed_functions": [
+        "gt_contract"
+      ],
+      "all_other_functions_ast_identical": true
+    },
+    "audit_queries_saved.py": {
+      "changed_functions": [
+        "admission"
+      ],
+      "all_other_functions_ast_identical": true
+    }
+  },
+  "source_comparison_utility_first_attempt": {
+    "exit_code": 1,
+    "reason": "Utility asserted the substring admit for actual function name admission; production source unchanged; corrected exact function-name assertion on second source-only pass."
+  }
+}
