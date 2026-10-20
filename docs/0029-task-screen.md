@@ -1,0 +1,45 @@
+# 0029 source screen: no replacement method admitted yet
+
+October 20, 2026. The [0028 failure is published and main CI is verified](0028-publication-verification.md). This screen changes the research question before further implementation. It contains source/metadata findings and hypotheses, not new predictions or measured gains. No manuscript is admitted.
+
+## Decisions
+
+| Candidate | Source-backed issue | Decision |
+|---|---|---|
+| Waveform-based LiDAR ghost removal | [Ghost-FWL, CVPR 2026](https://arxiv.org/html/2603.28224v1), reviewed §§2–5.1, already uses full waveforms for this task. A distinct physical observable and small strong-baseline comparison were not established. | Reject the generic proposal. |
+| Occlusion-aware active-camera tracking | [OA-VAT, CVPR 2026](https://arxiv.org/html/2604.21453v1) already combines instance memory and occlusion-aware observation planning. | Reject generic active-view/confidence-triggered recovery. |
+| Selectively inspect previously skipped frames | The input interface differs from selecting already-encoded memories, but the proposed policy currently adds no concrete intervention beyond active sampling and replay. [ReTracker, ICCV 2025 supplement §1.5/§1.9](https://openaccess.thecvf.com/content/ICCV2025/supplemental/Tan_ReTracker_Exploring_Image_ICCV_2025_supplemental.pdf) and [Rewind to Track, ICME 2017 §§2.1/3.1](https://www.cs.cmu.edu/~jiangl1/icme2017_tracking.pdf) are relevant precedents; the latter is explicitly offline. | No method admission from this distinction alone. |
+| Exposure/PWM-aware traffic-signal state recognition | The inspected small datasets do not establish continuous, timing-calibrated transitions; ATLAS hardware does not support the proposed rolling-row observable. | Stop this implementation plan. |
+| External correction followed by bounded tracker-memory replay | [Det-SAM2 v2, §§3.2–3.4](https://arxiv.org/html/2411.18977v2) explicitly re-infers historical frames after new prompts and bounds reverse propagation for streaming cost. | Reject the generic repair proposal; a different matcher or replay order is insufficient. |
+
+These are bounded rejection decisions, not claims that each broad field has no open problems. Combining established components is allowed; the combination still needs a task-specific mechanism and evidence beyond a name change.
+
+## Traffic-signal data and identifiability
+
+Range reads of the official ZIP directories found 28 JPEGs in the [25,339,513-byte ATLAS sample](https://zenodo.org/records/14794667) and 220 PNGs in the [276,827,551-byte Bosch additional set](https://zenodo.org/records/12706046). Both are sparse selections. No image, annotation or class-dictionary payload was opened. Neither small export supplies verified exposure/readout/PWM metadata or physical-intersection identities. The consecutive Bosch test stream is a different 12,160,942,862-byte archive; it was not acquired.
+
+The [ATLAS paper §§III–IV](https://arxiv.org/html/2504.19722v1) describes 20 Hz acquisition but normally 2 Hz annotation, with additional sample selection. Its platform paper, [CoCar NextGen §IV-B](https://arxiv.org/html/2404.17550v1), names forward cameras that Basler specifies as global shutter: [medium/tele](https://docs.baslerweb.com/a2a1920-51gcpro) and [wide](https://docs.baslerweb.com/aca2500-20gc). This is a source-supported platform link, not a per-file sensor-serial verification. It does not justify assuming rolling-row phase diversity.
+
+[aUToLights, CRV 2023 §III-C, Eqs.4–10](https://arxiv.org/html/2305.08673v2), already applies HMM state filtering and duty-cycle flashing logic. The inspected method does not model carrier PWM integrated over exposures. The newer HybridSignalNet full method was inaccessible (publisher 403), so the current prior-work audit remains incomplete.
+
+An exact mathematical counterexample also limits the hypothesis: if every frame samples the same PWM-off interval, ten dark frames can be identical under a truly OFF lamp and an ON lamp missed by exposure. Marginalizing a shared phase cannot create missing information. Resolved row/exposure diversity plus constrained timing and photometry could change this, but those conditions were not established. No synthetic success case is substituted for the missing real-data contract.
+
+## Delayed memory repair: provisional opening superseded
+
+The initial follow-up considered **delayed repair of contaminated tracker memory**, using only observations available by the current deadline. Independently matched image points might identify an erroneous historical mask; reconstructed later memories might improve future identity preservation while already-emitted outputs remained immutable. This was a hypothesis, not an admitted method.
+
+This is not yet a new method. [LiAM-SAM, September 2026 preprint §3.4](https://arxiv.org/html/2609.28078v1) suppresses unreliable writes and re-encodes corrected current masks. [SENTRY, June 2026 version §3.2](https://arxiv.org/html/2606.24449v2) uses backward candidate propagation and neighbor trajectory checks before writing memory. [Dependency-guided rollback for memory agents, August 2026 preprint](https://arxiv.org/abs/2608.10502), abstract checked, already covers generic descendant invalidation and selective replay. Ordinary prompts, pruning, reset or a dependency graph cannot be claimed as our contribution.
+
+The subsequent full-method check of [Det-SAM2 v2, December 2024, §§3.2–3.4 and §3.6](https://arxiv.org/html/2411.18977v2) closed that generic opening: external prompts trigger historical re-inference, with buffered inputs and a bounded reverse window. Initial-reference LightGlue matching already supplies SAM2 correction prompts in [GearTrack v1, §§3.1–3.3](https://arxiv.org/html/2409.19986v1), whose current record is renamed SuperPose. Simply combining those operations does not establish a distinct contribution. No runtime qualification, image acquisition or experiment is authorized by this rejected proposal.
+
+The control lesson remains useful for a genuinely different intervention: compare ordinary correction, complete reset and fixed-window replay with identical evidence and total cost. A separate matcher does not make its errors statistically independent. Texture loss, deformation and visually identical objects remain concrete failures. Automatic diagnosis of which memory causes an identity error is a new source question, not a presumed solution; unsigned leave-memory-out stability must also be checked against existing VOS work.
+
+## Scope and resource accounting
+
+The first tracking metadata screen read 48,214 direct response-body bytes. The traffic follow-up had an application-body upper bound of 2,904,851 bytes; conservatively reserve its full 5,000,000-byte allowance, including uncertainty from two truncated console counters. The video-dataset metadata check read 1,793,039 bytes and conservatively debits its full 2,000,000-byte allowance. The annotation-format and SAM2/DAM4SAM check read 200,553 direct bytes plus unmetered provider text; retain its full 1,000,000-byte allowance. A further 3,000,000 bytes is now reserved for native-runtime dependency/source metadata, and 25,000,000 bytes for the complete VOST directory plus bounded official split/parent metadata. The [conservative planning ledger](0029-resource-accounting.md) retains all prior holds. These are transfer reservations, not new scientific data allocations. No model, RGB/mask payload, training or inference ran in this screen. The existing total acquisition limit, local resource limits and all previously exposed development exclusions remain in force.
+
+## Video resource option, separate from method admission
+
+The [official DAVIS 2017 train/val 480p archive](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip) is 832,766,765 bytes and supports exact HTTP range reads. Its complete directory identifies 90 RGB/mask-paired sequences, making complete selected-sequence extraction practical without the full archive. The included terms specify noncommercial CC BY-NC 4.0 and external-source conditions. Its source list reveals that some separately named sequences share parent footage; such groups must stay together.
+
+The [VOST release](https://www.vostdataset.org/data.html) also supports selective access, but its 21,042,989-byte ZIP directory exceeded this metadata allowance. Complete RGB/mask pairing and original Ego4D/EPIC-KITCHENS recording groups remain unchecked. A later author-loader check corrected the initial ITTO/MOSE feasibility suggestion: the [ITTO release](https://huggingface.co/datasets/demalenk/itto-dataset) provides point trajectories, without an established initial segmentation-mask contract. Its individual RGB files alone do not qualify it for this VOS diagnostic. DAVIS training sequences are an alternative development pool; source/parent-disjoint validation still needs separate allocation. Different releases do not automatically establish independent footage, and untouched project data do not imply absence from model pretraining. No cohort or two-source validation contract is yet admitted.
