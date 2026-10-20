@@ -101,6 +101,7 @@ jobs:
           PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/test_acquire.py -v
           PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/test_admit.py -v
           PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/test_metrics.py -v
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/recovery/test_recover_rgb.py -v
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'

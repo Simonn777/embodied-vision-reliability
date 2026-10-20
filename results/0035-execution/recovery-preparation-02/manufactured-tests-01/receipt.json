@@ -1,0 +1,37 @@
+{
+  "schema": "evr0035.recovery-manufactured-tests.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "-B",
+    "-S",
+    "-Werror",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "${WORKSPACE}/work/0035-transformation-support/recovery",
+    "-p",
+    "test_recover_rgb.py",
+    "-v"
+  ],
+  "source_sha256": {
+    "recover_rgb.py": "0f94dddb28e9b734f2a03c309a939d54506180b6e45b21ea81bab58323565926",
+    "test_recover_rgb.py": "f61c1aa3b51fbae6846206cb9f4647d21c8c9119c9fb53fadce2118ee2cfbd33"
+  },
+  "admit_sha256": "12e3e8ec3b8d7cb56bd16ab3027af4e72342a19068e8613339c69442744faab4",
+  "timeout_seconds": 60,
+  "network_calls": 0,
+  "model_calls": 0,
+  "scientific_payload_reads": 0,
+  "exit_code": 0,
+  "wall_seconds": 0.13142095896182582,
+  "source_sha256_after": {
+    "recover_rgb.py": "0f94dddb28e9b734f2a03c309a939d54506180b6e45b21ea81bab58323565926",
+    "test_recover_rgb.py": "f61c1aa3b51fbae6846206cb9f4647d21c8c9119c9fb53fadce2118ee2cfbd33"
+  },
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "4b917a26c57845b12993757eb55e3685fdf3f76a1fce41fd0fdf8fea6b97c920"
+  }
+}
