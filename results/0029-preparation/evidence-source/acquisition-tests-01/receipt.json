@@ -1,0 +1,38 @@
+{
+  "schema": "evr0029.acquisition-artificial-tests.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "-B",
+    "-W",
+    "error",
+    "$PRIVATE/0029-preparation/test_acquire_davis.py"
+  ],
+  "python_version": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "source_sha256": {
+    "acquire_davis.py": "4e2897ee0b1dfea25b3388805f019e155be53986d155f71c369101293919ee69",
+    "test_acquire_davis.py": "d84e3fc107ef58b86e8ceea8e257446c0f3d25bb788af831614b1544174683bf",
+    "range_inputs.py": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "timeout_seconds": 180,
+  "artificial_only": true,
+  "native_model_invocations": 0,
+  "scientific_payload_access": false,
+  "network_requests": 0,
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.1491489579784684,
+  "peak_child_rss_bytes": 32194560,
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "f19207a50aa593a6964229ca2186be9c36904ef048369013e957b0da0a202923"
+  },
+  "sources_unchanged": true
+}

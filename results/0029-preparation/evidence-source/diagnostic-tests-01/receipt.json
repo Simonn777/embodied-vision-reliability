@@ -1,0 +1,36 @@
+{
+  "command": [
+    "$OLD_PYTHON",
+    "-B",
+    "$PRIVATE/0029-preparation/test_diagnostic_core.py"
+  ],
+  "exit_code": 0,
+  "logs": {
+    "stderr.log": {
+      "bytes": 856,
+      "sha256": "919afe940935acfc081146cafe55043c23cb43db1c303fd73d6b7db0faca4ecd"
+    },
+    "stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "peak_child_rss_bytes": 33505280,
+  "scope": "first artificial NumPy arithmetic suite only; no model/tracker/decoder/scientific images/masks/labels or network",
+  "source_sha256_after": {
+    "diagnostic_core.py": "4c76bdb492bef0507b4322be67a2a157ec34c420bfacb874388b1f7facef0c34",
+    "test_diagnostic_core.py": "c6d7cc30b436a9897cd665f8492f442864577fc3711288d89b990a31665666fd"
+  },
+  "source_sha256_before": {
+    "diagnostic_core.py": "4c76bdb492bef0507b4322be67a2a157ec34c420bfacb874388b1f7facef0c34",
+    "test_diagnostic_core.py": "c6d7cc30b436a9897cd665f8492f442864577fc3711288d89b990a31665666fd"
+  },
+  "thread_environment": {
+    "MKL_NUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4"
+  },
+  "wall_seconds": 0.1996155
+}

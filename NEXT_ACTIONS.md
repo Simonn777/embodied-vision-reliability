@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: qualify the minimum native runtime, then test information
+## Current: run the fixed evidence stage before SAM comparisons
 
-1. Preserve [0029 acquisition receipts](results/0029-preparation/acquisition/README.md), exact source CI and all original assets. Acquisition passed; do not repeat it. Publish and verify this result as preparation, not improvement.
-2. Preserve failed installation01 and completed runtime02, independently verify saved artificial outputs, publish/verify result and merged-main CI. Native SAM2/LightGlue qualification passed; DAM VOT/device equivalence remains necessary before a larger efficacy claim.
-3. Freeze the complete first-stage independent-recording development evidence diagnostic, fixed frame schedule, signed/unsigned and same-evidence prompt/reset controls, numeric stopping gates and GT separation before any image/mask acquisition. Only if all48 evidence rows support the fixed necessary coverage condition, finish/freeze all native comparison controls and all-six prediction seals before SAM sequence execution or query GT. A necessary-information failure closes this variant rather than prompting hidden tuning.
-4. Preserve the two-source +3 absolute J&F gate, complete-cost controls, ablations and independent replication before any manuscript. No asset receipt or artificial check counts toward this gate.
+1. Preserve native runtime02 and the original installation/audit failures. [PR62 result and merged-main CI are verified](docs/0029-native-publication-verification.md); do not repeat acquisition or native qualification.
+2. Review and run manufactured tests for the [fixed diagnostic](protocols/0029-signed-memory-diagnostic.md), then commit and verify exact-source CI before the single bounded RGB phase, initial-mask phase and54-extraction/48-match evidence operation. Publish all outcomes. No query GT or scientific SAM stage is admitted yet.
+3. If fewer than four videos have any actionable query, close this fixed variant without SAM/GT or same-cohort tuning. Otherwise freeze/qualify the complete native video predictor, all same-evidence controls, all-six prediction-seal verifier and evaluator before subsequent execution. Preserve all48queries and complete six-video coverage.
+4. No manuscript before innovative, reproducible +3 absolute J&F on each of two independently held-out sources, complete-cost strong controls, recording-level uncertainty, ablations and replication. A development pass only admits later tests.
 
 ## Historical: resolve one falsifiable information question before implementation
 

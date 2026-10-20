@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: 0029 native runtime qualified; real-video evidence test pending
+## Current work: fixed 0029 real-video evidence diagnostic prepared
+
+The [prospective protocol](protocols/0029-signed-memory-diagnostic.md) fixes six DAVIS development parents,48 queries, all signed/unsigned/native-bank/same-evidence prompt controls and numerical gates before media access. Only the first evidence stage is prepared:386RGB+6initial masks,54 SuperPoint extractions and48 LightGlue matches. A full60,000,000-byte acquisition hold is allocated; conservative planning balance1,289,868,314bytes. Query GT and scientific SAM execution remain closed pending their separate complete source freeze. No scientific media have been acquired at this source preparation, and no accuracy gain or manuscript is established.
+
+## Historical: 0029 native runtime qualified; real-video evidence test pending
 
 The [fresh runtime02 installation and fixed artificial sequence](results/0029-preparation/runtime/README.md) passed after the narrow metadata repair. Native qualification took37.009693s and2.55GiB peak sampled RSS, verified exact branch/no-op/future-state parity, found3 same-history native mask candidates and69 mutual artificial-image matches. A first independent audit's extra cross-batch pointer-position equality assertion failed; exact isolated arithmetic reproduced both hashes and the separately corrected audit passed18,197checks. All original failures remain. No benchmark image/mask has been acquired, no accuracy gain is established, and the manuscript gate remains unmet. Next freeze the complete first-stage real-video evidence diagnostic before its separate acquisition.
 

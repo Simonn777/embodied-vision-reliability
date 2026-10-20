@@ -1,6 +1,6 @@
 # 0029 conservative acquisition planning balance
 
-October 20, 2026. Local reconciliation of existing receipts and reservations; the pinned asset-only acquisition is complete, with no scientific data access. **Planning balance after the metadata and acquisition-only reservations: 1,349,868,314 bytes.** This keeps all identified prior holds. It is not an exact measurement of remaining network allowance: provider-managed web traffic is unmetered, and its full assignment to the earlier metadata reserve is unresolved. Leave additional headroom rather than spending to this number.
+October 20, 2026. Local reconciliation of existing receipts and reservations; the pinned asset-only acquisition is complete, with no scientific data access. **Planning balance after metadata, asset-only and prospective DAVIS reservations: 1,289,868,314 bytes.** This keeps all identified prior holds. It is not an exact measurement of remaining network allowance: provider-managed web traffic is unmetered, and its full assignment to the earlier metadata reserve is unresolved. Leave additional headroom rather than spending to this number.
 
 | Entry | Retained debit, bytes | Balance, bytes |
 |---|---:|---:|
@@ -19,7 +19,8 @@ October 20, 2026. Local reconciliation of existing receipts and reservations; th
 | 0029 multi-object/model-source metadata, full allowance | 1,000,000 | 1,677,868,314 |
 | 0029 native-runtime dependency/source metadata, new full allowance | 3,000,000 | 1,674,868,314 |
 | 0029 full VOST directory and split/parent metadata, full allowance | 25,000,000 | 1,649,868,314 |
-| [0029 pinned asset-only acquisition](../protocols/0029-runtime-assets.md), full allowance | 300,000,000 | **1,349,868,314** |
+| [0029 pinned asset-only acquisition](../protocols/0029-runtime-assets.md), full allowance | 300,000,000 | 1,349,868,314 |
+| [0029 fixed DAVIS development phases](../protocols/0029-signed-memory-diagnostic.md), prospective full allowance | 60,000,000 | **1,289,868,314** |
 
 The three extra holds total 4,141,572 bytes and may overlap the old 20 MB metadata reservation. They are deliberately retained pending a full assignment; this is **not a claim that these bodies were transferred twice**. No earlier reserve is released.
 
@@ -28,3 +29,5 @@ The [0022 operation](../results/0022-preparation/acquisition/operation.json) act
 [0029 source-screen accounting](0029-task-screen.md) distinguishes exact body counts from full reservations. The 1 MB check read 200,553 direct source/metadata body bytes plus unmetered provider text; retain the full allowance. The completed 3 MB check read 1,319,651 direct source/metadata bytes across 58 requests. The completed 25 MB check read 22,806,230 bytes across 41 requests, including the 21,042,989-byte VOST central directory and bounded official split/parent text. Retain both full allowances. No image or mask values were read. The new 300 MB reservation admits only the pinned assets after review, source freeze and exact CI; expected payload is 257,103,668 bytes. Scientific cohort allocation and inference remain separate. Preserve every failure and actual transfer receipt; no reserve is refunded against a smaller measured subtotal.
 
 The [completed0029 acquisition](../results/0029-preparation/acquisition/README.md) read257,104,722 bytes, including1,054redirect-body bytes beyond the257,103,668 asset payload. All83files verified. Retain the entire300MB debit and the1,349,868,314-byte conservative planning balance. No installation or benchmark payload at this receipt.
+
+Before scientific payload access, the new60,000,000-byte hold covers386RGB+6initial masks+48query masks and bounded ZIP local headers. Only the first two phases are prepared; query GT is closed pending all-six prediction sealing. Retain every preceding allowance. Scientific assets are not rehosted.
