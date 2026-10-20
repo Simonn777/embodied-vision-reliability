@@ -1,5 +1,12 @@
 # Next actions
 
+## Current: 0025 conditional RS-depth candidate
+
+1. Publish the [audited mathematical qualification](results/0025-identifiability/README.md), retaining the distinction between invertibility and practical accuracy.
+2. Qualify independent rendered-depth format and bounded acquisition; freeze a physical falsifier with fixed supports, paired GS and temporal-depth controls before scientific payload access. No GT pose/rotation may enter an estimator.
+3. Only a successful necessary-assumption test permits considering a separately frozen robust-pose study against same-information strong controls. Keep previous failed methods closed and retain the unchanged two-source held-out gate before a manuscript.
+
+
 ## After 0024: distinct mechanism required
 
 1. Preserve and publish the [failed one-shot 0024 probe](results/0024-development/README.md)

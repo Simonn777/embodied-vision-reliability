@@ -1,0 +1,39 @@
+{
+  "schema": "evr0025.exact-execution.v1",
+  "source_sha256": "f91dc813e7deee89e44992ba0b3522eb68567d7ab9e8b1a440ca9271b2bb9a17",
+  "command": [
+    "$PYTHON",
+    "$PRIVATE/0025-rs-identifiability/check_exact_four_point.py",
+    "--output-dir",
+    "$PRIVATE/0025-rs-identifiability/exact-01"
+  ],
+  "started_utc": "2026-10-20T00:51:12.607105+00:00",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "BLIS_NUM_THREADS": "4"
+  },
+  "timeout_seconds": 120,
+  "rss_limit_kib": 8388608,
+  "no_real_data_or_model_inputs": true,
+  "status": "completed",
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 0.107683834,
+  "sampled_peak_rss_kib": 1184,
+  "resource_children_peak_rss_bytes": 14254080,
+  "finished_utc": "2026-10-20T00:51:12.715029+00:00",
+  "files": {
+    "stdout.log": {
+      "sha256": "ac4ccd13403bd1f1c7c2adb3fd172247d3bab7f8518321141406ddcbbef6fea9",
+      "bytes": 262
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

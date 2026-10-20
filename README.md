@@ -3,11 +3,12 @@
 **Goal: a reproducible improvement in visual camera-motion estimation before a
 CVPR-targeted manuscript. No method currently meets that goal.**
 
-The current question is whether image-derived local alignment can reduce the
-translation error left by dense matching, and whether shared image information
-can be used efficiently without counting repeated evidence as independent.
-This matters to the visual geometry used by embodied systems and driving;
-no closed-loop robot or driving result is claimed.
+The current candidate studies rolling-shutter camera translation with learned
+affine-depth priors and measured rotations. Fixed numerical checks and an exact
+four-point existence construction establish conditional mathematical feasibility;
+real depth semantics and practical robustness remain unverified. Earlier methods
+failed their scientific gates and remain public. This concerns visual geometry
+for embodied systems and driving; no controller or driving result is claimed.
 
 The next experiment must test a concrete accuracy mechanism against strong
 controls. The current target is at least **+2 absolute AUC@5 percentage points**
@@ -17,7 +18,19 @@ Novelty, ablations and independent reproduction are also required before a
 paper. A successful software check or reduction in operation count does not
 meet this standard. [Full prospective gate](protocols/0012-score-bounds-development.md).
 
-## Latest evidence · October19,2026
+## Current evidence · October 19, 2026
+
+| Study | Verified result | Decision |
+|---|---|---|
+| [0025 rolling-shutter geometry](results/0025-identifiability/README.md) | Fixed numerical rank checks, exact nonzero four-point determinant under given rotations, and independently checked critical configurations. | Mathematical feasibility only; no accuracy or novelty result. Physical depth assumption needs testing. |
+| [0024 virtual-rotation offset](results/0024-development/README.md) | 16/27 usable offsets; cross-axis residual increased 1.986%; all four conditions failed. | Closed. No downstream pose experiment. |
+| [0023 directional instability](results/0023-development/completed-study/README.md) | AUC@5 56.4971% versus strongest geometry control 61.9844% (−5.4874 pp). | Closed. All efficacy conditions failed. |
+| [0020 spatial depth transfer](results/0020-spatial-depth-transfer/README.md) | Candidate AUC@5 71.1071% versus strong affine control 74.0717% (−2.9646 pp). | Closed. No same-label rescue tuning. |
+
+[Current research admission](docs/0025-admission.md) · [Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md)
+
+## Historical evidence through 0015
+
 
 | Study | Verified result | Decision |
 |---|---|---|

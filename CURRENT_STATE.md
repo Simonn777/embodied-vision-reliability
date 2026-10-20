@@ -1,5 +1,18 @@
 # Current state
 
+## Current candidate: 0025 mathematical qualification, 2026-10-19
+
+[0025](docs/0025-admission.md) establishes a fixed numerical rank witness and an
+exact-rational four-point existence construction for given-orientation RS
+translation/velocity/affine-depth estimation. Independent audits agree and retain
+critical motions, task-versus-nuisance ambiguity and poor conditioning. This is
+not a real-image gain, a full-rotation four-point solver or established novelty.
+No model inference, real data allocation or manuscript is admitted. Next qualify
+and freeze a physical depth-semantics falsifier with independent depth truth.
+GrandTour ETH-1/2/3 timing is unsuitable; alternative sources remain conditional.
+The two-source matched-cost improvement gate is unchanged.
+
+
 ## Latest result: 0024 failed and closed, 2026-10-19
 
 [The complete virtual-rotation transfer probe](results/0024-development/README.md)

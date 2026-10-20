@@ -60,6 +60,11 @@ jobs:
           PYTHONDONTWRITEBYTECODE=1 python -W error -m unittest discover -s experiments/0023-mapfree -p 'test_*.py' -v
       - name: Check virtual-rotation falsifier using artificial geometry and fake inference only
         run: PYTHONDONTWRITEBYTECODE=1 python -W error -m unittest discover -s experiments/0024-virtual-depth -p 'test_*.py' -v
+      - name: Check rolling-shutter identifiability with fixed manufactured geometry only
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0025-rs-identifiability/check_manufactured.py --output-dir scratch/ci-0025-numerical
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0025-rs-identifiability/check_exact_four_point.py --output-dir scratch/ci-0025-exact
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0025-rs-identifiability/audit_exact.py scratch/ci-0025-exact/mathematics.json
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'
