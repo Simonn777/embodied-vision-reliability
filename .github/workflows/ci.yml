@@ -77,6 +77,17 @@ jobs:
         run: PYTHONDONTWRITEBYTECODE=1 python -W error -m pytest -q experiments/0028-normal-information
       - name: Check memory-study offline admission using invented artifacts and fake operations
         run: PYTHONDONTWRITEBYTECODE=1 python -W error -m unittest discover -s experiments/0029-memory-information -p 'test_*.py' -v
+      - name: Check boundary-ranking geometry and explicit arithmetic on manufactured arrays
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python -W error -m unittest discover -s experiments/0031-paired-boundary -p test_screen.py -v
+          PYTHONDONTWRITEBYTECODE=1 python -W error - <<'PY'
+          import sys, unittest
+          sys.path.insert(0, 'experiments/0031-paired-boundary')
+          import screen, screen_sum, test_screen
+          screen.scores = screen_sum.scores
+          result = unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromModule(test_screen))
+          sys.exit(0 if result.wasSuccessful() else 1)
+          PY
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'

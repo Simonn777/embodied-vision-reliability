@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: publish the fixed closure and assess a distinct boundary observable
+## Current: preserve the failed pairing screen; establish a credible repair baseline
+
+1. Publish [0031's complete TRAIN information screen and calibration control](results/0031-development/complete-01/README.md), retaining the failed first attempt, numerical qualification, all events/candidate outcomes and costs. The unchanged prospective rule closes the fixed initial-pair lookup; do not train its proposed head or tune its feature level/radius/cap/score to these outcomes.
+2. Complete source-only feasibility of a known crop-based mask-refinement adaptation on the existing frozen SAM2 tiny model. Specify prompts, crop geometry, original-coordinate mapping, causal input contract, complete costs and unchanged native baseline before any new bounded TRAIN experiment. Treat this as an established-method control, not an invention; an unavailable or ineffective strong baseline is not evidence for novelty.
+3. Only formulate a distinct mechanism when a concrete remaining error and credible baseline justify it. Keep initial-label adaptation's known precedents and initial-mask reconstruction/input-distribution mismatch explicit. All six DAVIS parents remain exposed development; no protected-source access now.
+4. Preserve the +3 absolute official J&F points on each of two independent held-out sources, paired recording-level 95% intervals, component-loss limits, strong complete-cost controls, ablations and independent replication before writing a manuscript. The goal remains unachieved.
+
+## Historical: fixed channel-affine closure and boundary-screen motivation
 
 1. Publish the [complete seven-arm result](results/0030-development/active-write-01/README.md), preserving all earlier negative arms, small TRAIN gains, checkpoints, failures and costs. All-active's +0.2233 mean J&F points include one losing parent and fail the predeclared continuation rule. Verify PR67 result/main CI separately from [completed PR66 verification](docs/0030-pr66-publication-verification.md).
 2. Keep further KD/rho exploration and seed-1 continuation of this exact global-statistics/channel-affine family closed. Do not reinterpret its +0.0094-point mean margin over GT-memory as satisfying the missing two-parent condition. The closure is specific to this family and comparison, not a theorem against learned memory methods.
