@@ -75,7 +75,7 @@ jobs:
         run: PYTHONDONTWRITEBYTECODE=1 python -W error -m unittest discover -s experiments/0027-affine-tangent -p 'test_*.py' -v
       - name: Check normal-information geometry and prediction barriers on artificial inputs only
         run: PYTHONDONTWRITEBYTECODE=1 python -W error -m pytest -q experiments/0028-normal-information
-      - name: Check memory-study asset wrapper using invented manifests and fake acquisition only
+      - name: Check memory-study offline admission using invented artifacts and fake operations
         run: PYTHONDONTWRITEBYTECODE=1 python -W error -m unittest discover -s experiments/0029-memory-information -p 'test_*.py' -v
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |

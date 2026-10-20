@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: 0029 assets acquired; runtime not yet qualified
+## Current work: 0029 offline runtime and artificial native check prepared
+
+The [native runtime protocol](protocols/0029-native-runtime.md) prepares an isolated Python3.12 installation from verified assets, two inspected offline builds and a fixed nine-frame manufactured check. It checks real memory/pointer removal, discarded-branch isolation, next-frame parity and the same control interfaces. Installation and model execution still await complete review and exact-source CI. No benchmark data, measured gain or manuscript. [Asset publication/main CI](docs/0029-asset-publication-verification.md) is verified.
+
+## Historical: 0029 assets acquired; runtime not yet qualified
 
 [The one-shot acquisition](results/0029-preparation/acquisition/README.md) completed after exact source CI:83 verified files,257,104,722 response-body bytes,21.944468s supervised wall time. All payload hashes were independently reread. Next inspect/freeze the offline runtime and manufactured native SAM2/LightGlue check. No scientific data, inference result or improvement is established.
 
