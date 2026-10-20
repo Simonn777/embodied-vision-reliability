@@ -1,0 +1,86 @@
+{
+  "schema": "evr0029.exit-checked-operation.v1",
+  "status": "completed",
+  "command": [
+    "$PYTHON",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "$PRIVATE/0035-transformation-support/independent-evaluation-audit-01/correct_display.py"
+  ],
+  "spec_sha256": "01231c6ef6a9982983c949b67a8bccd03d7e88cff50468529681c05f2777e64e",
+  "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "4051d9f2e181de386e2d8b0a0e4a8faae43ca551",
+  "hard_timeout_seconds": 60,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "child_pid": 71878,
+  "declared_child_pgid": 71878,
+  "observed_child_pgid": 71878,
+  "pgid_observation_error": null,
+  "exit_observed_at_seconds": 0.15785937500186265,
+  "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+  "pre_poll_snapshot": {
+    "label": "before_poll",
+    "started_seconds": 0.13180087500950322,
+    "finished_seconds": 0.15784574998542666,
+    "known_groups": [
+      71878
+    ],
+    "discovered_groups": [
+      71878
+    ],
+    "rows": [
+      [
+        71878,
+        71876,
+        71878,
+        0
+      ]
+    ]
+  },
+  "post_exit_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 0.15786008298164234,
+    "finished_seconds": 0.1791783749940805,
+    "known_groups": [
+      71878
+    ],
+    "discovered_groups": [],
+    "rows": []
+  },
+  "triggering_snapshot": null,
+  "cleanup_snapshots": [
+    {
+      "label": "final",
+      "started_seconds": 0.17918941599782556,
+      "finished_seconds": 0.1991742909885943,
+      "known_groups": [
+        71878
+      ],
+      "discovered_groups": [],
+      "rows": []
+    }
+  ],
+  "signal_attempts": [],
+  "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.199243540992029,
+  "peak_group_rss_kib": 4576,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "ca34ac7c9b330c115d5f61039a7f460c25bc99d5aedb82fee59bd62131e7940c",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "566c35c728f0fbebe680036ea1e964226d6c6e74f384394bb238c1308afed27b"
+}

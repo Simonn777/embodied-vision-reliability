@@ -1,0 +1,29 @@
+{
+  "repo_root": "${WORKSPACE}/work/embodied-vision-reliability",
+  "expected_commit": "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+  "metadata_root": "${WORKSPACE}/work",
+  "manifest_relative": "experiments/0035-transformation-support/proposed-manifest-v2.json",
+  "admission_relative": "experiments/0035-transformation-support/acquisition-admission.json",
+  "output_dir": "${WORKSPACE}/work/0035-transformation-support/metric-acquisition-02",
+  "phase": "metric",
+  "initial_dir": "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01",
+  "initial_inspection": "${WORKSPACE}/work/0035-transformation-support/initial-inspection-02/receipt.json",
+  "initial_inspection_outer": "${WORKSPACE}/work/0035-transformation-support/initial-inspection-supervision-02/receipt.json",
+  "prediction_proof": "${WORKSPACE}/work/0035-transformation-support/prediction-proof-01.json",
+  "schema": "evr0035.metric-transport-spec.v1",
+  "adapter_source_commit": "4051d9f2e181de386e2d8b0a0e4a8faae43ca551",
+  "parent_failure": {
+    "receipt": {
+      "path": "${WORKSPACE}/work/0035-transformation-support/metric-acquisition-01/receipt.json",
+      "sha256": "60dd51670ac4ad69b89dc5c299c086761db732264c2fa32e3a0f321b9181c5b3"
+    },
+    "outer": {
+      "path": "${WORKSPACE}/work/0035-transformation-support/metric-acquisition-supervision-01/receipt.json",
+      "sha256": "fe5af981c381e4a6a2779cbdda63ec1dc128e543b4ab651ab676d51a7adbbdd6"
+    },
+    "operation_spec": {
+      "path": "${WORKSPACE}/work/0035-transformation-support/metric-acquisition-outer-spec-01.json",
+      "sha256": "45837c8fea9a4538a5f60c40b0a9813e4bfdb3206d1cbbb2639befedea8a3dba"
+    }
+  }
+}

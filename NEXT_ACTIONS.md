@@ -1,10 +1,11 @@
 # Next actions
 
-## Current: score the complete sealed prediction population
+## Current: publish the positive support screen and design a realizable test
 
-1. Finish the fixed442noninitial-mask acquisition only under the already verified complete predictionproof, originalacquire sourcecommit784fc1a, refreshedinspection02 and unchangedmetadata. Preserve anyfailure and allcosts; no partialGTpopulation substitutes.
-2. Run one complete saved-output evaluation of all446rawframes/allinitialobjects, reconstruct everycandidate/control map, and report bothvoidpolicies, bothceilings, allrawscores and fullcosts. Primary uses438interior/110tailpositions.
-3. Verify cleancomplete outer/source/coverage and apply every original numericalcontinuation clause withoutthreshold/cohort/slotrescue. A pass only admits a separatelyscoped realverifier withstrongsame-information controls; a fail closes thisfixednative-bank route. No manuscript before the unchangedsubstantial independentvalidation gate.
+1. Finish independent saved-text arithmetic, coverage and seal review. Publish all 0035 results through PR72, including the sharp onion decline, both void policies, all failed transports and costs. Verify result and merged-main CI. Do not rerun predictions or select favorable clips.
+2. Treat the seven-clause screen as evidence of available target support. Develop one causal verifier hypothesis with a specific discriminative observation, an ordinary same-input supervised control, fixed union, reverse-consistency control and complete-pipeline costs. Existing FluxGraph and material-ancestry work limit novelty claims. Positive mean union gain establishes a stronger baseline, not an invention.
+3. Freeze the next complete development comparison before executing it. Preserve every object and frame, including cases with absent or ambiguous evidence. Prediction cannot use GT-derived pair locations, event times or correct parent identities. Distinguish gains from supervision from gains due to the proposed mechanism. No successor run is yet admitted.
+4. Preserve the final requirements: +3 official J&F points on each of two independent held-out sources; positive paired recording-level 95% intervals; bounded J/F component loss; strong same-information controls at matched complete-pipeline cost; ablations; independent replication. The goal remains unachieved; no manuscript.
 
 ## Historical: preserve 0034 closure; reassess the failure mechanism and task
 
