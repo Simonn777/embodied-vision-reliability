@@ -1,0 +1,100 @@
+{
+  "schema": "evr0034.pointwise-model.v1",
+  "name": "signed_gram",
+  "status": "completed",
+  "dtype": "float64",
+  "input_dim": 14,
+  "family": "signed_gate",
+  "coefficients": [
+    -3.0166199152469297,
+    0.6654059461759376,
+    -0.9256148907261996,
+    0.8312988333621726,
+    21.68432890251452,
+    90.25499896276206,
+    56.903259032801074,
+    54.00796217874442,
+    98.06801428714367,
+    11.568601000506142,
+    -23.189761259888606,
+    -27.27454169046699,
+    -32.17619108391439,
+    1.4226138474860999
+  ],
+  "initial_coefficients": [
+    -4.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "config": {
+    "correction_bound": 4.0,
+    "regularization": 0.001,
+    "gate_initial_intercept": -4.0,
+    "lbfgs": {
+      "lr": 1.0,
+      "max_iter": 80,
+      "max_eval": 400,
+      "tolerance_grad": 1e-06,
+      "tolerance_change": 1e-12,
+      "history_size": 20,
+      "line_search_fn": "strong_wolfe"
+    }
+  },
+  "training": {
+    "sample_count": 149504,
+    "positive_weight_count": 149504,
+    "weight_sum": 1.0,
+    "weights_renormalized": false,
+    "weight_sum_roundoff_tolerance": 3.552713678800501e-15
+  },
+  "torch_version": "2.8.0",
+  "terminal": {
+    "loss": 0.20633835486827626,
+    "data_loss": 0.2062538090104881,
+    "penalty_loss": 8.454585778816308e-05,
+    "weighted_delta_squared": 0.08454585778816308,
+    "gradient": [
+      -5.122931215646882e-07,
+      -4.2153905772215554e-07,
+      -2.234354113599722e-07,
+      1.3003006065634398e-07,
+      3.8533329730480295e-08,
+      8.921204981774756e-08,
+      -2.960062137965979e-07,
+      2.236803360433945e-07,
+      1.1726162230674455e-08,
+      -3.9089925715711924e-08,
+      -1.053837817224499e-07,
+      3.2054327648544433e-07,
+      -6.021719785365963e-08,
+      -1.4801283400844142e-07
+    ],
+    "gradient_norm": 8.916949964281391e-07,
+    "gradient_max_abs": 5.122931215646882e-07
+  },
+  "optimizer": {
+    "n_iter": 53,
+    "func_evals": 66,
+    "observed_closure_evals": 66,
+    "terminal_loss_gradient_evals": 1,
+    "configured_max_iter": 80,
+    "configured_max_eval": 400,
+    "max_iter_reached": false,
+    "max_eval_reached": false,
+    "max_eval_is_hard_cap": false,
+    "returned_successfully": true,
+    "convergence_claimed": false,
+    "terminal_gradient_tolerance_satisfied": true
+  }
+}

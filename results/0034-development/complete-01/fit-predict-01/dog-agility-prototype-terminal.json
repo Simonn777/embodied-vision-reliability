@@ -1,0 +1,73 @@
+{
+  "schema": "evr0034.pointwise-model.v1",
+  "name": "prototype",
+  "status": "completed",
+  "dtype": "float64",
+  "input_dim": 5,
+  "family": "ordinary",
+  "coefficients": [
+    -0.19622286968607483,
+    -0.3372855923974639,
+    0.17489405636670358,
+    0.01767716376713504,
+    0.2281084806698031
+  ],
+  "initial_coefficients": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "config": {
+    "correction_bound": 4.0,
+    "regularization": 0.001,
+    "gate_initial_intercept": -4.0,
+    "lbfgs": {
+      "lr": 1.0,
+      "max_iter": 80,
+      "max_eval": 400,
+      "tolerance_grad": 1e-06,
+      "tolerance_change": 1e-12,
+      "history_size": 20,
+      "line_search_fn": "strong_wolfe"
+    }
+  },
+  "training": {
+    "sample_count": 208896,
+    "positive_weight_count": 208896,
+    "weight_sum": 1.0,
+    "weights_renormalized": false,
+    "weight_sum_roundoff_tolerance": 3.552713678800501e-15
+  },
+  "torch_version": "2.8.0",
+  "terminal": {
+    "loss": 0.19415256362594435,
+    "data_loss": 0.1929940020271749,
+    "penalty_loss": 0.0011585615987694416,
+    "weighted_delta_squared": 1.1585615987694415,
+    "gradient": [
+      4.783399145557492e-08,
+      -2.7916449697778156e-08,
+      1.300461088160523e-07,
+      -2.2838831917213815e-08,
+      -1.5835580374015255e-08
+    ],
+    "gradient_norm": 1.4405480613163084e-07,
+    "gradient_max_abs": 1.300461088160523e-07
+  },
+  "optimizer": {
+    "n_iter": 15,
+    "func_evals": 17,
+    "observed_closure_evals": 17,
+    "terminal_loss_gradient_evals": 1,
+    "configured_max_iter": 80,
+    "configured_max_eval": 400,
+    "max_iter_reached": false,
+    "max_eval_reached": false,
+    "max_eval_is_hard_cap": false,
+    "returned_successfully": true,
+    "convergence_claimed": false,
+    "terminal_gradient_tolerance_satisfied": true
+  }
+}

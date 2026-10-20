@@ -1,0 +1,2527 @@
+{
+  "schema": "evr0034.stage-seal.v1",
+  "complete": true,
+  "stage": "fit_predict",
+  "receipt_sha256": "156cc0dd182b5787e58777c7ca88a243487b34d688c2e45e4fbb1dafbf545077",
+  "source_sha256": {
+    "${WORKSPACE}/work/0034-relative-rgb/run.py": "1affa3347efe2e9b0f1cfa02572cc45d3cdd855d8b363fc5c22c7a3ad398b823",
+    "${WORKSPACE}/work/0034-relative-rgb/features.py": "f6b35e1666cb9a3592e3bcaa63c0dd620eca5722a329e2ca249e57db40ae14b7",
+    "${WORKSPACE}/work/0034-relative-rgb/models.py": "6cb310b416e370243a0c25c35eb52fea5b68391e9df823e23b3c4de3b8efe15e",
+    "${WORKSPACE}/work/0034-relative-rgb/metrics.py": "a4f16fa06916313802bcba39d5fb7ce2ea9ee39e2fe564a35c5758c2b349dafd",
+    "${WORKSPACE}/work/0034-relative-rgb/ADMISSION.md": "9fb57caec5d907b514ad2421d39d41fa3fdecb73e673ce2aa2cb115aa23d66f2",
+    "${WORKSPACE}/work/0034-relative-rgb/SCOPE.md": "f697d4e757d310d8385e246de72e716b2e5eb7d6b0f61b47a27049d410781dfe",
+    "${WORKSPACE}/work/0034-relative-rgb/FEATURES.md": "0e9f5bb91fd0304e737eb37c1c8b750805512c7dfe79454740e9d13eb00da01d",
+    "${WORKSPACE}/work/0034-relative-rgb/MODEL.md": "e049c32c8ce4d0523717d2479bb7c83c1789376b06c184f05964e90d5edabcba",
+    "${WORKSPACE}/work/0034-relative-rgb/METRICS.md": "26a6d732d647e0241c64d3611e627812c22e4ac9be001bb25dd2fd731be191d7",
+    "${WORKSPACE}/work/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+    "${WORKSPACE}/work/0030-memory-content/campaign/cache_baselines.py": "5d16b4658cef5d451e88f33b3b3f99562a9c782abf199b1e22c1c9c5b0b8f0da",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_jf.py": "c9dd8f9663ede8fc232d19330c03449d25a8132d48f0f5e063589920fd8fcc40",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_baseline.py": "552f8e18cee6c3ac45cee5ea973c9823b5abaf63310366ba064d24d324a32645",
+    "${WORKSPACE}/work/0030-memory-content/evaluation/evaluate_rollout.py": "c70843725accfa5feda99464aa84bd313975ca211fdd86463b26ffcd22267a4f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0022-frontend/qualify.py": "174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e"
+  },
+  "outputs": [
+    {
+      "path": "dog-agility-logit-terminal.json",
+      "bytes": 1667,
+      "sha256": "cd07ea336e5b811b2df954574c0b2400b310e22e8500bf5133176bf67f01ca1a",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "logit"
+    },
+    {
+      "path": "dog-agility-logit-trace.json",
+      "bytes": 3847,
+      "sha256": "45071a5425e5714c9bdfcfea9058afe5d01532bf059864ab57728eea213d5a71",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "logit"
+    },
+    {
+      "path": "dog-agility-absolute-terminal.json",
+      "bytes": 4708,
+      "sha256": "77fe280cfb3f7c2e0fcf220cd78d0ba067e9b754aff7f9d3f4d869885bd52ec5",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "absolute"
+    },
+    {
+      "path": "dog-agility-absolute-trace.json",
+      "bytes": 30299,
+      "sha256": "2fc9a1d457f71aaafbf409184a676c6b04043e7e7623ff97719b32948804fa74",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "absolute"
+    },
+    {
+      "path": "dog-agility-prototype-terminal.json",
+      "bytes": 1803,
+      "sha256": "1b55c2af22d568fd60c5817121e0e6eaf8d29f8bb10fbf4461d5eb2414e9ccef",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "prototype"
+    },
+    {
+      "path": "dog-agility-prototype-trace.json",
+      "bytes": 6156,
+      "sha256": "792e9d98d0dd7c76a779f8593b27f71049620a4e88c0561beaae5f89e8bffc0b",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "prototype"
+    },
+    {
+      "path": "dog-agility-nn-terminal.json",
+      "bytes": 1794,
+      "sha256": "95e83a6772cd8c0cc3ad584a9cf594b816124389a39804866699f9f15517f894",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "nn"
+    },
+    {
+      "path": "dog-agility-nn-trace.json",
+      "bytes": 6818,
+      "sha256": "aa91c5d59f3e0878d4adc9c472aed1a9a1b270203f43e4ff40ed23d25857a240",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "nn"
+    },
+    {
+      "path": "dog-agility-ordinary_relations-terminal.json",
+      "bytes": 2573,
+      "sha256": "8fa517f66ae3a842fa952b2799bcc6a7271f3245e995e1eaa269fc7acebc13fd",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "ordinary_relations"
+    },
+    {
+      "path": "dog-agility-ordinary_relations-trace.json",
+      "bytes": 29127,
+      "sha256": "dde4e256d10dc2dd8e862d3909117a6d0a7aa4a703c3dfc81259126f961abb20",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "ordinary_relations"
+    },
+    {
+      "path": "dog-agility-bilateral-terminal.json",
+      "bytes": 1733,
+      "sha256": "cba77123d35944f967e9f450024567f6cd7a49368b748fe152fb5de5d25af9d0",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "bilateral"
+    },
+    {
+      "path": "dog-agility-bilateral-trace.json",
+      "bytes": 5809,
+      "sha256": "586dbdde418ac061c184e88cce172981907a5a15059757ac0209058a1c3acbef",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "bilateral"
+    },
+    {
+      "path": "dog-agility-signed_no_gram-terminal.json",
+      "bytes": 1744,
+      "sha256": "a2eca4680eedbf3255de3d54398ce88ed8b695111e57a4b9ce523bc09be2cf19",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "signed_no_gram"
+    },
+    {
+      "path": "dog-agility-signed_no_gram-trace.json",
+      "bytes": 6914,
+      "sha256": "a188419474ae9dfb29dac27e3ade73ed4709d410eee38605648a4665b8c82618",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "signed_no_gram"
+    },
+    {
+      "path": "dog-agility-signed_gram-terminal.json",
+      "bytes": 2368,
+      "sha256": "e82d51aa6001594966712287c38fdb4cee9564bb2ade5939b5a0e117b06d527c",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "signed_gram"
+    },
+    {
+      "path": "dog-agility-signed_gram-trace.json",
+      "bytes": 21108,
+      "sha256": "fb799bc98eb63424a3512fbd4b2406ce5d294a7885511e01e1858b78c4c7890f",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "signed_gram"
+    },
+    {
+      "path": "dog-agility-displaced_gram-terminal.json",
+      "bytes": 2369,
+      "sha256": "4c750483f3d42c6834ea6d5554a124f4b4ee39d7cd1f49dd026fbf11528be67a",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "displaced_gram"
+    },
+    {
+      "path": "dog-agility-displaced_gram-trace.json",
+      "bytes": 17808,
+      "sha256": "a7771d1b760e70c0e474af07115932ce3afeebb7f100af80e4c72e04d8fffc7e",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "displaced_gram"
+    },
+    {
+      "path": "dog-agility-rgb256-terminal.json",
+      "bytes": 2370,
+      "sha256": "9fb660c0d86727d60a3a97bbd20a72cb6e6d725388d1c38c23acef329d626b61",
+      "kind": "terminal-readout",
+      "held_parent": "dog-agility",
+      "arm": "rgb256"
+    },
+    {
+      "path": "dog-agility-rgb256-trace.json",
+      "bytes": 11869,
+      "sha256": "b9b96106e3af7dd0253cbb75d182b30ba67f074801f5d610f13fe14706606249",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-agility",
+      "arm": "rgb256"
+    },
+    {
+      "path": "planes-water-logit-terminal.json",
+      "bytes": 1669,
+      "sha256": "2ec3a6d96f5fda224fc742dacd310bf4ad1c1195938545d7a62c80fbd52b6937",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "logit"
+    },
+    {
+      "path": "planes-water-logit-trace.json",
+      "bytes": 3850,
+      "sha256": "231b1b19d4c03f2217531759f61c4230d4493a1bdbdeeeebebd24f07523f4772",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "logit"
+    },
+    {
+      "path": "planes-water-absolute-terminal.json",
+      "bytes": 4676,
+      "sha256": "137fe9eb9ea42412472025792eb9a3f91b0d98e0f7c0e1c781df2905ebdb9edc",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "absolute"
+    },
+    {
+      "path": "planes-water-absolute-trace.json",
+      "bytes": 29273,
+      "sha256": "58a9831449d5334c7f41ae5f913722ec1a566be95002fcd89bfd454e1bde774d",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "absolute"
+    },
+    {
+      "path": "planes-water-prototype-terminal.json",
+      "bytes": 1803,
+      "sha256": "e7c235e5b8419f2d4a7c697fcedb544d2cc4a83b5d525a3b1d1131d8f4a713b9",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "prototype"
+    },
+    {
+      "path": "planes-water-prototype-trace.json",
+      "bytes": 7448,
+      "sha256": "c1dcdc8eff81aae508b4498793e5e34bd502a6bd8e47beac6a997400d68f4e2a",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "prototype"
+    },
+    {
+      "path": "planes-water-nn-terminal.json",
+      "bytes": 1791,
+      "sha256": "c67452bf4448a8de6434a1059f61055cbcd652ebc7d46d252a4a346d7554f115",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "nn"
+    },
+    {
+      "path": "planes-water-nn-trace.json",
+      "bytes": 6788,
+      "sha256": "291c6cd784e13e90f4d7e286fe2e6796c99a352b16e6cb49d638aa387144a411",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "nn"
+    },
+    {
+      "path": "planes-water-ordinary_relations-terminal.json",
+      "bytes": 2577,
+      "sha256": "f605ac90228505a944cc0ee4ddfe4469fe623ecdbacaf4713b0db93c652aa32d",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "ordinary_relations"
+    },
+    {
+      "path": "planes-water-ordinary_relations-trace.json",
+      "bytes": 30390,
+      "sha256": "6ced93fc9273c965ba34e2ae74a646d0ffe9ea1884ea3bc226bd52bdc5b6ec9e",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "ordinary_relations"
+    },
+    {
+      "path": "planes-water-bilateral-terminal.json",
+      "bytes": 1741,
+      "sha256": "bdaf60430aebff8ea545651edfa9ed62ca599be78bcf481a9e7e1e2d4b308186",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "bilateral"
+    },
+    {
+      "path": "planes-water-bilateral-trace.json",
+      "bytes": 6128,
+      "sha256": "e2399a8ead0c469933b8e2bfebf8abe06e7ef5bf1b22e5ac46343ce947393ee9",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "bilateral"
+    },
+    {
+      "path": "planes-water-signed_no_gram-terminal.json",
+      "bytes": 1746,
+      "sha256": "21f9234fddc99fc69d10abdb31781f27ae267c050858418e2a0252a5ee0092e0",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "signed_no_gram"
+    },
+    {
+      "path": "planes-water-signed_no_gram-trace.json",
+      "bytes": 5606,
+      "sha256": "bd4078e948d934c6825153ec70ab82ad951c809f0e7c61a01eea786f6be43911",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "signed_no_gram"
+    },
+    {
+      "path": "planes-water-signed_gram-terminal.json",
+      "bytes": 2366,
+      "sha256": "3fba6ea8a607fcd11207b99654892672202aa7856da2382c3f085cdbcc34ecc0",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "signed_gram"
+    },
+    {
+      "path": "planes-water-signed_gram-trace.json",
+      "bytes": 23824,
+      "sha256": "d6bf814acdaee085dfb5e9480f8490dfb76811190a6eef7b08161fc360454be3",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "signed_gram"
+    },
+    {
+      "path": "planes-water-displaced_gram-terminal.json",
+      "bytes": 2374,
+      "sha256": "dca665c32e48c9b0119a491ea0e92c1e739d8e3e48e983302c90a92f6607dff5",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "displaced_gram"
+    },
+    {
+      "path": "planes-water-displaced_gram-trace.json",
+      "bytes": 8252,
+      "sha256": "a83b6ad01597d1e60af4f90673b86b5a34f73d157f21ba47f0275f6303951e31",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "displaced_gram"
+    },
+    {
+      "path": "planes-water-rgb256-terminal.json",
+      "bytes": 2359,
+      "sha256": "063e62480f2523781edb7d4bff42015228f1fd7836f1463668a74eb109de1374",
+      "kind": "terminal-readout",
+      "held_parent": "planes-water",
+      "arm": "rgb256"
+    },
+    {
+      "path": "planes-water-rgb256-trace.json",
+      "bytes": 11558,
+      "sha256": "8d8bd9affe7c06d0e208ba5a77466ac5afedf7b6620fcf15c138110a891cda92",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "planes-water",
+      "arm": "rgb256"
+    },
+    {
+      "path": "dogs-scale-logit-terminal.json",
+      "bytes": 1669,
+      "sha256": "9d8291f74b7c0138cee949ad463c082f00ca2fa397418d626dbe3c5b5ee162a4",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "logit"
+    },
+    {
+      "path": "dogs-scale-logit-trace.json",
+      "bytes": 4505,
+      "sha256": "8bc4fc6d963064534f9b6e6c3754bcf7d4498a0f59eeaffd6dbbfbb7261f2cd3",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "logit"
+    },
+    {
+      "path": "dogs-scale-absolute-terminal.json",
+      "bytes": 4697,
+      "sha256": "f285bf67f30dc6a2d20489043c50e4ddfa2785cfaa773daba4567cf14d9c7907",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "absolute"
+    },
+    {
+      "path": "dogs-scale-absolute-trace.json",
+      "bytes": 29630,
+      "sha256": "e2fb15c4d21820470c9dc53292bd2f4ebb7c9614f723d8cda06faf53780011f8",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "absolute"
+    },
+    {
+      "path": "dogs-scale-prototype-terminal.json",
+      "bytes": 1800,
+      "sha256": "8a88c3170e0f288a0fe953bd53cc47455fb9a9c48887a162c6fcc43c6c1873ec",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "prototype"
+    },
+    {
+      "path": "dogs-scale-prototype-trace.json",
+      "bytes": 8427,
+      "sha256": "b8438b6767576b90f6c4213a9fdf17ebfee5e98b57a8de1257c5736a7bc1e619",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "prototype"
+    },
+    {
+      "path": "dogs-scale-nn-terminal.json",
+      "bytes": 1796,
+      "sha256": "fd3c08ffbe25c1023b4586d8b9f5fd0041a66f87db37477ea6829310ed6a3b17",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "nn"
+    },
+    {
+      "path": "dogs-scale-nn-trace.json",
+      "bytes": 9407,
+      "sha256": "2693ce838914c2e9362af94df13070eff02705ec0685c46f0f51754debfe7df8",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "nn"
+    },
+    {
+      "path": "dogs-scale-ordinary_relations-terminal.json",
+      "bytes": 2557,
+      "sha256": "10fd0f9b3aef15322a031aa3eef2b4f83215c2f18c73b804405bc7633de513a0",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "ordinary_relations"
+    },
+    {
+      "path": "dogs-scale-ordinary_relations-trace.json",
+      "bytes": 29418,
+      "sha256": "707503e988796de08caa729798dede651c93ba62b4ad004176400f3703126c3c",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "ordinary_relations"
+    },
+    {
+      "path": "dogs-scale-bilateral-terminal.json",
+      "bytes": 1736,
+      "sha256": "2c9933dc9e2b2a78cdd3593f413a2f53b1a07942e72d6933dc679cecd871ef26",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "bilateral"
+    },
+    {
+      "path": "dogs-scale-bilateral-trace.json",
+      "bytes": 6137,
+      "sha256": "d531f938925a9f1e19adfd8e25b85371fd9d59df5376427fb3c247e99fa4b748",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "bilateral"
+    },
+    {
+      "path": "dogs-scale-signed_no_gram-terminal.json",
+      "bytes": 1741,
+      "sha256": "81b248ffa9473df1e7123e341da4146dbdefa7b0ddb2b19fa859afb818c51f84",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "signed_no_gram"
+    },
+    {
+      "path": "dogs-scale-signed_no_gram-trace.json",
+      "bytes": 12510,
+      "sha256": "5e60cb67de1615bc5d7f062c41f65319a76b1a47269af05f2313c29ec1c1b47f",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "signed_no_gram"
+    },
+    {
+      "path": "dogs-scale-signed_gram-terminal.json",
+      "bytes": 2371,
+      "sha256": "f8aa15a2b6dd878bd612ae5023ac3f6f422933b1648a7a14a1a69dad42c8c3b6",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "signed_gram"
+    },
+    {
+      "path": "dogs-scale-signed_gram-trace.json",
+      "bytes": 22405,
+      "sha256": "941d7436c62c762998372ca436eb4b78942c30a4f1c414c8b1de57b2397d50f9",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "signed_gram"
+    },
+    {
+      "path": "dogs-scale-displaced_gram-terminal.json",
+      "bytes": 2369,
+      "sha256": "14eb2b251328a754b754558b9d0d6d32f20282d242957deddefcd9b35dccbdf1",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "displaced_gram"
+    },
+    {
+      "path": "dogs-scale-displaced_gram-trace.json",
+      "bytes": 21084,
+      "sha256": "481bc6c1d77fefd99199145c53178e6ca0b23d1fe91a37e9331677ee1043788c",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "displaced_gram"
+    },
+    {
+      "path": "dogs-scale-rgb256-terminal.json",
+      "bytes": 2368,
+      "sha256": "27087078d62d5b1e318291b4e7cefad5d5a5aad2d17d22f13185d096b423263c",
+      "kind": "terminal-readout",
+      "held_parent": "dogs-scale",
+      "arm": "rgb256"
+    },
+    {
+      "path": "dogs-scale-rgb256-trace.json",
+      "bytes": 13870,
+      "sha256": "31c2d1b92cad448acdb39b0723327750a410921b9f410a9c37de4493662db975",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dogs-scale",
+      "arm": "rgb256"
+    },
+    {
+      "path": "dog-gooses-logit-terminal.json",
+      "bytes": 1673,
+      "sha256": "415674f520f3d539181b2957e7b658be5344f68727f72d89cd90855a5d6f4338",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "logit"
+    },
+    {
+      "path": "dog-gooses-logit-trace.json",
+      "bytes": 4864,
+      "sha256": "5fc486b4a2284070f9d5dd2e7e13b86572a230351af7f9c170963581aa764a24",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "logit"
+    },
+    {
+      "path": "dog-gooses-absolute-terminal.json",
+      "bytes": 4707,
+      "sha256": "313a4d1ab87aec05d1acdf600d0500dbeaea9d531c286abc7fe1c4e4aefd6a1d",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "absolute"
+    },
+    {
+      "path": "dog-gooses-absolute-trace.json",
+      "bytes": 30102,
+      "sha256": "03a840db5393b84ca2c6d514cf4bd1b96c7eaf7094ff7d6ded4b60489b5720f5",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "absolute"
+    },
+    {
+      "path": "dog-gooses-prototype-terminal.json",
+      "bytes": 1806,
+      "sha256": "6673e918b386507aae472a3b43d7c67f550aad851d3cd27e04376756932a49b1",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "prototype"
+    },
+    {
+      "path": "dog-gooses-prototype-trace.json",
+      "bytes": 8163,
+      "sha256": "2a36f9ae4a4615c3e54e7dc8b3bca47b0c383719d03833b9dc03cd4bb5dec6a3",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "prototype"
+    },
+    {
+      "path": "dog-gooses-nn-terminal.json",
+      "bytes": 1802,
+      "sha256": "f121c5eb9389ed6106a35f7f33ec99da82bf4e83a69944cef02744e74efa9d1f",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "nn"
+    },
+    {
+      "path": "dog-gooses-nn-trace.json",
+      "bytes": 7813,
+      "sha256": "2b61789827bc120052ded9e34d7960a752f71664044734f86226758f02ac5fa9",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "nn"
+    },
+    {
+      "path": "dog-gooses-ordinary_relations-terminal.json",
+      "bytes": 2575,
+      "sha256": "5db0ada582f4cee73511360d1c65340a3a4a1c3b5df096194109d0839e3f3c1b",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "ordinary_relations"
+    },
+    {
+      "path": "dog-gooses-ordinary_relations-trace.json",
+      "bytes": 30941,
+      "sha256": "3f7b09a973a5fb598f1eac486b40911dde9fcf2611083ad7363d3fbd7f4fcaaa",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "ordinary_relations"
+    },
+    {
+      "path": "dog-gooses-bilateral-terminal.json",
+      "bytes": 1736,
+      "sha256": "f7e17f59f960815bcf543f744bcaf85c36ceff2b319b2fe3c7d20baff67f3bab",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "bilateral"
+    },
+    {
+      "path": "dog-gooses-bilateral-trace.json",
+      "bytes": 5847,
+      "sha256": "74f426e921a15f9f9a3fb3bea8ce9b57bb4c5fa69c9e5b42f485d8cc62eeabf7",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "bilateral"
+    },
+    {
+      "path": "dog-gooses-signed_no_gram-terminal.json",
+      "bytes": 1744,
+      "sha256": "d9773a8fc30aef1d8f8d853832fdc5e983fcaa63beb82c8980abfe0dab0fcc93",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "signed_no_gram"
+    },
+    {
+      "path": "dog-gooses-signed_no_gram-trace.json",
+      "bytes": 10232,
+      "sha256": "7c7e57a220325bac3bc8a7df99953ded3749cdc73f33e10fb49d5e0c7850ad85",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "signed_no_gram"
+    },
+    {
+      "path": "dog-gooses-signed_gram-terminal.json",
+      "bytes": 2379,
+      "sha256": "c172d5ca9421ede7aecbd3584031a7c6a756d72e33f1b774458caabcfc49e191",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "signed_gram"
+    },
+    {
+      "path": "dog-gooses-signed_gram-trace.json",
+      "bytes": 7923,
+      "sha256": "9a547bd9b0805168c8a654ad4a9bd6d0c7632fb29ca07b6ec1070d8ab8d0a376",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "signed_gram"
+    },
+    {
+      "path": "dog-gooses-displaced_gram-terminal.json",
+      "bytes": 2376,
+      "sha256": "2ce82c4f013fe2cd44043605a80670e0ec2df64ad885fedefa5b15b73438234d",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "displaced_gram"
+    },
+    {
+      "path": "dog-gooses-displaced_gram-trace.json",
+      "bytes": 10906,
+      "sha256": "08c03a6e35f655351e82225c4ca5d5f145f9f15fee7466edf676524674971b3b",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "displaced_gram"
+    },
+    {
+      "path": "dog-gooses-rgb256-terminal.json",
+      "bytes": 2366,
+      "sha256": "92726dfce2ede4d9f336a3ace50b0dcb46deb9d37210dd3d0c6cbacdb4ef2586",
+      "kind": "terminal-readout",
+      "held_parent": "dog-gooses",
+      "arm": "rgb256"
+    },
+    {
+      "path": "dog-gooses-rgb256-trace.json",
+      "bytes": 11559,
+      "sha256": "5c616a6e0e8096258e8725282a1ce61a0487267de7d0a5464a3837316de6e358",
+      "kind": "complete-optimizer-closure-trace",
+      "held_parent": "dog-gooses",
+      "arm": "rgb256"
+    },
+    {
+      "path": "terminal-models.json",
+      "bytes": 125124,
+      "sha256": "46a6b16e7a2fa47a7b71e2937208d2bde2c97fa1357443153abd7e885d565976",
+      "kind": "all-fold-terminal-models"
+    },
+    {
+      "path": "dog-agility-frame-00000-predictions.npz",
+      "bytes": 25437,
+      "sha256": "89beac530821d8e47054ff1539df07ae3e9de3a8fcaee9424b90e3d10daa130e",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 0
+    },
+    {
+      "path": "dog-agility-frame-00001-predictions.npz",
+      "bytes": 23971,
+      "sha256": "528c75c246faee2252afc58f34791185ee69114d2b19da770871763e869ec0d0",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 1
+    },
+    {
+      "path": "dog-agility-frame-00002-predictions.npz",
+      "bytes": 22042,
+      "sha256": "825c45b7e74f3a6f4b8e3a6545b18d890e71a19d7040b913a9f85371df3e211b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 2
+    },
+    {
+      "path": "dog-agility-frame-00003-predictions.npz",
+      "bytes": 22119,
+      "sha256": "a7bdbd45ac976402d63a0e71ecafd3de883c18adc37c5b3afce83ee02483ea99",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 3
+    },
+    {
+      "path": "dog-agility-frame-00004-predictions.npz",
+      "bytes": 21777,
+      "sha256": "7b945989e8d343dabc0304228c502db21c017e41b1fde0566b8795dc935b11c5",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 4
+    },
+    {
+      "path": "dog-agility-frame-00005-predictions.npz",
+      "bytes": 19605,
+      "sha256": "d1b15def8b102c66829424b7b06db90519b57b9e33ea6dbadb5669cff945f627",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 5
+    },
+    {
+      "path": "dog-agility-frame-00006-predictions.npz",
+      "bytes": 22774,
+      "sha256": "f46916ca4580a60426a4e5f5d6dbb7e47f353c2362eb360bed15e2f47b7a3dfe",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 6
+    },
+    {
+      "path": "dog-agility-frame-00007-predictions.npz",
+      "bytes": 26063,
+      "sha256": "91cd13267e3bb10bbd03ba837f64ba75e145668dbeda58049b71bc63dba0f07c",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 7
+    },
+    {
+      "path": "dog-agility-frame-00008-predictions.npz",
+      "bytes": 26406,
+      "sha256": "a4e091e50048e2401c1e20e2f8692dead761c92b656777ccaeac2e66ee1e2008",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 8
+    },
+    {
+      "path": "dog-agility-frame-00009-predictions.npz",
+      "bytes": 28172,
+      "sha256": "df4d2c31bcb82868bd86339c5b96a7b4132488e0fdddc36f804ee6e92aa05e1a",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 9
+    },
+    {
+      "path": "dog-agility-frame-00010-predictions.npz",
+      "bytes": 29491,
+      "sha256": "3c40d1c70b55bd2d0f21012f8328c595661fc6b708dbf8f451842adaa23b309a",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 10
+    },
+    {
+      "path": "dog-agility-frame-00011-predictions.npz",
+      "bytes": 31529,
+      "sha256": "fa11c52e37eb3ffe161e3b9dedbc52af9cee45d40fb141e82a89f94f6161711b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 11
+    },
+    {
+      "path": "dog-agility-frame-00012-predictions.npz",
+      "bytes": 34140,
+      "sha256": "eacde52c8d6d4f0a527cc875cfbd90c8655b345d3878f517dbd9101db67cf6ec",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 12
+    },
+    {
+      "path": "dog-agility-frame-00013-predictions.npz",
+      "bytes": 27324,
+      "sha256": "1361261d113d566151ef6d3d41a979d51b28bb101f7cc9c50ef29240bfb39256",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 13
+    },
+    {
+      "path": "dog-agility-frame-00014-predictions.npz",
+      "bytes": 30517,
+      "sha256": "1d19757923680fd583804cd53982d99a41be42cf1babdc7ef20e09a7d7f39b09",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 14
+    },
+    {
+      "path": "dog-agility-frame-00015-predictions.npz",
+      "bytes": 31652,
+      "sha256": "411bb72f252cdd41ca99f94f13e280eac864e1fb11aa1e3ad353208c77d65f52",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 15
+    },
+    {
+      "path": "dog-agility-frame-00016-predictions.npz",
+      "bytes": 30003,
+      "sha256": "e3f9a66941641cc98e6095efed0f344eb76c564f9a925f802499c154509cd760",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 16
+    },
+    {
+      "path": "dog-agility-frame-00017-predictions.npz",
+      "bytes": 28458,
+      "sha256": "72174f1840a378c37b76c37dc3feff1a0fd736eb63a3d255427ecc3f13541e84",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 17
+    },
+    {
+      "path": "dog-agility-frame-00018-predictions.npz",
+      "bytes": 24175,
+      "sha256": "7a6af84313c6a72877e8a5c1477413cbf7f887fdea2d44c1c8ae9f5fac02c573",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 18
+    },
+    {
+      "path": "dog-agility-frame-00019-predictions.npz",
+      "bytes": 26981,
+      "sha256": "be6b704470ac7eea86208243c24536e37af79d22498a6119c9df4c749dedd4bf",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 19
+    },
+    {
+      "path": "dog-agility-frame-00020-predictions.npz",
+      "bytes": 29297,
+      "sha256": "56c106043fc174e1305d9dc42a79a96722cfb354fb121169c9b076034bfaff5c",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 20
+    },
+    {
+      "path": "dog-agility-frame-00021-predictions.npz",
+      "bytes": 25027,
+      "sha256": "a3d476ce6954ba02eeecd746ff6dc737f25920cdb199ab9fd082c378b41fe646",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 21
+    },
+    {
+      "path": "dog-agility-frame-00022-predictions.npz",
+      "bytes": 24880,
+      "sha256": "2f6f1feb1face7413489511efbb607d24a22b32f794b235217232af72fedc6ca",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 22
+    },
+    {
+      "path": "dog-agility-frame-00023-predictions.npz",
+      "bytes": 23338,
+      "sha256": "712eb2dfcab20cb18679ad899917cef66f83276d23e28150a95f51de4994227f",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 23
+    },
+    {
+      "path": "dog-agility-frame-00024-predictions.npz",
+      "bytes": 29734,
+      "sha256": "4f13372b3993a69d30348b0f489c21017cde16424e6be5fcaeeae60c18c476ce",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-agility",
+      "frame": 24
+    },
+    {
+      "path": "planes-water-frame-00000-predictions.npz",
+      "bytes": 33206,
+      "sha256": "03ba63ede3703067ae9fe4972a88eb7d7fad5512a17373590ad239b79d9b226c",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 0
+    },
+    {
+      "path": "planes-water-frame-00001-predictions.npz",
+      "bytes": 32428,
+      "sha256": "cc5d9f008304377e9ca55c439716ef2aab427cbd3f6a1a3519c6ea53fa1ae4ae",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 1
+    },
+    {
+      "path": "planes-water-frame-00002-predictions.npz",
+      "bytes": 32359,
+      "sha256": "6bd2a745fb8c8fac8902d6746609c69a6a1ad04701196058107b56487daf9c5f",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 2
+    },
+    {
+      "path": "planes-water-frame-00003-predictions.npz",
+      "bytes": 32616,
+      "sha256": "073b634bb2d03d2c1f703b78430f1e000913d65040d1bd5606e2fbff18ccaee5",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 3
+    },
+    {
+      "path": "planes-water-frame-00004-predictions.npz",
+      "bytes": 32574,
+      "sha256": "28b22121c5f4d31ac97b2e283ad3b1cb8329cad7e541f2cf00e5ed4204caa908",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 4
+    },
+    {
+      "path": "planes-water-frame-00005-predictions.npz",
+      "bytes": 32514,
+      "sha256": "6470b94f5e25c4e4677642a82c91914875070719accd1a32a492bfa10aaffb70",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 5
+    },
+    {
+      "path": "planes-water-frame-00006-predictions.npz",
+      "bytes": 32702,
+      "sha256": "6542b22fff12186e800e6814f2710e87fa7188e7a57b4d793c19de41f48e5509",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 6
+    },
+    {
+      "path": "planes-water-frame-00007-predictions.npz",
+      "bytes": 32544,
+      "sha256": "c47bc4a86061b70701dabaa17c45c63dc7c33a7881ddd0745913aa4de3c821c5",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 7
+    },
+    {
+      "path": "planes-water-frame-00008-predictions.npz",
+      "bytes": 32648,
+      "sha256": "eb14e8693c365a3fe0d4e1b9fb3fbd51522a266cb8f4bca811a82c7a420a008a",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 8
+    },
+    {
+      "path": "planes-water-frame-00009-predictions.npz",
+      "bytes": 32808,
+      "sha256": "1e3a91de75d5c46bb0b2fa58fbfa2427e44edf86772c97b5c23a50121cd81163",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 9
+    },
+    {
+      "path": "planes-water-frame-00010-predictions.npz",
+      "bytes": 32617,
+      "sha256": "ac093531cce93bf74c4d90df4659d4b705035e81a1ca919bd9e8175416521e70",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 10
+    },
+    {
+      "path": "planes-water-frame-00011-predictions.npz",
+      "bytes": 32822,
+      "sha256": "cf43de2dba5cb6e3d8b1ef35bbe1b465bf10da03a3f3a3233b85bbe3e5b8e423",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 11
+    },
+    {
+      "path": "planes-water-frame-00012-predictions.npz",
+      "bytes": 33110,
+      "sha256": "ce6e848bc5e67f55add9486beef2e10ecb2d15b5f70682dffb8e6369ac863218",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 12
+    },
+    {
+      "path": "planes-water-frame-00013-predictions.npz",
+      "bytes": 33391,
+      "sha256": "7e9ffb5ef0d9a7e0fe233ecca368f40bd3f3ac20354b928c7ef169b40ad46f0a",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 13
+    },
+    {
+      "path": "planes-water-frame-00014-predictions.npz",
+      "bytes": 33218,
+      "sha256": "2943c65103558175d083183bcc8a36fd048d135986d56e1eecc34dedefa5d9d7",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 14
+    },
+    {
+      "path": "planes-water-frame-00015-predictions.npz",
+      "bytes": 33632,
+      "sha256": "72fc686ca2ebdcaa6824f761b71c2727184c80247543040e5c730a407897420f",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 15
+    },
+    {
+      "path": "planes-water-frame-00016-predictions.npz",
+      "bytes": 33643,
+      "sha256": "b008c7336f558cdfaf03205a2d38595f3dfe6913fb049d62ef09669a46a6c939",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 16
+    },
+    {
+      "path": "planes-water-frame-00017-predictions.npz",
+      "bytes": 33679,
+      "sha256": "a9dd58601ebe32df9577a16b23c957c6ad4f86b9cfd6fa4e7ebd93c3e874088a",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 17
+    },
+    {
+      "path": "planes-water-frame-00018-predictions.npz",
+      "bytes": 33897,
+      "sha256": "acf2297466443e4140c27aaccb8e6a6b07a66f0a3aaa64d9093d5f0313017d7f",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 18
+    },
+    {
+      "path": "planes-water-frame-00019-predictions.npz",
+      "bytes": 33832,
+      "sha256": "e87b1cd397f98a28c3c6b30038edb95c0feb3e9d51278a9051f5a9e93664f264",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 19
+    },
+    {
+      "path": "planes-water-frame-00020-predictions.npz",
+      "bytes": 34235,
+      "sha256": "9386dfe6e54ddbb182f165c1e251f2937e98d77c22d1e518530b5cc0d13dade4",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 20
+    },
+    {
+      "path": "planes-water-frame-00021-predictions.npz",
+      "bytes": 34527,
+      "sha256": "77763d0f1043eeb8c991772e695ca46bdb1590fdc0206a541e849176f53c4fcd",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 21
+    },
+    {
+      "path": "planes-water-frame-00022-predictions.npz",
+      "bytes": 34700,
+      "sha256": "636cd974d9c08d11d05b0fd6df92127256fcd854f7b6972b493f16f2052918f9",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 22
+    },
+    {
+      "path": "planes-water-frame-00023-predictions.npz",
+      "bytes": 34607,
+      "sha256": "9a676a653195950f1e6fe079b205926ccb5a870e262f7581a09b91612f3fcf99",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 23
+    },
+    {
+      "path": "planes-water-frame-00024-predictions.npz",
+      "bytes": 34676,
+      "sha256": "d69f8fcf5d796179ebac16e053ed549c58bc2c11dfc0a9b6d71a0fdf9104870b",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 24
+    },
+    {
+      "path": "planes-water-frame-00025-predictions.npz",
+      "bytes": 34688,
+      "sha256": "8343299bc7b1e50652747c67cb6609c3e1a187c3647deb4b0ddd9be2680d21e3",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 25
+    },
+    {
+      "path": "planes-water-frame-00026-predictions.npz",
+      "bytes": 34666,
+      "sha256": "92b98b8c2266caf4663d72cfc542645a83ed9993c0068fa8e86a0a44ee067927",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 26
+    },
+    {
+      "path": "planes-water-frame-00027-predictions.npz",
+      "bytes": 34625,
+      "sha256": "e0bca498e8dcb3a86bf848d094ce4c434c998a4b9fdf99c11a0cf210291fda2c",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 27
+    },
+    {
+      "path": "planes-water-frame-00028-predictions.npz",
+      "bytes": 34882,
+      "sha256": "413e322b1ac219d7a806983932aac3e0499550a1568881447d69add5d5abf417",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 28
+    },
+    {
+      "path": "planes-water-frame-00029-predictions.npz",
+      "bytes": 34938,
+      "sha256": "76b9129334d2279e248a3637fa489f77231ba9f3b6b7e8c2bb254ef9064249f0",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 29
+    },
+    {
+      "path": "planes-water-frame-00030-predictions.npz",
+      "bytes": 34801,
+      "sha256": "a75044894cfc350970867888f8ed1c23d5e642a01aad33cd6b5287190783ae36",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 30
+    },
+    {
+      "path": "planes-water-frame-00031-predictions.npz",
+      "bytes": 35054,
+      "sha256": "3845ca29a9951b6923f49c73357a11c4399d2ba2c923f2226dca28b796fab0e6",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 31
+    },
+    {
+      "path": "planes-water-frame-00032-predictions.npz",
+      "bytes": 34980,
+      "sha256": "d68d8545d6aafbfd1e33e16f6a4c2c1f6db6de68d434e72540e07237bfabc4bb",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 32
+    },
+    {
+      "path": "planes-water-frame-00033-predictions.npz",
+      "bytes": 35416,
+      "sha256": "3a6c6864916b2928ec4151fdc2499fec88ecccc16910ae6b34b41372ca7af99c",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 33
+    },
+    {
+      "path": "planes-water-frame-00034-predictions.npz",
+      "bytes": 35454,
+      "sha256": "af0ae2141dee6e5f897282745663802aeae941ee34d589a69392c5c7d0331174",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 34
+    },
+    {
+      "path": "planes-water-frame-00035-predictions.npz",
+      "bytes": 35720,
+      "sha256": "baca033a9370fe86eeb2ac6091c65a7f56b050e524af66886aca6aedeb1c3919",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 35
+    },
+    {
+      "path": "planes-water-frame-00036-predictions.npz",
+      "bytes": 35649,
+      "sha256": "193914d9e985cde8361c1d30f43c6902c8ae219920c81eb1da4549b1881a417a",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 36
+    },
+    {
+      "path": "planes-water-frame-00037-predictions.npz",
+      "bytes": 35795,
+      "sha256": "7c9fb686c13b51b7b8e7cc8f9f07d63db9ed3c2c629e8dfed8ef03f82326544b",
+      "kind": "all-arm-predictions",
+      "sequence": "planes-water",
+      "frame": 37
+    },
+    {
+      "path": "dogs-scale-frame-00000-predictions.npz",
+      "bytes": 14871,
+      "sha256": "d25ce13d74ef1612e82d11b20600cd351b8e838d1551ca620dbcb745f27b8205",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 0
+    },
+    {
+      "path": "dogs-scale-frame-00001-predictions.npz",
+      "bytes": 14289,
+      "sha256": "bb271e130a69edbcdeea377db6dd2282e3c42ef593493a760bdcf1809992079a",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 1
+    },
+    {
+      "path": "dogs-scale-frame-00002-predictions.npz",
+      "bytes": 14002,
+      "sha256": "0403e313a3853352a377d06521077533923b6cde520409d939bdb006d1db5d5b",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 2
+    },
+    {
+      "path": "dogs-scale-frame-00003-predictions.npz",
+      "bytes": 13369,
+      "sha256": "7feec24e231e60e90d209fc25a09731210896d8f37542a4ac8f8ae0f44af4083",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 3
+    },
+    {
+      "path": "dogs-scale-frame-00004-predictions.npz",
+      "bytes": 12728,
+      "sha256": "f8a74e1ec6824721e2fe27ced0a07608b865950648679239742dfcab78899300",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 4
+    },
+    {
+      "path": "dogs-scale-frame-00005-predictions.npz",
+      "bytes": 12526,
+      "sha256": "edeb4db7cd26c2c4d9d9be828d8db9d9f7507c55f492fc0e076aeba3c7e21ee3",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 5
+    },
+    {
+      "path": "dogs-scale-frame-00006-predictions.npz",
+      "bytes": 13828,
+      "sha256": "f7fbe1b7d5ad65c4a6b1ff429bb2606fc1fc920f90f990bfeb1acd74dbd697aa",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 6
+    },
+    {
+      "path": "dogs-scale-frame-00007-predictions.npz",
+      "bytes": 12691,
+      "sha256": "ba75834c157407f2b550306bc4b491985de5f413e870b5c6f013a97270ad0c43",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 7
+    },
+    {
+      "path": "dogs-scale-frame-00008-predictions.npz",
+      "bytes": 15891,
+      "sha256": "d30d18cb02d160ca38234c89a7495204e15b66a7519caa4805ad0d44d8bec680",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 8
+    },
+    {
+      "path": "dogs-scale-frame-00009-predictions.npz",
+      "bytes": 16405,
+      "sha256": "39e8b5318e2c5864fc7d42a8277b50cb0533b7d41c0280cba97ab240a8ddaf1e",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 9
+    },
+    {
+      "path": "dogs-scale-frame-00010-predictions.npz",
+      "bytes": 18827,
+      "sha256": "98a0c5b3d4d7ed567b868c236abc667772c523fc3ce3ff496b267198d3fbe622",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 10
+    },
+    {
+      "path": "dogs-scale-frame-00011-predictions.npz",
+      "bytes": 22957,
+      "sha256": "63a1a376b30f514292149471cafb46041f10685618dd0addba60fb6a98233962",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 11
+    },
+    {
+      "path": "dogs-scale-frame-00012-predictions.npz",
+      "bytes": 23256,
+      "sha256": "51fb44e0fab47adf66039f211f5e58d22a97f9ebf1fa54399fa38e8707892f16",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 12
+    },
+    {
+      "path": "dogs-scale-frame-00013-predictions.npz",
+      "bytes": 22397,
+      "sha256": "d39918f72632a93f868b22579db92b09f87c51de4488e3621b816fb04741e816",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 13
+    },
+    {
+      "path": "dogs-scale-frame-00014-predictions.npz",
+      "bytes": 22556,
+      "sha256": "21515aff6d01c903ad86f0be63e1d3fb249e3b9748c63c79b36a8cd3e17d26d0",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 14
+    },
+    {
+      "path": "dogs-scale-frame-00015-predictions.npz",
+      "bytes": 21422,
+      "sha256": "cf11b2ffc5c744774956164e9ac7cf6f4e8d71071a2fa5641a10cdc81b96dd93",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 15
+    },
+    {
+      "path": "dogs-scale-frame-00016-predictions.npz",
+      "bytes": 20985,
+      "sha256": "6b360da974930e59e3b67e1b374f7e0c4362804692250197a7970b88154d40d5",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 16
+    },
+    {
+      "path": "dogs-scale-frame-00017-predictions.npz",
+      "bytes": 20860,
+      "sha256": "3d32c42cc7c42bd9ceafe9542c197e6c87cc10f016582598509eaff189c8db34",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 17
+    },
+    {
+      "path": "dogs-scale-frame-00018-predictions.npz",
+      "bytes": 21407,
+      "sha256": "497f81f88396326b85a01919556305e6472455d6ad76a70edb962f7812b8e660",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 18
+    },
+    {
+      "path": "dogs-scale-frame-00019-predictions.npz",
+      "bytes": 21164,
+      "sha256": "bbcf676f742bbe67fe6b52cae627e900f4f13e9b7e98a4d51678b8e6cd2182ea",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 19
+    },
+    {
+      "path": "dogs-scale-frame-00020-predictions.npz",
+      "bytes": 20577,
+      "sha256": "ac8dfe38a66823c8933641c1ee01f35f2c56b094b1077c71b7191c484a3a9737",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 20
+    },
+    {
+      "path": "dogs-scale-frame-00021-predictions.npz",
+      "bytes": 21005,
+      "sha256": "9fa4c208b682abad3556250a3548e2075f3c88587b84d214473d1c63d27518ce",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 21
+    },
+    {
+      "path": "dogs-scale-frame-00022-predictions.npz",
+      "bytes": 20214,
+      "sha256": "565bddfe5378260b69b9304539459d5026f0d7ecb6c478d58e13f7640c2c7150",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 22
+    },
+    {
+      "path": "dogs-scale-frame-00023-predictions.npz",
+      "bytes": 18542,
+      "sha256": "c7897850a75104007d59769b9f065b5a22c74720a326556060a84f2607c16f7d",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 23
+    },
+    {
+      "path": "dogs-scale-frame-00024-predictions.npz",
+      "bytes": 17455,
+      "sha256": "cc03d89095170c7e2da028b365e78236b5ef42286e5a4b15819ab85e1fcbf852",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 24
+    },
+    {
+      "path": "dogs-scale-frame-00025-predictions.npz",
+      "bytes": 17722,
+      "sha256": "7651ec0db8cc93c29c9b7add7f3952ebb07faed78fd94cc9a3f4555cbf8ab4b8",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 25
+    },
+    {
+      "path": "dogs-scale-frame-00026-predictions.npz",
+      "bytes": 15823,
+      "sha256": "b95799086859fd01d0bde018b3ecf1a43aeecba2345029fafef5e1e5e8577b3b",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 26
+    },
+    {
+      "path": "dogs-scale-frame-00027-predictions.npz",
+      "bytes": 13569,
+      "sha256": "21acbc1fe8594226880738be3d54edd37fb4a9f18811d7a37ba0129c5dcda1f8",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 27
+    },
+    {
+      "path": "dogs-scale-frame-00028-predictions.npz",
+      "bytes": 13309,
+      "sha256": "84e6c3ddf6110390eabe790440962625a566f73d84cbbd066386c4c2b90ca64d",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 28
+    },
+    {
+      "path": "dogs-scale-frame-00029-predictions.npz",
+      "bytes": 12579,
+      "sha256": "84d5edf03bc9b28268744f013458b18e2f300ca188541ce4413dcc63711a0e64",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 29
+    },
+    {
+      "path": "dogs-scale-frame-00030-predictions.npz",
+      "bytes": 15146,
+      "sha256": "111078e3adfea84bc977b6ba7276c84dc00f3f88b5b0941bb6d15d53748e692e",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 30
+    },
+    {
+      "path": "dogs-scale-frame-00031-predictions.npz",
+      "bytes": 17444,
+      "sha256": "305c21756a1878d9032aefa1ab8bb9b5f14f335fcaf31a6afc49a4f2d3eb13ed",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 31
+    },
+    {
+      "path": "dogs-scale-frame-00032-predictions.npz",
+      "bytes": 18282,
+      "sha256": "490733e7dc0efb9ec31ed1947fd0198ef9c8d3e93b91e62663e3329713063ef5",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 32
+    },
+    {
+      "path": "dogs-scale-frame-00033-predictions.npz",
+      "bytes": 16888,
+      "sha256": "06a6a03de6d64f1c20ff638a2c0dfb578adbb809b612b6f9761ebd5955568239",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 33
+    },
+    {
+      "path": "dogs-scale-frame-00034-predictions.npz",
+      "bytes": 18399,
+      "sha256": "9153e568126c10d2167a0141c40d5e10a4649f6352427da507934175b2268616",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 34
+    },
+    {
+      "path": "dogs-scale-frame-00035-predictions.npz",
+      "bytes": 20570,
+      "sha256": "1739ba9b812ede05bcf77f5dcabdf5c4562206268f40fb73f7d69636116189bf",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 35
+    },
+    {
+      "path": "dogs-scale-frame-00036-predictions.npz",
+      "bytes": 19958,
+      "sha256": "416bcc09c42e863a05cb7d10cf7ba83c011eee8478ff6a31229f7c4a35791ab5",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 36
+    },
+    {
+      "path": "dogs-scale-frame-00037-predictions.npz",
+      "bytes": 19497,
+      "sha256": "c4bd154c731e62418bcea36c2e3ee5820875776c430e049a17f9cfcabdcc9611",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 37
+    },
+    {
+      "path": "dogs-scale-frame-00038-predictions.npz",
+      "bytes": 20604,
+      "sha256": "03bde6123f537e0aa83aec46de6e382466b95aad418051b642b8b966da2ed05c",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 38
+    },
+    {
+      "path": "dogs-scale-frame-00039-predictions.npz",
+      "bytes": 22120,
+      "sha256": "f41f62dbc99b22ac8c9f8b157b0f983c54ad9078cb3bb0ad5c1088c1a2da81d2",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 39
+    },
+    {
+      "path": "dogs-scale-frame-00040-predictions.npz",
+      "bytes": 22413,
+      "sha256": "415350247713240e37d1dfb5f235bcc4328d9976a14a64dbe6b3ce49a7ac5cd3",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 40
+    },
+    {
+      "path": "dogs-scale-frame-00041-predictions.npz",
+      "bytes": 22457,
+      "sha256": "90bc4eec41f090ca87741461d34f5fe8bfe78cbd4e923e009a6e612634ee4396",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 41
+    },
+    {
+      "path": "dogs-scale-frame-00042-predictions.npz",
+      "bytes": 21570,
+      "sha256": "4c5d18a7ab3dad233cf2e1a3668766d4dc8291700d155839ed8d23a2dfafa79c",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 42
+    },
+    {
+      "path": "dogs-scale-frame-00043-predictions.npz",
+      "bytes": 23018,
+      "sha256": "46a737909c3de2154338299f314152b83b50aae67ab6928d724f5fa77be7205d",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 43
+    },
+    {
+      "path": "dogs-scale-frame-00044-predictions.npz",
+      "bytes": 22129,
+      "sha256": "9c7b850de2c89227e47abd8fa7d5c70f1edb6fe45f8c188a2526b768e536aebf",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 44
+    },
+    {
+      "path": "dogs-scale-frame-00045-predictions.npz",
+      "bytes": 21992,
+      "sha256": "5d14db9d6d9e180778c969391b4c11561f5d726d3570909c476d890b48e91520",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 45
+    },
+    {
+      "path": "dogs-scale-frame-00046-predictions.npz",
+      "bytes": 22717,
+      "sha256": "00a518ca781028fcb3aa81d3d407215455b0ef90b168641dc2e05594cd4dd961",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 46
+    },
+    {
+      "path": "dogs-scale-frame-00047-predictions.npz",
+      "bytes": 23029,
+      "sha256": "04a0ea7a3c1242a6fdc24ed1f8d5d76efc3e8581e3747adbcfa2892594f7bcb3",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 47
+    },
+    {
+      "path": "dogs-scale-frame-00048-predictions.npz",
+      "bytes": 22362,
+      "sha256": "0626b8e0e2ab10b95f6de4e3844e09ec07de4f1baf43f381ce53c75c6051cfb0",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 48
+    },
+    {
+      "path": "dogs-scale-frame-00049-predictions.npz",
+      "bytes": 22632,
+      "sha256": "78aae7fc9f60b79582f6e30e2a525486d19553edfa114074a540d5ed5fb294b3",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 49
+    },
+    {
+      "path": "dogs-scale-frame-00050-predictions.npz",
+      "bytes": 22306,
+      "sha256": "8b2cfbefab5f366c19f5e5c7dc9ac5066f13c4e812d1478c9803ef647c0531bb",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 50
+    },
+    {
+      "path": "dogs-scale-frame-00051-predictions.npz",
+      "bytes": 22520,
+      "sha256": "96b340decb0cb24f22154c9d6c622b47eb8e30ead5edd6f8f45c7f457c50394a",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 51
+    },
+    {
+      "path": "dogs-scale-frame-00052-predictions.npz",
+      "bytes": 23337,
+      "sha256": "be047ec0e7ff03ba5b7214341e76e309d2d75f55f6e014e0363d1bb6096e37d2",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 52
+    },
+    {
+      "path": "dogs-scale-frame-00053-predictions.npz",
+      "bytes": 22718,
+      "sha256": "2088ac63449474f0762c2bff915097e87d1240542b49fd446ebcb7807cbd280d",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 53
+    },
+    {
+      "path": "dogs-scale-frame-00054-predictions.npz",
+      "bytes": 21961,
+      "sha256": "6f7dbf9c7e0040227ff369b5897c3502a94a19d5099888b74a3355a7c8c51129",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 54
+    },
+    {
+      "path": "dogs-scale-frame-00055-predictions.npz",
+      "bytes": 21897,
+      "sha256": "865a31ee260da0235c979882c2af6dba9293f3a5db61cc4ab94a04a9c0db3149",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 55
+    },
+    {
+      "path": "dogs-scale-frame-00056-predictions.npz",
+      "bytes": 21704,
+      "sha256": "ccd05e43853791fbaff0f1bc8c8f66c05509ba2438dbabf72f26176dd0933cdb",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 56
+    },
+    {
+      "path": "dogs-scale-frame-00057-predictions.npz",
+      "bytes": 21883,
+      "sha256": "c635d6af9bf834a20990476372a7a0758f8d8adb5b308feb7f7423b81b5641eb",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 57
+    },
+    {
+      "path": "dogs-scale-frame-00058-predictions.npz",
+      "bytes": 22739,
+      "sha256": "3091c0186096f16c29c791dbf0f78c7ff89e361e91136cb960bd726543c37ba4",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 58
+    },
+    {
+      "path": "dogs-scale-frame-00059-predictions.npz",
+      "bytes": 23222,
+      "sha256": "858ad307a7fe010085ed6bd92ecc4ff1a31237b81846964ce2a953afaa86fece",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 59
+    },
+    {
+      "path": "dogs-scale-frame-00060-predictions.npz",
+      "bytes": 23391,
+      "sha256": "7b8e98fcf60e27cbd150ac827e1785c5bc87ec59ffc4dd06dbfc2b19bafa3dfe",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 60
+    },
+    {
+      "path": "dogs-scale-frame-00061-predictions.npz",
+      "bytes": 23654,
+      "sha256": "a5581d9eb70c55e038995b061d643ee0d5aa776aa0b506534cc82ae66141e1be",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 61
+    },
+    {
+      "path": "dogs-scale-frame-00062-predictions.npz",
+      "bytes": 23975,
+      "sha256": "2f3e8d8bc1daf804976e7ddb20aca7da0e3fc0bce5efa019978a8a8355e31730",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 62
+    },
+    {
+      "path": "dogs-scale-frame-00063-predictions.npz",
+      "bytes": 23383,
+      "sha256": "c0fab7a222d7ad003aa861c85e502f7123843be1fd5191f48a9c46656e258016",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 63
+    },
+    {
+      "path": "dogs-scale-frame-00064-predictions.npz",
+      "bytes": 22678,
+      "sha256": "2452b4b7036d437cf15f54afb09c11f849a33ef1cceb61fefcfbd8fbeab9792a",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 64
+    },
+    {
+      "path": "dogs-scale-frame-00065-predictions.npz",
+      "bytes": 21851,
+      "sha256": "13cc9a212db2defc9041500b748b72cea402a192366c2548dcf85cf886b601b3",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 65
+    },
+    {
+      "path": "dogs-scale-frame-00066-predictions.npz",
+      "bytes": 20989,
+      "sha256": "a5173b92634cccb3d4fa274bb396ffcac3b42d7dc111a214ed771b7e4132d5ef",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 66
+    },
+    {
+      "path": "dogs-scale-frame-00067-predictions.npz",
+      "bytes": 20955,
+      "sha256": "b0ebe8e07f0d920a176334eb0ad2ac785b02c02a19f036ea208789ad2803c105",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 67
+    },
+    {
+      "path": "dogs-scale-frame-00068-predictions.npz",
+      "bytes": 22576,
+      "sha256": "b7e4c5d54e49964ba2259c9f3299cb6cd3ec1ae399300790b8390dcc144045b7",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 68
+    },
+    {
+      "path": "dogs-scale-frame-00069-predictions.npz",
+      "bytes": 22056,
+      "sha256": "e307131f59273cdd4c7b6837bb560ec00f2d6966293e7b7eb4f932dc4705a407",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 69
+    },
+    {
+      "path": "dogs-scale-frame-00070-predictions.npz",
+      "bytes": 21786,
+      "sha256": "18693ae2ef0cbd44501f8767221730a5415004454d9cf7127063be0760f430b4",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 70
+    },
+    {
+      "path": "dogs-scale-frame-00071-predictions.npz",
+      "bytes": 22687,
+      "sha256": "590c3cd893298ee0b7f9fef020e15a70bb5dfaf0159e70191ae5396840f4369a",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 71
+    },
+    {
+      "path": "dogs-scale-frame-00072-predictions.npz",
+      "bytes": 21959,
+      "sha256": "73f89a4c6c830ca3a1de35f83646fafe07b4deaf606938399364837c404613a0",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 72
+    },
+    {
+      "path": "dogs-scale-frame-00073-predictions.npz",
+      "bytes": 21085,
+      "sha256": "b37e56b0b4400f5ca485d8516ed91aa30482daf82fbb90d6f52a3d1bb09edf21",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 73
+    },
+    {
+      "path": "dogs-scale-frame-00074-predictions.npz",
+      "bytes": 20371,
+      "sha256": "a15c3c4265758ddaf6fb83bda6792a36b3a45ec6cd01e96484748bf4fb9dec76",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 74
+    },
+    {
+      "path": "dogs-scale-frame-00075-predictions.npz",
+      "bytes": 20346,
+      "sha256": "6ddd480a6e201893439122cc1998992d1d13cb16ee940df554f9e7844963e6bd",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 75
+    },
+    {
+      "path": "dogs-scale-frame-00076-predictions.npz",
+      "bytes": 20245,
+      "sha256": "ed0228b06f1aa552d5468e81e9e68c40c4a02463473c894705c21231f2c4d95f",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 76
+    },
+    {
+      "path": "dogs-scale-frame-00077-predictions.npz",
+      "bytes": 21673,
+      "sha256": "d11740f0eddefac512edbb0c4167a9f83ba150d979a4c9f56b8b997941bd9cab",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 77
+    },
+    {
+      "path": "dogs-scale-frame-00078-predictions.npz",
+      "bytes": 25034,
+      "sha256": "840d22b6475b265e004f20d7c32e6b347fe85fa48c5fbb9bab795eeb06e71e13",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 78
+    },
+    {
+      "path": "dogs-scale-frame-00079-predictions.npz",
+      "bytes": 25400,
+      "sha256": "01eb2e0ad00a444d634d7f0864bcb98874bd9e55ea2c46cd5fadec4f18832095",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 79
+    },
+    {
+      "path": "dogs-scale-frame-00080-predictions.npz",
+      "bytes": 24109,
+      "sha256": "b17ee419f666421cb97a5af9b8bfda464aced363838dce10106cf51883002687",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 80
+    },
+    {
+      "path": "dogs-scale-frame-00081-predictions.npz",
+      "bytes": 27107,
+      "sha256": "ed0f70782f5f7565d18b1d97be316ee8f656ff80623b6645531ba6e7859a6603",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 81
+    },
+    {
+      "path": "dogs-scale-frame-00082-predictions.npz",
+      "bytes": 29764,
+      "sha256": "4385f9fcf6f87ff85b07fef7fb39675e2d7d9b22e9979d1daf0edaf001f950bd",
+      "kind": "all-arm-predictions",
+      "sequence": "dogs-scale",
+      "frame": 82
+    },
+    {
+      "path": "dog-gooses-frame-00000-predictions.npz",
+      "bytes": 7421,
+      "sha256": "1f8b403d40194cb48f7402704e00e58e3b0e08b08125747f4c8459081cabc9cc",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 0
+    },
+    {
+      "path": "dog-gooses-frame-00001-predictions.npz",
+      "bytes": 7380,
+      "sha256": "665db8f024c7a764369a602e315ed022c15598bc313e8404935fd3692b4954d9",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 1
+    },
+    {
+      "path": "dog-gooses-frame-00002-predictions.npz",
+      "bytes": 7247,
+      "sha256": "c43a36b512cf7b1ebbee57b7313d888ce3e291703c0e2387af637e1dc69acda3",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 2
+    },
+    {
+      "path": "dog-gooses-frame-00003-predictions.npz",
+      "bytes": 7174,
+      "sha256": "acec584e93e84c6981f4277494d76fb3d580b8ff7c8fe90dcb1fce5dca0e52ee",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 3
+    },
+    {
+      "path": "dog-gooses-frame-00004-predictions.npz",
+      "bytes": 7158,
+      "sha256": "d821e82aba1bae1a5f7e048a03151f68c16849977eba1aa442376bd21170a8cd",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 4
+    },
+    {
+      "path": "dog-gooses-frame-00005-predictions.npz",
+      "bytes": 7128,
+      "sha256": "a6a7d46cd065ec340b4789dfa5165f4fe0891d65a16008c05332fc49fe9b5fbb",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 5
+    },
+    {
+      "path": "dog-gooses-frame-00006-predictions.npz",
+      "bytes": 7101,
+      "sha256": "0763f1415a3dd360f93ec6ad7424c8e813f36bba542abaf565a349ec7b37236c",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 6
+    },
+    {
+      "path": "dog-gooses-frame-00007-predictions.npz",
+      "bytes": 7065,
+      "sha256": "5379725b031bef827a7d13ad00446a88392c81313bc60438d910b33c6bd8f0f0",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 7
+    },
+    {
+      "path": "dog-gooses-frame-00008-predictions.npz",
+      "bytes": 7022,
+      "sha256": "2408f8ad859828bb82971eca6999e92c099057542ba881a166fdb5889d40f3ee",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 8
+    },
+    {
+      "path": "dog-gooses-frame-00009-predictions.npz",
+      "bytes": 7116,
+      "sha256": "7746151ef200bb5fa09c7a8338b330ff4f7e7d109c0a5c2e7a4efebee6f78e63",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 9
+    },
+    {
+      "path": "dog-gooses-frame-00010-predictions.npz",
+      "bytes": 7028,
+      "sha256": "c4badaf3e08e8b635075a1b856a01527a4c7d1bc1af98d68adebad62eb4190df",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 10
+    },
+    {
+      "path": "dog-gooses-frame-00011-predictions.npz",
+      "bytes": 7093,
+      "sha256": "40d5265de8a01661f98532a658d3056d1c3a35182bb9147d0a3ca4ab10461013",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 11
+    },
+    {
+      "path": "dog-gooses-frame-00012-predictions.npz",
+      "bytes": 7063,
+      "sha256": "2718a908da77876119eb5d4c928976ef141ca2a5d7f7a86a64622923cd71a634",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 12
+    },
+    {
+      "path": "dog-gooses-frame-00013-predictions.npz",
+      "bytes": 6981,
+      "sha256": "8f289213bab1cde4ba80f2790eb095acfa6916b84428287084ca2a640d29d4d1",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 13
+    },
+    {
+      "path": "dog-gooses-frame-00014-predictions.npz",
+      "bytes": 7083,
+      "sha256": "f41330f27612760b65e55c7ea5ea673ce53d5aadde1393c47187f84765f68e3a",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 14
+    },
+    {
+      "path": "dog-gooses-frame-00015-predictions.npz",
+      "bytes": 7044,
+      "sha256": "908ab8732bc15414ebcd229198567882fa0d9e4fd74aa14f803111e5cee4410f",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 15
+    },
+    {
+      "path": "dog-gooses-frame-00016-predictions.npz",
+      "bytes": 7025,
+      "sha256": "1dbb60d8967cbc64b73ae5d73a937fa87450131befbb83e3c26ff88b7524b4dd",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 16
+    },
+    {
+      "path": "dog-gooses-frame-00017-predictions.npz",
+      "bytes": 7048,
+      "sha256": "afef1335582c4a3c9362e582debbf5c3acaed55c252361eba273c37e1a48ff55",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 17
+    },
+    {
+      "path": "dog-gooses-frame-00018-predictions.npz",
+      "bytes": 7041,
+      "sha256": "6a8ca53f079b751db88ab70154b90ae08346550eaa54f6e8a9bba1deebcea042",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 18
+    },
+    {
+      "path": "dog-gooses-frame-00019-predictions.npz",
+      "bytes": 7014,
+      "sha256": "341c9e0d2e2b295065140a5f2b4745fc41178c74048a8000911bcb8190739605",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 19
+    },
+    {
+      "path": "dog-gooses-frame-00020-predictions.npz",
+      "bytes": 7102,
+      "sha256": "3d4fce7da6c58106c4fb2b5bf8804e75f67c7ca028d8aa7409143ffffcf80732",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 20
+    },
+    {
+      "path": "dog-gooses-frame-00021-predictions.npz",
+      "bytes": 7035,
+      "sha256": "e44ec6783ca9667690bb8878bca95588b9cd50bbf3c5e471588e558bbf63ec09",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 21
+    },
+    {
+      "path": "dog-gooses-frame-00022-predictions.npz",
+      "bytes": 7039,
+      "sha256": "6e47ff58941e50cef5d80b8cd40a2e4b9a09cf91b9c7a9ee912f0d47fa45e6ff",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 22
+    },
+    {
+      "path": "dog-gooses-frame-00023-predictions.npz",
+      "bytes": 7128,
+      "sha256": "9d2e4c69dfac29d375d79c5bed5fbf2064595f15e9ecf5530d8136c202f4543c",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 23
+    },
+    {
+      "path": "dog-gooses-frame-00024-predictions.npz",
+      "bytes": 7075,
+      "sha256": "743d81783390f391d6080412d538de344ddcd0f159261261e095e9e8dcd7bbf6",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 24
+    },
+    {
+      "path": "dog-gooses-frame-00025-predictions.npz",
+      "bytes": 7131,
+      "sha256": "259bb4375a7cd6bea9cbef9be8579858939afa341ed0a0927847d8683f88fb63",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 25
+    },
+    {
+      "path": "dog-gooses-frame-00026-predictions.npz",
+      "bytes": 6990,
+      "sha256": "01956b28500b7d716592f29f6ce79f6b7343c9384e434ac3c671a51c8ad26aa9",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 26
+    },
+    {
+      "path": "dog-gooses-frame-00027-predictions.npz",
+      "bytes": 6904,
+      "sha256": "91b4622e1797cd80138f2e291afd1a642405da301ef336d5eb8f7364fbed00cd",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 27
+    },
+    {
+      "path": "dog-gooses-frame-00028-predictions.npz",
+      "bytes": 7366,
+      "sha256": "8e5825fc25365c5c3e641d5941f9556d5d49003245b7072234e5901c4ca9d87b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 28
+    },
+    {
+      "path": "dog-gooses-frame-00029-predictions.npz",
+      "bytes": 8196,
+      "sha256": "d9253c810a62fa1223b5a78d931c0a87be5313b8c75e389b79d7bf127ce980a7",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 29
+    },
+    {
+      "path": "dog-gooses-frame-00030-predictions.npz",
+      "bytes": 8347,
+      "sha256": "ebced447bc7066bf91c27c30dc9aa28c1af486c60a08dcebe9857bfc0342a12a",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 30
+    },
+    {
+      "path": "dog-gooses-frame-00031-predictions.npz",
+      "bytes": 9023,
+      "sha256": "ed69abd16902554eac331df3794fb587da65c33f82c5961bcb1f23641148de93",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 31
+    },
+    {
+      "path": "dog-gooses-frame-00032-predictions.npz",
+      "bytes": 8851,
+      "sha256": "c5d1cdcdea4f80ec85d1a238a7bab4eae27f4785efbcfec984b2cfc3ad443ff2",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 32
+    },
+    {
+      "path": "dog-gooses-frame-00033-predictions.npz",
+      "bytes": 8972,
+      "sha256": "00462a6ed810d5ef437a99cbbda56c9f59ab020538bf21465f11e649cdc1a317",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 33
+    },
+    {
+      "path": "dog-gooses-frame-00034-predictions.npz",
+      "bytes": 9387,
+      "sha256": "970f040dd2b0401fae29b91f10e87aaf26fca39b33ed195f8421497ec57a215b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 34
+    },
+    {
+      "path": "dog-gooses-frame-00035-predictions.npz",
+      "bytes": 9391,
+      "sha256": "ea18e6f2c8d3503dbfbd8d674adc0ff853c5226e331b9e7c3f4321af0405629b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 35
+    },
+    {
+      "path": "dog-gooses-frame-00036-predictions.npz",
+      "bytes": 9138,
+      "sha256": "85692eb956bcb4a929b04fc3591c3996b79b5f06b8d280d6653db8f72676db18",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 36
+    },
+    {
+      "path": "dog-gooses-frame-00037-predictions.npz",
+      "bytes": 9599,
+      "sha256": "59bc2c2834d9121004db617c62f9897b93f23d7cb734ccc3547c1d673866ce0f",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 37
+    },
+    {
+      "path": "dog-gooses-frame-00038-predictions.npz",
+      "bytes": 10189,
+      "sha256": "6d453afc8086439ce1083210ec5c0b680931cecbd6e6d85bbc99840a90e1d4fe",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 38
+    },
+    {
+      "path": "dog-gooses-frame-00039-predictions.npz",
+      "bytes": 10101,
+      "sha256": "3abde2975e303f83bc89a9c404c58935dd56ece60a39ee262e0e79c4199aa349",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 39
+    },
+    {
+      "path": "dog-gooses-frame-00040-predictions.npz",
+      "bytes": 9810,
+      "sha256": "da5b83a062009ba79980aef113bfdb218c4a6063a13b8d6d1995dac33e2ddfd8",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 40
+    },
+    {
+      "path": "dog-gooses-frame-00041-predictions.npz",
+      "bytes": 8835,
+      "sha256": "044734c032d0083a4d3604c59baf2acd7e1ab7a14aca22b76d7bde8d424e4dfb",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 41
+    },
+    {
+      "path": "dog-gooses-frame-00042-predictions.npz",
+      "bytes": 9334,
+      "sha256": "798979e25935be2f09aef56232b3d0adfbccdedc29785d4f4c32e9369b54d0f6",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 42
+    },
+    {
+      "path": "dog-gooses-frame-00043-predictions.npz",
+      "bytes": 10228,
+      "sha256": "62444c9ddb12afd2425330b9f87ebfb936ebd5c1613748fc9fb99f31e97e1bbc",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 43
+    },
+    {
+      "path": "dog-gooses-frame-00044-predictions.npz",
+      "bytes": 9105,
+      "sha256": "1e3d6b10a84b2721f1a3cedd1015fa06a821cb45a706de756b746b70268ccf14",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 44
+    },
+    {
+      "path": "dog-gooses-frame-00045-predictions.npz",
+      "bytes": 8589,
+      "sha256": "d60c1348049aade3aa7562761994bba48234ed5d9dce5ff747f6029811961966",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 45
+    },
+    {
+      "path": "dog-gooses-frame-00046-predictions.npz",
+      "bytes": 8667,
+      "sha256": "d199e8278f994b30c4e28e86d5804502b5eb430eb3c2f19817fc1e00b9780461",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 46
+    },
+    {
+      "path": "dog-gooses-frame-00047-predictions.npz",
+      "bytes": 8348,
+      "sha256": "85ef8a543677f21ecb20a35a6b902d644f837630a82862fb479345edc01e6ebb",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 47
+    },
+    {
+      "path": "dog-gooses-frame-00048-predictions.npz",
+      "bytes": 8765,
+      "sha256": "816776d1fee0207627357bc42cb37dcf5f3ac6e99a0a29e065390f2a71286062",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 48
+    },
+    {
+      "path": "dog-gooses-frame-00049-predictions.npz",
+      "bytes": 8054,
+      "sha256": "614f90a3dba42bb862f48b1981ce4a181adcbd8170513aba10794148e9ab682b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 49
+    },
+    {
+      "path": "dog-gooses-frame-00050-predictions.npz",
+      "bytes": 7693,
+      "sha256": "fe1883fb99c4b425671f5e74d8ccda05e1d1407289df29b7f0bd7788a159c71b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 50
+    },
+    {
+      "path": "dog-gooses-frame-00051-predictions.npz",
+      "bytes": 7479,
+      "sha256": "df3375f497edb7460b757540e101ae89aab694d0b7ca66bcc229121882de344b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 51
+    },
+    {
+      "path": "dog-gooses-frame-00052-predictions.npz",
+      "bytes": 7611,
+      "sha256": "69048358a113c5e88efb2921af80a5dbd577a564eba6079d191468f0e8f60c31",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 52
+    },
+    {
+      "path": "dog-gooses-frame-00053-predictions.npz",
+      "bytes": 8057,
+      "sha256": "2e5c13a2f5b3c67d253baace67081d0b25334517b91ad9a5bab47cc28f4d6c56",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 53
+    },
+    {
+      "path": "dog-gooses-frame-00054-predictions.npz",
+      "bytes": 8062,
+      "sha256": "9aae3180d01e14a93c6b8e4e61fe8808e6a2b6594843fda52d75c75e652ba122",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 54
+    },
+    {
+      "path": "dog-gooses-frame-00055-predictions.npz",
+      "bytes": 7524,
+      "sha256": "6f29483d85c450dfeb8505cdf0f62136edebf22cd9f20298213402ea7c92bb3b",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 55
+    },
+    {
+      "path": "dog-gooses-frame-00056-predictions.npz",
+      "bytes": 7222,
+      "sha256": "948e0b5d38d4b43749aea10c7140555c7cb14a0623ca48c79825515b422ca1cc",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 56
+    },
+    {
+      "path": "dog-gooses-frame-00057-predictions.npz",
+      "bytes": 7198,
+      "sha256": "e9e58cac4f559488b82d184f7034fd3be8002b69ce0e1b5dc5b5821001891926",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 57
+    },
+    {
+      "path": "dog-gooses-frame-00058-predictions.npz",
+      "bytes": 7215,
+      "sha256": "e97d833c2705228b86b6c2c53e8b9a6b5edffae43147efe555b441a5059ae162",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 58
+    },
+    {
+      "path": "dog-gooses-frame-00059-predictions.npz",
+      "bytes": 7361,
+      "sha256": "5aa2caa45e02e98ec9a4708623512246185c5eae1456d822c274752a025882c5",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 59
+    },
+    {
+      "path": "dog-gooses-frame-00060-predictions.npz",
+      "bytes": 7436,
+      "sha256": "b1ab28190e717e3dcf52748e5b3fe1242cff2eb28ef74d6de6cc8d2026d395ce",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 60
+    },
+    {
+      "path": "dog-gooses-frame-00061-predictions.npz",
+      "bytes": 7334,
+      "sha256": "906f0a899925f3c242839f9d21f99a205914e5856d60d8ee29245662e09b02f4",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 61
+    },
+    {
+      "path": "dog-gooses-frame-00062-predictions.npz",
+      "bytes": 7158,
+      "sha256": "a7ece522e3abcc3e13ab3d0cd162af348e625ba5214e172cd881b361bfbfe840",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 62
+    },
+    {
+      "path": "dog-gooses-frame-00063-predictions.npz",
+      "bytes": 7091,
+      "sha256": "232d6b7b6410fd164b86ae8b877bd6a3eb97cdad1d3f43e90df74c0fa606e579",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 63
+    },
+    {
+      "path": "dog-gooses-frame-00064-predictions.npz",
+      "bytes": 7243,
+      "sha256": "5b065f911e24aba2c3848adf02b6eb59787b69ec86778442b58098824b066c80",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 64
+    },
+    {
+      "path": "dog-gooses-frame-00065-predictions.npz",
+      "bytes": 7360,
+      "sha256": "f206641183cf8824018835f5edd2ba060c481e023327a71a50eaf7e34ed341da",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 65
+    },
+    {
+      "path": "dog-gooses-frame-00066-predictions.npz",
+      "bytes": 7557,
+      "sha256": "1d4dcb425256eeb2538b02b62d18dda7c6c387138c50c78ee89c40393c4940b3",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 66
+    },
+    {
+      "path": "dog-gooses-frame-00067-predictions.npz",
+      "bytes": 7823,
+      "sha256": "6f485b741efccf19d611683f40f2415a8036cda84c96a12e351b3acdbbb357b0",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 67
+    },
+    {
+      "path": "dog-gooses-frame-00068-predictions.npz",
+      "bytes": 8357,
+      "sha256": "81642a83f1e9e851a096cf2495630db9ee59e7b483f638f573f7a97969f28824",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 68
+    },
+    {
+      "path": "dog-gooses-frame-00069-predictions.npz",
+      "bytes": 8427,
+      "sha256": "1e5c77b63aca793bd307859f9f36f2193e303ad38f99513cbef8d24eb00a31d0",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 69
+    },
+    {
+      "path": "dog-gooses-frame-00070-predictions.npz",
+      "bytes": 8696,
+      "sha256": "7c55eb717fcdcdd18cce3e3105fb83fe00c3eabc2794e904a8d905d40bbd3c4c",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 70
+    },
+    {
+      "path": "dog-gooses-frame-00071-predictions.npz",
+      "bytes": 8468,
+      "sha256": "5ea6804ec9d3430c5d38483ce1cc1bb8c8c07e0c5526343e077a3dbf1dce1a6a",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 71
+    },
+    {
+      "path": "dog-gooses-frame-00072-predictions.npz",
+      "bytes": 7905,
+      "sha256": "b0d8650b8c92af015e65ff7800ddb18c7d56a4c2e09cb825d745e535a08e447c",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 72
+    },
+    {
+      "path": "dog-gooses-frame-00073-predictions.npz",
+      "bytes": 8786,
+      "sha256": "45e6028cccedd476599add2e1a9ddbfd2171bf4ddb3117e1767120956a5eeee1",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 73
+    },
+    {
+      "path": "dog-gooses-frame-00074-predictions.npz",
+      "bytes": 9133,
+      "sha256": "a6f79de3337666f0effcb0c5867e893b1d42c8cc0f8b781b878bd6fb9c9b2983",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 74
+    },
+    {
+      "path": "dog-gooses-frame-00075-predictions.npz",
+      "bytes": 8337,
+      "sha256": "ca2b1a48c2356fc1d6923c2e91f9d60d42c4748a0320d0fe73d36875a8cf96b3",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 75
+    },
+    {
+      "path": "dog-gooses-frame-00076-predictions.npz",
+      "bytes": 8678,
+      "sha256": "7a65e9e8e00407446176e3028a49554cbceae9d79e877043d58565c64504c4b0",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 76
+    },
+    {
+      "path": "dog-gooses-frame-00077-predictions.npz",
+      "bytes": 8103,
+      "sha256": "0eb81ba5658737a1e5c76d4ebb7425ac3b9339701daaeed373892fc654db20f9",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 77
+    },
+    {
+      "path": "dog-gooses-frame-00078-predictions.npz",
+      "bytes": 8473,
+      "sha256": "e6264c6011371ba7280fe6ccc72e2f6445030aa16edb26d2befd4243be9f1117",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 78
+    },
+    {
+      "path": "dog-gooses-frame-00079-predictions.npz",
+      "bytes": 8452,
+      "sha256": "0816f21af15828bc1c3f02e519915923e0fccce353597ac1811631918f9cfe9f",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 79
+    },
+    {
+      "path": "dog-gooses-frame-00080-predictions.npz",
+      "bytes": 8876,
+      "sha256": "9dae9bfd3a6121c3a6b56b43da8ca81a6573d9db5c83d2b55b54548664ea8993",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 80
+    },
+    {
+      "path": "dog-gooses-frame-00081-predictions.npz",
+      "bytes": 10304,
+      "sha256": "8495527fbd22fedada087ed9f69156e117bbdbe5f44a2b6d25503129531e430e",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 81
+    },
+    {
+      "path": "dog-gooses-frame-00082-predictions.npz",
+      "bytes": 11127,
+      "sha256": "62243b9a04bb41b7ebc6eeaab660b66ce6e2a4295d3387dddc6035a3adf38eda",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 82
+    },
+    {
+      "path": "dog-gooses-frame-00083-predictions.npz",
+      "bytes": 11252,
+      "sha256": "6edff7a0d652f50557d0050dcade7c6fe938d1614e146fae90d3a2577e2480ef",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 83
+    },
+    {
+      "path": "dog-gooses-frame-00084-predictions.npz",
+      "bytes": 11401,
+      "sha256": "ea4e90ef259b51561f81aa96c347c50dd24f9c9136697e440e3e8a0361a9384c",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 84
+    },
+    {
+      "path": "dog-gooses-frame-00085-predictions.npz",
+      "bytes": 12613,
+      "sha256": "6a09797c24c69bb4de654e8c83cd47f7701fdae578783e14caf122f6720d1c77",
+      "kind": "all-arm-predictions",
+      "sequence": "dog-gooses",
+      "frame": 85
+    }
+  ]
+}

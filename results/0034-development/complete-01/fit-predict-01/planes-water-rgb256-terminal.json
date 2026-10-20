@@ -1,0 +1,100 @@
+{
+  "schema": "evr0034.pointwise-model.v1",
+  "name": "rgb256",
+  "status": "completed",
+  "dtype": "float64",
+  "input_dim": 14,
+  "family": "signed_gate",
+  "coefficients": [
+    -6.296697056908531,
+    3.101924431846503,
+    25.409854684483136,
+    -31.015134599727133,
+    6.847576228670538,
+    -4.16479163942619,
+    -3.0340128501045736,
+    5.531761057061637,
+    10.11836185614277,
+    3.3133393306252357,
+    -3.450973045879798,
+    2.116915712062148,
+    1.3558668525909252,
+    4.573610744297817
+  ],
+  "initial_coefficients": [
+    -4.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "config": {
+    "correction_bound": 4.0,
+    "regularization": 0.001,
+    "gate_initial_intercept": -4.0,
+    "lbfgs": {
+      "lr": 1.0,
+      "max_iter": 80,
+      "max_eval": 400,
+      "tolerance_grad": 1e-06,
+      "tolerance_change": 1e-12,
+      "history_size": 20,
+      "line_search_fn": "strong_wolfe"
+    }
+  },
+  "training": {
+    "sample_count": 195584,
+    "positive_weight_count": 195584,
+    "weight_sum": 1.0,
+    "weights_renormalized": false,
+    "weight_sum_roundoff_tolerance": 3.552713678800501e-15
+  },
+  "torch_version": "2.8.0",
+  "terminal": {
+    "loss": 0.24994534945550412,
+    "data_loss": 0.24994355485012365,
+    "penalty_loss": 1.794605380470164e-06,
+    "weighted_delta_squared": 0.001794605380470164,
+    "gradient": [
+      5.776630709255519e-07,
+      3.742369985331652e-07,
+      6.619309418345331e-08,
+      4.095935997297644e-08,
+      6.712555524989205e-08,
+      -1.2036050125092943e-07,
+      2.455271429450205e-07,
+      -2.6161321199543023e-07,
+      -6.348006071523957e-08,
+      -2.2635432742563788e-07,
+      1.9953050043354172e-07,
+      5.43567288665709e-07,
+      -5.367312217679431e-07,
+      4.1595277423492927e-07
+    ],
+    "gradient_norm": 1.2162095308330448e-06,
+    "gradient_max_abs": 5.776630709255519e-07
+  },
+  "optimizer": {
+    "n_iter": 24,
+    "func_evals": 33,
+    "observed_closure_evals": 33,
+    "terminal_loss_gradient_evals": 1,
+    "configured_max_iter": 80,
+    "configured_max_eval": 400,
+    "max_iter_reached": false,
+    "max_eval_reached": false,
+    "max_eval_is_hard_cap": false,
+    "returned_successfully": true,
+    "convergence_claimed": false,
+    "terminal_gradient_tolerance_satisfied": true
+  }
+}

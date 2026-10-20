@@ -1,0 +1,94 @@
+{
+  "schema": "evr0034.recorded-decision.v1",
+  "result": "negative",
+  "action": "close_fixed_signed_rgb_gram_recipe",
+  "continuation_passed": false,
+  "goal_achieved": false,
+  "manuscript_authorized": false,
+  "evaluation_sha256": "0d16f4b9207d0bed12fcb5212bee5638fdc8b7dcaba16548ea2d431259b95931",
+  "decision": {
+    "strongest_control": {
+      "arm": "native",
+      "JF": 0.9540601067185072,
+      "tie_order": [
+        "native",
+        "logit",
+        "absolute",
+        "prototype",
+        "nn",
+        "ordinary_relations",
+        "signed_no_gram",
+        "bilateral"
+      ]
+    },
+    "parent_margins": [
+      {
+        "sequence": "dog-agility",
+        "vs_native": -0.0002799831865916147,
+        "vs_ordinary_relations": -0.0005644209611075368,
+        "vs_signed_no_gram": 6.779363028519558e-05,
+        "vs_strongest_pooled_control": -0.0002799831865916147
+      },
+      {
+        "sequence": "planes-water",
+        "vs_native": 0.00028029045608490843,
+        "vs_ordinary_relations": 0.003154101012632027,
+        "vs_signed_no_gram": 0.00010418800961997654,
+        "vs_strongest_pooled_control": 0.00028029045608490843
+      },
+      {
+        "sequence": "dogs-scale",
+        "vs_native": -0.0023476127038266625,
+        "vs_ordinary_relations": -0.0004719295254091982,
+        "vs_signed_no_gram": -0.0004664455259922873,
+        "vs_strongest_pooled_control": -0.0023476127038266625
+      },
+      {
+        "sequence": "dog-gooses",
+        "vs_native": 0.00011993502597418271,
+        "vs_ordinary_relations": -0.00017751815870170606,
+        "vs_signed_no_gram": 0.00010102976228332228,
+        "vs_strongest_pooled_control": 0.00011993502597418271
+      }
+    ],
+    "positive_parent_counts": {
+      "ordinary_relations": 1,
+      "signed_no_gram": 3
+    },
+    "candidate_JF": 0.9535032641164174,
+    "margin_over_strongest_control": -0.0005568426020897688,
+    "clauses": {
+      "primary_JF_gain_at_least_1pp": false,
+      "margin_over_strongest_control_at_least_quarter_pp": false,
+      "beats_ordinary_relations_on_at_least_three_parents": false,
+      "beats_signed_no_gram_on_at_least_three_parents": true,
+      "no_parent_native_JF_loss_exceeds_half_pp": true,
+      "mean_native_J_loss_at_most_half_pp": true,
+      "mean_native_F_loss_at_most_half_pp": true,
+      "mean_JF_above_displaced_gram": false,
+      "mean_JF_above_rgb256_by_at_least_tenth_pp": false,
+      "no_fit_failures": true,
+      "full_coverage": true
+    },
+    "passed": false,
+    "action": "close_fixed_signed_rgb_gram_recipe"
+  },
+  "optimizer_summary": {
+    "fits": 40,
+    "gradient_tolerance_satisfied": 32,
+    "max_iter_reached": 8,
+    "iterations_range": [
+      8,
+      80
+    ],
+    "closures_range": [
+      10,
+      92
+    ],
+    "failures": 0,
+    "convergence_claimed": false
+  },
+  "scope": "Four permanently exposed TRAIN parents, leave-one-parent-out computational cross-fit; no current DEV payload or final-test access. Not independent confirmatory evidence.",
+  "closed_recipe": "Fixed signed RGB/Gram gate. No support/radius/gate/optimizer/threshold/seed rescue.",
+  "remaining_goal": "Substantial innovative reproducible gain on two independent held-out sources; unchanged final evidence gate."
+}
