@@ -1,6 +1,16 @@
 # Current state
 
-## Current: fixed relative-RGB screen failed; exact recipe closed
+## Current: prepare a complete transformation candidate-support screen
+
+The next [prospective0035 screen](experiments/0035-transformation-support/ADMISSION.md) asks whether SAM2.1-tiny's existing alternative masks contain whole target material omitted after physical transformation. This is a known-proposal opportunity test, not a new tracker or measured gain. It selects four complete official-TRAIN VOST clips by a fixed metadata hash rule:446 frames, all initial object IDs. Native histories remain unchanged; four output-only native/union controls are compared with separately labeled privileged support ceilings. Extra alternative support is separated from perfect native false-positive removal/ownership. No selected payload, scientific prediction or score has been accessed at this preparation state.
+
+Pinned VOST code treats255 as background despite the paper's stated ignore intention. The primary follows that released J/Jtr script; void-ignore is separately reported. Historical drafts and executed metadata artifacts remain, with an explicit correction. Neither endpoint is official JF or a substitute for the unchanged final gate. Within-TRAIN recording groups and model training exposure remain unresolved.
+
+The complete scope requires at least5 J/5 Jtr points total ceiling,2 J/3 Jtr points newly supported material,3-point ceiling margins over the strongest real control, and extra1 Jtr point in at least3/4 clips. These only authorize further candidate-verification work. The prospective180MB acquisition hold leaves a conservative1,103,590,729B balance with all older holds retained. Exact-source CI and manufactured native parity precede data use; initial-only resource checks precede RGB; all-four clean prediction seals precede442noninitial masks. CPU4/RSS8GiB/1800s apply to each complete operation, without timeout subdivision.
+
+PR71 and its merge are independently verified published with successful exact result/main CI in [the preparation evidence](results/0035-preparation/pr71-verification.json). Its negative result stays closed. The active research goal remains unachieved; no manuscript.
+
+## Historical: fixed relative-RGB screen failed; exact recipe closed
 
 The [complete 0034 evidence](results/0034-development/complete-01/README.md) retains all 40 fits, 80 terminal/trace JSONs, four fold-specific normalizations, 232 prediction archives / 2,552 masks, 232 metric rows and all fixed controls. The primary cross-fit uses 224 interior frames of four permanently exposed TRAIN parents, with equal-parent weighting. All TRAIN labels are loaded for use by the appropriate other-parent fits; no fold fits its own held parent's labels. This computational exclusion is not a fresh confirmatory partition. No current DEV payload or final-test access occurred.
 

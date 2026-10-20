@@ -1,0 +1,22 @@
+{
+  "command": [
+    "${WORKSPACE}/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-c",
+    "import torch,unittest;torch.set_num_threads(4);torch.set_num_interop_threads(1);s=unittest.defaultTestLoader.discover('work/0035-transformation-support',pattern='test_native_bank.py');assert s.countTestCases()==5;suite=unittest.TextTestRunner(verbosity=2).run(s);raise SystemExit(0 if suite.wasSuccessful() else 1)"
+  ],
+  "cwd": "${WORKSPACE}",
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "timeout_seconds": 30,
+  "scope": "five manufactured-only tests; no SAM2 model/scientific media"
+}

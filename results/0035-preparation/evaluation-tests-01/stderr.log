@@ -1,0 +1,56 @@
+test_absence_cannot_resurrect_positive_raw_bank (test_evaluate.EvaluateTests.test_absence_cannot_resurrect_positive_raw_bank) ... ok
+test_continuation_includes_strongest_union_and_three_clip_condition (test_evaluate.EvaluateTests.test_continuation_includes_strongest_union_and_three_clip_condition) ... ok
+test_failed_all_four_admission_stops_before_guard_or_label_access (test_evaluate.EvaluateTests.test_failed_all_four_admission_stops_before_guard_or_label_access) ... ok
+test_initial_single_bank_duplicates_only_for_composition (test_evaluate.EvaluateTests.test_initial_single_bank_duplicates_only_for_composition) ... ERROR
+test_rebuild_original_slot_order_with_competition (test_evaluate.EvaluateTests.test_rebuild_original_slot_order_with_competition) ... ERROR
+test_saved_map_and_native_parity_corruption_are_errors (test_evaluate.EvaluateTests.test_saved_map_and_native_parity_corruption_are_errors) ... FAIL
+
+======================================================================
+ERROR: test_initial_single_bank_duplicates_only_for_composition (test_evaluate.EvaluateTests.test_initial_single_bank_duplicates_only_for_composition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/0035-transformation-support/test_evaluate.py", line 70, in test_initial_single_bank_duplicates_only_for_composition
+    original, controls = self.reconstruct(path, row, record)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/0035-transformation-support/test_evaluate.py", line 56, in reconstruct
+    return evaluate.reconstruct_frame(path, row, record, np=np, torch=torch, metrics=metrics)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/0035-transformation-support/evaluate.py", line 109, in reconstruct_frame
+    require(np.array_equal(resize(selected), bank["native_original_logits"]),
+  File "${WORKSPACE}/work/0035-transformation-support/evaluate.py", line 29, in require
+    raise ValueError(message)
+ValueError: selected original-resolution native parity
+
+======================================================================
+ERROR: test_rebuild_original_slot_order_with_competition (test_evaluate.EvaluateTests.test_rebuild_original_slot_order_with_competition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/0035-transformation-support/test_evaluate.py", line 61, in test_rebuild_original_slot_order_with_competition
+    actual, controls = self.reconstruct(path, row, record)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/0035-transformation-support/test_evaluate.py", line 56, in reconstruct
+    return evaluate.reconstruct_frame(path, row, record, np=np, torch=torch, metrics=metrics)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/0035-transformation-support/evaluate.py", line 109, in reconstruct_frame
+    require(np.array_equal(resize(selected), bank["native_original_logits"]),
+  File "${WORKSPACE}/work/0035-transformation-support/evaluate.py", line 29, in require
+    raise ValueError(message)
+ValueError: selected original-resolution native parity
+
+======================================================================
+FAIL: test_saved_map_and_native_parity_corruption_are_errors (test_evaluate.EvaluateTests.test_saved_map_and_native_parity_corruption_are_errors)
+----------------------------------------------------------------------
+ValueError: selected original-resolution native parity
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/0035-transformation-support/test_evaluate.py", line 82, in test_saved_map_and_native_parity_corruption_are_errors
+    with self.assertRaisesRegex(ValueError, "categorical composition"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "categorical composition" does not match "selected original-resolution native parity"
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.011s
+
+FAILED (failures=1, errors=2)

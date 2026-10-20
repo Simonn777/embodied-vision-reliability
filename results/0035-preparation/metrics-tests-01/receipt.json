@@ -1,0 +1,44 @@
+{
+  "command": [
+    "${WORKSPACE}/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "${WORKSPACE}/work/0035-transformation-support",
+    "-p",
+    "test_metrics.py",
+    "-v"
+  ],
+  "cwd": "${WORKSPACE}",
+  "environment": {
+    "MKL_NUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4"
+  },
+  "error": null,
+  "exit_code": 0,
+  "log_sha256": {
+    "stderr.log": "5391b8158f6499a6ee78f943c70263ce6b3d0ecdae2b33f573d2786de6760b81",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "manufactured_only": true,
+  "model_calls": 0,
+  "peak_children_rss_bytes_macos": 40452096,
+  "schema": "evr0035.manufactured-tests.v1",
+  "scientific_data_access": false,
+  "source_sha256": {
+    "metric-oracle-review.md": "a7540db3be757de24c5bd1fe5f28427d4cfaac2e76d64ae031e4c57fee037e03",
+    "metrics.py": "9693affa0f9f1d842d97cebdb10a0f6ab8808c84e522e1be57b453a6e6efeec4",
+    "test_metrics.py": "59736038bdcaf12ce2b774fc8489a414641b3585cdcec84a70cf6ce8825fd060"
+  },
+  "source_unchanged": true,
+  "status": "completed",
+  "timeout_seconds": 180,
+  "wall_seconds": 0.43885895801940933
+}

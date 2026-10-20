@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: preserve 0034 closure; reassess the failure mechanism and task
+## Current: run the fixed whole-clip transformation-support screen after qualification
+
+1. Review/freeze [0035](experiments/0035-transformation-support/ADMISSION.md), retain all manufactured test attempts, and require exact-source CI. Run the complete seven-frame/two-object native qualification, comparing all captured/ordinary outputs and complete native state. Any technical failure remains a failure and closes downstream access until a separate justified technical repair.
+2. Acquire only the four initial masks under the reserved cap, inspect every ID/dimension, and require the fixed whole-population memory/storage/call-count checks before446RGB acquisition. No cohort or object subset may replace an infeasible population.
+3. Run one complete all-four native-bank operation, seal every candidate/control and clean outer receipt, then admit442noninitial masks and one complete saved-output evaluation. Preserve all clips/objects, both void conventions, native cleanup versus extra-support headroom, every failed operation and full costs.
+4. Apply the prospective necessary information gate without threshold/cohort/slot rescue. A pass only permits a separately scoped actual candidate verifier against direct-supervision, ordinary-classifier, fixed-union and reverse-consistency controls. An oracle is never the method result. Preserve the unchanged substantial two-independent-source final gate and no-manuscript boundary.
+
+## Historical: preserve 0034 closure; reassess the failure mechanism and task
 
 1. Publish and verify [all 0034 evidence](results/0034-development/complete-01/README.md). All ten learned arms lose to native in pooled cross-fit J&F; the signed-Gram candidate also loses to displaced relations and coarse RGB. Preserve every fit/trace/normalization/prediction descriptor, all parent scores, the complete primary and secondary populations and measured costs. Do not select a positive parent or substitute a secondary endpoint.
 2. Keep the exact signed RGB/Gram recipe closed, along with the earlier exact head/crop/memory variants. A different question must explain what information was absent from these actions and include the strongest same-information control. Do not use support/radius/gate/optimizer/threshold/seed changes to rescue this result.
