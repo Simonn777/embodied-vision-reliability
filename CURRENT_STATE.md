@@ -1,5 +1,15 @@
 # Current state
 
+## Current: 0025c prospective initializer-noise qualification
+
+The [fixed noise falsifier](docs/0025c-admission.md) challenges four-point RS
+affine-depth initialization against same-input eight-point depth, depth-free RS
+and angular-only affine controls. Its 132 records and 13,332 solve attempts are
+prospective, with no target cohort generated at source preparation. Manufactured
+angular inputs do not establish real-IMU performance. Exact source CI must precede
+one supervised run and independent saved-output audit. No renderer or paper.
+
+
 ## Latest: 0025b physical depth qualification passed
 
 The first [physical-depth diagnostic](results/0025b-development/README.md)

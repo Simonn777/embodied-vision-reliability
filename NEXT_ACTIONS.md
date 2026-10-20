@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: translate qualified depth assumption into a falsifiable pose study
+## Current: freeze and test the necessary four-point noise assumption
+
+1. Finish independent source review and artificial tests for [0025c](docs/0025c-admission.md), then verify exact source CI before generating its fixed cohort.
+2. Execute one bounded all-inlier noise falsifier and independent saved-output audit, retaining all 13,332 attempts, failures and strong controls. No same-outcome noise, seed or threshold tuning.
+3. Only a passing necessary gate allows a separately frozen robust-sampling proposal; this stage cannot establish actual robust advantage, real pose improvement or manuscript admission.
+
+
+## Historical next-step decision after 0025b
 
 1. Publish the complete [0025b qualification](results/0025b-development/README.md), including the better GS oracle, the unavailable middle-Z arm and all 256 case-arm records, after exact result CI.
 2. Prepare a separate prospective test with within-readout translation and strictly identified rotation/gyro inputs. Address the four-point system's poor conditioning and critical motions before large data acquisition; compare strong same-information RS/no-depth and affine-depth controls.

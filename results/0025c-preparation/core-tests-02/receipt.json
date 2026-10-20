@@ -1,0 +1,31 @@
+{
+  "schema": "evr0025c.core-artificial-tests.v1",
+  "status": "passed",
+  "exit_code": 0,
+  "seconds": 0.1410805,
+  "command": [
+    "$PYTHON",
+    "test_core.py",
+    "CoreTests.test_affine_admission_checks_unfitted_pool_and_scale"
+  ],
+  "scope": "Only affected artificial fitting-support/all-pool positivity unit; no fixture/cohort/noise generation.",
+  "change": "Add fitting_count, fitting_finite_count, fitting_positive_count. Full-pool admission unchanged. First receipt preserved.",
+  "source_sha256_before": {
+    "core.py": "256da665cbdbf5c59973acd9b2b0bc16dd2ffeb5e085b1fcf9462b80a84c0c14",
+    "test_core.py": "57869dd015e84d25d487f4e634c7b521307c868e04bddd2a7607c89ffff221b1"
+  },
+  "source_sha256_after": {
+    "core.py": "256da665cbdbf5c59973acd9b2b0bc16dd2ffeb5e085b1fcf9462b80a84c0c14",
+    "test_core.py": "57869dd015e84d25d487f4e634c7b521307c868e04bddd2a7607c89ffff221b1"
+  },
+  "logs": {
+    "stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr.txt": {
+      "bytes": 178,
+      "sha256": "b724b92f841d426808fe47c867cd06faee2065b91143ca3a790df844fd5c8202"
+    }
+  }
+}

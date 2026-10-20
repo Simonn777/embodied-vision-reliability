@@ -4,10 +4,12 @@
 CVPR-targeted manuscript. No method currently meets that goal.**
 
 The current candidate studies rolling-shutter camera translation with learned
-affine-depth priors and measured rotations. Fixed numerical checks and an exact
+affine-depth priors, with measured rotations as a later deployment requirement. Fixed numerical checks and an exact
 four-point existence construction establish conditional mathematical feasibility;
 a physical pure-rotation depth approximation passed its fixed oracle diagnostic,
-while task-level robustness remains unverified. Earlier methods
+while task-level robustness remains unverified. A prospective all-inlier noise
+test next challenges four-point initialization against equal-input controls,
+using manufactured angular inputs, before any real-IMU campaign. Earlier methods
 failed their scientific gates and remain public. This concerns visual geometry
 for embodied systems and driving; no controller or driving result is claimed.
 
@@ -29,7 +31,7 @@ meet this standard. [Full prospective gate](protocols/0012-score-bounds-developm
 | [0023 directional instability](results/0023-development/completed-study/README.md) | AUC@5 56.4971% versus strongest geometry control 61.9844% (−5.4874 pp). | Closed. All efficacy conditions failed. |
 | [0020 spatial depth transfer](results/0020-spatial-depth-transfer/README.md) | Candidate AUC@5 71.1071% versus strong affine control 74.0717% (−2.9646 pp). | Closed. No same-label rescue tuning. |
 
-[Current physical-test admission](docs/0025b-admission.md) · [Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md)
+[Current noise-test admission](docs/0025c-admission.md) · [Current state](CURRENT_STATE.md) · [Next actions](NEXT_ACTIONS.md)
 
 ## Historical evidence through 0015
 
