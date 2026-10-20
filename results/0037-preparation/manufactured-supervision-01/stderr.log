@@ -1,0 +1,168 @@
+test_empty_union_and_explicit_unused_cells (test_core.CoreTests.test_empty_union_and_explicit_unused_cells) ... ok
+test_feature_units_partial_cells_input_immutability_and_no_truth_api (test_core.CoreTests.test_feature_units_partial_cells_input_immutability_and_no_truth_api) ... ERROR
+test_fixed_thresholds_and_unknown_policy (test_core.CoreTests.test_fixed_thresholds_and_unknown_policy) ... ok
+test_invalid_counts_masks_features_do_not_silently_filter (test_core.CoreTests.test_invalid_counts_masks_features_do_not_silently_filter) ... ok
+test_literal_counts_void_and_native_extra_partition (test_core.CoreTests.test_literal_counts_void_and_native_extra_partition) ... ok
+test_same_cell_native_and_added_actions_score_original_pixels (test_core.CoreTests.test_same_cell_native_and_added_actions_score_original_pixels) ... ok
+test_sampling_is_row_major_label_free_and_capped (test_core.CoreTests.test_sampling_is_row_major_label_free_and_capped) ... ok
+test_advance_uses_only_supplied_previous_labels (test_features.TransportTests.test_advance_uses_only_supplied_previous_labels) ... ERROR
+test_bad_consistency_photo_and_coordinates_become_unknown (test_features.TransportTests.test_bad_consistency_photo_and_coordinates_become_unknown) ... ERROR
+test_cells_match_scalar_geometry_and_means (test_features.TransportTests.test_cells_match_scalar_geometry_and_means) ... ERROR
+test_dis_pair_api_on_manufactured_constant_images (test_features.TransportTests.test_dis_pair_api_on_manufactured_constant_images)
+API/finite-output qualification, not a claim of flow identifiability. ... ERROR
+test_exact_translation_moves_positive_and_negative_labels (test_features.TransportTests.test_exact_translation_moves_positive_and_negative_labels) ... ERROR
+test_fixed_dis_public_configuration_and_validation (test_features.TransportTests.test_fixed_dis_public_configuration_and_validation) ... ERROR
+test_initial_void_and_class_erosions (test_features.TransportTests.test_initial_void_and_class_erosions) ... ERROR
+test_unknown_cannot_resurrect_on_later_reliable_step (test_features.TransportTests.test_unknown_cannot_resurrect_on_later_reliable_step) ... ERROR
+test_constant_keep_zero_active_zero_weights_and_empty (test_models.ModelsTest.test_constant_keep_zero_active_zero_weights_and_empty) ... ok
+test_fractional_labels_are_not_thresholded (test_models.ModelsTest.test_fractional_labels_are_not_thresholded) ... ok
+test_inactive_rows_do_not_influence_gradient_or_order (test_models.ModelsTest.test_inactive_rows_do_not_influence_gradient_or_order) ... ok
+test_invalid_inputs_and_partial_fit_error_contract (test_models.ModelsTest.test_invalid_inputs_and_partial_fit_error_contract) ... ok
+test_roundoff_admission_is_bounded_recorded_and_not_rescaled (test_models.ModelsTest.test_roundoff_admission_is_bounded_recorded_and_not_rescaled) ... ok
+test_separable_fit_terminal_trace_serialization_and_immutability (test_models.ModelsTest.test_separable_fit_terminal_trace_serialization_and_immutability) ... ok
+test_serialized_network_formula_and_reject_partial_or_nonfinite (test_models.ModelsTest.test_serialized_network_formula_and_reject_partial_or_nonfinite) ... ok
+test_unscaled_weight_sum_is_preserved (test_models.ModelsTest.test_unscaled_weight_sum_is_preserved) ... ok
+test_all_empty_training_clips_remain_valid_empty_fold (test_run.WorkerBoundaryTests.test_all_empty_training_clips_remain_valid_empty_fold) ... ok
+test_held_clip_is_excluded_before_targets_are_passed (test_run.WorkerBoundaryTests.test_held_clip_is_excluded_before_targets_are_passed) ... ok
+test_saved_scalar_decode_and_exact_original_pixel_score (test_run.WorkerBoundaryTests.test_saved_scalar_decode_and_exact_original_pixel_score) ... ok
+
+======================================================================
+ERROR: test_feature_units_partial_cells_input_immutability_and_no_truth_api (test_core.CoreTests.test_feature_units_partial_cells_input_immutability_and_no_truth_api)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_core.py", line 75, in test_feature_units_partial_cells_input_immutability_and_no_truth_api
+    X, ids, counts, metadata = core.build_features(rgb, evidence, logits, masks, 300)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/core.py", line 66, in build_features
+    ids = features.cell_ids(tuple(masks.shape[1:]), small_shape)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 336, in cell_ids
+    np, _ = _libraries()
+            ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+======================================================================
+ERROR: test_advance_uses_only_supplied_previous_labels (test_features.TransportTests.test_advance_uses_only_supplied_previous_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_features.py", line 137, in test_advance_uses_only_supplied_previous_labels
+    small = features.resize_rgb(original)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 107, in resize_rgb
+    np, cv2 = _libraries()
+              ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+======================================================================
+ERROR: test_bad_consistency_photo_and_coordinates_become_unknown (test_features.TransportTests.test_bad_consistency_photo_and_coordinates_become_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_features.py", line 91, in test_bad_consistency_photo_and_coordinates_become_unknown
+    result, _, ev = features.propagate(previous, current, state, forward, backward)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 225, in propagate
+    np, cv2 = _libraries()
+              ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+======================================================================
+ERROR: test_cells_match_scalar_geometry_and_means (test_features.TransportTests.test_cells_match_scalar_geometry_and_means)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_features.py", line 114, in test_cells_match_scalar_geometry_and_means
+    ids = features.cell_ids((9, 13), (7, 10))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 336, in cell_ids
+    np, _ = _libraries()
+            ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+======================================================================
+ERROR: test_dis_pair_api_on_manufactured_constant_images (test_features.TransportTests.test_dis_pair_api_on_manufactured_constant_images)
+API/finite-output qualification, not a claim of flow identifiability.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_features.py", line 153, in test_dis_pair_api_on_manufactured_constant_images
+    previous = features.resize_rgb(original)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 107, in resize_rgb
+    np, cv2 = _libraries()
+              ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+======================================================================
+ERROR: test_exact_translation_moves_positive_and_negative_labels (test_features.TransportTests.test_exact_translation_moves_positive_and_negative_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_features.py", line 67, in test_exact_translation_moves_positive_and_negative_labels
+    result, returned_rgb, ev = features.propagate(*inputs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 225, in propagate
+    np, cv2 = _libraries()
+              ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+======================================================================
+ERROR: test_fixed_dis_public_configuration_and_validation (test_features.TransportTests.test_fixed_dis_public_configuration_and_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_features.py", line 177, in test_fixed_dis_public_configuration_and_validation
+    features.propagate(rgb, rgb, state, invalid, flow)
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 225, in propagate
+    np, cv2 = _libraries()
+              ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+======================================================================
+ERROR: test_initial_void_and_class_erosions (test_features.TransportTests.test_initial_void_and_class_erosions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_features.py", line 39, in test_initial_void_and_class_erosions
+    state, small, ev = features.initialize(rgb, initial)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 137, in initialize
+    np, cv2 = _libraries()
+              ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+======================================================================
+ERROR: test_unknown_cannot_resurrect_on_later_reliable_step (test_features.TransportTests.test_unknown_cannot_resurrect_on_later_reliable_step)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/test_features.py", line 105, in test_unknown_cannot_resurrect_on_later_reliable_step
+    first, _, _ = features.propagate(rgb, rgb, state, bad_forward, zeros)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 225, in propagate
+    np, cv2 = _libraries()
+              ^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/features.py", line 63, in _libraries
+    raise RuntimeError("OpenCV did not accept the fixed four-thread setting")
+RuntimeError: OpenCV did not accept the fixed four-thread setting
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.394s
+
+FAILED (errors=9)
+Traceback (most recent call last):
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/qualify.py", line 70, in <module>
+    print(json.dumps(run(parser.parse_args().spec)))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${WORKSPACE}/work/embodied-vision-reliability/experiments/0037-causal-local-verification/qualify.py", line 54, in run
+    raise ValueError("manufactured qualification failed or incomplete")
+ValueError: manufactured qualification failed or incomplete

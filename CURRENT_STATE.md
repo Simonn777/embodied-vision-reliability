@@ -1,5 +1,19 @@
 # Current state
 
+## Current: complete local comparison failed; primary recipe closed
+
+The [0037 complete results](results/0037-development/complete-02/README.md) retain all446 frames, nine arms and twelve fits. The constrained MLP reaches48.5946093 J /31.3380559 Jtr%, marginally below union48.6004894/31.3383185. It fails six of ten predeclared clauses. Fixed negative veto reaches51.3679670/31.9818508 (+2.7674776/+0.6435323 pp over union), but its onion J still loses to native. Ordinary same-input MLP37.5326969/18.4181181 and no-correspondence MLP43.0119028/24.9908963 also provide no substantial gain. Do not retune this exact failed recipe or write a paper from it.
+
+Complete scientific operation:126.866632125s,857952KiB,884 flow calls,0 new native calls; all446 features/targets/predictions/metrics and12 fits finish with clean outer exit. Independent saved-output review passes32,947 checks with0 errors,2.168527375s,64240KiB; source/input and all1,366 artifact hashes are bound. Earlier startup/thread failures remain preserved. Complete native-plus-current cost includes inherited686.546369958s. These exposed development results do not establish innovation, recording independence or held-out transfer.
+
+[Second-source feasibility](docs/0037-validation-source-feasibility.md) identifies M3-VOS as task-matched but not yet qualified for origin independence or budgeted selective acquisition. A proposed J/Jtr gate amendment is explicitly not adopted. The existing final gate remains unchanged and unmet. No manuscript; the research goal stays active.
+
+## Historical: local comparison preparation
+
+[0037 source](experiments/0037-causal-local-verification/ADMISSION.md) fixes small disjoint union cells, causal first-mask label transport, ordinary same-input MLP and a negative-evidence-constrained MLP. All26 manufactured checks pass after one preserved thread-configuration failure. [Preparation evidence](results/0037-preparation/README.md) includes complete failed/passed receipts and source snapshots. The first complete launch failed at identity admission before data reads; the wrong copied spec SHA was corrected and all26 checks passed again. [Failure and repair](results/0037-preparation/startup-repair-02/README.md) are preserved. No efficacy result exists. Exact-source CI precedes a fresh complete four-clip comparison; no new acquisition, native inference, fees or manuscript.
+
+PR73 result and merged-main CI are now both verified. Its negative whole-arm sufficiency result remains final; richer local selection is a distinct action class, not a four-arm selector rescue.
+
 ## Current: local verification or a different causal state action is needed
 
 The [0036 saved-score bound](results/0036-development/complete-01/README.md) rules out the limited whole-arm selector for its declared target. GT-assisted best-of-four per frame reaches **55.0372302 J / 33.1352595 Jtr%**, changes of **+6.4367408 / +1.7969411 pp** over union. The 3-point J clause passes and Jtr fails, under both void policies. All 446 scalar rows are retained. A clean 0.190451334s operation and independent 1,158-check exact-rational review confirm the result. No model, media or new labels were read; no selector was trained. The original D35 support gate remains positive.

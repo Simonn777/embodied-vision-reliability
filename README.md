@@ -1,5 +1,7 @@
 # Embodied Vision Reliability
 
+Latest research evidence: [0037 complete local comparison](results/0037-development/complete-02/README.md) fails its prospective gate. All nine arms,446 frames,twelve fits and32,947-check independent review are recorded. No CVPR-ready result or manuscript is claimed.
+
 Latest result: the [complete 0035 transformation-support screen](results/0035-development/complete-01/README.md) passes all seven prospective opportunity conditions. Across four complete VOST TRAIN clips, fixed native-candidate union improves **J from 44.3325% to 48.6005% (+4.2680 pp)** and **Jtr from 24.1167% to 31.3383% (+7.2216 pp)**. Onion J nevertheless falls by **16.1220 pp**; all clips and both void policies are retained. All 446 frames complete with exact native/control parity and an independent saved-text arithmetic review. [PR72](https://github.com/Simonn777/embodied-vision-reliability/pull/72) is merged with successful result and main CI.
 
 This is an established union baseline and a positive support diagnostic, **not a new method or the final paper result**. Pixel-level GT-assisted ceilings still exceed the strongest real control, but do not prove a realizable verifier. The [completed saved-score diagnostic](results/0036-development/complete-01/README.md) finds that even GT-assisted whole-mask selection adds only 1.7969 Jtr points above union, below its 3-point necessary threshold. A four-arm selector is therefore insufficient for the declared target. No manuscript is written.

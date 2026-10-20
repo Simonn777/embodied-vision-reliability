@@ -1,5 +1,21 @@
 # Next actions
 
+1. Publish the complete0037 negative result with all controls, failures, costs and independent review; verify result and merged-main CI.
+2. Keep the exact constrained-flow/cell-readout recipe closed without threshold/optimizer/seed rescue. Assess a materially different observable/mechanism before another experiment; existing visibility/ancestry combinations remain close prior art.
+3. Qualify M3-VOS original-recording metadata, immutable evaluator and bounded file manifest before any new acquisition or final-source claim. No endpoint amendment is currently adopted.
+4. Preserve the substantial two-independent-source final gate, strong complete-cost controls, uncertainty, ablations and replication before a manuscript.
+
+## Previous action records
+
+Startup follow-up: complete01 stopped before data at the incorrect copied D35 spec SHA. Corrected-source qualification03 passes26/26; freeze and verify exact-source CI before the unchanged complete02 comparison. Preserve both earlier failures.
+
+## Current: execute the frozen complete local comparison
+
+1. Freeze reviewed0037 source and verify exact-source CI. Preserve both manufactured attempts and all26 passing tests; no scientific result yet.
+2. Run one complete all-four operation for446 causal feature frames,12 cross-fit outcomes, sealed predictions and both-policy metrics. No per-fold timeout reset or source/outcome tuning. Compare original-resolution fixed controls exactly to D35.
+3. Independently audit complete saved records and publish all results. The constrained MLP must pass the predeclared substantial gains and ordinary-control margins; useful ordinary controls are labeled as such. Failures close this exact recipe without threshold/seed/optimizer rescue.
+4. Keep the original independent-source official-J&F manuscript gate and research goal active. Passing source checks or exposed development results does not finish the goal.
+
 ## Current: preserve the action-class limit and design a richer realizable comparison
 
 1. Publish the complete 0036 saved-score diagnostic through PR73 and verify result/main CI. Its whole-arm oracle fails the necessary Jtr condition. Do not train a more elaborate four-arm selector or weaken that criterion; preserve both policies and the positive D35 support opportunity.
