@@ -1,6 +1,12 @@
 # Current state
 
-## Current work: 0029 full native comparison source prepared
+## Current work: 0029 native attempt01 technically ineligible
+
+The [original native attempt](results/0029-development/native-attempt-01/README.md) has three clean complete videos and a fourth completed worker whose supervisor failed with `descendants_remain`; the final two were not started. All262worker frames/32queries and412native calls are preserved, but the all-six-clean requirement fails. No query annotations or accuracy scores were accessed. The [25-frame manufactured qualification](results/0029-preparation/native-video-qualification/README.md) and independent audit passed before scientific execution; they do not override the later failure. A stale process-snapshot window is possible but not proven to explain this alarm. Preserve failure unchanged. Next separately qualify a narrow new supervisor and freeze a complete all-six technical replication with byte-identical science and no outcome-based changes; no GT until its own six clean operations. No improvement or manuscript.
+
+The [closest ExRE score remains unread](docs/0029-exre-source-availability.md); storage and removal already overlap at a qualitative level. A new250,000-byte capped metadata reservation leaves the conservative planning balance1,289,618,314bytes; all earlier holds remain.
+
+## Historical: 0029 full native comparison source prepared
 
 The [separate second-stage contract](protocols/0029-native-video-comparison.md) preserves the immutable first-stage cohort and rules, and prepares the complete baseline-history SAM comparison, native-bank/prompt/reset controls,25-frame manufactured qualification, all-six prediction seals and post-seal evaluation. The completed evidence screen remains38/48 across6/6videos; [its publication/main CI are verified](docs/0029-evidence-publication-verification.md). New native qualification and scientific segmentation have not run. Complete source review, manufactured tests and exact-source CI precede execution. No accuracy improvement or manuscript.
 
