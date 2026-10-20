@@ -1,0 +1,31 @@
+{
+  "schema": "evr0035.saved-text-audit-display-correction.v1",
+  "passed": true,
+  "errors": [],
+  "first_audit_status": "failed_preserved",
+  "original_successful_checks": 8312,
+  "corrected_assertion": "evaluation: exact command",
+  "exact_command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "$REPOSITORY/experiments/0035-transformation-support/evaluate.py",
+    "--spec",
+    "$PRIVATE/0035-transformation-support/evaluate-spec-01.json"
+  ],
+  "original_inputs_sha256": {
+    "${WORKSPACE}/work/0035-transformation-support/independent-evaluation-audit-01/report.json": "70e034161cb7a507aa925550e3fda52582c33c8a967cb7e8c88669d59bc61470",
+    "${WORKSPACE}/work/0035-transformation-support/independent-evaluation-audit-01/audit.py": "75e6b973945a3440719afc6f0aebe4a804a585767c547e016d6c61e2ebb0460c",
+    "${WORKSPACE}/work/0035-transformation-support/independent-evaluation-audit-01/supervision/receipt.json": "768cee8ffd3fbb161e9fa06af3c53a361b0d0efe70b76ebcb171c68b79a8c9ed",
+    "${WORKSPACE}/work/0035-transformation-support/independent-evaluation-audit-01/supervision/stdout.log": "0f9f9a540ef196945dac39ef43191e30ebc6332ffe8cabca14ad8b47d18ecd15",
+    "${WORKSPACE}/work/0035-transformation-support/independent-evaluation-audit-01/supervision/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0025c-rs-noise/supervise.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+    "${WORKSPACE}/work/0035-transformation-support/evaluate-outer-spec-01.json": "42580099639494c0b096ac88d3d7445275fd36658dd66c59e20123ca455b8887",
+    "${WORKSPACE}/work/0035-transformation-support/evaluation-supervision-01/receipt.json": "159d972c3895c58ff58436ecb9e4e2fb7437954f0a4d58b434aec35fb3a61f36"
+  },
+  "source_sha256": "afc85c30a9da979f58e8732521f67d81dac9e745595ce3bcc63b36cd95e3b314",
+  "scope": "Only correct the pinned supervisor display comparison; no metric, model or payload rerun.",
+  "independent_saved_text_review_passed": true
+}

@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: preserve 0034 closure; reassess the failure mechanism and task
+## Current: publish the positive support screen and design a realizable test
+
+1. Finish independent saved-text arithmetic, coverage and seal review. Publish all 0035 results through PR72, including the sharp onion decline, both void policies, all failed transports and costs. Verify result and merged-main CI. Do not rerun predictions or select favorable clips.
+2. Treat the seven-clause screen as evidence of available target support. Develop one causal verifier hypothesis with a specific discriminative observation, an ordinary same-input supervised control, fixed union, reverse-consistency control and complete-pipeline costs. Existing FluxGraph and material-ancestry work limit novelty claims. Positive mean union gain establishes a stronger baseline, not an invention.
+3. Freeze the next complete development comparison before executing it. Preserve every object and frame, including cases with absent or ambiguous evidence. Prediction cannot use GT-derived pair locations, event times or correct parent identities. Distinguish gains from supervision from gains due to the proposed mechanism. No successor run is yet admitted.
+4. Preserve the final requirements: +3 official J&F points on each of two independent held-out sources; positive paired recording-level 95% intervals; bounded J/F component loss; strong same-information controls at matched complete-pipeline cost; ablations; independent replication. The goal remains unachieved; no manuscript.
+
+## Historical: preserve 0034 closure; reassess the failure mechanism and task
 
 1. Publish and verify [all 0034 evidence](results/0034-development/complete-01/README.md). All ten learned arms lose to native in pooled cross-fit J&F; the signed-Gram candidate also loses to displaced relations and coarse RGB. Preserve every fit/trace/normalization/prediction descriptor, all parent scores, the complete primary and secondary populations and measured costs. Do not select a positive parent or substitute a secondary endpoint.
 2. Keep the exact signed RGB/Gram recipe closed, along with the earlier exact head/crop/memory variants. A different question must explain what information was absent from these actions and include the strongest same-information control. Do not use support/radius/gate/optimizer/threshold/seed changes to rescue this result.

@@ -1,0 +1,17 @@
+# Explicit metric transport repair after a pre-response connection failure
+
+Declared on 2026-10-20 before the repaired acquisition and before any noninitial annotation image is decoded or any accuracy score is calculated. All 446 scientific predictions and their four control arms are already sealed, with a verified complete proof. The scientific population, model, predictions, metrics, thresholds and 70-file computational source closure remain unchanged.
+
+## Failure and narrow repair
+
+Metric acquisition 01 failed after 45 of 442 noninitial annotation files. A 78-byte local filename/extra request raised URLError [Errno 54] Connection reset by peer before an HTTP response or body arrived. The operation consumed 74,500 response-body bytes; its conservative requested total was 74,715 bytes. Inner wall time was 26.478229041 seconds. The failed outer operation ended at 26.992768542 seconds, with 251,440 KiB peak process-group RSS and no residual children. Preserve its receipt, requests, logs, files and costs; it is not an eligible complete annotation set.
+
+A separately frozen adapter will supply a persistent, verified HTTPS connection through the original acquire_phase function's explicit opener interface. It will request the same exact archive URL and ranges and perform no request retries. This reduces repeated TLS connection setup; the observed failures do not prove their external cause, and successful recovery is not assumed. The original If-Match, 206, ETag, Content-Range, Content-Length, bounded-body, ZIP, CRC and all-four prediction-proof checks remain active. A server-declared connection close may require a new connection for the next distinct request; a failed request is never resent. Count requests and actual connection attempts explicitly. Preserve certificate verification and configured proxy policy; do not silently bypass a configured HTTPS proxy.
+
+Run one new complete 442-file metric phase in a fresh directory. No cached files or partial evaluation population are reused. Both success and failure receipts explicitly identify the adapter and its source/declaration/allocation hashes without changing the original producer status or counters. New transport source files are bound separately in the acquisition receipt; they do not replace or modify any of the 70 frozen scientific computational files. The existing admission checks verify every added source hash and the complete acquisition inventory. A clean complete outer operation and unchanged prediction proof are still required before evaluation.
+
+## Prospective allocation and bounds
+
+Reserve an additional 5,000,000 response-body bytes, retaining every older hold and all failed-attempt costs without refund. The conservative balance decreases from 913,590,729 to 908,590,729 bytes. The original successful body bound for all 442 metric members remains 4,597,141 bytes. Use the original 5 MB phase cap, at most 1,326 requests, 30 seconds per request under the existing wall deadline, 1,800 seconds for the entire operation, four CPU threads and 8 GiB process-group RSS. No request retry, redirect, full archive fallback, deadline subdivision, method change or automatic operation restart is admitted.
+
+Review the small adapter, test connection reuse and failure behavior on manufactured responses, and require exact-source GitHub CI before running it. Recheck the 70 computational source hashes before and after acquisition. The sealed predictions are not rerun or tuned. The final scientific decision and manuscript gate are unchanged and remain unmet.

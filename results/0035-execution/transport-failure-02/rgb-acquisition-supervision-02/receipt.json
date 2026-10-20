@@ -1,0 +1,131 @@
+{
+  "schema": "evr0029.exit-checked-operation.v1",
+  "status": "failed",
+  "command": [
+    "$PYTHON",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "$REPOSITORY/experiments/0035-transformation-support/acquire.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+    "--metadata-root",
+    "$PRIVATE",
+    "--manifest-relative",
+    "experiments/0035-transformation-support/proposed-manifest-v2.json",
+    "--admission-relative",
+    "experiments/0035-transformation-support/acquisition-admission.json",
+    "--output-dir",
+    "$PRIVATE/0035-transformation-support/rgb-acquisition-02",
+    "--phase",
+    "rgb",
+    "--initial-dir",
+    "$PRIVATE/0035-transformation-support/initial-acquisition-01",
+    "--initial-inspection",
+    "$PRIVATE/0035-transformation-support/initial-inspection-01/receipt.json",
+    "--initial-inspection-outer",
+    "$PRIVATE/0035-transformation-support/initial-inspection-supervision-01/receipt.json"
+  ],
+  "spec_sha256": "b90c35407151701e014f59fa033eda59c16cd4e6357d7aa91fd39cd4f5bcac1c",
+  "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "child_pid": 53790,
+  "declared_child_pgid": 53790,
+  "observed_child_pgid": 53790,
+  "pgid_observation_error": null,
+  "exit_observed_at_seconds": 244.91610195901012,
+  "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+  "pre_poll_snapshot": {
+    "label": "before_poll",
+    "started_seconds": 244.88906650000717,
+    "finished_seconds": 244.91609100002097,
+    "known_groups": [
+      53790
+    ],
+    "discovered_groups": [
+      53790
+    ],
+    "rows": [
+      [
+        53790,
+        53779,
+        53790,
+        0
+      ]
+    ]
+  },
+  "post_exit_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 244.9161026670481,
+    "finished_seconds": 244.9374578340212,
+    "known_groups": [
+      53790
+    ],
+    "discovered_groups": [],
+    "rows": []
+  },
+  "triggering_snapshot": null,
+  "cleanup_snapshots": [
+    {
+      "label": "before_group_kill",
+      "started_seconds": 244.9375161670032,
+      "finished_seconds": 244.95717658405192,
+      "known_groups": [
+        53790
+      ],
+      "discovered_groups": [],
+      "rows": []
+    },
+    {
+      "label": "final",
+      "started_seconds": 244.95721512503223,
+      "finished_seconds": 244.9767544590286,
+      "known_groups": [
+        53790
+      ],
+      "discovered_groups": [],
+      "rows": []
+    }
+  ],
+  "signal_attempts": [
+    {
+      "pgid": 53790,
+      "signal": "SIGSTOP",
+      "attempted_seconds": 244.93750125000952,
+      "result": "not_found",
+      "finished_seconds": 244.93751487502595
+    },
+    {
+      "pgid": 53790,
+      "signal": "SIGKILL",
+      "attempted_seconds": 244.95719316700706,
+      "result": "not_found",
+      "finished_seconds": 244.95721345901256
+    }
+  ],
+  "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+  "exit_code": 1,
+  "termination": null,
+  "wall_seconds": 244.97682808403624,
+  "peak_group_rss_kib": 250800,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "b65eb1d5639970d255b6aa00f9d737d534f16b0bb16e2a51644ed587b415b400"
+  },
+  "output_sha256": "3968bcc6cb1c34786b0a1d9dae2659ebb26dd18d21a88ec5bbba127f7342ef5a"
+}

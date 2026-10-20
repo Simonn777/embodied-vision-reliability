@@ -1,0 +1,131 @@
+{
+  "schema": "evr0029.exit-checked-operation.v1",
+  "status": "failed",
+  "command": [
+    "$PYTHON",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "$REPOSITORY/experiments/0035-transformation-support/acquire.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+    "--metadata-root",
+    "$PRIVATE",
+    "--manifest-relative",
+    "experiments/0035-transformation-support/proposed-manifest-v2.json",
+    "--admission-relative",
+    "experiments/0035-transformation-support/acquisition-admission.json",
+    "--output-dir",
+    "$PRIVATE/0035-transformation-support/rgb-acquisition-01",
+    "--phase",
+    "rgb",
+    "--initial-dir",
+    "$PRIVATE/0035-transformation-support/initial-acquisition-01",
+    "--initial-inspection",
+    "$PRIVATE/0035-transformation-support/initial-inspection-01/receipt.json",
+    "--initial-inspection-outer",
+    "$PRIVATE/0035-transformation-support/initial-inspection-supervision-01/receipt.json"
+  ],
+  "spec_sha256": "c9ecd0c26781184ddda5396fa3bfc0b605cff2c3b9ce73b6bc51f39e82fb4776",
+  "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "child_pid": 49744,
+  "declared_child_pgid": 49744,
+  "observed_child_pgid": 49744,
+  "pgid_observation_error": null,
+  "exit_observed_at_seconds": 359.58179416600615,
+  "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+  "pre_poll_snapshot": {
+    "label": "before_poll",
+    "started_seconds": 359.5563047080068,
+    "finished_seconds": 359.58178041601786,
+    "known_groups": [
+      49744
+    ],
+    "discovered_groups": [
+      49744
+    ],
+    "rows": [
+      [
+        49744,
+        49733,
+        49744,
+        0
+      ]
+    ]
+  },
+  "post_exit_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 359.58179483300773,
+    "finished_seconds": 359.60253541596467,
+    "known_groups": [
+      49744
+    ],
+    "discovered_groups": [],
+    "rows": []
+  },
+  "triggering_snapshot": null,
+  "cleanup_snapshots": [
+    {
+      "label": "before_group_kill",
+      "started_seconds": 359.602575582976,
+      "finished_seconds": 359.62189775001025,
+      "known_groups": [
+        49744
+      ],
+      "discovered_groups": [],
+      "rows": []
+    },
+    {
+      "label": "final",
+      "started_seconds": 359.6219269579742,
+      "finished_seconds": 359.64134049997665,
+      "known_groups": [
+        49744
+      ],
+      "discovered_groups": [],
+      "rows": []
+    }
+  ],
+  "signal_attempts": [
+    {
+      "pgid": 49744,
+      "signal": "SIGSTOP",
+      "attempted_seconds": 359.60255733301165,
+      "result": "not_found",
+      "finished_seconds": 359.60257433296647
+    },
+    {
+      "pgid": 49744,
+      "signal": "SIGKILL",
+      "attempted_seconds": 359.6219114579726,
+      "result": "not_found",
+      "finished_seconds": 359.62192508298904
+    }
+  ],
+  "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+  "exit_code": 1,
+  "termination": null,
+  "wall_seconds": 359.6414199999999,
+  "peak_group_rss_kib": 251040,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "d0a39b7c8ddcc638fa25314da5b3c34406a4301aa777b9e60c0095564a761d1a"
+  },
+  "output_sha256": "6cc84b6c40a1d0bc4255478e13516b66b6dc314c07a33fc165268f472c4d5a9d"
+}

@@ -96,6 +96,13 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0034-relative-rgb/test_features.py -v
           PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0034-relative-rgb/test_metrics.py -v
+      - name: Check transformation transport barriers and metrics on manufactured inputs
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/test_acquire.py -v
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/test_admit.py -v
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/test_metrics.py -v
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/recovery/test_recover_rgb.py -v
+          PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0035-transformation-support/metric-transport/test_reuse_https.py -v
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'

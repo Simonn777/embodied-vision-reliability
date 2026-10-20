@@ -1,0 +1,44 @@
+{
+  "amendment": "Test fixture alone now uses actual public Torch O-by-1 float32 bilinear rounding for saved producer logits; production source and exact parity unchanged.",
+  "command": [
+    "${WORKSPACE}/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "-v",
+    "test_evaluate.EvaluateTests.test_initial_single_bank_duplicates_only_for_composition",
+    "test_evaluate.EvaluateTests.test_rebuild_original_slot_order_with_competition",
+    "test_evaluate.EvaluateTests.test_saved_map_and_native_parity_corruption_are_errors"
+  ],
+  "cwd": "${WORKSPACE}/work/0035-transformation-support",
+  "environment": {
+    "MKL_NUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4"
+  },
+  "error": null,
+  "exit_code": 0,
+  "log_sha256": {
+    "stderr.log": "b5366234741b2f2354aa2b769ac9c68b7e68bfa8e6f61a54e3d8c55de8b28ca9",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "manufactured_only": true,
+  "model_calls": 0,
+  "peak_children_rss_bytes_macos": 229752832,
+  "schema": "evr0035.manufactured-tests.v1",
+  "scientific_data_access": false,
+  "scope": "three affected reconstruction tests only; other three passed in first run",
+  "source_sha256": {
+    "evaluate.py": "89cba63ce32fb260d43edcd06722b61df90072b2a420932329e1ead4f87050cd",
+    "metrics.py": "9693affa0f9f1d842d97cebdb10a0f6ab8808c84e522e1be57b453a6e6efeec4",
+    "test_evaluate.py": "104be878354904d2df22b74924c351f00f103e3c21d9da6cae0f7369ebc655f9"
+  },
+  "source_unchanged": true,
+  "status": "completed",
+  "timeout_seconds": 180,
+  "wall_seconds": 1.0993992909789085
+}

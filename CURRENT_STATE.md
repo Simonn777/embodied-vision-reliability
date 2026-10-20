@@ -1,6 +1,16 @@
 # Current state
 
-## Current: fixed relative-RGB screen failed; exact recipe closed
+## Current: support screen passes; a new method remains unproven
+
+The [complete 0035 results](results/0035-development/complete-01/README.md) retain all 446 raw frames, six arms and both void policies. Native J/Jtr is **44.3324994 / 24.1167225%**; fixed union reaches **48.6004894 / 31.3383185%**, changes of **+4.2679900 / +7.2215959 pp**. Union improves guava, clothing and film but worsens onion J by 16.1220367 pp. All four complete clips remain in the comparison. The mean gain does not establish consistent transfer or innovation.
+
+The privileged support ceiling O reaches 60.4942916 / 35.6775156%; native-support cleanup O_B reaches 46.7998235 / 24.6684281%. Extra support O minus O_B is 13.6944681 J / 11.0090874 Jtr pp. O remains 11.8938022 / 4.3391971 pp above the strongest real control. Exactly three of four clips have at least one extra Jtr point. All seven fixed numerical clauses pass. Evaluation finishes cleanly in 45.538240667 s at 722,496 KiB, with 446 native/composition parities, 446 annotation decodes and zero model or network calls. Independent saved-text arithmetic review confirms all populations, both-policy aggregates within 1.67e-16 and all seven clauses. One auditor-only command-display error is preserved and separately corrected; no scientific operation was rerun. A pass only permits a separately scoped realizable verifier with ordinary same-information learning, union and reverse-consistency controls.
+
+The [sealed prediction bundle](results/0035-execution/prediction-01/README.md) records all 446 frames, all initial objects and four real arms before any noninitial GT decode. Its complete operation costs 686.546369958 s at 3,217,040 KiB. The original 70 computational sources remain unchanged. The separate HTTPS annotation adapter is frozen at 4051d9f (CI 39470010645 passed); complete 442-file acquisition costs 2,800,853 response-body bytes and 119.879112292 s with no retries. Earlier two RGB failures and the metric failure remain failed. The conservative acquisition balance is 908,590,729 bytes, retaining every hold without refund.
+
+Primary pinned-author J/Jtr counts 255 as background; void-ignore sensitivity is separate. F was not computed. Neither analysis replaces the unchanged two-independent-source official J&F manuscript gate. Four TRAIN clips and unresolved raw-recording independence cannot establish held-out transfer. Closest-prior review has not established innovation. The goal remains unachieved; no paper.
+
+## Historical: fixed relative-RGB screen failed; exact recipe closed
 
 The [complete 0034 evidence](results/0034-development/complete-01/README.md) retains all 40 fits, 80 terminal/trace JSONs, four fold-specific normalizations, 232 prediction archives / 2,552 masks, 232 metric rows and all fixed controls. The primary cross-fit uses 224 interior frames of four permanently exposed TRAIN parents, with equal-parent weighting. All TRAIN labels are loaded for use by the appropriate other-parent fits; no fold fits its own held parent's labels. This computational exclusion is not a fresh confirmatory partition. No current DEV payload or final-test access occurred.
 

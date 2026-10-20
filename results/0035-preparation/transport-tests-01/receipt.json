@@ -1,0 +1,36 @@
+{
+  "schema": "evr0035.manufactured-test-execution.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "-B",
+    "-S",
+    "-Werror",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "${WORKSPACE}/work/0035-transformation-support",
+    "-p",
+    "test_acquire.py",
+    "-v"
+  ],
+  "source_sha256": {
+    "acquire.py": "15721353ae1fd1231e356d3f05db4d22aaebf58c7ce6dfe8757be587906c5ffc",
+    "test_acquire.py": "805588cb499fc6298ea67d030778472a7769fac003e74d9b739f318bbfc0c577"
+  },
+  "model_calls": 0,
+  "network_calls": 0,
+  "scientific_payload_reads": 0,
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "wall_seconds": 0.087944417,
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "4584073b646845d6a714b8a0fa257c5c4b610f75c5fcd28dc2801d9de6f02daa"
+  },
+  "source_sha256_after": {
+    "acquire.py": "15721353ae1fd1231e356d3f05db4d22aaebf58c7ce6dfe8757be587906c5ffc",
+    "test_acquire.py": "805588cb499fc6298ea67d030778472a7769fac003e74d9b739f318bbfc0c577"
+  }
+}
