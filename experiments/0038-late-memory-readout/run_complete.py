@@ -1,8 +1,9 @@
 """Source-prepared, single-operation D38 prediction -> seal -> evaluation.
 
 CLI: qualified Python -B -S run_complete.py SPEC.json. This file does not grant
-execution permission. The default and maximum accepted complete-operation limit
-is 1800 seconds; no subdivision, retry or optimized/compressed implementation.
+execution permission. Default limit is1800 seconds; only the user's one named
+operation may use3600 via the bound resource exception. No subdivision, retry
+or optimized/compressed implementation.
 Only the supplied first annotations are decoded during prediction. Existing GT
 bytes may be hashed by the old admission before the offline guard; their labels
 are decoded by evaluate_complete only after the immutable 446-frame seal.
@@ -432,8 +433,8 @@ def run(spec_path):
     out, common_path = Path(spec["output"]).absolute(), Path(spec["common_path"]).resolve()
     sources = spec["source_sha256"]
     limit = spec.get("operation_wall_seconds", 1800)
-    require(type(limit) in (int, float) and math.isfinite(limit) and 0 < limit <= 1800,
-            "complete operation remains limited to 1800 seconds")
+    require(type(limit) in (int, float) and math.isfinite(limit) and 0 < limit <= 3600,
+            "complete operation limit must be finite and at most 3600 seconds")
     require(type(spec["max_output_bytes"]) is int and 16 * 1024**2 <= spec["max_output_bytes"] <= 2 * 1024**3,
             "bounded complete generated output cap")
     require(spec.get("seed", 0) == 0 and spec.get("identity_fastpath", False) is False,
@@ -448,6 +449,11 @@ def run(spec_path):
     require(sha(common_path) == COMMON_SHA and sha(here / "runtime_adapter.py") == ADAPTER_SHA and
             sha(here / "operators.py") == OPERATORS_SHA, "unchanged qualified runtime/operators")
     require(all(Path(p).is_absolute() and sha(p) == h for p, h in sources.items()), "all source bindings")
+    authorization = None
+    if limit > 1800:
+        for filename in ("resource_limit.py", "resource-authorization-01.json", "RESOURCE_EXCEPTION.md"):
+            require(str(here / filename) in sources, "complete resource-exception source closure")
+        authorization = module("d38_complete_resource_limit", here / "resource_limit.py").admit(spec)
     require(not out.exists(), "fresh single-operation output")
     out.mkdir(parents=True)
     common = module("d38_complete_common", common_path)
@@ -455,6 +461,7 @@ def run(spec_path):
         scientific_eligible=False, clean_outer_required=True, output=str(out), spec_sha256=spec_hash,
         source_sha256=sources, monotonic_start=time.perf_counter(), operation_wall_seconds=limit,
         max_output_bytes=spec["max_output_bytes"], bytes_written=0, partial_output_bytes=0,
+        resource_exception=authorization,
         phase="admission", current_action=None, warnings=[], offline_attempts=[], compatibility_probes=[],
         rows=[], sequences=[], outputs=[], arms=list(ARMS), completed_frames=0, completed_sequences=0,
         initial_label_decodes=0, noninitial_label_decodes=0, eligible_side_frames=0,
@@ -512,7 +519,7 @@ def run(spec_path):
         record["phase_seconds"]["preseal_rechecks"] = time.perf_counter() - began
         snapshot = {key: record[key] for key in ("spec_sha256", "source_sha256", "bindings", "data_index", "rows",
             "sequences", "outputs", "arms", "completed_frames", "completed_sequences", "initial_label_decodes",
-            "noninitial_label_decodes", "calls", "logical_work", "model_initial_hash", "model_final_hash")}
+            "noninitial_label_decodes", "calls", "logical_work", "model_initial_hash", "model_final_hash", "resource_exception")}
         snapshot.update(schema="evr0038.complete-prediction.v1", status="completed", frames=446,
                         bitorder="big", prediction_inputs="current/past RGB and supplied initial masks only")
         common.save(out / "prediction-receipt.json", snapshot)

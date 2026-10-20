@@ -1,5 +1,9 @@
 # Current state
 
+## Current: user authorized one complete 60-minute D38 operation
+
+The user directly approved "允许这一次最多 60 分钟" on October20. [The bound exception](experiments/0038-late-memory-readout/RESOURCE_EXCEPTION.md) applies only to d38-complete-01, retaining four CPU threads,8GiB group RSS, zero additional fees/acquisition and all four clips/nine arms. A separate supervisor preserves the original process-monitor/cleanup logic and historical supervisor. Manufactured resource-boundary checks and exact-source CI precede the complete launch. Scientific methods, controls, scoring and paper gate are unchanged. No D38 scientific result exists yet.
+
 ## Current: complete comparison program prepared; resource exception not granted
 
 [The complete program and manufactured evidence](results/0038-preparation/complete-program-01/README.md) now preserve all four clips and nine arms, exact native output/state checks, an immutable pre-GT prediction seal and unchanged dual-policy scoring. All 40 manufactured tests pass under the qualified interpreter; clean outer cost is 1.812834042s / 248336KiB. Source a587b6f includes explicit rejection of unadmitted prepared specifications. The prepared complete spec binds 93 source files and remains launch_admitted=false. No new scientific prediction or score exists.
