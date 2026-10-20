@@ -1,6 +1,13 @@
 # Next actions
 
-## Current: freeze and execute the separate complete technical replication
+## Current: publish the failed 0029 result and select a distinct information question
+
+1. Publish the complete audited six-video result and verify exact result/main CI. Preserve original attempt01, the failed Linux CI and the first publication-metadata failure. No result or cost is replaced by a successful subset.
+2. Keep the fixed B/D1/D3 instantaneous deletion variant closed. Its admissible oracle gain is only0.076821points; do not tune ages, witnesses, thresholds, targets or cohort to rescue it. The same-information controls and all six negative strongest-control margins remain visible.
+3. Reassess prior failures, available observations and resource feasibility before implementing another candidate. The screened joint-ownership formulation is not admitted. Require a specific information advantage over strong controls and a cheap prospective necessary test, not a renamed known construction or a harder cohort for the closed method.
+4. Keep the substantial two-independent-source held-out gate, complete-cost controls, uncertainty, ablations and independent replication before a manuscript. No study log, audit, source review or negative diagnostic completes the user's goal.
+
+## Historical: freeze and execute the separate complete technical replication
 
 1. Preserve attempt01 unchanged and its verified publication. No old prediction may supply the new primary result; the old failure remains technically ineligible.
 2. Complete publication of the reviewed [new execution contract](protocols/0029-native-technical-replication.md), qualified supervisor, all-six v2 proof/GT admission and byte-identical-science checks. Preserve CI39389319650's Linux failure and the test-only Darwin/portable-case correction. Require new exact-source CI, then freeze six fresh specifications and output roots under that one new commit; retain superseded unexecuted ce3 specifications.

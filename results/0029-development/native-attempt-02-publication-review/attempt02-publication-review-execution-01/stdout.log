@@ -1,0 +1,40 @@
+{
+  "schema": "evr0029.publication-review.v1",
+  "status": "FAIL",
+  "checks": 3611,
+  "issues": [
+    {
+      "check": "declared subtree reconstruction.attempt01-reference.json",
+      "detail": "Declared JSON pointer must reproduce published subtree; constructed summaries require their own derivation."
+    }
+  ],
+  "notes": [],
+  "package_manifest_sha256": "201eb7e8165f27c7f4cad7e9e18534509ead7b644661e6fe452592d8ed93c319",
+  "script_sha256": "99298c2bcb374bbf17919e0343a6b8b38ea3da653590c0dbee763d334f8a1d5e",
+  "listed_files": 74,
+  "total_public_files": 75,
+  "original_text_files_checked": 68,
+  "csv_counts": {
+    "methods": 13,
+    "sequences": 6,
+    "queries": 48,
+    "deployed_outcomes": 624,
+    "gates": 5,
+    "headroom": 7,
+    "operations": 15
+  },
+  "gate": {
+    "pass": false,
+    "coverage": true,
+    "candidate_information": false,
+    "pooled_selection": false,
+    "four_positive_videos": false,
+    "no_video_below_minus_002": true
+  },
+  "signed_gain": -0.0004775942002370748,
+  "candidate_gain": 0.0007682091392624546,
+  "old_executed_video_seconds": 603.5777694589924,
+  "new_video_seconds": 882.0525028338889,
+  "all_listed_executed_outer_seconds": 1557.1740790848853,
+  "scope": "Text/scalar reconstruction only; no study imports, NPZ, GT image decode, model or numerical pipeline rerun."
+}

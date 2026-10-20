@@ -1,6 +1,14 @@
 # Current state
 
-## Current work: test-only platform correction; replication awaits CI
+## Current result: 0029 fixed memory-deletion diagnostic failed and closed
+
+The [complete six-video replication](results/0029-development/native-attempt-02/README.md) gives signed fixed-query J93.923162% versus baseline93.935668% and the strongest predicted-IoU control93.970921% (signed margin−0.047759percentage points). Even admissible oracle deletion gains only0.076821points against the required2; none of six per-video margins is positive. Three numerical efficacy conditions fail. The [independent audit](results/0029-development/native-attempt-02/audit/receipt.json) passes12,463checks/0errors. All386frames/48queries/606native calls and complete costs are preserved; attempt01 stays ineligible and separate.
+
+The [closure decision](docs/0029-closure.md) forbids rescue tuning or held-out expansion of this fixed variant. [Saved diagnosis](docs/0029-saved-mechanism-review.md) finds28actions,13improvements and15losses, with insufficient candidate headroom. [Joint object ownership](docs/0029-successor-source-review.md) was separately screened and is not admitted because its present formulation duplicates close priors. A materially different evidence-backed mechanism is still needed. No substantial held-out improvement or manuscript; the main goal remains unmet.
+
+The first publication check found one incorrect provenance description for a constructed historical summary; a metadata-only correction preserves the initial failure and all scientific values. The narrow second check passes180checks, with73payload files unchanged. Source098dee CI39390638932 preceded the scientific replication; result publication CI remains to be verified.
+
+## Historical preparation: test-only platform correction; replication awaits CI
 
 Exact-source CI39389319650 failed two actual-process tests on Linux. The [preserved failure and test-only correction](results/0029-preparation/supervisor-platform-qualification/README.md) scope actual process qualification to Darwin and add two portable controlled cases; all four focused local tests pass. Production supervision/scientific sources and gates are unchanged. No new video operation or query GT has run. Require new exact-source CI before the complete technical replication.
 

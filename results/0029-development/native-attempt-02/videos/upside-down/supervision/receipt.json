@@ -1,0 +1,103 @@
+{
+  "schema": "evr0029.exit-checked-operation.v1",
+  "status": "completed",
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "$REPOSITORY/experiments/0029-memory-information/run_video.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "098dee64878b5ef33edbac12223f86da176e091e",
+    "--evidence-root",
+    "$PRIVATE/0029-davis-development-01/evidence",
+    "--evidence-spec",
+    "$PRIVATE/0029-davis-development-01/evidence-spec.json",
+    "--evidence-commit",
+    "c09e240009869402e2b97a55af42617eea3c6405",
+    "--qualification-root",
+    "$PRIVATE/0029-native-video-qualification-01/qualification",
+    "--qualification-spec",
+    "$PRIVATE/0029-native-video-qualification-01/spec.json",
+    "--qualification-commit",
+    "ec94d0927fcd2779f702e161550d9a3e87303d6f",
+    "--sequence",
+    "upside-down",
+    "--output-dir",
+    "$PRIVATE/0029-native-development-02/upside-down/video"
+  ],
+  "spec_sha256": "07732d57c6bcde4395ba434686d0420aa90e74d936a555d03e9b77d15b89558c",
+  "supervisor_sha256": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "098dee64878b5ef33edbac12223f86da176e091e",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "child_pid": 60748,
+  "declared_child_pgid": 60748,
+  "observed_child_pgid": 60748,
+  "pgid_observation_error": null,
+  "exit_observed_at_seconds": 153.79195458302274,
+  "exit_observation_scope": "First successful poll/wait observation, not kernel exit timestamp",
+  "pre_poll_snapshot": {
+    "label": "before_poll",
+    "started_seconds": 153.77007087500533,
+    "finished_seconds": 153.79194391699275,
+    "known_groups": [
+      60748
+    ],
+    "discovered_groups": [
+      60748
+    ],
+    "rows": [
+      [
+        60748,
+        60737,
+        60748,
+        0
+      ]
+    ]
+  },
+  "post_exit_snapshot": {
+    "label": "after_exit_observed",
+    "started_seconds": 153.79195525002433,
+    "finished_seconds": 153.81076812499668,
+    "known_groups": [
+      60748
+    ],
+    "discovered_groups": [],
+    "rows": []
+  },
+  "triggering_snapshot": null,
+  "cleanup_snapshots": [
+    {
+      "label": "final",
+      "started_seconds": 153.81077629199717,
+      "finished_seconds": 153.8284243749804,
+      "known_groups": [
+        60748
+      ],
+      "discovered_groups": [],
+      "rows": []
+    }
+  ],
+  "signal_attempts": [],
+  "sampling_scope": "Unchanged 0025c PID/PPID/PGID/RSS samples; no process STAT or start-time identity",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 153.82849037501728,
+  "peak_group_rss_kib": 4048592,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "93972112d2e975db4d6b60e5501f3e20efc2c46cef0182e21408502dc51e0bda",
+    "stderr.log": "8c68df86da93fa76acae603b254034b67d65b5d24c1b92b7087290fd5c6a8052"
+  },
+  "output_sha256": "c861b23f9e15f3cee07c2b10208f2b66481781622f94aeb1ffbc9e27ebf2f229"
+}
