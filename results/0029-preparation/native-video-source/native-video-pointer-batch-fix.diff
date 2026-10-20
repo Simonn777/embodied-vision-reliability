@@ -1,0 +1,78 @@
+--- work/0029-preparation/native_video-before-pointer-batch-fix.py	2026-10-20 02:38:10
++++ work/0029-preparation/native_video.py	2026-10-20 02:38:43
+@@ -87,7 +87,8 @@
+     The pinned case is forward, one immutable cond0, seven spatial slots and
+     stride one. Pointer positions retain native num_frames normalization. The
+     position projection is evaluated for the ACTUAL pointer batch, including
+-    reset's singleton batch; cross-reset bit identity is not assumed.
++    reset's singleton batch; cross-batch projected-position bit identity is
++    not assumed, including deletion branches with fewer pointer rows.
+     """
+     from sam2.modeling.sam2_utils import get_1d_sine_pe
+     cond, noncond = outputs["cond_frame_outputs"], outputs["non_cond_frame_outputs"]
+@@ -114,9 +115,13 @@
+             end = cursor + values.shape[0]
+             require(torch.equal(memory[cursor:end], values), "carrier feature mismatch")
+             require(torch.equal(position[cursor:end], pos), "carrier position mismatch")
+-            blocks.append(dict(kind=kind, frame=source, start=cursor, end=end,
+-                               values_sha256=tensor_hash(memory[cursor:end], torch),
+-                               position_sha256=tensor_hash(position[cursor:end], torch)))
++            item = dict(kind=kind, frame=source, start=cursor, end=end,
++                        values_sha256=tensor_hash(memory[cursor:end], torch),
++                        position_sha256=tensor_hash(position[cursor:end], torch))
++            if kind == "pointer":
++                item.update(temporal_distance=frame - source,
++                            temporal_distance_denominator=pointer_limit - 1)
++            blocks.append(item)
+             cursor = end
+ 
+         for source, temporal_position in spatial:
+@@ -144,21 +149,44 @@
+                            pointer_frames=pointers, pointer_limit=pointer_limit,
+                            pointer_distance_denominator=pointer_limit - 1,
+                            num_obj_ptr_tokens=kwargs["num_obj_ptr_tokens"],
+-                           total_tokens=cursor, blocks=blocks))
++                           total_tokens=cursor, blocks=blocks, actual_batch_formula_exact=True))
+     return hook
+ 
+ 
+ def compare_deleted_trace(full, branch, removed):
++    require(all(full[key] == branch[key] for key in
++                ("frame", "num_frames", "pointer_limit", "pointer_distance_denominator"))
++            and full["actual_batch_formula_exact"] is True
++            and branch["actual_batch_formula_exact"] is True,
++            "deletion changed native temporal coordinates or batch-formula verification")
+     old = {(x["kind"], x["frame"]): x for x in full["blocks"]}
+     new = {(x["kind"], x["frame"]): x for x in branch["blocks"]}
+     require(set(new) == {key for key in old if key[1] != removed},
+             "deleted frame not removed from both carriers, or backfill occurred")
++    position_differences = []
+     for key, item in new.items():
+-        require(all(item[k] == old[key][k] for k in ("values_sha256", "position_sha256")),
+-                "retained deletion-branch carrier changed")
++        require(item["values_sha256"] == old[key]["values_sha256"],
++                "retained deletion-branch carrier features changed")
++        if key[0] == "spatial":
++            require(item["position_sha256"] == old[key]["position_sha256"],
++                    "retained spatial position changed")
++        else:
++            require(all(item[k] == old[key][k] for k in
++                        ("temporal_distance", "temporal_distance_denominator")),
++                    "retained pointer temporal coordinates changed")
++            if item["position_sha256"] != old[key]["position_sha256"]:
++                position_differences.append(dict(frame=key[1],
++                    full_position_sha256=old[key]["position_sha256"],
++                    branch_position_sha256=item["position_sha256"],
++                    temporal_distance=item["temporal_distance"],
++                    temporal_distance_denominator=item["temporal_distance_denominator"]))
+     return dict(removed_frame=removed, consumed_in_full=any(k[1] == removed for k in old),
+                 removed_kinds=[kind for kind in ("spatial", "pointer") if (kind, removed) in old],
+-                retained_carriers_exact=True, no_backfill=True)
++                retained_features_exact=True, retained_spatial_positions_exact=True,
++                retained_pointer_temporal_coordinates_exact=True,
++                actual_batch_formulas_exact=True, no_backfill=True,
++                pointer_position_cross_batch_differences=position_differences,
++                pointer_position_comparison_scope="descriptive; projected bit identity is not required")
+ 
+ 
+ def run(inputs, output, record):

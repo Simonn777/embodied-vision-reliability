@@ -1,0 +1,28 @@
+{
+  "repo": "$REPO",
+  "commit": "3822758a2d3bbc2d471a87be4ecb6059e3395d05",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": ""
+  },
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "experiments/0029-memory-information",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "operation_output": "$PRIVATE/0029-preparation/integrated-native-video-tests-01/supervision"
+}

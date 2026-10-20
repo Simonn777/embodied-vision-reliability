@@ -1,0 +1,59 @@
+{
+  "schema": "evr0029.fake-test-receipt.v1",
+  "status": "completed",
+  "manufactured_only": true,
+  "scientific_data_access": false,
+  "model_calls": 0,
+  "command": [
+    "env",
+    "OMP_NUM_THREADS=4",
+    "OPENBLAS_NUM_THREADS=4",
+    "MKL_NUM_THREADS=4",
+    "VECLIB_MAXIMUM_THREADS=4",
+    "NUMEXPR_NUM_THREADS=4",
+    "work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "work/0029-preparation",
+    "-p",
+    "test_run_evaluation.py",
+    "-v"
+  ],
+  "cwd": "$USER/Documents/Codex/2026-10-19/80-cvpr-cvpr-github-cvpr-github",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "source_sha256_before": {
+    "run_evaluation.py": "2ed77267f20e2e14fa164503d2926a37c12e0f898b07926134dc7a855f9d7ef1",
+    "test_run_evaluation.py": "96405c2668ef5ac707d240aed5b4d221033fcf845f041d37a97375198ee0e5e1",
+    "test_evaluate_queries.py": "c0310b2d50464f235e9f4370c26ddcaf5842fca837de89f29651b0c43a3a97e0",
+    "evaluate_queries.py": "272ae306b0f80573d3350d892cefbc13cf9df5a06d89b6188ee9c86584c5237f",
+    "diagnostic_core.py": "4c76bdb492bef0507b4322be67a2a157ec34c420bfacb874388b1f7facef0c34",
+    "evaluation-source-review.md": "26c12314f386215a83928020ed88e9fadda0be1fe8542d76827cbe9de41d22a0"
+  },
+  "timeout_seconds": 1800,
+  "resource_scope": "Peak direct-child RSS observed; no native runtime or resource qualification.",
+  "exit_code": 0,
+  "wall_seconds": 0.202850167,
+  "peak_child_rss_bytes": 45875200,
+  "source_sha256_after": {
+    "run_evaluation.py": "2ed77267f20e2e14fa164503d2926a37c12e0f898b07926134dc7a855f9d7ef1",
+    "test_run_evaluation.py": "96405c2668ef5ac707d240aed5b4d221033fcf845f041d37a97375198ee0e5e1",
+    "test_evaluate_queries.py": "c0310b2d50464f235e9f4370c26ddcaf5842fca837de89f29651b0c43a3a97e0",
+    "evaluate_queries.py": "272ae306b0f80573d3350d892cefbc13cf9df5a06d89b6188ee9c86584c5237f",
+    "diagnostic_core.py": "4c76bdb492bef0507b4322be67a2a157ec34c420bfacb874388b1f7facef0c34",
+    "evaluation-source-review.md": "26c12314f386215a83928020ed88e9fadda0be1fe8542d76827cbe9de41d22a0"
+  },
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "4bb8e32ebb1ae6c7c8c5de4754a268eb99696482d65551873d7c8eb91fa7d2a9"
+  },
+  "sources_unchanged": true
+}

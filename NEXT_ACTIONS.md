@@ -2,7 +2,7 @@
 
 ## Current: qualify complete native controls, then test actual segmentation
 
-1. Publish and verify the [complete evidence result](results/0029-development/evidence/README.md), exact result CI and merged-main CI. Retain every original acquisition/prediction/audit receipt; no repeat downloads or matching. All6 videos passed the fixed necessary coverage gate, with38/48 actionable queries.
+1. Preserve the [complete evidence result](results/0029-development/evidence/README.md) and [verified result/main CI](docs/0029-evidence-publication-verification.md). Retain every original acquisition/prediction/audit receipt; no repeat downloads or matching. All6 videos passed the fixed necessary coverage gate, with38/48 actionable queries.
 2. Preserve the immutable first-stage source/protocol at c09e240009869402e2b97a55af42617eea3c6405. Complete/freeze the separate native-video worker,25-frame manufactured qualification, all same-evidence controls, six prediction seals, GT barrier and evaluator. Require review and exact-source CI before native qualification and scientific SAM; no query GT before all six complete clean predictions.
 3. Run every complete video and all48 fixed queries once under the original resource/control limits. Evaluate only after all predictions are sealed. Preserve necessary oracle headroom and signed-versus-strong-control numerical gates; no cohort, age, point or threshold rescue tuning.
 4. No manuscript before innovative, reproducible +3 absolute J&F on each of two independent held-out sources, complete-cost strong controls, recording-level uncertainty, ablations and replication. This availability pass is not accuracy improvement.

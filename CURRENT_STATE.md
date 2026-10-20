@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: 0029 real-video evidence coverage passes; accuracy untested
+## Current work: 0029 full native comparison source prepared
+
+The [separate second-stage contract](protocols/0029-native-video-comparison.md) preserves the immutable first-stage cohort and rules, and prepares the complete baseline-history SAM comparison, native-bank/prompt/reset controls,25-frame manufactured qualification, all-six prediction seals and post-seal evaluation. The completed evidence screen remains38/48 across6/6videos; [its publication/main CI are verified](docs/0029-evidence-publication-verification.md). New native qualification and scientific segmentation have not run. Complete source review, manufactured tests and exact-source CI precede execution. No accuracy improvement or manuscript.
+
+## Historical: 0029 real-video evidence coverage passes; accuracy untested
 
 The [complete first-stage result](results/0029-development/evidence/README.md) has38 actionable queries out of48, across all6 fixed development videos (3/8/8/8/8/3). All54SP extractions and48LG matches completed; independent saved-output audit passed77,458checks. Acquisition read54,228,671bytes and computation took27.674457s under the outer limit. The six parents are permanent development. This is an evidence-availability result; no scientific SAM predictions or query GT were accessed, and no accuracy improvement is established. Next qualify/freeze the complete native comparison, mandatory controls and all-six GT barrier. No manuscript.
 

@@ -1,0 +1,44 @@
+{
+  "schema": "evr0029.fake-video-admission-tests.v1",
+  "status": "completed",
+  "exit_code": 0,
+  "termination": null,
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "work/0029-preparation",
+    "-p",
+    "test_run_video.py",
+    "-v"
+  ],
+  "cwd": "$USER/Documents/Codex/2026-10-19/80-cvpr-cvpr-github-cvpr-github",
+  "wall_seconds": 0.1972476250375621,
+  "peak_child_rss_bytes": 30916608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "source_sha256_before": {
+    "run_video.py": "2521aed76de6a769df27d449498907589fea862f8f3fb378940c007bc9b0b8da",
+    "test_run_video.py": "ff692976cfc0568cfe01272b8339a0117677b3b90316d52b36354fdfb43ff665",
+    "qualify_native_video.py": "dc40d641d353d13af7bf0198c853c4b8c548ec5d10ec7cf09ba683292cf6de59"
+  },
+  "source_sha256_after": {
+    "run_video.py": "2521aed76de6a769df27d449498907589fea862f8f3fb378940c007bc9b0b8da",
+    "test_run_video.py": "ff692976cfc0568cfe01272b8339a0117677b3b90316d52b36354fdfb43ff665",
+    "qualify_native_video.py": "dc40d641d353d13af7bf0198c853c4b8c548ec5d10ec7cf09ba683292cf6de59"
+  },
+  "source_unchanged": true,
+  "scope": "stdlib fake bytes and mocked admission/runtime only; no network, media decode, model or scientific calls",
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "e4e09a73a8bc7cfbeab9f710d7e8de9407f1fed88dd73b9af6b80b648eb1456d"
+  }
+}
