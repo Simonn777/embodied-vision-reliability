@@ -1,0 +1,25 @@
+{
+  "repo": "$TASK/work/embodied-vision-reliability",
+  "commit": "7896599ee0f99643f482cc72dd7f5f35940bf189",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "$TASK/work/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "$TASK/work/0030-memory-content/evaluation/evaluate_rollout.py",
+    "$TASK/work/0030-memory-content/active-write-diagnostic/evaluate-01-spec.json"
+  ],
+  "operation_output": "$TASK/work/0030-memory-content/active-write-diagnostic/evaluate-01-supervision",
+  "result_file": "$TASK/work/0030-memory-content/active-write-diagnostic/evaluate-01/receipt.json"
+}

@@ -1,0 +1,54 @@
+{
+  "bundle": "$TASK/work/0030-memory-content/publication-direct-complete-01",
+  "manifest_sha256": "3732238f1c5434ce2a5e85f044c7a5ec25b4d7ff39ae7f304e6df9027bfb3e0c",
+  "summary_sha256": "44da7e75612a2a7223f1af4f8941b6bb533411a599ee5a434d83ddfada8d34bb",
+  "decision_references": {
+    "native": {
+      "path": "$TASK/work/0030-memory-content/campaign/evaluate-native-rho015-seed0-01/evaluation.json",
+      "sha256": "dc56acc9c1c00d03646b6b9ce35580813239ac171f3d58f9d25f2ef42b49cc68"
+    },
+    "gt_memory": {
+      "path": "$TASK/work/0030-memory-content/campaign/evaluate-gt_memory-rho015-seed0-01/evaluation.json",
+      "sha256": "59451f4b5b21277d0c37ebbc1784dd5a64d605a5d2ffaec38fa16999fd36d92c"
+    }
+  },
+  "initial_twelve_operations_outer_seconds": 1630.789068333921,
+  "prior_seven_operations_outer_seconds": 2720.611594792106,
+  "historical_cache_and_evaluation_costs": {
+    "bundle": "$TASK/work/0030-memory-content/publication-baseline",
+    "original_summary_sha256": "2c079c6d1b7a21f8ff616d5cc473ba3e4fcc432748939c14b8d15dac9f46639c",
+    "original_bindings_sha256": "754355823102cec3a4dc2d16f02dffb516093ad975b7661f4042de85475ff3e5",
+    "attempts": [
+      {
+        "attempt": "01",
+        "status": "failed",
+        "error_type": "KeyError",
+        "error": "'signal_attempts'",
+        "inner_seconds": 0.0024826250155456364,
+        "outer_seconds": 0.3393173750373535,
+        "peak_rss_kib": 41232,
+        "exit_code": 1,
+        "evaluation_sha256": null
+      },
+      {
+        "attempt": "02",
+        "status": "completed",
+        "error_type": null,
+        "error": null,
+        "inner_seconds": 0.7158262919983827,
+        "outer_seconds": 0.9313110830262303,
+        "peak_rss_kib": 72960,
+        "exit_code": 0,
+        "evaluation_sha256": "dc56acc9c1c00d03646b6b9ce35580813239ac171f3d58f9d25f2ef42b49cc68"
+      }
+    ],
+    "cache_cost": {
+      "wall_seconds": 458.30076425000004,
+      "peak_group_rss_kib": 4672848,
+      "status": "completed",
+      "exit_code": 0
+    },
+    "note": "Existing bundle retains both original evaluation attempts, including failure 01 and all its cost. Not recopied here."
+  },
+  "failed_evaluator_attempt_reference": "Initial bundle baseline-bundle-reference.json, transitively bound by prior bundle"
+}

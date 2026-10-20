@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: complete the separately admitted all-active-write iteration
+## Current: publish the fixed closure and assess a distinct boundary observable
 
-1. Publish the [completed full-GT-memory replay](results/0030-development/full-gt-write-01/README.md), retaining its +0.2611 TRAIN J&F pp, all 96 contexts and complete cost. Preserve the six-arm DEV results, the +0.3276 saved-teacher TRAIN replay and all prior failures. Neither privileged replay is causal deployment or an upper bound.
-2. Finish the one currently running [all-active-write direct fit](experiments/0030-memory-content/active-write-diagnostic/ADMISSION.md) under four threads/8 GiB and its actual complete-fit budget of 1,168.509588667017 seconds. Require a clean eligible completion, then use only its final checkpoint in the unchanged complete two-parent own-rollout/evaluator. Keep all checkpoints, costs and outcomes; report no provisional efficacy from live training losses.
-3. Apply the rule fixed before this fit: exceed current-GT-memory pooled DEV J&F and improve over native on each DEV parent. If either requirement fails, close further KD/rho exploration of this exact global-statistics/channel-affine family; a distinct successor needs an explicit new scope. If both pass, repeat the same comparison with seed 1 before protected data. Additional active write contexts are a stated intervention confound, not proof of one causal explanation.
-4. Keep the substantial two-independent-source +3 official J&F gate, recording-level uncertainty, component-loss limits, strong complete-cost controls, ablations and independent replication before a manuscript. Same-seed prefixes, source checks and small TRAIN gains do not satisfy it.
+1. Publish the [complete seven-arm result](results/0030-development/active-write-01/README.md), preserving all earlier negative arms, small TRAIN gains, checkpoints, failures and costs. All-active's +0.2233 mean J&F points include one losing parent and fail the predeclared continuation rule. Verify PR67 result/main CI separately from [completed PR66 verification](docs/0030-pr66-publication-verification.md).
+2. Keep further KD/rho exploration and seed-1 continuation of this exact global-statistics/channel-affine family closed. Do not reinterpret its +0.0094-point mean margin over GT-memory as satisfying the missing two-parent condition. The closure is specific to this family and comparison, not a theorem against learned memory methods.
+3. Use the [saved native error-location analysis](results/0030-development/output-error-analysis-01/README.md) to motivate only a distinct, explicitly scoped TRAIN paired-boundary information screen. Preparation is underway; no new head or scientific outcome is available. GT boundary concentration is descriptive, not a deployment observable or guaranteed repair headroom; keep all fixed events and strong same-information controls.
+4. Preserve the substantial two-independent-source +3 official J&F gate, recording-level uncertainty, component-loss limits, strong complete-cost controls, ablations and independent replication before a manuscript. Source checks, small exposed-DEV gains and privileged TRAIN diagnostics do not meet the research goal.
 
 ## Historical: publish the failed 0029 result and select a distinct information question
 
