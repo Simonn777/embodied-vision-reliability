@@ -1,0 +1,45 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "$REPOSITORY/experiments/0029-memory-information/qualify.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+    "--installation",
+    "$PRIVATE/0029-runtime-02/installation",
+    "--installation-supervision",
+    "$PRIVATE/0029-runtime-02/installation-supervision/receipt.json",
+    "--installation-spec",
+    "$PRIVATE/0029-runtime-02/installation-spec.json",
+    "--output-dir",
+    "$PRIVATE/0029-runtime-02/qualification"
+  ],
+  "spec_sha256": "9d367f396c65e66813ced560bb5cf4218c8c5901e197841594990478b1ff23e0",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 37.009692541032564,
+  "peak_group_rss_kib": 2674368,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "fbfa9e6e8e3bba0fde4b482807a3e8204bb5a95007e09ab48e2ed9b751c28413",
+    "stderr.log": "319170cbcea4dc57eb559ec42d7328a850c3aec358c869abd00a9e8f287921f5"
+  },
+  "output_sha256": "f1b3024fbbd7cc0a7a94d2fecd4400dacc32c8edf51fafd0d7dc4dc8d08a7570"
+}

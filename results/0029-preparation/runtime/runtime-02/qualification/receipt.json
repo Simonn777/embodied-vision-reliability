@@ -1,0 +1,5434 @@
+{
+  "schema": "evr0029.native-qualification.v1",
+  "status": "completed",
+  "eligible": true,
+  "expected_commit": "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+  "scientific_input_access": false,
+  "warnings": [],
+  "offline_attempts": [],
+  "compatibility_probes": [],
+  "timings": {},
+  "wall_seconds": 36.65921704197535,
+  "source_sha256": {
+    "experiments/0029-memory-information/qualify.py": "408848bef4fcab06ca42f724b87936d59be5abb58e9f076f81d7c8df7739d160",
+    "experiments/0029-memory-information/native_fixture.py": "4e20a61150407c575eedff41309281923f9a4b57fa3f34609153e645dde7ad5f",
+    "experiments/0029-memory-information/install_runtime.py": "ae7f222122f24c69d909e735e6212f21f28640b1f96c1c0670ac48cb6c72a306",
+    "protocols/0029-native-runtime.md": "041af28ccbddd6ba4a45afb5679280f96e28c017308768c39f8f31a183df5cd5",
+    "configs/0029-sdist-build-review.json": "710138a7813afb32db8d1a9688aa979758c61b3ad5ebe11b0b85f1d6303450ff",
+    "experiments/0022-frontend/qualify.py": "174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e",
+    "configs/0029-sam2-assets.json": "27e57398a4d62e6dc31c8b3a89d9d2ea9b309baad8f204416c29588292cc1b12",
+    "configs/0029-runtime-assets.json": "f2e7e7b6d5a12cda87bb5512f9e0a3b7cc018a1b1b8f1c25ef5525f4041226cd",
+    "configs/0022-source-model-assets.json": "30d4474b3372c8cea8aed86f67620425146303c0fae52b652b37062936691944",
+    "configs/0022-wheel-assets.json": "fc8bea8344e061857dbf025f80915f8d757a18a2f960a92d490349cbb12d0f14",
+    "experiments/0027-affine-tangent/supervise.py": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+    "experiments/0025c-rs-noise/supervise.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd"
+  },
+  "installation_bindings": {
+    "receipt_sha256": "bad95faf8079618e05007e1369d89b76b493bdb5d6847de560ea524daca835e4",
+    "supervision_sha256": "7955793bed404e71d552787ccdd5438e99cb27f82edbfc7a472d07ed3e0bb7a9",
+    "spec_sha256": "e002fe2c7ef8d647e94e7e77a0219578606c1702c3bb544b1cb9d5cd4288b0bf",
+    "inventory_entries": 17602
+  },
+  "offline_guard_scope": "Python audit events; not an OS sandbox for arbitrary native calls",
+  "native_fixture": {
+    "schema": "evr0029.native-fixture.v1",
+    "status": "completed",
+    "manufactured_only": true,
+    "warnings": [],
+    "timings": [
+      {
+        "stage": "imports",
+        "status": "completed",
+        "seconds": 12.516284042038023
+      },
+      {
+        "stage": "execution_configuration",
+        "status": "completed",
+        "seconds": 0.0014488330343738198
+      },
+      {
+        "stage": "strict_native_loading",
+        "status": "completed",
+        "seconds": 0.2093620410305448
+      },
+      {
+        "stage": "manufactured_jpeg_inputs",
+        "status": "completed",
+        "seconds": 0.12485812499653548
+      },
+      {
+        "stage": "native_init_state",
+        "status": "completed",
+        "seconds": 0.7079167499905452
+      },
+      {
+        "stage": "native_initial_mask",
+        "status": "completed",
+        "seconds": 0.028721584007143974
+      },
+      {
+        "stage": "native_baseline_frame_0",
+        "status": "completed",
+        "seconds": 0.05460966698592529
+      },
+      {
+        "stage": "native_baseline_frame_1",
+        "status": "completed",
+        "seconds": 1.048299833026249
+      },
+      {
+        "stage": "native_baseline_frame_2",
+        "status": "completed",
+        "seconds": 0.8601197079988196
+      },
+      {
+        "stage": "native_baseline_frame_3",
+        "status": "completed",
+        "seconds": 0.9232837919844314
+      },
+      {
+        "stage": "native_baseline_frame_4",
+        "status": "completed",
+        "seconds": 0.9725897909956984
+      },
+      {
+        "stage": "native_baseline_frame_5",
+        "status": "completed",
+        "seconds": 1.094852834008634
+      },
+      {
+        "stage": "native_baseline_frame_6",
+        "status": "completed",
+        "seconds": 1.1403378340182826
+      },
+      {
+        "stage": "native_baseline_frame_7",
+        "status": "completed",
+        "seconds": 1.1696977500105277
+      },
+      {
+        "stage": "native_baseline_frame_8",
+        "status": "completed",
+        "seconds": 1.2131918329978362
+      },
+      {
+        "stage": "probe_0_full",
+        "status": "completed",
+        "seconds": 0.961401709006168
+      },
+      {
+        "stage": "probe_1_remove_6",
+        "status": "completed",
+        "seconds": 0.8993683330481872
+      },
+      {
+        "stage": "probe_2_remove_4",
+        "status": "completed",
+        "seconds": 0.8854956250288524
+      },
+      {
+        "stage": "probe_3_remove_4",
+        "status": "completed",
+        "seconds": 0.8909432499785908
+      },
+      {
+        "stage": "probe_4_remove_6",
+        "status": "completed",
+        "seconds": 0.8806751249940135
+      },
+      {
+        "stage": "probe_5_full",
+        "status": "completed",
+        "seconds": 0.9534199589979835
+      },
+      {
+        "stage": "current_point_prompt",
+        "status": "completed",
+        "seconds": 0.6241304999566637
+      },
+      {
+        "stage": "initial_memory_only_and_prompt",
+        "status": "completed",
+        "seconds": 0.621008999994956
+      },
+      {
+        "stage": "native_same_history_video_decoder_bank",
+        "status": "completed",
+        "seconds": 0.7933585419668816
+      },
+      {
+        "stage": "native_future_frame_8_after_discarded_probes",
+        "status": "completed",
+        "seconds": 1.431294042035006
+      },
+      {
+        "stage": "strict_sp_lg_loading",
+        "status": "completed",
+        "seconds": 0.10754250001627952
+      },
+      {
+        "stage": "superpoint_frame_0",
+        "status": "completed",
+        "seconds": 0.382214458019007
+      },
+      {
+        "stage": "superpoint_frame_8",
+        "status": "completed",
+        "seconds": 0.26196929201250896
+      },
+      {
+        "stage": "lightglue_first_last",
+        "status": "completed",
+        "seconds": 0.017759667010977864
+      }
+    ],
+    "outputs": [
+      {
+        "filename": "initial-mask.npz",
+        "sha256": "49aedd71bdf9fbf190c4630cd022a440a8e54948a0eb309061152a7c1bc2d767",
+        "bytes": 196870,
+        "arrays": {
+          "mask": {
+            "shape": [
+              384,
+              512
+            ],
+            "dtype": "bool",
+            "raw_c_order_sha256": "069bbb34e410f6da751f99c245fc16a1bfabba4d53a0a4016ea4f5f67c8eedf9"
+          }
+        }
+      },
+      {
+        "filename": "initial-prompt.npz",
+        "sha256": "77a4bd2238dfafbf67878a15a9e71d4d7fcf2d36c2f97373569183672c9dfb3b",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "27546d87bc915d3278151bde3f9b85c5766142b34e035aae184a2dd9108e7748"
+          }
+        }
+      },
+      {
+        "filename": "baseline-00.npz",
+        "sha256": "77a4bd2238dfafbf67878a15a9e71d4d7fcf2d36c2f97373569183672c9dfb3b",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "27546d87bc915d3278151bde3f9b85c5766142b34e035aae184a2dd9108e7748"
+          }
+        }
+      },
+      {
+        "filename": "baseline-01.npz",
+        "sha256": "a7f523b7b719b5c736749632b2fcba696ca580f3bd019b500ffecbd620f5970f",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "8ab22bb4cf09de2847271cb67768d9f9f65a54904cd3a9daf306e13434a7047b"
+          }
+        }
+      },
+      {
+        "filename": "baseline-02.npz",
+        "sha256": "15dee8a1bd3150eecf0f2246ce658d4a52aa83b2ad92dea6eec3b387e66d6b26",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "fe9898954c330e5172264cd3e51d66a7e1e7e0c1c9fe01e5b0a7da6e1f0103cb"
+          }
+        }
+      },
+      {
+        "filename": "baseline-03.npz",
+        "sha256": "787ff04f2685ec1337b22f0bee309973a77626ff2743e2442153f5abb5e756de",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "5c08ba6a93a5b7278e0ecd741e89f0301cae94a35cd40f944ea1df3edef2be5e"
+          }
+        }
+      },
+      {
+        "filename": "baseline-04.npz",
+        "sha256": "21bc4dc83785e55e66a764ae17fee31ad689aebfa574e45e6d808aa96e3e932e",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "95cf63b87a697f69d1eec463692490c70f875adab8052220fafbd181ee67a5b8"
+          }
+        }
+      },
+      {
+        "filename": "baseline-05.npz",
+        "sha256": "710e14dbc0a40a0d391b072b851552e0ba1eedfb8f82a5c5dc5bcb593c0ae071",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "ba185558cf8d934066ea4ab499124b6b8fc6ef4cf62b840b143e0631d41e7f1b"
+          }
+        }
+      },
+      {
+        "filename": "baseline-06.npz",
+        "sha256": "abc38aa4db8503d6106d22755924903983803cd5f4c4b72b47936fcc20170680",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "799dac35346e30523b6dec5fa77f4d3bec6c2a2b243411aca83f2a2814bdb0ff"
+          }
+        }
+      },
+      {
+        "filename": "baseline-07.npz",
+        "sha256": "981071fb79a5efe585f85a5edd444c6aac383a1fa9006c79e760e97d454d791f",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "11f298bcc6b44c0b847e233f13c33437cbafefef0ca84c5a797f61ddf943feb0"
+          }
+        }
+      },
+      {
+        "filename": "baseline-08.npz",
+        "sha256": "de49dfe416fddb9bcdacdc2ed5b763c779c2df7f5656fafd4a107d308537cf21",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "aac63d30c46c74a0e9d581ff7dcabc76baf75eeb882b9e0fc227b087ee44ddad"
+          }
+        }
+      },
+      {
+        "filename": "probe-0-full.npz",
+        "sha256": "981071fb79a5efe585f85a5edd444c6aac383a1fa9006c79e760e97d454d791f",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "11f298bcc6b44c0b847e233f13c33437cbafefef0ca84c5a797f61ddf943feb0"
+          }
+        }
+      },
+      {
+        "filename": "probe-1-remove_6.npz",
+        "sha256": "9db7f3aea311cad2718c0107619405584bfc37ccb18118d564ccb9985a32a084",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "2077a510f7516181ed435f9e5ac0480d3e1eb38508763c77db9c6f6aab2ce370"
+          }
+        }
+      },
+      {
+        "filename": "probe-2-remove_4.npz",
+        "sha256": "a2b459e2f0ea725cdee793e7a8a23f8ada90818cf15188b42ff8a10030fc4792",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "49c211d29100554df559354fcb93cd58cf359a9aaed7540635e025bc5b47f0e4"
+          }
+        }
+      },
+      {
+        "filename": "probe-3-remove_4.npz",
+        "sha256": "a2b459e2f0ea725cdee793e7a8a23f8ada90818cf15188b42ff8a10030fc4792",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "49c211d29100554df559354fcb93cd58cf359a9aaed7540635e025bc5b47f0e4"
+          }
+        }
+      },
+      {
+        "filename": "probe-4-remove_6.npz",
+        "sha256": "9db7f3aea311cad2718c0107619405584bfc37ccb18118d564ccb9985a32a084",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "2077a510f7516181ed435f9e5ac0480d3e1eb38508763c77db9c6f6aab2ce370"
+          }
+        }
+      },
+      {
+        "filename": "probe-5-full.npz",
+        "sha256": "981071fb79a5efe585f85a5edd444c6aac383a1fa9006c79e760e97d454d791f",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "11f298bcc6b44c0b847e233f13c33437cbafefef0ca84c5a797f61ddf943feb0"
+          }
+        }
+      },
+      {
+        "filename": "current-point-prompt.npz",
+        "sha256": "f43874b29c7fd9f545767a007a261a65f66c1f2ea913a53012f1f9e3e99eb43d",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "aebde57589b92f9de7e8317f41c9aaa8212b7d610468d70703fef8b56e3f47df"
+          }
+        }
+      },
+      {
+        "filename": "initial-memory-point-prompt.npz",
+        "sha256": "d534baa9a1a82c5a9677fca6afffd658c87b107cbe55f0478fc1e082f3b9572c",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "f7d68cc2263db42c2d1b30fdbc705da740b612b5873999ae764d9fed8ee3bedb"
+          }
+        }
+      },
+      {
+        "filename": "native-video-decoder-bank.npz",
+        "sha256": "1c48c780f61daceb3d8fede8292483ec69b3cf16d66b6181b5129a220a7a7292",
+        "bytes": 20975100,
+        "arrays": {
+          "low_resolution_logits": {
+            "shape": [
+              1,
+              3,
+              256,
+              256
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "c354ba994a55306547004be757165156cd3e62ce23f476fa3b0008ebbe89877b"
+          },
+          "high_resolution_logits": {
+            "shape": [
+              1,
+              3,
+              1024,
+              1024
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "f53ee759a1680eb02a17d0195cfb95557fd5d9b7628539677ffcff0ca625fd91"
+          },
+          "original_resolution_logits": {
+            "shape": [
+              1,
+              3,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "7a2a930a21fa3ac10bda7579e4273880982ab2593559f49e867e87875023a1ea"
+          },
+          "predicted_quality": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "70ecce78ccc88e9e54ea182d5af5431647c0184080b1d4da187aa1b3d1122131"
+          },
+          "selected_low_resolution_logits": {
+            "shape": [
+              1,
+              1,
+              256,
+              256
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "20a8909bb6ba1c543ed8d680d17a8a69b0aaa82667adc9f33d3a4ed5c1d36a42"
+          },
+          "selected_high_resolution_logits": {
+            "shape": [
+              1,
+              1,
+              1024,
+              1024
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "2ba0b9e76900035be463fdb4bcd31b62edeeedcf002f33b4b2b8faaf908d6d99"
+          },
+          "selected_original_resolution_logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "11f298bcc6b44c0b847e233f13c33437cbafefef0ca84c5a797f61ddf943feb0"
+          },
+          "object_pointer": {
+            "shape": [
+              1,
+              256
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "b8518eb1dcdd78ecd81bb0e93b430cead310087293ccbff8d147576268061d49"
+          },
+          "object_score_logits": {
+            "shape": [
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "45a81038f51dc8c950573225329bb3f7295a944daea4e04421ff14144efc8727"
+          }
+        }
+      },
+      {
+        "filename": "future-after-probes-08.npz",
+        "sha256": "de49dfe416fddb9bcdacdc2ed5b763c779c2df7f5656fafd4a107d308537cf21",
+        "bytes": 786698,
+        "arrays": {
+          "logits": {
+            "shape": [
+              1,
+              1,
+              384,
+              512
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "aac63d30c46c74a0e9d581ff7dcabc76baf75eeb882b9e0fc227b087ee44ddad"
+          }
+        }
+      },
+      {
+        "filename": "features-0.npz",
+        "sha256": "ee7968da7cc63ee099a1d25a2279d41a79bbe73cfae6ac26f06055c2ab8e5fab",
+        "bytes": 87036,
+        "arrays": {
+          "keypoints": {
+            "shape": [
+              1,
+              83,
+              2
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "f958d9e4bb498943e5b973c6407a9f5fca2d1cc909f6d10ef590fe6a47e43fa4"
+          },
+          "keypoint_scores": {
+            "shape": [
+              1,
+              83
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "1a5dfd0898c9d7ac7dec0973a37a2d8670364839e8eb415001db6a628f2f9bc2"
+          },
+          "descriptors": {
+            "shape": [
+              1,
+              83,
+              256
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "347c3694cf8ba3e16d2bedda92262895f3879bf1c2109d78ea279bd785d3b423"
+          },
+          "image_size": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "bdaf4c9a6fe939089028943d64129e0680e35d3ebcf28cbd95724ea814d69588"
+          }
+        }
+      },
+      {
+        "filename": "features-8.npz",
+        "sha256": "2469b3fad8c83fef68188f5e0ac3abc4127a211f31bdde1690578fb586a21fe3",
+        "bytes": 108792,
+        "arrays": {
+          "keypoints": {
+            "shape": [
+              1,
+              104,
+              2
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "d8a8e54296fc49aaead520e50e4fbc070f103728deedd4c75dba497155766bf0"
+          },
+          "keypoint_scores": {
+            "shape": [
+              1,
+              104
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "531deab254fbddaae28abe25de1aa6c4763dc99a33e87ee66c51718b675c1a46"
+          },
+          "descriptors": {
+            "shape": [
+              1,
+              104,
+              256
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "aff46bbb427cda676d335130aa2bb4125fbbc41dca70af3f4e0da78e27a06ca8"
+          },
+          "image_size": {
+            "shape": [
+              1,
+              2
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "bdaf4c9a6fe939089028943d64129e0680e35d3ebcf28cbd95724ea814d69588"
+          }
+        }
+      },
+      {
+        "filename": "first-last-matches.npz",
+        "sha256": "d4fa8149a9844befa063cb4a53aa1f6b74c7623a197681fd9f1b1f1a04504c96",
+        "bytes": 6644,
+        "arrays": {
+          "matches0": {
+            "shape": [
+              1,
+              83
+            ],
+            "dtype": "int64",
+            "raw_c_order_sha256": "b436a7857cff05f5818e442f0f8055d82a0a879a36ff9e4a59c139be325f7ea5"
+          },
+          "matches1": {
+            "shape": [
+              1,
+              104
+            ],
+            "dtype": "int64",
+            "raw_c_order_sha256": "9679e4d8d4fe0a90eb9bc54718398a9e26bb9a0726fde280a1434c1a38e4724e"
+          },
+          "matching_scores0": {
+            "shape": [
+              1,
+              83
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "2ac804072f1c6a84e62b14a613b03f761b47f418eada65ae0d8b52511f127a4a"
+          },
+          "matching_scores1": {
+            "shape": [
+              1,
+              104
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "02a759a159f9403438a02c908a12a13856e1a82d621dafd1da260ce5c2561008"
+          },
+          "matches": {
+            "shape": [
+              69,
+              2
+            ],
+            "dtype": "int64",
+            "raw_c_order_sha256": "55fba262574b809decae91034ff445106376e4e42a7c93f3ee5560ed376d73e3"
+          },
+          "scores": {
+            "shape": [
+              69
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "3a5c251f7b193043c3dacf94206f09b85384bd342267ba9963e5f08c9ab0c119"
+          },
+          "prune0": {
+            "shape": [
+              1,
+              83
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "393a3f03fcde6dcafbfaf4daaf2ecf23b6fc175a523d37ebf8e114e396bf50f2"
+          },
+          "prune1": {
+            "shape": [
+              1,
+              104
+            ],
+            "dtype": "float32",
+            "raw_c_order_sha256": "128846340e5043ade417b2297278d9e002b714a3d22ec25c43d88d0df4a0020e"
+          },
+          "stop": {
+            "shape": [],
+            "dtype": "int64",
+            "raw_c_order_sha256": "cbbd5f990c53684d7ae650b40fcb5656e02261b53da5f6a7d8c819c92f2828f8"
+          }
+        }
+      }
+    ],
+    "baseline": [
+      {
+        "frame": 0,
+        "output": "baseline-00.npz"
+      },
+      {
+        "frame": 1,
+        "output": "baseline-01.npz"
+      },
+      {
+        "frame": 2,
+        "output": "baseline-02.npz"
+      },
+      {
+        "frame": 3,
+        "output": "baseline-03.npz"
+      },
+      {
+        "frame": 4,
+        "output": "baseline-04.npz"
+      },
+      {
+        "frame": 5,
+        "output": "baseline-05.npz"
+      },
+      {
+        "frame": 6,
+        "output": "baseline-06.npz"
+      },
+      {
+        "frame": 7,
+        "output": "baseline-07.npz"
+      },
+      {
+        "frame": 8,
+        "output": "baseline-08.npz"
+      }
+    ],
+    "probes": [
+      {
+        "order": 0,
+        "removed_frame": null,
+        "output": "probe-0-full.npz",
+        "trace": {
+          "spatial_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pointer_frames": [
+            0,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "num_obj_ptr_tokens": 28,
+          "total_tokens": 28700,
+          "blocks": [
+            {
+              "kind": "spatial",
+              "frame": 0,
+              "start": 0,
+              "end": 4096,
+              "values_sha256": "037841ca36d17f4686c210523bea3886d666f4e6db33b17b0d2b216f1dae69d4",
+              "position_sha256": "d3a5bbc15fbcf46839f595f49d9190d5eab018a408cd13a8a17acc2891d8689b"
+            },
+            {
+              "kind": "spatial",
+              "frame": 1,
+              "start": 4096,
+              "end": 8192,
+              "values_sha256": "e87ab1f46b623c6868582be3ee211dd680068c2264ea0c49f9b05412c5b45a32",
+              "position_sha256": "7d0acc2ba52483a4c3517052fa5dac05aa9f8b8b32c737d32655aa6e94ccb59f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 2,
+              "start": 8192,
+              "end": 12288,
+              "values_sha256": "977068c29069cd654fe3be40dee7edfb49914bb3c77766f54e21f330a8cbda3c",
+              "position_sha256": "b4c33ec8a69e72b2738ddbd00de018ceb44e9b9039ae7de4a910c0aa431603f0"
+            },
+            {
+              "kind": "spatial",
+              "frame": 3,
+              "start": 12288,
+              "end": 16384,
+              "values_sha256": "cf553bafe79b5f58623eeb8c8e695da683aedf8d11ddf9833cd6c18577031d1f",
+              "position_sha256": "d5b85296201ee78df15ed41b02a27cb20d11d0f96597ebd086cd0989c9945830"
+            },
+            {
+              "kind": "spatial",
+              "frame": 4,
+              "start": 16384,
+              "end": 20480,
+              "values_sha256": "3658d1c9fd4063e5ab2df49f78981251ec9607bbe44ece64c841e15b6b1c8224",
+              "position_sha256": "3416bbe549f424363be3a228bdacbca986634c08b709efb5608f73b4b2c4d471"
+            },
+            {
+              "kind": "spatial",
+              "frame": 5,
+              "start": 20480,
+              "end": 24576,
+              "values_sha256": "8c7e508f87cc9bbfe3f11f8d3f355745326df88161a5bbedd574f9e21065cec6",
+              "position_sha256": "57e9234ff9a6b9ebcebc1786e7136dcf99a412e1c829f335f2ab29c77a80232f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 6,
+              "start": 24576,
+              "end": 28672,
+              "values_sha256": "7c209552ba71237d54d53131f14b6ff78c717181b77530032097e915c8538053",
+              "position_sha256": "7671f6e281f6adca36fe26a61c76033770ca444ee8b0d2fd3cf0e7221fe05b3b"
+            },
+            {
+              "kind": "pointer",
+              "frame": 0,
+              "start": 28672,
+              "end": 28676,
+              "values_sha256": "2bdc26c596ae8917ac70c0ac4a97d0fd2a83a620373ae090c833b27ccab0adc5",
+              "position_sha256": "291e63ff793ffad08a0bc6c91bdb28088d40195c6315430411ae92cfc34bf050"
+            },
+            {
+              "kind": "pointer",
+              "frame": 6,
+              "start": 28676,
+              "end": 28680,
+              "values_sha256": "5d29db25226efd7744f0ba85ccf1615036c855d89e948fa13923488b683e57dd",
+              "position_sha256": "dc9654fef691896d07ba1811a28d6b865321eead504328afe0e5ef19b1394c36"
+            },
+            {
+              "kind": "pointer",
+              "frame": 5,
+              "start": 28680,
+              "end": 28684,
+              "values_sha256": "5b53744c10bff33ccf054fb4b37f3a22c855e13d6126af399870deb4f45bc184",
+              "position_sha256": "d2fa059643bd1c1e9be572009c75fa39f719a002a432c9d4605fd1d73a004f58"
+            },
+            {
+              "kind": "pointer",
+              "frame": 4,
+              "start": 28684,
+              "end": 28688,
+              "values_sha256": "b7b336e60330c9f72459ac378e53b204bfb3788ebb00d4bfbe37ab2de307b427",
+              "position_sha256": "76598a0453908d1d1634dfaf0a3162cb81580b8fee2d46d7b86b3efd9d66d66d"
+            },
+            {
+              "kind": "pointer",
+              "frame": 3,
+              "start": 28688,
+              "end": 28692,
+              "values_sha256": "1763ed42a3d6426a4c4a2e9da027a86f0a63a4b43fc9d6bdf1d4923fab98391d",
+              "position_sha256": "309e1d3a08e9bca380476cec404680254ff8a6360c34115244ca0165e1a61d2f"
+            },
+            {
+              "kind": "pointer",
+              "frame": 2,
+              "start": 28692,
+              "end": 28696,
+              "values_sha256": "40194b7abf4db1b57f5b5a46572fa0874f762e914b5628e75d466d517de0d7a7",
+              "position_sha256": "f5cef0e49c209db6efcdb1019415bf1fc490de4899893f6a4cc8dd819c214d95"
+            },
+            {
+              "kind": "pointer",
+              "frame": 1,
+              "start": 28696,
+              "end": 28700,
+              "values_sha256": "8c9aafe479d6614a8244ab3c3274a1bcbb9cd49b9ce729cdaf78aaff9b139c45",
+              "position_sha256": "e882a7f1bd63b10c246be14ed9637423828ab92b8796d25b97e4c81579f9b775"
+            }
+          ]
+        },
+        "status": "completed",
+        "exact_parity": true,
+        "maximum_absolute_parity_error": 0.0,
+        "state_unchanged": true
+      },
+      {
+        "order": 1,
+        "removed_frame": 6,
+        "output": "probe-1-remove_6.npz",
+        "trace": {
+          "spatial_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "pointer_frames": [
+            0,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "num_obj_ptr_tokens": 24,
+          "total_tokens": 24600,
+          "blocks": [
+            {
+              "kind": "spatial",
+              "frame": 0,
+              "start": 0,
+              "end": 4096,
+              "values_sha256": "037841ca36d17f4686c210523bea3886d666f4e6db33b17b0d2b216f1dae69d4",
+              "position_sha256": "d3a5bbc15fbcf46839f595f49d9190d5eab018a408cd13a8a17acc2891d8689b"
+            },
+            {
+              "kind": "spatial",
+              "frame": 1,
+              "start": 4096,
+              "end": 8192,
+              "values_sha256": "e87ab1f46b623c6868582be3ee211dd680068c2264ea0c49f9b05412c5b45a32",
+              "position_sha256": "7d0acc2ba52483a4c3517052fa5dac05aa9f8b8b32c737d32655aa6e94ccb59f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 2,
+              "start": 8192,
+              "end": 12288,
+              "values_sha256": "977068c29069cd654fe3be40dee7edfb49914bb3c77766f54e21f330a8cbda3c",
+              "position_sha256": "b4c33ec8a69e72b2738ddbd00de018ceb44e9b9039ae7de4a910c0aa431603f0"
+            },
+            {
+              "kind": "spatial",
+              "frame": 3,
+              "start": 12288,
+              "end": 16384,
+              "values_sha256": "cf553bafe79b5f58623eeb8c8e695da683aedf8d11ddf9833cd6c18577031d1f",
+              "position_sha256": "d5b85296201ee78df15ed41b02a27cb20d11d0f96597ebd086cd0989c9945830"
+            },
+            {
+              "kind": "spatial",
+              "frame": 4,
+              "start": 16384,
+              "end": 20480,
+              "values_sha256": "3658d1c9fd4063e5ab2df49f78981251ec9607bbe44ece64c841e15b6b1c8224",
+              "position_sha256": "3416bbe549f424363be3a228bdacbca986634c08b709efb5608f73b4b2c4d471"
+            },
+            {
+              "kind": "spatial",
+              "frame": 5,
+              "start": 20480,
+              "end": 24576,
+              "values_sha256": "8c7e508f87cc9bbfe3f11f8d3f355745326df88161a5bbedd574f9e21065cec6",
+              "position_sha256": "57e9234ff9a6b9ebcebc1786e7136dcf99a412e1c829f335f2ab29c77a80232f"
+            },
+            {
+              "kind": "pointer",
+              "frame": 0,
+              "start": 24576,
+              "end": 24580,
+              "values_sha256": "2bdc26c596ae8917ac70c0ac4a97d0fd2a83a620373ae090c833b27ccab0adc5",
+              "position_sha256": "291e63ff793ffad08a0bc6c91bdb28088d40195c6315430411ae92cfc34bf050"
+            },
+            {
+              "kind": "pointer",
+              "frame": 5,
+              "start": 24580,
+              "end": 24584,
+              "values_sha256": "5b53744c10bff33ccf054fb4b37f3a22c855e13d6126af399870deb4f45bc184",
+              "position_sha256": "d2fa059643bd1c1e9be572009c75fa39f719a002a432c9d4605fd1d73a004f58"
+            },
+            {
+              "kind": "pointer",
+              "frame": 4,
+              "start": 24584,
+              "end": 24588,
+              "values_sha256": "b7b336e60330c9f72459ac378e53b204bfb3788ebb00d4bfbe37ab2de307b427",
+              "position_sha256": "76598a0453908d1d1634dfaf0a3162cb81580b8fee2d46d7b86b3efd9d66d66d"
+            },
+            {
+              "kind": "pointer",
+              "frame": 3,
+              "start": 24588,
+              "end": 24592,
+              "values_sha256": "1763ed42a3d6426a4c4a2e9da027a86f0a63a4b43fc9d6bdf1d4923fab98391d",
+              "position_sha256": "309e1d3a08e9bca380476cec404680254ff8a6360c34115244ca0165e1a61d2f"
+            },
+            {
+              "kind": "pointer",
+              "frame": 2,
+              "start": 24592,
+              "end": 24596,
+              "values_sha256": "40194b7abf4db1b57f5b5a46572fa0874f762e914b5628e75d466d517de0d7a7",
+              "position_sha256": "f5cef0e49c209db6efcdb1019415bf1fc490de4899893f6a4cc8dd819c214d95"
+            },
+            {
+              "kind": "pointer",
+              "frame": 1,
+              "start": 24596,
+              "end": 24600,
+              "values_sha256": "8c9aafe479d6614a8244ab3c3274a1bcbb9cd49b9ce729cdaf78aaff9b139c45",
+              "position_sha256": "e882a7f1bd63b10c246be14ed9637423828ab92b8796d25b97e4c81579f9b775"
+            }
+          ]
+        },
+        "status": "completed",
+        "exact_parity": true,
+        "maximum_absolute_parity_error": 0.0,
+        "state_unchanged": true
+      },
+      {
+        "order": 2,
+        "removed_frame": 4,
+        "output": "probe-2-remove_4.npz",
+        "trace": {
+          "spatial_frames": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "pointer_frames": [
+            0,
+            6,
+            5,
+            3,
+            2,
+            1
+          ],
+          "num_obj_ptr_tokens": 24,
+          "total_tokens": 24600,
+          "blocks": [
+            {
+              "kind": "spatial",
+              "frame": 0,
+              "start": 0,
+              "end": 4096,
+              "values_sha256": "037841ca36d17f4686c210523bea3886d666f4e6db33b17b0d2b216f1dae69d4",
+              "position_sha256": "d3a5bbc15fbcf46839f595f49d9190d5eab018a408cd13a8a17acc2891d8689b"
+            },
+            {
+              "kind": "spatial",
+              "frame": 1,
+              "start": 4096,
+              "end": 8192,
+              "values_sha256": "e87ab1f46b623c6868582be3ee211dd680068c2264ea0c49f9b05412c5b45a32",
+              "position_sha256": "7d0acc2ba52483a4c3517052fa5dac05aa9f8b8b32c737d32655aa6e94ccb59f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 2,
+              "start": 8192,
+              "end": 12288,
+              "values_sha256": "977068c29069cd654fe3be40dee7edfb49914bb3c77766f54e21f330a8cbda3c",
+              "position_sha256": "b4c33ec8a69e72b2738ddbd00de018ceb44e9b9039ae7de4a910c0aa431603f0"
+            },
+            {
+              "kind": "spatial",
+              "frame": 3,
+              "start": 12288,
+              "end": 16384,
+              "values_sha256": "cf553bafe79b5f58623eeb8c8e695da683aedf8d11ddf9833cd6c18577031d1f",
+              "position_sha256": "d5b85296201ee78df15ed41b02a27cb20d11d0f96597ebd086cd0989c9945830"
+            },
+            {
+              "kind": "spatial",
+              "frame": 5,
+              "start": 16384,
+              "end": 20480,
+              "values_sha256": "8c7e508f87cc9bbfe3f11f8d3f355745326df88161a5bbedd574f9e21065cec6",
+              "position_sha256": "57e9234ff9a6b9ebcebc1786e7136dcf99a412e1c829f335f2ab29c77a80232f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 6,
+              "start": 20480,
+              "end": 24576,
+              "values_sha256": "7c209552ba71237d54d53131f14b6ff78c717181b77530032097e915c8538053",
+              "position_sha256": "7671f6e281f6adca36fe26a61c76033770ca444ee8b0d2fd3cf0e7221fe05b3b"
+            },
+            {
+              "kind": "pointer",
+              "frame": 0,
+              "start": 24576,
+              "end": 24580,
+              "values_sha256": "2bdc26c596ae8917ac70c0ac4a97d0fd2a83a620373ae090c833b27ccab0adc5",
+              "position_sha256": "291e63ff793ffad08a0bc6c91bdb28088d40195c6315430411ae92cfc34bf050"
+            },
+            {
+              "kind": "pointer",
+              "frame": 6,
+              "start": 24580,
+              "end": 24584,
+              "values_sha256": "5d29db25226efd7744f0ba85ccf1615036c855d89e948fa13923488b683e57dd",
+              "position_sha256": "dc9654fef691896d07ba1811a28d6b865321eead504328afe0e5ef19b1394c36"
+            },
+            {
+              "kind": "pointer",
+              "frame": 5,
+              "start": 24584,
+              "end": 24588,
+              "values_sha256": "5b53744c10bff33ccf054fb4b37f3a22c855e13d6126af399870deb4f45bc184",
+              "position_sha256": "d2fa059643bd1c1e9be572009c75fa39f719a002a432c9d4605fd1d73a004f58"
+            },
+            {
+              "kind": "pointer",
+              "frame": 3,
+              "start": 24588,
+              "end": 24592,
+              "values_sha256": "1763ed42a3d6426a4c4a2e9da027a86f0a63a4b43fc9d6bdf1d4923fab98391d",
+              "position_sha256": "309e1d3a08e9bca380476cec404680254ff8a6360c34115244ca0165e1a61d2f"
+            },
+            {
+              "kind": "pointer",
+              "frame": 2,
+              "start": 24592,
+              "end": 24596,
+              "values_sha256": "40194b7abf4db1b57f5b5a46572fa0874f762e914b5628e75d466d517de0d7a7",
+              "position_sha256": "f5cef0e49c209db6efcdb1019415bf1fc490de4899893f6a4cc8dd819c214d95"
+            },
+            {
+              "kind": "pointer",
+              "frame": 1,
+              "start": 24596,
+              "end": 24600,
+              "values_sha256": "8c9aafe479d6614a8244ab3c3274a1bcbb9cd49b9ce729cdaf78aaff9b139c45",
+              "position_sha256": "e882a7f1bd63b10c246be14ed9637423828ab92b8796d25b97e4c81579f9b775"
+            }
+          ]
+        },
+        "status": "completed",
+        "exact_parity": true,
+        "maximum_absolute_parity_error": 0.0,
+        "state_unchanged": true
+      },
+      {
+        "order": 3,
+        "removed_frame": 4,
+        "output": "probe-3-remove_4.npz",
+        "trace": {
+          "spatial_frames": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "pointer_frames": [
+            0,
+            6,
+            5,
+            3,
+            2,
+            1
+          ],
+          "num_obj_ptr_tokens": 24,
+          "total_tokens": 24600,
+          "blocks": [
+            {
+              "kind": "spatial",
+              "frame": 0,
+              "start": 0,
+              "end": 4096,
+              "values_sha256": "037841ca36d17f4686c210523bea3886d666f4e6db33b17b0d2b216f1dae69d4",
+              "position_sha256": "d3a5bbc15fbcf46839f595f49d9190d5eab018a408cd13a8a17acc2891d8689b"
+            },
+            {
+              "kind": "spatial",
+              "frame": 1,
+              "start": 4096,
+              "end": 8192,
+              "values_sha256": "e87ab1f46b623c6868582be3ee211dd680068c2264ea0c49f9b05412c5b45a32",
+              "position_sha256": "7d0acc2ba52483a4c3517052fa5dac05aa9f8b8b32c737d32655aa6e94ccb59f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 2,
+              "start": 8192,
+              "end": 12288,
+              "values_sha256": "977068c29069cd654fe3be40dee7edfb49914bb3c77766f54e21f330a8cbda3c",
+              "position_sha256": "b4c33ec8a69e72b2738ddbd00de018ceb44e9b9039ae7de4a910c0aa431603f0"
+            },
+            {
+              "kind": "spatial",
+              "frame": 3,
+              "start": 12288,
+              "end": 16384,
+              "values_sha256": "cf553bafe79b5f58623eeb8c8e695da683aedf8d11ddf9833cd6c18577031d1f",
+              "position_sha256": "d5b85296201ee78df15ed41b02a27cb20d11d0f96597ebd086cd0989c9945830"
+            },
+            {
+              "kind": "spatial",
+              "frame": 5,
+              "start": 16384,
+              "end": 20480,
+              "values_sha256": "8c7e508f87cc9bbfe3f11f8d3f355745326df88161a5bbedd574f9e21065cec6",
+              "position_sha256": "57e9234ff9a6b9ebcebc1786e7136dcf99a412e1c829f335f2ab29c77a80232f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 6,
+              "start": 20480,
+              "end": 24576,
+              "values_sha256": "7c209552ba71237d54d53131f14b6ff78c717181b77530032097e915c8538053",
+              "position_sha256": "7671f6e281f6adca36fe26a61c76033770ca444ee8b0d2fd3cf0e7221fe05b3b"
+            },
+            {
+              "kind": "pointer",
+              "frame": 0,
+              "start": 24576,
+              "end": 24580,
+              "values_sha256": "2bdc26c596ae8917ac70c0ac4a97d0fd2a83a620373ae090c833b27ccab0adc5",
+              "position_sha256": "291e63ff793ffad08a0bc6c91bdb28088d40195c6315430411ae92cfc34bf050"
+            },
+            {
+              "kind": "pointer",
+              "frame": 6,
+              "start": 24580,
+              "end": 24584,
+              "values_sha256": "5d29db25226efd7744f0ba85ccf1615036c855d89e948fa13923488b683e57dd",
+              "position_sha256": "dc9654fef691896d07ba1811a28d6b865321eead504328afe0e5ef19b1394c36"
+            },
+            {
+              "kind": "pointer",
+              "frame": 5,
+              "start": 24584,
+              "end": 24588,
+              "values_sha256": "5b53744c10bff33ccf054fb4b37f3a22c855e13d6126af399870deb4f45bc184",
+              "position_sha256": "d2fa059643bd1c1e9be572009c75fa39f719a002a432c9d4605fd1d73a004f58"
+            },
+            {
+              "kind": "pointer",
+              "frame": 3,
+              "start": 24588,
+              "end": 24592,
+              "values_sha256": "1763ed42a3d6426a4c4a2e9da027a86f0a63a4b43fc9d6bdf1d4923fab98391d",
+              "position_sha256": "309e1d3a08e9bca380476cec404680254ff8a6360c34115244ca0165e1a61d2f"
+            },
+            {
+              "kind": "pointer",
+              "frame": 2,
+              "start": 24592,
+              "end": 24596,
+              "values_sha256": "40194b7abf4db1b57f5b5a46572fa0874f762e914b5628e75d466d517de0d7a7",
+              "position_sha256": "f5cef0e49c209db6efcdb1019415bf1fc490de4899893f6a4cc8dd819c214d95"
+            },
+            {
+              "kind": "pointer",
+              "frame": 1,
+              "start": 24596,
+              "end": 24600,
+              "values_sha256": "8c9aafe479d6614a8244ab3c3274a1bcbb9cd49b9ce729cdaf78aaff9b139c45",
+              "position_sha256": "e882a7f1bd63b10c246be14ed9637423828ab92b8796d25b97e4c81579f9b775"
+            }
+          ]
+        },
+        "status": "completed",
+        "exact_parity": true,
+        "maximum_absolute_parity_error": 0.0,
+        "state_unchanged": true
+      },
+      {
+        "order": 4,
+        "removed_frame": 6,
+        "output": "probe-4-remove_6.npz",
+        "trace": {
+          "spatial_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "pointer_frames": [
+            0,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "num_obj_ptr_tokens": 24,
+          "total_tokens": 24600,
+          "blocks": [
+            {
+              "kind": "spatial",
+              "frame": 0,
+              "start": 0,
+              "end": 4096,
+              "values_sha256": "037841ca36d17f4686c210523bea3886d666f4e6db33b17b0d2b216f1dae69d4",
+              "position_sha256": "d3a5bbc15fbcf46839f595f49d9190d5eab018a408cd13a8a17acc2891d8689b"
+            },
+            {
+              "kind": "spatial",
+              "frame": 1,
+              "start": 4096,
+              "end": 8192,
+              "values_sha256": "e87ab1f46b623c6868582be3ee211dd680068c2264ea0c49f9b05412c5b45a32",
+              "position_sha256": "7d0acc2ba52483a4c3517052fa5dac05aa9f8b8b32c737d32655aa6e94ccb59f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 2,
+              "start": 8192,
+              "end": 12288,
+              "values_sha256": "977068c29069cd654fe3be40dee7edfb49914bb3c77766f54e21f330a8cbda3c",
+              "position_sha256": "b4c33ec8a69e72b2738ddbd00de018ceb44e9b9039ae7de4a910c0aa431603f0"
+            },
+            {
+              "kind": "spatial",
+              "frame": 3,
+              "start": 12288,
+              "end": 16384,
+              "values_sha256": "cf553bafe79b5f58623eeb8c8e695da683aedf8d11ddf9833cd6c18577031d1f",
+              "position_sha256": "d5b85296201ee78df15ed41b02a27cb20d11d0f96597ebd086cd0989c9945830"
+            },
+            {
+              "kind": "spatial",
+              "frame": 4,
+              "start": 16384,
+              "end": 20480,
+              "values_sha256": "3658d1c9fd4063e5ab2df49f78981251ec9607bbe44ece64c841e15b6b1c8224",
+              "position_sha256": "3416bbe549f424363be3a228bdacbca986634c08b709efb5608f73b4b2c4d471"
+            },
+            {
+              "kind": "spatial",
+              "frame": 5,
+              "start": 20480,
+              "end": 24576,
+              "values_sha256": "8c7e508f87cc9bbfe3f11f8d3f355745326df88161a5bbedd574f9e21065cec6",
+              "position_sha256": "57e9234ff9a6b9ebcebc1786e7136dcf99a412e1c829f335f2ab29c77a80232f"
+            },
+            {
+              "kind": "pointer",
+              "frame": 0,
+              "start": 24576,
+              "end": 24580,
+              "values_sha256": "2bdc26c596ae8917ac70c0ac4a97d0fd2a83a620373ae090c833b27ccab0adc5",
+              "position_sha256": "291e63ff793ffad08a0bc6c91bdb28088d40195c6315430411ae92cfc34bf050"
+            },
+            {
+              "kind": "pointer",
+              "frame": 5,
+              "start": 24580,
+              "end": 24584,
+              "values_sha256": "5b53744c10bff33ccf054fb4b37f3a22c855e13d6126af399870deb4f45bc184",
+              "position_sha256": "d2fa059643bd1c1e9be572009c75fa39f719a002a432c9d4605fd1d73a004f58"
+            },
+            {
+              "kind": "pointer",
+              "frame": 4,
+              "start": 24584,
+              "end": 24588,
+              "values_sha256": "b7b336e60330c9f72459ac378e53b204bfb3788ebb00d4bfbe37ab2de307b427",
+              "position_sha256": "76598a0453908d1d1634dfaf0a3162cb81580b8fee2d46d7b86b3efd9d66d66d"
+            },
+            {
+              "kind": "pointer",
+              "frame": 3,
+              "start": 24588,
+              "end": 24592,
+              "values_sha256": "1763ed42a3d6426a4c4a2e9da027a86f0a63a4b43fc9d6bdf1d4923fab98391d",
+              "position_sha256": "309e1d3a08e9bca380476cec404680254ff8a6360c34115244ca0165e1a61d2f"
+            },
+            {
+              "kind": "pointer",
+              "frame": 2,
+              "start": 24592,
+              "end": 24596,
+              "values_sha256": "40194b7abf4db1b57f5b5a46572fa0874f762e914b5628e75d466d517de0d7a7",
+              "position_sha256": "f5cef0e49c209db6efcdb1019415bf1fc490de4899893f6a4cc8dd819c214d95"
+            },
+            {
+              "kind": "pointer",
+              "frame": 1,
+              "start": 24596,
+              "end": 24600,
+              "values_sha256": "8c9aafe479d6614a8244ab3c3274a1bcbb9cd49b9ce729cdaf78aaff9b139c45",
+              "position_sha256": "e882a7f1bd63b10c246be14ed9637423828ab92b8796d25b97e4c81579f9b775"
+            }
+          ]
+        },
+        "status": "completed",
+        "exact_parity": true,
+        "maximum_absolute_parity_error": 0.0,
+        "state_unchanged": true
+      },
+      {
+        "order": 5,
+        "removed_frame": null,
+        "output": "probe-5-full.npz",
+        "trace": {
+          "spatial_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pointer_frames": [
+            0,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "num_obj_ptr_tokens": 28,
+          "total_tokens": 28700,
+          "blocks": [
+            {
+              "kind": "spatial",
+              "frame": 0,
+              "start": 0,
+              "end": 4096,
+              "values_sha256": "037841ca36d17f4686c210523bea3886d666f4e6db33b17b0d2b216f1dae69d4",
+              "position_sha256": "d3a5bbc15fbcf46839f595f49d9190d5eab018a408cd13a8a17acc2891d8689b"
+            },
+            {
+              "kind": "spatial",
+              "frame": 1,
+              "start": 4096,
+              "end": 8192,
+              "values_sha256": "e87ab1f46b623c6868582be3ee211dd680068c2264ea0c49f9b05412c5b45a32",
+              "position_sha256": "7d0acc2ba52483a4c3517052fa5dac05aa9f8b8b32c737d32655aa6e94ccb59f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 2,
+              "start": 8192,
+              "end": 12288,
+              "values_sha256": "977068c29069cd654fe3be40dee7edfb49914bb3c77766f54e21f330a8cbda3c",
+              "position_sha256": "b4c33ec8a69e72b2738ddbd00de018ceb44e9b9039ae7de4a910c0aa431603f0"
+            },
+            {
+              "kind": "spatial",
+              "frame": 3,
+              "start": 12288,
+              "end": 16384,
+              "values_sha256": "cf553bafe79b5f58623eeb8c8e695da683aedf8d11ddf9833cd6c18577031d1f",
+              "position_sha256": "d5b85296201ee78df15ed41b02a27cb20d11d0f96597ebd086cd0989c9945830"
+            },
+            {
+              "kind": "spatial",
+              "frame": 4,
+              "start": 16384,
+              "end": 20480,
+              "values_sha256": "3658d1c9fd4063e5ab2df49f78981251ec9607bbe44ece64c841e15b6b1c8224",
+              "position_sha256": "3416bbe549f424363be3a228bdacbca986634c08b709efb5608f73b4b2c4d471"
+            },
+            {
+              "kind": "spatial",
+              "frame": 5,
+              "start": 20480,
+              "end": 24576,
+              "values_sha256": "8c7e508f87cc9bbfe3f11f8d3f355745326df88161a5bbedd574f9e21065cec6",
+              "position_sha256": "57e9234ff9a6b9ebcebc1786e7136dcf99a412e1c829f335f2ab29c77a80232f"
+            },
+            {
+              "kind": "spatial",
+              "frame": 6,
+              "start": 24576,
+              "end": 28672,
+              "values_sha256": "7c209552ba71237d54d53131f14b6ff78c717181b77530032097e915c8538053",
+              "position_sha256": "7671f6e281f6adca36fe26a61c76033770ca444ee8b0d2fd3cf0e7221fe05b3b"
+            },
+            {
+              "kind": "pointer",
+              "frame": 0,
+              "start": 28672,
+              "end": 28676,
+              "values_sha256": "2bdc26c596ae8917ac70c0ac4a97d0fd2a83a620373ae090c833b27ccab0adc5",
+              "position_sha256": "291e63ff793ffad08a0bc6c91bdb28088d40195c6315430411ae92cfc34bf050"
+            },
+            {
+              "kind": "pointer",
+              "frame": 6,
+              "start": 28676,
+              "end": 28680,
+              "values_sha256": "5d29db25226efd7744f0ba85ccf1615036c855d89e948fa13923488b683e57dd",
+              "position_sha256": "dc9654fef691896d07ba1811a28d6b865321eead504328afe0e5ef19b1394c36"
+            },
+            {
+              "kind": "pointer",
+              "frame": 5,
+              "start": 28680,
+              "end": 28684,
+              "values_sha256": "5b53744c10bff33ccf054fb4b37f3a22c855e13d6126af399870deb4f45bc184",
+              "position_sha256": "d2fa059643bd1c1e9be572009c75fa39f719a002a432c9d4605fd1d73a004f58"
+            },
+            {
+              "kind": "pointer",
+              "frame": 4,
+              "start": 28684,
+              "end": 28688,
+              "values_sha256": "b7b336e60330c9f72459ac378e53b204bfb3788ebb00d4bfbe37ab2de307b427",
+              "position_sha256": "76598a0453908d1d1634dfaf0a3162cb81580b8fee2d46d7b86b3efd9d66d66d"
+            },
+            {
+              "kind": "pointer",
+              "frame": 3,
+              "start": 28688,
+              "end": 28692,
+              "values_sha256": "1763ed42a3d6426a4c4a2e9da027a86f0a63a4b43fc9d6bdf1d4923fab98391d",
+              "position_sha256": "309e1d3a08e9bca380476cec404680254ff8a6360c34115244ca0165e1a61d2f"
+            },
+            {
+              "kind": "pointer",
+              "frame": 2,
+              "start": 28692,
+              "end": 28696,
+              "values_sha256": "40194b7abf4db1b57f5b5a46572fa0874f762e914b5628e75d466d517de0d7a7",
+              "position_sha256": "f5cef0e49c209db6efcdb1019415bf1fc490de4899893f6a4cc8dd819c214d95"
+            },
+            {
+              "kind": "pointer",
+              "frame": 1,
+              "start": 28696,
+              "end": 28700,
+              "values_sha256": "8c9aafe479d6614a8244ab3c3274a1bcbb9cd49b9ce729cdaf78aaff9b139c45",
+              "position_sha256": "e882a7f1bd63b10c246be14ed9637423828ab92b8796d25b97e4c81579f9b775"
+            }
+          ]
+        },
+        "status": "completed",
+        "exact_parity": true,
+        "maximum_absolute_parity_error": 0.0,
+        "state_unchanged": true
+      }
+    ],
+    "local_hub_calls": [
+      {
+        "asset": "superpoint_v1.pth",
+        "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+        "weights_only": true
+      },
+      {
+        "asset": "superpoint_lightglue.pth",
+        "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_lightglue.pth",
+        "weights_only": true
+      }
+    ],
+    "loads": {
+      "sam2": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "ignored_unused_checkpoint_entries": {},
+        "allowed_missing_buffers": [],
+        "learned_keys": [
+          "image_encoder.neck.convs.0.conv.bias",
+          "image_encoder.neck.convs.0.conv.weight",
+          "image_encoder.neck.convs.1.conv.bias",
+          "image_encoder.neck.convs.1.conv.weight",
+          "image_encoder.neck.convs.2.conv.bias",
+          "image_encoder.neck.convs.2.conv.weight",
+          "image_encoder.neck.convs.3.conv.bias",
+          "image_encoder.neck.convs.3.conv.weight",
+          "image_encoder.trunk.blocks.0.attn.proj.bias",
+          "image_encoder.trunk.blocks.0.attn.proj.weight",
+          "image_encoder.trunk.blocks.0.attn.qkv.bias",
+          "image_encoder.trunk.blocks.0.attn.qkv.weight",
+          "image_encoder.trunk.blocks.0.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.0.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.0.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.0.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.0.norm1.bias",
+          "image_encoder.trunk.blocks.0.norm1.weight",
+          "image_encoder.trunk.blocks.0.norm2.bias",
+          "image_encoder.trunk.blocks.0.norm2.weight",
+          "image_encoder.trunk.blocks.1.attn.proj.bias",
+          "image_encoder.trunk.blocks.1.attn.proj.weight",
+          "image_encoder.trunk.blocks.1.attn.qkv.bias",
+          "image_encoder.trunk.blocks.1.attn.qkv.weight",
+          "image_encoder.trunk.blocks.1.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.1.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.1.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.1.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.1.norm1.bias",
+          "image_encoder.trunk.blocks.1.norm1.weight",
+          "image_encoder.trunk.blocks.1.norm2.bias",
+          "image_encoder.trunk.blocks.1.norm2.weight",
+          "image_encoder.trunk.blocks.1.proj.bias",
+          "image_encoder.trunk.blocks.1.proj.weight",
+          "image_encoder.trunk.blocks.10.attn.proj.bias",
+          "image_encoder.trunk.blocks.10.attn.proj.weight",
+          "image_encoder.trunk.blocks.10.attn.qkv.bias",
+          "image_encoder.trunk.blocks.10.attn.qkv.weight",
+          "image_encoder.trunk.blocks.10.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.10.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.10.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.10.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.10.norm1.bias",
+          "image_encoder.trunk.blocks.10.norm1.weight",
+          "image_encoder.trunk.blocks.10.norm2.bias",
+          "image_encoder.trunk.blocks.10.norm2.weight",
+          "image_encoder.trunk.blocks.10.proj.bias",
+          "image_encoder.trunk.blocks.10.proj.weight",
+          "image_encoder.trunk.blocks.11.attn.proj.bias",
+          "image_encoder.trunk.blocks.11.attn.proj.weight",
+          "image_encoder.trunk.blocks.11.attn.qkv.bias",
+          "image_encoder.trunk.blocks.11.attn.qkv.weight",
+          "image_encoder.trunk.blocks.11.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.11.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.11.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.11.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.11.norm1.bias",
+          "image_encoder.trunk.blocks.11.norm1.weight",
+          "image_encoder.trunk.blocks.11.norm2.bias",
+          "image_encoder.trunk.blocks.11.norm2.weight",
+          "image_encoder.trunk.blocks.2.attn.proj.bias",
+          "image_encoder.trunk.blocks.2.attn.proj.weight",
+          "image_encoder.trunk.blocks.2.attn.qkv.bias",
+          "image_encoder.trunk.blocks.2.attn.qkv.weight",
+          "image_encoder.trunk.blocks.2.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.2.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.2.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.2.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.2.norm1.bias",
+          "image_encoder.trunk.blocks.2.norm1.weight",
+          "image_encoder.trunk.blocks.2.norm2.bias",
+          "image_encoder.trunk.blocks.2.norm2.weight",
+          "image_encoder.trunk.blocks.3.attn.proj.bias",
+          "image_encoder.trunk.blocks.3.attn.proj.weight",
+          "image_encoder.trunk.blocks.3.attn.qkv.bias",
+          "image_encoder.trunk.blocks.3.attn.qkv.weight",
+          "image_encoder.trunk.blocks.3.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.3.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.3.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.3.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.3.norm1.bias",
+          "image_encoder.trunk.blocks.3.norm1.weight",
+          "image_encoder.trunk.blocks.3.norm2.bias",
+          "image_encoder.trunk.blocks.3.norm2.weight",
+          "image_encoder.trunk.blocks.3.proj.bias",
+          "image_encoder.trunk.blocks.3.proj.weight",
+          "image_encoder.trunk.blocks.4.attn.proj.bias",
+          "image_encoder.trunk.blocks.4.attn.proj.weight",
+          "image_encoder.trunk.blocks.4.attn.qkv.bias",
+          "image_encoder.trunk.blocks.4.attn.qkv.weight",
+          "image_encoder.trunk.blocks.4.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.4.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.4.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.4.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.4.norm1.bias",
+          "image_encoder.trunk.blocks.4.norm1.weight",
+          "image_encoder.trunk.blocks.4.norm2.bias",
+          "image_encoder.trunk.blocks.4.norm2.weight",
+          "image_encoder.trunk.blocks.5.attn.proj.bias",
+          "image_encoder.trunk.blocks.5.attn.proj.weight",
+          "image_encoder.trunk.blocks.5.attn.qkv.bias",
+          "image_encoder.trunk.blocks.5.attn.qkv.weight",
+          "image_encoder.trunk.blocks.5.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.5.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.5.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.5.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.5.norm1.bias",
+          "image_encoder.trunk.blocks.5.norm1.weight",
+          "image_encoder.trunk.blocks.5.norm2.bias",
+          "image_encoder.trunk.blocks.5.norm2.weight",
+          "image_encoder.trunk.blocks.6.attn.proj.bias",
+          "image_encoder.trunk.blocks.6.attn.proj.weight",
+          "image_encoder.trunk.blocks.6.attn.qkv.bias",
+          "image_encoder.trunk.blocks.6.attn.qkv.weight",
+          "image_encoder.trunk.blocks.6.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.6.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.6.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.6.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.6.norm1.bias",
+          "image_encoder.trunk.blocks.6.norm1.weight",
+          "image_encoder.trunk.blocks.6.norm2.bias",
+          "image_encoder.trunk.blocks.6.norm2.weight",
+          "image_encoder.trunk.blocks.7.attn.proj.bias",
+          "image_encoder.trunk.blocks.7.attn.proj.weight",
+          "image_encoder.trunk.blocks.7.attn.qkv.bias",
+          "image_encoder.trunk.blocks.7.attn.qkv.weight",
+          "image_encoder.trunk.blocks.7.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.7.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.7.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.7.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.7.norm1.bias",
+          "image_encoder.trunk.blocks.7.norm1.weight",
+          "image_encoder.trunk.blocks.7.norm2.bias",
+          "image_encoder.trunk.blocks.7.norm2.weight",
+          "image_encoder.trunk.blocks.8.attn.proj.bias",
+          "image_encoder.trunk.blocks.8.attn.proj.weight",
+          "image_encoder.trunk.blocks.8.attn.qkv.bias",
+          "image_encoder.trunk.blocks.8.attn.qkv.weight",
+          "image_encoder.trunk.blocks.8.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.8.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.8.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.8.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.8.norm1.bias",
+          "image_encoder.trunk.blocks.8.norm1.weight",
+          "image_encoder.trunk.blocks.8.norm2.bias",
+          "image_encoder.trunk.blocks.8.norm2.weight",
+          "image_encoder.trunk.blocks.9.attn.proj.bias",
+          "image_encoder.trunk.blocks.9.attn.proj.weight",
+          "image_encoder.trunk.blocks.9.attn.qkv.bias",
+          "image_encoder.trunk.blocks.9.attn.qkv.weight",
+          "image_encoder.trunk.blocks.9.mlp.layers.0.bias",
+          "image_encoder.trunk.blocks.9.mlp.layers.0.weight",
+          "image_encoder.trunk.blocks.9.mlp.layers.1.bias",
+          "image_encoder.trunk.blocks.9.mlp.layers.1.weight",
+          "image_encoder.trunk.blocks.9.norm1.bias",
+          "image_encoder.trunk.blocks.9.norm1.weight",
+          "image_encoder.trunk.blocks.9.norm2.bias",
+          "image_encoder.trunk.blocks.9.norm2.weight",
+          "image_encoder.trunk.patch_embed.proj.bias",
+          "image_encoder.trunk.patch_embed.proj.weight",
+          "image_encoder.trunk.pos_embed",
+          "image_encoder.trunk.pos_embed_window",
+          "mask_downsample.bias",
+          "mask_downsample.weight",
+          "maskmem_tpos_enc",
+          "memory_attention.layers.0.cross_attn_image.k_proj.bias",
+          "memory_attention.layers.0.cross_attn_image.k_proj.weight",
+          "memory_attention.layers.0.cross_attn_image.out_proj.bias",
+          "memory_attention.layers.0.cross_attn_image.out_proj.weight",
+          "memory_attention.layers.0.cross_attn_image.q_proj.bias",
+          "memory_attention.layers.0.cross_attn_image.q_proj.weight",
+          "memory_attention.layers.0.cross_attn_image.v_proj.bias",
+          "memory_attention.layers.0.cross_attn_image.v_proj.weight",
+          "memory_attention.layers.0.linear1.bias",
+          "memory_attention.layers.0.linear1.weight",
+          "memory_attention.layers.0.linear2.bias",
+          "memory_attention.layers.0.linear2.weight",
+          "memory_attention.layers.0.norm1.bias",
+          "memory_attention.layers.0.norm1.weight",
+          "memory_attention.layers.0.norm2.bias",
+          "memory_attention.layers.0.norm2.weight",
+          "memory_attention.layers.0.norm3.bias",
+          "memory_attention.layers.0.norm3.weight",
+          "memory_attention.layers.0.self_attn.k_proj.bias",
+          "memory_attention.layers.0.self_attn.k_proj.weight",
+          "memory_attention.layers.0.self_attn.out_proj.bias",
+          "memory_attention.layers.0.self_attn.out_proj.weight",
+          "memory_attention.layers.0.self_attn.q_proj.bias",
+          "memory_attention.layers.0.self_attn.q_proj.weight",
+          "memory_attention.layers.0.self_attn.v_proj.bias",
+          "memory_attention.layers.0.self_attn.v_proj.weight",
+          "memory_attention.layers.1.cross_attn_image.k_proj.bias",
+          "memory_attention.layers.1.cross_attn_image.k_proj.weight",
+          "memory_attention.layers.1.cross_attn_image.out_proj.bias",
+          "memory_attention.layers.1.cross_attn_image.out_proj.weight",
+          "memory_attention.layers.1.cross_attn_image.q_proj.bias",
+          "memory_attention.layers.1.cross_attn_image.q_proj.weight",
+          "memory_attention.layers.1.cross_attn_image.v_proj.bias",
+          "memory_attention.layers.1.cross_attn_image.v_proj.weight",
+          "memory_attention.layers.1.linear1.bias",
+          "memory_attention.layers.1.linear1.weight",
+          "memory_attention.layers.1.linear2.bias",
+          "memory_attention.layers.1.linear2.weight",
+          "memory_attention.layers.1.norm1.bias",
+          "memory_attention.layers.1.norm1.weight",
+          "memory_attention.layers.1.norm2.bias",
+          "memory_attention.layers.1.norm2.weight",
+          "memory_attention.layers.1.norm3.bias",
+          "memory_attention.layers.1.norm3.weight",
+          "memory_attention.layers.1.self_attn.k_proj.bias",
+          "memory_attention.layers.1.self_attn.k_proj.weight",
+          "memory_attention.layers.1.self_attn.out_proj.bias",
+          "memory_attention.layers.1.self_attn.out_proj.weight",
+          "memory_attention.layers.1.self_attn.q_proj.bias",
+          "memory_attention.layers.1.self_attn.q_proj.weight",
+          "memory_attention.layers.1.self_attn.v_proj.bias",
+          "memory_attention.layers.1.self_attn.v_proj.weight",
+          "memory_attention.layers.2.cross_attn_image.k_proj.bias",
+          "memory_attention.layers.2.cross_attn_image.k_proj.weight",
+          "memory_attention.layers.2.cross_attn_image.out_proj.bias",
+          "memory_attention.layers.2.cross_attn_image.out_proj.weight",
+          "memory_attention.layers.2.cross_attn_image.q_proj.bias",
+          "memory_attention.layers.2.cross_attn_image.q_proj.weight",
+          "memory_attention.layers.2.cross_attn_image.v_proj.bias",
+          "memory_attention.layers.2.cross_attn_image.v_proj.weight",
+          "memory_attention.layers.2.linear1.bias",
+          "memory_attention.layers.2.linear1.weight",
+          "memory_attention.layers.2.linear2.bias",
+          "memory_attention.layers.2.linear2.weight",
+          "memory_attention.layers.2.norm1.bias",
+          "memory_attention.layers.2.norm1.weight",
+          "memory_attention.layers.2.norm2.bias",
+          "memory_attention.layers.2.norm2.weight",
+          "memory_attention.layers.2.norm3.bias",
+          "memory_attention.layers.2.norm3.weight",
+          "memory_attention.layers.2.self_attn.k_proj.bias",
+          "memory_attention.layers.2.self_attn.k_proj.weight",
+          "memory_attention.layers.2.self_attn.out_proj.bias",
+          "memory_attention.layers.2.self_attn.out_proj.weight",
+          "memory_attention.layers.2.self_attn.q_proj.bias",
+          "memory_attention.layers.2.self_attn.q_proj.weight",
+          "memory_attention.layers.2.self_attn.v_proj.bias",
+          "memory_attention.layers.2.self_attn.v_proj.weight",
+          "memory_attention.layers.3.cross_attn_image.k_proj.bias",
+          "memory_attention.layers.3.cross_attn_image.k_proj.weight",
+          "memory_attention.layers.3.cross_attn_image.out_proj.bias",
+          "memory_attention.layers.3.cross_attn_image.out_proj.weight",
+          "memory_attention.layers.3.cross_attn_image.q_proj.bias",
+          "memory_attention.layers.3.cross_attn_image.q_proj.weight",
+          "memory_attention.layers.3.cross_attn_image.v_proj.bias",
+          "memory_attention.layers.3.cross_attn_image.v_proj.weight",
+          "memory_attention.layers.3.linear1.bias",
+          "memory_attention.layers.3.linear1.weight",
+          "memory_attention.layers.3.linear2.bias",
+          "memory_attention.layers.3.linear2.weight",
+          "memory_attention.layers.3.norm1.bias",
+          "memory_attention.layers.3.norm1.weight",
+          "memory_attention.layers.3.norm2.bias",
+          "memory_attention.layers.3.norm2.weight",
+          "memory_attention.layers.3.norm3.bias",
+          "memory_attention.layers.3.norm3.weight",
+          "memory_attention.layers.3.self_attn.k_proj.bias",
+          "memory_attention.layers.3.self_attn.k_proj.weight",
+          "memory_attention.layers.3.self_attn.out_proj.bias",
+          "memory_attention.layers.3.self_attn.out_proj.weight",
+          "memory_attention.layers.3.self_attn.q_proj.bias",
+          "memory_attention.layers.3.self_attn.q_proj.weight",
+          "memory_attention.layers.3.self_attn.v_proj.bias",
+          "memory_attention.layers.3.self_attn.v_proj.weight",
+          "memory_attention.norm.bias",
+          "memory_attention.norm.weight",
+          "memory_encoder.fuser.layers.0.dwconv.bias",
+          "memory_encoder.fuser.layers.0.dwconv.weight",
+          "memory_encoder.fuser.layers.0.gamma",
+          "memory_encoder.fuser.layers.0.norm.bias",
+          "memory_encoder.fuser.layers.0.norm.weight",
+          "memory_encoder.fuser.layers.0.pwconv1.bias",
+          "memory_encoder.fuser.layers.0.pwconv1.weight",
+          "memory_encoder.fuser.layers.0.pwconv2.bias",
+          "memory_encoder.fuser.layers.0.pwconv2.weight",
+          "memory_encoder.fuser.layers.1.dwconv.bias",
+          "memory_encoder.fuser.layers.1.dwconv.weight",
+          "memory_encoder.fuser.layers.1.gamma",
+          "memory_encoder.fuser.layers.1.norm.bias",
+          "memory_encoder.fuser.layers.1.norm.weight",
+          "memory_encoder.fuser.layers.1.pwconv1.bias",
+          "memory_encoder.fuser.layers.1.pwconv1.weight",
+          "memory_encoder.fuser.layers.1.pwconv2.bias",
+          "memory_encoder.fuser.layers.1.pwconv2.weight",
+          "memory_encoder.mask_downsampler.encoder.0.bias",
+          "memory_encoder.mask_downsampler.encoder.0.weight",
+          "memory_encoder.mask_downsampler.encoder.1.bias",
+          "memory_encoder.mask_downsampler.encoder.1.weight",
+          "memory_encoder.mask_downsampler.encoder.10.bias",
+          "memory_encoder.mask_downsampler.encoder.10.weight",
+          "memory_encoder.mask_downsampler.encoder.12.bias",
+          "memory_encoder.mask_downsampler.encoder.12.weight",
+          "memory_encoder.mask_downsampler.encoder.3.bias",
+          "memory_encoder.mask_downsampler.encoder.3.weight",
+          "memory_encoder.mask_downsampler.encoder.4.bias",
+          "memory_encoder.mask_downsampler.encoder.4.weight",
+          "memory_encoder.mask_downsampler.encoder.6.bias",
+          "memory_encoder.mask_downsampler.encoder.6.weight",
+          "memory_encoder.mask_downsampler.encoder.7.bias",
+          "memory_encoder.mask_downsampler.encoder.7.weight",
+          "memory_encoder.mask_downsampler.encoder.9.bias",
+          "memory_encoder.mask_downsampler.encoder.9.weight",
+          "memory_encoder.out_proj.bias",
+          "memory_encoder.out_proj.weight",
+          "memory_encoder.pix_feat_proj.bias",
+          "memory_encoder.pix_feat_proj.weight",
+          "no_mem_embed",
+          "no_mem_pos_enc",
+          "no_obj_embed_spatial",
+          "no_obj_ptr",
+          "obj_ptr_proj.layers.0.bias",
+          "obj_ptr_proj.layers.0.weight",
+          "obj_ptr_proj.layers.1.bias",
+          "obj_ptr_proj.layers.1.weight",
+          "obj_ptr_proj.layers.2.bias",
+          "obj_ptr_proj.layers.2.weight",
+          "obj_ptr_tpos_proj.bias",
+          "obj_ptr_tpos_proj.weight",
+          "sam_mask_decoder.conv_s0.bias",
+          "sam_mask_decoder.conv_s0.weight",
+          "sam_mask_decoder.conv_s1.bias",
+          "sam_mask_decoder.conv_s1.weight",
+          "sam_mask_decoder.iou_prediction_head.layers.0.bias",
+          "sam_mask_decoder.iou_prediction_head.layers.0.weight",
+          "sam_mask_decoder.iou_prediction_head.layers.1.bias",
+          "sam_mask_decoder.iou_prediction_head.layers.1.weight",
+          "sam_mask_decoder.iou_prediction_head.layers.2.bias",
+          "sam_mask_decoder.iou_prediction_head.layers.2.weight",
+          "sam_mask_decoder.iou_token.weight",
+          "sam_mask_decoder.mask_tokens.weight",
+          "sam_mask_decoder.obj_score_token.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.0.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.0.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.1.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.1.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.2.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.2.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.0.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.0.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.1.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.1.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.2.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.2.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.0.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.0.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.1.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.1.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.2.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.2.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.0.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.0.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.1.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.1.weight",
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.2.bias",
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.2.weight",
+          "sam_mask_decoder.output_upscaling.0.bias",
+          "sam_mask_decoder.output_upscaling.0.weight",
+          "sam_mask_decoder.output_upscaling.1.bias",
+          "sam_mask_decoder.output_upscaling.1.weight",
+          "sam_mask_decoder.output_upscaling.3.bias",
+          "sam_mask_decoder.output_upscaling.3.weight",
+          "sam_mask_decoder.pred_obj_score_head.layers.0.bias",
+          "sam_mask_decoder.pred_obj_score_head.layers.0.weight",
+          "sam_mask_decoder.pred_obj_score_head.layers.1.bias",
+          "sam_mask_decoder.pred_obj_score_head.layers.1.weight",
+          "sam_mask_decoder.pred_obj_score_head.layers.2.bias",
+          "sam_mask_decoder.pred_obj_score_head.layers.2.weight",
+          "sam_mask_decoder.transformer.final_attn_token_to_image.k_proj.bias",
+          "sam_mask_decoder.transformer.final_attn_token_to_image.k_proj.weight",
+          "sam_mask_decoder.transformer.final_attn_token_to_image.out_proj.bias",
+          "sam_mask_decoder.transformer.final_attn_token_to_image.out_proj.weight",
+          "sam_mask_decoder.transformer.final_attn_token_to_image.q_proj.bias",
+          "sam_mask_decoder.transformer.final_attn_token_to_image.q_proj.weight",
+          "sam_mask_decoder.transformer.final_attn_token_to_image.v_proj.bias",
+          "sam_mask_decoder.transformer.final_attn_token_to_image.v_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.k_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.k_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.q_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.q_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.k_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.k_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.out_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.out_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.q_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.q_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.v_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.v_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.mlp.layers.0.bias",
+          "sam_mask_decoder.transformer.layers.0.mlp.layers.0.weight",
+          "sam_mask_decoder.transformer.layers.0.mlp.layers.1.bias",
+          "sam_mask_decoder.transformer.layers.0.mlp.layers.1.weight",
+          "sam_mask_decoder.transformer.layers.0.norm1.bias",
+          "sam_mask_decoder.transformer.layers.0.norm1.weight",
+          "sam_mask_decoder.transformer.layers.0.norm2.bias",
+          "sam_mask_decoder.transformer.layers.0.norm2.weight",
+          "sam_mask_decoder.transformer.layers.0.norm3.bias",
+          "sam_mask_decoder.transformer.layers.0.norm3.weight",
+          "sam_mask_decoder.transformer.layers.0.norm4.bias",
+          "sam_mask_decoder.transformer.layers.0.norm4.weight",
+          "sam_mask_decoder.transformer.layers.0.self_attn.k_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.self_attn.k_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.self_attn.out_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.self_attn.out_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.self_attn.q_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.self_attn.q_proj.weight",
+          "sam_mask_decoder.transformer.layers.0.self_attn.v_proj.bias",
+          "sam_mask_decoder.transformer.layers.0.self_attn.v_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.k_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.k_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.q_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.q_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.k_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.k_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.q_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.q_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.mlp.layers.0.bias",
+          "sam_mask_decoder.transformer.layers.1.mlp.layers.0.weight",
+          "sam_mask_decoder.transformer.layers.1.mlp.layers.1.bias",
+          "sam_mask_decoder.transformer.layers.1.mlp.layers.1.weight",
+          "sam_mask_decoder.transformer.layers.1.norm1.bias",
+          "sam_mask_decoder.transformer.layers.1.norm1.weight",
+          "sam_mask_decoder.transformer.layers.1.norm2.bias",
+          "sam_mask_decoder.transformer.layers.1.norm2.weight",
+          "sam_mask_decoder.transformer.layers.1.norm3.bias",
+          "sam_mask_decoder.transformer.layers.1.norm3.weight",
+          "sam_mask_decoder.transformer.layers.1.norm4.bias",
+          "sam_mask_decoder.transformer.layers.1.norm4.weight",
+          "sam_mask_decoder.transformer.layers.1.self_attn.k_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.self_attn.k_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.self_attn.out_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.self_attn.out_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.self_attn.q_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.self_attn.q_proj.weight",
+          "sam_mask_decoder.transformer.layers.1.self_attn.v_proj.bias",
+          "sam_mask_decoder.transformer.layers.1.self_attn.v_proj.weight",
+          "sam_mask_decoder.transformer.norm_final_attn.bias",
+          "sam_mask_decoder.transformer.norm_final_attn.weight",
+          "sam_prompt_encoder.mask_downscaling.0.bias",
+          "sam_prompt_encoder.mask_downscaling.0.weight",
+          "sam_prompt_encoder.mask_downscaling.1.bias",
+          "sam_prompt_encoder.mask_downscaling.1.weight",
+          "sam_prompt_encoder.mask_downscaling.3.bias",
+          "sam_prompt_encoder.mask_downscaling.3.weight",
+          "sam_prompt_encoder.mask_downscaling.4.bias",
+          "sam_prompt_encoder.mask_downscaling.4.weight",
+          "sam_prompt_encoder.mask_downscaling.6.bias",
+          "sam_prompt_encoder.mask_downscaling.6.weight",
+          "sam_prompt_encoder.no_mask_embed.weight",
+          "sam_prompt_encoder.not_a_point_embed.weight",
+          "sam_prompt_encoder.point_embeddings.0.weight",
+          "sam_prompt_encoder.point_embeddings.1.weight",
+          "sam_prompt_encoder.point_embeddings.2.weight",
+          "sam_prompt_encoder.point_embeddings.3.weight"
+        ],
+        "state_shapes": {
+          "maskmem_tpos_enc": [
+            7,
+            1,
+            1,
+            64
+          ],
+          "no_mem_embed": [
+            1,
+            1,
+            256
+          ],
+          "no_mem_pos_enc": [
+            1,
+            1,
+            256
+          ],
+          "no_obj_ptr": [
+            1,
+            256
+          ],
+          "no_obj_embed_spatial": [
+            1,
+            64
+          ],
+          "image_encoder.trunk.pos_embed": [
+            1,
+            96,
+            7,
+            7
+          ],
+          "image_encoder.trunk.pos_embed_window": [
+            1,
+            96,
+            8,
+            8
+          ],
+          "image_encoder.trunk.patch_embed.proj.weight": [
+            96,
+            3,
+            7,
+            7
+          ],
+          "image_encoder.trunk.patch_embed.proj.bias": [
+            96
+          ],
+          "image_encoder.trunk.blocks.0.norm1.weight": [
+            96
+          ],
+          "image_encoder.trunk.blocks.0.norm1.bias": [
+            96
+          ],
+          "image_encoder.trunk.blocks.0.attn.qkv.weight": [
+            288,
+            96
+          ],
+          "image_encoder.trunk.blocks.0.attn.qkv.bias": [
+            288
+          ],
+          "image_encoder.trunk.blocks.0.attn.proj.weight": [
+            96,
+            96
+          ],
+          "image_encoder.trunk.blocks.0.attn.proj.bias": [
+            96
+          ],
+          "image_encoder.trunk.blocks.0.norm2.weight": [
+            96
+          ],
+          "image_encoder.trunk.blocks.0.norm2.bias": [
+            96
+          ],
+          "image_encoder.trunk.blocks.0.mlp.layers.0.weight": [
+            384,
+            96
+          ],
+          "image_encoder.trunk.blocks.0.mlp.layers.0.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.0.mlp.layers.1.weight": [
+            96,
+            384
+          ],
+          "image_encoder.trunk.blocks.0.mlp.layers.1.bias": [
+            96
+          ],
+          "image_encoder.trunk.blocks.1.norm1.weight": [
+            96
+          ],
+          "image_encoder.trunk.blocks.1.norm1.bias": [
+            96
+          ],
+          "image_encoder.trunk.blocks.1.attn.qkv.weight": [
+            576,
+            96
+          ],
+          "image_encoder.trunk.blocks.1.attn.qkv.bias": [
+            576
+          ],
+          "image_encoder.trunk.blocks.1.attn.proj.weight": [
+            192,
+            192
+          ],
+          "image_encoder.trunk.blocks.1.attn.proj.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.1.norm2.weight": [
+            192
+          ],
+          "image_encoder.trunk.blocks.1.norm2.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.1.mlp.layers.0.weight": [
+            768,
+            192
+          ],
+          "image_encoder.trunk.blocks.1.mlp.layers.0.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.1.mlp.layers.1.weight": [
+            192,
+            768
+          ],
+          "image_encoder.trunk.blocks.1.mlp.layers.1.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.1.proj.weight": [
+            192,
+            96
+          ],
+          "image_encoder.trunk.blocks.1.proj.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.2.norm1.weight": [
+            192
+          ],
+          "image_encoder.trunk.blocks.2.norm1.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.2.attn.qkv.weight": [
+            576,
+            192
+          ],
+          "image_encoder.trunk.blocks.2.attn.qkv.bias": [
+            576
+          ],
+          "image_encoder.trunk.blocks.2.attn.proj.weight": [
+            192,
+            192
+          ],
+          "image_encoder.trunk.blocks.2.attn.proj.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.2.norm2.weight": [
+            192
+          ],
+          "image_encoder.trunk.blocks.2.norm2.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.2.mlp.layers.0.weight": [
+            768,
+            192
+          ],
+          "image_encoder.trunk.blocks.2.mlp.layers.0.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.2.mlp.layers.1.weight": [
+            192,
+            768
+          ],
+          "image_encoder.trunk.blocks.2.mlp.layers.1.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.3.norm1.weight": [
+            192
+          ],
+          "image_encoder.trunk.blocks.3.norm1.bias": [
+            192
+          ],
+          "image_encoder.trunk.blocks.3.attn.qkv.weight": [
+            1152,
+            192
+          ],
+          "image_encoder.trunk.blocks.3.attn.qkv.bias": [
+            1152
+          ],
+          "image_encoder.trunk.blocks.3.attn.proj.weight": [
+            384,
+            384
+          ],
+          "image_encoder.trunk.blocks.3.attn.proj.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.3.norm2.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.3.norm2.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.3.mlp.layers.0.weight": [
+            1536,
+            384
+          ],
+          "image_encoder.trunk.blocks.3.mlp.layers.0.bias": [
+            1536
+          ],
+          "image_encoder.trunk.blocks.3.mlp.layers.1.weight": [
+            384,
+            1536
+          ],
+          "image_encoder.trunk.blocks.3.mlp.layers.1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.3.proj.weight": [
+            384,
+            192
+          ],
+          "image_encoder.trunk.blocks.3.proj.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.4.norm1.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.4.norm1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.4.attn.qkv.weight": [
+            1152,
+            384
+          ],
+          "image_encoder.trunk.blocks.4.attn.qkv.bias": [
+            1152
+          ],
+          "image_encoder.trunk.blocks.4.attn.proj.weight": [
+            384,
+            384
+          ],
+          "image_encoder.trunk.blocks.4.attn.proj.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.4.norm2.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.4.norm2.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.4.mlp.layers.0.weight": [
+            1536,
+            384
+          ],
+          "image_encoder.trunk.blocks.4.mlp.layers.0.bias": [
+            1536
+          ],
+          "image_encoder.trunk.blocks.4.mlp.layers.1.weight": [
+            384,
+            1536
+          ],
+          "image_encoder.trunk.blocks.4.mlp.layers.1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.5.norm1.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.5.norm1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.5.attn.qkv.weight": [
+            1152,
+            384
+          ],
+          "image_encoder.trunk.blocks.5.attn.qkv.bias": [
+            1152
+          ],
+          "image_encoder.trunk.blocks.5.attn.proj.weight": [
+            384,
+            384
+          ],
+          "image_encoder.trunk.blocks.5.attn.proj.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.5.norm2.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.5.norm2.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.5.mlp.layers.0.weight": [
+            1536,
+            384
+          ],
+          "image_encoder.trunk.blocks.5.mlp.layers.0.bias": [
+            1536
+          ],
+          "image_encoder.trunk.blocks.5.mlp.layers.1.weight": [
+            384,
+            1536
+          ],
+          "image_encoder.trunk.blocks.5.mlp.layers.1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.6.norm1.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.6.norm1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.6.attn.qkv.weight": [
+            1152,
+            384
+          ],
+          "image_encoder.trunk.blocks.6.attn.qkv.bias": [
+            1152
+          ],
+          "image_encoder.trunk.blocks.6.attn.proj.weight": [
+            384,
+            384
+          ],
+          "image_encoder.trunk.blocks.6.attn.proj.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.6.norm2.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.6.norm2.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.6.mlp.layers.0.weight": [
+            1536,
+            384
+          ],
+          "image_encoder.trunk.blocks.6.mlp.layers.0.bias": [
+            1536
+          ],
+          "image_encoder.trunk.blocks.6.mlp.layers.1.weight": [
+            384,
+            1536
+          ],
+          "image_encoder.trunk.blocks.6.mlp.layers.1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.7.norm1.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.7.norm1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.7.attn.qkv.weight": [
+            1152,
+            384
+          ],
+          "image_encoder.trunk.blocks.7.attn.qkv.bias": [
+            1152
+          ],
+          "image_encoder.trunk.blocks.7.attn.proj.weight": [
+            384,
+            384
+          ],
+          "image_encoder.trunk.blocks.7.attn.proj.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.7.norm2.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.7.norm2.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.7.mlp.layers.0.weight": [
+            1536,
+            384
+          ],
+          "image_encoder.trunk.blocks.7.mlp.layers.0.bias": [
+            1536
+          ],
+          "image_encoder.trunk.blocks.7.mlp.layers.1.weight": [
+            384,
+            1536
+          ],
+          "image_encoder.trunk.blocks.7.mlp.layers.1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.8.norm1.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.8.norm1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.8.attn.qkv.weight": [
+            1152,
+            384
+          ],
+          "image_encoder.trunk.blocks.8.attn.qkv.bias": [
+            1152
+          ],
+          "image_encoder.trunk.blocks.8.attn.proj.weight": [
+            384,
+            384
+          ],
+          "image_encoder.trunk.blocks.8.attn.proj.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.8.norm2.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.8.norm2.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.8.mlp.layers.0.weight": [
+            1536,
+            384
+          ],
+          "image_encoder.trunk.blocks.8.mlp.layers.0.bias": [
+            1536
+          ],
+          "image_encoder.trunk.blocks.8.mlp.layers.1.weight": [
+            384,
+            1536
+          ],
+          "image_encoder.trunk.blocks.8.mlp.layers.1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.9.norm1.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.9.norm1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.9.attn.qkv.weight": [
+            1152,
+            384
+          ],
+          "image_encoder.trunk.blocks.9.attn.qkv.bias": [
+            1152
+          ],
+          "image_encoder.trunk.blocks.9.attn.proj.weight": [
+            384,
+            384
+          ],
+          "image_encoder.trunk.blocks.9.attn.proj.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.9.norm2.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.9.norm2.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.9.mlp.layers.0.weight": [
+            1536,
+            384
+          ],
+          "image_encoder.trunk.blocks.9.mlp.layers.0.bias": [
+            1536
+          ],
+          "image_encoder.trunk.blocks.9.mlp.layers.1.weight": [
+            384,
+            1536
+          ],
+          "image_encoder.trunk.blocks.9.mlp.layers.1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.10.norm1.weight": [
+            384
+          ],
+          "image_encoder.trunk.blocks.10.norm1.bias": [
+            384
+          ],
+          "image_encoder.trunk.blocks.10.attn.qkv.weight": [
+            2304,
+            384
+          ],
+          "image_encoder.trunk.blocks.10.attn.qkv.bias": [
+            2304
+          ],
+          "image_encoder.trunk.blocks.10.attn.proj.weight": [
+            768,
+            768
+          ],
+          "image_encoder.trunk.blocks.10.attn.proj.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.10.norm2.weight": [
+            768
+          ],
+          "image_encoder.trunk.blocks.10.norm2.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.10.mlp.layers.0.weight": [
+            3072,
+            768
+          ],
+          "image_encoder.trunk.blocks.10.mlp.layers.0.bias": [
+            3072
+          ],
+          "image_encoder.trunk.blocks.10.mlp.layers.1.weight": [
+            768,
+            3072
+          ],
+          "image_encoder.trunk.blocks.10.mlp.layers.1.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.10.proj.weight": [
+            768,
+            384
+          ],
+          "image_encoder.trunk.blocks.10.proj.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.11.norm1.weight": [
+            768
+          ],
+          "image_encoder.trunk.blocks.11.norm1.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.11.attn.qkv.weight": [
+            2304,
+            768
+          ],
+          "image_encoder.trunk.blocks.11.attn.qkv.bias": [
+            2304
+          ],
+          "image_encoder.trunk.blocks.11.attn.proj.weight": [
+            768,
+            768
+          ],
+          "image_encoder.trunk.blocks.11.attn.proj.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.11.norm2.weight": [
+            768
+          ],
+          "image_encoder.trunk.blocks.11.norm2.bias": [
+            768
+          ],
+          "image_encoder.trunk.blocks.11.mlp.layers.0.weight": [
+            3072,
+            768
+          ],
+          "image_encoder.trunk.blocks.11.mlp.layers.0.bias": [
+            3072
+          ],
+          "image_encoder.trunk.blocks.11.mlp.layers.1.weight": [
+            768,
+            3072
+          ],
+          "image_encoder.trunk.blocks.11.mlp.layers.1.bias": [
+            768
+          ],
+          "image_encoder.neck.convs.0.conv.weight": [
+            256,
+            768,
+            1,
+            1
+          ],
+          "image_encoder.neck.convs.0.conv.bias": [
+            256
+          ],
+          "image_encoder.neck.convs.1.conv.weight": [
+            256,
+            384,
+            1,
+            1
+          ],
+          "image_encoder.neck.convs.1.conv.bias": [
+            256
+          ],
+          "image_encoder.neck.convs.2.conv.weight": [
+            256,
+            192,
+            1,
+            1
+          ],
+          "image_encoder.neck.convs.2.conv.bias": [
+            256
+          ],
+          "image_encoder.neck.convs.3.conv.weight": [
+            256,
+            96,
+            1,
+            1
+          ],
+          "image_encoder.neck.convs.3.conv.bias": [
+            256
+          ],
+          "mask_downsample.weight": [
+            1,
+            1,
+            4,
+            4
+          ],
+          "mask_downsample.bias": [
+            1
+          ],
+          "memory_attention.layers.0.self_attn.q_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.0.self_attn.q_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.0.self_attn.k_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.0.self_attn.k_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.0.self_attn.v_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.0.self_attn.v_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.0.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.0.self_attn.out_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.0.cross_attn_image.q_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.0.cross_attn_image.q_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.0.cross_attn_image.k_proj.weight": [
+            256,
+            64
+          ],
+          "memory_attention.layers.0.cross_attn_image.k_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.0.cross_attn_image.v_proj.weight": [
+            256,
+            64
+          ],
+          "memory_attention.layers.0.cross_attn_image.v_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.0.cross_attn_image.out_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.0.cross_attn_image.out_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.0.linear1.weight": [
+            2048,
+            256
+          ],
+          "memory_attention.layers.0.linear1.bias": [
+            2048
+          ],
+          "memory_attention.layers.0.linear2.weight": [
+            256,
+            2048
+          ],
+          "memory_attention.layers.0.linear2.bias": [
+            256
+          ],
+          "memory_attention.layers.0.norm1.weight": [
+            256
+          ],
+          "memory_attention.layers.0.norm1.bias": [
+            256
+          ],
+          "memory_attention.layers.0.norm2.weight": [
+            256
+          ],
+          "memory_attention.layers.0.norm2.bias": [
+            256
+          ],
+          "memory_attention.layers.0.norm3.weight": [
+            256
+          ],
+          "memory_attention.layers.0.norm3.bias": [
+            256
+          ],
+          "memory_attention.layers.1.self_attn.q_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.1.self_attn.q_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.1.self_attn.k_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.1.self_attn.k_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.1.self_attn.v_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.1.self_attn.v_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.1.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.1.self_attn.out_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.1.cross_attn_image.q_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.1.cross_attn_image.q_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.1.cross_attn_image.k_proj.weight": [
+            256,
+            64
+          ],
+          "memory_attention.layers.1.cross_attn_image.k_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.1.cross_attn_image.v_proj.weight": [
+            256,
+            64
+          ],
+          "memory_attention.layers.1.cross_attn_image.v_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.1.cross_attn_image.out_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.1.cross_attn_image.out_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.1.linear1.weight": [
+            2048,
+            256
+          ],
+          "memory_attention.layers.1.linear1.bias": [
+            2048
+          ],
+          "memory_attention.layers.1.linear2.weight": [
+            256,
+            2048
+          ],
+          "memory_attention.layers.1.linear2.bias": [
+            256
+          ],
+          "memory_attention.layers.1.norm1.weight": [
+            256
+          ],
+          "memory_attention.layers.1.norm1.bias": [
+            256
+          ],
+          "memory_attention.layers.1.norm2.weight": [
+            256
+          ],
+          "memory_attention.layers.1.norm2.bias": [
+            256
+          ],
+          "memory_attention.layers.1.norm3.weight": [
+            256
+          ],
+          "memory_attention.layers.1.norm3.bias": [
+            256
+          ],
+          "memory_attention.layers.2.self_attn.q_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.2.self_attn.q_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.2.self_attn.k_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.2.self_attn.k_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.2.self_attn.v_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.2.self_attn.v_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.2.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.2.self_attn.out_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.2.cross_attn_image.q_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.2.cross_attn_image.q_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.2.cross_attn_image.k_proj.weight": [
+            256,
+            64
+          ],
+          "memory_attention.layers.2.cross_attn_image.k_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.2.cross_attn_image.v_proj.weight": [
+            256,
+            64
+          ],
+          "memory_attention.layers.2.cross_attn_image.v_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.2.cross_attn_image.out_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.2.cross_attn_image.out_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.2.linear1.weight": [
+            2048,
+            256
+          ],
+          "memory_attention.layers.2.linear1.bias": [
+            2048
+          ],
+          "memory_attention.layers.2.linear2.weight": [
+            256,
+            2048
+          ],
+          "memory_attention.layers.2.linear2.bias": [
+            256
+          ],
+          "memory_attention.layers.2.norm1.weight": [
+            256
+          ],
+          "memory_attention.layers.2.norm1.bias": [
+            256
+          ],
+          "memory_attention.layers.2.norm2.weight": [
+            256
+          ],
+          "memory_attention.layers.2.norm2.bias": [
+            256
+          ],
+          "memory_attention.layers.2.norm3.weight": [
+            256
+          ],
+          "memory_attention.layers.2.norm3.bias": [
+            256
+          ],
+          "memory_attention.layers.3.self_attn.q_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.3.self_attn.q_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.3.self_attn.k_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.3.self_attn.k_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.3.self_attn.v_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.3.self_attn.v_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.3.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.3.self_attn.out_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.3.cross_attn_image.q_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.3.cross_attn_image.q_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.3.cross_attn_image.k_proj.weight": [
+            256,
+            64
+          ],
+          "memory_attention.layers.3.cross_attn_image.k_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.3.cross_attn_image.v_proj.weight": [
+            256,
+            64
+          ],
+          "memory_attention.layers.3.cross_attn_image.v_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.3.cross_attn_image.out_proj.weight": [
+            256,
+            256
+          ],
+          "memory_attention.layers.3.cross_attn_image.out_proj.bias": [
+            256
+          ],
+          "memory_attention.layers.3.linear1.weight": [
+            2048,
+            256
+          ],
+          "memory_attention.layers.3.linear1.bias": [
+            2048
+          ],
+          "memory_attention.layers.3.linear2.weight": [
+            256,
+            2048
+          ],
+          "memory_attention.layers.3.linear2.bias": [
+            256
+          ],
+          "memory_attention.layers.3.norm1.weight": [
+            256
+          ],
+          "memory_attention.layers.3.norm1.bias": [
+            256
+          ],
+          "memory_attention.layers.3.norm2.weight": [
+            256
+          ],
+          "memory_attention.layers.3.norm2.bias": [
+            256
+          ],
+          "memory_attention.layers.3.norm3.weight": [
+            256
+          ],
+          "memory_attention.layers.3.norm3.bias": [
+            256
+          ],
+          "memory_attention.norm.weight": [
+            256
+          ],
+          "memory_attention.norm.bias": [
+            256
+          ],
+          "memory_encoder.mask_downsampler.encoder.0.weight": [
+            4,
+            1,
+            3,
+            3
+          ],
+          "memory_encoder.mask_downsampler.encoder.0.bias": [
+            4
+          ],
+          "memory_encoder.mask_downsampler.encoder.1.weight": [
+            4
+          ],
+          "memory_encoder.mask_downsampler.encoder.1.bias": [
+            4
+          ],
+          "memory_encoder.mask_downsampler.encoder.3.weight": [
+            16,
+            4,
+            3,
+            3
+          ],
+          "memory_encoder.mask_downsampler.encoder.3.bias": [
+            16
+          ],
+          "memory_encoder.mask_downsampler.encoder.4.weight": [
+            16
+          ],
+          "memory_encoder.mask_downsampler.encoder.4.bias": [
+            16
+          ],
+          "memory_encoder.mask_downsampler.encoder.6.weight": [
+            64,
+            16,
+            3,
+            3
+          ],
+          "memory_encoder.mask_downsampler.encoder.6.bias": [
+            64
+          ],
+          "memory_encoder.mask_downsampler.encoder.7.weight": [
+            64
+          ],
+          "memory_encoder.mask_downsampler.encoder.7.bias": [
+            64
+          ],
+          "memory_encoder.mask_downsampler.encoder.9.weight": [
+            256,
+            64,
+            3,
+            3
+          ],
+          "memory_encoder.mask_downsampler.encoder.9.bias": [
+            256
+          ],
+          "memory_encoder.mask_downsampler.encoder.10.weight": [
+            256
+          ],
+          "memory_encoder.mask_downsampler.encoder.10.bias": [
+            256
+          ],
+          "memory_encoder.mask_downsampler.encoder.12.weight": [
+            256,
+            256,
+            1,
+            1
+          ],
+          "memory_encoder.mask_downsampler.encoder.12.bias": [
+            256
+          ],
+          "memory_encoder.pix_feat_proj.weight": [
+            256,
+            256,
+            1,
+            1
+          ],
+          "memory_encoder.pix_feat_proj.bias": [
+            256
+          ],
+          "memory_encoder.fuser.layers.0.gamma": [
+            256
+          ],
+          "memory_encoder.fuser.layers.0.dwconv.weight": [
+            256,
+            1,
+            7,
+            7
+          ],
+          "memory_encoder.fuser.layers.0.dwconv.bias": [
+            256
+          ],
+          "memory_encoder.fuser.layers.0.norm.weight": [
+            256
+          ],
+          "memory_encoder.fuser.layers.0.norm.bias": [
+            256
+          ],
+          "memory_encoder.fuser.layers.0.pwconv1.weight": [
+            1024,
+            256
+          ],
+          "memory_encoder.fuser.layers.0.pwconv1.bias": [
+            1024
+          ],
+          "memory_encoder.fuser.layers.0.pwconv2.weight": [
+            256,
+            1024
+          ],
+          "memory_encoder.fuser.layers.0.pwconv2.bias": [
+            256
+          ],
+          "memory_encoder.fuser.layers.1.gamma": [
+            256
+          ],
+          "memory_encoder.fuser.layers.1.dwconv.weight": [
+            256,
+            1,
+            7,
+            7
+          ],
+          "memory_encoder.fuser.layers.1.dwconv.bias": [
+            256
+          ],
+          "memory_encoder.fuser.layers.1.norm.weight": [
+            256
+          ],
+          "memory_encoder.fuser.layers.1.norm.bias": [
+            256
+          ],
+          "memory_encoder.fuser.layers.1.pwconv1.weight": [
+            1024,
+            256
+          ],
+          "memory_encoder.fuser.layers.1.pwconv1.bias": [
+            1024
+          ],
+          "memory_encoder.fuser.layers.1.pwconv2.weight": [
+            256,
+            1024
+          ],
+          "memory_encoder.fuser.layers.1.pwconv2.bias": [
+            256
+          ],
+          "memory_encoder.out_proj.weight": [
+            64,
+            256,
+            1,
+            1
+          ],
+          "memory_encoder.out_proj.bias": [
+            64
+          ],
+          "sam_prompt_encoder.pe_layer.positional_encoding_gaussian_matrix": [
+            2,
+            128
+          ],
+          "sam_prompt_encoder.point_embeddings.0.weight": [
+            1,
+            256
+          ],
+          "sam_prompt_encoder.point_embeddings.1.weight": [
+            1,
+            256
+          ],
+          "sam_prompt_encoder.point_embeddings.2.weight": [
+            1,
+            256
+          ],
+          "sam_prompt_encoder.point_embeddings.3.weight": [
+            1,
+            256
+          ],
+          "sam_prompt_encoder.not_a_point_embed.weight": [
+            1,
+            256
+          ],
+          "sam_prompt_encoder.mask_downscaling.0.weight": [
+            4,
+            1,
+            2,
+            2
+          ],
+          "sam_prompt_encoder.mask_downscaling.0.bias": [
+            4
+          ],
+          "sam_prompt_encoder.mask_downscaling.1.weight": [
+            4
+          ],
+          "sam_prompt_encoder.mask_downscaling.1.bias": [
+            4
+          ],
+          "sam_prompt_encoder.mask_downscaling.3.weight": [
+            16,
+            4,
+            2,
+            2
+          ],
+          "sam_prompt_encoder.mask_downscaling.3.bias": [
+            16
+          ],
+          "sam_prompt_encoder.mask_downscaling.4.weight": [
+            16
+          ],
+          "sam_prompt_encoder.mask_downscaling.4.bias": [
+            16
+          ],
+          "sam_prompt_encoder.mask_downscaling.6.weight": [
+            256,
+            16,
+            1,
+            1
+          ],
+          "sam_prompt_encoder.mask_downscaling.6.bias": [
+            256
+          ],
+          "sam_prompt_encoder.no_mask_embed.weight": [
+            1,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.self_attn.q_proj.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.self_attn.q_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.self_attn.k_proj.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.self_attn.k_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.self_attn.v_proj.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.self_attn.v_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.self_attn.out_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.norm1.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.norm1.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.q_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.q_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.k_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.k_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.v_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.v_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.out_proj.weight": [
+            256,
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_token_to_image.out_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.norm2.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.norm2.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.mlp.layers.0.weight": [
+            2048,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.mlp.layers.0.bias": [
+            2048
+          ],
+          "sam_mask_decoder.transformer.layers.0.mlp.layers.1.weight": [
+            256,
+            2048
+          ],
+          "sam_mask_decoder.transformer.layers.0.mlp.layers.1.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.norm3.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.norm3.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.norm4.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.norm4.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.q_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.q_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.k_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.k_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.weight": [
+            256,
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.self_attn.q_proj.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.self_attn.q_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.self_attn.k_proj.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.self_attn.k_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.self_attn.v_proj.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.self_attn.v_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.self_attn.out_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.norm1.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.norm1.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.q_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.q_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.k_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.k_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.weight": [
+            256,
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.norm2.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.norm2.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.mlp.layers.0.weight": [
+            2048,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.mlp.layers.0.bias": [
+            2048
+          ],
+          "sam_mask_decoder.transformer.layers.1.mlp.layers.1.weight": [
+            256,
+            2048
+          ],
+          "sam_mask_decoder.transformer.layers.1.mlp.layers.1.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.norm3.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.norm3.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.norm4.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.norm4.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.q_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.q_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.k_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.k_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.weight": [
+            256,
+            128
+          ],
+          "sam_mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.final_attn_token_to_image.q_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.final_attn_token_to_image.q_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.final_attn_token_to_image.k_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.final_attn_token_to_image.k_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.final_attn_token_to_image.v_proj.weight": [
+            128,
+            256
+          ],
+          "sam_mask_decoder.transformer.final_attn_token_to_image.v_proj.bias": [
+            128
+          ],
+          "sam_mask_decoder.transformer.final_attn_token_to_image.out_proj.weight": [
+            256,
+            128
+          ],
+          "sam_mask_decoder.transformer.final_attn_token_to_image.out_proj.bias": [
+            256
+          ],
+          "sam_mask_decoder.transformer.norm_final_attn.weight": [
+            256
+          ],
+          "sam_mask_decoder.transformer.norm_final_attn.bias": [
+            256
+          ],
+          "sam_mask_decoder.iou_token.weight": [
+            1,
+            256
+          ],
+          "sam_mask_decoder.mask_tokens.weight": [
+            4,
+            256
+          ],
+          "sam_mask_decoder.obj_score_token.weight": [
+            1,
+            256
+          ],
+          "sam_mask_decoder.output_upscaling.0.weight": [
+            256,
+            64,
+            2,
+            2
+          ],
+          "sam_mask_decoder.output_upscaling.0.bias": [
+            64
+          ],
+          "sam_mask_decoder.output_upscaling.1.weight": [
+            64
+          ],
+          "sam_mask_decoder.output_upscaling.1.bias": [
+            64
+          ],
+          "sam_mask_decoder.output_upscaling.3.weight": [
+            64,
+            32,
+            2,
+            2
+          ],
+          "sam_mask_decoder.output_upscaling.3.bias": [
+            32
+          ],
+          "sam_mask_decoder.conv_s0.weight": [
+            32,
+            256,
+            1,
+            1
+          ],
+          "sam_mask_decoder.conv_s0.bias": [
+            32
+          ],
+          "sam_mask_decoder.conv_s1.weight": [
+            64,
+            256,
+            1,
+            1
+          ],
+          "sam_mask_decoder.conv_s1.bias": [
+            64
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.0.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.0.bias": [
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.1.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.1.bias": [
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.2.weight": [
+            32,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.0.layers.2.bias": [
+            32
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.0.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.0.bias": [
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.1.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.1.bias": [
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.2.weight": [
+            32,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.1.layers.2.bias": [
+            32
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.0.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.0.bias": [
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.1.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.1.bias": [
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.2.weight": [
+            32,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.2.layers.2.bias": [
+            32
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.0.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.0.bias": [
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.1.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.1.bias": [
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.2.weight": [
+            32,
+            256
+          ],
+          "sam_mask_decoder.output_hypernetworks_mlps.3.layers.2.bias": [
+            32
+          ],
+          "sam_mask_decoder.iou_prediction_head.layers.0.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.iou_prediction_head.layers.0.bias": [
+            256
+          ],
+          "sam_mask_decoder.iou_prediction_head.layers.1.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.iou_prediction_head.layers.1.bias": [
+            256
+          ],
+          "sam_mask_decoder.iou_prediction_head.layers.2.weight": [
+            4,
+            256
+          ],
+          "sam_mask_decoder.iou_prediction_head.layers.2.bias": [
+            4
+          ],
+          "sam_mask_decoder.pred_obj_score_head.layers.0.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.pred_obj_score_head.layers.0.bias": [
+            256
+          ],
+          "sam_mask_decoder.pred_obj_score_head.layers.1.weight": [
+            256,
+            256
+          ],
+          "sam_mask_decoder.pred_obj_score_head.layers.1.bias": [
+            256
+          ],
+          "sam_mask_decoder.pred_obj_score_head.layers.2.weight": [
+            1,
+            256
+          ],
+          "sam_mask_decoder.pred_obj_score_head.layers.2.bias": [
+            1
+          ],
+          "obj_ptr_proj.layers.0.weight": [
+            256,
+            256
+          ],
+          "obj_ptr_proj.layers.0.bias": [
+            256
+          ],
+          "obj_ptr_proj.layers.1.weight": [
+            256,
+            256
+          ],
+          "obj_ptr_proj.layers.1.bias": [
+            256
+          ],
+          "obj_ptr_proj.layers.2.weight": [
+            256,
+            256
+          ],
+          "obj_ptr_proj.layers.2.bias": [
+            256
+          ],
+          "obj_ptr_tpos_proj.weight": [
+            64,
+            256
+          ],
+          "obj_ptr_tpos_proj.bias": [
+            64
+          ]
+        },
+        "strict_after_deterministic_buffer_completion": true
+      },
+      "superpoint": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "ignored_unused_checkpoint_entries": {},
+        "allowed_missing_buffers": [],
+        "learned_keys": [
+          "conv1a.bias",
+          "conv1a.weight",
+          "conv1b.bias",
+          "conv1b.weight",
+          "conv2a.bias",
+          "conv2a.weight",
+          "conv2b.bias",
+          "conv2b.weight",
+          "conv3a.bias",
+          "conv3a.weight",
+          "conv3b.bias",
+          "conv3b.weight",
+          "conv4a.bias",
+          "conv4a.weight",
+          "conv4b.bias",
+          "conv4b.weight",
+          "convDa.bias",
+          "convDa.weight",
+          "convDb.bias",
+          "convDb.weight",
+          "convPa.bias",
+          "convPa.weight",
+          "convPb.bias",
+          "convPb.weight"
+        ],
+        "state_shapes": {
+          "conv1a.weight": [
+            64,
+            1,
+            3,
+            3
+          ],
+          "conv1a.bias": [
+            64
+          ],
+          "conv1b.weight": [
+            64,
+            64,
+            3,
+            3
+          ],
+          "conv1b.bias": [
+            64
+          ],
+          "conv2a.weight": [
+            64,
+            64,
+            3,
+            3
+          ],
+          "conv2a.bias": [
+            64
+          ],
+          "conv2b.weight": [
+            64,
+            64,
+            3,
+            3
+          ],
+          "conv2b.bias": [
+            64
+          ],
+          "conv3a.weight": [
+            128,
+            64,
+            3,
+            3
+          ],
+          "conv3a.bias": [
+            128
+          ],
+          "conv3b.weight": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "conv3b.bias": [
+            128
+          ],
+          "conv4a.weight": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "conv4a.bias": [
+            128
+          ],
+          "conv4b.weight": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "conv4b.bias": [
+            128
+          ],
+          "convPa.weight": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "convPa.bias": [
+            256
+          ],
+          "convPb.weight": [
+            65,
+            256,
+            1,
+            1
+          ],
+          "convPb.bias": [
+            65
+          ],
+          "convDa.weight": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "convDa.bias": [
+            256
+          ],
+          "convDb.weight": [
+            256,
+            256,
+            1,
+            1
+          ],
+          "convDb.bias": [
+            256
+          ]
+        },
+        "strict_after_deterministic_buffer_completion": true
+      },
+      "lightglue": {
+        "missing_keys": [
+          "confidence_thresholds"
+        ],
+        "unexpected_keys": [
+          "log_assignment.0.r",
+          "log_assignment.1.r",
+          "log_assignment.2.r",
+          "log_assignment.3.r",
+          "log_assignment.4.r",
+          "log_assignment.5.r",
+          "log_assignment.6.r",
+          "log_assignment.7.r",
+          "log_assignment.8.r"
+        ],
+        "ignored_unused_checkpoint_entries": {
+          "log_assignment.0.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          },
+          "log_assignment.1.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          },
+          "log_assignment.2.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          },
+          "log_assignment.3.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          },
+          "log_assignment.4.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          },
+          "log_assignment.5.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          },
+          "log_assignment.6.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          },
+          "log_assignment.7.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          },
+          "log_assignment.8.r": {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.float32",
+            "verified_constant_one": true,
+            "float32_little_endian_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c",
+            "reason": "unused by pinned MatchAssignment; official loader ignores"
+          }
+        },
+        "allowed_missing_buffers": [
+          "confidence_thresholds"
+        ],
+        "learned_keys": [
+          "log_assignment.0.final_proj.bias",
+          "log_assignment.0.final_proj.weight",
+          "log_assignment.0.matchability.bias",
+          "log_assignment.0.matchability.weight",
+          "log_assignment.1.final_proj.bias",
+          "log_assignment.1.final_proj.weight",
+          "log_assignment.1.matchability.bias",
+          "log_assignment.1.matchability.weight",
+          "log_assignment.2.final_proj.bias",
+          "log_assignment.2.final_proj.weight",
+          "log_assignment.2.matchability.bias",
+          "log_assignment.2.matchability.weight",
+          "log_assignment.3.final_proj.bias",
+          "log_assignment.3.final_proj.weight",
+          "log_assignment.3.matchability.bias",
+          "log_assignment.3.matchability.weight",
+          "log_assignment.4.final_proj.bias",
+          "log_assignment.4.final_proj.weight",
+          "log_assignment.4.matchability.bias",
+          "log_assignment.4.matchability.weight",
+          "log_assignment.5.final_proj.bias",
+          "log_assignment.5.final_proj.weight",
+          "log_assignment.5.matchability.bias",
+          "log_assignment.5.matchability.weight",
+          "log_assignment.6.final_proj.bias",
+          "log_assignment.6.final_proj.weight",
+          "log_assignment.6.matchability.bias",
+          "log_assignment.6.matchability.weight",
+          "log_assignment.7.final_proj.bias",
+          "log_assignment.7.final_proj.weight",
+          "log_assignment.7.matchability.bias",
+          "log_assignment.7.matchability.weight",
+          "log_assignment.8.final_proj.bias",
+          "log_assignment.8.final_proj.weight",
+          "log_assignment.8.matchability.bias",
+          "log_assignment.8.matchability.weight",
+          "posenc.Wr.weight",
+          "token_confidence.0.token.0.bias",
+          "token_confidence.0.token.0.weight",
+          "token_confidence.1.token.0.bias",
+          "token_confidence.1.token.0.weight",
+          "token_confidence.2.token.0.bias",
+          "token_confidence.2.token.0.weight",
+          "token_confidence.3.token.0.bias",
+          "token_confidence.3.token.0.weight",
+          "token_confidence.4.token.0.bias",
+          "token_confidence.4.token.0.weight",
+          "token_confidence.5.token.0.bias",
+          "token_confidence.5.token.0.weight",
+          "token_confidence.6.token.0.bias",
+          "token_confidence.6.token.0.weight",
+          "token_confidence.7.token.0.bias",
+          "token_confidence.7.token.0.weight",
+          "transformers.0.cross_attn.ffn.0.bias",
+          "transformers.0.cross_attn.ffn.0.weight",
+          "transformers.0.cross_attn.ffn.1.bias",
+          "transformers.0.cross_attn.ffn.1.weight",
+          "transformers.0.cross_attn.ffn.3.bias",
+          "transformers.0.cross_attn.ffn.3.weight",
+          "transformers.0.cross_attn.to_out.bias",
+          "transformers.0.cross_attn.to_out.weight",
+          "transformers.0.cross_attn.to_qk.bias",
+          "transformers.0.cross_attn.to_qk.weight",
+          "transformers.0.cross_attn.to_v.bias",
+          "transformers.0.cross_attn.to_v.weight",
+          "transformers.0.self_attn.Wqkv.bias",
+          "transformers.0.self_attn.Wqkv.weight",
+          "transformers.0.self_attn.ffn.0.bias",
+          "transformers.0.self_attn.ffn.0.weight",
+          "transformers.0.self_attn.ffn.1.bias",
+          "transformers.0.self_attn.ffn.1.weight",
+          "transformers.0.self_attn.ffn.3.bias",
+          "transformers.0.self_attn.ffn.3.weight",
+          "transformers.0.self_attn.out_proj.bias",
+          "transformers.0.self_attn.out_proj.weight",
+          "transformers.1.cross_attn.ffn.0.bias",
+          "transformers.1.cross_attn.ffn.0.weight",
+          "transformers.1.cross_attn.ffn.1.bias",
+          "transformers.1.cross_attn.ffn.1.weight",
+          "transformers.1.cross_attn.ffn.3.bias",
+          "transformers.1.cross_attn.ffn.3.weight",
+          "transformers.1.cross_attn.to_out.bias",
+          "transformers.1.cross_attn.to_out.weight",
+          "transformers.1.cross_attn.to_qk.bias",
+          "transformers.1.cross_attn.to_qk.weight",
+          "transformers.1.cross_attn.to_v.bias",
+          "transformers.1.cross_attn.to_v.weight",
+          "transformers.1.self_attn.Wqkv.bias",
+          "transformers.1.self_attn.Wqkv.weight",
+          "transformers.1.self_attn.ffn.0.bias",
+          "transformers.1.self_attn.ffn.0.weight",
+          "transformers.1.self_attn.ffn.1.bias",
+          "transformers.1.self_attn.ffn.1.weight",
+          "transformers.1.self_attn.ffn.3.bias",
+          "transformers.1.self_attn.ffn.3.weight",
+          "transformers.1.self_attn.out_proj.bias",
+          "transformers.1.self_attn.out_proj.weight",
+          "transformers.2.cross_attn.ffn.0.bias",
+          "transformers.2.cross_attn.ffn.0.weight",
+          "transformers.2.cross_attn.ffn.1.bias",
+          "transformers.2.cross_attn.ffn.1.weight",
+          "transformers.2.cross_attn.ffn.3.bias",
+          "transformers.2.cross_attn.ffn.3.weight",
+          "transformers.2.cross_attn.to_out.bias",
+          "transformers.2.cross_attn.to_out.weight",
+          "transformers.2.cross_attn.to_qk.bias",
+          "transformers.2.cross_attn.to_qk.weight",
+          "transformers.2.cross_attn.to_v.bias",
+          "transformers.2.cross_attn.to_v.weight",
+          "transformers.2.self_attn.Wqkv.bias",
+          "transformers.2.self_attn.Wqkv.weight",
+          "transformers.2.self_attn.ffn.0.bias",
+          "transformers.2.self_attn.ffn.0.weight",
+          "transformers.2.self_attn.ffn.1.bias",
+          "transformers.2.self_attn.ffn.1.weight",
+          "transformers.2.self_attn.ffn.3.bias",
+          "transformers.2.self_attn.ffn.3.weight",
+          "transformers.2.self_attn.out_proj.bias",
+          "transformers.2.self_attn.out_proj.weight",
+          "transformers.3.cross_attn.ffn.0.bias",
+          "transformers.3.cross_attn.ffn.0.weight",
+          "transformers.3.cross_attn.ffn.1.bias",
+          "transformers.3.cross_attn.ffn.1.weight",
+          "transformers.3.cross_attn.ffn.3.bias",
+          "transformers.3.cross_attn.ffn.3.weight",
+          "transformers.3.cross_attn.to_out.bias",
+          "transformers.3.cross_attn.to_out.weight",
+          "transformers.3.cross_attn.to_qk.bias",
+          "transformers.3.cross_attn.to_qk.weight",
+          "transformers.3.cross_attn.to_v.bias",
+          "transformers.3.cross_attn.to_v.weight",
+          "transformers.3.self_attn.Wqkv.bias",
+          "transformers.3.self_attn.Wqkv.weight",
+          "transformers.3.self_attn.ffn.0.bias",
+          "transformers.3.self_attn.ffn.0.weight",
+          "transformers.3.self_attn.ffn.1.bias",
+          "transformers.3.self_attn.ffn.1.weight",
+          "transformers.3.self_attn.ffn.3.bias",
+          "transformers.3.self_attn.ffn.3.weight",
+          "transformers.3.self_attn.out_proj.bias",
+          "transformers.3.self_attn.out_proj.weight",
+          "transformers.4.cross_attn.ffn.0.bias",
+          "transformers.4.cross_attn.ffn.0.weight",
+          "transformers.4.cross_attn.ffn.1.bias",
+          "transformers.4.cross_attn.ffn.1.weight",
+          "transformers.4.cross_attn.ffn.3.bias",
+          "transformers.4.cross_attn.ffn.3.weight",
+          "transformers.4.cross_attn.to_out.bias",
+          "transformers.4.cross_attn.to_out.weight",
+          "transformers.4.cross_attn.to_qk.bias",
+          "transformers.4.cross_attn.to_qk.weight",
+          "transformers.4.cross_attn.to_v.bias",
+          "transformers.4.cross_attn.to_v.weight",
+          "transformers.4.self_attn.Wqkv.bias",
+          "transformers.4.self_attn.Wqkv.weight",
+          "transformers.4.self_attn.ffn.0.bias",
+          "transformers.4.self_attn.ffn.0.weight",
+          "transformers.4.self_attn.ffn.1.bias",
+          "transformers.4.self_attn.ffn.1.weight",
+          "transformers.4.self_attn.ffn.3.bias",
+          "transformers.4.self_attn.ffn.3.weight",
+          "transformers.4.self_attn.out_proj.bias",
+          "transformers.4.self_attn.out_proj.weight",
+          "transformers.5.cross_attn.ffn.0.bias",
+          "transformers.5.cross_attn.ffn.0.weight",
+          "transformers.5.cross_attn.ffn.1.bias",
+          "transformers.5.cross_attn.ffn.1.weight",
+          "transformers.5.cross_attn.ffn.3.bias",
+          "transformers.5.cross_attn.ffn.3.weight",
+          "transformers.5.cross_attn.to_out.bias",
+          "transformers.5.cross_attn.to_out.weight",
+          "transformers.5.cross_attn.to_qk.bias",
+          "transformers.5.cross_attn.to_qk.weight",
+          "transformers.5.cross_attn.to_v.bias",
+          "transformers.5.cross_attn.to_v.weight",
+          "transformers.5.self_attn.Wqkv.bias",
+          "transformers.5.self_attn.Wqkv.weight",
+          "transformers.5.self_attn.ffn.0.bias",
+          "transformers.5.self_attn.ffn.0.weight",
+          "transformers.5.self_attn.ffn.1.bias",
+          "transformers.5.self_attn.ffn.1.weight",
+          "transformers.5.self_attn.ffn.3.bias",
+          "transformers.5.self_attn.ffn.3.weight",
+          "transformers.5.self_attn.out_proj.bias",
+          "transformers.5.self_attn.out_proj.weight",
+          "transformers.6.cross_attn.ffn.0.bias",
+          "transformers.6.cross_attn.ffn.0.weight",
+          "transformers.6.cross_attn.ffn.1.bias",
+          "transformers.6.cross_attn.ffn.1.weight",
+          "transformers.6.cross_attn.ffn.3.bias",
+          "transformers.6.cross_attn.ffn.3.weight",
+          "transformers.6.cross_attn.to_out.bias",
+          "transformers.6.cross_attn.to_out.weight",
+          "transformers.6.cross_attn.to_qk.bias",
+          "transformers.6.cross_attn.to_qk.weight",
+          "transformers.6.cross_attn.to_v.bias",
+          "transformers.6.cross_attn.to_v.weight",
+          "transformers.6.self_attn.Wqkv.bias",
+          "transformers.6.self_attn.Wqkv.weight",
+          "transformers.6.self_attn.ffn.0.bias",
+          "transformers.6.self_attn.ffn.0.weight",
+          "transformers.6.self_attn.ffn.1.bias",
+          "transformers.6.self_attn.ffn.1.weight",
+          "transformers.6.self_attn.ffn.3.bias",
+          "transformers.6.self_attn.ffn.3.weight",
+          "transformers.6.self_attn.out_proj.bias",
+          "transformers.6.self_attn.out_proj.weight",
+          "transformers.7.cross_attn.ffn.0.bias",
+          "transformers.7.cross_attn.ffn.0.weight",
+          "transformers.7.cross_attn.ffn.1.bias",
+          "transformers.7.cross_attn.ffn.1.weight",
+          "transformers.7.cross_attn.ffn.3.bias",
+          "transformers.7.cross_attn.ffn.3.weight",
+          "transformers.7.cross_attn.to_out.bias",
+          "transformers.7.cross_attn.to_out.weight",
+          "transformers.7.cross_attn.to_qk.bias",
+          "transformers.7.cross_attn.to_qk.weight",
+          "transformers.7.cross_attn.to_v.bias",
+          "transformers.7.cross_attn.to_v.weight",
+          "transformers.7.self_attn.Wqkv.bias",
+          "transformers.7.self_attn.Wqkv.weight",
+          "transformers.7.self_attn.ffn.0.bias",
+          "transformers.7.self_attn.ffn.0.weight",
+          "transformers.7.self_attn.ffn.1.bias",
+          "transformers.7.self_attn.ffn.1.weight",
+          "transformers.7.self_attn.ffn.3.bias",
+          "transformers.7.self_attn.ffn.3.weight",
+          "transformers.7.self_attn.out_proj.bias",
+          "transformers.7.self_attn.out_proj.weight",
+          "transformers.8.cross_attn.ffn.0.bias",
+          "transformers.8.cross_attn.ffn.0.weight",
+          "transformers.8.cross_attn.ffn.1.bias",
+          "transformers.8.cross_attn.ffn.1.weight",
+          "transformers.8.cross_attn.ffn.3.bias",
+          "transformers.8.cross_attn.ffn.3.weight",
+          "transformers.8.cross_attn.to_out.bias",
+          "transformers.8.cross_attn.to_out.weight",
+          "transformers.8.cross_attn.to_qk.bias",
+          "transformers.8.cross_attn.to_qk.weight",
+          "transformers.8.cross_attn.to_v.bias",
+          "transformers.8.cross_attn.to_v.weight",
+          "transformers.8.self_attn.Wqkv.bias",
+          "transformers.8.self_attn.Wqkv.weight",
+          "transformers.8.self_attn.ffn.0.bias",
+          "transformers.8.self_attn.ffn.0.weight",
+          "transformers.8.self_attn.ffn.1.bias",
+          "transformers.8.self_attn.ffn.1.weight",
+          "transformers.8.self_attn.ffn.3.bias",
+          "transformers.8.self_attn.ffn.3.weight",
+          "transformers.8.self_attn.out_proj.bias",
+          "transformers.8.self_attn.out_proj.weight"
+        ],
+        "state_shapes": {
+          "confidence_thresholds": [
+            9
+          ],
+          "posenc.Wr.weight": [
+            32,
+            2
+          ],
+          "transformers.0.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.0.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.0.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.0.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.0.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.0.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.0.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.0.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.0.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.0.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.0.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.0.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.0.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.0.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.0.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.0.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.0.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.0.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.0.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.0.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.0.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.0.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.1.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.1.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.1.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.1.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.1.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.1.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.1.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.1.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.1.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.1.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.1.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.1.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.1.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.1.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.1.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.1.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.1.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.1.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.1.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.1.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.1.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.1.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.2.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.2.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.2.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.2.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.2.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.2.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.2.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.2.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.2.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.2.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.2.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.2.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.2.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.2.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.2.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.2.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.2.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.2.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.2.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.2.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.2.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.2.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.3.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.3.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.3.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.3.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.3.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.3.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.3.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.3.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.3.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.3.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.3.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.3.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.3.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.3.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.3.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.3.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.3.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.3.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.3.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.3.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.3.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.3.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.4.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.4.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.4.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.4.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.4.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.4.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.4.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.4.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.4.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.4.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.4.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.4.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.4.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.4.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.4.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.4.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.4.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.4.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.4.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.4.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.4.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.4.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.5.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.5.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.5.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.5.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.5.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.5.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.5.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.5.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.5.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.5.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.5.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.5.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.5.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.5.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.5.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.5.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.5.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.5.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.5.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.5.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.5.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.5.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.6.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.6.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.6.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.6.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.6.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.6.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.6.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.6.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.6.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.6.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.6.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.6.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.6.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.6.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.6.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.6.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.6.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.6.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.6.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.6.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.6.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.6.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.7.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.7.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.7.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.7.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.7.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.7.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.7.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.7.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.7.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.7.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.7.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.7.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.7.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.7.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.7.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.7.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.7.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.7.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.7.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.7.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.7.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.7.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.8.self_attn.Wqkv.weight": [
+            768,
+            256
+          ],
+          "transformers.8.self_attn.Wqkv.bias": [
+            768
+          ],
+          "transformers.8.self_attn.out_proj.weight": [
+            256,
+            256
+          ],
+          "transformers.8.self_attn.out_proj.bias": [
+            256
+          ],
+          "transformers.8.self_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.8.self_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.8.self_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.8.self_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.8.self_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.8.self_attn.ffn.3.bias": [
+            256
+          ],
+          "transformers.8.cross_attn.to_qk.weight": [
+            256,
+            256
+          ],
+          "transformers.8.cross_attn.to_qk.bias": [
+            256
+          ],
+          "transformers.8.cross_attn.to_v.weight": [
+            256,
+            256
+          ],
+          "transformers.8.cross_attn.to_v.bias": [
+            256
+          ],
+          "transformers.8.cross_attn.to_out.weight": [
+            256,
+            256
+          ],
+          "transformers.8.cross_attn.to_out.bias": [
+            256
+          ],
+          "transformers.8.cross_attn.ffn.0.weight": [
+            512,
+            512
+          ],
+          "transformers.8.cross_attn.ffn.0.bias": [
+            512
+          ],
+          "transformers.8.cross_attn.ffn.1.weight": [
+            512
+          ],
+          "transformers.8.cross_attn.ffn.1.bias": [
+            512
+          ],
+          "transformers.8.cross_attn.ffn.3.weight": [
+            256,
+            512
+          ],
+          "transformers.8.cross_attn.ffn.3.bias": [
+            256
+          ],
+          "log_assignment.0.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.0.matchability.bias": [
+            1
+          ],
+          "log_assignment.0.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.0.final_proj.bias": [
+            256
+          ],
+          "log_assignment.1.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.1.matchability.bias": [
+            1
+          ],
+          "log_assignment.1.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.1.final_proj.bias": [
+            256
+          ],
+          "log_assignment.2.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.2.matchability.bias": [
+            1
+          ],
+          "log_assignment.2.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.2.final_proj.bias": [
+            256
+          ],
+          "log_assignment.3.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.3.matchability.bias": [
+            1
+          ],
+          "log_assignment.3.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.3.final_proj.bias": [
+            256
+          ],
+          "log_assignment.4.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.4.matchability.bias": [
+            1
+          ],
+          "log_assignment.4.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.4.final_proj.bias": [
+            256
+          ],
+          "log_assignment.5.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.5.matchability.bias": [
+            1
+          ],
+          "log_assignment.5.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.5.final_proj.bias": [
+            256
+          ],
+          "log_assignment.6.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.6.matchability.bias": [
+            1
+          ],
+          "log_assignment.6.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.6.final_proj.bias": [
+            256
+          ],
+          "log_assignment.7.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.7.matchability.bias": [
+            1
+          ],
+          "log_assignment.7.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.7.final_proj.bias": [
+            256
+          ],
+          "log_assignment.8.matchability.weight": [
+            1,
+            256
+          ],
+          "log_assignment.8.matchability.bias": [
+            1
+          ],
+          "log_assignment.8.final_proj.weight": [
+            256,
+            256
+          ],
+          "log_assignment.8.final_proj.bias": [
+            256
+          ],
+          "token_confidence.0.token.0.weight": [
+            1,
+            256
+          ],
+          "token_confidence.0.token.0.bias": [
+            1
+          ],
+          "token_confidence.1.token.0.weight": [
+            1,
+            256
+          ],
+          "token_confidence.1.token.0.bias": [
+            1
+          ],
+          "token_confidence.2.token.0.weight": [
+            1,
+            256
+          ],
+          "token_confidence.2.token.0.bias": [
+            1
+          ],
+          "token_confidence.3.token.0.weight": [
+            1,
+            256
+          ],
+          "token_confidence.3.token.0.bias": [
+            1
+          ],
+          "token_confidence.4.token.0.weight": [
+            1,
+            256
+          ],
+          "token_confidence.4.token.0.bias": [
+            1
+          ],
+          "token_confidence.5.token.0.weight": [
+            1,
+            256
+          ],
+          "token_confidence.5.token.0.bias": [
+            1
+          ],
+          "token_confidence.6.token.0.weight": [
+            1,
+            256
+          ],
+          "token_confidence.6.token.0.bias": [
+            1
+          ],
+          "token_confidence.7.token.0.weight": [
+            1,
+            256
+          ],
+          "token_confidence.7.token.0.bias": [
+            1
+          ]
+        },
+        "strict_after_deterministic_buffer_completion": true
+      }
+    },
+    "wall_seconds": 32.19513883301988,
+    "stage": "completed",
+    "module_origins": {
+      "sam2": {
+        "root_key": "sam2_source",
+        "relative_origins": [
+          "sam2/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "b87ca1e95cd54b81766e8c74acf0e937952639529e40d2b4088693286f49419e",
+        "version_binding": "verified source commit and file inventory, not installed distribution"
+      },
+      "lightglue": {
+        "root_key": "lightglue_source",
+        "relative_origins": [
+          "lightglue/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "cf4322abb908f69282198931fb23c09a1ef1101b066d57842402e6436a92eaa3",
+        "version_binding": "verified source commit and file inventory, not installed distribution"
+      },
+      "numpy": {
+        "root_key": "runtime",
+        "relative_origins": [
+          "numpy/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "6ae17b070c0f70a8e3cad89a510a256942e5a1f37ea5feb120cec167ed2a6236",
+        "distribution": "numpy",
+        "version": "2.2.6"
+      },
+      "torch": {
+        "root_key": "runtime",
+        "relative_origins": [
+          "torch/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "2f0deb66d5dff6b9c02a62832c3bf3824c2ee031c462a3afeb9ca170466da5bf",
+        "distribution": "torch",
+        "version": "2.8.0"
+      },
+      "cv2": {
+        "root_key": "runtime",
+        "relative_origins": [
+          "cv2/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "936bd94c5a5debf0212fc751af79d3a163652f3e850259df2159db6aa3ed8ad8",
+        "distribution": "opencv-python",
+        "version": "4.11.0.86"
+      },
+      "PIL": {
+        "root_key": "runtime",
+        "relative_origins": [
+          "PIL/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "43828e12947b4bf5ec8f7d1fbceb2f47de311295f8294b15794c1a54fd5f53cd",
+        "distribution": "Pillow",
+        "version": "11.3.0"
+      },
+      "kornia": {
+        "root_key": "runtime",
+        "relative_origins": [
+          "kornia/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "e38627de745d8c47a4c7516033c481f44a37b05279dad6c3ebf6676e4366be0d",
+        "distribution": "kornia",
+        "version": "0.8.1"
+      },
+      "hydra": {
+        "root_key": "runtime",
+        "relative_origins": [
+          "hydra/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "45f5e3eddb9789e08b9dc061bc03fe74aff28815fb00fd5ce4e4f5649e26cea4",
+        "distribution": "hydra-core",
+        "version": "1.3.2"
+      },
+      "omegaconf": {
+        "root_key": "runtime",
+        "relative_origins": [
+          "omegaconf/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "9729f08831c414120732aac13771d18742897afcc86a9e8cc942c53643269417",
+        "distribution": "omegaconf",
+        "version": "2.3.0"
+      },
+      "iopath": {
+        "root_key": "runtime",
+        "relative_origins": [
+          "iopath/__init__.py"
+        ],
+        "namespace": false,
+        "module_sha256": "0c235d04461021792c89ad3d3415d4f35d3b9ac14bf5f0a58970d77dc9648749",
+        "distribution": "iopath",
+        "version": "0.1.10"
+      }
+    },
+    "execution": {
+      "device": "cpu",
+      "parameter_dtype": "float32",
+      "torch_intraop": 4,
+      "torch_interop": 1,
+      "opencv_threads": 1,
+      "opencv_parallelism_disabled": true,
+      "authored_compact_memory_dtype": "bfloat16",
+      "autocast": false,
+      "vos_optimized": false
+    },
+    "native_model": {
+      "parameter_count": 38962498,
+      "parameter_tensors": 470,
+      "buffer_count": 256,
+      "state_tensors": 471,
+      "parameter_dtypes": [
+        "torch.float32"
+      ],
+      "observed_compact_memory_dtypes": [
+        "torch.bfloat16"
+      ]
+    },
+    "config": {
+      "name": "configs/sam2.1/sam2.1_hiera_t.yaml",
+      "overrides": [
+        "++model.sam_mask_decoder_extra_args.dynamic_multimask_via_stability=true",
+        "++model.sam_mask_decoder_extra_args.dynamic_multimask_stability_delta=0.05",
+        "++model.sam_mask_decoder_extra_args.dynamic_multimask_stability_thresh=0.98",
+        "++model.binarize_mask_from_pts_for_mem_enc=true",
+        "++model.fill_hole_area=0"
+      ],
+      "num_maskmem": 7,
+      "memory_stride": 1
+    },
+    "fixture": {
+      "base": {
+        "seed": 0,
+        "shape_hwc": [
+          384,
+          512,
+          3
+        ],
+        "dtype": "float32",
+        "formula": "0.55*RGB_gradient + 0.35*default_rng(0).random + 0.05; overwrite four squares",
+        "squares_y_x_side_rgb": [
+          [
+            36,
+            46,
+            42,
+            [
+              0.95,
+              0.1,
+              0.2
+            ]
+          ],
+          [
+            118,
+            207,
+            64,
+            [
+              0.1,
+              0.9,
+              0.3
+            ]
+          ],
+          [
+            265,
+            352,
+            70,
+            [
+              0.2,
+              0.25,
+              0.95
+            ]
+          ],
+          [
+            75,
+            395,
+            35,
+            [
+              0.92,
+              0.92,
+              0.2
+            ]
+          ]
+        ],
+        "second_image": "right shift 12 pixels, zero left edge"
+      },
+      "frames": 9,
+      "right_shift_per_frame": 12,
+      "padding": "zero",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "quantization": "floor(255*clip(x,0,1)+0.5)",
+      "initial_mask_yx": [
+        118,
+        182,
+        207,
+        271
+      ],
+      "probe_frame": 7,
+      "future_frame": 8,
+      "lightglue_frames": [
+        0,
+        8
+      ]
+    },
+    "inputs": [
+      {
+        "filename": "frames/00000.jpg",
+        "sha256": "f8a6dd4213f0a9df75e5851e6cf3b5b8eab27441b904d69829f622fb83b5fe41",
+        "bytes": 304278
+      },
+      {
+        "filename": "frames/00001.jpg",
+        "sha256": "25ffb96277ea4c8ce171e9933fe6e8c7eeafc01c238c16fded460ad7b2b257bf",
+        "bytes": 299457
+      },
+      {
+        "filename": "frames/00002.jpg",
+        "sha256": "67074c0b17cbcdc732656d535ffadf86b8ac7d799a97cd6736d8aadf8befb1a1",
+        "bytes": 289800
+      },
+      {
+        "filename": "frames/00003.jpg",
+        "sha256": "7776eab899cddbd829abc1215c369b16ffe9763d19700e6af70c6d96b0235506",
+        "bytes": 284809
+      },
+      {
+        "filename": "frames/00004.jpg",
+        "sha256": "6eddca9c617464970760fc34050ad1837ed27811ea4cd426207197612b7d7cf3",
+        "bytes": 275144
+      },
+      {
+        "filename": "frames/00005.jpg",
+        "sha256": "bc5fdef8ce468c23c69a20aae84a88ce859d78ae61169441ac2fd05824e21023",
+        "bytes": 270199
+      },
+      {
+        "filename": "frames/00006.jpg",
+        "sha256": "6c3a84ada36eb5a233e7a4d146c7aded8b3c39a4a24011dff802b722b9e264d1",
+        "bytes": 260513
+      },
+      {
+        "filename": "frames/00007.jpg",
+        "sha256": "0783080349ee776760c872949a5ded1b7be5ca935f5bd3df28918d4ef6df02e3",
+        "bytes": 255516
+      },
+      {
+        "filename": "frames/00008.jpg",
+        "sha256": "ba944d1a3019e707d400c9cc0dd8ce9ff4a4bdadcb56bdcb1d83f557b5b87f51",
+        "bytes": 246317
+      }
+    ],
+    "state_after_baseline_sha256": "c2c0da7ec1f7265ebba989d6e58ee7205e4f288918e9ec1a8a6d8e26ce66ee07",
+    "state_after_frame_7_sha256": "9296f1b564b863db5a12ed9b37b170cd7738fb99f21b70c62378acd0453ef197",
+    "carrier_removal_and_retention_verified": true,
+    "initial_memory_prompt_trace": {
+      "spatial_frames": [
+        0
+      ],
+      "pointer_frames": [
+        0
+      ],
+      "num_obj_ptr_tokens": 4,
+      "total_tokens": 4100,
+      "blocks": [
+        {
+          "kind": "spatial",
+          "frame": 0,
+          "start": 0,
+          "end": 4096,
+          "values_sha256": "037841ca36d17f4686c210523bea3886d666f4e6db33b17b0d2b216f1dae69d4",
+          "position_sha256": "d3a5bbc15fbcf46839f595f49d9190d5eab018a408cd13a8a17acc2891d8689b"
+        },
+        {
+          "kind": "pointer",
+          "frame": 0,
+          "start": 4096,
+          "end": 4100,
+          "values_sha256": "2bdc26c596ae8917ac70c0ac4a97d0fd2a83a620373ae090c833b27ccab0adc5",
+          "position_sha256": "979cde68454fcc367a63e930a49f38ad4345e421843a17bce063835c4f7ed8d6"
+        }
+      ]
+    },
+    "reset_scope": "retain conditioning frame 0; drop all nonconditioning outputs; same points; no previous mask; no memory encoding",
+    "native_video_decoder_bank": {
+      "frame": 7,
+      "count": 3,
+      "native_multimask_requested": true,
+      "selected_index": 2,
+      "selected_output_exact_baseline_parity": true,
+      "same_history_carriers": true,
+      "state_unchanged": true,
+      "forced_decoder_alternatives": false,
+      "scope": "original video _track_step outputs; a singleton bank is permitted"
+    },
+    "future_after_discarded_probes": {
+      "frame": 8,
+      "exact_logit_parity": true,
+      "maximum_absolute_parity_error": 0.0,
+      "exact_complete_state_parity": true,
+      "query_checkpoint_unchanged": true,
+      "original_baseline_unchanged": true
+    },
+    "match_count": 69
+  }
+}

@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: 0029 installation failure isolated; native check still pending
+## Current work: 0029 native runtime qualified; real-video evidence test pending
+
+The [fresh runtime02 installation and fixed artificial sequence](results/0029-preparation/runtime/README.md) passed after the narrow metadata repair. Native qualification took37.009693s and2.55GiB peak sampled RSS, verified exact branch/no-op/future-state parity, found3 same-history native mask candidates and69 mutual artificial-image matches. A first independent audit's extra cross-batch pointer-position equality assertion failed; exact isolated arithmetic reproduced both hashes and the separately corrected audit passed18,197checks. All original failures remain. No benchmark image/mask has been acquired, no accuracy gain is established, and the manuscript gate remains unmet. Next freeze the complete first-stage real-video evidence diagnostic before its separate acquisition.
+
+## Historical: 0029 installation failure isolated; native check pending
 
 The [first installation](results/0029-preparation/runtime/README.md) failed after all five install/build commands succeeded: its metadata reader miscounted setuptools' nested vendored records. A narrow top-level metadata identity repair retains the exact dependency closure and complete inventory. Preserve attempt01; a fresh source CI and attempt02 are required. No model inference or scientific data has run.
 

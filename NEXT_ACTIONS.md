@@ -3,8 +3,8 @@
 ## Current: qualify the minimum native runtime, then test information
 
 1. Preserve [0029 acquisition receipts](results/0029-preparation/acquisition/README.md), exact source CI and all original assets. Acquisition passed; do not repeat it. Publish and verify this result as preparation, not improvement.
-2. Preserve failed installation01 and qualify the narrow setuptools metadata-path repair. Verify new exact-source CI, then use a fresh installation02 destination before the [nine-frame native qualification](protocols/0029-native-runtime.md). Preserve all failures without changing the fixture. Native SAM2 plus LightGlue comes first; DAM VOT/device equivalence remains necessary before a larger efficacy claim.
-3. Freeze a small independent-recording development diagnostic, fixed frame schedule, signed/unsigned and same-evidence prompt/reset controls, numeric stopping gates and GT separation before any image/mask acquisition. A necessary-information failure closes this variant rather than prompting hidden tuning.
+2. Preserve failed installation01 and completed runtime02, independently verify saved artificial outputs, publish/verify result and merged-main CI. Native SAM2/LightGlue qualification passed; DAM VOT/device equivalence remains necessary before a larger efficacy claim.
+3. Freeze the complete first-stage independent-recording development evidence diagnostic, fixed frame schedule, signed/unsigned and same-evidence prompt/reset controls, numeric stopping gates and GT separation before any image/mask acquisition. Only if all48 evidence rows support the fixed necessary coverage condition, finish/freeze all native comparison controls and all-six prediction seals before SAM sequence execution or query GT. A necessary-information failure closes this variant rather than prompting hidden tuning.
 4. Preserve the two-source +3 absolute J&F gate, complete-cost controls, ablations and independent replication before any manuscript. No asset receipt or artificial check counts toward this gate.
 
 ## Historical: resolve one falsifiable information question before implementation

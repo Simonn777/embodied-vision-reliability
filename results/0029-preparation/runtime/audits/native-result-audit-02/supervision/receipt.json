@@ -1,0 +1,36 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "-S",
+    "-W",
+    "error",
+    "$PRIVATE/0029-preparation/native-result-audit-02/audit_saved.py"
+  ],
+  "spec_sha256": "aa23d53a9350178cda4dcffc0693e6d532d01978e91b88422fda2c2560a3377c",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 1.9372092499979772,
+  "peak_group_rss_kib": 123920,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "cd9d1e1097b1b8c9c345e56af79708c88255f8484a4d06dbc22197a4961a19d9",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "a98981da2d3ca7daf59a3ccf954c35614a820557a918ad56041da84f0b900650"
+}
