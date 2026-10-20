@@ -1,0 +1,25 @@
+{
+  "repo": "$REPOSITORY",
+  "commit": "a28a6d054230efd15ab108348f79bdbbb35a6203",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "operation_output": "$PRIVATE/0029-acquisition-01/supervision",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "$REPOSITORY/experiments/0029-memory-information/acquire_assets.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "a28a6d054230efd15ab108348f79bdbbb35a6203",
+    "--outputdir",
+    "$PRIVATE/0029-acquisition-01/assets"
+  ],
+  "result_file": "$PRIVATE/0029-acquisition-01/assets/operation.json"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "$REPOSITORY/experiments/0029-memory-information/acquire_assets.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "a28a6d054230efd15ab108348f79bdbbb35a6203",
+    "--outputdir",
+    "$PRIVATE/0029-acquisition-01/assets"
+  ],
+  "spec_sha256": "5937fcfb53657d640a8d03b6fafcfc8c9ad71b8a80a43c7efd8aadfcd7df7f50",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "a28a6d054230efd15ab108348f79bdbbb35a6203",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 21.94446795899421,
+  "peak_group_rss_kib": 33664,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "bcb2ad95565ef1975d67c9f1354d8ccfc0936d41e6e85a021a11c2d2db5377a2",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": "c84eeb165504f08c99b4fd665ea12c81cf3b968970632cc2ad9dbd947eafcbef"
+}

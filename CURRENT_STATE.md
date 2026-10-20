@@ -1,6 +1,10 @@
 # Current state
 
-## Current work: 0029 pinned asset preparation; no measured improvement
+## Current work: 0029 assets acquired; runtime not yet qualified
+
+[The one-shot acquisition](results/0029-preparation/acquisition/README.md) completed after exact source CI:83 verified files,257,104,722 response-body bytes,21.944468s supervised wall time. All payload hashes were independently reread. Next inspect/freeze the offline runtime and manufactured native SAM2/LightGlue check. No scientific data, inference result or improvement is established.
+
+## Historical: 0029 pinned asset preparation; no measured improvement
 
 The [acquisition-only protocol](protocols/0029-runtime-assets.md) prepares native SAM2.1 tiny and a pinned Python 3.12 runtime under a full 300 MB reservation. Source/metadata checks identify an expected 257,103,668-byte payload; installation, conditional offline builds and model inference require subsequent qualification. DAM4SAM still needs a reviewed VOT/device adapter. DAVIS parent candidates are identified but unallocated; VOST frame/mask inventory pairs, while its parent-recording mapping remains unresolved. Exact source CI must precede acquisition. This is preparation for a small signed-memory information test, not an empirical gain or manuscript.
 

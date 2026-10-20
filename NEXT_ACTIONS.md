@@ -2,7 +2,7 @@
 
 ## Current: qualify the minimum native runtime, then test information
 
-1. Review and freeze the [0029 asset-only protocol](protocols/0029-runtime-assets.md), run artificial wrapper checks and verify exact-commit CI. Acquire only the fixed assets under the existing resource monitor; preserve all receipts and failures.
+1. Preserve [0029 acquisition receipts](results/0029-preparation/acquisition/README.md), exact source CI and all original assets. Acquisition passed; do not repeat it. Publish and verify this result as preparation, not improvement.
 2. Inspect the two acquired source-distribution build hooks, then prepare the smallest explicitly offline Python 3.12 installation and manufactured-input qualification. Native SAM2 plus LightGlue comes first; DAM VOT/device equivalence remains necessary before a larger efficacy claim.
 3. Freeze a small independent-recording development diagnostic, fixed frame schedule, signed/unsigned and same-evidence prompt/reset controls, numeric stopping gates and GT separation before any image/mask acquisition. A necessary-information failure closes this variant rather than prompting hidden tuning.
 4. Preserve the two-source +3 absolute J&F gate, complete-cost controls, ablations and independent replication before any manuscript. No asset receipt or artificial check counts toward this gate.
