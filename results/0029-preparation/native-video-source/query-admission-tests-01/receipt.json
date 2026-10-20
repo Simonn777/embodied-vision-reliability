@@ -1,0 +1,68 @@
+{
+  "schema": "evr0029.artificial-test-operation.v1",
+  "status": "completed",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-B",
+    "-W",
+    "error",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "work/0029-preparation",
+    "-p",
+    "test_seal_queries.py",
+    "-v"
+  ],
+  "cwd": "$USER/Documents/Codex/2026-10-19/80-cvpr-cvpr-github-cvpr-github",
+  "source_sha256": {
+    "test_seal_queries.py": {
+      "sha256": "30e6680c372a8c8f0ae8e819d632833c2ec5a0b9b2d5402b0b0d9fa052604403",
+      "bytes": 18802
+    },
+    "seal_queries.py": {
+      "sha256": "ce570071dbbf6446500b66dbf6aaffb752e1ec10bb848b9a257d61214a83584f",
+      "bytes": 17766
+    },
+    "acquire_query_gt.py": {
+      "sha256": "67ced391f8f911bb93554d35d8ce53d0df028758037b4001e61121dd60e0edc4",
+      "bytes": 5642
+    },
+    "run_video.py": {
+      "sha256": "2521aed76de6a769df27d449498907589fea862f8f3fb378940c007bc9b0b8da",
+      "bytes": 29305
+    },
+    "run_evidence.py": {
+      "sha256": "766990f0a4e127c7773c51cc21b487389cf57a94c3a646ae4066eee9d0ef0051",
+      "bytes": 15351
+    },
+    "acquire_davis.py": {
+      "sha256": "4e2897ee0b1dfea25b3388805f019e155be53986d155f71c369101293919ee69",
+      "bytes": 17642
+    }
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "timeout_seconds": 180,
+  "no_real_data_models_or_network": true,
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 1.295645833015442,
+  "source_unchanged": true,
+  "logs": {
+    "stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stderr.log": {
+      "sha256": "9a1267208dc7c93a8a90939f2d1b3dd2dcdd3d51156a5c2de17d2e940f0cff35",
+      "bytes": 1308
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# Independent evaluation auditor preparation
+
+Before any query annotation acquisition/decoding or numerical scientific outcome inspection, prepare an independent saved-only arithmetic checker. It reuses frozen admission helpers for provenance only; independently computes all48 query losses,13choices, customJ, six equally weighted video means, oracle/control gates and descriptive diagnostics. It performs no model call or acquisition.
+
+The first6 tiny fake tests pass. Source review then identifies two potential false-failure mechanisms before execution: independent floating reduction could change a near-tied exact policy/sign, and pooled means must divide after summation. The revised audit first independently verifies every loss within its unchanged1e-9 absolute/relative tolerance, then exactly replays sealed policy/signs from verified saved scalar values; independently reconstructed differences remain descriptive. Independently recomputed J and gate Booleans are retained. The three affected tests, including a new near-tie/zero-sign case, pass. Both original and corrected source/test snapshots and receipts remain.
+
+Final independent source review found no remaining blocker. Scientific source, selectors, data, metrics and thresholds remain unchanged at ec94d0927fcd2779f702e161550d9a3e87303d6f. This preparation contains no measured scientific outcome. Private path redactions are bound by original/public hashes.

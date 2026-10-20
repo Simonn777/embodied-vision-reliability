@@ -1,0 +1,51 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "failed",
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "$REPOSITORY/experiments/0029-memory-information/run_video.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "ec94d0927fcd2779f702e161550d9a3e87303d6f",
+    "--evidence-root",
+    "$PRIVATE/0029-davis-development-01/evidence",
+    "--evidence-spec",
+    "$PRIVATE/0029-davis-development-01/evidence-spec.json",
+    "--evidence-commit",
+    "c09e240009869402e2b97a55af42617eea3c6405",
+    "--qualification-root",
+    "$PRIVATE/0029-native-video-qualification-01/qualification",
+    "--qualification-spec",
+    "$PRIVATE/0029-native-video-qualification-01/spec.json",
+    "--sequence",
+    "cat-girl",
+    "--output-dir",
+    "$PRIVATE/0029-native-development-01/cat-girl/video"
+  ],
+  "spec_sha256": "984758c8cdc721d5189abf2210d3570c0034a86fcd1a06ec6eb68aeb2f946296",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "ec94d0927fcd2779f702e161550d9a3e87303d6f",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": "descendants_remain",
+  "wall_seconds": 201.0566007089801,
+  "peak_group_rss_kib": 4847792,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "ff76f4d06632c781314683ac23275e29e23c64278068e9c21e26dbfff21d8670",
+    "stderr.log": "f627c70e9499af1366b3bfea8a5a308739dc2dea0f4534bae90ed311d8554fb2"
+  },
+  "output_sha256": "48c05fa91d15fce1dd4842ccba509a07fb32ae97a93942ccc90c97ff682dbfb6"
+}

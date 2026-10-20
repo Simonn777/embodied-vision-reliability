@@ -1,0 +1,43 @@
+{
+  "schema": "evr0026.operation.v1",
+  "status": "completed",
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "$REPOSITORY/experiments/0029-memory-information/run_native_video_qualification.py",
+    "--repo-root",
+    "$REPOSITORY",
+    "--expected-commit",
+    "ec94d0927fcd2779f702e161550d9a3e87303d6f",
+    "--native-root",
+    "$PRIVATE/0029-runtime-02",
+    "--native-commit",
+    "37b54982bcc3b22b56a5817b6881f22489eba8d5",
+    "--output-dir",
+    "$PRIVATE/0029-native-video-qualification-01/qualification"
+  ],
+  "spec_sha256": "55125beafdaf62d3938b060cdc6e6dfc052ef37a23f10d2cf612cff1bf5fb1fa",
+  "supervisor_sha256": "7c7798fe76756ace692fe9d9a83755d758690c62f0a6cc7f11af655dd5c60efe",
+  "monitor_sha256": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+  "expected_commit": "ec94d0927fcd2779f702e161550d9a3e87303d6f",
+  "hard_timeout_seconds": 1800,
+  "group_rss_limit_kib": 8388608,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 79.7570857499959,
+  "peak_group_rss_kib": 2324560,
+  "remaining_descendant_pids": [],
+  "cleanup_errors": [],
+  "log_sha256": {
+    "stdout.log": "450bf249f6674cd6057e8acd7a86ef8d2be760b156dfdaf110e0875f1fb15e6c",
+    "stderr.log": "e4b73ebe99b31124d39d6f97b8d43efa46525c91ca505691be8622a8c3819a03"
+  },
+  "output_sha256": "65e91721c3c8ddc1abab844c21b452a9741d42349b83d92155ba00c96a1758d1"
+}

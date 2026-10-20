@@ -1,0 +1,38 @@
+{
+  "repo": "$REPO",
+  "commit": "ec94d0927fcd2779f702e161550d9a3e87303d6f",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": ""
+  },
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-S",
+    "$REPO/experiments/0029-memory-information/run_video.py",
+    "--repo-root",
+    "$REPO",
+    "--expected-commit",
+    "ec94d0927fcd2779f702e161550d9a3e87303d6f",
+    "--evidence-root",
+    "$PRIVATE/0029-davis-development-01/evidence",
+    "--evidence-spec",
+    "$PRIVATE/0029-davis-development-01/evidence-spec.json",
+    "--evidence-commit",
+    "c09e240009869402e2b97a55af42617eea3c6405",
+    "--qualification-root",
+    "$PRIVATE/0029-native-video-qualification-01/qualification",
+    "--qualification-spec",
+    "$PRIVATE/0029-native-video-qualification-01/spec.json",
+    "--sequence",
+    "dog-gooses",
+    "--output-dir",
+    "$PRIVATE/0029-native-development-01/dog-gooses/video"
+  ],
+  "operation_output": "$PRIVATE/0029-native-development-01/dog-gooses/supervision",
+  "result_file": "$PRIVATE/0029-native-development-01/dog-gooses/video/seal.json"
+}

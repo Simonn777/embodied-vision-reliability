@@ -1,8 +1,15 @@
 # Next actions
 
-## Current: qualify complete native controls, then test actual segmentation
+## Current: preserve technical failure; prospectively qualify complete replication
 
-1. Publish and verify the [complete evidence result](results/0029-development/evidence/README.md), exact result CI and merged-main CI. Retain every original acquisition/prediction/audit receipt; no repeat downloads or matching. All6 videos passed the fixed necessary coverage gate, with38/48 actionable queries.
+1. Publish and verify [attempt01](results/0029-development/native-attempt-01/README.md) unchanged: first3clean, fourthworker complete but outerFAILED, final2notrun; no GT or accuracy. Do not waive the failed receipt or score a subset. Preserve all original sources/receipts/seals/costs.
+2. Keep the old supervisors immutable. Qualify a narrow separate supervisor using manufactured process lifecycles: fresh post-exit sampling and recorded triggering processes/signal outcomes. The missing original sample prevents proving a historical false alarm.
+3. Before GT access, separately freeze a transparent ALL-SIX technical replication contract, exact source and CI. Reuse fixed scientific worker/model/evidence/data/controls/metrics/gates byte-for-byte; no old/new prediction choice or three-video mixture. Exactly one new complete operation per video, and all six must have clean new outer receipts before scoring. Count both attempts in costs.
+4. The development and two-source held-out improvement gates remain unchanged. No manuscript or main-goal completion from implementation/qualification or this technical failure.
+
+## Historical: qualify complete native controls, then test actual segmentation
+
+1. Preserve the [complete evidence result](results/0029-development/evidence/README.md) and [verified result/main CI](docs/0029-evidence-publication-verification.md). Retain every original acquisition/prediction/audit receipt; no repeat downloads or matching. All6 videos passed the fixed necessary coverage gate, with38/48 actionable queries.
 2. Preserve the immutable first-stage source/protocol at c09e240009869402e2b97a55af42617eea3c6405. Complete/freeze the separate native-video worker,25-frame manufactured qualification, all same-evidence controls, six prediction seals, GT barrier and evaluator. Require review and exact-source CI before native qualification and scientific SAM; no query GT before all six complete clean predictions.
 3. Run every complete video and all48 fixed queries once under the original resource/control limits. Evaluate only after all predictions are sealed. Preserve necessary oracle headroom and signed-versus-strong-control numerical gates; no cohort, age, point or threshold rescue tuning.
 4. No manuscript before innovative, reproducible +3 absolute J&F on each of two independent held-out sources, complete-cost strong controls, recording-level uncertainty, ablations and replication. This availability pass is not accuracy improvement.

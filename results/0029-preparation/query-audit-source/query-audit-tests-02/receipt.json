@@ -1,0 +1,41 @@
+{
+  "schema": "evr0029.saved-audit-artificial-tests.v1",
+  "status": "completed",
+  "command": [
+    "$USER/Documents/Codex/2026-10-12/ban/work/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "$PRIVATE/0029-preparation/test_audit_queries_saved.py",
+    "AuditArithmetic.test_all48_arithmetic_and_reject_choices_before_gt_index",
+    "AuditArithmetic.test_equal_video_means_oracle_exclusion_and_all_gate_clauses",
+    "AuditArithmetic.test_near_tie_replays_verified_saved_scalar_without_replacing_choice",
+    "-v"
+  ],
+  "source_sha256": {
+    "audit_queries_saved.py": "6bb7b6297679d8ee770e58253998986d10aa9e5642f09c1f977df3ce1085af02",
+    "test_audit_queries_saved.py": "7d08f1c29641b9ac254dbbeffab6f2a5fb1d1731fb14ea163e2cea9ad0bbc632"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "timeout_seconds": 180,
+  "artificial_only": true,
+  "native_model_invocations": 0,
+  "scientific_payload_access": false,
+  "network_requests": 0,
+  "scope": "Affected three tests only after pre-outcome audit scalar-replay/declared-reduction correction; first six-test receipt unchanged.",
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.26884462498128414,
+  "peak_child_rss_bytes": 37847040,
+  "sources_unchanged": true,
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "f5678bf775ce3afe2348e5c0bec0bd25584e7a327cd5112ddb42876057fb1d8f"
+  }
+}

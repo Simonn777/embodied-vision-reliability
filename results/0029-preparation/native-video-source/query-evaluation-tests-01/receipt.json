@@ -1,0 +1,37 @@
+{
+  "schema": "evr0029.query-evaluation-artificial-tests.v1",
+  "status": "completed",
+  "command": [
+    "$USER/Documents/Codex/2026-10-12/ban/work/venv/bin/python",
+    "-B",
+    "-W",
+    "error",
+    "$PRIVATE/0029-preparation/test_evaluate_queries.py"
+  ],
+  "source_sha256": {
+    "evaluate_queries.py": "272ae306b0f80573d3350d892cefbc13cf9df5a06d89b6188ee9c86584c5237f",
+    "test_evaluate_queries.py": "c0310b2d50464f235e9f4370c26ddcaf5842fca837de89f29651b0c43a3a97e0",
+    "diagnostic_core.py": "4c76bdb492bef0507b4322be67a2a157ec34c420bfacb874388b1f7facef0c34"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "timeout_seconds": 180,
+  "artificial_only": true,
+  "native_model_invocations": 0,
+  "scientific_payload_access": false,
+  "network_requests": 0,
+  "exit_code": 0,
+  "termination": null,
+  "wall_seconds": 0.2053537080064416,
+  "peak_child_rss_bytes": 32342016,
+  "log_sha256": {
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.log": "78eef06a986d8417523e74a16d2bb14e35ab64ab86924c647f2bc690902433d9"
+  },
+  "sources_unchanged": true
+}
