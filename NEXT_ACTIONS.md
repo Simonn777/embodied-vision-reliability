@@ -1,11 +1,11 @@
 # Next actions
 
-## Current: publish the positive support screen and design a realizable test
+## Current: determine whether whole-mask selection has sufficient opportunity
 
-1. Finish independent saved-text arithmetic, coverage and seal review. Publish all 0035 results through PR72, including the sharp onion decline, both void policies, all failed transports and costs. Verify result and merged-main CI. Do not rerun predictions or select favorable clips.
-2. Treat the seven-clause screen as evidence of available target support. Develop one causal verifier hypothesis with a specific discriminative observation, an ordinary same-input supervised control, fixed union, reverse-consistency control and complete-pipeline costs. Existing FluxGraph and material-ancestry work limit novelty claims. Positive mean union gain establishes a stronger baseline, not an invention.
-3. Freeze the next complete development comparison before executing it. Preserve every object and frame, including cases with absent or ambiguous evidence. Prediction cannot use GT-derived pair locations, event times or correct parent identities. Distinguish gains from supervision from gains due to the proposed mechanism. No successor run is yet admitted.
-4. Preserve the final requirements: +3 official J&F points on each of two independent held-out sources; positive paired recording-level 95% intervals; bounded J/F component loss; strong same-information controls at matched complete-pipeline cost; ablations; independent replication. The goal remains unachieved; no manuscript.
+1. The complete 0035 support screen is published and merged through PR72, with successful result and main CI. Preserve its positive mean union gain, onion decline, seven passed opportunity clauses and all limits. No new method or manuscript is established.
+2. Run the separately frozen [0036 saved-score diagnostic](experiments/0036-candidate-verification/ADMISSION.md) after source CI. It uses all 446 already exposed scalar rows, no media or model, to compare privileged whole-arm selection with fixed union and the pixel support ceiling. Its two necessary 3-point clauses guide action granularity only.
+3. After the result, design one realizable verifier comparison using strong ordinary same-input learning, fixed union and relevant reverse consistency. Null/background memory subtraction is not admitted: no coherent alternate-object reference or new identity-information advantage has been established. Keep every frame and ambiguous case; no outcome-based rescues or novelty claims from known combinations.
+4. The final two-independent-source official J&F gate, strong matched-cost controls, innovation, ablations and replication remain required. The goal is active and no manuscript is written.
 
 ## Historical: preserve 0034 closure; reassess the failure mechanism and task
 
