@@ -1,0 +1,67 @@
+{
+  "scope": "Two DEV parents, smallest-positive initial object ID; object-subset J&F, not official all-object benchmark",
+  "model_calls": 0,
+  "raw_frames": 154,
+  "included_frames": 150,
+  "endpoint_policy": "exclude first and last; retain all-frame raw values",
+  "mean": {
+    "J": 0.9476518252321502,
+    "F": 0.8958925838174294,
+    "JF": 0.9217722045247898
+  },
+  "parents": [
+    {
+      "parent_id": "cat-girl",
+      "sequences": [
+        "cat-girl"
+      ],
+      "mean": {
+        "J": 0.9412263070887728,
+        "F": 0.9029948804551943,
+        "JF": 0.9221105937719836
+      }
+    },
+    {
+      "parent_id": "upside-down",
+      "sequences": [
+        "upside-down"
+      ],
+      "mean": {
+        "J": 0.9540773433755276,
+        "F": 0.8887902871796647,
+        "JF": 0.9214338152775962
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": "01",
+      "status": "failed",
+      "error_type": "KeyError",
+      "error": "'signal_attempts'",
+      "inner_seconds": 0.0024826250155456364,
+      "outer_seconds": 0.3393173750373535,
+      "peak_rss_kib": 41232,
+      "exit_code": 1,
+      "evaluation_sha256": null
+    },
+    {
+      "attempt": "02",
+      "status": "completed",
+      "error_type": null,
+      "error": null,
+      "inner_seconds": 0.7158262919983827,
+      "outer_seconds": 0.9313110830262303,
+      "peak_rss_kib": 72960,
+      "exit_code": 0,
+      "evaluation_sha256": "dc56acc9c1c00d03646b6b9ce35580813239ac171f3d58f9d25f2ef42b49cc68"
+    }
+  ],
+  "cache_cost": {
+    "wall_seconds": 458.30076425000004,
+    "peak_group_rss_kib": 4672848,
+    "status": "completed",
+    "exit_code": 0
+  },
+  "cost_note": "Cache cost covers all six parent recordings; evaluation costs are separate complete operations. Do not add inner and outer durations."
+}
