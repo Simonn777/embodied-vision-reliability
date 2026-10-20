@@ -1,11 +1,10 @@
 # Next actions
 
-## Current: freeze verified complete recovery, then fixed prediction/evaluation
+## Current: score the complete sealed prediction population
 
-1. First freeze/test the separately declared [verified complete recovery](experiments/0035-transformation-support/recovery/RECOVERY_ADMISSION_02.md), retaining failed01/02 and all costs. Use a new source closure, repeat native parity and initial inspection, then require a fresh clean full446inventory with explicit reused/fetched provenance. The following original dependencies remain: review/freeze [0035](experiments/0035-transformation-support/ADMISSION.md), retain all manufactured test attempts, and require exact-source CI. Run the complete seven-frame/two-object native qualification, comparing all captured/ordinary outputs and complete native state. Any technical failure remains a failure and closes downstream access until a separate justified technical repair.
-2. Acquire only the four initial masks under the reserved cap, inspect every ID/dimension, and require the fixed whole-population memory/storage/call-count checks before446RGB acquisition. No cohort or object subset may replace an infeasible population.
-3. Run one complete all-four native-bank operation, seal every candidate/control and clean outer receipt, then admit442noninitial masks and one complete saved-output evaluation. Preserve all clips/objects, both void conventions, native cleanup versus extra-support headroom, every failed operation and full costs.
-4. Apply the prospective necessary information gate without threshold/cohort/slot rescue. A pass only permits a separately scoped actual candidate verifier against direct-supervision, ordinary-classifier, fixed-union and reverse-consistency controls. An oracle is never the method result. Preserve the unchanged substantial two-independent-source final gate and no-manuscript boundary.
+1. Finish the fixed442noninitial-mask acquisition only under the already verified complete predictionproof, originalacquire sourcecommit784fc1a, refreshedinspection02 and unchangedmetadata. Preserve anyfailure and allcosts; no partialGTpopulation substitutes.
+2. Run one complete saved-output evaluation of all446rawframes/allinitialobjects, reconstruct everycandidate/control map, and report bothvoidpolicies, bothceilings, allrawscores and fullcosts. Primary uses438interior/110tailpositions.
+3. Verify cleancomplete outer/source/coverage and apply every original numericalcontinuation clause withoutthreshold/cohort/slotrescue. A pass only admits a separatelyscoped realverifier withstrongsame-information controls; a fail closes thisfixednative-bank route. No manuscript before the unchangedsubstantial independentvalidation gate.
 
 ## Historical: preserve 0034 closure; reassess the failure mechanism and task
 

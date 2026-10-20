@@ -1,0 +1,3655 @@
+{
+  "schema": "evr0035.native-bank-seal.v1",
+  "complete": true,
+  "receipt_sha256": "a61e576e7ab3a53b4d0164b38262d946f19f3698e037dbd801921dc75f8d9621",
+  "spec_sha256": "ed3c7003eca62d256c16759f8117ebf47f15988454c5037a065cadb483088705",
+  "source_sha256": {
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0022-frontend/qualify.py": "174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0023-mapfree/range_inputs.py": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0025c-rs-noise/supervise.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/acquire_assets.py": "5f5165b3b519ed8cab4fc9c4bbef417619cf0eb4f29ec2989c17473581201641",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/acquire_davis.py": "4e2897ee0b1dfea25b3388805f019e155be53986d155f71c369101293919ee69",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/acquire_query_gt.py": "67ced391f8f911bb93554d35d8ce53d0df028758037b4001e61121dd60e0edc4",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/diagnostic_core.py": "4c76bdb492bef0507b4322be67a2a157ec34c420bfacb874388b1f7facef0c34",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/evaluate_queries.py": "272ae306b0f80573d3350d892cefbc13cf9df5a06d89b6188ee9c86584c5237f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/frontend_evidence.py": "1d47bbf0efebe27a0a3371b9d421dc2a1b7dfc78aec1ca584cee1cb26314093d",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/install_runtime.py": "ae7f222122f24c69d909e735e6212f21f28640b1f96c1c0670ac48cb6c72a306",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/native_fixture.py": "4e20a61150407c575eedff41309281923f9a4b57fa3f34609153e645dde7ad5f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/native_video.py": "4af3e0e5b26327d4ecb95b4644b94e13c257a38c928dbb09f23bd95151001d0a",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/qualify.py": "408848bef4fcab06ca42f724b87936d59be5abb58e9f076f81d7c8df7739d160",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/qualify_native_video.py": "dc40d641d353d13af7bf0198c853c4b8c548ec5d10ec7cf09ba683292cf6de59",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/run_evaluation.py": "39117b1b72407cf297f36216cf305335be81d2917a486ae5a4d06674429741cd",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/run_evidence.py": "766990f0a4e127c7773c51cc21b487389cf57a94c3a646ae4066eee9d0ef0051",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/run_native_video_qualification.py": "abd5a0912aae8c8f759c3128cef6cb81ab4357053f426373be9aac1c42c223d8",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/run_video.py": "cbebe19b2708835e0a48a4951f2f7d037c287f6740361702de93e2b92ec21b78",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/seal_queries.py": "10ce2701348fb4fc31c1aea7eac7bb041431c7dcce366c4bdaacd386c8e39fd2",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/supervise_exit_checked.py": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_acquire_assets.py": "cd03914a80029b17418514d7d2ece526f0ea4a149d99e46ad06a95ce83a5c76b",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_acquire_davis.py": "d84e3fc107ef58b86e8ceea8e257446c0f3d25bb788af831614b1544174683bf",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_diagnostic_core.py": "c6d7cc30b436a9897cd665f8492f442864577fc3711288d89b990a31665666fd",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_evaluate_queries.py": "c0310b2d50464f235e9f4370c26ddcaf5842fca837de89f29651b0c43a3a97e0",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_frontend_evidence.py": "d7085bd9855a6d9e58acb65ea6216583e30fc5d8de2e2f309a6bb28627693ab0",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_install_runtime.py": "f0dfae745fb1abca7e2e78a99e45ec927a80dbc662bde3c90c32076330e251c9",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_installed_metadata.py": "69d648277d8717cbc67648496a8ae9f4e94f992cb99ecebae71feb1ecbb4d1c6",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_qualify.py": "2fb0879c57407d93aaf963e7a63cc21bb0090d529f3222e7ceecf44a64bb6847",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_run_evaluation.py": "8d2d315cb1c3dbe8d125e913aa64121eab1dfe84825d16538e93d8e9d37e4522",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_run_evidence.py": "c282061daf9e345bc6a32a10b645375ab585981cf9ef49c4565a0758cbe6ee02",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_run_video.py": "d8a329d61f7195eafdd41c5114136c86bf4186d2b370a75debebb6c3a214a39d",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_seal_queries.py": "e37dac19b82f64ec4660f1c2af4b84d4521eda28440af158bf7441c8c95e7201",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_supervise_exit_checked.py": "2202236d6ba047c47dae078d3b7d34c9a137ebc4fcb1017450892e3f5d4a8688",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/ADMISSION.md": "28b1e92f1602bc233bf7238ddcf20cd0540af280cee541b1f9a10b4da89be426",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/DRAFT_CORRECTION.md": "48cb325d1bfe9c7e3d8763237cecb8431ab76dc9e940e06b03ed314b03cf10b8",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/DRAFT_SCOPE.md": "c36e59a61991dd6db95f68faf158420133cafce2d07a483a481f9474b50b8586",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/NATIVE_BANK_SCOPE.md": "b09041c613ffec8c174fa30087f8ba5f2015a6a3088e3008bbc74e78d19e67d0",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/README.md": "e14d08d02da314351468df537e236d3a20dd99b8e9e93b5e7630ef971f699949",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/STRATEGIC_DECISION.md": "86b51de8baa04ab5ad714a218cfd7707b24d419da4ad6da54f156125754fc3b9",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquire.py": "a69768de68ac61585df7ceb077c48830a72c11dc88685472b2c0afd8f6b5341f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquisition-admission.json": "cd3fb09348386493994aed999140834e391fb1e2467c2f5f35d8fd71171a15ee",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquisition-feasibility.md": "15ef4f45bbfef5944ac703bd5de3685d97e4b28cd8f9b5707c9420e8dafb75ff",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquisition-zip-version-addendum.md": "027a09bf0dac58ce35c567d8b3bb66cd0df3e484302a812cdf47b155f7d4e61d",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/admit.py": "12e3e8ec3b8d7cb56bd16ab3027af4e72342a19068e8613339c69442744faab4",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/build_manifest.py": "d42448b5382df8fe62c1703c80046701416bbd6462ecc743c917ee787552e925",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/build_manifest_v2.py": "081555b78e5b5c0149536b02e2317274cbec535421f829263b5566a9268f5445",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/evaluate.py": "89cba63ce32fb260d43edcd06722b61df90072b2a420932329e1ead4f87050cd",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/inspect_initial.py": "b6a3fccdd1fc9074c8529006f5033bd18a8efa69706de8a2a4c1533801810c41",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/make_index.py": "4148a1487986119e5f65a37bbec48c07d37180affcdeb29853057b0b481d4340",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/manifest-build-report-v2.json": "00702cb349a5d0bdda70c76f838d279aa101b0469355acce4021089f6f342c4b",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/manifest-build-report.json": "296d32d0ca46903f96627ae0a233915e3f99b29f48fadf7343f86cefe2bdc364",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/metric-oracle-review.md": "a7540db3be757de24c5bd1fe5f28427d4cfaac2e76d64ae031e4c57fee037e03",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/metrics.py": "9693affa0f9f1d842d97cebdb10a0f6ab8808c84e522e1be57b453a6e6efeec4",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/native-bank-feasibility.md": "8a8c9f567f5f3a9fff99c3e9e14b98074485313914a210db41d2c5eb11fa3e83",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/native_bank.py": "33d6fea5dbd478085bdcb766b5aeafebb4364b1d3fbb23277071e81fd2c8e3f9",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/proposed-manifest-v2.json": "141371225d59c0b1ef483ee3b7565aace037033df072eabb2839e8d4f19bfb07",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/proposed-manifest.json": "fc0bbbd85cd66878426956dc1c382826e56dbffd7e92a240b13d6f09d5dc03f1",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/publish_preparation.py": "0332f7819a1d9c7b080e5c6096377bcc170d35ea5887430eae9bdfa017be20cc",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/qualify_native.py": "b85565514fd25976d190fb14ffc3cc888d36f7443cb670fb3194ba499daff3a5",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/recovery/RECOVERY_ADMISSION_02.md": "6b1daaf1f5ebca8cddba6fb563b807ef7e0fe27f8617130dd7e827adf6c536eb",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/recovery/recover_rgb.py": "0f94dddb28e9b734f2a03c309a939d54506180b6e45b21ea81bab58323565926",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/recovery/recovery-allocation-02.json": "df3b4b314cc8ff3fe7602cb78ca06b6914156ae31be018a01f044a5a07ddb79a",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/recovery/test_recover_rgb.py": "f61c1aa3b51fbae6846206cb9f4647d21c8c9119c9fb53fadce2118ee2cfbd33",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_acquire.py": "d7909d590933e8e2f5154cf06a97cf879e1202275179c823cce3ffbf69a76af6",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_admit.py": "5d883e6a35ff741948e186c50f18fb5ad8c20a39bd2e3506dbf553517629d925",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_evaluate.py": "104be878354904d2df22b74924c351f00f103e3c21d9da6cae0f7369ebc655f9",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_metrics.py": "59736038bdcaf12ce2b774fc8489a414641b3585cdcec84a70cf6ce8825fd060",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_native_bank.py": "81a504fe7194c2e5b8278ae2b4db2146deaed12174d66aa323f4db9b4bebc69a",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/validation-source-feasibility.md": "88082e170cac9e2f8f44b1e5baadf8fec4957cebea570b7bc8397a896013d7b5"
+  },
+  "data_index": {
+    "path": "${WORKSPACE}/work/0035-transformation-support/prediction-input-index-01.json",
+    "bytes": 298559,
+    "sha256": "2ff2332fe9a116b75118e619379676879414fbf6e7d71f360f9536dab05c1757"
+  },
+  "outputs": [
+    {
+      "path": "4691_cut_guava/frame-00000.npz",
+      "bytes": 53375,
+      "sha256": "8a0cd1f71ebd2415f76445c2d567611b9e99622609778e2e73e4c78c07095bad",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 0
+    },
+    {
+      "path": "4691_cut_guava/frame-00001.npz",
+      "bytes": 5900697,
+      "sha256": "a7d0fb7b4ed0722b05f2b6e649d6c9ec8cbcaaee70fd469123e61992bbadba92",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 1
+    },
+    {
+      "path": "4691_cut_guava/frame-00002.npz",
+      "bytes": 5892912,
+      "sha256": "f52edf81bf70541bf4654d881ab6769cee8933d09deed2b63124468638c08460",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 2
+    },
+    {
+      "path": "4691_cut_guava/frame-00003.npz",
+      "bytes": 5901777,
+      "sha256": "355de278b2ac6195cfda9d753616a3faa86f2b4effe2a1cdba1423af2f3dbe64",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 3
+    },
+    {
+      "path": "4691_cut_guava/frame-00004.npz",
+      "bytes": 5887500,
+      "sha256": "dd74500d4e4761c85c5baf92f20d31bfb1fcf9a80998bf2ce4a20038c1419bfe",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 4
+    },
+    {
+      "path": "4691_cut_guava/frame-00005.npz",
+      "bytes": 5889122,
+      "sha256": "0844d2bb889083d85abe50d2a3b4855d3af6f35e4c13657fca1839c0871f55c5",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 5
+    },
+    {
+      "path": "4691_cut_guava/frame-00006.npz",
+      "bytes": 5886663,
+      "sha256": "5991d14b9939e063d714842a175dbb033136ce09b4b8ddeeaa2436dc466527ad",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 6
+    },
+    {
+      "path": "4691_cut_guava/frame-00007.npz",
+      "bytes": 5908372,
+      "sha256": "390f58b9a5a8e1aac787e9ef77ea26736f498b3298bc618470fa2e627ef1f2fb",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 7
+    },
+    {
+      "path": "4691_cut_guava/frame-00008.npz",
+      "bytes": 5880406,
+      "sha256": "ce738a0a0f443ebb3bd5ca677c6dc29e628867296199ebd4b3b1b6cc0bbdef94",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 8
+    },
+    {
+      "path": "4691_cut_guava/frame-00009.npz",
+      "bytes": 5885744,
+      "sha256": "77196aaaaf17748b01a3b0f3cda2ec1ec30c7fc377c34953e709de8fce3b3a07",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 9
+    },
+    {
+      "path": "4691_cut_guava/frame-00010.npz",
+      "bytes": 5887111,
+      "sha256": "9c79ddbeea2bf51af5dba4cf325a80b01ad450be42b7109fe68ed5ed2a6e4eb7",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 10
+    },
+    {
+      "path": "4691_cut_guava/frame-00011.npz",
+      "bytes": 5894945,
+      "sha256": "c8799cff30dbfcd186302d4e6b0d834d770500ae3de716e04b913b5d6acec082",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 11
+    },
+    {
+      "path": "4691_cut_guava/frame-00012.npz",
+      "bytes": 5885048,
+      "sha256": "4113e56c2dcce3693226a1fd1caebebf9802a7d35c561391eda46e53793cb0c5",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 12
+    },
+    {
+      "path": "4691_cut_guava/frame-00013.npz",
+      "bytes": 5901981,
+      "sha256": "35893837c88ed60ae16b3888bba1b726fdcb1d0e4145b605ac89e62fe7cf319b",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 13
+    },
+    {
+      "path": "4691_cut_guava/frame-00014.npz",
+      "bytes": 5888284,
+      "sha256": "f16b60192814d29c245564779ca575e5ce4c4481b180269fcb61e9177fe81361",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 14
+    },
+    {
+      "path": "4691_cut_guava/frame-00015.npz",
+      "bytes": 5884059,
+      "sha256": "99278c06a3d72a1cdfd2ae960e209cdf037bf4a5dab6081a59bad636a27bf4c6",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 15
+    },
+    {
+      "path": "4691_cut_guava/frame-00016.npz",
+      "bytes": 5897140,
+      "sha256": "01b1d59c2bae2edb52f98726349c598e3ab71f7173cfd25dc4e2fc4e99103600",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 16
+    },
+    {
+      "path": "4691_cut_guava/frame-00017.npz",
+      "bytes": 5888196,
+      "sha256": "e1b705b009404e7ae1794658198fb5bf822db5955ac0e54c6a3323d22670dce2",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 17
+    },
+    {
+      "path": "4691_cut_guava/frame-00018.npz",
+      "bytes": 5916372,
+      "sha256": "6dd62ccec142c7f9f57b4bd32f3ff41a1dd7d085726a57d2aec21c021a298196",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 18
+    },
+    {
+      "path": "4691_cut_guava/frame-00019.npz",
+      "bytes": 5893979,
+      "sha256": "6a3e6e9089d135a758632f328eb82f9bd1e4572b0151306ed1ebfd4f63f1140c",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 19
+    },
+    {
+      "path": "4691_cut_guava/frame-00020.npz",
+      "bytes": 5879270,
+      "sha256": "6f47237b7db12fa787edd590fadd54dbc4042a670304a94f2965abfb9d2c9413",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 20
+    },
+    {
+      "path": "4691_cut_guava/frame-00021.npz",
+      "bytes": 5893213,
+      "sha256": "05e97b3da09592db5051ecc9515ebe74903ab2e8106fa508ebefd24b8a9912ed",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 21
+    },
+    {
+      "path": "4691_cut_guava/frame-00022.npz",
+      "bytes": 5883505,
+      "sha256": "3fe4f6cf132210016e6e30d610d1634b3539c9fb5e1d716484b70873fe7e93dc",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 22
+    },
+    {
+      "path": "4691_cut_guava/frame-00023.npz",
+      "bytes": 5883379,
+      "sha256": "32875f20d3da80a7dfa6af2fa56ffd048d5706d42eef933eadd2bd92d65d107b",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 23
+    },
+    {
+      "path": "4691_cut_guava/frame-00024.npz",
+      "bytes": 5878460,
+      "sha256": "dbe2552a4431900ba99e6a87ca005656d5a74650022d839aaa877d417b2639fe",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 24
+    },
+    {
+      "path": "4691_cut_guava/frame-00025.npz",
+      "bytes": 5879545,
+      "sha256": "18c8b6d048f4c31721e6761c0ec95694711daca451ca29deb1b17ae322f451b2",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 25
+    },
+    {
+      "path": "4691_cut_guava/frame-00026.npz",
+      "bytes": 5874302,
+      "sha256": "414dcfc87517d2fc03050f1f0706ab2421a0893d9e6eb8cc4df9766742c3b89e",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 26
+    },
+    {
+      "path": "4691_cut_guava/frame-00027.npz",
+      "bytes": 5876887,
+      "sha256": "541193533b0368867b1b61fb3c569102fb8f69fa39b60cf29755fc124109806d",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 27
+    },
+    {
+      "path": "4691_cut_guava/frame-00028.npz",
+      "bytes": 5870483,
+      "sha256": "514bf7bf1ab4364e775c26eb6740b13caf6859a7d9df91007f85b59303d78870",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 28
+    },
+    {
+      "path": "4691_cut_guava/frame-00029.npz",
+      "bytes": 5868274,
+      "sha256": "79bd7f4526d1d27d268f92f3efe206a87de07ce6adc2868a3330e7fd89252228",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 29
+    },
+    {
+      "path": "4691_cut_guava/frame-00030.npz",
+      "bytes": 5865293,
+      "sha256": "280b931e22c1a32b696dd64f5cc003e69827aafb8cef31656c1e8cfae7076fd7",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 30
+    },
+    {
+      "path": "4691_cut_guava/frame-00031.npz",
+      "bytes": 5864481,
+      "sha256": "d8df3c96e01380214a75cfd6363415b3f0dba9510f4e0875d00e8da36398e6ef",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 31
+    },
+    {
+      "path": "4691_cut_guava/frame-00032.npz",
+      "bytes": 5870070,
+      "sha256": "18d2b09dbce7a37eda28f121672920d4ccb5ca1f55f23b1dfb594ae1dc35a7e7",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 32
+    },
+    {
+      "path": "4691_cut_guava/frame-00033.npz",
+      "bytes": 5864296,
+      "sha256": "d97de1312bdeb1db8c92694e91b0d0efbf91df697bb32fb8cb7ca2f816536539",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 33
+    },
+    {
+      "path": "4691_cut_guava/frame-00034.npz",
+      "bytes": 5863740,
+      "sha256": "9f1df5f2463ac44b3f78368dfe42396bb72075d548ae6a0f0013d8372d4bacb7",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 34
+    },
+    {
+      "path": "4691_cut_guava/frame-00035.npz",
+      "bytes": 5863514,
+      "sha256": "8019ad6d32f81c748edf3a5b04cd45195578c657a584d9bdd3422aafaf5adf9c",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 35
+    },
+    {
+      "path": "4691_cut_guava/frame-00036.npz",
+      "bytes": 5856867,
+      "sha256": "65efa8d54b81f1afb70c1e54d136668c0d0c9abd8b5541fb56c40fd516efdcfa",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 36
+    },
+    {
+      "path": "4691_cut_guava/frame-00037.npz",
+      "bytes": 5859988,
+      "sha256": "9ab6e4f98404e5f222f0bb59b36286f01f0caa0bb9193fc44e8cd2dd73377246",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 37
+    },
+    {
+      "path": "4691_cut_guava/frame-00038.npz",
+      "bytes": 5857322,
+      "sha256": "60ed063d5565865f7cba39e09c0dd0b5b7e848551ff94dd9cfb019bcdb68bc8d",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 38
+    },
+    {
+      "path": "4691_cut_guava/frame-00039.npz",
+      "bytes": 5859475,
+      "sha256": "747f483a84144a1ecadde27d5509e1082639304a829702e0de236f9565c58bc3",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 39
+    },
+    {
+      "path": "4691_cut_guava/frame-00040.npz",
+      "bytes": 5850297,
+      "sha256": "3fbcd749101df8e3a6c249c24193ff2b2c1f9aa80ef58262e0db42a7283ef133",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 40
+    },
+    {
+      "path": "4691_cut_guava/frame-00041.npz",
+      "bytes": 5856202,
+      "sha256": "9926ec6013885234ce139394854497430d827f0d27dec4444ccb1c81ba5181ec",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 41
+    },
+    {
+      "path": "4691_cut_guava/frame-00042.npz",
+      "bytes": 5845644,
+      "sha256": "6243aad7cf15bdce64e5752ed7c46b5917d1c4b960d4eb5f9b2af47b853db2fd",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 42
+    },
+    {
+      "path": "4691_cut_guava/frame-00043.npz",
+      "bytes": 5845921,
+      "sha256": "726068be61543fb0e65d7d92f7f929c0a909dd930f1fd7c2ba0f6b45c353c6b5",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 43
+    },
+    {
+      "path": "4691_cut_guava/frame-00044.npz",
+      "bytes": 5847432,
+      "sha256": "a0155caf1e0f03dc6c40d0e75daeeb949d340bdb7945e83b0d6f36f66707ab5b",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 44
+    },
+    {
+      "path": "4691_cut_guava/frame-00045.npz",
+      "bytes": 5848500,
+      "sha256": "4ec3cb88c4e2fad4c30cd287b2e64680d6c8a9449e14753f65bac3113a225c27",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 45
+    },
+    {
+      "path": "4691_cut_guava/frame-00046.npz",
+      "bytes": 5840010,
+      "sha256": "63c115c7c63513546adb8d645ff3b91a4e2498c2d2c3d440ffbfbde8ab5db07e",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 46
+    },
+    {
+      "path": "4691_cut_guava/frame-00047.npz",
+      "bytes": 5854514,
+      "sha256": "7721e8dbc29758349475b6c6c317065167237888658d37a9a1ec8070d6beb0d0",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 47
+    },
+    {
+      "path": "4691_cut_guava/frame-00048.npz",
+      "bytes": 5854539,
+      "sha256": "dc3b5934e30a8c13e131b5ff8d510d71e7cb7e5cdb7b15d6b05d0447d529d4d6",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 48
+    },
+    {
+      "path": "4691_cut_guava/frame-00049.npz",
+      "bytes": 5838141,
+      "sha256": "e1be49a35b05f3188126db409093ac7cc1a6b61e5b1e2fe457cae4309601c6bd",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 49
+    },
+    {
+      "path": "4691_cut_guava/frame-00050.npz",
+      "bytes": 5857004,
+      "sha256": "895c67ab7464400ecd843c475f3a4ad0564d7219122ddb6e7f94afef236757fc",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 50
+    },
+    {
+      "path": "4691_cut_guava/frame-00051.npz",
+      "bytes": 5857453,
+      "sha256": "74974e8f5fea59157254f633e1d788b6d51ad4ef9d676f3e4ccee8564f34f3e3",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 51
+    },
+    {
+      "path": "4691_cut_guava/frame-00052.npz",
+      "bytes": 5872894,
+      "sha256": "b6ed5af52bbd442f513268e051e7024bab41369a3d9f1cbac2a1d252cc6a5d81",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 52
+    },
+    {
+      "path": "4691_cut_guava/frame-00053.npz",
+      "bytes": 5858563,
+      "sha256": "f7be33fdc85bf1120b8919ec04ba2c66f9192e0ba8bf6504fe869b9630dc1c1e",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 53
+    },
+    {
+      "path": "4691_cut_guava/frame-00054.npz",
+      "bytes": 5843758,
+      "sha256": "bbdf15c9db33eaae153fabe8f98856f72b5baf9f7ad59c52f350edab68bb91ed",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 54
+    },
+    {
+      "path": "4691_cut_guava/frame-00055.npz",
+      "bytes": 5861823,
+      "sha256": "96675776da2f4835c78811cebb4aecbe68cf037fc361fe8354b5d04550550cae",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 55
+    },
+    {
+      "path": "4691_cut_guava/frame-00056.npz",
+      "bytes": 5862273,
+      "sha256": "552eee2eef41e9b72dcab09152815f2750a2f4f46fa7098e64d301c469cf8120",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 56
+    },
+    {
+      "path": "4691_cut_guava/frame-00057.npz",
+      "bytes": 5889764,
+      "sha256": "e1585ac2dfa73b9af3918ea5b309b9f5280a70e8872c0c61ebc50f3089b0deae",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 57
+    },
+    {
+      "path": "4691_cut_guava/frame-00058.npz",
+      "bytes": 5840146,
+      "sha256": "5a6140aec8c8314413ffe31fc581f643fe8c932194ecc326c66dc17842229a85",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 58
+    },
+    {
+      "path": "4691_cut_guava/frame-00059.npz",
+      "bytes": 5838058,
+      "sha256": "a03a0986e051110d652659dec3b89bbf486f94e9d7132aff6a190415494e1b76",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 59
+    },
+    {
+      "path": "4691_cut_guava/frame-00060.npz",
+      "bytes": 5848621,
+      "sha256": "ce1148d89e557637124062635ba236cdda19130ddeec62b1a27af1b4a2949501",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 60
+    },
+    {
+      "path": "4691_cut_guava/frame-00061.npz",
+      "bytes": 5872794,
+      "sha256": "bafe7a5fe4aae1da4ad03991dda46c08c2e065b7e7de05d2fe7eeaa37260a43d",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 61
+    },
+    {
+      "path": "4691_cut_guava/frame-00062.npz",
+      "bytes": 5866684,
+      "sha256": "8b40e2bb53f631d101d4a8f2d41aaff9e7176c7dbb99e833ebce12eadc427fb8",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 62
+    },
+    {
+      "path": "4691_cut_guava/frame-00063.npz",
+      "bytes": 5848142,
+      "sha256": "42b35759b06d6336d2b11049759472269be0f5a0bda0064f8506e289baa2f7a2",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 63
+    },
+    {
+      "path": "4691_cut_guava/frame-00064.npz",
+      "bytes": 5865635,
+      "sha256": "1f01f5be9c825d96b1b39cc9af61e0bea0a624afbc5e4dfa7abae04b2150347b",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 64
+    },
+    {
+      "path": "4691_cut_guava/frame-00065.npz",
+      "bytes": 5875467,
+      "sha256": "b1f5705df92b45d507d910f15909ba82bb0ee700b35506db8bf27d890bfdf6b6",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 65
+    },
+    {
+      "path": "4691_cut_guava/frame-00066.npz",
+      "bytes": 5880135,
+      "sha256": "424e4b577d494ae31cb282930d7bc81e71f582ead22959f4c1b604b51dd46ffd",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 66
+    },
+    {
+      "path": "4691_cut_guava/frame-00067.npz",
+      "bytes": 5868326,
+      "sha256": "b37870a0d6202b9c4eb6765320e6b615be29bfdeaf971813e4cc3406eec5e4fd",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 67
+    },
+    {
+      "path": "4691_cut_guava/frame-00068.npz",
+      "bytes": 5887014,
+      "sha256": "da4a7fe38979c35f13d7076ce031131f9f7d802bd83dece69f42fa5c63ac0b67",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 68
+    },
+    {
+      "path": "4691_cut_guava/frame-00069.npz",
+      "bytes": 5882601,
+      "sha256": "0aad84a1bd1c01103680385230ff619a761712e5fa35afc47ee4ab7bd726f275",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 69
+    },
+    {
+      "path": "4691_cut_guava/frame-00070.npz",
+      "bytes": 5866396,
+      "sha256": "5b96c9dc41907b5c73d083e3ed311964d40fb7782441c6f94dcfa3fd67691191",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 70
+    },
+    {
+      "path": "4691_cut_guava/frame-00071.npz",
+      "bytes": 5901238,
+      "sha256": "0b1db04284b5286b6e9855e218916fe82c1bd18cf37ec49981507ef691f5eb65",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 71
+    },
+    {
+      "path": "4691_cut_guava/frame-00072.npz",
+      "bytes": 5906523,
+      "sha256": "26f223df306e00dc2d3027c9c24d492c9ea3ff0f9afa72a63cbbab22858f6124",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 72
+    },
+    {
+      "path": "4691_cut_guava/frame-00073.npz",
+      "bytes": 5898835,
+      "sha256": "bbf075a43690c0639a42aec47cf5238db79177ffb20aecc958843b08e252cfde",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 73
+    },
+    {
+      "path": "4691_cut_guava/frame-00074.npz",
+      "bytes": 5899513,
+      "sha256": "fa959b8634d42b0d8d3e87764696963ee4f2cc15a44005ac9bc8f0e04b06ec75",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 74
+    },
+    {
+      "path": "4691_cut_guava/frame-00075.npz",
+      "bytes": 5877366,
+      "sha256": "255034db094fec99bb01c39e52ecf477ed1c15192859303dd40e7f5272574449",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 75
+    },
+    {
+      "path": "4691_cut_guava/frame-00076.npz",
+      "bytes": 5851172,
+      "sha256": "16a7a5fcd6446121fe76d957404276d839fea1574be0a66cadb772e674ed75f5",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 76
+    },
+    {
+      "path": "4691_cut_guava/frame-00077.npz",
+      "bytes": 5842562,
+      "sha256": "663baf59ffcc6e8142a9683a4543115865fa5920ad032e421eaefa0cc62525d2",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 77
+    },
+    {
+      "path": "4691_cut_guava/frame-00078.npz",
+      "bytes": 5864973,
+      "sha256": "f210c8ba7f3ffafb325ad338b14832fe4f76ea2e8fea339a33f72c18484d0a0e",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 78
+    },
+    {
+      "path": "4691_cut_guava/frame-00079.npz",
+      "bytes": 5847101,
+      "sha256": "80aebf5f9bd9665d7f099c92c2ccbee156d59dbd62d1ed470c719dbd919de77b",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 79
+    },
+    {
+      "path": "4691_cut_guava/frame-00080.npz",
+      "bytes": 5842577,
+      "sha256": "34ce62821fde0159efbc67dcee05b5c57f111614ceaa7665b3734023c711d90a",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 80
+    },
+    {
+      "path": "4691_cut_guava/frame-00081.npz",
+      "bytes": 5858867,
+      "sha256": "6254093641053b491ad8c65f9fea0329acbccf985789bfc48319dc6bfd6e55e8",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 81
+    },
+    {
+      "path": "4691_cut_guava/frame-00082.npz",
+      "bytes": 5847879,
+      "sha256": "be0b7a29c02498b3121bda9d57a6fdf84249ab07f14283b27f3b395418c6a8e3",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 82
+    },
+    {
+      "path": "4691_cut_guava/frame-00083.npz",
+      "bytes": 14628,
+      "sha256": "7f170430d8a0bc22d7b287e5fa7f55614c5e304178b9d7ca1c58715015cd6155",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 83
+    },
+    {
+      "path": "4691_cut_guava/frame-00084.npz",
+      "bytes": 14628,
+      "sha256": "2631ad3e94b02e19d522c6667589183fa86d97b9d8eef67ffa253e9a9c72d49c",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 84
+    },
+    {
+      "path": "4691_cut_guava/frame-00085.npz",
+      "bytes": 14627,
+      "sha256": "3a82e38c1ebeb229362c76ac205f908310ef3e27c07f62b35385355109fb98f9",
+      "kind": "native-bank-frame",
+      "sequence": "4691_cut_guava",
+      "frame": 85
+    },
+    {
+      "path": "817_cut_onion/frame-00000.npz",
+      "bytes": 38044,
+      "sha256": "2babfacb82e1af57591d95b33005ca31b687c87f050af0b7bb7bfb52c44b0119",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 0
+    },
+    {
+      "path": "817_cut_onion/frame-00001.npz",
+      "bytes": 7696119,
+      "sha256": "72f6fa7250cdbaff6271669217cc8e6df3659c27c55d235fd7eca18bb182d896",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 1
+    },
+    {
+      "path": "817_cut_onion/frame-00002.npz",
+      "bytes": 7722805,
+      "sha256": "f4931b16f57d13f24ff79fc2a27fca4b2e6ef62be04cba5e88b5e0c5fc7cb07f",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 2
+    },
+    {
+      "path": "817_cut_onion/frame-00003.npz",
+      "bytes": 7869379,
+      "sha256": "c5ca63224e59361f670cb2936c96dcdb57ed43b8390c60f6bea8f84e2be70e19",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 3
+    },
+    {
+      "path": "817_cut_onion/frame-00004.npz",
+      "bytes": 7776031,
+      "sha256": "4041b0cb237a57dbe799487fe3e9a98091c27063526e32e9a66f232ec618799d",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 4
+    },
+    {
+      "path": "817_cut_onion/frame-00005.npz",
+      "bytes": 7848233,
+      "sha256": "fd8a7056f5c89771f9036f14c7b0cae7e3d88b119da96ed9c8a882239498dd31",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 5
+    },
+    {
+      "path": "817_cut_onion/frame-00006.npz",
+      "bytes": 7763540,
+      "sha256": "16891f0df136134286b2f055bde34ffeaa9a1e416e50a0b18f210901cbb7f901",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 6
+    },
+    {
+      "path": "817_cut_onion/frame-00007.npz",
+      "bytes": 7714303,
+      "sha256": "e2075b4723827cf38be2d752970694f3d35060e4bdd04933ddd88f4e65a4abaa",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 7
+    },
+    {
+      "path": "817_cut_onion/frame-00008.npz",
+      "bytes": 7656094,
+      "sha256": "75d6fcf66f967036d555d819801026c94a362f5b63dd6d2640d1d0face6689d0",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 8
+    },
+    {
+      "path": "817_cut_onion/frame-00009.npz",
+      "bytes": 7668580,
+      "sha256": "83842c0701d7c1c18bf26903c8265f9bab032a0444f0aa3d1910f1fbd1d93597",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 9
+    },
+    {
+      "path": "817_cut_onion/frame-00010.npz",
+      "bytes": 7627935,
+      "sha256": "a0213279cadd657918c6d976f3d632238f241aaf96c7afa9b4fd5b482d06ea67",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 10
+    },
+    {
+      "path": "817_cut_onion/frame-00011.npz",
+      "bytes": 7651380,
+      "sha256": "bc3f5bed206bbd997a8a58cb14be8bf50516d4b531a771ee86b110b85bd16e6a",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 11
+    },
+    {
+      "path": "817_cut_onion/frame-00012.npz",
+      "bytes": 7649093,
+      "sha256": "dbde498069673a1eb0238b0937c3a73aa3f24038482ee34a7d7a8aad02be6635",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 12
+    },
+    {
+      "path": "817_cut_onion/frame-00013.npz",
+      "bytes": 7860061,
+      "sha256": "fb173c5abf3e372a9c233274d106c0e7e25cc2e6d622a51d17205e76ebe93ae4",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 13
+    },
+    {
+      "path": "817_cut_onion/frame-00014.npz",
+      "bytes": 7740689,
+      "sha256": "ac116dfa266cfadc908ad7abf499de1009b527fe2009f428bb697dc15d52a318",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 14
+    },
+    {
+      "path": "817_cut_onion/frame-00015.npz",
+      "bytes": 7783702,
+      "sha256": "8840283a28d1aeaa116fd2b1b818725e0cc187d214299696349d4926adfc7a99",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 15
+    },
+    {
+      "path": "817_cut_onion/frame-00016.npz",
+      "bytes": 7782142,
+      "sha256": "b762d4a1e109dc3cf4cc530275bc43bf37b74cffc91b7c0aebf50a9a9819eb9c",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 16
+    },
+    {
+      "path": "817_cut_onion/frame-00017.npz",
+      "bytes": 7683693,
+      "sha256": "85db9dced57507bd0a6dd5774b68b46694211054e3c2b5f7a0703cd96e7744d9",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 17
+    },
+    {
+      "path": "817_cut_onion/frame-00018.npz",
+      "bytes": 7634801,
+      "sha256": "3fa3a585543d5db8be8453a24a2f06351f09c4041524b56eb5988e5970ca3879",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 18
+    },
+    {
+      "path": "817_cut_onion/frame-00019.npz",
+      "bytes": 7627015,
+      "sha256": "783a3e02840a3dde4f86dc358108bf7bd7dfb74848eaec35bfd32bebbf48c6b8",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 19
+    },
+    {
+      "path": "817_cut_onion/frame-00020.npz",
+      "bytes": 18645,
+      "sha256": "7a0edadcb95f43d4af342f2bb3082064f96e87374d3d8fc9e6cdd6d12350420e",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 20
+    },
+    {
+      "path": "817_cut_onion/frame-00021.npz",
+      "bytes": 7645006,
+      "sha256": "144904ec971b20a660bb6eb8ff72930b8bb62832a554e05643a4ecc9e4a9e106",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 21
+    },
+    {
+      "path": "817_cut_onion/frame-00022.npz",
+      "bytes": 7684893,
+      "sha256": "6005436d13f282cd96272782bc081eb32c3b99742d3e197883ef4a14b0ada674",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 22
+    },
+    {
+      "path": "817_cut_onion/frame-00023.npz",
+      "bytes": 7879945,
+      "sha256": "f669788ed702a183b641509b0b7f8f2cc3ad0ec00268fcc85564d1729649e5ce",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 23
+    },
+    {
+      "path": "817_cut_onion/frame-00024.npz",
+      "bytes": 7819137,
+      "sha256": "daaf8c025f313393815f0093c4313dfe2d70882933a83a42335275f3ec47ed25",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 24
+    },
+    {
+      "path": "817_cut_onion/frame-00025.npz",
+      "bytes": 7651201,
+      "sha256": "9f76c4b2f438428393f3635f53e4f5fbc7c55d2a6ced32cbebcc24f6886ce8d0",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 25
+    },
+    {
+      "path": "817_cut_onion/frame-00026.npz",
+      "bytes": 7661567,
+      "sha256": "a7ddcfcf03d7cf1dc1127b8d1cffb0d76d9e210dd86d5ba77a00ac15042d7ed7",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 26
+    },
+    {
+      "path": "817_cut_onion/frame-00027.npz",
+      "bytes": 7714409,
+      "sha256": "ab192c4fb2756b5dff0f88a32867ed3cf33241e5b27d684ca90ff2937a263a2e",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 27
+    },
+    {
+      "path": "817_cut_onion/frame-00028.npz",
+      "bytes": 7682172,
+      "sha256": "54e091d15e7f40ab630adcbea388f878e65e5e1549612ac7f967a9ac69da2308",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 28
+    },
+    {
+      "path": "817_cut_onion/frame-00029.npz",
+      "bytes": 7679770,
+      "sha256": "478205b8fc04448e75d1729e2f5a800dcc27628565865095c4459d54b82767b7",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 29
+    },
+    {
+      "path": "817_cut_onion/frame-00030.npz",
+      "bytes": 7771212,
+      "sha256": "786230f4348bcc8263102eeaa8df39bf5702868f8634dcfe37b6b51a9f283bfc",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 30
+    },
+    {
+      "path": "817_cut_onion/frame-00031.npz",
+      "bytes": 7807787,
+      "sha256": "43aa432601ca0d1722d753b882cdc009ded97d00e46eba567a071e62edb5bfb7",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 31
+    },
+    {
+      "path": "817_cut_onion/frame-00032.npz",
+      "bytes": 7856248,
+      "sha256": "9cf50dc37cb8b6b17920e8cef3fcadbfcf36ee488508b5500f4cbd9e54f04b0d",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 32
+    },
+    {
+      "path": "817_cut_onion/frame-00033.npz",
+      "bytes": 7747625,
+      "sha256": "c6a58168217187d36011e81070d2489e881a6f042846f886eda0ba199d638168",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 33
+    },
+    {
+      "path": "817_cut_onion/frame-00034.npz",
+      "bytes": 18644,
+      "sha256": "59314b0cc6637bacf808fa27395ef0d1b10d032caefcb38e2b2b3ee75460b459",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 34
+    },
+    {
+      "path": "817_cut_onion/frame-00035.npz",
+      "bytes": 7661920,
+      "sha256": "2b9c4e5b4343edcc9011de83529be7aa170325ad7122ede190182dc59cca220c",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 35
+    },
+    {
+      "path": "817_cut_onion/frame-00036.npz",
+      "bytes": 7842077,
+      "sha256": "e09dce8da8d1ccfe4ed6fbfc74c234230277379ed68c67b93a904fd86b4f2aa7",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 36
+    },
+    {
+      "path": "817_cut_onion/frame-00037.npz",
+      "bytes": 7838217,
+      "sha256": "7a5bb3b3b183ea92f469bfbed39ea73f4657387b0dcd8b4f48ab5b7638112a41",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 37
+    },
+    {
+      "path": "817_cut_onion/frame-00038.npz",
+      "bytes": 7565724,
+      "sha256": "ff9bedebc307ead5d4472c438382dab05c9dc9241429f29c56a20754d23edc21",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 38
+    },
+    {
+      "path": "817_cut_onion/frame-00039.npz",
+      "bytes": 7800227,
+      "sha256": "6e05013bafe8081d8395f6b806c6e797fd9150cb26134185752f9fd2f877717c",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 39
+    },
+    {
+      "path": "817_cut_onion/frame-00040.npz",
+      "bytes": 7791456,
+      "sha256": "d788184be73cbc531fb254bbf5de81543d3b7997c9826031e97b7c55625b21fe",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 40
+    },
+    {
+      "path": "817_cut_onion/frame-00041.npz",
+      "bytes": 7811255,
+      "sha256": "6135d97bcf86bb7de6d1b57bc5a53696ce89676171823872fcdbbd99978c8b29",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 41
+    },
+    {
+      "path": "817_cut_onion/frame-00042.npz",
+      "bytes": 18644,
+      "sha256": "826636a143f739a5745ec0ff5fd7ee07e1d775e53a471f282e5c818e3b6e777d",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 42
+    },
+    {
+      "path": "817_cut_onion/frame-00043.npz",
+      "bytes": 7709096,
+      "sha256": "ef5402fb93b23c40097afd0682b00344639c700428fbf7c6ee04a72ab733d3c2",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 43
+    },
+    {
+      "path": "817_cut_onion/frame-00044.npz",
+      "bytes": 7669425,
+      "sha256": "3547a618618c556185fc2c373fbafd5a538524c19916bf485dcfdffba5bd499f",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 44
+    },
+    {
+      "path": "817_cut_onion/frame-00045.npz",
+      "bytes": 7688746,
+      "sha256": "98e29397bbe44f09d2c5ccd384911da8736aa95d7a3fd504c24f246716f4f175",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 45
+    },
+    {
+      "path": "817_cut_onion/frame-00046.npz",
+      "bytes": 18644,
+      "sha256": "970c23d747ac21b5515f573240f4fa9d35046da9860babd7c65b07fe017ee602",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 46
+    },
+    {
+      "path": "817_cut_onion/frame-00047.npz",
+      "bytes": 7690994,
+      "sha256": "a08e11c449c373a5eb13afdb20af04cf6c7844e26280d8d4ec271da7e58a4d39",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 47
+    },
+    {
+      "path": "817_cut_onion/frame-00048.npz",
+      "bytes": 7781717,
+      "sha256": "25f761b3bf61cadd2d980ce51f9bfac2ba6793cc389c0fb814843c5c541c0fa4",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 48
+    },
+    {
+      "path": "817_cut_onion/frame-00049.npz",
+      "bytes": 7851011,
+      "sha256": "36b28ad244a626967d787ca6338af752035e5e1b340956eb530de06680f6f1b1",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 49
+    },
+    {
+      "path": "817_cut_onion/frame-00050.npz",
+      "bytes": 18644,
+      "sha256": "44572840fae1323be2d6695cbc3e8813794977ca07ecc4a0a38b42296b34f251",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 50
+    },
+    {
+      "path": "817_cut_onion/frame-00051.npz",
+      "bytes": 18645,
+      "sha256": "52d4e5426fd0adc79a835d485c87944dc2d45ff26868420a481897a4028c6f3b",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 51
+    },
+    {
+      "path": "817_cut_onion/frame-00052.npz",
+      "bytes": 7811699,
+      "sha256": "f915d1e4fd3a8a8cd079a77e7870bb1ec9b849b36d0eeb89d4c5f865d40fb5aa",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 52
+    },
+    {
+      "path": "817_cut_onion/frame-00053.npz",
+      "bytes": 7774311,
+      "sha256": "87b45a79fffb20bcbd7a7a7fe86ace5661f39278bd710638d5abde81b69e22bb",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 53
+    },
+    {
+      "path": "817_cut_onion/frame-00054.npz",
+      "bytes": 7851607,
+      "sha256": "2a58d8b523e142e3aef5abf262cf2c4765df3eadac85ea5114e45e5f954fc443",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 54
+    },
+    {
+      "path": "817_cut_onion/frame-00055.npz",
+      "bytes": 18644,
+      "sha256": "a617566e4b6bed5a65c4463ea3c9c444ac09e2cd202b97fe444976f57d4ed73a",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 55
+    },
+    {
+      "path": "817_cut_onion/frame-00056.npz",
+      "bytes": 7720416,
+      "sha256": "2962a2f2d250db41f741b61620c4e3bf8b2202eb427500266dfdb26adef56383",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 56
+    },
+    {
+      "path": "817_cut_onion/frame-00057.npz",
+      "bytes": 7759578,
+      "sha256": "12a6022f1eef886b83c1314c010f16c8d39cdbd8959ec9aacc4c374a0a9b50e8",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 57
+    },
+    {
+      "path": "817_cut_onion/frame-00058.npz",
+      "bytes": 7823880,
+      "sha256": "8d7827a148d385ec7c9a002d1696f3a3b24a728b86d953213da63358f450a7d5",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 58
+    },
+    {
+      "path": "817_cut_onion/frame-00059.npz",
+      "bytes": 18644,
+      "sha256": "244764d2fe200c9262f9cd78155028c728d984e84aa88e9fff1f9217aabe842c",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 59
+    },
+    {
+      "path": "817_cut_onion/frame-00060.npz",
+      "bytes": 7680339,
+      "sha256": "dc607da9421760a5a50cb648f1c3d56ff732e9fd7b3a2932c35002ad4030181a",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 60
+    },
+    {
+      "path": "817_cut_onion/frame-00061.npz",
+      "bytes": 7711029,
+      "sha256": "fdc3ca249700ec6ec4c19d3f54d371cbce2a48b0cd866afc5f7994608187394b",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 61
+    },
+    {
+      "path": "817_cut_onion/frame-00062.npz",
+      "bytes": 18644,
+      "sha256": "c6ed360ad896d5f76d7e98678d7183d893e8351d8a27426aa01f842f4f0217d0",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 62
+    },
+    {
+      "path": "817_cut_onion/frame-00063.npz",
+      "bytes": 18645,
+      "sha256": "4c18d9047c8704881325d6242f79e36d2f7cf5dcb048492856985b55236cc9e1",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 63
+    },
+    {
+      "path": "817_cut_onion/frame-00064.npz",
+      "bytes": 7704425,
+      "sha256": "44a7c27854eeb4ac2a47ba0f4fa55b2b8273e21b8c64d1b46722e2da9b936753",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 64
+    },
+    {
+      "path": "817_cut_onion/frame-00065.npz",
+      "bytes": 7831650,
+      "sha256": "4bdcebd45c8d0e87f6de5656ec590c8899353272b72e6d8e0880e4c3a1f4146f",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 65
+    },
+    {
+      "path": "817_cut_onion/frame-00066.npz",
+      "bytes": 18644,
+      "sha256": "094a3caf0e46cac222ae4e4df90899695b19e53e63895a54fd6c94e4884bb872",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 66
+    },
+    {
+      "path": "817_cut_onion/frame-00067.npz",
+      "bytes": 7629183,
+      "sha256": "1c4353acb96554acef96c33827a8d07d3e8a03d107250449cdc988409791ecda",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 67
+    },
+    {
+      "path": "817_cut_onion/frame-00068.npz",
+      "bytes": 7664087,
+      "sha256": "f6c223a2644fbf51c8970cb819991d0bbd86877592fe80728edb59a1052df8f7",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 68
+    },
+    {
+      "path": "817_cut_onion/frame-00069.npz",
+      "bytes": 7595136,
+      "sha256": "b117a07883e9f947e0ec1c4607faef35266019dcc0a89b1bb81524c33af1475d",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 69
+    },
+    {
+      "path": "817_cut_onion/frame-00070.npz",
+      "bytes": 7623343,
+      "sha256": "78c92ffae4dd2d3bfe65e80aa5df9363f08da9eab9d24a520443ed04b2b449a4",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 70
+    },
+    {
+      "path": "817_cut_onion/frame-00071.npz",
+      "bytes": 7832793,
+      "sha256": "fb871115bf89394dcc793e03a8e67c723d1fe4c3ef6adcaecb9c2010bb53b0c9",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 71
+    },
+    {
+      "path": "817_cut_onion/frame-00072.npz",
+      "bytes": 7637797,
+      "sha256": "11ca57d81300fb9c24b86e45914d700df4bb3ad8f3ecfa0a83f2a56360c7ae4a",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 72
+    },
+    {
+      "path": "817_cut_onion/frame-00073.npz",
+      "bytes": 7681705,
+      "sha256": "5d4867f141790146fe51fccd8c8d3c768f21b3e49859698bef1985e7a712df8f",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 73
+    },
+    {
+      "path": "817_cut_onion/frame-00074.npz",
+      "bytes": 7602912,
+      "sha256": "8403eda86069314515bf2e422b510dfea7b515b29f81c9e320f22b7dc4bdfc99",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 74
+    },
+    {
+      "path": "817_cut_onion/frame-00075.npz",
+      "bytes": 7597443,
+      "sha256": "5ca64b2df709b601fdee73a49ae88bc76ad62c5a71bce2f814bdb5ea20c8364f",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 75
+    },
+    {
+      "path": "817_cut_onion/frame-00076.npz",
+      "bytes": 7623909,
+      "sha256": "f405698a367787f21622e14e173748644ece9225b92dacb324992099671a44d8",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 76
+    },
+    {
+      "path": "817_cut_onion/frame-00077.npz",
+      "bytes": 7641653,
+      "sha256": "e30f63d6180536e76b54ad2822f084fc5e42c3dae0c2240b7f5c0af3407ecafd",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 77
+    },
+    {
+      "path": "817_cut_onion/frame-00078.npz",
+      "bytes": 7721173,
+      "sha256": "64adfa22f7f8fe993ccf92455633a601359b2cc9858742bb643db52b34ec48ce",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 78
+    },
+    {
+      "path": "817_cut_onion/frame-00079.npz",
+      "bytes": 7670778,
+      "sha256": "87b228c7b8308fb135e495fbc2bc07d3ca0971f8c2ddeb6b1c912dc0e741a43c",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 79
+    },
+    {
+      "path": "817_cut_onion/frame-00080.npz",
+      "bytes": 7615478,
+      "sha256": "64653ab48e2426ff1e3d906d1d702bc86820407762239b31556e63663dc208cc",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 80
+    },
+    {
+      "path": "817_cut_onion/frame-00081.npz",
+      "bytes": 7619907,
+      "sha256": "eff0d9412e135beef114e30614635c28aa898e8d6e0e54219fd98e10c604ca82",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 81
+    },
+    {
+      "path": "817_cut_onion/frame-00082.npz",
+      "bytes": 7605908,
+      "sha256": "cfdfa5c48f940c431c04f01ec688b327ba77b3ab571ebe4a9243501869c5a346",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 82
+    },
+    {
+      "path": "817_cut_onion/frame-00083.npz",
+      "bytes": 18645,
+      "sha256": "22ea0fcf1e92fde0ab9d393c51a6bede07d631e5a3790797671eb59f7d58cda6",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 83
+    },
+    {
+      "path": "817_cut_onion/frame-00084.npz",
+      "bytes": 7623549,
+      "sha256": "30f9c1ffc3dfb28327f9b68ff9c7e235a5245b1f4834a87e03b40dee2549deb4",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 84
+    },
+    {
+      "path": "817_cut_onion/frame-00085.npz",
+      "bytes": 18644,
+      "sha256": "0dc5af0198ddea050cb3a18f6245aba738a4f3727f67c68cced2ba66a3584b20",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 85
+    },
+    {
+      "path": "817_cut_onion/frame-00086.npz",
+      "bytes": 18644,
+      "sha256": "a25345ef09b2bf192eece740150a809500fccefda2571ec00252a0679cd396f4",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 86
+    },
+    {
+      "path": "817_cut_onion/frame-00087.npz",
+      "bytes": 7615036,
+      "sha256": "c831d82f04e03ed29837ad1ad17adb5c6da67050852cabc37783b9341d99c6d3",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 87
+    },
+    {
+      "path": "817_cut_onion/frame-00088.npz",
+      "bytes": 7748495,
+      "sha256": "9329ec72b4e2c58c758534439717a616206b5ee976bfa6524168398f80ed10a1",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 88
+    },
+    {
+      "path": "817_cut_onion/frame-00089.npz",
+      "bytes": 7646443,
+      "sha256": "de63c55ec6546d818cb702f972b46192eb647c78be2e485a1cb200d36e802c4a",
+      "kind": "native-bank-frame",
+      "sequence": "817_cut_onion",
+      "frame": 89
+    },
+    {
+      "path": "9675_fold_clothes/frame-00000.npz",
+      "bytes": 160918,
+      "sha256": "99a773fefde02ae02c8a318231c298c1fb699700928fc5b0c9cbe6e7acd48191",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 0
+    },
+    {
+      "path": "9675_fold_clothes/frame-00001.npz",
+      "bytes": 10079199,
+      "sha256": "56ec778cfbeeda395126ec96747e23b2f3247d4fcac82b9698b6941f9d99fc37",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 1
+    },
+    {
+      "path": "9675_fold_clothes/frame-00002.npz",
+      "bytes": 10134046,
+      "sha256": "7a629239d9c5fa1e953dce215080ef1efb33d5a2d57b5a8702b7076c7e5fd737",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 2
+    },
+    {
+      "path": "9675_fold_clothes/frame-00003.npz",
+      "bytes": 10191037,
+      "sha256": "11294d1293404582c165314830844cfd7d3b9da19196aebb13d33ee708e7bb4b",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 3
+    },
+    {
+      "path": "9675_fold_clothes/frame-00004.npz",
+      "bytes": 10107387,
+      "sha256": "5b3d13d973dc093e8ab55549c0d3fde71fd981505fee35cd9912f02b812f0c50",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 4
+    },
+    {
+      "path": "9675_fold_clothes/frame-00005.npz",
+      "bytes": 10127712,
+      "sha256": "f038f5c133d1924a564c3d43cdf254f7b4a070d56f9833da6257112ea0247d92",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 5
+    },
+    {
+      "path": "9675_fold_clothes/frame-00006.npz",
+      "bytes": 10175845,
+      "sha256": "ba9ccf67b8beb98e0573eb8acc3e8d0dc7f60fb0e64d802437dd2bbcf23481bd",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 6
+    },
+    {
+      "path": "9675_fold_clothes/frame-00007.npz",
+      "bytes": 10194340,
+      "sha256": "cf14167a9cfc641d5a26fa49a2a9dcda50e7282f1d7ba17214da37287da365e9",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 7
+    },
+    {
+      "path": "9675_fold_clothes/frame-00008.npz",
+      "bytes": 10149202,
+      "sha256": "02f1e2a57a6e46a3dc6379beb2acbd6dc4e354ef9cea38e185cd8123c53504df",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 8
+    },
+    {
+      "path": "9675_fold_clothes/frame-00009.npz",
+      "bytes": 10089724,
+      "sha256": "b47bd1d346199f135cecf359e159baaa1aca1dcc8052ff7552e6c622962b1819",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 9
+    },
+    {
+      "path": "9675_fold_clothes/frame-00010.npz",
+      "bytes": 10051384,
+      "sha256": "5fc7242b5ab1aeeb7c43d9e4c44a74855b5e547d591432a5a650ffa4a6ccf893",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 10
+    },
+    {
+      "path": "9675_fold_clothes/frame-00011.npz",
+      "bytes": 10114626,
+      "sha256": "b5b955004e394f226d5a4e73a6db045ab29810ea263643f0e0e8a41eb53b5468",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 11
+    },
+    {
+      "path": "9675_fold_clothes/frame-00012.npz",
+      "bytes": 10202955,
+      "sha256": "29a4f8d561eb2f6acff81519ee3b5893a25bd0d4ce657e776bc0865a4c5cb1c6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 12
+    },
+    {
+      "path": "9675_fold_clothes/frame-00013.npz",
+      "bytes": 10321153,
+      "sha256": "443f92186a24420054273b0545092ee15055f39f1c4e4229a33f562d0272424b",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 13
+    },
+    {
+      "path": "9675_fold_clothes/frame-00014.npz",
+      "bytes": 10553370,
+      "sha256": "ac6916f1dacdc8eefa3a924f1a5b05d9b31b8f1b37643e653fa6190d1b33e31a",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 14
+    },
+    {
+      "path": "9675_fold_clothes/frame-00015.npz",
+      "bytes": 10385876,
+      "sha256": "a8b07d68434156c93629b5503f0c966fd63d9449b16757abc43621a141881e14",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 15
+    },
+    {
+      "path": "9675_fold_clothes/frame-00016.npz",
+      "bytes": 10264515,
+      "sha256": "6ae05acbb60d092194677e3543603d6b8c711e26b17557b0f3a8a7ec47b91169",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 16
+    },
+    {
+      "path": "9675_fold_clothes/frame-00017.npz",
+      "bytes": 10249851,
+      "sha256": "1ac1fa952c93c5ecbb6de5eb8e119b3e1314042cff579d0bb68dce1bf8f3eada",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 17
+    },
+    {
+      "path": "9675_fold_clothes/frame-00018.npz",
+      "bytes": 10263267,
+      "sha256": "0ee1692725e512e6ed780b281797017e2b0a2cdfdf7d36d6f144d6d3409fb5fb",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 18
+    },
+    {
+      "path": "9675_fold_clothes/frame-00019.npz",
+      "bytes": 10268920,
+      "sha256": "d4d38ced5ddb333512bf2e1e15d3b5976dbfcaa05dc066a7b154e7263936b658",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 19
+    },
+    {
+      "path": "9675_fold_clothes/frame-00020.npz",
+      "bytes": 10290699,
+      "sha256": "4e1282d4bcb27741e4e7f1bda110b0b819c458f014b55b11747c393d691b3674",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 20
+    },
+    {
+      "path": "9675_fold_clothes/frame-00021.npz",
+      "bytes": 10293912,
+      "sha256": "cef6c8d5128b430d57f8ee57b65684599eba196c5839f3203714c49f5724b5c9",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 21
+    },
+    {
+      "path": "9675_fold_clothes/frame-00022.npz",
+      "bytes": 10292781,
+      "sha256": "e47949f14bf85309aa105d93e5cd464ce2775214689c4e0723b7cb37638b89b8",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 22
+    },
+    {
+      "path": "9675_fold_clothes/frame-00023.npz",
+      "bytes": 10284190,
+      "sha256": "eb5e4c032f3850dca00697bf264e8642a63d2b14b1154179302d1b141789858c",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 23
+    },
+    {
+      "path": "9675_fold_clothes/frame-00024.npz",
+      "bytes": 10269958,
+      "sha256": "7d19bcbe35bb278edbd61657d820ee7257d788737f1f99da165ff76edeb67b01",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 24
+    },
+    {
+      "path": "9675_fold_clothes/frame-00025.npz",
+      "bytes": 10265335,
+      "sha256": "aa24a71adb4e2d36518c957c7a6bc06f21825126328af020da88193fb94e983d",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 25
+    },
+    {
+      "path": "9675_fold_clothes/frame-00026.npz",
+      "bytes": 10213460,
+      "sha256": "94b4e778efacf4015167b78f815e59ea673ba137359d1923d6f892a1d1e9d54a",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 26
+    },
+    {
+      "path": "9675_fold_clothes/frame-00027.npz",
+      "bytes": 10209761,
+      "sha256": "553311dcd7b1d66ae802ae2c836cec0560457a4c8dfab96ac18cec87cc8540a2",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 27
+    },
+    {
+      "path": "9675_fold_clothes/frame-00028.npz",
+      "bytes": 10185527,
+      "sha256": "11cc1738580c4fa0a534f290ef074a02032ada40327c87189a126bc6bfbb85b9",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 28
+    },
+    {
+      "path": "9675_fold_clothes/frame-00029.npz",
+      "bytes": 10181564,
+      "sha256": "5acdba20c32adba8ba19240faebe9582f27e0817578c53b06f418b7847cf9878",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 29
+    },
+    {
+      "path": "9675_fold_clothes/frame-00030.npz",
+      "bytes": 10180455,
+      "sha256": "9e84dc23f2ad5d2eca43aca692df23a730681949b2d559bf04984ee0a85326c4",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 30
+    },
+    {
+      "path": "9675_fold_clothes/frame-00031.npz",
+      "bytes": 10202626,
+      "sha256": "6bc95029f9f90536b4bd853997f235aaed8be867907325abe3deb1722b644609",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 31
+    },
+    {
+      "path": "9675_fold_clothes/frame-00032.npz",
+      "bytes": 10171387,
+      "sha256": "86780c36f656436a1be14a7ea93667d3083f254fb99eff11a4c314e07076747d",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 32
+    },
+    {
+      "path": "9675_fold_clothes/frame-00033.npz",
+      "bytes": 10182898,
+      "sha256": "55cc0f442f7523565cce5ac3f88cfa04253fd5c3c2d9b4f3c69fd07dbf4f5bbf",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 33
+    },
+    {
+      "path": "9675_fold_clothes/frame-00034.npz",
+      "bytes": 10184108,
+      "sha256": "f124e84dc376378e36ffdd497b00544d3591b4731153f74af03e163e4816dd29",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 34
+    },
+    {
+      "path": "9675_fold_clothes/frame-00035.npz",
+      "bytes": 10180228,
+      "sha256": "63e44f746cea1bc92c16e8afc10d2066d1f2d68732f46ac3eae3bdce937ae644",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 35
+    },
+    {
+      "path": "9675_fold_clothes/frame-00036.npz",
+      "bytes": 10399432,
+      "sha256": "bf97b937348039b1dee07903e2b3e6479304ae90b31d4eb6198486e87c8792b0",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 36
+    },
+    {
+      "path": "9675_fold_clothes/frame-00037.npz",
+      "bytes": 10310688,
+      "sha256": "1764a420e68f3dab5d189096174c4929b2a2e5390a7dc3a1b4aaa304ddbc7fc5",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 37
+    },
+    {
+      "path": "9675_fold_clothes/frame-00038.npz",
+      "bytes": 10379540,
+      "sha256": "b1a3553eda46353d1311fcf55e37a158472ae2f16b4d25f23b15185d35daf646",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 38
+    },
+    {
+      "path": "9675_fold_clothes/frame-00039.npz",
+      "bytes": 10347675,
+      "sha256": "522aaf06ea0712ebfa9f26f5d8ba7f75c6beab5d09b06de781ae42df601a20f5",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 39
+    },
+    {
+      "path": "9675_fold_clothes/frame-00040.npz",
+      "bytes": 10367213,
+      "sha256": "af6b77fb37edf6307db9d436de7ffd33f572cc5670de22d3a4f49b893d097b69",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 40
+    },
+    {
+      "path": "9675_fold_clothes/frame-00041.npz",
+      "bytes": 10361385,
+      "sha256": "ac57e92cca96417e6ce54dfe6edd3e242bc7941e26e3b12277973bd3a7ae5a31",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 41
+    },
+    {
+      "path": "9675_fold_clothes/frame-00042.npz",
+      "bytes": 10370444,
+      "sha256": "ab73d5cf71745d48b50d42a02eba50ecfd8adfedc074e268c43beffd3967baff",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 42
+    },
+    {
+      "path": "9675_fold_clothes/frame-00043.npz",
+      "bytes": 10391572,
+      "sha256": "21718d1df2de7a85e9d8f2466cadfa8ac53a5f4ebe662a766c4a9cd30565e136",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 43
+    },
+    {
+      "path": "9675_fold_clothes/frame-00044.npz",
+      "bytes": 10403557,
+      "sha256": "a6f222e60dee44e1442f94e30ef31d2c56f3d137d5e77b5debeabe3a469dd30f",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 44
+    },
+    {
+      "path": "9675_fold_clothes/frame-00045.npz",
+      "bytes": 10510077,
+      "sha256": "ebe372229f11ddbf6ad6c5fa321be59f8e9855edb721bfc60df0d21c589955e4",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 45
+    },
+    {
+      "path": "9675_fold_clothes/frame-00046.npz",
+      "bytes": 10518999,
+      "sha256": "97c9cd8ac4e77aaad77bf4c900367f9512de34d43bed39b5bfe9a8afe2c87685",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 46
+    },
+    {
+      "path": "9675_fold_clothes/frame-00047.npz",
+      "bytes": 10533759,
+      "sha256": "987459c8c70e880f01da9caf7d8f671512839033b3fb884073703680124ae4e6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 47
+    },
+    {
+      "path": "9675_fold_clothes/frame-00048.npz",
+      "bytes": 10457040,
+      "sha256": "af385db943e4c217017789170a5f376bd229c47437c4b298c4c54f9b68f9762d",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 48
+    },
+    {
+      "path": "9675_fold_clothes/frame-00049.npz",
+      "bytes": 10417808,
+      "sha256": "6b800513cc17d922f2398bbd9d419fa8826fcaf7d43b9738268d5de7adbf176d",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 49
+    },
+    {
+      "path": "9675_fold_clothes/frame-00050.npz",
+      "bytes": 10399908,
+      "sha256": "256cea2abdfa5bc882bcf5d8c113a46950c87b0e8e0d639de9189d0cdd1183e1",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 50
+    },
+    {
+      "path": "9675_fold_clothes/frame-00051.npz",
+      "bytes": 10400178,
+      "sha256": "d6abc7b6263a87921818dba15bfdcdaaf1618800f13f4aaa87a24465619dc755",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 51
+    },
+    {
+      "path": "9675_fold_clothes/frame-00052.npz",
+      "bytes": 10382220,
+      "sha256": "7f89e7bdff8f5e2bdbf52f1a93ea70c9aed6cae591b870cd47aaedfbf39db6b7",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 52
+    },
+    {
+      "path": "9675_fold_clothes/frame-00053.npz",
+      "bytes": 10333577,
+      "sha256": "e4fb0a495aea8585bf5cde2b768965ca89cf76c126a1ef0557e43b71278c2d04",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 53
+    },
+    {
+      "path": "9675_fold_clothes/frame-00054.npz",
+      "bytes": 10341353,
+      "sha256": "b25d12f35ed2a4fb32aa8057e6742b8294acbdf2ffe12f2d3e47015d139e7b04",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 54
+    },
+    {
+      "path": "9675_fold_clothes/frame-00055.npz",
+      "bytes": 10362407,
+      "sha256": "77245873146dce79e890244db40946a5348d8a2889e91ff43d8571978649e1d6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 55
+    },
+    {
+      "path": "9675_fold_clothes/frame-00056.npz",
+      "bytes": 10372791,
+      "sha256": "420ca7db7e8974406586c1074d427fc561e47a972cdf85c1df1578b8e8a04a1b",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 56
+    },
+    {
+      "path": "9675_fold_clothes/frame-00057.npz",
+      "bytes": 10353728,
+      "sha256": "bd1b25b58bf0e0002ef54af2b3d2620cf8916514504f308a3967b5cf93f0dba3",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 57
+    },
+    {
+      "path": "9675_fold_clothes/frame-00058.npz",
+      "bytes": 10378772,
+      "sha256": "0fc38db8204e8b4aa8f5f8687ce27a688319849695df3fe611c0328f9bef0204",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 58
+    },
+    {
+      "path": "9675_fold_clothes/frame-00059.npz",
+      "bytes": 10366758,
+      "sha256": "824e52b04f0018dcaf6c22fabbbd0b529ca5b1bc1170491524486a29f745a7a7",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 59
+    },
+    {
+      "path": "9675_fold_clothes/frame-00060.npz",
+      "bytes": 10352901,
+      "sha256": "415bb9978fba539b85497a3dd3612eae1fce6c7c972733e541879dc8dada2c8e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 60
+    },
+    {
+      "path": "9675_fold_clothes/frame-00061.npz",
+      "bytes": 10356645,
+      "sha256": "6c17e999440c865929af97b8e925ef737ce2c5c654530b278afcecdbce9a13b6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 61
+    },
+    {
+      "path": "9675_fold_clothes/frame-00062.npz",
+      "bytes": 10485721,
+      "sha256": "a0aa0560b8097775a8e4cd1cee57ba0d1ccfd7e2f45fcc2f1a65a1c4382f9290",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 62
+    },
+    {
+      "path": "9675_fold_clothes/frame-00063.npz",
+      "bytes": 10461605,
+      "sha256": "da5a5aa55b97244513ac9cf2c57ef217e1c9d2fb7a0a5d21b44444616b724e59",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 63
+    },
+    {
+      "path": "9675_fold_clothes/frame-00064.npz",
+      "bytes": 10319658,
+      "sha256": "7f9a1204e906ae0950bfabed39e6345274ce3c328c9c6957a95dc006fb4ad2d6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 64
+    },
+    {
+      "path": "9675_fold_clothes/frame-00065.npz",
+      "bytes": 10332160,
+      "sha256": "9cf64b46ae82b931a50953f3780d55951c8a524280e66bf8b43fa6261c6e9317",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 65
+    },
+    {
+      "path": "9675_fold_clothes/frame-00066.npz",
+      "bytes": 10471587,
+      "sha256": "2513fc50cc5d2f7bb9fa94dfaba92f360ec64a7d7d3bb94eb4853143f77b1ab3",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 66
+    },
+    {
+      "path": "9675_fold_clothes/frame-00067.npz",
+      "bytes": 10475798,
+      "sha256": "325a55834ec8fb088b5512f6f3babd20b40eefcf9222a2f8c0d1466660777c4e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 67
+    },
+    {
+      "path": "9675_fold_clothes/frame-00068.npz",
+      "bytes": 10302855,
+      "sha256": "f8dc506744ed84bfba2726af8415350195e56b3ec8a9335e9feba46ec118d75d",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 68
+    },
+    {
+      "path": "9675_fold_clothes/frame-00069.npz",
+      "bytes": 10419165,
+      "sha256": "f3a830cb74cbec0e5fc73af35379c2cb98cfa2c1330fbf8a5a555a42984ad746",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 69
+    },
+    {
+      "path": "9675_fold_clothes/frame-00070.npz",
+      "bytes": 10332778,
+      "sha256": "0d48e33b60b6f0c202a14a2de0a5cabc29224c038eef1b757ffe2698116e78f6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 70
+    },
+    {
+      "path": "9675_fold_clothes/frame-00071.npz",
+      "bytes": 10404063,
+      "sha256": "17e5e99dc71506fed986f98ca3e85d7ed94f3769bf732782cac720fd632a23bd",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 71
+    },
+    {
+      "path": "9675_fold_clothes/frame-00072.npz",
+      "bytes": 10397004,
+      "sha256": "97f1b5b4b1a5132892204886101f92114297f17a1be8fe058a98a348fdac911c",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 72
+    },
+    {
+      "path": "9675_fold_clothes/frame-00073.npz",
+      "bytes": 10386546,
+      "sha256": "84017a2dc6a280c1209e9358408f74b663bc51ad50289705cfa112a71daa4ea6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 73
+    },
+    {
+      "path": "9675_fold_clothes/frame-00074.npz",
+      "bytes": 10340245,
+      "sha256": "9a93b770ab6ea41e8070721e311926d1a399ab503d5df6889c26514d98200f4d",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 74
+    },
+    {
+      "path": "9675_fold_clothes/frame-00075.npz",
+      "bytes": 10316002,
+      "sha256": "4dda01881c77ba01033d9d68754111a3a1fee3bd438bc03c9833ac97db280954",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 75
+    },
+    {
+      "path": "9675_fold_clothes/frame-00076.npz",
+      "bytes": 10276182,
+      "sha256": "160d621c094f7ec14d5c8d900b1c6a7981b03246c149cd5d9fec2f87b81b2024",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 76
+    },
+    {
+      "path": "9675_fold_clothes/frame-00077.npz",
+      "bytes": 10231289,
+      "sha256": "8e29c228397bf58131818d74cb7fdf5bb6742166aba6b40f6dff58ffef066a6e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 77
+    },
+    {
+      "path": "9675_fold_clothes/frame-00078.npz",
+      "bytes": 10212703,
+      "sha256": "e3eed05ff62accb34d998af8f0f75e4c5cc0776ff811d44b3671880a45eac286",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 78
+    },
+    {
+      "path": "9675_fold_clothes/frame-00079.npz",
+      "bytes": 10272786,
+      "sha256": "efbc11aa5fdecf5cbecf4683e2b239307ae7e7d73ebcbd538de12959127025a1",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 79
+    },
+    {
+      "path": "9675_fold_clothes/frame-00080.npz",
+      "bytes": 10430225,
+      "sha256": "e1ed753950b0439c0d0a690dee1305faf35bd36437e9142e758d5a212348cb80",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 80
+    },
+    {
+      "path": "9675_fold_clothes/frame-00081.npz",
+      "bytes": 10435126,
+      "sha256": "da44913b138912a853a6f9632b0bfcecc31e0c912ce2e82fddacd8bcbb57948e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 81
+    },
+    {
+      "path": "9675_fold_clothes/frame-00082.npz",
+      "bytes": 10226569,
+      "sha256": "394248b57030be2b11f7b8ee4170f68f98509ed6b5d19746970aa779f0b5f65d",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 82
+    },
+    {
+      "path": "9675_fold_clothes/frame-00083.npz",
+      "bytes": 10233701,
+      "sha256": "e719252ed891cc1c8b3feadd85d3e013ef849c666a190b3d024eed9c8d0cd977",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 83
+    },
+    {
+      "path": "9675_fold_clothes/frame-00084.npz",
+      "bytes": 10247175,
+      "sha256": "34bc2f3bcedfbc56d4ac46237beb9b7749fcdfa4ac3872d1f8d9dccdb8063694",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 84
+    },
+    {
+      "path": "9675_fold_clothes/frame-00085.npz",
+      "bytes": 10218310,
+      "sha256": "614435c34ec27cc0f14085940770cfe040628c6a1503cec6d4de5807755e4d04",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 85
+    },
+    {
+      "path": "9675_fold_clothes/frame-00086.npz",
+      "bytes": 10227553,
+      "sha256": "5100dd0c67620a38350a30234d38fee9dd18c3512eb17c5887bb6905aced4d76",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 86
+    },
+    {
+      "path": "9675_fold_clothes/frame-00087.npz",
+      "bytes": 10192237,
+      "sha256": "a10471ae7717ce7fa4f4f807419cbf4a1468adf58acfd68c045cfdae698423d1",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 87
+    },
+    {
+      "path": "9675_fold_clothes/frame-00088.npz",
+      "bytes": 10197673,
+      "sha256": "22f8cf7a2047051e02ce71589b07e04f7a5820bcd21024edb57c639248969971",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 88
+    },
+    {
+      "path": "9675_fold_clothes/frame-00089.npz",
+      "bytes": 10223288,
+      "sha256": "e30a224d0b0ed85caf3cee51f75e2432b58eea716c049d66d8ac7cb7f664ecd7",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 89
+    },
+    {
+      "path": "9675_fold_clothes/frame-00090.npz",
+      "bytes": 10216288,
+      "sha256": "dc0f0b089593ced3b863e36823c7164a12677f6dbd56096a80952dafc8ba95c4",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 90
+    },
+    {
+      "path": "9675_fold_clothes/frame-00091.npz",
+      "bytes": 10202086,
+      "sha256": "ffdf2d21eff4b36187e774c5f1f3f87679cb817e84340c4fa90adba48ccf41e4",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 91
+    },
+    {
+      "path": "9675_fold_clothes/frame-00092.npz",
+      "bytes": 10302142,
+      "sha256": "8bf3be09d02b985844e858221023774e39b8d0bfd6861a4645877140c4ecc7bb",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 92
+    },
+    {
+      "path": "9675_fold_clothes/frame-00093.npz",
+      "bytes": 10217838,
+      "sha256": "16ed629ac5428c699644ea944b6ece192b1ec106ade32b3f99205412ac1a9bb1",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 93
+    },
+    {
+      "path": "9675_fold_clothes/frame-00094.npz",
+      "bytes": 10113407,
+      "sha256": "10eda2c163d427ac28e7ed9b80c23ba3e8a420f3f386a2edb5379211893487a0",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 94
+    },
+    {
+      "path": "9675_fold_clothes/frame-00095.npz",
+      "bytes": 10376300,
+      "sha256": "8e7fe91f618eaa0679bf3b68043d6a804ffa0ac0c36303ce18b7ef6f93ca269b",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 95
+    },
+    {
+      "path": "9675_fold_clothes/frame-00096.npz",
+      "bytes": 10238340,
+      "sha256": "55d5c87a018286e14ceb17c247d8d4ffe5143e1373b14bffe6484d02b89131e6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 96
+    },
+    {
+      "path": "9675_fold_clothes/frame-00097.npz",
+      "bytes": 10268249,
+      "sha256": "faee56bd208377f759d236db4e154999b7465cff847864c9ab1ec13ec4595402",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 97
+    },
+    {
+      "path": "9675_fold_clothes/frame-00098.npz",
+      "bytes": 10214926,
+      "sha256": "c14d7d51735e8b241c90b62c5dcd3a128609adbfac789dae58af300b76dc66c8",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 98
+    },
+    {
+      "path": "9675_fold_clothes/frame-00099.npz",
+      "bytes": 10256765,
+      "sha256": "f12a6bf865a90072b61b9b4425365bec89897ad8192a46a7b9bceb1ec4afb534",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 99
+    },
+    {
+      "path": "9675_fold_clothes/frame-00100.npz",
+      "bytes": 10280477,
+      "sha256": "b53c88a7f7f3532724b65a6a44f4ce97ebf644e7fe703e90fb2002f25d70f0a7",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 100
+    },
+    {
+      "path": "9675_fold_clothes/frame-00101.npz",
+      "bytes": 10227189,
+      "sha256": "7d141b1b60b198b69dc99bd59826d43e8d9e19f33087dcc016d6c845e06ae198",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 101
+    },
+    {
+      "path": "9675_fold_clothes/frame-00102.npz",
+      "bytes": 10206949,
+      "sha256": "43199e4478d6d21c401762277b4d75269fd25dd024c3b0ab40d425fc7dffef4f",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 102
+    },
+    {
+      "path": "9675_fold_clothes/frame-00103.npz",
+      "bytes": 10256205,
+      "sha256": "f08ff2c85c97c39bc08c070173a0fa1cfb63f9dbff13a33f9e7e2a26c2b7f7b5",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 103
+    },
+    {
+      "path": "9675_fold_clothes/frame-00104.npz",
+      "bytes": 10247879,
+      "sha256": "e14d873372c0c574c03c33223d88de8eb3e087102da33bc63a8b0505abcaa0ac",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 104
+    },
+    {
+      "path": "9675_fold_clothes/frame-00105.npz",
+      "bytes": 10211033,
+      "sha256": "e71221799762a8bb61d30afad07760e283310336d2a5d0ef564feb4249df84d0",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 105
+    },
+    {
+      "path": "9675_fold_clothes/frame-00106.npz",
+      "bytes": 10205732,
+      "sha256": "1663c15871c78213c685c22347bd1e6f4cbf43d2e8ea6cc15326204d273d0411",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 106
+    },
+    {
+      "path": "9675_fold_clothes/frame-00107.npz",
+      "bytes": 10224966,
+      "sha256": "50908a9b47851f8be6667862fd0485099c8a0c97fe71810e203886e20684da0a",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 107
+    },
+    {
+      "path": "9675_fold_clothes/frame-00108.npz",
+      "bytes": 10219857,
+      "sha256": "93d300e313cabd213545bc32daaf9e74610b811e4424a6d95f7824e14e9a5e3c",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 108
+    },
+    {
+      "path": "9675_fold_clothes/frame-00109.npz",
+      "bytes": 10212010,
+      "sha256": "043fc6d2fa894030da8cd2efe068852b79635ca666ccaaacac4e436eb9970e2c",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 109
+    },
+    {
+      "path": "9675_fold_clothes/frame-00110.npz",
+      "bytes": 10205131,
+      "sha256": "164869c5982c9732ba3e858044e864c868a6f958d2b5a6ee684b290c43b14901",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 110
+    },
+    {
+      "path": "9675_fold_clothes/frame-00111.npz",
+      "bytes": 10195436,
+      "sha256": "0c0e6d005ae7dfc17ee967dca84b5e89cfcfd9d589cab890711f28d5373859f1",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 111
+    },
+    {
+      "path": "9675_fold_clothes/frame-00112.npz",
+      "bytes": 10154396,
+      "sha256": "a5ac81f074ca375e014d284a195d7a01164e2de54e8ead1d84fa62e95d28e76f",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 112
+    },
+    {
+      "path": "9675_fold_clothes/frame-00113.npz",
+      "bytes": 10156592,
+      "sha256": "2a574b8d26c8a6256d07f327c34ff38dcb47bf8148ba269830cf761c930dd148",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 113
+    },
+    {
+      "path": "9675_fold_clothes/frame-00114.npz",
+      "bytes": 10151466,
+      "sha256": "29e2232051a48bf22dd81f9e3b1853b5b65e9063e3814a9ad7fe5b7bd35f064f",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 114
+    },
+    {
+      "path": "9675_fold_clothes/frame-00115.npz",
+      "bytes": 10171599,
+      "sha256": "054bd5eeeee28a3b0b798ec5e9b6e0cbb686561c3f57617a77bd825e18180afa",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 115
+    },
+    {
+      "path": "9675_fold_clothes/frame-00116.npz",
+      "bytes": 10198991,
+      "sha256": "a08b1edd6acc1a3fcae0b58ea59e19a744ed62ee4492d3481a37ebd5a132944a",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 116
+    },
+    {
+      "path": "9675_fold_clothes/frame-00117.npz",
+      "bytes": 10209220,
+      "sha256": "39cea848ccca1c39d9a635676372ae1e6e4b4b46fdcf48821bae58c2b19f4d22",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 117
+    },
+    {
+      "path": "9675_fold_clothes/frame-00118.npz",
+      "bytes": 10163864,
+      "sha256": "11b3c66fcb065f43856c7784e4b4884e27a1892daa2e7e094314e733bd56dbea",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 118
+    },
+    {
+      "path": "9675_fold_clothes/frame-00119.npz",
+      "bytes": 10155462,
+      "sha256": "da56f4779acc571b1e8ed3c8cd33e41340d9babc6b60874452940abbf6114527",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 119
+    },
+    {
+      "path": "9675_fold_clothes/frame-00120.npz",
+      "bytes": 10097853,
+      "sha256": "19aa940b0b40481947fad626483d6e7e247a169aeb093ae1976e1c68ca30d323",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 120
+    },
+    {
+      "path": "9675_fold_clothes/frame-00121.npz",
+      "bytes": 10306637,
+      "sha256": "52499ed39b7e5bba4feaee6f610518e90ec7e4640bc6f3c01e4fb79f8a3c44d1",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 121
+    },
+    {
+      "path": "9675_fold_clothes/frame-00122.npz",
+      "bytes": 10278083,
+      "sha256": "876a5d2506d64400a6833226e8339c59b429223e6aa8cd51cd98dc63173ec2d2",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 122
+    },
+    {
+      "path": "9675_fold_clothes/frame-00123.npz",
+      "bytes": 10311841,
+      "sha256": "234c34f570895ac2d7422ee76fe5605d49b6177386f31c8d661f0bce3201b39a",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 123
+    },
+    {
+      "path": "9675_fold_clothes/frame-00124.npz",
+      "bytes": 10238201,
+      "sha256": "3ed02faff24173dc2a8bb466a0f909190b09b05c816d6a345ed737c0ecd51098",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 124
+    },
+    {
+      "path": "9675_fold_clothes/frame-00125.npz",
+      "bytes": 10322870,
+      "sha256": "17ad0cb62aea1023bf72a5f27982d04eee2d9b630bae1dfe90ea122b4022fdba",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 125
+    },
+    {
+      "path": "9675_fold_clothes/frame-00126.npz",
+      "bytes": 10232222,
+      "sha256": "24c6a42b85bd3b3ddd2b949cfe354045e3532fb5446318d320e5f944f3464ccd",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 126
+    },
+    {
+      "path": "9675_fold_clothes/frame-00127.npz",
+      "bytes": 10201232,
+      "sha256": "a5294a79784df0166d7b6906da87df812bb0a2c6b62d815615a16208d7333d99",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 127
+    },
+    {
+      "path": "9675_fold_clothes/frame-00128.npz",
+      "bytes": 10189812,
+      "sha256": "f4b4219ad28f1b3040572dd65bd0050a675ceb370dc4881f408184ff85e60999",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 128
+    },
+    {
+      "path": "9675_fold_clothes/frame-00129.npz",
+      "bytes": 10214293,
+      "sha256": "54141c29bb6f29c393dad7f66a32471acadeca37f245ab639e5ec0f67d41f9a6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 129
+    },
+    {
+      "path": "9675_fold_clothes/frame-00130.npz",
+      "bytes": 10260054,
+      "sha256": "8d12e8b550ca6054c8394b1769aa0f0827b5417945eb17acd317ca64562b88c3",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 130
+    },
+    {
+      "path": "9675_fold_clothes/frame-00131.npz",
+      "bytes": 10237557,
+      "sha256": "a08f6d627383f44401ded370cc3039713e879aa46edb8775700b67f56d0505ab",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 131
+    },
+    {
+      "path": "9675_fold_clothes/frame-00132.npz",
+      "bytes": 10169390,
+      "sha256": "b85be135cc16f55cf12ce64a075171546f631600ca3d9d50851cfea138e08cac",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 132
+    },
+    {
+      "path": "9675_fold_clothes/frame-00133.npz",
+      "bytes": 10227454,
+      "sha256": "34200b2845d013badf565c5acfef71d606bb1fbca7f83a2a7c88399cd4ac8678",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 133
+    },
+    {
+      "path": "9675_fold_clothes/frame-00134.npz",
+      "bytes": 10171463,
+      "sha256": "3fa9be3d57182e31822189645ce67628d8c2b37bdddf1f4c1be4756558d90373",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 134
+    },
+    {
+      "path": "9675_fold_clothes/frame-00135.npz",
+      "bytes": 10158030,
+      "sha256": "a6c9028648d6fdbdce92a78d27dbbcb7b4c4ca40763dd858dbabdd1973cb8a6f",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 135
+    },
+    {
+      "path": "9675_fold_clothes/frame-00136.npz",
+      "bytes": 10168398,
+      "sha256": "ce6ab8031e776e6a3fe13ae7ad787caa5ddb0bb3e22fcec2372fa8292ed7acdf",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 136
+    },
+    {
+      "path": "9675_fold_clothes/frame-00137.npz",
+      "bytes": 10173802,
+      "sha256": "3fc23faa2fdf759c936b9834cf6324569167ea3bf55360efa06b3086280faacd",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 137
+    },
+    {
+      "path": "9675_fold_clothes/frame-00138.npz",
+      "bytes": 10164902,
+      "sha256": "8b64dfb6d3b154bde23dcd7f88582ad4165ba2a8c5fec708599184ae071d1628",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 138
+    },
+    {
+      "path": "9675_fold_clothes/frame-00139.npz",
+      "bytes": 10193580,
+      "sha256": "29a5ec3ea67d2d963d6e3cf00ffde5ff214bb56c54a628cdb097918f84b542b5",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 139
+    },
+    {
+      "path": "9675_fold_clothes/frame-00140.npz",
+      "bytes": 10182186,
+      "sha256": "473ab3cb57e98c801f2d88c45056d8aa2fdd411fda544afa06c4ef9e122458cb",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 140
+    },
+    {
+      "path": "9675_fold_clothes/frame-00141.npz",
+      "bytes": 10213034,
+      "sha256": "49f03a45e355a03a281fb51efaa979c2d72b9c085d36dfc5af74b7a35e541e64",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 141
+    },
+    {
+      "path": "9675_fold_clothes/frame-00142.npz",
+      "bytes": 10227109,
+      "sha256": "0ae58a8195facf8bcdafa281fafb770a0de3e4b4f11eea65ddc64859088654ba",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 142
+    },
+    {
+      "path": "9675_fold_clothes/frame-00143.npz",
+      "bytes": 10252252,
+      "sha256": "382b795fe52ea13ad33f1c5e881566cfe54e774ad9b6c37e23c1502989045a3e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 143
+    },
+    {
+      "path": "9675_fold_clothes/frame-00144.npz",
+      "bytes": 10271292,
+      "sha256": "3b626dc2595480bef2f36798e4dfd535b4362d00e5fa6a937cffcb1b441a0bb9",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 144
+    },
+    {
+      "path": "9675_fold_clothes/frame-00145.npz",
+      "bytes": 10301310,
+      "sha256": "0ca3717b9e24c3a2efdc6e4d3fc12cb00ed9e7fadbad5e4d4fcbc6b5be7cf677",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 145
+    },
+    {
+      "path": "9675_fold_clothes/frame-00146.npz",
+      "bytes": 10287695,
+      "sha256": "7581d319223fa66e2d95255f10f07801786aa52e3623f6b318a887021795d581",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 146
+    },
+    {
+      "path": "9675_fold_clothes/frame-00147.npz",
+      "bytes": 10268284,
+      "sha256": "13eeb575dba35b7078edc99aaaeb052cbf703dd3e42c7a4f00471622c9a0d5e6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 147
+    },
+    {
+      "path": "9675_fold_clothes/frame-00148.npz",
+      "bytes": 10124624,
+      "sha256": "912e8a4190b304587035093bcffe4a1beccc2100baa71b55505a24c534eba0ef",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 148
+    },
+    {
+      "path": "9675_fold_clothes/frame-00149.npz",
+      "bytes": 10170781,
+      "sha256": "9e8da9518b2b831d8b113ff8fdb65bcba9f13bd9d5f7a3ccef7a24b27efc7fab",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 149
+    },
+    {
+      "path": "9675_fold_clothes/frame-00150.npz",
+      "bytes": 10222738,
+      "sha256": "112e05d50a0b17275063b241f7c0f0291c9027db275216368a99735fa9342a94",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 150
+    },
+    {
+      "path": "9675_fold_clothes/frame-00151.npz",
+      "bytes": 10217020,
+      "sha256": "67ebd90090d19f6a1dd600133d2153e59d2de46f4972b2bf9b911c19736a1ee7",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 151
+    },
+    {
+      "path": "9675_fold_clothes/frame-00152.npz",
+      "bytes": 10256804,
+      "sha256": "661aa198651e047d6475f738fc7d27a38ab0698cd93cbc3eed0be304ab57a30e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 152
+    },
+    {
+      "path": "9675_fold_clothes/frame-00153.npz",
+      "bytes": 10263107,
+      "sha256": "019f13b27782f51fdae3f1e36525babc3f25577625ee727bfeba0292a2dbb0e1",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 153
+    },
+    {
+      "path": "9675_fold_clothes/frame-00154.npz",
+      "bytes": 10315475,
+      "sha256": "ca90c8fdd95f03279db152b24cf7a7cd5e86d1a70df0d1872680ec36425cc78c",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 154
+    },
+    {
+      "path": "9675_fold_clothes/frame-00155.npz",
+      "bytes": 10164242,
+      "sha256": "1e5d45350cbc2f81d0dcb3c29461be3a5f260660cbc7d11d0c550e0adb104729",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 155
+    },
+    {
+      "path": "9675_fold_clothes/frame-00156.npz",
+      "bytes": 10269568,
+      "sha256": "d89c4510b6614b1b1da8a9d07b431e83fdca90694a379c496578e08e9153f410",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 156
+    },
+    {
+      "path": "9675_fold_clothes/frame-00157.npz",
+      "bytes": 10146473,
+      "sha256": "6159f9bf4a6b6f22852449572129f3b9ccbb522ef01da5a0b777c311a230f294",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 157
+    },
+    {
+      "path": "9675_fold_clothes/frame-00158.npz",
+      "bytes": 10167897,
+      "sha256": "92ba592580e5fa643bbaa828a9490d2b55084e2f43d1d8cf9c39c80b805cb4f0",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 158
+    },
+    {
+      "path": "9675_fold_clothes/frame-00159.npz",
+      "bytes": 10182647,
+      "sha256": "d80d20491585909391cf9f825b9835680f2e962405bd722c4c414f1b43642316",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 159
+    },
+    {
+      "path": "9675_fold_clothes/frame-00160.npz",
+      "bytes": 10154372,
+      "sha256": "75724700eda96a625334cf75881ab6436188e3ffbe65bd3a69a9970d4595a794",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 160
+    },
+    {
+      "path": "9675_fold_clothes/frame-00161.npz",
+      "bytes": 10146509,
+      "sha256": "0e1161748d67544c97a0822720932ab0226b512d577cb7cb2ba2063c6cef0149",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 161
+    },
+    {
+      "path": "9675_fold_clothes/frame-00162.npz",
+      "bytes": 10154524,
+      "sha256": "19e8753bbd469c2bba00410f6e92b2c607b1fdf9fc5b58b27119f7fd850ac8f8",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 162
+    },
+    {
+      "path": "9675_fold_clothes/frame-00163.npz",
+      "bytes": 10036744,
+      "sha256": "17d4c452ed2e4c61e87fa73c5d217b7b6fd4fb47835c88b3a5b7883d5b75fef3",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 163
+    },
+    {
+      "path": "9675_fold_clothes/frame-00164.npz",
+      "bytes": 10102378,
+      "sha256": "93aa16931d9d6f23ba9db894b45eef1938ef213f7501ed62708a2a3cadada35c",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 164
+    },
+    {
+      "path": "9675_fold_clothes/frame-00165.npz",
+      "bytes": 10179489,
+      "sha256": "cd6f2b09ffb5cd97b883ba29493295eeadf441315b2953ffd1c6147c886675a6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 165
+    },
+    {
+      "path": "9675_fold_clothes/frame-00166.npz",
+      "bytes": 10132215,
+      "sha256": "16dda571555824e3c663e6f6783a7276b33efba863e5ef324a91bf27f6f96083",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 166
+    },
+    {
+      "path": "9675_fold_clothes/frame-00167.npz",
+      "bytes": 10064055,
+      "sha256": "e0b3dd4ef11b37f521b36ad031eb5b7bc3464f4666ba9bdc5fa167bbdaba529e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 167
+    },
+    {
+      "path": "9675_fold_clothes/frame-00168.npz",
+      "bytes": 10260506,
+      "sha256": "32cf4476de2ffd4205c3d602d0c881639b931bed6358b0dd10834c85a1037a80",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 168
+    },
+    {
+      "path": "9675_fold_clothes/frame-00169.npz",
+      "bytes": 10225915,
+      "sha256": "71faa12c6f90454329aec8be9155125d0c8bb39f0efdab7630b0c407d12e282e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 169
+    },
+    {
+      "path": "9675_fold_clothes/frame-00170.npz",
+      "bytes": 10167151,
+      "sha256": "f65ad5eb4478ff90e21b6c7eb6dff5fe07039a0340748659808117b3502d95c4",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 170
+    },
+    {
+      "path": "9675_fold_clothes/frame-00171.npz",
+      "bytes": 10208290,
+      "sha256": "7e8c08c9319586fc8ee6aa2c689cf7e6aa9bb333d9095115d71e4f06aec52952",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 171
+    },
+    {
+      "path": "9675_fold_clothes/frame-00172.npz",
+      "bytes": 10191962,
+      "sha256": "b6df63da8103a022c8c3100151f013c9f9e6aa4cc9e2db4f401dd7babb171777",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 172
+    },
+    {
+      "path": "9675_fold_clothes/frame-00173.npz",
+      "bytes": 10190367,
+      "sha256": "726498dfcbe97fb6801236210d9d727210e7a47efaadc4d0dc5e6b213ae256f0",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 173
+    },
+    {
+      "path": "9675_fold_clothes/frame-00174.npz",
+      "bytes": 10194831,
+      "sha256": "4585c35afd3d3ca813f51b08857b764c6405ca234239869504fe9a5013c08b0e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 174
+    },
+    {
+      "path": "9675_fold_clothes/frame-00175.npz",
+      "bytes": 10193084,
+      "sha256": "7c083a19f4b95652d1afc5b28f4e2cae8a0769bdd626d8b5a352ef6abf6623e3",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 175
+    },
+    {
+      "path": "9675_fold_clothes/frame-00176.npz",
+      "bytes": 10198990,
+      "sha256": "1b184000e2fd424bf27aaa9b73ae853678e1c8d16ce2629d01fef47a96230332",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 176
+    },
+    {
+      "path": "9675_fold_clothes/frame-00177.npz",
+      "bytes": 10200221,
+      "sha256": "52034160b67980242717ff206ddfb899eef19554f67f5b0af209d4dbee282b44",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 177
+    },
+    {
+      "path": "9675_fold_clothes/frame-00178.npz",
+      "bytes": 10214406,
+      "sha256": "af7fb308c1fd2d44ebe9b8b4ac5be7b99f1a27bba6ff34b5fc0a0e626b3c5f3e",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 178
+    },
+    {
+      "path": "9675_fold_clothes/frame-00179.npz",
+      "bytes": 10260435,
+      "sha256": "d32dbd016750c10889427ad0da935535efc16433b554cd8a42384f90e6a92af4",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 179
+    },
+    {
+      "path": "9675_fold_clothes/frame-00180.npz",
+      "bytes": 10177223,
+      "sha256": "d1ba8d978c845d730e05b03296f569c886403914a20c041fe9e1c2b7395a5673",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 180
+    },
+    {
+      "path": "9675_fold_clothes/frame-00181.npz",
+      "bytes": 10164060,
+      "sha256": "328c0309e83b5e80fce3911c658e8fbb10f846ecc703f1779f2d0d402fce3b20",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 181
+    },
+    {
+      "path": "9675_fold_clothes/frame-00182.npz",
+      "bytes": 10153088,
+      "sha256": "7439edec3e753e23c1fb33c9a243943dcc31242d0afa22e6d0bd05a11aff4bb3",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 182
+    },
+    {
+      "path": "9675_fold_clothes/frame-00183.npz",
+      "bytes": 10145358,
+      "sha256": "a6dc76b08a3dc7b9cff8104c656ba88ba64b840c0831357009a67505defb7dbd",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 183
+    },
+    {
+      "path": "9675_fold_clothes/frame-00184.npz",
+      "bytes": 10158378,
+      "sha256": "6b18e26e0aa51c35ed39472c9540569317bb90367ee9e9987e233eb3721df311",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 184
+    },
+    {
+      "path": "9675_fold_clothes/frame-00185.npz",
+      "bytes": 10155151,
+      "sha256": "c44ef09ee47277e3859a61122f76b0ac9c2a3388080ddfd6c1fb9297db061188",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 185
+    },
+    {
+      "path": "9675_fold_clothes/frame-00186.npz",
+      "bytes": 10151649,
+      "sha256": "55e84f49fc5ce0320e3b52c883dffae10a80929d62758e8c73a747a5e94faa39",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 186
+    },
+    {
+      "path": "9675_fold_clothes/frame-00187.npz",
+      "bytes": 10156324,
+      "sha256": "486dbc9270832feca31f993aca988dc95feaa4a3c1cc20e150dd2ab4a16ea895",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 187
+    },
+    {
+      "path": "9675_fold_clothes/frame-00188.npz",
+      "bytes": 10188242,
+      "sha256": "7158a7271e0fecc7817cb6d5c712fb22b78ebf00a6dd278dbe3228b206313d1d",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 188
+    },
+    {
+      "path": "9675_fold_clothes/frame-00189.npz",
+      "bytes": 10201185,
+      "sha256": "21e31d996bf8db1ae9b39eb8313213dae4d0ee84902826861267337e32bc9e77",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 189
+    },
+    {
+      "path": "9675_fold_clothes/frame-00190.npz",
+      "bytes": 10229482,
+      "sha256": "074f713922544db5e368ed568afb077e2245037b8870b3b27d24a8657aeef54b",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 190
+    },
+    {
+      "path": "9675_fold_clothes/frame-00191.npz",
+      "bytes": 10154206,
+      "sha256": "77f0041f368caa48cbbbf9087d0e8aac12fbc3778075fce791099836f604a2b1",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 191
+    },
+    {
+      "path": "9675_fold_clothes/frame-00192.npz",
+      "bytes": 10074534,
+      "sha256": "0b123da4355e47f49cfc17be16f31e89ffbcf430cdf329da9785bc58c110bd2a",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 192
+    },
+    {
+      "path": "9675_fold_clothes/frame-00193.npz",
+      "bytes": 10185688,
+      "sha256": "190acee5dedfe50c4886da9649aaf98205665b6c322476a474b2654b92686727",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 193
+    },
+    {
+      "path": "9675_fold_clothes/frame-00194.npz",
+      "bytes": 10263901,
+      "sha256": "1ed0c55605dda6e3743263af4729112508b52910a4d38710843d2bf7cb5282b4",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 194
+    },
+    {
+      "path": "9675_fold_clothes/frame-00195.npz",
+      "bytes": 10231759,
+      "sha256": "6abdb3b8ab99ed8946a58d426e51cc6911d23e564f6f9a5aaab33a7641b5ea87",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 195
+    },
+    {
+      "path": "9675_fold_clothes/frame-00196.npz",
+      "bytes": 10236058,
+      "sha256": "1bf490ff4a780bf2642a0df492592c644ddc9e8144aca0715405bc7a66fb57c6",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 196
+    },
+    {
+      "path": "9675_fold_clothes/frame-00197.npz",
+      "bytes": 10266883,
+      "sha256": "b2005a00458259a4686b63f4bb17621086076173aa238cfca04d68350d406693",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 197
+    },
+    {
+      "path": "9675_fold_clothes/frame-00198.npz",
+      "bytes": 10301028,
+      "sha256": "965688fbc39c35fd9f6925a21310d7d19985ca03dfd5b440ca27b5e59ff0be6a",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 198
+    },
+    {
+      "path": "9675_fold_clothes/frame-00199.npz",
+      "bytes": 10292083,
+      "sha256": "6985035000a476abb4adefe32feea0820dd06d5a2dc7ce0fd10f6b3cc845bbbd",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 199
+    },
+    {
+      "path": "9675_fold_clothes/frame-00200.npz",
+      "bytes": 10335232,
+      "sha256": "a134ea0749d754360d9cd050e13e7e909648223c883b5652cc2176060e912154",
+      "kind": "native-bank-frame",
+      "sequence": "9675_fold_clothes",
+      "frame": 200
+    },
+    {
+      "path": "1934_tear_film/frame-00000.npz",
+      "bytes": 158140,
+      "sha256": "35418fe38fc158551d51a55bc3ceb6fb827491c2324ad94ea3d9264d771f2caf",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 0
+    },
+    {
+      "path": "1934_tear_film/frame-00001.npz",
+      "bytes": 7748795,
+      "sha256": "4ffd1f2db3d5074c63ab6a161b2a9ce1ac370cb31ae44772368202f35234c3fe",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 1
+    },
+    {
+      "path": "1934_tear_film/frame-00002.npz",
+      "bytes": 7759946,
+      "sha256": "4a544af0202fe2de7c56a06cbdbff0005511ad22c724d046cff26f0fadf7e713",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 2
+    },
+    {
+      "path": "1934_tear_film/frame-00003.npz",
+      "bytes": 7728744,
+      "sha256": "633ad21d85982d97a98c0c5393e58bd1fb7646d64be8e1a6a9e234b3e249e7ff",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 3
+    },
+    {
+      "path": "1934_tear_film/frame-00004.npz",
+      "bytes": 7724293,
+      "sha256": "6f8bb3912dbe96f522d103d7f12334f4a05baf231efe86b3c60337093aa65e3f",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 4
+    },
+    {
+      "path": "1934_tear_film/frame-00005.npz",
+      "bytes": 7718180,
+      "sha256": "13a4a330922d0b9f5fcb6f5f981772fed7d36bc5342f9a1263f7b41f1219e793",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 5
+    },
+    {
+      "path": "1934_tear_film/frame-00006.npz",
+      "bytes": 7710767,
+      "sha256": "58f584268277fbff3d22d520fb651e2dc0e5d37e7efdd2d99b0e497aa2b4d8c3",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 6
+    },
+    {
+      "path": "1934_tear_film/frame-00007.npz",
+      "bytes": 7729750,
+      "sha256": "2544a723bd1ce8407d6658c1c050f93a21204de9dae0a902c9cae1f1f0cc4c64",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 7
+    },
+    {
+      "path": "1934_tear_film/frame-00008.npz",
+      "bytes": 7758087,
+      "sha256": "5073a29042e07b24d9baafcbda3a30dcd4a31c87e8fcdeaeb394b011f8318da3",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 8
+    },
+    {
+      "path": "1934_tear_film/frame-00009.npz",
+      "bytes": 7741443,
+      "sha256": "2b8f15e451c80681184aafedeebb09e80dda60e96ef40ed08445b023fbb0cbd7",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 9
+    },
+    {
+      "path": "1934_tear_film/frame-00010.npz",
+      "bytes": 7731184,
+      "sha256": "e8c78e37ccaedf1969ff73861e563d231b7bcc2030a2224522b7ba7a218e3680",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 10
+    },
+    {
+      "path": "1934_tear_film/frame-00011.npz",
+      "bytes": 7734798,
+      "sha256": "a00607a7ee2f9c30e5994b221066852750258adc685d505c72d91c686aea519e",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 11
+    },
+    {
+      "path": "1934_tear_film/frame-00012.npz",
+      "bytes": 7737388,
+      "sha256": "eae07473903744c4bf4185fb9255de8dd9b7ec7c8af53eae56ca94b67f108218",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 12
+    },
+    {
+      "path": "1934_tear_film/frame-00013.npz",
+      "bytes": 7721502,
+      "sha256": "b7ca06a64687449817a90ca51dd3b4339c5dd2d49e7d856690a4a55574079c74",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 13
+    },
+    {
+      "path": "1934_tear_film/frame-00014.npz",
+      "bytes": 7738712,
+      "sha256": "662feb7e50d20081b2ff64f27706a14731ad38a4f665208a7fdb1e0d72ebc7fd",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 14
+    },
+    {
+      "path": "1934_tear_film/frame-00015.npz",
+      "bytes": 7761240,
+      "sha256": "f8bd252ea02d9d1f6a612d87521103eb55380a3004acdd7ad206ac9f39c4aa1a",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 15
+    },
+    {
+      "path": "1934_tear_film/frame-00016.npz",
+      "bytes": 7738697,
+      "sha256": "7619e1e89ee4d526f80577c2e4bdc2053dfe1220d99f905e9d2594c51ab89872",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 16
+    },
+    {
+      "path": "1934_tear_film/frame-00017.npz",
+      "bytes": 7757255,
+      "sha256": "168ddedf708d1dfa4bef7b33e44f98f3d65ad86b0b06e6bc168a035cf593fe10",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 17
+    },
+    {
+      "path": "1934_tear_film/frame-00018.npz",
+      "bytes": 7740130,
+      "sha256": "a58d049621913f669263d28d6dbc15eb6cb9d68d4c10612088c03fda1889a3dc",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 18
+    },
+    {
+      "path": "1934_tear_film/frame-00019.npz",
+      "bytes": 7747606,
+      "sha256": "bee8e3354fdd804436d9997f1a969afab8a562d9f93abf17e93899895a55e736",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 19
+    },
+    {
+      "path": "1934_tear_film/frame-00020.npz",
+      "bytes": 7755603,
+      "sha256": "ff83a86999c5b65e46a6e45e871b5b78b0e0ed4300b2a3598aefc08d69ec765c",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 20
+    },
+    {
+      "path": "1934_tear_film/frame-00021.npz",
+      "bytes": 7739455,
+      "sha256": "a0ed627191290b6f987cc63ec592237e545401a0daf3773248e255a6cff725cc",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 21
+    },
+    {
+      "path": "1934_tear_film/frame-00022.npz",
+      "bytes": 7747481,
+      "sha256": "e4d2c4f0e4342b1550600f3dbd64b2a654d0cd6cdfcce87482e09951ccceb3cd",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 22
+    },
+    {
+      "path": "1934_tear_film/frame-00023.npz",
+      "bytes": 7753945,
+      "sha256": "7ac6cc4acd884f8b49d8f9586ab418adb012d5e6a96b250f1dfc82b8a909647f",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 23
+    },
+    {
+      "path": "1934_tear_film/frame-00024.npz",
+      "bytes": 7755869,
+      "sha256": "1d037100e3868b1f9b27f92bff9ca5d5c66d8aa585bf3df27d9ee76cde744a8a",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 24
+    },
+    {
+      "path": "1934_tear_film/frame-00025.npz",
+      "bytes": 7758640,
+      "sha256": "3857881c03b974e62b6105ba5972bb332a32bc549efc026c75e8b8e9bf52f84c",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 25
+    },
+    {
+      "path": "1934_tear_film/frame-00026.npz",
+      "bytes": 7717130,
+      "sha256": "b66bf265b06c1af7cc94c682491b382f83af764da5e6c33d8a84d5da2e1e78b3",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 26
+    },
+    {
+      "path": "1934_tear_film/frame-00027.npz",
+      "bytes": 7714784,
+      "sha256": "8bd03be9aa10f856bf7516b77981b58e46b477a66b1bffdf36a42eff6b075945",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 27
+    },
+    {
+      "path": "1934_tear_film/frame-00028.npz",
+      "bytes": 7714507,
+      "sha256": "fbb76e3d6a3cc01096cc5dfa8ea72f16548178a7517c5dae0b078c0b3676c044",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 28
+    },
+    {
+      "path": "1934_tear_film/frame-00029.npz",
+      "bytes": 7722065,
+      "sha256": "317e9d0a06122d8234d71669a57713d4920f020f5623062ca828a30ae025540f",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 29
+    },
+    {
+      "path": "1934_tear_film/frame-00030.npz",
+      "bytes": 7733981,
+      "sha256": "7ceca896ff34e55307e6e72bdecfa660d92e8c7afa6e758dcbfdebc044daccff",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 30
+    },
+    {
+      "path": "1934_tear_film/frame-00031.npz",
+      "bytes": 7701585,
+      "sha256": "204792b36dff6b058d6c56d8ebbd35e5fe31d4bf0e9fda0b2cd2f7f163af0884",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 31
+    },
+    {
+      "path": "1934_tear_film/frame-00032.npz",
+      "bytes": 7702034,
+      "sha256": "42e01b6709bdac9efaa878072f2869da6baf3c358a8aca842094482c76dc790f",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 32
+    },
+    {
+      "path": "1934_tear_film/frame-00033.npz",
+      "bytes": 7733553,
+      "sha256": "08a30f5c0befaed3506e4d84da17407ec3509cd189eac9185a1e3ac3ae4591fd",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 33
+    },
+    {
+      "path": "1934_tear_film/frame-00034.npz",
+      "bytes": 7707030,
+      "sha256": "b7bfdfceafb43b858f5007068cc7c3d31afcc80be467e818e7864b88c53ba6b1",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 34
+    },
+    {
+      "path": "1934_tear_film/frame-00035.npz",
+      "bytes": 7707289,
+      "sha256": "55419a6183db1d19ed30be1432c2cf02959722c4975841d831b09dcec0209bbf",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 35
+    },
+    {
+      "path": "1934_tear_film/frame-00036.npz",
+      "bytes": 7709910,
+      "sha256": "a569dc7a8fc34f1dbef5aac55ce5608a6855e4816da70469a87e1d51698f61b8",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 36
+    },
+    {
+      "path": "1934_tear_film/frame-00037.npz",
+      "bytes": 7724327,
+      "sha256": "58df07d59117ba0f54bb9c90a058b6ccc67d646eed99bc1b8ffd40a41b4c1ec7",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 37
+    },
+    {
+      "path": "1934_tear_film/frame-00038.npz",
+      "bytes": 7755313,
+      "sha256": "8675feac050e8280ed1a8443c1b0a209982244d2f6c59224bf089bac216633ef",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 38
+    },
+    {
+      "path": "1934_tear_film/frame-00039.npz",
+      "bytes": 7728787,
+      "sha256": "b1e4c9fb216160a4653e5fc3ffa2d70d39e453c32713eb5fa77356c1336282f8",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 39
+    },
+    {
+      "path": "1934_tear_film/frame-00040.npz",
+      "bytes": 7728405,
+      "sha256": "d93979bf3c691933b0cf3f7828036839c699aa1b7896060a556627402e105e01",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 40
+    },
+    {
+      "path": "1934_tear_film/frame-00041.npz",
+      "bytes": 7711899,
+      "sha256": "ec9b2785ce38e0b21c9b1dbee0c5b92fb3f4117093bc1a299f700872e343095d",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 41
+    },
+    {
+      "path": "1934_tear_film/frame-00042.npz",
+      "bytes": 7722275,
+      "sha256": "df545947ac961ce42a180fe90e1dadec770c3f193f8fc6eaa1882049e65662d9",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 42
+    },
+    {
+      "path": "1934_tear_film/frame-00043.npz",
+      "bytes": 7708085,
+      "sha256": "605f3791938a1244c2d031cc8212b0789fb4b872f0a6c969b09ded2de62f6fde",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 43
+    },
+    {
+      "path": "1934_tear_film/frame-00044.npz",
+      "bytes": 7699618,
+      "sha256": "a907663f17f8f3703324cae1fcbb65e0bcd3fde9ba2579f5aa530eac9a9a9770",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 44
+    },
+    {
+      "path": "1934_tear_film/frame-00045.npz",
+      "bytes": 7719515,
+      "sha256": "bd6434be1cceae96e2f734ea059c0281a1254f140ccf877cf6a10ac79978e1f5",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 45
+    },
+    {
+      "path": "1934_tear_film/frame-00046.npz",
+      "bytes": 7729987,
+      "sha256": "6b89e9f0f351ce7ca129c95f166b825423e1da7a1fb072e5ede99dcbbd2602c7",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 46
+    },
+    {
+      "path": "1934_tear_film/frame-00047.npz",
+      "bytes": 7710250,
+      "sha256": "14170943ff93c9d96649f86691782c614f9b5a5521ca571b64d7a7df9ca1a176",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 47
+    },
+    {
+      "path": "1934_tear_film/frame-00048.npz",
+      "bytes": 7710889,
+      "sha256": "b61ecec8d48c219c8b98a0d39714318611e8d99426d0cd45234d5ff481b48c03",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 48
+    },
+    {
+      "path": "1934_tear_film/frame-00049.npz",
+      "bytes": 7714407,
+      "sha256": "d93004677aa083857a808e8c245bc6793be94273fa92732398c57b07e250ca75",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 49
+    },
+    {
+      "path": "1934_tear_film/frame-00050.npz",
+      "bytes": 7749731,
+      "sha256": "df4a3759fc89ffd5c45f3d17b73ae56df5fd6e42a8dd65876fd8f59dae3c07e0",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 50
+    },
+    {
+      "path": "1934_tear_film/frame-00051.npz",
+      "bytes": 7743657,
+      "sha256": "480b45d60d7a99566fbdf9162528d072bc87d256ea1871f1004f4328c6e8923b",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 51
+    },
+    {
+      "path": "1934_tear_film/frame-00052.npz",
+      "bytes": 7742538,
+      "sha256": "848056e911c66e853c1b84b12ff38f625809e2921f77c2c43067864ded86b484",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 52
+    },
+    {
+      "path": "1934_tear_film/frame-00053.npz",
+      "bytes": 7749841,
+      "sha256": "7fb039f28981084aa050d053ffc958d944818efe395effd1d7e35de7769bbe57",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 53
+    },
+    {
+      "path": "1934_tear_film/frame-00054.npz",
+      "bytes": 7776531,
+      "sha256": "661aba0b97cd431db0b2210c22c5daefad9e2b151d8a2af74f49710b4f63323c",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 54
+    },
+    {
+      "path": "1934_tear_film/frame-00055.npz",
+      "bytes": 7756280,
+      "sha256": "0e1d7a4d855fd81651e6a54e8bfec6cf344acddf4d1b7eac48cf1c615c31c4fc",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 55
+    },
+    {
+      "path": "1934_tear_film/frame-00056.npz",
+      "bytes": 7802088,
+      "sha256": "2a35c95f3391c95dd41efce58831a7a469ad159d8617aab3532471cb4c7eccdc",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 56
+    },
+    {
+      "path": "1934_tear_film/frame-00057.npz",
+      "bytes": 7781241,
+      "sha256": "79c72189848a776d52ef4369e006bbb999e16424e1a1f42a89c01429437ccd96",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 57
+    },
+    {
+      "path": "1934_tear_film/frame-00058.npz",
+      "bytes": 7756068,
+      "sha256": "350ed8e7457eb97a1c118bc540a29cf29a1745ce097ca7aaf812e285aa123f30",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 58
+    },
+    {
+      "path": "1934_tear_film/frame-00059.npz",
+      "bytes": 7777396,
+      "sha256": "06b6b083372e7e5b5fa41ed67e1aa1af74339c3c62cf75cc9eb476a3517fa26f",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 59
+    },
+    {
+      "path": "1934_tear_film/frame-00060.npz",
+      "bytes": 7799846,
+      "sha256": "2b0d89f94d255163d3edd2e8a28fcdf255fb4beeff772993d748dc2ff6eeb747",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 60
+    },
+    {
+      "path": "1934_tear_film/frame-00061.npz",
+      "bytes": 7734067,
+      "sha256": "14b9b4650fd720105418d0857fc147f21ad149615bb104e3283b319a004f559c",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 61
+    },
+    {
+      "path": "1934_tear_film/frame-00062.npz",
+      "bytes": 7730910,
+      "sha256": "ec4bfdb73ac3bc78efe7e5b783f8e450f1a4595885e8aac62f0e95937101ccbb",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 62
+    },
+    {
+      "path": "1934_tear_film/frame-00063.npz",
+      "bytes": 7747272,
+      "sha256": "00056e9052f2c41527d78a4752ef72512226996f4d301ed8fe2b3330b5cd054e",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 63
+    },
+    {
+      "path": "1934_tear_film/frame-00064.npz",
+      "bytes": 7776733,
+      "sha256": "a938d6e679e3a498bd5e319a23fc94fbaa06f5c75387216ba0b7f97908ae200a",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 64
+    },
+    {
+      "path": "1934_tear_film/frame-00065.npz",
+      "bytes": 7765817,
+      "sha256": "304d6d52cce45da80149001634f803c7635417b747d52a33d139081a7a8d4837",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 65
+    },
+    {
+      "path": "1934_tear_film/frame-00066.npz",
+      "bytes": 7771128,
+      "sha256": "769c600effd49f65886010d55f234efd3a5384babc67317eb228c1ce38c84af5",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 66
+    },
+    {
+      "path": "1934_tear_film/frame-00067.npz",
+      "bytes": 7821050,
+      "sha256": "8899b35762be960e9192e9654def17c2bae0177431ec7d3e98f234b3a05c5e2e",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 67
+    },
+    {
+      "path": "1934_tear_film/frame-00068.npz",
+      "bytes": 7786581,
+      "sha256": "a1f03f0d6e46ed8043422330d60e22333b75a602a5d78fd376f5d2d8acfcfdc3",
+      "kind": "native-bank-frame",
+      "sequence": "1934_tear_film",
+      "frame": 68
+    }
+  ],
+  "completed_frames": 446,
+  "completed_sequences": 4
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "evr0035.rgb-recovery-spec.v1",
+  "repo_root": "${WORKSPACE}/work/embodied-vision-reliability",
+  "metadata_root": "${WORKSPACE}/work",
+  "expected_commit": "784fc1a22d068dd7ce155129ac60d09d723f3f4d",
+  "recovery_source_commit": "b5cb28c12ed0b521346fd516c5f82e4d2aea48af",
+  "output": "${WORKSPACE}/work/0035-transformation-support/rgb-recovery-01",
+  "initial_dir": "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01",
+  "initial_receipt": {
+    "path": "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01/receipt.json",
+    "sha256": "002f618eb849f08d25544c9f17b3e888e885543eea51b54e0ebb4a876df01f8d"
+  },
+  "initial_inspection": {
+    "path": "${WORKSPACE}/work/0035-transformation-support/initial-inspection-02/receipt.json",
+    "sha256": "2e26fea68b91bf7558de05b74275944e98d0d5b45a947f83bdfe60b0a5465e3b"
+  },
+  "initial_inspection_outer": {
+    "path": "${WORKSPACE}/work/0035-transformation-support/initial-inspection-supervision-02/receipt.json",
+    "sha256": "9a7a79a1985bf6338c61c36c31f9d0f7e72f0d7c130cb764b688c178284f03fd"
+  },
+  "parents": [
+    {
+      "receipt": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/rgb-acquisition-01/receipt.json",
+        "sha256": "6cc84b6c40a1d0bc4255478e13516b66b6dc314c07a33fc165268f472c4d5a9d"
+      },
+      "outer": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/rgb-acquisition-supervision-01/receipt.json",
+        "sha256": "711f0e0df122a9be7cc8247959c6de6b427d0b80bf6e2e68cf9a313b982644ff"
+      },
+      "operation": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/rgb-acquisition-outer-spec-01.json",
+        "sha256": "c9ecd0c26781184ddda5396fa3bfc0b605cff2c3b9ce73b6bc51f39e82fb4776"
+      },
+      "initial_inspection": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/initial-inspection-01/receipt.json",
+        "sha256": "468551f11e9bd4ee1a66c2f793ff32774d91f9fb50b5fc9a9f2a1ff73c5d87ea"
+      },
+      "initial_inspection_outer": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/initial-inspection-supervision-01/receipt.json",
+        "sha256": "f191d4f588297dfc378c76dc632d587290084c1c883b370644a36572d629a50f"
+      }
+    },
+    {
+      "receipt": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/rgb-acquisition-02/receipt.json",
+        "sha256": "3968bcc6cb1c34786b0a1d9dae2659ebb26dd18d21a88ec5bbba127f7342ef5a"
+      },
+      "outer": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/rgb-acquisition-supervision-02/receipt.json",
+        "sha256": "4dcfa56d1b495e34209cff448165677c5e43adcc8a47bf690a40eee0cf7bd5cf"
+      },
+      "operation": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/rgb-acquisition-outer-spec-02.json",
+        "sha256": "b90c35407151701e014f59fa033eda59c16cd4e6357d7aa91fd39cd4f5bcac1c"
+      },
+      "initial_inspection": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/initial-inspection-01/receipt.json",
+        "sha256": "468551f11e9bd4ee1a66c2f793ff32774d91f9fb50b5fc9a9f2a1ff73c5d87ea"
+      },
+      "initial_inspection_outer": {
+        "path": "${WORKSPACE}/work/0035-transformation-support/initial-inspection-supervision-01/receipt.json",
+        "sha256": "f191d4f588297dfc378c76dc632d587290084c1c883b370644a36572d629a50f"
+      }
+    }
+  ]
+}

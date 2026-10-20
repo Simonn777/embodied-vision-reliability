@@ -1,0 +1,175 @@
+{
+  "schema": "evr0035.initial-inspection.v1",
+  "status": "completed",
+  "eligible": true,
+  "spec_sha256": "130b84f99e5a68ae0be5205c1efa78727da38f4959d02ee3f5e8174987bd565c",
+  "source_sha256": {
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0022-frontend/qualify.py": "174727207576ea4b9958fff6e6891016edcbe1a0729cd4e73e18b6543a6a8e8e",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0023-mapfree/range_inputs.py": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0025c-rs-noise/supervise.py": "4b8b0efa4fd713a032967c9b34539eac128184ef6db4e8535e83d785c6bbebcd",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/acquire_assets.py": "5f5165b3b519ed8cab4fc9c4bbef417619cf0eb4f29ec2989c17473581201641",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/acquire_davis.py": "4e2897ee0b1dfea25b3388805f019e155be53986d155f71c369101293919ee69",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/acquire_query_gt.py": "67ced391f8f911bb93554d35d8ce53d0df028758037b4001e61121dd60e0edc4",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/diagnostic_core.py": "4c76bdb492bef0507b4322be67a2a157ec34c420bfacb874388b1f7facef0c34",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/evaluate_queries.py": "272ae306b0f80573d3350d892cefbc13cf9df5a06d89b6188ee9c86584c5237f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/frontend_evidence.py": "1d47bbf0efebe27a0a3371b9d421dc2a1b7dfc78aec1ca584cee1cb26314093d",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/install_runtime.py": "ae7f222122f24c69d909e735e6212f21f28640b1f96c1c0670ac48cb6c72a306",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/native_fixture.py": "4e20a61150407c575eedff41309281923f9a4b57fa3f34609153e645dde7ad5f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/native_video.py": "4af3e0e5b26327d4ecb95b4644b94e13c257a38c928dbb09f23bd95151001d0a",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/qualify.py": "408848bef4fcab06ca42f724b87936d59be5abb58e9f076f81d7c8df7739d160",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/qualify_native_video.py": "dc40d641d353d13af7bf0198c853c4b8c548ec5d10ec7cf09ba683292cf6de59",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/run_evaluation.py": "39117b1b72407cf297f36216cf305335be81d2917a486ae5a4d06674429741cd",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/run_evidence.py": "766990f0a4e127c7773c51cc21b487389cf57a94c3a646ae4066eee9d0ef0051",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/run_native_video_qualification.py": "abd5a0912aae8c8f759c3128cef6cb81ab4357053f426373be9aac1c42c223d8",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/run_video.py": "cbebe19b2708835e0a48a4951f2f7d037c287f6740361702de93e2b92ec21b78",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/seal_queries.py": "10ce2701348fb4fc31c1aea7eac7bb041431c7dcce366c4bdaacd386c8e39fd2",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/supervise_exit_checked.py": "8f7bcbb8b7d31031c709f72ea2f49da1913ced7230154e45e0d165d00457c9a8",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_acquire_assets.py": "cd03914a80029b17418514d7d2ece526f0ea4a149d99e46ad06a95ce83a5c76b",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_acquire_davis.py": "d84e3fc107ef58b86e8ceea8e257446c0f3d25bb788af831614b1544174683bf",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_diagnostic_core.py": "c6d7cc30b436a9897cd665f8492f442864577fc3711288d89b990a31665666fd",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_evaluate_queries.py": "c0310b2d50464f235e9f4370c26ddcaf5842fca837de89f29651b0c43a3a97e0",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_frontend_evidence.py": "d7085bd9855a6d9e58acb65ea6216583e30fc5d8de2e2f309a6bb28627693ab0",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_install_runtime.py": "f0dfae745fb1abca7e2e78a99e45ec927a80dbc662bde3c90c32076330e251c9",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_installed_metadata.py": "69d648277d8717cbc67648496a8ae9f4e94f992cb99ecebae71feb1ecbb4d1c6",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_qualify.py": "2fb0879c57407d93aaf963e7a63cc21bb0090d529f3222e7ceecf44a64bb6847",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_run_evaluation.py": "8d2d315cb1c3dbe8d125e913aa64121eab1dfe84825d16538e93d8e9d37e4522",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_run_evidence.py": "c282061daf9e345bc6a32a10b645375ab585981cf9ef49c4565a0758cbe6ee02",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_run_video.py": "d8a329d61f7195eafdd41c5114136c86bf4186d2b370a75debebb6c3a214a39d",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_seal_queries.py": "e37dac19b82f64ec4660f1c2af4b84d4521eda28440af158bf7441c8c95e7201",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0029-memory-information/test_supervise_exit_checked.py": "2202236d6ba047c47dae078d3b7d34c9a137ebc4fcb1017450892e3f5d4a8688",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0030-memory-content/campaign/common.py": "751355a33b6ed468208d8f5aa92c8b4b72522f534159814928799e56634407c7",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/ADMISSION.md": "28b1e92f1602bc233bf7238ddcf20cd0540af280cee541b1f9a10b4da89be426",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/DRAFT_CORRECTION.md": "48cb325d1bfe9c7e3d8763237cecb8431ab76dc9e940e06b03ed314b03cf10b8",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/DRAFT_SCOPE.md": "c36e59a61991dd6db95f68faf158420133cafce2d07a483a481f9474b50b8586",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/NATIVE_BANK_SCOPE.md": "b09041c613ffec8c174fa30087f8ba5f2015a6a3088e3008bbc74e78d19e67d0",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/README.md": "e14d08d02da314351468df537e236d3a20dd99b8e9e93b5e7630ef971f699949",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/STRATEGIC_DECISION.md": "86b51de8baa04ab5ad714a218cfd7707b24d419da4ad6da54f156125754fc3b9",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquire.py": "a69768de68ac61585df7ceb077c48830a72c11dc88685472b2c0afd8f6b5341f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquisition-admission.json": "cd3fb09348386493994aed999140834e391fb1e2467c2f5f35d8fd71171a15ee",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquisition-feasibility.md": "15ef4f45bbfef5944ac703bd5de3685d97e4b28cd8f9b5707c9420e8dafb75ff",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquisition-zip-version-addendum.md": "027a09bf0dac58ce35c567d8b3bb66cd0df3e484302a812cdf47b155f7d4e61d",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/admit.py": "12e3e8ec3b8d7cb56bd16ab3027af4e72342a19068e8613339c69442744faab4",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/build_manifest.py": "d42448b5382df8fe62c1703c80046701416bbd6462ecc743c917ee787552e925",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/build_manifest_v2.py": "081555b78e5b5c0149536b02e2317274cbec535421f829263b5566a9268f5445",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/evaluate.py": "89cba63ce32fb260d43edcd06722b61df90072b2a420932329e1ead4f87050cd",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/inspect_initial.py": "b6a3fccdd1fc9074c8529006f5033bd18a8efa69706de8a2a4c1533801810c41",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/make_index.py": "4148a1487986119e5f65a37bbec48c07d37180affcdeb29853057b0b481d4340",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/manifest-build-report-v2.json": "00702cb349a5d0bdda70c76f838d279aa101b0469355acce4021089f6f342c4b",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/manifest-build-report.json": "296d32d0ca46903f96627ae0a233915e3f99b29f48fadf7343f86cefe2bdc364",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/metric-oracle-review.md": "a7540db3be757de24c5bd1fe5f28427d4cfaac2e76d64ae031e4c57fee037e03",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/metrics.py": "9693affa0f9f1d842d97cebdb10a0f6ab8808c84e522e1be57b453a6e6efeec4",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/native-bank-feasibility.md": "8a8c9f567f5f3a9fff99c3e9e14b98074485313914a210db41d2c5eb11fa3e83",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/native_bank.py": "33d6fea5dbd478085bdcb766b5aeafebb4364b1d3fbb23277071e81fd2c8e3f9",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/proposed-manifest-v2.json": "141371225d59c0b1ef483ee3b7565aace037033df072eabb2839e8d4f19bfb07",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/proposed-manifest.json": "fc0bbbd85cd66878426956dc1c382826e56dbffd7e92a240b13d6f09d5dc03f1",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/publish_preparation.py": "0332f7819a1d9c7b080e5c6096377bcc170d35ea5887430eae9bdfa017be20cc",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/qualify_native.py": "b85565514fd25976d190fb14ffc3cc888d36f7443cb670fb3194ba499daff3a5",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/recovery/RECOVERY_ADMISSION_02.md": "6b1daaf1f5ebca8cddba6fb563b807ef7e0fe27f8617130dd7e827adf6c536eb",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/recovery/recover_rgb.py": "0f94dddb28e9b734f2a03c309a939d54506180b6e45b21ea81bab58323565926",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/recovery/recovery-allocation-02.json": "df3b4b314cc8ff3fe7602cb78ca06b6914156ae31be018a01f044a5a07ddb79a",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/recovery/test_recover_rgb.py": "f61c1aa3b51fbae6846206cb9f4647d21c8c9119c9fb53fadce2118ee2cfbd33",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_acquire.py": "d7909d590933e8e2f5154cf06a97cf879e1202275179c823cce3ffbf69a76af6",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_admit.py": "5d883e6a35ff741948e186c50f18fb5ad8c20a39bd2e3506dbf553517629d925",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_evaluate.py": "104be878354904d2df22b74924c351f00f103e3c21d9da6cae0f7369ebc655f9",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_metrics.py": "59736038bdcaf12ce2b774fc8489a414641b3585cdcec84a70cf6ce8825fd060",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/test_native_bank.py": "81a504fe7194c2e5b8278ae2b4db2146deaed12174d66aa323f4db9b4bebc69a",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/validation-source-feasibility.md": "88082e170cac9e2f8f44b1e5baadf8fec4957cebea570b7bc8397a896013d7b5"
+  },
+  "initial_only": true,
+  "noninitial_labels_read": 0,
+  "model_calls": 0,
+  "rows": [
+    {
+      "sequence": "4691_cut_guava",
+      "frames": 86,
+      "shape": [
+        1080,
+        1440
+      ],
+      "object_ids": [
+        1
+      ],
+      "object_frames": 86,
+      "raw_output_bound": 1139019776,
+      "planning_peak_memory_bytes": 3456649216,
+      "original_void_pixels": 0
+    },
+    {
+      "sequence": "817_cut_onion",
+      "frames": 90,
+      "shape": [
+        1080,
+        1920
+      ],
+      "object_ids": [
+        1
+      ],
+      "object_frames": 90,
+      "raw_output_bound": 1565245440,
+      "planning_peak_memory_bytes": 3556794368,
+      "original_void_pixels": 0
+    },
+    {
+      "sequence": "9675_fold_clothes",
+      "frames": 201,
+      "shape": [
+        1440,
+        1920
+      ],
+      "object_ids": [
+        1
+      ],
+      "object_frames": 201,
+      "raw_output_bound": 4607164416,
+      "planning_peak_memory_bytes": 5130715136,
+      "original_void_pixels": 0
+    },
+    {
+      "sequence": "1934_tear_film",
+      "frames": 69,
+      "shape": [
+        1080,
+        1920
+      ],
+      "object_ids": [
+        1
+      ],
+      "object_frames": 69,
+      "raw_output_bound": 1200021504,
+      "planning_peak_memory_bytes": 3270533120,
+      "original_void_pixels": 0
+    }
+  ],
+  "offline_attempts": [],
+  "compatibility_probes": [],
+  "wall_seconds": 0.20199183298973367,
+  "checks": {
+    "native_object_frames_at_most_2000": true,
+    "planning_memory_at_most_7GiB": true,
+    "prediction_output_at_most_20GiB": true,
+    "free_disk_covers_twice_output_plus_5GiB": true
+  },
+  "expected_native_object_frames": 446,
+  "prediction_output_cap_bytes": 8663674512,
+  "free_disk_bytes": 202115993600,
+  "planning_memory_peak_bytes": 5130715136,
+  "measured_inference_feasibility": false,
+  "fingerprints": {
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/proposed-manifest-v2.json": "141371225d59c0b1ef483ee3b7565aace037033df072eabb2839e8d4f19bfb07",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01/receipt.json": "002f618eb849f08d25544c9f17b3e888e885543eea51b54e0ebb4a876df01f8d",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-supervision-01/receipt.json": "d058fe8214a2665d2123824f3b74c6a1d4a020f9464166c30d15aef7b9bb7eb5",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-supervision-01/stdout.log": "80a23e59461a30bbe4b822e654c2157c8ba27639e6eac291184477a66c633d8b",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-supervision-01/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01/members/VOST/Annotations/4691_cut_guava/frame00000.png": "163ba1d5c78457c2734604cbea5f3e520afe2bd9dbfc530d3bfbb27939a03424",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01/members/VOST/Annotations/817_cut_onion/frame00000.png": "8c2fd6e788fe5275e7edb94de21f55fbb164903499725ee10567ba4eaffd8b48",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01/members/VOST/Annotations/9675_fold_clothes/frame00000.png": "b350f1394354bb0eef906b6b904d9a1bb134218072dd60189bf7c4484053a5d2",
+    "${WORKSPACE}/work/0035-transformation-support/initial-acquisition-01/members/VOST/Annotations/1934_tear_film/frame00000.png": "1117e638b6d54461d31a51327a53a92a873d41bd7bc0d3cdfe7e9ac3847fd6ef",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquire.py": "a69768de68ac61585df7ceb077c48830a72c11dc88685472b2c0afd8f6b5341f",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0023-mapfree/range_inputs.py": "519a9eb08fab5a8ad8d9a9257927281093abac3354fd14cadd8e7599fa69ea50",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/build_manifest.py": "d42448b5382df8fe62c1703c80046701416bbd6462ecc743c917ee787552e925",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/build_manifest_v2.py": "081555b78e5b5c0149536b02e2317274cbec535421f829263b5566a9268f5445",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/admit.py": "12e3e8ec3b8d7cb56bd16ab3027af4e72342a19068e8613339c69442744faab4",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/ADMISSION.md": "28b1e92f1602bc233bf7238ddcf20cd0540af280cee541b1f9a10b4da89be426",
+    "${WORKSPACE}/work/embodied-vision-reliability/experiments/0035-transformation-support/acquisition-admission.json": "cd3fb09348386493994aed999140834e391fb1e2467c2f5f35d8fd71171a15ee"
+  }
+}
