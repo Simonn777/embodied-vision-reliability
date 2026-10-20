@@ -1,0 +1,32 @@
+{
+  "schema": "evr0038.optimized-decision.v1",
+  "source_commit": "634f0561893b762e90aabb7fe1448c26075f256d",
+  "qualification_passed": false,
+  "first_failure": "stack_flat numeric tolerance",
+  "maximum_absolute_error": 0.0002875328063964844,
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 1e-05,
+    "selected_slot_exact": true,
+    "presence_sign_exact": true
+  },
+  "comparisons_completed": 5,
+  "comparisons_passed": 4,
+  "not_reached": [
+    "late-stack comparison",
+    "all SAM seven-field comparisons",
+    "selected-slot/presence/mask comparisons",
+    "maximum-pointer comparison",
+    "frame9",
+    "plain second pass and complete final state comparison"
+  ],
+  "initialized_mask_false_is_pending_not_measured_mismatch": true,
+  "candidate_writes_seconds": 0.11142137495335191,
+  "optimized_seconds": 2.593089416041039,
+  "estimated_combined_seconds": 1916.6603370805433,
+  "estimate_is_not_measured_full_runtime": true,
+  "scientific_payload_reads": 0,
+  "scientific_execution_admitted": false,
+  "decision": "Do not use unqualified optimization, relax tolerance, remove controls, or divide the declared operation. Frozen original implementation retains its separate parity qualification; full scientific code may be prepared but launch remains unadmitted.",
+  "cause": "Unresolved; compressed attention floating-point changes are compatible with the observation but not uniquely established."
+}

@@ -1,7 +1,7 @@
 # Next actions
 
-1. Publish the complete0037 negative result with all controls, failures, costs and independent review; verify result and merged-main CI.
-2. Keep the exact constrained-flow/cell-readout recipe closed without threshold/optimizer/seed rescue. Assess a materially different observable/mechanism before another experiment; existing visibility/ancestry combinations remain close prior art.
+1. Publish and verify the complete negative D38 result through PR75, including all446 positions, nine arms, both policies, the31128-check pixel review and the clean2515.293119708s/4949600KiB outer. The one3600s exception is consumed. Keep the exact uniform/latest-write/full-stack shadow-readout recipe closed without weight, threshold, layer, seed, cohort or resolution rescue; preserve the failed compressed implementation.
+2. Reassess the information and action missing from the failed comparisons before admitting another experiment. D35 shows candidate-supported material; D36 rules out the declared four-arm-selector target; D37's fixed negative control remains stronger than learned causal cells; D38's shadow history does not test an own-state recurrent policy. These facts do not by themselves establish a new method or justify another expensive variant. Require a closest-prior-work distinction, a discriminating observable, strong ordinary same-information controls and a complete measured-feasible operation under1800s before new science.
 3. Qualify M3-VOS original-recording metadata, immutable evaluator and bounded file manifest before any new acquisition or final-source claim. No endpoint amendment is currently adopted.
 4. Preserve the substantial two-independent-source final gate, strong complete-cost controls, uncertainty, ablations and replication before a manuscript.
 

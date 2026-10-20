@@ -1,0 +1,25 @@
+{
+  "repo": "$REPOSITORY",
+  "commit": "fc12968bb8776cb453f6d0a07e7648afa3957111",
+  "timeout": 1800,
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4",
+    "PYTHONPATH": "",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": [
+    "$PRIVATE/0029-runtime-02/installation/venv/bin/python",
+    "-B",
+    "-S",
+    "$PRIVATE/0038-late-memory-readout/independent-review-01-source.py",
+    "--spec",
+    "$PRIVATE/0038-late-memory-readout/review-spec-01.json"
+  ],
+  "operation_output": "$PRIVATE/0038-late-memory-readout/review-supervision-01",
+  "result_file": "$PRIVATE/0038-late-memory-readout/independent-review-01/receipt.json"
+}

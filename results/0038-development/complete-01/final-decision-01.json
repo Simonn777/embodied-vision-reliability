@@ -1,0 +1,231 @@
+{
+  "schema": "evr0038.reviewed-final-decision.v1",
+  "operation_id": "d38-complete-01",
+  "source_commit": "fc12968bb8776cb453f6d0a07e7648afa3957111",
+  "technical_evidence_eligible": true,
+  "scientific_continuation_passed": false,
+  "decision": "close_exact_uniform_latest_write_full_stack_shadow_readout_recipe",
+  "primary": {
+    "B": {
+      "J": 0.4433249937343321,
+      "Jtr": 0.24116722529211623
+    },
+    "B+M1": {
+      "J": 0.4853563172257208,
+      "Jtr": 0.31107641477733095
+    },
+    "B+M2": {
+      "J": 0.46031747197405665,
+      "Jtr": 0.2538225454989038
+    },
+    "B+M1+M2": {
+      "J": 0.4860048937268236,
+      "Jtr": 0.31338318474449983
+    },
+    "fixed_negative": {
+      "J": 0.5136796697235498,
+      "Jtr": 0.31981850806035556
+    },
+    "early_mean": {
+      "J": 0.44640806649883574,
+      "Jtr": 0.24370417854775947
+    },
+    "flat_histories": {
+      "J": 0.4463740426044311,
+      "Jtr": 0.24475353058667224
+    },
+    "late_mean": {
+      "J": 0.445832299187778,
+      "Jtr": 0.2433062001833423
+    },
+    "output_ensemble": {
+      "J": 0.4442321874386723,
+      "Jtr": 0.24164410068562547
+    }
+  },
+  "primary_minus_native_pp": {
+    "J": 0.2507305453445907,
+    "Jtr": 0.2138974891226081
+  },
+  "primary_minus_strongest_control_pp": {
+    "J": -6.784737053577183,
+    "Jtr": -7.651230787701325
+  },
+  "primary_continuation": {
+    "clauses": {
+      "over_every_control_3pp_J": false,
+      "over_every_control_3pp_Jtr": false,
+      "three_clips_positive_Jtr_over_union": false,
+      "no_clip_native_loss_over_0_5pp": true
+    },
+    "numerical_passed": false,
+    "strongest_control_by_metric": {
+      "J": "fixed_negative",
+      "Jtr": "fixed_negative"
+    },
+    "gains_over_strongest_control": {
+      "J": -0.06784737053577183,
+      "Jtr": -0.07651230787701324
+    },
+    "per_clip_gains": {
+      "4691_cut_guava": {
+        "B": {
+          "J": 0.002820798728853713,
+          "Jtr": 0.0037942442561399586
+        },
+        "B+M1+M2": {
+          "J": -0.10460224827435793,
+          "Jtr": -0.09792217404782626
+        }
+      },
+      "817_cut_onion": {
+        "B": {
+          "J": 0.002532884192047169,
+          "Jtr": -0.004409410682032183
+        },
+        "B+M1+M2": {
+          "J": 0.1637532515430483,
+          "Jtr": 0.015109097367852375
+        }
+      },
+      "9675_fold_clothes": {
+        "B": {
+          "J": 0.005082128230574301,
+          "Jtr": 0.00957349561480747
+        },
+        "B+M1+M2": {
+          "J": -0.21434234387559492,
+          "Jtr": -0.19623755465798504
+        }
+      },
+      "1934_tear_film": {
+        "B": {
+          "J": -0.00040658933769155414,
+          "Jtr": -0.00040242962401099147
+        },
+        "B+M1+M2": {
+          "J": -0.005499037549277885,
+          "Jtr": -0.0012573069066712517
+        }
+      }
+    },
+    "control_tie_order": [
+      "B",
+      "B+M1",
+      "B+M2",
+      "B+M1+M2",
+      "fixed_negative",
+      "early_mean",
+      "flat_histories",
+      "output_ensemble"
+    ],
+    "clean_current_outer_and_independent_review_required": true,
+    "interpretation": "exposed-development shadow readout screen, not a paper or recurrent-policy result"
+  },
+  "sensitivity_continuation": {
+    "clauses": {
+      "over_every_control_3pp_J": false,
+      "over_every_control_3pp_Jtr": false,
+      "three_clips_positive_Jtr_over_union": false,
+      "no_clip_native_loss_over_0_5pp": true
+    },
+    "numerical_passed": false,
+    "strongest_control_by_metric": {
+      "J": "fixed_negative",
+      "Jtr": "fixed_negative"
+    },
+    "gains_over_strongest_control": {
+      "J": -0.06993358279091877,
+      "Jtr": -0.07990361441679567
+    },
+    "per_clip_gains": {
+      "4691_cut_guava": {
+        "B": {
+          "J": 0.0024477482591425126,
+          "Jtr": 0.003865529760560732
+        },
+        "B+M1+M2": {
+          "J": -0.10803405158052132,
+          "Jtr": -0.1021905372499374
+        }
+      },
+      "817_cut_onion": {
+        "B": {
+          "J": 0.0024101610336768053,
+          "Jtr": -0.004758404874560529
+        },
+        "B+M1+M2": {
+          "J": 0.172385898968853,
+          "Jtr": 0.012976440983834908
+        }
+      },
+      "9675_fold_clothes": {
+        "B": {
+          "J": 0.005057476376275627,
+          "Jtr": 0.009587000548797353
+        },
+        "B+M1+M2": {
+          "J": -0.21607306847479002,
+          "Jtr": -0.20009080445622496
+        }
+      },
+      "1934_tear_film": {
+        "B": {
+          "J": -0.00020168572331480394,
+          "Jtr": -0.0004274542999699038
+        },
+        "B+M1+M2": {
+          "J": -0.0063094370462045135,
+          "Jtr": -0.0013108327692627209
+        }
+      }
+    },
+    "control_tie_order": [
+      "B",
+      "B+M1",
+      "B+M2",
+      "B+M1+M2",
+      "fixed_negative",
+      "early_mean",
+      "flat_histories",
+      "output_ensemble"
+    ],
+    "clean_current_outer_and_independent_review_required": true,
+    "interpretation": "exposed-development shadow readout screen, not a paper or recurrent-policy result"
+  },
+  "review_checks": 31128,
+  "review_errors": [],
+  "maximum_scoring_difference": 0.0,
+  "independent_scoring_implementation": true,
+  "independent_researcher_replication": false,
+  "neural_decoder_or_interpolation_replayed_by_review": false,
+  "all_four_clips_exposed_development": true,
+  "recording_independence_established": false,
+  "novelty_established": false,
+  "final_paper_gate_met": false,
+  "manuscript_started": false,
+  "single_use_3600s_exception_consumed": true,
+  "subsequent_operation_default_limit_seconds": 1800,
+  "complete_outer_wall_seconds": 2515.2931197079597,
+  "complete_outer_peak_group_rss_kib": 4949600,
+  "review_outer_wall_seconds": 3.718287708994467,
+  "review_outer_peak_group_rss_kib": 160064,
+  "binding_semantics": "Raw private-byte digests; public manifest separately binds literal prefix-redacted text. Original worker receipt remains unchanged and cannot certify its own outer exit.",
+  "bindings": {
+    "complete-spec-01.json": "a7b22d30620d265996c7ebe7d6d0b362ca0a0443f460eb3d703a39fc0f76ad86",
+    "complete-outer-spec-01.json": "07a556653a4af1e11a44ca7562c1647f52860c48555043a7d5d1be401dc3b153",
+    "complete-01/receipt.json": "6259f1b33ce243aa2c6ccd5649ebe6a2ee517d75dbec199e852b410b7c8edc22",
+    "complete-01/prediction-seal.json": "68b7acedd10b32f5388d8bac09929f7632f34eb27a8847b4b3dbb3568796d49d",
+    "complete-01/evaluation.json": "26846cedf43ad29869aee34632d82466873d47ccf0be2f926d34734f8ca9d478",
+    "complete-supervision-01/receipt.json": "47e283df58d8f949bde33b9fad93308d0f4187df80aa2a254d1416bcef0dd64c",
+    "review-spec-01.json": "1dca2720ec69fea11b24b256b4c87dd8838f9553d8c13f45982fcca1b3c18490",
+    "review-outer-spec-01.json": "e153402a69fd4d22f4c87e4c9cde657413c7f7ae4b804ec32ad288cde7216d7e",
+    "independent-review-01-source.py": "39dc9bf32b33d7fc86a22f80533ddddda413f8606906973816ce336c106a9e59",
+    "independent-review-01/receipt.json": "d0668a43d46d590dd7b8e9e7e0e7c09ca61101f2f522b5779e5ca47395ac1f65",
+    "independent-review-01/review.json": "c8a45da61f70ceb1bf0a4d63f64a8a22cc3a7f8665047097912edf608fa7c5df",
+    "review-supervision-01/receipt.json": "c7e5405552e4d1a8fbe97f65c212270582cc74abe58a2517c37ed523e7b81a26",
+    "source-ci-01.json": "2b1e87463fad2ae40a96d17af45114ab87ae467a487d81e25fa0f29ccd3283f5",
+    "launch-admission-01.json": "fbb6ef9dbfcc76a1e19a6e68f2554c99b1d3bcdd33692d8256f86437c635d7c7",
+    "review-source-freeze-01.json": "c5267d0d14138695f17b38745242312cfb898f6aa2d2b0759e74e107c52f05f8"
+  }
+}

@@ -110,6 +110,14 @@ jobs:
           PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0037-causal-local-verification/test_features.py -v
           PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0037-causal-local-verification/test_core.py -v
           PYTHONDONTWRITEBYTECODE=1 python -W error experiments/0037-causal-local-verification/test_run.py -v
+      - name: Parse prospective late-readout sources without loading Torch or a model
+        run: |
+          python - <<'PY'
+          import ast
+          from pathlib import Path
+          for path in Path('experiments/0038-late-memory-readout').glob('*.py'):
+              ast.parse(path.read_text(), filename=str(path))
+          PY
       - name: Check native grid bounds on artificial coordinates without dataset access
         run: |
           python - <<'PY'
